@@ -1,0 +1,171 @@
+{
+  "id": "79495184",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/79495184",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNzk0OTUxODQ=",
+  "status": "current",
+  "title": "Using rules",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:7401607f-0e88-4f5e-8990-3533ed7f8614",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Alagesan Palani",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7401607f-0e88-4f5e-8990-3533ed7f8614",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Alagesan Palani",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7401607f-0e88-4f5e-8990-3533ed7f8614"
+      }
+    },
+    "createdDate": "2016-08-14T13:02:02.051Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/79495184/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:ed8a85e1-871d-406d-9e5a-aba9f21b3329",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Arjun",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:ed8a85e1-871d-406d-9e5a-aba9f21b3329",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Arjun",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:ed8a85e1-871d-406d-9e5a-aba9f21b3329"
+      }
+    },
+    "when": "2016-12-01T23:38:39.095Z",
+    "friendlyWhen": "Dec 01, 2016",
+    "message": "",
+    "number": 18,
+    "minorEdit": false,
+    "syncRev": "0.GLA1CEWtk7oXJMc75Xfc3g.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$79495184.51",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/79495184"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/79495184/version/18"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p>Each order set can further be customized with 'Rules' to automate the dosage calculation per patient. Applying rule to each drug is facilitated by a separate dropdown called 'Rules'.&nbsp;Existing rules named 'mg/kg' and 'mg/m2' are moved out of 'Base Dose' and populated as part of Rules dropdown. When no rule is chosen from the rules dropdown, which is the default option, the corresponding order set will be applied as it is from the original set.</p><ac:structured-macro ac:name=\"warning\" ac:schema-version=\"1\" ac:macro-id=\"6aca8f7b-72db-4c2b-acb4-581aad781239\"><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\">All the existing order sets </span><span style=\"color: rgb(0,0,0);\">with </span><span style=\"color: rgb(0,0,0);\"><strong>mg/kg</strong> and <strong>mg/m2</strong> rules created prior to the introduction of drug order rules are now <em>invalid</em>. <br /><span style=\"color: rgb(0,0,0);\">Admin or implementer must edit these order sets to choose the same rules from rules dropdown and save them.</span><strong><span style=\"color: rgb(0,0,0);\"><br /></span></strong></span></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"b4ee4c5e-6036-42f4-9c79-ff5df3fdf115\"><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\">All the existing medications prescribed with the help of above order sets stand valid and no migration required.</span></p></ac:rich-text-body></ac:structured-macro><p>System provides two rules out of the box as follows and it can be extended further.</p><p><strong>mg/kg:</strong></p><p>User choses 'mg/kg' as the rule to calculate dosage as the product of patient's weight and base dose. When this rule is chosen, base dose unit dropdown disables as the dosage is now always mg/kg.</p><p><strong>mg/m2:</strong></p><p>User choses 'mg/m2' as the rule to calculate dosage with base dose value from the current drug item and the individual patient's BSA (body surface area). base dose unit drop down disables for this rule as well.</p><p><strong>Custom Rule:</strong></p><p>User choses 'CustomRule' to calculate dosages that are completely driven by the external configuration values from a CSV file. Administrator specifies customized dosages for patients whose weights and ages falls in certain ranges.&nbsp;</p><table class=\"wrapped\"><colgroup><col style=\"width: 60.0px;\" /><col style=\"width: 99.0px;\" /><col style=\"width: 102.0px;\" /><col style=\"width: 78.0px;\" /><col /><col /><col /></colgroup><tbody><tr><th>Name</th><th>min_weight</th><th>max_weight</th><th>min_age</th><th colspan=\"1\">max_age</th><th colspan=\"1\">dosage</th><th colspan=\"1\">rule</th></tr><tr><td>drug1</td><td>1</td><td>5</td><td>1</td><td colspan=\"1\">12</td><td colspan=\"1\">10</td><td colspan=\"1\">mg/kg</td></tr><tr><td>drug2</td><td>20</td><td>60</td><td>20</td><td colspan=\"1\">40</td><td colspan=\"1\">8</td><td colspan=\"1\">mg/m2</td></tr><tr><td colspan=\"1\">drug3</td><td colspan=\"1\">20</td><td colspan=\"1\">25</td><td colspan=\"1\">15</td><td colspan=\"1\">60</td><td colspan=\"1\">150</td><td colspan=\"1\">block</td></tr></tbody></table><p>The above table data is only illustration purpose only and the real configuration will be done by the administrator per implementation. From the above table, the first drug 'drug1' is configured to apply 'mg/kg' rule for the patient whose weight rage is 1 to 5 and age range is 1 to 12. Base dose to be used is 10 mg. when the clinician choses the order set with the item values as drug1, the patient's weight is 4 and his/her age is 5, the final dosage will be 10x5=50mg. The specific rule called 'block' is used to directly apply the given dosage for the patient without any calculation.</p><p>while configuring custom rule, orderset name from bahmni admin page and its corresponding csv file name should match, otherwise system will throw error saying &nbsp;csv file with the name as orderset name is not found.</p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"a660a912-da72-43ef-b9ea-81d098aacfd1\"><ac:rich-text-body><p><strong><span style=\"color: rgb(0,0,0);\">CSV file for applying dosage rules must be stored at the folder path: /opt/openmrs/bahmni_config/openmrs/rulesengine/drugorderrules</span></strong></p><p><strong><span style=\"color: rgb(0,0,0);\">Please note:</span></strong></p><p><strong><span style=\"color: rgb(0,0,0);\"> 1. csv file name must match exactly with the bahmni orderset name.</span></strong></p><p><strong><span style=\"color: rgb(0,0,0);\"> 2. Rule definition must be present from the csv file for all the &quot;drugs&quot; from the order set thats being used, otherwise system throws error as &quot;rule not defined&quot;. </span></strong></p><div><strong><span style=\"color: rgb(0,0,0);\"><br /></span></strong></div></ac:rich-text-body></ac:structured-macro><p>when the system is extended with new rules as the requirement of the individual hospital, the new rule can dynamically configured in the csv file and rules engine will automatically pickup the corresponding rule to apply while creating medication.</p></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"5f96089e-c1b8-40d0-a903-99d4dae54f24\"><ac:rich-text-body><p><strong><span style=\"color: rgb(0,0,0);\">Please note that Bahmni configuration for each implementation can vary drastically. The rules and its corresponding dosage values can be customized appropriately to the individual implementation.</span></strong></p><div><strong><span style=\"color: rgb(0,0,0);\"><br /></span></strong></div></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Order Sets\" /><ac:plain-text-link-body><![CDATA[Order Sets - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"3e7345d0-fd7a-4dfe-aa3a-63e299487a00\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Implementation Details</ac:parameter><ac:rich-text-body><p style=\"line-height: 1.42857;\"><ac:link><ri:page ri:content-title=\"Configure Orderset rules\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"4084f2de-c0c2-4eeb-b02a-1184ccf78a4a\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Authoring Order Sets\" /></ac:link></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/79495184"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p>Each order set can further be customized with 'Rules' to automate the dosage calculation per patient. Applying rule to each drug is facilitated by a separate dropdown called 'Rules'. Existing rules named 'mg/kg' and 'mg/m2' are moved out of 'Base Dose' and populated as part of Rules dropdown. When no rule is chosen from the rules dropdown, which is the default option, the corresponding order set will be applied as it is from the original set.</p><div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6aca8f7b-72db-4c2b-acb4-581aad781239\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><span class=\"legacy-color-text-default\">All the existing order sets </span><span class=\"legacy-color-text-default\">with </span><span class=\"legacy-color-text-default\"><strong>mg/kg</strong> and <strong>mg/m2</strong> rules created prior to the introduction of drug order rules are now <em>invalid</em>. <br /><span class=\"legacy-color-text-default\">Admin or implementer must edit these order sets to choose the same rules from rules dropdown and save them.</span><strong><span class=\"legacy-color-text-default\"><br /></span></strong></span></p></div></div><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b4ee4c5e-6036-42f4-9c79-ff5df3fdf115\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><span class=\"legacy-color-text-default\">All the existing medications prescribed with the help of above order sets stand valid and no migration required.</span></p></div></div><p>System provides two rules out of the box as follows and it can be extended further.</p><p><strong>mg/kg:</strong></p><p>User choses 'mg/kg' as the rule to calculate dosage as the product of patient's weight and base dose. When this rule is chosen, base dose unit dropdown disables as the dosage is now always mg/kg.</p><p><strong>mg/m2:</strong></p><p>User choses 'mg/m2' as the rule to calculate dosage with base dose value from the current drug item and the individual patient's BSA (body surface area). base dose unit drop down disables for this rule as well.</p><p><strong>Custom Rule:</strong></p><p>User choses 'CustomRule' to calculate dosages that are completely driven by the external configuration values from a CSV file. Administrator specifies customized dosages for patients whose weights and ages falls in certain ranges. </p><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col style=\"width: 60.0px;\"/><col style=\"width: 99.0px;\"/><col style=\"width: 102.0px;\"/><col style=\"width: 78.0px;\"/><col/><col/><col/></colgroup><tbody><tr><th class=\"confluenceTh\">Name</th><th class=\"confluenceTh\">min_weight</th><th class=\"confluenceTh\">max_weight</th><th class=\"confluenceTh\">min_age</th><th colspan=\"1\" class=\"confluenceTh\">max_age</th><th colspan=\"1\" class=\"confluenceTh\">dosage</th><th colspan=\"1\" class=\"confluenceTh\">rule</th></tr><tr><td class=\"confluenceTd\">drug1</td><td class=\"confluenceTd\">1</td><td class=\"confluenceTd\">5</td><td class=\"confluenceTd\">1</td><td colspan=\"1\" class=\"confluenceTd\">12</td><td colspan=\"1\" class=\"confluenceTd\">10</td><td colspan=\"1\" class=\"confluenceTd\">mg/kg</td></tr><tr><td class=\"confluenceTd\">drug2</td><td class=\"confluenceTd\">20</td><td class=\"confluenceTd\">60</td><td class=\"confluenceTd\">20</td><td colspan=\"1\" class=\"confluenceTd\">40</td><td colspan=\"1\" class=\"confluenceTd\">8</td><td colspan=\"1\" class=\"confluenceTd\">mg/m2</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">drug3</td><td colspan=\"1\" class=\"confluenceTd\">20</td><td colspan=\"1\" class=\"confluenceTd\">25</td><td colspan=\"1\" class=\"confluenceTd\">15</td><td colspan=\"1\" class=\"confluenceTd\">60</td><td colspan=\"1\" class=\"confluenceTd\">150</td><td colspan=\"1\" class=\"confluenceTd\">block</td></tr></tbody></table></div><p>The above table data is only illustration purpose only and the real configuration will be done by the administrator per implementation. From the above table, the first drug 'drug1' is configured to apply 'mg/kg' rule for the patient whose weight rage is 1 to 5 and age range is 1 to 12. Base dose to be used is 10 mg. when the clinician choses the order set with the item values as drug1, the patient's weight is 4 and his/her age is 5, the final dosage will be 10x5=50mg. The specific rule called 'block' is used to directly apply the given dosage for the patient without any calculation.</p><p>while configuring custom rule, orderset name from bahmni admin page and its corresponding csv file name should match, otherwise system will throw error saying  csv file with the name as orderset name is not found.</p><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a660a912-da72-43ef-b9ea-81d098aacfd1\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong><span class=\"legacy-color-text-default\">CSV file for applying dosage rules must be stored at the folder path: /opt/openmrs/bahmni_config/openmrs/rulesengine/drugorderrules</span></strong></p><p><strong><span class=\"legacy-color-text-default\">Please note:</span></strong></p><p><strong><span class=\"legacy-color-text-default\"> 1. csv file name must match exactly with the bahmni orderset name.</span></strong></p><p><strong><span class=\"legacy-color-text-default\"> 2. Rule definition must be present from the csv file for all the &quot;drugs&quot; from the order set thats being used, otherwise system throws error as &quot;rule not defined&quot;. </span></strong></p><div><strong><span class=\"legacy-color-text-default\"><br /></span></strong></div></div></div><p>when the system is extended with new rules as the requirement of the individual hospital, the new rule can dynamically configured in the csv file and rules engine will automatically pickup the corresponding rule to apply while creating medication.</p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"5f96089e-c1b8-40d0-a903-99d4dae54f24\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong><span class=\"legacy-color-text-default\">Please note that Bahmni configuration for each implementation can vary drastically. The rules and its corresponding dosage values can be customized appropriately to the individual implementation.</span></strong></p><div><strong><span class=\"legacy-color-text-default\"><br /></span></strong></div></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/47022141/Order+Sets\" data-linked-resource-id=\"47022141\" data-linked-resource-version=\"9\" data-linked-resource-type=\"page\">Order Sets - Feature Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3e7345d0-fd7a-4dfe-aa3a-63e299487a00\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Implementation Details</b></div><div class=\"panelContent\">\n<p style=\"line-height: 1.42857;\"><a href=\"/wiki/spaces/BAH/pages/79495202/Configure+Orderset+rules\" data-linked-resource-id=\"79495202\" data-linked-resource-version=\"20\" data-linked-resource-type=\"page\">Configure Orderset rules</a></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4084f2de-c0c2-4eeb-b02a-1184ccf78a4a\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/49545249/Authoring+Order+Sets\" data-linked-resource-id=\"49545249\" data-linked-resource-version=\"17\" data-linked-resource-type=\"page\">Authoring Order Sets</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/79495184"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/79495184/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/79495184/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/79495184/child",
+    "restrictions": "/rest/api/content/79495184/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/79495184/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=79495184",
+    "webui": "/spaces/BAH/pages/79495184/Using+rules",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/79495184",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/79495184",
+    "tinyui": "/x/EAC9B",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

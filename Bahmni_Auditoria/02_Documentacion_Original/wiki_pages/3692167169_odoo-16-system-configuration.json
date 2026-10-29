@@ -1,0 +1,172 @@
+{
+  "id": "3692167169",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3692167169",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzY5MjE2NzE2OQ==",
+  "status": "current",
+  "title": "Odoo 16 System Configuration",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "createdDate": "2024-08-13T09:31:30.058Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3692167169/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "when": "2024-08-13T10:09:47.778Z",
+    "friendlyWhen": "Aug 13, 2024",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3692167169.49",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3692167169"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3692167169/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\" ac:breakout-mode=\"default\"><ac:layout-cell><p>While initiating the use of Odoo for your implementation, several fundamental system configurations must be completed before recording any sales, inventory transactions, or payments. Although some features and processes may not be utilized extensively based on your implementation requirements, we strongly advise configuring these settings for accuracy and optimal system utilisation. In addition to the below essential areas, we highly recommend going through the <a href=\"https://bahmni.atlassian.net/wiki/pages/resumedraft.action?draftId=3692167169&amp;draftShareId=bf061c0e-f72e-4a5a-96cf-e5944af6316a\">Official Odoo 16 setup guide</a> to understand more about the configuration.</p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"135feccb-4efb-4078-b11f-79bb66747ab9\"><ac:parameter ac:name=\"panelIcon\">:radio:</ac:parameter><ac:parameter ac:name=\"panelIconId\">1f4fb</ac:parameter><ac:parameter ac:name=\"panelIconText\">📻</ac:parameter><ac:parameter ac:name=\"bgColor\">#B3F5FF</ac:parameter><ac:rich-text-body><p>Community Session on Odoo 16 integration and migration from older versions has been conducted in accordance with Bahmni Standard 1.0.0 release. Refer <a href=\"https://youtu.be/8Vch26gSAsA?si=StwmOpADR2p6dk6S\">this video</a>.</p></ac:rich-text-body></ac:structured-macro></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"b67eea62-6777-4c38-bf7d-7aeda0fb5efa\"><ac:rich-text-body><p>On this page</p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" data-layout=\"default\" ac:local-id=\"fed6fcd6-b082-40be-a465-4ca3eb994595\" ac:macro-id=\"1a42f684-cdd2-42ce-ba51-856c8cb72a1a\"><ac:parameter ac:name=\"minLevel\">1</ac:parameter><ac:parameter ac:name=\"maxLevel\">6</ac:parameter><ac:parameter ac:name=\"outline\">false</ac:parameter><ac:parameter ac:name=\"style\">default</ac:parameter><ac:parameter ac:name=\"type\">list</ac:parameter><ac:parameter ac:name=\"printable\">true</ac:parameter></ac:structured-macro></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"fixed-width\" ac:breakout-mode=\"default\"><ac:layout-cell><h3>Setup a Master Password</h3><p>Odoo allows managing multiple databases within a single instance of Odoo and also allows backing up, duplicating and deleting any database from the UI. This page can be accessed by clicking the <code>Manage Databases</code> link on the login page or from this URL <code>http://&lt;odoo-url&gt;/web/database/manager</code>. All of the database operations are protected by a Master Password. As a one-time setup, click on the <strong>Set Master Password</strong> button and configure a strong master password for your database.</p><h3>Setup Company Information</h3><p>Odoo tracks all transactions under a concept of Company. Configure your implementation organisation information under  Menu &rarr; Settings &rarr; Users &amp; Companies &rarr; Companies. The configuration elements include the following</p><ol start=\"1\"><li><p>Company Name</p></li><li><p>Address</p></li><li><p>Currency (this is important and cannot be changed later)</p></li><li><p>Round off value (the round off value that is used in Sale quotations)</p></li></ol><h3>Date formatting and localisation</h3><p>Odoo supports localisation capabilities. The same can be accessed through debug mode and navigating to Menu &rarr; Settings &rarr; Translations. Selecting an option will give additional configurable localisation options.</p><p /><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"667\" ac:original-width=\"1363\" ac:custom-width=\"true\" ac:alt=\"image-20240813-095912.png\" ac:width=\"1308\"><ri:attachment ri:filename=\"image-20240813-095912.png\" ri:version-at-save=\"1\" /></ac:image><h3>General Settings and User Configuration</h3><p>Before rolling out for users, we recommend going through all the general settings once in the Menu &rarr; Settings &rarr; General Settings. Few of these properties cannot be updated once a transactional entry has been made. Also setup users with appropriate roles from Menu &rarr; Settings &rarr; Users &amp; Companies &rarr; Users.</p><p>It is also very important to go through the accounting configuration. Refer <ac:link><ri:page ri:content-title=\"Odoo Accounting Configuration\" ri:version-at-save=\"12\" /><ac:link-body>this page</ac:link-body></ac:link> for more details.</p><h3>Additional Apps and Custom Apps</h3><p>Odoo supports adding additional apps as per your implementation requirements. Refer <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117482082/Odoo+Configurations+docker#Loading-Additional-Addons-to-Odoo\">here</a> on how to mount additional apps downloaded from community or your custom developed apps. Refer <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117482082/Odoo+Configurations+docker#Development-setup-for-Bahmni-Odoo-Modules\">this section</a> to mount the modules shipped out of the box in bahmni/odoo-16 docker image and extend any customisations.</p><p>Also, <ac:link><ri:page ri:content-title=\"Optional Community Modules for Odoo 16\" ri:version-at-save=\"1\" /><ac:link-body>this page</ac:link-body></ac:link> has information about few optional addons that are bundled on the image that are available for implementation to install and use on a need basis.</p><p /></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3692167169"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p>While initiating the use of Odoo for your implementation, several fundamental system configurations must be completed before recording any sales, inventory transactions, or payments. Although some features and processes may not be utilized extensively based on your implementation requirements, we strongly advise configuring these settings for accuracy and optimal system utilisation. In addition to the below essential areas, we highly recommend going through the <a href=\"https://bahmni.atlassian.net/wiki/pages/resumedraft.action?draftId=3692167169&amp;draftShareId=bf061c0e-f72e-4a5a-96cf-e5944af6316a\" rel=\"nofollow\">Official Odoo 16 setup guide</a> to understand more about the configuration.</p><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"135feccb-4efb-4078-b11f-79bb66747ab9\" data-macro-name=\"panel\" style=\"background-color: #B3F5FF;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #B3F5FF;\">\n<p>Community Session on Odoo 16 integration and migration from older versions has been conducted in accordance with Bahmni Standard 1.0.0 release. Refer <a class=\"external-link\" href=\"https://youtu.be/8Vch26gSAsA?si=StwmOpADR2p6dk6S\" rel=\"nofollow\">this video</a>.</p>\n</div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b67eea62-6777-4c38-bf7d-7aeda0fb5efa\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>On this page</p></div></div><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-cssliststyle=\"default\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6\" data-layout=\"default\" data-local-id=\"fed6fcd6-b082-40be-a465-4ca3eb994595\" data-macro-id=\"1a42f684-cdd2-42ce-ba51-856c8cb72a1a\" data-macro-name=\"toc\" data-numberedoutline=\"false\" data-structure=\"list\"> </div></div>\n</div>\n</div>\n<div class=\"columnLayout fixed-width\" data-layout=\"fixed-width\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h3 id=\"Odoo16SystemConfiguration-SetupaMasterPassword\">Setup a Master Password</h3><p>Odoo allows managing multiple databases within a single instance of Odoo and also allows backing up, duplicating and deleting any database from the UI. This page can be accessed by clicking the <code>Manage Databases</code> link on the login page or from this URL <code>http://&lt;odoo-url&gt;/web/database/manager</code>. All of the database operations are protected by a Master Password. As a one-time setup, click on the <strong>Set Master Password</strong> button and configure a strong master password for your database.</p><h3 id=\"Odoo16SystemConfiguration-SetupCompanyInformation\">Setup Company Information</h3><p>Odoo tracks all transactions under a concept of Company. Configure your implementation organisation information under  Menu → Settings → Users &amp; Companies → Companies. The configuration elements include the following</p><ol start=\"1\"><li><p>Company Name</p></li><li><p>Address</p></li><li><p>Currency (this is important and cannot be changed later)</p></li><li><p>Round off value (the round off value that is used in Sale quotations)</p></li></ol><h3 id=\"Odoo16SystemConfiguration-Dateformattingandlocalisation\">Date formatting and localisation</h3><p>Odoo supports localisation capabilities. The same can be accessed through debug mode and navigating to Menu → Settings → Translations. Selecting an option will give additional configurable localisation options.</p><p /><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"image-20240813-095912.png\" width=\"1308\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3692167169/image-20240813-095912.png?version=1&amp;modificationDate=1723543158081&amp;cacheVersion=1&amp;api=v2&amp;width=1280&amp;height=626\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3692167169/image-20240813-095912.png?version=1&amp;modificationDate=1723543158081&amp;cacheVersion=1&amp;api=v2\" data-height=\"667\" data-width=\"1363\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3691348032\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240813-095912.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3692167169\" data-linked-resource-container-version=\"2\" data-media-id=\"b07bab47-05fd-4461-811d-fc5a9a1f988c\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3692167169/image-20240813-095912.png?version=1&amp;modificationDate=1723543158081&amp;cacheVersion=1&amp;api=v2&amp;width=1280&amp;height=626 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3692167169/image-20240813-095912.png?version=1&amp;modificationDate=1723543158081&amp;cacheVersion=1&amp;api=v2&amp;width=1280&amp;height=626 1x\"></span><h3 id=\"Odoo16SystemConfiguration-GeneralSettingsandUserConfiguration\">General Settings and User Configuration</h3><p>Before rolling out for users, we recommend going through all the general settings once in the Menu → Settings → General Settings. Few of these properties cannot be updated once a transactional entry has been made. Also setup users with appropriate roles from Menu → Settings → Users &amp; Companies → Users.</p><p>It is also very important to go through the accounting configuration. Refer <a href=\"/wiki/spaces/BAH/pages/900530219/Odoo+Accounting+Configuration\" data-linked-resource-id=\"900530219\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">this page</a> for more details.</p><h3 id=\"Odoo16SystemConfiguration-AdditionalAppsandCustomApps\">Additional Apps and Custom Apps</h3><p>Odoo supports adding additional apps as per your implementation requirements. Refer <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117482082/Odoo+Configurations+docker#Loading-Additional-Addons-to-Odoo\" rel=\"nofollow\">here</a> on how to mount additional apps downloaded from community or your custom developed apps. Refer <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117482082/Odoo+Configurations+docker#Development-setup-for-Bahmni-Odoo-Modules\" rel=\"nofollow\">this section</a> to mount the modules shipped out of the box in bahmni/odoo-16 docker image and extend any customisations.</p><p>Also, <a href=\"/wiki/spaces/BAH/pages/3690725380/Optional+Community+Modules+for+Odoo+16\" data-linked-resource-id=\"3690725380\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">this page</a> has information about few optional addons that are bundled on the image that are available for implementation to install and use on a need basis.</p><p /></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3692167169"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3692167169/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3692167169/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 558
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3692167169/child",
+    "restrictions": "/rest/api/content/3692167169/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3692167169/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3692167169",
+    "webui": "/spaces/BAH/pages/3692167169/Odoo+16+System+Configuration",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3692167169",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3692167169",
+    "tinyui": "/x/AQAS3",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

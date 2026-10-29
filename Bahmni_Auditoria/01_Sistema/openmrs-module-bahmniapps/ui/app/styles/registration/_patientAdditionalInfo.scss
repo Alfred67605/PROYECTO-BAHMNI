@@ -1,0 +1,31 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public License,
+ * v. 2.0. If a copy of the MPL was not distributed with this file, You can
+ * obtain one at https://www.bahmni.org/license/mplv2hd.
+ *
+ * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
+ * graphic logo is a trademark of OpenMRS Inc.
+ */
+
+.additional-info-wrapper{
+  .form .form-field .field-value{
+    input[type="number"]{
+      width: 12.5em;
+    }
+    input[type="checkbox"]{
+      margin-top: 9px;
+      margin-left: 0;
+    }
+  }
+  .form-field .field-attribute label[for="isUrban"]{
+    @media (max-width : 990px) {
+      width: auto !important;
+    }
+    @media (max-width : 768px) {
+      width: 17em !important;
+    }
+    @media (max-width : 580px) {
+      width: auto !important;
+    }
+  }
+}

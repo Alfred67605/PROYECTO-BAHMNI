@@ -1,0 +1,170 @@
+{
+  "id": "9240628",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/9240628",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvOTI0MDYyOA==",
+  "status": "current",
+  "title": "Common to all diseases",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "createdDate": "2014-09-05T10:15:36.484Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/9240628/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "when": "2014-09-09T11:47:53.713Z",
+    "friendlyWhen": "Sept 09, 2014",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "0.Q28OKMwF3WiyT-Xr02-HMA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$9240628.4",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/9240628"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/9240628/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p><strong>Patient details</strong></p><p><a href=\"https://www.uthsc.edu/gim/documents/ward-H&amp;P.pdf\">https://www.uthsc.edu/gim/documents/ward-H&amp;P.pdf</a></p><p><strong>Demographic</strong></p><ol><li><em>Husbands / Fathers name in full</em></li><li><em>Caste</em></li><li><em>Category</em></li><li><em>Village (Drop Down list)</em></li><li><em>Cluster (Drop Down list)</em></li></ol><p><strong>Socioeconomic</strong></p><ol><li>Occupation</li><li>Land Holding</li><li>Debts</li><li>BPL Card Holder</li><li>Income</li><li>Some measure of rural economic status e.g Kuppuswamy scale - derive from:<ol><li class=\"li1\">Education</li><li class=\"li1\">Occupation of the head of the household</li><li class=\"li1\">Income of family</li></ol></li><li>Social group</li><li>Distance from center (calculated based on village/district)</li><li>Urban/Rural</li><li>Literacy (Education Details in registration)</li></ol><p><strong>Clinical</strong></p><ol><li>Duration of illness before diagnosis</li><li>Treatment at the time of diagnosis</li><li>Weight at diagnosis</li><li>Height at diagnosis</li><li>Waist circumference</li><li>Hip circumference</li><li>Current treatment of disease</li><li>Status of treatment (On treatment, cured, not cured, Not taking treatment etc)</li><li>Complication</li><li>Current status of the patient (death, cured) (<u>should be handled via Treatment outcome concept</u>)</li><li>Associated disease <u>(also a diagnosis?, if so there it can be removed from here)</u></li><li>Who has followed up the patient?</li></ol>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/9240628"
+      }
+    },
+    "view": {
+      "value": "<p><strong>Patient details</strong></p><p><a class=\"external-link\" href=\"https://www.uthsc.edu/gim/documents/ward-H&amp;P.pdf\" rel=\"nofollow\">https://www.uthsc.edu/gim/documents/ward-H&amp;P.pdf</a></p><p><strong>Demographic</strong></p><ol><li><em>Husbands / Fathers name in full</em></li><li><em>Caste</em></li><li><em>Category</em></li><li><em>Village (Drop Down list)</em></li><li><em>Cluster (Drop Down list)</em></li></ol><p><strong>Socioeconomic</strong></p><ol><li>Occupation</li><li>Land Holding</li><li>Debts</li><li>BPL Card Holder</li><li>Income</li><li>Some measure of rural economic status e.g Kuppuswamy scale - derive from:<ol><li class=\"li1\">Education</li><li class=\"li1\">Occupation of the head of the household</li><li class=\"li1\">Income of family</li></ol></li><li>Social group</li><li>Distance from center (calculated based on village/district)</li><li>Urban/Rural</li><li>Literacy (Education Details in registration)</li></ol><p><strong>Clinical</strong></p><ol><li>Duration of illness before diagnosis</li><li>Treatment at the time of diagnosis</li><li>Weight at diagnosis</li><li>Height at diagnosis</li><li>Waist circumference</li><li>Hip circumference</li><li>Current treatment of disease</li><li>Status of treatment (On treatment, cured, not cured, Not taking treatment etc)</li><li>Complication</li><li>Current status of the patient (death, cured) (<u>should be handled via Treatment outcome concept</u>)</li><li>Associated disease <u>(also a diagnosis?, if so there it can be removed from here)</u></li><li>Who has followed up the patient?</li></ol>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/9240628"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/9240628/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/9240628/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/9240628/child",
+    "restrictions": "/rest/api/content/9240628/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/9240628/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=9240628",
+    "webui": "/spaces/BAH/pages/9240628/Common+to+all+diseases",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/9240628",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/9240628",
+    "tinyui": "/x/NACN",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

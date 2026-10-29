@@ -1,0 +1,56 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public License,
+ * v. 2.0. If a copy of the MPL was not distributed with this file, You can
+ * obtain one at https://www.bahmni.org/license/mplv2hd.
+ *
+ * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
+ * graphic logo is a trademark of OpenMRS Inc.
+ */
+
+.close {
+  border: none;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  cursor: pointer;
+}
+
+.heading {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.add-allergy-container {
+  padding: 0 20px;
+  margin-bottom: 80px;
+  max-width: 500px;
+}
+
+.known-allergy-radio-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  .bx--label {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .bx--radio-button__label {
+    font-size: 14px;
+  }
+}
+
+.no-known-allergy-textarea {
+  padding: 10px;
+  background: #fff;
+}
+
+.back-button {
+  color: #0F62FE;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding-bottom: 10px;
+
+  >* {
+    cursor: pointer;
+  }
+}

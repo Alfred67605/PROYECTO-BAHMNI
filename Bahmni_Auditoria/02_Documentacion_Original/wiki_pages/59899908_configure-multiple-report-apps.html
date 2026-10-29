@@ -1,0 +1,27 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Configure Multiple Report Apps</title></head><body><h1>Configure Multiple Report Apps</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="ConfigureMultipleReportApps-PurposeandBenefits">Purpose and Benefits</h2><p><span class="legacy-color-text-default">The steps below show how you can add an additional &quot;Bahmni App&quot; for reporting purposes, with its own report configuration.</span></p><h2 id="ConfigureMultipleReportApps-Steps">Steps</h2><p>To configure a new app for reports,</p><ol><li><p><span>in home/extension.json add a new module with parameter appName=“new_reports_name&quot;</span></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="57d865fb-77ec-45e8-9236-979cf0074199" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">&quot;bahmni_exports&quot;: {
+    &quot;id&quot;: &quot;bahmni.reports&quot;,
+    &quot;extensionPointId&quot;: &quot;org.bahmni.home.dashboard&quot;,
+    &quot;type&quot;: &quot;link&quot;,
+    &quot;translationKey&quot;: &quot;MODULE_LABEL_EXPORTS_KEY&quot;,
+    &quot;url&quot;: &quot;../reports/#/dashboard?appName=new_reports_name,
+    &quot;icon&quot;: &quot;icon-bahmni-reports&quot;,
+    &quot;order&quot;: 6,
+    &quot;requiredPrivilege&quot;: &quot;app:reports&quot;
+}</pre>
+</div></div></li><li> C<span>reate a  new directory with name “new_reports_name”  under  openmrs/apps directory.</span>  Add reports.json to this directory.</li><li>For internationalization, create a directory under openmrs/i18n with the name &quot;new_reports_name&quot;.<br/><p><span><br/></span></p></li></ol></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="confluence-information-macro confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="99b8b629-37db-4a58-adb1-4714e33f853d" data-macro-name="tip"><p class="title">On this Page</p><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="6ebfc67a-7487-4e65-95bb-388c38c37ce3" data-macro-name="toc"> </div><p> </p></div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="0add60ca-db50-405a-bfd6-90945fbc2b0b" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #668D3C;color: white;"><b>Feature Details</b></div><div class="panelContent">
+<p><span class="legacy-color-text-default"><a href="/wiki/spaces/BAH/pages/32604223/Reporting" data-linked-resource-id="32604223" data-linked-resource-version="42" data-linked-resource-type="page">Reports Module - Feature Guide</a></span></p>
+</div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #668D3C;color: white;"><b>Usage Details</b></div><div class="panelContent">
+<p><span class="legacy-color-text-default"><a href="/wiki/spaces/BAH/pages/32604225/Report+Management" data-linked-resource-id="32604225" data-linked-resource-version="16" data-linked-resource-type="page">Reports Module - User Guide</a></span></p>
+</div></div></div>
+</div>
+</div>
+</div></body></html>

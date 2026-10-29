@@ -1,0 +1,172 @@
+{
+  "id": "3657105576",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3657105576",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzY1NzEwNTU3Ng==",
+  "status": "current",
+  "title": "Odoo 16 Masterdata and Metadata Migration",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "createdDate": "2024-07-26T10:52:33.743Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3657105576/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "when": "2024-07-29T08:06:18.356Z",
+    "friendlyWhen": "Jul 29, 2024",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "ncsStepVersion": "904",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3657105576.48",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3657105576"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3657105576/version/7"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>Master data for the Odoo system includes fundamental elements like product categories, products, customers, suppliers, unit of measure (UoM) categories, UoMs, stock locations, and various other metadata associated with synchronization, such as shops, order types, order type shop mapping, and syncable unit mapping.</p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"7e394ec6-32a0-40bf-b23b-6c02630f48e3\"><ac:parameter ac:name=\"panelIcon\">:track_previous:</ac:parameter><ac:parameter ac:name=\"panelIconId\">23ee</ac:parameter><ac:parameter ac:name=\"panelIconText\">⏮️</ac:parameter><ac:parameter ac:name=\"bgColor\">#E6FCFF</ac:parameter><ac:rich-text-body><p>Before proceeding ensure you have made basic Odoo configurations as mentioned <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3657105447/Odoo+16+Migration+Guide#Basic-Configurations-in-Odoo\">here</a></p></ac:rich-text-body></ac:structured-macro><h2>Automated Migration using Custom Odoo Module</h2><p>There are two custom modules developed for migrating the following data from <a href=\"https://github.com/Bahmni/bahmni-odoo-modules/tree/main/openerp7_data_import\">OpenERP 7</a> or <a href=\"https://github.com/Bahmni/bahmni-odoo-modules/tree/main/odoo10_data_import\">Odoo 10</a> implementations.</p><ol start=\"1\"><li><p>Unit of Measure Categories</p></li><li><p>Unit of Measure</p></li><li><p>Product Categories</p></li><li><p>Products</p></li><li><p>Customers (Patients)</p></li><li><p>Suppliers</p></li></ol><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"7c401c01-609b-4d3c-8397-5c1c31d0720a\"><ac:parameter ac:name=\"panelIcon\">:keycap_ten:</ac:parameter><ac:parameter ac:name=\"panelIconId\">1f51f</ac:parameter><ac:parameter ac:name=\"panelIconText\">🔟</ac:parameter><ac:parameter ac:name=\"bgColor\">#E3FCEF</ac:parameter><ac:rich-text-body><p>If your current implementation is running on <strong>Odoo 10</strong>, then take a look at <a href=\"https://bahmni.atlassian.net/wiki/x/PIAA2g\">this page</a> for the steps on migration using migration module.</p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"d213eaaf-607d-4304-a7d3-3cf8955f8be3\"><ac:parameter ac:name=\"panelIcon\">:seven:</ac:parameter><ac:parameter ac:name=\"panelIconId\">37-20e3</ac:parameter><ac:parameter ac:name=\"panelIconText\">7️⃣</ac:parameter><ac:parameter ac:name=\"bgColor\">#E6FCFF</ac:parameter><ac:rich-text-body><p>If your current implementation is running on <strong>OpenERP 7</strong>, then take a look at <a href=\"https://bahmni.atlassian.net/wiki/x/XYD62Q\">this page</a> for the steps on migration using migration module.</p></ac:rich-text-body></ac:structured-macro><h2>Manual Migration using Excel/CSV based import</h2><p>Once you have completed the above steps, you can import a few other metadata using CSV-based import.</p><h3>Stock Location Configuration</h3><p>Odoo stock locations can be either manually created or can be imported. Create a CSV with the below format and import from <code>Menu -&gt; Inventory -&gt; Configurations -&gt; Locations -&gt; Favorites -&gt; Import Records</code></p><table data-table-width=\"1800\" data-layout=\"default\" ac:local-id=\"15afd43f-164a-4320-8c74-c8fc80b97524\"><tbody><tr><td><p><strong>name</strong></p></td><td><p><strong>usage</strong></p></td><td><p><strong>location_id</strong></p></td></tr><tr><td><p>Pharmacy</p></td><td><p>internal</p></td><td><p>WH</p></td></tr></tbody></table><h3>Shop Configuration</h3><p>Bahmni's custom module introduces a concept known as a &quot;shop,&quot; which facilitates the synchronization of quotations to specific stock locations based on Order Location and Order Types for order placed from Bahmni. This functionality can be accessed and utilised by navigating to <code>Menu -&gt; Bahmni -&gt; Bahmni Masters -&gt; Shop</code> and importing the required data using the provided template.</p><table data-table-width=\"1800\" data-layout=\"default\" ac:local-id=\"77be8b54-4f27-4223-a67e-aeeb3ece3cc0\"><tbody><tr><td><p><strong>Location</strong></p></td><td><p><strong>Shop Name</strong></p></td><td><p><strong>Warehouse</strong></p></td></tr><tr><td><p>WH/Pharmacy</p></td><td><p>Pharmacy</p></td><td><p>My Company</p></td></tr></tbody></table><h3>Order Type Shop Configuration</h3><p>The correlation between Order types and Bahmni Order Location names, along with Odoo shops, is accessible through <code>Menu -&gt; Bahmni -&gt; Bahmni Masters -&gt; Order Type - Shop Mapping</code>. The import template is outlined below.</p><table data-table-width=\"1800\" data-layout=\"default\" ac:local-id=\"22fb00b9-9fcc-493f-bc9f-895d7d01dc58\"><tbody><tr><td><p><strong>Order Type</strong></p></td><td><p><strong>Order Location Name</strong></p></td><td><p><strong>Shop</strong></p></td><td><p><strong>Location Name</strong></p></td></tr><tr><td><p>Drug Order</p></td><td><p>&nbsp;</p></td><td><p>Pharmacy</p></td><td><p>WH/Pharmacy</p></td></tr><tr><td><p>Drug Order</p></td><td><p>General Ward</p></td><td><p>IPD Store</p></td><td><p>WH/IPD Store</p></td></tr></tbody></table><h3>Syncable Units Mapping Configuration</h3><p>The drug orders placed in Bahmni may have different units of measure stored in stock, which will be configured in Odoo. To facilitate the synchronization of quantities, a mapping can be established through <code>Menu -&gt; Bahmni -&gt; Bahmni Masters -&gt; Syncable Units Mapping</code>. The template CSV for the import is provided below.</p><table data-table-width=\"1800\" data-layout=\"default\" ac:local-id=\"235137bf-4e9e-477a-b00f-707eae3bce6c\"><tbody><tr><td><p><strong>Bahmni Unit Name</strong></p></td><td><p><strong>Unit of measure</strong></p></td></tr><tr><td><p>Unit</p></td><td><p>Units</p></td></tr><tr><td><p>Tablet(s)</p></td><td><p>Unit(s)</p></td></tr></tbody></table><p /><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"72ed2952-6ec6-4eb5-8c79-fac1a1b1347f\"><ac:parameter ac:name=\"panelIcon\">:light_bulb_on:</ac:parameter><ac:parameter ac:name=\"panelIconId\">atlassian-light_bulb_on</ac:parameter><ac:parameter ac:name=\"panelIconText\">:light_bulb_on:</ac:parameter><ac:parameter ac:name=\"bgColor\">#E6FCFF</ac:parameter><ac:rich-text-body><p><strong>Migration Tip: </strong>Masterdata can be migrated a day/two before the go-live and a database backup can be taken which can be restored quickly on the day of go-live and sync from Bahmni can be started.</p></ac:rich-text-body></ac:structured-macro><p /><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b70b7e72-d876-4b1c-8a40-3615d3e52a0f\"><ac:parameter ac:name=\"panelIcon\">:track_next:</ac:parameter><ac:parameter ac:name=\"panelIconId\">23ed</ac:parameter><ac:parameter ac:name=\"panelIconText\">⏭️</ac:parameter><ac:parameter ac:name=\"bgColor\">#E3FCEF</ac:parameter><ac:rich-text-body><p><strong>Next Step: </strong>Once you have completed the masterdata and metadata migration, proceed to transactional data migration as specified <ac:link><ri:page ri:content-title=\"Odoo 16 Transactional Data Migration\" ri:version-at-save=\"1\" /><ac:link-body>here</ac:link-body></ac:link>.</p></ac:rich-text-body></ac:structured-macro>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3657105576"
+      }
+    },
+    "view": {
+      "value": "<p>Master data for the Odoo system includes fundamental elements like product categories, products, customers, suppliers, unit of measure (UoM) categories, UoMs, stock locations, and various other metadata associated with synchronization, such as shops, order types, order type shop mapping, and syncable unit mapping.</p><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7e394ec6-32a0-40bf-b23b-6c02630f48e3\" data-macro-name=\"panel\" style=\"background-color: #E6FCFF;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #E6FCFF;\">\n<p>Before proceeding ensure you have made basic Odoo configurations as mentioned <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3657105447/Odoo+16+Migration+Guide#Basic-Configurations-in-Odoo\" rel=\"nofollow\">here</a></p>\n</div></div><h2 id=\"Odoo16MasterdataandMetadataMigration-AutomatedMigrationusingCustomOdooModule\">Automated Migration using Custom Odoo Module</h2><p>There are two custom modules developed for migrating the following data from <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-odoo-modules/tree/main/openerp7_data_import\" rel=\"nofollow\">OpenERP 7</a> or <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-odoo-modules/tree/main/odoo10_data_import\" rel=\"nofollow\">Odoo 10</a> implementations.</p><ol start=\"1\"><li><p>Unit of Measure Categories</p></li><li><p>Unit of Measure</p></li><li><p>Product Categories</p></li><li><p>Products</p></li><li><p>Customers (Patients)</p></li><li><p>Suppliers</p></li></ol><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7c401c01-609b-4d3c-8397-5c1c31d0720a\" data-macro-name=\"panel\" style=\"background-color: #E3FCEF;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #E3FCEF;\">\n<p>If your current implementation is running on <strong>Odoo 10</strong>, then take a look at <a href=\"https://bahmni.atlassian.net/wiki/x/PIAA2g\" rel=\"nofollow\">this page</a> for the steps on migration using migration module.</p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d213eaaf-607d-4304-a7d3-3cf8955f8be3\" data-macro-name=\"panel\" style=\"background-color: #E6FCFF;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #E6FCFF;\">\n<p>If your current implementation is running on <strong>OpenERP 7</strong>, then take a look at <a href=\"https://bahmni.atlassian.net/wiki/x/XYD62Q\" rel=\"nofollow\">this page</a> for the steps on migration using migration module.</p>\n</div></div><h2 id=\"Odoo16MasterdataandMetadataMigration-ManualMigrationusingExcel/CSVbasedimport\">Manual Migration using Excel/CSV based import</h2><p>Once you have completed the above steps, you can import a few other metadata using CSV-based import.</p><h3 id=\"Odoo16MasterdataandMetadataMigration-StockLocationConfiguration\">Stock Location Configuration</h3><p>Odoo stock locations can be either manually created or can be imported. Create a CSV with the below format and import from <code>Menu -&gt; Inventory -&gt; Configurations -&gt; Locations -&gt; Favorites -&gt; Import Records</code></p><div class=\"table-wrap\"><table data-table-width=\"1800\" data-layout=\"default\" data-local-id=\"15afd43f-164a-4320-8c74-c8fc80b97524\" class=\"confluenceTable\"><tbody><tr><td class=\"confluenceTd\"><p><strong>name</strong></p></td><td class=\"confluenceTd\"><p><strong>usage</strong></p></td><td class=\"confluenceTd\"><p><strong>location_id</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>Pharmacy</p></td><td class=\"confluenceTd\"><p>internal</p></td><td class=\"confluenceTd\"><p>WH</p></td></tr></tbody></table></div><h3 id=\"Odoo16MasterdataandMetadataMigration-ShopConfiguration\">Shop Configuration</h3><p>Bahmni's custom module introduces a concept known as a &quot;shop,&quot; which facilitates the synchronization of quotations to specific stock locations based on Order Location and Order Types for order placed from Bahmni. This functionality can be accessed and utilised by navigating to <code>Menu -&gt; Bahmni -&gt; Bahmni Masters -&gt; Shop</code> and importing the required data using the provided template.</p><div class=\"table-wrap\"><table data-table-width=\"1800\" data-layout=\"default\" data-local-id=\"77be8b54-4f27-4223-a67e-aeeb3ece3cc0\" class=\"confluenceTable\"><tbody><tr><td class=\"confluenceTd\"><p><strong>Location</strong></p></td><td class=\"confluenceTd\"><p><strong>Shop Name</strong></p></td><td class=\"confluenceTd\"><p><strong>Warehouse</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>WH/Pharmacy</p></td><td class=\"confluenceTd\"><p>Pharmacy</p></td><td class=\"confluenceTd\"><p>My Company</p></td></tr></tbody></table></div><h3 id=\"Odoo16MasterdataandMetadataMigration-OrderTypeShopConfiguration\">Order Type Shop Configuration</h3><p>The correlation between Order types and Bahmni Order Location names, along with Odoo shops, is accessible through <code>Menu -&gt; Bahmni -&gt; Bahmni Masters -&gt; Order Type - Shop Mapping</code>. The import template is outlined below.</p><div class=\"table-wrap\"><table data-table-width=\"1800\" data-layout=\"default\" data-local-id=\"22fb00b9-9fcc-493f-bc9f-895d7d01dc58\" class=\"confluenceTable\"><tbody><tr><td class=\"confluenceTd\"><p><strong>Order Type</strong></p></td><td class=\"confluenceTd\"><p><strong>Order Location Name</strong></p></td><td class=\"confluenceTd\"><p><strong>Shop</strong></p></td><td class=\"confluenceTd\"><p><strong>Location Name</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>Drug Order</p></td><td class=\"confluenceTd\"><p> </p></td><td class=\"confluenceTd\"><p>Pharmacy</p></td><td class=\"confluenceTd\"><p>WH/Pharmacy</p></td></tr><tr><td class=\"confluenceTd\"><p>Drug Order</p></td><td class=\"confluenceTd\"><p>General Ward</p></td><td class=\"confluenceTd\"><p>IPD Store</p></td><td class=\"confluenceTd\"><p>WH/IPD Store</p></td></tr></tbody></table></div><h3 id=\"Odoo16MasterdataandMetadataMigration-SyncableUnitsMappingConfiguration\">Syncable Units Mapping Configuration</h3><p>The drug orders placed in Bahmni may have different units of measure stored in stock, which will be configured in Odoo. To facilitate the synchronization of quantities, a mapping can be established through <code>Menu -&gt; Bahmni -&gt; Bahmni Masters -&gt; Syncable Units Mapping</code>. The template CSV for the import is provided below.</p><div class=\"table-wrap\"><table data-table-width=\"1800\" data-layout=\"default\" data-local-id=\"235137bf-4e9e-477a-b00f-707eae3bce6c\" class=\"confluenceTable\"><tbody><tr><td class=\"confluenceTd\"><p><strong>Bahmni Unit Name</strong></p></td><td class=\"confluenceTd\"><p><strong>Unit of measure</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>Unit</p></td><td class=\"confluenceTd\"><p>Units</p></td></tr><tr><td class=\"confluenceTd\"><p>Tablet(s)</p></td><td class=\"confluenceTd\"><p>Unit(s)</p></td></tr></tbody></table></div><p /><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"72ed2952-6ec6-4eb5-8c79-fac1a1b1347f\" data-macro-name=\"panel\" style=\"background-color: #E6FCFF;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #E6FCFF;\">\n<p><strong>Migration Tip: </strong>Masterdata can be migrated a day/two before the go-live and a database backup can be taken which can be restored quickly on the day of go-live and sync from Bahmni can be started.</p>\n</div></div><p /><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b70b7e72-d876-4b1c-8a40-3615d3e52a0f\" data-macro-name=\"panel\" style=\"background-color: #E3FCEF;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #E3FCEF;\">\n<p><strong>Next Step: </strong>Once you have completed the masterdata and metadata migration, proceed to transactional data migration as specified <a href=\"/wiki/spaces/BAH/pages/3657465931/Odoo+16+Transactional+Data+Migration\" data-linked-resource-id=\"3657465931\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">here</a>.</p>\n</div></div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3657105576"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3657105576/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3657105576/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 331
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3657105576/child",
+    "restrictions": "/rest/api/content/3657105576/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3657105576/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3657105576",
+    "webui": "/spaces/BAH/pages/3657105576/Odoo+16+Masterdata+and+Metadata+Migration",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3657105576",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3657105576",
+    "tinyui": "/x/qAD72Q",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

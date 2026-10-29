@@ -1,0 +1,172 @@
+{
+  "id": "3464527901",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3464527901",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzQ2NDUyNzkwMQ==",
+  "status": "current",
+  "title": "Configure rules based medication dosage",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "6122eada4f292300691bc8fa",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Soorya Kumaran C",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/6122eada4f292300691bc8fa",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Soorya Kumaran C",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=6122eada4f292300691bc8fa"
+      }
+    },
+    "createdDate": "2024-04-12T06:11:02.214Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3464527901/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "623a2494a2f6400069ea9a3a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Parvathy Babu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/623a2494a2f6400069ea9a3a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Parvathy Babu",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=623a2494a2f6400069ea9a3a"
+      }
+    },
+    "when": "2024-08-29T07:02:59.958Z",
+    "friendlyWhen": "Aug 29, 2024",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "ncsStepVersion": "38",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3464527901.69",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3464527901"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3464527901/version/8"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p><strong>Business context :</strong></p><p>The ability of the doctor to specify certain rules like calculation of dosage based on the weight of the patient currently exist in the order set. We would like to extend the feature when the doctor is prescribing individual medication as well. <br /></p><p>To calculate medication dosage prescribed for a patient based on weight of the patient (mg/kg).</p><p>Step 1 : Capture weight of the patient. </p><p>Step 2: Choose rule &ldquo;mg/kg&rdquo; . </p><p>Step 3 : Enter dose . For example &ldquo;2&rdquo; . This implies that 2mg per kg of total patient&rsquo;s weight should be administered . For example, if the weight of the patient is 30 kg and the rule selected is mg/kg and the dose entered is 2 , then the system will multiple 30*2 = 60 mg which needs to be administered to the patient.  <br />   </p><p>So here the dose is calculated based on the patient weight.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"2240\" ac:original-width=\"3584\" ac:custom-width=\"true\" ac:alt=\"drug calculation.mov\" ac:width=\"760\"><ri:attachment ri:filename=\"drug calculation.mov\" ri:version-at-save=\"1\" /><ac:caption><p>Drug dosage calculation</p></ac:caption></ac:image><h4><br /><strong>Steps: (To Enable the rule field and the dropdown values)</strong></h4><ol start=\"1\"><li><p>In config file openmrs/apps/clinical/medication.json include this <code>&ldquo;showRulesInMedication&rdquo;: true</code>. This config enables the Dosage Rule field in Medication Page in Order Drug accordion.</p></li><li><p>To enable the drop-down. Follow this:<ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Order Set Rules\" ri:version-at-save=\"5\" /><ac:link-body>Order Set Rules</ac:link-body></ac:link> </p><ol start=\"1\"><li><p>Include the below values in <strong>rulesengine-concept.properties </strong>file</p><ol start=\"1\"><li><p><strong>concept.weight.uuid</strong>=${WEIGHT_CONCEPT_UUID}</p></li><li><p><strong>concept.height.uuid</strong>=${HEIGHT_CONCEPT_UUID}</p></li></ol></li></ol></li><li><p>We have provided ability to set units for the dosage rules we select. If no units are mentioned then we will see all the units by default for that dosage rule.</p><ol start=\"1\"><li><p> <strong>For Example:</strong>  &ldquo;mg/kg&ldquo; has &ldquo;mg&rdquo; and &ldquo;ml&rdquo; as their <strong>dosageRuleUnitsMap. </strong>Then in the medication dose units dropdown we will get only these two as the dropdown values.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"184\" ac:original-width=\"427\" ac:custom-width=\"true\" ac:width=\"427\"><ri:attachment ri:filename=\"Screenshot 2024-05-29 at 2.42.23 PM.png\" ri:version-at-save=\"1\" /></ac:image></li></ol></li></ol><p /><p><strong>Note: </strong></p><p>In the medications Page, if you wish to prescribe a medication keeping frequency, duration and duration unit as optional, the route of those medication can be added in <code>continuousMedicationRoutes</code> configuration as shown below as an example.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"f25b5100-0514-47c2-b07c-b338c9cffac7\"><ac:plain-text-body><![CDATA[{\n  ...\n  \"tabConfig\": {\n    ...\n      },\n  \"inputOptionsConfig\": {    \n    \"continuousMedicationRoutes\": [\"Intravenous\", \"Inhalation\"]\n  }\n}]]></ac:plain-text-body></ac:structured-macro><p />",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3464527901"
+      }
+    },
+    "view": {
+      "value": "<p><strong>Business context :</strong></p><p>The ability of the doctor to specify certain rules like calculation of dosage based on the weight of the patient currently exist in the order set. We would like to extend the feature when the doctor is prescribing individual medication as well. <br/></p><p>To calculate medication dosage prescribed for a patient based on weight of the patient (mg/kg).</p><p>Step 1 : Capture weight of the patient. </p><p>Step 2: Choose rule “mg/kg” . </p><p>Step 3 : Enter dose . For example “2” . This implies that 2mg per kg of total patient’s weight should be administered . For example, if the weight of the patient is 30 kg and the rule selected is mg/kg and the dose entered is 2 , then the system will multiple 30*2 = 60 mg which needs to be administered to the patient.  <br/>   </p><p>So here the dose is calculated based on the patient weight.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><a href=\"/wiki/download/attachments/3464527901/drug%20calculation.mov?version=1&amp;modificationDate=1714717567746&amp;cacheVersion=1&amp;api=v2&amp;width=760\">drug calculation.mov</a></span><h4 id=\"Configurerulesbasedmedicationdosage-Steps:(ToEnabletherulefieldandthedropdownvalues)\"><br/><strong>Steps: (To Enable the rule field and the dropdown values)</strong></h4><ol start=\"1\"><li><p>In config file openmrs/apps/clinical/medication.json include this <code>“showRulesInMedication”: true</code>. This config enables the Dosage Rule field in Medication Page in Order Drug accordion.</p></li><li><p>To enable the drop-down. Follow this:<a href=\"/wiki/spaces/BAH/pages/35586092/Order+Set+Rules\" data-linked-resource-id=\"35586092\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Order Set Rules</a> </p><ol start=\"1\"><li><p>Include the below values in <strong>rulesengine-concept.properties </strong>file</p><ol start=\"1\"><li><p><strong>concept.weight.uuid</strong>=${WEIGHT_CONCEPT_UUID}</p></li><li><p><strong>concept.height.uuid</strong>=${HEIGHT_CONCEPT_UUID}</p></li></ol></li></ol></li><li><p>We have provided ability to set units for the dosage rules we select. If no units are mentioned then we will see all the units by default for that dosage rule.</p><ol start=\"1\"><li><p> <strong>For Example:</strong>  “mg/kg“ has “mg” and “ml” as their <strong>dosageRuleUnitsMap. </strong>Then in the medication dose units dropdown we will get only these two as the dropdown values.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"427\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3464527901/Screenshot%202024-05-29%20at%202.42.23%E2%80%AFPM.png?version=1&amp;modificationDate=1716973958910&amp;cacheVersion=1&amp;api=v2&amp;width=427&amp;height=184\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3464527901/Screenshot%202024-05-29%20at%202.42.23%E2%80%AFPM.png?version=1&amp;modificationDate=1716973958910&amp;cacheVersion=1&amp;api=v2\" data-height=\"184\" data-width=\"427\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3547955220\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2024-05-29 at 2.42.23 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3464527901\" data-linked-resource-container-version=\"8\" data-media-id=\"6c385644-9471-4466-8294-acdda7757eba\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3464527901/Screenshot%202024-05-29%20at%202.42.23%E2%80%AFPM.png?version=1&amp;modificationDate=1716973958910&amp;cacheVersion=1&amp;api=v2&amp;width=854&amp;height=368 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3464527901/Screenshot%202024-05-29%20at%202.42.23%E2%80%AFPM.png?version=1&amp;modificationDate=1716973958910&amp;cacheVersion=1&amp;api=v2&amp;width=427&amp;height=184 1x\"></span></li></ol></li></ol><p /><p><strong>Note: </strong></p><p>In the medications Page, if you wish to prescribe a medication keeping frequency, duration and duration unit as optional, the route of those medication can be added in <code>continuousMedicationRoutes</code> configuration as shown below as an example.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f25b5100-0514-47c2-b07c-b338c9cffac7\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n  ...\n  &quot;tabConfig&quot;: {\n    ...\n      },\n  &quot;inputOptionsConfig&quot;: {    \n    &quot;continuousMedicationRoutes&quot;: [&quot;Intravenous&quot;, &quot;Inhalation&quot;]\n  }\n}</pre>\n</div></div><p />",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3464527901"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3464527901/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3464527901/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 465610138
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3464527901/child",
+    "restrictions": "/rest/api/content/3464527901/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3464527901/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3464527901",
+    "webui": "/spaces/BAH/pages/3464527901/Configure+rules+based+medication+dosage",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3464527901",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3464527901",
+    "tinyui": "/x/HYCAzg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

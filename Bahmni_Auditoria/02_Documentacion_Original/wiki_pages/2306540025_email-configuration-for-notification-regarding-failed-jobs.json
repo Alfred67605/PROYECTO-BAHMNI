@@ -1,0 +1,172 @@
+{
+  "id": "2306540025",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2306540025",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMwNjU0MDAyNQ==",
+  "status": "current",
+  "title": "Email Configuration for Notification Regarding Failed Jobs",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5ff6975591bb2e0108e513c3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "venkatesh bavisetti",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5ff6975591bb2e0108e513c3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Bavisetti Venkatesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5ff6975591bb2e0108e513c3"
+      }
+    },
+    "createdDate": "2021-04-05T08:54:02.614Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306540025/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5ff6975591bb2e0108e513c3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "venkatesh bavisetti",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5ff6975591bb2e0108e513c3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Bavisetti Venkatesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5ff6975591bb2e0108e513c3"
+      }
+    },
+    "when": "2021-04-05T08:54:36.595Z",
+    "friendlyWhen": "Apr 05, 2021",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.c5q-zQysns5k30gPljGVeA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2306540025.11",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2306540025"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306540025/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>A mail will be received incase of any job fails after every run of bahmni-mart application.</p><p><strong>&nbsp;</strong>For getting mail you have to provide values for <strong>&lsquo;mail_subject&rsquo;</strong>, <strong>&lsquo;mail_from&rsquo; </strong>and <strong>&lsquo;mail_recipients&rsquo; </strong>in <strong>&lsquo;bahmni-mart-playbook/roles/bahmni-mart/defaults/main.yml&rsquo;</strong>. For sending mail to multiple recipients, you can mention all the recipient mail ids separated by commas (see below example).</p><p><strong>Note - </strong>You won&rsquo;t get mail if values of <strong>mail_recipients</strong> or <strong>mail_from</strong> is empty.&nbsp;</p><p><strong>For Example</strong> -</p><p>You have to provide values for <strong>&lsquo;mail_subject&rsquo;</strong>, <strong>&lsquo;mail_from&rsquo; </strong>and <strong>&lsquo;mail_recipients&rsquo; </strong>in <strong>&lsquo;bahmni-mart-playbook/roles/bahmni-mart/defaults/main.yml&rsquo; </strong>like below example.</p><p>&nbsp; <strong>mail_subject</strong> = &ldquo;Notification regarding failed jobs&rdquo;</p><p>&nbsp; <strong>mail_from</strong> = &ldquo;no-reply@bahmni-mart.notifications&rdquo;</p><p>&nbsp; <strong>mail_recipients</strong> = &ldquo;recipient_one@gmail. com, <a href=\"mailto:recipient_two@gmail.com\">recipient_two@gmail.com</a>&rdquo;</p><p>Whenever job fails you will get mail into spam folder of given recipients. For getting mail to inbox rather than going to spam folder, the recipients have to apply the below filter procedure.</p><p><strong><u>Filter Process for getting mail in Inbox</u></strong></p><ol><li><p>You have to go to recipients mail.</p></li></ol><ol><li><p>In mail at top right corner there is Setting sign.</p></li></ol><ol><li><p>Click on that it will give dropdown. In dropdown click on the Settings.</p></li></ol><ol><li><p>Then go to Filters and Blocked Addresses tab.</p></li></ol><ol><li><p>Click on &lsquo;Create a new filter&rsquo; and then provide value of </p></li></ol><p><strong>&lsquo;mail_from&rsquo;</strong> address which given in <strong>bahmni-mart-playbook/roles/bahmni-mart/defaults/main.yml </strong>file (like given in the example - no-reply@bahmni-mart.notifications) in From text block.</p><ol><li><p>Then click on &lsquo;Create filter&rsquo; and tas Never send it to Spam to that filter and click on Create filter again .</p></li></ol><p>By doing this it will create a filter and mail will come to inbox.</p><p><strong><u>For Developers - To Run locally</u>&nbsp;</strong></p><p>Your application-dev.properties file should config with below values for getting mail.</p><p>&nbsp;&nbsp;bahmni-mart.mail.subject = Notification regarding failed jobs</p><p>&nbsp;&nbsp;bahmni-mart.mail.from =&nbsp; &ldquo;no-reply@bahmni-mart.notifications&rdquo;</p><p>&nbsp;&nbsp;bahmni-mart.mail.recipients = &ldquo;recipient_one@gmail. com, <a href=\"mailto:recipient_two@gmail.com\">recipient_two@gmail.com</a>&rdquo;</p><p>applictaion-dev.properties file path&nbsp; -</p><p><em><strong>/opt/bahmni-mart/properties/application-dev.properties</strong></em></p><p>After this you have to follow above filter process for getting mail in inbox rather than in spam.</p><p>&nbsp;</p><p><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2306540025"
+      }
+    },
+    "view": {
+      "value": "<p>A mail will be received incase of any job fails after every run of bahmni-mart application.</p><p><strong> </strong>For getting mail you have to provide values for <strong>‘mail_subject’</strong>, <strong>‘mail_from’ </strong>and <strong>‘mail_recipients’ </strong>in <strong>‘bahmni-mart-playbook/roles/bahmni-mart/defaults/main.yml’</strong>. For sending mail to multiple recipients, you can mention all the recipient mail ids separated by commas (see below example).</p><p><strong>Note - </strong>You won’t get mail if values of <strong>mail_recipients</strong> or <strong>mail_from</strong> is empty. </p><p><strong>For Example</strong> -</p><p>You have to provide values for <strong>‘mail_subject’</strong>, <strong>‘mail_from’ </strong>and <strong>‘mail_recipients’ </strong>in <strong>‘bahmni-mart-playbook/roles/bahmni-mart/defaults/main.yml’ </strong>like below example.</p><p>  <strong>mail_subject</strong> = “Notification regarding failed jobs”</p><p>  <strong>mail_from</strong> = “no-reply@bahmni-mart.notifications”</p><p>  <strong>mail_recipients</strong> = “recipient_one@gmail. com, <a class=\"external-link\" href=\"mailto:recipient_two@gmail.com\" rel=\"nofollow\">recipient_two@gmail.com</a>”</p><p>Whenever job fails you will get mail into spam folder of given recipients. For getting mail to inbox rather than going to spam folder, the recipients have to apply the below filter procedure.</p><p><strong><u>Filter Process for getting mail in Inbox</u></strong></p><ol><li><p>You have to go to recipients mail.</p></li></ol><ol><li><p>In mail at top right corner there is Setting sign.</p></li></ol><ol><li><p>Click on that it will give dropdown. In dropdown click on the Settings.</p></li></ol><ol><li><p>Then go to Filters and Blocked Addresses tab.</p></li></ol><ol><li><p>Click on ‘Create a new filter’ and then provide value of </p></li></ol><p><strong>‘mail_from’</strong> address which given in <strong>bahmni-mart-playbook/roles/bahmni-mart/defaults/main.yml </strong>file (like given in the example - no-reply@bahmni-mart.notifications) in From text block.</p><ol><li><p>Then click on ‘Create filter’ and tas Never send it to Spam to that filter and click on Create filter again .</p></li></ol><p>By doing this it will create a filter and mail will come to inbox.</p><p><strong><u>For Developers - To Run locally</u> </strong></p><p>Your application-dev.properties file should config with below values for getting mail.</p><p>  bahmni-mart.mail.subject = Notification regarding failed jobs</p><p>  bahmni-mart.mail.from =  “no-reply@bahmni-mart.notifications”</p><p>  bahmni-mart.mail.recipients = “recipient_one@gmail. com, <a class=\"external-link\" href=\"mailto:recipient_two@gmail.com\" rel=\"nofollow\">recipient_two@gmail.com</a>”</p><p>applictaion-dev.properties file path  -</p><p><em><strong>/opt/bahmni-mart/properties/application-dev.properties</strong></em></p><p>After this you have to follow above filter process for getting mail in inbox rather than in spam.</p><p> </p><p><br/></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2306540025"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2306540025/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306540025/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1853
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2306540025/child",
+    "restrictions": "/rest/api/content/2306540025/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2306540025/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2306540025",
+    "webui": "/spaces/BAH/pages/2306540025/Email+Configuration+for+Notification+Regarding+Failed+Jobs",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2306540025",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306540025",
+    "tinyui": "/x/_QF7iQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

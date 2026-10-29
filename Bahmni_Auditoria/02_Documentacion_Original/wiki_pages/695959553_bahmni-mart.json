@@ -1,0 +1,191 @@
+{
+  "id": "695959553",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/695959553",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNjk1OTU5NTUz",
+  "status": "current",
+  "title": "Bahmni Mart",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "createdDate": "2018-07-19T09:16:39.115Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/695959553/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2023-06-30T06:10:05.149Z",
+    "friendlyWhen": "Jun 30, 2023",
+    "message": "",
+    "number": 26,
+    "minorEdit": false,
+    "syncRev": "0.sbIc50AerlMQxtqDiPkXrg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$695959553.152",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/695959553"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/695959553/version/26"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"single\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"61ddc89f-7f09-44ed-aacb-5efe1c21b470\"><ac:rich-text-body><p><span>Bahmni Mart is now packaged with Bahmni LITE and docker-compose. You can see the demo here: <ac:link><ri:page ri:content-title=\"Bahmni Lite Environments\" ri:version-at-save=\"21\" /></ac:link>. You can try it out locally using docker by following the steps here: <ac:link><ri:page ri:content-title=\"Running Bahmni on Docker\" ri:version-at-save=\"48\" /></ac:link>. You can see a short <strong>DEMO video</strong> here: <a href=\"https://www.youtube.com/watch?v=IHZR-W7EdNg\">https://www.youtube.com/watch?v=IHZR-W7EdNg</a><br /></span></p></ac:rich-text-body></ac:structured-macro><p><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p><span style=\"font-size: 20.0px;\">About&nbsp;</span></p><p>Bahmni-mart is a Standalone Batch Application based on spring-batch. Bahmni-mart aims to simplify reporting for Bahmni.</p><h2>Deployment Steps</h2><p>Check this&nbsp;<a href=\"https://github.com/bahmni-msf/bahmni-mart#deployment-steps\">link (Github)</a> to get deployment steps for Bahmni-mart.</p><h2>Dev Setup</h2><p>Check this <a href=\"https://github.com/bahmni-msf/bahmni-mart#setting-up-dev-environment\">link (Github)</a> for dev setup steps.</p><h2>PPT on Bahmni-mart</h2><p><br /></p><p><ac:structured-macro ac:name=\"view-file\" ac:schema-version=\"1\" ac:macro-id=\"f7b2b127-4349-4d21-a5f4-b21109155264\"><ac:parameter ac:name=\"name\"><ri:attachment ri:filename=\"Data Flattening using Bahmni Mart for Wiki.pdf\" ri:version-at-save=\"1\" /></ac:parameter><ac:parameter ac:name=\"height\">250</ac:parameter></ac:structured-macro></p><p><strong>PDF</strong></p><p><br /></p><p><ac:structured-macro ac:name=\"view-file\" ac:schema-version=\"1\" ac:macro-id=\"9580104f-3146-4ab9-ab56-f41e68471499\"><ac:parameter ac:name=\"name\"><ri:attachment ri:filename=\"Data Flattening using Bahmni Mart for Wiki.pptx\" ri:version-at-save=\"1\" /></ac:parameter><ac:parameter ac:name=\"height\">250</ac:parameter></ac:structured-macro></p><p><strong>VERSION</strong></p><p><br /></p><p><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"16cde402-001e-42c2-9a3b-cdba3aa8a36d\"><ac:rich-text-body><p><span style=\"color: rgb(29,28,29);\">&nbsp;Before running the playbook, add the below line in&nbsp;</span>/etc/bahmni-mart-playbook/<span style=\"color: rgb(29,28,29);\">setup.yml file and run playbook&nbsp;</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"0b779f45-0023-46ac-b9d6-fbff00201f9a\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[bahmni_mart_url: \"https://github.com/bahmni-msf/bahmni-mart/releases/download/2.0.4/bahmni-mart-2.0.4.noarch.rpm\"]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:rich-text-body></ac:structured-macro><h2>Bahmni-mart PDF Documentation</h2><p><ac:structured-macro ac:name=\"view-file\" ac:schema-version=\"1\" ac:macro-id=\"e8b02762-16e8-4e2b-bbeb-1cc8bccd70a4\"><ac:parameter ac:name=\"name\"><ri:attachment ri:filename=\"BAH-311220-1230.pdf\" ri:version-at-save=\"1\" /></ac:parameter><ac:parameter ac:name=\"height\">250</ac:parameter></ac:structured-macro></p><p><br /></p><h2>Bahmni Mart Installation &amp; Configuration</h2><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"b58564bb-6186-4942-b368-6004b1f95747\" /></p><h2>Related articles</h2><p><ac:placeholder>Related articles appear here based on the labels you select. Click to edit the macro and add or change labels.</ac:placeholder></p><p><ac:structured-macro ac:name=\"contentbylabel\" ac:schema-version=\"4\" ac:macro-id=\"c734a512-0662-4ce5-91e8-19a7dfd3bba7\"><ac:parameter ac:name=\"showLabels\">false</ac:parameter><ac:parameter ac:name=\"max\">5</ac:parameter><ac:parameter ac:name=\"spaces\">com.atlassian.confluence.content.render.xhtml.model.resource.identifiers.SpaceResourceIdentifier@ffe9</ac:parameter><ac:parameter ac:name=\"showSpace\">false</ac:parameter><ac:parameter ac:name=\"sort\">modified</ac:parameter><ac:parameter ac:name=\"reverse\">true</ac:parameter><ac:parameter ac:name=\"type\">page</ac:parameter><ac:parameter ac:name=\"cql\">label = &quot;kb-how-to-article&quot; and type = &quot;page&quot; and space = &quot;BAH&quot;</ac:parameter><ac:parameter ac:name=\"labels\">kb-how-to-article</ac:parameter></ac:structured-macro></p><p><br /></p><ac:structured-macro ac:name=\"details\" ac:schema-version=\"1\" ac:macro-id=\"14addb2e-db77-4144-8f54-094f9ba957ef\"><ac:parameter ac:name=\"hidden\">true</ac:parameter><ac:rich-text-body><p class=\"auto-cursor-target\"><br /></p><table class=\"wrapped\"><colgroup><col /><col /></colgroup><tbody><tr><th>Related issues</th><td><br /></td></tr></tbody></table><p class=\"auto-cursor-target\"><br /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"e1bd79cd-68da-4fa9-b193-d7b4443b2c30\"><ac:parameter ac:name=\"title\">Info</ac:parameter><ac:rich-text-body><p>This module is available as a add-on to Bahmni, for versions 0.90 onwards.&nbsp;</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"0b744f92-0474-4511-ba50-ea4dc8343d16\"><ac:parameter ac:name=\"style\">none</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"3fe3feef-06ea-4aac-b9a1-a6bbe83b0bec\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Implemnentation Details</ac:parameter><ac:rich-text-body><p>Installation Guide</p></ac:rich-text-body></ac:structured-macro><p><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"d90729da-87c8-4487-8efa-7ac52929801a\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Using Atomfeed Console\" ri:version-at-save=\"1\" /><ac:plain-text-link-body><![CDATA[U]]></ac:plain-text-link-body></ac:link>ser Guide</span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/695959553"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\"><style>[data-colorid=d74z12aia0]{color:#1d1c1d} html[data-color-mode=dark] [data-colorid=d74z12aia0]{color:#e3e2e3}[data-colorid=p6v23tb9ge]{color:#1d1c1d} html[data-color-mode=dark] [data-colorid=p6v23tb9ge]{color:#e3e2e3}</style>\n<div class=\"columnLayout single\" data-layout=\"single\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"61ddc89f-7f09-44ed-aacb-5efe1c21b470\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><span>Bahmni Mart is now packaged with Bahmni LITE and docker-compose. You can see the demo here: <a href=\"/wiki/spaces/BAH/pages/3037757441/Bahmni+Lite+Environments\" data-linked-resource-id=\"3037757441\" data-linked-resource-version=\"39\" data-linked-resource-type=\"page\">Bahmni Lite Environments</a>. You can try it out locally using docker by following the steps here: <a href=\"/wiki/spaces/BAH/pages/299630726/Running+Bahmni+on+Docker\" data-linked-resource-id=\"299630726\" data-linked-resource-version=\"48\" data-linked-resource-type=\"page\">Running Bahmni on Docker</a>. You can see a short <strong>DEMO video</strong> here: <a class=\"external-link\" href=\"https://www.youtube.com/watch?v=IHZR-W7EdNg\" rel=\"nofollow\">https://www.youtube.com/watch?v=IHZR-W7EdNg</a><br /></span></p></div></div><p><br /></p></div>\n</div>\n</div>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p><span style=\"font-size: 20.0px;\">About&nbsp;</span></p><p>Bahmni-mart is a Standalone Batch Application based on spring-batch. Bahmni-mart aims to simplify reporting for Bahmni.</p><h2 id=\"BahmniMart-DeploymentSteps\">Deployment Steps</h2><p>Check this&nbsp;<a class=\"external-link\" href=\"https://github.com/bahmni-msf/bahmni-mart#deployment-steps\" rel=\"nofollow\">link (Github)</a> to get deployment steps for Bahmni-mart.</p><h2 id=\"BahmniMart-DevSetup\">Dev Setup</h2><p>Check this <a class=\"external-link\" href=\"https://github.com/bahmni-msf/bahmni-mart#setting-up-dev-environment\" rel=\"nofollow\">link (Github)</a> for dev setup steps.</p><h2 id=\"BahmniMart-PPTonBahmni-mart\">PPT on Bahmni-mart</h2><p><br /></p><p><span class=\"confluence-embedded-file-wrapper conf-macro output-inline\" data-hasbody=\"false\" data-macro-id=\"f7b2b127-4349-4d21-a5f4-b21109155264\" data-macro-name=\"view-file\"><a class=\"confluence-embedded-file\" href=\"/wiki/download/attachments/695959553/Data%20Flattening%20using%20Bahmni%20Mart%20for%20Wiki.pdf?version=1&amp;modificationDate=1652705545932&amp;cacheVersion=1&amp;api=v2\" data-nice-type=\"PDF Document\" data-file-src=\"/wiki/download/attachments/695959553/Data%20Flattening%20using%20Bahmni%20Mart%20for%20Wiki.pdf?version=1&amp;modificationDate=1652705545932&amp;cacheVersion=1&amp;api=v2\" data-linked-resource-id=\"3008888872\" data-linked-resource-type=\"attachment\" data-linked-resource-container-id=\"695959553\" data-linked-resource-default-alias=\"Data Flattening using Bahmni Mart for Wiki.pdf\" data-mime-type=\"application/pdf\" data-has-thumbnail=\"true\" data-linked-resource-version=\"1\" data-media-id=\"30be1356-2eb2-4e20-b870-d0002d490ac2\" data-media-type=\"file\"><img src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/695959553/Data%20Flattening%20using%20Bahmni%20Mart%20for%20Wiki.pdf?version=1&amp;modificationDate=1652705545932&amp;cacheVersion=1&amp;api=v2&amp;viewType=fileMacro\" height=\"250\" /></a></span></p><p><strong>PDF</strong></p><p><br /></p><p><span class=\"confluence-embedded-file-wrapper conf-macro output-inline\" data-hasbody=\"false\" data-macro-id=\"9580104f-3146-4ab9-ab56-f41e68471499\" data-macro-name=\"view-file\"><a class=\"confluence-embedded-file\" href=\"/wiki/download/attachments/695959553/Data%20Flattening%20using%20Bahmni%20Mart%20for%20Wiki.pptx?version=1&amp;modificationDate=1600674794002&amp;cacheVersion=1&amp;api=v2\" data-nice-type=\"Microsoft PowerPoint Presentation\" data-file-src=\"/wiki/download/attachments/695959553/Data%20Flattening%20using%20Bahmni%20Mart%20for%20Wiki.pptx?version=1&amp;modificationDate=1600674794002&amp;cacheVersion=1&amp;api=v2\" data-linked-resource-id=\"1671725104\" data-linked-resource-type=\"attachment\" data-linked-resource-container-id=\"695959553\" data-linked-resource-default-alias=\"Data Flattening using Bahmni Mart for Wiki.pptx\" data-mime-type=\"application/vnd.openxmlformats-officedocument.presentationml.presentation\" data-has-thumbnail=\"true\" data-linked-resource-version=\"1\" data-media-id=\"48e755a6-f687-4faa-85dd-af60b8ccbfba\" data-media-type=\"file\"><img src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/695959553/Data%20Flattening%20using%20Bahmni%20Mart%20for%20Wiki.pptx?version=1&amp;modificationDate=1600674794002&amp;cacheVersion=1&amp;api=v2&amp;viewType=fileMacro\" height=\"250\" /></a></span></p><p><strong>VERSION</strong></p><p><br /></p><p><br /></p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"16cde402-001e-42c2-9a3b-cdba3aa8a36d\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><span data-colorid=\"p6v23tb9ge\">&nbsp;Before running the playbook, add the below line in&nbsp;</span>/etc/bahmni-mart-playbook/<span data-colorid=\"d74z12aia0\">setup.yml file and run playbook&nbsp;</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0b779f45-0023-46ac-b9d6-fbff00201f9a\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">bahmni_mart_url: &quot;https://github.com/bahmni-msf/bahmni-mart/releases/download/2.0.4/bahmni-mart-2.0.4.noarch.rpm&quot;</pre>\n</div></div></div></div><h2 id=\"BahmniMart-Bahmni-martPDFDocumentation\">Bahmni-mart PDF Documentation</h2><p><span class=\"confluence-embedded-file-wrapper conf-macro output-inline\" data-hasbody=\"false\" data-macro-id=\"e8b02762-16e8-4e2b-bbeb-1cc8bccd70a4\" data-macro-name=\"view-file\"><a class=\"confluence-embedded-file\" href=\"/wiki/download/attachments/695959553/BAH-311220-1230.pdf?version=1&amp;modificationDate=1609418825179&amp;cacheVersion=1&amp;api=v2\" data-nice-type=\"PDF Document\" data-file-src=\"/wiki/download/attachments/695959553/BAH-311220-1230.pdf?version=1&amp;modificationDate=1609418825179&amp;cacheVersion=1&amp;api=v2\" data-linked-resource-id=\"1998323733\" data-linked-resource-type=\"attachment\" data-linked-resource-container-id=\"695959553\" data-linked-resource-default-alias=\"BAH-311220-1230.pdf\" data-mime-type=\"application/pdf\" data-has-thumbnail=\"true\" data-linked-resource-version=\"1\" data-media-id=\"88b9afd1-d30b-44e5-a5aa-0ba0a24da5d2\" data-media-type=\"file\"><img src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/695959553/BAH-311220-1230.pdf?version=1&amp;modificationDate=1609418825179&amp;cacheVersion=1&amp;api=v2&amp;viewType=fileMacro\" height=\"250\" /></a></span></p><p><br /></p><h2 id=\"BahmniMart-BahmniMartInstallation&amp;Configuration\">Bahmni Mart Installation &amp; Configuration</h2><p /><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"b58564bb-6186-4942-b368-6004b1f95747\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/2316239023/Overview\" data-linked-resource-id=\"2316239023\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Overview</a></li><li><a href=\"/wiki/spaces/BAH/pages/2318893458/Modules\" data-linked-resource-id=\"2318893458\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Modules</a></li><li><a href=\"/wiki/spaces/BAH/pages/2318893479/Incremental+Update\" data-linked-resource-id=\"2318893479\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Incremental Update</a></li><li><a href=\"/wiki/spaces/BAH/pages/2306540025/Email+Configuration+for+Notification+Regarding+Failed+Jobs\" data-linked-resource-id=\"2306540025\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Email Configuration for Notification Regarding Failed Jobs</a></li><li><a href=\"/wiki/spaces/BAH/pages/2316239181/Appendix\" data-linked-resource-id=\"2316239181\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Appendix</a></li><li><a href=\"/wiki/spaces/BAH/pages/2306540032/Frequently+Asked+Questions+FAQs+-+Bahmni+Mart\" data-linked-resource-id=\"2306540032\" data-linked-resource-version=\"15\" data-linked-resource-type=\"page\">Frequently Asked Questions(FAQs) - Bahmni Mart</a></li></ul><p /><h2 id=\"BahmniMart-Relatedarticles\">Related articles</h2><p /><p>\n\n\n\n\n\n\n\n\n\n\n\n    \n    </p><ul class=\"content-by-label conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"c734a512-0662-4ce5-91e8-19a7dfd3bba7\" data-macro-name=\"contentbylabel\">\n        <li>\n        <div>\n                <span class=\"icon aui-icon content-type-page\" title=\"Page\">Page:</span>        </div>\n\n        <div class=\"details\">\n                                <a id=\"20643954\" data-linked-resource-id=\"20643954\" data-linked-resource-type=\"page\" data-linked-resource-version=\"73\" href=\"/wiki/spaces/BAH/pages/20643954/Bahmni+Using+Docker\">Bahmni Using Docker</a>\n                        \n                        \n                    </div>\n    </li>\n        <li>\n        <div>\n                <span class=\"icon aui-icon content-type-page\" title=\"Page\">Page:</span>        </div>\n\n        <div class=\"details\">\n                                <a id=\"695959553\" data-linked-resource-id=\"695959553\" data-linked-resource-type=\"page\" data-linked-resource-version=\"26\" href=\"/wiki/spaces/BAH/pages/695959553/Bahmni+Mart\">Bahmni Mart</a>\n                        \n                        \n                    </div>\n    </li>\n        <li>\n        <div>\n                <span class=\"icon aui-icon content-type-page\" title=\"Page\">Page:</span>        </div>\n\n        <div class=\"details\">\n                                <a id=\"25559102\" data-linked-resource-id=\"25559102\" data-linked-resource-type=\"page\" data-linked-resource-version=\"28\" href=\"/wiki/spaces/BAH/pages/25559102/Branching\">Branching</a>\n                        \n                        \n                    </div>\n    </li>\n        <li>\n        <div>\n                <span class=\"icon aui-icon content-type-page\" title=\"Page\">Page:</span>        </div>\n\n        <div class=\"details\">\n                                <a id=\"683966468\" data-linked-resource-id=\"683966468\" data-linked-resource-type=\"page\" data-linked-resource-version=\"1\" href=\"/wiki/spaces/BAH/pages/683966468/Forms+2.0\">Forms 2.0</a>\n                        \n                        \n                    </div>\n    </li>\n        <li>\n        <div>\n                <span class=\"icon aui-icon content-type-page\" title=\"Page\">Page:</span>        </div>\n\n        <div class=\"details\">\n                                <a id=\"34013310\" data-linked-resource-id=\"34013310\" data-linked-resource-type=\"page\" data-linked-resource-version=\"8\" href=\"/wiki/spaces/BAH/pages/34013310/Offline+Android+Chromium+pipeline\">Offline Android/Chromium pipeline</a>\n                        \n                        \n                    </div>\n    </li>\n    </ul>\n<p /><p><br /></p><p><br /></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e1bd79cd-68da-4fa9-b193-d7b4443b2c30\" data-macro-name=\"info\"><p class=\"title\">Info</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This module is available as a add-on to Bahmni, for versions 0.90 onwards.&nbsp;</p></div></div><div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-cssliststyle=\"none\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"0b744f92-0474-4511-ba50-ea4dc8343d16\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3fe3feef-06ea-4aac-b9a1-a6bbe83b0bec\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Implemnentation Details</b></div><div class=\"panelContent\">\n<p>Installation Guide</p>\n</div></div><p><br /></p><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d90729da-87c8-4487-8efa-7ac52929801a\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/116201081/Using+Atomfeed+Console\" data-linked-resource-id=\"116201081\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">U</a>ser Guide</span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/695959553"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "kb-how-to-article",
+          "id": "6193159",
+          "label": "kb-how-to-article"
+        },
+        {
+          "prefix": "global",
+          "name": "reporting",
+          "id": "2089025550",
+          "label": "reporting"
+        },
+        {
+          "prefix": "global",
+          "name": "data-analytics",
+          "id": "2089746434",
+          "label": "data-analytics"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 3,
+      "_links": {
+        "next": "/rest/api/content/695959553/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/695959553/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 471640727
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/695959553/child",
+    "restrictions": "/rest/api/content/695959553/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/695959553/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=695959553",
+    "webui": "/spaces/BAH/pages/695959553/Bahmni+Mart",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/695959553",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/695959553",
+    "tinyui": "/x/AYB7KQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "id": "7110666",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/7110666",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNzExMDY2Ng==",
+  "status": "current",
+  "title": "Bahmni reporting considerations",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "createdDate": "2014-07-16T06:46:58.279Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/7110666/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "when": "2014-07-16T17:55:07.749Z",
+    "friendlyWhen": "Jul 16, 2014",
+    "message": "",
+    "number": 10,
+    "minorEdit": false,
+    "syncRev": "0.a5Z6Glq3TiE7YxvOv0k8fw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$7110666.14",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/7110666"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/7110666/version/10"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p><span><strong>Current issues with reporting from the transactional database</strong></span><br /> <span>- [OpenMRS]&nbsp;Too normalised, leading to too many joins, hard to write performant queries, having to tune the tables for reporting purpose may not be ideal for online system</span><br /> <span>- [OpenMRS]&nbsp;Non-aggregate in nature</span><br /> <span>- [OpenMRS]&nbsp;Hard to convert row based (map like) data to column like reports</span><br /> <span>- [OpenMRS]&nbsp;Not suited for analysis and ad-hoc querying<br />- Cannot perform join of data across systems</span></p><p><u> Tool Options</u><br /> <span><strong>Kibana (with ES)</strong></span><br /> <span>. Scales horizontally to multiple servers (but this is not necessarily a must have because most hospital&rsquo;s data can fit on a single hard disk)</span><br /> <span>+ Simple to use</span><br /> <span>- Is in its infancy feature wise, for example doesn&rsquo;t even support nested objects, lists. Probably skunkworks (my assessment). Project not very active&nbsp;</span><span style=\"color: rgb(4,46,238);\"><u><a href=\"https://github.com/elasticsearch/kibana\">https://github.com/elasticsearch/kibana</a></u></span><span>.</span></p><p><span><strong>Jasper</strong></span><br /> <span>. JasperServer is not very pretty, but embedded jasper provides lot &nbsp;more flexibility</span><br /> <span>+ Very mature and has all features we need for reporting</span><br /> <span>. Supports multiple databases (we don&rsquo;t really have a need for it though)</span><br /> - Has only paid version for analysis.</p><p>-&nbsp;Filtering based on condition has to be done via MDX</p><p><span>&nbsp;</span><br /> <span><strong>Saiku (analytics-lab)</strong></span><br /> <span>+ Very active project</span><br /> <span>+ Best open source analytics solution for a relational database (star schema)</span><br /> <span>. Not meant for reporting<br />+ Provides stats</span></p><p><span>&nbsp;</span><br /> <span><strong>DHIS 2</strong></span><br /> <span>- Too generic for us.</span><br /> <span>- Not designed for our kind of use case</span><br /> <span>(let me know if you want to know more details)</span><br /><span>&nbsp;</span><br /> <span><strong>Star Schema</strong></span><br /> <span><u>Dimensions</u>&nbsp;(not a complete list)</span><br /> <span>Location</span><br /> <span>Date (+ &nbsp;Week, Month, Year)</span><br /> <span>Provider</span><br /> <span>&nbsp;</span><br /> <span><u>Facts</u>&nbsp;(also called measures; not a complete list)</span><br /> <span>Patients Diagnosed</span><br /> <span>Drug Orders Given</span><br /> <span>Accessions</span><br /> <span>Lab Results</span><br /> <span>&nbsp;</span><br /> <span><u>Reference</u></span><br /> <span>- Simple introduction =&gt;&nbsp;</span><span style=\"color: rgb(4,46,238);\"><u><a href=\"http://ciobriefings.com/Publications/WhitePapers/DesigningtheStarSchemaDatabase/tabid/101/Default.aspx\">http://ciobriefings.com/Publications/WhitePapers/DesigningtheStarSchemaDatabase/tabid/101/Default.aspx</a></u></span><br /> <span>-&nbsp;</span><span style=\"color: rgb(4,46,238);\"><u><a href=\"http://www.amazon.com/Data-Warehouse-Toolkit-Definitive-Dimensional/dp/1118530802/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1405491662&amp;sr=1-1\">http://www.amazon.com/Data-Warehouse-Toolkit-Definitive-Dimensional/dp/1118530802/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1405491662&amp;sr=1-1</a></u></span><span>&nbsp;(I have this book, if you want to borrow)</span></p><p><span>&nbsp;</span>- Jasper editions comparison&nbsp;<a href=\"https://www.jaspersoft.com/editions\">https://www.jaspersoft.com/editions</a><br /> <span>&nbsp;</span><br /> <span><strong>Aggregated database or de-normalized patient level database?</strong></span><br /> <span>(applies only if we go with relational database)</span><br /> <span>- Aggregated database wouldn&rsquo;t allow one to drill down to a patient</span><br /> <span>- Non aggregated star schema with patient information are large in size (but even with estimates on high side support 10 million patients should not be a problem on commodity server)</span><span><br />- Aggregated database doesn't allow for doing union, intersections etc. because of missing patient level information. For example how many patients were diagnosed with TB and HIV.</span></p><p><strong>Further Analysis</strong></p><p>- Embedding Jasper vs. New front end on JasperServer vs. Using Jasper as it is</p><p>- How to handle custom attributes</p><p>- How to handle observations made on concept. or in other words when the data type is not known in advance.</p><p><strong>Spikes</strong></p><p>- How difficult would it be to write MDX filters in Saiku</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/7110666"
+      }
+    },
+    "view": {
+      "value": "<p><style>[data-colorid=m3k9axs83o]{color:#042eee} html[data-color-mode=dark] [data-colorid=m3k9axs83o]{color:#113bfb}[data-colorid=of3krf0ift]{color:#042eee} html[data-color-mode=dark] [data-colorid=of3krf0ift]{color:#113bfb}[data-colorid=w3bccxepnl]{color:#042eee} html[data-color-mode=dark] [data-colorid=w3bccxepnl]{color:#113bfb}</style><span><strong>Current issues with reporting from the transactional database</strong></span><br /> <span>- [OpenMRS]&nbsp;Too normalised, leading to too many joins, hard to write performant queries, having to tune the tables for reporting purpose may not be ideal for online system</span><br /> <span>- [OpenMRS]&nbsp;Non-aggregate in nature</span><br /> <span>- [OpenMRS]&nbsp;Hard to convert row based (map like) data to column like reports</span><br /> <span>- [OpenMRS]&nbsp;Not suited for analysis and ad-hoc querying<br />- Cannot perform join of data across systems</span></p><p><u> Tool Options</u><br /> <span><strong>Kibana (with ES)</strong></span><br /> <span>. Scales horizontally to multiple servers (but this is not necessarily a must have because most hospital&rsquo;s data can fit on a single hard disk)</span><br /> <span>+ Simple to use</span><br /> <span>- Is in its infancy feature wise, for example doesn&rsquo;t even support nested objects, lists. Probably skunkworks (my assessment). Project not very active&nbsp;</span><span data-colorid=\"m3k9axs83o\"><u><a class=\"external-link\" href=\"https://github.com/elasticsearch/kibana\" rel=\"nofollow\">https://github.com/elasticsearch/kibana</a></u></span><span>.</span></p><p><span><strong>Jasper</strong></span><br /> <span>. JasperServer is not very pretty, but embedded jasper provides lot &nbsp;more flexibility</span><br /> <span>+ Very mature and has all features we need for reporting</span><br /> <span>. Supports multiple databases (we don&rsquo;t really have a need for it though)</span><br /> - Has only paid version for analysis.</p><p>-&nbsp;Filtering based on condition has to be done via MDX</p><p><span>&nbsp;</span><br /> <span><strong>Saiku (analytics-lab)</strong></span><br /> <span>+ Very active project</span><br /> <span>+ Best open source analytics solution for a relational database (star schema)</span><br /> <span>. Not meant for reporting<br />+ Provides stats</span></p><p><span>&nbsp;</span><br /> <span><strong>DHIS 2</strong></span><br /> <span>- Too generic for us.</span><br /> <span>- Not designed for our kind of use case</span><br /> <span>(let me know if you want to know more details)</span><br /><span>&nbsp;</span><br /> <span><strong>Star Schema</strong></span><br /> <span><u>Dimensions</u>&nbsp;(not a complete list)</span><br /> <span>Location</span><br /> <span>Date (+ &nbsp;Week, Month, Year)</span><br /> <span>Provider</span><br /> <span>&nbsp;</span><br /> <span><u>Facts</u>&nbsp;(also called measures; not a complete list)</span><br /> <span>Patients Diagnosed</span><br /> <span>Drug Orders Given</span><br /> <span>Accessions</span><br /> <span>Lab Results</span><br /> <span>&nbsp;</span><br /> <span><u>Reference</u></span><br /> <span>- Simple introduction =&gt;&nbsp;</span><span data-colorid=\"of3krf0ift\"><u><a class=\"external-link\" href=\"http://ciobriefings.com/Publications/WhitePapers/DesigningtheStarSchemaDatabase/tabid/101/Default.aspx\" rel=\"nofollow\">http://ciobriefings.com/Publications/WhitePapers/DesigningtheStarSchemaDatabase/tabid/101/Default.aspx</a></u></span><br /> <span>-&nbsp;</span><span data-colorid=\"w3bccxepnl\"><u><a class=\"external-link\" href=\"http://www.amazon.com/Data-Warehouse-Toolkit-Definitive-Dimensional/dp/1118530802/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1405491662&amp;sr=1-1\" rel=\"nofollow\">http://www.amazon.com/Data-Warehouse-Toolkit-Definitive-Dimensional/dp/1118530802/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1405491662&amp;sr=1-1</a></u></span><span>&nbsp;(I have this book, if you want to borrow)</span></p><p><span>&nbsp;</span>- Jasper editions comparison&nbsp;<a class=\"external-link\" href=\"https://www.jaspersoft.com/editions\" rel=\"nofollow\">https://www.jaspersoft.com/editions</a><br /> <span>&nbsp;</span><br /> <span><strong>Aggregated database or de-normalized patient level database?</strong></span><br /> <span>(applies only if we go with relational database)</span><br /> <span>- Aggregated database wouldn&rsquo;t allow one to drill down to a patient</span><br /> <span>- Non aggregated star schema with patient information are large in size (but even with estimates on high side support 10 million patients should not be a problem on commodity server)</span><span><br />- Aggregated database doesn't allow for doing union, intersections etc. because of missing patient level information. For example how many patients were diagnosed with TB and HIV.</span></p><p><strong>Further Analysis</strong></p><p>- Embedding Jasper vs. New front end on JasperServer vs. Using Jasper as it is</p><p>- How to handle custom attributes</p><p>- How to handle observations made on concept. or in other words when the data type is not known in advance.</p><p><strong>Spikes</strong></p><p>- How difficult would it be to write MDX filters in Saiku</p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/7110666"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/7110666/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/7110666/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 5668
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/7110666/child",
+    "restrictions": "/rest/api/content/7110666/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/7110666/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=7110666",
+    "webui": "/spaces/BAH/pages/7110666/Bahmni+reporting+considerations",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/7110666",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/7110666",
+    "tinyui": "/x/CoBs",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

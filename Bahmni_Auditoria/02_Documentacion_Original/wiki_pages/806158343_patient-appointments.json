@@ -1,0 +1,172 @@
+{
+  "id": "806158343",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/806158343",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvODA2MTU4MzQz",
+  "status": "current",
+  "title": "Patient Appointments",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "createdDate": "2019-03-26T10:00:35.511Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/806158343/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "when": "2019-03-26T11:10:30.327Z",
+    "friendlyWhen": "Mar 26, 2019",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "0.Dj2ONdKiut-j6OWGUNe1LQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$806158343.31",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/806158343"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/806158343/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<h2>Requirements</h2><p>Please refer to this <a href=\"https://tinyurl.com/y2cjcxhj\">google document</a>&nbsp;&nbsp;</p><p><br /></p><h2>Source Code</h2><p>APIs -&nbsp;<a href=\"https://github.com/Bahmni/openmrs-module-appointments\">https://github.com/Bahmni/openmrs-module-appointments</a></p><p>UI -&nbsp;<a href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/tree/master/ui/app/appointments\">https://github.com/Bahmni/openmrs-module-bahmniapps/tree/master/ui/app/appointments</a></p><p><br /></p><h2>Data Model</h2><h3>Bahmni Version 0.91</h3><p><br /></p><h3>Bahmni Version 0.93</h3><p><ac:image ac:width=\"800\"><ri:attachment ri:filename=\"PatientAppointmentScheduling_0.93.png\" ri:version-at-save=\"2\" /></ac:image></p><p><br /></p><p><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/806158343"
+      }
+    },
+    "view": {
+      "value": "<h2 id=\"PatientAppointments-Requirements\">Requirements</h2><p>Please refer to this <a class=\"external-link\" href=\"https://tinyurl.com/y2cjcxhj\" rel=\"nofollow\">google document</a>  </p><p><br/></p><h2 id=\"PatientAppointments-SourceCode\">Source Code</h2><p>APIs - <a class=\"external-link\" href=\"https://github.com/Bahmni/openmrs-module-appointments\" rel=\"nofollow\">https://github.com/Bahmni/openmrs-module-appointments</a></p><p>UI - <a class=\"external-link\" href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/tree/master/ui/app/appointments\" rel=\"nofollow\">https://github.com/Bahmni/openmrs-module-bahmniapps/tree/master/ui/app/appointments</a></p><p><br/></p><h2 id=\"PatientAppointments-DataModel\">Data Model</h2><h3 id=\"PatientAppointments-BahmniVersion0.91\">Bahmni Version 0.91</h3><p><br/></p><h3 id=\"PatientAppointments-BahmniVersion0.93\">Bahmni Version 0.93</h3><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"800\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/806158343/PatientAppointmentScheduling_0.93.png?version=2&amp;modificationDate=1553598588635&amp;cacheVersion=1&amp;api=v2&amp;width=800&amp;height=1116\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/806158343/PatientAppointmentScheduling_0.93.png?version=2&amp;modificationDate=1553598588635&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"806191122\" data-linked-resource-version=\"2\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"PatientAppointmentScheduling_0.93.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"806158343\" data-linked-resource-container-version=\"3\" data-media-id=\"6aadf3cc-20ff-4b4b-a9b6-7d82593ffd69\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/806158343/PatientAppointmentScheduling_0.93.png?version=2&amp;modificationDate=1553598588635&amp;cacheVersion=1&amp;api=v2&amp;width=978&amp;height=1365 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/806158343/PatientAppointmentScheduling_0.93.png?version=2&amp;modificationDate=1553598588635&amp;cacheVersion=1&amp;api=v2&amp;width=800&amp;height=1116 1x\"></span></p><p><br/></p><p><br/></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/806158343"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/806158343/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/806158343/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 4368
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/806158343/child",
+    "restrictions": "/rest/api/content/806158343/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/806158343/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=806158343",
+    "webui": "/spaces/BAH/pages/806158343/Patient+Appointments",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/806158343",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/806158343",
+    "tinyui": "/x/BwANM",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

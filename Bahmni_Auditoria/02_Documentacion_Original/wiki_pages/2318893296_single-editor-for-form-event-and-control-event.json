@@ -1,0 +1,172 @@
+{
+  "id": "2318893296",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2318893296",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMxODg5MzI5Ng==",
+  "status": "current",
+  "title": "Single editor for form event and control event",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5e943471088a7e0c0f50e1e0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Buvaneswari Arun (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e943471088a7e0c0f50e1e0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Buvaneswari Arun (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e943471088a7e0c0f50e1e0"
+      }
+    },
+    "createdDate": "2021-04-05T05:21:42.921Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2318893296/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5e943471088a7e0c0f50e1e0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Buvaneswari Arun (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e943471088a7e0c0f50e1e0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Buvaneswari Arun (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e943471088a7e0c0f50e1e0"
+      }
+    },
+    "when": "2021-04-05T09:25:13.285Z",
+    "friendlyWhen": "Apr 05, 2021",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.confluence$content$2318893296.27",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2318893296.28",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2318893296"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2318893296/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<h2>Description</h2><p>The user would like a complete view of all the form conditions written to date so that he/she can see all form conditions from a single screen.</p><ul><li><p>New Add button added. on the Form Builder called 'Form Conditions'.</p></li></ul><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"767\" ac:original-width=\"1418\"><ri:attachment ri:filename=\"Screenshot 2021-04-05 at 10.54.24 AM.png\" ri:version-at-save=\"2\" /></ac:image><ul><li><p>On click of the button open a popup which would have the following sections:</p><ul><li><p>Form Event</p></li><li><p>Save Event</p></li><li><p>Control Events</p></li><li><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"694\" ac:original-width=\"1510\"><ri:attachment ri:filename=\"Screenshot 2021-04-05 at 11.20.18 AM.png\" ri:version-at-save=\"1\" /></ac:image><p /></li></ul></li><li><p>Under form events have a text box, with the form event code pre-populated</p></li><li><p>The cancel button in the footer, when clicked should close the popup.</p></li><li><p>Under control events have subsection for each control that have control events, the heading of the section will be &lsquo;ControlId:&rsquo;&lt;value of control id&gt;' Name:'&lt;Name of concept&gt;'</p></li><li><p>The subsection should have a text box &amp; with a control event for that control pre-populated</p></li><li><p>able to change the form condition, save condition, and control events that are visible on screen</p></li><li><p>have a dropdown for selecting new controls as per the mock, when the value is selected, that control with heading as &lsquo;&lsquo;ControlId:&rsquo;&lt;value of control id&gt;' Name:'&lt;Name of concept&gt;'&rsquo; and its editor should appear, the drop-down should no longer show that control/controls</p></li><li><p>Be able to remove the value in multi-select, by clicking a cross button against it.</p></li><li><p>Be able to remove a complete control editor by clicking 'X' icon against that control, when x is selected then that controls form event also gets deleted</p></li><li><p>When we click on save, all the edited/ newly added form/control/save events should be saved.</p></li><li><p>Hide the dropdown if no controls without form conditions are present</p></li><li><p>Rename select option to select control</p></li><li><p>Remove the element from the dropdown if selected.</p></li><li><p>Add the element back to dropdown if control removed.</p></li></ul><p><strong>Out of scope</strong></p><ul><li><p>When the form event/ control event is changed from multiple tabs, it will take only data on that tab.</p></li></ul>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2318893296"
+      }
+    },
+    "view": {
+      "value": "<h2 id=\"Singleeditorforformeventandcontrolevent-Description\">Description</h2><p>The user would like a complete view of all the form conditions written to date so that he/she can see all form conditions from a single screen.</p><ul><li><p>New Add button added. on the Form Builder called 'Form Conditions'.</p></li></ul><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/2318893296/Screenshot%202021-04-05%20at%2010.54.24%20AM.png?version=2&amp;modificationDate=1617601578160&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/2318893296/Screenshot%202021-04-05%20at%2010.54.24%20AM.png?version=2&amp;modificationDate=1617601578160&amp;cacheVersion=1&amp;api=v2\" data-height=\"767\" data-width=\"1418\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2306736360\" data-linked-resource-version=\"2\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2021-04-05 at 10.54.24 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"2318893296\" data-linked-resource-container-version=\"1\" data-media-id=\"03bcd276-a828-42f7-bd0c-93dead86c833\" data-media-type=\"file\"></span><ul><li><p>On click of the button open a popup which would have the following sections:</p><ul><li><p>Form Event</p></li><li><p>Save Event</p></li><li><p>Control Events</p></li><li><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/2318893296/Screenshot%202021-04-05%20at%2011.20.18%20AM.png?version=1&amp;modificationDate=1617601857068&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/2318893296/Screenshot%202021-04-05%20at%2011.20.18%20AM.png?version=1&amp;modificationDate=1617601857068&amp;cacheVersion=1&amp;api=v2\" data-height=\"694\" data-width=\"1510\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2316239017\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2021-04-05 at 11.20.18 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"2318893296\" data-linked-resource-container-version=\"1\" data-media-id=\"d3cce19e-f611-4a90-9f37-a4179e990c5a\" data-media-type=\"file\"></span><p /></li></ul></li><li><p>Under form events have a text box, with the form event code pre-populated</p></li><li><p>The cancel button in the footer, when clicked should close the popup.</p></li><li><p>Under control events have subsection for each control that have control events, the heading of the section will be ‘ControlId:’&lt;value of control id&gt;' Name:'&lt;Name of concept&gt;'</p></li><li><p>The subsection should have a text box &amp; with a control event for that control pre-populated</p></li><li><p>able to change the form condition, save condition, and control events that are visible on screen</p></li><li><p>have a dropdown for selecting new controls as per the mock, when the value is selected, that control with heading as ‘‘ControlId:’&lt;value of control id&gt;' Name:'&lt;Name of concept&gt;'’ and its editor should appear, the drop-down should no longer show that control/controls</p></li><li><p>Be able to remove the value in multi-select, by clicking a cross button against it.</p></li><li><p>Be able to remove a complete control editor by clicking 'X' icon against that control, when x is selected then that controls form event also gets deleted</p></li><li><p>When we click on save, all the edited/ newly added form/control/save events should be saved.</p></li><li><p>Hide the dropdown if no controls without form conditions are present</p></li><li><p>Rename select option to select control</p></li><li><p>Remove the element from the dropdown if selected.</p></li><li><p>Add the element back to dropdown if control removed.</p></li></ul><p><strong>Out of scope</strong></p><ul><li><p>When the form event/ control event is changed from multiple tabs, it will take only data on that tab.</p></li></ul>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2318893296"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2318893296/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2318893296/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 230
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2318893296/child",
+    "restrictions": "/rest/api/content/2318893296/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2318893296/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2318893296",
+    "webui": "/spaces/BAH/pages/2318893296/Single+editor+for+form+event+and+control+event",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2318893296",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2318893296",
+    "tinyui": "/x/8IA3ig",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

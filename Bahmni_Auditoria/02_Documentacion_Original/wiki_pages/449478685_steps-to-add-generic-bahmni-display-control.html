@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Steps to Add Generic Bahmni Display Control</title></head><body><h1>Steps to Add Generic Bahmni Display Control</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p><span>Lets add a simple display control in patient dashboard which shows patient name and identifier. Our display control config looks like below.</span></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="f95c1306-36c3-4fd4-b53e-cfa7451737d4" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">&quot;TestPatientInfo&quot;: {
+   &quot;name&quot;:&quot;TestPatientInfo&quot;,
+   &quot;type&quot;:&quot;patient&quot;,
+     &quot;displayOrder&quot;:2
+}</pre>
+</div></div><h3 id="StepstoAddGenericBahmniDisplayControl-Step1:"><span>  Step 1:</span></h3><p><span>Create a html file with name “patient”. </span><strong>type</strong><span> in the config should be the name of the html file. This html file will have a directive.</span></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="d68b41dd-e62c-445a-ad20-c835a10ce987" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">&lt;test-patient patient-uuid=&quot;{{::patient.uuid}}&quot;
+             config=&quot;section&quot;&gt;
+&lt;/test-patient&gt;</pre>
+</div></div><p><span class="auto-cursor-target"><span>We should pass <em>patient.uuid</em> and <em>section</em> to the &lt;</span><strong>test-patient/&gt; </strong><span>directive to make patient details available to the view.</span></span></p><p><span class="auto-cursor-target"><span><span>If you want the display control to be available in all the Bahmni modules then add all display control files in common folder (eg:ui/app/common/displaycontrols/dashboard/views/sections/). Otherwise add it in the specific module (eg: ui/app/&lt;clinical&gt;/dashboard/views/). Bahmni supports adding display controls in <span class="auto-cursor-target"><span><span>clinical </span></span></span>patient dashboard, Visit page, inpatient dashboard and programs dashboard. </span></span></span></p><h3 id="StepstoAddGenericBahmniDisplayControl-Step2:"><span class="auto-cursor-target"><span><span>  Step 2:      </span></span></span></h3><p><span class="auto-cursor-target"><span><span> <span>Create the folder structure in the ui/app/common/displaycontrols/ path</span></span></span></span></p><p><span class="auto-cursor-target"><span><span><span>                          <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail" width="250" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/449478685/Screen%20Shot%202018-01-24%20at%204.49.04%20PM.png?version=1&amp;modificationDate=1516813829766&amp;cacheVersion=1&amp;api=v2&amp;width=200&amp;height=118" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/449478685/Screen%20Shot%202018-01-24%20at%204.49.04%20PM.png?version=1&amp;modificationDate=1516813829766&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="449478699" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2018-01-24 at 4.49.04 PM.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="449478685" data-linked-resource-container-version="3" data-media-id="3047f14d-80aa-47a4-abd8-597897b7a33e" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/449478685/Screen%20Shot%202018-01-24%20at%204.49.04%20PM.png?version=1&amp;modificationDate=1516813829766&amp;cacheVersion=1&amp;api=v2&amp;width=200&amp;height=118 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/449478685/Screen%20Shot%202018-01-24%20at%204.49.04%20PM.png?version=1&amp;modificationDate=1516813829766&amp;cacheVersion=1&amp;api=v2&amp;width=200&amp;height=118 1x"></span></span></span></span></span></p><p><br/></p><p><span class="auto-cursor-target"><span><span><span><span>  Below is the code snippet for <strong>testPatient.js</strong> file</span></span></span></span></span></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="bc39924f-662d-4afb-9295-992c48e6b097" data-macro-name="code" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom">
+  <b class="code-title"> </b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon"> </span><span class="expand-control-text">Expand source</span></span><span class="collapse-spinner-wrapper"> </span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence; collapse: true" data-theme="Confluence">'use strict';
+angular.module('bahmni.common.displaycontrol.testPatient')
+   .directive('testPatient', ['patientService', 'spinner', '$sce', '$rootScope', '$stateParams', '$window', '$translate',
+       'configurations', '$q', 'visitService',
+       function (patientService, spinner, $sce, $rootScope, $stateParams, $window, $translate, configurations, $q) {
+           var controller = function ($scope) {
+               var assignPatientDetails = function () {
+                   var patientMapper = new Bahmni.PatientMapper(configurations.patientConfig(), $rootScope, $translate);
+                   return patientService.getPatient($scope.patientUuid).then(function (response) {
+                       var openMrsPatient = response.data;
+                       $scope.patient = patientMapper.map(openMrsPatient);
+                   });
+               };
+               var initPromise = $q.all([assignPatientDetails()]);
+               $scope.initialization = initPromise;
+           };
+
+           var link = function ($scope, element) {
+               spinner.forPromise($scope.initialization, element);
+           };
+
+           return {
+               restrict: 'E',
+               controller: controller,
+               link: link,
+               scope: {
+                   patientUuid: &quot;@&quot;,
+                   visitUuid: &quot;@&quot;,
+                   config: &quot;=&quot;
+               },
+               templateUrl: &quot;../common/displaycontrols/testPatient/views/testPatient.html&quot;
+           };</pre>
+ </div>
+</div><p><span>Code snippet for <strong>testPatient.html </strong>file</span></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="4956621f-11b8-4063-a347-93dac4064cde" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">&lt;section bindonce=&quot;patient&quot; class=&quot;dashboard-section ng-scope pacs-order&quot;&gt;
+   &lt;h2 class=&quot;section-title&quot;&gt;{{ ::config.name }}&lt;/h2&gt;
+               &lt;div class=&quot;patient-value&quot;&gt;
+                    &lt;span class=&quot;patient-name&quot;&gt;
+                       {{::patient.name }} ({{::patient.identifier}})&lt;/span&gt;
+               &lt;/div&gt;
+&lt;/section&gt;</pre>
+</div></div><p><span>Code snippet for <strong>init.js</strong> file</span></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="481669c6-dabf-42f9-ab5f-fd4489b5f655" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">'use strict';
+var Bahmni = Bahmni || {};
+Bahmni.Common = Bahmni.Common || {};
+Bahmni.Common.DisplayControl = Bahmni.Common.DisplayControl || {};
+Bahmni.Common.DisplayControl.testPatient = Bahmni.Common.DisplayControl.testPatient || {};
+angular.module('bahmni.common.displaycontrol.testPatient', []);</pre>
+</div></div><h3 id="StepstoAddGenericBahmniDisplayControl-Step3:"><span class="auto-cursor-target"><span>  Step 3:</span></span></h3><p><span class="auto-cursor-target"><span>Once we done adding the relevant files for display control, add</span></span></p><ul><li><span>Module name </span><strong>bahmni.common.displaycontrol.testPatient </strong><span>in </span><span><em>ui/app/&lt;clinical&gt;/app.js</em> file. </span></li><li><span><strong>patient.html</strong> file name under </span><span><em>commonDisplayControlNames</em> variable in </span><em>...models/dashboardSection.js</em></li><li><span>Both<strong> init.js</strong> and <strong>testPatient.js</strong> file paths in </span><span><em>ui/app/&lt;clinical&gt;/index.html</em> file</span></li></ul><p><span>Now we will be able to see the below display control in patient dashboard.</span></p><p><span><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/attachments/449478685/Screen%20Shot%202018-01-24%20at%205.20.44%20PM.png?version=1&amp;modificationDate=1516813830764&amp;cacheVersion=1&amp;api=v2" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/449478685/Screen%20Shot%202018-01-24%20at%205.20.44%20PM.png?version=1&amp;modificationDate=1516813830764&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="449478705" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2018-01-24 at 5.20.44 PM.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="449478685" data-linked-resource-container-version="3" data-media-id="cf9c3b38-ae05-4789-8f12-b5bccb871e36" data-media-type="file"></span></span></p><p><br/></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="confluence-information-macro confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="d5213b69-9c68-44dc-a634-54ba719884fb" data-macro-name="tip"><p class="title">On this page</p><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="8438bff0-c98a-40be-a646-582ce7cb2d52" data-macro-name="toc"> </div><p> </p></div></div></div>
+</div>
+</div>
+</div></body></html>

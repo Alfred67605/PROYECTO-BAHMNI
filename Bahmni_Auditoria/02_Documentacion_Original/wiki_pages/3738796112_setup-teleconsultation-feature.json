@@ -1,0 +1,172 @@
+{
+  "id": "3738796112",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3738796112",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzczODc5NjExMg==",
+  "status": "current",
+  "title": "Setup Teleconsultation Feature",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "createdDate": "2024-09-08T14:14:05.894Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3738796112/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "when": "2024-09-08T15:51:05.655Z",
+    "friendlyWhen": "Sept 08, 2024",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "ncsStepVersion": "4118",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3738796112.74",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3738796112"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3738796112/version/4"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\" ac:breakout-mode=\"default\"><ac:layout-cell><p>Teleconsultation in Bahmni is a remote way of connecting Patients and Doctors who cannot connect face to face. Bahmni teleconsultation is web-connected with the existing system which supports patients and doctors to join in a video call together. Read more about the feature <ac:link><ri:page ri:content-title=\"Teleconsultation\" ri:version-at-save=\"7\" /><ac:link-body>here</ac:link-body></ac:link>.</p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"d8f8c54d-0cb1-47dc-9d65-21c34ba64f20\"><ac:rich-text-body><p>Bahmni leverages Jitsi as a platform to enable video consultations between patients and doctors. The default setup uses <a href=\"http://meet.jitsi.si\">meet.jitsi.si</a> which can be used for testing/demo purposes. For production use-cases we highly recommend self hosting the jitsi service. Read more about setting up Jitsi in the following pages.</p><p>Detailed guide - <a href=\"https://jitsi.github.io/handbook/docs/devops-guide/\" data-card-appearance=\"inline\">https://jitsi.github.io/handbook/docs/devops-guide/</a></p><p>On Docker - <a href=\"https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-docker\" data-card-appearance=\"inline\">https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-docker</a></p><p>Once you self-host Jitsi, update the URL pattern in OpenMRS &rarr; Administration &rarr; Settings &rarr; Bahmni &rarr; <code>Appointment Tele Consultation Server Url Pattern</code> property with your domain name.</p></ac:rich-text-body></ac:structured-macro></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"7415c59a-d345-40e9-ac8d-862a7eac5ba9\"><ac:rich-text-body><p>Related Pages</p></ac:rich-text-body></ac:structured-macro><ol start=\"1\"><li><p><ac:link><ri:page ri:content-title=\"Bahmni Tele-consultation Feature Setup on v0.92 or v0.93\" ri:version-at-save=\"15\" /><ac:link-body>Feature Guide and Demo Video</ac:link-body></ac:link></p></li><li><p><ac:link><ri:page ri:content-title=\"Bahmni Tele-consultation Feature Setup on v0.92 or v0.93\" ri:version-at-save=\"15\" /><ac:link-body>Setup Guide for Old versions</ac:link-body></ac:link></p></li></ol></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"fixed-width\" ac:breakout-mode=\"default\"><ac:layout-cell><h2>Enabling Teleconsultation Appointments</h2><p>Bahmni Appointment Scheduling module allows marking an appointment as Teleconsultation appointment upon which a teleconsultation link will be generated and the provider and the patient can join.</p><h3>Enable Teleconsultation Appointments Feature</h3><p>In your implementation specific configuration, add the <code>allowVirtualConsultation</code> property with value as <code>true</code> in the <code>openmrs/apps/appointments/app.json</code> file.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"34fb3331-f768-4adf-9adc-a1b678c42b00\"><ac:plain-text-body><![CDATA[  \"config\": {\n    \"allowVirtualConsultation\": true,]]></ac:plain-text-body></ac:structured-macro><p>Now when scheduling an appointment, one can find the option to mark it as Teleconsultation as shown in the below screenshot.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"780\" ac:original-width=\"555\" ac:custom-width=\"true\" ac:width=\"555\"><ri:attachment ri:filename=\"Screenshot 2024-09-08 at 8.25.01 PM.png\" ri:version-at-save=\"1\" /></ac:image><p>Once the appointment is scheduled as teleconsultation, the meeting can be joined either from the appointments page and opening the appointment and clicking on the <code>Join Teleconsultation</code> button or from the appointments display control and clicking on the <code>Join Teleconsultation</code> button from there.</p></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"two_equal\" ac:breakout-mode=\"default\"><ac:layout-cell><p /><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"302\" ac:original-width=\"625\" ac:custom-width=\"true\" ac:alt=\"image-20240908-145926.png\" ac:width=\"625\"><ri:attachment ri:filename=\"image-20240908-145926.png\" ri:version-at-save=\"1\" /><ac:caption><p>Appointments Details View Pop-Up</p></ac:caption></ac:image></ac:layout-cell><ac:layout-cell><p /><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"236\" ac:original-width=\"649\" ac:custom-width=\"true\" ac:alt=\"image-20240908-150009.png\" ac:width=\"636\"><ri:attachment ri:filename=\"image-20240908-150009.png\" ri:version-at-save=\"1\" /><ac:caption><p>Appointments Display Control in Patient Dashboard</p></ac:caption></ac:image><p /></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"fixed-width\" ac:breakout-mode=\"default\"><ac:layout-cell><p /><h3>Enable Adhoc Teleconsultation</h3><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"7e721266-7231-4e5d-902a-7accad150903\"><ac:rich-text-body><p>This feature is applicable starting Bahmni Lite v1.0.0 or Bahmni Standard v1.0.0</p></ac:rich-text-body></ac:structured-macro><p>Bahmni provides the ability for a clinician to start an Adhoc Tele-consultation (on-demand) with a patient. To enable this, one needs to set <code>allowAdhocTeleConsultation</code> to <code>true</code> in <code>/openmrs/apps/clincal/app.json</code> in your implementation specific configuration. <strong>Note this config should be in clinical/app.json.</strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"18576434-5a2b-483a-b356-2e885515f6f3\"><ac:plain-text-body><![CDATA[\"config\": {\n        \"allowAdhocTeleConsultation\": true,]]></ac:plain-text-body></ac:structured-macro><p /><h2>Enabling Email Notifications for Teleconsultation</h2><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"5d38fe3f-a580-47e4-9a44-c39ea93a8504\"><ac:rich-text-body><p>This is applicable for both teleconsultation appointment booking and ad-hoc teleconsultations</p></ac:rich-text-body></ac:structured-macro><p>Bahmni supports sending Email notification to the patient on booking a teleconsultation appointment with the teleconsultation meeting link or when an adhoc teleconsultation is started. </p><p>For emails to be sent the patient&rsquo;s email needs to be captured while registration. Add a person attribute as email and capture it during registration. </p><p>To enable email sending, you need to configure SMTP server details in the .env file. Follow <ac:link><ri:page ri:content-title=\"SMTP Configuration for sending emails (docker)\" ri:version-at-save=\"1\" /><ac:link-body>this page</ac:link-body></ac:link> to setup SMTP information to OpenMRS service in docker compose. </p><p>There are few global properties which can be used to configure email subject and content templates. The configure the below properties, navigate to OpenMRS &rarr; Administration &rarr; Settings &rarr; Bahmni</p><ol start=\"1\"><li><p>Appointment Tele Consultation Server Url Pattern &rarr; The Jitsi Domain URL pattern with which teleconsultation will happen.</p></li><li><p>Appointment Tele Consultation Send Email &rarr; Defines whether or not the send email. Set this to true</p></li><li><p>Appointment Tele Consultation Patient Email Notification Subject &rarr; Subject Line for teleconsultation appointment booking confirmation</p></li><li><p>Appointment Tele Consultation Patient Email Notification Template &rarr; Content template for teleconsultation appointment booking information.</p></li><li><p>Appointment Adhoc Tele Consultation Patient Email Notification Subject &rarr; Subject Line for adhoc teleconsultation meeting started</p></li><li><p>Appointment Adhoc Tele Consultation Patient Email Notification Template &rarr; Content template for adhoc teleconsultation meeting.</p></li><li><p>Appointment Adhoc Tele Consultation Bcc Emails &rarr; Additional Emails to send notification when an adhoc consultation is started.</p></li></ol><p /></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3738796112"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p>Teleconsultation in Bahmni is a remote way of connecting Patients and Doctors who cannot connect face to face. Bahmni teleconsultation is web-connected with the existing system which supports patients and doctors to join in a video call together. Read more about the feature <a href=\"/wiki/spaces/BAH/pages/1961918491/Teleconsultation\" data-linked-resource-id=\"1961918491\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">here</a>.</p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d8f8c54d-0cb1-47dc-9d65-21c34ba64f20\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Bahmni leverages Jitsi as a platform to enable video consultations between patients and doctors. The default setup uses <a class=\"external-link\" href=\"http://meet.jitsi.si\" rel=\"nofollow\">meet.jitsi.si</a> which can be used for testing/demo purposes. For production use-cases we highly recommend self hosting the jitsi service. Read more about setting up Jitsi in the following pages.</p><p>Detailed guide - <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://jitsi.github.io/handbook/docs/devops-guide/\" rel=\"nofollow\">https://jitsi.github.io/handbook/docs/devops-guide/</a></p><p>On Docker - <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-docker\" rel=\"nofollow\">https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-docker</a></p><p>Once you self-host Jitsi, update the URL pattern in OpenMRS → Administration → Settings → Bahmni → <code>Appointment Tele Consultation Server Url Pattern</code> property with your domain name.</p></div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7415c59a-d345-40e9-ac8d-862a7eac5ba9\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Related Pages</p></div></div><ol start=\"1\"><li><p><a href=\"/wiki/spaces/BAH/pages/2140045317/Bahmni+Tele-consultation+Feature+Setup+on+v0.92+or+v0.93\" data-linked-resource-id=\"2140045317\" data-linked-resource-version=\"15\" data-linked-resource-type=\"page\">Feature Guide and Demo Video</a></p></li><li><p><a href=\"/wiki/spaces/BAH/pages/2140045317/Bahmni+Tele-consultation+Feature+Setup+on+v0.92+or+v0.93\" data-linked-resource-id=\"2140045317\" data-linked-resource-version=\"15\" data-linked-resource-type=\"page\">Setup Guide for Old versions</a></p></li></ol></div>\n</div>\n</div>\n<div class=\"columnLayout fixed-width\" data-layout=\"fixed-width\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"SetupTeleconsultationFeature-EnablingTeleconsultationAppointments\">Enabling Teleconsultation Appointments</h2><p>Bahmni Appointment Scheduling module allows marking an appointment as Teleconsultation appointment upon which a teleconsultation link will be generated and the provider and the patient can join.</p><h3 id=\"SetupTeleconsultationFeature-EnableTeleconsultationAppointmentsFeature\">Enable Teleconsultation Appointments Feature</h3><p>In your implementation specific configuration, add the <code>allowVirtualConsultation</code> property with value as <code>true</code> in the <code>openmrs/apps/appointments/app.json</code> file.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"34fb3331-f768-4adf-9adc-a1b678c42b00\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">  &quot;config&quot;: {\n    &quot;allowVirtualConsultation&quot;: true,</pre>\n</div></div><p>Now when scheduling an appointment, one can find the option to mark it as Teleconsultation as shown in the below screenshot.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"555\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3738796112/Screenshot%202024-09-08%20at%208.25.01%E2%80%AFPM.png?version=1&amp;modificationDate=1725807364507&amp;cacheVersion=1&amp;api=v2&amp;width=555&amp;height=780\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3738796112/Screenshot%202024-09-08%20at%208.25.01%E2%80%AFPM.png?version=1&amp;modificationDate=1725807364507&amp;cacheVersion=1&amp;api=v2\" data-height=\"780\" data-width=\"555\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3738763406\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2024-09-08 at 8.25.01 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3738796112\" data-linked-resource-container-version=\"4\" data-media-id=\"3f8ac1c1-13e3-425f-9210-40e64953bba2\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3738796112/Screenshot%202024-09-08%20at%208.25.01%E2%80%AFPM.png?version=1&amp;modificationDate=1725807364507&amp;cacheVersion=1&amp;api=v2&amp;width=1110&amp;height=1560 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3738796112/Screenshot%202024-09-08%20at%208.25.01%E2%80%AFPM.png?version=1&amp;modificationDate=1725807364507&amp;cacheVersion=1&amp;api=v2&amp;width=555&amp;height=780 1x\"></span><p>Once the appointment is scheduled as teleconsultation, the meeting can be joined either from the appointments page and opening the appointment and clicking on the <code>Join Teleconsultation</code> button or from the appointments display control and clicking on the <code>Join Teleconsultation</code> button from there.</p></div>\n</div>\n</div>\n<div class=\"columnLayout two-equal\" data-layout=\"two-equal\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p /><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"image-20240908-145926.png\" width=\"625\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3738796112/image-20240908-145926.png?version=1&amp;modificationDate=1725807570757&amp;cacheVersion=1&amp;api=v2&amp;width=625&amp;height=302\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3738796112/image-20240908-145926.png?version=1&amp;modificationDate=1725807570757&amp;cacheVersion=1&amp;api=v2\" data-height=\"302\" data-width=\"625\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3739090952\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240908-145926.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3738796112\" data-linked-resource-container-version=\"4\" data-media-id=\"f3f97936-8953-4e92-a11a-5d8ea2ea87ba\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3738796112/image-20240908-145926.png?version=1&amp;modificationDate=1725807570757&amp;cacheVersion=1&amp;api=v2&amp;width=1250&amp;height=604 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3738796112/image-20240908-145926.png?version=1&amp;modificationDate=1725807570757&amp;cacheVersion=1&amp;api=v2&amp;width=625&amp;height=302 1x\"></span></div>\n</div>\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p /><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"image-20240908-150009.png\" width=\"636\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3738796112/image-20240908-150009.png?version=1&amp;modificationDate=1725807612843&amp;cacheVersion=1&amp;api=v2&amp;width=636&amp;height=231\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3738796112/image-20240908-150009.png?version=1&amp;modificationDate=1725807612843&amp;cacheVersion=1&amp;api=v2\" data-height=\"236\" data-width=\"649\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3739090959\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240908-150009.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3738796112\" data-linked-resource-container-version=\"4\" data-media-id=\"5b4a9cf0-86c1-4ce3-bfaa-2baf61170c23\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3738796112/image-20240908-150009.png?version=1&amp;modificationDate=1725807612843&amp;cacheVersion=1&amp;api=v2&amp;width=1272&amp;height=462 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3738796112/image-20240908-150009.png?version=1&amp;modificationDate=1725807612843&amp;cacheVersion=1&amp;api=v2&amp;width=636&amp;height=231 1x\"></span><p /></div>\n</div>\n</div>\n<div class=\"columnLayout fixed-width\" data-layout=\"fixed-width\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p /><h3 id=\"SetupTeleconsultationFeature-EnableAdhocTeleconsultation\">Enable Adhoc Teleconsultation</h3><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7e721266-7231-4e5d-902a-7accad150903\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This feature is applicable starting Bahmni Lite v1.0.0 or Bahmni Standard v1.0.0</p></div></div><p>Bahmni provides the ability for a clinician to start an Adhoc Tele-consultation (on-demand) with a patient. To enable this, one needs to set <code>allowAdhocTeleConsultation</code> to <code>true</code> in <code>/openmrs/apps/clincal/app.json</code> in your implementation specific configuration. <strong>Note this config should be in clinical/app.json.</strong></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"18576434-5a2b-483a-b356-2e885515f6f3\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;config&quot;: {\n        &quot;allowAdhocTeleConsultation&quot;: true,</pre>\n</div></div><p /><h2 id=\"SetupTeleconsultationFeature-EnablingEmailNotificationsforTeleconsultation\">Enabling Email Notifications for Teleconsultation</h2><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"5d38fe3f-a580-47e4-9a44-c39ea93a8504\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This is applicable for both teleconsultation appointment booking and ad-hoc teleconsultations</p></div></div><p>Bahmni supports sending Email notification to the patient on booking a teleconsultation appointment with the teleconsultation meeting link or when an adhoc teleconsultation is started. </p><p>For emails to be sent the patient’s email needs to be captured while registration. Add a person attribute as email and capture it during registration. </p><p>To enable email sending, you need to configure SMTP server details in the .env file. Follow <a href=\"/wiki/spaces/BAH/pages/3739189264/SMTP+Configuration+for+sending+emails+docker\" data-linked-resource-id=\"3739189264\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">this page</a> to setup SMTP information to OpenMRS service in docker compose. </p><p>There are few global properties which can be used to configure email subject and content templates. The configure the below properties, navigate to OpenMRS → Administration → Settings → Bahmni</p><ol start=\"1\"><li><p>Appointment Tele Consultation Server Url Pattern → The Jitsi Domain URL pattern with which teleconsultation will happen.</p></li><li><p>Appointment Tele Consultation Send Email → Defines whether or not the send email. Set this to true</p></li><li><p>Appointment Tele Consultation Patient Email Notification Subject → Subject Line for teleconsultation appointment booking confirmation</p></li><li><p>Appointment Tele Consultation Patient Email Notification Template → Content template for teleconsultation appointment booking information.</p></li><li><p>Appointment Adhoc Tele Consultation Patient Email Notification Subject → Subject Line for adhoc teleconsultation meeting started</p></li><li><p>Appointment Adhoc Tele Consultation Patient Email Notification Template → Content template for adhoc teleconsultation meeting.</p></li><li><p>Appointment Adhoc Tele Consultation Bcc Emails → Additional Emails to send notification when an adhoc consultation is started.</p></li></ol><p /></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3738796112"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3738796112/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3738796112/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 863958164
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3738796112/child",
+    "restrictions": "/rest/api/content/3738796112/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3738796112/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3738796112",
+    "webui": "/spaces/BAH/pages/3738796112/Setup+Teleconsultation+Feature",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3738796112",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3738796112",
+    "tinyui": "/x/UIDZ3g",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "id": "3195142161",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3195142161",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzE5NTE0MjE2MQ==",
+  "status": "current",
+  "title": "Docker Timezone Configuration",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "620bff9de41f76006a6d49bd",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Rahul Ramesh",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/620bff9de41f76006a6d49bd",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Rahul Ramesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=620bff9de41f76006a6d49bd"
+      }
+    },
+    "createdDate": "2023-06-12T11:16:54.721Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3195142161/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "620bff9de41f76006a6d49bd",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Rahul Ramesh",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/620bff9de41f76006a6d49bd",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Rahul Ramesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=620bff9de41f76006a6d49bd"
+      }
+    },
+    "when": "2023-06-14T14:05:50.348Z",
+    "friendlyWhen": "Jun 14, 2023",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "1.confluence$content$3195142161.44",
+    "syncRevSource": "synchrony-ack",
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3195142161.59",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3195142161"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3195142161/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>By default, Docker containers run in the UTC timezone. However, you can configure the timezone for bahmni-lite's Docker containers by updating the TZ value in the .env file in bahmni-docker/bahmni-lite. </p><p>Here are the steps to update the TZ value and set a specific timezone for your Docker containers:</p><h3>Update the TZ Value</h3><p>In your project <code>bahmni-docker/bahmni-lite</code>, open the <code>.env</code> file and update the TZ value to your desired timezone. By default, the TZ value will be UTC.  </p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"2941ab25-fa67-4b50-8b2a-08632a7223b1\"><ac:plain-text-body><![CDATA[# Docker Compose Variables\nCOMPOSE_PROFILES=emr\n\n# Environment variable to set the timezone for the containers\nTZ=UTC]]></ac:plain-text-body></ac:structured-macro><p>You need to specify the timezone in the TZ database format. <ac:inline-comment-marker ac:ref=\"87b87005-073e-49a0-82a2-4ab0b7e6f0cd\">For example, if you want to set the timezone to New York (Eastern Standard Time), you would set TZ to &quot;America/New_York&quot;. For India, you would set TZ to &quot;Asia/Kolkata&quot;, and for Kenya it would be &quot;Africa/Nairobi&quot;.</ac:inline-comment-marker></p><p>You can find a list of valid timezone values in the&nbsp;<a href=\"https://en.wikipedia.org/wiki/List_of_tz_database_time_zones\">TZ database</a>&nbsp;under the TZ identifier column. Save the changes to the .env file.</p><h3>Restart Docker Containers</h3><p>To apply the new timezone configuration, restart the Docker containers. You can do this by stopping and removing the existing containers and then starting them again using Docker Compose or the Docker CLI.</p><p>For example, if you're using Docker Compose, you can run the following command in your project directory:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"a21226e2-491c-497b-bc6f-44dab528fc5e\"><ac:plain-text-body><![CDATA[# First stop and remove the containers\ndocker-compose down\n# Now start docker (run in detached mode)\ndocker-compose up -d]]></ac:plain-text-body></ac:structured-macro><p>If you're using the Docker CLI directly, you can stop and remove the containers and recreate them using the appropriate Docker commands.</p><h3>Additionally, Verify the Timezone</h3><p>After restarting the containers, you can verify the timezone configuration by checking the time inside the containers. You can do this by executing a shell command inside a container and running the <code>date</code> command.</p><p>For openmrs, you can run the following command to get the current date and time inside the bahmni-lite-openmrs-1 container:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"2536b798-0f9c-4ab4-8c95-e682e3fc8a92\"><ac:plain-text-body><![CDATA[docker exec -it bahmni-lite-openmrs-1 date]]></ac:plain-text-body></ac:structured-macro><p>The output should reflect the updated timezone.</p><p>By following these steps, you can easily update the TZ value in the .env file to change the timezone for the Docker containers.</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3195142161"
+      }
+    },
+    "view": {
+      "value": "<p>By default, Docker containers run in the UTC timezone. However, you can configure the timezone for bahmni-lite's Docker containers by updating the TZ value in the .env file in bahmni-docker/bahmni-lite. </p><p>Here are the steps to update the TZ value and set a specific timezone for your Docker containers:</p><h3 id=\"DockerTimezoneConfiguration-UpdatetheTZValue\">Update the TZ Value</h3><p>In your project <code>bahmni-docker/bahmni-lite</code>, open the <code>.env</code> file and update the TZ value to your desired timezone. By default, the TZ value will be UTC.  </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"2941ab25-fa67-4b50-8b2a-08632a7223b1\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\"># Docker Compose Variables\nCOMPOSE_PROFILES=emr\n\n# Environment variable to set the timezone for the containers\nTZ=UTC</pre>\n</div></div><p>You need to specify the timezone in the TZ database format. <span class=\"inline-comment-marker\" data-ref=\"87b87005-073e-49a0-82a2-4ab0b7e6f0cd\">For example, if you want to set the timezone to New York (Eastern Standard Time), you would set TZ to &quot;America/New_York&quot;. For India, you would set TZ to &quot;Asia/Kolkata&quot;, and for Kenya it would be &quot;Africa/Nairobi&quot;.</span></p><p>You can find a list of valid timezone values in the <a class=\"external-link\" href=\"https://en.wikipedia.org/wiki/List_of_tz_database_time_zones\" rel=\"nofollow\">TZ database</a> under the TZ identifier column. Save the changes to the .env file.</p><h3 id=\"DockerTimezoneConfiguration-RestartDockerContainers\">Restart Docker Containers</h3><p>To apply the new timezone configuration, restart the Docker containers. You can do this by stopping and removing the existing containers and then starting them again using Docker Compose or the Docker CLI.</p><p>For example, if you're using Docker Compose, you can run the following command in your project directory:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a21226e2-491c-497b-bc6f-44dab528fc5e\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\"># First stop and remove the containers\ndocker-compose down\n# Now start docker (run in detached mode)\ndocker-compose up -d</pre>\n</div></div><p>If you're using the Docker CLI directly, you can stop and remove the containers and recreate them using the appropriate Docker commands.</p><h3 id=\"DockerTimezoneConfiguration-Additionally,VerifytheTimezone\">Additionally, Verify the Timezone</h3><p>After restarting the containers, you can verify the timezone configuration by checking the time inside the containers. You can do this by executing a shell command inside a container and running the <code>date</code> command.</p><p>For openmrs, you can run the following command to get the current date and time inside the bahmni-lite-openmrs-1 container:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"2536b798-0f9c-4ab4-8c95-e682e3fc8a92\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">docker exec -it bahmni-lite-openmrs-1 date</pre>\n</div></div><p>The output should reflect the updated timezone.</p><p>By following these steps, you can easily update the TZ value in the .env file to change the timezone for the Docker containers.</p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3195142161"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3195142161/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3195142161/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 985675244
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3195142161/child",
+    "restrictions": "/rest/api/content/3195142161/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3195142161/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3195142161",
+    "webui": "/spaces/BAH/pages/3195142161/Docker+Timezone+Configuration",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3195142161",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3195142161",
+    "tinyui": "/x/EQByvg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

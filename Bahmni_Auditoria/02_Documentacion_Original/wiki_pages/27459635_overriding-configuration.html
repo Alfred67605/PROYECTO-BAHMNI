@@ -1,0 +1,100 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Overriding Configuration</title></head><body><h1>Overriding Configuration</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p>Any Bahmni configuration can be overridden by creating a separate override file. That way, an implementation with multiple entities can have a standard master configuration and each entity will have the freedom to override specific parts</p><p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" width="500" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/27459635/mergeConfig%20(1).png?version=1&amp;modificationDate=1443102854328&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=577" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/27459635/mergeConfig%20(1).png?version=1&amp;modificationDate=1443102854328&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="29229102" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="mergeConfig (1).png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="27459635" data-linked-resource-container-version="15" data-media-id="4366fb33-877d-4572-98c4-24d7b6aafb4d" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/27459635/mergeConfig%20(1).png?version=1&amp;modificationDate=1443102854328&amp;cacheVersion=1&amp;api=v2&amp;width=661&amp;height=764 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/27459635/mergeConfig%20(1).png?version=1&amp;modificationDate=1443102854328&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=577 1x"></span></p><h2 id="OverridingConfiguration-Example"><span>Example</span></h2><p>Let us take an example config file:</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="fb679193-7eab-475b-b707-e9330748df03" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>clinical/app.json</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">{
+        &quot;id&quot;: &quot;bahmni.clinical&quot;,
+        &quot;extensionPoints&quot;: [
+            {
+                &quot;id&quot;: &quot;org.bahmni.clinical.consultation.board&quot;,
+                &quot;description&quot;: &quot;Bahmni Clinical Consultation Page&quot;
+            },
+            {
+                &quot;id&quot;: &quot;org.bahmni.clinical.conceptSetGroup.*&quot;,
+                &quot;description&quot;: &quot;Define conceptsets part of a conceptset group&quot;
+            },
+            {
+                &quot;id&quot;: &quot;org.bahmni.clinical.orders&quot;,
+                &quot;description&quot;: &quot;Bahmni Orders Page&quot;
+            },
+            {
+                &quot;id&quot;:&quot;org.bahmni.patient.search&quot;,
+                &quot;description&quot;: &quot;Bahmni Patient search, lookups Page&quot;
+            }
+        ],
+}</pre>
+</div></div><p>To override this config file with another file, do the following two things</p><ol><li><p>Add the flag &quot;shouldOverRideConfig: true&quot; as shown below</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="415592a0-4bfc-49d2-b690-472689da9297" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>/var/www/bahmni_config/openmrs/apps/clinical/app.json</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">{
+        &quot;id&quot;: &quot;bahmni.clinical&quot;,
+		&quot;shouldOverRideConfig&quot;: true,
+        &quot;extensionPoints&quot;: [
+            {
+                &quot;id&quot;: &quot;org.bahmni.clinical.consultation.board&quot;,
+                &quot;description&quot;: &quot;Bahmni Clinical Consultation Page&quot;
+            },
+            {
+                &quot;id&quot;: &quot;org.bahmni.clinical.conceptSetGroup.*&quot;,
+                &quot;description&quot;: &quot;Define conceptsets part of a conceptset group&quot;
+            },
+            {
+                &quot;id&quot;: &quot;org.bahmni.clinical.orders&quot;,
+                &quot;description&quot;: &quot;Bahmni Orders Page&quot;
+            },
+            {
+                &quot;id&quot;:&quot;org.bahmni.patient.search&quot;,
+                &quot;description&quot;: &quot;Bahmni Patient search, lookups Page&quot;
+            }
+        ],
+}</pre>
+</div></div></li><li><p>Create a new file openmrs/apps/clinical/app.json in the folder /var/www/implementation_config as shown below</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="30479801-3951-4934-8716-b955b8e47117" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>/var/www/implementation_config/openmrs/apps/clinical/app.json</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">{
+        &quot;id&quot;: &quot;bahmni.clinical&quot;,
+        &quot;extensionPoints&quot;: [
+            {
+                &quot;id&quot;: &quot;org.bahmni.clinical.consultation.board&quot;,
+                &quot;description&quot;: &quot;Bahmni Clinical Consultation Page&quot;
+            }
+        ],
+}</pre>
+</div></div><p><br/>The above file will override the section &quot;extensionPoints&quot; in the the app.json file with the contents of the app.json file.</p></li><li>Make sure to have an alias for implementation_config is added to &quot;ssl.conf&quot; under /etc/httpd/conf.d directory. Ideally this will be coming from bahmni installer itself. If not, add a new line with &quot;Alias /implementation_config /var/www/implementation_config&quot; where all the aliases are added.</li></ol><h2 id="OverridingConfiguration-Differenttypesofoverrides"><span class="legacy-color-text-default">Different types of overrides</span></h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Type</th><th class="confluenceTh">config</th><th class="confluenceTh">overridden config</th><th colspan="1" class="confluenceTh">Notes</th></tr><tr><td colspan="1" class="confluenceTd">override</td><td colspan="1" class="confluenceTd"><div class="content-wrapper"><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="1d22ab34-5cc0-466d-8acc-eebe7822ecec" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">sections: {
+  &quot;observations&quot; : {
+    &quot;name&quot; : &quot;Observations&quot;,
+    &quot;showDefault&quot;:true
+  },
+  &quot;disposition&quot;:{
+   &quot;name&quot;: &quot;disposition&quot;
+   }
+}</pre>
+</div></div></div></td><td colspan="1" class="confluenceTd"><div class="content-wrapper"><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="c88a4e2f-d815-4ec5-879a-7cb3ae73d451" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">sections: {
+  &quot;observations&quot; : {
+    &quot;showDefault&quot;:false
+  }
+}</pre>
+</div></div></div></td><td colspan="1" class="confluenceTd"><ul><li>&quot;observations&quot;.&quot;name&quot; will not be modified</li><li>&quot;observations&quot;.&quot;showDefault&quot; will be overridden</li><li>&quot;disposition&quot; section will be KEPT</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">Remove</td><td colspan="1" class="confluenceTd"><div class="content-wrapper"><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="b9fb348d-1fa7-4581-a511-bd8e7233283c" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">sections: {
+  &quot;observations&quot; : {
+    &quot;name&quot; : &quot;Observations&quot;,
+    &quot;showDefault&quot;:true
+  },
+  &quot;disposition&quot;:{
+   &quot;name&quot;: &quot;disposition&quot;
+   }
+}</pre>
+</div></div></div></td><td colspan="1" class="confluenceTd"><div class="content-wrapper"><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="6a842a3d-9add-46cc-8e6c-9693be896f10" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">sections: {
+  &quot;observations&quot; : {
+    &quot;showDefault&quot;:false
+  },
+  &quot;disposition&quot;: null	
+}</pre>
+</div></div></div></td><td colspan="1" class="confluenceTd"><ul><li>&quot;observations&quot;.&quot;name&quot; will not be modified</li><li>&quot;observations&quot;.&quot;showDefault&quot; will be overridden</li><li>&quot;disposition&quot; section will be REMOVED<br/><br/></li></ul></td></tr></tbody></table></div><p><br/></p><hr/><p><br/></p><p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" width="500" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/27459635/overriding.png?version=1&amp;modificationDate=1443103383669&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=541" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/27459635/overriding.png?version=1&amp;modificationDate=1443103383669&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="29229105" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="overriding.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="27459635" data-linked-resource-container-version="15" data-media-id="c324fbb6-c564-49a5-81a7-8b0b7912a660" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/27459635/overriding.png?version=1&amp;modificationDate=1443103383669&amp;cacheVersion=1&amp;api=v2&amp;width=584&amp;height=633 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/27459635/overriding.png?version=1&amp;modificationDate=1443103383669&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=541 1x"></span></p><p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" width="500" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/27459635/add.png?version=1&amp;modificationDate=1443112294201&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=544" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/27459635/add.png?version=1&amp;modificationDate=1443112294201&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="29229113" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="add.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="27459635" data-linked-resource-container-version="15" data-media-id="51a3f87a-6e65-4faf-bfe3-83835b596389" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/27459635/add.png?version=1&amp;modificationDate=1443112294201&amp;cacheVersion=1&amp;api=v2&amp;width=666&amp;height=725 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/27459635/add.png?version=1&amp;modificationDate=1443112294201&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=544 1x"></span></p><p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" width="500" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/27459635/noChange.png?version=1&amp;modificationDate=1443102211288&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=519" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/27459635/noChange.png?version=1&amp;modificationDate=1443102211288&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="29229100" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="noChange.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="27459635" data-linked-resource-container-version="15" data-media-id="c6970f15-3b70-47d2-9156-c98894acce2d" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/27459635/noChange.png?version=1&amp;modificationDate=1443102211288&amp;cacheVersion=1&amp;api=v2&amp;width=657&amp;height=683 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/27459635/noChange.png?version=1&amp;modificationDate=1443102211288&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=519 1x"></span></p><p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" width="500" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/27459635/deleteScenario.png?version=1&amp;modificationDate=1443102209978&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=532" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/27459635/deleteScenario.png?version=1&amp;modificationDate=1443102209978&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="29229099" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="deleteScenario.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="27459635" data-linked-resource-container-version="15" data-media-id="400809e9-76af-4c19-b4b3-2c6b9a718ad5" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/27459635/deleteScenario.png?version=1&amp;modificationDate=1443102209978&amp;cacheVersion=1&amp;api=v2&amp;width=660&amp;height=703 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/27459635/deleteScenario.png?version=1&amp;modificationDate=1443102209978&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=532 1x"></span></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<p><br/></p></div>
+</div>
+</div>
+</div></body></html>

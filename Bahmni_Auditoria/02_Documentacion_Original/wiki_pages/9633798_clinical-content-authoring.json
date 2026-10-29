@@ -1,0 +1,170 @@
+{
+  "id": "9633798",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/9633798",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvOTYzMzc5OA==",
+  "status": "current",
+  "title": "Clinical content authoring",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "createdDate": "2014-09-09T09:27:09.534Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/9633798/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "when": "2014-09-10T05:38:41.538Z",
+    "friendlyWhen": "Sept 10, 2014",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "0.vul6zVTJDpIf7j0uJeTKTw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$9633798.11",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/9633798"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/9633798/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>To create observation templates we would be using CURL instead of liquibase. This would give us version control but would also keep the content (template and its details) accessible to someone who is not very technical. This would allow many more people to be able to author these templates. CURL would be used to post JSON documents to Bahmni(OpenMRS) REST endpoints. For these JSON documents to be easily editable the data contract should be as simple as possible.</p><p><strong>Concept<br /></strong><span style=\"line-height: 1.4285715;\">{<br /></span>&nbsp; &quot;Unique Name&quot; : &quot;<span style=\"color: rgb(0,0,0);\">P/A Presenting Part - Cephalic</span><span style=\"color: rgb(54,52,99);\">&quot;,<br /></span><span style=\"color: rgb(54,52,99);line-height: 1.4285715;\">&nbsp; &quot;Display Name&quot; : &quot;</span><span style=\"color: rgb(0,0,0);\">Cephalic</span><span style=\"color: rgb(54,52,99);line-height: 1.4285715;\">&quot;,&nbsp;//maps to short name<br /></span><span style=\"color: rgb(54,52,99);\">&nbsp; &quot;Description&quot; : &quot;I don't know...&quot;,<span style=\"color: rgb(54,52,99);\">&nbsp;</span><span style=\"color: rgb(54,52,99);\">&nbsp;</span><span style=\"color: rgb(54,52,99);\">//not mandatory</span><br /></span><span style=\"line-height: 1.4285715;\">&nbsp; &quot;Class&quot; : &quot;Finding&quot;,<br /></span>&nbsp; &quot;Data Type&quot; : &quot;N/A&quot;,<br />&nbsp; &quot;ICD Code&quot; : &quot;&quot;&nbsp;//not mandatory<br /><span style=\"line-height: 1.4285715;\">},<br /></span></p><p><span>{<br /></span>&nbsp; &quot;Unique Name&quot; : &quot;<span style=\"color: rgb(0,0,0);\">P/A Presenting Part - Breech</span><span style=\"color: rgb(54,52,99);\">&quot;,<br /></span><span style=\"color: rgb(54,52,99);\">&nbsp; &quot;Display Name&quot; : &quot;</span><span style=\"color: rgb(0,0,0);\">Breech</span><span style=\"color: rgb(54,52,99);\">&quot;,&nbsp;//maps to short name<br /></span><span style=\"color: rgb(54,52,99);\">&nbsp; &quot;Description&quot; : &quot;I don't know...&quot;,<br /></span><span>&nbsp; &quot;Class&quot; : &quot;Finding&quot;,<br /></span>&nbsp; &quot;Data Type&quot; : &quot;N/A&quot;,<br />&nbsp; &quot;ICD Code&quot; : &quot;&quot;&nbsp;//not mandatory<br /><span>},</span></p><p>{<br />&nbsp; &quot;Unique Name&quot; : &quot;<span style=\"color: rgb(54,52,99);\">P/A Presenting Part&quot;,<br />&nbsp; &quot;Display Name&quot; : &quot;<span>Presenting Part&quot;,&nbsp;//maps to short name<br /></span>&nbsp; &quot;Description&quot; : &quot;I don't know...&quot;,<span style=\"color: rgb(54,52,99);\">&nbsp;</span><span style=\"color: rgb(54,52,99);\">&nbsp;</span><span style=\"color: rgb(54,52,99);\">//not mandatory</span><br /></span>&nbsp; &quot;Class&quot; : &quot;Finding&quot;,<br />&nbsp; &quot;Data Type&quot; : &quot;Coded&quot;,<br />&nbsp; &quot;Answers&quot; :&nbsp;[&quot;<span style=\"color: rgb(0,0,0);\">P/A Presenting Part - Cephalic</span>&quot;, &quot;<span style=\"color: rgb(0,0,0);\">P/A Presenting Part - Breech</span>&quot;],<br />&nbsp; &quot;ICD Code&quot; : &quot;&quot;&nbsp;//not mandatory<br />}</p><p><strong style=\"line-height: 1.4285715;\">Concept Set<br /></strong><span style=\"line-height: 1.4285715;\">{</span>&nbsp;<br />&nbsp; &quot;Unique Name&quot; : &quot;<span style=\"color: rgb(0,0,0);\">P/A (per abdomen)&quot;,<br /></span>&nbsp; &quot;Display Name&quot; : &quot;<span style=\"color: rgb(0,0,0);\">P/A&quot;,<br />&nbsp; <span style=\"color: rgb(54,52,99);\">&quot;Description&quot; : &quot;I don't know...&quot;, //not mandatory<br />&nbsp; &quot;Members&quot; : [&quot;<span style=\"color: rgb(0,0,0);\">P/A Presenting Part</span>&quot;, &quot;Fundal Height&quot;] ,<br />&nbsp; &quot;ICD Code&quot; : &quot;&quot;&nbsp;//not mandatory<br /></span></span><span style=\"line-height: 1.4285715;\">}</span></p><p><strong>&nbsp;</strong></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/9633798"
+      }
+    },
+    "view": {
+      "value": "<p><style>[data-colorid=ov9jpx8swc]{color:#363463} html[data-color-mode=dark] [data-colorid=ov9jpx8swc]{color:#9e9ccb}[data-colorid=tyvdzgrd81]{color:#363463} html[data-color-mode=dark] [data-colorid=tyvdzgrd81]{color:#9e9ccb}[data-colorid=t8nej5x4ku]{color:#363463} html[data-color-mode=dark] [data-colorid=t8nej5x4ku]{color:#9e9ccb}[data-colorid=avsfob4l82]{color:#363463} html[data-color-mode=dark] [data-colorid=avsfob4l82]{color:#9e9ccb}[data-colorid=sm21asx5in]{color:#363463} html[data-color-mode=dark] [data-colorid=sm21asx5in]{color:#9e9ccb}[data-colorid=on7r8wecc7]{color:#363463} html[data-color-mode=dark] [data-colorid=on7r8wecc7]{color:#9e9ccb}[data-colorid=q7zg2ova0e]{color:#363463} html[data-color-mode=dark] [data-colorid=q7zg2ova0e]{color:#9e9ccb}[data-colorid=hri56nmd8f]{color:#363463} html[data-color-mode=dark] [data-colorid=hri56nmd8f]{color:#9e9ccb}[data-colorid=wk9vo1yxbd]{color:#363463} html[data-color-mode=dark] [data-colorid=wk9vo1yxbd]{color:#9e9ccb}[data-colorid=ibzla5gwlr]{color:#363463} html[data-color-mode=dark] [data-colorid=ibzla5gwlr]{color:#9e9ccb}[data-colorid=puwtv34ycy]{color:#363463} html[data-color-mode=dark] [data-colorid=puwtv34ycy]{color:#9e9ccb}[data-colorid=th8ij5znwo]{color:#363463} html[data-color-mode=dark] [data-colorid=th8ij5znwo]{color:#9e9ccb}[data-colorid=u0o2arq5dn]{color:#363463} html[data-color-mode=dark] [data-colorid=u0o2arq5dn]{color:#9e9ccb}[data-colorid=svgvrqhrza]{color:#363463} html[data-color-mode=dark] [data-colorid=svgvrqhrza]{color:#9e9ccb}[data-colorid=ogvqyzwg4r]{color:#363463} html[data-color-mode=dark] [data-colorid=ogvqyzwg4r]{color:#9e9ccb}[data-colorid=swngwnkltd]{color:#363463} html[data-color-mode=dark] [data-colorid=swngwnkltd]{color:#9e9ccb}</style>To create observation templates we would be using CURL instead of liquibase. This would give us version control but would also keep the content (template and its details) accessible to someone who is not very technical. This would allow many more people to be able to author these templates. CURL would be used to post JSON documents to Bahmni(OpenMRS) REST endpoints. For these JSON documents to be easily editable the data contract should be as simple as possible.</p><p><strong>Concept<br /></strong><span style=\"line-height: 1.4285715;\">{<br /></span>&nbsp; &quot;Unique Name&quot; : &quot;<span class=\"legacy-color-text-default\">P/A Presenting Part - Cephalic</span><span data-colorid=\"puwtv34ycy\">&quot;,<br /></span><span data-colorid=\"swngwnkltd\" style=\"line-height: 1.4285715;\">&nbsp; &quot;Display Name&quot; : &quot;</span><span class=\"legacy-color-text-default\">Cephalic</span><span data-colorid=\"u0o2arq5dn\" style=\"line-height: 1.4285715;\">&quot;,&nbsp;//maps to short name<br /></span><span data-colorid=\"ibzla5gwlr\">&nbsp; &quot;Description&quot; : &quot;I don't know...&quot;,<span data-colorid=\"hri56nmd8f\">&nbsp;</span><span data-colorid=\"ov9jpx8swc\">&nbsp;</span><span data-colorid=\"q7zg2ova0e\">//not mandatory</span><br /></span><span style=\"line-height: 1.4285715;\">&nbsp; &quot;Class&quot; : &quot;Finding&quot;,<br /></span>&nbsp; &quot;Data Type&quot; : &quot;N/A&quot;,<br />&nbsp; &quot;ICD Code&quot; : &quot;&quot;&nbsp;//not mandatory<br /><span style=\"line-height: 1.4285715;\">},<br /></span></p><p><span>{<br /></span>&nbsp; &quot;Unique Name&quot; : &quot;<span class=\"legacy-color-text-default\">P/A Presenting Part - Breech</span><span data-colorid=\"th8ij5znwo\">&quot;,<br /></span><span data-colorid=\"ogvqyzwg4r\">&nbsp; &quot;Display Name&quot; : &quot;</span><span class=\"legacy-color-text-default\">Breech</span><span data-colorid=\"tyvdzgrd81\">&quot;,&nbsp;//maps to short name<br /></span><span data-colorid=\"svgvrqhrza\">&nbsp; &quot;Description&quot; : &quot;I don't know...&quot;,<br /></span><span>&nbsp; &quot;Class&quot; : &quot;Finding&quot;,<br /></span>&nbsp; &quot;Data Type&quot; : &quot;N/A&quot;,<br />&nbsp; &quot;ICD Code&quot; : &quot;&quot;&nbsp;//not mandatory<br /><span>},</span></p><p>{<br />&nbsp; &quot;Unique Name&quot; : &quot;<span data-colorid=\"wk9vo1yxbd\">P/A Presenting Part&quot;,<br />&nbsp; &quot;Display Name&quot; : &quot;<span>Presenting Part&quot;,&nbsp;//maps to short name<br /></span>&nbsp; &quot;Description&quot; : &quot;I don't know...&quot;,<span data-colorid=\"on7r8wecc7\">&nbsp;</span><span data-colorid=\"sm21asx5in\">&nbsp;</span><span data-colorid=\"t8nej5x4ku\">//not mandatory</span><br /></span>&nbsp; &quot;Class&quot; : &quot;Finding&quot;,<br />&nbsp; &quot;Data Type&quot; : &quot;Coded&quot;,<br />&nbsp; &quot;Answers&quot; :&nbsp;[&quot;<span class=\"legacy-color-text-default\">P/A Presenting Part - Cephalic</span>&quot;, &quot;<span class=\"legacy-color-text-default\">P/A Presenting Part - Breech</span>&quot;],<br />&nbsp; &quot;ICD Code&quot; : &quot;&quot;&nbsp;//not mandatory<br />}</p><p><strong style=\"line-height: 1.4285715;\">Concept Set<br /></strong><span style=\"line-height: 1.4285715;\">{</span>&nbsp;<br />&nbsp; &quot;Unique Name&quot; : &quot;<span class=\"legacy-color-text-default\">P/A (per abdomen)&quot;,<br /></span>&nbsp; &quot;Display Name&quot; : &quot;<span class=\"legacy-color-text-default\">P/A&quot;,<br />&nbsp; <span data-colorid=\"avsfob4l82\">&quot;Description&quot; : &quot;I don't know...&quot;, //not mandatory<br />&nbsp; &quot;Members&quot; : [&quot;<span class=\"legacy-color-text-default\">P/A Presenting Part</span>&quot;, &quot;Fundal Height&quot;] ,<br />&nbsp; &quot;ICD Code&quot; : &quot;&quot;&nbsp;//not mandatory<br /></span></span><span style=\"line-height: 1.4285715;\">}</span></p><p><strong>&nbsp;</strong></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/9633798"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/9633798/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/9633798/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 7043
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/9633798/child",
+    "restrictions": "/rest/api/content/9633798/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/9633798/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=9633798",
+    "webui": "/spaces/BAH/pages/9633798/Clinical+content+authoring",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/9633798",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/9633798",
+    "tinyui": "/x/BgCT",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

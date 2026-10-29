@@ -1,0 +1,171 @@
+{
+  "id": "32014548",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/32014548",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzIwMTQ1NDg=",
+  "status": "current",
+  "title": "Clinical Module",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2015-11-03T17:43:31.344Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014548/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "when": "2017-04-10T09:33:16.573Z",
+    "friendlyWhen": "Apr 10, 2017",
+    "message": "",
+    "number": 11,
+    "minorEdit": false,
+    "syncRev": "0.wnmY6AYiGk1NFL-l96Lsfw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$32014548.101",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/32014548"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014548/version/11"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose&nbsp;</h2><ac:structured-macro ac:name=\"excerpt\" ac:schema-version=\"1\" ac:macro-id=\"5401054b-a5ba-4e5a-a70d-34b059b474e6\"><ac:parameter ac:name=\"atlassian-macro-output-type\">INLINE</ac:parameter><ac:rich-text-body><p>The Clinical Module is used to view the treatment history of existing patients, as well as to start a registered patient's treatment process.</p></ac:rich-text-body></ac:structured-macro><p><br /></p><h2>Benefits</h2><div><ol><li>Enter Patient data retrospectively or on behalf of another provider.</li><li><p>View Patient Dashboard including Patient Details, Active and Past Programs, etc.</p></li><li>View the summary of a Patient's visit along with graphs and trend mapping.</li><li>Capture specific clinical observations for the patient such as Obstetrics, Gynecology, etc.</li><li>Autocompletes most data fields for easier data entry.</li><li>Capture various diagnoses for the patient.</li><li>Capture Dispositions for the patient with Disposition notes.</li><li>Capture Consultation notes for the patient.</li><li><p>Prescribe treatment orders for medications.</p></li><li><p>Place orders for radiology tests via PACS (Picture Archiving&nbsp;and&nbsp;Communication System) integration.</p></li><li><p>Place orders for Laboratory tests.</p></li><li><p>View the consultation history of the patient.</p></li><li><p>View scanned documents and&nbsp;results of tests.</p></li><li><p>Capture Bacteriology test results for the patient (different from laboratory tests). Bacteriology includes smear test results, culture test results and drug-sensitivity test results.</p></li><li>View Patient Lists with support for sorting by filters.</li></ol></div><p>&nbsp;</p><p>&nbsp;</p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Clinical\" ri:version-at-save=\"9\" /><ac:plain-text-link-body><![CDATA[Clinical Services - User Guide]]></ac:plain-text-link-body></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Clinical Services\" ri:version-at-save=\"48\" /><ac:plain-text-link-body><![CDATA[Clinical Services - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"1349c75c-def5-46f8-b036-d46837b46e0e\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">Clinical Module Section</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"38124647-8809-4e32-adf2-fb8904eea83d\"><ac:parameter ac:name=\"all\">true</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/32014548"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ClinicalModule-Purpose\">Purpose </h2><p>The Clinical Module is used to view the treatment history of existing patients, as well as to start a registered patient's treatment process.<br/></p><h2 id=\"ClinicalModule-Benefits\">Benefits</h2><div><ol><li>Enter Patient data retrospectively or on behalf of another provider.</li><li><p>View Patient Dashboard including Patient Details, Active and Past Programs, etc.</p></li><li>View the summary of a Patient's visit along with graphs and trend mapping.</li><li>Capture specific clinical observations for the patient such as Obstetrics, Gynecology, etc.</li><li>Autocompletes most data fields for easier data entry.</li><li>Capture various diagnoses for the patient.</li><li>Capture Dispositions for the patient with Disposition notes.</li><li>Capture Consultation notes for the patient.</li><li><p>Prescribe treatment orders for medications.</p></li><li><p>Place orders for radiology tests via PACS (Picture Archiving and Communication System) integration.</p></li><li><p>Place orders for Laboratory tests.</p></li><li><p>View the consultation history of the patient.</p></li><li><p>View scanned documents and results of tests.</p></li><li><p>Capture Bacteriology test results for the patient (different from laboratory tests). Bacteriology includes smear test results, culture test results and drug-sensitivity test results.</p></li><li>View Patient Lists with support for sorting by filters.</li></ol></div><p> </p><p> </p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/32014350/Clinical\" data-linked-resource-id=\"32014350\" data-linked-resource-version=\"9\" data-linked-resource-type=\"page\">Clinical Services - User Guide</a></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604195/Clinical+Services\" data-linked-resource-id=\"32604195\" data-linked-resource-version=\"48\" data-linked-resource-type=\"page\">Clinical Services - Feature Guide</a></span></p>\n</div></div><div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"1349c75c-def5-46f8-b036-d46837b46e0e\" data-macro-name=\"tip\"><p class=\"title\">Clinical Module Section</p><div class=\"confluence-information-macro-body\"><p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"38124647-8809-4e32-adf2-fb8904eea83d\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/32014629/Configure+Patient+Lists+Queues\" data-linked-resource-id=\"32014629\" data-linked-resource-version=\"50\" data-linked-resource-type=\"page\">Configure Patient Lists / Queues</a></li><li><a href=\"/wiki/spaces/BAH/pages/3401842768/Patient+Search+Configuration+using+Lucene\" data-linked-resource-id=\"3401842768\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Patient Search Configuration using Lucene</a></li><li><a href=\"/wiki/spaces/BAH/pages/37355639/Patient+Dashboard\" data-linked-resource-id=\"37355639\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Patient Dashboard</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/32014572/Configure+Patient+Dashboard\" data-linked-resource-id=\"32014572\" data-linked-resource-version=\"83\" data-linked-resource-type=\"page\">Configure Patient Dashboard</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014625/Configure+Patient+Graphs+and+Trends\" data-linked-resource-id=\"32014625\" data-linked-resource-version=\"19\" data-linked-resource-type=\"page\">Configure Patient Graphs and Trends</a></li><li><a href=\"/wiki/spaces/BAH/pages/37945359/Configure+Visit+Dashboard\" data-linked-resource-id=\"37945359\" data-linked-resource-version=\"16\" data-linked-resource-type=\"page\">Configure Visit Dashboard</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/55214199/Binding+Drug+Frequency+with+Treatment+Chart\" data-linked-resource-id=\"55214199\" data-linked-resource-version=\"21\" data-linked-resource-type=\"page\">Binding Drug Frequency with Treatment Chart</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014627/Configure+Custom+Prints\" data-linked-resource-id=\"32014627\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Configure Custom Prints</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/81592388/Configuring+Data+Quality+Dashboard\" data-linked-resource-id=\"81592388\" data-linked-resource-version=\"24\" data-linked-resource-type=\"page\">Configuring Data Quality Dashboard</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/37945352/Capture+Consultation+Data\" data-linked-resource-id=\"37945352\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Capture Consultation Data</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/32014552/Create+a+New+Observation+Form\" data-linked-resource-id=\"32014552\" data-linked-resource-version=\"110\" data-linked-resource-type=\"page\">Create a New Observation Form</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/36077645/Using+Concept+Groups+to+Display+Unknown+and+Abnormal+Indicators\" data-linked-resource-id=\"36077645\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Using Concept Groups to Display Unknown and Abnormal Indicators</a></li><li><a href=\"/wiki/spaces/BAH/pages/33456359/Auto-Calculation+of+Observations\" data-linked-resource-id=\"33456359\" data-linked-resource-version=\"22\" data-linked-resource-type=\"page\">Auto-Calculation of Observations</a></li><li><a href=\"/wiki/spaces/BAH/pages/42729508/Adding+Scanned+Documents+to+Forms\" data-linked-resource-id=\"42729508\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Adding Scanned Documents to Forms</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/32014550/Configure+Observations+Tab\" data-linked-resource-id=\"32014550\" data-linked-resource-version=\"81\" data-linked-resource-type=\"page\">Configure Observations Tab</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014556/Configure+Diagnosis+Tab\" data-linked-resource-id=\"32014556\" data-linked-resource-version=\"30\" data-linked-resource-type=\"page\">Configure Diagnosis Tab</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014561/Configure+Disposition+Tab\" data-linked-resource-id=\"32014561\" data-linked-resource-version=\"21\" data-linked-resource-type=\"page\">Configure Disposition Tab</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014566/Configure+Consultation+UI\" data-linked-resource-id=\"32014566\" data-linked-resource-version=\"19\" data-linked-resource-type=\"page\">Configure Consultation UI</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014568/Configure+Orders+Tab+for+Lab+and+Radiology\" data-linked-resource-id=\"32014568\" data-linked-resource-version=\"54\" data-linked-resource-type=\"page\">Configure Orders Tab for Lab and Radiology</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/2908618776/Configuring+other+order+types\" data-linked-resource-id=\"2908618776\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Configuring other order types</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/32014570/Configure+Medication+Tab\" data-linked-resource-id=\"32014570\" data-linked-resource-version=\"67\" data-linked-resource-type=\"page\">Configure Medication Tab</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/79495202/Configure+Orderset+rules\" data-linked-resource-id=\"79495202\" data-linked-resource-version=\"20\" data-linked-resource-type=\"page\">Configure Orderset rules</a></li><li><a href=\"/wiki/spaces/BAH/pages/3464527901/Configure+rules+based+medication+dosage\" data-linked-resource-id=\"3464527901\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Configure rules based medication dosage</a></li><li><a href=\"/wiki/spaces/BAH/pages/3546251350/Print+Medications\" data-linked-resource-id=\"3546251350\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">Print Medications</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/34013226/Configure+Bacteriology+Tab\" data-linked-resource-id=\"34013226\" data-linked-resource-version=\"39\" data-linked-resource-type=\"page\">Configure Bacteriology Tab</a></li><li><a href=\"/wiki/spaces/BAH/pages/37355579/Encounter+Session\" data-linked-resource-id=\"37355579\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Encounter Session</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/3647176711/Provider+Acknowledgement+for+Emergency+Medication+Administered+by+Ward+Nurse\" data-linked-resource-id=\"3647176711\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Provider Acknowledgement for Emergency Medication Administered by Ward Nurse</a></li></ul><p> </p></div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/32014548"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/32014548/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014548/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 285329874
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/32014548/child",
+    "restrictions": "/rest/api/content/32014548/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/32014548/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=32014548",
+    "webui": "/spaces/BAH/pages/32014548/Clinical+Module",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/32014548",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014548",
+    "tinyui": "/x/1IDoAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

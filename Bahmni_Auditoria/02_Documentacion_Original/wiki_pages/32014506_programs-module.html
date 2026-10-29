@@ -1,0 +1,133 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Programs Module</title></head><body><h1>Programs Module</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="ProgramsModule-PurposesandBenefits">Purposes and Benefits</h2><p>The Programs module is used to monitor and keep track of patients who need to be treated for conditions that require periodic monitoring to ensure recovery. The Programs module can be used to:</p><ol><li>Create Programs pertaining to diseases or conditions.</li><li>Enroll patients in programs specific to their condition.</li><li>Configure Program Attributes specific to installations.</li><li>Monitor a patient's progress through the program.</li><li>Remove a patient from the program.</li></ol><h2 id="ProgramsModule-Steps">Steps</h2><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="ed16cf4e-df9d-4f73-975d-13bf3f0c2303" data-macro-name="panel" style="border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;background-color: #D57500;"><b>General Guidelines</b></div><div class="panelContent">
+<ul><li class="p1"><span class="s1">Having more than one workflow for a program is not supported.</span></li><li class="p2"><span class="s2">Initial and terminal states flags in a program are not supported by Bahmni.</span></li></ul>
+</div></div><h3 id="ProgramsModule-1.ConfigureProgramsappinBahmniHomepage"><strong style="font-size: 16.0px;line-height: 1.5;"><span class="legacy-color-text-default">1. Configure Programs app in Bahmni Home page</span></strong></h3><div><div class="pagetitle with-breadcrumbs"><p>The implementer can configure a separate app for &quot;Programs&quot; on the application dashboard. The &quot;Programs&quot; app is the same as the Clinical app with a separate configuration for patient queues.</p><p>The name of the extension config is picked up from app's url as follows: the first parameter after # in the app's url is the name of the extension config that needs to be picked up. <span style="line-height: 1.42857;">For example, the app's url should look like </span><a rel="nofollow" style="line-height: 1.42857;">https://&lt;IP_or_domain_name&gt;/bahmni/clinical/#/{{extension_name}}/patient/search</a></p><p class="assistive">Edit the <strong>home/extension.json</strong> as shown below:</p><div><div class="syntaxhighlighter js"><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="8b3fd1fc-bf01-4746-aab4-8b2eea7b8415" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">&quot;programs&quot;: {
+  &quot;id&quot;: &quot;bahmni.programs&quot;,
+  &quot;extensionPointId&quot;: &quot;org.bahmni.home.dashboard&quot;, 
+  &quot;type&quot;: &quot;link&quot;,
+  &quot;label&quot;: &quot;Programs&quot;,
+  &quot;url&quot;: &quot;../clinical/#/programs/patient/search&quot;,
+  &quot;icon&quot;: &quot;fa-tasks&quot;,
+  &quot;order&quot;: 2,
+  &quot;requiredPrivilege&quot;: &quot;app:clinical&quot;
+}</pre>
+</div></div><p><span class="legacy-color-text-default">The programs app has its own configuration at </span><strong style="line-height: 1.42857;">/var/www/bahmni_config/openmrs/apps/clinical/extension-programs.json</strong> . To configure specific search tabs and observation display controls put the related config in extension-programs.json.</p></div><h4 class="syntaxhighlighter js" id="ProgramsModule-ConfigurePatientQueues(searchtabs)"><strong>Configure Patient Queues (search tabs)</strong></h4><div class="syntaxhighlighter js">To configure the first tab to search amongst active patients enrolled in programs:</div></div><div><div class="syntaxhighlighter js"><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="2ab54f78-106c-4559-899c-ef327e93ee67" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">{
+  &quot;bahmniClinicalPatientsSearchActivePatientsForPrograms&quot;: {
+    &quot;id&quot;: &quot;bahmni.clinical.patients.search.activePatients&quot;,
+    &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,
+    &quot;type&quot;: &quot;config&quot;,
+    &quot;extensionParams&quot;: {
+      &quot;searchHandler&quot;: &quot;emrapi.sqlSearch.activePatients&quot;,
+      &quot;display&quot;: &quot;Programs&quot;,
+      &quot;forwardUrl&quot;: &quot;#/patient/{{patientUuid}}/consultationContext&quot;
+    },
+    &quot;label&quot;: &quot;Active&quot;,
+    &quot;order&quot;: 1,
+    &quot;requiredPrivilege&quot;: &quot;app:clinical&quot;
+  }</pre>
+</div></div><p>To configure the second tab to search amongst  all enrolled patients:</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="c83951e9-5ff0-40f9-bde4-096d4f8792e7" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">{
+  &quot;bahmniClinicalPatientsSearchAllPatients&quot;: {
+    &quot;id&quot;: &quot;bahmni.clinical.patients.search.allPatients&quot;,
+    &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,
+    &quot;type&quot;: &quot;config&quot;,
+    &quot;extensionParams&quot;: {
+      &quot;display&quot;: &quot;All&quot;,
+      &quot;forwardUrl&quot;: &quot;#/patient/{{patientUuid}}/consultationContext&quot;
+    },
+    &quot;label&quot;: &quot;All&quot;,
+    &quot;order&quot;: 2,
+    &quot;requiredPrivilege&quot;: &quot;app:clinical&quot;
+  }</pre>
+</div></div><h3 id="ProgramsModule-2.Configure&quot;Programs&quot;TabintheClinicalModule">2. Configure &quot;Programs&quot; Tab in the Clinical Module</h3><p>To make the &quot;Programs&quot; tab appear in the Clinical module, add the following configuration to /var/www/bahmni_config/openmrs/apps/clinical/extension.json file.</p><p>Modify the &quot;<strong>extension.json&quot; </strong>to contain the snippet present below:</p><div><div class="syntaxhighlighter js"><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="60830c6b-7108-4fda-ac94-910f38c947f2" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">&quot;bahmniCLinicalPatientsSearchActicePatientsForPrograms&quot; : {
+  &quot;id&quot;: &quot;bahmni.clinical.patients.search.allPatients&quot;,
+  &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,
+  &quot;type&quot;: &quot;config&quot;,
+  &quot;extensionParams&quot;: {
+    &quot;searchHandler&quot;: &quot;emrapi.sqlSearch.activePatientsByProvider&quot;,
+    &quot;display&quot;:&quot;Programs&quot;,
+    &quot;forwardUrl&quot; : &quot;#/default/patient/{{patientUuid}}/consultationContext&quot;
+ },
+  &quot;label&quot;: &quot;Programs&quot;,
+  &quot;order&quot;: 1,
+  &quot;requiredPrivilege&quot;: &quot;app:clinical&quot;
+}</pre>
+</div></div><p>When the json file is configured as mentioned above, a new tab &quot;Programs&quot; will be shown in the clinical patient search page.</p><p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-content-image-border image-center" width="700" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/32014506/Screen%20Shot%202015-10-05%20at%206.46.09%20pm.png?version=1&amp;modificationDate=1448210754814&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=118" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/32014506/Screen%20Shot%202015-10-05%20at%206.46.09%20pm.png?version=1&amp;modificationDate=1448210754814&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="33456422" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2015-10-05 at 6.46.09 pm.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="32014506" data-linked-resource-container-version="95" data-media-id="9d072486-57f0-416c-8ff6-b8172d5853fc" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/32014506/Screen%20Shot%202015-10-05%20at%206.46.09%20pm.png?version=1&amp;modificationDate=1448210754814&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=236 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014506/Screen%20Shot%202015-10-05%20at%206.46.09%20pm.png?version=1&amp;modificationDate=1448210754814&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=118 1x"></span></p><p style="text-align: center;"><strong>Programs tab on the Patient Search Page</strong></p><div><strong><br/></strong></div></div></div><h3 id="ProgramsModule-3.CreatenewProgramsinOpenMRS">3. <span class="legacy-color-text-default">Create new Programs in OpenMRS</span></h3><p><span style="line-height: 20.0px;">Please refer <a href="/wiki/spaces/BAH/pages/37945598/Configure+Programs" data-linked-resource-id="37945598" data-linked-resource-version="6" data-linked-resource-type="page">Configure Programs</a></span></p><h3 id="ProgramsModule-4.AssociateaProgramtoanEncounterType">4. Associate a Program to an Encounter Type</h3></div></div></div></div><div class="page view"><div class="wiki-content"><p>To associate a program to an encounter type, Bahmni uses the generic entity mapping concept which can be configured as explained below. </p><p>a) In the entity_mapping_type table, add a record to define the mapping between program and encounter type:</p><div class="syntaxhighlighter nogutter sql"><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="68911b76-1cb3-4a4b-a68f-c28919675417" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: true; theme: Confluence" data-theme="Confluence">insert into entity_mapping_type(name, uuid, entity1_type, entity2_type, date_created) values ('program_encountertype', uuid(), 'org.openmrs.Program', 'org.openmrs.EncounterType', now()); </pre>
+</div></div><p><br/></p>b) In the entity_mapping table, insert a record to create the mapping between a specific program and the specific encounter type</div><div><div class="syntaxhighlighter nogutter sql"><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="a21faf10-2664-4fcc-8cd4-488bf8263a5a" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: true; theme: Confluence" data-theme="Confluence">insert into entity_mapping(uuid, entity_mapping_type_id, entity1_uuid, entity2_uuid, date_created) values (uuid(), &lt;id_of_the_record_created_in_step_4a&gt;, &lt;uuid_of_program&gt;, &lt;uuid_of_encounter_type&gt;, now()); </pre>
+</div></div><h3 id="ProgramsModule-5.AssociateanObservationtemplatetoaProgram">5. Associate an Observation template to a Program </h3></div></div><p>To associate an observation template (as a concept) to a program, Bahmni uses the same generic entity mapping as above. To do this, follow the below steps</p><p><span style="line-height: 1.42857;">a) In the entity_mapping_type table, add a record to define the mapping between program and concept</span></p><div><div class="syntaxhighlighter nogutter sql"><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="20781b69-31a2-4607-bd9e-df5231604786" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: true; theme: Confluence" data-theme="Confluence">insert into entity_mapping_type(name, uuid, entity1_type, entity2_type, date_created) values ('program_obstemplate', uuid(), 'org.openmrs.Program', 'org.openmrs.Concept', now()); </pre>
+</div></div><p><br/></p>b) In the entity_mapping table, insert a record to create the mapping between a specific program and the specific concept</div></div><div><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="083c7757-05b0-4736-84d0-2ec823c54d0d" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: true; theme: Confluence" data-theme="Confluence">insert into entity_mapping(uuid, entity_mapping_type_id, entity1_uuid, entity2_uuid, date_created) values (uuid(), &lt;id_of_the_record_created_in_step_5a&gt;, &lt;uuid_of_program&gt;, &lt;uuid_of_concept&gt;, now());</pre>
+</div></div><h3 class="syntaxhighlighter nogutter sql" id="ProgramsModule-6.ConfigureProgramAttributes">6. Configure Program Attributes</h3><p>For a patient is enrolled in a program, there can be some additional attribute types that are specific to the patient’s enrollment into the program. These attribute types are called Program Attributes but have various values based on the patient. Examples of Program Attribute types are Program Identifier, Date of Enrollment, Facility of Enrollment, etc.</p><p>Bahmni supports the ability to capture values for Program Attribute types. These attributes can be captured or edited during the start or course of the Program and are configurable based on usage needs.</p><p>To configure program attributes for the installation,use the SQL query below to add a program attribute. The datatype can be one of the following :</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="ef41eada-fa24-4473-ae20-9a83f34a69c5" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: true; theme: Confluence" data-theme="Confluence">org.openmrs.customdatatype.datatype.FreeTextDatatype
+org.openmrs.customdatatype.datatype.BooleanDatatype 
+org.openmrs.customdatatype.datatype.DateDatatype 
+org.openmrs.customdatatype.datatype.RegexValidatedTextDatatype
+org.openmrs.customdatatype.datatype.ConceptDatatype</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="90778342-c390-4d44-8cce-562f4d210f09" data-macro-name="info"><p class="title">Note</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><ul><li>For org.openmrs.customdatatype.datatype.RegexValidatedTextDatatype Attribute Type, datattype_config column should have the valid Regex Pattern.</li><li>For org.openmrs.customdatatype.datatype.ConceptDatatype Attribute Type, <span>datattype_config column should have Concept Id of the Concept which has the Concept Answers that you want to configure.</span></li></ul></div></div><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="7bb6db40-3839-4e2a-878a-c900d18be3f9" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Adding program attributes</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: true; theme: Confluence" data-theme="Confluence">insert into program_attribute_type(name, description, datatype, min_occurs, creator, date_created, uuid) values('Sample attribute1','This is a test attribute', 'org.openmrs.customdatatype.datatype.FreeTextDatatype', 0, 1, NOW(), UUID());
+ 
+insert into program_attribute_type(name, description, datatype, datatype_config, min_occurs, creator, date_created, uuid) values('Sample attribute3','This is a NumericRegex attribute', 'org.openmrs.customdatatype.datatype.RegexValidatedTextDatatype', '[0-9]*', 0, 1, NOW(), UUID());
+
+insert into program_attribute_type(name, description, datatype, datatype_config, min_occurs, creator, date_created, uuid) values('Sample attribute2','This is a CodedConcept attribute', 'org.openmrs.customdatatype.datatype.ConceptDatatype', 123, 0, 1, NOW(), UUID());
+
+******* 123 is Concept Id</pre>
+</div></div><h3 class="syntaxhighlighter nogutter sql" id="ProgramsModule-7.ConfiguringMandatoryProgramAttributes">7. Configuring Mandatory Program Attributes</h3><p>In the<strong> app.json</strong> of the <strong>clinical</strong> module, add the following configuration:</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="769e214e-aee2-44e4-885f-17f6d4ce4b24" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Configuring mandatory program attributes</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">&quot;config&quot; : {
+    &quot;program&quot;: {
+        &quot;programAttributeName&quot; : {
+            &quot;required&quot; : true
+        }
+    }
+}</pre>
+</div></div><h3 class="syntaxhighlighter nogutter sql" id="ProgramsModule-8.HidingspecificProgramAttributesForProgram"><br/>8. Hiding specific Program Attributes For Program</h3><p>In the <strong>app.json</strong> of the <strong>clinical</strong> module, add the following configuration to hide specific Program Attributes based on Program selected. This feature is available from release-0.90.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="750a3b2b-ad2e-42fe-b9de-d011d1dca36d" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Hiding specific Program Attributes</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">&quot;config&quot; : {
+    &quot;program&quot;: {
+        &quot;programAttributeName&quot; : {
+            &quot;excludeFrom&quot; : [&quot;ProgramName&quot;]
+        }
+    }
+}</pre>
+</div></div><h3 class="syntaxhighlighter nogutter sql" id="ProgramsModule-9.ConfigurePatientAttributestoShowAgeinYears">9. Configure Patient Attributes to Show Age in Years</h3><p>In the app.json of the clincal module, add the following configuration. This shows the patient age only in years on program management page.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="4f45c34f-8dac-458e-bec3-2084eb00e77d" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">&quot;config&quot; : {
+	&quot;program&quot;: {
+    	&quot;patientInformation&quot;: {
+     		&quot;ageLimit&quot;:100
+    	}
+	}
+}</pre>
+</div></div><h3 class="syntaxhighlighter nogutter sql" id="ProgramsModule-10.ConfiguringdisplaycontrolforProgramAttributes">10. Configuring display control for Program Attributes </h3><p>In the app.json of the clinical module, add the following configuration:</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="bc8c26c9-490f-41eb-840b-9ba99de5cca7" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Configuring mandatory program attributes</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">&quot;config&quot; : {
+    &quot;programDisplayControl&quot;: {
+    	&quot;showProgramStateInTimeline&quot;: true,
+    	&quot;programAttributes&quot;: [
+        	&quot;Treatment_Date&quot;,
+			&quot;Doctor&quot;,
+			&quot;Id&quot;
+    	]
+	}
+}</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-id="3582a8b7-d8f3-4bcd-817b-1e4e4cb4ef1f" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><ul><li class="syntaxhighlighter nogutter sql">If <em>showProgramStateInTimeline</em> is false or not configured, the program states are displayed in tabular format, else it switches to the timeline view.</li><li class="syntaxhighlighter nogutter sql">To configure which program attributes are to be displayed, they have to be added to the list called <em style="line-height: 1.42857;">programAttributes</em>. If the list is empty or the whole key itself is missing, the display control defaults to displaying all program attributes.</li><li class="syntaxhighlighter nogutter sql">If some the attributes are wrongly configured, they will not show up in the UI. </li><li class="syntaxhighlighter nogutter sql">If some attributes don't have any value but are configured, they will show up with just the label and no value. </li><li class="syntaxhighlighter nogutter sql">To hide all the values specify a blank list in the programAttributes.</li></ul></div></div><h3 class="syntaxhighlighter nogutter sql" id="ProgramsModule-11.RetireaProgram">11. Retire a Program</h3></div><p>Refer <a href="https://bahmni.atlassian.net/wiki/display/BAH/Configure+Programs#ConfigurePrograms-2.RetireaProgram" rel="nofollow">Retire Programs</a></p><h3 id="ProgramsModule-12.AddingobservationsforPastPrograms">12. Adding observations for Past Programs</h3><p>We can add observations against a program. Whenever you end a program, that program will be listed under past programs. So if you go to patient dashboard through past programs and add some observations, they will be added against that program. In this way you can add observations against past programs.</p><h3 id="ProgramsModule-13.ConfigureFormsDisplayControl">13. Configure Forms Display Control</h3><p>We can display the Forms Display Control in the Program Enrolment page. A patient is initially triaged by the nurse and then the form is reviewed by the doctor and the doctor indicates the category of the patient . For the nurse , the steps would include</p><ul><li>Enrolling the patient into the program (Eg: pre-patient triage)</li><li>Filling out the triage form</li></ul><p>Whereas, for a doctor, the steps would include</p><ul><li>Reviewing the triage form </li><li>Updating the program state and speciality. </li></ul><p>To make navigation easier for both the nurses and the doctors, we are showing the forms in the program enrolment page.<br/><br/>In the <strong>clinical/app.json</strong>, add the following configuration in the config section:</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="ce78e850-9b70-450c-9934-cb53b7e7d23e" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">&quot;observationForms&quot;: {
+     &quot;numberOfVisits&quot;: 10
+}</pre>
+</div></div></div></div><p><br/></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="8c2ec6a6-2f36-4f64-968a-752eccfa837c" data-macro-name="tip"><p class="title">On this Page</p><div class="confluence-information-macro-body"><p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="7329ff03-b42e-4c14-9a07-dc96c9694bf7" data-macro-name="toc"> </div><p> </p></div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="f5e76242-9ad1-477e-9fa2-70ff0a12c473" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #668D3C;color: white;"><b>Feature Details</b></div><div class="panelContent">
+<p><span class="legacy-color-text-default"><a href="/wiki/spaces/BAH/pages/32604193/Treatment+Programs" data-linked-resource-id="32604193" data-linked-resource-version="22" data-linked-resource-type="page">Hospital Programs - Feature Guide</a></span></p>
+</div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #668D3C;color: white;"><b>Usage Details</b></div><div class="panelContent">
+<p><a href="/wiki/spaces/BAH/pages/27000864/Programs" data-linked-resource-id="27000864" data-linked-resource-version="10" data-linked-resource-type="page">Programs - User Guide</a></p>
+</div></div></div>
+</div>
+</div>
+</div></body></html>

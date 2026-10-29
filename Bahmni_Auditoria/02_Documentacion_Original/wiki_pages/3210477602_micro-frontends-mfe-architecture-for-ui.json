@@ -1,0 +1,179 @@
+{
+  "id": "3210477602",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3210477602",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzIxMDQ3NzYwMg==",
+  "status": "current",
+  "title": "Micro-frontends (MFE) architecture for UI",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:94c151db-1ce0-48a0-b3a6-61ef6765e9be",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "bassoGeorge",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:94c151db-1ce0-48a0-b3a6-61ef6765e9be",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Anish George",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:94c151db-1ce0-48a0-b3a6-61ef6765e9be"
+      }
+    },
+    "createdDate": "2023-07-24T07:15:04.645Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3210477602/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "620bff9de41f76006a6d49bd",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Rahul Ramesh",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/620bff9de41f76006a6d49bd",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Rahul Ramesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=620bff9de41f76006a6d49bd"
+      }
+    },
+    "when": "2025-01-20T10:47:00.573Z",
+    "friendlyWhen": "Jan 20, 2025",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3210477602.208",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3210477602"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3210477602/version/5"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<h1>The problem</h1><p>As Bahmni evolves, we have started building modules in React instead of AngularJS. Currently, these React components are built inside AngularJS applications using adapters. What this means is that every React-based module needs to be built with an AngularJS-based repository, adding to code duplication and maintenance overheads. </p><p>Additionally, any React module which needs to install its components within existing AngularJS modules of bahmniapps (e.g. the form-controls) will need to be built along with <code>openmrs-module-bahmniapps</code> since AngularJS does not allow for dynamic dependencies. What this means is, that the bahmniapps project must be rebuilt for every deployment of such a react module.</p><h1>The solution</h1><p>WebPack supports a technique called Module Federation, through which it allows the use of dynamic JavaScript modules which can be fetched at runtime. Coupled with React&rsquo;s Suspense model, a React component can now use a component loaded from a remote javascript file at runtime. With this strategy, <code>openmrs-module-bahmniapps</code> can use react components served from a different web-server/container at runtime and these react components can reside in their own repositories with independent deployment strategies. The host UI of <code>openmrs-module-bahmniapps</code> does not need to be rebuilt to get the latest of these react components. </p><p>This solution also involves separating out the AngularJS adapter code into the <code>openmrs-module-bahmniapps</code> repository so that these dynamic React modules do not need to be built with any sort of AngularJS dependencies and can be set up as pure React projects.</p><h3>Community call explaining this solution</h3><ac:structured-macro ac:name=\"widget\" ac:schema-version=\"1\" data-layout=\"default\" ac:local-id=\"ae9c576a-ff08-4bbe-b3ae-44dbd35a7771\" ac:macro-id=\"9de2d4804adb8786b60d967eb5ce9280\"><ac:parameter ac:name=\"overlay\">youtube</ac:parameter><ac:parameter ac:name=\"_template\">com/atlassian/confluence/extra/widgetconnector/templates/youtube.vm</ac:parameter><ac:parameter ac:name=\"width\">400px</ac:parameter><ac:parameter ac:name=\"url\"><ri:url ri:value=\"https://www.youtube.com/watch?v=zEvCw9p6368\" /></ac:parameter><ac:parameter ac:name=\"height\">300px</ac:parameter></ac:structured-macro><h1>Architecture diagram</h1><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"5780\" ac:original-width=\"9182\"><ri:attachment ri:filename=\"mfe-architecture__annotated.png\" ri:version-at-save=\"1\" /><ac:caption><p>Overall architecture of micro-frontends in Bahmni using WebPack&rsquo;s Module Federation</p></ac:caption></ac:image><h2>Overall flow</h2><ol start=\"1\"><li><p><code>openmrs-module-bahmniapps</code> now contains a separate folder for the react micro-frontend source called <code>/micro-frontends</code>. Built files from this folder are written to <code>ui/app/micro-frontends-dist/</code> folder so that the AngularJS applications can refer to them. These files are typically <code>*.min.js</code> and <code>*.min.css</code>. </p></li><li><p>Common code across all MFEs is handled as a unique entry point called <code>shared</code> which results in <code>shared.min.js</code> and <code>shared.min.css</code> files. This, along with react + react-dom files, needs to be loaded before loading any micro-frontend.</p></li><li><p>A local MFE is available called <code>next-ui</code>. This is meant to house react components which don&rsquo;t need to have their own repositories. angularJs adapters over the main entry components results in an angularJs module called <code>bahmni.mfe.nextUi</code> which can be added as dependency to your angularJs module when you include <code>next-ui.min.*</code> files in your AngularJS entry. Since these components don&rsquo;t have remotes, they will need to be built and updated along side <code>openmrs-module-bahmniapps</code> repository.</p></li><li><p>For remote MFEs, there is one repository each. These repositories will have exposed certain entry components through the ModuleFederationPlugin. Once these repositories are built and deployed, they will be serving a <code>remoteEntry.js</code> file which will be used for loading these remote components. Most likely, this web server would be proxied within the Bahmni proxy.</p></li><li><p>At <code>bahmniapps/micro-frontends/</code> there will be one WebPack entry point for every remote micro-frontend.</p><ol start=\"1\"><li><p>This will house angular adapter code for react components resulting in an angular module called <code>bahmni.mfe.&lt;name-of-entry&gt;</code>. This needs to be injected into the Bahmni module requiring this micro-frontend.</p></li><li><p>The adapted react components will each lazily load corresponding remote react components using <code>remotEntry.js</code> at run time.</p></li><li><p>These will be built as <code>&lt;name-of-entry&gt;.min.js</code> and <code>&lt;name-of-entry&gt;.min.css</code> which can be loaded by the Bahmni module requiring this micro-frontend.</p></li></ol></li></ol><h1>Tools &amp; Techniques used</h1><ol start=\"1\"><li><p><a href=\"https://webpack.js.org/concepts/module-federation/\">ModuleFederationPlugin</a> which allows WebPack to reference remote modules</p></li><li><p>Suspense techniques in React which allow lazy loading of remote React components</p></li><li><p>react2angular which adapts react components into angularJs components</p></li></ol><h1>Decisions &amp; tradeoffs</h1><ol start=\"1\"><li><p>Node version v14.21.3 (LTS). This is the minimum required which worked with the WebPack features needed to get this running</p></li><li><p>React version v16.14.0. Existing usage was found for this and did not want to break things. This version supports all the tools needed for Module federation so locked this in.</p></li><li><p>React is a bit finicky with module federation, especially with hooks around, so the <u>above versions of node and react are completely locked in and need to be in sync with the different repositories for this to work</u></p></li><li><p>Carbon components v10.19 and carbon-components-react v7.25. These are basically held back because of our node version. The impact is that the carbon design system documentation would be a bit different since they have changed their sass structure a lot and devs might have trouble mapping the styles correctly. Functionally, not a lot has changed so they should be able to get the right changes from older documentation.</p></li><li><p>No big changes to the styling solution. Since Carbon design system has Sass, we will continue to work with the same. The micro-frontends do support module sass for isolated styling, but that is about it.</p></li><li><p>For translations, each remote MFE handles their own translations. We could potentially look at sharing core translations with MFEs later. The local MFE gets to use the core set of translations</p></li><li><p>The MFEs as of now don&rsquo;t have an innate concept of configuration. They are free to call the configuration APIs on their own and/or else be passed necessary configurations from the host application during runtime.</p></li><li><p>The React codebase including the MFEs need to rely on a <code>window.React</code> and <code>window.ReactDOM</code> instead of bundling them. This was done so as to not break existing work around form components which rely on similar and the way that angular apps were loading the react bundles. The impact of this is that the <u>WebPack configurations are a bit more involved</u>, obfuscating this dependency and making sure that the actual source code sees no difference in terms of React usage. With this, later migration to a more traditional React bundling model will be painless.</p></li></ol><h1>How to write and integrate your MFE</h1><p><ac:link><ri:page ri:content-title=\"How to implement micro-frontends (MFEs)\" ri:version-at-save=\"11\" /><ac:link-body>Follow the documentation on the next page</ac:link-body></ac:link></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3210477602"
+      }
+    },
+    "view": {
+      "value": "<h1 id=\"Micro-frontends(MFE)architectureforUI-Theproblem\">The problem</h1><p>As Bahmni evolves, we have started building modules in React instead of AngularJS. Currently, these React components are built inside AngularJS applications using adapters. What this means is that every React-based module needs to be built with an AngularJS-based repository, adding to code duplication and maintenance overheads. </p><p>Additionally, any React module which needs to install its components within existing AngularJS modules of bahmniapps (e.g. the form-controls) will need to be built along with <code>openmrs-module-bahmniapps</code> since AngularJS does not allow for dynamic dependencies. What this means is, that the bahmniapps project must be rebuilt for every deployment of such a react module.</p><h1 id=\"Micro-frontends(MFE)architectureforUI-Thesolution\">The solution</h1><p>WebPack supports a technique called Module Federation, through which it allows the use of dynamic JavaScript modules which can be fetched at runtime. Coupled with React’s Suspense model, a React component can now use a component loaded from a remote javascript file at runtime. With this strategy, <code>openmrs-module-bahmniapps</code> can use react components served from a different web-server/container at runtime and these react components can reside in their own repositories with independent deployment strategies. The host UI of <code>openmrs-module-bahmniapps</code> does not need to be rebuilt to get the latest of these react components. </p><p>This solution also involves separating out the AngularJS adapter code into the <code>openmrs-module-bahmniapps</code> repository so that these dynamic React modules do not need to be built with any sort of AngularJS dependencies and can be set up as pure React projects.</p><h3 id=\"Micro-frontends(MFE)architectureforUI-Communitycallexplainingthissolution\">Community call explaining this solution</h3><iframe class=\"youtube-player conf-macro output-block\" data-hasbody=\"false\" data-layout=\"default\" data-local-id=\"ae9c576a-ff08-4bbe-b3ae-44dbd35a7771\" data-macro-id=\"9de2d4804adb8786b60d967eb5ce9280\" data-macro-name=\"widget\" frameborder=\"0\" src=\"//www.youtube.com/embed/zEvCw9p6368?wmode=opaque\" style=\"width: 400px; height: 300px\" type=\"text/html\">\n</iframe>\n    \n<h1 id=\"Micro-frontends(MFE)architectureforUI-Architecturediagram\">Architecture diagram</h1><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/3210477602/mfe-architecture__annotated.png?version=1&amp;modificationDate=1690268169026&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3210477602/mfe-architecture__annotated.png?version=1&amp;modificationDate=1690268169026&amp;cacheVersion=1&amp;api=v2\" data-height=\"5780\" data-width=\"9182\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3210936321\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"mfe-architecture__annotated.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3210477602\" data-linked-resource-container-version=\"5\" data-media-id=\"6fa7262e-5da7-43d0-9b6d-042b0f313755\" data-media-type=\"file\"></span><h2 id=\"Micro-frontends(MFE)architectureforUI-Overallflow\">Overall flow</h2><ol start=\"1\"><li><p><code>openmrs-module-bahmniapps</code> now contains a separate folder for the react micro-frontend source called <code>/micro-frontends</code>. Built files from this folder are written to <code>ui/app/micro-frontends-dist/</code> folder so that the AngularJS applications can refer to them. These files are typically <code>*.min.js</code> and <code>*.min.css</code>. </p></li><li><p>Common code across all MFEs is handled as a unique entry point called <code>shared</code> which results in <code>shared.min.js</code> and <code>shared.min.css</code> files. This, along with react + react-dom files, needs to be loaded before loading any micro-frontend.</p></li><li><p>A local MFE is available called <code>next-ui</code>. This is meant to house react components which don’t need to have their own repositories. angularJs adapters over the main entry components results in an angularJs module called <code>bahmni.mfe.nextUi</code> which can be added as dependency to your angularJs module when you include <code>next-ui.min.*</code> files in your AngularJS entry. Since these components don’t have remotes, they will need to be built and updated along side <code>openmrs-module-bahmniapps</code> repository.</p></li><li><p>For remote MFEs, there is one repository each. These repositories will have exposed certain entry components through the ModuleFederationPlugin. Once these repositories are built and deployed, they will be serving a <code>remoteEntry.js</code> file which will be used for loading these remote components. Most likely, this web server would be proxied within the Bahmni proxy.</p></li><li><p>At <code>bahmniapps/micro-frontends/</code> there will be one WebPack entry point for every remote micro-frontend.</p><ol start=\"1\"><li><p>This will house angular adapter code for react components resulting in an angular module called <code>bahmni.mfe.&lt;name-of-entry&gt;</code>. This needs to be injected into the Bahmni module requiring this micro-frontend.</p></li><li><p>The adapted react components will each lazily load corresponding remote react components using <code>remotEntry.js</code> at run time.</p></li><li><p>These will be built as <code>&lt;name-of-entry&gt;.min.js</code> and <code>&lt;name-of-entry&gt;.min.css</code> which can be loaded by the Bahmni module requiring this micro-frontend.</p></li></ol></li></ol><h1 id=\"Micro-frontends(MFE)architectureforUI-Tools&amp;Techniquesused\">Tools &amp; Techniques used</h1><ol start=\"1\"><li><p><a class=\"external-link\" href=\"https://webpack.js.org/concepts/module-federation/\" rel=\"nofollow\">ModuleFederationPlugin</a> which allows WebPack to reference remote modules</p></li><li><p>Suspense techniques in React which allow lazy loading of remote React components</p></li><li><p>react2angular which adapts react components into angularJs components</p></li></ol><h1 id=\"Micro-frontends(MFE)architectureforUI-Decisions&amp;tradeoffs\">Decisions &amp; tradeoffs</h1><ol start=\"1\"><li><p>Node version v14.21.3 (LTS). This is the minimum required which worked with the WebPack features needed to get this running</p></li><li><p>React version v16.14.0. Existing usage was found for this and did not want to break things. This version supports all the tools needed for Module federation so locked this in.</p></li><li><p>React is a bit finicky with module federation, especially with hooks around, so the <u>above versions of node and react are completely locked in and need to be in sync with the different repositories for this to work</u></p></li><li><p>Carbon components v10.19 and carbon-components-react v7.25. These are basically held back because of our node version. The impact is that the carbon design system documentation would be a bit different since they have changed their sass structure a lot and devs might have trouble mapping the styles correctly. Functionally, not a lot has changed so they should be able to get the right changes from older documentation.</p></li><li><p>No big changes to the styling solution. Since Carbon design system has Sass, we will continue to work with the same. The micro-frontends do support module sass for isolated styling, but that is about it.</p></li><li><p>For translations, each remote MFE handles their own translations. We could potentially look at sharing core translations with MFEs later. The local MFE gets to use the core set of translations</p></li><li><p>The MFEs as of now don’t have an innate concept of configuration. They are free to call the configuration APIs on their own and/or else be passed necessary configurations from the host application during runtime.</p></li><li><p>The React codebase including the MFEs need to rely on a <code>window.React</code> and <code>window.ReactDOM</code> instead of bundling them. This was done so as to not break existing work around form components which rely on similar and the way that angular apps were loading the react bundles. The impact of this is that the <u>WebPack configurations are a bit more involved</u>, obfuscating this dependency and making sure that the actual source code sees no difference in terms of React usage. With this, later migration to a more traditional React bundling model will be painless.</p></li></ol><h1 id=\"Micro-frontends(MFE)architectureforUI-HowtowriteandintegrateyourMFE\">How to write and integrate your MFE</h1><p><a href=\"/wiki/spaces/BAH/pages/3211755555/How+to+implement+micro-frontends+MFEs\" data-linked-resource-id=\"3211755555\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Follow the documentation on the next page</a></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3210477602"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "frontend",
+          "id": "3124429072",
+          "label": "frontend"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 1,
+      "_links": {
+        "next": "/rest/api/content/3210477602/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3210477602/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 199
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3210477602/child",
+    "restrictions": "/rest/api/content/3210477602/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3210477602/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3210477602",
+    "webui": "/spaces/BAH/pages/3210477602/Micro-frontends+MFE+architecture+for+UI",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3210477602",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3210477602",
+    "tinyui": "/x/IgBcvw",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

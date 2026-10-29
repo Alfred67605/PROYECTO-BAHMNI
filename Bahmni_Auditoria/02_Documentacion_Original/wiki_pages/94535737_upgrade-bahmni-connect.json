@@ -1,0 +1,172 @@
+{
+  "id": "94535737",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/94535737",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvOTQ1MzU3Mzc=",
+  "status": "current",
+  "title": "Upgrade Bahmni Connect",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2016-10-26T11:02:19.951Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/94535737/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:a5d37444-6160-4e20-9a1f-0859131a68cd",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Swathi Varkala",
+      "timeZone": "Asia/Calcutta",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:a5d37444-6160-4e20-9a1f-0859131a68cd",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "swathi varkala",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:a5d37444-6160-4e20-9a1f-0859131a68cd"
+      }
+    },
+    "when": "2018-08-28T12:40:11.728Z",
+    "friendlyWhen": "Aug 28, 2018",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "syncRev": "0.eyugmMpTu20iw3-ssaCNGQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$94535737.38",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/94535737"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/94535737/version/8"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"single\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"warning\" ac:schema-version=\"1\" ac:macro-id=\"d5207275-4ee0-4a3d-bf39-85fa8f7980f8\"><ac:rich-text-body><p>This guide is currently In-Progress. Over the next few months, content will be added to it.&nbsp;</p><p>If you have any suggestions or would like to add pages which talk about the functionality of Bahmni, please feel free to add them.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Introduction</h2><p>The Bahmni Connect&nbsp;metadata file present on the server decides whether the Bahmni Connect app on the devices needs to be upgraded or not.</p><p>The Bahmni Connect&nbsp;metadata file looks like this:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b1d9948a-4d54-4378-97b8-3dd684b45ab8\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">offlineMetadata.json</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[{\n    \"latestAndroidAppUrl\": \"https://www.dropbox.com/s/url/for/android/apk\",\n    \"latestChromeAppUrl\": \"https://www.dropbox.com/s/url/for/chrome/app\",\n    \"compatibleVersions\": [0.79, 0.80]\n}]]></ac:plain-text-body></ac:structured-macro><p>When the device is connected to the network, it reads the metadata file and determines whether it has an update. If there is an update, the 'Update' button will be shown in the header next to the 'Sync' button.&nbsp;The offlineMetadata.json is present at <em>`/var/www/html/offlineMetadata.json</em>'.</p><p>There are two kinds of updates:</p><ol><li><strong>Forced update/Hard Update</strong> - this means that the version installed on the device is not compatible with the server and it needs to be upgraded for the data to get synced to server. In this case, each time the app tries to sync the data to the server, it shows a popup with a link/button to upgrade the app.</li><li><strong>Non-forced update/Soft Update</strong> - this means that the version&nbsp;installed on the&nbsp;device&nbsp;is still compatible with the server and it need not be upgraded immediately to get the data synced. In this case, sync happens smoothly even if the app is not upgraded.</li></ol><h2>Upgrading the Android App</h2><p>For the Android app, the '<em>latestAndroidAppUrl</em>' in the offlineMetadata.json contains the url of latest apk released. On clicking the Update button, the apk is downloaded from the specified url in offlineMetadata.json and installed automatically.</p><p>In order to get the version information can be found under <strong>Settings&rarr; Application Manager&rarr; Bahmni.</strong>&nbsp;The version information is bundled into the apk and thus, static in nature.</p><h2>Upgrading the&nbsp;Chrome App</h2><p>For the Chrome app, the '<em>latestChromeAppUrl</em>' in the offlineMetadata.json contains the url from where the chrome extension tar file can be downloaded. On clicking the Update button, the link with the url is shown so that the extension can be downloaded and installed manually.</p><p>Connect version information can be seen post the extension is added to chrome i.e. it shows up alongside the extension name. Moreover, if the user navigates to the extension folder, the manifest.json file will have version defined, which is used for version information.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"0636ff3c-04a5-4fc6-9a7c-467ca23273f3\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">manifest.json</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[{\n    \"name\": \"Bahmni\",\n    \"description\": \"Bahmni is an easy to use, open source hospital system for healthcare providers in low-resource settings. Brought to you by Bahmni Coalition under fiscal sponsorship of OpenMRS.\",\n    \"version\": \"0.88\",\n    \"manifest_version\": 2,\n    \"icons\": {\n        \"128\": \"bahmni-128.png\"\n    },\n    \"app\": {\n        \"launch\": {\n            \"local_path\": \"index.html\"\n        }\n    },\n    \"permissions\": [\n        \"tabs\",\n        \"http://*/*\",\n        \"https://*/*\"\n    ],\n    \"key\" : \"akgemjphbnkkphopcgfjplhfemmgfolc\",\n    \"minimum_chrome_version\": \"28\",\n    \"content_security_policy\": \"script-src 'self' https://dev.bahmnidev.org 'unsafe-eval'; object-src 'self'\"\n}]]></ac:plain-text-body></ac:structured-macro><p>To install the extension manually, the tar file has to be unzipped and put in the location from where the extension is loaded.</p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"f2436a7c-9166-45bc-99d4-e73bcaa3f980\"><ac:rich-text-body><p>The extension should not be deleted from the Chrome browser to update the app. Deleting the extension deletes the data as well.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"8450e577-7882-4e1b-ae52-c2950ec062ba\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"2ecf4e5d-ee5a-47a2-8fca-c2f2091f69d8\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"c5e56f04-8483-4243-9c94-2e0ccc32752e\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Pages</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"602551d1-0cc1-4658-980b-e2d0ce3814f7\"><ac:parameter ac:name=\"depth\">2</ac:parameter><ac:parameter ac:name=\"page\"><ac:link><ri:page ri:content-title=\"Installing and Configuring Bahmni Connect\" ri:version-at-save=\"5\" /></ac:link></ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Bahmni Connect\" ri:version-at-save=\"40\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Using Bahmni Connect App\" ri:version-at-save=\"33\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/94535737"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout single\" data-layout=\"single\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d5207275-4ee0-4a3d-bf39-85fa8f7980f8\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This guide is currently In-Progress. Over the next few months, content will be added to it. </p><p>If you have any suggestions or would like to add pages which talk about the functionality of Bahmni, please feel free to add them.</p></div></div></div>\n</div>\n</div>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"UpgradeBahmniConnect-Introduction\">Introduction</h2><p>The Bahmni Connect metadata file present on the server decides whether the Bahmni Connect app on the devices needs to be upgraded or not.</p><p>The Bahmni Connect metadata file looks like this:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b1d9948a-4d54-4378-97b8-3dd684b45ab8\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>offlineMetadata.json</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">{\n    &quot;latestAndroidAppUrl&quot;: &quot;https://www.dropbox.com/s/url/for/android/apk&quot;,\n    &quot;latestChromeAppUrl&quot;: &quot;https://www.dropbox.com/s/url/for/chrome/app&quot;,\n    &quot;compatibleVersions&quot;: [0.79, 0.80]\n}</pre>\n</div></div><p>When the device is connected to the network, it reads the metadata file and determines whether it has an update. If there is an update, the 'Update' button will be shown in the header next to the 'Sync' button. The offlineMetadata.json is present at <em>`/var/www/html/offlineMetadata.json</em>'.</p><p>There are two kinds of updates:</p><ol><li><strong>Forced update/Hard Update</strong> - this means that the version installed on the device is not compatible with the server and it needs to be upgraded for the data to get synced to server. In this case, each time the app tries to sync the data to the server, it shows a popup with a link/button to upgrade the app.</li><li><strong>Non-forced update/Soft Update</strong> - this means that the version installed on the device is still compatible with the server and it need not be upgraded immediately to get the data synced. In this case, sync happens smoothly even if the app is not upgraded.</li></ol><h2 id=\"UpgradeBahmniConnect-UpgradingtheAndroidApp\">Upgrading the Android App</h2><p>For the Android app, the '<em>latestAndroidAppUrl</em>' in the offlineMetadata.json contains the url of latest apk released. On clicking the Update button, the apk is downloaded from the specified url in offlineMetadata.json and installed automatically.</p><p>In order to get the version information can be found under <strong>Settings→ Application Manager→ Bahmni.</strong> The version information is bundled into the apk and thus, static in nature.</p><h2 id=\"UpgradeBahmniConnect-UpgradingtheChromeApp\">Upgrading the Chrome App</h2><p>For the Chrome app, the '<em>latestChromeAppUrl</em>' in the offlineMetadata.json contains the url from where the chrome extension tar file can be downloaded. On clicking the Update button, the link with the url is shown so that the extension can be downloaded and installed manually.</p><p>Connect version information can be seen post the extension is added to chrome i.e. it shows up alongside the extension name. Moreover, if the user navigates to the extension folder, the manifest.json file will have version defined, which is used for version information.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0636ff3c-04a5-4fc6-9a7c-467ca23273f3\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>manifest.json</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">{\n    &quot;name&quot;: &quot;Bahmni&quot;,\n    &quot;description&quot;: &quot;Bahmni is an easy to use, open source hospital system for healthcare providers in low-resource settings. Brought to you by Bahmni Coalition under fiscal sponsorship of OpenMRS.&quot;,\n    &quot;version&quot;: &quot;0.88&quot;,\n    &quot;manifest_version&quot;: 2,\n    &quot;icons&quot;: {\n        &quot;128&quot;: &quot;bahmni-128.png&quot;\n    },\n    &quot;app&quot;: {\n        &quot;launch&quot;: {\n            &quot;local_path&quot;: &quot;index.html&quot;\n        }\n    },\n    &quot;permissions&quot;: [\n        &quot;tabs&quot;,\n        &quot;http://*/*&quot;,\n        &quot;https://*/*&quot;\n    ],\n    &quot;key&quot; : &quot;akgemjphbnkkphopcgfjplhfemmgfolc&quot;,\n    &quot;minimum_chrome_version&quot;: &quot;28&quot;,\n    &quot;content_security_policy&quot;: &quot;script-src 'self' https://dev.bahmnidev.org 'unsafe-eval'; object-src 'self'&quot;\n}</pre>\n</div></div><p>To install the extension manually, the tar file has to be unzipped and put in the location from where the extension is loaded.</p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f2436a7c-9166-45bc-99d4-e73bcaa3f980\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>The extension should not be deleted from the Chrome browser to update the app. Deleting the extension deletes the data as well.</p></div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8450e577-7882-4e1b-ae52-c2950ec062ba\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"2ecf4e5d-ee5a-47a2-8fca-c2f2091f69d8\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c5e56f04-8483-4243-9c94-2e0ccc32752e\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Pages</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"602551d1-0cc1-4658-980b-e2d0ce3814f7\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/94535706/Installing+Bahmni+Connect+on+Server\" data-linked-resource-id=\"94535706\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">Installing Bahmni Connect on Server</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/94535723/Connect+Installation+Steps+on+Server\" data-linked-resource-id=\"94535723\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Connect Installation Steps on Server</a></li><li><a href=\"/wiki/spaces/BAH/pages/94535719/Server+Setup+For+Connect\" data-linked-resource-id=\"94535719\" data-linked-resource-version=\"30\" data-linked-resource-type=\"page\">Server Setup For Connect</a></li><li><a href=\"/wiki/spaces/BAH/pages/94535725/Bahmni+Connect+Sync\" data-linked-resource-id=\"94535725\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Bahmni Connect Sync</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/94535730/Installing+Bahmni+Connect+App\" data-linked-resource-id=\"94535730\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">Installing Bahmni Connect App</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/94535733/Connect+Requirements\" data-linked-resource-id=\"94535733\" data-linked-resource-version=\"23\" data-linked-resource-type=\"page\">Connect Requirements</a></li><li><a href=\"/wiki/spaces/BAH/pages/94535735/Installation+Steps+-+Connect\" data-linked-resource-id=\"94535735\" data-linked-resource-version=\"36\" data-linked-resource-type=\"page\">Installation Steps - Connect</a></li><li><a href=\"/wiki/spaces/BAH/pages/325713930/Setup+Bahmni+Connect+using+Location+based+sync+strategy\" data-linked-resource-id=\"325713930\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Setup Bahmni Connect using Location based sync strategy</a></li><li><a href=\"/wiki/spaces/BAH/pages/94535739/Customizing+Bahmni+Connect\" data-linked-resource-id=\"94535739\" data-linked-resource-version=\"52\" data-linked-resource-type=\"page\">Customizing Bahmni Connect</a></li><li><a href=\"/wiki/spaces/BAH/pages/97026058/Change+Bahmni+Connect+App+Location\" data-linked-resource-id=\"97026058\" data-linked-resource-version=\"15\" data-linked-resource-type=\"page\">Change Bahmni Connect App Location</a></li><li><a href=\"/wiki/spaces/BAH/pages/94535737/Upgrade+Bahmni+Connect\" data-linked-resource-id=\"94535737\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Upgrade Bahmni Connect</a></li></ul></li></ul><p> </p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/94535750/Bahmni+Connect\" data-linked-resource-id=\"94535750\" data-linked-resource-version=\"40\" data-linked-resource-type=\"page\">Bahmni Connect</a></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/94535745/Using+Bahmni+Connect+App\" data-linked-resource-id=\"94535745\" data-linked-resource-version=\"34\" data-linked-resource-type=\"page\">Using Bahmni Connect App</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/94535737"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/94535737/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/94535737/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 690726972
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/94535737/child",
+    "restrictions": "/rest/api/content/94535737/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/94535737/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=94535737",
+    "webui": "/spaces/BAH/pages/94535737/Upgrade+Bahmni+Connect",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/94535737",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/94535737",
+    "tinyui": "/x/OYCiBQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

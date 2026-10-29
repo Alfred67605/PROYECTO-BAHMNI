@@ -1,0 +1,153 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Print Medications</title></head><body><h1>Print Medications</h1><h2 id="PrintMedications-PurposeandBenefits">Purpose and Benefits</h2><p>The &quot;print medications&quot; feature allows users to generate a physical copy of their medication list, which includes details such as the names of the medications, dosages, and schedules. This is particularly useful for doctor appointments, hospital visits, or for keeping an accessible record at home. By having a printed list, patients can ensure accurate communication with healthcare providers and manage their medication regimen more effectively.</p><p>The prescription can be printed for OPD patient in the cases like :</p><ol start="1"><li><p>When the drugs are dispensed, the print out of the prescription needs to be taken and stored in the patient file for 2 years to comply with govt regulations</p></li><li><p>When OPD drugs could not be dispensed, the print out has to be handed over to the patient so that they can procure them from a different pharmacy.</p></li></ol><p>In case of IPD patients, the drugs are procured from the &quot;mini stores&quot; inside the hospital and does not need to be printed.<br/><br/>To print medications, select the checkboxes corresponding to the medications you want to print. The print button will only be enabled if at least one medication is selected. By default, all medications will be selected. If you don’t want all medications to be selected, you need to configure it accordingly (see the <a href="https://bahmni.atlassian.net/wiki/spaces/BAH/pages/edit-v2/3546251350#Configure-Medication-Print-Feature%3A" rel="nofollow">config section</a> for details).</p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20240529-000058.png" width="760" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/3546251350/image-20240529-000058.png?version=1&amp;modificationDate=1716940863887&amp;cacheVersion=1&amp;api=v2&amp;width=760&amp;height=203" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/3546251350/image-20240529-000058.png?version=1&amp;modificationDate=1716940863887&amp;cacheVersion=1&amp;api=v2" data-height="303" data-width="1132" data-unresolved-comment-count="0" data-linked-resource-id="3547496465" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20240529-000058.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="3546251350" data-linked-resource-container-version="4" data-media-id="64568ad9-ca8b-4193-a746-643c61aa225b" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/3546251350/image-20240529-000058.png?version=1&amp;modificationDate=1716940863887&amp;cacheVersion=1&amp;api=v2&amp;width=1280&amp;height=343 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3546251350/image-20240529-000058.png?version=1&amp;modificationDate=1716940863887&amp;cacheVersion=1&amp;api=v2&amp;width=760&amp;height=203 1x"></span><p>Sample PDF file generated from the medication page with the list of selected medications,</p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20240529-002033.png" width="720" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/3546251350/image-20240529-002033.png?version=1&amp;modificationDate=1716942037761&amp;cacheVersion=1&amp;api=v2&amp;width=720&amp;height=450" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/3546251350/image-20240529-002033.png?version=1&amp;modificationDate=1716942037761&amp;cacheVersion=1&amp;api=v2" data-height="450" data-width="720" data-unresolved-comment-count="0" data-linked-resource-id="3547430935" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20240529-002033.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="3546251350" data-linked-resource-container-version="4" data-media-id="db95c1fb-5141-48d7-bc5d-f3c55a26ddbb" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/3546251350/image-20240529-002033.png?version=1&amp;modificationDate=1716942037761&amp;cacheVersion=1&amp;api=v2&amp;width=1280&amp;height=800 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3546251350/image-20240529-002033.png?version=1&amp;modificationDate=1716942037761&amp;cacheVersion=1&amp;api=v2&amp;width=720&amp;height=450 1x"></span><h3 id="PrintMedications-ConfigureMedicationPrintFeature:">Configure Medication Print Feature:</h3><p>Below configuration required to be added to <code>clinical/app.json</code> in the config section to enable print medication functionality.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="7c28f3f2-8be9-487b-82fa-83dcffa7df4c" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">&quot;printPrescriptionFeature&quot;: {
+     &quot;printDiagnosis&quot;:{
+          &quot;order&quot;: &quot;PRIMARY&quot;,
+          &quot;certainity&quot;: &quot;CONFIRMED&quot;
+     },
+     &quot;observationsConcepts&quot;: [&quot;WEIGHT&quot;],
+     &quot;providerAttributesForPrint&quot;: [&quot;Provider Full Name&quot;,&quot;Provider Title&quot;,&quot;Medical Licence Number&quot;],
+     &quot;templateUrl&quot;: &quot;/bahmni_config/openmrs/apps/clinical/clinicalPrints/medicationPrint.html&quot;,
+     &quot;title&quot;: &quot;Childern's Hospital of Ethiopia&quot;,
+     &quot;header&quot;: &quot;PRESCRIPTION&quot;,
+     &quot;logo&quot;: &quot;/bahmni_config/openmrs/apps/clinical/clinicalPrints/images/Bahmni_logo_primary.png&quot;,
+     &quot;autoSelectNotAllowed&quot;: false
+}</pre>
+</div></div><p><strong>Config Descriptions:</strong></p><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="2a3cb897-668a-49cd-ba0a-88c0281ea9f6" class="confluenceTable"><tbody><tr><th class="confluenceTh"><p><strong>Field Name</strong></p></th><th class="confluenceTh"><p><strong>Description</strong></p></th><th class="confluenceTh"><p><strong>Optional</strong></p></th></tr><tr><td class="confluenceTd"><p>printDiagnosis</p></td><td class="confluenceTd"><p>This is type of diagnosis we want to print in the prescription.</p><p>For eg: if we want to show the diagnosis which are primary and confirmed, we need to give the <code>order</code> as <code>PRIMARY</code> and <code>certainity</code> as <code>CONFIRMED</code></p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>observationsConcepts</p></td><td class="confluenceTd"><p>This is a list of concepts. This is to fetch the latest observation captured for the patients for the given concepts which can then be consumed in the custom template to show values like patient's height, weight, etc..</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>templateUrl</p></td><td class="confluenceTd"><p>This field is required for the custom template to be used for printing the prescriptions. If we want a default Bahmni's template and not the custom one, we need to remove this config</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>autoSelectNotAllowed</p></td><td class="confluenceTd"><p>This is a boolean value and can be used to auto select all the prescriptions by default on the load of the page and vice versa before printing.</p><p>If we set it as <code>true</code> , then we need to select the check boxes manually.</p><p>If we set it as <code>false</code>  or omit this config, then all the checkboxes of the medications are selected by default. </p></td><td class="confluenceTd"><p>Yes</p></td></tr></tbody></table></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="" data-macro-name="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;"><div class="panelContent" style="background-color: #EAE6FF;">
+<p><strong>Note:</strong> If we want to show these custom options like diagnosis, observations, etc. in the pdf, then we need to give a custom template that’ll include html elements with appropriate css to show these data. One can refer this sample html (medicationPrint.html) below</p>
+</div></div><p><strong>Sample medicationPrint.html :</strong></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="a5c6aa03-486b-41b8-bf24-60aa8d1cf401" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">&lt;link rel=&quot;stylesheet&quot; href=&quot;/bahmni_config/openmrs/apps/clinical/clinicalPrints/css/print.css&quot;/&gt;
+&lt;style&gt;
+    @media print {
+        /* Hide the header */
+        @page { margin-top: 20px; }
+        header, .header {
+            display: none !important;
+        }
+
+        /* Hide the footer */
+        @page { margin-bottom: 20px; }
+        footer, .footer {
+            display: none !important;
+        }
+    }
+&lt;/style&gt;
+&lt;div class=&quot;print-wrapper custom-print-style&quot; ng-switch=&quot;encounterDrugOrderMap!=null&quot;&gt;
+    &lt;div class=&quot;print-header&quot; ng-if=&quot;printParams&quot;&gt;
+        &lt;div class=&quot;print-logo-plus-text&quot;&gt;
+            &lt;img class=&quot;print-logo&quot; width=&quot;125px&quot; ng-if=&quot;printParams.logo&quot; ng-src=&quot;{{printParams.logo}}&quot; alt=&quot;logo&quot;/&gt;
+            &lt;h1 class=&quot;print-logo-text&quot;&gt;{{printParams.title}}&lt;/h1&gt;
+            &lt;div class=&quot;print-right&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;clinic-info&quot;&gt;
+            &lt;span&gt; {{printParams.header}}&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;float: left;text-align: left;font-size: 10pt;font-weight: bold;margin-bottom: 10px;margin-top: 10px;&quot; 
+            ng-bind-html=&quot;additionalInfo.facilityLocation.address5&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Patient Info --&gt;
+    &lt;div class=&quot;patient-info&quot;&gt;
+        &lt;table ng-switch=&quot;encounterDrugOrderMap!=null&quot;&gt;
+            &lt;tr&gt;
+                &lt;td colspan=&quot;2&quot; style=&quot;font-size: 12pt;&quot;&gt;Name of the Patient: &lt;span class=&quot;value&quot;&gt;{{patient.name}} ({{patient.identifier}})&lt;/span&gt;&lt;/td&gt;
+                &lt;td&gt;Date : &lt;span class=&quot;value&quot;&gt;{{additionalInfo.currentDate | bahmniDate}}&lt;/span&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Age: &lt;span class=&quot;value&quot;&gt;
+                    {{patient.birthdate | dateToAge:visit.dateStarted}}
+                &lt;/span&gt;&lt;/td&gt;
+                &lt;td&gt;Sex: &lt;span class=&quot;value&quot;&gt;{{patient.genderText.substring(6, patient.genderText.length - 7)}}&lt;/span&gt;&lt;/td&gt;
+                &lt;td&gt;Weight: &lt;span class=&quot;value&quot;&gt;{{observationsEntries[0].value}} {{observationsEntries[0].concept.units}}&lt;/span&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Address: &lt;span class=&quot;value&quot;&gt;{{patient.address.address5}}&lt;/span&gt;&lt;/td&gt;
+                &lt;td&gt;Kebele: &lt;span class=&quot;value&quot;&gt;{{patient.address.address4}}&lt;/span&gt;&lt;/td&gt;
+                &lt;td&gt;Woreda: &lt;span class=&quot;value&quot;&gt;{{patient.address.address3}}&lt;/span&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Zone: &lt;span class=&quot;value&quot;&gt;{{patient.address.address2}}&lt;/span&gt;&lt;/td&gt;
+                &lt;td&gt;Region: &lt;span class=&quot;value&quot;&gt;{{patient.address.address1}}&lt;/span&gt;&lt;/td&gt;
+                &lt;td&gt;Country: &lt;span class=&quot;value&quot;&gt;{{patient.address.country}}&lt;/span&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Tel no: &lt;span class=&quot;value&quot;&gt;{{patient.mobilePhone.value}}&lt;/span&gt;&lt;/td&gt;
+                &lt;td colspan=&quot;2&quot;&gt;Visit Type: &lt;span class=&quot;value&quot;&gt; {{additionalInfo.visitType}} &lt;/span&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Diagnosis (ICD-10 code): &lt;span class=&quot;value&quot;&gt;{{ diagnosesCodes }}&lt;/span&gt;&lt;/td&gt;
+                &lt;td colspan=&quot;2&quot;&gt;Allergies: &lt;span class=&quot;value&quot;&gt; {{ allergies.length &gt; 0 ? allergies : &quot;No allergies recorded for this patient&quot;}} &lt;/span&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+    &lt;!-- Prescription Info --&gt;
+    &lt;section ng-switch-when=&quot;true&quot; bindonce=&quot;encounterDrugOrderMap&quot;&gt;
+        &lt;section class=&quot;block treatment-section&quot; ng-show=&quot;encounterDrugOrderMap.length&gt;0&quot;&gt;
+            &lt;h2 class=&quot;section-title&quot;&gt;Treatment&lt;/h2&gt;
+            &lt;div ng-repeat=&quot;(key, value) in encounterDrugOrderMap&quot;&gt;
+                &lt;table class=&quot;printPrescription&quot;&gt;
+                    &lt;tr&gt;
+                        &lt;th style=&quot;width : 33%&quot;&gt;{{'MEDICATION_DRUG_NAME_TITLE'|translate}}&lt;/th&gt;
+                        &lt;th style=&quot;width : 43%&quot;&gt;{{'MEDICATION_DOSAGE_INFORMATION_LABEL'|translate}}&lt;/th&gt;
+                        &lt;th style=&quot;width : 10%&quot;&gt;{{'MEDICATION_LABEL_START_DATE'|translate}}&lt;/th&gt;
+                        &lt;th style=&quot;width : 14%&quot;&gt;{{'PRINT_MEDICATION_TOTAL_QUANTITY_TITLE'|translate}}&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tbody ng-repeat=&quot;drugOrder in value.drugOrders&quot; ng-class=&quot;{'strike-through': drugOrder.isDiscontinuedOrStopped()}&quot;&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;drug-name&quot; bo-text=&quot;drugOrder.getDisplayName()&quot; ng-class=&quot;{'strike-text':drugOrder.isDiscontinuedOrStopped()}&quot;&gt;&lt;/td&gt;
+                        &lt;td class=&quot;dosage-form&quot;&gt;
+                            &lt;span bo-show=&quot;drugOrder.getDescription()&quot; bo-text=&quot;drugOrder.getDescription()&quot; ng-class=&quot;{'strike-text':drugOrder.isDiscontinuedOrStopped()}&quot;&gt;&lt;/span&gt;
+                            &lt;span bo-show=&quot;!drugOrder.getDescription()&quot; bo-text=&quot;' - '&quot;&gt;&lt;/span&gt;
+                            &lt;span ng-if=&quot;drugOrder.isDiscontinuedOrStopped()&quot; class=&quot;fr&quot;&gt;stopped {{::drugOrder.effectiveStopDate | bahmniDate}}&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td bo-text=&quot;(drugOrder.effectiveStartDate | bahmniDate)&quot;&gt;&lt;/td&gt;
+                        &lt;td class=&quot;drug-name&quot;&gt;
+                            &lt;span bo-show=&quot;drugOrder.getQuantityWithUnit()&quot; bo-text=&quot;drugOrder.getQuantityWithUnit()&quot;&gt;&lt;/span&gt; 
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr ng-if=&quot;::drugOrder.additionalInstructions&quot;&gt;
+                        &lt;td&gt;&lt;/td&gt;
+                        &lt;td colspan=&quot;2&quot; class=&quot;inline-notes notes&quot; style=&quot;color: #787878;&quot;&gt;
+                            &lt;p class=&quot;left&quot;&gt;&lt;strong style=&quot;padding-left: 0px;padding-bottom: 0px;&quot;&gt;{{'TREATMENT_NOTES'|translate}}: &lt;/strong&gt;{{drugOrder.additionalInstructions}}&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+                &lt;div&gt;
+                    &lt;span style=&quot;float: left; margin-top:15px; margin-bottom: 25px;&quot;&gt;
+                        &lt;h2 class=&quot;encounter-info&quot;&gt;Prescriber :&lt;/h2&gt;
+                        &lt;table&gt;
+                            &lt;tr&gt;
+                                &lt;td style=&quot;padding: 0px;&quot;&gt;Full Name: {{value.drugOrders[0].provider.attributes[0].value}}&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style=&quot;padding: 0px;&quot;&gt;Title: {{value.drugOrders[0].provider.attributes[1].value}}&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style=&quot;padding: 0px;&quot;&gt;Medical Licence Number: {{value.drugOrders[0].provider.attributes[2].value}}&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+                    &lt;/span&gt;
+                    &lt;span style=&quot;float: right; margin-top:15px; margin-bottom: 25px;&quot;&gt;
+                        &lt;h2 class=&quot;encounter-info&quot;&gt;Dispenser :&lt;/h2&gt;
+                        &lt;table&gt;
+                            &lt;tr&gt;
+                                &lt;td style=&quot;padding: 0px;&quot;&gt;Full Name: {{dispenserInfo[0].value}}&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style=&quot;padding: 0px;&quot;&gt;Title: {{dispenserInfo[1].value}}&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style=&quot;padding: 0px;&quot;&gt;Medical Licence Number: {{dispenserInfo[2].value}}&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+                    &lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;        
+    &lt;/section&gt;
+&lt;/div&gt;
+</pre>
+</div></div><p /></body></html>

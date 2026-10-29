@@ -1,0 +1,172 @@
+{
+  "id": "791937027",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/791937027",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNzkxOTM3MDI3",
+  "status": "current",
+  "title": "OpenElis Department Wise Results Entry",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5b9645824d21642beb810f5d",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Neha Gupta",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5b9645824d21642beb810f5d",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Neha Gupta",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5b9645824d21642beb810f5d"
+      }
+    },
+    "createdDate": "2019-01-30T06:12:35.127Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/791937027/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5b9645824d21642beb810f5d",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Neha Gupta",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5b9645824d21642beb810f5d",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Neha Gupta",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5b9645824d21642beb810f5d"
+      }
+    },
+    "when": "2019-01-30T11:04:27.731Z",
+    "friendlyWhen": "Jan 30, 2019",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.3-IjRzgznKNb5vZdnitR4A.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$791937027.52",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/791937027"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/791937027/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>In order to make newly added department's results entry page accessible to all the users having Results entry as their role, add migration&nbsp;scripts to add the test section as the system module in <strong>system_module</strong> table.</p><p><ac:image><ri:attachment ri:filename=\"image2019-1-30_11-48-41.png\" ri:version-at-save=\"1\" /></ac:image></p><p>&nbsp; &nbsp; &nbsp; &nbsp;insert into system_module (id, name, has_select_flag, has_add_flag, has_update_flag, has_delete_flag) values(444, 'LogbookResults:Haematology', 'N', 'N', 'N', 'N');</p><p><br /></p><p>Add the module access to Results entry role in <strong>system_role_module</strong> table.</p><p>&nbsp; &nbsp; &nbsp; &nbsp;insert into system_role_module (id, has_select, has_add, has_update, has_delete, system_role_id, system_module_id) values(358, 'Y', 'Y', 'Y', 'Y', 5, 444);</p><p>These can be added as migrations under openElis in config.</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/791937027"
+      }
+    },
+    "view": {
+      "value": "<p>In order to make newly added department's results entry page accessible to all the users having Results entry as their role, add migration scripts to add the test section as the system module in <strong>system_module</strong> table.</p><p><span class=\"confluence-embedded-file-wrapper\"><img class=\"confluence-embedded-image\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/791937027/image2019-1-30_11-48-41.png?version=1&amp;modificationDate=1548829123857&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/791937027/image2019-1-30_11-48-41.png?version=1&amp;modificationDate=1548829123857&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"792035329\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2019-1-30_11-48-41.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"791937027\" data-linked-resource-container-version=\"1\" data-media-id=\"40362809-da12-49d3-86b0-0d5e2df3021e\" data-media-type=\"file\"></span></p><p>       insert into system_module (id, name, has_select_flag, has_add_flag, has_update_flag, has_delete_flag) values(444, 'LogbookResults:Haematology', 'N', 'N', 'N', 'N');</p><p><br/></p><p>Add the module access to Results entry role in <strong>system_role_module</strong> table.</p><p>       insert into system_role_module (id, has_select, has_add, has_update, has_delete, system_role_id, system_module_id) values(358, 'Y', 'Y', 'Y', 'Y', 5, 444);</p><p>These can be added as migrations under openElis in config.</p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/791937027"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/791937027/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/791937027/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 402687384
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/791937027/child",
+    "restrictions": "/rest/api/content/791937027/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/791937027/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=791937027",
+    "webui": "/spaces/BAH/pages/791937027/OpenElis+Department+Wise+Results+Entry",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/791937027",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/791937027",
+    "tinyui": "/x/AwA0Lw",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "id": "16908311",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/16908311",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTY5MDgzMTE=",
+  "status": "current",
+  "title": "Ward Management",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:dd7e513e-bc00-497a-a42a-e2b387df0018",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mujir Shaikh (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:dd7e513e-bc00-497a-a42a-e2b387df0018",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mujiruddin Shaikh (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:dd7e513e-bc00-497a-a42a-e2b387df0018"
+      }
+    },
+    "createdDate": "2015-03-09T09:18:24.298Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/16908311/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:a5d37444-6160-4e20-9a1f-0859131a68cd",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Swathi Varkala",
+      "timeZone": "Asia/Calcutta",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:a5d37444-6160-4e20-9a1f-0859131a68cd",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "swathi varkala",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:a5d37444-6160-4e20-9a1f-0859131a68cd"
+      }
+    },
+    "when": "2018-07-04T12:40:55.589Z",
+    "friendlyWhen": "Jul 04, 2018",
+    "message": "",
+    "number": 17,
+    "minorEdit": false,
+    "syncRev": "0.JKYg1fSugguQKPcQR6o1qw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$16908311.58",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/16908311"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/16908311/version/17"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p>Ward management is part of the In-Patient Module and is used to set wards and bed location.</p><p>Bahmni expects that the wards setup in a 2 level hierarchy. i.e Beds are mapped to a Room/Sub ward which is a child location of a parent ward.</p><p>Example for valid Bahmni Wards setup is as below.</p><p><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"Bahmni Wards Bed hierarchy.png\" ri:version-at-save=\"1\" /></ac:image></p><h2>Configuration</h2><h3>Setup Variables</h3><p>Setup variables that have to be used for Ward Management</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"a8659b78-6278-44f3-a8b1-acc0ed57a294\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:plain-text-body><![CDATA[SET @parent_location_id = (select location_id from location where name='General Ward');\nSET @location_id = (select location_id from location where name='Physical General Ward');\nSET @location_tag_id = (select location_tag_id from location_tag where name='Admission Location');]]></ac:plain-text-body></ac:structured-macro><h3>Setup wards</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"129a90ad-d5b1-4d65-89f2-c260cf697be2\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[insert into location (name, description, creator, retired, date_created, uuid) values('General Ward', 'General Ward', 1, 0, NOW(), UUID());\ninsert into location (name, description, creator, retired, date_created, uuid, parent_location) values('Physical General Ward', '1st Floor of General Ward', 1, 0, NOW(), UUID(), @parent_location_id);\ninsert into location_tag_map values( @parent_location_id , @location_tag_id);\ninsert into location_tag_map values( @location_id , @location_tag_id);]]></ac:plain-text-body></ac:structured-macro><p><br /></p><h3>Add Bed Types</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"ba79bf77-c7ea-4555-b103-5be740b9b657\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:plain-text-body><![CDATA[insert into bed_type values(1, 'deluxe', 'deluxe bed', 'DLX');]]></ac:plain-text-body></ac:structured-macro><h3>Add Beds</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"3d1b1f1b-7bb1-465b-aa07-e24cb6779bfc\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:plain-text-body><![CDATA[insert into bed (bed_id, bed_number, status, bed_type_id, uuid, creator, date_created, voided) values(1, '304-a', 'AVAILABLE', 1, UUID(), 1, NOW(), false);]]></ac:plain-text-body></ac:structured-macro><h3>Map beds to ward list</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"e9199ddf-5498-4215-97b0-951eaf21ff7f\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:plain-text-body><![CDATA[insert into bed_location_map(bed_location_map_id, location_id, row_number, column_number, bed_id) values(1, @location_id, 1, 1, 1);]]></ac:plain-text-body></ac:structured-macro><p><br /></p><h3><span>Sample Bed Management SQL file</span></h3><p><span>This&nbsp;</span><a href=\"https://bahmni.atlassian.net/wiki/download/attachments/16908311/bed_management_locations.sql?version=1&amp;modificationDate=1425892912871&amp;cacheVersion=1&amp;api=v2\"><span>sample bed management sql</span></a><span> file adds Bed types and Beds and maps beds to ward list. One can change the sql file as per their need and import it to openmrs database.</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"5329974f-38a2-4c47-a94f-9972b058388b\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[mysql -uroot -ppassword openmrs < bed_management_locations.sql]]></ac:plain-text-body></ac:structured-macro><p><span><br /></span></p><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"be069572-4347-41a1-9820-e1996ded5f9d\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"698d4a82-5bc7-4a13-a03e-2c6d4414d8f7\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"In-Patient Management Module\" ri:version-at-save=\"16\" /></ac:link></p><p><ac:link><ri:page ri:content-title=\"Admit, Discharge and Transfer Patients\" ri:version-at-save=\"10\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"In-Patient Management (IPD)\" ri:version-at-save=\"9\" /><ac:plain-text-link-body><![CDATA[In-Patient Management (IPD) - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"In-Patient Management\" ri:version-at-save=\"26\" /><ac:plain-text-link-body><![CDATA[In-Patient Management (IPD) - User Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/16908311"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"WardManagement-PurposeandBenefits\">Purpose and Benefits</h2><p>Ward management is part of the In-Patient Module and is used to set wards and bed location.</p><p>Bahmni expects that the wards setup in a 2 level hierarchy. i.e Beds are mapped to a Room/Sub ward which is a child location of a parent ward.</p><p>Example for valid Bahmni Wards setup is as below.</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/16908311/Bahmni%20Wards%20Bed%20hierarchy.png?version=1&amp;modificationDate=1530707773113&amp;cacheVersion=1&amp;api=v2&amp;width=440&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/16908311/Bahmni%20Wards%20Bed%20hierarchy.png?version=1&amp;modificationDate=1530707773113&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"690552834\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Bahmni Wards Bed hierarchy.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"16908311\" data-linked-resource-container-version=\"17\" data-media-id=\"70b84339-6cf4-41e5-95dc-1bac3e4824ab\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/16908311/Bahmni%20Wards%20Bed%20hierarchy.png?version=1&amp;modificationDate=1530707773113&amp;cacheVersion=1&amp;api=v2&amp;width=671&amp;height=381 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/16908311/Bahmni%20Wards%20Bed%20hierarchy.png?version=1&amp;modificationDate=1530707773113&amp;cacheVersion=1&amp;api=v2&amp;width=440&amp;height=250 1x\"></span></p><h2 id=\"WardManagement-Configuration\">Configuration</h2><h3 id=\"WardManagement-SetupVariables\">Setup Variables</h3><p>Setup variables that have to be used for Ward Management</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a8659b78-6278-44f3-a8b1-acc0ed57a294\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: false; theme: Confluence\" data-theme=\"Confluence\">SET @parent_location_id = (select location_id from location where name='General Ward');\nSET @location_id = (select location_id from location where name='Physical General Ward');\nSET @location_tag_id = (select location_tag_id from location_tag where name='Admission Location');</pre>\n</div></div><h3 id=\"WardManagement-Setupwards\">Setup wards</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"129a90ad-d5b1-4d65-89f2-c260cf697be2\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: true; theme: Confluence\" data-theme=\"Confluence\">insert into location (name, description, creator, retired, date_created, uuid) values('General Ward', 'General Ward', 1, 0, NOW(), UUID());\ninsert into location (name, description, creator, retired, date_created, uuid, parent_location) values('Physical General Ward', '1st Floor of General Ward', 1, 0, NOW(), UUID(), @parent_location_id);\ninsert into location_tag_map values( @parent_location_id , @location_tag_id);\ninsert into location_tag_map values( @location_id , @location_tag_id);</pre>\n</div></div><p><br/></p><h3 id=\"WardManagement-AddBedTypes\">Add Bed Types</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ba79bf77-c7ea-4555-b103-5be740b9b657\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: false; theme: Confluence\" data-theme=\"Confluence\">insert into bed_type values(1, 'deluxe', 'deluxe bed', 'DLX');</pre>\n</div></div><h3 id=\"WardManagement-AddBeds\">Add Beds</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3d1b1f1b-7bb1-465b-aa07-e24cb6779bfc\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: false; theme: Confluence\" data-theme=\"Confluence\">insert into bed (bed_id, bed_number, status, bed_type_id, uuid, creator, date_created, voided) values(1, '304-a', 'AVAILABLE', 1, UUID(), 1, NOW(), false);</pre>\n</div></div><h3 id=\"WardManagement-Mapbedstowardlist\">Map beds to ward list</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e9199ddf-5498-4215-97b0-951eaf21ff7f\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: false; theme: Confluence\" data-theme=\"Confluence\">insert into bed_location_map(bed_location_map_id, location_id, row_number, column_number, bed_id) values(1, @location_id, 1, 1, 1);</pre>\n</div></div><p><br/></p><h3 id=\"WardManagement-SampleBedManagementSQLfile\"><span>Sample Bed Management SQL file</span></h3><p><span>This </span><a href=\"https://bahmni.atlassian.net/wiki/download/attachments/16908311/bed_management_locations.sql?version=1&amp;modificationDate=1425892912871&amp;cacheVersion=1&amp;api=v2\" rel=\"nofollow\"><span>sample bed management sql</span></a><span> file adds Bed types and Beds and maps beds to ward list. One can change the sql file as per their need and import it to openmrs database.</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"5329974f-38a2-4c47-a94f-9972b058388b\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">mysql -uroot -ppassword openmrs &lt; bed_management_locations.sql</pre>\n</div></div><p><span><br/></span></p><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"be069572-4347-41a1-9820-e1996ded5f9d\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"698d4a82-5bc7-4a13-a03e-2c6d4414d8f7\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/32014606/In-Patient+Management+Module\" data-linked-resource-id=\"32014606\" data-linked-resource-version=\"19\" data-linked-resource-type=\"page\">In-Patient Management Module</a></p><p><a href=\"/wiki/spaces/BAH/pages/114923665/Admit+Discharge+and+Transfer+Patients\" data-linked-resource-id=\"114923665\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Admit, Discharge and Transfer Patients</a></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604214/In-Patient+Management+IPD\" data-linked-resource-id=\"32604214\" data-linked-resource-version=\"9\" data-linked-resource-type=\"page\">In-Patient Management (IPD) - Feature Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32014373/In-Patient+Management\" data-linked-resource-id=\"32014373\" data-linked-resource-version=\"33\" data-linked-resource-type=\"page\">In-Patient Management (IPD) - User Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/16908311"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/16908311/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/16908311/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 2
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/16908311/child",
+    "restrictions": "/rest/api/content/16908311/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/16908311/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=16908311",
+    "webui": "/spaces/BAH/pages/16908311/Ward+Management",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/16908311",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/16908311",
+    "tinyui": "/x/FwACAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

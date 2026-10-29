@@ -1,0 +1,172 @@
+{
+  "id": "3643408386",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3643408386",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzY0MzQwODM4Ng==",
+  "status": "current",
+  "title": "Quick User Logout",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "620bff9de41f76006a6d49bd",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Rahul Ramesh",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/620bff9de41f76006a6d49bd",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Rahul Ramesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=620bff9de41f76006a6d49bd"
+      }
+    },
+    "createdDate": "2024-07-18T16:25:36.597Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3643408386/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "620bff9de41f76006a6d49bd",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Rahul Ramesh",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/620bff9de41f76006a6d49bd",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Rahul Ramesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=620bff9de41f76006a6d49bd"
+      }
+    },
+    "when": "2024-08-12T04:25:48.177Z",
+    "friendlyWhen": "Aug 12, 2024",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3643408386.62",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3643408386"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3643408386/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>The Quick User Logout feature allows users to log out of Bahmni quickly using a keyboard shortcut (Cmd/Ctrl + Esc). This is particularly useful in hospital settings and other environments with shared terminals, where users often need to log off quickly to enable another user, such as another nurse on the same shift, to log in. This ensures that each user can enter patient-specific information using their own credentials, maintaining accuracy and accountability. </p><p>To facilitate this quick logout from screens across Bahmni, we are introducing a shortcut key (Cmd/Ctrl + Esc) for logging out.</p><ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p>The Quick logout shortcut key will be functional only on pages where a logout button is available in the header.</p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p>The Quick logout shortcut key will be functional only on pages where a logout button is available in the header.</p>\n</div></div></ac:adf-fallback></ac:adf-extension><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"956\" ac:original-width=\"1914\" ac:custom-width=\"true\" ac:width=\"760\"><ri:attachment ri:filename=\"Screen Recording 2024-07-18 at 10.09.57 PM.mov\" ri:version-at-save=\"1\" /><ac:caption><p>Demonstration of Quick Logout: The default key combination &quot;Cmd/Ctrl + Esc&quot; logs the user out.</p></ac:caption></ac:image><h2>Usage Instructions</h2><ol start=\"1\"><li><p><strong>Logging In:</strong> Log into Bahmni as usual with your credentials.</p></li><li><p><strong>Logging Out:</strong> On any page with a logout button in the header, press Cmd/Ctrl + Esc.</p></li></ol><h2>Configurability</h2><p>The key combination for logout can be customized. If Cmd/Ctrl + Esc is not suitable, you can change it to another combination by updating the <code>quickLogoutComboKey</code> global property.</p><p>You can change the <code>quickLogoutComboKey</code> global property through:</p><ol start=\"1\"><li><p><strong>Initializer</strong>: Heading over to the <code>globalproperties</code> subfolder in bahmni-config. This subfolder contains XML configuration files that specify which global properties to override.  Add the <code>quickLogoutComboKey</code>, with the desired combination keys as the value.</p></li></ol><h6>Global properties XML configuration file example:</h6><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"3bf88df2-dc36-4f45-a99a-a0d3aef5b570\"><ac:parameter ac:name=\"language\">xml</ac:parameter><ac:plain-text-body><![CDATA[<config>\n  <globalProperties>\n    <globalProperty>\n      <property>bahmni.quickLogoutComboKey</property>\n      <value>Escape</value>\n      <description>Secondary shortcut key used for quick user logout</description>\n    </globalProperty>\n  </globalProperties>\n</config>]]></ac:plain-text-body></ac:structured-macro><p>The above XML configuration will set <code>bahmni</code><strong>.</strong><code>quickLogoutComboKey</code> to use the <code>Escape</code> key as the secondary shortcut key used for quick user logout.</p><ol start=\"2\"><li><p><strong>Advanced Settings</strong>: Head over to Advanced Settings Tab and update the secondary shortcut key used for quick user logout.</p></li></ol><h2>Feedback</h2><p>For feedback or issues with the Quick User Logout feature, please file an issue on the <a href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/issues\">Bahmni GitHub</a> or contact support through the <a href=\"https://bahmni.slack.com/archives/C03LWT96L\">Bahmni Community Forum</a>.</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3643408386"
+      }
+    },
+    "view": {
+      "value": "<p>The Quick User Logout feature allows users to log out of Bahmni quickly using a keyboard shortcut (Cmd/Ctrl + Esc). This is particularly useful in hospital settings and other environments with shared terminals, where users often need to log off quickly to enable another user, such as another nurse on the same shift, to log in. This ensures that each user can enter patient-specific information using their own credentials, maintaining accuracy and accountability. </p><p>To facilitate this quick logout from screens across Bahmni, we are introducing a shortcut key (Cmd/Ctrl + Esc) for logging out.</p><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p>The Quick logout shortcut key will be functional only on pages where a logout button is available in the header.</p>\n</div></div><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><a href=\"/wiki/download/attachments/3643408386/Screen%20Recording%202024-07-18%20at%2010.09.57%E2%80%AFPM.mov?version=1&amp;modificationDate=1721320937572&amp;cacheVersion=1&amp;api=v2&amp;width=760\">Screen Recording 2024-07-18 at 10.09.57 PM.mov</a></span><h2 id=\"QuickUserLogout-UsageInstructions\">Usage Instructions</h2><ol start=\"1\"><li><p><strong>Logging In:</strong> Log into Bahmni as usual with your credentials.</p></li><li><p><strong>Logging Out:</strong> On any page with a logout button in the header, press Cmd/Ctrl + Esc.</p></li></ol><h2 id=\"QuickUserLogout-Configurability\">Configurability</h2><p>The key combination for logout can be customized. If Cmd/Ctrl + Esc is not suitable, you can change it to another combination by updating the <code>quickLogoutComboKey</code> global property.</p><p>You can change the <code>quickLogoutComboKey</code> global property through:</p><ol start=\"1\"><li><p><strong>Initializer</strong>: Heading over to the <code>globalproperties</code> subfolder in bahmni-config. This subfolder contains XML configuration files that specify which global properties to override.  Add the <code>quickLogoutComboKey</code>, with the desired combination keys as the value.</p></li></ol><h6 id=\"QuickUserLogout-GlobalpropertiesXMLconfigurationfileexample:\">Global properties XML configuration file example:</h6><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3bf88df2-dc36-4f45-a99a-a0d3aef5b570\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: xml; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&lt;config&gt;\n  &lt;globalProperties&gt;\n    &lt;globalProperty&gt;\n      &lt;property&gt;bahmni.quickLogoutComboKey&lt;/property&gt;\n      &lt;value&gt;Escape&lt;/value&gt;\n      &lt;description&gt;Secondary shortcut key used for quick user logout&lt;/description&gt;\n    &lt;/globalProperty&gt;\n  &lt;/globalProperties&gt;\n&lt;/config&gt;</pre>\n</div></div><p>The above XML configuration will set <code>bahmni</code><strong>.</strong><code>quickLogoutComboKey</code> to use the <code>Escape</code> key as the secondary shortcut key used for quick user logout.</p><ol start=\"2\"><li><p><strong>Advanced Settings</strong>: Head over to Advanced Settings Tab and update the secondary shortcut key used for quick user logout.</p></li></ol><h2 id=\"QuickUserLogout-Feedback\">Feedback</h2><p>For feedback or issues with the Quick User Logout feature, please file an issue on the <a class=\"external-link\" href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/issues\" rel=\"nofollow\">Bahmni GitHub</a> or contact support through the <a class=\"external-link\" href=\"https://bahmni.slack.com/archives/C03LWT96L\" rel=\"nofollow\">Bahmni Community Forum</a>.</p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3643408386"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3643408386/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3643408386/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1635
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3643408386/child",
+    "restrictions": "/rest/api/content/3643408386/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3643408386/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3643408386",
+    "webui": "/spaces/BAH/pages/3643408386/Quick+User+Logout",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3643408386",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3643408386",
+    "tinyui": "/x/AgAq2Q",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "id": "116004323",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/116004323",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE2MDA0MzIz",
+  "status": "current",
+  "title": "ERP Modules",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "createdDate": "2017-04-10T06:23:41.816Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/116004323/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "when": "2019-11-20T14:43:08.731Z",
+    "friendlyWhen": "Nov 20, 2019",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "0.1xea6hKNT4SwK9TPLhB3iQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$116004323.55",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/116004323"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/116004323/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"732c8d45-6688-449a-a09d-b7c0d36a705e\"><ac:parameter ac:name=\"title\">Compatibility</ac:parameter><ac:rich-text-body><p>Please note that the following documentations are relevant only for OpenERP 7. From Bahmni 0.92 onwards, we use Odoo v10.</p><p>OpenERP 7 is still workable with rest of Bahmni 0.92, but requires some work and configuration. Please refer to <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/900530355/ERP+FAQs+Troubleshooting\">FAQ</a> section</p></ac:rich-text-body></ac:structured-macro><p><br /></p><p><br /></p><ac:structured-macro ac:name=\"excerpt\" ac:schema-version=\"1\" ac:macro-id=\"c8fd29b2-0b8c-4cde-9c9b-de548b9f26f0\"><ac:parameter ac:name=\"atlassian-macro-output-type\">INLINE</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\">Bahmni integrates OpenMRS with OpenERP&nbsp;which is a an open source ERP product. It is useful in Billing, Pharmacy and Stock management. Any patient registered in OpenMRS is synced by Bahmni as a customer in OpenERP.&nbsp; </span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><span style=\"color: rgb(0,0,0);\">Below is a list of available Bahmni ERP modules.</span></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"ebf7312d-2b54-43c2-9ed5-b31db088984e\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">List of Bahmni ERP Modules</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"01dc3a2d-c881-4e94-8c2b-84e7afd86e90\"><ac:parameter ac:name=\"excerptType\">simple</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/116004323"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"732c8d45-6688-449a-a09d-b7c0d36a705e\" data-macro-name=\"info\"><p class=\"title\">Compatibility</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Please note that the following documentations are relevant only for OpenERP 7. From Bahmni 0.92 onwards, we use Odoo v10.</p><p>OpenERP 7 is still workable with rest of Bahmni 0.92, but requires some work and configuration. Please refer to <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/900530355/ERP+FAQs+Troubleshooting\" rel=\"nofollow\">FAQ</a> section</p></div></div><p><br/></p><p><br/><span class=\"legacy-color-text-default conf-macro output-inline\" data-hasbody=\"true\" data-macro-id=\"c8fd29b2-0b8c-4cde-9c9b-de548b9f26f0\" data-macro-name=\"excerpt\">Bahmni integrates OpenMRS with OpenERP which is a an open source ERP product. It is useful in Billing, Pharmacy and Stock management. Any patient registered in OpenMRS is synced by Bahmni as a customer in OpenERP.  </span></p><p class=\"auto-cursor-target\"><span class=\"legacy-color-text-default\">Below is a list of available Bahmni ERP modules.</span></p><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ebf7312d-2b54-43c2-9ed5-b31db088984e\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>List of Bahmni ERP Modules</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"01dc3a2d-c881-4e94-8c2b-84e7afd86e90\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/32604219/Accounting+Configuration\" data-linked-resource-id=\"32604219\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Accounting Configuration</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014590/Pharmacy+Configuration\" data-linked-resource-id=\"32014590\" data-linked-resource-version=\"19\" data-linked-resource-type=\"page\">Pharmacy Configuration</a></li><li><a href=\"/wiki/spaces/BAH/pages/115777052/Billing+Pharmacy+App\" data-linked-resource-id=\"115777052\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Billing/Pharmacy App</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014610/Inventory+Management+System\" data-linked-resource-id=\"32014610\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Inventory Management System</a></li><li><a href=\"/wiki/spaces/BAH/pages/116200817/Quotation+and+Invoices\" data-linked-resource-id=\"116200817\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Quotation and Invoices</a></li></ul><p> </p>\n</div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<p><br/></p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/116004323"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/116004323/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/116004323/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 400057488
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/116004323/child",
+    "restrictions": "/rest/api/content/116004323/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/116004323/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=116004323",
+    "webui": "/spaces/BAH/pages/116004323/ERP+Modules",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/116004323",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/116004323",
+    "tinyui": "/x/4xXqBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

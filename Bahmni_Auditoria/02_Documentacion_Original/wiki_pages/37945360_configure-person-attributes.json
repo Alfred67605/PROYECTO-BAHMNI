@@ -1,0 +1,171 @@
+{
+  "id": "37945360",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/37945360",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzc5NDUzNjA=",
+  "status": "current",
+  "title": "Configure Person Attributes",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:c54772f2-46b5-43c0-be04-96923ee59750",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Vinay Venu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:c54772f2-46b5-43c0-be04-96923ee59750",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Vinay Venu",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:c54772f2-46b5-43c0-be04-96923ee59750"
+      }
+    },
+    "createdDate": "2016-01-18T05:40:53.153Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945360/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2024-02-08T09:54:36.672Z",
+    "friendlyWhen": "Feb 08, 2024",
+    "message": "",
+    "number": 10,
+    "minorEdit": false,
+    "syncRev": "0.H3SnsGvoNHQnB3D0K9jr0g.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$37945360.75",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/37945360"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945360/version/10"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Description</h2><p>OpenMRS provides a way to customise attributes that can be captured for a person/patient. New attributes can be added via the admin screen of OpenMRS under&nbsp;<a href=\"https://local/openmrs/admin/person/personAttributeType.list\">/openmrs/admin/person/personAttributeType.list</a>&nbsp;. If you prefer to add these values manually, insert new rows into the person_attribute_type table.&nbsp;</p><h2>Create/edit attribute</h2><p>1. Navigate to the &quot;Manage Person Attributes Types&quot; link in OpenMRS Administration page.</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><ac:image ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2015-11-16 at 11.42.36 AM.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p><br />2. Add &quot;New Person Attribute Type&quot;. The &quot;format&quot; of the attribute will define the type of UI element to be shown. For e.g., if the attribute type is string, a textbox will be shown. Similarly, if it is of&nbsp;<em>org.openmrs.Concept</em>&nbsp;type, then a dropdown is displayed. If you choose type as Concept, then you will need to provide the ID (in the Foreign Key field) of the Concept whose values should be shown in the dropdown. The &quot;values&quot; are the &quot;answers&quot; for that Concept (from the Concept Dictionary). This Concept will be of type &quot;Coded&quot;. See example setup here for <em>Occupation</em> on the <a href=\"https://demo.mybahmni.org/openmrs/admin/person/personAttributeType.list\">demo server</a>. The &quot;label&quot; on the UI is taken from the &quot;Description&quot; of the attribute.</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><ac:image ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2015-11-16 at 12.18.37 PM.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p>The new Person Attribute Type page will be displayed as shown below:</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><ac:image ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2015-11-16 at 12.29.53 PM.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p>Remove/ Retire Person Attributes<br /><br /></p><p>All the person attributes configured here will appear on the patient registration page.One can add new patient attributes following above steps.If one wants to remove them from the patient registration screen to hide any of these attributes temporarily,&nbsp;then one can retire the person attribute from the Openmrs Administration UI.</p><h2>Retiring an attribute</h2><p>1) GoTo Openmrs, Administration Page</p><p>2) Click on &nbsp;&quot;Manage Person Attributes Types</p><p><ac:image ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2015-11-16 at 11.42.36 AM.png\" ri:version-at-save=\"1\" /></ac:image></p><p>3) Click on the person attribute to retire</p><p><ac:image ac:title=\"Person Attribute to retire\" ac:alt=\"Person Attribute to retire\" ac:height=\"250\"><ri:attachment ri:filename=\"person attribute occupation.png\" ri:version-at-save=\"1\" /></ac:image></p><p><br /></p><p>4) Click on<em> Retire the Person attribute type</em></p><p><em><ac:image ac:title=\"Retire Person attribute type\" ac:alt=\"Retire Person attribute type\" ac:height=\"250\"><ri:attachment ri:filename=\"retire person attribute.png\" ri:version-at-save=\"1\" /></ac:image><br /></em></p><p><em><br /></em></p><h2>Reserved words for Bahmni Person Attribute</h2><p>1) 'name' is a reserved word and cannot be used as Bahmni Person Attribute</p><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"9e4f9769-17bb-4ca3-8e1e-b5067da8696b\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"1ff51284-83b4-429a-9062-312a1beaef62\" />&nbsp;</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/37945360"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ConfigurePersonAttributes-Description\">Description</h2><p>OpenMRS provides a way to customise attributes that can be captured for a person/patient. New attributes can be added via the admin screen of OpenMRS under <a class=\"external-link\" href=\"https://local/openmrs/admin/person/personAttributeType.list\" rel=\"nofollow\">/openmrs/admin/person/personAttributeType.list</a> . If you prefer to add these values manually, insert new rows into the person_attribute_type table. </p><h2 id=\"ConfigurePersonAttributes-Create/editattribute\">Create/edit attribute</h2><p>1. Navigate to the &quot;Manage Person Attributes Types&quot; link in OpenMRS Administration page.</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945360/Screen%20Shot%202015-11-16%20at%2011.42.36%20AM.png?version=1&amp;modificationDate=1453096875203&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=341\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945360/Screen%20Shot%202015-11-16%20at%2011.42.36%20AM.png?version=1&amp;modificationDate=1453096875203&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"37945373\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2015-11-16 at 11.42.36 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945360\" data-linked-resource-container-version=\"10\" data-media-id=\"f3562828-0d9b-4775-b394-78af30263ad8\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945360/Screen%20Shot%202015-11-16%20at%2011.42.36%20AM.png?version=1&amp;modificationDate=1453096875203&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=682 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945360/Screen%20Shot%202015-11-16%20at%2011.42.36%20AM.png?version=1&amp;modificationDate=1453096875203&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=341 1x\"></span></span></p><p><br/>2. Add &quot;New Person Attribute Type&quot;. The &quot;format&quot; of the attribute will define the type of UI element to be shown. For e.g., if the attribute type is string, a textbox will be shown. Similarly, if it is of <em>org.openmrs.Concept</em> type, then a dropdown is displayed. If you choose type as Concept, then you will need to provide the ID (in the Foreign Key field) of the Concept whose values should be shown in the dropdown. The &quot;values&quot; are the &quot;answers&quot; for that Concept (from the Concept Dictionary). This Concept will be of type &quot;Coded&quot;. See example setup here for <em>Occupation</em> on the <a class=\"external-link\" href=\"https://demo.mybahmni.org/openmrs/admin/person/personAttributeType.list\" rel=\"nofollow\">demo server</a>. The &quot;label&quot; on the UI is taken from the &quot;Description&quot; of the attribute.</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945360/Screen%20Shot%202015-11-16%20at%2012.18.37%20PM.png?version=1&amp;modificationDate=1453096875250&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=343\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945360/Screen%20Shot%202015-11-16%20at%2012.18.37%20PM.png?version=1&amp;modificationDate=1453096875250&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"37945374\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2015-11-16 at 12.18.37 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945360\" data-linked-resource-container-version=\"10\" data-media-id=\"3ad4e33e-6f62-478c-a2f6-85cb55e9dbd4\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945360/Screen%20Shot%202015-11-16%20at%2012.18.37%20PM.png?version=1&amp;modificationDate=1453096875250&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=686 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945360/Screen%20Shot%202015-11-16%20at%2012.18.37%20PM.png?version=1&amp;modificationDate=1453096875250&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=343 1x\"></span></span></p><p>The new Person Attribute Type page will be displayed as shown below:</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945360/Screen%20Shot%202015-11-16%20at%2012.29.53%20PM.png?version=1&amp;modificationDate=1453096875267&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=205\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945360/Screen%20Shot%202015-11-16%20at%2012.29.53%20PM.png?version=1&amp;modificationDate=1453096875267&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"37945375\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2015-11-16 at 12.29.53 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945360\" data-linked-resource-container-version=\"10\" data-media-id=\"28897f89-aaa1-4686-93a5-01e91edf5952\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945360/Screen%20Shot%202015-11-16%20at%2012.29.53%20PM.png?version=1&amp;modificationDate=1453096875267&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=410 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945360/Screen%20Shot%202015-11-16%20at%2012.29.53%20PM.png?version=1&amp;modificationDate=1453096875267&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=205 1x\"></span></span></p><p>Remove/ Retire Person Attributes<br/><br/></p><p>All the person attributes configured here will appear on the patient registration page.One can add new patient attributes following above steps.If one wants to remove them from the patient registration screen to hide any of these attributes temporarily, then one can retire the person attribute from the Openmrs Administration UI.</p><h2 id=\"ConfigurePersonAttributes-Retiringanattribute\">Retiring an attribute</h2><p>1) GoTo Openmrs, Administration Page</p><p>2) Click on  &quot;Manage Person Attributes Types</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945360/Screen%20Shot%202015-11-16%20at%2011.42.36%20AM.png?version=1&amp;modificationDate=1453096875203&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=341\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945360/Screen%20Shot%202015-11-16%20at%2011.42.36%20AM.png?version=1&amp;modificationDate=1453096875203&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"37945373\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2015-11-16 at 11.42.36 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945360\" data-linked-resource-container-version=\"10\" data-media-id=\"f3562828-0d9b-4775-b394-78af30263ad8\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945360/Screen%20Shot%202015-11-16%20at%2011.42.36%20AM.png?version=1&amp;modificationDate=1453096875203&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=682 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945360/Screen%20Shot%202015-11-16%20at%2011.42.36%20AM.png?version=1&amp;modificationDate=1453096875203&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=341 1x\"></span></p><p>3) Click on the person attribute to retire</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" alt=\"Person Attribute to retire\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945360/person%20attribute%20occupation.png?version=1&amp;modificationDate=1468566765801&amp;cacheVersion=1&amp;api=v2&amp;width=372&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945360/person%20attribute%20occupation.png?version=1&amp;modificationDate=1468566765801&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"74154011\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"person attribute occupation.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945360\" data-linked-resource-container-version=\"10\" data-media-id=\"40a8fb62-35cc-4fc7-ad0c-a4654250c010\" data-media-type=\"file\" title=\"Person Attribute to retire\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945360/person%20attribute%20occupation.png?version=1&amp;modificationDate=1468566765801&amp;cacheVersion=1&amp;api=v2&amp;width=744&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945360/person%20attribute%20occupation.png?version=1&amp;modificationDate=1468566765801&amp;cacheVersion=1&amp;api=v2&amp;width=372&amp;height=250 1x\"></span></p><p><br/></p><p>4) Click on<em> Retire the Person attribute type</em></p><p><em><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" alt=\"Retire Person attribute type\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945360/retire%20person%20attribute.png?version=1&amp;modificationDate=1468567528283&amp;cacheVersion=1&amp;api=v2&amp;width=394&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945360/retire%20person%20attribute.png?version=1&amp;modificationDate=1468567528283&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"74154014\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"retire person attribute.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945360\" data-linked-resource-container-version=\"10\" data-media-id=\"671aca12-27bd-47c3-ae90-25fdf6ef6107\" data-media-type=\"file\" title=\"Retire Person attribute type\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945360/retire%20person%20attribute.png?version=1&amp;modificationDate=1468567528283&amp;cacheVersion=1&amp;api=v2&amp;width=788&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945360/retire%20person%20attribute.png?version=1&amp;modificationDate=1468567528283&amp;cacheVersion=1&amp;api=v2&amp;width=394&amp;height=250 1x\"></span><br/></em></p><p><em><br/></em></p><h2 id=\"ConfigurePersonAttributes-ReservedwordsforBahmniPersonAttribute\">Reserved words for Bahmni Person Attribute</h2><p>1) 'name' is a reserved word and cannot be used as Bahmni Person Attribute</p><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9e4f9769-17bb-4ca3-8e1e-b5067da8696b\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"1ff51284-83b4-429a-9062-312a1beaef62\" data-macro-name=\"toc\"> </div> <p> </p></div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/37945360"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/37945360/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945360/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 102389154
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/37945360/child",
+    "restrictions": "/rest/api/content/37945360/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/37945360/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=37945360",
+    "webui": "/spaces/BAH/pages/37945360/Configure+Person+Attributes",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/37945360",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945360",
+    "tinyui": "/x/EABDAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

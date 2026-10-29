@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Running Bahmni Lite with DB backup from cloud (Docker)</title></head><body><h1>Running Bahmni Lite with DB backup from cloud (Docker)</h1><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="ef0751b2-99e3-44cc-b209-d39b3f7d34be" data-macro-name="info"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>This page documents how to take a DB Backup of your OpenMRS / EMR DB from <strong>Kubernetes</strong> environment (running on cloud), build a <strong>docker</strong> image with this DB, and then run Bahmni docker compose with the restored database. </p><p><strong>WARNING: </strong><em>If you are working with production data, please be very careful how you handle it, who has access to it, and where you share/keep it. It is illegal to make private patient data available to people without authorisation in most countries!</em></p></div></div><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-layout="default" data-local-id="4efec85b-3a05-4d25-a298-f7c7945d4305" data-macro-id="014ea497-53c1-4348-81c9-b06f70a14493" data-macro-name="toc"> </div><h1 id="RunningBahmniLitewithDBbackupfromcloud(Docker)-Repositories">Repositories</h1><p>🔸 <a class="external-link" href="https://github.com/Bahmni/bahmni-docker.git" rel="nofollow">Bahmni Lite</a></p><p>🔸 <a class="external-link" href="https://github.com/BahmniIndiaDistro/bahmni-india-package.git" rel="nofollow">Bahmni Lite - India based with ABDM integration</a></p><p>🔸 <a class="external-link" href="https://github.com/Bahmni/bahmni-scripts.git" rel="nofollow">Bahmni Scripts - to build DB for openMRS </a></p><h1 id="RunningBahmniLitewithDBbackupfromcloud(Docker)-Setup">Setup</h1><p>🔹 <a class="external-link" href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" rel="nofollow">Git</a> clone the respective Bahmni Lite repository</p><p>🔹 <a class="external-link" href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" rel="nofollow">Git</a> clone the Bahmni Scripts repository</p><p>🔹 Install <a href="/wiki/spaces/BAH/pages/299630726/Running+Bahmni+on+Docker" data-linked-resource-id="299630726" data-linked-resource-version="48" data-linked-resource-type="page">Docker</a></p><h1 id="RunningBahmniLitewithDBbackupfromcloud(Docker)-DBbackupfromKubernetes/AWS">DB backup from Kubernetes/AWS</h1><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="9b671a97-99e1-4dc0-97a8-1d16dfb57f19" data-macro-name="info"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>We ran Bahmni Lite on AWS/Kubernetes. So the following setup will extract DB dump based on Kubernetes commands. </p></div></div><ol start="1"><li><p>Get into the openMRS kubernetes pod</p></li></ol><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="58eb66b7-5360-4b52-b0b8-9fcea16653d4" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">kubectl exec -it openmrs&lt;POD_ID&gt; -n &lt;namespace&gt; -- bash</pre>
+</div></div><p /><p>2. Navigate to the <code>openmrs/data</code> folder and zip the <code>configuration_checksum</code> folder (which is used by Initializer module to determine if an initializer entry has run or not run).</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="3e1a6d26-1ee8-4f9c-8840-000a968b0ed6" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence"># install zip
+yum install zip
+
+# Navigate to openmrs/data directory
+cd /openmrs/data
+
+# Zip the checksums folder
+zip -r configuration_checksums.zip configuration_checksums</pre>
+</div></div><p /><p>3.  Backup the DB as a SQL dump</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="ab569e61-0035-4c45-a138-e2402c1518d3" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence"># Install mysql cli
+yum install mysql
+
+# Export the current live DB as a sql dump to the pod
+mysql -u username -p database_name &gt; omrsdb.sql
+# Provide password and press Enter
+
+# Exit Mysql
+Exit</pre>
+</div></div><p>4. Note down the Database details</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="9b316214-b368-4561-8b2b-e71df8687dbc" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence"># Open the runtime properties
+cat openmrs-runtime.properties
+
+# Exit the openMRS pod
+Exit</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="9686c9db-c212-4835-9750-b5a2a3a4a6c6" data-macro-name="info"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>Keep a note of the above DB details and maintain them securely until the setup is completed successfully</p></div></div><p>5. Copy the files to local machine</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="624c75f1-e01e-4ca8-809f-1293e3b2d064" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence"># Copy the checksums zip to the local
+kubectl cp performance/openmrs-&lt;POD_ID&gt;:/openmrs/data/configuration_checksums.zip configuration_checksums.zip
+
+# Copy the sql dump to the local
+kubectl cp performance/openmrs-&lt;POD_ID&gt;:/openmrs/data/omrsdb.sql omrsdb.sql</pre>
+</div></div><h1 id="RunningBahmniLitewithDBbackupfromcloud(Docker)-BuildtheDBinDocker">Build the DB in Docker</h1><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="6e25077b-c825-41c0-a19e-4dc5b509975a" data-macro-name="info"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>We used mysql 5.7 for our setup, if you use mysql 5.6 kindly change it wherever applicable.</p></div></div><ol start="1"><li><p>Navigate to <code>~/bahmni-scripts/demo/db-backups/1.0.0-lite/mysql5.7/resources</code></p></li></ol><p> 2. Delete the files present in this directory</p><p> 3. Copy and paste the files exported from the pod i.e <code>configuration_checksums.zip</code> and <code>omrsdb.sql</code> to this directory</p><p>4. Navigate back to the mysql5.7 directory and replace the Dockerfile contents with the following code:</p><p><strong>Apple M1 Chip (Mac)</strong></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="21da9858-c9b7-4afb-abad-a0a210b5391d" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">ARG arch
+FROM --platform=linux/amd64 mysql:5.7
+
+#Install the required tools
+RUN yum update -y &amp;&amp; \
+   yum install -y \
+   unzip
+
+#Set the mysql root password
+ENV MYSQL_ROOT_PASSWORD=&lt;ROOTPASSWORD&gt;
+
+#Copy configuration_checksums &amp; DB Backup
+COPY demo/db-backups/1.0.0-lite/mysql5.7/resources/*.zip  .
+COPY demo/db-backups/1.0.0-lite/mysql5.7/resources/*.sql  /docker-entrypoint-initdb.d/omrs_db_backup.sql
+
+RUN unzip configuration_checksums.zip &amp;&amp; \
+   rm configuration_checksums.zip</pre>
+</div></div><p><strong>Others (Linux)</strong></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="e0996088-2d9f-460a-9497-842ddd7be71a" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">FROM mysql:5.7
+
+#Install the required tools
+RUN yum update -y &amp;&amp; \
+   yum install -y \
+   unzip
+
+#Set the mysql root password
+ENV MYSQL_ROOT_PASSWORD=&lt;ROOTPASSWORD&gt;
+
+#Copy configuration_checksums &amp; DB Backup
+COPY demo/db-backups/1.0.0-lite/mysql5.7/resources/*.zip  .
+COPY demo/db-backups/1.0.0-lite/mysql5.7/resources/*.sql  /docker-entrypoint-initdb.d/omrs_db_backup.sql
+
+RUN unzip configuration_checksums.zip &amp;&amp; \
+   rm configuration_checksums.zip</pre>
+</div></div><p>5. Navigate to bahmni-scripts root directory and execute the following docker command (note the TAGNAME should be set to some specific value. e.g my-build-1):</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="fda7c7f8-e959-43c6-9059-d1ceca83a311" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">docker build --no-cache -t bahmni/openmrs-db:&lt;TAGNAME&gt; -f demo/db-backups/1.0.0-lite/mysql5.7/Dockerfile .</pre>
+</div></div><h1 id="RunningBahmniLitewithDBbackupfromcloud(Docker)-Configtheenvironmentanddockercompose">Config the environment and docker compose </h1><ol start="1"><li><p>Navigate to the <code>bahmni-docker/bahmni-lite</code> or <code>bahmni-india-package</code> directory where the <code>docker- compose.yml</code> is present</p></li></ol><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="110f5021-f738-4bbf-b4b4-779a0285c3a0" data-macro-name="info"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>If using Apple M1 chip, add <code>platform: linux/amd64</code> to each service present under the docker compose file.</p></div></div><p>2. Add the openMRS DB details captured earlier in <a href="#dblink" rel="nofollow">DB backup extraction</a> to the .env file and save it. Ensure the <code>OPENMRS_DB_IMAGE_NAME</code> is pointing to the newly created docker image (as generated in the previous step).</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="fe5a2224-ca59-47b5-ae5a-d8b80105cbd2" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence"># OpenMRS Environment Variables
+OPENMRS_IMAGE_TAG=latest
+OPENMRS_DB_IMAGE_NAME=bahmni/openmrs-db:&lt;TAGNAME&gt;
+OPENMRS_DB_NAME=&lt;DBNAME&gt;
+OPENMRS_DB_HOST=openmrsdb
+OPENMRS_DB_USERNAME=&lt;DBUSERNAME&gt;
+OPENMRS_DB_PASSWORD=&lt;DBPASSWORD&gt;
+OPENMRS_DB_CREATE_TABLES='false'
+OPENMRS_DB_AUTO_UPDATE='true'
+OPENMRS_MODULE_WEB_ADMIN='true'
+MYSQL_ROOT_USERNAME=root
+# OMRS_DEV_DEBUG_PORT=
+OMRS_JAVA_SERVER_OPTS=''
+OMRS_JAVA_MEMORY_OPTS=''
+OPENMRS_UPLOAD_FILES_PATH=./openmrs-uploads
+BAHMNI_OPENMRS_MODULES_PATH=
+MYSQL_ROOT_PASSWORD=&lt;ROOTPASSWORD&gt;
+OPENMRS_DB_TYPE=mysql
+OPENMRS_DOCKER_ENV='true'</pre>
+</div></div><h1 id="RunningBahmniLitewithDBbackupfromcloud(Docker)-InvokeBahmniLite">Invoke Bahmni Lite</h1><ol start="1"><li><p>Bring up Bahmni through Docker compose</p></li></ol><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="176d32c9-19e3-4395-96b3-dd819ffef31d" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">docker-compose up -d --build</pre>
+</div></div><p>2. Wait for openmrs to load with all the required indexes</p><p>3. Enter “<a class="external-link" href="http://localhost/openmrs" rel="nofollow"><u>http://localhost/openmrs</u></a>” in browser and verify openMRS is up</p><p>4. Navigate to “<a class="external-link" href="http://localhost/" rel="nofollow"><u>http://localhost/</u></a>” and start using Bahmni (this should now run with the new DB)</p><p /></body></html>

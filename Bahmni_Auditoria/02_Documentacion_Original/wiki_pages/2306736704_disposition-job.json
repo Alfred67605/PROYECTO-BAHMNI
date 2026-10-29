@@ -1,0 +1,172 @@
+{
+  "id": "2306736704",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2306736704",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMwNjczNjcwNA==",
+  "status": "current",
+  "title": "Disposition Job",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "createdDate": "2021-04-05T09:34:03.698Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736704/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "when": "2021-04-05T09:34:18.593Z",
+    "friendlyWhen": "Apr 05, 2021",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.BfbNuZqiDcDGO70x9ogdIw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2306736704.9",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2306736704"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736704/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<h3 style=\"text-align: center;\"><strong>Configuration</strong></h3><h5><strong>ColumnsToIgnore apply for this module ( Refer </strong><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><h5><strong>incrementalUpdateConfig is applicable</strong> ( Refer <a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</h5><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"3e8e328c-49d1-45eb-b720-55f64787181a\"><ac:plain-text-body><![CDATA[ {\n      \"name\": \"Disposition Data\",\n      \"type\": \"disposition\",\n      \"columnsToIgnore\": [],\n      \"incrementalUpdateConfig\": {\n        \"updateOn\": \"encounter_id\",\n        \"eventCategory\": \"Encounter\",\n        \"openmrsTableName\": \"encounter\"\n      }\n    }\n]\n]]></ac:plain-text-body></ac:structured-macro><hr /><h3 style=\"text-align: center;\">Existing OpenMRS tables</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"1dd39fa5-c617-4692-adfe-75f19991ce56\"><ac:plain-text-body><![CDATA[concept\nconcept_set\nconcept_name\npatient\nvisit\nobs\nlocation\nprogram\npatient_program\necnounter\n]]></ac:plain-text-body></ac:structured-macro><hr /><p style=\"text-align: center;\"><strong>Flattened Mart Tables</strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"2ae8edbd-3563-4206-81d1-cdfc402334ae\"><ac:plain-text-body><![CDATA[disposition_set]]></ac:plain-text-body></ac:structured-macro><p><strong>a) dispostion_set- </strong>This table provides the information about the disposition of the patient enrolled from programs/clinical module.</p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p><strong>Column Name</strong></p></td><td><p><strong>Description</strong></p></td></tr><tr><td><p>id_disposition_set</p></td><td><p>Id reference to the disposition set</p></td></tr><tr><td><p>patient_id</p></td><td><p>Id reference to the patient from patient table in openmrs</p></td></tr><tr><td><p>encounter_id</p></td><td><p>Id reference to the encounter from encounter table in openmrs</p></td></tr><tr><td><p>visit_id</p></td><td><p>Id reference to the visit from the visit table in openmrs</p></td></tr><tr><td><p>obs_datetime</p></td><td><p>obs date time from obs table in openmrs</p></td></tr><tr><td><p>date_created</p></td><td><p>date of disposition got created</p></td></tr><tr><td><p>date_modified</p></td><td><p>date of disposition got modified</p></td></tr><tr><td><p>location_id</p></td><td><p>location id of the patient</p></td></tr><tr><td><p>location_name</p></td><td><p>location name</p></td></tr><tr><td><p>program_id</p></td><td><p>Id reference to what program that particular patient is assigned to</p></td></tr><tr><td><p>program_name</p></td><td><p>Name of the program assigned</p></td></tr><tr><td><p>patient_program_id</p></td><td><p>patient_program_id from patient_program openmrs table</p></td></tr><tr><td><p>disposition_note</p></td><td><p>Disposition note entered while enrolling for disposition</p></td></tr><tr><td><p>disposition</p></td><td><p>Disposition of which the patient enrolled to</p></td></tr></tbody></table><p>&nbsp;</p><hr /><h3 style=\"text-align: center;\"><strong>Translations</strong></h3><p>if we need to get those values as per the translations we need to add the below <strong><span style=\"color: rgb(0,184,217);\">locale tag</span></strong> in the &ldquo;<strong>/var/www/bahmni_config/bahmni-mart/bahmni-mart.json</strong>&ldquo; file.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"af33bcf4-4dd6-42bb-83f0-40023ccbe65b\"><ac:plain-text-body><![CDATA[{\n      \"name\": \"Disposition Data\",\n      \"type\": \"disposition\",\n      \"locale\": \"fr\"     \n}\n]]></ac:plain-text-body></ac:structured-macro><p>&nbsp;</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2306736704"
+      }
+    },
+    "view": {
+      "value": "<h3 style=\"text-align: center;\" id=\"DispositionJob-Configuration\"><style>[data-colorid=p89u5wlwcc]{color:#00b8d9} html[data-color-mode=dark] [data-colorid=p89u5wlwcc]{color:#26deff}</style><strong>Configuration</strong></h3><h5 id=\"DispositionJob-ColumnsToIgnoreapplyforthismodule(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix)\"><strong>ColumnsToIgnore apply for this module ( Refer </strong><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><h5 id=\"DispositionJob-incrementalUpdateConfigisapplicable(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update)\"><strong>incrementalUpdateConfig is applicable</strong> ( Refer <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</h5><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3e8e328c-49d1-45eb-b720-55f64787181a\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\"> {\n      &quot;name&quot;: &quot;Disposition Data&quot;,\n      &quot;type&quot;: &quot;disposition&quot;,\n      &quot;columnsToIgnore&quot;: [],\n      &quot;incrementalUpdateConfig&quot;: {\n        &quot;updateOn&quot;: &quot;encounter_id&quot;,\n        &quot;eventCategory&quot;: &quot;Encounter&quot;,\n        &quot;openmrsTableName&quot;: &quot;encounter&quot;\n      }\n    }\n]\n</pre>\n</div></div><hr /><h3 style=\"text-align: center;\" id=\"DispositionJob-ExistingOpenMRStables\">Existing OpenMRS tables</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"1dd39fa5-c617-4692-adfe-75f19991ce56\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">concept\nconcept_set\nconcept_name\npatient\nvisit\nobs\nlocation\nprogram\npatient_program\necnounter\n</pre>\n</div></div><hr /><p style=\"text-align: center;\"><strong>Flattened Mart Tables</strong></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"2ae8edbd-3563-4206-81d1-cdfc402334ae\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">disposition_set</pre>\n</div></div><p><strong>a) dispostion_set- </strong>This table provides the information about the disposition of the patient enrolled from programs/clinical module.</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>id_disposition_set</p></td><td class=\"confluenceTd\"><p>Id reference to the disposition set</p></td></tr><tr><td class=\"confluenceTd\"><p>patient_id</p></td><td class=\"confluenceTd\"><p>Id reference to the patient from patient table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>encounter_id</p></td><td class=\"confluenceTd\"><p>Id reference to the encounter from encounter table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_id</p></td><td class=\"confluenceTd\"><p>Id reference to the visit from the visit table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>obs_datetime</p></td><td class=\"confluenceTd\"><p>obs date time from obs table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>date_created</p></td><td class=\"confluenceTd\"><p>date of disposition got created</p></td></tr><tr><td class=\"confluenceTd\"><p>date_modified</p></td><td class=\"confluenceTd\"><p>date of disposition got modified</p></td></tr><tr><td class=\"confluenceTd\"><p>location_id</p></td><td class=\"confluenceTd\"><p>location id of the patient</p></td></tr><tr><td class=\"confluenceTd\"><p>location_name</p></td><td class=\"confluenceTd\"><p>location name</p></td></tr><tr><td class=\"confluenceTd\"><p>program_id</p></td><td class=\"confluenceTd\"><p>Id reference to what program that particular patient is assigned to</p></td></tr><tr><td class=\"confluenceTd\"><p>program_name</p></td><td class=\"confluenceTd\"><p>Name of the program assigned</p></td></tr><tr><td class=\"confluenceTd\"><p>patient_program_id</p></td><td class=\"confluenceTd\"><p>patient_program_id from patient_program openmrs table</p></td></tr><tr><td class=\"confluenceTd\"><p>disposition_note</p></td><td class=\"confluenceTd\"><p>Disposition note entered while enrolling for disposition</p></td></tr><tr><td class=\"confluenceTd\"><p>disposition</p></td><td class=\"confluenceTd\"><p>Disposition of which the patient enrolled to</p></td></tr></tbody></table></div><p>&nbsp;</p><hr /><h3 style=\"text-align: center;\" id=\"DispositionJob-Translations\"><strong>Translations</strong></h3><p>if we need to get those values as per the translations we need to add the below <strong><span data-colorid=\"p89u5wlwcc\">locale tag</span></strong> in the &ldquo;<strong>/var/www/bahmni_config/bahmni-mart/bahmni-mart.json</strong>&ldquo; file.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"af33bcf4-4dd6-42bb-83f0-40023ccbe65b\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n      &quot;name&quot;: &quot;Disposition Data&quot;,\n      &quot;type&quot;: &quot;disposition&quot;,\n      &quot;locale&quot;: &quot;fr&quot;     \n}\n</pre>\n</div></div><p>&nbsp;</p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2306736704"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2306736704/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736704/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 8422
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2306736704/child",
+    "restrictions": "/rest/api/content/2306736704/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2306736704/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2306736704",
+    "webui": "/spaces/BAH/pages/2306736704/Disposition+Job",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2306736704",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736704",
+    "tinyui": "/x/QAJ_iQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

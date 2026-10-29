@@ -1,0 +1,44 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Importing Result Range Data into OpenELIS PostgreSQL: Step-by-Step Guide</title></head><body><h1>Importing Result Range Data into OpenELIS PostgreSQL: Step-by-Step Guide</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p>This guide offers comprehensive instructions on importing result range data into the OpenELIS PostgreSQL database using a shell script and a CSV file.</p><h2 id="ImportingResultRangeDataintoOpenELISPostgreSQL:Step-by-StepGuide-Prerequisites">Prerequisites</h2><ol start="1"><li><p><strong>Environment Setup:</strong></p><ul><li><p>Ensure that you are operating within the <code>openelisdb-1</code> container where the OpenELIS PostgreSQL database is accessible.</p></li></ul></li><li><p><strong>Required Files:</strong></p><ul><li><p>Shell script: <code>copy-result-range.sh</code></p></li><li><p>CSV file: <code>result-ranges.csv</code></p></li></ul></li></ol><h2 id="ImportingResultRangeDataintoOpenELISPostgreSQL:Step-by-StepGuide-Step-by-StepInstructions">Step-by-Step Instructions</h2><h3 id="ImportingResultRangeDataintoOpenELISPostgreSQL:Step-by-StepGuide-DownloadandCopyRequiredFiles">Download and Copy Required Files</h3><p>Download the shell script (from <a class="external-link" href="https://github.com/Bahmni/bahmni-scripts/blob/master/metadataScripts/openelis/copy-result-range.sh" rel="nofollow">Bahmni/bahmni-scripts</a> repository), define result ranges in CSV format, and then copy them to the appropriate directories within your <code>bahmni-docker</code> folder.</p><ul><li><p><strong>Shell script:</strong> <code>/bahmni-docker/bahmni-standard/scripts/copy-result-range.sh</code></p></li><li><p><strong>CSV file:</strong> <code>/bahmni-docker/bahmni-standard/openelis-db-dump/data/result-ranges.csv</code></p></li></ul><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="" data-macro-name="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;"><div class="panelContent" style="background-color: #EAE6FF;">
+<p><strong>CSV Structure</strong><br />Ensure that the CSV file (<code>result-ranges.csv</code>) is correctly formatted as shown below:</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="ea814e5b-523c-4e14-a578-c62243f26bd0" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">Concept UUID,Gender,Min Age,Max Age,Normal Low,Normal High,Valid Low,Valid High</pre>
+</div></div>
+</div></div><h3 id="ImportingResultRangeDataintoOpenELISPostgreSQL:Step-by-StepGuide-VolumeMountConfiguration">Volume Mount Configuration</h3><p>Update the <code>openelisdb</code> service configuration in your Docker Compose file to mount the script and CSV file into the container.</p><h4 id="ImportingResultRangeDataintoOpenELISPostgreSQL:Step-by-StepGuide-DockerComposeConfiguration:">Docker Compose Configuration:</h4><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="e4993cc7-0939-48f3-a68b-ff7b1795309f" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">openelisdb:
+    profiles: [&quot;openelis&quot;,&quot;bahmni-standard&quot;]
+    image: '${OPENELIS_DB_IMAGE_NAME:?[ERROR]}'
+    volumes:
+      - '${OPENELIS_DB_DUMP_PATH}:/resources/db-dump'
+      - 'openelisdbdata:/var/lib/postgresql/data'
+      # Volume mount both the files into the resources subfolder
+      - './scripts/copy-result-range.sh:/resources/copy-result-range.sh' 
+      - './openelis-db-dump/data/result-ranges.csv:/resources/result-ranges.csv'
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -h localhost -U postgres']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    environment:
+      POSTGRES_USER: ${OPENELIS_DB_USER:?}
+      POSTGRES_PASSWORD: ${OPENELIS_DB_PASSWORD:?}
+      POSTGRES_DB: ${OPENELIS_DB_NAME:?}
+    logging: *log-config
+    restart: ${RESTART_POLICY}</pre>
+</div></div><h3 id="ImportingResultRangeDataintoOpenELISPostgreSQL:Step-by-StepGuide-SetScriptPermissions">Set Script Permissions</h3><p>Access the <code>openelisdb-1</code> container and ensure that the script has executable permissions.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="ce703d51-e7bd-45de-bd66-5c53ee4da23f" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">cd resources &amp;&amp; chmod +x copy-result-range.sh</pre>
+</div></div><h3 id="ImportingResultRangeDataintoOpenELISPostgreSQL:Step-by-StepGuide-ExecutetheScript">Execute the Script</h3><p>Run the script with the appropriate environment variables.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="a04aa4bc-d8d8-4235-a984-b8a82a56f6f7" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">CSV_FILE_PATH=&quot;result-ranges.csv&quot; \
+POSTGRES_DB=&quot;clinlims&quot; \
+POSTGRES_USER=&quot;clinlims&quot; \
+./copy-result-range.sh</pre>
+</div></div><h2 id="ImportingResultRangeDataintoOpenELISPostgreSQL:Step-by-StepGuide-Notes">Notes</h2><ul><li><p><strong>CSV File Accessibility:</strong>  <br/>Verify that the <code>result-ranges.csv</code> file is correctly formatted and accessible from the script's execution context.</p></li><li><p><strong>Test Result Ranges:</strong>  <br/>Confirm that the test result ranges added to the <code>result-ranges.csv</code> do not include the unit in which the results are to be captured. The field expects a numeric value, and any non-numeric character will result in an error.</p></li><li><p><strong>Test Unit:</strong>  <br/>Ensure that the test result ranges are defined in the unit in which the test has been defined.</p></li><li><p><strong>Concept UUID Matching:</strong>  <br/>Validate that the Concept UUID in the CSV matches the test UUID in the OpenMRS dictionary.</p></li><li><p><strong>Environment Variables:</strong>  <br/>Review and configure the following environment variables to align with your specific OpenELIS PostgreSQL database setup:</p><ul><li><p><code>POSTGRES_DB</code>: The database name (e.g., <code>clinlims</code>).</p></li><li><p><code>POSTGRES_USER</code>: The database user (e.g., <code>clinlims</code>).</p></li><li><p><code>POSTGRES_HOST</code>: The database host (default: <code>localhost</code>).</p></li><li><p><code>POSTGRES_PORT</code>: The database port (default: <code>5432</code>).</p></li></ul></li></ul><h2 id="ImportingResultRangeDataintoOpenELISPostgreSQL:Step-by-StepGuide-Troubleshooting">Troubleshooting</h2><p>If you encounter any issues, ensure that:</p><ul><li><p>The Docker Compose file is correctly configured, and the volumes are appropriately mounted.</p></li><li><p>The shell script has the correct permissions and is executable.</p></li><li><p>The CSV file path is accurately specified in the environment variables.</p></li><li><p>The environment variables match the OpenELIS PostgreSQL database configuration.</p></li></ul><h3 id="ImportingResultRangeDataintoOpenELISPostgreSQL:Step-by-StepGuide-Conclusion">Conclusion</h3><p>By adhering to these steps, you can effectively import result range data into the OpenELIS PostgreSQL database using the provided shell script and CSV file.</p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="toc-macro client-side-toc-macro  conf-macro output-block" data-cssliststyle="default" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6" data-layout="default" data-local-id="944db905-b1de-49a2-932d-52210929aaab" data-macro-id="c16db916-3e4c-493c-95e5-35ed01e322e0" data-macro-name="toc" data-numberedoutline="true" data-structure="list"> </div></div>
+</div>
+</div>
+</div></body></html>

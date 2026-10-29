@@ -1,0 +1,185 @@
+{
+  "id": "3311534130",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3311534130",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzMxMTUzNDEzMA==",
+  "status": "current",
+  "title": "Bahmni and CIEL dictionary",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "6175b4dbb9c549006fba5a30",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Deepthi Mantena (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/6175b4dbb9c549006fba5a30",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Deepthi Mantena (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=6175b4dbb9c549006fba5a30"
+      }
+    },
+    "createdDate": "2024-01-12T06:56:44.277Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3311534130/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2024-02-01T11:53:57.557Z",
+    "friendlyWhen": "Feb 01, 2024",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3311534130.69",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3311534130"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3311534130/version/5"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"a148077b-6ea3-451f-a360-e43a84df0ac2\"><ac:rich-text-body><p>Bahmni Lite v1.0 ships with CIEL Dictionary out-of-the-box. It is downloaded from OCL and stored in the <code>clinic-config</code> repository here :<a href=\"https://github.com/Bahmni/clinic-config/tree/main/masterdata/configuration/ocl\" data-card-appearance=\"inline\">https://github.com/Bahmni/clinic-config/tree/main/masterdata/configuration/ocl</a> </p></ac:rich-text-body></ac:structured-macro><p>The <a href=\"https://openconceptlab.org/2022/10/19/ciel-bridging-terminology-for-the-global-community/\">CIEL concept dictionary</a> is a dictionary of over 53000 concepts relevant to health information systems in low and middle income countries (LMICs). Those concepts include diagnoses, procedures, medications, labs and observables (answers to questions) all mapped to international standard coding systems such as ICD-10-WHO, SNOMED CT, LOINC, RxNORM, and many others. It is used by electronic health records and other health information systems in more than 40 countries. Visit CIEL on OCL Online to see the latest release:&nbsp;<a href=\"https://app.openconceptlab.org/#/orgs/CIEL/\">https://app.openconceptlab.org/#/orgs/CIEL/</a>&nbsp;</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"922\" ac:original-width=\"1147\" ac:custom-width=\"true\" ac:alt=\"image-20240115-053840.png\" ac:width=\"760\"><ri:attachment ri:filename=\"image-20240115-053840.png\" ri:version-at-save=\"1\" /><ac:caption><p>Bahmni LITE (OpenMRS AdminUI) showing a CIEL Concept &ldquo;Astrazeneca Covid-19 Vaccine&rdquo; with SNOMED, ICD-10, ICD-11, RxNORM and HL-7-CVX mappings (in the dev.lite demo environment).</p></ac:caption></ac:image><hr /><p>The CIEL concepts are constantly being updated, including addition of new maps to ICD-11-WHO and language translations for a subset of concepts.&nbsp;You can download the latest version of CIEL dictionary from OCL. Please also read this page: <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Comparing various Concept Dictionary options in Bahmni\" ri:version-at-save=\"25\" /><ac:link-body>Comparing various Concept Dictionary options in Bahmni</ac:link-body></ac:link> </p><ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p><strong>NOTE regarding datatype updates in CIEL: </strong>When updating the CIEL dictionary version to implement essential changes or incorporate new updates, it is important to consider that these modifications will only take effect in the production environment if there are no <em><strong>pre-existing observations</strong></em> recorded for the concepts that underwent updates in the latest release version.</p><p>OpenMRS, by default, restricts the modification of <strong>data types</strong> for concepts with existing observations. This restriction ensures data integrity and prevents unintended alterations that could affect the accuracy of recorded information. Therefore, it is advisable to review and manage any pre-existing observations related to the updated concepts to fully realize the benefits of the CIEL dictionary's latest version in the production environment.</p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p><strong>NOTE regarding datatype updates in CIEL: </strong>When updating the CIEL dictionary version to implement essential changes or incorporate new updates, it is important to consider that these modifications will only take effect in the production environment if there are no <em><strong>pre-existing observations</strong></em> recorded for the concepts that underwent updates in the latest release version.</p><p>OpenMRS, by default, restricts the modification of <strong>data types</strong> for concepts with existing observations. This restriction ensures data integrity and prevents unintended alterations that could affect the accuracy of recorded information. Therefore, it is advisable to review and manage any pre-existing observations related to the updated concepts to fully realize the benefits of the CIEL dictionary's latest version in the production environment.</p>\n</div></div></ac:adf-fallback></ac:adf-extension><ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p><strong>NOTE regarding retired concepts in CEIL: </strong>The current CIEL OCL importer will import all concepts into OpenMRS(Bahmni) even if they are retired (and will mark them as retired in OpenMRS). This can have some exceptions showing up in OpenMRS logs due to some rule failures, but should usually be OK to ignore for now. See this Jira ticket for more details: <ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"e563e132-33f3-4efe-8b5c-7ab2b8f27108\"><ac:parameter ac:name=\"key\">BAH-3478</ac:parameter><ac:parameter ac:name=\"serverId\">32584f0f-f83d-3b0b-b91f-826465c6b0b8</ac:parameter><ac:parameter ac:name=\"server\">System JIRA</ac:parameter></ac:structured-macro> </p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p><strong>NOTE regarding retired concepts in CEIL: </strong>The current CIEL OCL importer will import all concepts into OpenMRS(Bahmni) even if they are retired (and will mark them as retired in OpenMRS). This can have some exceptions showing up in OpenMRS logs due to some rule failures, but should usually be OK to ignore for now. See this Jira ticket for more details: \n\n    \n\n            \n\n\n\n\n    <span class=\"confluence-jim-macro jira-issue conf-macro output-block\">\n                <a href=\"https://bahmni.atlassian.net/browse/BAH-3478\" class=\"jira-issue-key\"><img class=\"icon\" src=\"https://bahmni.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10303?size=medium\" />BAH-3478</a>\n                    -\n            <span class=\"summary\">Openmrs throws exception when trying to import OCL concept</span>\n                                                            <span class=\"aui-lozenge aui-lozenge-subtle aui-lozenge-current jira-macro-single-issue-export-pdf\">Blocked</span>\n            </span>\n </p>\n</div></div></ac:adf-fallback></ac:adf-extension>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3311534130"
+      }
+    },
+    "view": {
+      "value": "<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a148077b-6ea3-451f-a360-e43a84df0ac2\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Bahmni Lite v1.0 ships with CIEL Dictionary out-of-the-box. It is downloaded from OCL and stored in the <code>clinic-config</code> repository here :<a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://github.com/Bahmni/clinic-config/tree/main/masterdata/configuration/ocl\" rel=\"nofollow\">https://github.com/Bahmni/clinic-config/tree/main/masterdata/configuration/ocl</a> </p></div></div><p>The <a class=\"external-link\" href=\"https://openconceptlab.org/2022/10/19/ciel-bridging-terminology-for-the-global-community/\" rel=\"nofollow\">CIEL concept dictionary</a> is a dictionary of over 53000 concepts relevant to health information systems in low and middle income countries (LMICs). Those concepts include diagnoses, procedures, medications, labs and observables (answers to questions) all mapped to international standard coding systems such as ICD-10-WHO, SNOMED CT, LOINC, RxNORM, and many others. It is used by electronic health records and other health information systems in more than 40 countries. Visit CIEL on OCL Online to see the latest release: <a class=\"external-link\" href=\"https://app.openconceptlab.org/#/orgs/CIEL/\" rel=\"nofollow\">https://app.openconceptlab.org/#/orgs/CIEL/</a> </p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"image-20240115-053840.png\" width=\"760\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3311534130/image-20240115-053840.png?version=1&amp;modificationDate=1705297127580&amp;cacheVersion=1&amp;api=v2&amp;width=760&amp;height=610\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3311534130/image-20240115-053840.png?version=1&amp;modificationDate=1705297127580&amp;cacheVersion=1&amp;api=v2\" data-height=\"922\" data-width=\"1147\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3314188354\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240115-053840.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3311534130\" data-linked-resource-container-version=\"5\" data-media-id=\"f46db39b-cc85-4852-84c1-9ebf6a13eb4a\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3311534130/image-20240115-053840.png?version=1&amp;modificationDate=1705297127580&amp;cacheVersion=1&amp;api=v2&amp;width=1147&amp;height=922 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3311534130/image-20240115-053840.png?version=1&amp;modificationDate=1705297127580&amp;cacheVersion=1&amp;api=v2&amp;width=760&amp;height=610 1x\"></span><hr/><p>The CIEL concepts are constantly being updated, including addition of new maps to ICD-11-WHO and language translations for a subset of concepts. You can download the latest version of CIEL dictionary from OCL. Please also read this page: <a href=\"/wiki/spaces/BAH/pages/3251863630/Comparing+various+Concept+Dictionary+options+in+Bahmni\" data-linked-resource-id=\"3251863630\" data-linked-resource-version=\"25\" data-linked-resource-type=\"page\">Comparing various Concept Dictionary options in Bahmni</a> </p><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p><strong>NOTE regarding datatype updates in CIEL: </strong>When updating the CIEL dictionary version to implement essential changes or incorporate new updates, it is important to consider that these modifications will only take effect in the production environment if there are no <em><strong>pre-existing observations</strong></em> recorded for the concepts that underwent updates in the latest release version.</p><p>OpenMRS, by default, restricts the modification of <strong>data types</strong> for concepts with existing observations. This restriction ensures data integrity and prevents unintended alterations that could affect the accuracy of recorded information. Therefore, it is advisable to review and manage any pre-existing observations related to the updated concepts to fully realize the benefits of the CIEL dictionary's latest version in the production environment.</p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p><strong>NOTE regarding retired concepts in CEIL: </strong>The current CIEL OCL importer will import all concepts into OpenMRS(Bahmni) even if they are retired (and will mark them as retired in OpenMRS). This can have some exceptions showing up in OpenMRS logs due to some rule failures, but should usually be OK to ignore for now. See this Jira ticket for more details: \n\n    \n\n            \n\n\n\n\n    <span class=\"confluence-jim-macro jira-issue conf-macro output-block\" data-client-id=\"SINGLE_32584f0f-f83d-3b0b-b91f-826465c6b0b8_3311534130_anonymous\" data-hasbody=\"false\" data-jira-key=\"BAH-3478\" data-macro-id=\"e563e132-33f3-4efe-8b5c-7ab2b8f27108\" data-macro-name=\"jira\">\n                <a href=\"https://bahmni.atlassian.net/browse/BAH-3478\" class=\"jira-issue-key\"><span class=\"aui-icon aui-icon-wait issue-placeholder\"> </span>BAH-3478</a>\n                    -\n            <span class=\"summary\">Getting issue details...</span>\n                                    <span class=\"aui-lozenge aui-lozenge-subtle aui-lozenge-default issue-placeholder\">STATUS</span>\n            </span>\n </p>\n</div></div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3311534130"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "bahmni-lite",
+          "id": "2984017932",
+          "label": "bahmni-lite"
+        },
+        {
+          "prefix": "global",
+          "name": "concepts",
+          "id": "3314188351",
+          "label": "concepts"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 2,
+      "_links": {
+        "next": "/rest/api/content/3311534130/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3311534130/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 865042344
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3311534130/child",
+    "restrictions": "/rest/api/content/3311534130/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3311534130/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3311534130",
+    "webui": "/spaces/BAH/pages/3311534130/Bahmni+and+CIEL+dictionary",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3311534130",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3311534130",
+    "tinyui": "/x/MgBixQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

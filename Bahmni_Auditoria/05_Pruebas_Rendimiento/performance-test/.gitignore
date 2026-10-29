@@ -1,0 +1,14 @@
+# idea conf files
+.idea
+*.iml
+
+# building
+target/
+.gradle
+build
+out
+logs
+# misc
+.DS_Store
+.vscode
+.metals

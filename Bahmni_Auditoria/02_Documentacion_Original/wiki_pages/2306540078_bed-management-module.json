@@ -1,0 +1,172 @@
+{
+  "id": "2306540078",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2306540078",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMwNjU0MDA3OA==",
+  "status": "current",
+  "title": "Bed Management - Module",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5ff6975591bb2e0108e513c3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "venkatesh bavisetti",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5ff6975591bb2e0108e513c3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Bavisetti Venkatesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5ff6975591bb2e0108e513c3"
+      }
+    },
+    "createdDate": "2021-04-05T09:08:46.702Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306540078/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5ff6975591bb2e0108e513c3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "venkatesh bavisetti",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5ff6975591bb2e0108e513c3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Bavisetti Venkatesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5ff6975591bb2e0108e513c3"
+      }
+    },
+    "when": "2021-04-05T09:22:04.185Z",
+    "friendlyWhen": "Apr 05, 2021",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.AWdLoSHOMhYEqk7vDAwW8A.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2306540078.13",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2306540078"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306540078/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" data-layout=\"default\" ac:local-id=\"16c44fae-6fac-4e41-b2b0-921df2d78656\" ac:macro-id=\"163dfe67-384e-411b-be39-69535e71c4f8\" /><h3 style=\"text-align: center;\"><strong>Configuration</strong></h3><h5><strong>ColumnsToIgnore apply for this module ( Refer  </strong><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><h5><strong>incrementalUpdateConfig is applicable</strong> ( Refer <a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</h5><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"fcc53ce7-4519-47ed-a637-8a8e3d3594c5\"><ac:plain-text-body><![CDATA[{\n      \"name\": \"Bed Management\",\n      \"type\": \"bedManagement\",\n      \"chunkSizeToRead\": \"500\"\n}]]></ac:plain-text-body></ac:structured-macro><hr /><h3 style=\"text-align: center;\">Existing OpenMRS tables</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"38e2cfc7-7d44-4d0c-9440-d026b7c0f239\"><ac:plain-text-body><![CDATA[Bed\nBed_tag_map\nBed_tag\nBed_patient_assignment_map\nBed_type\nBed_location_map\nLocation\nEncounter\nVisit\nVisit_type]]></ac:plain-text-body></ac:structured-macro><hr /><h3 style=\"text-align: center;\">Flattened Mart Tables</h3><p>Note : The below Mart tables are created by customSql job type.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d3d34f7a-8c6f-4e32-99ef-43f92adf6ef0\"><ac:plain-text-body><![CDATA[bed_patient_assignment_default\nbed_tags_default\ncurrent_bed_details_default]]></ac:plain-text-body></ac:structured-macro><h4><strong>Incremental Config:</strong></h4><p>Please check <a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update#5.-Bed-Management-Job:\">this</a> section on how to enable/disable incremental config for specific mart tables.</p><p>a) <strong>bed_patient_assignment_default</strong></p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>patient_id</p></td><td><p>Patient identification number.</p></td></tr><tr><td><p>bed_id</p></td><td><p>Id reference for a bed</p></td></tr><tr><td><p>bed_number</p></td><td><p>Number assigned by hospital for a bed for their identification.</p></td></tr><tr><td><p>date_started</p></td><td><p>Date time column that gives occupancy duration of patient on different encounters</p></td></tr><tr><td><p>date_stopped</p></td><td><p>Date time column that gives occupancy duration of patient on different encounters</p></td></tr><tr><td><p>location</p></td><td><p>location of the patient in bed management module</p></td></tr><tr><td><p>encounter_id</p></td><td><p>Encounter on which the bed was occupied by the patient</p></td></tr><tr><td><p>encounter_datetime</p></td><td><p>Time of encounter</p></td></tr><tr><td><p>visit_id</p></td><td><p>Id of the visit</p></td></tr><tr><td><p>visit_type</p></td><td><p>Type of visit of the patient</p></td></tr></tbody></table><p><strong>b) bed_tags_default</strong></p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>bed_tag_map_id</p></td><td><p>Id reference for bed tag map</p></td></tr><tr><td><p>bed_id</p></td><td><p>Id reference for a bed</p></td></tr><tr><td><p>bed_location</p></td><td><p>Location of bed in the hospital</p></td></tr><tr><td><p>bed_number</p></td><td><p>Number assigned by hospital for a bed for their identification</p></td></tr><tr><td><p>bed_status</p></td><td><p>Status of the bed (eg :Available, Occupied )</p></td></tr><tr><td><p>bed_tag_name</p></td><td><p>Tag for bed (eg : Lost, Isolation, Strict Isolation, Reserved for CT)</p></td></tr><tr><td><p>date_created</p></td><td><p>tag start date</p></td></tr><tr><td><p>date_changed</p></td><td><p>tag changed date</p></td></tr><tr><td><p>date_stopped</p></td><td><p>Date stopped is date voided</p></td></tr></tbody></table><p><strong>c) current_bed_details</strong></p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>bed_id</p></td><td><p>Id reference for a bed</p></td></tr><tr><td><p>bed_location</p></td><td><p>Location of bed in the hospital</p></td></tr><tr><td><p>bed_number</p></td><td><p>Number assigned by hospital for a bed for their identification.</p></td></tr><tr><td><p>bed_type</p></td><td><p>Type of bed</p></td></tr></tbody></table><hr /><h3 style=\"text-align: center;\"> Mart Views</h3><p><strong>a)</strong> <strong>bed_management_view</strong></p><p>This view provides the details of all the beds that a patient had been assigned to along with details like start and end date &amp; time. It also provides information about the status of each bed when assigned to the patient and its location in the hospital. Since a patient may be assigned to different beds at different times there will be multiple rows for same patient.</p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p><strong>Column Name</strong></p></td><td><p><strong>Description</strong></p></td></tr><tr><td><p>patient_id</p></td><td><p>Patient identification number.</p></td></tr><tr><td><p>visit_id</p></td><td><p>Id reference for visit</p></td></tr><tr><td><p>bed_number</p></td><td><p>Number assigned by hospital for a bed for their identification.</p></td></tr><tr><td><p>date_started</p></td><td><p>Date time column that gives occupancy duration of patient on different encounters</p></td></tr><tr><td><p>date_stopped</p></td><td><p>Date time column that gives occupancy duration of patient on different encounters</p></td></tr><tr><td><p>location</p></td><td><p>location of the patient in bed management module</p></td></tr><tr><td><p>encounter_type_name</p></td><td><p>Encounter on which the bed was occupied by the patient</p></td></tr><tr><td><p>bed_tag_name</p></td><td><p>tag name assigned to the bed</p></td></tr><tr><td><p>tag_start_date</p></td><td><p>tag start date</p></td></tr><tr><td><p>tag_end_date</p></td><td><p>tag end date</p></td></tr></tbody></table><p><br /><strong>b)</strong> <strong>patient_bed_tags_history_view</strong></p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>patient_id</p></td><td><p>Id reference for a patient</p></td></tr><tr><td><p>visit_id</p></td><td><p>Patient visit id</p></td></tr><tr><td><p>encounter_id</p></td><td><p>Id reference for an encounter</p></td></tr><tr><td><p>bed_number</p></td><td><p>Bed number</p></td></tr><tr><td><p>location</p></td><td><p>Location in hospital</p></td></tr><tr><td><p>age_at_bed_assignment</p></td><td><p>Age of patient</p></td></tr><tr><td><p>age_group_at_bed_assignment</p></td><td><p>Under which age range the patient belongs</p></td></tr><tr><td><p>action</p></td><td><p>action performed ( Movement/Discharge etc..)</p></td></tr><tr><td><p>assigned_on</p></td><td><p>Assigned date</p></td></tr><tr><td><p>discharged_on</p></td><td><p>Patient discharge date</p></td></tr><tr><td><p>bed_tags</p></td><td><p>Bed tag, if tagged</p></td></tr><tr><td><p>bed_tag_created</p></td><td><p>Date bed was tagged</p></td></tr><tr><td><p>bed_tag_removed</p></td><td><p>Date bed tag was removed</p></td></tr></tbody></table><p><strong>&nbsp;&nbsp;c)</strong> <strong>patient_bed_view</strong></p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>age_at_bed_assignment</p></td><td><p>Age of the patient during bed assignment</p></td></tr><tr><td><p>bed_assigned_date</p></td><td><p>Date of bed assignment</p></td></tr><tr><td><p>bed_discharged_date</p></td><td><p>Date of discharge from bed</p></td></tr><tr><td><p>birth_year</p></td><td><p>Year of birth of the patient</p></td></tr><tr><td><p>dead</p></td><td><p>True (Patient is Dead)</p><p>False(Patient is not Dead)</p></td></tr><tr><td><p>gender</p></td><td><p>Gender of the patient</p></td></tr><tr><td><p>location</p></td><td><p>Location of the bed</p></td></tr><tr><td><p>nationalIdentificationNumber</p></td><td><p>Patient attribute</p></td></tr><tr><td><p>patient_id</p></td><td><p>Id of the Patient</p></td></tr><tr><td><p>patientAddress</p></td><td><p>Patient attribute</p></td></tr><tr><td><p>patientAddressLine2</p></td><td><p>Patient attribute</p></td></tr><tr><td><p>patientCountry</p></td><td><p>Patient attribute</p></td></tr><tr><td><p>patientDistrict</p></td><td><p>Patient attribute</p></td></tr><tr><td><p>person_id</p></td><td><p>Person id of the patient</p></td></tr><tr><td><p>telephoneNumber</p></td><td><p>Patient Attribute</p></td></tr><tr><td><p>visit_id</p></td><td><p>Visit id of the patient</p></td></tr></tbody></table><p>        </p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2306540078"
+      }
+    },
+    "view": {
+      "value": "<div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-layout=\"default\" data-local-id=\"16c44fae-6fac-4e41-b2b0-921df2d78656\" data-macro-id=\"163dfe67-384e-411b-be39-69535e71c4f8\" data-macro-name=\"toc\"> </div><h3 style=\"text-align: center;\" id=\"BedManagement-Module-Configuration\"><strong>Configuration</strong></h3><h5 id=\"BedManagement-Module-ColumnsToIgnoreapplyforthismodule(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix)\"><strong>ColumnsToIgnore apply for this module ( Refer  </strong><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><h5 id=\"BedManagement-Module-incrementalUpdateConfigisapplicable(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update)\"><strong>incrementalUpdateConfig is applicable</strong> ( Refer <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</h5><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"fcc53ce7-4519-47ed-a637-8a8e3d3594c5\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n      &quot;name&quot;: &quot;Bed Management&quot;,\n      &quot;type&quot;: &quot;bedManagement&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;\n}</pre>\n</div></div><hr/><h3 style=\"text-align: center;\" id=\"BedManagement-Module-ExistingOpenMRStables\">Existing OpenMRS tables</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"38e2cfc7-7d44-4d0c-9440-d026b7c0f239\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Bed\nBed_tag_map\nBed_tag\nBed_patient_assignment_map\nBed_type\nBed_location_map\nLocation\nEncounter\nVisit\nVisit_type</pre>\n</div></div><hr/><h3 style=\"text-align: center;\" id=\"BedManagement-Module-FlattenedMartTables\">Flattened Mart Tables</h3><p>Note : The below Mart tables are created by customSql job type.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d3d34f7a-8c6f-4e32-99ef-43f92adf6ef0\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">bed_patient_assignment_default\nbed_tags_default\ncurrent_bed_details_default</pre>\n</div></div><h4 id=\"BedManagement-Module-IncrementalConfig:\"><strong>Incremental Config:</strong></h4><p>Please check <a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update#5.-Bed-Management-Job:\" rel=\"nofollow\">this</a> section on how to enable/disable incremental config for specific mart tables.</p><p>a) <strong>bed_patient_assignment_default</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>patient_id</p></td><td class=\"confluenceTd\"><p>Patient identification number.</p></td></tr><tr><td class=\"confluenceTd\"><p>bed_id</p></td><td class=\"confluenceTd\"><p>Id reference for a bed</p></td></tr><tr><td class=\"confluenceTd\"><p>bed_number</p></td><td class=\"confluenceTd\"><p>Number assigned by hospital for a bed for their identification.</p></td></tr><tr><td class=\"confluenceTd\"><p>date_started</p></td><td class=\"confluenceTd\"><p>Date time column that gives occupancy duration of patient on different encounters</p></td></tr><tr><td class=\"confluenceTd\"><p>date_stopped</p></td><td class=\"confluenceTd\"><p>Date time column that gives occupancy duration of patient on different encounters</p></td></tr><tr><td class=\"confluenceTd\"><p>location</p></td><td class=\"confluenceTd\"><p>location of the patient in bed management module</p></td></tr><tr><td class=\"confluenceTd\"><p>encounter_id</p></td><td class=\"confluenceTd\"><p>Encounter on which the bed was occupied by the patient</p></td></tr><tr><td class=\"confluenceTd\"><p>encounter_datetime</p></td><td class=\"confluenceTd\"><p>Time of encounter</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_id</p></td><td class=\"confluenceTd\"><p>Id of the visit</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_type</p></td><td class=\"confluenceTd\"><p>Type of visit of the patient</p></td></tr></tbody></table></div><p><strong>b) bed_tags_default</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>bed_tag_map_id</p></td><td class=\"confluenceTd\"><p>Id reference for bed tag map</p></td></tr><tr><td class=\"confluenceTd\"><p>bed_id</p></td><td class=\"confluenceTd\"><p>Id reference for a bed</p></td></tr><tr><td class=\"confluenceTd\"><p>bed_location</p></td><td class=\"confluenceTd\"><p>Location of bed in the hospital</p></td></tr><tr><td class=\"confluenceTd\"><p>bed_number</p></td><td class=\"confluenceTd\"><p>Number assigned by hospital for a bed for their identification</p></td></tr><tr><td class=\"confluenceTd\"><p>bed_status</p></td><td class=\"confluenceTd\"><p>Status of the bed (eg :Available, Occupied )</p></td></tr><tr><td class=\"confluenceTd\"><p>bed_tag_name</p></td><td class=\"confluenceTd\"><p>Tag for bed (eg : Lost, Isolation, Strict Isolation, Reserved for CT)</p></td></tr><tr><td class=\"confluenceTd\"><p>date_created</p></td><td class=\"confluenceTd\"><p>tag start date</p></td></tr><tr><td class=\"confluenceTd\"><p>date_changed</p></td><td class=\"confluenceTd\"><p>tag changed date</p></td></tr><tr><td class=\"confluenceTd\"><p>date_stopped</p></td><td class=\"confluenceTd\"><p>Date stopped is date voided</p></td></tr></tbody></table></div><p><strong>c) current_bed_details</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>bed_id</p></td><td class=\"confluenceTd\"><p>Id reference for a bed</p></td></tr><tr><td class=\"confluenceTd\"><p>bed_location</p></td><td class=\"confluenceTd\"><p>Location of bed in the hospital</p></td></tr><tr><td class=\"confluenceTd\"><p>bed_number</p></td><td class=\"confluenceTd\"><p>Number assigned by hospital for a bed for their identification.</p></td></tr><tr><td class=\"confluenceTd\"><p>bed_type</p></td><td class=\"confluenceTd\"><p>Type of bed</p></td></tr></tbody></table></div><hr/><h3 style=\"text-align: center;\" id=\"BedManagement-Module-MartViews\"> Mart Views</h3><p><strong>a)</strong> <strong>bed_management_view</strong></p><p>This view provides the details of all the beds that a patient had been assigned to along with details like start and end date &amp; time. It also provides information about the status of each bed when assigned to the patient and its location in the hospital. Since a patient may be assigned to different beds at different times there will be multiple rows for same patient.</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>patient_id</p></td><td class=\"confluenceTd\"><p>Patient identification number.</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_id</p></td><td class=\"confluenceTd\"><p>Id reference for visit</p></td></tr><tr><td class=\"confluenceTd\"><p>bed_number</p></td><td class=\"confluenceTd\"><p>Number assigned by hospital for a bed for their identification.</p></td></tr><tr><td class=\"confluenceTd\"><p>date_started</p></td><td class=\"confluenceTd\"><p>Date time column that gives occupancy duration of patient on different encounters</p></td></tr><tr><td class=\"confluenceTd\"><p>date_stopped</p></td><td class=\"confluenceTd\"><p>Date time column that gives occupancy duration of patient on different encounters</p></td></tr><tr><td class=\"confluenceTd\"><p>location</p></td><td class=\"confluenceTd\"><p>location of the patient in bed management module</p></td></tr><tr><td class=\"confluenceTd\"><p>encounter_type_name</p></td><td class=\"confluenceTd\"><p>Encounter on which the bed was occupied by the patient</p></td></tr><tr><td class=\"confluenceTd\"><p>bed_tag_name</p></td><td class=\"confluenceTd\"><p>tag name assigned to the bed</p></td></tr><tr><td class=\"confluenceTd\"><p>tag_start_date</p></td><td class=\"confluenceTd\"><p>tag start date</p></td></tr><tr><td class=\"confluenceTd\"><p>tag_end_date</p></td><td class=\"confluenceTd\"><p>tag end date</p></td></tr></tbody></table></div><p><br/><strong>b)</strong> <strong>patient_bed_tags_history_view</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>patient_id</p></td><td class=\"confluenceTd\"><p>Id reference for a patient</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_id</p></td><td class=\"confluenceTd\"><p>Patient visit id</p></td></tr><tr><td class=\"confluenceTd\"><p>encounter_id</p></td><td class=\"confluenceTd\"><p>Id reference for an encounter</p></td></tr><tr><td class=\"confluenceTd\"><p>bed_number</p></td><td class=\"confluenceTd\"><p>Bed number</p></td></tr><tr><td class=\"confluenceTd\"><p>location</p></td><td class=\"confluenceTd\"><p>Location in hospital</p></td></tr><tr><td class=\"confluenceTd\"><p>age_at_bed_assignment</p></td><td class=\"confluenceTd\"><p>Age of patient</p></td></tr><tr><td class=\"confluenceTd\"><p>age_group_at_bed_assignment</p></td><td class=\"confluenceTd\"><p>Under which age range the patient belongs</p></td></tr><tr><td class=\"confluenceTd\"><p>action</p></td><td class=\"confluenceTd\"><p>action performed ( Movement/Discharge etc..)</p></td></tr><tr><td class=\"confluenceTd\"><p>assigned_on</p></td><td class=\"confluenceTd\"><p>Assigned date</p></td></tr><tr><td class=\"confluenceTd\"><p>discharged_on</p></td><td class=\"confluenceTd\"><p>Patient discharge date</p></td></tr><tr><td class=\"confluenceTd\"><p>bed_tags</p></td><td class=\"confluenceTd\"><p>Bed tag, if tagged</p></td></tr><tr><td class=\"confluenceTd\"><p>bed_tag_created</p></td><td class=\"confluenceTd\"><p>Date bed was tagged</p></td></tr><tr><td class=\"confluenceTd\"><p>bed_tag_removed</p></td><td class=\"confluenceTd\"><p>Date bed tag was removed</p></td></tr></tbody></table></div><p><strong>  c)</strong> <strong>patient_bed_view</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>age_at_bed_assignment</p></td><td class=\"confluenceTd\"><p>Age of the patient during bed assignment</p></td></tr><tr><td class=\"confluenceTd\"><p>bed_assigned_date</p></td><td class=\"confluenceTd\"><p>Date of bed assignment</p></td></tr><tr><td class=\"confluenceTd\"><p>bed_discharged_date</p></td><td class=\"confluenceTd\"><p>Date of discharge from bed</p></td></tr><tr><td class=\"confluenceTd\"><p>birth_year</p></td><td class=\"confluenceTd\"><p>Year of birth of the patient</p></td></tr><tr><td class=\"confluenceTd\"><p>dead</p></td><td class=\"confluenceTd\"><p>True (Patient is Dead)</p><p>False(Patient is not Dead)</p></td></tr><tr><td class=\"confluenceTd\"><p>gender</p></td><td class=\"confluenceTd\"><p>Gender of the patient</p></td></tr><tr><td class=\"confluenceTd\"><p>location</p></td><td class=\"confluenceTd\"><p>Location of the bed</p></td></tr><tr><td class=\"confluenceTd\"><p>nationalIdentificationNumber</p></td><td class=\"confluenceTd\"><p>Patient attribute</p></td></tr><tr><td class=\"confluenceTd\"><p>patient_id</p></td><td class=\"confluenceTd\"><p>Id of the Patient</p></td></tr><tr><td class=\"confluenceTd\"><p>patientAddress</p></td><td class=\"confluenceTd\"><p>Patient attribute</p></td></tr><tr><td class=\"confluenceTd\"><p>patientAddressLine2</p></td><td class=\"confluenceTd\"><p>Patient attribute</p></td></tr><tr><td class=\"confluenceTd\"><p>patientCountry</p></td><td class=\"confluenceTd\"><p>Patient attribute</p></td></tr><tr><td class=\"confluenceTd\"><p>patientDistrict</p></td><td class=\"confluenceTd\"><p>Patient attribute</p></td></tr><tr><td class=\"confluenceTd\"><p>person_id</p></td><td class=\"confluenceTd\"><p>Person id of the patient</p></td></tr><tr><td class=\"confluenceTd\"><p>telephoneNumber</p></td><td class=\"confluenceTd\"><p>Patient Attribute</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_id</p></td><td class=\"confluenceTd\"><p>Visit id of the patient</p></td></tr></tbody></table></div><p>        </p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2306540078"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2306540078/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306540078/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1585
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2306540078/child",
+    "restrictions": "/rest/api/content/2306540078/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2306540078/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2306540078",
+    "webui": "/spaces/BAH/pages/2306540078/Bed+Management+-+Module",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2306540078",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306540078",
+    "tinyui": "/x/LgJ7iQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

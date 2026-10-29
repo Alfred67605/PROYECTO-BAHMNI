@@ -1,0 +1,174 @@
+{
+  "id": "900497457",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/900497457",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvOTAwNDk3NDU3",
+  "status": "current",
+  "title": "Odoo Purchase Configuration",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "createdDate": "2019-08-06T05:11:00.022Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/900497457/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "when": "2024-08-12T17:45:51.830Z",
+    "friendlyWhen": "Aug 12, 2024",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "syncRev": "0.I6ELID9qvwTSnCmC5BVo31c.1",
+    "syncRevSource": "synchrony",
+    "ncsStepVersion": "868",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$900497457.55",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/900497457"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/900497457/version/8"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"fixed-width\" ac:breakout-mode=\"default\"><ac:layout-cell><h1>Price Markup&nbsp;</h1><p>Bahmni provides a customized module for Odoo, through which you can define markup percentages to be applied over a product's cost price to be determined as unit price.&nbsp;</p><p>To define the ranges and applicable markups, you need to do the following:</p><ul><li><p>Navigate to Menu &rarr; Bahmni &rarr; Bahmni Masters &rarr; Sale Price Markup Rule</p></li><li><p>Define the ranges of Cost Price and the percentage that needs to be applied for that range.<br /></p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"371\" ac:original-width=\"1791\" ac:custom-width=\"true\" ac:alt=\"image-20240812-173523.png\" ac:width=\"1305\"><ri:attachment ri:filename=\"image-20240812-173523.png\" ri:version-at-save=\"1\" /></ac:image><p> </p></li></ul><ac:structured-macro ac:name=\"expand\" ac:schema-version=\"1\" ac:macro-id=\"9f58fcd1-11e4-429f-b24b-2ca021885302\"><ac:parameter ac:name=\"title\">Odoo 10 Markup Configuration</ac:parameter><ac:rich-text-body><ul><li><p>Go to &quot;Menu / Purchases / Configuration / Price Markup Table&quot;</p></li><li><p>Define ranges of price, and applicable markup percentages for each range</p></li></ul><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"488\" ac:original-width=\"1638\" ac:custom-width=\"true\" ac:width=\"656\"><ri:attachment ri:filename=\"Odoo_Price_Markup_Table_Ranges.png\" ri:version-at-save=\"1\" /></ac:image></ac:rich-text-body></ac:structured-macro><p /><p>Now when you receive a product, and if the product was configured for&nbsp;<strong>&ldquo;Tracking By Lots&rdquo;,&nbsp;</strong>then you will find that Sales price will be calculated based on the above configuration.</p></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"two_equal\" ac:breakout-mode=\"default\"><ac:layout-cell><ac:image ac:align=\"left\" ac:layout=\"align-start\" ac:original-height=\"465\" ac:original-width=\"982\" ac:custom-width=\"true\" ac:alt=\"image-20240812-173908.png\" ac:width=\"640\"><ri:attachment ri:filename=\"image-20240812-173908.png\" ri:version-at-save=\"1\" /><ac:caption><p>Odoo 16</p></ac:caption></ac:image></ac:layout-cell><ac:layout-cell><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"1042\" ac:original-width=\"2244\" ac:custom-width=\"true\" ac:width=\"612\"><ri:attachment ri:filename=\"Odoo_receive_product_lots_with_markup.png\" ri:version-at-save=\"1\" /><ac:caption><p>Odoo 10</p></ac:caption></ac:image></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"fixed-width\" ac:breakout-mode=\"default\"><ac:layout-cell><p>In the above screenshot, the &quot;Sale Price&quot; is calculated based on the markup percentage defined over &quot;Cost Price&quot; (in this case 10%)</p><p /><h3>Enable using the markup price as Unit Price in Sale Quotations</h3><p><strong>NOTE: </strong>Setting up the markup percentages and receiving the products, does not mean that the lots/Serial based costs calculated through markups will apply by default.</p><ul><li><p>Navigate to <code>Menu -&gt; Settings -&gt; Bahmni</code></p></li><li><p>Under Sale Configurations, toggle the <strong>Sale Price Markup Rule</strong> option to use the markup price as Unit price for Sale Quotations.<br /></p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"203\" ac:original-width=\"1791\" ac:custom-width=\"true\" ac:alt=\"image-20240812-174418.png\" ac:width=\"1305\"><ri:attachment ri:filename=\"image-20240812-174418.png\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p>Note: Enabling this feature will restrict the rules of pricelist being applied on that specific order line item. </p></li></ul><ac:structured-macro ac:name=\"expand\" ac:schema-version=\"1\" ac:macro-id=\"854b5cf7-1b9d-4cd8-ac3e-2959efc2936f\"><ac:parameter ac:name=\"title\">Odoo 10</ac:parameter><ac:rich-text-body><p> If you want the &ldquo;sale price&rdquo; of the Lots/Serial to reflect on &ldquo;Sale order&rdquo;, you will need to enable <strong>&ldquo;Determine sale price based on cost price markup&rdquo;</strong> option under &ldquo;Menu / Sales / Configuration / Settings / Markup&rdquo;. </p><p /><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"301\" ac:original-width=\"1156\" ac:custom-width=\"true\" ac:alt=\"image-20240812-174312.png\" ac:width=\"1156\"><ri:attachment ri:filename=\"image-20240812-174312.png\" ri:version-at-save=\"1\" /></ac:image><p /></ac:rich-text-body></ac:structured-macro><p /><p /></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/900497457"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout fixed-width\" data-layout=\"fixed-width\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h1 id=\"OdooPurchaseConfiguration-PriceMarkup\">Price Markup </h1><p>Bahmni provides a customized module for Odoo, through which you can define markup percentages to be applied over a product's cost price to be determined as unit price. </p><p>To define the ranges and applicable markups, you need to do the following:</p><ul><li><p>Navigate to Menu → Bahmni → Bahmni Masters → Sale Price Markup Rule</p></li><li><p>Define the ranges of Cost Price and the percentage that needs to be applied for that range.<br/></p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"image-20240812-173523.png\" width=\"1305\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/900497457/image-20240812-173523.png?version=1&amp;modificationDate=1723484128403&amp;cacheVersion=1&amp;api=v2&amp;width=1305&amp;height=270\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/900497457/image-20240812-173523.png?version=1&amp;modificationDate=1723484128403&amp;cacheVersion=1&amp;api=v2\" data-height=\"371\" data-width=\"1791\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3690528775\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240812-173523.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"900497457\" data-linked-resource-container-version=\"8\" data-media-id=\"e05ba9d6-a4dd-4452-be2f-21fce689f5fe\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/900497457/image-20240812-173523.png?version=1&amp;modificationDate=1723484128403&amp;cacheVersion=1&amp;api=v2&amp;width=2610&amp;height=540 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/900497457/image-20240812-173523.png?version=1&amp;modificationDate=1723484128403&amp;cacheVersion=1&amp;api=v2&amp;width=1305&amp;height=270 1x\"></span><p> </p></li></ul><div class=\"expand-container conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9f58fcd1-11e4-429f-b24b-2ca021885302\" data-macro-name=\"expand\" id=\"expander-672500829\"><div id=\"expander-control-672500829\" class=\"expand-control\"><span class=\"expand-control-icon icon\"> </span><span class=\"expand-control-text\">Odoo 10 Markup Configuration</span></div><div id=\"expander-content-672500829\" class=\"expand-content expand-hidden\"><ul><li><p>Go to &quot;Menu / Purchases / Configuration / Price Markup Table&quot;</p></li><li><p>Define ranges of price, and applicable markup percentages for each range</p></li></ul><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"656\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/900497457/Odoo_Price_Markup_Table_Ranges.png?version=1&amp;modificationDate=1565365906556&amp;cacheVersion=1&amp;api=v2&amp;width=656&amp;height=195\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/900497457/Odoo_Price_Markup_Table_Ranges.png?version=1&amp;modificationDate=1565365906556&amp;cacheVersion=1&amp;api=v2\" data-height=\"488\" data-width=\"1638\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"904364141\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Odoo_Price_Markup_Table_Ranges.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"900497457\" data-linked-resource-container-version=\"8\" data-media-id=\"58435f77-a491-40a7-a044-689374010c19\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/900497457/Odoo_Price_Markup_Table_Ranges.png?version=1&amp;modificationDate=1565365906556&amp;cacheVersion=1&amp;api=v2&amp;width=1312&amp;height=390 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/900497457/Odoo_Price_Markup_Table_Ranges.png?version=1&amp;modificationDate=1565365906556&amp;cacheVersion=1&amp;api=v2&amp;width=656&amp;height=195 1x\" /></span></div></div><p /><p>Now when you receive a product, and if the product was configured for <strong>“Tracking By Lots”, </strong>then you will find that Sales price will be calculated based on the above configuration.</p></div>\n</div>\n</div>\n<div class=\"columnLayout two-equal\" data-layout=\"two-equal\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<span class=\"confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-left\" alt=\"image-20240812-173908.png\" width=\"640\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/900497457/image-20240812-173908.png?version=1&amp;modificationDate=1723484352971&amp;cacheVersion=1&amp;api=v2&amp;width=640&amp;height=303\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/900497457/image-20240812-173908.png?version=1&amp;modificationDate=1723484352971&amp;cacheVersion=1&amp;api=v2\" data-height=\"465\" data-width=\"982\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3690692656\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240812-173908.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"900497457\" data-linked-resource-container-version=\"8\" data-media-id=\"e92e196d-6c56-4d0c-a019-594c47e45c59\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/900497457/image-20240812-173908.png?version=1&amp;modificationDate=1723484352971&amp;cacheVersion=1&amp;api=v2&amp;width=1280&amp;height=606 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/900497457/image-20240812-173908.png?version=1&amp;modificationDate=1723484352971&amp;cacheVersion=1&amp;api=v2&amp;width=640&amp;height=303 1x\"></span></div>\n</div>\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"612\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/900497457/Odoo_receive_product_lots_with_markup.png?version=1&amp;modificationDate=1565599174605&amp;cacheVersion=1&amp;api=v2&amp;width=612&amp;height=284\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/900497457/Odoo_receive_product_lots_with_markup.png?version=1&amp;modificationDate=1565599174605&amp;cacheVersion=1&amp;api=v2\" data-height=\"1042\" data-width=\"2244\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"904168184\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Odoo_receive_product_lots_with_markup.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"900497457\" data-linked-resource-container-version=\"8\" data-media-id=\"0a8f404a-e36c-4300-9cdb-7f835b144b4c\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/900497457/Odoo_receive_product_lots_with_markup.png?version=1&amp;modificationDate=1565599174605&amp;cacheVersion=1&amp;api=v2&amp;width=1224&amp;height=568 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/900497457/Odoo_receive_product_lots_with_markup.png?version=1&amp;modificationDate=1565599174605&amp;cacheVersion=1&amp;api=v2&amp;width=612&amp;height=284 1x\"></span></div>\n</div>\n</div>\n<div class=\"columnLayout fixed-width\" data-layout=\"fixed-width\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p>In the above screenshot, the &quot;Sale Price&quot; is calculated based on the markup percentage defined over &quot;Cost Price&quot; (in this case 10%)</p><p /><h3 id=\"OdooPurchaseConfiguration-EnableusingthemarkuppriceasUnitPriceinSaleQuotations\">Enable using the markup price as Unit Price in Sale Quotations</h3><p><strong>NOTE: </strong>Setting up the markup percentages and receiving the products, does not mean that the lots/Serial based costs calculated through markups will apply by default.</p><ul><li><p>Navigate to <code>Menu -&gt; Settings -&gt; Bahmni</code></p></li><li><p>Under Sale Configurations, toggle the <strong>Sale Price Markup Rule</strong> option to use the markup price as Unit price for Sale Quotations.<br/></p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"image-20240812-174418.png\" width=\"1305\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/900497457/image-20240812-174418.png?version=1&amp;modificationDate=1723484662262&amp;cacheVersion=1&amp;api=v2&amp;width=1305&amp;height=147\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/900497457/image-20240812-174418.png?version=1&amp;modificationDate=1723484662262&amp;cacheVersion=1&amp;api=v2\" data-height=\"203\" data-width=\"1791\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3690528782\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240812-174418.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"900497457\" data-linked-resource-container-version=\"8\" data-media-id=\"d8a583ce-afae-407f-8351-51012fd2f8a9\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/900497457/image-20240812-174418.png?version=1&amp;modificationDate=1723484662262&amp;cacheVersion=1&amp;api=v2&amp;width=2610&amp;height=294 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/900497457/image-20240812-174418.png?version=1&amp;modificationDate=1723484662262&amp;cacheVersion=1&amp;api=v2&amp;width=1305&amp;height=147 1x\"></span><p /></li><li><p>Note: Enabling this feature will restrict the rules of pricelist being applied on that specific order line item. </p></li></ul><div class=\"expand-container conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"854b5cf7-1b9d-4cd8-ac3e-2959efc2936f\" data-macro-name=\"expand\" id=\"expander-1865653832\"><div id=\"expander-control-1865653832\" class=\"expand-control\"><span class=\"expand-control-icon icon\"> </span><span class=\"expand-control-text\">Odoo 10</span></div><div id=\"expander-content-1865653832\" class=\"expand-content expand-hidden\"><p> If you want the “sale price” of the Lots/Serial to reflect on “Sale order”, you will need to enable <strong>“Determine sale price based on cost price markup”</strong> option under “Menu / Sales / Configuration / Settings / Markup”. </p><p> </p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"image-20240812-174312.png\" width=\"1156\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/900497457/image-20240812-174312.png?version=1&amp;modificationDate=1723484596218&amp;cacheVersion=1&amp;api=v2&amp;width=1156&amp;height=301\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/900497457/image-20240812-174312.png?version=1&amp;modificationDate=1723484596218&amp;cacheVersion=1&amp;api=v2\" data-height=\"301\" data-width=\"1156\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3690070047\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240812-174312.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"900497457\" data-linked-resource-container-version=\"8\" data-media-id=\"33cd8374-5f0a-4821-950c-07a70164e09d\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/900497457/image-20240812-174312.png?version=1&amp;modificationDate=1723484596218&amp;cacheVersion=1&amp;api=v2&amp;width=2312&amp;height=602 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/900497457/image-20240812-174312.png?version=1&amp;modificationDate=1723484596218&amp;cacheVersion=1&amp;api=v2&amp;width=1156&amp;height=301 1x\" /></span><p> </p></div></div><p /><p /></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/900497457"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/900497457/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/900497457/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 787
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/900497457/child",
+    "restrictions": "/rest/api/content/900497457/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/900497457/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=900497457",
+    "webui": "/spaces/BAH/pages/900497457/Odoo+Purchase+Configuration",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/900497457",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/900497457",
+    "tinyui": "/x/MYCsNQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

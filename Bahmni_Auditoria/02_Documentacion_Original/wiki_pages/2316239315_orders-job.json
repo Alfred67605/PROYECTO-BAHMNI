@@ -1,0 +1,172 @@
+{
+  "id": "2316239315",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2316239315",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMxNjIzOTMxNQ==",
+  "status": "current",
+  "title": "Orders Job",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "createdDate": "2021-04-05T09:28:43.426Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239315/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "when": "2021-04-05T09:29:00.536Z",
+    "friendlyWhen": "Apr 05, 2021",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.confluence$content$2316239315.6",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2316239315.7",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2316239315"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239315/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ul><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678995/Orders#configuration\">configuration</a></p><ul><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678995/Orders#ColumnsToIgnore-apply-for-this-module-(-Refer--%5BinlineCard%5D-)\">ColumnsToIgnore apply for this module ( Refer&nbsp;https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix&nbsp;)</a></p></li><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678995/Orders#incrementalUpdateConfig-is-applicable-(-Refer-%5BinlineCard%5D-)\">incrementalUpdateConfig is applicable ( Refer&nbsp;https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update&nbsp;)</a></p></li></ul></li><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678995/Orders#Existing-OpenMRS-tables\">Existing OpenMRS tables</a></p><ul><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678995/Orders#Incremental-Config%3A\">Incremental Config:</a></p></li></ul></li></ul><p>The orders placed for the patients will be flattened into analytics database with orderable name (Eg: Lab Samples, Radiology, etc.). A separate table will be created for each orderable with same structure. The following is the example for lab samples.</p><h3 style=\"text-align: center;\"><strong>configuration</strong></h3><h5><strong>ColumnsToIgnore apply for this module ( Refer </strong><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><h5><strong>incrementalUpdateConfig is applicable</strong> ( Refer <a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</h5><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b9b434e5-08b9-427b-8034-c8b9b9cdbbbb\"><ac:plain-text-body><![CDATA[{\n      \"name\": \"Medication And Orders\",\n      \"type\": \"medicationAndOrders\",\n      \"chunkSizeToRead\": \"500\",\n      \"groupedJobConfigs\": [\n        {\n          \"tableName\": \n          \"columnsToIgnore\": [\n          ]\n        }\n      ]\n}\n]]></ac:plain-text-body></ac:structured-macro><p style=\"text-align: center;\">&nbsp;</p><hr /><h3 style=\"text-align: center;\">Existing OpenMRS tables</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"2c34bd44-1480-47e7-be96-2c6895c7d1fa\"><ac:plain-text-body><![CDATA[Orders\nVisit\nVisit_type\nConcept\nConcept_set\nConcept_view\n]]></ac:plain-text-body></ac:structured-macro><hr /><p style=\"text-align: center;\"><strong>Flattened Mart Tables</strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"01e452a3-28a9-4163-b8f1-e556794e2c0e\"><ac:plain-text-body><![CDATA[lab_samples\nradiology_orders\n]]></ac:plain-text-body></ac:structured-macro><h4><strong>Incremental Config:</strong></h4><p>Please check <a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update#8.Medication-And-Orders-Job:\">this</a> section on how to enable/disable incremental config for specific mart tables.</p><p><strong>a) lab_samples</strong></p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>patient_id</p></td><td><p>Id of patient to whom order belongs</p></td></tr><tr><td><p>date_created</p></td><td><p>Order created dated</p></td></tr><tr><td><p>encounter_id</p></td><td><p>Encounter id</p></td></tr><tr><td><p>encounter_type_id</p></td><td><p>ID of the encounter type</p></td></tr><tr><td><p>encounter_type_name</p></td><td><p>Name of the encounter type</p></td></tr><tr><td><p>type_of_test</p></td><td><p>Type of test: Eg. Blood</p></td></tr><tr><td><p>panel_name</p></td><td><p>Different panels in a type of test.</p><p>Eg: Hematology, Anaemia Panel are two panels in Blood</p></td></tr><tr><td><p>test_name</p></td><td><p>Test corresponds to the panel</p><p>Eg: HPLC, Coombs Test (Direct), Coombs Test (Indirect), G6PD are four tests in Hematology</p></td></tr><tr><td><p>visit_id</p></td><td><p>Unique visit id</p></td></tr><tr><td><p>visit_type</p></td><td><p>Visit name Eg: Clinic</p></td></tr><tr><td><p>visit_type_id</p></td><td><p>ID of the visit type</p></td></tr></tbody></table><p>&nbsp;</p><p><strong>b) radiology_orders</strong></p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr></tbody></table><p><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2316239315"
+      }
+    },
+    "view": {
+      "value": "<ul><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678995/Orders#configuration\" rel=\"nofollow\">configuration</a></p><ul><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678995/Orders#ColumnsToIgnore-apply-for-this-module-(-Refer--%5BinlineCard%5D-)\" rel=\"nofollow\">ColumnsToIgnore apply for this module ( Refer https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix )</a></p></li><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678995/Orders#incrementalUpdateConfig-is-applicable-(-Refer-%5BinlineCard%5D-)\" rel=\"nofollow\">incrementalUpdateConfig is applicable ( Refer https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update )</a></p></li></ul></li><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678995/Orders#Existing-OpenMRS-tables\" rel=\"nofollow\">Existing OpenMRS tables</a></p><ul><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678995/Orders#Incremental-Config%3A\" rel=\"nofollow\">Incremental Config:</a></p></li></ul></li></ul><p>The orders placed for the patients will be flattened into analytics database with orderable name (Eg: Lab Samples, Radiology, etc.). A separate table will be created for each orderable with same structure. The following is the example for lab samples.</p><h3 style=\"text-align: center;\" id=\"OrdersJob-configuration\"><strong>configuration</strong></h3><h5 id=\"OrdersJob-ColumnsToIgnoreapplyforthismodule(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix)\"><strong>ColumnsToIgnore apply for this module ( Refer </strong><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><h5 id=\"OrdersJob-incrementalUpdateConfigisapplicable(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update)\"><strong>incrementalUpdateConfig is applicable</strong> ( Refer <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</h5><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b9b434e5-08b9-427b-8034-c8b9b9cdbbbb\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n      &quot;name&quot;: &quot;Medication And Orders&quot;,\n      &quot;type&quot;: &quot;medicationAndOrders&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;,\n      &quot;groupedJobConfigs&quot;: [\n        {\n          &quot;tableName&quot;: \n          &quot;columnsToIgnore&quot;: [\n          ]\n        }\n      ]\n}\n</pre>\n</div></div><p style=\"text-align: center;\"> </p><hr/><h3 style=\"text-align: center;\" id=\"OrdersJob-ExistingOpenMRStables\">Existing OpenMRS tables</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"2c34bd44-1480-47e7-be96-2c6895c7d1fa\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Orders\nVisit\nVisit_type\nConcept\nConcept_set\nConcept_view\n</pre>\n</div></div><hr/><p style=\"text-align: center;\"><strong>Flattened Mart Tables</strong></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"01e452a3-28a9-4163-b8f1-e556794e2c0e\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">lab_samples\nradiology_orders\n</pre>\n</div></div><h4 id=\"OrdersJob-IncrementalConfig:\"><strong>Incremental Config:</strong></h4><p>Please check <a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update#8.Medication-And-Orders-Job:\" rel=\"nofollow\">this</a> section on how to enable/disable incremental config for specific mart tables.</p><p><strong>a) lab_samples</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>patient_id</p></td><td class=\"confluenceTd\"><p>Id of patient to whom order belongs</p></td></tr><tr><td class=\"confluenceTd\"><p>date_created</p></td><td class=\"confluenceTd\"><p>Order created dated</p></td></tr><tr><td class=\"confluenceTd\"><p>encounter_id</p></td><td class=\"confluenceTd\"><p>Encounter id</p></td></tr><tr><td class=\"confluenceTd\"><p>encounter_type_id</p></td><td class=\"confluenceTd\"><p>ID of the encounter type</p></td></tr><tr><td class=\"confluenceTd\"><p>encounter_type_name</p></td><td class=\"confluenceTd\"><p>Name of the encounter type</p></td></tr><tr><td class=\"confluenceTd\"><p>type_of_test</p></td><td class=\"confluenceTd\"><p>Type of test: Eg. Blood</p></td></tr><tr><td class=\"confluenceTd\"><p>panel_name</p></td><td class=\"confluenceTd\"><p>Different panels in a type of test.</p><p>Eg: Hematology, Anaemia Panel are two panels in Blood</p></td></tr><tr><td class=\"confluenceTd\"><p>test_name</p></td><td class=\"confluenceTd\"><p>Test corresponds to the panel</p><p>Eg: HPLC, Coombs Test (Direct), Coombs Test (Indirect), G6PD are four tests in Hematology</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_id</p></td><td class=\"confluenceTd\"><p>Unique visit id</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_type</p></td><td class=\"confluenceTd\"><p>Visit name Eg: Clinic</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_type_id</p></td><td class=\"confluenceTd\"><p>ID of the visit type</p></td></tr></tbody></table></div><p> </p><p><strong>b) radiology_orders</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr></tbody></table></div><p><br/></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2316239315"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2316239315/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239315/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 4421
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2316239315/child",
+    "restrictions": "/rest/api/content/2316239315/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2316239315/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2316239315",
+    "webui": "/spaces/BAH/pages/2316239315/Orders+Job",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2316239315",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239315",
+    "tinyui": "/x/0wEPig",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

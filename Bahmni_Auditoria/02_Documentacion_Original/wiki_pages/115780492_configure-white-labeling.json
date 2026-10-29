@@ -1,0 +1,202 @@
+{
+  "id": "115780492",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/115780492",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE1NzgwNDky",
+  "status": "current",
+  "title": "Configure White Labeling",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "createdDate": "2017-03-29T11:43:59.582Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115780492/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "when": "2024-07-23T16:26:23.565Z",
+    "friendlyWhen": "Jul 23, 2024",
+    "message": "",
+    "number": 12,
+    "minorEdit": false,
+    "syncRev": "0.jTK6QVUCPWwtofJo3w4vpg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$115780492.94",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/115780492"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115780492/version/12"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>About the feature</h2><p>White labelling of Bahmni will provide the various implementations, the ability to brand Bahmni as applicable to them. The implementors will now be able to configure the Logo and Text, specific to their implementations,&nbsp;on the landing page and the Bahmni login pages.</p><h2>Configuring the logo and Text:</h2><p><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"6222efa4-d5db-470f-8b17-dca445e79707\"><ac:rich-text-body><p>If you are using Bahmni on Docker, please <a href=\"https://bahmni.atlassian.net/wiki/x/NoDQuQ\">see this page</a> on how you can load your own implementation config, to make changes to Bahmni UI. Once you have done these steps, then changing logo values as mentioned below will be easy.</p></ac:rich-text-body></ac:structured-macro><p><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"7e0e098f-00f8-4192-b29d-99dd28355c5f\"><ac:parameter ac:name=\"title\">Quick way to configure logo</ac:parameter><ac:rich-text-body><p>The logo that is displayed in Bahmni Landing page and Login Screen can be easily configured by adding/replacing the logo.png file in your configuration repository at openmrs/apps/home/logo.png and updating the value of logo to&nbsp;<code>/bahmni_config/openmrs/apps/home/logo.png</code></p></ac:rich-text-body></ac:structured-macro><p><br /></p><p class=\"auto-cursor-target\">The <strong>whiteLabel.json</strong> file is present in the path&nbsp;<strong>default-config/openmrs/apps/home</strong></p><p>The config is as below:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"0c458488-8a88-4b2b-ab27-65262b8298e1\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">whiteLabel.json</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[{\n  \"homePage\": {\n    \"header_text\": \"<b>WELCOME TO<br/>BAHMNI EMR & HOSPITAL SERVICE\",\n    \"logo\": \"/bahmni/images/bahmniLogoFull.png\",\n    \"title_text\": \" \",\n    \"bottomBanner\": \"<URL of custom banner image. Like: /bahmni/images/customBottomBanner.png>\"\n  },\n  \"loginPage\": {\n    \"logo\": \"/bahmni/images/bahmniLogoFull.png\",\n    \"showHeaderText\": true,\n    \"showTitleText\": false,\n    \"bottomLogos\": [\n      \"<Path to logo files. Like:\",\n      \"/bahmni_config/openmrs/apps/home/first_logo_75px.png\",\n      \"/bahmni_config/openmrs/apps/home/second_logo_75px.png\"\n    ]\n  },\n  \"helpLink\": {\n    \"url\": \"https://bahmni.atlassian.net/wiki/display/BAH/Bahmni+Home\"\n  }\n}]]></ac:plain-text-body></ac:structured-macro><h3>Config for &quot;homePage&quot;</h3><table class=\"relative-table wrapped\" style=\"width: 68.75%;\"><colgroup><col style=\"width: 12.2056%;\" /></colgroup><colgroup><col style=\"width: 28.9079%;\" /></colgroup><colgroup><col style=\"width: 9.85011%;\" /></colgroup><colgroup><col style=\"width: 49.0364%;\" /></colgroup><tbody><tr><th style=\"text-align: center;\">Key</th><th style=\"text-align: center;\">Purpose</th><th style=\"text-align: center;\">Mandatory</th><th style=\"text-align: center;\">Behaviour</th></tr><tr><td><pre>header_text</pre></td><td><span>Header text on the landing/home Page</span></td><td style=\"text-align: center;\">No</td><td><p>Default Text : WELCOME TO BAHMNI EMR &amp; HOSPITAL SERVICE</p><p><span>If header text key is removed, Default text will show. </span></p></td></tr><tr><td>logo</td><td><span>Logo on the landing /home page.</span></td><td style=\"text-align: center;\">No</td><td><p>Default: Path of bahmni logo</p><p><span>If logo path is wrong, it will show a broken image on the landing page.</span></p><p><span><span>If key is removed, then default bahmni logo will be displayed</span><br /></span></p></td></tr><tr><td colspan=\"1\">title_text</td><td colspan=\"1\"><span>Title text beside the logo on the landing/home page.</span></td><td colspan=\"1\" style=\"text-align: center;\">No</td><td colspan=\"1\"><p>Default: Blank text</p><p><span>If Key is removed, &quot;title text&quot; placeholder will be displayed</span></p></td></tr><tr><td colspan=\"1\"><pre>bottomBanner</pre></td><td colspan=\"1\">Display custom banner image depends on implementation</td><td colspan=\"1\" style=\"text-align: center;\">No</td><td colspan=\"1\"><p>Default: Nothing will display.</p></td></tr></tbody></table><h3>Config for &quot;loginPage&quot;</h3><table class=\"relative-table wrapped\" style=\"width: 69.0441%;\"><colgroup><col style=\"width: 14.8188%;\" /></colgroup><colgroup><col style=\"width: 25.693%;\" /></colgroup><colgroup><col style=\"width: 10.3412%;\" /></colgroup><colgroup><col style=\"width: 49.1471%;\" /></colgroup><tbody><tr><th style=\"text-align: center;\">Key</th><th style=\"text-align: center;\">Description</th><th style=\"text-align: center;\">Mandatory</th><th style=\"text-align: center;\">Behaviour</th></tr><tr><td><pre>showHeaderText</pre></td><td><p><span><span>Header text on the login Page.</span></span></p><p><span>Specify the key value in the respective locale file.</span></p></td><td style=\"text-align: center;\">No</td><td><p>Default : True</p><p>If the key is not present <span>or removed</span><span> from the config file, </span>it'll show no text on the page.</p><p><br /></p></td></tr><tr><td><pre>showTitleText</pre></td><td><p><span><span>Title text beside the logo on the login page.</span><br /></span></p><p><span>Specify the key value in the respective locale file.</span></p></td><td style=\"text-align: center;\">No</td><td><p><span>Default: False</span></p><p><span>If the key is <span>not present or removed</span> from the config file, it'll show no text on the page.</span></p></td></tr><tr><td>logo</td><td><p>Logo on the login page.</p></td><td style=\"text-align: center;\">No</td><td><p><span>Default : Bahmni logo </span></p><p><span><span>If the key is </span><span>not present or removed</span><span> from the config file, it'll show no image on the page.</span></span></p></td></tr><tr><td colspan=\"1\"><pre>bottomLogos</pre></td><td colspan=\"1\"><span>Display custom logos as a banner a the very bottom of the page. Files must be available at a path on the server.<br /></span></td><td colspan=\"1\" style=\"text-align: center;\"><span>No</span></td><td colspan=\"1\"><span>Default: Nothing will be displayed</span></td></tr></tbody></table><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"ee2b1b95-e4a2-45f6-a144-9759a5dd6812\"><ac:rich-text-body><p>bottomBanner feature will be available from v0.90</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"dd580cdf-2f20-4ebf-9013-4b7fbdbcc7b5\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">On this page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"b7457915-5265-46f5-b35b-84f598cba442\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/115780492"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ConfigureWhiteLabeling-Aboutthefeature\">About the feature</h2><p>White labelling of Bahmni will provide the various implementations, the ability to brand Bahmni as applicable to them. The implementors will now be able to configure the Logo and Text, specific to their implementations, on the landing page and the Bahmni login pages.</p><h2 id=\"ConfigureWhiteLabeling-ConfiguringthelogoandText:\">Configuring the logo and Text:</h2><p><br/></p><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6222efa4-d5db-470f-8b17-dca445e79707\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>If you are using Bahmni on Docker, please <a href=\"https://bahmni.atlassian.net/wiki/x/NoDQuQ\" rel=\"nofollow\">see this page</a> on how you can load your own implementation config, to make changes to Bahmni UI. Once you have done these steps, then changing logo values as mentioned below will be easy.</p></div></div><p><br/></p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7e0e098f-00f8-4192-b29d-99dd28355c5f\" data-macro-name=\"info\"><p class=\"title\">Quick way to configure logo</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>The logo that is displayed in Bahmni Landing page and Login Screen can be easily configured by adding/replacing the logo.png file in your configuration repository at openmrs/apps/home/logo.png and updating the value of logo to <code>/bahmni_config/openmrs/apps/home/logo.png</code></p></div></div><p><br/></p><p class=\"auto-cursor-target\">The <strong>whiteLabel.json</strong> file is present in the path <strong>default-config/openmrs/apps/home</strong></p><p>The config is as below:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0c458488-8a88-4b2b-ab27-65262b8298e1\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>whiteLabel.json</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">{\n  &quot;homePage&quot;: {\n    &quot;header_text&quot;: &quot;&lt;b&gt;WELCOME TO&lt;br/&gt;BAHMNI EMR &amp; HOSPITAL SERVICE&quot;,\n    &quot;logo&quot;: &quot;/bahmni/images/bahmniLogoFull.png&quot;,\n    &quot;title_text&quot;: &quot; &quot;,\n    &quot;bottomBanner&quot;: &quot;&lt;URL of custom banner image. Like: /bahmni/images/customBottomBanner.png&gt;&quot;\n  },\n  &quot;loginPage&quot;: {\n    &quot;logo&quot;: &quot;/bahmni/images/bahmniLogoFull.png&quot;,\n    &quot;showHeaderText&quot;: true,\n    &quot;showTitleText&quot;: false,\n    &quot;bottomLogos&quot;: [\n      &quot;&lt;Path to logo files. Like:&quot;,\n      &quot;/bahmni_config/openmrs/apps/home/first_logo_75px.png&quot;,\n      &quot;/bahmni_config/openmrs/apps/home/second_logo_75px.png&quot;\n    ]\n  },\n  &quot;helpLink&quot;: {\n    &quot;url&quot;: &quot;https://bahmni.atlassian.net/wiki/display/BAH/Bahmni+Home&quot;\n  }\n}</pre>\n</div></div><h3 id=\"ConfigureWhiteLabeling-Configfor&quot;homePage&quot;\">Config for &quot;homePage&quot;</h3><div class=\"table-wrap\"><table class=\"relative-table wrapped confluenceTable\" style=\"width: 68.75%;\"><colgroup><col style=\"width: 12.2056%;\"/></colgroup><colgroup><col style=\"width: 28.9079%;\"/></colgroup><colgroup><col style=\"width: 9.85011%;\"/></colgroup><colgroup><col style=\"width: 49.0364%;\"/></colgroup><tbody><tr><th style=\"text-align: center;\" class=\"confluenceTh\">Key</th><th style=\"text-align: center;\" class=\"confluenceTh\">Purpose</th><th style=\"text-align: center;\" class=\"confluenceTh\">Mandatory</th><th style=\"text-align: center;\" class=\"confluenceTh\">Behaviour</th></tr><tr><td class=\"confluenceTd\"><pre>header_text</pre></td><td class=\"confluenceTd\"><span>Header text on the landing/home Page</span></td><td style=\"text-align: center;\" class=\"confluenceTd\">No</td><td class=\"confluenceTd\"><p>Default Text : WELCOME TO BAHMNI EMR &amp; HOSPITAL SERVICE</p><p><span>If header text key is removed, Default text will show. </span></p></td></tr><tr><td class=\"confluenceTd\">logo</td><td class=\"confluenceTd\"><span>Logo on the landing /home page.</span></td><td style=\"text-align: center;\" class=\"confluenceTd\">No</td><td class=\"confluenceTd\"><p>Default: Path of bahmni logo</p><p><span>If logo path is wrong, it will show a broken image on the landing page.</span></p><p><span><span>If key is removed, then default bahmni logo will be displayed</span><br/></span></p></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">title_text</td><td colspan=\"1\" class=\"confluenceTd\"><span>Title text beside the logo on the landing/home page.</span></td><td colspan=\"1\" style=\"text-align: center;\" class=\"confluenceTd\">No</td><td colspan=\"1\" class=\"confluenceTd\"><p>Default: Blank text</p><p><span>If Key is removed, &quot;title text&quot; placeholder will be displayed</span></p></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><pre>bottomBanner</pre></td><td colspan=\"1\" class=\"confluenceTd\">Display custom banner image depends on implementation</td><td colspan=\"1\" style=\"text-align: center;\" class=\"confluenceTd\">No</td><td colspan=\"1\" class=\"confluenceTd\"><p>Default: Nothing will display.</p></td></tr></tbody></table></div><h3 id=\"ConfigureWhiteLabeling-Configfor&quot;loginPage&quot;\">Config for &quot;loginPage&quot;</h3><div class=\"table-wrap\"><table class=\"relative-table wrapped confluenceTable\" style=\"width: 69.0441%;\"><colgroup><col style=\"width: 14.8188%;\"/></colgroup><colgroup><col style=\"width: 25.693%;\"/></colgroup><colgroup><col style=\"width: 10.3412%;\"/></colgroup><colgroup><col style=\"width: 49.1471%;\"/></colgroup><tbody><tr><th style=\"text-align: center;\" class=\"confluenceTh\">Key</th><th style=\"text-align: center;\" class=\"confluenceTh\">Description</th><th style=\"text-align: center;\" class=\"confluenceTh\">Mandatory</th><th style=\"text-align: center;\" class=\"confluenceTh\">Behaviour</th></tr><tr><td class=\"confluenceTd\"><pre>showHeaderText</pre></td><td class=\"confluenceTd\"><p><span><span>Header text on the login Page.</span></span></p><p><span>Specify the key value in the respective locale file.</span></p></td><td style=\"text-align: center;\" class=\"confluenceTd\">No</td><td class=\"confluenceTd\"><p>Default : True</p><p>If the key is not present <span>or removed</span><span> from the config file, </span>it'll show no text on the page.</p><p><br/></p></td></tr><tr><td class=\"confluenceTd\"><pre>showTitleText</pre></td><td class=\"confluenceTd\"><p><span><span>Title text beside the logo on the login page.</span><br/></span></p><p><span>Specify the key value in the respective locale file.</span></p></td><td style=\"text-align: center;\" class=\"confluenceTd\">No</td><td class=\"confluenceTd\"><p><span>Default: False</span></p><p><span>If the key is <span>not present or removed</span> from the config file, it'll show no text on the page.</span></p></td></tr><tr><td class=\"confluenceTd\">logo</td><td class=\"confluenceTd\"><p>Logo on the login page.</p></td><td style=\"text-align: center;\" class=\"confluenceTd\">No</td><td class=\"confluenceTd\"><p><span>Default : Bahmni logo </span></p><p><span><span>If the key is </span><span>not present or removed</span><span> from the config file, it'll show no image on the page.</span></span></p></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><pre>bottomLogos</pre></td><td colspan=\"1\" class=\"confluenceTd\"><span>Display custom logos as a banner a the very bottom of the page. Files must be available at a path on the server.<br/></span></td><td colspan=\"1\" style=\"text-align: center;\" class=\"confluenceTd\"><span>No</span></td><td colspan=\"1\" class=\"confluenceTd\"><span>Default: Nothing will be displayed</span></td></tr></tbody></table></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ee2b1b95-e4a2-45f6-a144-9759a5dd6812\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>bottomBanner feature will be available from v0.90</p></div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"dd580cdf-2f20-4ebf-9013-4b7fbdbcc7b5\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>On this page</b></div><div class=\"panelContent\">\n<p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"b7457915-5265-46f5-b35b-84f598cba442\" data-macro-name=\"toc\"> </div><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/115780492"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "installation",
+          "id": "1572870",
+          "label": "installation"
+        },
+        {
+          "prefix": "global",
+          "name": "docker",
+          "id": "21004289",
+          "label": "docker"
+        },
+        {
+          "prefix": "global",
+          "name": "review-needed",
+          "id": "30146561",
+          "label": "review-needed"
+        },
+        {
+          "prefix": "global",
+          "name": "in-progress",
+          "id": "98107393",
+          "label": "in-progress"
+        },
+        {
+          "prefix": "global",
+          "name": "security",
+          "id": "116102006",
+          "label": "security"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 5,
+      "_links": {
+        "next": "/rest/api/content/115780492/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115780492/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 6
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/115780492/child",
+    "restrictions": "/rest/api/content/115780492/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/115780492/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=115780492",
+    "webui": "/spaces/BAH/pages/115780492/Configure+White+Labeling",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/115780492",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115780492",
+    "tinyui": "/x/jKvmBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

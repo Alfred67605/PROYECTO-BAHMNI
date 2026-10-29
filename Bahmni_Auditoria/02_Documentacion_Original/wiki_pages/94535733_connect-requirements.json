@@ -1,0 +1,171 @@
+{
+  "id": "94535733",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/94535733",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvOTQ1MzU3MzM=",
+  "status": "current",
+  "title": "Connect Requirements",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2016-10-26T10:59:41.644Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/94535733/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "when": "2018-09-05T10:25:27.077Z",
+    "friendlyWhen": "Sept 05, 2018",
+    "message": "",
+    "number": 23,
+    "minorEdit": false,
+    "syncRev": "0.QwGiZsFOV3HH6Nzl5_nrfw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$94535733.82",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/94535733"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/94535733/version/23"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"single\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"warning\" ac:schema-version=\"1\" ac:macro-id=\"d5207275-4ee0-4a3d-bf39-85fa8f7980f8\"><ac:rich-text-body><p>This guide is currently In-Progress. Over the next few months, content will be added to it.&nbsp;</p><p>If you have any suggestions or would like to add pages which talk about the functionality of Bahmni, please feel free to add them.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Minimum Hardware Requirements</h2><p><br /></p><ac:structured-macro ac:name=\"warning\" ac:schema-version=\"1\" ac:macro-id=\"46b22287-410a-4bfb-b7b2-536ae5ac9718\"><ac:rich-text-body><p>If the server/tablet has lower configuration than what is advised above, performance might be affected adversely.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><table class=\"wrapped\"><colgroup><col /><col /></colgroup><tbody><tr><td colspan=\"1\"><strong>On the local box/AWS</strong></td><td colspan=\"1\"><strong>On the Tablet/Device</strong></td></tr><tr><td>Win 7</td><td colspan=\"1\">4.2.2 (Android Ver)</td></tr><tr><td>1 GB (RAM)</td><td colspan=\"1\">1 GB (RAM)</td></tr><tr><td>2.1Ghz (Dual Core)</td><td colspan=\"1\">1.2Ghz (Dual Core)</td></tr><tr><td>20 GB (Storage)</td><td colspan=\"1\">8 GB (Storage)</td></tr></tbody></table><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"dc5dacc8-d251-4ed4-8a06-ef05a90e2093\"><ac:rich-text-body><p>Figures above are representative</p></ac:rich-text-body></ac:structured-macro><h2><br />Software Requirements</h2><p>Bahmni Connect&nbsp;supports 2 applications i.e. Android Application and Chrome Extension for Tablet and Chrome browser respectively. Both work as independent applications and do not share any dependency. In order to work with the Android app, download the latest version/specific version from the Bahmni repository. &nbsp;Kindly ensure the steps below are followed <strong>before</strong> using Bahmni Connect:</p><p>1.&nbsp;Install released Bahmni version to the local box and have the instance running i.e. &lt;implementation_name&gt;.mybahmni.org</p><p>2. Create a domain name for the implementation and install SSL certificates</p><p>3. Setup Bahmni Connect&nbsp;Sync strategy under OpenMRS global settings. Connect ships with 2 such strategies and you may even develop and plugin your custom strategy.&nbsp;The strategies packaged are</p><ul><li><strong>Identifier based Sync Strategy:&nbsp;</strong>This is useful if you use an identifier prefix and consistent with the locations where you operation. For example, in the demo environment - we have subcenters defined as Subcenter 1 and Subcenter 2 which represent two locations Bahmni and Semariya with BAM and SEM prefix respectively. Any patients with identifiers prefixed with BAM or SEM will sync to the Connect depending on your login location.&nbsp; You can do this, by setting the following Global Property to <em>IDBasedSyncStrategy</em></li></ul><p><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"c12ff1c2-8572-4156-b2c3-fda197fd293d\"><ac:plain-text-body><![CDATA[bahmniOfflineSync.strategy = org.bahmni.module.bahmniOfflineSync.strategy.IDBasedSyncStrategy]]></ac:plain-text-body></ac:structured-macro><p><br /></p><ul><li><strong>Location Based Sync Strategy:&nbsp;</strong>This is useful when you have catchment areas defined in terms of geographical hierarchy. The synchronization of the patient information happens based on the patient's address and its relevance to a catchment area.&nbsp;</li></ul><p><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"7f687efd-698f-4ae1-961c-0be40082e413\"><ac:plain-text-body><![CDATA[bahmniOfflineSync.strategy = org.bahmni.module.bahmniOfflineSync.strategy.LocationBasedSyncStrategy]]></ac:plain-text-body></ac:structured-macro><pre style=\"margin-left: 30.0px;\"><br /></pre><p>4. Download Bahmni Connect&nbsp;App from the URL:&nbsp;<a style=\"font-family: Arial , sans-serif;\" href=\"https://bahmni-repo.twhosted.com/offline_artifacts/\">https://bahmni-repo.twhosted.com/offline_artifacts/</a></p><p>5. Install and use the app following the steps&nbsp;<ac:link><ri:page ri:content-title=\"Installation Steps - Connect\" ri:version-at-save=\"35\" /></ac:link></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"8450e577-7882-4e1b-ae52-c2950ec062ba\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"2ecf4e5d-ee5a-47a2-8fca-c2f2091f69d8\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"c5e56f04-8483-4243-9c94-2e0ccc32752e\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Pages</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"602551d1-0cc1-4658-980b-e2d0ce3814f7\"><ac:parameter ac:name=\"depth\">2</ac:parameter><ac:parameter ac:name=\"page\"><ac:link><ri:page ri:content-title=\"Installing and Configuring Bahmni Connect\" ri:version-at-save=\"5\" /></ac:link></ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Bahmni Connect\" ri:version-at-save=\"40\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Using Bahmni Connect App\" ri:version-at-save=\"33\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/94535733"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout single\" data-layout=\"single\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d5207275-4ee0-4a3d-bf39-85fa8f7980f8\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This guide is currently In-Progress. Over the next few months, content will be added to it. </p><p>If you have any suggestions or would like to add pages which talk about the functionality of Bahmni, please feel free to add them.</p></div></div></div>\n</div>\n</div>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ConnectRequirements-MinimumHardwareRequirements\">Minimum Hardware Requirements</h2><p><br/></p><div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"46b22287-410a-4bfb-b7b2-536ae5ac9718\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>If the server/tablet has lower configuration than what is advised above, performance might be affected adversely.</p></div></div><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col/><col/></colgroup><tbody><tr><td colspan=\"1\" class=\"confluenceTd\"><strong>On the local box/AWS</strong></td><td colspan=\"1\" class=\"confluenceTd\"><strong>On the Tablet/Device</strong></td></tr><tr><td class=\"confluenceTd\">Win 7</td><td colspan=\"1\" class=\"confluenceTd\">4.2.2 (Android Ver)</td></tr><tr><td class=\"confluenceTd\">1 GB (RAM)</td><td colspan=\"1\" class=\"confluenceTd\">1 GB (RAM)</td></tr><tr><td class=\"confluenceTd\">2.1Ghz (Dual Core)</td><td colspan=\"1\" class=\"confluenceTd\">1.2Ghz (Dual Core)</td></tr><tr><td class=\"confluenceTd\">20 GB (Storage)</td><td colspan=\"1\" class=\"confluenceTd\">8 GB (Storage)</td></tr></tbody></table></div><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"dc5dacc8-d251-4ed4-8a06-ef05a90e2093\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Figures above are representative</p></div></div><h2 id=\"ConnectRequirements-SoftwareRequirements\"><br/>Software Requirements</h2><p>Bahmni Connect supports 2 applications i.e. Android Application and Chrome Extension for Tablet and Chrome browser respectively. Both work as independent applications and do not share any dependency. In order to work with the Android app, download the latest version/specific version from the Bahmni repository.  Kindly ensure the steps below are followed <strong>before</strong> using Bahmni Connect:</p><p>1. Install released Bahmni version to the local box and have the instance running i.e. &lt;implementation_name&gt;.mybahmni.org</p><p>2. Create a domain name for the implementation and install SSL certificates</p><p>3. Setup Bahmni Connect Sync strategy under OpenMRS global settings. Connect ships with 2 such strategies and you may even develop and plugin your custom strategy. The strategies packaged are</p><ul><li><strong>Identifier based Sync Strategy: </strong>This is useful if you use an identifier prefix and consistent with the locations where you operation. For example, in the demo environment - we have subcenters defined as Subcenter 1 and Subcenter 2 which represent two locations Bahmni and Semariya with BAM and SEM prefix respectively. Any patients with identifiers prefixed with BAM or SEM will sync to the Connect depending on your login location.  You can do this, by setting the following Global Property to <em>IDBasedSyncStrategy</em></li></ul><p><br/></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c12ff1c2-8572-4156-b2c3-fda197fd293d\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">bahmniOfflineSync.strategy = org.bahmni.module.bahmniOfflineSync.strategy.IDBasedSyncStrategy</pre>\n</div></div><p><br/></p><ul><li><strong>Location Based Sync Strategy: </strong>This is useful when you have catchment areas defined in terms of geographical hierarchy. The synchronization of the patient information happens based on the patient's address and its relevance to a catchment area. </li></ul><p><br/></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7f687efd-698f-4ae1-961c-0be40082e413\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">bahmniOfflineSync.strategy = org.bahmni.module.bahmniOfflineSync.strategy.LocationBasedSyncStrategy</pre>\n</div></div><pre style=\"margin-left: 30.0px;\"><br/></pre><p>4. Download Bahmni Connect App from the URL: <a class=\"external-link\" href=\"https://bahmni-repo.twhosted.com/offline_artifacts/\" rel=\"nofollow\" style=\"font-family: Arial , sans-serif;\">https://bahmni-repo.twhosted.com/offline_artifacts/</a></p><p>5. Install and use the app following the steps <a href=\"/wiki/spaces/BAH/pages/94535735/Installation+Steps+-+Connect\" data-linked-resource-id=\"94535735\" data-linked-resource-version=\"36\" data-linked-resource-type=\"page\">Installation Steps - Connect</a></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8450e577-7882-4e1b-ae52-c2950ec062ba\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"2ecf4e5d-ee5a-47a2-8fca-c2f2091f69d8\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c5e56f04-8483-4243-9c94-2e0ccc32752e\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Pages</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"602551d1-0cc1-4658-980b-e2d0ce3814f7\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/94535706/Installing+Bahmni+Connect+on+Server\" data-linked-resource-id=\"94535706\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">Installing Bahmni Connect on Server</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/94535723/Connect+Installation+Steps+on+Server\" data-linked-resource-id=\"94535723\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Connect Installation Steps on Server</a></li><li><a href=\"/wiki/spaces/BAH/pages/94535719/Server+Setup+For+Connect\" data-linked-resource-id=\"94535719\" data-linked-resource-version=\"30\" data-linked-resource-type=\"page\">Server Setup For Connect</a></li><li><a href=\"/wiki/spaces/BAH/pages/94535725/Bahmni+Connect+Sync\" data-linked-resource-id=\"94535725\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Bahmni Connect Sync</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/94535730/Installing+Bahmni+Connect+App\" data-linked-resource-id=\"94535730\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">Installing Bahmni Connect App</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/94535733/Connect+Requirements\" data-linked-resource-id=\"94535733\" data-linked-resource-version=\"23\" data-linked-resource-type=\"page\">Connect Requirements</a></li><li><a href=\"/wiki/spaces/BAH/pages/94535735/Installation+Steps+-+Connect\" data-linked-resource-id=\"94535735\" data-linked-resource-version=\"36\" data-linked-resource-type=\"page\">Installation Steps - Connect</a></li><li><a href=\"/wiki/spaces/BAH/pages/325713930/Setup+Bahmni+Connect+using+Location+based+sync+strategy\" data-linked-resource-id=\"325713930\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Setup Bahmni Connect using Location based sync strategy</a></li><li><a href=\"/wiki/spaces/BAH/pages/94535739/Customizing+Bahmni+Connect\" data-linked-resource-id=\"94535739\" data-linked-resource-version=\"52\" data-linked-resource-type=\"page\">Customizing Bahmni Connect</a></li><li><a href=\"/wiki/spaces/BAH/pages/97026058/Change+Bahmni+Connect+App+Location\" data-linked-resource-id=\"97026058\" data-linked-resource-version=\"15\" data-linked-resource-type=\"page\">Change Bahmni Connect App Location</a></li><li><a href=\"/wiki/spaces/BAH/pages/94535737/Upgrade+Bahmni+Connect\" data-linked-resource-id=\"94535737\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Upgrade Bahmni Connect</a></li></ul></li></ul><p> </p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/94535750/Bahmni+Connect\" data-linked-resource-id=\"94535750\" data-linked-resource-version=\"40\" data-linked-resource-type=\"page\">Bahmni Connect</a></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/94535745/Using+Bahmni+Connect+App\" data-linked-resource-id=\"94535745\" data-linked-resource-version=\"34\" data-linked-resource-type=\"page\">Using Bahmni Connect App</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/94535733"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/94535733/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/94535733/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 153856062
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/94535733/child",
+    "restrictions": "/rest/api/content/94535733/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/94535733/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=94535733",
+    "webui": "/spaces/BAH/pages/94535733/Connect+Requirements",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/94535733",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/94535733",
+    "tinyui": "/x/NYCiBQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

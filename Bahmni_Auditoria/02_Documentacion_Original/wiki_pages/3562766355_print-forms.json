@@ -1,0 +1,172 @@
+{
+  "id": "3562766355",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3562766355",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzU2Mjc2NjM1NQ==",
+  "status": "current",
+  "title": "Print Forms",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "620bff901d088700694e0d4d",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Ashish Kurian (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/620bff901d088700694e0d4d",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Ashish Kurian (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=620bff901d088700694e0d4d"
+      }
+    },
+    "createdDate": "2024-06-05T07:02:04.770Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3562766355/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "623a2494a2f6400069ea9a3a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Parvathy Babu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/623a2494a2f6400069ea9a3a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Parvathy Babu",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=623a2494a2f6400069ea9a3a"
+      }
+    },
+    "when": "2024-08-09T07:44:04.801Z",
+    "friendlyWhen": "Aug 09, 2024",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3562766355.63",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3562766355"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3562766355/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<h2>Purpose and Benefits</h2><p>The &ldquo;Print Forms&rdquo; feature provides doctors the ability to print out forms in the system so that they can hand over the form to the IPD department. For example, we have an admission order form, which the doctor fills out . Since there is no alerting mechanism , until the IPD ward nurse receives the form, they have to rely on the printing of the admission order form which is sent to the IPD ward.</p><p>The print button would appear as shown in the screenshot below:</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"393\" ac:original-width=\"1215\" ac:custom-width=\"true\" ac:alt=\"image-20240809-073723.png\" ac:width=\"760\"><ri:attachment ri:filename=\"image-20240809-073723.png\" ri:version-at-save=\"1\" /></ac:image><p /><p>Sample PDF file generated on clicking print button for History and Examination form is added as an example:</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"781\" ac:original-width=\"585\" ac:custom-width=\"true\" ac:width=\"585\"><ri:attachment ri:filename=\"Screenshot 2024-08-09 at 1.11.48 PM.png\" ri:version-at-save=\"1\" /></ac:image><h2>Configure Print Forms Feature: </h2><p>Below configuration required to be added to the forms display control configurations in  <code>clinical/dashboard.json</code> to enable print medication functionality.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"e4447b45-4838-4e5d-82f3-013dfc4359bf\"><ac:plain-text-body><![CDATA[\"forms-v2-react\": {\n    \"type\": \"formsV2React\",\n    .....\n    \"dashboardConfig\": {\n        .....\n        \"printing\": {\n            \"printDiagnosis\":{\n              \"order\": \"PRIMARY\",\n              \"certainity\": \"CONFIRMED\"\n            },\n            \"observationsConcepts\": [\"WEIGHT\"],\n            \"templateUrl\": \"/bahmni_config/openmrs/apps/clinical/clinicalPrints/formPrint.html\",\n            \"title\": \"Bahmni Hospital\",\n            \"logo\": \"logo.png\"\n        }\n    },\n}]]></ac:plain-text-body></ac:structured-macro><p /><p><strong>Config Descriptions:</strong></p><table data-table-width=\"760\" data-layout=\"default\" ac:local-id=\"0c67eaa1-5373-4a0a-85a4-fdccdc8a0c34\"><tbody><tr><th><p><strong>Field Name</strong></p></th><th><p><strong>Description</strong></p></th><th><p><strong>Mandatory</strong></p></th></tr><tr><td><p>printing</p></td><td><p>Config to enable the print functionality. This configuration is required for the print button to be shown in the forms view page.</p></td><td><p>Yes</p></td></tr><tr><td><p>printDiagnosis</p></td><td><p>This is type of diagnosis we want to print in the form print.</p><p>For eg: if we want to show the diagnosis which are primary and confirmed, we need to give the <code>order</code> as <code>PRIMARY</code> and <code>certainity</code> as <code>CONFIRMED</code></p></td><td><p>No</p></td></tr><tr><td><p>observationsConcepts</p></td><td><p>This is a list of concepts. This is to fetch the latest observation captured for the patients for the given concepts which can then be consumed in the custom template to show values like patient's height, weight, etc.</p></td><td><p>No</p></td></tr><tr><td><p>templateUrl</p></td><td><p>This field is required for the custom template to be used for printing the forms. If we want a default Bahmni's template and not the custom one, we need to remove this config</p></td><td><p>No</p></td></tr></tbody></table><ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p><strong>Note:</strong> If we want to show these custom options like diagnosis, observations, etc. in the pdf, then we need to give a custom template that&rsquo;ll include html elements with appropriate css to show these data. One can refer this sample html (formPrint.html) below</p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p><strong>Note:</strong> If we want to show these custom options like diagnosis, observations, etc. in the pdf, then we need to give a custom template that&rsquo;ll include html elements with appropriate css to show these data. One can refer this sample html (formPrint.html) below</p>\n</div></div></ac:adf-fallback></ac:adf-extension><p><strong>Sample formPrint.html :</strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"c15f4f1f-77ef-4634-b9ee-0bfe736debd4\"><ac:plain-text-body><![CDATA[<link rel=\"stylesheet\" href=\"/bahmni_config/openmrs/apps/clinical/clinicalPrints/css/print.css\"/>\n<style>\n    @media print {\n        /* Hide the header */\n        @page { margin-top: 20px; }\n        header, .header {\n            display: none !important;\n        }\n\n        /* Hide the footer */\n        @page { margin-bottom: 20px; }\n        footer, .footer {\n            display: none !important;\n        }\n    }\n</style>\n<div class=\"print-wrapper custom-print-style\">\n    <div class=\"print-header\" ng-if=\"printConfig\">\n        <div class=\"print-logo-plus-text\">\n            <img class=\"print-logo\" width=\"125px\" ng-if=\"printConfig.logo\" ng-src=\"{{printConfig.logo}}\" alt=\"logo\"/>\n            <h1 class=\"print-logo-text\">{{printConfig.title}}</h1>\n            <div class=\"print-right\"></div>\n        </div>\n        <div class=\"clinic-info\">\n            <span> {{printConfig.header}}</span>\n        </div>\n        <div style=\"float: left;text-align: left;font-size: 10pt;font-weight: bold;margin-bottom: 10px;margin-top: 10px;\" \n            ng-bind-html=\"additionalInfo.facilityLocation.address5\"></div>\n    </div>\n    <!-- Patient Info -->\n    <div class=\"patient-info\">\n        <table>\n            <tr>\n                <td colspan=\"2\" style=\"font-size: 12pt;\">Name of the Patient: <span class=\"value\">{{patient.name}} ({{patient.identifier}})</span></td>\n                <td>Date : <span class=\"value\">{{additionalInfo.currentDate | bahmniDate}}</span></td>\n            </tr>\n            <tr>\n                <td>Age: <span class=\"value\">\n                    {{patient.birthdate | dateToAge:visit.dateStarted}}\n                </span></td>\n                <td>Sex: <span class=\"value\">{{patient.genderText.substring(6, patient.genderText.length - 7)}}</span></td>\n                <td>Weight: <span class=\"value\">{{observationsEntries[0].value}} {{observationsEntries[0].concept.units}}</span></td>\n            </tr>\n            <tr>\n                <td>Address: <span class=\"value\">{{patient.address.address5}}</span></td>\n                <td>Kebele: <span class=\"value\">{{patient.address.address4}}</span></td>\n                <td>Woreda: <span class=\"value\">{{patient.address.address3}}</span></td>\n            </tr>\n            <tr>\n                <td>Zone: <span class=\"value\">{{patient.address.address2}}</span></td>\n                <td>Region: <span class=\"value\">{{patient.address.address1}}</span></td>\n                <td>Country: <span class=\"value\">{{patient.address.country}}</span></td>\n            </tr>\n            <tr>\n                <td>Tel no: <span class=\"value\">{{patient.mobilePhone.value}}</span></td>\n                <td colspan=\"2\">Visit Type: <span class=\"value\"> {{additionalInfo.visitType}} </span></td>\n            </tr>\n            <tr>\n                <td>Diagnosis (ICD-10 code): <span class=\"value\">{{ diagnosesWithCodes }}</span></td>\n                <td colspan=\"2\">Allergies: <span class=\"value\"> {{ allergies.length > 0 ? allergies : \"No allergies recorded for this patient\"}} </span></td>\n            </tr>\n            <tr>\n                \n            </tr>\n        </table>\n    </div>\n    <!-- Form Info -->\n    <div class=\"sections-group\">\n        <div class=\"section\">\n            <section class=\"block observation dashboard-section\" id=\"observationSection\">\n                <ul bm-gallery access-impression=\"true\">\n                    <section class=\"block \" ng-class=\"::{'hidden-print': noObsMessage}\">\n                        <h2 class=\"tableMargin\"\n                            ng-class=\"::{'section-title': !isFulfilmentDisplayControl, 'form-field': isFulfilmentDisplayControl}\">{{::title |\n                            translate}}</h2>\n                        <div class=\"concept-set-container-view\">\n                            <section class=\"block hierarchy\">\n                                <ul class=\"form-field\" ng-if=\"bahmniObservations.length > 0\">\n                                    <li class=\"tableMargin\" ng-repeat=\"obsGroup in ::bahmniObservations\">\n                                        <span class=\"tree-list-item row-click toggle-container\" toggle=\"obsGroup.isOpen\">\n                                            <span class=\"obs-date\" ng-if=\"obsGroup.value.length > 0\">\n                                                {{::obsGroup.date | bahmniDateTime}}\n                                            </span>\n                                        </span>\n                                        <ul class=\"print-observations visible-print\">\n                                            <li class=\"tableBorder\" ng-repeat=\"observation in ::obsGroup.value track by $index\">\n                                                <ul>\n                                                    <show-observation show-details-button=\"::config.showDetailsButton\" patient=\"::patient\"\n                                                                    observation=\"::observation\"\n                                                                    level=\"2\"\n                                                                    template-url=\"/bahmni_config/openmrs/apps/clinical/clinicalPrints/showObservations.html\">\n                                                                    </show-observation>\n                                                </ul>\n                                            </li>\n                                        </ul>\n                                    </li>\n                                </ul>\n                                <div ng-if=\"::noObsMessage\">\n                                    <div class=\"placeholder-text\" ng-if=\"::!message\"><p translate=\"DISPLAY_CONTROL_ERROR_MESSAGE_KEY\"\n                                                                                    translate-values=\"::{displayControl : '{{title | translate}}'}\"></p>\n                                    </div>\n                                    <div class=\"placeholder-text\" ng-if=\"::message\">{{::message|translate}}</div>\n                                </div>\n                            </section>\n                        </div>\n                    </section>\n                </ul>\n            </section>\n        </div>\n    </div>\n    <!-- Footer -->\n    <div class=\"print-form-footer\">\n        <label for=\"other-notes\">Other Notes :</label>\n        <input type=\"text\" id=\"other-notes\" class=\"other-notes\" />\n        <span class=\"footer-table-left\">\n            <table>\n                <tr>\n                    <td>Signature: </td>\n                </tr>\n            </table>\n        </span>\n        <span class=\"footer-table-right\">\n            <table>\n                <tr>\n                    <td>Date:                         </td>\n                </tr>\n            </table>\n        </span>\n    </div>\n</div>]]></ac:plain-text-body></ac:structured-macro>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3562766355"
+      }
+    },
+    "view": {
+      "value": "<h2 id=\"PrintForms-PurposeandBenefits\">Purpose and Benefits</h2><p>The “Print Forms” feature provides doctors the ability to print out forms in the system so that they can hand over the form to the IPD department. For example, we have an admission order form, which the doctor fills out . Since there is no alerting mechanism , until the IPD ward nurse receives the form, they have to rely on the printing of the admission order form which is sent to the IPD ward.</p><p>The print button would appear as shown in the screenshot below:</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"image-20240809-073723.png\" width=\"760\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3562766355/image-20240809-073723.png?version=1&amp;modificationDate=1723189047297&amp;cacheVersion=1&amp;api=v2&amp;width=760&amp;height=245\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3562766355/image-20240809-073723.png?version=1&amp;modificationDate=1723189047297&amp;cacheVersion=1&amp;api=v2\" data-height=\"393\" data-width=\"1215\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3686072344\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240809-073723.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3562766355\" data-linked-resource-container-version=\"2\" data-media-id=\"aa4748bf-fb2f-4656-b7f8-23013dbb8c57\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3562766355/image-20240809-073723.png?version=1&amp;modificationDate=1723189047297&amp;cacheVersion=1&amp;api=v2&amp;width=1280&amp;height=414 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3562766355/image-20240809-073723.png?version=1&amp;modificationDate=1723189047297&amp;cacheVersion=1&amp;api=v2&amp;width=760&amp;height=245 1x\"></span><p /><p>Sample PDF file generated on clicking print button for History and Examination form is added as an example:</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"585\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3562766355/Screenshot%202024-08-09%20at%201.11.48%E2%80%AFPM.png?version=1&amp;modificationDate=1723189375747&amp;cacheVersion=1&amp;api=v2&amp;width=585&amp;height=780\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3562766355/Screenshot%202024-08-09%20at%201.11.48%E2%80%AFPM.png?version=1&amp;modificationDate=1723189375747&amp;cacheVersion=1&amp;api=v2\" data-height=\"781\" data-width=\"585\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3686334474\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2024-08-09 at 1.11.48 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3562766355\" data-linked-resource-container-version=\"2\" data-media-id=\"6846a61f-05aa-46aa-8ec6-22ea2487dc97\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3562766355/Screenshot%202024-08-09%20at%201.11.48%E2%80%AFPM.png?version=1&amp;modificationDate=1723189375747&amp;cacheVersion=1&amp;api=v2&amp;width=959&amp;height=1280 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3562766355/Screenshot%202024-08-09%20at%201.11.48%E2%80%AFPM.png?version=1&amp;modificationDate=1723189375747&amp;cacheVersion=1&amp;api=v2&amp;width=585&amp;height=780 1x\"></span><h2 id=\"PrintForms-ConfigurePrintFormsFeature:\">Configure Print Forms Feature: </h2><p>Below configuration required to be added to the forms display control configurations in  <code>clinical/dashboard.json</code> to enable print medication functionality.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e4447b45-4838-4e5d-82f3-013dfc4359bf\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;forms-v2-react&quot;: {\n    &quot;type&quot;: &quot;formsV2React&quot;,\n    .....\n    &quot;dashboardConfig&quot;: {\n        .....\n        &quot;printing&quot;: {\n            &quot;printDiagnosis&quot;:{\n              &quot;order&quot;: &quot;PRIMARY&quot;,\n              &quot;certainity&quot;: &quot;CONFIRMED&quot;\n            },\n            &quot;observationsConcepts&quot;: [&quot;WEIGHT&quot;],\n            &quot;templateUrl&quot;: &quot;/bahmni_config/openmrs/apps/clinical/clinicalPrints/formPrint.html&quot;,\n            &quot;title&quot;: &quot;Bahmni Hospital&quot;,\n            &quot;logo&quot;: &quot;logo.png&quot;\n        }\n    },\n}</pre>\n</div></div><p /><p><strong>Config Descriptions:</strong></p><div class=\"table-wrap\"><table data-table-width=\"760\" data-layout=\"default\" data-local-id=\"0c67eaa1-5373-4a0a-85a4-fdccdc8a0c34\" class=\"confluenceTable\"><tbody><tr><th class=\"confluenceTh\"><p><strong>Field Name</strong></p></th><th class=\"confluenceTh\"><p><strong>Description</strong></p></th><th class=\"confluenceTh\"><p><strong>Mandatory</strong></p></th></tr><tr><td class=\"confluenceTd\"><p>printing</p></td><td class=\"confluenceTd\"><p>Config to enable the print functionality. This configuration is required for the print button to be shown in the forms view page.</p></td><td class=\"confluenceTd\"><p>Yes</p></td></tr><tr><td class=\"confluenceTd\"><p>printDiagnosis</p></td><td class=\"confluenceTd\"><p>This is type of diagnosis we want to print in the form print.</p><p>For eg: if we want to show the diagnosis which are primary and confirmed, we need to give the <code>order</code> as <code>PRIMARY</code> and <code>certainity</code> as <code>CONFIRMED</code></p></td><td class=\"confluenceTd\"><p>No</p></td></tr><tr><td class=\"confluenceTd\"><p>observationsConcepts</p></td><td class=\"confluenceTd\"><p>This is a list of concepts. This is to fetch the latest observation captured for the patients for the given concepts which can then be consumed in the custom template to show values like patient's height, weight, etc.</p></td><td class=\"confluenceTd\"><p>No</p></td></tr><tr><td class=\"confluenceTd\"><p>templateUrl</p></td><td class=\"confluenceTd\"><p>This field is required for the custom template to be used for printing the forms. If we want a default Bahmni's template and not the custom one, we need to remove this config</p></td><td class=\"confluenceTd\"><p>No</p></td></tr></tbody></table></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p><strong>Note:</strong> If we want to show these custom options like diagnosis, observations, etc. in the pdf, then we need to give a custom template that’ll include html elements with appropriate css to show these data. One can refer this sample html (formPrint.html) below</p>\n</div></div><p><strong>Sample formPrint.html :</strong></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c15f4f1f-77ef-4634-b9ee-0bfe736debd4\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&lt;link rel=&quot;stylesheet&quot; href=&quot;/bahmni_config/openmrs/apps/clinical/clinicalPrints/css/print.css&quot;/&gt;\n&lt;style&gt;\n    @media print {\n        /* Hide the header */\n        @page { margin-top: 20px; }\n        header, .header {\n            display: none !important;\n        }\n\n        /* Hide the footer */\n        @page { margin-bottom: 20px; }\n        footer, .footer {\n            display: none !important;\n        }\n    }\n&lt;/style&gt;\n&lt;div class=&quot;print-wrapper custom-print-style&quot;&gt;\n    &lt;div class=&quot;print-header&quot; ng-if=&quot;printConfig&quot;&gt;\n        &lt;div class=&quot;print-logo-plus-text&quot;&gt;\n            &lt;img class=&quot;print-logo&quot; width=&quot;125px&quot; ng-if=&quot;printConfig.logo&quot; ng-src=&quot;{{printConfig.logo}}&quot; alt=&quot;logo&quot;/&gt;\n            &lt;h1 class=&quot;print-logo-text&quot;&gt;{{printConfig.title}}&lt;/h1&gt;\n            &lt;div class=&quot;print-right&quot;&gt;&lt;/div&gt;\n        &lt;/div&gt;\n        &lt;div class=&quot;clinic-info&quot;&gt;\n            &lt;span&gt; {{printConfig.header}}&lt;/span&gt;\n        &lt;/div&gt;\n        &lt;div style=&quot;float: left;text-align: left;font-size: 10pt;font-weight: bold;margin-bottom: 10px;margin-top: 10px;&quot; \n            ng-bind-html=&quot;additionalInfo.facilityLocation.address5&quot;&gt;&lt;/div&gt;\n    &lt;/div&gt;\n    &lt;!-- Patient Info --&gt;\n    &lt;div class=&quot;patient-info&quot;&gt;\n        &lt;table&gt;\n            &lt;tr&gt;\n                &lt;td colspan=&quot;2&quot; style=&quot;font-size: 12pt;&quot;&gt;Name of the Patient: &lt;span class=&quot;value&quot;&gt;{{patient.name}} ({{patient.identifier}})&lt;/span&gt;&lt;/td&gt;\n                &lt;td&gt;Date : &lt;span class=&quot;value&quot;&gt;{{additionalInfo.currentDate | bahmniDate}}&lt;/span&gt;&lt;/td&gt;\n            &lt;/tr&gt;\n            &lt;tr&gt;\n                &lt;td&gt;Age: &lt;span class=&quot;value&quot;&gt;\n                    {{patient.birthdate | dateToAge:visit.dateStarted}}\n                &lt;/span&gt;&lt;/td&gt;\n                &lt;td&gt;Sex: &lt;span class=&quot;value&quot;&gt;{{patient.genderText.substring(6, patient.genderText.length - 7)}}&lt;/span&gt;&lt;/td&gt;\n                &lt;td&gt;Weight: &lt;span class=&quot;value&quot;&gt;{{observationsEntries[0].value}} {{observationsEntries[0].concept.units}}&lt;/span&gt;&lt;/td&gt;\n            &lt;/tr&gt;\n            &lt;tr&gt;\n                &lt;td&gt;Address: &lt;span class=&quot;value&quot;&gt;{{patient.address.address5}}&lt;/span&gt;&lt;/td&gt;\n                &lt;td&gt;Kebele: &lt;span class=&quot;value&quot;&gt;{{patient.address.address4}}&lt;/span&gt;&lt;/td&gt;\n                &lt;td&gt;Woreda: &lt;span class=&quot;value&quot;&gt;{{patient.address.address3}}&lt;/span&gt;&lt;/td&gt;\n            &lt;/tr&gt;\n            &lt;tr&gt;\n                &lt;td&gt;Zone: &lt;span class=&quot;value&quot;&gt;{{patient.address.address2}}&lt;/span&gt;&lt;/td&gt;\n                &lt;td&gt;Region: &lt;span class=&quot;value&quot;&gt;{{patient.address.address1}}&lt;/span&gt;&lt;/td&gt;\n                &lt;td&gt;Country: &lt;span class=&quot;value&quot;&gt;{{patient.address.country}}&lt;/span&gt;&lt;/td&gt;\n            &lt;/tr&gt;\n            &lt;tr&gt;\n                &lt;td&gt;Tel no: &lt;span class=&quot;value&quot;&gt;{{patient.mobilePhone.value}}&lt;/span&gt;&lt;/td&gt;\n                &lt;td colspan=&quot;2&quot;&gt;Visit Type: &lt;span class=&quot;value&quot;&gt; {{additionalInfo.visitType}} &lt;/span&gt;&lt;/td&gt;\n            &lt;/tr&gt;\n            &lt;tr&gt;\n                &lt;td&gt;Diagnosis (ICD-10 code): &lt;span class=&quot;value&quot;&gt;{{ diagnosesWithCodes }}&lt;/span&gt;&lt;/td&gt;\n                &lt;td colspan=&quot;2&quot;&gt;Allergies: &lt;span class=&quot;value&quot;&gt; {{ allergies.length &gt; 0 ? allergies : &quot;No allergies recorded for this patient&quot;}} &lt;/span&gt;&lt;/td&gt;\n            &lt;/tr&gt;\n            &lt;tr&gt;\n                \n            &lt;/tr&gt;\n        &lt;/table&gt;\n    &lt;/div&gt;\n    &lt;!-- Form Info --&gt;\n    &lt;div class=&quot;sections-group&quot;&gt;\n        &lt;div class=&quot;section&quot;&gt;\n            &lt;section class=&quot;block observation dashboard-section&quot; id=&quot;observationSection&quot;&gt;\n                &lt;ul bm-gallery access-impression=&quot;true&quot;&gt;\n                    &lt;section class=&quot;block &quot; ng-class=&quot;::{'hidden-print': noObsMessage}&quot;&gt;\n                        &lt;h2 class=&quot;tableMargin&quot;\n                            ng-class=&quot;::{'section-title': !isFulfilmentDisplayControl, 'form-field': isFulfilmentDisplayControl}&quot;&gt;{{::title |\n                            translate}}&lt;/h2&gt;\n                        &lt;div class=&quot;concept-set-container-view&quot;&gt;\n                            &lt;section class=&quot;block hierarchy&quot;&gt;\n                                &lt;ul class=&quot;form-field&quot; ng-if=&quot;bahmniObservations.length &gt; 0&quot;&gt;\n                                    &lt;li class=&quot;tableMargin&quot; ng-repeat=&quot;obsGroup in ::bahmniObservations&quot;&gt;\n                                        &lt;span class=&quot;tree-list-item row-click toggle-container&quot; toggle=&quot;obsGroup.isOpen&quot;&gt;\n                                            &lt;span class=&quot;obs-date&quot; ng-if=&quot;obsGroup.value.length &gt; 0&quot;&gt;\n                                                {{::obsGroup.date | bahmniDateTime}}\n                                            &lt;/span&gt;\n                                        &lt;/span&gt;\n                                        &lt;ul class=&quot;print-observations visible-print&quot;&gt;\n                                            &lt;li class=&quot;tableBorder&quot; ng-repeat=&quot;observation in ::obsGroup.value track by $index&quot;&gt;\n                                                &lt;ul&gt;\n                                                    &lt;show-observation show-details-button=&quot;::config.showDetailsButton&quot; patient=&quot;::patient&quot;\n                                                                    observation=&quot;::observation&quot;\n                                                                    level=&quot;2&quot;\n                                                                    template-url=&quot;/bahmni_config/openmrs/apps/clinical/clinicalPrints/showObservations.html&quot;&gt;\n                                                                    &lt;/show-observation&gt;\n                                                &lt;/ul&gt;\n                                            &lt;/li&gt;\n                                        &lt;/ul&gt;\n                                    &lt;/li&gt;\n                                &lt;/ul&gt;\n                                &lt;div ng-if=&quot;::noObsMessage&quot;&gt;\n                                    &lt;div class=&quot;placeholder-text&quot; ng-if=&quot;::!message&quot;&gt;&lt;p translate=&quot;DISPLAY_CONTROL_ERROR_MESSAGE_KEY&quot;\n                                                                                    translate-values=&quot;::{displayControl : '{{title | translate}}'}&quot;&gt;&lt;/p&gt;\n                                    &lt;/div&gt;\n                                    &lt;div class=&quot;placeholder-text&quot; ng-if=&quot;::message&quot;&gt;{{::message|translate}}&lt;/div&gt;\n                                &lt;/div&gt;\n                            &lt;/section&gt;\n                        &lt;/div&gt;\n                    &lt;/section&gt;\n                &lt;/ul&gt;\n            &lt;/section&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n    &lt;!-- Footer --&gt;\n    &lt;div class=&quot;print-form-footer&quot;&gt;\n        &lt;label for=&quot;other-notes&quot;&gt;Other Notes :&lt;/label&gt;\n        &lt;input type=&quot;text&quot; id=&quot;other-notes&quot; class=&quot;other-notes&quot; /&gt;\n        &lt;span class=&quot;footer-table-left&quot;&gt;\n            &lt;table&gt;\n                &lt;tr&gt;\n                    &lt;td&gt;Signature: &lt;/td&gt;\n                &lt;/tr&gt;\n            &lt;/table&gt;\n        &lt;/span&gt;\n        &lt;span class=&quot;footer-table-right&quot;&gt;\n            &lt;table&gt;\n                &lt;tr&gt;\n                    &lt;td&gt;Date:                         &lt;/td&gt;\n                &lt;/tr&gt;\n            &lt;/table&gt;\n        &lt;/span&gt;\n    &lt;/div&gt;\n&lt;/div&gt;</pre>\n</div></div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3562766355"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3562766355/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3562766355/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 604
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3562766355/child",
+    "restrictions": "/rest/api/content/3562766355/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3562766355/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3562766355",
+    "webui": "/spaces/BAH/pages/3562766355/Print+Forms",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3562766355",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3562766355",
+    "tinyui": "/x/E4Bb1",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

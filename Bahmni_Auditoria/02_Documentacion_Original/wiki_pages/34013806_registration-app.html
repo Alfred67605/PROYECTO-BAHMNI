@@ -1,0 +1,136 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Registration App</title></head><body><h1>Registration App</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="RegistrationApp-Description">Description</h2><p>Registration app configuration needs an <em>app.json</em> and an <em>extension.json</em> files.</p><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="4bbddc8c-3376-4b82-901e-2918a3cce933" data-macro-name="info"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>Look at <a href="/wiki/spaces/BAH/pages/32014487/Patient+Registration+Module" data-linked-resource-id="32014487" data-linked-resource-version="25" data-linked-resource-type="page">Patient Registration Module</a> for more details about the registration module.</p></div></div><div class="confluence-information-macro confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="2bc0e9a5-c57b-48f8-a7cb-3668551d54cc" data-macro-name="tip"><p class="title">Path of Configuration files</p><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>Configuration files should be under bahmni_config/openmrs/apps/registration of the web server.</p></div></div><p><br/></p><h2 id="RegistrationApp-AppConfiguration">App Configuration</h2><h3 id="RegistrationApp-Configureapp.json">Configure app.json</h3><div class="confluence-information-macro confluence-information-macro-warning conf-macro output-block" data-hasbody="true" data-macro-id="19a09966-f1d5-4966-af85-8bb584971cfd" data-macro-name="warning"><span class="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>The id, instanceOf, description, extensionPoints and contextModel should look almost exactly like the snippet below. </p></div></div><p>However, the config object can have multiple configurations that can be tuned per implementation. They include the app.json constant section and the app.json config object.</p><h4 id="RegistrationApp-app.jsonConstantSection">app.json Constant Section</h4><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="46cd4dbe-fe30-4392-85e6-6abe88ad5802" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Code Snippet</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">{
+        &quot;id&quot;: &quot;bahmni.registration&quot;,
+        &quot;instanceOf&quot;:&quot;bahmni.template.registration&quot;,
+        &quot;description&quot;: &quot;Bahmni Patient Registration App&quot;,
+        &quot;extensionPoints&quot;: [
+            {
+                &quot;id&quot;: &quot;org.bahmni.registration.patient.search.result.action&quot;,
+                &quot;description&quot;: &quot;Bahmni Patient Search Result Action&quot;
+            },
+            {
+                &quot;id&quot;: &quot;org.bahmni.registration.patient.next&quot;,
+                &quot;description&quot;: &quot;After Bahmni Patient Registration, forward url configuration&quot;
+            }
+        ],
+        &quot;contextModel&quot;: [
+            &quot;patientUuid&quot;,
+            &quot;activeVisitUuid&quot;
+        ],
+        &quot;config&quot; : {}
+}</pre>
+</div></div><h4 id="RegistrationApp-app.jsonConfiguration">app.json Configuration</h4><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="45db03c6-f396-4571-aab8-55ff3234a602" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Code Snippet</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">&quot;config&quot; : {
+            &quot;patientInformation&quot;: { // Configuration for the Patient Information and Additional Patient Information on the Patient Information page (New Patient registration or edit pages)
+                &quot;additionalPatientInformation&quot;: { // Optional. Configuration for the Additional Patient Information section
+                    &quot;title&quot;: &quot;Additional Patient Information&quot;, //Title of Additional Patient Information section
+                    &quot;attributes&quot;: [] // Array of person attribute names to be shown under the Additional Patient Information Section
+                },
+                &quot;defaults&quot;:  { //Default value for person attributes
+                    &quot;attributeName&quot;: &quot;Attribute Value&quot;,
+                }
+            },
+            &quot;addressHierarchy&quot;: { // Optional. Configurations possible for address hierarchy
+                &quot;showAddressFieldsTopDown&quot;: false, // Optional. Determines order of address fields
+                &quot;freeTextAddressFields&quot;: [&quot;address2&quot;, &quot;address1&quot;]
+            },
+            &quot;relationshipTypeMap&quot;: { //Map of relationship type name to the relationship type. Relationship Name should be a valid Relationship in OpenMRS. Relationship type can be either &quot;provider&quot; or &quot;patient&quot;
+                &quot;relationshipName&quot;:&quot;provider | patient&quot;
+            },
+
+            &quot;autoCompleteFields&quot;:[&quot;givenName | familyName | personAttribute Type name&quot;], // Array of fields that can be autocompleted. Autocompletion is based on values already available in the OpenMRS database for that field. Note that address fields cannot be set to autocomplete here. Use the address hierarchy instead
+            &quot;defaultIdentifierPrefix&quot;: &quot;GAN&quot;, // Default identifier prefix
+            &quot;defaultVisitType&quot;: &quot;OPD&quot;, // Default Visit Type on the visit types dropdown
+            &quot;searchByIdForwardUrl&quot;: &quot;/patient/{{patientUuid}}&quot;, //Url to go to when a patient is selected on the search page
+            &quot;showMiddleName&quot;: true, // Show/hide middle name
+			&quot;showLastName&quot;: true, // Show/hide last name
+			&quot;isLastNameMandatory&quot;: true, // Make last name as mandatory/non-mandatory field. If we make showLastName as false, then this config is not require
+            &quot;printOptions&quot;: [
+                {
+                    &quot;label&quot;: &quot;Title&quot; // Title of print
+                    &quot;translationKey&quot;: &quot;REGISTRATION_PRINT_REG_CARD_LOCAL_KEY&quot;, //Optional key for internationalization
+                    &quot;templateUrl&quot;: &quot;/url/of/custom/print/html/file&quot;, // Url to look for custom print html file
+                    &quot;shortcutKey&quot;: &quot;l&quot; // Shortcut key to print 
+                }
+            ],
+            &quot;conceptSetUI&quot;: { // Configuration for concepts on the concept set UI page. See conceptSetUI configuration on clinical app.json for more information
+            },
+            &quot;fieldValidation&quot; : { // Regex pattern based validation for fields on Patient Registration screen
+                &quot;givenName | middleName | familyName | addressFieldNames | personAttributeName | &quot; : {&quot;pattern&quot; : &quot;some nice regex&quot;, &quot;errorMessage&quot; : &quot;When pattern not matched&quot;},
+            }
+        }</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="5c6d66d8-3b8d-4cdc-81f6-af453ba479e9" data-macro-name="info"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>From 0.90, users will be able to show/hide Last Name and also make it non mandatory. See config above.</p></div></div><h3 id="RegistrationApp-Show/HidesectionsinRegistration">Show / Hide sections in Registration</h3><p>This configuration allows users to show or hide sections in registration create new patient page based on conditions. Configuration has to be made to attributesConditions.js which is located in bahmni_config/openmrs/apps/registration</p><p>For example: If  age is less than 18, only then show the &quot;Guardian Details&quot; section.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="ac6f8b08-49e3-4c5c-a1af-c40a41915d92" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Code Snippet</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">            &quot;patientInformation&quot;: {
+                &quot;patientContact&quot;: {
+                    &quot;title&quot;: &quot;Patient Contact&quot;,
+                    &quot;translationKey&quot;: &quot;Patient Contact&quot;,
+                    &quot;attributes&quot;: [
+                        &quot;phoneNumber1&quot;,
+                        &quot;phoneNumber2&quot;,
+                        &quot;emailAddress&quot;,
+                    ]
+                },
+                &quot;guardian&quot;: {
+                    &quot;title&quot;: &quot;Guardian Details&quot;,
+                    &quot;translationKey&quot;: &quot;Guardian Details&quot;,
+                    &quot;attributes&quot;: [
+                        &quot;guardianNameEnglish&quot;,
+                        &quot;guardianGender&quot;,
+                        &quot;guardianDob&quot;,
+                        &quot;guardianAge&quot;,
+                        &quot;guardianNationality&quot;
+                    ]
+                },
+            }</pre>
+</div></div><p>Here, 'patientContact' and 'guardian' are the sections. Below is the javascript that is needed to show the guardian section if age is greater than 18.</p><p>Note:</p><ul><li>'age' is the field on which the condition has to be written. </li><li>A function has to be written which takes in 'patient' as parameter. The patient is the object that contains all the values that are filled in the form. </li><li>The values can be accessed like 'patient[&quot;&lt;attribute name&gt;&quot;]'. </li><li>This function will be called whenever the value changes of the particular patient attribute(age in this example). </li><li>The function has to return an object with 'show' and 'hide' as variables. </li><li>These variables are the arrays that contains the name of the sections to be hidden or shown. </li><li>The conditions can be written based on age, gender, birthdate, birthtime, birthdateEstimated and any other patient attribute. For example, in the third function, 'isGuardianRequired' is a patient attribute. If 'isGuardianRequired' is checked, then it will show &quot;Guardian Details&quot; section otherwise hide. Notice that in '<strong>returnValues.show.push(&quot;guardian&quot;)</strong>', 'guardian' is the key of the section(refer the first code block above).</li></ul><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="0381d22c-3fbc-40a7-b2e1-ededdb0dce6b" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Code Snippet</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">var showOrHideGuardianSection = function (patient) {
+    var returnValues = {
+        show: [],
+        hide: []
+    };
+    if (patient[&quot;age&quot;].years &lt; 18) {
+        returnValues.show.push(&quot;guardian&quot;)
+    } else {
+        returnValues.hide.push(&quot;guardian&quot;)
+    }
+    return returnValues
+};
+
+Bahmni.Registration.AttributesConditions.rules = {
+    'age': function (patient) {
+        return showOrHideGuardianSection(patient);
+    },
+
+    'birthdate': function (patient) {
+        return showOrHideGuardianSection(patient);
+    },
+	'isGuardianRequired': function(patient) {
+    	var returnValues = {
+        	show: [],
+        	hide: []
+    	};
+    	if (patient[&quot;isGuardianRequired&quot;]) {
+        	returnValues.show.push(&quot;guardian&quot;);
+	    } else {
+    	    returnValues.hide.push(&quot;guardian&quot;);
+    	}
+    	return returnValues;
+	}
+};</pre>
+</div></div><h3 id="RegistrationApp-PromptwhilenavigatingawayfromPatientRegistration">Prompt while navigating away from Patient Registration</h3><p>Just as the existing functionality in <a href="https://bahmni.atlassian.net/wiki/spaces/BAH/pages/37945352/Capture+Consultation+Data" rel="nofollow">Clinical module</a> prompts the user to save any unsaved data, a prompt now appears in the Registration module which prevents the user from navigating away from the current Patient Registration <strong>First</strong> page. Unlike its Clinical counterpart, the prompt in Registration module does not allow saving the form for now. This functionality is configurable and can be set by adding the following in the config section of app.json in the registration module. You can pass <strong>true/false</strong> to this config. The default value is <strong>false</strong>.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="cb3db381-438d-4366-a822-879838d6f4a9" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Sample Config</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">“config” : { 
+    .....
+    “showSaveConfirmDialog” : true 
+}</pre>
+</div></div><p><br/></p><p><br/></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<p><br/></p><p><br/></p><div class="confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="e6921b04-2089-48cb-990e-45bb5d87af22" data-macro-name="tip"><p class="title">On this Page</p><div class="confluence-information-macro-body"><p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="1a98ed85-3e48-49ba-a2fe-9fee6840148f" data-macro-name="toc"> </div><p> </p></div></div><p><br/></p><div class="confluence-information-macro confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="f70fac3e-9603-4bc0-b118-a794c8de9149" data-macro-name="tip"><p class="title">See also</p><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p> </p><ul class="childpages-macro conf-macro output-block" data-hasbody="false" data-macro-id="88e682a0-e2dd-4f37-8cd2-cd74ab335398" data-macro-name="children"><li><a href="/wiki/spaces/BAH/pages/81592373/Conditional+Attributes" data-linked-resource-id="81592373" data-linked-resource-version="4" data-linked-resource-type="page">Conditional Attributes</a></li><li><a href="/wiki/spaces/BAH/pages/116104731/Field+Validation" data-linked-resource-id="116104731" data-linked-resource-version="6" data-linked-resource-type="page">Field Validation</a></li><li><a href="/wiki/spaces/BAH/pages/2989817858/Registration+Page+Extension+Points" data-linked-resource-id="2989817858" data-linked-resource-version="12" data-linked-resource-type="page">Registration Page Extension Points</a></li></ul><p> </p></div></div></div>
+</div>
+</div>
+</div></body></html>

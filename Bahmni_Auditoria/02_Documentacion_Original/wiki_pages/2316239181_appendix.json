@@ -1,0 +1,172 @@
+{
+  "id": "2316239181",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2316239181",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMxNjIzOTE4MQ==",
+  "status": "current",
+  "title": "Appendix",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5ff6975591bb2e0108e513c3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "venkatesh bavisetti",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5ff6975591bb2e0108e513c3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Bavisetti Venkatesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5ff6975591bb2e0108e513c3"
+      }
+    },
+    "createdDate": "2021-04-05T08:54:58.499Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239181/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5ff6975591bb2e0108e513c3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "venkatesh bavisetti",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5ff6975591bb2e0108e513c3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Bavisetti Venkatesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5ff6975591bb2e0108e513c3"
+      }
+    },
+    "when": "2021-04-05T08:55:24.317Z",
+    "friendlyWhen": "Apr 05, 2021",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.confluence$content$2316239181.7",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2316239181.8",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2316239181"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239181/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>All the configurations mentioned below need to be added in <strong>bahmni-mart.json</strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"95853dcb-2def-4817-8082-5581f07e911c\"><ac:plain-text-body><![CDATA[Obs\nbacteriology\norders\ndiagnosis\nrsp (Registration Second Page)]]></ac:plain-text-body></ac:structured-macro><table data-layout=\"default\"><colgroup><col style=\"width: 170.0px;\" /><col style=\"width: 170.0px;\" /><col style=\"width: 170.0px;\" /><col style=\"width: 170.0px;\" /></colgroup><tbody><tr><td><p><strong>Key name</strong></p></td><td><p><strong>description</strong></p></td><td><p><strong>Default value</strong></p></td><td><p><strong>Required</strong></p></td></tr><tr><td><p>name</p></td><td><p>Job name</p></td><td><p>N/A</p></td><td><p>Yes</p></td></tr><tr><td><p>type</p></td><td><p>Job type</p></td><td><p>N/A</p></td><td><p>Yes</p></td></tr><tr><td><p>separateTables</p></td><td><p>This config refers the different tables that need to be separated</p></td><td><p>N/A</p></td><td><p>No</p></td></tr><tr><td><p>conceptReferenceSource</p></td><td><p>This config is used for data masking. Here the concept reference source can be added as per the OpenMRS database</p></td><td><p>N/A</p></td><td><p>No</p></td></tr><tr><td><p>ignoreAllFreeTextConcepts</p></td><td><p>This config when enabled ignores all the free text concepts</p></td><td><p>True</p></td><td><p>No</p></td></tr><tr><td><p>columnsToIgnore</p></td><td><p>This config ignores the columns which are not needed to be shown on analytics DB</p></td><td><p>N/A</p></td><td><p>No</p></td></tr><tr><td><p>includeFreeTextConceptNames</p></td><td><p>This config includes the text columns of all concept names given in config</p></td><td><p><br /></p></td><td><p><br /></p></td></tr><tr><td><p>locale</p></td><td><p>Mart flattens the tables/columns based on given locale</p></td><td><p>en</p></td><td><p>No</p></td></tr></tbody></table><p>&nbsp;</p><p>&nbsp;</p><ol><li><p><strong>EAV</strong></p></li></ol><table data-layout=\"default\"><colgroup><col style=\"width: 170.0px;\" /><col style=\"width: 170.0px;\" /><col style=\"width: 170.0px;\" /><col style=\"width: 170.0px;\" /></colgroup><tbody><tr><td><p><strong>Key name</strong></p></td><td><p><strong>description</strong></p></td><td><p><strong>Default value</strong></p></td><td><p><strong>Required</strong></p></td></tr><tr><td><p>name</p></td><td><p>Job name</p></td><td><p>N/A</p></td><td><p>Yes</p></td></tr><tr><td><p>type</p></td><td><p>Job type</p></td><td><p>N/A</p></td><td><p>Yes</p></td></tr><tr><td><p>chunkSizeToRead</p></td><td><p>This tells how many rows to read in the source DB before writing it into analytics DB</p></td><td><p>N/A</p></td><td><p>Yes</p></td></tr><tr><td><p>tableName</p></td><td><p>Target table name in analytics DB</p></td><td><p>N/A</p></td><td><p>Yes</p></td></tr><tr><td colspan=\"4\"><p><strong>eavAttributes</strong></p></td></tr><tr><td><p>attributeTypeTableName</p></td><td><p>&nbsp;</p></td><td><p>&nbsp;</p></td><td><p>&nbsp;</p></td></tr><tr><td><p>attributeTableName</p></td><td><p>&nbsp;</p></td><td><p>&nbsp;</p></td><td><p>&nbsp;</p></td></tr><tr><td><p>valueTableJoiningId</p></td><td><p>&nbsp;</p></td><td><p>&nbsp;</p></td><td><p>&nbsp;</p></td></tr><tr><td><p>typeTableJoiningId</p></td><td><p>&nbsp;</p></td><td><p>&nbsp;</p></td><td><p>&nbsp;</p></td></tr><tr><td><p>valueColumnName</p></td><td><p>&nbsp;</p></td><td><p>&nbsp;</p></td><td><p>&nbsp;</p></td></tr><tr><td><p>primaryKey</p></td><td><p>Primary key in the target table</p></td><td><p>N/A</p></td><td><p>Yes</p></td></tr><tr><td><p>columnsToIgnore</p></td><td><p>This config ignores the columns which are not needed to be shown on analytics DB</p></td><td><p>N/A</p></td><td><p>No</p></td></tr></tbody></table><p>&nbsp;</p><ol><li><p><strong>Metadata</strong></p></li></ol><table data-layout=\"default\"><colgroup><col style=\"width: 170.0px;\" /><col style=\"width: 170.0px;\" /><col style=\"width: 170.0px;\" /><col style=\"width: 170.0px;\" /></colgroup><tbody><tr><td><p><strong>Key name</strong></p></td><td><p><strong>description</strong></p></td><td><p><strong>Default value</strong></p></td><td><p><strong>Required</strong></p></td></tr><tr><td><p>name</p></td><td><p>Job name</p></td><td><p>N/A</p></td><td><p>Yes</p></td></tr><tr><td><p>type</p></td><td><p>Job type</p></td><td><p>N/A</p></td><td><p>Yes</p></td></tr><tr><td><p>conceptReferenceSource</p></td><td><p>This config is used for data masking. Here the concept reference source can be added as per the OpenMRS database</p></td><td><p>N/A</p></td><td><p>Yes</p></td></tr></tbody></table><p /><ol><li><p><strong>CSV upload</strong></p></li></ol><table data-layout=\"default\"><colgroup><col style=\"width: 170.0px;\" /><col style=\"width: 170.0px;\" /><col style=\"width: 170.0px;\" /><col style=\"width: 170.0px;\" /></colgroup><tbody><tr><td><p><strong>Key name</strong></p></td><td><p><strong>description</strong></p></td><td><p><strong>Default value</strong></p></td><td><p><strong>Required</strong></p></td></tr><tr><td><p>name</p></td><td><p>Job name</p></td><td><p>N/A</p></td><td><p>Yes</p></td></tr><tr><td><p>type</p></td><td><p>Job type</p></td><td><p>N/A</p></td><td><p>Yes</p></td></tr><tr><td><p>sourceFilePath</p></td><td><p>&nbsp;</p></td><td><p>N/A</p><p>&nbsp;</p></td><td><p>Yes</p></td></tr></tbody></table><p>&nbsp;</p><p>&nbsp;</p><ol><li><p><strong>CustomSql</strong></p></li></ol><table data-layout=\"default\"><colgroup><col style=\"width: 170.0px;\" /><col style=\"width: 170.0px;\" /><col style=\"width: 170.0px;\" /><col style=\"width: 170.0px;\" /></colgroup><tbody><tr><td><p><strong>Key name</strong></p></td><td><p><strong>description</strong></p></td><td><p><strong>Default value</strong></p></td><td><p><strong>Required</strong></p></td></tr><tr><td><p>name</p></td><td><p>Job name</p></td><td><p>N/A</p></td><td><p>Yes</p></td></tr><tr><td><p>type</p></td><td><p>Job type</p></td><td><p>N/A</p></td><td><p>Yes</p></td></tr><tr><td><p>chunkSizeToRead</p></td><td><p>This tells how many rows to read in the source DB before writing it into analytics DB</p></td><td><p>N/A</p></td><td><p>Yes</p></td></tr><tr><td><p>tableName</p></td><td><p>Target table name in analytics DB</p></td><td><p>N/A</p></td><td><p>Yes</p></td></tr><tr><td><p>columnsToIgnore</p></td><td><p>This config ignores the columns which are not needed to be shown on analytics DB</p></td><td><p>N/A</p></td><td><p>No</p></td></tr><tr><td><p>readerSql</p></td><td><p>This sql reads data from source database (OpenMRS)</p></td><td><p>N/A</p></td><td rowspan=\"2\"><p>Yes ( either readerSql or sourceFilePath)</p></td></tr><tr><td><p>sourceFilePath</p></td><td><p>This key is an alternative for <strong>readerSql</strong>. In this case a file path needs to be mentioned</p></td><td><p>N/A</p></td></tr></tbody></table><p /><p><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2316239181"
+      }
+    },
+    "view": {
+      "value": "<p>All the configurations mentioned below need to be added in <strong>bahmni-mart.json</strong></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"95853dcb-2def-4817-8082-5581f07e911c\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Obs\nbacteriology\norders\ndiagnosis\nrsp (Registration Second Page)</pre>\n</div></div><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 170.0px;\"/><col style=\"width: 170.0px;\"/><col style=\"width: 170.0px;\"/><col style=\"width: 170.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Key name</strong></p></td><td class=\"confluenceTd\"><p><strong>description</strong></p></td><td class=\"confluenceTd\"><p><strong>Default value</strong></p></td><td class=\"confluenceTd\"><p><strong>Required</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>name</p></td><td class=\"confluenceTd\"><p>Job name</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td class=\"confluenceTd\"><p>Yes</p></td></tr><tr><td class=\"confluenceTd\"><p>type</p></td><td class=\"confluenceTd\"><p>Job type</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td class=\"confluenceTd\"><p>Yes</p></td></tr><tr><td class=\"confluenceTd\"><p>separateTables</p></td><td class=\"confluenceTd\"><p>This config refers the different tables that need to be separated</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td class=\"confluenceTd\"><p>No</p></td></tr><tr><td class=\"confluenceTd\"><p>conceptReferenceSource</p></td><td class=\"confluenceTd\"><p>This config is used for data masking. Here the concept reference source can be added as per the OpenMRS database</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td class=\"confluenceTd\"><p>No</p></td></tr><tr><td class=\"confluenceTd\"><p>ignoreAllFreeTextConcepts</p></td><td class=\"confluenceTd\"><p>This config when enabled ignores all the free text concepts</p></td><td class=\"confluenceTd\"><p>True</p></td><td class=\"confluenceTd\"><p>No</p></td></tr><tr><td class=\"confluenceTd\"><p>columnsToIgnore</p></td><td class=\"confluenceTd\"><p>This config ignores the columns which are not needed to be shown on analytics DB</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td class=\"confluenceTd\"><p>No</p></td></tr><tr><td class=\"confluenceTd\"><p>includeFreeTextConceptNames</p></td><td class=\"confluenceTd\"><p>This config includes the text columns of all concept names given in config</p></td><td class=\"confluenceTd\"><p><br/></p></td><td class=\"confluenceTd\"><p><br/></p></td></tr><tr><td class=\"confluenceTd\"><p>locale</p></td><td class=\"confluenceTd\"><p>Mart flattens the tables/columns based on given locale</p></td><td class=\"confluenceTd\"><p>en</p></td><td class=\"confluenceTd\"><p>No</p></td></tr></tbody></table></div><p> </p><p> </p><ol><li><p><strong>EAV</strong></p></li></ol><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 170.0px;\"/><col style=\"width: 170.0px;\"/><col style=\"width: 170.0px;\"/><col style=\"width: 170.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Key name</strong></p></td><td class=\"confluenceTd\"><p><strong>description</strong></p></td><td class=\"confluenceTd\"><p><strong>Default value</strong></p></td><td class=\"confluenceTd\"><p><strong>Required</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>name</p></td><td class=\"confluenceTd\"><p>Job name</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td class=\"confluenceTd\"><p>Yes</p></td></tr><tr><td class=\"confluenceTd\"><p>type</p></td><td class=\"confluenceTd\"><p>Job type</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td class=\"confluenceTd\"><p>Yes</p></td></tr><tr><td class=\"confluenceTd\"><p>chunkSizeToRead</p></td><td class=\"confluenceTd\"><p>This tells how many rows to read in the source DB before writing it into analytics DB</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td class=\"confluenceTd\"><p>Yes</p></td></tr><tr><td class=\"confluenceTd\"><p>tableName</p></td><td class=\"confluenceTd\"><p>Target table name in analytics DB</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td class=\"confluenceTd\"><p>Yes</p></td></tr><tr><td colspan=\"4\" class=\"confluenceTd\"><p><strong>eavAttributes</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>attributeTypeTableName</p></td><td class=\"confluenceTd\"><p> </p></td><td class=\"confluenceTd\"><p> </p></td><td class=\"confluenceTd\"><p> </p></td></tr><tr><td class=\"confluenceTd\"><p>attributeTableName</p></td><td class=\"confluenceTd\"><p> </p></td><td class=\"confluenceTd\"><p> </p></td><td class=\"confluenceTd\"><p> </p></td></tr><tr><td class=\"confluenceTd\"><p>valueTableJoiningId</p></td><td class=\"confluenceTd\"><p> </p></td><td class=\"confluenceTd\"><p> </p></td><td class=\"confluenceTd\"><p> </p></td></tr><tr><td class=\"confluenceTd\"><p>typeTableJoiningId</p></td><td class=\"confluenceTd\"><p> </p></td><td class=\"confluenceTd\"><p> </p></td><td class=\"confluenceTd\"><p> </p></td></tr><tr><td class=\"confluenceTd\"><p>valueColumnName</p></td><td class=\"confluenceTd\"><p> </p></td><td class=\"confluenceTd\"><p> </p></td><td class=\"confluenceTd\"><p> </p></td></tr><tr><td class=\"confluenceTd\"><p>primaryKey</p></td><td class=\"confluenceTd\"><p>Primary key in the target table</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td class=\"confluenceTd\"><p>Yes</p></td></tr><tr><td class=\"confluenceTd\"><p>columnsToIgnore</p></td><td class=\"confluenceTd\"><p>This config ignores the columns which are not needed to be shown on analytics DB</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td class=\"confluenceTd\"><p>No</p></td></tr></tbody></table></div><p> </p><ol><li><p><strong>Metadata</strong></p></li></ol><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 170.0px;\"/><col style=\"width: 170.0px;\"/><col style=\"width: 170.0px;\"/><col style=\"width: 170.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Key name</strong></p></td><td class=\"confluenceTd\"><p><strong>description</strong></p></td><td class=\"confluenceTd\"><p><strong>Default value</strong></p></td><td class=\"confluenceTd\"><p><strong>Required</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>name</p></td><td class=\"confluenceTd\"><p>Job name</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td class=\"confluenceTd\"><p>Yes</p></td></tr><tr><td class=\"confluenceTd\"><p>type</p></td><td class=\"confluenceTd\"><p>Job type</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td class=\"confluenceTd\"><p>Yes</p></td></tr><tr><td class=\"confluenceTd\"><p>conceptReferenceSource</p></td><td class=\"confluenceTd\"><p>This config is used for data masking. Here the concept reference source can be added as per the OpenMRS database</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td class=\"confluenceTd\"><p>Yes</p></td></tr></tbody></table></div><p /><ol><li><p><strong>CSV upload</strong></p></li></ol><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 170.0px;\"/><col style=\"width: 170.0px;\"/><col style=\"width: 170.0px;\"/><col style=\"width: 170.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Key name</strong></p></td><td class=\"confluenceTd\"><p><strong>description</strong></p></td><td class=\"confluenceTd\"><p><strong>Default value</strong></p></td><td class=\"confluenceTd\"><p><strong>Required</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>name</p></td><td class=\"confluenceTd\"><p>Job name</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td class=\"confluenceTd\"><p>Yes</p></td></tr><tr><td class=\"confluenceTd\"><p>type</p></td><td class=\"confluenceTd\"><p>Job type</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td class=\"confluenceTd\"><p>Yes</p></td></tr><tr><td class=\"confluenceTd\"><p>sourceFilePath</p></td><td class=\"confluenceTd\"><p> </p></td><td class=\"confluenceTd\"><p>N/A</p><p> </p></td><td class=\"confluenceTd\"><p>Yes</p></td></tr></tbody></table></div><p> </p><p> </p><ol><li><p><strong>CustomSql</strong></p></li></ol><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 170.0px;\"/><col style=\"width: 170.0px;\"/><col style=\"width: 170.0px;\"/><col style=\"width: 170.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Key name</strong></p></td><td class=\"confluenceTd\"><p><strong>description</strong></p></td><td class=\"confluenceTd\"><p><strong>Default value</strong></p></td><td class=\"confluenceTd\"><p><strong>Required</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>name</p></td><td class=\"confluenceTd\"><p>Job name</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td class=\"confluenceTd\"><p>Yes</p></td></tr><tr><td class=\"confluenceTd\"><p>type</p></td><td class=\"confluenceTd\"><p>Job type</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td class=\"confluenceTd\"><p>Yes</p></td></tr><tr><td class=\"confluenceTd\"><p>chunkSizeToRead</p></td><td class=\"confluenceTd\"><p>This tells how many rows to read in the source DB before writing it into analytics DB</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td class=\"confluenceTd\"><p>Yes</p></td></tr><tr><td class=\"confluenceTd\"><p>tableName</p></td><td class=\"confluenceTd\"><p>Target table name in analytics DB</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td class=\"confluenceTd\"><p>Yes</p></td></tr><tr><td class=\"confluenceTd\"><p>columnsToIgnore</p></td><td class=\"confluenceTd\"><p>This config ignores the columns which are not needed to be shown on analytics DB</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td class=\"confluenceTd\"><p>No</p></td></tr><tr><td class=\"confluenceTd\"><p>readerSql</p></td><td class=\"confluenceTd\"><p>This sql reads data from source database (OpenMRS)</p></td><td class=\"confluenceTd\"><p>N/A</p></td><td rowspan=\"2\" class=\"confluenceTd\"><p>Yes ( either readerSql or sourceFilePath)</p></td></tr><tr><td class=\"confluenceTd\"><p>sourceFilePath</p></td><td class=\"confluenceTd\"><p>This key is an alternative for <strong>readerSql</strong>. In this case a file path needs to be mentioned</p></td><td class=\"confluenceTd\"><p>N/A</p></td></tr></tbody></table></div><p /><p><br/></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2316239181"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2316239181/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239181/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1885
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2316239181/child",
+    "restrictions": "/rest/api/content/2316239181/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2316239181/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2316239181",
+    "webui": "/spaces/BAH/pages/2316239181/Appendix",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2316239181",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239181",
+    "tinyui": "/x/TQEPig",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

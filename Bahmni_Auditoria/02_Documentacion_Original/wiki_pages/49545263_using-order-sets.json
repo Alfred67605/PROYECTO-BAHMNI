@@ -1,0 +1,170 @@
+{
+  "id": "49545263",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/49545263",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNDk1NDUyNjM=",
+  "status": "current",
+  "title": "Using Order Sets",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2016-04-01T07:16:12.268Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/49545263/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "when": "2016-04-11T17:30:51.519Z",
+    "friendlyWhen": "Apr 11, 2016",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "syncRev": "0.la6-Etu7i_h-h2Jwkr4E9A.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$49545263.36",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/49545263"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/49545263/version/4"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>About the Feature</h2><p>Order sets is a feature in the&nbsp;Medications tab of Bahmni's Clinical module. Using Order Sets, the clinicians can order a set of drugs/medications together.&nbsp;An order set be added, edited, stopped or refilled using the Treatments tab.&nbsp;This feature&nbsp;has been designed to save the users time and effort, by ordering a set of drugs with predefined dosages, routes and frequencies.</p><h2><span style=\"color: rgb(0,0,0);\">Used By</span></h2><p><span style=\"color: rgb(0,0,0);\">It is used by the doctors while ordering medications for the patient.</span></p><p><span style=\"color: rgb(0,0,0);\">&nbsp;</span><span style=\"color: rgb(0,0,0);font-size: 20.0px;line-height: 1.5;\">How is it Used?</span></p><p>On the Medication page, there is a separate section for ordering &quot;Order Sets&quot; for the patient. The doctor has to select the start date for the order set. By default, current date is the start date.</p><p>On selecting an order set from that section, the drugs which are part of that order set are populated on the screen. There is a checkbox in front of each drug which is selected by default. The doctor can uncheck it if the drug is not to be ordered.</p><p><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2016-03-18 at 2.00.34 PM.png\" /></ac:image></p><p>The doctor can choose to edit the dosage, frequency, route and duration of each drug before ordering. Clicking on the edit button populates the drug order entry form and after the changes are made, the doctor has to click the add button to update the order details in the order set.</p><p>To save the drug orders for the patient, click on &quot;Save&quot; and the drug orders move to the active list of drugs for the patient.</p></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"6462b5e2-1d86-451d-a8c5-c39c2f99335c\"><ac:rich-text-body><p><strong><span style=\"color: rgb(0,0,0);\">Please note that Bahmni configuration for each implementation can vary drastically. The screens and workflows below may not apply to your specific implementation.</span></strong></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Order Sets\" /><ac:plain-text-link-body><![CDATA[Order Sets - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/49545263"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"UsingOrderSets-AbouttheFeature\">About the Feature</h2><p>Order sets is a feature in the Medications tab of Bahmni's Clinical module. Using Order Sets, the clinicians can order a set of drugs/medications together. An order set be added, edited, stopped or refilled using the Treatments tab. This feature has been designed to save the users time and effort, by ordering a set of drugs with predefined dosages, routes and frequencies.</p><h2 id=\"UsingOrderSets-UsedBy\"><span class=\"legacy-color-text-default\">Used By</span></h2><p><span class=\"legacy-color-text-default\">It is used by the doctors while ordering medications for the patient.</span></p><p><span class=\"legacy-color-text-default\"> </span><span style=\"font-size: 20.0px;line-height: 1.5;\" class=\"legacy-color-text-default\">How is it Used?</span></p><p>On the Medication page, there is a separate section for ordering &quot;Order Sets&quot; for the patient. The doctor has to select the start date for the order set. By default, current date is the start date.</p><p>On selecting an order set from that section, the drugs which are part of that order set are populated on the screen. There is a checkbox in front of each drug which is selected by default. The doctor can uncheck it if the drug is not to be ordered.</p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/49545263/Screen%20Shot%202016-03-18%20at%202.00.34%20PM.png?version=1&amp;modificationDate=1459496425211&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=197\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/49545263/Screen%20Shot%202016-03-18%20at%202.00.34%20PM.png?version=1&amp;modificationDate=1459496425211&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"49545316\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-03-18 at 2.00.34 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"49545263\" data-linked-resource-container-version=\"4\" data-media-id=\"0dc2c1a2-7f21-496b-967a-d1e9339042fb\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/49545263/Screen%20Shot%202016-03-18%20at%202.00.34%20PM.png?version=1&amp;modificationDate=1459496425211&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=394 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/49545263/Screen%20Shot%202016-03-18%20at%202.00.34%20PM.png?version=1&amp;modificationDate=1459496425211&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=197 1x\"></span></p><p>The doctor can choose to edit the dosage, frequency, route and duration of each drug before ordering. Clicking on the edit button populates the drug order entry form and after the changes are made, the doctor has to click the add button to update the order details in the order set.</p><p>To save the drug orders for the patient, click on &quot;Save&quot; and the drug orders move to the active list of drugs for the patient.</p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6462b5e2-1d86-451d-a8c5-c39c2f99335c\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong><span class=\"legacy-color-text-default\">Please note that Bahmni configuration for each implementation can vary drastically. The screens and workflows below may not apply to your specific implementation.</span></strong></p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/47022141/Order+Sets\" data-linked-resource-id=\"47022141\" data-linked-resource-version=\"9\" data-linked-resource-type=\"page\">Order Sets - Feature Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/49545263"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/49545263/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/49545263/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 485250026
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/49545263/child",
+    "restrictions": "/rest/api/content/49545263/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/49545263/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=49545263",
+    "webui": "/spaces/BAH/pages/49545263/Using+Order+Sets",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/49545263",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/49545263",
+    "tinyui": "/x/LwD0Ag",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

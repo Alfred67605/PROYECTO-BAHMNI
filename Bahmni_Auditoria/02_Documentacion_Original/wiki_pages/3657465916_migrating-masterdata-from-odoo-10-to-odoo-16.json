@@ -1,0 +1,172 @@
+{
+  "id": "3657465916",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3657465916",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzY1NzQ2NTkxNg==",
+  "status": "current",
+  "title": "Migrating masterdata from Odoo 10 to Odoo 16",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "createdDate": "2024-07-26T11:20:44.217Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3657465916/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "when": "2024-07-29T08:45:34.401Z",
+    "friendlyWhen": "Jul 29, 2024",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3657465916.24",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3657465916"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3657465916/version/4"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>To facilitate the migration of master data from Odoo 10 to Odoo 16, a custom module named <code>Odoo 10 Data Import</code> has been developed. This module functions by establishing a connection with the legacy Odoo 10 database and transferring the data accordingly into the new Odoo 16.</p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b94aa89f-625b-4594-931e-14c685871d86\"><ac:parameter ac:name=\"panelIcon\">:track_previous:</ac:parameter><ac:parameter ac:name=\"panelIconId\">23ee</ac:parameter><ac:parameter ac:name=\"panelIconText\">⏮️</ac:parameter><ac:parameter ac:name=\"bgColor\">#E6FCFF</ac:parameter><ac:rich-text-body><p>Before proceeding ensure you have made basic Odoo configurations as mentioned <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3657105447/Odoo+16+Migration+Guide#Basic-Configurations-in-Odoo\">here</a></p></ac:rich-text-body></ac:structured-macro><h3>Step 1: Verifying the connectivity of Odoo 10 Database</h3><p>As the module works by connecting to Odoo 10 database, the Odoo container should be able to connect to the database. In order to verify that, run the below command from inside the docker host.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"ec6c20ca-3d93-4364-91b4-9b32c761e629\"><ac:plain-text-body><![CDATA[psql -h <IP of old server> -U <odoo 10 db username>]]></ac:plain-text-body></ac:structured-macro><h3>Step 2: Installing the module</h3><ul><li><p>Now login to Odoo v16 as admin user and Navigate to Menu &rarr; Apps</p></li><li><p>Remove the default filter for <code>Apps</code> and search for <code>Odoo 10</code></p></li><li><p>You will find a module named as <code>Odoo 10 Data Import</code></p></li><li><p>Click on Activate to install the module.<br /></p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"113\" ac:original-width=\"415\" ac:custom-width=\"true\" ac:alt=\"image-20240729-083117.png\" ac:width=\"415\"><ri:attachment ri:filename=\"image-20240729-083117.png\" ri:version-at-save=\"1\" /></ac:image><p> </p></li></ul><h3>Step 3: Configuring Database connection details</h3><ul><li><p>Once the module is installed, proceed to Menu &rarr; Bahmni &rarr; Bahmni Masters. Locate and select the menu titled &quot;Odoo 10 Data Import.&quot;</p></li></ul><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"374\" ac:original-width=\"1792\" ac:custom-width=\"true\" ac:alt=\"image-20240729-083502.png\" ac:width=\"1329\"><ri:attachment ri:filename=\"image-20240729-083502.png\" ri:version-at-save=\"1\" /></ac:image><ul><li><p>Now Click on New.</p></li><li><p>In the following screen, configure the Database connnection information of the Odoo 10 database and click on <code>Test Connection</code><br /></p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"305\" ac:original-width=\"1791\" ac:custom-width=\"true\" ac:alt=\"image-20240729-083627.png\" ac:width=\"1305\"><ri:attachment ri:filename=\"image-20240729-083627.png\" ri:version-at-save=\"1\" /></ac:image><p> </p></li><li><p>If the connection information is correct then you should get a <code>DB Connection successful!</code> message.</p></li></ul><h3>Step 4: Running the migration jobs</h3><p>Now run each of the jobs by clicking on the job name button.</p><ol start=\"1\"><li><p>UoM Category Migration</p></li><li><p>UoM Migration</p></li><li><p>Product Category Migration</p></li><li><p>Product Migration</p></li><li><p>Supplier Migration</p></li><li><p>Customer Migration</p></li></ol><p><strong><span style=\"color: rgb(255,86,48);\">Note: For supplier and customer migration a user input is needed to specify the range of ids to be migrated. This has been done to avoid out of memory errors in large implementations. The starting ID and ending ID should be given in the respective input fields. We recommend going with 20000 increments for each cycle.</span></strong></p><p /><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"320\" ac:original-width=\"1315\" ac:custom-width=\"true\" ac:alt=\"image-20240729-084316.png\" ac:width=\"1315\"><ri:attachment ri:filename=\"image-20240729-084316.png\" ri:version-at-save=\"1\" /></ac:image><p /><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"889ce668-1d10-49e1-9a75-c5e5fe3a8867\"><ac:parameter ac:name=\"panelIcon\">:track_next:</ac:parameter><ac:parameter ac:name=\"panelIconId\">23ed</ac:parameter><ac:parameter ac:name=\"panelIconText\">⏭️</ac:parameter><ac:parameter ac:name=\"bgColor\">#E3FCEF</ac:parameter><ac:rich-text-body><p><strong>Next Step: </strong>Once you have completed the masterdata import process, verify the data in their respective menus and then go back to the parent page here and continue with other metadata import from <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3657105576/Odoo+16+Masterdata+and+Metadata+Migration#Manual-Migration-using-Excel%2FCSV-based-import\">here</a>.</p></ac:rich-text-body></ac:structured-macro>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3657465916"
+      }
+    },
+    "view": {
+      "value": "<p><style>[data-colorid=vpb7kjicf6]{color:#ff5630} html[data-color-mode=dark] [data-colorid=vpb7kjicf6]{color:#cf2600}</style>To facilitate the migration of master data from Odoo 10 to Odoo 16, a custom module named <code>Odoo 10 Data Import</code> has been developed. This module functions by establishing a connection with the legacy Odoo 10 database and transferring the data accordingly into the new Odoo 16.</p><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b94aa89f-625b-4594-931e-14c685871d86\" data-macro-name=\"panel\" style=\"background-color: #E6FCFF;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #E6FCFF;\">\n<p>Before proceeding ensure you have made basic Odoo configurations as mentioned <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3657105447/Odoo+16+Migration+Guide#Basic-Configurations-in-Odoo\" rel=\"nofollow\">here</a></p>\n</div></div><h3 id=\"MigratingmasterdatafromOdoo10toOdoo16-Step1:VerifyingtheconnectivityofOdoo10Database\">Step 1: Verifying the connectivity of Odoo 10 Database</h3><p>As the module works by connecting to Odoo 10 database, the Odoo container should be able to connect to the database. In order to verify that, run the below command from inside the docker host.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ec6c20ca-3d93-4364-91b4-9b32c761e629\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">psql -h &lt;IP of old server&gt; -U &lt;odoo 10 db username&gt;</pre>\n</div></div><h3 id=\"MigratingmasterdatafromOdoo10toOdoo16-Step2:Installingthemodule\">Step 2: Installing the module</h3><ul><li><p>Now login to Odoo v16 as admin user and Navigate to Menu &rarr; Apps</p></li><li><p>Remove the default filter for <code>Apps</code> and search for <code>Odoo 10</code></p></li><li><p>You will find a module named as <code>Odoo 10 Data Import</code></p></li><li><p>Click on Activate to install the module.<br /></p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"image-20240729-083117.png\" width=\"415\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3657465916/image-20240729-083117.png?version=1&amp;modificationDate=1722241881370&amp;cacheVersion=1&amp;api=v2&amp;width=415&amp;height=113\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3657465916/image-20240729-083117.png?version=1&amp;modificationDate=1722241881370&amp;cacheVersion=1&amp;api=v2\" data-height=\"113\" data-width=\"415\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3660644405\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240729-083117.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3657465916\" data-linked-resource-container-version=\"4\" data-media-id=\"f0d48061-cc63-4881-ab57-f053396cf66c\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3657465916/image-20240729-083117.png?version=1&amp;modificationDate=1722241881370&amp;cacheVersion=1&amp;api=v2&amp;width=830&amp;height=226 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3657465916/image-20240729-083117.png?version=1&amp;modificationDate=1722241881370&amp;cacheVersion=1&amp;api=v2&amp;width=415&amp;height=113 1x\" /></span><p> </p></li></ul><h3 id=\"MigratingmasterdatafromOdoo10toOdoo16-Step3:ConfiguringDatabaseconnectiondetails\">Step 3: Configuring Database connection details</h3><ul><li><p>Once the module is installed, proceed to Menu &rarr; Bahmni &rarr; Bahmni Masters. Locate and select the menu titled &quot;Odoo 10 Data Import.&quot;</p></li></ul><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"image-20240729-083502.png\" width=\"1329\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3657465916/image-20240729-083502.png?version=1&amp;modificationDate=1722242107094&amp;cacheVersion=1&amp;api=v2&amp;width=1329&amp;height=277\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3657465916/image-20240729-083502.png?version=1&amp;modificationDate=1722242107094&amp;cacheVersion=1&amp;api=v2\" data-height=\"374\" data-width=\"1792\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3660644412\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240729-083502.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3657465916\" data-linked-resource-container-version=\"4\" data-media-id=\"c67e5222-f725-48d2-a542-8500241e1ea1\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3657465916/image-20240729-083502.png?version=1&amp;modificationDate=1722242107094&amp;cacheVersion=1&amp;api=v2&amp;width=2658&amp;height=554 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3657465916/image-20240729-083502.png?version=1&amp;modificationDate=1722242107094&amp;cacheVersion=1&amp;api=v2&amp;width=1329&amp;height=277 1x\" /></span><ul><li><p>Now Click on New.</p></li><li><p>In the following screen, configure the Database connnection information of the Odoo 10 database and click on <code>Test Connection</code><br /></p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"image-20240729-083627.png\" width=\"1305\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3657465916/image-20240729-083627.png?version=1&amp;modificationDate=1722242191888&amp;cacheVersion=1&amp;api=v2&amp;width=1305&amp;height=222\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3657465916/image-20240729-083627.png?version=1&amp;modificationDate=1722242191888&amp;cacheVersion=1&amp;api=v2\" data-height=\"305\" data-width=\"1791\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3660382244\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240729-083627.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3657465916\" data-linked-resource-container-version=\"4\" data-media-id=\"eee83027-b7d5-4b06-9537-c17a770b7ca2\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3657465916/image-20240729-083627.png?version=1&amp;modificationDate=1722242191888&amp;cacheVersion=1&amp;api=v2&amp;width=2610&amp;height=444 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3657465916/image-20240729-083627.png?version=1&amp;modificationDate=1722242191888&amp;cacheVersion=1&amp;api=v2&amp;width=1305&amp;height=222 1x\" /></span><p> </p></li><li><p>If the connection information is correct then you should get a <code>DB Connection successful!</code> message.</p></li></ul><h3 id=\"MigratingmasterdatafromOdoo10toOdoo16-Step4:Runningthemigrationjobs\">Step 4: Running the migration jobs</h3><p>Now run each of the jobs by clicking on the job name button.</p><ol start=\"1\"><li><p>UoM Category Migration</p></li><li><p>UoM Migration</p></li><li><p>Product Category Migration</p></li><li><p>Product Migration</p></li><li><p>Supplier Migration</p></li><li><p>Customer Migration</p></li></ol><p><strong><span data-colorid=\"vpb7kjicf6\">Note: For supplier and customer migration a user input is needed to specify the range of ids to be migrated. This has been done to avoid out of memory errors in large implementations. The starting ID and ending ID should be given in the respective input fields. We recommend going with 20000 increments for each cycle.</span></strong></p><p /><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"image-20240729-084316.png\" width=\"1315\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3657465916/image-20240729-084316.png?version=1&amp;modificationDate=1722242600568&amp;cacheVersion=1&amp;api=v2&amp;width=1315&amp;height=320\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3657465916/image-20240729-084316.png?version=1&amp;modificationDate=1722242600568&amp;cacheVersion=1&amp;api=v2\" data-height=\"320\" data-width=\"1315\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3660546061\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240729-084316.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3657465916\" data-linked-resource-container-version=\"4\" data-media-id=\"24255c7b-ccdd-497f-929e-7ec14e489bc3\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3657465916/image-20240729-084316.png?version=1&amp;modificationDate=1722242600568&amp;cacheVersion=1&amp;api=v2&amp;width=2630&amp;height=640 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3657465916/image-20240729-084316.png?version=1&amp;modificationDate=1722242600568&amp;cacheVersion=1&amp;api=v2&amp;width=1315&amp;height=320 1x\" /></span><p /><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"889ce668-1d10-49e1-9a75-c5e5fe3a8867\" data-macro-name=\"panel\" style=\"background-color: #E3FCEF;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #E3FCEF;\">\n<p><strong>Next Step: </strong>Once you have completed the masterdata import process, verify the data in their respective menus and then go back to the parent page here and continue with other metadata import from <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3657105576/Odoo+16+Masterdata+and+Metadata+Migration#Manual-Migration-using-Excel%2FCSV-based-import\" rel=\"nofollow\">here</a>.</p>\n</div></div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3657465916"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3657465916/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3657465916/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1541
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3657465916/child",
+    "restrictions": "/rest/api/content/3657465916/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3657465916/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3657465916",
+    "webui": "/spaces/BAH/pages/3657465916/Migrating+masterdata+from+Odoo+10+to+Odoo+16",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3657465916",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3657465916",
+    "tinyui": "/x/PIAA2g",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

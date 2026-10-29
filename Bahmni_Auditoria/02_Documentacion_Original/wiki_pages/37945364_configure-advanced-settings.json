@@ -1,0 +1,171 @@
+{
+  "id": "37945364",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/37945364",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzc5NDUzNjQ=",
+  "status": "current",
+  "title": "Configure Advanced Settings",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:c54772f2-46b5-43c0-be04-96923ee59750",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Vinay Venu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:c54772f2-46b5-43c0-be04-96923ee59750",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Vinay Venu",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:c54772f2-46b5-43c0-be04-96923ee59750"
+      }
+    },
+    "createdDate": "2016-01-18T05:49:42.299Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945364/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "when": "2017-02-14T05:55:46.064Z",
+    "friendlyWhen": "Feb 14, 2017",
+    "message": "",
+    "number": 14,
+    "minorEdit": false,
+    "syncRev": "0.Bi0b2Zw0iClaoZdRu9L1LQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$37945364.78",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/37945364"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945364/version/14"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Description</h2><p>OpenMRS allows Users to set <u>global properties</u>, which are configuration variables that the User can set via <u>Advanced Settings</u> under <u>Administration Menu</u>, without restarting or recompiling the application.</p><p>OpenMRS provides a way to add custom configuration in the form of key-value pairs. Several Bahmni functionalities that are just a key-value pair are implemented using Advanced Settings in OpenMRS.</p><h2>Where to add ?</h2><p>One can add new global property via OpenMRS Administration UI or using a SQL query</p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"57334b71-5fae-498f-aa33-c3278e37188b\"><ac:parameter ac:name=\"title\">Openmrs Administration UI</ac:parameter><ac:rich-text-body><ul><li>These can be added/modified in OpenMRS using the&nbsp;<em>Administration, Advanced Settings</em>&nbsp;screen (<a href=\"https://local/openmrs/admin/maintenance/globalProps.form\">/openmrs/admin/maintenance/globalProps.form</a>)</li><li><span>Use a sql query to update the </span><em>global_property</em><span> table</span></li></ul></ac:rich-text-body></ac:structured-macro><p><strong>Some examples of Global Properties are:</strong></p><table><colgroup><col /><col /><col /></colgroup><tbody><tr><th>Name</th><th>Description</th><th>Value</th></tr><tr><td>mrs.genders</td><td>List of gender and gender codes used across MRS</td><td><p>{&quot;M&quot;:&quot;Male&quot;, &quot;F&quot;:&quot;Female&quot;,&quot;O&quot;:&quot;Other&quot;}</p></td></tr><tr><td colspan=\"1\">bahmni.encounterType.default</td><td colspan=\"1\">Default encounter type</td><td colspan=\"1\">'Consultation'</td></tr></tbody></table><p><br /></p><p><ac:image ac:height=\"400\"><ri:attachment ri:filename=\"Screen Shot 2016-01-18 at 11.18.39 am.png\" /></ac:image></p></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"9790b569-5831-4ab7-b25e-6b25345c940f\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"491ca6a8-5bdc-464a-b058-9ce771a2fe2b\" /></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/37945364"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ConfigureAdvancedSettings-Description\">Description</h2><p>OpenMRS allows Users to set <u>global properties</u>, which are configuration variables that the User can set via <u>Advanced Settings</u> under <u>Administration Menu</u>, without restarting or recompiling the application.</p><p>OpenMRS provides a way to add custom configuration in the form of key-value pairs. Several Bahmni functionalities that are just a key-value pair are implemented using Advanced Settings in OpenMRS.</p><h2 id=\"ConfigureAdvancedSettings-Wheretoadd?\">Where to add ?</h2><p>One can add new global property via OpenMRS Administration UI or using a SQL query</p><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"57334b71-5fae-498f-aa33-c3278e37188b\" data-macro-name=\"tip\"><p class=\"title\">Openmrs Administration UI</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><ul><li>These can be added/modified in OpenMRS using the <em>Administration, Advanced Settings</em> screen (<a class=\"external-link\" href=\"https://local/openmrs/admin/maintenance/globalProps.form\" rel=\"nofollow\">/openmrs/admin/maintenance/globalProps.form</a>)</li><li><span>Use a sql query to update the </span><em>global_property</em><span> table</span></li></ul></div></div><p><strong>Some examples of Global Properties are:</strong></p><div class=\"table-wrap\"><table class=\"confluenceTable\"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class=\"confluenceTh\">Name</th><th class=\"confluenceTh\">Description</th><th class=\"confluenceTh\">Value</th></tr><tr><td class=\"confluenceTd\">mrs.genders</td><td class=\"confluenceTd\">List of gender and gender codes used across MRS</td><td class=\"confluenceTd\"><p>{&quot;M&quot;:&quot;Male&quot;, &quot;F&quot;:&quot;Female&quot;,&quot;O&quot;:&quot;Other&quot;}</p></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">bahmni.encounterType.default</td><td colspan=\"1\" class=\"confluenceTd\">Default encounter type</td><td colspan=\"1\" class=\"confluenceTd\">'Consultation'</td></tr></tbody></table></div><p><br/></p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"400\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945364/Screen%20Shot%202016-01-18%20at%2011.18.39%20am.png?version=1&amp;modificationDate=1453096182313&amp;cacheVersion=1&amp;api=v2&amp;width=557&amp;height=400\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945364/Screen%20Shot%202016-01-18%20at%2011.18.39%20am.png?version=1&amp;modificationDate=1453096182313&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"37945363\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-01-18 at 11.18.39 am.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945364\" data-linked-resource-container-version=\"14\" data-media-id=\"a1de1b2d-bae4-43e7-ba22-2a2caea3c343\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945364/Screen%20Shot%202016-01-18%20at%2011.18.39%20am.png?version=1&amp;modificationDate=1453096182313&amp;cacheVersion=1&amp;api=v2&amp;width=1114&amp;height=800 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945364/Screen%20Shot%202016-01-18%20at%2011.18.39%20am.png?version=1&amp;modificationDate=1453096182313&amp;cacheVersion=1&amp;api=v2&amp;width=557&amp;height=400 1x\"></span></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9790b569-5831-4ab7-b25e-6b25345c940f\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"491ca6a8-5bdc-464a-b058-9ce771a2fe2b\" data-macro-name=\"toc\"> </div><p> </p></div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/37945364"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/37945364/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945364/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 889799822
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/37945364/child",
+    "restrictions": "/rest/api/content/37945364/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/37945364/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=37945364",
+    "webui": "/spaces/BAH/pages/37945364/Configure+Advanced+Settings",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/37945364",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945364",
+    "tinyui": "/x/FABDAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

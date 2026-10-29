@@ -1,0 +1,170 @@
+{
+  "id": "267976708",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/267976708",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjY3OTc2NzA4",
+  "status": "current",
+  "title": "Bahmni-Server-Deployment-Architecture",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:a952278b-16e8-496c-95bf-6fa96e9cdb3c",
+      "accountType": "app",
+      "email": "",
+      "publicName": "Gliffy Diagram for Confluence",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:a952278b-16e8-496c-95bf-6fa96e9cdb3c",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gliffy Diagrams for Confluence",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:a952278b-16e8-496c-95bf-6fa96e9cdb3c"
+      }
+    },
+    "createdDate": "2017-11-14T20:13:25.453Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/267976708/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:a952278b-16e8-496c-95bf-6fa96e9cdb3c",
+      "accountType": "app",
+      "email": "",
+      "publicName": "Gliffy Diagram for Confluence",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:a952278b-16e8-496c-95bf-6fa96e9cdb3c",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gliffy Diagrams for Confluence",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:a952278b-16e8-496c-95bf-6fa96e9cdb3c"
+      }
+    },
+    "when": "2022-01-04T10:58:51.390Z",
+    "friendlyWhen": "Jan 04, 2022",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "syncRev": "0.Ql0WA5y7ZXgLoCPKfAWtng.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$267976708.63",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/267976708"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/267976708/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p><ac:structured-macro ac:name=\"gliffy\" ac:schema-version=\"1\" ac:macro-id=\"4cf33780-6d4d-11ec-9f96-893fb55f4733\"><ac:parameter ac:name=\"imageAttachmentId\">att2957049861</ac:parameter><ac:parameter ac:name=\"baseUrl\">https://bahmni.atlassian.net/wiki</ac:parameter><ac:parameter ac:name=\"name\">Bahmni-Server-Deployment-Architecture Copy Copy Copy</ac:parameter><ac:parameter ac:name=\"diagramAttachmentId\">att2957115393</ac:parameter><ac:parameter ac:name=\"containerId\">267976708</ac:parameter></ac:structured-macro></p><p><ac:structured-macro ac:name=\"gliffy\" ac:schema-version=\"1\" ac:macro-id=\"f7e55b10-28c2-11e8-aedd-59700d6c4919\"><ac:parameter ac:name=\"imageAttachmentId\">att564854790</ac:parameter><ac:parameter ac:name=\"baseUrl\">https://bahmni.atlassian.net/wiki</ac:parameter><ac:parameter ac:name=\"migration\">1</ac:parameter><ac:parameter ac:name=\"name\">Bahmni-Server-Deployment-Architecture Copy Copy</ac:parameter><ac:parameter ac:name=\"diagramAttachmentId\">att563052547</ac:parameter><ac:parameter ac:name=\"containerId\">267976708</ac:parameter></ac:structured-macro></p><p><br /></p><p><br /></p><h1>Bahmni Package (with details)</h1><p><ac:structured-macro ac:name=\"gliffy\" ac:schema-version=\"1\" ac:macro-id=\"87678ea2-492e-4801-9df2-15daa81c7048\"><ac:parameter ac:name=\"imageAttachmentId\">att1567064123</ac:parameter><ac:parameter ac:name=\"baseUrl\">https://bahmni.atlassian.net/wiki</ac:parameter><ac:parameter ac:name=\"macroId\">c45a4920-0bc2-4f61-af48-fd818060280a</ac:parameter><ac:parameter ac:name=\"name\">Bahmni Package (with details)</ac:parameter><ac:parameter ac:name=\"diagramAttachmentId\">att1568243775</ac:parameter><ac:parameter ac:name=\"containerId\">267976708</ac:parameter><ac:parameter ac:name=\"timestamp\">1597585521862</ac:parameter></ac:structured-macro></p><p><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/267976708"
+      }
+    },
+    "view": {
+      "value": "<p><div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d10cf43c-1a2d-4b7f-be30-2dea577fe43c\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><h3 id=\"Bahmni-Server-Deployment-Architecture-Oops,DiagramUnavailable.1\">Oops, Diagram Unavailable</h3><p>This diagram can't be displayed. It may have been moved or deleted, or the page's access settings may be preventing it from loading. Pages with restricted access must also include Gliffy Diagrams in their allowed list.</p></div></div></p><p><div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"199bd661-a8da-44ca-be65-c8e767078b19\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><h3 id=\"Bahmni-Server-Deployment-Architecture-Oops,DiagramUnavailable\">Oops, Diagram Unavailable</h3><p>This diagram can't be displayed. It may have been moved or deleted, or the page's access settings may be preventing it from loading. Pages with restricted access must also include Gliffy Diagrams in their allowed list.</p></div></div></p><p><br/></p><p><br/></p><h1 id=\"Bahmni-Server-Deployment-Architecture-BahmniPackage(withdetails)\">Bahmni Package (with details)</h1><p><div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4b01afb1-1758-44e8-819a-8b5b4ba6f346\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><h3 id=\"Bahmni-Server-Deployment-Architecture-Oops,DiagramUnavailable.2\">Oops, Diagram Unavailable</h3><p>This diagram can't be displayed. It may have been moved or deleted, or the page's access settings may be preventing it from loading. Pages with restricted access must also include Gliffy Diagrams in their allowed list.</p></div></div></p><p><br/></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/267976708"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/267976708/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/267976708/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 86
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/267976708/child",
+    "restrictions": "/rest/api/content/267976708/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/267976708/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=267976708",
+    "webui": "/spaces/BAH/pages/267976708/Bahmni-Server-Deployment-Architecture",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/267976708",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/267976708",
+    "tinyui": "/x/BAD5Dw",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

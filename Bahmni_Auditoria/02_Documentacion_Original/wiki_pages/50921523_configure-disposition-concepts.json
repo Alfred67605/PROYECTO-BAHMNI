@@ -1,0 +1,170 @@
+{
+  "id": "50921523",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/50921523",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNTA5MjE1MjM=",
+  "status": "current",
+  "title": "Configure Disposition Concepts",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:609f12f6-2af6-4fd7-b713-f19fc124f992",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "hanisha potturi (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:609f12f6-2af6-4fd7-b713-f19fc124f992",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Hanisha Potturi (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:609f12f6-2af6-4fd7-b713-f19fc124f992"
+      }
+    },
+    "createdDate": "2016-04-07T07:42:03.872Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/50921523/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:609f12f6-2af6-4fd7-b713-f19fc124f992",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "hanisha potturi (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:609f12f6-2af6-4fd7-b713-f19fc124f992",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Hanisha Potturi (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:609f12f6-2af6-4fd7-b713-f19fc124f992"
+      }
+    },
+    "when": "2016-04-07T09:12:26.894Z",
+    "friendlyWhen": "Apr 07, 2016",
+    "message": "",
+    "number": 17,
+    "minorEdit": false,
+    "syncRev": "0.wghWgF8zJW5TQ2yFeRI9Bg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$50921523.75",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/50921523"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/50921523/version/17"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h3>Description</h3><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Disposition is to enter the status of the patient like admit patient or discharge patient or transfer to another ward. All these should be &nbsp;concepts in OpenMRS (Example: Admit Patient should be a concept) .</p><h3>Steps</h3><ol><li><strong>Create a concept Disposition</strong><br /><ul class=\"ul1\"><ul class=\"ul2\"><li class=\"li1\">Add new Concept with name Disposition.</li><li class=\"li1\"><span class=\"s2\">Add concepts Admit Patient, Discharge Patient... concepts as coded answers to disposition concept set.</span></li><li class=\"li1\"><span class=\"s2\">Add Mapping source as&nbsp;<strong>org.openmrs.module.emrapi&nbsp;</strong>and code as&nbsp;<strong>Disposition.</strong></span></li><li class=\"li1\"><span class=\"s2\">Save the concept.</span></li></ul></ul><p class=\"p1\"><span class=\"s2\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Below screenshot displays an instance of the same</span></p><p class=\"p1\"><span class=\"s2\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ac:image ac:width=\"600\"><ri:attachment ri:filename=\"image2016-4-7 14:15:23.png\" /></ac:image></span></p><p class=\"p1\"><span class=\"s2\"><br /></span></p></li><li><strong>Create a concept Disposition Notes(Optional):</strong><br /><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong> if some extra information is needed to added while entering disposition we can configure disposition notes concepts.<br /><ul class=\"ul1\"><ul class=\"ul2\"><li class=\"li1\">Add new Concept with name Disposition Note &nbsp;.</li><li class=\"li1\">Select data type as <strong>Text</strong>.</li><li class=\"li1\"><span class=\"s2\">Add Mapping source as&nbsp;<strong>org.openmrs.module.emrapi&nbsp;</strong>and code as&nbsp;<strong>DispositionNote.</strong></span></li><li class=\"li1\"><span class=\"s2\">Save the concept.</span></li></ul></ul><p class=\"p1\"><span class=\"s2\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Below screenshot displays an instance of the same</span></p><p class=\"p1\"><span class=\"s2\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<ac:image ac:width=\"600\"><ri:attachment ri:filename=\"image2016-4-7 14:22:26.png\" /></ac:image></span></p></li><li><p class=\"p1\"><span class=\"s2\"><strong>Create a concept Disposition Set:</strong></span><strong style=\"line-height: 1.42857;\">&nbsp; &nbsp;</strong></p><ul><li style=\"list-style-type: none;background-image: none;\"><ul><li>Create a concept Disposition Set.</li><li>Add concepts Disposition, Disposition Note.. concepts as Set members to Disposition Set concept set.</li><li>Add Mapping source as&nbsp;<strong>org.openmrs.module.emrapi&nbsp;</strong>and code as&nbsp;<strong>Disposition Concept Set.</strong></li><li>Save the concept.</li></ul></li></ul><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Below screenshot displays an instance of the same</p><p class=\"p1\"><strong style=\"line-height: 1.42857;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ac:image ac:width=\"600\"><ri:attachment ri:filename=\"image2016-3-23 15:10:58.png\" /></ac:image></strong></p></li></ol><div class=\"wiki-content\" style=\"margin-left: 0.0px;\"><p><strong><span style=\"color: rgb(0,0,0);\">&nbsp;</span><a class=\"like-button\" style=\"line-height: 1.42857;\" href=\"https://bahmni.atlassian.net/wiki/display/BAH/Configure+Disposition+Tab\"><span class=\"aui-icon aui-icon-small aui-iconfont-like\" style=\"color: rgb(112,112,112);\">&nbsp;</span></a></strong></p></div></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"180edf91-631a-4053-bdd5-9bd00e1c2cbd\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"98aa2d52-d968-454a-8f5a-556caf686cbd\" /></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/50921523"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\"><style>[data-colorid=oxvc3bfa5k]{color:#707070} html[data-color-mode=dark] [data-colorid=oxvc3bfa5k]{color:#8f8f8f}</style>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h3 id=\"ConfigureDispositionConcepts-Description\">Description</h3><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Disposition is to enter the status of the patient like admit patient or discharge patient or transfer to another ward. All these should be &nbsp;concepts in OpenMRS (Example: Admit Patient should be a concept) .</p><h3 id=\"ConfigureDispositionConcepts-Steps\">Steps</h3><ol><li><strong>Create a concept Disposition</strong><br /><ul class=\"ul1\"><ul class=\"ul2\"><li class=\"li1\">Add new Concept with name Disposition.</li><li class=\"li1\"><span class=\"s2\">Add concepts Admit Patient, Discharge Patient... concepts as coded answers to disposition concept set.</span></li><li class=\"li1\"><span class=\"s2\">Add Mapping source as&nbsp;<strong>org.openmrs.module.emrapi&nbsp;</strong>and code as&nbsp;<strong>Disposition.</strong></span></li><li class=\"li1\"><span class=\"s2\">Save the concept.</span></li></ul></ul><p class=\"p1\"><span class=\"s2\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Below screenshot displays an instance of the same</span></p><p class=\"p1\"><span class=\"s2\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/50921523/image2016-4-7%2014:15:23.png?version=1&amp;modificationDate=1460018728102&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=490\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/50921523/image2016-4-7%2014:15:23.png?version=1&amp;modificationDate=1460018728102&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"50921622\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2016-4-7 14:15:23.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"50921523\" data-linked-resource-container-version=\"17\" data-media-id=\"853907c0-afa4-4de0-951a-2e5993b6b366\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/50921523/image2016-4-7%2014:15:23.png?version=1&amp;modificationDate=1460018728102&amp;cacheVersion=1&amp;api=v2&amp;width=1200&amp;height=980 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/50921523/image2016-4-7%2014:15:23.png?version=1&amp;modificationDate=1460018728102&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=490 1x\" /></span></span></p><p class=\"p1\"><span class=\"s2\"><br /></span></p></li><li><strong>Create a concept Disposition Notes(Optional):</strong><br /><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong> if some extra information is needed to added while entering disposition we can configure disposition notes concepts.<br /><ul class=\"ul1\"><ul class=\"ul2\"><li class=\"li1\">Add new Concept with name Disposition Note &nbsp;.</li><li class=\"li1\">Select data type as <strong>Text</strong>.</li><li class=\"li1\"><span class=\"s2\">Add Mapping source as&nbsp;<strong>org.openmrs.module.emrapi&nbsp;</strong>and code as&nbsp;<strong>DispositionNote.</strong></span></li><li class=\"li1\"><span class=\"s2\">Save the concept.</span></li></ul></ul><p class=\"p1\"><span class=\"s2\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Below screenshot displays an instance of the same</span></p><p class=\"p1\"><span class=\"s2\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/50921523/image2016-4-7%2014:22:26.png?version=1&amp;modificationDate=1460019151152&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=422\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/50921523/image2016-4-7%2014:22:26.png?version=1&amp;modificationDate=1460019151152&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"50921627\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2016-4-7 14:22:26.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"50921523\" data-linked-resource-container-version=\"17\" data-media-id=\"d1c82009-cfcb-4695-9679-cc0ae3740a9e\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/50921523/image2016-4-7%2014:22:26.png?version=1&amp;modificationDate=1460019151152&amp;cacheVersion=1&amp;api=v2&amp;width=1200&amp;height=844 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/50921523/image2016-4-7%2014:22:26.png?version=1&amp;modificationDate=1460019151152&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=422 1x\" /></span></span></p></li><li><p class=\"p1\"><span class=\"s2\"><strong>Create a concept Disposition Set:</strong></span><strong style=\"line-height: 1.42857;\">&nbsp; &nbsp;</strong></p><ul><li style=\"list-style-type: none;background-image: none;\"><ul><li>Create a concept Disposition Set.</li><li>Add concepts Disposition, Disposition Note.. concepts as Set members to Disposition Set concept set.</li><li>Add Mapping source as&nbsp;<strong>org.openmrs.module.emrapi&nbsp;</strong>and code as&nbsp;<strong>Disposition Concept Set.</strong></li><li>Save the concept.</li></ul></li></ul><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Below screenshot displays an instance of the same</p><p class=\"p1\"><strong style=\"line-height: 1.42857;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/50921523/image2016-3-23%2015:10:58.png?version=1&amp;modificationDate=1460015169439&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=302\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/50921523/image2016-3-23%2015:10:58.png?version=1&amp;modificationDate=1460015169439&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"50921533\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2016-3-23 15:10:58.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"50921523\" data-linked-resource-container-version=\"17\" data-media-id=\"50e3cd08-9e63-4112-a492-a6dc19b2d4cd\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/50921523/image2016-3-23%2015:10:58.png?version=1&amp;modificationDate=1460015169439&amp;cacheVersion=1&amp;api=v2&amp;width=1200&amp;height=604 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/50921523/image2016-3-23%2015:10:58.png?version=1&amp;modificationDate=1460015169439&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=302 1x\" /></span></strong></p></li></ol><div style=\"margin-left: 0.0px;\" class=\"wiki-content\"><p><strong><span class=\"legacy-color-text-default\">&nbsp;</span><a class=\"like-button\" href=\"https://bahmni.atlassian.net/wiki/display/BAH/Configure+Disposition+Tab\" rel=\"nofollow\" style=\"line-height: 1.42857;\"><span data-colorid=\"oxvc3bfa5k\" class=\"aui-icon aui-icon-small aui-iconfont-like\">&nbsp;</span></a></strong></p></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"180edf91-631a-4053-bdd5-9bd00e1c2cbd\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"98aa2d52-d968-454a-8f5a-556caf686cbd\" data-macro-name=\"toc\"> </div><p> </p></div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/50921523"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/50921523/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/50921523/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 746634451
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/50921523/child",
+    "restrictions": "/rest/api/content/50921523/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/50921523/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=50921523",
+    "webui": "/spaces/BAH/pages/50921523/Configure+Disposition+Concepts",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/50921523",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/50921523",
+    "tinyui": "/x/MwAJAw",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

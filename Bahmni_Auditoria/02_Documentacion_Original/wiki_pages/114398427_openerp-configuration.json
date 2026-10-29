@@ -1,0 +1,172 @@
+{
+  "id": "114398427",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/114398427",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE0Mzk4NDI3",
+  "status": "current",
+  "title": "OpenERP Configuration",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "createdDate": "2017-01-31T06:34:02.974Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114398427/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "when": "2019-11-20T14:44:34.250Z",
+    "friendlyWhen": "Nov 20, 2019",
+    "message": "",
+    "number": 9,
+    "minorEdit": false,
+    "syncRev": "0.9kT_0GHvYB6V20QeXsVSOA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$114398427.75",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/114398427"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114398427/version/9"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"single\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"732c8d45-6688-449a-a09d-b7c0d36a705e\"><ac:parameter ac:name=\"title\">Compatibility</ac:parameter><ac:rich-text-body><p>Please note that the following documentations are relevant only for OpenERP 7. From Bahmni 0.92 onwards, we use Odoo version 10.</p><p>For Odoo configuration please refer <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/899973149/Odoo+modules\">Odoo modules</a></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"excerpt\" ac:schema-version=\"1\" ac:macro-id=\"6385a219-17e5-4785-9077-343ee971919f\"><ac:parameter ac:name=\"atlassian-macro-output-type\">INLINE</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\">Bahmni integrates OpenMRS with OpenERP&nbsp;which is a an open source ERP product. It is useful in Billing, Pharmacy and Stock management. Any patient registered in OpenMRS is synced by Bahmni as a customer in OpenERP.&nbsp;</span></p></ac:rich-text-body></ac:structured-macro><p><br /></p><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"25e8174e-0d2c-48cb-b902-891067cd60c6\"><ac:rich-text-body><p>Since Odoo/OpenERP is an open source product with thousands of existing customers and a community &ndash; its own online documentation is also available online here: <a href=\"https://doc.odoo.com/book/#books-link\">https://doc.odoo.com/book/#books-link</a>. You can also refer to this documentation to understand OpenERP better, or in cases where you need more clarity than the documentation provided by Bahmni on OpenERP.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"f30abfd1-b7ec-4905-9c9a-751371b5f3c8\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">In this section</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"6d4d4185-75c0-4913-8626-225020e9e2d7\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p><br /></p><p><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/114398427"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout single\" data-layout=\"single\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"732c8d45-6688-449a-a09d-b7c0d36a705e\" data-macro-name=\"info\"><p class=\"title\">Compatibility</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Please note that the following documentations are relevant only for OpenERP 7. From Bahmni 0.92 onwards, we use Odoo version 10.</p><p>For Odoo configuration please refer <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/899973149/Odoo+modules\" rel=\"nofollow\">Odoo modules</a></p></div></div><p><span class=\"legacy-color-text-default conf-macro output-inline\" data-hasbody=\"true\" data-macro-id=\"6385a219-17e5-4785-9077-343ee971919f\" data-macro-name=\"excerpt\">Bahmni integrates OpenMRS with OpenERP which is a an open source ERP product. It is useful in Billing, Pharmacy and Stock management. Any patient registered in OpenMRS is synced by Bahmni as a customer in OpenERP. </span><br/></p><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"25e8174e-0d2c-48cb-b902-891067cd60c6\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Since Odoo/OpenERP is an open source product with thousands of existing customers and a community – its own online documentation is also available online here: <a class=\"external-link\" href=\"https://doc.odoo.com/book/#books-link\" rel=\"nofollow\">https://doc.odoo.com/book/#books-link</a>. You can also refer to this documentation to understand OpenERP better, or in cases where you need more clarity than the documentation provided by Bahmni on OpenERP.</p></div></div></div>\n</div>\n</div>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f30abfd1-b7ec-4905-9c9a-751371b5f3c8\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>In this section</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"6d4d4185-75c0-4913-8626-225020e9e2d7\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/21790747/OpenERP+Basic+Configurations\" data-linked-resource-id=\"21790747\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">OpenERP Basic Configurations</a></li><li><a href=\"/wiki/spaces/BAH/pages/114627969/OpenERP+Syncing+Config\" data-linked-resource-id=\"114627969\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">OpenERP Syncing Config</a></li><li><a href=\"/wiki/spaces/BAH/pages/28311588/OpenERP+Custom+fields\" data-linked-resource-id=\"28311588\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">OpenERP Custom fields</a></li><li><a href=\"/wiki/spaces/BAH/pages/5570574/OpenERP+Custom+Filters\" data-linked-resource-id=\"5570574\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">OpenERP Custom Filters</a></li></ul><p> </p>\n</div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<p><br/></p><p><br/></p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/114398427"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/114398427/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114398427/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1348839973
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/114398427/child",
+    "restrictions": "/rest/api/content/114398427/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/114398427/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=114398427",
+    "webui": "/spaces/BAH/pages/114398427/OpenERP+Configuration",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/114398427",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114398427",
+    "tinyui": "/x/25TRBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

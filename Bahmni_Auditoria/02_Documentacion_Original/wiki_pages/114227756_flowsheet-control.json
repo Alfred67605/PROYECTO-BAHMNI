@@ -1,0 +1,171 @@
+{
+  "id": "114227756",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/114227756",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE0MjI3NzU2",
+  "status": "current",
+  "title": "Flowsheet Control",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2017-01-19T06:21:13.743Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114227756/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "62250c4449c9000070215704",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gokul Kuppan",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/62250c4449c9000070215704",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gokul Kuppan",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=62250c4449c9000070215704"
+      }
+    },
+    "when": "2024-05-17T11:01:32.053Z",
+    "friendlyWhen": "May 17, 2024",
+    "message": "",
+    "number": 14,
+    "minorEdit": false,
+    "syncRev": "0.IX5R29k13fUKwWd5LkZzvQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$114227756.79",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/114227756"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114227756/version/14"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose</h2><ac:structured-macro ac:name=\"excerpt\" ac:schema-version=\"1\" ac:macro-id=\"638aebc5-f96c-44fe-9484-b0037d832b70\"><ac:parameter ac:name=\"atlassian-macro-output-type\">INLINE</ac:parameter><ac:rich-text-body><p>It is a tabular control for showing Observations, Lab Tests and Drugs/Prescriptions (for configured concepts) across time, grouped by Visit or Encounter for a particular patient.</p></ac:rich-text-body></ac:structured-macro><p><strong>The Flow Sheet Control documented here is different from the <ac:link><ri:page ri:content-title=\"Patient Monitoring Flowsheet\" ri:version-at-save=\"11\" /></ac:link> control.<br /><br /></strong></p><table class=\"relative-table\" style=\"width: 100.0%;\"><colgroup><col style=\"width: 33.3333%;\" /></colgroup><colgroup><col style=\"width: 33.3333%;\" /></colgroup><colgroup><col style=\"width: 33.3333%;\" /></colgroup><tbody><tr><th>Vitals Flow Sheet - groupBy:visits</th><th>Vitals Flow Sheet - groupBy:obstime</th><th colspan=\"1\">Vitals Flow Sheet - groupBy:encounters</th></tr><tr><td><div class=\"content-wrapper\"><p><ac:image ac:width=\"345\"><ri:attachment ri:filename=\"Screenshot 2024-05-16 at 7.23.33 PM.png\" ri:version-at-save=\"1\" /></ac:image></p></div></td><td><div class=\"content-wrapper\"><p><ac:image ac:width=\"345\"><ri:attachment ri:filename=\"Screenshot 2024-05-16 at 7.05.31 PM.png\" ri:version-at-save=\"1\" /></ac:image></p></div></td><td colspan=\"1\"><div class=\"content-wrapper\"><p><ac:image ac:width=\"345\"><ri:attachment ri:filename=\"Screenshot 2024-05-16 at 7.20.19 PM.png\" ri:version-at-save=\"1\" /></ac:image></p></div></td></tr></tbody></table><h2>Configuration</h2><h3>Sample Config</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"af4eb9a0-e528-4ccf-a5b9-3253be42edee\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Add to clinical/dashboard.json for it to appear on the patient dashboard</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"flowsheet\": {\n  \"type\": \"flowSheet\",\n  \"title\": \"Vitals Flow Sheet\",\n  \"dashboardConfig\": {\n\t\"latestCount\": \"5\",\n    \"numberOfVisits\": \"5\",\n    \"groupBy\": \"visits\",\n\t\"rowHeading\": \"Visit Details\",\n    \"obsConcepts\": [\n\t\t\"Pulse\",\n        \"RR\",\n        \"Temperature\"\n    ]\n    \"labConcepts\": [\n      \"RBS\",\n      \"FBS\"\n    ]\n  },\n  \"allFlowSheetDetails\": {\n\t\"latestCount\": \"10\",\n\t\"numberOfVisits\": \"5\",\n    \"groupBy\": \"obstime\",\n\t\"rowHeading\": \"Observation Time\",\n    \"obsConcepts\": [\n      \"Diabetes, Blood Pressure\",\n      \"Diabetes, A1C\"\n    ],\n    \"labConcepts\": [\n      \"RBS\",\n      \"FBS\"\n    ],\n    \"drugConcepts\": [\n        \"Metformin\"\n    ]\n  }\n}]]></ac:plain-text-body></ac:structured-macro><h3>Key Field Table</h3><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th>Key</th><th>Information</th><th colspan=\"1\">Mandatory</th></tr><tr><td colspan=\"1\">title</td><td colspan=\"1\">Title to be displayed.</td><td colspan=\"1\">Y</td></tr><tr><td><p>dashboardConfig</p></td><td><p>Parameters of display control on the dashboard.</p><table class=\"wrapped\"><tbody><tr><th>Key</th><th>Information</th><th colspan=\"1\">Mandatory</th></tr><tr><td><pre>numberOfVisits</pre></td><td>Specifies the number of visits for which data has to be displayed</td><td colspan=\"1\">N</td></tr><tr><td><pre>groupBy</pre></td><td>Can be encounters/visits/obstime.. If grouped by the encounter, then the data is displayed per encounter in the flowsheet. If grouped by the visit, then the latest value of the observations in each visit is displayed in the flowsheet.If grouped by obstime then the value of observation will be displayed in separate column grouped by observation start time.</td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\"><pre>obsConcepts</pre></td><td colspan=\"1\">Set of Concepts whose observations have to be displayed. The concepts will be listed in the order they are added to the obsConcepts.&nbsp;</td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\"><pre>labConcepts</pre></td><td colspan=\"1\">Set of Concepts of lab tests whose results have to be displayed.</td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\"><pre>drugConcepts</pre></td><td colspan=\"1\">Set of Concepts of drugs whose drug orders or prescriptions against the configured concepts have to be displayed.</td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\">latestCount</td><td colspan=\"1\">Specifies the number of columns for&nbsp;which data has to be displayed</td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\">rowHeading</td><td colspan=\"1\">Specifies a name (top-left cell) for the header row.</td><td colspan=\"1\">N</td></tr></tbody></table><p class=\"auto-cursor-target\"><br /></p></td><td colspan=\"1\">Y</td></tr><tr><td>&nbsp;allFlowSheetDetails</td><td><p>Parameters of control in the expanded view. Elements inside have the same format as elements inside dashboardParams.</p></td><td colspan=\"1\">N</td></tr></tbody></table><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"9e21e6bc-65b4-4f30-a341-0dc091c2e859\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\"><ac:parameter ac:name=\"titleColor\">White</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Display Controls</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"21cd7308-eaf1-4edd-8253-24f7f9e31fd8\"><ac:parameter ac:name=\"all\">true</ac:parameter><ac:parameter ac:name=\"page\"><ac:link><ri:page ri:content-title=\"Tracking Controls\" ri:version-at-save=\"1\" /></ac:link></ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/114227756"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"FlowsheetControl-Purpose\">Purpose</h2><p>It is a tabular control for showing Observations, Lab Tests and Drugs/Prescriptions (for configured concepts) across time, grouped by Visit or Encounter for a particular patient.<strong>The Flow Sheet Control documented here is different from the <a href=\"/wiki/spaces/BAH/pages/92111338/Patient+Monitoring+Flowsheet\" data-linked-resource-id=\"92111338\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Patient Monitoring Flowsheet</a> control.<br/><br/></strong></p><div class=\"table-wrap\"><table class=\"relative-table confluenceTable\" style=\"width: 100.0%;\"><colgroup><col style=\"width: 33.3333%;\"/></colgroup><colgroup><col style=\"width: 33.3333%;\"/></colgroup><colgroup><col style=\"width: 33.3333%;\"/></colgroup><tbody><tr><th class=\"confluenceTh\">Vitals Flow Sheet - groupBy:visits</th><th class=\"confluenceTh\">Vitals Flow Sheet - groupBy:obstime</th><th colspan=\"1\" class=\"confluenceTh\">Vitals Flow Sheet - groupBy:encounters</th></tr><tr><td class=\"confluenceTd\"><div class=\"content-wrapper\"><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"345\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114227756/Screenshot%202024-05-16%20at%207.23.33%E2%80%AFPM.png?version=1&amp;modificationDate=1715867625926&amp;cacheVersion=1&amp;api=v2&amp;width=345&amp;height=104\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114227756/Screenshot%202024-05-16%20at%207.23.33%E2%80%AFPM.png?version=1&amp;modificationDate=1715867625926&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3526557708\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2024-05-16 at 7.23.33 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114227756\" data-linked-resource-container-version=\"14\" data-media-id=\"d025be42-33f4-4b0a-9905-042cb305ffcf\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114227756/Screenshot%202024-05-16%20at%207.23.33%E2%80%AFPM.png?version=1&amp;modificationDate=1715867625926&amp;cacheVersion=1&amp;api=v2&amp;width=662&amp;height=201 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114227756/Screenshot%202024-05-16%20at%207.23.33%E2%80%AFPM.png?version=1&amp;modificationDate=1715867625926&amp;cacheVersion=1&amp;api=v2&amp;width=345&amp;height=104 1x\"></span></p></div></td><td class=\"confluenceTd\"><div class=\"content-wrapper\"><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"345\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114227756/Screenshot%202024-05-16%20at%207.05.31%E2%80%AFPM.png?version=1&amp;modificationDate=1715866539415&amp;cacheVersion=1&amp;api=v2&amp;width=345&amp;height=104\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114227756/Screenshot%202024-05-16%20at%207.05.31%E2%80%AFPM.png?version=1&amp;modificationDate=1715866539415&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3526950914\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2024-05-16 at 7.05.31 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114227756\" data-linked-resource-container-version=\"14\" data-media-id=\"8d287aeb-3462-4735-8863-4f1e53bcf8c7\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114227756/Screenshot%202024-05-16%20at%207.05.31%E2%80%AFPM.png?version=1&amp;modificationDate=1715866539415&amp;cacheVersion=1&amp;api=v2&amp;width=662&amp;height=201 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114227756/Screenshot%202024-05-16%20at%207.05.31%E2%80%AFPM.png?version=1&amp;modificationDate=1715866539415&amp;cacheVersion=1&amp;api=v2&amp;width=345&amp;height=104 1x\"></span></p></div></td><td colspan=\"1\" class=\"confluenceTd\"><div class=\"content-wrapper\"><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"345\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114227756/Screenshot%202024-05-16%20at%207.20.19%E2%80%AFPM.png?version=1&amp;modificationDate=1715867514341&amp;cacheVersion=1&amp;api=v2&amp;width=345&amp;height=104\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114227756/Screenshot%202024-05-16%20at%207.20.19%E2%80%AFPM.png?version=1&amp;modificationDate=1715867514341&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3526393867\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2024-05-16 at 7.20.19 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114227756\" data-linked-resource-container-version=\"14\" data-media-id=\"a9c386ab-ccc4-45ea-bda3-56e84362cc68\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114227756/Screenshot%202024-05-16%20at%207.20.19%E2%80%AFPM.png?version=1&amp;modificationDate=1715867514341&amp;cacheVersion=1&amp;api=v2&amp;width=662&amp;height=201 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114227756/Screenshot%202024-05-16%20at%207.20.19%E2%80%AFPM.png?version=1&amp;modificationDate=1715867514341&amp;cacheVersion=1&amp;api=v2&amp;width=345&amp;height=104 1x\"></span></p></div></td></tr></tbody></table></div><h2 id=\"FlowsheetControl-Configuration\">Configuration</h2><h3 id=\"FlowsheetControl-SampleConfig\">Sample Config</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"af4eb9a0-e528-4ccf-a5b9-3253be42edee\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Add to clinical/dashboard.json for it to appear on the patient dashboard</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;flowsheet&quot;: {\n  &quot;type&quot;: &quot;flowSheet&quot;,\n  &quot;title&quot;: &quot;Vitals Flow Sheet&quot;,\n  &quot;dashboardConfig&quot;: {\n\t&quot;latestCount&quot;: &quot;5&quot;,\n    &quot;numberOfVisits&quot;: &quot;5&quot;,\n    &quot;groupBy&quot;: &quot;visits&quot;,\n\t&quot;rowHeading&quot;: &quot;Visit Details&quot;,\n    &quot;obsConcepts&quot;: [\n\t\t&quot;Pulse&quot;,\n        &quot;RR&quot;,\n        &quot;Temperature&quot;\n    ]\n    &quot;labConcepts&quot;: [\n      &quot;RBS&quot;,\n      &quot;FBS&quot;\n    ]\n  },\n  &quot;allFlowSheetDetails&quot;: {\n\t&quot;latestCount&quot;: &quot;10&quot;,\n\t&quot;numberOfVisits&quot;: &quot;5&quot;,\n    &quot;groupBy&quot;: &quot;obstime&quot;,\n\t&quot;rowHeading&quot;: &quot;Observation Time&quot;,\n    &quot;obsConcepts&quot;: [\n      &quot;Diabetes, Blood Pressure&quot;,\n      &quot;Diabetes, A1C&quot;\n    ],\n    &quot;labConcepts&quot;: [\n      &quot;RBS&quot;,\n      &quot;FBS&quot;\n    ],\n    &quot;drugConcepts&quot;: [\n        &quot;Metformin&quot;\n    ]\n  }\n}</pre>\n</div></div><h3 id=\"FlowsheetControl-KeyFieldTable\">Key Field Table</h3><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class=\"confluenceTh\">Key</th><th class=\"confluenceTh\">Information</th><th colspan=\"1\" class=\"confluenceTh\">Mandatory</th></tr><tr><td colspan=\"1\" class=\"confluenceTd\">title</td><td colspan=\"1\" class=\"confluenceTd\">Title to be displayed.</td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td class=\"confluenceTd\"><p>dashboardConfig</p></td><td class=\"confluenceTd\"><p>Parameters of display control on the dashboard.</p><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><tbody><tr><th class=\"confluenceTh\">Key</th><th class=\"confluenceTh\">Information</th><th colspan=\"1\" class=\"confluenceTh\">Mandatory</th></tr><tr><td class=\"confluenceTd\"><pre>numberOfVisits</pre></td><td class=\"confluenceTd\">Specifies the number of visits for which data has to be displayed</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td class=\"confluenceTd\"><pre>groupBy</pre></td><td class=\"confluenceTd\">Can be encounters/visits/obstime.. If grouped by the encounter, then the data is displayed per encounter in the flowsheet. If grouped by the visit, then the latest value of the observations in each visit is displayed in the flowsheet.If grouped by obstime then the value of observation will be displayed in separate column grouped by observation start time.</td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><pre>obsConcepts</pre></td><td colspan=\"1\" class=\"confluenceTd\">Set of Concepts whose observations have to be displayed. The concepts will be listed in the order they are added to the obsConcepts. </td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><pre>labConcepts</pre></td><td colspan=\"1\" class=\"confluenceTd\">Set of Concepts of lab tests whose results have to be displayed.</td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><pre>drugConcepts</pre></td><td colspan=\"1\" class=\"confluenceTd\">Set of Concepts of drugs whose drug orders or prescriptions against the configured concepts have to be displayed.</td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">latestCount</td><td colspan=\"1\" class=\"confluenceTd\">Specifies the number of columns for which data has to be displayed</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">rowHeading</td><td colspan=\"1\" class=\"confluenceTd\">Specifies a name (top-left cell) for the header row.</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr></tbody></table></div></td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td class=\"confluenceTd\"> allFlowSheetDetails</td><td class=\"confluenceTd\"><p>Parameters of control in the expanded view. Elements inside have the same format as elements inside dashboardParams.</p></td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr></tbody></table></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9e21e6bc-65b4-4f30-a341-0dc091c2e859\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: White;\"><b>Related Display Controls</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"21cd7308-eaf1-4edd-8253-24f7f9e31fd8\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/100139061/Programs+Display+Control\" data-linked-resource-id=\"100139061\" data-linked-resource-version=\"9\" data-linked-resource-type=\"page\">Programs Display Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114227756/Flowsheet+Control\" data-linked-resource-id=\"114227756\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Flowsheet Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114228167/Graph+Control\" data-linked-resource-id=\"114228167\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Graph Control</a></li></ul><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/114227756"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/114227756/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114227756/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/114227756/child",
+    "restrictions": "/rest/api/content/114227756/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/114227756/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=114227756",
+    "webui": "/spaces/BAH/pages/114227756/Flowsheet+Control",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/114227756",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114227756",
+    "tinyui": "/x/LPrOBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

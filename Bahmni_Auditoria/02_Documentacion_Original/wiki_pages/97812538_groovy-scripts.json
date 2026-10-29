@@ -1,0 +1,184 @@
+{
+  "id": "97812538",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/97812538",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvOTc4MTI1Mzg=",
+  "status": "current",
+  "title": "Groovy Scripts",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sravanthi N. S. CH.",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sravanthi N. S. CH.",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d47e0136-cbde-4dbc-8820-611d4528d1c8"
+      }
+    },
+    "createdDate": "2016-11-09T09:36:21.038Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/97812538/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "6109de12b704b4006803b3ca",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Arjun G (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/6109de12b704b4006803b3ca",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Arjun G (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=6109de12b704b4006803b3ca"
+      }
+    },
+    "when": "2023-03-06T06:05:31.996Z",
+    "friendlyWhen": "Mar 06, 2023",
+    "message": "",
+    "number": 50,
+    "minorEdit": false,
+    "syncRev": "0.je8RNni1pzY2ApDx1z6ESg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$97812538.160",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/97812538"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/97812538/version/50"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Context</h2><p>Groovy Scripts are used as extension scripts that can be executed when a particular event is triggered.</p><p>Some of the events can be</p><ul><li>Displaying Display controls</li><li>Observation Save&nbsp;</li></ul><h3>What should be configured for groovy scripts?</h3><p>For any groovy script the following are configurable</p><ul><li>What is the script to execute on trigger of an event</li><li>What should be implemented in the script</li></ul><h2>Types of Groovy Scripts</h2><p>Different types of groovy scripts that can be configured are</p><ul><li>Standard Extensions</li><li>Custom Extensions</li></ul><h3>Standard Extensions</h3><ul><li>The standard extension file names cannot be changed.&nbsp;<span>The reason for referring them standard is that they need not be explicitly configured. Names are standard. Only implementation of the script can be customised.</span></li><li><span><span> If the file is present, by default it will be executed when the respective event is triggered.</span><br class=\"_mce_tagged_br\" /></span></li><li>Some of those extensions are<ul><li>BahmniObsValueCalcuator</li><li>TreatmentRegimenExtension</li></ul></li></ul><table class=\"wrapped relative-table\" style=\"width: 100.0%;\"><colgroup><col style=\"width: 24.4817%;\" /><col style=\"width: 43.3366%;\" /><col style=\"width: 32.1816%;\" /></colgroup><tbody><tr><th>File Name</th><th>Location and Example File</th><th>Note</th></tr><tr><td><div class=\"content-wrapper\"><p>BahmniObsValueCalculator.groovy</p><p><br /></p></div></td><td><div class=\"content-wrapper\"><ul><li>Location of the file is<em> /var/www/bahmni_config/openmrs/obscalculator/</em></li><li>Sample <a href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/obscalculator/BahmniObsValueCalculator.groovy\">BahmniObsValueCalculator.groovy</a> file</li></ul></div></td><td><div class=\"content-wrapper\"><ul><li><span><span>This groovy script is executed on click of <strong>consultation save</strong> button.</span><br /></span></li><li><span>This file should implement&nbsp;</span><strong>ObsValueCalculator.</strong></li><li>Override the <strong>run()</strong><span> method according to the requirement.</span></li></ul></div></td></tr><tr><td><div class=\"content-wrapper\"><p>TreatmentRegimenExtension.groovy</p><p><br /></p></div></td><td><div class=\"content-wrapper\"><ul><li>Location of the file is <em>/var/www/bahmni_config/openmrs/treatmentRegimenExtension/</em></li><li>Sample <a style=\"text-decoration: underline;\" href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/treatmentRegimenExtension/TreatmentRegimenExtension.groovy\">TreatmentRegimenExtension.groovy</a> file</li></ul></div></td><td><div class=\"content-wrapper\"><ul><li><span>This groovy script is executed before displaying the &quot;Chronic Treatment&quot; Control.</span></li><li><span>This file should extend </span><strong>BaseTableExtension&lt;TreatmentRegimen&gt;.</strong></li><li><span>Override the </span><strong>update()</strong><span> method according to the requirement.</span></li></ul><p><br /></p></div></td></tr></tbody></table><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"e9d1a07c-355b-45ab-94e0-5919178ffbf2\"><ac:rich-text-body><p><strong>bahmni.executeGroovyObsValueCalculator</strong> - Groovy scripts to calculate obs during Encounter save can be disabled using this property. Under heavy load, Groovy scripts loading/compilation and execution can make the responses slower. This property if set to False, will not execute groovy scripts (<a href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/obscalculator/BahmniObsValueCalculator.groovy\">BahmniObsValueCalculator.groovy</a>).</p><p>If you do not use advanced calculations, it's better to turn this property to false. Note, for simple calculations while capturing observations, you may use JavaScript in Forms2 (e.g. BMI calculation).</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><p><br /></p><p><span style=\"font-size: 1.142em;\">Custom Extensions</span></p><ul><li>Groovy extensions that can have custom files along with custom implementation.</li><li>Display controls such as Obs To Obs Flowsheet&nbsp;have flexibility to have custom extensions.</li><li><span>These scripts are triggered when displaying the display control under which the extension is configured.</span></li></ul><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"3782ab4c-9dd3-4ba8-9453-084807fcad2d\"><ac:parameter ac:name=\"title\">Example</ac:parameter><ac:rich-text-body><p>If One Configures, DstExtension.groovy under&nbsp;<a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Obs+To+Obs+FlowSheet\">ObsToObsFlowSheet Control</a>&nbsp;(Refer Sample Config), then the groovy is executed while the control (<a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Obs+To+Obs+FlowSheet\">ObsToObsFlowSheet Control</a><span>)</span> is displayed.</p></ac:rich-text-body></ac:structured-macro><p><br /></p><h4>Obs To Obs Flowsheet</h4><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th colspan=\"1\"><p><strong>Configuration</strong></p></th><th><p><strong>Location and Example</strong></p></th><th>Note</th></tr><tr><td colspan=\"1\"><div class=\"content-wrapper\"><p>Add the groovy extension name as value of key &quot;<strong>type</strong>&quot; under the configuration section of <a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Obs+To+Obs+FlowSheet\">ObsToObsFlowSheet Control</a><span>&nbsp;</span></p><p><br /></p></div></td><td><div class=\"content-wrapper\"><ul><li><span>All these custom groovy files should be under </span><em>/var/www/bahmni_config/openmrs/flowSheetExtension/</em></li><li><span>Please refer example for </span><a style=\"text-decoration: underline;\" href=\"https://github.com/Bahmni/endtb-config/blob/master/openmrs/flowsheetExtension/DstExtension.groovy\">https://github.com/Bahmni/endtb-config/blob/master/openmrs/flowsheetExtension/DstExtension.groovy</a></li></ul><p><br /></p></div></td><td><div class=\"content-wrapper\"><ul><li>This file should extend <strong>BaseTableExtension&lt;PivotTable&gt;.</strong></li><li><span>Override the </span><strong>update()</strong><span> method according to the requirement.</span></li></ul><p><br /></p></div></td></tr></tbody></table><h2>Developer Tips</h2><p>One way to debug groovy scripts during development is to write statements to a temporary file, e.g., in BahmniObsValueCalculator.groovy, use the snippet below. <em>groovy_debug.txt</em> should be writable. Make sure to remove debugging statements and temporary file before deployment.</p><pre>def&nbsp;file1 =&nbsp;new&nbsp;File(OpenmrsUtil.getApplicationDataDirectory() +&nbsp;&quot;obscalculator/groovy_debug.txt&quot;)</pre><pre>file1.append&nbsp;'debugging statement\\n'</pre><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"8c2ec6a6-2f36-4f64-968a-752eccfa837c\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"7329ff03-b42e-4c14-9a07-dc96c9694bf7\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"4e91101e-aef1-4f02-82f9-a6559bb30533\"><ac:parameter ac:name=\"titleColor\">White</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Auto-Calculation+of+Observations\">Auto-Calculation of Observations</a></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/97812538"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"GroovyScripts-Context\">Context</h2><p>Groovy Scripts are used as extension scripts that can be executed when a particular event is triggered.</p><p>Some of the events can be</p><ul><li>Displaying Display controls</li><li>Observation Save </li></ul><h3 id=\"GroovyScripts-Whatshouldbeconfiguredforgroovyscripts?\">What should be configured for groovy scripts?</h3><p>For any groovy script the following are configurable</p><ul><li>What is the script to execute on trigger of an event</li><li>What should be implemented in the script</li></ul><h2 id=\"GroovyScripts-TypesofGroovyScripts\">Types of Groovy Scripts</h2><p>Different types of groovy scripts that can be configured are</p><ul><li>Standard Extensions</li><li>Custom Extensions</li></ul><h3 id=\"GroovyScripts-StandardExtensions\">Standard Extensions</h3><ul><li>The standard extension file names cannot be changed. <span>The reason for referring them standard is that they need not be explicitly configured. Names are standard. Only implementation of the script can be customised.</span></li><li><span><span> If the file is present, by default it will be executed when the respective event is triggered.</span><br class=\"_mce_tagged_br\"/></span></li><li>Some of those extensions are<ul><li>BahmniObsValueCalcuator</li><li>TreatmentRegimenExtension</li></ul></li></ul><div class=\"table-wrap\"><table class=\"wrapped relative-table confluenceTable\" style=\"width: 100.0%;\"><colgroup><col style=\"width: 24.4817%;\"/><col style=\"width: 43.3366%;\"/><col style=\"width: 32.1816%;\"/></colgroup><tbody><tr><th class=\"confluenceTh\">File Name</th><th class=\"confluenceTh\">Location and Example File</th><th class=\"confluenceTh\">Note</th></tr><tr><td class=\"confluenceTd\"><div class=\"content-wrapper\"><p>BahmniObsValueCalculator.groovy</p><p><br/></p></div></td><td class=\"confluenceTd\"><div class=\"content-wrapper\"><ul><li>Location of the file is<em> /var/www/bahmni_config/openmrs/obscalculator/</em></li><li>Sample <a class=\"external-link\" href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/obscalculator/BahmniObsValueCalculator.groovy\" rel=\"nofollow\">BahmniObsValueCalculator.groovy</a> file</li></ul></div></td><td class=\"confluenceTd\"><div class=\"content-wrapper\"><ul><li><span><span>This groovy script is executed on click of <strong>consultation save</strong> button.</span><br/></span></li><li><span>This file should implement </span><strong>ObsValueCalculator.</strong></li><li>Override the <strong>run()</strong><span> method according to the requirement.</span></li></ul></div></td></tr><tr><td class=\"confluenceTd\"><div class=\"content-wrapper\"><p>TreatmentRegimenExtension.groovy</p><p><br/></p></div></td><td class=\"confluenceTd\"><div class=\"content-wrapper\"><ul><li>Location of the file is <em>/var/www/bahmni_config/openmrs/treatmentRegimenExtension/</em></li><li>Sample <a class=\"external-link\" href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/treatmentRegimenExtension/TreatmentRegimenExtension.groovy\" rel=\"nofollow\" style=\"text-decoration: underline;\">TreatmentRegimenExtension.groovy</a> file</li></ul></div></td><td class=\"confluenceTd\"><div class=\"content-wrapper\"><ul><li><span>This groovy script is executed before displaying the &quot;Chronic Treatment&quot; Control.</span></li><li><span>This file should extend </span><strong>BaseTableExtension&lt;TreatmentRegimen&gt;.</strong></li><li><span>Override the </span><strong>update()</strong><span> method according to the requirement.</span></li></ul><p><br/></p></div></td></tr></tbody></table></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e9d1a07c-355b-45ab-94e0-5919178ffbf2\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>bahmni.executeGroovyObsValueCalculator</strong> - Groovy scripts to calculate obs during Encounter save can be disabled using this property. Under heavy load, Groovy scripts loading/compilation and execution can make the responses slower. This property if set to False, will not execute groovy scripts (<a class=\"external-link\" href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/obscalculator/BahmniObsValueCalculator.groovy\" rel=\"nofollow\">BahmniObsValueCalculator.groovy</a>).</p><p>If you do not use advanced calculations, it's better to turn this property to false. Note, for simple calculations while capturing observations, you may use JavaScript in Forms2 (e.g. BMI calculation).</p></div></div><p><br/></p><p><span style=\"font-size: 1.142em;\">Custom Extensions</span></p><ul><li>Groovy extensions that can have custom files along with custom implementation.</li><li>Display controls such as Obs To Obs Flowsheet have flexibility to have custom extensions.</li><li><span>These scripts are triggered when displaying the display control under which the extension is configured.</span></li></ul><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3782ab4c-9dd3-4ba8-9453-084807fcad2d\" data-macro-name=\"note\"><p class=\"title\">Example</p><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>If One Configures, DstExtension.groovy under <a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Obs+To+Obs+FlowSheet\" rel=\"nofollow\">ObsToObsFlowSheet Control</a> (Refer Sample Config), then the groovy is executed while the control (<a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Obs+To+Obs+FlowSheet\" rel=\"nofollow\">ObsToObsFlowSheet Control</a><span>)</span> is displayed.</p></div></div><p><br/></p><h4 id=\"GroovyScripts-ObsToObsFlowsheet\">Obs To Obs Flowsheet</h4><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col/><col/><col/></colgroup><tbody><tr><th colspan=\"1\" class=\"confluenceTh\"><p><strong>Configuration</strong></p></th><th class=\"confluenceTh\"><p><strong>Location and Example</strong></p></th><th class=\"confluenceTh\">Note</th></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><div class=\"content-wrapper\"><p>Add the groovy extension name as value of key &quot;<strong>type</strong>&quot; under the configuration section of <a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Obs+To+Obs+FlowSheet\" rel=\"nofollow\">ObsToObsFlowSheet Control</a><span> </span></p><p><br/></p></div></td><td class=\"confluenceTd\"><div class=\"content-wrapper\"><ul><li><span>All these custom groovy files should be under </span><em>/var/www/bahmni_config/openmrs/flowSheetExtension/</em></li><li><span>Please refer example for </span><a class=\"external-link\" href=\"https://github.com/Bahmni/endtb-config/blob/master/openmrs/flowsheetExtension/DstExtension.groovy\" rel=\"nofollow\" style=\"text-decoration: underline;\">https://github.com/Bahmni/endtb-config/blob/master/openmrs/flowsheetExtension/DstExtension.groovy</a></li></ul><p><br/></p></div></td><td class=\"confluenceTd\"><div class=\"content-wrapper\"><ul><li>This file should extend <strong>BaseTableExtension&lt;PivotTable&gt;.</strong></li><li><span>Override the </span><strong>update()</strong><span> method according to the requirement.</span></li></ul><p><br/></p></div></td></tr></tbody></table></div><h2 id=\"GroovyScripts-DeveloperTips\">Developer Tips</h2><p>One way to debug groovy scripts during development is to write statements to a temporary file, e.g., in BahmniObsValueCalculator.groovy, use the snippet below. <em>groovy_debug.txt</em> should be writable. Make sure to remove debugging statements and temporary file before deployment.</p><pre>def file1 = new File(OpenmrsUtil.getApplicationDataDirectory() + &quot;obscalculator/groovy_debug.txt&quot;)</pre><pre>file1.append 'debugging statement\\n'</pre><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8c2ec6a6-2f36-4f64-968a-752eccfa837c\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"7329ff03-b42e-4c14-9a07-dc96c9694bf7\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4e91101e-aef1-4f02-82f9-a6559bb30533\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: White;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Auto-Calculation+of+Observations\" rel=\"nofollow\">Auto-Calculation of Observations</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/97812538"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "in-progress",
+          "id": "98107393",
+          "label": "in-progress"
+        },
+        {
+          "prefix": "global",
+          "name": "review-needed",
+          "id": "30146561",
+          "label": "review-needed"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 2,
+      "_links": {
+        "next": "/rest/api/content/97812538/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/97812538/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 4
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/97812538/child",
+    "restrictions": "/rest/api/content/97812538/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/97812538/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=97812538",
+    "webui": "/spaces/BAH/pages/97812538/Groovy+Scripts",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/97812538",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/97812538",
+    "tinyui": "/x/OoDUBQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

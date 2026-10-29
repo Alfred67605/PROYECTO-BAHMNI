@@ -1,0 +1,183 @@
+{
+  "id": "20643844",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/20643844",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjA2NDM4NDQ=",
+  "status": "current",
+  "title": "Linux commands and utilities",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Arun Paul",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Arun Paul",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3"
+      }
+    },
+    "createdDate": "2015-05-11T04:43:41.224Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/20643844/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:ed8a85e1-871d-406d-9e5a-aba9f21b3329",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Arjun",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:ed8a85e1-871d-406d-9e5a-aba9f21b3329",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Arjun",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:ed8a85e1-871d-406d-9e5a-aba9f21b3329"
+      }
+    },
+    "when": "2016-08-16T06:59:45.240Z",
+    "friendlyWhen": "Aug 16, 2016",
+    "message": "",
+    "number": 11,
+    "minorEdit": false,
+    "syncRev": "0.aLPpWxRo5Q-T3dVEZxcFEg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$20643844.40",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/20643844"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/20643844/version/11"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>This is a list of common CentOS Linux commands and utilities a Bahmni implementer should know for daily system administration.&nbsp;There is plenty of materials online that would help you to master these commands and its various options. &nbsp;This list will only tell you what commands you should start looking up.</p><table class=\"wrapped\"><colgroup><col /><col /><col /><col /></colgroup><tbody><tr><th>Command</th><th>Description</th><th>Example</th><th colspan=\"1\">Read More</th></tr><tr><td colspan=\"1\">ls</td><td colspan=\"1\"><p>List files in current directory</p></td><td colspan=\"1\">ls -al</td><td colspan=\"1\"><a href=\"http://www.tecmint.com/15-basic-ls-command-examples-in-linux/\">http://www.tecmint.com/15-basic-ls-command-examples-in-linux/</a></td></tr><tr><td colspan=\"1\">touch</td><td colspan=\"1\">Creates an empty file</td><td colspan=\"1\">&nbsp;</td><td colspan=\"1\">&nbsp;</td></tr><tr><td colspan=\"1\">cat</td><td colspan=\"1\">Shows the contents of a file</td><td colspan=\"1\">cat hello.txt</td><td colspan=\"1\">&nbsp;</td></tr><tr><td colspan=\"1\">man</td><td colspan=\"1\">Show help for a command</td><td colspan=\"1\">man cat</td><td colspan=\"1\">&nbsp;</td></tr><tr><td colspan=\"1\">chmod</td><td colspan=\"1\"><p>Change the file access permissions to give read/write/execute</p><p>permissions to a file or files</p></td><td colspan=\"1\">chmod +x myscript.sh</td><td colspan=\"1\"><a href=\"https://en.wikipedia.org/wiki/Chmod\">https://en.wikipedia.org/wiki/Chmod</a></td></tr><tr><td colspan=\"1\">chown</td><td colspan=\"1\">Change the file owner / group owner</td><td colspan=\"1\">chown bahmni:bahmni -R /var/www/</td><td colspan=\"1\"><a href=\"http://www.linfo.org/chown.html\">http://www.linfo.org/chown.html</a></td></tr><tr><td colspan=\"1\">chgrp</td><td colspan=\"1\">Change the group ownership</td><td colspan=\"1\">&nbsp;</td><td colspan=\"1\">&nbsp;</td></tr><tr><td colspan=\"1\">grep</td><td colspan=\"1\">Finds matching data in text inputs using regular expressions</td><td colspan=\"1\">cat hello.txt | grep &quot;bahmni&quot;</td><td colspan=\"1\"><a href=\"http://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/\">http://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/</a></td></tr><tr><td colspan=\"1\">pwd</td><td colspan=\"1\">Shows the current directory path (pwd = present working directory)</td><td colspan=\"1\">&nbsp;</td><td colspan=\"1\">&nbsp;</td></tr><tr><td colspan=\"1\">cd</td><td colspan=\"1\">Change into the specified directory</td><td colspan=\"1\">cd /home</td><td colspan=\"1\">&nbsp;</td></tr><tr><td colspan=\"1\">tail</td><td colspan=\"1\">Display the last few contents of a text file. Useful for seeing log files.</td><td colspan=\"1\">tail -f /var/log/openmrs/openmrs.log</td><td colspan=\"1\"><a href=\"http://www.thegeekstuff.com/2009/08/10-awesome-examples-for-viewing-huge-log-files-in-unix/\">http://www.thegeekstuff.com/2009/08/10-awesome-examples-for-viewing-huge-log-files-in-unix/</a></td></tr><tr><td colspan=\"1\">cp</td><td colspan=\"1\">Copies a file from one location to another</td><td colspan=\"1\">cp abc.txt /home</td><td colspan=\"1\">&nbsp;</td></tr><tr><td colspan=\"1\">mv</td><td colspan=\"1\">Moves a file to another location. Also used for renaming a file.</td><td colspan=\"1\">mb abc1.txt abc2.txt</td><td colspan=\"1\">&nbsp;</td></tr><tr><td colspan=\"1\">rm</td><td colspan=\"1\">Delete a file or a directory</td><td colspan=\"1\">rm /tmp/hello</td><td colspan=\"1\">&nbsp;</td></tr><tr><td colspan=\"1\">mkdir</td><td colspan=\"1\">Create a new directory</td><td colspan=\"1\">mkdir music</td><td colspan=\"1\">&nbsp;</td></tr><tr><td colspan=\"1\">find</td><td colspan=\"1\"><p>Used for searching files matching a certain pattern.</p><p>Can also be used to execute specific commands on files which match a certain pattern</p></td><td colspan=\"1\">find -name &quot;*.mp3&quot;</td><td colspan=\"1\"><a href=\"http://www.tecmint.com/35-practical-examples-of-linux-find-command/\">http://www.tecmint.com/35-practical-examples-of-linux-find-command/</a></td></tr><tr><td colspan=\"1\">ps -ef</td><td colspan=\"1\">Print all currently running processes.</td><td colspan=\"1\">ps -ef | grep java</td><td colspan=\"1\"><a href=\"https://www.digitalocean.com/community/tutorials/how-to-use-ps-kill-and-nice-to-manage-processes-in-linux\">https://www.digitalocean.com/community/tutorials/how-to-use-ps-kill-and-nice-to-manage-processes-in-linux</a></td></tr><tr><td colspan=\"1\">df</td><td colspan=\"1\">Print disk space usage (short for 'disk free')</td><td colspan=\"1\">&nbsp;</td><td colspan=\"1\">&nbsp;</td></tr><tr><td colspan=\"1\">du</td><td colspan=\"1\">Print disk usage report for current directory</td><td colspan=\"1\">du -sh</td><td colspan=\"1\"><a href=\"http://www.tecmint.com/check-linux-disk-usage-of-files-and-directories/\">http://www.tecmint.com/check-linux-disk-usage-of-files-and-directories/</a></td></tr><tr><td colspan=\"1\">clear</td><td colspan=\"1\">Clear the screen</td><td colspan=\"1\">&nbsp;</td><td colspan=\"1\">&nbsp;</td></tr><tr><td colspan=\"1\">tar</td><td colspan=\"1\">For creating or extracting tar files<p>-xvf &lt;filename.tar&gt; extract tar file<br />-cvf &lt;filename.tar&gt; compress files and folders<br />-tvf archive.tar List all files in archive.tar verbosely.</p></td><td colspan=\"1\">&nbsp;</td><td colspan=\"1\"><a href=\"http://www.tecmint.com/18-tar-command-examples-in-linux/\">http://www.tecmint.com/18-tar-command-examples-in-linux/</a></td></tr><tr><td colspan=\"1\">yum</td><td colspan=\"1\">Manage installations of RPMs / softwares.</td><td colspan=\"1\"><p>yum install bahmni-emr</p><p>yum remove bahmni-emr</p><p>yum info bahmni-emr</p></td><td colspan=\"1\"><a href=\"https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/ch-yum.html\">https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/ch-yum.html</a></td></tr><tr><td colspan=\"1\">kill</td><td colspan=\"1\">Terminate a process / Raise a Signal</td><td colspan=\"1\">kill -9 &lt;pid&gt;</td><td colspan=\"1\"><a href=\"https://www.maketecheasier.com/kill-command-in-linux/\">https://www.maketecheasier.com/kill-command-in-linux/</a></td></tr><tr><td colspan=\"1\">ifconfig</td><td colspan=\"1\">Print network configuration / IP of the machine</td><td colspan=\"1\">&nbsp;</td><td colspan=\"1\">&nbsp;</td></tr><tr><td colspan=\"1\">scp</td><td colspan=\"1\">Secure copy of files (over SSH port)</td><td colspan=\"1\"><p>scp -r foo <a href=\"mailto:your_username@remotehost.edu\">john@remotehost</a>:/tmp</p></td><td colspan=\"1\"><a href=\"http://www.hypexr.org/linux_scp_help.php\">http://www.hypexr.org/linux_scp_help.php</a></td></tr><tr><td colspan=\"1\">chkconfig</td><td colspan=\"1\">Updates and queries runlevel information for system services</td><td colspan=\"1\">&nbsp;</td><td colspan=\"1\"><a href=\"https://blog.sleeplessbeastie.eu/2012/07/07/centos-how-to-manage-system-services/\">https://blog.sleeplessbeastie.eu/2012/07/07/centos-how-to-manage-system-services/</a></td></tr><tr><td colspan=\"1\">service</td><td colspan=\"1\">Provide information on registered system services.</td><td colspan=\"1\"><p>service bahmni-emr status</p><p>service bahmni-emr stop</p><p>service bahmni-emr start</p></td><td colspan=\"1\"><a href=\"https://blog.sleeplessbeastie.eu/2012/07/07/centos-how-to-manage-system-services/\">https://blog.sleeplessbeastie.eu/2012/07/07/centos-how-to-manage-system-services/</a></td></tr><tr><td colspan=\"1\">whoami</td><td colspan=\"1\">Prints the details of the current user</td><td colspan=\"1\">&nbsp;</td><td colspan=\"1\">&nbsp;</td></tr><tr><td colspan=\"1\">useradd</td><td colspan=\"1\">Add user to system</td><td colspan=\"1\">&nbsp;</td><td colspan=\"1\"><a href=\"http://www.liquidweb.com/kb/how-to-add-a-user-and-grant-root-privileges-on-centos-6-5/\">http://www.liquidweb.com/kb/how-to-add-a-user-and-grant-root-privileges-on-centos-6-5/</a></td></tr><tr><td colspan=\"1\">passwd</td><td colspan=\"1\">Set password of the user</td><td colspan=\"1\">&nbsp;</td><td colspan=\"1\">&nbsp;</td></tr><tr><td colspan=\"1\">sudo</td><td colspan=\"1\">Run with root privilege</td><td colspan=\"1\">sudo service bahmni-emr stop</td><td colspan=\"1\"><a href=\"https://www.garron.me/en/linux/visudo-command-sudoers-file-sudo-default-editor.html\">https://www.garron.me/en/linux/visudo-command-sudoers-file-sudo-default-editor.html</a></td></tr><tr><td colspan=\"1\">ssh</td><td colspan=\"1\">SSH to a remote machine</td><td colspan=\"1\">ssh root@192.133.8.10</td><td colspan=\"1\"><a href=\"http://support.suso.com/supki/SSH_Tutorial_for_Linux\">http://support.suso.com/supki/SSH_Tutorial_for_Linux</a></td></tr><tr><td colspan=\"1\">ping</td><td colspan=\"1\">Check if a Ping message can be sent over a network</td><td colspan=\"1\">ping www.google.com</td><td colspan=\"1\">&nbsp;</td></tr><tr><td colspan=\"1\">crontab</td><td colspan=\"1\">Configure cron job (for scheduled tasks)</td><td colspan=\"1\">crontab -L</td><td colspan=\"1\"><a href=\"https://www.pantz.org/software/cron/croninfo.html\">https://www.pantz.org/software/cron/croninfo.html</a></td></tr><tr><td colspan=\"1\">mount</td><td colspan=\"1\">Mount a disk (partition) on a particular path</td><td colspan=\"1\">&nbsp;</td><td colspan=\"1\">&nbsp;</td></tr><tr><td colspan=\"1\">umount</td><td colspan=\"1\">Un-mount a disk</td><td colspan=\"1\">&nbsp;</td><td colspan=\"1\">&nbsp;</td></tr><tr><td colspan=\"1\">vi</td><td colspan=\"1\">Editor for files</td><td colspan=\"1\">vi hello.txt</td><td colspan=\"1\"><p><a href=\"http://www.howtogeek.com/102468/a-beginners-guide-to-editing-text-files-with-vi/\">http://www.howtogeek.com/102468/a-beginners-guide-to-editing-text-files-with-vi/</a></p><p><a href=\"http://www.openvim.com/\">http://www.openvim.com/</a> (Online VIM tutorial)</p></td></tr><tr><td colspan=\"1\">iptables</td><td colspan=\"1\">Firewall on Linux</td><td colspan=\"1\">&nbsp;</td><td colspan=\"1\"><a href=\"https://wiki.centos.org/HowTos/Network/IPTables\">https://wiki.centos.org/HowTos/Network/IPTables</a></td></tr><tr><td colspan=\"1\">history</td><td colspan=\"1\">List last / all executed commands</td><td colspan=\"1\">&nbsp;</td><td colspan=\"1\"><p><a href=\"http://www.tecmint.com/history-command-examples/\">http://www.tecmint.com/history-command-examples/</a></p></td></tr><tr><td colspan=\"1\">top</td><td colspan=\"1\"><span style=\"color: rgb(39,39,39);\">show processor and memory as being used and other information like running processes</span></td><td colspan=\"1\">top</td><td colspan=\"1\"><p><a href=\"http://www.tecmint.com/12-top-command-examples-in-linux/\">http://www.tecmint.com/12-top-command-examples-in-linux/</a></p><p>Further reading : htop : <a href=\"http://www.tecmint.com/install-htop-linux-process-monitoring-for-rhel-centos-fedora/\">http://www.tecmint.com/install-htop-linux-process-monitoring-for-rhel-centos-fedora/</a></p></td></tr><tr><td colspan=\"1\">free</td><td colspan=\"1\">gives understanding of total available space of physical memory and swap memory</td><td colspan=\"1\">free -m</td><td colspan=\"1\"><a href=\"http://www.tecmint.com/check-memory-usage-in-linux/\">http://www.tecmint.com/check-memory-usage-in-linux/</a></td></tr></tbody></table>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/20643844"
+      }
+    },
+    "view": {
+      "value": "<p><style>[data-colorid=lg5lgbi94d]{color:#272727} html[data-color-mode=dark] [data-colorid=lg5lgbi94d]{color:#d8d8d8}</style>This is a list of common CentOS Linux commands and utilities a Bahmni implementer should know for daily system administration.&nbsp;There is plenty of materials online that would help you to master these commands and its various options. &nbsp;This list will only tell you what commands you should start looking up.</p><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col /><col /><col /><col /></colgroup><tbody><tr><th class=\"confluenceTh\">Command</th><th class=\"confluenceTh\">Description</th><th class=\"confluenceTh\">Example</th><th colspan=\"1\" class=\"confluenceTh\">Read More</th></tr><tr><td colspan=\"1\" class=\"confluenceTd\">ls</td><td colspan=\"1\" class=\"confluenceTd\"><p>List files in current directory</p></td><td colspan=\"1\" class=\"confluenceTd\">ls -al</td><td colspan=\"1\" class=\"confluenceTd\"><a class=\"external-link\" href=\"http://www.tecmint.com/15-basic-ls-command-examples-in-linux/\" rel=\"nofollow\">http://www.tecmint.com/15-basic-ls-command-examples-in-linux/</a></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">touch</td><td colspan=\"1\" class=\"confluenceTd\">Creates an empty file</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">cat</td><td colspan=\"1\" class=\"confluenceTd\">Shows the contents of a file</td><td colspan=\"1\" class=\"confluenceTd\">cat hello.txt</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">man</td><td colspan=\"1\" class=\"confluenceTd\">Show help for a command</td><td colspan=\"1\" class=\"confluenceTd\">man cat</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">chmod</td><td colspan=\"1\" class=\"confluenceTd\"><p>Change the file access permissions to give read/write/execute</p><p>permissions to a file or files</p></td><td colspan=\"1\" class=\"confluenceTd\">chmod +x myscript.sh</td><td colspan=\"1\" class=\"confluenceTd\"><a class=\"external-link\" href=\"https://en.wikipedia.org/wiki/Chmod\" rel=\"nofollow\">https://en.wikipedia.org/wiki/Chmod</a></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">chown</td><td colspan=\"1\" class=\"confluenceTd\">Change the file owner / group owner</td><td colspan=\"1\" class=\"confluenceTd\">chown bahmni:bahmni -R /var/www/</td><td colspan=\"1\" class=\"confluenceTd\"><a class=\"external-link\" href=\"http://www.linfo.org/chown.html\" rel=\"nofollow\">http://www.linfo.org/chown.html</a></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">chgrp</td><td colspan=\"1\" class=\"confluenceTd\">Change the group ownership</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">grep</td><td colspan=\"1\" class=\"confluenceTd\">Finds matching data in text inputs using regular expressions</td><td colspan=\"1\" class=\"confluenceTd\">cat hello.txt | grep &quot;bahmni&quot;</td><td colspan=\"1\" class=\"confluenceTd\"><a class=\"external-link\" href=\"http://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/\" rel=\"nofollow\">http://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/</a></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">pwd</td><td colspan=\"1\" class=\"confluenceTd\">Shows the current directory path (pwd = present working directory)</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">cd</td><td colspan=\"1\" class=\"confluenceTd\">Change into the specified directory</td><td colspan=\"1\" class=\"confluenceTd\">cd /home</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">tail</td><td colspan=\"1\" class=\"confluenceTd\">Display the last few contents of a text file. Useful for seeing log files.</td><td colspan=\"1\" class=\"confluenceTd\">tail -f /var/log/openmrs/openmrs.log</td><td colspan=\"1\" class=\"confluenceTd\"><a class=\"external-link\" href=\"http://www.thegeekstuff.com/2009/08/10-awesome-examples-for-viewing-huge-log-files-in-unix/\" rel=\"nofollow\">http://www.thegeekstuff.com/2009/08/10-awesome-examples-for-viewing-huge-log-files-in-unix/</a></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">cp</td><td colspan=\"1\" class=\"confluenceTd\">Copies a file from one location to another</td><td colspan=\"1\" class=\"confluenceTd\">cp abc.txt /home</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">mv</td><td colspan=\"1\" class=\"confluenceTd\">Moves a file to another location. Also used for renaming a file.</td><td colspan=\"1\" class=\"confluenceTd\">mb abc1.txt abc2.txt</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">rm</td><td colspan=\"1\" class=\"confluenceTd\">Delete a file or a directory</td><td colspan=\"1\" class=\"confluenceTd\">rm /tmp/hello</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">mkdir</td><td colspan=\"1\" class=\"confluenceTd\">Create a new directory</td><td colspan=\"1\" class=\"confluenceTd\">mkdir music</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">find</td><td colspan=\"1\" class=\"confluenceTd\"><p>Used for searching files matching a certain pattern.</p><p>Can also be used to execute specific commands on files which match a certain pattern</p></td><td colspan=\"1\" class=\"confluenceTd\">find -name &quot;*.mp3&quot;</td><td colspan=\"1\" class=\"confluenceTd\"><a class=\"external-link\" href=\"http://www.tecmint.com/35-practical-examples-of-linux-find-command/\" rel=\"nofollow\">http://www.tecmint.com/35-practical-examples-of-linux-find-command/</a></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">ps -ef</td><td colspan=\"1\" class=\"confluenceTd\">Print all currently running processes.</td><td colspan=\"1\" class=\"confluenceTd\">ps -ef | grep java</td><td colspan=\"1\" class=\"confluenceTd\"><a class=\"external-link\" href=\"https://www.digitalocean.com/community/tutorials/how-to-use-ps-kill-and-nice-to-manage-processes-in-linux\" rel=\"nofollow\">https://www.digitalocean.com/community/tutorials/how-to-use-ps-kill-and-nice-to-manage-processes-in-linux</a></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">df</td><td colspan=\"1\" class=\"confluenceTd\">Print disk space usage (short for 'disk free')</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">du</td><td colspan=\"1\" class=\"confluenceTd\">Print disk usage report for current directory</td><td colspan=\"1\" class=\"confluenceTd\">du -sh</td><td colspan=\"1\" class=\"confluenceTd\"><a class=\"external-link\" href=\"http://www.tecmint.com/check-linux-disk-usage-of-files-and-directories/\" rel=\"nofollow\">http://www.tecmint.com/check-linux-disk-usage-of-files-and-directories/</a></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">clear</td><td colspan=\"1\" class=\"confluenceTd\">Clear the screen</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">tar</td><td colspan=\"1\" class=\"confluenceTd\">For creating or extracting tar files<p>-xvf &lt;filename.tar&gt; extract tar file<br />-cvf &lt;filename.tar&gt; compress files and folders<br />-tvf archive.tar List all files in archive.tar verbosely.</p></td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td><td colspan=\"1\" class=\"confluenceTd\"><a class=\"external-link\" href=\"http://www.tecmint.com/18-tar-command-examples-in-linux/\" rel=\"nofollow\">http://www.tecmint.com/18-tar-command-examples-in-linux/</a></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">yum</td><td colspan=\"1\" class=\"confluenceTd\">Manage installations of RPMs / softwares.</td><td colspan=\"1\" class=\"confluenceTd\"><p>yum install bahmni-emr</p><p>yum remove bahmni-emr</p><p>yum info bahmni-emr</p></td><td colspan=\"1\" class=\"confluenceTd\"><a class=\"external-link\" href=\"https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/ch-yum.html\" rel=\"nofollow\">https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/ch-yum.html</a></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">kill</td><td colspan=\"1\" class=\"confluenceTd\">Terminate a process / Raise a Signal</td><td colspan=\"1\" class=\"confluenceTd\">kill -9 &lt;pid&gt;</td><td colspan=\"1\" class=\"confluenceTd\"><a class=\"external-link\" href=\"https://www.maketecheasier.com/kill-command-in-linux/\" rel=\"nofollow\">https://www.maketecheasier.com/kill-command-in-linux/</a></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">ifconfig</td><td colspan=\"1\" class=\"confluenceTd\">Print network configuration / IP of the machine</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">scp</td><td colspan=\"1\" class=\"confluenceTd\">Secure copy of files (over SSH port)</td><td colspan=\"1\" class=\"confluenceTd\"><p>scp -r foo <a class=\"external-link\" href=\"mailto:your_username@remotehost.edu\" rel=\"nofollow\">john@remotehost</a>:/tmp</p></td><td colspan=\"1\" class=\"confluenceTd\"><a class=\"external-link\" href=\"http://www.hypexr.org/linux_scp_help.php\" rel=\"nofollow\">http://www.hypexr.org/linux_scp_help.php</a></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">chkconfig</td><td colspan=\"1\" class=\"confluenceTd\">Updates and queries runlevel information for system services</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td><td colspan=\"1\" class=\"confluenceTd\"><a class=\"external-link\" href=\"https://blog.sleeplessbeastie.eu/2012/07/07/centos-how-to-manage-system-services/\" rel=\"nofollow\">https://blog.sleeplessbeastie.eu/2012/07/07/centos-how-to-manage-system-services/</a></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">service</td><td colspan=\"1\" class=\"confluenceTd\">Provide information on registered system services.</td><td colspan=\"1\" class=\"confluenceTd\"><p>service bahmni-emr status</p><p>service bahmni-emr stop</p><p>service bahmni-emr start</p></td><td colspan=\"1\" class=\"confluenceTd\"><a class=\"external-link\" href=\"https://blog.sleeplessbeastie.eu/2012/07/07/centos-how-to-manage-system-services/\" rel=\"nofollow\">https://blog.sleeplessbeastie.eu/2012/07/07/centos-how-to-manage-system-services/</a></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">whoami</td><td colspan=\"1\" class=\"confluenceTd\">Prints the details of the current user</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">useradd</td><td colspan=\"1\" class=\"confluenceTd\">Add user to system</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td><td colspan=\"1\" class=\"confluenceTd\"><a class=\"external-link\" href=\"http://www.liquidweb.com/kb/how-to-add-a-user-and-grant-root-privileges-on-centos-6-5/\" rel=\"nofollow\">http://www.liquidweb.com/kb/how-to-add-a-user-and-grant-root-privileges-on-centos-6-5/</a></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">passwd</td><td colspan=\"1\" class=\"confluenceTd\">Set password of the user</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">sudo</td><td colspan=\"1\" class=\"confluenceTd\">Run with root privilege</td><td colspan=\"1\" class=\"confluenceTd\">sudo service bahmni-emr stop</td><td colspan=\"1\" class=\"confluenceTd\"><a class=\"external-link\" href=\"https://www.garron.me/en/linux/visudo-command-sudoers-file-sudo-default-editor.html\" rel=\"nofollow\">https://www.garron.me/en/linux/visudo-command-sudoers-file-sudo-default-editor.html</a></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">ssh</td><td colspan=\"1\" class=\"confluenceTd\">SSH to a remote machine</td><td colspan=\"1\" class=\"confluenceTd\">ssh root@192.133.8.10</td><td colspan=\"1\" class=\"confluenceTd\"><a class=\"external-link\" href=\"http://support.suso.com/supki/SSH_Tutorial_for_Linux\" rel=\"nofollow\">http://support.suso.com/supki/SSH_Tutorial_for_Linux</a></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">ping</td><td colspan=\"1\" class=\"confluenceTd\">Check if a Ping message can be sent over a network</td><td colspan=\"1\" class=\"confluenceTd\">ping www.google.com</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">crontab</td><td colspan=\"1\" class=\"confluenceTd\">Configure cron job (for scheduled tasks)</td><td colspan=\"1\" class=\"confluenceTd\">crontab -L</td><td colspan=\"1\" class=\"confluenceTd\"><a class=\"external-link\" href=\"https://www.pantz.org/software/cron/croninfo.html\" rel=\"nofollow\">https://www.pantz.org/software/cron/croninfo.html</a></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">mount</td><td colspan=\"1\" class=\"confluenceTd\">Mount a disk (partition) on a particular path</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">umount</td><td colspan=\"1\" class=\"confluenceTd\">Un-mount a disk</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">vi</td><td colspan=\"1\" class=\"confluenceTd\">Editor for files</td><td colspan=\"1\" class=\"confluenceTd\">vi hello.txt</td><td colspan=\"1\" class=\"confluenceTd\"><p><a class=\"external-link\" href=\"http://www.howtogeek.com/102468/a-beginners-guide-to-editing-text-files-with-vi/\" rel=\"nofollow\">http://www.howtogeek.com/102468/a-beginners-guide-to-editing-text-files-with-vi/</a></p><p><a class=\"external-link\" href=\"http://www.openvim.com/\" rel=\"nofollow\">http://www.openvim.com/</a> (Online VIM tutorial)</p></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">iptables</td><td colspan=\"1\" class=\"confluenceTd\">Firewall on Linux</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td><td colspan=\"1\" class=\"confluenceTd\"><a class=\"external-link\" href=\"https://wiki.centos.org/HowTos/Network/IPTables\" rel=\"nofollow\">https://wiki.centos.org/HowTos/Network/IPTables</a></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">history</td><td colspan=\"1\" class=\"confluenceTd\">List last / all executed commands</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td><td colspan=\"1\" class=\"confluenceTd\"><p><a class=\"external-link\" href=\"http://www.tecmint.com/history-command-examples/\" rel=\"nofollow\">http://www.tecmint.com/history-command-examples/</a></p></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">top</td><td colspan=\"1\" class=\"confluenceTd\"><span data-colorid=\"lg5lgbi94d\">show processor and memory as being used and other information like running processes</span></td><td colspan=\"1\" class=\"confluenceTd\">top</td><td colspan=\"1\" class=\"confluenceTd\"><p><a class=\"external-link\" href=\"http://www.tecmint.com/12-top-command-examples-in-linux/\" rel=\"nofollow\">http://www.tecmint.com/12-top-command-examples-in-linux/</a></p><p>Further reading : htop : <a class=\"external-link\" href=\"http://www.tecmint.com/install-htop-linux-process-monitoring-for-rhel-centos-fedora/\" rel=\"nofollow\">http://www.tecmint.com/install-htop-linux-process-monitoring-for-rhel-centos-fedora/</a></p></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">free</td><td colspan=\"1\" class=\"confluenceTd\">gives understanding of total available space of physical memory and swap memory</td><td colspan=\"1\" class=\"confluenceTd\">free -m</td><td colspan=\"1\" class=\"confluenceTd\"><a class=\"external-link\" href=\"http://www.tecmint.com/check-memory-usage-in-linux/\" rel=\"nofollow\">http://www.tecmint.com/check-memory-usage-in-linux/</a></td></tr></tbody></table></div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/20643844"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "linux",
+          "id": "62160897",
+          "label": "linux"
+        },
+        {
+          "prefix": "global",
+          "name": "ramp-up",
+          "id": "62160898",
+          "label": "ramp-up"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 2,
+      "_links": {
+        "next": "/rest/api/content/20643844/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/20643844/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/20643844/child",
+    "restrictions": "/rest/api/content/20643844/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/20643844/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=20643844",
+    "webui": "/spaces/BAH/pages/20643844/Linux+commands+and+utilities",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/20643844",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/20643844",
+    "tinyui": "/x/BAA7AQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

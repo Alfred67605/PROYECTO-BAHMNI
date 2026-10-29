@@ -1,0 +1,170 @@
+{
+  "id": "5570574",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/5570574",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNTU3MDU3NA==",
+  "status": "current",
+  "title": "OpenERP Custom Filters",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:5ded4f42-2e54-4aa7-8d99-0e638d234a4d",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Pankaj Kanchankar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:5ded4f42-2e54-4aa7-8d99-0e638d234a4d",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Pankaj Kanchankar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:5ded4f42-2e54-4aa7-8d99-0e638d234a4d"
+      }
+    },
+    "createdDate": "2014-06-16T09:53:26.510Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/5570574/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:3080216a-e728-484c-8831-1cdbccc33222",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Preethi",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:3080216a-e728-484c-8831-1cdbccc33222",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Preethi",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:3080216a-e728-484c-8831-1cdbccc33222"
+      }
+    },
+    "when": "2015-07-09T11:42:59.216Z",
+    "friendlyWhen": "Jul 09, 2015",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "syncRev": "0.AiwF3dxo-iSfhgbPZssY7w.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$5570574.27",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/5570574"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/5570574/version/4"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>In OpenERP, you may need to create custom filters for frequently used filters like Today's sales, Today's collections etc.</p><p>Here are the steps to create such custom filters.</p><p>Go to Settings &gt; Technical &gt; User Interface &gt; User Defined Filters</p><p>This should show you list of all custom filters that are created so far.</p><ul><li>Click on Create to create new Custom Filter</li><li>Provide Filter name</li><li>Make User field blank (so that this filter is available to all users)</li><li>In the model field select the model for which this Customer filter should be available</li><li>In the Domain field specify the Domain which is the filter condition</li></ul><p>Below are couple of examples:</p><p><strong>Today's sales</strong></p><ul><li>Model =&nbsp;<span style=\"color: rgb(76,76,76);\">Sales Order</span></li><li><span style=\"color: rgb(76,76,76);\"><span style=\"color: rgb(76,76,76);\">Domain =&nbsp;</span></span><p>[<br />['date_order', '&gt;=', context_today().strftime('%Y-%m-%d')],<br />['date_order', '&lt;', (context_today() + datetime.timedelta(1)).strftime('%Y-%m-%d')],<br />]</p></li><li>Context =&nbsp;{}</li></ul><p><strong>Today's collections</strong></p><ul><li>Model =&nbsp;<span style=\"color: rgb(76,76,76);\">Accounting Voucher</span></li><li><span style=\"color: rgb(76,76,76);\">Domain =&nbsp;[['date', '=', context_today().strftime('%Y-%m-%d')], ['journal_id', 'ilike', 'CASH']]</span></li><li>Context =&nbsp;{}</li></ul><p><strong>Products Not Sold in Past 30 days</strong></p><ul><li>Model = Products report by last moved</li><li>Domain =[<span style=\"line-height: 1.4285715;\">['last_moved_date', '&lt;', (context_today() - datetime.timedelta(<strong>30</strong>)).strftime('%Y-%m-%d')]]</span></li><li><span style=\"line-height: 1.4285715;\">Context =&nbsp;{}</span></li></ul><p><span style=\"color: rgb(76,76,76);\">The above filter can be modified for any 'n' number of days</span></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/5570574"
+      }
+    },
+    "view": {
+      "value": "<p><style>[data-colorid=n4p4b6p2n7]{color:#4c4c4c} html[data-color-mode=dark] [data-colorid=n4p4b6p2n7]{color:#b3b3b3}[data-colorid=h12vetlxk1]{color:#4c4c4c} html[data-color-mode=dark] [data-colorid=h12vetlxk1]{color:#b3b3b3}[data-colorid=h2pv7m9t8r]{color:#4c4c4c} html[data-color-mode=dark] [data-colorid=h2pv7m9t8r]{color:#b3b3b3}[data-colorid=d7w8x45c3m]{color:#4c4c4c} html[data-color-mode=dark] [data-colorid=d7w8x45c3m]{color:#b3b3b3}[data-colorid=xq7vzt5afd]{color:#4c4c4c} html[data-color-mode=dark] [data-colorid=xq7vzt5afd]{color:#b3b3b3}[data-colorid=qq29kpqmrv]{color:#4c4c4c} html[data-color-mode=dark] [data-colorid=qq29kpqmrv]{color:#b3b3b3}</style>In OpenERP, you may need to create custom filters for frequently used filters like Today's sales, Today's collections etc.</p><p>Here are the steps to create such custom filters.</p><p>Go to Settings &gt; Technical &gt; User Interface &gt; User Defined Filters</p><p>This should show you list of all custom filters that are created so far.</p><ul><li>Click on Create to create new Custom Filter</li><li>Provide Filter name</li><li>Make User field blank (so that this filter is available to all users)</li><li>In the model field select the model for which this Customer filter should be available</li><li>In the Domain field specify the Domain which is the filter condition</li></ul><p>Below are couple of examples:</p><p><strong>Today's sales</strong></p><ul><li>Model =&nbsp;<span data-colorid=\"qq29kpqmrv\">Sales Order</span></li><li><span data-colorid=\"d7w8x45c3m\"><span data-colorid=\"xq7vzt5afd\">Domain =&nbsp;</span></span><p>[<br />['date_order', '&gt;=', context_today().strftime('%Y-%m-%d')],<br />['date_order', '&lt;', (context_today() + datetime.timedelta(1)).strftime('%Y-%m-%d')],<br />]</p></li><li>Context =&nbsp;{}</li></ul><p><strong>Today's collections</strong></p><ul><li>Model =&nbsp;<span data-colorid=\"h2pv7m9t8r\">Accounting Voucher</span></li><li><span data-colorid=\"n4p4b6p2n7\">Domain =&nbsp;[['date', '=', context_today().strftime('%Y-%m-%d')], ['journal_id', 'ilike', 'CASH']]</span></li><li>Context =&nbsp;{}</li></ul><p><strong>Products Not Sold in Past 30 days</strong></p><ul><li>Model = Products report by last moved</li><li>Domain =[<span style=\"line-height: 1.4285715;\">['last_moved_date', '&lt;', (context_today() - datetime.timedelta(<strong>30</strong>)).strftime('%Y-%m-%d')]]</span></li><li><span style=\"line-height: 1.4285715;\">Context =&nbsp;{}</span></li></ul><p><span data-colorid=\"h12vetlxk1\">The above filter can be modified for any 'n' number of days</span></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/5570574"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/5570574/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/5570574/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 688252227
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/5570574/child",
+    "restrictions": "/rest/api/content/5570574/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/5570574/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=5570574",
+    "webui": "/spaces/BAH/pages/5570574/OpenERP+Custom+Filters",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/5570574",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/5570574",
+    "tinyui": "/x/DgBV",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

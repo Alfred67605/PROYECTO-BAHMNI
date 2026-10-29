@@ -1,0 +1,173 @@
+{
+  "id": "1163984947",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/1163984947",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE2Mzk4NDk0Nw==",
+  "status": "current",
+  "title": "Referring out Laboratory Test(s) and Result Entry for the same",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5e43cc7490dfb70c9e609d8c",
+      "accountType": "atlassian",
+      "email": "rahulnuchange@gmail.com",
+      "publicName": "Rahul Kumrawat",
+      "timeZone": "Asia/Calcutta",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e43cc7490dfb70c9e609d8c",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Rahul Kumrawat",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e43cc7490dfb70c9e609d8c"
+      }
+    },
+    "createdDate": "2020-03-30T09:58:48.704Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1163984947/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5e943471088a7e0c0f50e1e0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Buvaneswari Arun (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e943471088a7e0c0f50e1e0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Buvaneswari Arun (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e943471088a7e0c0f50e1e0"
+      }
+    },
+    "when": "2021-04-04T15:36:39.678Z",
+    "friendlyWhen": "Apr 04, 2021",
+    "message": "",
+    "number": 10,
+    "minorEdit": false,
+    "syncRev": "0.HufF8U5YsysJSjzalVV86g.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$1163984947.131",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/1163984947"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1163984947/version/10"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\" ac:breakout-mode=\"default\"><ac:layout-cell><p /><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"b54738aa-765b-499f-9f98-25833b8ac9ce\"><ac:rich-text-body><p>This feature is available from V0.93-Bahmni</p></ac:rich-text-body></ac:structured-macro><p>Tests which cannot be performed locally can be referred out to external laboratories /centres and once the results are available, enter the same in the system.</p><h2>Used By</h2><p>It is used by lab technicians when executing lab orders and performing tests.</p><h2>How is it Used?</h2><h3>1. Refer tests to external laboratory / centre</h3><ol><li><p>Go to Samples Collected - Today tab, which will be listing all Lab orders of the patients for which the sample has been already collected today.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"305\" ac:original-width=\"1078\"><ri:attachment ri:filename=\"Lab Dashboard - Samples Collected.jpeg\" ri:version-at-save=\"2\" /></ac:image><p><strong>                                                               Lab Dashboard - Samples Collected</strong></p></li><li><p>Search the desired patient&rsquo;s order entering the Accession Number / Patient ID / Name in respective fields in the top row of the grid.</p></li><li><p>Click on the &ldquo;Result&rdquo; icon under the &ldquo;Action&rdquo; column, which will navigate you to the &ldquo;Results&rdquo; screen displaying all the respective tests&nbsp; with &ldquo;Result&rdquo; and related fields for each test.</p></li><li><p>Now select the flag appearing before the Referral Reason field and then select the Referral reason &amp; Institute.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"375\" ac:original-width=\"970\"><ri:attachment ri:filename=\"image-20200330-103948.png\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p>Capture the notes and upload the desired file using respective features, if required.</p></li><li><p>Click on the &ldquo;Save&rdquo; button to save the entered details.</p></li><li><p>Referred Out test(s) count can be seen in the Lab Dashboard under Samples Collected - Today / Backlog - <strong>Referred Out</strong> column.</p></li><li><p>Count shown in <strong>Total </strong>column is including the Referred Out tests count.</p></li></ol><h3>2. Enter results for referred out lab test(s)</h3><ol><li><p>After login into the Laboratory app, mouse over on the &ldquo;Result&rdquo; menu at the top of the screen and click on &ldquo;Referred Out&rdquo; option in the Result menu drop down, which will navigate you to the &ldquo;Referrals&rdquo; screen.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"308\" ac:original-width=\"1062\"><ri:attachment ri:filename=\"Referred Out Tests.jpeg\" ri:version-at-save=\"2\" /></ac:image></li><li><p>In the &ldquo;Referrals&rdquo; screen, all the tests which have been referred out belonging to various patients will be displayed with Patient and Accession Number details.</p></li><li><p>Enter the results for desired tests in the corresponding &ldquo;Result&rdquo; field.</p></li><li><p>Click on the &ldquo;Notes&rdquo; icon and add the notes if required.</p></li><li><p>To upload a desired report file click on the corresponding &ldquo;Choose File&rdquo; button and select the desired file from your system&rsquo;s local disk.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"633\" ac:original-width=\"1351\" ac:width=\"680\"><ri:attachment ri:filename=\"Screenshot from 2021-03-04 20-46-50.png\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p>Check &ldquo;Mark as Done&rdquo; if the result entry is complete either by entering a result or by uploading a file on the same test or another test. Result for that test will go to validation phase if and only if the test is marked as done.</p></li><li><p>Click on the &ldquo;Save&rdquo; button to save the entered details.</p></li><li><p>Once the results have been entered and saved, the same will be available for validation along with the locally done tests in &ldquo;Validation&rdquo; screen.</p></li><li><p>Accordingly the &ldquo;Pending Validation&rdquo; column count in the Lab Dashboard will get updated.</p></li></ol><p /></ac:layout-cell><ac:layout-cell><p /><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" data-layout=\"default\" ac:local-id=\"ee8c733f-d723-4bb6-9568-a049b4a0b444\" ac:macro-id=\"5d55e718-f27e-4b7b-951c-2c55e4c2d3d1\" /><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"b872f364-a683-4fda-b01e-bfc3f6c7575f\"><ac:rich-text-body><p><strong>Feature Details</strong></p><p><ac:link><ri:page ri:content-title=\"Laboratory Management\" ri:version-at-save=\"7\" /><ac:link-body>Feature Guide - Laboratory Management</ac:link-body></ac:link> </p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"5ba3348f-d274-4de0-a71d-9db4fe454215\"><ac:rich-text-body><p><strong>Implementation Details</strong></p><p><ac:link><ri:page ri:content-title=\"Laboratory Module\" ri:version-at-save=\"22\" /><ac:link-body>Implementer's Guide - Laboratory Module</ac:link-body></ac:link> </p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/1163984947"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p /><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b54738aa-765b-499f-9f98-25833b8ac9ce\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This feature is available from V0.93-Bahmni</p></div></div><p>Tests which cannot be performed locally can be referred out to external laboratories /centres and once the results are available, enter the same in the system.</p><h2 id=\"ReferringoutLaboratoryTest(s)andResultEntryforthesame-UsedBy\">Used By</h2><p>It is used by lab technicians when executing lab orders and performing tests.</p><h2 id=\"ReferringoutLaboratoryTest(s)andResultEntryforthesame-HowisitUsed?\">How is it Used?</h2><h3 id=\"ReferringoutLaboratoryTest(s)andResultEntryforthesame-1.Referteststoexternallaboratory/centre\">1. Refer tests to external laboratory / centre</h3><ol><li><p>Go to Samples Collected - Today tab, which will be listing all Lab orders of the patients for which the sample has been already collected today.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1163984947/Lab%20Dashboard%20-%20Samples%20Collected.jpeg?version=2&amp;modificationDate=1616655724747&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1163984947/Lab%20Dashboard%20-%20Samples%20Collected.jpeg?version=2&amp;modificationDate=1616655724747&amp;cacheVersion=1&amp;api=v2\" data-height=\"305\" data-width=\"1078\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2277572800\" data-linked-resource-version=\"2\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Lab Dashboard - Samples Collected.jpeg\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/jpeg\" data-linked-resource-container-id=\"1163984947\" data-linked-resource-container-version=\"10\" data-media-id=\"169d34bc-5096-4224-af4d-0569773e011b\" data-media-type=\"file\"></span><p><strong>                                                               Lab Dashboard - Samples Collected</strong></p></li><li><p>Search the desired patient’s order entering the Accession Number / Patient ID / Name in respective fields in the top row of the grid.</p></li><li><p>Click on the “Result” icon under the “Action” column, which will navigate you to the “Results” screen displaying all the respective tests  with “Result” and related fields for each test.</p></li><li><p>Now select the flag appearing before the Referral Reason field and then select the Referral reason &amp; Institute.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1163984947/image-20200330-103948.png?version=1&amp;modificationDate=1585564805647&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1163984947/image-20200330-103948.png?version=1&amp;modificationDate=1585564805647&amp;cacheVersion=1&amp;api=v2\" data-height=\"375\" data-width=\"970\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1164050525\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200330-103948.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1163984947\" data-linked-resource-container-version=\"10\" data-media-id=\"f096d234-6459-4bbb-9ced-3068d492ff66\" data-media-type=\"file\"></span><p /></li><li><p>Capture the notes and upload the desired file using respective features, if required.</p></li><li><p>Click on the “Save” button to save the entered details.</p></li><li><p>Referred Out test(s) count can be seen in the Lab Dashboard under Samples Collected - Today / Backlog - <strong>Referred Out</strong> column.</p></li><li><p>Count shown in <strong>Total </strong>column is including the Referred Out tests count.</p></li></ol><h3 id=\"ReferringoutLaboratoryTest(s)andResultEntryforthesame-2.Enterresultsforreferredoutlabtest(s)\">2. Enter results for referred out lab test(s)</h3><ol><li><p>After login into the Laboratory app, mouse over on the “Result” menu at the top of the screen and click on “Referred Out” option in the Result menu drop down, which will navigate you to the “Referrals” screen.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1163984947/Referred%20Out%20Tests.jpeg?version=2&amp;modificationDate=1616655772851&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1163984947/Referred%20Out%20Tests.jpeg?version=2&amp;modificationDate=1616655772851&amp;cacheVersion=1&amp;api=v2\" data-height=\"308\" data-width=\"1062\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2277572790\" data-linked-resource-version=\"2\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Referred Out Tests.jpeg\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/jpeg\" data-linked-resource-container-id=\"1163984947\" data-linked-resource-container-version=\"10\" data-media-id=\"d82b0a5e-9b6f-4ef0-b84e-2a85adc823d1\" data-media-type=\"file\"></span></li><li><p>In the “Referrals” screen, all the tests which have been referred out belonging to various patients will be displayed with Patient and Accession Number details.</p></li><li><p>Enter the results for desired tests in the corresponding “Result” field.</p></li><li><p>Click on the “Notes” icon and add the notes if required.</p></li><li><p>To upload a desired report file click on the corresponding “Choose File” button and select the desired file from your system’s local disk.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"680\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/1163984947/Screenshot%20from%202021-03-04%2020-46-50.png?version=1&amp;modificationDate=1614871034449&amp;cacheVersion=1&amp;api=v2&amp;width=680&amp;height=318\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1163984947/Screenshot%20from%202021-03-04%2020-46-50.png?version=1&amp;modificationDate=1614871034449&amp;cacheVersion=1&amp;api=v2\" data-height=\"633\" data-width=\"1351\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2213675024\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot from 2021-03-04 20-46-50.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1163984947\" data-linked-resource-container-version=\"10\" data-media-id=\"78c637bb-0f61-43fd-b09a-0a08db5b4a5a\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/1163984947/Screenshot%20from%202021-03-04%2020-46-50.png?version=1&amp;modificationDate=1614871034449&amp;cacheVersion=1&amp;api=v2&amp;width=1351&amp;height=633 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/1163984947/Screenshot%20from%202021-03-04%2020-46-50.png?version=1&amp;modificationDate=1614871034449&amp;cacheVersion=1&amp;api=v2&amp;width=680&amp;height=318 1x\"></span><p /></li><li><p>Check “Mark as Done” if the result entry is complete either by entering a result or by uploading a file on the same test or another test. Result for that test will go to validation phase if and only if the test is marked as done.</p></li><li><p>Click on the “Save” button to save the entered details.</p></li><li><p>Once the results have been entered and saved, the same will be available for validation along with the locally done tests in “Validation” screen.</p></li><li><p>Accordingly the “Pending Validation” column count in the Lab Dashboard will get updated.</p></li></ol><p /></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<p /><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-layout=\"default\" data-local-id=\"ee8c733f-d723-4bb6-9568-a049b4a0b444\" data-macro-id=\"5d55e718-f27e-4b7b-951c-2c55e4c2d3d1\" data-macro-name=\"toc\"> </div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b872f364-a683-4fda-b01e-bfc3f6c7575f\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>Feature Details</strong></p><p><a href=\"/wiki/spaces/BAH/pages/32604211/Laboratory+Management\" data-linked-resource-id=\"32604211\" data-linked-resource-version=\"7\" data-linked-resource-type=\"page\">Feature Guide - Laboratory Management</a> </p></div></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"5ba3348f-d274-4de0-a71d-9db4fe454215\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>Implementation Details</strong></p><p><a href=\"/wiki/spaces/BAH/pages/32014586/Laboratory+Module\" data-linked-resource-id=\"32014586\" data-linked-resource-version=\"22\" data-linked-resource-type=\"page\">Implementer's Guide - Laboratory Module</a> </p></div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/1163984947"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/1163984947/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1163984947/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 874
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/1163984947/child",
+    "restrictions": "/rest/api/content/1163984947/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/1163984947/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=1163984947",
+    "webui": "/spaces/BAH/pages/1163984947/Referring+out+Laboratory+Test+s+and+Result+Entry+for+the+same",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/1163984947",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1163984947",
+    "tinyui": "/x/MwBhRQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

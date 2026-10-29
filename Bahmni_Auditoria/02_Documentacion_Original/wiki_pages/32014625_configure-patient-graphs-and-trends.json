@@ -1,0 +1,171 @@
+{
+  "id": "32014625",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/32014625",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzIwMTQ2MjU=",
+  "status": "current",
+  "title": "Configure Patient Graphs and Trends",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2015-11-04T06:30:47.651Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014625/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2022-11-20T11:34:46.581Z",
+    "friendlyWhen": "Nov 20, 2022",
+    "message": "Removed collapsible due to Atlassian bug",
+    "number": 19,
+    "minorEdit": false,
+    "syncRev": "0.RhCu-zHpjTtbMvSlTa4TqA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$32014625.76",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/32014625"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014625/version/19"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p>The Trends Tab allows the user to view Observations for a patient across visits. The observations displayed in this tab can be configured.</p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"208c3a21-09b6-4244-9f01-4925fb3d9fab\"><ac:rich-text-body><p>The <em>Trends</em> tab is &quot;just-another-tab&quot; on the Patient Dashboard, with name as <em>Trends</em>. One can name it anything, and use chart related display controls to create this dashboard.</p></ac:rich-text-body></ac:structured-macro><p><br /></p><p><ac:image ac:align=\"center\" ac:border=\"true\" ac:width=\"700\"><ri:attachment ri:filename=\"Trends.png\" ri:version-at-save=\"1\" /></ac:image></p><p style=\"text-align: center;\"><strong>Trends Tab</strong></p><h2>Steps</h2><h3>1.&nbsp;Display Trends/Graphs tab</h3><p>To configure or discard Trends/Graphs tab refer to the configuration snippet below:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"478f9073-da13-40fe-8db9-3efff6e16ceb\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Sample Configuration</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"trends\": {\n        \"displayByDefault\": true,\n        \"maxRecentlyViewedPatients\": 10,\n        \"sections\": {\n            \"patientInformation\": {\n                \"type\": \"patientInformation\",\n                \"patientAttributes\": [],\n                \"addressFields\": [],\n                \"displayOrder\": 0,\n                \"translationKey\": \"DASHBOARD_TITLE_PATIENT_INFORMATION_KEY\"\n            }\n}]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"4fd48fa9-5b62-4f09-8d38-dfb20affd9c9\"><ac:parameter ac:name=\"title\">Example</ac:parameter><ac:rich-text-body><p><a href=\"https://github.com/Bhamni/default-config/blob/master/openmrs/apps/clinical/dashboard.json\">https://github.com/Bhamni/default-config/blob/master/openmrs/apps/clinical/dashboard.json</a></p></ac:rich-text-body></ac:structured-macro><p><br /></p><h3>2. Add Observations to Trends Tab</h3><p>To configure Observations to be displayed in the tab refer to the configuration snippet below:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6a0ba3eb-d552-4046-a615-f4a2ccba88d4\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Sample Configuration</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[   \"weight/BMI\": {\n                \"type\": \"observationGraph\",\n                \"config\": {\n                    \"yAxisConcepts\": [\n                        \"Body mass index\"\n                    ],\n                    \"xAxisConcept\": \"observationDateTime\",\n                    \"numberOfVisits\": 10\n                },\n                \"displayOrder\": 6,\n                \"title\": \"BMI\"\n            },\n            \"Lab, Hemoglobin test result\": {\n                \"type\": \"observationGraph\",\n                \"config\": {\n                    \"yAxisConcepts\": [\n                        \"lab, Hemoglobin test result\"\n                    ],\n                    \"xAxisConcept\": \"observationDateTime\",\n                    \"numberOfVisits\": 10\n                },\n                \"displayOrder\": 6,\n                \"title\": \"Hemoglobin\"\n            },\n            \"AST\": {\n                \"type\": \"observationGraph\",\n                \"config\": {\n                    \"yAxisConcepts\": [\n                        \"Lab, AST\"\n                    ],\n                    \"xAxisConcept\": \"observationDateTime\",\n                    \"numberOfVisits\": 10\n                },\n                \"displayOrder\": 8,\n                \"title\": \"AST\"\n            }\n        },\n        \"translationKey\": \"DASHBOARD_TAB_TRENDS_KEY\"\n    }\n}]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"64e9464e-ac5e-40ac-98d8-81a08975506c\"><ac:parameter ac:name=\"title\">Example</ac:parameter><ac:rich-text-body><p><a href=\"https://github.com/Bhamni/default-config/blob/master/openmrs/apps/clinical/dashboard.json\">https://github.com/Bhamni/default-config/blob/master/openmrs/apps/clinical/dashboard.json</a></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e7b3588e-96e1-4de3-a29d-46427cf35a1e\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"1eef5f60-d9fa-4d67-bdce-574372004a61\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Clinical\" ri:version-at-save=\"9\" /><ac:plain-text-link-body><![CDATA[Clinical Services - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Clinical Services\" ri:version-at-save=\"48\" /><ac:plain-text-link-body><![CDATA[Clinical Services - User Guide]]></ac:plain-text-link-body></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"1e4c02a5-7279-4edb-ada2-45a3fec352fa\"><ac:parameter ac:name=\"titleColor\">White</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><ac:link ac:anchor=\"GraphControl\"><ri:page ri:content-title=\"Display Controls\" ri:version-at-save=\"155\" /><ac:plain-text-link-body><![CDATA[Observation Graph Control]]></ac:plain-text-link-body></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/32014625"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ConfigurePatientGraphsandTrends-PurposeandBenefits\">Purpose and Benefits</h2><p>The Trends Tab allows the user to view Observations for a patient across visits. The observations displayed in this tab can be configured.</p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"208c3a21-09b6-4244-9f01-4925fb3d9fab\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>The <em>Trends</em> tab is &quot;just-another-tab&quot; on the Patient Dashboard, with name as <em>Trends</em>. One can name it anything, and use chart related display controls to create this dashboard.</p></div></div><p><br/></p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014625/Trends.png?version=1&amp;modificationDate=1447334514814&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=325\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014625/Trends.png?version=1&amp;modificationDate=1447334514814&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"32604519\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Trends.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32014625\" data-linked-resource-container-version=\"19\" data-media-id=\"36243ddc-e1dc-416c-8b9b-70ee54c123b4\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014625/Trends.png?version=1&amp;modificationDate=1447334514814&amp;cacheVersion=1&amp;api=v2&amp;width=1224&amp;height=569 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014625/Trends.png?version=1&amp;modificationDate=1447334514814&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=325 1x\"></span></p><p style=\"text-align: center;\"><strong>Trends Tab</strong></p><h2 id=\"ConfigurePatientGraphsandTrends-Steps\">Steps</h2><h3 id=\"ConfigurePatientGraphsandTrends-1.DisplayTrends/Graphstab\">1. Display Trends/Graphs tab</h3><p>To configure or discard Trends/Graphs tab refer to the configuration snippet below:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"478f9073-da13-40fe-8db9-3efff6e16ceb\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Sample Configuration</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;trends&quot;: {\n        &quot;displayByDefault&quot;: true,\n        &quot;maxRecentlyViewedPatients&quot;: 10,\n        &quot;sections&quot;: {\n            &quot;patientInformation&quot;: {\n                &quot;type&quot;: &quot;patientInformation&quot;,\n                &quot;patientAttributes&quot;: [],\n                &quot;addressFields&quot;: [],\n                &quot;displayOrder&quot;: 0,\n                &quot;translationKey&quot;: &quot;DASHBOARD_TITLE_PATIENT_INFORMATION_KEY&quot;\n            }\n}</pre>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4fd48fa9-5b62-4f09-8d38-dfb20affd9c9\" data-macro-name=\"info\"><p class=\"title\">Example</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><a class=\"external-link\" href=\"https://github.com/Bhamni/default-config/blob/master/openmrs/apps/clinical/dashboard.json\" rel=\"nofollow\">https://github.com/Bhamni/default-config/blob/master/openmrs/apps/clinical/dashboard.json</a></p></div></div><p><br/></p><h3 id=\"ConfigurePatientGraphsandTrends-2.AddObservationstoTrendsTab\">2. Add Observations to Trends Tab</h3><p>To configure Observations to be displayed in the tab refer to the configuration snippet below:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6a0ba3eb-d552-4046-a615-f4a2ccba88d4\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Sample Configuration</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">   &quot;weight/BMI&quot;: {\n                &quot;type&quot;: &quot;observationGraph&quot;,\n                &quot;config&quot;: {\n                    &quot;yAxisConcepts&quot;: [\n                        &quot;Body mass index&quot;\n                    ],\n                    &quot;xAxisConcept&quot;: &quot;observationDateTime&quot;,\n                    &quot;numberOfVisits&quot;: 10\n                },\n                &quot;displayOrder&quot;: 6,\n                &quot;title&quot;: &quot;BMI&quot;\n            },\n            &quot;Lab, Hemoglobin test result&quot;: {\n                &quot;type&quot;: &quot;observationGraph&quot;,\n                &quot;config&quot;: {\n                    &quot;yAxisConcepts&quot;: [\n                        &quot;lab, Hemoglobin test result&quot;\n                    ],\n                    &quot;xAxisConcept&quot;: &quot;observationDateTime&quot;,\n                    &quot;numberOfVisits&quot;: 10\n                },\n                &quot;displayOrder&quot;: 6,\n                &quot;title&quot;: &quot;Hemoglobin&quot;\n            },\n            &quot;AST&quot;: {\n                &quot;type&quot;: &quot;observationGraph&quot;,\n                &quot;config&quot;: {\n                    &quot;yAxisConcepts&quot;: [\n                        &quot;Lab, AST&quot;\n                    ],\n                    &quot;xAxisConcept&quot;: &quot;observationDateTime&quot;,\n                    &quot;numberOfVisits&quot;: 10\n                },\n                &quot;displayOrder&quot;: 8,\n                &quot;title&quot;: &quot;AST&quot;\n            }\n        },\n        &quot;translationKey&quot;: &quot;DASHBOARD_TAB_TRENDS_KEY&quot;\n    }\n}</pre>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"64e9464e-ac5e-40ac-98d8-81a08975506c\" data-macro-name=\"tip\"><p class=\"title\">Example</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><a class=\"external-link\" href=\"https://github.com/Bhamni/default-config/blob/master/openmrs/apps/clinical/dashboard.json\" rel=\"nofollow\">https://github.com/Bhamni/default-config/blob/master/openmrs/apps/clinical/dashboard.json</a></p></div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e7b3588e-96e1-4de3-a29d-46427cf35a1e\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"1eef5f60-d9fa-4d67-bdce-574372004a61\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32014350/Clinical\" data-linked-resource-id=\"32014350\" data-linked-resource-version=\"9\" data-linked-resource-type=\"page\">Clinical Services - Feature Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/32604195/Clinical+Services\" data-linked-resource-id=\"32604195\" data-linked-resource-version=\"48\" data-linked-resource-type=\"page\">Clinical Services - User Guide</a></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"1e4c02a5-7279-4edb-ada2-45a3fec352fa\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: White;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/37945573/Display+Controls#DisplayControls-GraphControl\" data-linked-resource-id=\"37945573\" data-linked-resource-version=\"155\" data-linked-resource-type=\"page\">Observation Graph Control</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/32014625"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/32014625/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014625/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/32014625/child",
+    "restrictions": "/rest/api/content/32014625/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/32014625/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=32014625",
+    "webui": "/spaces/BAH/pages/32014625/Configure+Patient+Graphs+and+Trends",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/32014625",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014625",
+    "tinyui": "/x/IYHoAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

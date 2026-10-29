@@ -1,0 +1,172 @@
+{
+  "id": "2306540061",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2306540061",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMwNjU0MDA2MQ==",
+  "status": "current",
+  "title": "Patients",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5ff6975591bb2e0108e513c3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "venkatesh bavisetti",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5ff6975591bb2e0108e513c3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Bavisetti Venkatesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5ff6975591bb2e0108e513c3"
+      }
+    },
+    "createdDate": "2021-04-05T09:04:16.744Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306540061/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5ff6975591bb2e0108e513c3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "venkatesh bavisetti",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5ff6975591bb2e0108e513c3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Bavisetti Venkatesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5ff6975591bb2e0108e513c3"
+      }
+    },
+    "when": "2021-04-05T09:05:13.817Z",
+    "friendlyWhen": "Apr 05, 2021",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.confluence$content$2306540061.8",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2306540061.9",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2306540061"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306540061/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" data-layout=\"default\" ac:local-id=\"853deab1-e742-4357-8c87-eba3ff0776e0\" ac:macro-id=\"32e156e8-80a6-4483-8069-b135e92f5804\" /><h3 style=\"text-align: center;\"><strong>Configuration</strong></h3><h5><strong>incrementalUpdateConfig is applicable</strong> ( Refer <a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</h5><h5><strong>ColumnsToIgnore apply for this module ( Refer  </strong><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"e8f27655-c4f5-4751-b8c4-fd4e8128194d\"><ac:plain-text-body><![CDATA[{\n      \"name\": \"Patients\",\n      \"type\": \"patients\",\n      \"chunkSizeToRead\": \"500\"\n      \n}]]></ac:plain-text-body></ac:structured-macro><hr /><h3 style=\"text-align: center;\">Existing OpenMRS tables</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"62815b95-7ec8-49d6-9d18-bcddb243d332\"><ac:plain-text-body><![CDATA[patient\npatient_program\npatient_state\nperson\nperson_name\npatient_identifier\nusers\nprogram\nprogram_workflow_state\nconcept_view]]></ac:plain-text-body></ac:structured-macro><hr /><h3 style=\"text-align: center;\"> Flattened Mart Tables</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"218f5826-844f-4659-bc9c-b0032072c94f\"><ac:plain-text-body><![CDATA[patient_state_default\npatient_allergy_status_default\npatient_identifier]]></ac:plain-text-body></ac:structured-macro><h4><strong>Incremental Config:</strong></h4><p>Please check <a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update#2.-Patients-Job:\">this</a> section on how to enable/disable incremental config for specific mart tables.</p><p><strong>a)&nbsp; patient_state_default - </strong>This table gives details about patient state transitions in a program.</p><p>Openmrs tables used: patient, patient_program, program, patient_state, program_workflow_state, concept_view</p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>patient_state_id</p></td><td><p>Unique column id from patient_state table from openmrs</p></td></tr><tr><td><p>patient_program_id</p></td><td><p>Unique id generated in DB when a patient is enrolled to a program</p></td></tr><tr><td><p>patient_id</p></td><td><p>Patient id from openmrs DB</p></td></tr><tr><td><p>program_id</p></td><td><p>Program ID from the program table</p></td></tr><tr><td><p>program_name</p></td><td><p>Name of the program to which the patient is enrolled</p></td></tr><tr><td><p>state</p></td><td><p>Program state id</p></td></tr><tr><td><p>state_name</p></td><td><p>Name of the program state</p></td></tr><tr><td><p>start_date</p></td><td><p>Start date of the patient state</p></td></tr><tr><td><p>end_date</p></td><td><p>End date of the patient state</p></td></tr><tr><td><p>creator_id</p></td><td><p>Id of the creator who started the patient sate</p></td></tr><tr><td><p>creator_name</p></td><td><p>Name of the creator who started the patient state</p></td></tr><tr><td><p>date_created</p></td><td><p>Date on the which the patient moved to this state</p></td></tr><tr><td><p>date_changed</p></td><td><p>Date on which any changes to the state was made</p></td></tr><tr><td><p>changed_by_id</p></td><td><p>Id of the user who made changes</p></td></tr><tr><td><p>changed_by_name</p></td><td><p>Name of the user who made changes</p></td></tr></tbody></table><p>b) <strong>patient_allergy_status_default - </strong>This table displays allergy status information of each patient, present in the person table</p><p>Openmrs tables used: patient</p><p>Mart Table :- <strong>patient_allergy_status</strong></p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p><strong>Column Name</strong></p></td><td><p><strong>Description</strong></p></td></tr><tr><td><p>patient_id</p></td><td><p>Patient id from openmrs DB</p></td></tr><tr><td><p>allergy_status</p></td><td><p> Allergy status of the patient, if the value is not provided the &ldquo;Unknown&rdquo; will be displayed by default.</p></td></tr></tbody></table><p>c) <strong>patient_identifier - </strong>This is an EAV table. Columns are the pivoted values in identifier_type_table.</p><p>Openmrs tables used: patient, person, patient_identifier</p><p>Mart Table :- <strong>patient_identifier</strong></p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p><strong>Column Name</strong></p></td><td><p><strong>Description</strong></p></td></tr><tr><td><p>person_attribute_type_id</p></td><td><p>Id of person attribute type</p></td></tr><tr><td><p>name</p></td><td><p>Name of the person attribute</p></td></tr><tr><td><p>description</p></td><td><p>Description of the person attribute</p></td></tr></tbody></table><p /><hr /><h3 style=\"text-align: center;\">Mart Views</h3><p>a)&nbsp; &nbsp; <strong>patient_details_view</strong> :</p><p>This view provides those patient details which help in identifying a patient in terms of Nationality, camp, and special needs like caretaker requirements, legal guardian, etc and attributes pertaining to those needs</p><p>Mart tables used: person_details, person_attributes</p><p><strong>b)&nbsp; &nbsp; patient_information_view:</strong></p><p>This view provides all the patient attributes, barring the PII, as captured in the Registration module.</p><p>Mart tables used : patient_identifier, person_details, person_attributes, person_address</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2306540061"
+      }
+    },
+    "view": {
+      "value": "<div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-layout=\"default\" data-local-id=\"853deab1-e742-4357-8c87-eba3ff0776e0\" data-macro-id=\"32e156e8-80a6-4483-8069-b135e92f5804\" data-macro-name=\"toc\"> </div><h3 style=\"text-align: center;\" id=\"Patients-Configuration\"><strong>Configuration</strong></h3><h5 id=\"Patients-incrementalUpdateConfigisapplicable(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update)\"><strong>incrementalUpdateConfig is applicable</strong> ( Refer <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</h5><h5 id=\"Patients-ColumnsToIgnoreapplyforthismodule(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix)\"><strong>ColumnsToIgnore apply for this module ( Refer  </strong><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e8f27655-c4f5-4751-b8c4-fd4e8128194d\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n      &quot;name&quot;: &quot;Patients&quot;,\n      &quot;type&quot;: &quot;patients&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;\n      \n}</pre>\n</div></div><hr/><h3 style=\"text-align: center;\" id=\"Patients-ExistingOpenMRStables\">Existing OpenMRS tables</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"62815b95-7ec8-49d6-9d18-bcddb243d332\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">patient\npatient_program\npatient_state\nperson\nperson_name\npatient_identifier\nusers\nprogram\nprogram_workflow_state\nconcept_view</pre>\n</div></div><hr/><h3 style=\"text-align: center;\" id=\"Patients-FlattenedMartTables\"> Flattened Mart Tables</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"218f5826-844f-4659-bc9c-b0032072c94f\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">patient_state_default\npatient_allergy_status_default\npatient_identifier</pre>\n</div></div><h4 id=\"Patients-IncrementalConfig:\"><strong>Incremental Config:</strong></h4><p>Please check <a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update#2.-Patients-Job:\" rel=\"nofollow\">this</a> section on how to enable/disable incremental config for specific mart tables.</p><p><strong>a)  patient_state_default - </strong>This table gives details about patient state transitions in a program.</p><p>Openmrs tables used: patient, patient_program, program, patient_state, program_workflow_state, concept_view</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>patient_state_id</p></td><td class=\"confluenceTd\"><p>Unique column id from patient_state table from openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>patient_program_id</p></td><td class=\"confluenceTd\"><p>Unique id generated in DB when a patient is enrolled to a program</p></td></tr><tr><td class=\"confluenceTd\"><p>patient_id</p></td><td class=\"confluenceTd\"><p>Patient id from openmrs DB</p></td></tr><tr><td class=\"confluenceTd\"><p>program_id</p></td><td class=\"confluenceTd\"><p>Program ID from the program table</p></td></tr><tr><td class=\"confluenceTd\"><p>program_name</p></td><td class=\"confluenceTd\"><p>Name of the program to which the patient is enrolled</p></td></tr><tr><td class=\"confluenceTd\"><p>state</p></td><td class=\"confluenceTd\"><p>Program state id</p></td></tr><tr><td class=\"confluenceTd\"><p>state_name</p></td><td class=\"confluenceTd\"><p>Name of the program state</p></td></tr><tr><td class=\"confluenceTd\"><p>start_date</p></td><td class=\"confluenceTd\"><p>Start date of the patient state</p></td></tr><tr><td class=\"confluenceTd\"><p>end_date</p></td><td class=\"confluenceTd\"><p>End date of the patient state</p></td></tr><tr><td class=\"confluenceTd\"><p>creator_id</p></td><td class=\"confluenceTd\"><p>Id of the creator who started the patient sate</p></td></tr><tr><td class=\"confluenceTd\"><p>creator_name</p></td><td class=\"confluenceTd\"><p>Name of the creator who started the patient state</p></td></tr><tr><td class=\"confluenceTd\"><p>date_created</p></td><td class=\"confluenceTd\"><p>Date on the which the patient moved to this state</p></td></tr><tr><td class=\"confluenceTd\"><p>date_changed</p></td><td class=\"confluenceTd\"><p>Date on which any changes to the state was made</p></td></tr><tr><td class=\"confluenceTd\"><p>changed_by_id</p></td><td class=\"confluenceTd\"><p>Id of the user who made changes</p></td></tr><tr><td class=\"confluenceTd\"><p>changed_by_name</p></td><td class=\"confluenceTd\"><p>Name of the user who made changes</p></td></tr></tbody></table></div><p>b) <strong>patient_allergy_status_default - </strong>This table displays allergy status information of each patient, present in the person table</p><p>Openmrs tables used: patient</p><p>Mart Table :- <strong>patient_allergy_status</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>patient_id</p></td><td class=\"confluenceTd\"><p>Patient id from openmrs DB</p></td></tr><tr><td class=\"confluenceTd\"><p>allergy_status</p></td><td class=\"confluenceTd\"><p> Allergy status of the patient, if the value is not provided the “Unknown” will be displayed by default.</p></td></tr></tbody></table></div><p>c) <strong>patient_identifier - </strong>This is an EAV table. Columns are the pivoted values in identifier_type_table.</p><p>Openmrs tables used: patient, person, patient_identifier</p><p>Mart Table :- <strong>patient_identifier</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>person_attribute_type_id</p></td><td class=\"confluenceTd\"><p>Id of person attribute type</p></td></tr><tr><td class=\"confluenceTd\"><p>name</p></td><td class=\"confluenceTd\"><p>Name of the person attribute</p></td></tr><tr><td class=\"confluenceTd\"><p>description</p></td><td class=\"confluenceTd\"><p>Description of the person attribute</p></td></tr></tbody></table></div><p /><hr/><h3 style=\"text-align: center;\" id=\"Patients-MartViews\">Mart Views</h3><p>a)    <strong>patient_details_view</strong> :</p><p>This view provides those patient details which help in identifying a patient in terms of Nationality, camp, and special needs like caretaker requirements, legal guardian, etc and attributes pertaining to those needs</p><p>Mart tables used: person_details, person_attributes</p><p><strong>b)    patient_information_view:</strong></p><p>This view provides all the patient attributes, barring the PII, as captured in the Registration module.</p><p>Mart tables used : patient_identifier, person_details, person_attributes, person_address</p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2306540061"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2306540061/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306540061/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1027
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2306540061/child",
+    "restrictions": "/rest/api/content/2306540061/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2306540061/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2306540061",
+    "webui": "/spaces/BAH/pages/2306540061/Patients",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2306540061",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306540061",
+    "tinyui": "/x/HQJ7iQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "id": "2434990081",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2434990081",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjQzNDk5MDA4MQ==",
+  "status": "current",
+  "title": "Configuring display order of patient names",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5e943471088a7e0c0f50e1e0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Buvaneswari Arun (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e943471088a7e0c0f50e1e0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Buvaneswari Arun (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e943471088a7e0c0f50e1e0"
+      }
+    },
+    "createdDate": "2021-04-27T17:14:10.971Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2434990081/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5e943471088a7e0c0f50e1e0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Buvaneswari Arun (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e943471088a7e0c0f50e1e0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Buvaneswari Arun (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e943471088a7e0c0f50e1e0"
+      }
+    },
+    "when": "2021-04-27T17:15:48.505Z",
+    "friendlyWhen": "Apr 27, 2021",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.jLJ9h4bzWJMursbVxbRNqw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2434990081.15",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2434990081"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2434990081/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"5ffb1336-e297-45e4-a08f-1ec58131d208\"><ac:rich-text-body><p>This feature is available from 0.93V-Bahmni</p></ac:rich-text-body></ac:structured-macro><h2>Description</h2><p><strong>Configure Display Order of Patient Name Fields in Registration Page</strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4df3121f-a2a8-4cab-9039-6a2d41f7569d\"><ac:plain-text-body><![CDATA[\"patientNameDisplayOrder\": [\"firstName\", \"middleName\", \"lastName\"]]]></ac:plain-text-body></ac:structured-macro><p>Patient Name field can be configured only in Registration Page, by specifying the order in the &quot;patientNameDisplayOrder&quot; setting in <strong>app.json in registration</strong>.</p><ul><li><p>This configuration should include all three fields in the desired order.</p></li><li><p>If any invalid configuration is provided, the default behavior is to display <strong>FirsName, MiddleName, and LastName</strong>.</p></li><li><p>Use existing hide/show options of configuration for <strong>middleName and lastName</strong>.</p></li><li><p>The default behavior is to display FirstName, MiddleName, and LastName if a specific configuration is not specified in <strong>app.json in registration.</strong></p></li></ul><p><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2434990081"
+      }
+    },
+    "view": {
+      "value": "<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"5ffb1336-e297-45e4-a08f-1ec58131d208\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This feature is available from 0.93V-Bahmni</p></div></div><h2 id=\"Configuringdisplayorderofpatientnames-Description\">Description</h2><p><strong>Configure Display Order of Patient Name Fields in Registration Page</strong></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4df3121f-a2a8-4cab-9039-6a2d41f7569d\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;patientNameDisplayOrder&quot;: [&quot;firstName&quot;, &quot;middleName&quot;, &quot;lastName&quot;]</pre>\n</div></div><p>Patient Name field can be configured only in Registration Page, by specifying the order in the &quot;patientNameDisplayOrder&quot; setting in <strong>app.json in registration</strong>.</p><ul><li><p>This configuration should include all three fields in the desired order.</p></li><li><p>If any invalid configuration is provided, the default behavior is to display <strong>FirsName, MiddleName, and LastName</strong>.</p></li><li><p>Use existing hide/show options of configuration for <strong>middleName and lastName</strong>.</p></li><li><p>The default behavior is to display FirstName, MiddleName, and LastName if a specific configuration is not specified in <strong>app.json in registration.</strong></p></li></ul><p><br/></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2434990081"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2434990081/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2434990081/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1728787120
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2434990081/child",
+    "restrictions": "/rest/api/content/2434990081/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2434990081/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2434990081",
+    "webui": "/spaces/BAH/pages/2434990081/Configuring+display+order+of+patient+names",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2434990081",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2434990081",
+    "tinyui": "/x/AQAjkQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "id": "3117613272",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3117613272",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzExNzYxMzI3Mg==",
+  "status": "current",
+  "title": "Appointments Configuration (docker)",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "createdDate": "2022-12-09T07:39:41.704Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117613272/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2022-12-14T05:27:13.030Z",
+    "friendlyWhen": "Dec 14, 2022",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "1.confluence$content$3117613272.16",
+    "syncRevSource": "synchrony-ack",
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3117613272.19",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3117613272"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117613272/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p><a href=\"https://hub.docker.com/r/bahmni/appointments\">Bahmni/appointments</a> image runs the frontend for Bahmni Appointments Scheduling. The backend APIs for this application are running in OpenMRS. The image is built and published using Github Actions from <a href=\"https://github.com/Bahmni/openmrs-module-appointments-frontend\">openmrs-module-appointments-frontend</a> repository.</p><h2>Environment Configurations</h2><table data-layout=\"default\" ac:local-id=\"305443b7-cac5-40be-9ba3-c830c24daf34\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><th><p>Variable Name</p></th><th><p>Description</p></th></tr><tr><td><p>APPOINTMENTS_IMAGE_TAG</p></td><td><p>This value specifies which image version needs to be used for appointments service. List of tags can be found at <a href=\"https://hub.docker.com/r/bahmni/appointments/tags\">bahmni/appointments - Tags</a> .</p></td></tr><tr><td><p>APPOINTMENTS_PATH</p></td><td><p>Set this to the directory path where you have cloned <a href=\"https://github.com/Bahmni/openmrs-module-appointments-frontend\">openmrs-module-appointments-frontend</a> repository. Needed only for development purposes.</p></td></tr></tbody></table><p /><h2>Development on Appointments Frontend</h2><p>When you want to develop on appointments frontend code, follow the below steps.</p><ol start=\"1\"><li><p>Clone the <a href=\"https://github.com/Bahmni/openmrs-module-appointments-frontend\">openmrs-module-appointments-frontend</a> repository in your local machine.</p></li><li><p>Follow the instructions in the README of the repository to install the required tools and dependencies.</p></li><li><p>Copy the path of <code>openmrs-module-appointments-frontend</code> directory and set it to <code>APPOINTMENTS_PATH</code> environment variable in the .env file. Do not add / at the last.</p></li><li><p>Now open the docker-compose.yml file and in the appointments service uncomment the volumes section.</p></li><li><p>Start / Recreate appointments service by doing  <code>docker-compose up -d appointments</code></p></li><li><p>For every change you make, build the appointments code and the changes will reflect on refresh of the browser.</p></li></ol><p />",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3117613272"
+      }
+    },
+    "view": {
+      "value": "<p><a class=\"external-link\" href=\"https://hub.docker.com/r/bahmni/appointments\" rel=\"nofollow\">Bahmni/appointments</a> image runs the frontend for Bahmni Appointments Scheduling. The backend APIs for this application are running in OpenMRS. The image is built and published using Github Actions from <a class=\"external-link\" href=\"https://github.com/Bahmni/openmrs-module-appointments-frontend\" rel=\"nofollow\">openmrs-module-appointments-frontend</a> repository.</p><h2 id=\"AppointmentsConfiguration(docker)-EnvironmentConfigurations\">Environment Configurations</h2><div class=\"table-wrap\"><table data-layout=\"default\" data-local-id=\"305443b7-cac5-40be-9ba3-c830c24daf34\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><th class=\"confluenceTh\"><p>Variable Name</p></th><th class=\"confluenceTh\"><p>Description</p></th></tr><tr><td class=\"confluenceTd\"><p>APPOINTMENTS_IMAGE_TAG</p></td><td class=\"confluenceTd\"><p>This value specifies which image version needs to be used for appointments service. List of tags can be found at <a class=\"external-link\" href=\"https://hub.docker.com/r/bahmni/appointments/tags\" rel=\"nofollow\">bahmni/appointments - Tags</a> .</p></td></tr><tr><td class=\"confluenceTd\"><p>APPOINTMENTS_PATH</p></td><td class=\"confluenceTd\"><p>Set this to the directory path where you have cloned <a class=\"external-link\" href=\"https://github.com/Bahmni/openmrs-module-appointments-frontend\" rel=\"nofollow\">openmrs-module-appointments-frontend</a> repository. Needed only for development purposes.</p></td></tr></tbody></table></div><p /><h2 id=\"AppointmentsConfiguration(docker)-DevelopmentonAppointmentsFrontend\">Development on Appointments Frontend</h2><p>When you want to develop on appointments frontend code, follow the below steps.</p><ol start=\"1\"><li><p>Clone the <a class=\"external-link\" href=\"https://github.com/Bahmni/openmrs-module-appointments-frontend\" rel=\"nofollow\">openmrs-module-appointments-frontend</a> repository in your local machine.</p></li><li><p>Follow the instructions in the README of the repository to install the required tools and dependencies.</p></li><li><p>Copy the path of <code>openmrs-module-appointments-frontend</code> directory and set it to <code>APPOINTMENTS_PATH</code> environment variable in the .env file. Do not add / at the last.</p></li><li><p>Now open the docker-compose.yml file and in the appointments service uncomment the volumes section.</p></li><li><p>Start / Recreate appointments service by doing  <code>docker-compose up -d appointments</code></p></li><li><p>For every change you make, build the appointments code and the changes will reflect on refresh of the browser.</p></li></ol><p />",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3117613272"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3117613272/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117613272/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 696590648
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3117613272/child",
+    "restrictions": "/rest/api/content/3117613272/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3117613272/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3117613272",
+    "webui": "/spaces/BAH/pages/3117613272/Appointments+Configuration+docker",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3117613272",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117613272",
+    "tinyui": "/x/2ADTuQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

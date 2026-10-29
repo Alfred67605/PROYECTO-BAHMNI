@@ -1,0 +1,205 @@
+{
+  "id": "2983165963",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2983165963",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjk4MzE2NTk2Mw==",
+  "status": "current",
+  "title": "EHR Standards across various countries",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "createdDate": "2022-03-14T06:24:39.915Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2983165963/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2023-10-25T09:35:19.366Z",
+    "friendlyWhen": "Oct 25, 2023",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "syncRev": "0.confluence$content$2983165963.81",
+    "syncRevSource": "synchrony-ack",
+    "ncsStepVersion": "384",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$2983165963.92",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2983165963"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2983165963/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"7dec70ec-2e87-4b85-bf13-f2c3e8e9339b\"><ac:rich-text-body><p>Various countries have drafted EHR/EMR standards for ensuring patient safety, privacy, data protection, etc. This information can help in ensuring the EMR/HMIS you choose to adopt and implement in accordance with the local laws. Note, that in most cases, it is not just the product, but the actual <strong>end-to-end implementation</strong>, which includes the product, operations, infrastructure, operating procedures and practices, etc &ndash; that together need to be certified. The following page lists some of the important standards and policy documents for your reference. Please do let us know if you believe these are out-of-date, or some other references should be added.</p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"9a9129a3-c4dc-46d4-b1f2-ebd39d01169a\"><ac:rich-text-body><p>Please also refer this document (mentions the support for various global standards in <strong>Bahmni</strong>): <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Bahmni support for Open Global Standards, Interoperability, OpenHIE - (2023 Roadmap)\" ri:version-at-save=\"18\" /><ac:link-body>Bahmni support for Open Global Standards, Interoperability, OpenHIE - (2023 Roadmap)</ac:link-body></ac:link> </p></ac:rich-text-body></ac:structured-macro><table data-table-width=\"960\" data-layout=\"wide\" ac:local-id=\"662f0ac3-3de3-46a3-a353-b32862195cad\"><colgroup><col /><col style=\"width: 317.0px;\" /><col style=\"width: 159.0px;\" /><col style=\"width: 442.0px;\" /></colgroup><tbody><tr><th class=\"numberingColumn\" /><th><p><strong>Name / Link</strong></p></th><th><p><strong>Origin</strong></p></th><th><p><strong>Notes</strong></p></th></tr><tr><td class=\"numberingColumn\">1</td><td><p><a href=\"https://www.nhp.gov.in/NHPfiles/EHR-Standards-2016-MoHFW.pdf\">Electronic Health Record (EHR) Standards - 2016</a></p></td><td><p>India (Ministry of Health and Family Welfare)</p></td><td><p>Provides a structured overview of the key EHR standards with respect to Indian healthcare<br />system</p></td></tr><tr><td class=\"numberingColumn\">2</td><td><p><a href=\"https://www.nrces.in/standards/ehr-standards-for-india#standards_at_a_glance\">EHR Standards for India</a></p></td><td><p>India (National Resource Center for EHR Standards) </p></td><td><p>List of standards approved (or under development) for India, maintained by NRCeS, CDAC. Also maintained on the &ldquo;Standards&rdquo; TAB here: <a href=\"https://www.nrces.in/resources\" data-card-appearance=\"inline\">https://www.nrces.in/resources</a> </p></td></tr><tr><td class=\"numberingColumn\">3</td><td><p><a href=\"https://abdm.gov.in/home/Publications\">ABDM Policy Standards Documents</a></p></td><td><p>India (National Health Authority)</p></td><td><p>A series of documents for India&rsquo;s National eHealth Strategy (evolving standard).</p></td></tr><tr><td class=\"numberingColumn\">4</td><td><p><a href=\"http://ehealth.doh.gov.ph/images/HealthPrivacyCode.pdf\">Privacy Guidelines for the</a><br /><a href=\"http://ehealth.doh.gov.ph/images/HealthPrivacyCode.pdf\">Implementation of the Philippine Health Information Exchange</a></p></td><td><p>Philippines</p></td><td><p>Prescribe the procedures and guidelines that ensure the<br />protection of the privacy of a patient.</p></td></tr><tr><td class=\"numberingColumn\">5</td><td><p><a href=\"https://www.who.int/goe/publications/legal_framework_web.pdf\">WHO Legal Frameworks for Health</a></p></td><td><p>WHO (Global)</p></td><td><p>[2012] Based on the findings of the second global survey on eHealth.</p></td></tr><tr><td class=\"numberingColumn\">6</td><td><p><a href=\"https://www.scribd.com/document/643212421/Standard-for-Electronic-Health-Record-System-EHR-in-Ethiopia\">Standards for Electronic Health Record (EHR) in Ethiopia</a> (2021)</p></td><td><p>Ethiopia (Ministry of Health)</p></td><td><p>A comprehensive and detailed EHR standards document by MoH Ethiopia which is over 100+ pages, covering a lot of details on features, standards, data model, terminologies, security, implementation requirements, etc. </p></td></tr><tr><td class=\"numberingColumn\">7</td><td><p><a href=\"https://ec.europa.eu/health/other-pages/basic-page/overview-national-laws-electronic-health-records-eu-member-states-2016_en\">Overview of national laws on EHRs</a></p></td><td><p>EU Members</p></td><td><p>Overview of EHR laws across EU Member states</p></td></tr><tr><td class=\"numberingColumn\">8</td><td><p><a href=\"https://ec.europa.eu/health/system/files/2016-11/laws_united_kingdom_en_0.pdf\">National laws on EHRs in UK</a></p></td><td><p>UK</p></td><td><p>UK specific national laws for EHRs</p></td></tr><tr><td class=\"numberingColumn\">9</td><td><p><a href=\"https://www.healthit.gov/topic/safety/safer-guides\">SAFER Guides</a></p></td><td><p>US Department of Health</p></td><td><p>These 9 guides identify recommended practices to optimize the safety and safe use of EHRs. </p></td></tr><tr><td class=\"numberingColumn\">10</td><td><p><a href=\"https://www.iso.org/standard/52823.html\">ISO 18308:2011: Requirements for an electronic health record architecture</a></p></td><td><p>ISO (Global)</p></td><td><p>The requirements are formulated to ensure that these EHRs are faithful to the needs of healthcare delivery, are clinically valid and reliable, are ethically sound, meet prevailing legal requirements, support good clinical practice and facilitate data analysis for a multitude of purposes.</p></td></tr><tr><td class=\"numberingColumn\">11</td><td><p><a href=\"https://www.himss.org/what-we-do-solutions/digital-health-transformation/maturity-models/outpatient-electronic-medical-record-adoption-model-o-emram\">Outpatient Electronic Medical Record Adoption Model (O-EMRAM)</a></p></td><td><p>HIMSS (US/Global) </p></td><td><p>The HIMSS Outpatient Electronic Medical Record Adoption Model (O-EMRAM) is used to assess EMR implementation for outpatient facilities of hospitals and health systems globally, guiding the data-driven advancement of facilities through EMR technology.</p></td></tr><tr><td class=\"numberingColumn\">12</td><td><p><a href=\"https://www.hhs.gov/hipaa/for-professionals/privacy/index.html\">HIPPA</a></p></td><td><p>US Department of Health</p></td><td><p>The HIPAA Privacy Rule establishes national standards to protect individuals' medical records and other individually identifiable health information (collectively defined as &ldquo;protected health information&rdquo;) and applies to health plans, health care clearinghouses, and those health care providers that conduct certain health care transactions electronically.</p></td></tr></tbody></table>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2983165963"
+      }
+    },
+    "view": {
+      "value": "<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7dec70ec-2e87-4b85-bf13-f2c3e8e9339b\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Various countries have drafted EHR/EMR standards for ensuring patient safety, privacy, data protection, etc. This information can help in ensuring the EMR/HMIS you choose to adopt and implement in accordance with the local laws. Note, that in most cases, it is not just the product, but the actual <strong>end-to-end implementation</strong>, which includes the product, operations, infrastructure, operating procedures and practices, etc – that together need to be certified. The following page lists some of the important standards and policy documents for your reference. Please do let us know if you believe these are out-of-date, or some other references should be added.</p></div></div><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9a9129a3-c4dc-46d4-b1f2-ebd39d01169a\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Please also refer this document (mentions the support for various global standards in <strong>Bahmni</strong>): <a href=\"/wiki/spaces/BAH/pages/3176333313/Bahmni+support+for+Open+Global+Standards+Interoperability+OpenHIE+-+2023+Roadmap\" data-linked-resource-id=\"3176333313\" data-linked-resource-version=\"21\" data-linked-resource-type=\"page\">Bahmni support for Open Global Standards, Interoperability, OpenHIE - (2023 Roadmap)</a> </p></div></div><div class=\"table-wrap\"><table data-table-width=\"960\" data-layout=\"wide\" data-local-id=\"662f0ac3-3de3-46a3-a353-b32862195cad\" class=\"confluenceTable\"><colgroup><col/><col style=\"width: 317.0px;\"/><col style=\"width: 159.0px;\"/><col style=\"width: 442.0px;\"/></colgroup><tbody><tr><th class=\"numberingColumn confluenceTh\" /><th class=\"confluenceTh\"><p><strong>Name / Link</strong></p></th><th class=\"confluenceTh\"><p><strong>Origin</strong></p></th><th class=\"confluenceTh\"><p><strong>Notes</strong></p></th></tr><tr><td class=\"numberingColumn confluenceTd\">1</td><td class=\"confluenceTd\"><p><a class=\"external-link\" href=\"https://www.nhp.gov.in/NHPfiles/EHR-Standards-2016-MoHFW.pdf\" rel=\"nofollow\">Electronic Health Record (EHR) Standards - 2016</a></p></td><td class=\"confluenceTd\"><p>India (Ministry of Health and Family Welfare)</p></td><td class=\"confluenceTd\"><p>Provides a structured overview of the key EHR standards with respect to Indian healthcare<br/>system</p></td></tr><tr><td class=\"numberingColumn confluenceTd\">2</td><td class=\"confluenceTd\"><p><a class=\"external-link\" href=\"https://www.nrces.in/standards/ehr-standards-for-india#standards_at_a_glance\" rel=\"nofollow\">EHR Standards for India</a></p></td><td class=\"confluenceTd\"><p>India (National Resource Center for EHR Standards) </p></td><td class=\"confluenceTd\"><p>List of standards approved (or under development) for India, maintained by NRCeS, CDAC. Also maintained on the “Standards” TAB here: <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://www.nrces.in/resources\" rel=\"nofollow\">https://www.nrces.in/resources</a> </p></td></tr><tr><td class=\"numberingColumn confluenceTd\">3</td><td class=\"confluenceTd\"><p><a class=\"external-link\" href=\"https://abdm.gov.in/home/Publications\" rel=\"nofollow\">ABDM Policy Standards Documents</a></p></td><td class=\"confluenceTd\"><p>India (National Health Authority)</p></td><td class=\"confluenceTd\"><p>A series of documents for India’s National eHealth Strategy (evolving standard).</p></td></tr><tr><td class=\"numberingColumn confluenceTd\">4</td><td class=\"confluenceTd\"><p><a class=\"external-link\" href=\"http://ehealth.doh.gov.ph/images/HealthPrivacyCode.pdf\" rel=\"nofollow\">Privacy Guidelines for the</a><br/><a class=\"external-link\" href=\"http://ehealth.doh.gov.ph/images/HealthPrivacyCode.pdf\" rel=\"nofollow\">Implementation of the Philippine Health Information Exchange</a></p></td><td class=\"confluenceTd\"><p>Philippines</p></td><td class=\"confluenceTd\"><p>Prescribe the procedures and guidelines that ensure the<br/>protection of the privacy of a patient.</p></td></tr><tr><td class=\"numberingColumn confluenceTd\">5</td><td class=\"confluenceTd\"><p><a class=\"external-link\" href=\"https://www.who.int/goe/publications/legal_framework_web.pdf\" rel=\"nofollow\">WHO Legal Frameworks for Health</a></p></td><td class=\"confluenceTd\"><p>WHO (Global)</p></td><td class=\"confluenceTd\"><p>[2012] Based on the findings of the second global survey on eHealth.</p></td></tr><tr><td class=\"numberingColumn confluenceTd\">6</td><td class=\"confluenceTd\"><p><a class=\"external-link\" href=\"https://www.scribd.com/document/643212421/Standard-for-Electronic-Health-Record-System-EHR-in-Ethiopia\" rel=\"nofollow\">Standards for Electronic Health Record (EHR) in Ethiopia</a> (2021)</p></td><td class=\"confluenceTd\"><p>Ethiopia (Ministry of Health)</p></td><td class=\"confluenceTd\"><p>A comprehensive and detailed EHR standards document by MoH Ethiopia which is over 100+ pages, covering a lot of details on features, standards, data model, terminologies, security, implementation requirements, etc. </p></td></tr><tr><td class=\"numberingColumn confluenceTd\">7</td><td class=\"confluenceTd\"><p><a class=\"external-link\" href=\"https://ec.europa.eu/health/other-pages/basic-page/overview-national-laws-electronic-health-records-eu-member-states-2016_en\" rel=\"nofollow\">Overview of national laws on EHRs</a></p></td><td class=\"confluenceTd\"><p>EU Members</p></td><td class=\"confluenceTd\"><p>Overview of EHR laws across EU Member states</p></td></tr><tr><td class=\"numberingColumn confluenceTd\">8</td><td class=\"confluenceTd\"><p><a class=\"external-link\" href=\"https://ec.europa.eu/health/system/files/2016-11/laws_united_kingdom_en_0.pdf\" rel=\"nofollow\">National laws on EHRs in UK</a></p></td><td class=\"confluenceTd\"><p>UK</p></td><td class=\"confluenceTd\"><p>UK specific national laws for EHRs</p></td></tr><tr><td class=\"numberingColumn confluenceTd\">9</td><td class=\"confluenceTd\"><p><a class=\"external-link\" href=\"https://www.healthit.gov/topic/safety/safer-guides\" rel=\"nofollow\">SAFER Guides</a></p></td><td class=\"confluenceTd\"><p>US Department of Health</p></td><td class=\"confluenceTd\"><p>These 9 guides identify recommended practices to optimize the safety and safe use of EHRs. </p></td></tr><tr><td class=\"numberingColumn confluenceTd\">10</td><td class=\"confluenceTd\"><p><a class=\"external-link\" href=\"https://www.iso.org/standard/52823.html\" rel=\"nofollow\">ISO 18308:2011: Requirements for an electronic health record architecture</a></p></td><td class=\"confluenceTd\"><p>ISO (Global)</p></td><td class=\"confluenceTd\"><p>The requirements are formulated to ensure that these EHRs are faithful to the needs of healthcare delivery, are clinically valid and reliable, are ethically sound, meet prevailing legal requirements, support good clinical practice and facilitate data analysis for a multitude of purposes.</p></td></tr><tr><td class=\"numberingColumn confluenceTd\">11</td><td class=\"confluenceTd\"><p><a class=\"external-link\" href=\"https://www.himss.org/what-we-do-solutions/digital-health-transformation/maturity-models/outpatient-electronic-medical-record-adoption-model-o-emram\" rel=\"nofollow\">Outpatient Electronic Medical Record Adoption Model (O-EMRAM)</a></p></td><td class=\"confluenceTd\"><p>HIMSS (US/Global) </p></td><td class=\"confluenceTd\"><p>The HIMSS Outpatient Electronic Medical Record Adoption Model (O-EMRAM) is used to assess EMR implementation for outpatient facilities of hospitals and health systems globally, guiding the data-driven advancement of facilities through EMR technology.</p></td></tr><tr><td class=\"numberingColumn confluenceTd\">12</td><td class=\"confluenceTd\"><p><a class=\"external-link\" href=\"https://www.hhs.gov/hipaa/for-professionals/privacy/index.html\" rel=\"nofollow\">HIPPA</a></p></td><td class=\"confluenceTd\"><p>US Department of Health</p></td><td class=\"confluenceTd\"><p>The HIPAA Privacy Rule establishes national standards to protect individuals' medical records and other individually identifiable health information (collectively defined as “protected health information”) and applies to health plans, health care clearinghouses, and those health care providers that conduct certain health care transactions electronically.</p></td></tr></tbody></table></div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2983165963"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "safety",
+          "id": "2982510653",
+          "label": "safety"
+        },
+        {
+          "prefix": "global",
+          "name": "abdm",
+          "id": "2981167201",
+          "label": "abdm"
+        },
+        {
+          "prefix": "global",
+          "name": "standards",
+          "id": "2981068890",
+          "label": "standards"
+        },
+        {
+          "prefix": "global",
+          "name": "policy",
+          "id": "2982707278",
+          "label": "policy"
+        },
+        {
+          "prefix": "global",
+          "name": "privacy",
+          "id": "2983133228",
+          "label": "privacy"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 5,
+      "_links": {
+        "next": "/rest/api/content/2983165963/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2983165963/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 532274929
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2983165963/child",
+    "restrictions": "/rest/api/content/2983165963/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2983165963/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2983165963",
+    "webui": "/spaces/BAH/pages/2983165963/EHR+Standards+across+various+countries",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2983165963",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2983165963",
+    "tinyui": "/x/C4DPsQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

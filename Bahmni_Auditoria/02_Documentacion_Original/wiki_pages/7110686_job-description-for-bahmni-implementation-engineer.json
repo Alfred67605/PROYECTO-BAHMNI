@@ -1,0 +1,171 @@
+{
+  "id": "7110686",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/7110686",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNzExMDY4Ng==",
+  "status": "current",
+  "title": "Job description for Bahmni Implementation Engineer",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "createdDate": "2014-07-17T06:05:46.159Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/7110686/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2017-03-10T04:13:16.408Z",
+    "friendlyWhen": "Mar 10, 2017",
+    "message": "",
+    "number": 12,
+    "minorEdit": false,
+    "syncRev": "0.6ly2v3qJ408OvGaqWQptPA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$7110686.59",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/7110686"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/7110686/version/12"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"6e273c6f-ef2e-4674-8cf1-dc54f2ab4271\"><ac:rich-text-body><p>This is a sample of the job description posted by ThoughtWorks for hiring Implementation Engineers for Bahmni. This should give people an idea of the skill sets needed to implement Bahmni and is for reference.</p></ac:rich-text-body></ac:structured-macro><p><br /></p><h2><strong><span style=\"color: rgb(0,0,0);\">About Bahmni</span></strong></h2><p><span style=\"color: rgb(0,0,0);\">Bahmni is an open source EMR &amp; hospital system, built by ThoughtWorks Global Health. It serves the needs of hospitals run by NGO and MoH in Global South (more details </span><a href=\"http://www.bahmni.org/\"><span style=\"color: rgb(17,85,204);text-decoration: underline;\">here</span></a><span style=\"color: rgb(0,0,0);\">).</span></p><p><span style=\"color: rgb(0,0,0);\">Bahmni has been implemented at various hospitals and clinics, at point of care, in multiple countries. Scaling Bahmni to amplify the impact is core to the vision of the product. This is translating to expected year-on-year growth in Implementations &amp; Support.</span></p><h2><strong style=\"line-height: 1.42857;\"><span style=\"color: rgb(0,0,0);\">Bahmni Implementation Engineer</span></strong></h2><p><span style=\"color: rgb(0,0,0);\">To contribute in Bahmni&rsquo;s implementations and their support to create great customer experience for ThoughtWorks&rsquo; clients. You will be responsible configuring, customising, deploying Bahmni and training users to meet the needs of the hospitals/clinics. You will get opportunity to work in a great environment at ThoughtWorks office.</span></p><h3><span><span>Responsibilities</span></span></h3><p><span style=\"color: rgb(0,0,0);\">Responsibilities towards Bahmni implementations which includes</span></p><ul><li style=\"list-style-type: circle;\"><p><span>&ldquo;Needs assessment&rdquo;</span></p></li><li style=\"list-style-type: circle;\"><p><span>Configuration and Customisation</span></p></li><li style=\"list-style-type: circle;\"><p><span>Rollout</span></p></li><li style=\"list-style-type: circle;\"><p><span>Support Post Deployment and go live</span></p></li></ul><h3><strong><span style=\"color: rgb(0,0,0);\">Skill Set</span></strong></h3><ul><li style=\"list-style-type: disc;\"><p><span>Working knowledge of Linux i.e. ability to read/understand simple shell scripts, familiarity with common Linux commands, file-system/user/process concepts.</span></p></li><li style=\"list-style-type: disc;\"><p><span>Basic understanding of networks. Ability to do very basic network diagnostics and maintenance.</span></p></li><li style=\"list-style-type: disc;\"><p><span>Basic understanding of how browser and server interact with each other over the network.</span></p></li><li style=\"list-style-type: disc;\"><p><span>Knowledge of SQL. Familiarity with HTML, CSS and JavaScript.</span></p></li><li style=\"list-style-type: disc;\"><p><span>Familiarity with configuring end user devices running Android and Windows.</span></p></li><li style=\"list-style-type: disc;\"><p><span>Analytical skills to be able to understand hospital processes and its mapping to software software systems.</span></p></li><li style=\"list-style-type: disc;\"><p><span>Good communication skills</span></p></li><ul><li style=\"list-style-type: circle;\"><p><span>Ability to communicate, explain and teach basic computers and Bahmni to hospital staff (includes people who have never used a computing device)</span></p></li><li style=\"list-style-type: circle;\"><p><span>Ability to communicate with development team</span></p></li></ul><li style=\"list-style-type: disc;\"><span>Flexible to travel for few weeks to safe but remote parts in Indian and outside India</span></li></ul><p><br /><br /></p><p style=\"list-style-type: disc;\"><span><br /></span></p></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"4c75b5cf-f97f-4cfa-9797-c171e09742cd\"><ac:parameter ac:name=\"title\">On this page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"e51386d7-b23a-435f-969a-e5d433738eff\" /></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/7110686"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\"><style>[data-colorid=din2s2ralv]{color:#1155cc} html[data-color-mode=dark] [data-colorid=din2s2ralv]{color:#3377ee}</style>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6e273c6f-ef2e-4674-8cf1-dc54f2ab4271\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This is a sample of the job description posted by ThoughtWorks for hiring Implementation Engineers for Bahmni. This should give people an idea of the skill sets needed to implement Bahmni and is for reference.</p></div></div><p><br /></p><h2 id=\"JobdescriptionforBahmniImplementationEngineer-AboutBahmni\"><strong><span class=\"legacy-color-text-default\">About Bahmni</span></strong></h2><p><span class=\"legacy-color-text-default\">Bahmni is an open source EMR &amp; hospital system, built by ThoughtWorks Global Health. It serves the needs of hospitals run by NGO and MoH in Global South (more details </span><a class=\"external-link\" href=\"http://www.bahmni.org/\" rel=\"nofollow\"><span data-colorid=\"din2s2ralv\" style=\"text-decoration: underline;\">here</span></a><span class=\"legacy-color-text-default\">).</span></p><p><span class=\"legacy-color-text-default\">Bahmni has been implemented at various hospitals and clinics, at point of care, in multiple countries. Scaling Bahmni to amplify the impact is core to the vision of the product. This is translating to expected year-on-year growth in Implementations &amp; Support.</span></p><h2 id=\"JobdescriptionforBahmniImplementationEngineer-BahmniImplementationEngineer\"><strong style=\"line-height: 1.42857;\"><span class=\"legacy-color-text-default\">Bahmni Implementation Engineer</span></strong></h2><p><span class=\"legacy-color-text-default\">To contribute in Bahmni&rsquo;s implementations and their support to create great customer experience for ThoughtWorks&rsquo; clients. You will be responsible configuring, customising, deploying Bahmni and training users to meet the needs of the hospitals/clinics. You will get opportunity to work in a great environment at ThoughtWorks office.</span></p><h3 id=\"JobdescriptionforBahmniImplementationEngineer-Responsibilities\"><span><span>Responsibilities</span></span></h3><p><span class=\"legacy-color-text-default\">Responsibilities towards Bahmni implementations which includes</span></p><ul><li style=\"list-style-type: circle;\"><p><span>&ldquo;Needs assessment&rdquo;</span></p></li><li style=\"list-style-type: circle;\"><p><span>Configuration and Customisation</span></p></li><li style=\"list-style-type: circle;\"><p><span>Rollout</span></p></li><li style=\"list-style-type: circle;\"><p><span>Support Post Deployment and go live</span></p></li></ul><h3 id=\"JobdescriptionforBahmniImplementationEngineer-SkillSet\"><strong><span class=\"legacy-color-text-default\">Skill Set</span></strong></h3><ul><li style=\"list-style-type: disc;\"><p><span>Working knowledge of Linux i.e. ability to read/understand simple shell scripts, familiarity with common Linux commands, file-system/user/process concepts.</span></p></li><li style=\"list-style-type: disc;\"><p><span>Basic understanding of networks. Ability to do very basic network diagnostics and maintenance.</span></p></li><li style=\"list-style-type: disc;\"><p><span>Basic understanding of how browser and server interact with each other over the network.</span></p></li><li style=\"list-style-type: disc;\"><p><span>Knowledge of SQL. Familiarity with HTML, CSS and JavaScript.</span></p></li><li style=\"list-style-type: disc;\"><p><span>Familiarity with configuring end user devices running Android and Windows.</span></p></li><li style=\"list-style-type: disc;\"><p><span>Analytical skills to be able to understand hospital processes and its mapping to software software systems.</span></p></li><li style=\"list-style-type: disc;\"><p><span>Good communication skills</span></p></li><ul><li style=\"list-style-type: circle;\"><p><span>Ability to communicate, explain and teach basic computers and Bahmni to hospital staff (includes people who have never used a computing device)</span></p></li><li style=\"list-style-type: circle;\"><p><span>Ability to communicate with development team</span></p></li></ul><li style=\"list-style-type: disc;\"><span>Flexible to travel for few weeks to safe but remote parts in Indian and outside India</span></li></ul><p><br /><br /></p><p style=\"list-style-type: disc;\"><span><br /></span></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4c75b5cf-f97f-4cfa-9797-c171e09742cd\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>On this page</b></div><div class=\"panelContent\">\n<p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"e51386d7-b23a-435f-969a-e5d433738eff\" data-macro-name=\"toc\"> </div><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/7110686"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/7110686/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/7110686/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 666492656
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/7110686/child",
+    "restrictions": "/rest/api/content/7110686/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/7110686/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=7110686",
+    "webui": "/spaces/BAH/pages/7110686/Job+description+for+Bahmni+Implementation+Engineer",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/7110686",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/7110686",
+    "tinyui": "/x/HoBs",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

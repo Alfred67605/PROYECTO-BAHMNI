@@ -1,0 +1,171 @@
+{
+  "id": "81592388",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/81592388",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvODE1OTIzODg=",
+  "status": "current",
+  "title": "Configuring Data Quality Dashboard",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "createdDate": "2016-08-18T13:05:26.515Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/81592388/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2022-11-20T11:36:46.308Z",
+    "friendlyWhen": "Nov 20, 2022",
+    "message": "Removed collapsible due to Atlassian bug",
+    "number": 24,
+    "minorEdit": false,
+    "syncRev": "0.zjPag_ZjAfYZaijvfXe02A.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$81592388.78",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/81592388"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/81592388/version/24"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose</h2><p><span style=\"color: rgb(0,0,0);\">This feature helps ensure data quality on chosen variables. Based on the rules defined for those variables, a run for the patients yields a list of patients for whom the data is incomplete/erroneous.&nbsp;</span><span style=\"color: rgb(0,0,0);\">The results are displayed as a list of all data inconsistencies on a dashboard called the&nbsp;<em>Data Quality Dashboard</em>.</span></p><p><span style=\"color: rgb(0,0,0);\">The rules&nbsp;</span><span style=\"color: rgb(0,0,0);\">can be customized by an implementer (Steps for the same will be updated later).&nbsp;These rules can be sometimes very complex and therefore the rules can be written in java/sql/groovy depending on the complexity.&nbsp;</span></p><p>This feature is&nbsp;<span style=\"color: rgb(0,0,0);\">influenced from the OpenMRS data integrity module (<a class=\"external-link\" href=\"https://wiki.openmrs.org/display/docs/Data+Integrity+Module\" rel=\"nofollow\">https://wiki.openmrs.org/display/docs/Data+Integrity+Module</a>) and slightly modified to suit requirements.</span></p><h2>Configure the Data Quality Dashboard:<span style=\"color: rgb(0,0,0);\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></h2><h3>1. Run Background job</h3><p>The data integrity task is scheduled to run every day at 12:00AM &nbsp;by default. To change this setting, go to OpenMRS Administration &gt; Manage Scheduler &gt; click on Data Integrity Task &nbsp;link &gt; Schedule and change &nbsp;the repeat interval .</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><ac:image ac:width=\"600\"><ri:attachment ri:filename=\"Screen Shot 2016-08-08 at 4.23.08 PM.png\" ri:version-at-save=\"1\" /></ac:image></span></p><h3>2. Internationalize Data integrity module name</h3><p>Add the value for key in respective home/ locale_${en,fr, .. }.json.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"829d7301-ba7f-494c-865c-6c6a8489e5b5\"><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[{\n   \"MODULE_LABEL_DATA_INTEGRITY_KEY\": \"Data integrity\"\n}]]></ac:plain-text-body></ac:structured-macro><p><br /></p><div><div class=\"syntaxhighlighter sh-confluence nogutter bash\"><h3><span style=\"font-size: 16.0px;font-weight: bold;line-height: 1.5;\">3. Internationalize Column Headers</span></h3></div></div><div>Add the values for the following keys in respective clinical/locale_${en, fr, .. }.json. Sample values for the keys are provided below:</div><div><p>In clinical/locale_en.json,&nbsp;</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4b90b615-14e8-4309-b7b3-a1fe14c2f51f\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Code Snippet</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[{\n    \"MODULE_LABEL_ERROR_REPORTS_KEY\": \"Error Reports\",\n    \"DQ_PRINT_TITLE_DATA_QUALITY_REPORT\": \"Data Quality Report\",\n    \"DQ_DASHBOARD\": \"Data Quality Dashboard\",\n    \"DQ_COLUMN_TITLE_TREATMENT_REG_NO\": \"Treatment Reg No\",\n    \"DQ_COLUMN_TITLE_NAME\": \"Name\",\n    \"DQ_COLUMN_TITLE_EMR_ID\": \"EMR ID\",\n    \"DQ_COLUMN_TITLE_NOTES\": \"Notes\",\n    \"DQ_COLUMN_TITLE_ACTION\": \"Action\",\n    \"DQ_COLUMN_TITLE_RULE_NAME\":\"Rule Name\",\n    \"DQ_COLUMN_TITLE_REG_FACILITY\":\"Treatment facility\" \n}]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"348ba08a-ae56-4dff-b487-13946fba7100\"><ac:parameter ac:name=\"title\">Change of name key</ac:parameter><ac:rich-text-body><p>The key for name is changed from &quot;name&quot; to &quot;DQ_COLUMN_TITLE_NAME&quot; and column &quot;DQ_COLUMN_TITLE_REG_FACILITY&quot; is added from 1.4 release</p></ac:rich-text-body></ac:structured-macro><h3>4. Configure Print Button and HTML location</h3><p>Add the config below to extension-dataintegrity.json</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b79841c8-640f-4966-837c-1b3688ddfcb2\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Code Snippet</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[{\n  \"bahmni_clinical_patients_search_allpatients_app_clinical\": {\n    \"id\": \"bahmni.clinical.patients.search.allPatients\",\n    \"extensionPointId\": \"org.bahmni.patient.search\",\n    \"type\": \"config\",\n    \"extensionParams\": {\n      \"searchHandler\": \"endtb.sqlSearch.dataIntegrity\",\n      \"forwardUrl\": \"#/default/patient/{{patientUuid}}/dashboard?programUuid={{programUuid}}&enrollment={{enrollment}}\",\n      \"translationKey\": \"MODULE_LABEL_ERROR_REPORTS_KEY\",\n      \"view\" : \"tabular\",\n      \"showPrint\": true,\n      \"printHtmlLocation\": \"/bahmni_config/openmrs/apps/dataintegrity/patientListPrint.html\",\n\t  \"searchColumns\" : [\"DQ_COLUMN_TITLE_TREATMENT_REG_NO\", \"DQ_COLUMN_TITLE_NAME\"]\t\n    },\n    \"order\": 1,\n    \"requiredPrivilege\": \"app:clinical\"\n  }\n}]]></ac:plain-text-body></ac:structured-macro><h3>5. Hide Print Button</h3><p>To hide print button on the DQ Dashboard set</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"0fedf6a5-c737-46c4-a5cf-a9a1cacb7518\"><ac:plain-text-body><![CDATA[ \"showPrint\": false]]></ac:plain-text-body></ac:structured-macro><h3>6. Configure Searchable Columns</h3><p>To configure columns to search on the DQ Dashboard, add the column keys to the list in searchColumns. The search facility can be enabled on all columns.</p><p>The configuration below will enable search on columns Treatment Reg No, Name of the patient.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"a3a851ff-01cb-44b4-be2d-424a1bdf3fb8\"><ac:plain-text-body><![CDATA[\"searchColumns\" : [\"DQ_COLUMN_TITLE_TREATMENT_REG_NO\", \"DQ_COLUMN_TITLE_NAME\"]]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></div><div><h2>Implementation of DQRules</h2><ol><li>The list of rules that are executed can be found in the table <em>dataintegrity_rule</em> &nbsp;in openMRS database.</li><li><p>DQ Rules for EndTB are written in the the <a href=\"https://github.com/Bahmni/openmrs-module-bahmniendtb\">openmrs-module-bahmniendtb repository</a>.&nbsp;</p></li></ol><h3>Writing new custom rules</h3><ol><li>To write custom rules, clone the repository&nbsp;<br /><br /></li></ol><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"29f299a7-c67b-448f-a4b9-ad44915c9c03\"><ac:plain-text-body><![CDATA[ git clone https://github.com/Bahmni/openmrs-module-bahmniendtb]]></ac:plain-text-body></ac:structured-macro><p>&nbsp; &nbsp; &nbsp; &nbsp;2. Follow these steps to add a new DQ Rule :</p><ol><li style=\"list-style-type: none;background-image: none;\"><ul><li>The rules written in Java can be found in this folder in the repository : &nbsp;openmrs-modulebahmniendtb/api/src/main/java/org/openmrs/module/bahmniendtb/dataintegrity/rules</li><li>Every rule is written as &nbsp;a Java class that implements RuleDefn&lt;PatientProgram&gt; interface.</li><li class=\"_mce_tagged_br\">The logic for the rule is written in the <strong>evaluate</strong> method.</li><li class=\"_mce_tagged_br\">The rule can be inserted into the dataintegrity_rule table as below :</li></ul></li></ol><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"bbe8d225-512c-4221-9524-887b941702ed\"><ac:parameter ac:name=\"title\">query to insert rule</ac:parameter><ac:plain-text-body><![CDATA[INSERT INTO dataintegrity_rule ( rule_name, rule_category, handler_config, handler_classname, uuid ) VALUES ( \"Baseline Firstling DST missing\", \"java\", \"java\", \"org.openmrs.module.bahmniendtb.dataintegrity.rules.RuleName\", uuid());]]></ac:plain-text-body></ac:structured-macro><h3><strong style=\"font-size: 16.0px;line-height: 1.5;\">Deploy the latest DQ Rule for local testing</strong></h3><ul><li>Run the below command on openmrs-module-bahmniendtb directory</li></ul><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"a13b224e-a585-4210-83f1-2d5c81907f27\"><ac:plain-text-body><![CDATA[mvn clean install]]></ac:plain-text-body></ac:structured-macro><ul><li>The OMOD &nbsp;is generated in this location :&nbsp;<em>openmrs-module-bahmniendtb/omod/target/bahmniendtb-1.4-SNAPSHOT.omod</em></li><li>Replace the old OMOD with the one generated as above in <em>/opt/openmrs/modules</em> folder in vagrant box</li></ul><ul><li>Restart openMRS service</li></ul><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"54ab86a2-adf9-4224-999e-83b72ce0aae9\"><ac:plain-text-body><![CDATA[sudo service openmrs restart]]></ac:plain-text-body></ac:structured-macro><h3>Sample DQ Rules</h3><p>The following are some sample DQ Rules</p><ul><li><a href=\"https://gist.github.com/bharatak/283d90c8d548788ae59cdc45b6b81893\">Invalid Date Of Death</a></li><li><a href=\"https://gist.github.com/bharatak/cdc5575628d6b9588e451310a010575d\">Invalid Observations</a></li><li><a href=\"https://gist.github.com/bharatak/67379763cd8a2fdb5cdb9bc82cc16edb\">Invalid Program Enrollment</a></li></ul><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"772bfeaa-d1f1-46de-8a13-2839f3e25550\"><ac:parameter ac:name=\"title\">Next Steps</ac:parameter><ac:rich-text-body><p><span style=\"line-height: 1.42857;\">Open discussion with community</span></p><p>Support for rule_group and schedule tables so that certain rules can be grouped and can be assigned specific groups to a different schedules. (open for discussion)</p><p>Building ability to run rules per patient and making rule groups.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></div></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"756d1dad-879a-4896-ba16-2c105316175e\"><ac:parameter ac:name=\"title\">On this page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"0372288f-e549-41b4-b8a0-9830a3ad4810\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Data Quality Dashboard\" ri:version-at-save=\"20\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><p><br /></p><p><br /></p><p><br /></p><p><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/81592388"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ConfiguringDataQualityDashboard-Purpose\">Purpose</h2><p><span class=\"legacy-color-text-default\">This feature helps ensure data quality on chosen variables. Based on the rules defined for those variables, a run for the patients yields a list of patients for whom the data is incomplete/erroneous. </span><span class=\"legacy-color-text-default\">The results are displayed as a list of all data inconsistencies on a dashboard called the <em>Data Quality Dashboard</em>.</span></p><p><span class=\"legacy-color-text-default\">The rules </span><span class=\"legacy-color-text-default\">can be customized by an implementer (Steps for the same will be updated later). These rules can be sometimes very complex and therefore the rules can be written in java/sql/groovy depending on the complexity. </span></p><p>This feature is <span class=\"legacy-color-text-default\">influenced from the OpenMRS data integrity module (<a class=\"external-link\" href=\"https://wiki.openmrs.org/display/docs/Data+Integrity+Module\" rel=\"nofollow\">https://wiki.openmrs.org/display/docs/Data+Integrity+Module</a>) and slightly modified to suit requirements.</span></p><h2 id=\"ConfiguringDataQualityDashboard-ConfiguretheDataQualityDashboard:\">Configure the Data Quality Dashboard:<span class=\"legacy-color-text-default\">                                       </span></h2><h3 id=\"ConfiguringDataQualityDashboard-1.RunBackgroundjob\">1. Run Background job</h3><p>The data integrity task is scheduled to run every day at 12:00AM  by default. To change this setting, go to OpenMRS Administration &gt; Manage Scheduler &gt; click on Data Integrity Task  link &gt; Schedule and change  the repeat interval .</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/81592388/Screen%20Shot%202016-08-08%20at%204.23.08%20PM.png?version=1&amp;modificationDate=1471525526547&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=271\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/81592388/Screen%20Shot%202016-08-08%20at%204.23.08%20PM.png?version=1&amp;modificationDate=1471525526547&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"81592385\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-08-08 at 4.23.08 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"81592388\" data-linked-resource-container-version=\"24\" data-media-id=\"09324631-8cc6-40d3-8778-4d15eca2bee4\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/81592388/Screen%20Shot%202016-08-08%20at%204.23.08%20PM.png?version=1&amp;modificationDate=1471525526547&amp;cacheVersion=1&amp;api=v2&amp;width=1200&amp;height=542 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/81592388/Screen%20Shot%202016-08-08%20at%204.23.08%20PM.png?version=1&amp;modificationDate=1471525526547&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=271 1x\"></span></span></p><h3 id=\"ConfiguringDataQualityDashboard-2.InternationalizeDataintegritymodulename\">2. Internationalize Data integrity module name</h3><p>Add the value for key in respective home/ locale_${en,fr, .. }.json.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"829d7301-ba7f-494c-865c-6c6a8489e5b5\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: true; theme: Confluence\" data-theme=\"Confluence\">{\n   &quot;MODULE_LABEL_DATA_INTEGRITY_KEY&quot;: &quot;Data integrity&quot;\n}</pre>\n</div></div><p><br/></p><div><div class=\"syntaxhighlighter sh-confluence nogutter bash\"><h3 id=\"ConfiguringDataQualityDashboard-3.InternationalizeColumnHeaders\"><span style=\"font-size: 16.0px;font-weight: bold;line-height: 1.5;\">3. Internationalize Column Headers</span></h3></div></div><div>Add the values for the following keys in respective clinical/locale_${en, fr, .. }.json. Sample values for the keys are provided below:</div><div><p>In clinical/locale_en.json, </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4b90b615-14e8-4309-b7b3-a1fe14c2f51f\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Code Snippet</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">{\n    &quot;MODULE_LABEL_ERROR_REPORTS_KEY&quot;: &quot;Error Reports&quot;,\n    &quot;DQ_PRINT_TITLE_DATA_QUALITY_REPORT&quot;: &quot;Data Quality Report&quot;,\n    &quot;DQ_DASHBOARD&quot;: &quot;Data Quality Dashboard&quot;,\n    &quot;DQ_COLUMN_TITLE_TREATMENT_REG_NO&quot;: &quot;Treatment Reg No&quot;,\n    &quot;DQ_COLUMN_TITLE_NAME&quot;: &quot;Name&quot;,\n    &quot;DQ_COLUMN_TITLE_EMR_ID&quot;: &quot;EMR ID&quot;,\n    &quot;DQ_COLUMN_TITLE_NOTES&quot;: &quot;Notes&quot;,\n    &quot;DQ_COLUMN_TITLE_ACTION&quot;: &quot;Action&quot;,\n    &quot;DQ_COLUMN_TITLE_RULE_NAME&quot;:&quot;Rule Name&quot;,\n    &quot;DQ_COLUMN_TITLE_REG_FACILITY&quot;:&quot;Treatment facility&quot; \n}</pre>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"348ba08a-ae56-4dff-b487-13946fba7100\" data-macro-name=\"info\"><p class=\"title\">Change of name key</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>The key for name is changed from &quot;name&quot; to &quot;DQ_COLUMN_TITLE_NAME&quot; and column &quot;DQ_COLUMN_TITLE_REG_FACILITY&quot; is added from 1.4 release</p></div></div><h3 id=\"ConfiguringDataQualityDashboard-4.ConfigurePrintButtonandHTMLlocation\">4. Configure Print Button and HTML location</h3><p>Add the config below to extension-dataintegrity.json</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b79841c8-640f-4966-837c-1b3688ddfcb2\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Code Snippet</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">{\n  &quot;bahmni_clinical_patients_search_allpatients_app_clinical&quot;: {\n    &quot;id&quot;: &quot;bahmni.clinical.patients.search.allPatients&quot;,\n    &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,\n    &quot;type&quot;: &quot;config&quot;,\n    &quot;extensionParams&quot;: {\n      &quot;searchHandler&quot;: &quot;endtb.sqlSearch.dataIntegrity&quot;,\n      &quot;forwardUrl&quot;: &quot;#/default/patient/{{patientUuid}}/dashboard?programUuid={{programUuid}}&amp;enrollment={{enrollment}}&quot;,\n      &quot;translationKey&quot;: &quot;MODULE_LABEL_ERROR_REPORTS_KEY&quot;,\n      &quot;view&quot; : &quot;tabular&quot;,\n      &quot;showPrint&quot;: true,\n      &quot;printHtmlLocation&quot;: &quot;/bahmni_config/openmrs/apps/dataintegrity/patientListPrint.html&quot;,\n\t  &quot;searchColumns&quot; : [&quot;DQ_COLUMN_TITLE_TREATMENT_REG_NO&quot;, &quot;DQ_COLUMN_TITLE_NAME&quot;]\t\n    },\n    &quot;order&quot;: 1,\n    &quot;requiredPrivilege&quot;: &quot;app:clinical&quot;\n  }\n}</pre>\n</div></div><h3 id=\"ConfiguringDataQualityDashboard-5.HidePrintButton\">5. Hide Print Button</h3><p>To hide print button on the DQ Dashboard set</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0fedf6a5-c737-46c4-a5cf-a9a1cacb7518\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\"> &quot;showPrint&quot;: false</pre>\n</div></div><h3 id=\"ConfiguringDataQualityDashboard-6.ConfigureSearchableColumns\">6. Configure Searchable Columns</h3><p>To configure columns to search on the DQ Dashboard, add the column keys to the list in searchColumns. The search facility can be enabled on all columns.</p><p>The configuration below will enable search on columns Treatment Reg No, Name of the patient.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a3a851ff-01cb-44b4-be2d-424a1bdf3fb8\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;searchColumns&quot; : [&quot;DQ_COLUMN_TITLE_TREATMENT_REG_NO&quot;, &quot;DQ_COLUMN_TITLE_NAME&quot;]</pre>\n</div></div></div><div><h2 id=\"ConfiguringDataQualityDashboard-ImplementationofDQRules\">Implementation of DQRules</h2><ol><li>The list of rules that are executed can be found in the table <em>dataintegrity_rule</em>  in openMRS database.</li><li><p>DQ Rules for EndTB are written in the the <a class=\"external-link\" href=\"https://github.com/Bahmni/openmrs-module-bahmniendtb\" rel=\"nofollow\">openmrs-module-bahmniendtb repository</a>. </p></li></ol><h3 id=\"ConfiguringDataQualityDashboard-Writingnewcustomrules\">Writing new custom rules</h3><ol><li>To write custom rules, clone the repository <br/><br/></li></ol><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"29f299a7-c67b-448f-a4b9-ad44915c9c03\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\"> git clone https://github.com/Bahmni/openmrs-module-bahmniendtb</pre>\n</div></div><p>       2. Follow these steps to add a new DQ Rule :</p><ol><li style=\"list-style-type: none;background-image: none;\"><ul><li>The rules written in Java can be found in this folder in the repository :  openmrs-modulebahmniendtb/api/src/main/java/org/openmrs/module/bahmniendtb/dataintegrity/rules</li><li>Every rule is written as  a Java class that implements RuleDefn&lt;PatientProgram&gt; interface.</li><li class=\"_mce_tagged_br\">The logic for the rule is written in the <strong>evaluate</strong> method.</li><li class=\"_mce_tagged_br\">The rule can be inserted into the dataintegrity_rule table as below :</li></ul></li></ol><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"bbe8d225-512c-4221-9524-887b941702ed\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>query to insert rule</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">INSERT INTO dataintegrity_rule ( rule_name, rule_category, handler_config, handler_classname, uuid ) VALUES ( &quot;Baseline Firstling DST missing&quot;, &quot;java&quot;, &quot;java&quot;, &quot;org.openmrs.module.bahmniendtb.dataintegrity.rules.RuleName&quot;, uuid());</pre>\n</div></div><h3 id=\"ConfiguringDataQualityDashboard-DeploythelatestDQRuleforlocaltesting\"><strong style=\"font-size: 16.0px;line-height: 1.5;\">Deploy the latest DQ Rule for local testing</strong></h3><ul><li>Run the below command on openmrs-module-bahmniendtb directory</li></ul><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a13b224e-a585-4210-83f1-2d5c81907f27\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">mvn clean install</pre>\n</div></div><ul><li>The OMOD  is generated in this location : <em>openmrs-module-bahmniendtb/omod/target/bahmniendtb-1.4-SNAPSHOT.omod</em></li><li>Replace the old OMOD with the one generated as above in <em>/opt/openmrs/modules</em> folder in vagrant box</li></ul><ul><li>Restart openMRS service</li></ul><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"54ab86a2-adf9-4224-999e-83b72ce0aae9\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">sudo service openmrs restart</pre>\n</div></div><h3 id=\"ConfiguringDataQualityDashboard-SampleDQRules\">Sample DQ Rules</h3><p>The following are some sample DQ Rules</p><ul><li><a class=\"external-link\" href=\"https://gist.github.com/bharatak/283d90c8d548788ae59cdc45b6b81893\" rel=\"nofollow\">Invalid Date Of Death</a></li><li><a class=\"external-link\" href=\"https://gist.github.com/bharatak/cdc5575628d6b9588e451310a010575d\" rel=\"nofollow\">Invalid Observations</a></li><li><a class=\"external-link\" href=\"https://gist.github.com/bharatak/67379763cd8a2fdb5cdb9bc82cc16edb\" rel=\"nofollow\">Invalid Program Enrollment</a></li></ul><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"772bfeaa-d1f1-46de-8a13-2839f3e25550\" data-macro-name=\"tip\"><p class=\"title\">Next Steps</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><span style=\"line-height: 1.42857;\">Open discussion with community</span></p><p>Support for rule_group and schedule tables so that certain rules can be grouped and can be assigned specific groups to a different schedules. (open for discussion)</p><p>Building ability to run rules per patient and making rule groups.</p></div></div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"756d1dad-879a-4896-ba16-2c105316175e\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>On this page</b></div><div class=\"panelContent\">\n<p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"0372288f-e549-41b4-b8a0-9830a3ad4810\" data-macro-name=\"toc\"> </div><p> </p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/77758775/Data+Quality+Dashboard\" data-linked-resource-id=\"77758775\" data-linked-resource-version=\"20\" data-linked-resource-type=\"page\">Data Quality Dashboard</a></p>\n</div></div><p><br/></p><p><br/></p><p><br/></p><p><br/></p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/81592388"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/81592388/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/81592388/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 3
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/81592388/child",
+    "restrictions": "/rest/api/content/81592388/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/81592388/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=81592388",
+    "webui": "/spaces/BAH/pages/81592388/Configuring+Data+Quality+Dashboard",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/81592388",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/81592388",
+    "tinyui": "/x/RADdB",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

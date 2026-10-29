@@ -1,0 +1,178 @@
+{
+  "id": "36077574",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/36077574",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzYwNzc1NzQ=",
+  "status": "current",
+  "title": "Setup DCM4CHEE Server with Oviyam2",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2015-12-21T06:32:47.823Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/36077574/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "when": "2022-08-04T07:22:34.969Z",
+    "friendlyWhen": "Aug 04, 2022",
+    "message": "",
+    "number": 35,
+    "minorEdit": false,
+    "syncRev": "0.iUv1l4tTO_6sGoBjNMBeXg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$36077574.170",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/36077574"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/36077574/version/35"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p>DCM4CHEE Server with Oviyam2 web viewer embedded : This DCM4CHEE server (JBOSS) is another PACS server which will be configured with Client's Digital X-Ray Machine's Modality/PACS Server to automatically deliver all the X-Rays(.dcm files / images) to it. Oviyam2 Dicom Web viewer, is&nbsp;embedded in DCM4CHEE JBOSS server, with Patient Id and Order Number used by Bahmni to show the X-Ray images.</p><p><br /></p><p>Installation of dcm4chee is same like any other service in Bahmni, via an rpm. Please refer the <ac:link><ri:page ri:content-title=\"Install Bahmni\" ri:version-at-save=\"6\" /></ac:link>&nbsp;installation guide.</p><p>After the installation is done, a few more steps are required to get everything up and running.&nbsp;</p><h2><span style=\"color: rgb(0,0,0);\">Steps</span></h2><h3><span style=\"color: rgb(0,0,0);\">&nbsp;</span></h3><h3><span style=\"color: rgb(0,0,0);\">1. Ensure dcm4chee service is running</span></h3><h3><strong style=\"font-size: 14.0px;line-height: 1.42857;\"><strong><ac:image><ri:attachment ri:filename=\"Screen Shot 2016-06-28 at 9.45.11 PM.png\" ri:version-at-save=\"1\" /></ac:image></strong></strong></h3><p>If service is installed but not running, then the service can be started using service dcm4chee start.<br /><br />For troubleshooting, the logs for dcm4chee can be typically found at&nbsp;/var/lib/bahmni/dcm4chee-2.18.1-psql/server/default/log/server.log.&nbsp;<br /><br /></p><p style=\"margin-left: 30.0px;\">&nbsp; Both dcm4chee and oviyam2 can be accessed using the below urls.</p><p style=\"margin-left: 30.0px;\">&nbsp; ip:8055/dcm4chee-web3, use admin/admin to login</p><p style=\"margin-left: 30.0px;\"><ac:image ac:align=\"center\" ac:border=\"true\" ac:height=\"250\" ac:width=\"399\"><ri:attachment ri:filename=\"Screen Shot 2016-04-13 at 12.16.08 AM.png\" ri:version-at-save=\"1\" /></ac:image></p><p style=\"margin-left: 30.0px;\">&nbsp; ip:8055/oviyam2</p><p style=\"margin-left: 30.0px;\"><ac:image ac:align=\"center\" ac:border=\"true\" ac:height=\"250\" ac:width=\"400\"><ri:attachment ri:filename=\"Screen Shot 2016-04-13 at 12.25.23 AM.png\" ri:version-at-save=\"1\" /></ac:image></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"17204b32-f701-429e-9b42-5d5219af7c83\"><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\">The dcmsnd utility provided by dcm4chee can be used to test uploading of images to it. </span><br /><span style=\"color: rgb(0,0,0);\"><br /></span></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"8bd20659-d910-43c6-89e0-d0406ee0624f\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:rich-text-body><pre class=\"p1\">dcmsnd DCM4CHEE@ipaddress:11112 image.dcm</pre></ac:rich-text-body></ac:structured-macro><p>Sample image :&nbsp;<ac:link><ri:attachment ri:filename=\"image.dcm\" ri:version-at-save=\"1\"><ri:page ri:content-title=\"SetUp the DCM4CHEE Server\" ri:version-at-save=\"19\" /></ri:attachment></ac:link><br /><span style=\"color: rgb(0,0,0);\"><br />Utilities can be downloaded from&nbsp;<a href=\"https://sourceforge.net/projects/dcm4che/files/dcm4che2/2.0.28/\">https://sourceforge.net/projects/dcm4che/files/dcm4che2/2.0.28/</a></span></p><ol><li><p class=\"p1\">Unzip the&nbsp;dcm4che-2.0.28-bin.zip&nbsp;file</p></li><li><p class=\"p1\">run the excecutable files with appropriate parameters.</p></li></ol></ac:rich-text-body></ac:structured-macro><p style=\"margin-left: 30.0px;\"><br /></p><p style=\"margin-left: 30.0px;\"><br /></p><h3><span style=\"color: rgb(0,0,0);\">2.&nbsp;</span><span style=\"color: rgb(0,0,0);\">S</span>etup DCM4CHEE as PACS server in X-ray modality or another PACS&nbsp;</h3><p style=\"margin-left: 30.0px;\"><span style=\"color: rgb(0,0,0);\">dcm4chee is a PACS and will be used for image storage. So images need to be sent to dcm4chee. How to setup another piece of software (modality / another PACS) to send the images will be vendor specific. The vendor support engineer would typically know this. We wish to build knowlege repository of that a well. But for now, its recommended to take help from the vendor to set this up. </span></p><p style=\"margin-left: 30.0px;\"><span style=\"color: rgb(0,0,0);\">They will have to configure dcm4chee as ImageStorage SCP with the below details</span></p><p style=\"margin-left: 30.0px;\"><span style=\"color: rgb(0,0,0);\"><strong>Host IP</strong> : &lt;IP address of the machine where you have installed dcm4chee service&gt;</span></p><p style=\"margin-left: 30.0px;\"><span style=\"color: rgb(0,0,0);\"><strong>AE Title</strong> : DCM4CHEE (default dcm4chee AE Title with bahmni installation)</span></p><p style=\"margin-left: 30.0px;\"><span style=\"color: rgb(0,0,0);\"><strong>Port</strong> : 11112 (default dcm4chee port with bahmni installatino for recieving images)</span></p><p style=\"margin-left: 30.0px;\"><span style=\"color: rgb(0,0,0);\"><br /></span></p><h3><span style=\"color: rgb(0,0,0);\">3.&nbsp;<strong>Setup DCM4CHEE as Modality worklist</strong></span></h3><p>Bahmni will send hl7 order messages to dcm4chee. dcm4chee will convert the order messages to worklist items. The items can then be polled by modality or another PACS.&nbsp;</p><ol><li>Update dcm4chee to use orm2dcm_bahmni.xsl instead of default orm2dcm.xsl by going to the jmx console <br />Go to ip:8055/jmx-console/HtmlAdaptor&nbsp;&rarr; Select&nbsp;service=HL7Service,type=ORM under dcm4chee.archive<br />&nbsp;&rarr; Set&nbsp;<span style=\"color: rgb(0,0,0);\">Stylesheet = orm2dcm_bahmni.xsl (<em><strong>Note:</strong></em> In docker this step is not needed. And the xsl stylesheet file itself is named as orm2dcm.xsl)</span></li><li><span style=\"color: rgb(0,0,0);\">Bahmni doesn't pass modality, Station AET and Station Name part of the HL7 message. If you are dealing with more than one modality, you can try customising the above mentioned stylesheet to look at the order name and determine the modality. If you are dealing with only one modality then you can set Default Modality, Default Station AET and Default Station Name in the above mentioned jmx console screen of dcm4chee.&nbsp;</span></li><li style=\"text-align: left;\"><span style=\"color: rgb(0,0,0);\">Default DCM4CHEE HL7 server listens for HL7 Messages on 2575 port. If you want to follow the way it bahmni works out of the box, you need not change anything for this.&nbsp;</span></li></ol><p style=\"text-align: left;\"><span style=\"color: rgb(0,0,0);\">Once the complete setup is working and orders are flowing from bahmni to dcm4chee (via pacs-integration), the worklist items would look like below</span></p><p style=\"text-align: left;\"><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:height=\"250\"><ri:attachment ri:filename=\"Screen Shot 2016-07-08 at 7.55.42 PM.png\" ri:version-at-save=\"1\" /></ac:image></span></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"7652188a-813f-4ddd-a961-a2401769f5ae\"><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\">&nbsp;Remember to press the search button to see the worklist items in modality worklist.&nbsp;</span></p></ac:rich-text-body></ac:structured-macro><h3 style=\"text-align: left;\"><span style=\"color: rgb(0,0,0);\">4. <strong>Setup PACS Query Config in OpenMRS</strong><br /></span></h3><p>Pacs Query is a OpenMRS module written to query for radiology order information from a PACS Server for Radiology orders made for a given patient. You can read more about it <a href=\"https://github.com/Bahmni/pacsquery\">here</a>.</p><ol><li>Login to OpenMRS and validate if&nbsp;<code>Pacs Query</code> OMOD is running from Administration&nbsp;&rarr; Manage Modules.</li><li>Now navigate to Administration&nbsp;&rarr; Advanced Settings and find the&nbsp;<code>pacsquery.pacsConfig</code> property.</li><li>In that property add information about your PACS server from where the order information needs to be fetched. The format would be&nbsp;<code>&lt;AETitle&gt;@&lt;Host&gt;:&lt;Port&gt;</code>. If your dcm4chee is running on the same host as OpenMRS the value would be <strong>DCM4CHEE@localhost:11112.&nbsp;</strong>For docker installations you can set the value as&nbsp;<em><strong>DCM4CHEE@dcm4chee:11112</strong></em></li></ol></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"a67c242e-aa37-4829-a661-f274c21fb80b\"><ac:parameter ac:name=\"style\">none</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Radiology and PACS\" ri:version-at-save=\"13\" /><ac:plain-text-link-body><![CDATA[Radiology and PACS Integration - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"PACS Integration and Support\" ri:version-at-save=\"8\" /><ac:plain-text-link-body><![CDATA[PACS Integration - User Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p><br /></p><p><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/36077574"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"SetupDCM4CHEEServerwithOviyam2-PurposeandBenefits\">Purpose and Benefits</h2><p>DCM4CHEE Server with Oviyam2 web viewer embedded : This DCM4CHEE server (JBOSS) is another PACS server which will be configured with Client's Digital X-Ray Machine's Modality/PACS Server to automatically deliver all the X-Rays(.dcm files / images) to it. Oviyam2 Dicom Web viewer, is embedded in DCM4CHEE JBOSS server, with Patient Id and Order Number used by Bahmni to show the X-Ray images.</p><p><br/></p><p>Installation of dcm4chee is same like any other service in Bahmni, via an rpm. Please refer the <a href=\"/wiki/spaces/BAH/pages/53837879/Install+Bahmni\" data-linked-resource-id=\"53837879\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Install Bahmni</a> installation guide.</p><p>After the installation is done, a few more steps are required to get everything up and running. </p><h2 id=\"SetupDCM4CHEEServerwithOviyam2-Steps\"><span class=\"legacy-color-text-default\">Steps</span></h2><h3 id=\"SetupDCM4CHEEServerwithOviyam2-\"><span class=\"legacy-color-text-default\"> </span></h3><h3 id=\"SetupDCM4CHEEServerwithOviyam2-1.Ensuredcm4cheeserviceisrunning\"><span class=\"legacy-color-text-default\">1. Ensure dcm4chee service is running</span></h3><h3 id=\"SetupDCM4CHEEServerwithOviyam2-.1\"><strong style=\"font-size: 14.0px;line-height: 1.42857;\"><strong><span class=\"confluence-embedded-file-wrapper\"><img class=\"confluence-embedded-image\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/36077574/Screen%20Shot%202016-06-28%20at%209.45.11%20PM.png?version=1&amp;modificationDate=1467130640861&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/36077574/Screen%20Shot%202016-06-28%20at%209.45.11%20PM.png?version=1&amp;modificationDate=1467130640861&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"70909982\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-06-28 at 9.45.11 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"36077574\" data-linked-resource-container-version=\"35\" data-media-id=\"093730ee-068b-40c5-a2fe-776ddba5de5a\" data-media-type=\"file\"></span></strong></strong></h3><p>If service is installed but not running, then the service can be started using service dcm4chee start.<br/><br/>For troubleshooting, the logs for dcm4chee can be typically found at /var/lib/bahmni/dcm4chee-2.18.1-psql/server/default/log/server.log. <br/><br/></p><p style=\"margin-left: 30.0px;\">  Both dcm4chee and oviyam2 can be accessed using the below urls.</p><p style=\"margin-left: 30.0px;\">  ip:8055/dcm4chee-web3, use admin/admin to login</p><p style=\"margin-left: 30.0px;\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" height=\"250\" width=\"399\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/36077574/Screen%20Shot%202016-04-13%20at%2012.16.08%20AM.png?version=1&amp;modificationDate=1460487238473&amp;cacheVersion=1&amp;api=v2&amp;width=399&amp;height=249\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/36077574/Screen%20Shot%202016-04-13%20at%2012.16.08%20AM.png?version=1&amp;modificationDate=1460487238473&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"52101130\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-04-13 at 12.16.08 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"36077574\" data-linked-resource-container-version=\"35\" data-media-id=\"259fe08d-ab9f-4549-86f7-d42895df1bcf\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/36077574/Screen%20Shot%202016-04-13%20at%2012.16.08%20AM.png?version=1&amp;modificationDate=1460487238473&amp;cacheVersion=1&amp;api=v2&amp;width=798&amp;height=498 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/36077574/Screen%20Shot%202016-04-13%20at%2012.16.08%20AM.png?version=1&amp;modificationDate=1460487238473&amp;cacheVersion=1&amp;api=v2&amp;width=399&amp;height=249 1x\"></span></p><p style=\"margin-left: 30.0px;\">  ip:8055/oviyam2</p><p style=\"margin-left: 30.0px;\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" height=\"250\" width=\"400\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/36077574/Screen%20Shot%202016-04-13%20at%2012.25.23%20AM.png?version=1&amp;modificationDate=1460487434635&amp;cacheVersion=1&amp;api=v2&amp;width=400&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/36077574/Screen%20Shot%202016-04-13%20at%2012.25.23%20AM.png?version=1&amp;modificationDate=1460487434635&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"52101131\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-04-13 at 12.25.23 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"36077574\" data-linked-resource-container-version=\"35\" data-media-id=\"3ddf9d2a-64e7-42a1-bbd3-a44189580a17\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/36077574/Screen%20Shot%202016-04-13%20at%2012.25.23%20AM.png?version=1&amp;modificationDate=1460487434635&amp;cacheVersion=1&amp;api=v2&amp;width=800&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/36077574/Screen%20Shot%202016-04-13%20at%2012.25.23%20AM.png?version=1&amp;modificationDate=1460487434635&amp;cacheVersion=1&amp;api=v2&amp;width=400&amp;height=250 1x\"></span></p><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"17204b32-f701-429e-9b42-5d5219af7c83\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><span class=\"legacy-color-text-default\">The dcmsnd utility provided by dcm4chee can be used to test uploading of images to it. </span><br /><span class=\"legacy-color-text-default\"><br /></span></p><div class=\"confluence-information-macro has-no-icon confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8bd20659-d910-43c6-89e0-d0406ee0624f\" data-macro-name=\"info\"><div class=\"confluence-information-macro-body\"><pre class=\"p1\">dcmsnd DCM4CHEE@ipaddress:11112 image.dcm</pre></div></div><p>Sample image : <a href=\"/wiki/download/attachments/24215562/image.dcm?version=1&amp;modificationDate=1437549937105&amp;cacheVersion=1&amp;api=v2\" data-linked-resource-id=\"24969220\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image.dcm\" data-linked-resource-content-type=\"application/octet-stream\" data-linked-resource-container-id=\"24215562\" data-linked-resource-container-version=\"19\">image.dcm</a><br /><span class=\"legacy-color-text-default\"><br />Utilities can be downloaded from <a class=\"external-link\" href=\"https://sourceforge.net/projects/dcm4che/files/dcm4che2/2.0.28/\" rel=\"nofollow\">https://sourceforge.net/projects/dcm4che/files/dcm4che2/2.0.28/</a></span></p><ol><li><p class=\"p1\">Unzip the dcm4che-2.0.28-bin.zip file</p></li><li><p class=\"p1\">run the excecutable files with appropriate parameters.</p></li></ol></div></div><p style=\"margin-left: 30.0px;\"><br/></p><p style=\"margin-left: 30.0px;\"><br/></p><h3 id=\"SetupDCM4CHEEServerwithOviyam2-2.SetupDCM4CHEEasPACSserverinX-raymodalityoranotherPACS\"><span class=\"legacy-color-text-default\">2. </span><span class=\"legacy-color-text-default\">S</span>etup DCM4CHEE as PACS server in X-ray modality or another PACS </h3><p style=\"margin-left: 30.0px;\"><span class=\"legacy-color-text-default\">dcm4chee is a PACS and will be used for image storage. So images need to be sent to dcm4chee. How to setup another piece of software (modality / another PACS) to send the images will be vendor specific. The vendor support engineer would typically know this. We wish to build knowlege repository of that a well. But for now, its recommended to take help from the vendor to set this up. </span></p><p style=\"margin-left: 30.0px;\"><span class=\"legacy-color-text-default\">They will have to configure dcm4chee as ImageStorage SCP with the below details</span></p><p style=\"margin-left: 30.0px;\"><span class=\"legacy-color-text-default\"><strong>Host IP</strong> : &lt;IP address of the machine where you have installed dcm4chee service&gt;</span></p><p style=\"margin-left: 30.0px;\"><span class=\"legacy-color-text-default\"><strong>AE Title</strong> : DCM4CHEE (default dcm4chee AE Title with bahmni installation)</span></p><p style=\"margin-left: 30.0px;\"><span class=\"legacy-color-text-default\"><strong>Port</strong> : 11112 (default dcm4chee port with bahmni installatino for recieving images)</span></p><p style=\"margin-left: 30.0px;\"><span class=\"legacy-color-text-default\"><br/></span></p><h3 id=\"SetupDCM4CHEEServerwithOviyam2-3.SetupDCM4CHEEasModalityworklist\"><span class=\"legacy-color-text-default\">3. <strong>Setup DCM4CHEE as Modality worklist</strong></span></h3><p>Bahmni will send hl7 order messages to dcm4chee. dcm4chee will convert the order messages to worklist items. The items can then be polled by modality or another PACS. </p><ol><li>Update dcm4chee to use orm2dcm_bahmni.xsl instead of default orm2dcm.xsl by going to the jmx console <br/>Go to ip:8055/jmx-console/HtmlAdaptor → Select service=HL7Service,type=ORM under dcm4chee.archive<br/> → Set <span class=\"legacy-color-text-default\">Stylesheet = orm2dcm_bahmni.xsl (<em><strong>Note:</strong></em> In docker this step is not needed. And the xsl stylesheet file itself is named as orm2dcm.xsl)</span></li><li><span class=\"legacy-color-text-default\">Bahmni doesn't pass modality, Station AET and Station Name part of the HL7 message. If you are dealing with more than one modality, you can try customising the above mentioned stylesheet to look at the order name and determine the modality. If you are dealing with only one modality then you can set Default Modality, Default Station AET and Default Station Name in the above mentioned jmx console screen of dcm4chee. </span></li><li style=\"text-align: left;\"><span class=\"legacy-color-text-default\">Default DCM4CHEE HL7 server listens for HL7 Messages on 2575 port. If you want to follow the way it bahmni works out of the box, you need not change anything for this. </span></li></ol><p style=\"text-align: left;\"><span class=\"legacy-color-text-default\">Once the complete setup is working and orders are flowing from bahmni to dcm4chee (via pacs-integration), the worklist items would look like below</span></p><p style=\"text-align: left;\"><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/36077574/Screen%20Shot%202016-07-08%20at%207.55.42%20PM.png?version=1&amp;modificationDate=1468473627491&amp;cacheVersion=1&amp;api=v2&amp;width=561&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/36077574/Screen%20Shot%202016-07-08%20at%207.55.42%20PM.png?version=1&amp;modificationDate=1468473627491&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"74153990\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-07-08 at 7.55.42 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"36077574\" data-linked-resource-container-version=\"35\" data-media-id=\"57f73094-c4ad-4fff-8c8d-1774f06e57c7\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/36077574/Screen%20Shot%202016-07-08%20at%207.55.42%20PM.png?version=1&amp;modificationDate=1468473627491&amp;cacheVersion=1&amp;api=v2&amp;width=1122&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/36077574/Screen%20Shot%202016-07-08%20at%207.55.42%20PM.png?version=1&amp;modificationDate=1468473627491&amp;cacheVersion=1&amp;api=v2&amp;width=561&amp;height=250 1x\"></span></span></p><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7652188a-813f-4ddd-a961-a2401769f5ae\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><span class=\"legacy-color-text-default\"> Remember to press the search button to see the worklist items in modality worklist. </span></p></div></div><h3 style=\"text-align: left;\" id=\"SetupDCM4CHEEServerwithOviyam2-4.SetupPACSQueryConfiginOpenMRS\"><span class=\"legacy-color-text-default\">4. <strong>Setup PACS Query Config in OpenMRS</strong><br/></span></h3><p>Pacs Query is a OpenMRS module written to query for radiology order information from a PACS Server for Radiology orders made for a given patient. You can read more about it <a class=\"external-link\" href=\"https://github.com/Bahmni/pacsquery\" rel=\"nofollow\">here</a>.</p><ol><li>Login to OpenMRS and validate if <code>Pacs Query</code> OMOD is running from Administration → Manage Modules.</li><li>Now navigate to Administration → Advanced Settings and find the <code>pacsquery.pacsConfig</code> property.</li><li>In that property add information about your PACS server from where the order information needs to be fetched. The format would be <code>&lt;AETitle&gt;@&lt;Host&gt;:&lt;Port&gt;</code>. If your dcm4chee is running on the same host as OpenMRS the value would be <strong>DCM4CHEE@localhost:11112. </strong>For docker installations you can set the value as <em><strong>DCM4CHEE@dcm4chee:11112</strong></em></li></ol></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-cssliststyle=\"none\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"a67c242e-aa37-4829-a661-f274c21fb80b\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604202/Radiology+and+PACS\" data-linked-resource-id=\"32604202\" data-linked-resource-version=\"15\" data-linked-resource-type=\"page\">Radiology and PACS Integration - Feature Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32014462/PACS+Integration+and+Support\" data-linked-resource-id=\"32014462\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">PACS Integration - User Guide</a></span></p>\n</div></div><p><br/></p><p><br/></p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/36077574"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "review-needed",
+          "id": "30146561",
+          "label": "review-needed"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 1,
+      "_links": {
+        "next": "/rest/api/content/36077574/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/36077574/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 432351662
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/36077574/child",
+    "restrictions": "/rest/api/content/36077574/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/36077574/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=36077574",
+    "webui": "/spaces/BAH/pages/36077574/Setup+DCM4CHEE+Server+with+Oviyam2",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/36077574",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/36077574",
+    "tinyui": "/x/BoAmAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

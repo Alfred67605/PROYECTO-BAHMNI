@@ -1,0 +1,170 @@
+{
+  "id": "53313567",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/53313567",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNTMzMTM1Njc=",
+  "status": "current",
+  "title": "Migrate Programs",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2016-04-14T07:47:03.726Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/53313567/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "when": "2018-04-13T13:44:37.986Z",
+    "friendlyWhen": "Apr 13, 2018",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "syncRev": "0.j3R43KpTtlRRw1HDmTYdhg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$53313567.38",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/53313567"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/53313567/version/5"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Context</h2><p>Patients can be enrolled in Bahmni into programs and subsequently tracked and monitored under that program. Similar to the process of&nbsp; importing patients and encounter data into the Bahmni via CSV files ,&nbsp;<span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(51,51,51);\">one can also</span></span><span style=\"font-size: 14.0px;\">&nbsp;enrol a large no.of patients into programs using the Programs CSV import feature.&nbsp;</span></p><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"warning\" ac:schema-version=\"1\" ac:macro-id=\"6dc121f4-bcdc-4b3e-8b26-453e7415d894\"><ac:parameter ac:name=\"title\">Not Supported</ac:parameter><ac:rich-text-body><p>Programs CSV import is only for supporting enrolments of patients into Programs. Bahmni currently does not support the upload of patient encounter data in the program context through CSV files.&nbsp;</p></ac:rich-text-body></ac:structured-macro><h2><span style=\"color: rgb(0,0,0);\">Steps</span></h2><p><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(51,51,51);\">Please refer to the sample import file :&nbsp;&nbsp;<ac:link><ri:attachment ri:filename=\"programs.csv\" ri:version-at-save=\"1\" /></ac:link>.&nbsp;</span></span></p><p><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(51,51,51);\">Follow the steps as mentioned <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/53313590/Import+Data\">here</a> to perform the import.&nbsp;</span></span></p><h2>Key Fields&nbsp;</h2><table><colgroup><col /><col /><col /></colgroup><tbody><tr><th>Key</th><th>Use</th><th>Mandatory</th></tr><tr><td><strong>Registration Number*</strong></td><td>&nbsp;The identifier for the patient, for example GAN200189</td><td>&nbsp;Y</td></tr><tr><td><strong>Patient.Name</strong></td><td><br /></td><td>&nbsp;N</td></tr><tr><td><strong>Patient.AGE</strong></td><td><br /></td><td>&nbsp;N</td></tr><tr><td><strong>Patient.Gender</strong></td><td><br /></td><td>N</td></tr><tr><td><strong>Patient.Village</strong></td><td><br /></td><td>N</td></tr><tr><td><strong>Program*</strong></td><td>Concept name of the Program - TB, HIV</td><td>Y</td></tr><tr><td><strong>EnrollmentDate*</strong></td><td>Name of the visit type, for example LAB_VISIT.</td><td>Y</td></tr></tbody></table><p>After the successful import of the CSV file, an entry will be made for each patient enrolment in the &quot;patient_program&quot; table in the openMRS DB.&nbsp;</p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"f7f1ff82-80b4-47d9-8f97-1a5e88e6dcc7\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"7f2e67dd-8b9b-4e98-afd4-91190f6c90ab\"><ac:parameter ac:name=\"style\">none</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"9fabefcc-24c5-443d-b576-caa36908b8b3\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Other Types of Data Migration</ac:parameter><ac:rich-text-body><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"a5fc861b-14ee-4fb9-bb1d-dc584d267041\"><ac:parameter ac:name=\"all\">true</ac:parameter><ac:parameter ac:name=\"page\"><ac:link><ri:page ri:content-title=\"Configure CSV Import\" ri:version-at-save=\"16\" /></ac:link></ac:parameter><ac:parameter ac:name=\"sort\">modified</ac:parameter><ac:parameter ac:name=\"reverse\">true</ac:parameter><ac:parameter ac:name=\"first\">3</ac:parameter></ac:structured-macro></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Data Migration - Import\" ri:version-at-save=\"11\" /><ac:plain-text-link-body><![CDATA[Configure CSV Import - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"85d3500b-789e-4df7-b3d9-ff24954802f7\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Import Data\" ri:version-at-save=\"6\" /><ac:plain-text-link-body><![CDATA[Configure CSV Import - Implementer's Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p><br /></p><p><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/53313567"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\"><style>[data-colorid=oyywog4b8v]{color:#333333} html[data-color-mode=dark] [data-colorid=oyywog4b8v]{color:#cccccc}[data-colorid=wnvouh97yo]{color:#333333} html[data-color-mode=dark] [data-colorid=wnvouh97yo]{color:#cccccc}[data-colorid=e7rp8ck8vl]{color:#333333} html[data-color-mode=dark] [data-colorid=e7rp8ck8vl]{color:#cccccc}</style>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"MigratePrograms-Context\">Context</h2><p>Patients can be enrolled in Bahmni into programs and subsequently tracked and monitored under that program. Similar to the process of&nbsp; importing patients and encounter data into the Bahmni via CSV files ,&nbsp;<span class=\"legacy-color-text-default\"><span data-colorid=\"oyywog4b8v\">one can also</span></span><span style=\"font-size: 14.0px;\">&nbsp;enrol a large no.of patients into programs using the Programs CSV import feature.&nbsp;</span></p><div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6dc121f4-bcdc-4b3e-8b26-453e7415d894\" data-macro-name=\"warning\"><p class=\"title\">Not Supported</p><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Programs CSV import is only for supporting enrolments of patients into Programs. Bahmni currently does not support the upload of patient encounter data in the program context through CSV files.&nbsp;</p></div></div><h2 id=\"MigratePrograms-Steps\"><span class=\"legacy-color-text-default\">Steps</span></h2><p><span class=\"legacy-color-text-default\"><span data-colorid=\"wnvouh97yo\">Please refer to the sample import file :&nbsp;&nbsp;<a href=\"/wiki/download/attachments/53313567/programs.csv?version=1&amp;modificationDate=1523626332245&amp;cacheVersion=1&amp;api=v2\" data-linked-resource-id=\"616398858\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"programs.csv\" data-linked-resource-content-type=\"text/csv\" data-linked-resource-container-id=\"53313567\" data-linked-resource-container-version=\"5\">programs.csv</a>.&nbsp;</span></span></p><p><span class=\"legacy-color-text-default\"><span data-colorid=\"e7rp8ck8vl\">Follow the steps as mentioned <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/53313590/Import+Data\" rel=\"nofollow\">here</a> to perform the import.&nbsp;</span></span></p><h2 id=\"MigratePrograms-KeyFields\">Key Fields&nbsp;</h2><div class=\"table-wrap\"><table class=\"confluenceTable\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th class=\"confluenceTh\">Key</th><th class=\"confluenceTh\">Use</th><th class=\"confluenceTh\">Mandatory</th></tr><tr><td class=\"confluenceTd\"><strong>Registration Number*</strong></td><td class=\"confluenceTd\">&nbsp;The identifier for the patient, for example GAN200189</td><td class=\"confluenceTd\">&nbsp;Y</td></tr><tr><td class=\"confluenceTd\"><strong>Patient.Name</strong></td><td class=\"confluenceTd\"><br /></td><td class=\"confluenceTd\">&nbsp;N</td></tr><tr><td class=\"confluenceTd\"><strong>Patient.AGE</strong></td><td class=\"confluenceTd\"><br /></td><td class=\"confluenceTd\">&nbsp;N</td></tr><tr><td class=\"confluenceTd\"><strong>Patient.Gender</strong></td><td class=\"confluenceTd\"><br /></td><td class=\"confluenceTd\">N</td></tr><tr><td class=\"confluenceTd\"><strong>Patient.Village</strong></td><td class=\"confluenceTd\"><br /></td><td class=\"confluenceTd\">N</td></tr><tr><td class=\"confluenceTd\"><strong>Program*</strong></td><td class=\"confluenceTd\">Concept name of the Program - TB, HIV</td><td class=\"confluenceTd\">Y</td></tr><tr><td class=\"confluenceTd\"><strong>EnrollmentDate*</strong></td><td class=\"confluenceTd\">Name of the visit type, for example LAB_VISIT.</td><td class=\"confluenceTd\">Y</td></tr></tbody></table></div><p>After the successful import of the CSV file, an entry will be made for each patient enrolment in the &quot;patient_program&quot; table in the openMRS DB.&nbsp;</p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f7f1ff82-80b4-47d9-8f97-1a5e88e6dcc7\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>On this Page</b></div><div class=\"panelContent\">\n<p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-cssliststyle=\"none\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"7f2e67dd-8b9b-4e98-afd4-91190f6c90ab\" data-macro-name=\"toc\"> </div><p> </p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9fabefcc-24c5-443d-b576-caa36908b8b3\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Other Types of Data Migration</b></div><div class=\"panelContent\">\n<ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"a5fc861b-14ee-4fb9-bb1d-dc584d267041\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/13697066/Migrate+Patient+and+Encounter+Data\" data-linked-resource-id=\"13697066\" data-linked-resource-version=\"48\" data-linked-resource-type=\"page\">Migrate Patient and Encounter Data</a></li><li><a href=\"/wiki/spaces/BAH/pages/3017015299/Migrate+Concept+Reference+Terms\" data-linked-resource-id=\"3017015299\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Migrate Concept Reference Terms</a></li><li><a href=\"/wiki/spaces/BAH/pages/53313567/Migrate+Programs\" data-linked-resource-id=\"53313567\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Migrate Programs</a></li></ul>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/53313592/Data+Migration+-+Import\" data-linked-resource-id=\"53313592\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Configure CSV Import - Feature Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"85d3500b-789e-4df7-b3d9-ff24954802f7\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/53313590/Import+Data\" data-linked-resource-id=\"53313590\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Configure CSV Import - Implementer's Guide</a></span></p>\n</div></div><p><br /></p><p><br /></p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/53313567"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/53313567/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/53313567/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 2
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/53313567/child",
+    "restrictions": "/rest/api/content/53313567/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/53313567/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=53313567",
+    "webui": "/spaces/BAH/pages/53313567/Migrate+Programs",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/53313567",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/53313567",
+    "tinyui": "/x/H4AtAw",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

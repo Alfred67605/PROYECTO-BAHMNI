@@ -1,0 +1,179 @@
+{
+  "id": "3495657474",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3495657474",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzQ5NTY1NzQ3NA==",
+  "status": "current",
+  "title": "Configure Custom Patient Attribute with Icon",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "620bff9de41f76006a6d49bd",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Rahul Ramesh",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/620bff9de41f76006a6d49bd",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Rahul Ramesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=620bff9de41f76006a6d49bd"
+      }
+    },
+    "createdDate": "2024-05-02T11:15:53.114Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3495657474/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "620bff9de41f76006a6d49bd",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Rahul Ramesh",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/620bff9de41f76006a6d49bd",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Rahul Ramesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=620bff9de41f76006a6d49bd"
+      }
+    },
+    "when": "2024-05-09T07:02:35.137Z",
+    "friendlyWhen": "May 09, 2024",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3495657474.146",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3495657474"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3495657474/version/7"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\" ac:breakout-mode=\"full-width\"><ac:layout-cell><h2>Purpose and Benefits</h2><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"e9122da3-25cf-48de-aa5f-92af80bb4216\"><ac:rich-text-body><p><strong>Version Compatibility</strong><br />This feature is available from Bahmni Standard V1.0 and Bahmni Lite V1.1.</p></ac:rich-text-body></ac:structured-macro><p>This feature allows healthcare professionals to configure a custom attribute for new patients during the registration process. This attribute can be represented as an icon based on configuration, which can enable the identification of patients with specific requirements or medical needs, improving the visual representation of patient data and aiding in the efficient recognition of key patient characteristics.</p><table data-table-width=\"760\" data-layout=\"default\" ac:local-id=\"38eff3ab-cddb-4bfb-b0e2-abde1c386a75\"><tbody><tr><th><p><strong>Patient Dashboard</strong></p></th><th><p><strong><ac:inline-comment-marker ac:ref=\"8e293fe4-0904-4de2-997d-0fd65ecfbea9\">Clinical Patient Search</ac:inline-comment-marker></strong></p></th><th><p><strong>ADT Page</strong></p></th></tr><tr><td><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"236\" ac:original-width=\"1338\" ac:custom-width=\"true\" ac:width=\"374\"><ri:attachment ri:filename=\"Screenshot 2024-04-09 at 8.54.40 AM.png\" ri:version-at-save=\"1\" /></ac:image></td><td><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"332\" ac:original-width=\"1301\" ac:custom-width=\"true\" ac:width=\"374\"><ri:attachment ri:filename=\"Screenshot 2024-04-09 at 8.55.11 AM.png\" ri:version-at-save=\"1\" /></ac:image></td><td><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"371\" ac:original-width=\"1358\" ac:custom-width=\"true\" ac:width=\"378\"><ri:attachment ri:filename=\"Screenshot 2024-04-09 at 8.53.53 AM.png\" ri:version-at-save=\"1\" /></ac:image></td></tr></tbody></table><h2>Steps to Configure Custom Patient Attribute</h2><p>This example demonstrates how to create a new patient attribute called &quot;kid&quot;.</p><h3><strong>Create a Custom Person Attribute</strong></h3><p>Define a new custom person attribute named <code>kid</code> of type <code>java.lang.Boolean</code> using either of the following methods:</p><ol start=\"1\"><li><p><strong>Liquibase Changeset</strong>:</p><ol start=\"1\"><li><p>Create a new changeset to add the custom attribute type &quot;kid&quot;.</p></li><li><p>Define the attribute with the specified properties, including name, format, and other attributes.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"423d465f-1515-493a-9777-146807b3445f\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:plain-text-body><![CDATA[<changeSet id=\"ICON_ATTRIBUTE_TYPE_202404151317\" author=\"BAHMNI\">\n    <preConditions onFail=\"MARK_RAN\">\n        <sqlCheck expectedResult=\"0\">\n            select count(*) from person_attribute_type where name = 'kid';\n        </sqlCheck>\n    </preConditions>\n    <comment>Add person_attribute_type 'kid'</comment>\n    <sql>\n        INSERT INTO person_attribute_type (name, description, format, searchable, creator, date_created, retired, sort_weight, uuid)\n        VALUES ('kid', 'Kid', 'java.lang.Boolean', '0', 1, curdate(), 0, 8, uuid());\n    </sql>\n</changeSet>]]></ac:plain-text-body></ac:structured-macro></li></ol></li><li><p><strong>Through Initializer:</strong></p><ul><li><p>Add the custom attribute in a CSV file located at <code>masterdata/configuration/personattributetypes/personAttributeTypes.csv</code>.</p></li><li><p>Specify the attribute's properties, such as name, format, and other configurations. </p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"dd722941-59ea-4524-a360-ed75ff1d6362\"><ac:plain-text-body><![CDATA[Uuid,Void/Retire,Name,Description,Format,Foreign uuid,Searchable,_order:1000\n,,kid,Kid,java.lang.Boolean,,,]]></ac:plain-text-body></ac:structured-macro></li></ul></li></ol><h3><strong>Configure Icon and Style</strong></h3><p>Add the following configuration to the relevant <code>app.json</code> files (<code>clinical</code>, <code>adt</code>, or <code>ipd</code>) of the config module:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"e0d4db53-8d03-4c96-93e7-df654e2aec80\"><ac:parameter ac:name=\"language\">json</ac:parameter><ac:plain-text-body><![CDATA[\"config\" : {\n  ....\n  \"iconAttribute\": {\n      \"attrName\": \"kid\",\n      \"attrValue\": \"true\",\n      \"icon\": \"fa fa-solid fa-child\",\n      \"iconStyle\": \"{'background-color': '#F58C35'}\"\n  },\n  ...\n}]]></ac:plain-text-body></ac:structured-macro><h4>Key Fields</h4><table data-table-width=\"760\" data-layout=\"default\" ac:local-id=\"f1068961-61f5-4e52-9090-99a28c700c5f\"><tbody><tr><th><p>Key</p></th><th><p>Value</p></th><th><p>Mandatory</p></th></tr><tr><td><p><code>attrName</code></p></td><td><p>Name of the custom attribute type</p></td><td><p style=\"text-align: center;\">Yes</p></td></tr><tr><td><p><code>attrValue</code></p></td><td><p>Condition that triggers the icon</p></td><td><p style=\"text-align: center;\">Yes</p></td></tr><tr><td><p><code>icon</code></p></td><td><p>FontAwesome icon class for visual representation of the attribute.</p></td><td><p style=\"text-align: center;\">Yes</p></td></tr><tr><td><p><code>iconStyle</code></p></td><td><p>Custom CSS styling for the icon, such as background color.</p></td><td><p style=\"text-align: center;\">No</p></td></tr></tbody></table><h3><strong>Update Search and Queue Configurations</strong></h3><ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p><strong>Note</strong></p><p>The search query that fetches patient details is implementation-specific. If you want to display the custom attribute on patient search pages, you need to modify the search query to include the relevant custom attribute details.</p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p><strong>Note</strong></p><p>The search query that fetches patient details is implementation-specific. If you want to display the custom attribute on patient search pages, you need to modify the search query to include the relevant custom attribute details.</p>\n</div></div></ac:adf-fallback></ac:adf-extension><ol start=\"1\"><li><p>Add a left outer join clause in search queries:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"54360a71-1248-4f51-9c5f-85c397cc50ae\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:plain-text-body><![CDATA[LEFT OUTER JOIN person_attribute patt ON patt.person_id = p.person_id AND patt.person_attribute_type_id = ( SELECT person_attribute_type_id FROM person_attribute_type WHERE name=\"kid\" ) AND patt.voided = 0]]></ac:plain-text-body></ac:structured-macro></li><li><p>Include the custom attribute in the select statement:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"908a96c6-02d5-416b-af69-af6948b0e58c\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:plain-text-body><![CDATA[IF(patt.value = \"true\", \"true\", \"false\") AS kid]]></ac:plain-text-body></ac:structured-macro></li></ol></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" data-layout=\"default\" ac:local-id=\"22d09ae6-043b-47c3-910c-928bd3fa3e66\" ac:macro-id=\"79239965-b4bd-43fd-a380-6be8f852c6ef\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">On this page</ac:parameter><ac:rich-text-body><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" data-layout=\"default\" ac:local-id=\"5ca47886-9c01-41c7-9440-a415639e8695\" ac:macro-id=\"68074863-51ad-417e-b299-4395b5de3439\"><ac:parameter ac:name=\"minLevel\">1</ac:parameter><ac:parameter ac:name=\"maxLevel\">6</ac:parameter><ac:parameter ac:name=\"outline\">false</ac:parameter><ac:parameter ac:name=\"style\">default</ac:parameter><ac:parameter ac:name=\"type\">list</ac:parameter><ac:parameter ac:name=\"printable\">true</ac:parameter></ac:structured-macro><p>&nbsp;</p></ac:rich-text-body></ac:structured-macro><p /></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3495657474"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ConfigureCustomPatientAttributewithIcon-PurposeandBenefits\">Purpose and Benefits</h2><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e9122da3-25cf-48de-aa5f-92af80bb4216\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>Version Compatibility</strong><br />This feature is available from Bahmni Standard V1.0 and Bahmni Lite V1.1.</p></div></div><p>This feature allows healthcare professionals to configure a custom attribute for new patients during the registration process. This attribute can be represented as an icon based on configuration, which can enable the identification of patients with specific requirements or medical needs, improving the visual representation of patient data and aiding in the efficient recognition of key patient characteristics.</p><div class=\"table-wrap\"><table data-table-width=\"760\" data-layout=\"default\" data-local-id=\"38eff3ab-cddb-4bfb-b0e2-abde1c386a75\" class=\"confluenceTable\"><tbody><tr><th class=\"confluenceTh\"><p><strong>Patient Dashboard</strong></p></th><th class=\"confluenceTh\"><p><strong><span class=\"inline-comment-marker\" data-ref=\"8e293fe4-0904-4de2-997d-0fd65ecfbea9\">Clinical Patient Search</span></strong></p></th><th class=\"confluenceTh\"><p><strong>ADT Page</strong></p></th></tr><tr><td class=\"confluenceTd\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"374\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3495657474/Screenshot%202024-04-09%20at%208.54.40%E2%80%AFAM.png?version=1&amp;modificationDate=1714656138898&amp;cacheVersion=1&amp;api=v2&amp;width=374&amp;height=66\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3495657474/Screenshot%202024-04-09%20at%208.54.40%E2%80%AFAM.png?version=1&amp;modificationDate=1714656138898&amp;cacheVersion=1&amp;api=v2\" data-height=\"236\" data-width=\"1338\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3495526429\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2024-04-09 at 8.54.40 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3495657474\" data-linked-resource-container-version=\"7\" data-media-id=\"5224a30b-8bce-49bc-a012-c62a2f108962\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3495657474/Screenshot%202024-04-09%20at%208.54.40%E2%80%AFAM.png?version=1&amp;modificationDate=1714656138898&amp;cacheVersion=1&amp;api=v2&amp;width=748&amp;height=132 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3495657474/Screenshot%202024-04-09%20at%208.54.40%E2%80%AFAM.png?version=1&amp;modificationDate=1714656138898&amp;cacheVersion=1&amp;api=v2&amp;width=374&amp;height=66 1x\"></span></td><td class=\"confluenceTd\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"374\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3495657474/Screenshot%202024-04-09%20at%208.55.11%E2%80%AFAM.png?version=1&amp;modificationDate=1714656244249&amp;cacheVersion=1&amp;api=v2&amp;width=374&amp;height=95\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3495657474/Screenshot%202024-04-09%20at%208.55.11%E2%80%AFAM.png?version=1&amp;modificationDate=1714656244249&amp;cacheVersion=1&amp;api=v2\" data-height=\"332\" data-width=\"1301\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3495624712\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2024-04-09 at 8.55.11 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3495657474\" data-linked-resource-container-version=\"7\" data-media-id=\"dcff8582-0e4d-46df-8697-17b3b6bb7111\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3495657474/Screenshot%202024-04-09%20at%208.55.11%E2%80%AFAM.png?version=1&amp;modificationDate=1714656244249&amp;cacheVersion=1&amp;api=v2&amp;width=748&amp;height=190 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3495657474/Screenshot%202024-04-09%20at%208.55.11%E2%80%AFAM.png?version=1&amp;modificationDate=1714656244249&amp;cacheVersion=1&amp;api=v2&amp;width=374&amp;height=95 1x\"></span></td><td class=\"confluenceTd\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"378\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3495657474/Screenshot%202024-04-09%20at%208.53.53%E2%80%AFAM.png?version=1&amp;modificationDate=1714656255680&amp;cacheVersion=1&amp;api=v2&amp;width=378&amp;height=103\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3495657474/Screenshot%202024-04-09%20at%208.53.53%E2%80%AFAM.png?version=1&amp;modificationDate=1714656255680&amp;cacheVersion=1&amp;api=v2\" data-height=\"371\" data-width=\"1358\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3494936663\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2024-04-09 at 8.53.53 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3495657474\" data-linked-resource-container-version=\"7\" data-media-id=\"92714a46-492c-4cf3-9714-f18641f634f2\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3495657474/Screenshot%202024-04-09%20at%208.53.53%E2%80%AFAM.png?version=1&amp;modificationDate=1714656255680&amp;cacheVersion=1&amp;api=v2&amp;width=756&amp;height=206 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3495657474/Screenshot%202024-04-09%20at%208.53.53%E2%80%AFAM.png?version=1&amp;modificationDate=1714656255680&amp;cacheVersion=1&amp;api=v2&amp;width=378&amp;height=103 1x\"></span></td></tr></tbody></table></div><h2 id=\"ConfigureCustomPatientAttributewithIcon-StepstoConfigureCustomPatientAttribute\">Steps to Configure Custom Patient Attribute</h2><p>This example demonstrates how to create a new patient attribute called &quot;kid&quot;.</p><h3 id=\"ConfigureCustomPatientAttributewithIcon-CreateaCustomPersonAttribute\"><strong>Create a Custom Person Attribute</strong></h3><p>Define a new custom person attribute named <code>kid</code> of type <code>java.lang.Boolean</code> using either of the following methods:</p><ol start=\"1\"><li><p><strong>Liquibase Changeset</strong>:</p><ol start=\"1\"><li><p>Create a new changeset to add the custom attribute type &quot;kid&quot;.</p></li><li><p>Define the attribute with the specified properties, including name, format, and other attributes.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"423d465f-1515-493a-9777-146807b3445f\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&lt;changeSet id=&quot;ICON_ATTRIBUTE_TYPE_202404151317&quot; author=&quot;BAHMNI&quot;&gt;\n    &lt;preConditions onFail=&quot;MARK_RAN&quot;&gt;\n        &lt;sqlCheck expectedResult=&quot;0&quot;&gt;\n            select count(*) from person_attribute_type where name = 'kid';\n        &lt;/sqlCheck&gt;\n    &lt;/preConditions&gt;\n    &lt;comment&gt;Add person_attribute_type 'kid'&lt;/comment&gt;\n    &lt;sql&gt;\n        INSERT INTO person_attribute_type (name, description, format, searchable, creator, date_created, retired, sort_weight, uuid)\n        VALUES ('kid', 'Kid', 'java.lang.Boolean', '0', 1, curdate(), 0, 8, uuid());\n    &lt;/sql&gt;\n&lt;/changeSet&gt;</pre>\n</div></div></li></ol></li><li><p><strong>Through Initializer:</strong></p><ul><li><p>Add the custom attribute in a CSV file located at <code>masterdata/configuration/personattributetypes/personAttributeTypes.csv</code>.</p></li><li><p>Specify the attribute's properties, such as name, format, and other configurations. </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"dd722941-59ea-4524-a360-ed75ff1d6362\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Uuid,Void/Retire,Name,Description,Format,Foreign uuid,Searchable,_order:1000\n,,kid,Kid,java.lang.Boolean,,,</pre>\n</div></div></li></ul></li></ol><h3 id=\"ConfigureCustomPatientAttributewithIcon-ConfigureIconandStyle\"><strong>Configure Icon and Style</strong></h3><p>Add the following configuration to the relevant <code>app.json</code> files (<code>clinical</code>, <code>adt</code>, or <code>ipd</code>) of the config module:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e0d4db53-8d03-4c96-93e7-df654e2aec80\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;config&quot; : {\n  ....\n  &quot;iconAttribute&quot;: {\n      &quot;attrName&quot;: &quot;kid&quot;,\n      &quot;attrValue&quot;: &quot;true&quot;,\n      &quot;icon&quot;: &quot;fa fa-solid fa-child&quot;,\n      &quot;iconStyle&quot;: &quot;{'background-color': '#F58C35'}&quot;\n  },\n  ...\n}</pre>\n</div></div><h4 id=\"ConfigureCustomPatientAttributewithIcon-KeyFields\">Key Fields</h4><div class=\"table-wrap\"><table data-table-width=\"760\" data-layout=\"default\" data-local-id=\"f1068961-61f5-4e52-9090-99a28c700c5f\" class=\"confluenceTable\"><tbody><tr><th class=\"confluenceTh\"><p>Key</p></th><th class=\"confluenceTh\"><p>Value</p></th><th class=\"confluenceTh\"><p>Mandatory</p></th></tr><tr><td class=\"confluenceTd\"><p><code>attrName</code></p></td><td class=\"confluenceTd\"><p>Name of the custom attribute type</p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\">Yes</p></td></tr><tr><td class=\"confluenceTd\"><p><code>attrValue</code></p></td><td class=\"confluenceTd\"><p>Condition that triggers the icon</p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\">Yes</p></td></tr><tr><td class=\"confluenceTd\"><p><code>icon</code></p></td><td class=\"confluenceTd\"><p>FontAwesome icon class for visual representation of the attribute.</p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\">Yes</p></td></tr><tr><td class=\"confluenceTd\"><p><code>iconStyle</code></p></td><td class=\"confluenceTd\"><p>Custom CSS styling for the icon, such as background color.</p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\">No</p></td></tr></tbody></table></div><h3 id=\"ConfigureCustomPatientAttributewithIcon-UpdateSearchandQueueConfigurations\"><strong>Update Search and Queue Configurations</strong></h3><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p><strong>Note</strong></p><p>The search query that fetches patient details is implementation-specific. If you want to display the custom attribute on patient search pages, you need to modify the search query to include the relevant custom attribute details.</p>\n</div></div><ol start=\"1\"><li><p>Add a left outer join clause in search queries:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"54360a71-1248-4f51-9c5f-85c397cc50ae\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: false; theme: Confluence\" data-theme=\"Confluence\">LEFT OUTER JOIN person_attribute patt ON patt.person_id = p.person_id AND patt.person_attribute_type_id = ( SELECT person_attribute_type_id FROM person_attribute_type WHERE name=&quot;kid&quot; ) AND patt.voided = 0</pre>\n</div></div></li><li><p>Include the custom attribute in the select statement:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"908a96c6-02d5-416b-af69-af6948b0e58c\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: false; theme: Confluence\" data-theme=\"Confluence\">IF(patt.value = &quot;true&quot;, &quot;true&quot;, &quot;false&quot;) AS kid</pre>\n</div></div></li></ol></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-layout=\"default\" data-local-id=\"22d09ae6-043b-47c3-910c-928bd3fa3e66\" data-macro-id=\"79239965-b4bd-43fd-a380-6be8f852c6ef\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>On this page</b></div><div class=\"panelContent\">\n<div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-cssliststyle=\"default\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6\" data-layout=\"default\" data-local-id=\"5ca47886-9c01-41c7-9440-a415639e8695\" data-macro-id=\"68074863-51ad-417e-b299-4395b5de3439\" data-macro-name=\"toc\" data-numberedoutline=\"false\" data-structure=\"list\"> </div><p> </p>\n</div></div><p /></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3495657474"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "custom-icon",
+          "id": "3496083461",
+          "label": "custom-icon"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 1,
+      "_links": {
+        "next": "/rest/api/content/3495657474/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3495657474/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1728788002
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3495657474/child",
+    "restrictions": "/rest/api/content/3495657474/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3495657474/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3495657474",
+    "webui": "/spaces/BAH/pages/3495657474/Configure+Custom+Patient+Attribute+with+Icon",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3495657474",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3495657474",
+    "tinyui": "/x/AoBb0",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

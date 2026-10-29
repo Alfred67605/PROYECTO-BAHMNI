@@ -1,0 +1,170 @@
+{
+  "id": "21200902",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/21200902",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjEyMDA5MDI=",
+  "status": "current",
+  "title": "Implementer's Github guide",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Arun Paul",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Arun Paul",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3"
+      }
+    },
+    "createdDate": "2015-05-25T05:46:40.548Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/21200902/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:c6cd7bce-1c6d-44ab-b0f0-9d94554e67c2",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Ranjan Sakalley",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:c6cd7bce-1c6d-44ab-b0f0-9d94554e67c2",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Ranjan Sakalley",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:c6cd7bce-1c6d-44ab-b0f0-9d94554e67c2"
+      }
+    },
+    "when": "2015-12-30T09:49:11.698Z",
+    "friendlyWhen": "Dec 30, 2015",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "syncRev": "0.8_7ZACxxskQABTdeY2O_kg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$21200902.21",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/21200902"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/21200902/version/5"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>The configuration files (both for the UI and reports) for an implementation are version controlled and hosted at <a href=\"http://github.com\">github.com</a>.</p><p>When a new build is deployed in the server, the latest set of configuration files are copied to the server from the github repository. Typically the repository is named as:</p><pre> &lt;hospital-name&gt;-config. </pre><p>For example,</p><ul><li>Possible Health: <a href=\"https://github.com/Bahmni/possible-config\">possible-config</a>&nbsp;</li><li>The Banyan: <a href=\"https://github.com/Bahmni/banyan-config\">banyan-config</a>&nbsp;</li></ul><p>Hence, the Implementer should know basics of GIT and github, so that they could keep the github repository updated with the latest configuration changes. Some links to help understanding how to use these technologies:</p><ul><li><a href=\"http://git-scm.com/book/en/v2/Getting-Started-Installing-Git\">Installing Git</a></li><li><a href=\"http://ndpsoftware.com/git-cheatsheet.html\">Git Cheatsheet</a></li><li><a href=\"http://try.github.com/levels/1/challenges/1\">Learning Git</a></li><li><a href=\"https://help.github.com/\">Github official help page</a></li></ul><p>&nbsp;</p><p>&nbsp;</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/21200902"
+      }
+    },
+    "view": {
+      "value": "<p>The configuration files (both for the UI and reports) for an implementation are version controlled and hosted at <a class=\"external-link\" href=\"http://github.com\" rel=\"nofollow\">github.com</a>.</p><p>When a new build is deployed in the server, the latest set of configuration files are copied to the server from the github repository. Typically the repository is named as:</p><pre> &lt;hospital-name&gt;-config. </pre><p>For example,</p><ul><li>Possible Health: <a class=\"external-link\" href=\"https://github.com/Bahmni/possible-config\" rel=\"nofollow\">possible-config</a> </li><li>The Banyan: <a class=\"external-link\" href=\"https://github.com/Bahmni/banyan-config\" rel=\"nofollow\">banyan-config</a> </li></ul><p>Hence, the Implementer should know basics of GIT and github, so that they could keep the github repository updated with the latest configuration changes. Some links to help understanding how to use these technologies:</p><ul><li><a class=\"external-link\" href=\"http://git-scm.com/book/en/v2/Getting-Started-Installing-Git\" rel=\"nofollow\">Installing Git</a></li><li><a class=\"external-link\" href=\"http://ndpsoftware.com/git-cheatsheet.html\" rel=\"nofollow\">Git Cheatsheet</a></li><li><a class=\"external-link\" href=\"http://try.github.com/levels/1/challenges/1\" rel=\"nofollow\">Learning Git</a></li><li><a class=\"external-link\" href=\"https://help.github.com/\" rel=\"nofollow\">Github official help page</a></li></ul><p> </p><p> </p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/21200902"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/21200902/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/21200902/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/21200902/child",
+    "restrictions": "/rest/api/content/21200902/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/21200902/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=21200902",
+    "webui": "/spaces/BAH/pages/21200902/Implementer+s+Github+guide",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/21200902",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/21200902",
+    "tinyui": "/x/BoBDAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

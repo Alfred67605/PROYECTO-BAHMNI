@@ -1,0 +1,172 @@
+{
+  "id": "3117646002",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3117646002",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzExNzY0NjAwMg==",
+  "status": "current",
+  "title": "Reports Configurations (docker)",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "createdDate": "2022-12-09T07:07:52.961Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117646002/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2022-12-14T05:25:41.140Z",
+    "friendlyWhen": "Dec 14, 2022",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.JXRvrP8czm4q5WUST6k2Nw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$3117646002.33",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3117646002"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117646002/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>Bahmni/reports image runs bahmni reporting service which can generate reports from different application databases of Bahmni such as OpenMRS, OpenELIS, Odoo. These reports can be configured from config service of Bahmni. More about reports configuration can be found <ac:link><ri:page ri:content-title=\"Configure Reports\" ri:version-at-save=\"211\" /><ac:link-body>here</ac:link-body></ac:link>.  The docker image is built and published using Github actions from <a href=\"https://github.com/Bahmni/bahmni-reports\">bahmni-reports</a> repository.</p><h2>Environments Configurations</h2><table data-layout=\"default\" ac:local-id=\"9723b8c4-dbf7-4de3-a44a-673347863a2c\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><th><p>Variable Name</p></th><th><p>Description</p></th></tr><tr><td><p>REPORTS_IMAGE_TAG</p></td><td><p>This value specifies which image version needs to be used for reports service. List of tags can be found at <a href=\"https://hub.docker.com/r/bahmni/reports/tags\">bahmni/reports - Tags</a> .</p></td></tr><tr><td><p>REPORTS_DB_NAME</p></td><td><p>Database name for Reports</p></td></tr><tr><td><p>REPORTS_DB_USERNAME</p></td><td><p>Username of Reports Database</p></td></tr><tr><td><p>REPORTS_DB_PASSWORD</p></td><td><p>Password of Reports Database</p></td></tr></tbody></table><h1>Adding Custom Reports</h1><ol start=\"1\"><li><p>First volume mount your configuration folder as mentioned <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117449270/Using+implementation+specific+configuration#Local-development-on-config\">here</a>.</p></li><li><p>You can start reports by running <code>docker-compose up -d reports</code>.</p></li><li><p>Now, you can add/modify reports by editing the <code>reports.json</code> file at <code>openmrs/apps/reports/</code> in your config folder.</p></li><li><p>When you want to add custom sql files, add the sql file to <code>openmrs/apps/reports/sql</code> directory in config folder and in <strong><em>sqlPath</em></strong> attribute use value as <code>/etc/bahmni_config/openmrs/apps/reports/sql/&lt;filname.sql&gt;</code></p></li><li><p>The new report will be visible on refresh of the browser.</p></li></ol><p />",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3117646002"
+      }
+    },
+    "view": {
+      "value": "<p>Bahmni/reports image runs bahmni reporting service which can generate reports from different application databases of Bahmni such as OpenMRS, OpenELIS, Odoo. These reports can be configured from config service of Bahmni. More about reports configuration can be found <a href=\"/wiki/spaces/BAH/pages/18415871/Configure+Reports\" data-linked-resource-id=\"18415871\" data-linked-resource-version=\"211\" data-linked-resource-type=\"page\">here</a>.  The docker image is built and published using Github actions from <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-reports\" rel=\"nofollow\">bahmni-reports</a> repository.</p><h2 id=\"ReportsConfigurations(docker)-EnvironmentsConfigurations\">Environments Configurations</h2><div class=\"table-wrap\"><table data-layout=\"default\" data-local-id=\"9723b8c4-dbf7-4de3-a44a-673347863a2c\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><th class=\"confluenceTh\"><p>Variable Name</p></th><th class=\"confluenceTh\"><p>Description</p></th></tr><tr><td class=\"confluenceTd\"><p>REPORTS_IMAGE_TAG</p></td><td class=\"confluenceTd\"><p>This value specifies which image version needs to be used for reports service. List of tags can be found at <a class=\"external-link\" href=\"https://hub.docker.com/r/bahmni/reports/tags\" rel=\"nofollow\">bahmni/reports - Tags</a> .</p></td></tr><tr><td class=\"confluenceTd\"><p>REPORTS_DB_NAME</p></td><td class=\"confluenceTd\"><p>Database name for Reports</p></td></tr><tr><td class=\"confluenceTd\"><p>REPORTS_DB_USERNAME</p></td><td class=\"confluenceTd\"><p>Username of Reports Database</p></td></tr><tr><td class=\"confluenceTd\"><p>REPORTS_DB_PASSWORD</p></td><td class=\"confluenceTd\"><p>Password of Reports Database</p></td></tr></tbody></table></div><h1 id=\"ReportsConfigurations(docker)-AddingCustomReports\">Adding Custom Reports</h1><ol start=\"1\"><li><p>First volume mount your configuration folder as mentioned <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117449270/Using+implementation+specific+configuration#Local-development-on-config\" rel=\"nofollow\">here</a>.</p></li><li><p>You can start reports by running <code>docker-compose up -d reports</code>.</p></li><li><p>Now, you can add/modify reports by editing the <code>reports.json</code> file at <code>openmrs/apps/reports/</code> in your config folder.</p></li><li><p>When you want to add custom sql files, add the sql file to <code>openmrs/apps/reports/sql</code> directory in config folder and in <strong><em>sqlPath</em></strong> attribute use value as <code>/etc/bahmni_config/openmrs/apps/reports/sql/&lt;filname.sql&gt;</code></p></li><li><p>The new report will be visible on refresh of the browser.</p></li></ol><p />",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3117646002"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3117646002/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117646002/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 366208552
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3117646002/child",
+    "restrictions": "/rest/api/content/3117646002/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3117646002/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3117646002",
+    "webui": "/spaces/BAH/pages/3117646002/Reports+Configurations+docker",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3117646002",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117646002",
+    "tinyui": "/x/soDTuQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

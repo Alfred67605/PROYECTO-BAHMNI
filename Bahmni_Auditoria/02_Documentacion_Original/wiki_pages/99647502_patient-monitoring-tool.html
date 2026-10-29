@@ -1,0 +1,229 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Patient Monitoring Tool</title></head><body><h1>Patient Monitoring Tool</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p><br/></p><h2 id="PatientMonitoringTool-Purpose">Purpose</h2><p><span class="legacy-color-text-default">There are several programs that require the patient to adhere to a particular order of visits, tests or other checks as per a schedule. <span class="m_-3755364165018243734gmail-s1 legacy-color-text-default"> In such scenarios, t</span><span class="legacy-color-text-default">he patient monitoring flowsheet is helpful.</span></span><span class="conf-macro output-inline" data-hasbody="true" data-macro-name="excerpt" data-macro-id="9e36126b-6de7-4000-8bb1-b49457932443"><span class="legacy-color-text-default">It gives a&nbsp;visual representation of the&nbsp;</span><span class="legacy-color-text-default">planned treatment schedule for the&nbsp;patient, t</span><span class="legacy-color-text-default">he patient's current position in the treatment schedule and m</span><span class="legacy-color-text-default">issed or erroneously captured data.</span></span><span class="legacy-color-text-default">This flowsheet is driven by a trigger that would define the beginning of the schedule. </span><span class="legacy-color-text-default">For instance, this could be a date like the date of enrolling the patient into a program or it could be an event, for instance birth of a child.</span></p><h2 id="PatientMonitoringTool-Configuration">Configuration</h2><p>Patient Monitoring Flowsheet can be configured in two ways based on the requirement</p><ul><li>Patient monitoring flowsheet for Treatment</li><li>Patient monitoring flowsheet for Drugs</li></ul><h3 id="PatientMonitoringTool-ConfiguringPatientmonitoringflowsheetforTreatment">Configuring Patient monitoring flowsheet for Treatment</h3><div><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="6fef65dc-7e14-4b41-b487-d968a22fd009" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Add to clinical/dashboard.json for it to appear on the patient dashboard</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: true; theme: Confluence" data-theme="Confluence">&quot;patientMonitoringWithTreatmentStartDate&quot;: {
+  &quot;displayByDefault&quot;: true,
+  &quot;maxRecentlyViewedPatients&quot;: 1,
+  &quot;printing&quot;: {
+    &quot;title&quot;: &quot;EndTB General Patient Monitoring&quot;,
+    &quot;header&quot;: &quot;Patient Monitoring&quot;,
+    &quot;logo&quot;: &quot;../images/bahmniLogo.png&quot;,
+    &quot;showNameAndImage&quot;: true
+  },
+  &quot;sections&quot;: {
+    &quot;patientMonitoring&quot;: {
+      &quot;type&quot;: &quot;custom&quot;,
+      &quot;displayType&quot;: &quot;Full-Page&quot;,
+      &quot;config&quot;: {
+        &quot;startDateObsConcept&quot; : &quot;TUBERCULOSIS DRUG TREATMENT START DATE&quot;,
+        &quot;endDateConcept&quot;: &quot;EOT, End of Treatment Outcome date&quot;,
+        &quot;title&quot;: &quot;SUMMARY_TITLE_PATIENT_OBSERVATION_CHART&quot;,
+        &quot;template&quot;: &quot;&lt;patient-monitoring-tool section='section' patient='patient' enrollment='{{enrollment}}'&gt;&lt;/patient-monitoring-tool&gt;&quot;
+      }
+    }
+ 
+  },
+  &quot;translationKey&quot;: &quot;DASHBOARD_TAB_PATIENT_MONITORING_TREATMENT_START_DATE_KEY&quot;
+}</pre>
+</div></div><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Key</th><th class="confluenceTh">Info</th><th class="confluenceTh">Value Type</th></tr><tr><td class="confluenceTd">startDateObsConcept</td><td class="confluenceTd">Fully specified name of the concept like treatment start date or the new drug start date. This is the trigger for the normal milestones of the Flowsheet.</td><td class="confluenceTd">Text</td></tr><tr><td class="confluenceTd">endDateConcept</td><td class="confluenceTd">Fully specified name of the concept that would mark the end of the flowsheet monitoring. After this the data would no longer be monitored for the patient for the normal milestones.</td><td class="confluenceTd">Text</td></tr></tbody></table></div><h3 id="PatientMonitoringTool-ScreenshotofthePatientMonitoringFlowsheetforTreatment">Screenshot of the Patient Monitoring Flowsheet for Treatment</h3><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="400" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/99647502/Screen%20Shot%202017-04-18%20at%203.46.27%20PM.png?version=1&amp;modificationDate=1492510626758&amp;cacheVersion=1&amp;api=v2&amp;width=1033&amp;height=400" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/99647502/Screen%20Shot%202017-04-18%20at%203.46.27%20PM.png?version=1&amp;modificationDate=1492510626758&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="116169270" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2017-04-18 at 3.46.27 PM.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="99647502" data-linked-resource-container-version="28" data-media-id="b820e0a9-3d47-40dc-ae16-dfda7953510e" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/99647502/Screen%20Shot%202017-04-18%20at%203.46.27%20PM.png?version=1&amp;modificationDate=1492510626758&amp;cacheVersion=1&amp;api=v2&amp;width=2066&amp;height=800 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/99647502/Screen%20Shot%202017-04-18%20at%203.46.27%20PM.png?version=1&amp;modificationDate=1492510626758&amp;cacheVersion=1&amp;api=v2&amp;width=1033&amp;height=400 1x"></span></p></div><div><div class="syntaxhighlighter sh-confluence nogutter js"><h3 id="PatientMonitoringTool-"><strong><br/></strong></h3><h3 id="PatientMonitoringTool-ConfiguringPatientmonitoringflowsheetforDrugs">Configuring Patient monitoring flowsheet for Drugs</h3><p>Multiple flowsheets can be created on the patient dashboard, each with a different start date concept. In the config below, the drug start date has been used as the start date concept.</p></div></div><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="97c7d3df-0788-4901-b79a-24d2edfa7993" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Add to clinical/dashboard.json for it to appear on the patient dashboard</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: true; theme: Confluence" data-theme="Confluence">&quot;patientMonitoringWithDrugsStartDate&quot;: {
+  &quot;displayByDefault&quot;: true,
+  &quot;maxRecentlyViewedPatients&quot;: 1,
+  &quot;printing&quot;: {
+    &quot;title&quot;: &quot;EndTB General Patient Monitoring&quot;,
+    &quot;header&quot;: &quot;Patient Monitoring&quot;,
+    &quot;logo&quot;: &quot;../images/bahmniLogo.png&quot;,
+    &quot;showNameAndImage&quot;: true
+  },
+  &quot;sections&quot;: {
+    &quot;patientMonitoring&quot;: {
+      &quot;type&quot;: &quot;custom&quot;,
+      &quot;displayType&quot;: &quot;Full-Page&quot;,
+      &quot;config&quot;: {
+        &quot;startDateDrugConcepts&quot;: [&quot;Bedaquiline&quot;],
+        &quot;endDateConcept&quot;: &quot;EOT, End of Treatment Outcome date&quot;,
+        &quot;title&quot;: &quot;SUMMARY_TITLE_PATIENT_OBSERVATION_CHART&quot;,
+        &quot;template&quot;: &quot;&lt;patient-monitoring-tool section='section' patient='patient' enrollment='{{enrollment}}'&gt;&lt;/patient-monitoring-tool&gt;&quot;
+      }
+    }
+  },
+  &quot;translationKey&quot;: &quot;DASHBOARD_TAB_PATIENT_MONITORING_DRUGS_START_DATE_KEY&quot;
+}</pre>
+</div></div><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Key</th><th class="confluenceTh">Info</th><th class="confluenceTh">Value Type</th></tr><tr><td class="confluenceTd">name</td><td class="confluenceTd"><span>This is the name that will be displayed on the flowsheet rows</span></td><td class="confluenceTd">Text</td></tr><tr><td class="confluenceTd">concepts</td><td class="confluenceTd"><span>Fully specified names of concepts whose observations are required to be present for the question to be marked as available (green)</span></td><td class="confluenceTd">Text</td></tr><tr><td class="confluenceTd">type</td><td class="confluenceTd"><p>&quot;Obs&quot; for all observations and bacteriology results. &quot;Drugs&quot; for drugs</p></td><td class="confluenceTd">Text</td></tr></tbody></table></div><h3 id="PatientMonitoringTool-ScreenshotofthePatientMonitoringFlowsheetforDrugs">Screenshot of the Patient Monitoring Flowsheet for Drugs</h3><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="400" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/99647502/Screen%20Shot%202017-04-18%20at%203.48.11%20PM.png?version=1&amp;modificationDate=1492510722657&amp;cacheVersion=1&amp;api=v2&amp;width=1024&amp;height=400" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/99647502/Screen%20Shot%202017-04-18%20at%203.48.11%20PM.png?version=1&amp;modificationDate=1492510722657&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="116169293" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2017-04-18 at 3.48.11 PM.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="99647502" data-linked-resource-container-version="28" data-media-id="488b94f9-6cbc-4789-86b6-d927224fcfa9" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/99647502/Screen%20Shot%202017-04-18%20at%203.48.11%20PM.png?version=1&amp;modificationDate=1492510722657&amp;cacheVersion=1&amp;api=v2&amp;width=2048&amp;height=800 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/99647502/Screen%20Shot%202017-04-18%20at%203.48.11%20PM.png?version=1&amp;modificationDate=1492510722657&amp;cacheVersion=1&amp;api=v2&amp;width=1024&amp;height=400 1x"></span></p><p><strong><br/></strong></p><p><strong>Milestones:</strong> There are two types of milestones in the config: Fixed milestones and floating/variable milestones.</p><p>For fixed milestones, we define the upper and lower bound with respect to the  date &quot;startDateObsConcept&quot;. </p><p>Floating milestones get activated or start tracking questions only after a &quot;handler&quot; is specified. For such milestones, we define the upper and lower bound with respect to a &quot;handler&quot;. Also, the floating milestones are independent of this &quot;endDateConcept&quot;.</p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Key</th><th class="confluenceTh">Info</th><th class="confluenceTh">Value Type</th></tr><tr><td class="confluenceTd"><span>name</span></td><td class="confluenceTd"><span>This is the name that will be displayed on the flowsheet columns</span></td><td class="confluenceTd">Text</td></tr><tr><td class="confluenceTd"><span>min,max</span></td><td class="confluenceTd"><span>The upper and lower bound of with respect to the handler/startDateObsConcept</span></td><td class="confluenceTd"><span>Numeric</span></td></tr><tr><td class="confluenceTd">handler</td><td class="confluenceTd"><span>Currently we support only two handlers: &quot;org.bahmni.flowsheet.definition.impl.TreatmentEndDateHandler&quot; for the End of Treatment milestone. The handler gives the value of &quot;</span><span class="legacy-color-text-default">EOT, End of Treatment Outcome date&quot; .</span><span> &quot;org.bahmni.flowsheet.definition.impl.SixMonthPostTreatmentOutcomeHandler&quot; for the Post treatment 6 months outcome milestone. This handler gives a date 180 days after the end of treatment date, if it is present.</span></td><td class="confluenceTd">Text</td></tr><tr><td class="confluenceTd">questions</td><td class="confluenceTd"><span>&quot;name&quot; of the questions we want to track for the particular milestone</span></td><td class="confluenceTd">Text</td></tr></tbody></table></div><p><br/></p><p class="auto-cursor-target">Add the configurations in openmrs/apps/<em>clinical/patientMonitoringConfig.json</em>, </p><p>Below is the content of sample configuration file</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="2175cccf-5c1a-4471-adb4-8abba77934fa" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>patientMonitoringConfig.json file</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">{
+  &quot;questions&quot;: [
+    {
+      &quot;name&quot;: &quot;BMI&quot;,
+      &quot;concepts&quot;: [
+        &quot;Height (cm)&quot;,
+        &quot;Weight (kg)&quot;
+],
+      &quot;type&quot;: &quot;Obs&quot;
+},
+    {
+      &quot;name&quot;: &quot;Delamanid&quot;,
+      &quot;concepts&quot;: [
+        &quot;Delamanid&quot;
+],
+      &quot;type&quot;: &quot;Drug&quot;
+},
+    {
+      &quot;name&quot;: &quot;Prison&quot;,
+      &quot;concepts&quot;: [
+        &quot;Baseline, Prison&quot;
+],
+      &quot;type&quot;: &quot;Obs&quot;
+},
+    {
+      &quot;name&quot;: &quot;MTBDRsl Fluoroquinolone&quot;,
+      &quot;concepts&quot;: [
+        &quot;Bacteriology, Fluoroquinolone&quot;
+],
+      &quot;type&quot;: &quot;Obs&quot;
+},
+    {
+      &quot;name&quot;: &quot;Isoniazid&quot;,
+      &quot;concepts&quot;: [
+        &quot;Isoniazid&quot;
+],
+      &quot;type&quot;: &quot;Drug&quot;
+},
+    {
+      &quot;name&quot;: &quot;Hemoglobin g/l&quot;,
+      &quot;concepts&quot;: [
+        &quot;Lab, Hemoglobin g/dl&quot;
+],
+      &quot;type&quot;: &quot;Obs&quot;
+},
+    {
+      &quot;name&quot;: &quot;Culture result&quot;,
+      &quot;concepts&quot;: [
+        &quot;Bacteriology, Culture results&quot;
+],
+      &quot;type&quot;: &quot;Obs&quot;
+}
+  ],
+  &quot;milestones&quot;: [
+    {
+      &quot;name&quot;: &quot;M1&quot;,
+      &quot;config&quot;: {
+        &quot;min&quot;: 0,
+        &quot;max&quot;: 30
+},
+      &quot;questions&quot; : [
+        &quot;BMI&quot;, &quot;Culture result&quot;, &quot;Delamanid&quot;, &quot;Prison&quot;,&quot;MTBDRsl Fluoroquinolone&quot;,&quot;Isoniazid&quot;, &quot;Hemoglobin g/l&quot;
+]
+    },
+    {
+      &quot;name&quot;: &quot;M2&quot;,
+      &quot;config&quot;: {
+        &quot;min&quot;: 31,
+        &quot;max&quot;: 60
+},
+      &quot;questions&quot;: [
+        &quot;BMI&quot;, &quot;Culture result&quot;, &quot;Delamanid&quot;
+]
+    },
+    {
+      &quot;name&quot;: &quot;M3&quot;,
+      &quot;config&quot;: {
+        &quot;min&quot;: 61,
+        &quot;max&quot;: 90
+},
+      &quot;questions&quot;: [
+        &quot;BMI&quot;, &quot;Culture result&quot;, &quot;Delamanid&quot;, &quot;Prison&quot;,&quot;MTBDRsl Fluoroquinolone&quot;,&quot;Isoniazid&quot;
+]
+    },
+    {
+      &quot;name&quot;: &quot;M4&quot;,
+      &quot;config&quot;: {
+        &quot;min&quot;: 91,
+        &quot;max&quot;: 120
+},
+      &quot;questions&quot;: [
+        &quot;BMI&quot;, &quot;Culture result&quot;, &quot;Delamanid&quot;,&quot;Isoniazid&quot;
+]
+    },
+    {
+      &quot;name&quot;: &quot;M5&quot;,
+      &quot;config&quot;: {
+        &quot;min&quot;: 121,
+        &quot;max&quot;: 150
+},
+      &quot;questions&quot;: [
+        &quot;BMI&quot;, &quot;Culture result&quot;, &quot;Delamanid&quot;
+]
+    },
+    {
+      &quot;name&quot;: &quot;M6&quot;,
+      &quot;config&quot;: {
+        &quot;min&quot;: 151,
+        &quot;max&quot;: 180
+},
+      &quot;questions&quot;: [
+        &quot;BMI&quot;, &quot;Culture result&quot;, &quot;Delamanid&quot;
+]
+    },
+    {
+      &quot;name&quot;: &quot;MTx&quot;,
+      &quot;config&quot;: {
+        &quot;min&quot;: -15,
+        &quot;max&quot;: 15
+},
+      &quot;handler&quot;: &quot;org.bahmni.flowsheet.definition.impl.TreatmentEndDateHandler&quot;,
+      &quot;questions&quot;: [
+        &quot;BMI&quot;, &quot;Culture result&quot;, &quot;Delamanid&quot;, &quot;Isoniazid&quot;
+]
+    },
+    {
+      &quot;name&quot;: &quot;M6M&quot;,
+      &quot;config&quot;: {
+        &quot;min&quot;: -30,
+        &quot;max&quot;: 30
+},
+      &quot;handler&quot;: &quot;org.bahmni.flowsheet.definition.impl.SixMonthPostTreatmentOutcomeHandler&quot;,
+      &quot;questions&quot;: [
+        &quot;BMI&quot;, &quot;Culture result&quot;, &quot;Delamanid&quot;, &quot;Isoniazid&quot;
+]
+    }
+  ]
+}
+</pre>
+</div></div><h3 id="PatientMonitoringTool-InternationalisationofFlowsheetTabname"> Internationalisation of Flowsheet Tab name</h3><p>Add the value for key in respective home/ locale_${en,fr, .. }.json.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="3b509894-293a-4e6f-b1ca-edc90f10777a" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Add to home/locale_en.json</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: true; theme: Confluence" data-theme="Confluence">{
+   &quot;DASHBOARD_TAB_PATIENT_MONITORING_TREATMENT_START_DATE_KEY&quot;: &quot;Patient Monitoring (T)&quot;,
+   &quot;DASHBOARD_TAB_PATIENT_MONITORING_DRUGS_START_DATE_KEY&quot;: &quot;Patient Monitoring (D)&quot;
+}</pre>
+</div></div><h3 class="auto-cursor-target" id="PatientMonitoringTool-Internationalisationofcolumnheaders"><span style="font-size: 16.0px;"><strong> Internationalisation of column headers</strong></span></h3><div><div class="syntaxhighlighter sh-confluence nogutter bash"><p><br/></p></div></div><div>Add the values for the following keys in respective clinical/locale_${en, fr, .. }.json. Sample values for the keys are provided below:</div><div><p><br/></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="6f1e148b-1881-4830-8977-0c5a12df698c" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>In clinical/locale_en.json</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: true; theme: Confluence" data-theme="Confluence">{
+     &quot;PATIENT_MONITORING_SCHEDULE_TOOL_TITLE&quot;: &quot;Patient Monitoring Schedule Tool&quot;,
+     &quot;PATIENT_MONITORING_REGISTRATION_NUMBER&quot;: &quot;Registration Number&quot;,
+     &quot;PATIENT_MONITORING_REPORT_DATE&quot;: &quot;Report Date&quot;,
+     &quot;PATIENT_MONITORING_EMR_ID&quot;: &quot;Patient EMR ID&quot;,
+     &quot;PATIENT_MONITORING_START_DATE_OF_NEW_DRUG_TREATMENT&quot;: &quot;Start date of new drug treatment&quot;,
+     &quot;PATIENT_MONITORING_START_DATE_OF_MDRTB_TREATMENT&quot;: &quot;Start date of MDRTB Treatment&quot;,
+     &quot;PATIENT_MONITORING_ACTIVE_DRUG_REGIMEN&quot;: &quot;Active Drug Regimen&quot;,
+     &quot;PATIENT_MONITORING_CURRENT_MONTH_OF_NEW_DRUG_TREATMENT&quot;: &quot;Current Month of new drug treatment&quot;,
+     &quot;PATIENT_MONITORING_CURRENT_MONTH_OF_MDRTB_TREATMENT&quot;: &quot;Current Month of MDRTB treatment&quot;,
+     &quot;PATIENT_MONITORING_CURRENT_MONTH&quot;: &quot;Current Month&quot;,
+     &quot;PATIENT_MONITORING_END_OF_TREATMENT&quot;: &quot;End of Treatment&quot;,
+     &quot;PATIENT_MONITORING_PLANNED_MONITORING_SCHEDULE&quot;: &quot;Planned Monitoring Schedule&quot;,
+     &quot;PATIENT_MONITORING_DATE_ADDED&quot;: &quot;Data Added&quot;,
+     &quot;PATIENT_MONITORING_PENDING_DATA_ENTRY&quot;: &quot;Pending Data Entry&quot;,
+     &quot;PATIENT_MONITORING_LEGENDS&quot;: &quot;Legends&quot;
+ 
+}</pre>
+</div></div></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="confluence-information-macro confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="9e21e6bc-65b4-4f30-a341-0dc091c2e859" data-macro-name="tip"><p class="title">On this Page</p><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="c600f8c4-b8b4-4eb8-bd41-e903ed368a03" data-macro-name="toc"> </div><p> </p></div></div><p><br/></p><p><br/></p><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="e82b3c07-2c48-4853-8419-c62edb29df8c" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #668D3C;color: white;"><b>Feature Details</b></div><div class="panelContent">
+<p><span class="legacy-color-text-default"><a href="/wiki/spaces/BAH/pages/92111338/Patient+Monitoring+Flowsheet" data-linked-resource-id="92111338" data-linked-resource-version="11" data-linked-resource-type="page">Patient Monitoring Flowsheet - Feature Guide</a></span></p>
+</div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="11c594ed-5883-4869-a352-0f4f6562d86e" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #1FA5A0;color: White;"><b>Related Display Controls</b></div><div class="panelContent">
+<p> </p><ul class="childpages-macro conf-macro output-block" data-hasbody="false" data-macro-id="29ef04e9-1015-4259-b197-362659aadaa1" data-macro-name="children"><li><a href="/wiki/spaces/BAH/pages/114186103/Clinical+Observation+Controls" data-linked-resource-id="114186103" data-linked-resource-version="5" data-linked-resource-type="page">Clinical Observation Controls</a></li><li><a href="/wiki/spaces/BAH/pages/115973098/Show+Hide+Display+Controls+based+on+data" data-linked-resource-id="115973098" data-linked-resource-version="6" data-linked-resource-type="page">Show/Hide Display Controls based on data</a></li><li><a href="/wiki/spaces/BAH/pages/93716500/Custom+Controls" data-linked-resource-id="93716500" data-linked-resource-version="20" data-linked-resource-type="page">Custom Controls</a></li><li><a href="/wiki/spaces/BAH/pages/114204226/In-Patient+Department+IPD+Controls" data-linked-resource-id="114204226" data-linked-resource-version="1" data-linked-resource-type="page">In-Patient Department (IPD) Controls</a></li><li><a href="/wiki/spaces/BAH/pages/114206048/Lab+and+Radiology+Controls" data-linked-resource-id="114206048" data-linked-resource-version="2" data-linked-resource-type="page">Lab and Radiology Controls</a></li><li><a href="/wiki/spaces/BAH/pages/114207149/Medication+Controls" data-linked-resource-id="114207149" data-linked-resource-version="1" data-linked-resource-type="page">Medication Controls</a></li><li><a href="/wiki/spaces/BAH/pages/114218923/Miscellaneous+Controls" data-linked-resource-id="114218923" data-linked-resource-version="1" data-linked-resource-type="page">Miscellaneous Controls</a></li><li><a href="/wiki/spaces/BAH/pages/114227069/Patient+Controls" data-linked-resource-id="114227069" data-linked-resource-version="1" data-linked-resource-type="page">Patient Controls</a></li><li><a href="/wiki/spaces/BAH/pages/114227604/Tracking+Controls" data-linked-resource-id="114227604" data-linked-resource-version="1" data-linked-resource-type="page">Tracking Controls</a></li></ul><p> </p>
+</div></div></div>
+</div>
+</div>
+</div></body></html>

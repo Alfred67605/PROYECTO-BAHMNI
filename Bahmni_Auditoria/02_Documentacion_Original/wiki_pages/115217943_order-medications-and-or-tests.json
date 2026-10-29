@@ -1,0 +1,172 @@
+{
+  "id": "115217943",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/115217943",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE1MjE3OTQz",
+  "status": "current",
+  "title": "Order Medications and/or Tests",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "createdDate": "2017-03-07T06:25:35.137Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115217943/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:b74a1e67-0853-4f05-a2a7-e88691b3cd4a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Akhil Malhotra (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:b74a1e67-0853-4f05-a2a7-e88691b3cd4a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Akhil Malhotra (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:b74a1e67-0853-4f05-a2a7-e88691b3cd4a"
+      }
+    },
+    "when": "2021-12-06T05:31:51.980Z",
+    "friendlyWhen": "Dec 06, 2021",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "syncRev": "0.cZaN2Gjbexdg_Lxyr4DclA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$115217943.53",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/115217943"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115217943/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2><span style=\"color: rgb(0,0,0);\">Steps</span></h2><p><span style=\"color: rgb(0,0,0);\">1.&nbsp;From the clinical dashboard, click on the Consultation tab.</span></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:width=\"623\"><ri:attachment ri:filename=\"Screenshot 2021-12-06 at 10.54.48 AM.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p><strong><span style=\"color: rgb(0,0,0);\">2. Order Medications</span></strong></p><p><span style=\"color: rgb(0,0,0);\">Within the consultation page, choose Medication tab to order medicines as in screenshot below and click on SAVE.</span></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"b48f1cfb-399e-4b86-9f2b-e498ddd4bcba\"><ac:rich-text-body><p>To <strong>order sets of Medications</strong> please <a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Using+Order+Sets\">refer to this page</a></p></ac:rich-text-body></ac:structured-macro><p><span style=\"color: rgb(0,0,0);\"><br /></span></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:width=\"623\"><ri:attachment ri:filename=\"Screenshot 2021-12-06 at 10.56.21 AM.png\" ri:version-at-save=\"2\" /></ac:image></span></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:width=\"623\"><ri:attachment ri:filename=\"Screenshot 2021-12-06 at 10.56.50 AM.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p><span><span><br /></span></span></p><p><span style=\"color: rgb(0,0,0);\">3. <strong>Order Tests</strong></span></p><p><span style=\"color: rgb(0,0,0);\">Within the consultation page, choose Orders tab to order tests as in screenshot below and click on SAVE.</span></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:width=\"623\"><ri:attachment ri:filename=\"Screenshot 2021-12-06 at 10.56.02 AM.png\" ri:version-at-save=\"1\" /></ac:image></span></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"6462b5e2-1d86-451d-a8c5-c39c2f99335c\"><ac:rich-text-body><p><strong><span style=\"color: rgb(0,0,0);\">Please note that Bahmni configuration for each implementation can vary drastically. The screens and workflows below may not apply to your specific implementation.</span></strong></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Pharmacy Management\" ri:version-at-save=\"7\" /><ac:plain-text-link-body><![CDATA[Pharmacy Management - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"55de8170-c071-4602-aacf-72d73bdf438e\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Implementation Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Pharmacy Configuration\" ri:version-at-save=\"19\" /><ac:plain-text-link-body><![CDATA[Pharmacy Management - Implementer's Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/115217943"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"OrderMedicationsand/orTests-Steps\"><span class=\"legacy-color-text-default\">Steps</span></h2><p><span class=\"legacy-color-text-default\">1. From the clinical dashboard, click on the Consultation tab.</span></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"623\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115217943/Screenshot%202021-12-06%20at%2010.54.48%20AM.png?version=1&amp;modificationDate=1638768475797&amp;cacheVersion=1&amp;api=v2&amp;width=623&amp;height=285\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/115217943/Screenshot%202021-12-06%20at%2010.54.48%20AM.png?version=1&amp;modificationDate=1638768475797&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2947940364\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2021-12-06 at 10.54.48 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"115217943\" data-linked-resource-container-version=\"6\" data-media-id=\"356202e2-b66e-443d-b13e-12c2a22e77fe\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115217943/Screenshot%202021-12-06%20at%2010.54.48%20AM.png?version=1&amp;modificationDate=1638768475797&amp;cacheVersion=1&amp;api=v2&amp;width=1246&amp;height=570 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/115217943/Screenshot%202021-12-06%20at%2010.54.48%20AM.png?version=1&amp;modificationDate=1638768475797&amp;cacheVersion=1&amp;api=v2&amp;width=623&amp;height=285 1x\"></span></span></p><p><strong><span class=\"legacy-color-text-default\">2. Order Medications</span></strong></p><p><span class=\"legacy-color-text-default\">Within the consultation page, choose Medication tab to order medicines as in screenshot below and click on SAVE.</span></p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b48f1cfb-399e-4b86-9f2b-e498ddd4bcba\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>To <strong>order sets of Medications</strong> please <a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Using+Order+Sets\" rel=\"nofollow\">refer to this page</a></p></div></div><p><span class=\"legacy-color-text-default\"><br/></span></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"623\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115217943/Screenshot%202021-12-06%20at%2010.56.21%20AM.png?version=2&amp;modificationDate=1638768605115&amp;cacheVersion=1&amp;api=v2&amp;width=623&amp;height=326\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/115217943/Screenshot%202021-12-06%20at%2010.56.21%20AM.png?version=2&amp;modificationDate=1638768605115&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2947874833\" data-linked-resource-version=\"2\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2021-12-06 at 10.56.21 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"115217943\" data-linked-resource-container-version=\"6\" data-media-id=\"1b0c2bf7-efd7-4c18-9a76-26f129122d51\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115217943/Screenshot%202021-12-06%20at%2010.56.21%20AM.png?version=2&amp;modificationDate=1638768605115&amp;cacheVersion=1&amp;api=v2&amp;width=1246&amp;height=652 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/115217943/Screenshot%202021-12-06%20at%2010.56.21%20AM.png?version=2&amp;modificationDate=1638768605115&amp;cacheVersion=1&amp;api=v2&amp;width=623&amp;height=326 1x\"></span></span></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"623\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115217943/Screenshot%202021-12-06%20at%2010.56.50%20AM.png?version=1&amp;modificationDate=1638768682961&amp;cacheVersion=1&amp;api=v2&amp;width=623&amp;height=321\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/115217943/Screenshot%202021-12-06%20at%2010.56.50%20AM.png?version=1&amp;modificationDate=1638768682961&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2948104197\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2021-12-06 at 10.56.50 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"115217943\" data-linked-resource-container-version=\"6\" data-media-id=\"b6e28a51-c888-4217-b09c-6d8baeb25e0d\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115217943/Screenshot%202021-12-06%20at%2010.56.50%20AM.png?version=1&amp;modificationDate=1638768682961&amp;cacheVersion=1&amp;api=v2&amp;width=1246&amp;height=642 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/115217943/Screenshot%202021-12-06%20at%2010.56.50%20AM.png?version=1&amp;modificationDate=1638768682961&amp;cacheVersion=1&amp;api=v2&amp;width=623&amp;height=321 1x\"></span></span></p><p><span><span><br/></span></span></p><p><span class=\"legacy-color-text-default\">3. <strong>Order Tests</strong></span></p><p><span class=\"legacy-color-text-default\">Within the consultation page, choose Orders tab to order tests as in screenshot below and click on SAVE.</span></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"623\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115217943/Screenshot%202021-12-06%20at%2010.56.02%20AM.png?version=1&amp;modificationDate=1638768651765&amp;cacheVersion=1&amp;api=v2&amp;width=623&amp;height=247\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/115217943/Screenshot%202021-12-06%20at%2010.56.02%20AM.png?version=1&amp;modificationDate=1638768651765&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2948038671\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2021-12-06 at 10.56.02 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"115217943\" data-linked-resource-container-version=\"6\" data-media-id=\"1dbbb237-70ac-45e4-ab9f-57ac1a29b5b9\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115217943/Screenshot%202021-12-06%20at%2010.56.02%20AM.png?version=1&amp;modificationDate=1638768651765&amp;cacheVersion=1&amp;api=v2&amp;width=1246&amp;height=494 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/115217943/Screenshot%202021-12-06%20at%2010.56.02%20AM.png?version=1&amp;modificationDate=1638768651765&amp;cacheVersion=1&amp;api=v2&amp;width=623&amp;height=247 1x\"></span></span></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6462b5e2-1d86-451d-a8c5-c39c2f99335c\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong><span class=\"legacy-color-text-default\">Please note that Bahmni configuration for each implementation can vary drastically. The screens and workflows below may not apply to your specific implementation.</span></strong></p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604205/Pharmacy+Management\" data-linked-resource-id=\"32604205\" data-linked-resource-version=\"7\" data-linked-resource-type=\"page\">Pharmacy Management - Feature Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"55de8170-c071-4602-aacf-72d73bdf438e\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Implementation Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32014590/Pharmacy+Configuration\" data-linked-resource-id=\"32014590\" data-linked-resource-version=\"19\" data-linked-resource-type=\"page\">Pharmacy Management - Implementer's Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/115217943"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/115217943/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115217943/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 127336086
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/115217943/child",
+    "restrictions": "/rest/api/content/115217943/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/115217943/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=115217943",
+    "webui": "/spaces/BAH/pages/115217943/Order+Medications+and+or+Tests",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/115217943",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115217943",
+    "tinyui": "/x/FxbeBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

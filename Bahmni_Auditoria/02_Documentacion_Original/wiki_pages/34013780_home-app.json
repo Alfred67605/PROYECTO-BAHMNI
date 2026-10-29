@@ -1,0 +1,171 @@
+{
+  "id": "34013780",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/34013780",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzQwMTM3ODA=",
+  "status": "current",
+  "title": "Home App",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:c54772f2-46b5-43c0-be04-96923ee59750",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Vinay Venu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:c54772f2-46b5-43c0-be04-96923ee59750",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Vinay Venu",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:c54772f2-46b5-43c0-be04-96923ee59750"
+      }
+    },
+    "createdDate": "2015-11-27T08:25:08.146Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34013780/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2022-09-13T05:13:27.879Z",
+    "friendlyWhen": "Sept 13, 2022",
+    "message": "",
+    "number": 20,
+    "minorEdit": false,
+    "syncRev": "0.v61T1WCVknoaYIbKl_9PdQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$34013780.84",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/34013780"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34013780/version/20"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Description</h2><p>The Home app provides the ability to create links to multiple urls/apps based on a user's privileges. Typical implementations use this as the landing page to users after login.&nbsp;</p><p>Configuration files should be under bahmni_config/openmrs/apps/home of your web server. This app configuration needs an app.json and an extension.json file.&nbsp;</p><h2>App Configuration</h2><h3>app.json</h3><p>The app.json should look like this (mostly without any change).&nbsp;</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4d6a2dcc-bbc6-492e-abcd-57ad6ebb7487\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">app.json</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[{\n  \"id\": \"bahmni.homepage\",\n  \"extensionPoints\": [\n    {\n      \"id\": \"org.bahmni.home.dashboard\",\n      \"description\": \"Bahmni Home Page\"\n    }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h3>extension.json</h3><p>The home page will contain multiple icons that will take you to urls configured for that icon in the extension.json. An extension configured in&nbsp;extension.json can have multiple instances of the &quot;org.bahmni.home.dashboard&quot; extension, with the url pointing to the url we require. The icon can be modified using the &quot;icon&quot; parameter. Any icon that is part of <a href=\"http://fortawesome.github.io/Font-Awesome/icons/\">FontAwesome</a> can be used in the home page. &nbsp;There are also some custom icons that are part of the Bahmni distribution that can be used. To configure icons, see <ac:link><ri:page ri:content-title=\"Configuring Icons for Home Landing Page\" ri:version-at-save=\"3\" /><ac:plain-text-link-body><![CDATA[here]]></ac:plain-text-link-body></ac:link>. Sample extension.json below.&nbsp;</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"19943e4f-abf3-4f60-92a4-b2fe6f87e071\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">extension.json</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[{\n  \"registration\": { \n    \"id\": \"bahmni.registration\", //Mandatory. Must be unique within the file\n    \"extensionPointId\": \"org.bahmni.home.dashboard\", //Mandatory\n    \"type\": \"link\", //Mandatory\n    \"label\": \"Some nice label\", // Label for the app. Will be overridden if translationKey is present\n    \"translationKey\":\"MODULE_LABEL_REGISTRATION_KEY\", // Optional. Required if you need internationalization. \n    \"url\": \"../registration/\", //Determines the app/url that the icon should point to\n    \"icon\": \"fa-user-md\", // Optional \n    \"order\": 1, // Used to determine order of apps on the page\n    \"requiredPrivilege\": \"app:registration\" // Configure your own privilege that a user requires to view this app\n  }\n} ]]></ac:plain-text-body></ac:structured-macro><h3>Configuring Icons</h3><p>Icon for each app on home dashboard screen can be configured using the following two options:</p><ol><li>Bahmni Custom Icon Fonts</li><li>Font Awesome &nbsp;Icon Fonts</li></ol><h4>Custom Icon Fonts</h4><table><tbody><tr><th><p>App Name</p></th><th><p>Icon Name</p></th></tr><tr><td><p>Registration</p></td><td><p><span style=\"color: rgb(0,0,128);\">icon-bahmni-registration</span></p></td></tr><tr><td><p>&nbsp;InPatient</p></td><td><p><span style=\"color: rgb(0,0,128);\">icon-bahmni-inpatient</span></p></td></tr><tr><td><p>Programs</p></td><td><p><span style=\"color: rgb(0,0,128);\">icon-bahmni-program</span></p></td></tr><tr><td colspan=\"1\"><p>Orders</p></td><td colspan=\"1\"><p><span style=\"color: rgb(0,0,128);\">icon-bahmni-orders</span></p></td></tr><tr><td colspan=\"1\"><p>Reports</p></td><td colspan=\"1\"><p><span style=\"color: rgb(0,0,128);\">icon-bahmni-reports</span></p></td></tr><tr><td colspan=\"1\"><p>Radiology</p></td><td colspan=\"1\"><p><span style=\"color: rgb(0,0,128);\">icon-bahmni-radiology</span></p></td></tr><tr><td colspan=\"1\"><p>Patient Documents</p></td><td colspan=\"1\"><p><span style=\"color: rgb(0,0,128);\">icon-bahmni-documents</span></p></td></tr><tr><td colspan=\"1\"><p>Admin</p></td><td colspan=\"1\"><p><span style=\"color: rgb(0,0,128);\">icon-bahmni-admin</span></p></td></tr></tbody></table><h4>Font Awesome Icon Fonts</h4><p>Font Awesome is a commonly used list of icons by many applications world wide. See the full list of icons, and their names here:&nbsp;</p><ul><li><a href=\"http://fortawesome.github.io/Font-Awesome/cheatsheet/\">http://fortawesome.github.io/Font-Awesome/cheatsheet/</a></li><li>Exact version: <a href=\"https://www.dtp-transit.jp/books/photoshop4web/dl/Font-Awesome-Cheetsheet-4.3.0.pdf\">https://www.dtp-transit.jp/books/photoshop4web/dl/Font-Awesome-Cheetsheet-4.3.0.pdf</a></li></ul><p>For example, for Clinical app, one can choose the&nbsp;<em>fa-stethoscope</em>&nbsp;icon.</p><p><span>&nbsp; &nbsp;<ac:image ac:height=\"400\"><ri:attachment ri:filename=\"Screen-Shot-2016-02-10-at-2.33.55-pm.png\" ri:version-at-save=\"1\" /></ac:image></span></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"595767b8-8e08-4ce6-a12a-068426711f54\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"51e6bac0-5555-4407-8b8b-889ec38d267e\" /></p></ac:rich-text-body></ac:structured-macro><p><br /></p><p><br /></p><p><br /></p><p><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/34013780"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"HomeApp-Description\">Description</h2><p>The Home app provides the ability to create links to multiple urls/apps based on a user's privileges. Typical implementations use this as the landing page to users after login. </p><p>Configuration files should be under bahmni_config/openmrs/apps/home of your web server. This app configuration needs an app.json and an extension.json file. </p><h2 id=\"HomeApp-AppConfiguration\">App Configuration</h2><h3 id=\"HomeApp-app.json\">app.json</h3><p>The app.json should look like this (mostly without any change). </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4d6a2dcc-bbc6-492e-abcd-57ad6ebb7487\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>app.json</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">{\n  &quot;id&quot;: &quot;bahmni.homepage&quot;,\n  &quot;extensionPoints&quot;: [\n    {\n      &quot;id&quot;: &quot;org.bahmni.home.dashboard&quot;,\n      &quot;description&quot;: &quot;Bahmni Home Page&quot;\n    }\n  ]\n}</pre>\n</div></div><h3 id=\"HomeApp-extension.json\">extension.json</h3><p>The home page will contain multiple icons that will take you to urls configured for that icon in the extension.json. An extension configured in extension.json can have multiple instances of the &quot;org.bahmni.home.dashboard&quot; extension, with the url pointing to the url we require. The icon can be modified using the &quot;icon&quot; parameter. Any icon that is part of <a class=\"external-link\" href=\"http://fortawesome.github.io/Font-Awesome/icons/\" rel=\"nofollow\">FontAwesome</a> can be used in the home page.  There are also some custom icons that are part of the Bahmni distribution that can be used. To configure icons, see <a href=\"/wiki/spaces/BAH/pages/40501344/Configuring+Icons+for+Home+Landing+Page\" data-linked-resource-id=\"40501344\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">here</a>. Sample extension.json below. </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"19943e4f-abf3-4f60-92a4-b2fe6f87e071\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>extension.json</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">{\n  &quot;registration&quot;: { \n    &quot;id&quot;: &quot;bahmni.registration&quot;, //Mandatory. Must be unique within the file\n    &quot;extensionPointId&quot;: &quot;org.bahmni.home.dashboard&quot;, //Mandatory\n    &quot;type&quot;: &quot;link&quot;, //Mandatory\n    &quot;label&quot;: &quot;Some nice label&quot;, // Label for the app. Will be overridden if translationKey is present\n    &quot;translationKey&quot;:&quot;MODULE_LABEL_REGISTRATION_KEY&quot;, // Optional. Required if you need internationalization. \n    &quot;url&quot;: &quot;../registration/&quot;, //Determines the app/url that the icon should point to\n    &quot;icon&quot;: &quot;fa-user-md&quot;, // Optional \n    &quot;order&quot;: 1, // Used to determine order of apps on the page\n    &quot;requiredPrivilege&quot;: &quot;app:registration&quot; // Configure your own privilege that a user requires to view this app\n  }\n} </pre>\n</div></div><h3 id=\"HomeApp-ConfiguringIcons\">Configuring Icons</h3><p>Icon for each app on home dashboard screen can be configured using the following two options:</p><ol><li>Bahmni Custom Icon Fonts</li><li>Font Awesome  Icon Fonts</li></ol><h4 id=\"HomeApp-CustomIconFonts\">Custom Icon Fonts</h4><div class=\"table-wrap\"><table class=\"confluenceTable\"><tbody><tr><th class=\"confluenceTh\"><p>App Name</p></th><th class=\"confluenceTh\"><p>Icon Name</p></th></tr><tr><td class=\"confluenceTd\"><p>Registration</p></td><td class=\"confluenceTd\"><p><span class=\"legacy-color-text-blue2\">icon-bahmni-registration</span></p></td></tr><tr><td class=\"confluenceTd\"><p> InPatient</p></td><td class=\"confluenceTd\"><p><span class=\"legacy-color-text-blue2\">icon-bahmni-inpatient</span></p></td></tr><tr><td class=\"confluenceTd\"><p>Programs</p></td><td class=\"confluenceTd\"><p><span class=\"legacy-color-text-blue2\">icon-bahmni-program</span></p></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><p>Orders</p></td><td colspan=\"1\" class=\"confluenceTd\"><p><span class=\"legacy-color-text-blue2\">icon-bahmni-orders</span></p></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><p>Reports</p></td><td colspan=\"1\" class=\"confluenceTd\"><p><span class=\"legacy-color-text-blue2\">icon-bahmni-reports</span></p></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><p>Radiology</p></td><td colspan=\"1\" class=\"confluenceTd\"><p><span class=\"legacy-color-text-blue2\">icon-bahmni-radiology</span></p></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><p>Patient Documents</p></td><td colspan=\"1\" class=\"confluenceTd\"><p><span class=\"legacy-color-text-blue2\">icon-bahmni-documents</span></p></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><p>Admin</p></td><td colspan=\"1\" class=\"confluenceTd\"><p><span class=\"legacy-color-text-blue2\">icon-bahmni-admin</span></p></td></tr></tbody></table></div><h4 id=\"HomeApp-FontAwesomeIconFonts\">Font Awesome Icon Fonts</h4><p>Font Awesome is a commonly used list of icons by many applications world wide. See the full list of icons, and their names here: </p><ul><li><a class=\"external-link\" href=\"http://fortawesome.github.io/Font-Awesome/cheatsheet/\" rel=\"nofollow\">http://fortawesome.github.io/Font-Awesome/cheatsheet/</a></li><li>Exact version: <a class=\"external-link\" href=\"https://www.dtp-transit.jp/books/photoshop4web/dl/Font-Awesome-Cheetsheet-4.3.0.pdf\" rel=\"nofollow\">https://www.dtp-transit.jp/books/photoshop4web/dl/Font-Awesome-Cheetsheet-4.3.0.pdf</a></li></ul><p>For example, for Clinical app, one can choose the <em>fa-stethoscope</em> icon.</p><p><span>   <span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"400\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/34013780/Screen-Shot-2016-02-10-at-2.33.55-pm.png?version=1&amp;modificationDate=1456291421306&amp;cacheVersion=1&amp;api=v2&amp;width=435&amp;height=400\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/34013780/Screen-Shot-2016-02-10-at-2.33.55-pm.png?version=1&amp;modificationDate=1456291421306&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"42336278\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen-Shot-2016-02-10-at-2.33.55-pm.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"34013780\" data-linked-resource-container-version=\"20\" data-media-id=\"bb2bb818-3fe5-4453-ad97-de2cbf2756e4\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/34013780/Screen-Shot-2016-02-10-at-2.33.55-pm.png?version=1&amp;modificationDate=1456291421306&amp;cacheVersion=1&amp;api=v2&amp;width=870&amp;height=800 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/34013780/Screen-Shot-2016-02-10-at-2.33.55-pm.png?version=1&amp;modificationDate=1456291421306&amp;cacheVersion=1&amp;api=v2&amp;width=435&amp;height=400 1x\"></span></span></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"595767b8-8e08-4ce6-a12a-068426711f54\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"51e6bac0-5555-4407-8b8b-889ec38d267e\" data-macro-name=\"toc\"> </div><p> </p></div></div><p><br/></p><p><br/></p><p><br/></p><p><br/></p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/34013780"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/34013780/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34013780/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 0
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/34013780/child",
+    "restrictions": "/rest/api/content/34013780/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/34013780/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=34013780",
+    "webui": "/spaces/BAH/pages/34013780/Home+App",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/34013780",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34013780",
+    "tinyui": "/x/VAIHAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

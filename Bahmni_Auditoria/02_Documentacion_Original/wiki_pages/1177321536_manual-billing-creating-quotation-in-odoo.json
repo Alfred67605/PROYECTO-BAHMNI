@@ -1,0 +1,174 @@
+{
+  "id": "1177321536",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/1177321536",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE3NzMyMTUzNg==",
+  "status": "current",
+  "title": "Manual Billing - Creating Quotation in Odoo",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5e43cc7490dfb70c9e609d8c",
+      "accountType": "atlassian",
+      "email": "rahulnuchange@gmail.com",
+      "publicName": "Rahul Kumrawat",
+      "timeZone": "Asia/Calcutta",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e43cc7490dfb70c9e609d8c",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Rahul Kumrawat",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e43cc7490dfb70c9e609d8c"
+      }
+    },
+    "createdDate": "2020-04-01T07:35:30.307Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1177321536/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5e43cc7490dfb70c9e609d8c",
+      "accountType": "atlassian",
+      "email": "rahulnuchange@gmail.com",
+      "publicName": "Rahul Kumrawat",
+      "timeZone": "Asia/Calcutta",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e43cc7490dfb70c9e609d8c",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Rahul Kumrawat",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e43cc7490dfb70c9e609d8c"
+      }
+    },
+    "when": "2020-04-08T07:35:06.741Z",
+    "friendlyWhen": "Apr 08, 2020",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "syncRev": "0.AYaLCG6hGMfxmOEVTrGUPg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$1177321536.90",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/1177321536"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1177321536/version/4"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\" ac:breakout-mode=\"default\"><ac:layout-cell><h2>About the Feature</h2><p>Orders placed by doctors from Clinical Services like Laboratory, Radiology, Medications gets synced to Odoo in form of Draft Quotations, which can be confirmed as sale orders and invoice will be created for the same. For other services that need to be manually billed such as Registration, Visit / Consultation, Nursing Care etc, front desk, the authorised user has to newly create a bill / quotation manually and then confirm it as a sale order.</p><ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p>The following steps and screenshots are explained as per <strong>Odoo 10</strong>, available on <strong>Bahmni 0.92</strong> release.</p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p>The following steps and screenshots are explained as per <strong>Odoo 10</strong>, available on <strong>Bahmni 0.92</strong> release.</p>\n</div></div></ac:adf-fallback></ac:adf-extension><h2>Used By</h2><p>This feature is used by hospital receptionists, front desk or other authorised user in the hospital.</p><h2>How is it Used?</h2><h3>1. Creating quotation and confirming the same</h3><ol><li><p>Go to &ldquo;Quotations&rdquo; screen under &ldquo;Sales&rdquo; section from &ldquo;Sales&rdquo; menu in &ldquo;Odoo&rdquo;.</p></li><li><p>Click on the &ldquo;Create&rdquo; button appearing at the top left corner of the screen.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"338\" ac:original-width=\"1319\"><ri:attachment ri:filename=\"zIX1YL9wa6HajQT0FwOO31T3WG2IdO4i3eFBLjl-uLlWv1goU9hhli78nmhbNt6b_z1EL1685xD2ztMPmnuU2QBJjZtfEiRsn-aUDE1mcWm1oJdfoZ0qd_X8qWMPoanl0nz6iGtf\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p>Search &amp; Select the desired patient entering the Patient ID or Name in &ldquo;Customer&rdquo; field in the &ldquo;Quotations / New&rdquo; screen.</p></li><li><p>Enter the Provider Name in the respective field if needed.</p></li><li><p>Click on the &ldquo;Add an Item&rdquo; link in the &ldquo;Order Lines&rdquo; grid.</p></li><li><p>Search and select the desired service entering the Service ID or Name in the Product column field.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"510\" ac:original-width=\"947\"><ri:attachment ri:filename=\"image-20200401-081218.png\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p>Click on the &ldquo;Confirm Sale&rdquo; button appearing at the top of the screen, which will confirm the sales.</p></li></ol><h3>2. Create Invoice for a confirmed sale order</h3><ol><li><p>To create invoice, click on &ldquo;Create Invoice&ldquo; button appearing at the top left corner of the screen in a confirmed Sale Order.</p></li><li><p>Select desired invoice option in the popup and click on &ldquo;Create Invoices&rdquo; button.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"189\" ac:original-width=\"490\"><ri:attachment ri:filename=\"e8309498-25ae-4a00-90a2-74b2863d57f1\" ri:version-at-save=\"1\" /></ac:image></li><li><p>Click on &ldquo;Invoices&ldquo; icon appearing at the top right corner of the quotation, which will navigate to the Invoice screen displaying the Invoice details.</p></li><li><p>Click on &ldquo;Validate&rdquo; button appearing at the top left corner of the sale order and then on the &ldquo;Register Payment&rdquo; button, which will open &ldquo;Register Payment&rdquo; popup.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"224\" ac:original-width=\"577\"><ri:attachment ri:filename=\"image-20200401-083010.png\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p>Select the payment type, enter the payment amount and click on &ldquo;Validate&rdquo; button in the popup.</p></li><li><p>Invoice will get created and payment get registered successfully. Invoice print can be taken by clicking the &ldquo;Print&rdquo; button at the top middle of the screen and selecting the &ldquo;Invoices&rdquo; option from the drop down.</p></li></ol><ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p>When &ldquo;<strong>Skip Invoice Options</strong>&rdquo; flag in Settings &gt; Users &gt; Users &gt; Technical Settings is kept checked for logged in user, Invoice will get created automatically on &ldquo;Confirm Sale&rdquo; action and &ldquo;Register Payment&rdquo; popup will appear for payment details.</p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p>When &ldquo;<strong>Skip Invoice Options</strong>&rdquo; flag in Settings &gt; Users &gt; Users &gt; Technical Settings is kept checked for logged in user, Invoice will get created automatically on &ldquo;Confirm Sale&rdquo; action and &ldquo;Register Payment&rdquo; popup will appear for payment details.</p>\n</div></div></ac:adf-fallback></ac:adf-extension></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" data-layout=\"default\" ac:macro-id=\"fb7769d3-e32b-45dc-9360-0244bdce4779\" /><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"542969b1-7a75-4af0-831e-86e5809362c4\"><ac:rich-text-body><p><strong>Feature Details</strong></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/32604217/Patient+Billing+and+Accounting\">Feature Guide - Patient Billing and Accounting</a> </p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"8549c856-2665-4018-9b8e-1472f26965b7\"><ac:rich-text-body><p><strong>Implementation Details</strong></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/900464675/Odoo+Sales+Configuration\">Implementer's Guide - Odoo modules - Odoo Sales Configuration</a> </p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/1177321536"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ManualBilling-CreatingQuotationinOdoo-AbouttheFeature\">About the Feature</h2><p>Orders placed by doctors from Clinical Services like Laboratory, Radiology, Medications gets synced to Odoo in form of Draft Quotations, which can be confirmed as sale orders and invoice will be created for the same. For other services that need to be manually billed such as Registration, Visit / Consultation, Nursing Care etc, front desk, the authorised user has to newly create a bill / quotation manually and then confirm it as a sale order.</p><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p>The following steps and screenshots are explained as per <strong>Odoo 10</strong>, available on <strong>Bahmni 0.92</strong> release.</p>\n</div></div><h2 id=\"ManualBilling-CreatingQuotationinOdoo-UsedBy\">Used By</h2><p>This feature is used by hospital receptionists, front desk or other authorised user in the hospital.</p><h2 id=\"ManualBilling-CreatingQuotationinOdoo-HowisitUsed?\">How is it Used?</h2><h3 id=\"ManualBilling-CreatingQuotationinOdoo-1.Creatingquotationandconfirmingthesame\">1. Creating quotation and confirming the same</h3><ol><li><p>Go to “Quotations” screen under “Sales” section from “Sales” menu in “Odoo”.</p></li><li><p>Click on the “Create” button appearing at the top left corner of the screen.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177321536/zIX1YL9wa6HajQT0FwOO31T3WG2IdO4i3eFBLjl-uLlWv1goU9hhli78nmhbNt6b_z1EL1685xD2ztMPmnuU2QBJjZtfEiRsn-aUDE1mcWm1oJdfoZ0qd_X8qWMPoanl0nz6iGtf?version=1&amp;modificationDate=1585728685314&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177321536/zIX1YL9wa6HajQT0FwOO31T3WG2IdO4i3eFBLjl-uLlWv1goU9hhli78nmhbNt6b_z1EL1685xD2ztMPmnuU2QBJjZtfEiRsn-aUDE1mcWm1oJdfoZ0qd_X8qWMPoanl0nz6iGtf?version=1&amp;modificationDate=1585728685314&amp;cacheVersion=1&amp;api=v2\" data-height=\"338\" data-width=\"1319\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1177190539\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"zIX1YL9wa6HajQT0FwOO31T3WG2IdO4i3eFBLjl-uLlWv1goU9hhli78nmhbNt6b_z1EL1685xD2ztMPmnuU2QBJjZtfEiRsn-aUDE1mcWm1oJdfoZ0qd_X8qWMPoanl0nz6iGtf\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1177321536\" data-linked-resource-container-version=\"4\" data-media-id=\"158014fd-2154-45fc-8ae7-ca83391a618c\" data-media-type=\"file\"></span><p /></li><li><p>Search &amp; Select the desired patient entering the Patient ID or Name in “Customer” field in the “Quotations / New” screen.</p></li><li><p>Enter the Provider Name in the respective field if needed.</p></li><li><p>Click on the “Add an Item” link in the “Order Lines” grid.</p></li><li><p>Search and select the desired service entering the Service ID or Name in the Product column field.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177321536/image-20200401-081218.png?version=1&amp;modificationDate=1585728740882&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177321536/image-20200401-081218.png?version=1&amp;modificationDate=1585728740882&amp;cacheVersion=1&amp;api=v2\" data-height=\"510\" data-width=\"947\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1177321567\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200401-081218.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1177321536\" data-linked-resource-container-version=\"4\" data-media-id=\"05b92f6c-f40d-4940-a8c6-ea9517091cb8\" data-media-type=\"file\"></span><p /></li><li><p>Click on the “Confirm Sale” button appearing at the top of the screen, which will confirm the sales.</p></li></ol><h3 id=\"ManualBilling-CreatingQuotationinOdoo-2.CreateInvoiceforaconfirmedsaleorder\">2. Create Invoice for a confirmed sale order</h3><ol><li><p>To create invoice, click on “Create Invoice“ button appearing at the top left corner of the screen in a confirmed Sale Order.</p></li><li><p>Select desired invoice option in the popup and click on “Create Invoices” button.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177321536/e8309498-25ae-4a00-90a2-74b2863d57f1?version=1&amp;modificationDate=1585729403452&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177321536/e8309498-25ae-4a00-90a2-74b2863d57f1?version=1&amp;modificationDate=1585729403452&amp;cacheVersion=1&amp;api=v2\" data-height=\"189\" data-width=\"490\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1177190557\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"e8309498-25ae-4a00-90a2-74b2863d57f1\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1177321536\" data-linked-resource-container-version=\"4\" data-media-id=\"78f86071-3f2d-4168-8560-2c416609a930\" data-media-type=\"file\"></span></li><li><p>Click on “Invoices“ icon appearing at the top right corner of the quotation, which will navigate to the Invoice screen displaying the Invoice details.</p></li><li><p>Click on “Validate” button appearing at the top left corner of the sale order and then on the “Register Payment” button, which will open “Register Payment” popup.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177321536/image-20200401-083010.png?version=1&amp;modificationDate=1585729812840&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177321536/image-20200401-083010.png?version=1&amp;modificationDate=1585729812840&amp;cacheVersion=1&amp;api=v2\" data-height=\"224\" data-width=\"577\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1177321579\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200401-083010.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1177321536\" data-linked-resource-container-version=\"4\" data-media-id=\"f23e3705-ff62-471f-8026-e5eca8364583\" data-media-type=\"file\"></span><p /></li><li><p>Select the payment type, enter the payment amount and click on “Validate” button in the popup.</p></li><li><p>Invoice will get created and payment get registered successfully. Invoice print can be taken by clicking the “Print” button at the top middle of the screen and selecting the “Invoices” option from the drop down.</p></li></ol><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p>When “<strong>Skip Invoice Options</strong>” flag in Settings &gt; Users &gt; Users &gt; Technical Settings is kept checked for logged in user, Invoice will get created automatically on “Confirm Sale” action and “Register Payment” popup will appear for payment details.</p>\n</div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-layout=\"default\" data-macro-id=\"fb7769d3-e32b-45dc-9360-0244bdce4779\" data-macro-name=\"toc\"> </div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"542969b1-7a75-4af0-831e-86e5809362c4\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>Feature Details</strong></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/32604217/Patient+Billing+and+Accounting\" rel=\"nofollow\">Feature Guide - Patient Billing and Accounting</a> </p></div></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8549c856-2665-4018-9b8e-1472f26965b7\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>Implementation Details</strong></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/900464675/Odoo+Sales+Configuration\" rel=\"nofollow\">Implementer's Guide - Odoo modules - Odoo Sales Configuration</a> </p></div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/1177321536"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/1177321536/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1177321536/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 318
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/1177321536/child",
+    "restrictions": "/rest/api/content/1177321536/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/1177321536/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=1177321536",
+    "webui": "/spaces/BAH/pages/1177321536/Manual+Billing+-+Creating+Quotation+in+Odoo",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/1177321536",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1177321536",
+    "tinyui": "/x/QIAsRg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

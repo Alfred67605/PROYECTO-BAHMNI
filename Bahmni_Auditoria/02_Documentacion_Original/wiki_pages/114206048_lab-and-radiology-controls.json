@@ -1,0 +1,170 @@
+{
+  "id": "114206048",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/114206048",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE0MjA2MDQ4",
+  "status": "current",
+  "title": "Lab and Radiology Controls",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2017-01-17T16:07:32.685Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114206048/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "when": "2017-01-17T16:30:00.084Z",
+    "friendlyWhen": "Jan 17, 2017",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.eRyeCyGVykkhjh9j-JXQKQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$114206048.17",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/114206048"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114206048/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"4971eb35-2c58-470a-9daa-4298d44f17e9\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">List of Lab and Radiology Controls</ac:parameter><ac:rich-text-body><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"99ee7e2f-e138-47ef-bc99-437260bcafb7\"><ac:parameter ac:name=\"all\">true</ac:parameter><ac:parameter ac:name=\"excerptType\">rich content</ac:parameter></ac:structured-macro></ac:rich-text-body></ac:structured-macro></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"12fa8209-6fd4-4f12-8d20-db5632a4a86f\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">List of All Display Controls</ac:parameter><ac:rich-text-body><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"536c4073-4f45-4053-9729-0363a8cfd006\"><ac:parameter ac:name=\"all\">true</ac:parameter><ac:parameter ac:name=\"page\"><ac:link><ri:page ri:content-title=\"Display Controls\" /></ac:link></ac:parameter></ac:structured-macro></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/114206048"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4971eb35-2c58-470a-9daa-4298d44f17e9\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>List of Lab and Radiology Controls</b></div><div class=\"panelContent\">\n<ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"99ee7e2f-e138-47ef-bc99-437260bcafb7\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/114206168/Bacteriology+Results+Control\" data-linked-resource-id=\"114206168\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Bacteriology Results Control</a><p>Bacteriology results control is used to list the bacteriology samples and the corresponding results captured against those samples (for a particular patient)</p></li><li><a href=\"/wiki/spaces/BAH/pages/114206305/Lab+Order+Control\" data-linked-resource-id=\"114206305\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Lab Order Control</a><p>This Control is used to list all the lab orders and the results captured against those orders for a particular patient.</p></li><li><a href=\"/wiki/spaces/BAH/pages/114206500/Order+Fulfillment+Control\" data-linked-resource-id=\"114206500\" data-linked-resource-version=\"9\" data-linked-resource-type=\"page\">Order Fulfillment Control</a><p>It displays all the orders (for configured number of visits) and their corresponding fulfillment details for an orderType configured.</p></li><li><a href=\"/wiki/spaces/BAH/pages/114206820/PACS+Orders+Control\" data-linked-resource-id=\"114206820\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">PACS Orders Control</a><p>This Control is used to list all the Pacs Orders and the corresponding results for a particular patient.</p></li><li><a href=\"/wiki/spaces/BAH/pages/114207086/Radiology+Control\" data-linked-resource-id=\"114207086\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Radiology Control</a><p class=\"p1\"><span class=\"s1\">Radiology Control</span><span class=\"s2\"> is used to list the Radiology Orders given to the patient for that particular visit. </span></p></li></ul>\n</div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"12fa8209-6fd4-4f12-8d20-db5632a4a86f\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>List of All Display Controls</b></div><div class=\"panelContent\">\n<ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"536c4073-4f45-4053-9729-0363a8cfd006\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/114186103/Clinical+Observation+Controls\" data-linked-resource-id=\"114186103\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Clinical Observation Controls</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/102891583/Diagnosis+Control\" data-linked-resource-id=\"102891583\" data-linked-resource-version=\"29\" data-linked-resource-type=\"page\">Diagnosis Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114186506/Disease+Template+Control\" data-linked-resource-id=\"114186506\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Disease Template Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/98402388/Forms+Display+Control\" data-linked-resource-id=\"98402388\" data-linked-resource-version=\"33\" data-linked-resource-type=\"page\">Forms Display Control</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/3505586199/New+Forms+React+Display+Control\" data-linked-resource-id=\"3505586199\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">New Forms React Display Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/3562766355/Print+Forms\" data-linked-resource-id=\"3562766355\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Print Forms</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/114188767/Observation+Control\" data-linked-resource-id=\"114188767\" data-linked-resource-version=\"15\" data-linked-resource-type=\"page\">Observation Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/98402359/Obs+To+Obs+FlowSheet\" data-linked-resource-id=\"98402359\" data-linked-resource-version=\"56\" data-linked-resource-type=\"page\">Obs To Obs FlowSheet</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/115973098/Show+Hide+Display+Controls+based+on+data\" data-linked-resource-id=\"115973098\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Show/Hide Display Controls based on data</a></li><li><a href=\"/wiki/spaces/BAH/pages/93716500/Custom+Controls\" data-linked-resource-id=\"93716500\" data-linked-resource-version=\"20\" data-linked-resource-type=\"page\">Custom Controls</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/700088324/Appointments+Display+Control\" data-linked-resource-id=\"700088324\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">Appointments Display Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114217801/Birth+Certificate\" data-linked-resource-id=\"114217801\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Birth Certificate</a></li><li><a href=\"/wiki/spaces/BAH/pages/99647502/Patient+Monitoring+Tool\" data-linked-resource-id=\"99647502\" data-linked-resource-version=\"28\" data-linked-resource-type=\"page\">Patient Monitoring Tool</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/114204226/In-Patient+Department+IPD+Controls\" data-linked-resource-id=\"114204226\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">In-Patient Department (IPD) Controls</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/114204313/Admission+Details+Control\" data-linked-resource-id=\"114204313\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Admission Details Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114204754/Disposition+Control\" data-linked-resource-id=\"114204754\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Disposition Control</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/114206048/Lab+and+Radiology+Controls\" data-linked-resource-id=\"114206048\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Lab and Radiology Controls</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/114206500/Order+Fulfillment+Control\" data-linked-resource-id=\"114206500\" data-linked-resource-version=\"9\" data-linked-resource-type=\"page\">Order Fulfillment Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114206305/Lab+Order+Control\" data-linked-resource-id=\"114206305\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Lab Order Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114207086/Radiology+Control\" data-linked-resource-id=\"114207086\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Radiology Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114206168/Bacteriology+Results+Control\" data-linked-resource-id=\"114206168\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Bacteriology Results Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114206820/PACS+Orders+Control\" data-linked-resource-id=\"114206820\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">PACS Orders Control</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/114207149/Medication+Controls\" data-linked-resource-id=\"114207149\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Medication Controls</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/114207300/Chronic+Treatment+Chart+Control\" data-linked-resource-id=\"114207300\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Chronic Treatment Chart Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/98402409/Drug+Order+Treatment+Details+Control\" data-linked-resource-id=\"98402409\" data-linked-resource-version=\"13\" data-linked-resource-type=\"page\">Drug Order / Treatment Details Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/99123216/Treatment+Display+Control\" data-linked-resource-id=\"99123216\" data-linked-resource-version=\"20\" data-linked-resource-type=\"page\">Treatment Display Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114746475/Treatment+Details+Control\" data-linked-resource-id=\"114746475\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Treatment Details Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/3152838666/Sending+prescription+to+patients\" data-linked-resource-id=\"3152838666\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Sending prescription to patients</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/114218923/Miscellaneous+Controls\" data-linked-resource-id=\"114218923\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Miscellaneous Controls</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/114219028/Navigation+Links+Control\" data-linked-resource-id=\"114219028\" data-linked-resource-version=\"7\" data-linked-resource-type=\"page\">Navigation Links Control</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/114227069/Patient+Controls\" data-linked-resource-id=\"114227069\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Patient Controls</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/114227194/Patient+Context+Display+Control\" data-linked-resource-id=\"114227194\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Patient Context Display Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114227474/Patient+Profile+Control\" data-linked-resource-id=\"114227474\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Patient Profile Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/100139014/Visit+Control\" data-linked-resource-id=\"100139014\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Visit Control</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/114227604/Tracking+Controls\" data-linked-resource-id=\"114227604\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Tracking Controls</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/114227756/Flowsheet+Control\" data-linked-resource-id=\"114227756\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Flowsheet Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/100139061/Programs+Display+Control\" data-linked-resource-id=\"100139061\" data-linked-resource-version=\"9\" data-linked-resource-type=\"page\">Programs Display Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114228167/Graph+Control\" data-linked-resource-id=\"114228167\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Graph Control</a></li></ul></li></ul>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/114206048"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/114206048/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114206048/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 4
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/114206048/child",
+    "restrictions": "/rest/api/content/114206048/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/114206048/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=114206048",
+    "webui": "/spaces/BAH/pages/114206048/Lab+and+Radiology+Controls",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/114206048",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114206048",
+    "tinyui": "/x/YKXOBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

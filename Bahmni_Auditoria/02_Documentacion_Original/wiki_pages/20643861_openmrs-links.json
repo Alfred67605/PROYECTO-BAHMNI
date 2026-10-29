@@ -1,0 +1,170 @@
+{
+  "id": "20643861",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/20643861",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjA2NDM4NjE=",
+  "status": "current",
+  "title": "OpenMRS Links",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Arun Paul",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Arun Paul",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3"
+      }
+    },
+    "createdDate": "2015-05-12T09:28:57.055Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/20643861/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Arun Paul",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Arun Paul",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3"
+      }
+    },
+    "when": "2015-05-25T09:34:03.305Z",
+    "friendlyWhen": "May 25, 2015",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "0.O_fXLiTGD4wxjsw473qllQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$20643861.30",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/20643861"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/20643861/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>The OpenMRS master data is organized using concepts. The below links will give you a good overview of concepts and OpenMRS Data model.</p><p>A clear understanding of these fundamentals is strongly recommended so that the implementers would know where and how the medical data is stored.&nbsp;</p><ul><li><a href=\"https://wiki.openmrs.org/display/docs/Concept+Dictionary+Basics\">Concept Dictionary Basics</a></li></ul><ul><li><a href=\"https://wiki.openmrs.org/display/docs/Data+Model\">OpenMRS Data Model</a></li></ul><p>&nbsp;</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/20643861"
+      }
+    },
+    "view": {
+      "value": "<p>The OpenMRS master data is organized using concepts. The below links will give you a good overview of concepts and OpenMRS Data model.</p><p>A clear understanding of these fundamentals is strongly recommended so that the implementers would know where and how the medical data is stored. </p><ul><li><a class=\"external-link\" href=\"https://wiki.openmrs.org/display/docs/Concept+Dictionary+Basics\" rel=\"nofollow\">Concept Dictionary Basics</a></li></ul><ul><li><a class=\"external-link\" href=\"https://wiki.openmrs.org/display/docs/Data+Model\" rel=\"nofollow\">OpenMRS Data Model</a></li></ul><p> </p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/20643861"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/20643861/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/20643861/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/20643861/child",
+    "restrictions": "/rest/api/content/20643861/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/20643861/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=20643861",
+    "webui": "/spaces/BAH/pages/20643861/OpenMRS+Links",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/20643861",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/20643861",
+    "tinyui": "/x/FQA7AQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,37 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public License,
+ * v. 2.0. If a copy of the MPL was not distributed with this file, You can
+ * obtain one at https://www.bahmni.org/license/mplv2hd.
+ *
+ * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
+ * graphic logo is a trademark of OpenMRS Inc.
+ */
+
+"use strict";
+
+angular.module('bahmni.clinical')
+    .directive('alertOnExit', ['exitAlertService', '$state', '$rootScope',
+        function (exitAlertService, $state, $rootScope) {
+            return {
+                link: function ($scope) {
+                    $scope.$on('$stateChangeStart', function (event, next, current) {
+                        var uuid = $state.params.patientUuid;
+                        var currentUuid = current.patientUuid;
+                        var isNavigating = exitAlertService.setIsNavigating(next, uuid, currentUuid);
+
+                        if ($state.justSaved) {
+                            $state.dirtyConsultationForm = false;
+                            if (isNavigating && uuid !== currentUuid) {
+                                $state.justSaved = false;
+                            }
+                        } else {
+                            $state.dirtyConsultationForm = $state.discardChanges ? false : $state.dirtyConsultationForm;
+                        }
+
+                        var hasActiveVisit = !!($scope.visitHistory && $scope.visitHistory.activeVisit);
+                        exitAlertService.showExitAlert(isNavigating, $state.dirtyConsultationForm, hasActiveVisit, event, next.spinnerToken);
+                    });
+                }
+            };
+        }
+    ]);

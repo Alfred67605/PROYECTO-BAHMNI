@@ -1,0 +1,171 @@
+{
+  "id": "49545427",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/49545427",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNDk1NDU0Mjc=",
+  "status": "current",
+  "title": "PACS Integration and Radiology Upload",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2016-04-05T11:45:27.346Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/49545427/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "when": "2017-04-10T09:50:51.041Z",
+    "friendlyWhen": "Apr 10, 2017",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "0.NQKM4Um5AToc7Bp1IbXthw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$49545427.50",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/49545427"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/49545427/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"single\"><ac:layout-cell><h2>Purpose and Benefits</h2><ac:structured-macro ac:name=\"excerpt\" ac:schema-version=\"1\" ac:macro-id=\"b8109882-3edb-44e5-a957-7fe8ac8f68d5\"><ac:parameter ac:name=\"atlassian-macro-output-type\">INLINE</ac:parameter><ac:rich-text-body><p>Bahmni supports two ways of managing Radiology workflows: Using PACS Integration and via Manual Radiology Upload</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"three_equal\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"75cc2741-ab64-44c9-b537-0a202bfb8299\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">Sections</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"a6f9ee7c-2965-456a-921d-570d078e929f\"><ac:parameter ac:name=\"all\">true</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Radiology and PACS\" ri:version-at-save=\"13\" /><ac:plain-text-link-body><![CDATA[Radiology and PACS - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Radiology\" ri:version-at-save=\"8\" /><ac:plain-text-link-body><![CDATA[Radiology and PACS - User Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/49545427"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout single\" data-layout=\"single\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"PACSIntegrationandRadiologyUpload-PurposeandBenefits\">Purpose and Benefits</h2><p>Bahmni supports two ways of managing Radiology workflows: Using PACS Integration and via Manual Radiology Upload</p></div>\n</div>\n</div>\n<div class=\"columnLayout three-equal\" data-layout=\"three-equal\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"75cc2741-ab64-44c9-b537-0a202bfb8299\" data-macro-name=\"tip\"><p class=\"title\">Sections</p><div class=\"confluence-information-macro-body\"><p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"a6f9ee7c-2965-456a-921d-570d078e929f\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/32014588/Radiology+and+PACS+Integration\" data-linked-resource-id=\"32014588\" data-linked-resource-version=\"48\" data-linked-resource-type=\"page\">Radiology and PACS Integration</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/36700254/Setup+PACS+Integration+module\" data-linked-resource-id=\"36700254\" data-linked-resource-version=\"31\" data-linked-resource-type=\"page\">Setup PACS Integration module</a></li><li><a href=\"/wiki/spaces/BAH/pages/24969224/Map+PACS+procedure+codes\" data-linked-resource-id=\"24969224\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Map PACS procedure codes</a></li><li><a href=\"/wiki/spaces/BAH/pages/114694934/Configure+Radiology+Data\" data-linked-resource-id=\"114694934\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Configure Radiology Data</a></li><li><a href=\"/wiki/spaces/BAH/pages/36077574/Setup+DCM4CHEE+Server+with+Oviyam2\" data-linked-resource-id=\"36077574\" data-linked-resource-version=\"35\" data-linked-resource-type=\"page\">Setup DCM4CHEE Server with Oviyam2</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/24215562/SetUp+the+DCM4CHEE+Server\" data-linked-resource-id=\"24215562\" data-linked-resource-version=\"19\" data-linked-resource-type=\"page\">SetUp the DCM4CHEE Server</a></li><li><a href=\"/wiki/spaces/BAH/pages/22380617/SetUp+Oviyam2\" data-linked-resource-id=\"22380617\" data-linked-resource-version=\"17\" data-linked-resource-type=\"page\">SetUp Oviyam2</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/23396367/Test+PACS+Setup+with+Bahmni+PACS+Simulator\" data-linked-resource-id=\"23396367\" data-linked-resource-version=\"34\" data-linked-resource-type=\"page\">Test PACS Setup with Bahmni PACS Simulator</a></li><li><a href=\"/wiki/spaces/BAH/pages/1474232338/Setting+up+sync+between+Bahmni+and+DCM4CHEE\" data-linked-resource-id=\"1474232338\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">Setting up sync between Bahmni and DCM4CHEE</a></li><li><a href=\"/wiki/spaces/BAH/pages/22380584/Bahmni+PACS+Roadmap\" data-linked-resource-id=\"22380584\" data-linked-resource-version=\"21\" data-linked-resource-type=\"page\">Bahmni PACS Roadmap</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/49545424/Manual+Radiology+Upload\" data-linked-resource-id=\"49545424\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">Manual Radiology Upload</a></li></ul><p> </p></div></div></div>\n</div>\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604202/Radiology+and+PACS\" data-linked-resource-id=\"32604202\" data-linked-resource-version=\"15\" data-linked-resource-type=\"page\">Radiology and PACS - Feature Guide</a></span></p>\n</div></div></div>\n</div>\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32014360/Radiology\" data-linked-resource-id=\"32014360\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Radiology and PACS - User Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/49545427"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/49545427/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/49545427/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1001157754
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/49545427/child",
+    "restrictions": "/rest/api/content/49545427/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/49545427/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=49545427",
+    "webui": "/spaces/BAH/pages/49545427/PACS+Integration+and+Radiology+Upload",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/49545427",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/49545427",
+    "tinyui": "/x/0wD0Ag",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

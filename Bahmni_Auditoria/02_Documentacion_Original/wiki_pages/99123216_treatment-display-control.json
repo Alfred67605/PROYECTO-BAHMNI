@@ -1,0 +1,171 @@
+{
+  "id": "99123216",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/99123216",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvOTkxMjMyMTY=",
+  "status": "current",
+  "title": "Treatment Display Control",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sravanthi N. S. CH.",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sravanthi N. S. CH.",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d47e0136-cbde-4dbc-8820-611d4528d1c8"
+      }
+    },
+    "createdDate": "2016-11-15T18:53:02.074Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/99123216/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "6202c5baa29402006878ba30",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Riya Kumari",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/6202c5baa29402006878ba30",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Riya Kumari",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=6202c5baa29402006878ba30"
+      }
+    },
+    "when": "2023-11-30T05:12:07.493Z",
+    "friendlyWhen": "Nov 30, 2023",
+    "message": "",
+    "number": 20,
+    "minorEdit": false,
+    "syncRev": "0.WeOwToK2qqDvet1RMFwQ7w.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$99123216.85",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/99123216"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/99123216/version/20"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p><br /></p><h1>Purpose</h1><ac:structured-macro ac:name=\"excerpt\" ac:schema-version=\"1\" ac:macro-id=\"638aebc5-f96c-44fe-9484-b0037d832b70\"><ac:parameter ac:name=\"atlassian-macro-output-type\">INLINE</ac:parameter><ac:rich-text-body><p>Treatment/Drug Order Control can be configured to display all the the prescription or drug order details <span>(for configured number of visits)</span> for particular patient.</p></ac:rich-text-body></ac:structured-macro><h1>Screenshot</h1><p><span class=\"legacy-color-text-default\"><ac:image ac:width=\"600\"><ri:attachment ri:filename=\"Screen Shot 2016-06-28 at 10.44.29 AM.png\" ri:version-at-save=\"1\" /></ac:image><br /></span></p><h1>Configuration</h1><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"4b3fd494-9d80-477b-9c8c-947cb5e94712\"><ac:parameter ac:name=\"title\">Where to Configure ?</ac:parameter><ac:rich-text-body><p>Add to <em>clinical/dashboard.json</em> for it to appear on the <em>patient dashboard</em> or Add to <em>clinical/visit.json</em> for it to appear on the<em> visit dashboard</em>.</p></ac:rich-text-body></ac:structured-macro><h3>Sample Config</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"05ca4d2b-c192-48e0-a76f-e16e723f707e\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Config</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"treatment\": {\n \"title\": \"Treatments\",\n \"type\": \"treatment\",\n \"dashboardConfig\": {\n   \"showFlowSheet\": false,\n   \"showListView\": true,\n   \"showRoute\": false,\n   \"showDrugForm\": false,\n   \"numberOfVisits\": 2,\n   \"showOtherActive\": true,\n   \"showDetailsButton\": false\n },\n \"expandedViewConfig\": {\n   \"title\": \"Treatments\",\n   \"showFlowSheet\": false,\n   \"showListView\": true,\n   \"showRoute\": true,\n   \"showDrugForm\": true,\n   \"numberOfVisits\": 5,\n   \"showOtherActive\": true,\n   \"showDetailsButton\": true\n },\n \"hideEmptyDisplayControl\": false\n}]]></ac:plain-text-body></ac:structured-macro><h3><span>Key Field Table</span></h3><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th>Key</th><th>Info</th><th colspan=\"1\">Mandatory</th></tr><tr><td>title</td><td><p>Indicates the title that will be displayed on the dashboard/visit page for the section</p></td><td colspan=\"1\">Y</td></tr><tr><td>type</td><td><div class=\"content-wrapper\"><p>The type of the control.</p><p><strong>value of type for this control should be treatment</strong></p></div></td><td colspan=\"1\">Y</td></tr><tr><td>showFlowSheet</td><td>Configuration to display the flowsheet (treatment chart). If it is on, the flowsheet will be displayed along with the treatment details&nbsp;for IPD patients.</td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\">showListView</td><td colspan=\"1\">Configuration to display the treatment details list. If set to false along with showFlowSheet, only the header will be displayed.</td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\">showRoute</td><td colspan=\"1\">Configuration to display the route information. If you don't specify the &quot;showRoute&quot; in the treatment section, the default value will be false.</td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\">showDrugForm</td><td colspan=\"1\">Configuration to display the drug form information. If you don't specify the &quot;showDrugForm&quot; in the treatment section, the default value will be false.</td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\">numberOfVisits</td><td colspan=\"1\">The number of visits for which data has to be displayed</td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\">showOtherActive</td><td colspan=\"1\">If set to true, then a separate section &quot;Other Active Drugs&quot; is displayed with a list of active drugs from other visits.</td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\">showDetailsButton</td><td colspan=\"1\"><span class=\"legacy-color-text-default\">Configuration to display audit information. If set to false, the audit information will not be displayed.</span></td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\">dashboardConfig</td><td colspan=\"1\"><span style=\"color: rgb(77,77,77);\"><span>Indicates</span> the configuration for the dashboard</span></td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\"><span style=\"color: rgb(24,54,145);\">expandedViewConfig</span></td><td colspan=\"1\">Indicates the configuration for the details or expanded page (All Treatments Page/)</td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\"><code class=\"js string\" style=\"text-align: left;\">hideEmptyDisplayControl</code></td><td colspan=\"1\"><p class=\"p1\">Hides the display control if there are no recorded values present for it when set to true, default value is set to false</p></td><td colspan=\"1\">N</td></tr></tbody></table><p><br /></p><pre><br /></pre><div><span style=\"font-size: 16.0px;font-weight: bold;\"><br /></span></div></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"9e21e6bc-65b4-4f30-a341-0dc091c2e859\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\"><ac:parameter ac:name=\"titleColor\">White</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Display Controls</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"de12be85-d772-4bad-93f7-a404f07e5146\"><ac:parameter ac:name=\"all\">true</ac:parameter><ac:parameter ac:name=\"page\"><ac:link><ri:page ri:content-title=\"Medication Controls\" ri:version-at-save=\"1\" /></ac:link></ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/99123216"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\"><style>[data-colorid=ktouaj22b2]{color:#183691} html[data-color-mode=dark] [data-colorid=ktouaj22b2]{color:#6e8ce7}[data-colorid=itibqdo6ig]{color:#4d4d4d} html[data-color-mode=dark] [data-colorid=itibqdo6ig]{color:#b2b2b2}</style>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p><br /></p><h1 id=\"TreatmentDisplayControl-Purpose\">Purpose</h1><p>Treatment/Drug Order Control can be configured to display all the the prescription or drug order details <span class=\"conf-macro output-inline\" data-hasbody=\"true\" data-macro-id=\"638aebc5-f96c-44fe-9484-b0037d832b70\" data-macro-name=\"excerpt\">(for configured number of visits)</span> for particular patient.</p><h1 id=\"TreatmentDisplayControl-Screenshot\">Screenshot</h1><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/99123216/Screen%20Shot%202016-06-28%20at%2010.44.29%20AM.png?version=1&amp;modificationDate=1479235996719&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=181\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/99123216/Screen%20Shot%202016-06-28%20at%2010.44.29%20AM.png?version=1&amp;modificationDate=1479235996719&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"99123217\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-06-28 at 10.44.29 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"99123216\" data-linked-resource-container-version=\"20\" data-media-id=\"e39f5afc-acec-40a8-a9e1-c532f3fbb19a\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/99123216/Screen%20Shot%202016-06-28%20at%2010.44.29%20AM.png?version=1&amp;modificationDate=1479235996719&amp;cacheVersion=1&amp;api=v2&amp;width=1200&amp;height=362 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/99123216/Screen%20Shot%202016-06-28%20at%2010.44.29%20AM.png?version=1&amp;modificationDate=1479235996719&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=181 1x\" /></span><br /></span></p><h1 id=\"TreatmentDisplayControl-Configuration\">Configuration</h1><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4b3fd494-9d80-477b-9c8c-947cb5e94712\" data-macro-name=\"tip\"><p class=\"title\">Where to Configure ?</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Add to <em>clinical/dashboard.json</em> for it to appear on the <em>patient dashboard</em> or Add to <em>clinical/visit.json</em> for it to appear on the<em> visit dashboard</em>.</p></div></div><h3 id=\"TreatmentDisplayControl-SampleConfig\">Sample Config</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"05ca4d2b-c192-48e0-a76f-e16e723f707e\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Config</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;treatment&quot;: {\n &quot;title&quot;: &quot;Treatments&quot;,\n &quot;type&quot;: &quot;treatment&quot;,\n &quot;dashboardConfig&quot;: {\n   &quot;showFlowSheet&quot;: false,\n   &quot;showListView&quot;: true,\n   &quot;showRoute&quot;: false,\n   &quot;showDrugForm&quot;: false,\n   &quot;numberOfVisits&quot;: 2,\n   &quot;showOtherActive&quot;: true,\n   &quot;showDetailsButton&quot;: false\n },\n &quot;expandedViewConfig&quot;: {\n   &quot;title&quot;: &quot;Treatments&quot;,\n   &quot;showFlowSheet&quot;: false,\n   &quot;showListView&quot;: true,\n   &quot;showRoute&quot;: true,\n   &quot;showDrugForm&quot;: true,\n   &quot;numberOfVisits&quot;: 5,\n   &quot;showOtherActive&quot;: true,\n   &quot;showDetailsButton&quot;: true\n },\n &quot;hideEmptyDisplayControl&quot;: false\n}</pre>\n</div></div><h3 id=\"TreatmentDisplayControl-KeyFieldTable\"><span>Key Field Table</span></h3><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th class=\"confluenceTh\">Key</th><th class=\"confluenceTh\">Info</th><th colspan=\"1\" class=\"confluenceTh\">Mandatory</th></tr><tr><td class=\"confluenceTd\">title</td><td class=\"confluenceTd\"><p>Indicates the title that will be displayed on the dashboard/visit page for the section</p></td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td class=\"confluenceTd\">type</td><td class=\"confluenceTd\"><div class=\"content-wrapper\"><p>The type of the control.</p><p><strong>value of type for this control should be treatment</strong></p></div></td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td class=\"confluenceTd\">showFlowSheet</td><td class=\"confluenceTd\">Configuration to display the flowsheet (treatment chart). If it is on, the flowsheet will be displayed along with the treatment details&nbsp;for IPD patients.</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">showListView</td><td colspan=\"1\" class=\"confluenceTd\">Configuration to display the treatment details list. If set to false along with showFlowSheet, only the header will be displayed.</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">showRoute</td><td colspan=\"1\" class=\"confluenceTd\">Configuration to display the route information. If you don't specify the &quot;showRoute&quot; in the treatment section, the default value will be false.</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">showDrugForm</td><td colspan=\"1\" class=\"confluenceTd\">Configuration to display the drug form information. If you don't specify the &quot;showDrugForm&quot; in the treatment section, the default value will be false.</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">numberOfVisits</td><td colspan=\"1\" class=\"confluenceTd\">The number of visits for which data has to be displayed</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">showOtherActive</td><td colspan=\"1\" class=\"confluenceTd\">If set to true, then a separate section &quot;Other Active Drugs&quot; is displayed with a list of active drugs from other visits.</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">showDetailsButton</td><td colspan=\"1\" class=\"confluenceTd\"><span class=\"legacy-color-text-default\">Configuration to display audit information. If set to false, the audit information will not be displayed.</span></td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">dashboardConfig</td><td colspan=\"1\" class=\"confluenceTd\"><span data-colorid=\"itibqdo6ig\"><span>Indicates</span> the configuration for the dashboard</span></td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><span data-colorid=\"ktouaj22b2\">expandedViewConfig</span></td><td colspan=\"1\" class=\"confluenceTd\">Indicates the configuration for the details or expanded page (All Treatments Page/)</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><code style=\"text-align: left;\" class=\"js string\">hideEmptyDisplayControl</code></td><td colspan=\"1\" class=\"confluenceTd\"><p class=\"p1\">Hides the display control if there are no recorded values present for it when set to true, default value is set to false</p></td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr></tbody></table></div><p><br /></p><pre><br /></pre><div><span style=\"font-size: 16.0px;font-weight: bold;\"><br /></span></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9e21e6bc-65b4-4f30-a341-0dc091c2e859\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: White;\"><b>Related Display Controls</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"de12be85-d772-4bad-93f7-a404f07e5146\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/114207300/Chronic+Treatment+Chart+Control\" data-linked-resource-id=\"114207300\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Chronic Treatment Chart Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/98402409/Drug+Order+Treatment+Details+Control\" data-linked-resource-id=\"98402409\" data-linked-resource-version=\"13\" data-linked-resource-type=\"page\">Drug Order / Treatment Details Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/99123216/Treatment+Display+Control\" data-linked-resource-id=\"99123216\" data-linked-resource-version=\"20\" data-linked-resource-type=\"page\">Treatment Display Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114746475/Treatment+Details+Control\" data-linked-resource-id=\"114746475\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Treatment Details Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/3152838666/Sending+prescription+to+patients\" data-linked-resource-id=\"3152838666\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Sending prescription to patients</a></li></ul><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/99123216"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/99123216/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/99123216/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 2
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/99123216/child",
+    "restrictions": "/rest/api/content/99123216/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/99123216/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=99123216",
+    "webui": "/spaces/BAH/pages/99123216/Treatment+Display+Control",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/99123216",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/99123216",
+    "tinyui": "/x/EIDoBQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

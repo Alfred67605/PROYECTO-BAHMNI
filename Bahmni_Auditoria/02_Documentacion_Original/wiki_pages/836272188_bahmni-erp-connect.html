@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Bahmni ERP Connect</title></head><body><h1>Bahmni ERP Connect</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p>Bahmni ERP Connect is the service that integrates OpenMRS (EMR) &amp; OpenELIS (Lab) components to Odoo (ERP). </p><p><br/></p><h2 id="BahmniERPConnect-SourceCode">Source Code</h2><ol><li>Feed Integration Service - <a class="external-link" href="https://github.com/Bahmni/openerp-atomfeed-service" rel="nofollow">https://github.com/Bahmni/openerp-atomfeed-service</a></li><li>Packaging - <a class="external-link" href="https://github.com/Bahmni/bahmni-package/tree/master/bahmni-erp-connect" rel="nofollow">https://github.com/Bahmni/bahmni-package/tree/master/bahmni-erp-connect</a></li></ol><p><br/></p><h2 id="BahmniERPConnect-Buildandinstall">Build and install</h2><p><br/></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="f11ebed6-77ee-41b1-82bb-38b7864396e5" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">&gt; cd /mybahmni/
+&gt; git clone https://github.com/Bahmni/openerp-atomfeed-service
+&gt; git clone https://github.com/Bahmni/bahmni-package
+
+&gt; cd /mybahmni/openerp-atomfeed-service/
+# generate the war &quot;openerp-atomfeed-service.war&quot;
+&gt; mvn clean install
+&gt; cp target/openerp-atomfeed-service.war /mybahmni/bahmni-package/bahmni-erp-connect/resources/
+&gt; cd /mybahmni/bahmni-package/bahmni-erp-connect/
+&gt; ./gradlew buildrpm
+
+# you might want to bump up the version of the rpm. 
+# To do so, you can change &quot;bahmni-package/gradle.properties&quot;
+
+# now copy the rpm to the target machine (vagrant or docker) 
+# uninstall previous version of bahmni-erp-connect
+# first logon to the target env and switch to su
+# assuming that you have the erp-connect rpm available at /tmp/ 
+&gt; rpm -e bahmni-erp-connect
+&gt; rpm -Uvh /tmp/&lt;bahmni-erp-connect-0.92-1.noarch.rpm&gt;
+&gt; service bahmni-erp-connect status
+
+</pre>
+</div></div><h2 class="auto-cursor-target" id="BahmniERPConnect-Runtimeproperties">Runtime properties </h2><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="07ce3286-2b24-4c91-b0b5-1da0b3c8b962" data-macro-name="info"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>Please note, some of the runtime properties configuration (like using APP_PROPERTIES_FILE env variable to indicate external properties file) are only available from 0.92 version. </p></div></div><p><br/></p><ol><li>Runtime properties are set through &quot;<span class="legacy-color-text-blue3"><span class="legacy-color-text-blue3">bahmni-erp-connect.conf&quot; which is usually found under &quot;/opt/</span></span><span class="legacy-color-text-blue3">bahmni-erp-connect/etc/&quot;</span></li><li><span class="legacy-color-text-blue3">The properties exported this way, are set as environment variables everytime &quot;bahmni-erp-connect&quot; starts up. However the properties set this way do not allow properties with dot - for example &quot;scheduler.initial.delay&quot; can not be exported through &quot;bahmni-erp-connect.conf&quot; file. For this you would require this property to be passed either as JVM arguments with &quot;-D&quot; parameters. </span><ul><li><span class="legacy-color-text-blue3"><span class="legacy-color-text-blue3">java -jar -Dscheduler.start.delay=10000</span></span></li></ul></li><li>Alternatively, export a property &quot;APP_PROPERTIES_FILE&quot; in &quot;<span class="legacy-color-text-blue3"><span class="legacy-color-text-blue3">bahmni-erp-connect.conf&quot;</span></span><ul><li><span class="legacy-color-text-blue3">export APP_PROPERTIES_FILE=</span><a class="external-link" rel="nofollow" style="text-decoration: none;" title="Follow link">file:/home/bahmni/bahmi-erp-connect.properties</a></li></ul></li><li>Obviously, you need to ensure that a properties file with such names are found in that location, and the file can be read by &quot;bahmni&quot; user. </li><li>For list of available properties that can be overridden, see <a class="external-link" href="https://github.com/Bahmni/openerp-atomfeed-service/blob/master/openerp-atomfeed-service/src/main/resources/erp-atomfeed.properties" rel="nofollow">here</a></li></ol></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="20e1cbbf-c07b-4a33-835e-f8a910d5be4f" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #668D3C;color: white;"><b>On this page</b></div><div class="panelContent">
+<p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="ffa5417f-4295-40a2-beeb-d8125c71aee9" data-macro-name="toc"> </div><p> </p>
+</div></div></div>
+</div>
+</div>
+</div></body></html>

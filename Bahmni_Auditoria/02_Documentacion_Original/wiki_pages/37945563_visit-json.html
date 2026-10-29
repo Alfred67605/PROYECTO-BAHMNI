@@ -1,0 +1,191 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>visit.json</title></head><body><h1>visit.json</h1><div class="contentLayout2"><style>[data-colorid=wbjh9nl85i]{color:#dd1144} html[data-color-mode=dark] [data-colorid=wbjh9nl85i]{color:#ee2255}[data-colorid=ohe4vqobib]{color:#dd1144} html[data-color-mode=dark] [data-colorid=ohe4vqobib]{color:#ee2255}[data-colorid=t2oioutypy]{color:#dd1144} html[data-color-mode=dark] [data-colorid=t2oioutypy]{color:#ee2255}[data-colorid=hl2kai606s]{color:#dd1144} html[data-color-mode=dark] [data-colorid=hl2kai606s]{color:#ee2255}[data-colorid=m9mwrms9tz]{color:#dd1144} html[data-color-mode=dark] [data-colorid=m9mwrms9tz]{color:#ee2255}[data-colorid=hrnm6y7dy6]{color:#dd1144} html[data-color-mode=dark] [data-colorid=hrnm6y7dy6]{color:#ee2255}[data-colorid=pkaxin8ed8]{color:#dd1144} html[data-color-mode=dark] [data-colorid=pkaxin8ed8]{color:#ee2255}[data-colorid=ocrbg7emcw]{color:#dd1144} html[data-color-mode=dark] [data-colorid=ocrbg7emcw]{color:#ee2255}[data-colorid=c2a7180w9k]{color:#dd1144} html[data-color-mode=dark] [data-colorid=c2a7180w9k]{color:#ee2255}[data-colorid=i74lyfsbgt]{color:#dd1144} html[data-color-mode=dark] [data-colorid=i74lyfsbgt]{color:#ee2255}[data-colorid=d40fkj4n9a]{color:#dd1144} html[data-color-mode=dark] [data-colorid=d40fkj4n9a]{color:#ee2255}</style>
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p><br /></p><h2 id="visit.json-Description">Description</h2><p>Visit dashboard page can be defined in this visit.json.&nbsp;There can be multiple visit dashboards.</p><p>First visit dashboard&nbsp;is the default dashboard that comes with Bahmni. It has predefined set of display controls to be shown.&nbsp;</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="5c54cca8-7065-4b00-8ed6-30ead1744379" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>visit.json</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">{
+    &quot;general&quot;:{ // Configuration for one visit dashboard. There can be multiple of its kind
+        &quot;translationKey&quot;: &quot;DASHBOARD_TAB_GENERAL_KEY&quot;, 
+        &quot;displayByDefault&quot;: true,
+        &quot;printing&quot;: {
+            &quot;title&quot;: &quot;Bahmni&quot;,
+            &quot;header&quot;: &quot;Visit&quot;,
+            &quot;logo&quot;: &quot;../images/bahmniLogo.png&quot;
+        },
+        &quot;defaultSections&quot;: true,
+        &quot;sections&quot;: {
+            &quot;pivotTable&quot;:{
+                &quot;type&quot;: &quot;pivotTable&quot;,
+                &quot;displayOrder&quot;: 0,
+                &quot;title&quot;: &quot;Vitals Flowsheet&quot;,
+                &quot;config&quot;: {
+                    &quot;groupBy&quot;: &quot;encounters&quot;,
+                    &quot;obsConcepts&quot;: [
+                        &quot;Vitals&quot;,
+                        &quot;Pulse&quot;,
+                        &quot;Diastolic&quot;,
+                        &quot;Systolic&quot;,
+                        &quot;Temperature&quot;,
+                        &quot;RR&quot;,
+                        &quot;SPO2&quot;,
+                        &quot;Height&quot;,
+                        &quot;WEIGHT&quot;,
+                        &quot;M/C Days&quot;
+                    ],
+                    &quot;labConcepts&quot;: &quot;&quot;
+                }
+            },
+            &quot;pacsOrders&quot;:{
+                &quot;type&quot;:&quot;pacsOrders&quot;,
+                &quot;displayOrder&quot;: 1,
+                &quot;translationKey&quot;: &quot;PACS_ORDERS_VISIT_PAGE_KEY&quot;,
+                &quot;config&quot;:{
+                    &quot;orderType&quot;: &quot;Radiology Order&quot;
+                }
+            }
+        }
+    },
+    &quot;dischargeSummary&quot;:{
+        &quot;translationKey&quot;: &quot;DASHBOARD_TAB_DISCHARGE_SUMMARY_KEY&quot;,
+        &quot;printing&quot;: {
+            &quot;title&quot;: &quot;Bahmni&quot;,
+            &quot;header&quot;: &quot;Discharge Summary&quot;,
+            &quot;logo&quot;: &quot;../images/bahmniLogo.png&quot;
+        },
+        &quot;sections&quot;: {
+            &quot;PatientInformation&quot;:{
+                &quot;type&quot;: &quot;patientInformation&quot;,
+                &quot;displayOrder&quot;: 0,
+                &quot;config&quot;: {
+                    &quot;title&quot;: &quot;PatientInformation&quot;,
+                    &quot;patientAttributes&quot;: [&quot;caste&quot;, &quot;class&quot;, &quot;education&quot;, &quot;occupation&quot;, &quot;debt&quot;, &quot;distanceFromCenter&quot;, &quot;isUrban&quot;, &quot;cluster&quot;,&quot;RationCard&quot;, &quot;familyIncome&quot;],
+                    &quot;addressFields&quot;: [&quot;address1&quot;, &quot;address2&quot;, &quot;cityVillage&quot;, &quot;countryDistrict&quot;]
+                }
+            },
+            &quot;admissionDetails&quot;:{
+                &quot;type&quot;: &quot;admissionDetails&quot;,
+                &quot;displayOrder&quot;: 1,
+                &quot;config&quot;: {
+                    &quot;showDetailsButton&quot;: true,
+                    &quot;translationKey&quot;: &quot;DISCHARGE_SUMMARY_ADMISSION_DETAILS_KEY&quot;
+
+                }
+            },
+            &quot;weightInitial&quot;:{
+                &quot;type&quot;: &quot;observation&quot;,
+                &quot;displayOrder&quot;: 2,
+                &quot;translationKey&quot;:&quot;DISCHARGE_SUMMARY_AT_ADMISSION_KEY&quot;,
+                &quot;config&quot;: {
+                    &quot;conceptNames&quot;: [&quot;WEIGHT&quot;],
+                    &quot;scope&quot;: &quot;initial&quot;
+                }
+            },
+            &quot;weightLatest&quot;: {
+                &quot;type&quot;: &quot;observation&quot;,
+                &quot;displayOrder&quot;: 3,
+                &quot;translationKey&quot;:&quot;DISCHARGE_SUMMARY_AT_DISCHARGE_KEY&quot;,
+                &quot;config&quot;: {
+                    &quot;conceptNames&quot;: [&quot;WEIGHT&quot;],
+                    &quot;scope&quot;: &quot;latest&quot;
+                }
+            },
+            &quot;diagnoses&quot;:{
+                &quot;type&quot;: &quot;diagnosis&quot;,
+                &quot;displayOrder&quot;: 4,
+                &quot;config&quot;: {
+                    &quot;translationKey&quot; : &quot;DISCHARGE_SUMMARY_DIAGNOSIS_KEY&quot;,
+                    &quot;showCertainty&quot;: false,
+                    &quot;showOrder&quot;: false,
+                    &quot;showDetailsButton&quot;: true
+                }
+            },
+            &quot;clinicalNotes&quot;:{
+                &quot;type&quot;: &quot;observation&quot;,
+                &quot;displayOrder&quot;: 5,
+                &quot;translationKey&quot;: &quot;DISCHARGE_SUMMARY_CLINICAL_NOTES_KEY&quot;,
+                &quot;config&quot;: {
+                    &quot;conceptNames&quot;: [
+                        &quot;History and Examination Notes&quot;,
+                        &quot;Discharge Summary&quot;,
+                        &quot;Lab Investigation Notes&quot;,
+                        &quot;Radiology Notes&quot;,
+                        &quot;Other Notes&quot;
+                    ],
+                    &quot;scope&quot;: &quot;latest&quot;,
+                    &quot;numberOfVisits&quot;: &quot;1&quot;
+                }
+            },
+            &quot;labInvestigations&quot;:{
+                &quot;type&quot;: &quot;investigationResult&quot;,
+                &quot;displayOrder&quot;: 6,
+                &quot;config&quot;: {
+                    &quot;translationKey&quot;:&quot;LAB_INVESTIGATION&quot;,
+                    &quot;showChart&quot;: true,
+                    &quot;showTable&quot;: false,
+                    &quot;showNormalLabResults&quot;: true,
+                    &quot;showCommentsExpanded&quot;: true,
+                    &quot;showAccessionNotes&quot;: true,
+                    &quot;numberOfVisits&quot;: 10,
+                    &quot;initialAccessionCount&quot;: 1,
+                    &quot;latestAccessionCount&quot;: 1
+                }
+            },
+            &quot;Treatments&quot;: {
+                &quot;type&quot;: &quot;treatment&quot;,
+                &quot;displayOrder&quot;: 6,
+                &quot;config&quot;: {
+                    &quot;translationKey&quot;: &quot;VISIT_TITLE_TREATMENTS_KEY&quot;,
+                    &quot;showFlowSheet&quot;: true,
+                    &quot;showListView&quot;: true,
+                    &quot;showOtherActive&quot;: false,
+                    &quot;showDetailsButton&quot;: true,
+                    &quot;showRoute&quot;: true,
+                    &quot;showDrugForm&quot;: true,
+                    &quot;showProvider&quot;:false
+                }
+            },
+            &quot;adviceOnDischarge&quot;:{
+                &quot;type&quot;: &quot;observation&quot;,
+                &quot;displayOrder&quot;: 8,
+                &quot;translationKey&quot;:&quot;DISCHARGE_SUMMARY_ADVICE_ON_DISCHARGE_KEY&quot;,
+                &quot;config&quot;: {
+                    &quot;conceptNames&quot;: [
+                        &quot;Additional Advice on Discharge&quot;,
+                        &quot;Follow up Date&quot;,
+                        &quot;Discharge Summary, Plan for follow up&quot;
+                    ],
+                    &quot;scope&quot;: &quot;latest&quot;
+                }
+            }
+        }
+    },
+    &quot;orders&quot;:{
+      &quot;translationKey&quot;: &quot;DASHBOARD_TAB_ORDERS_KEY&quot;,
+      &quot;sections&quot;: {
+          &quot;Radiology Orders&quot;: {
+              &quot;type&quot;: &quot;order&quot;,
+              &quot;displayOrder&quot;: 0,
+              &quot;translationKey&quot;: &quot;Radiology Orders&quot;,
+              &quot;config&quot;: {
+                  &quot;translationKey&quot;: &quot;Radiology Orders&quot;,
+                  &quot;name&quot;: &quot;ordersControl&quot;,
+                  &quot;orderType&quot;: &quot;Radiology Order&quot;,
+                  &quot;conceptNames&quot;: [
+                      &quot;Summary&quot;
+                  ]
+              }
+          }
+      }
+
+    }
+}
+
+</pre>
+</div></div><p>In the config above,</p><p>general, dischargeSummay and orders are the multiple visit dashboards in which general is the default dashboard.&nbsp;</p><p><br /></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col /><col /></colgroup><tbody><tr><th class="confluenceTh">Visit.json</th><th class="confluenceTh"><br /></th></tr><tr><td colspan="1" class="confluenceTd">translationKey</td><td colspan="1" class="confluenceTd">This is required to give the name for the visit dashboard. This value for this key should be defined in the locale.json</td></tr><tr><td colspan="1" class="confluenceTd"><p>displayByDefault</p><p><span>(true/false) </span></p></td><td colspan="1" class="confluenceTd">Only one dashboard will be shown by default and others dashboards will come under '+' button. If there is a need to open multiple dasboards by default on loading the page, this config has to be set to true for those dashboard.</td></tr><tr><td colspan="1" class="confluenceTd">printing</td><td colspan="1" class="confluenceTd"><p>This can be defined when visit dashboard print functionality is needed. Refer printing section under <a href="/wiki/spaces/BAH/pages/37945569/dashboard.json" data-linked-resource-id="37945569" data-linked-resource-version="34" data-linked-resource-type="page">dashboard.json</a> page for configuration.</p><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-id="443f6725-d842-4c26-8c1a-1b9de85dc7bd" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p><span>With Bahmni Lite release, the provider name is added to the bottom of the visit page print for signature purposes. In case of multi-provider scenario, this can be confusing and you can hide it. To hide the provider name in the end of visit print page, hideProviderName property can be set to true.<br />Example:</span></p><p><span>&quot;printing&quot;: {<br />&quot;title&quot;: &quot;Bahmni&quot;, &quot;header&quot;: &quot;Discharge Summary&quot;, </span></p><p><span>&quot;logo&quot;: &quot;../images/bahmniLogo.png&quot;<br />&quot;hideProviderName&quot;: true<br />},</span></p></div></div></td></tr><tr><td colspan="1" class="confluenceTd"><p>defaultSections</p><p><span>(true/false) </span></p></td><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>Default visit page will come with a set of display controls. If you want to define more display controls on default dashboard like flowsheet and pacs, this config has to set to true. Display controls should be defined in 'sections' of the dashboard config.</p><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-id="7b721f66-2a13-4b58-86bf-400b4d24aaff" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p><span>There should be at least one tab / dashboard that has </span><strong>&quot;defaultSections&quot;: true</strong></p></div></div></div></td></tr><tr><td colspan="1" class="confluenceTd">sections</td><td colspan="1" class="confluenceTd"><p>Only certain display controls can be defined here to be shown in the <strong>visit dashboard</strong>, and they are not defined the same as in the <strong>patient dashboard</strong>. There is no <strong>Forms Display Control</strong> available, so to display a list of observation forms, the following must be used:</p><pre><span data-colorid="t2oioutypy" class="hljs-string">&quot;obsForms&quot;</span><span>:{ <br /></span><span data-colorid="hl2kai606s" class="hljs-string">&quot;type&quot;</span><span>: </span><span data-colorid="ohe4vqobib" class="hljs-string">&quot;observation&quot;</span><span>, <br /></span><span data-colorid="hrnm6y7dy6" class="hljs-string">&quot;displayOrder&quot;</span><span>: 2, <br /></span><span data-colorid="d40fkj4n9a" class="hljs-string">&quot;translationKey&quot;</span><span>:</span><span data-colorid="c2a7180w9k" class="hljs-string">&quot;Observations&quot;</span><span>, <br /></span><span data-colorid="m9mwrms9tz" class="hljs-string">&quot;config&quot;</span><span>: { </span><span data-colorid="pkaxin8ed8" class="hljs-string">&quot;conceptNames&quot;</span><span>: [ </span><span data-colorid="ocrbg7emcw" class="hljs-string">&quot;Obs1 Form&quot;</span><span>, </span><span data-colorid="wbjh9nl85i" class="hljs-string">&quot;Obs2 Form&quot;</span><span>, </span><span data-colorid="i74lyfsbgt" class="hljs-string">&quot;Obs3 Form&quot;</span><span> ] } <br />}</span></pre><p><br /></p><p><br /></p></td></tr></tbody></table></div><pre><br /><br /></pre><p><br /></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<p><br /></p><p><br /></p></div>
+</div>
+</div>
+</div></body></html>

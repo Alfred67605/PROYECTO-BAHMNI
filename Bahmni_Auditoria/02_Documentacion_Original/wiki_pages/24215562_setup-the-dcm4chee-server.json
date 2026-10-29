@@ -1,0 +1,174 @@
+{
+  "id": "24215562",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/24215562",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjQyMTU1NjI=",
+  "status": "current",
+  "title": "SetUp the DCM4CHEE Server",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:a5d37444-6160-4e20-9a1f-0859131a68cd",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Swathi Varkala",
+      "timeZone": "Asia/Calcutta",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:a5d37444-6160-4e20-9a1f-0859131a68cd",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "swathi varkala",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:a5d37444-6160-4e20-9a1f-0859131a68cd"
+      }
+    },
+    "createdDate": "2015-07-13T09:59:20.819Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/24215562/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:a5d37444-6160-4e20-9a1f-0859131a68cd",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Swathi Varkala",
+      "timeZone": "Asia/Calcutta",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:a5d37444-6160-4e20-9a1f-0859131a68cd",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "swathi varkala",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:a5d37444-6160-4e20-9a1f-0859131a68cd"
+      }
+    },
+    "when": "2016-08-04T05:37:08.562Z",
+    "friendlyWhen": "Aug 04, 2016",
+    "message": "",
+    "number": 19,
+    "minorEdit": false,
+    "syncRev": "0.1SbDuPQNtR5l1LvNbkPy8A.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$24215562.71",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/24215562"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/24215562/version/19"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<div><ac:structured-macro ac:name=\"warning\" ac:schema-version=\"1\" ac:macro-id=\"e2a45b4e-1905-4dc8-b0b4-36d8b3140317\"><ac:rich-text-body><p><strong>This steps for dcm4chee installation as described below are deprecated and not required with new installation. dcm4chee is embedded in Bahmni installer as an optional installation component. Please see this document:&nbsp;<a href=\"https://bahmni.atlassian.net/wiki/pages/viewpage.action?pageId=35291242\">Bahmni Advanced Installation</a>.</strong></p></ac:rich-text-body></ac:structured-macro><p>&nbsp;</p></div><div><strong><br /></strong></div><div><strong>References :</strong></div><div><ol><li><a href=\"http://www.dcm4che.org/docs/reference/dcm4chee/html/dcm4chee-installation.html\">http://www.dcm4che.org/docs/reference/dcm4chee/html/dcm4chee-installation.html</a></li><li><span>&nbsp;</span><a href=\"http://www.dcm4che.org/confluence/display/ee2/Installation\">http://www.dcm4che.org/confluence/display/ee2/Installation</a></li></ol><p>&nbsp;</p><div><p><strong>Steps to follow for setup of DCM4CHEE using dmc4chee puppet module:</strong></p></div><ol><li><p>Download the following from YumRepo or the actual websites.</p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"4eb72694-3b2c-4a8b-a5f8-828f74e9457c\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:rich-text-body><pre><a href=\"http://172.18.2.14/packages/build/Oviyam-2.1-bin.zip\">Oviyam-2.1-bin.zip</a> \n<a href=\"http://172.18.2.14/packages/build/dcm4che-2.0.28-bin.zip\">dcm4che-2.0.28-bin.zip</a>  \n<a href=\"http://172.18.2.14/packages/build/dcm4chee-2.18.1-psql.zip\">dcm4chee-2.18.1-psql.zip</a>\n<a href=\"http://172.18.2.14/packages/build/oviyam2.war\">oviyam2.war</a></pre><div>into /packages/build</div><div><pre><a href=\"http://172.18.2.14/packages/servers/jboss-4.2.3.GA-jdk6.zip\">jboss-4.2.3.GA-jdk6.zip</a> into /packages/servers</pre></div></ac:rich-text-body></ac:structured-macro></li><li><p>Once downloaded, run the below command</p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"1e22c067-9b24-49b8-b406-3b9ab50081ae\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:rich-text-body><pre>bahmni-environment/scripts/run-puppet-module.sh dcm4chee</pre></ac:rich-text-body></ac:structured-macro></li></ol><p><strong>Steps to follow for setup of DCM4CHEE manually:</strong></p></div><ol><li><span>Download&nbsp;dcm4chee-2.18.1-psql.zip from&nbsp;<a href=\"http://sourceforge.net/projects/dcm4che/files/dcm4chee/2.18.1/\">http://sourceforge.net/projects/dcm4che/files/dcm4chee/2.18.1/</a></span></li><li>Once downloaded, extract the distribution package into your desired destination directory. Avoid using a directory path that contains spaces though, as that may cause problems when running the application from the command line.</li><li><p>Install&nbsp;<span style=\"color: rgb(0,0,0);\">PostgreSQL , create &quot;pacsdb&quot; database and run the below command</span><br /><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\">&nbsp;</span></span></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"1c691b64-26ca-4f22-89ba-f32c108c2032\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:rich-text-body><pre class=\"p1\"><span>create&nbsp;database&nbsp;pacsdb</span></pre><pre class=\"p1\"><span>psql&nbsp;-Upostgres&nbsp;pacsdb&nbsp;-f&nbsp;</span>dcm4chee-2.18.1-psql/sql/create.psql</pre></ac:rich-text-body></ac:structured-macro></li><li><span style=\"color: rgb(0,0,0);\"><span>Download&nbsp;jboss-4.2.3.GA-jdk6.zip from&nbsp;</span><a href=\"http://sourceforge.net/projects/jboss/files/JBoss/JBoss-4.2.3.GA/jboss-4.2.3.GA-jdk6.zip/download\">http://sourceforge.net/projects/jboss/files/JBoss/JBoss-4.2.3.GA/jboss-4.2.3.GA-jdk6.zip/download</a>&nbsp; and extract it in&nbsp; <span>/usr/share</span></span></li><li><p><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\"><span><span>Goto dcm4chee extracted directory run the following command</span></span></span></span></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"e48cf867-6435-4862-bd2c-d6177784ae17\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:rich-text-body><pre class=\"p1\">dcm4chee-2.18.1-psql/bin/install_jboss.sh /usr/share/jboss-4.2.3.GA</pre></ac:rich-text-body></ac:structured-macro></li><li><span style=\"color: rgb(0,0,0);\"><span><span>Change<span>&nbsp;Port Numbers 8080 to 8001<span style=\"color: rgb(0,0,0);\">, 8009 to 8010</span>&nbsp;in dcm4chee-2.18.1-psql/<span style=\"color: rgb(0,0,0);\">server/default/deploy/jboss-web.deployer/server.xml</span></span></span></span></span></li><li><span style=\"color: rgb(0,0,0);\"><span><span><span><span style=\"color: rgb(0,0,0);\">Change the Port Number 1099 to 1100 in&nbsp;dcm4chee-2.18.1-psql/<span>server/default/conf/jboss-service.xml</span></span></span></span></span></span></li><li><p><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\">Unzip the downloaded Oviyam2 bin zip from&nbsp;</span></span></span><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\">&nbsp;</span></span><a class=\"external-link\" style=\"line-height: 1.4285715;\" href=\"http://sourceforge.net/projects/dcm4che/files/Oviyam/2.1/\" rel=\"nofollow\">http://sourceforge.net/projects/dcm4che/files/Oviyam/2.1/</a>&nbsp;and run the below commands and Copy the <strong><em>oviyam2.war</em></strong> to&nbsp;<strong><em>dcm4chee-2.18.1-psql/server/default/</em></strong></p></li><li><span style=\"color: rgb(0,0,0);\"><span><span><span><span style=\"color: rgb(0,0,0);\"><span>To start the dcm4chee server run&nbsp;<span style=\"color: rgb(0,0,0);\">dcm4chee-2.18.1-psql/bin/run.sh</span></span></span></span></span></span></span></li><li><p><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\">You can access dcm4chee using&nbsp;http://<strong><span style=\"color: rgb(51,153,102);\">ip-address</span></strong>:8001/dcm4chee-web3/</span></span></span><br /><span style=\"color: rgb(0,0,0);\">&nbsp;</span><br /><span style=\"color: rgb(0,0,0);\"><ac:image ac:width=\"900\"><ri:attachment ri:filename=\"Screenshot1.png\" /></ac:image></span><br /><br /></p></li><li><p><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\"><span><span><span><span style=\"color: rgb(0,0,0);\"><span>Use the below command to upload dcm files manually to DCM4CHEE.&nbsp;</span></span></span></span></span></span></span><br /><span style=\"color: rgb(0,0,0);\"><br /></span></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"28e4c4cb-1d23-4df1-9d23-81f62fb20647\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:rich-text-body><pre class=\"p1\">dcmsnd DCM4CHEE@ipaddress:11112 image.dcm</pre></ac:rich-text-body></ac:structured-macro><p>Sample image :&nbsp;<ac:link><ri:attachment ri:filename=\"image.dcm\" /></ac:link><br /><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\"><span><span><span><span style=\"color: rgb(0,0,0);\"><span><br />Utilities can be downloaded from&nbsp;<a href=\"https://sourceforge.net/projects/dcm4che/files/dcm4che2/2.0.28/\">https://sourceforge.net/projects/dcm4che/files/dcm4che2/2.0.28/</a></span></span></span></span></span></span></span></p><ol><li><p class=\"p1\">Unzip the&nbsp;dcm4che-2.0.28-bin.zip&nbsp;file</p></li><li><p class=\"p1\">run the excecutable files with appropriate parameters.</p></li></ol></li><li><p><span style=\"color: rgb(0,0,0);\"><span><span><span><span style=\"color: rgb(0,0,0);\">Configure ImageSuite in DCM4CHEE as below</span></span></span></span></span></p><p><span style=\"color: rgb(0,0,0);\"><span><span><span><span style=\"color: rgb(0,0,0);\"><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"Screen Shot 2015-07-13 at 10.56.39 PM.png\" /></ac:image><br /></span></span></span></span></span></p></li></ol><p>&nbsp;</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/24215562"
+      }
+    },
+    "view": {
+      "value": "<div><div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e2a45b4e-1905-4dc8-b0b4-36d8b3140317\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>This steps for dcm4chee installation as described below are deprecated and not required with new installation. dcm4chee is embedded in Bahmni installer as an optional installation component. Please see this document: <a href=\"https://bahmni.atlassian.net/wiki/pages/viewpage.action?pageId=35291242\" rel=\"nofollow\">Bahmni Advanced Installation</a>.</strong></p></div></div><p> </p></div><div><strong><br/></strong></div><div><strong>References :</strong></div><div><ol><li><a class=\"external-link\" href=\"http://www.dcm4che.org/docs/reference/dcm4chee/html/dcm4chee-installation.html\" rel=\"nofollow\">http://www.dcm4che.org/docs/reference/dcm4chee/html/dcm4chee-installation.html</a></li><li><span> </span><a class=\"external-link\" href=\"http://www.dcm4che.org/confluence/display/ee2/Installation\" rel=\"nofollow\">http://www.dcm4che.org/confluence/display/ee2/Installation</a></li></ol><p> </p><div><p><strong>Steps to follow for setup of DCM4CHEE using dmc4chee puppet module:</strong></p></div><ol><li><p>Download the following from YumRepo or the actual websites.</p><div class=\"confluence-information-macro has-no-icon confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4eb72694-3b2c-4a8b-a5f8-828f74e9457c\" data-macro-name=\"info\"><div class=\"confluence-information-macro-body\"><pre><a class=\"external-link\" href=\"http://172.18.2.14/packages/build/Oviyam-2.1-bin.zip\" rel=\"nofollow\">Oviyam-2.1-bin.zip</a> \n<a class=\"external-link\" href=\"http://172.18.2.14/packages/build/dcm4che-2.0.28-bin.zip\" rel=\"nofollow\">dcm4che-2.0.28-bin.zip</a>  \n<a class=\"external-link\" href=\"http://172.18.2.14/packages/build/dcm4chee-2.18.1-psql.zip\" rel=\"nofollow\">dcm4chee-2.18.1-psql.zip</a>\n<a class=\"external-link\" href=\"http://172.18.2.14/packages/build/oviyam2.war\" rel=\"nofollow\">oviyam2.war</a></pre><div>into /packages/build</div><div><pre><a class=\"external-link\" href=\"http://172.18.2.14/packages/servers/jboss-4.2.3.GA-jdk6.zip\" rel=\"nofollow\">jboss-4.2.3.GA-jdk6.zip</a> into /packages/servers</pre></div></div></div></li><li><p>Once downloaded, run the below command</p><div class=\"confluence-information-macro has-no-icon confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"1e22c067-9b24-49b8-b406-3b9ab50081ae\" data-macro-name=\"info\"><div class=\"confluence-information-macro-body\"><pre>bahmni-environment/scripts/run-puppet-module.sh dcm4chee</pre></div></div></li></ol><p><strong>Steps to follow for setup of DCM4CHEE manually:</strong></p></div><ol><li><span>Download dcm4chee-2.18.1-psql.zip from <a class=\"external-link\" href=\"http://sourceforge.net/projects/dcm4che/files/dcm4chee/2.18.1/\" rel=\"nofollow\">http://sourceforge.net/projects/dcm4che/files/dcm4chee/2.18.1/</a></span></li><li>Once downloaded, extract the distribution package into your desired destination directory. Avoid using a directory path that contains spaces though, as that may cause problems when running the application from the command line.</li><li><p>Install <span class=\"legacy-color-text-default\">PostgreSQL , create &quot;pacsdb&quot; database and run the below command</span><br/><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\"> </span></span></p><div class=\"confluence-information-macro has-no-icon confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"1c691b64-26ca-4f22-89ba-f32c108c2032\" data-macro-name=\"info\"><div class=\"confluence-information-macro-body\"><pre class=\"p1\"><span>create database pacsdb</span></pre><pre class=\"p1\"><span>psql -Upostgres pacsdb -f </span>dcm4chee-2.18.1-psql/sql/create.psql</pre></div></div></li><li><span class=\"legacy-color-text-default\"><span>Download jboss-4.2.3.GA-jdk6.zip from </span><a class=\"external-link\" href=\"http://sourceforge.net/projects/jboss/files/JBoss/JBoss-4.2.3.GA/jboss-4.2.3.GA-jdk6.zip/download\" rel=\"nofollow\">http://sourceforge.net/projects/jboss/files/JBoss/JBoss-4.2.3.GA/jboss-4.2.3.GA-jdk6.zip/download</a>  and extract it in  <span>/usr/share</span></span></li><li><p><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\"><span><span>Goto dcm4chee extracted directory run the following command</span></span></span></span></p><div class=\"confluence-information-macro has-no-icon confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e48cf867-6435-4862-bd2c-d6177784ae17\" data-macro-name=\"info\"><div class=\"confluence-information-macro-body\"><pre class=\"p1\">dcm4chee-2.18.1-psql/bin/install_jboss.sh /usr/share/jboss-4.2.3.GA</pre></div></div></li><li><span class=\"legacy-color-text-default\"><span><span>Change<span> Port Numbers 8080 to 8001<span class=\"legacy-color-text-default\">, 8009 to 8010</span> in dcm4chee-2.18.1-psql/<span class=\"legacy-color-text-default\">server/default/deploy/jboss-web.deployer/server.xml</span></span></span></span></span></li><li><span class=\"legacy-color-text-default\"><span><span><span><span class=\"legacy-color-text-default\">Change the Port Number 1099 to 1100 in dcm4chee-2.18.1-psql/<span>server/default/conf/jboss-service.xml</span></span></span></span></span></span></li><li><p><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\">Unzip the downloaded Oviyam2 bin zip from </span></span></span><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\"> </span></span><a class=\"external-link\" href=\"http://sourceforge.net/projects/dcm4che/files/Oviyam/2.1/\" rel=\"nofollow\" style=\"line-height: 1.4285715;\">http://sourceforge.net/projects/dcm4che/files/Oviyam/2.1/</a> and run the below commands and Copy the <strong><em>oviyam2.war</em></strong> to <strong><em>dcm4chee-2.18.1-psql/server/default/</em></strong></p></li><li><span class=\"legacy-color-text-default\"><span><span><span><span class=\"legacy-color-text-default\"><span>To start the dcm4chee server run <span class=\"legacy-color-text-default\">dcm4chee-2.18.1-psql/bin/run.sh</span></span></span></span></span></span></span></li><li><p><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\">You can access dcm4chee using http://<strong><span class=\"legacy-color-text-green4\">ip-address</span></strong>:8001/dcm4chee-web3/</span></span></span><br/><span class=\"legacy-color-text-default\"> </span><br/><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"900\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/24215562/Screenshot1.png?version=1&amp;modificationDate=1436792163024&amp;cacheVersion=1&amp;api=v2&amp;width=900&amp;height=370\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/24215562/Screenshot1.png?version=1&amp;modificationDate=1436792163024&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"24215566\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot1.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"24215562\" data-linked-resource-container-version=\"19\" data-media-id=\"786e303b-edb2-4791-8ce8-b620b03a7dbb\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/24215562/Screenshot1.png?version=1&amp;modificationDate=1436792163024&amp;cacheVersion=1&amp;api=v2&amp;width=1800&amp;height=740 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/24215562/Screenshot1.png?version=1&amp;modificationDate=1436792163024&amp;cacheVersion=1&amp;api=v2&amp;width=900&amp;height=370 1x\"></span></span><br/><br/></p></li><li><p><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\"><span><span><span><span class=\"legacy-color-text-default\"><span>Use the below command to upload dcm files manually to DCM4CHEE. </span></span></span></span></span></span></span><br/><span class=\"legacy-color-text-default\"><br/></span></p><div class=\"confluence-information-macro has-no-icon confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"28e4c4cb-1d23-4df1-9d23-81f62fb20647\" data-macro-name=\"info\"><div class=\"confluence-information-macro-body\"><pre class=\"p1\">dcmsnd DCM4CHEE@ipaddress:11112 image.dcm</pre></div></div><p>Sample image : <a href=\"/wiki/download/attachments/24215562/image.dcm?version=1&amp;modificationDate=1437549937105&amp;cacheVersion=1&amp;api=v2\" data-linked-resource-id=\"24969220\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image.dcm\" data-linked-resource-content-type=\"application/octet-stream\" data-linked-resource-container-id=\"24215562\" data-linked-resource-container-version=\"19\">image.dcm</a><br/><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\"><span><span><span><span class=\"legacy-color-text-default\"><span><br/>Utilities can be downloaded from <a class=\"external-link\" href=\"https://sourceforge.net/projects/dcm4che/files/dcm4che2/2.0.28/\" rel=\"nofollow\">https://sourceforge.net/projects/dcm4che/files/dcm4che2/2.0.28/</a></span></span></span></span></span></span></span></p><ol><li><p class=\"p1\">Unzip the dcm4che-2.0.28-bin.zip file</p></li><li><p class=\"p1\">run the excecutable files with appropriate parameters.</p></li></ol></li><li><p><span class=\"legacy-color-text-default\"><span><span><span><span class=\"legacy-color-text-default\">Configure ImageSuite in DCM4CHEE as below</span></span></span></span></span></p><p><span class=\"legacy-color-text-default\"><span><span><span><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/24215562/Screen%20Shot%202015-07-13%20at%2010.56.39%20PM.png?version=1&amp;modificationDate=1436808490579&amp;cacheVersion=1&amp;api=v2&amp;width=856&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/24215562/Screen%20Shot%202015-07-13%20at%2010.56.39%20PM.png?version=1&amp;modificationDate=1436808490579&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"24215578\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2015-07-13 at 10.56.39 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"24215562\" data-linked-resource-container-version=\"19\" data-media-id=\"52094432-27a7-40c3-8879-2253c3d1289a\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/24215562/Screen%20Shot%202015-07-13%20at%2010.56.39%20PM.png?version=1&amp;modificationDate=1436808490579&amp;cacheVersion=1&amp;api=v2&amp;width=1712&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/24215562/Screen%20Shot%202015-07-13%20at%2010.56.39%20PM.png?version=1&amp;modificationDate=1436808490579&amp;cacheVersion=1&amp;api=v2&amp;width=856&amp;height=250 1x\"></span><br/></span></span></span></span></span></p></li></ol><p> </p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/24215562"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/24215562/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/24215562/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 0
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/24215562/child",
+    "restrictions": "/rest/api/content/24215562/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/24215562/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=24215562",
+    "webui": "/spaces/BAH/pages/24215562/SetUp+the+DCM4CHEE+Server",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/24215562",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/24215562",
+    "tinyui": "/x/CoBxAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Performing a Backup of Bahmni Data on USB or External Drive</title></head><body><h1>Performing a Backup of Bahmni Data on USB or External Drive</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class="confluence-information-macro confluence-information-macro-warning conf-macro output-block" data-hasbody="true" data-macro-id="49c8dc43-bcdb-4282-888f-14e6c3b26f17" data-macro-name="warning"><span class="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>It is recommended to perform a daily / periodic backup of Bahmni data and store it offsite to avoid complete loss of data during a natural disaster, etc. </p></div></div><h2 id="PerformingaBackupofBahmniDataonUSBorExternalDrive-StepstobePerformed">Steps to be Performed</h2><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-id="cc13a49f-454a-4789-bbdd-0889b22e1e6d" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>Note:</p><ol><li>These steps were tested on a CentOS v6.7 machine.</li><li>This could cause IO load on the machine, so please perform this on the Slave Machine, or when the EMR is not under load.</li></ol></div></div><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-id="dbe524e0-6036-4096-a50d-6020803f5176" data-macro-name="note"><p class="title">Known issue with encryption step</p><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>There is a known issue in Linux Kernel with the above encryption step because of which system needs to be shutdown after copying backup to the external hard drive, then only hard drive gets detached. Read here: <a class="external-link" href="https://bugzilla.redhat.com/show_bug.cgi?id=809188" rel="nofollow">https://bugzilla.redhat.com/show_bug.cgi?id=809188</a>. Please test before proceeding.</p></div></div><ol><li>Encrypt USB/External drive using steps mentioned in <a class="external-link" href="https://miguelmenendez.pro/en/articles/encrypt-usb-storage-device-linux-unified-key-setup-luks.html" rel="nofollow">https://miguelmenendez.pro/en/articles/encrypt-usb-storage-device-linux-unified-key-setup-luks.html</a>. Note down the password in a secret location. And don't keep a password that is shared / re-used / easy-to-guess. This is a ONE TIME activity for the drive. Encrypting the USB has the advantage that even if you lost it, you will feel a little better that it will be very difficult for someone to get to the data.</li><li>Mount the hard drive at <strong>/media/USB</strong>.</li><li><p>Create directories in the USB (use the <a class="external-link" href="http://www.cyberciti.biz/faq/linux-make-directory-command/" rel="nofollow">mkdir</a> command): </p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="b5f6030d-ee69-4ac9-9013-0538d7143054" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence"># Folder struture
+emr_backup
+   |____ database
+   |____ patient_images
+   |____ document_images
+   |____ uploaded-files
+   |____ uploaded_results
+   |____ pacs_images
+       |____archive
+
+
+
+</pre>
+</div></div></li><li><p>Unlock it with the command ‘cryptsetup luksOpen LUKS0001’ with passphrase/password.</p></li><li><p>Mount the hard drive using command ‘mount /dev/mapper/LUKS0001 /media/USB'</p></li><li><p>Copy the backups as per the below steps (<strong>NOTE:</strong><a class="external-link" href="http://www.tecmint.com/rsync-local-remote-file-synchronization-commands/" rel="nofollow">rsync</a> is a command line program for doing delta updates / copy. Read more about it <a class="external-link" href="http://www.tecmint.com/rsync-local-remote-file-synchronization-commands/" rel="nofollow">here</a>): </p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="56968955-7e21-4032-9bab-9909945ec9ad" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence"># Take database backup using the DB backup scripts for MySQL and PostGreSQL DBs
+
+
+cd ~/bahmni-environment/scripts
+./backup-mysql.sh password
+./backup-psql.sh
+cp /backup/&lt;two newly created files&gt; /media/USB/emr_backup/database/
+
+
+# Backup image files - patient images, document images, pacs images, uploaded_results, uploaded-files (depending on what features of Bahmni you are using) 
+
+
+rsync -rh --progress -i --itemize-changes --update /home/bahmni/patient_images /media/USB/emr_backup/patient_images/../
+rsync -rh --progress -i --itemize-changes --update /home/bahmni/document_images /media/USB/emr_backup/document_images/../
+rsync -rh --progress -i --itemize-changes --update /home/bahmni/uploaded-files /media/USB/emr_backup/uploaded-files/../
+rsync -rh --progress -i --itemize-changes --update /home/bahmni/uploaded_results /media/USB/emr_backup/uploaded_results/../
+rsync -rh --progress -i --itemize-changes --update /var/lib/bahmni/dcm4chee-2.18.1-psql/server/default/archive /media/USB/emr_backup/pacs_images/archive/../</pre>
+</div></div></li><li><p>Umount the disk using ‘umount /media/USB'.</p></li><li><p>Lock the drive again with ‘cryptsetup luksClose LUKS0001'.</p></li><li><p>Disconnect the hard drive and keep it in a safe, secure and remote place from the production environment.</p></li></ol><p><br/></p><p><br/></p><p><br/></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="fe3b0b49-2ed9-4c60-bfed-1c5bbadc04d0" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;"><b>Related Links</b></div><div class="panelContent">
+<p><a href="/wiki/spaces/BAH/pages/3997698/Automated+DB+backups+of+Bahmni" data-linked-resource-id="3997698" data-linked-resource-version="24" data-linked-resource-type="page">Automated DB Backup</a></p>
+</div></div></div>
+</div>
+</div>
+</div></body></html>

@@ -1,0 +1,170 @@
+{
+  "id": "37945530",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/37945530",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzc5NDU1MzA=",
+  "status": "current",
+  "title": "Configure Visit Types",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:c54772f2-46b5-43c0-be04-96923ee59750",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Vinay Venu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:c54772f2-46b5-43c0-be04-96923ee59750",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Vinay Venu",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:c54772f2-46b5-43c0-be04-96923ee59750"
+      }
+    },
+    "createdDate": "2016-01-20T06:46:17.926Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945530/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sravanthi N. S. CH.",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sravanthi N. S. CH.",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d47e0136-cbde-4dbc-8820-611d4528d1c8"
+      }
+    },
+    "when": "2016-12-31T07:22:57.117Z",
+    "friendlyWhen": "Dec 31, 2016",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.DhvkXu7Usw2g0CKmHyGqOA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$37945530.39",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/37945530"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945530/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"e3f4c28a-1caa-49d6-806d-b38bc2d13932\"><ac:rich-text-body><p>Visit types can be added to the system using the Administration UI at&nbsp;<a href=\"https://local/openmrs/admin/visits/visitType.list\">/openmrs/admin/visits/visitType.list</a></p></ac:rich-text-body></ac:structured-macro><h2>Steps</h2><p>1) Navigate to <em>OpenMRS, Administration, Manage Visit Types.</em></p><p>2) Add new visit type.</p><p><br /></p><p><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"image2016-1-20 12:16:1.png\" /></ac:image></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/37945530"
+      }
+    },
+    "view": {
+      "value": "<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e3f4c28a-1caa-49d6-806d-b38bc2d13932\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Visit types can be added to the system using the Administration UI at <a class=\"external-link\" href=\"https://local/openmrs/admin/visits/visitType.list\" rel=\"nofollow\">/openmrs/admin/visits/visitType.list</a></p></div></div><h2 id=\"ConfigureVisitTypes-Steps\">Steps</h2><p>1) Navigate to <em>OpenMRS, Administration, Manage Visit Types.</em></p><p>2) Add new visit type.</p><p><br/></p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945530/image2016-1-20%2012:16:1.png?version=1&amp;modificationDate=1453272377940&amp;cacheVersion=1&amp;api=v2&amp;width=484&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945530/image2016-1-20%2012:16:1.png?version=1&amp;modificationDate=1453272377940&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"37945529\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2016-1-20 12:16:1.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945530\" data-linked-resource-container-version=\"2\" data-media-id=\"f6e3e849-8374-47a2-8a31-5e9df215744d\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945530/image2016-1-20%2012:16:1.png?version=1&amp;modificationDate=1453272377940&amp;cacheVersion=1&amp;api=v2&amp;width=968&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945530/image2016-1-20%2012:16:1.png?version=1&amp;modificationDate=1453272377940&amp;cacheVersion=1&amp;api=v2&amp;width=484&amp;height=250 1x\"></span></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/37945530"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/37945530/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945530/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 245554730
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/37945530/child",
+    "restrictions": "/rest/api/content/37945530/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/37945530/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=37945530",
+    "webui": "/spaces/BAH/pages/37945530/Configure+Visit+Types",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/37945530",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945530",
+    "tinyui": "/x/ugBDAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

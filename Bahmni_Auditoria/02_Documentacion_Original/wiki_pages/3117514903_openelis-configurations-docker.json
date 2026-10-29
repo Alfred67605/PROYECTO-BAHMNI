@@ -1,0 +1,174 @@
+{
+  "id": "3117514903",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3117514903",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzExNzUxNDkwMw==",
+  "status": "current",
+  "title": "OpenELIS Configurations (docker)",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "createdDate": "2022-12-09T06:09:11.649Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117514903/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "when": "2023-12-11T16:13:33.540Z",
+    "friendlyWhen": "Dec 11, 2023",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "0.svhjGxrPnsa0hqLRKcUFvA.0",
+    "syncRevSource": "synchrony-ack",
+    "ncsStepVersion": "75",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3117514903.31",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3117514903"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117514903/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>Bahmni/openelis image is based on OpenELIS which acts as Lab Information Management system. Atomfeed sync has been enabled to sync data from and to Bahmni EMR. The image is built and published using Github Actions from <a href=\"https://github.com/Bahmni/OpenElis\">OpenELIS</a> repository.</p><h3>Environment Configurations:</h3><table data-table-width=\"1800\" data-layout=\"default\" ac:local-id=\"db371458-00ae-40e2-a0b6-1522703afeeb\"><colgroup><col style=\"width: 385.0px;\" /><col style=\"width: 1255.0px;\" /></colgroup><tbody><tr><th><p>Variable Name</p></th><th><p>Description</p></th></tr><tr><td><p>OPENELIS_IMAGE_TAG</p></td><td><p>This value tells which image version to be used for OpenElis Application. List of tags can be found at <a href=\"https://hub.docker.com/r/bahmni/openelis/tags\">bahmni/openelis - Tags</a> .</p></td></tr><tr><td><p>OPENELIS_DB_IMAGE_NAME</p></td><td><p>This value tells which image to be used for OpenElis Database. There are two variants available.<br />bahmni/openelis-db:<strong>fresh-latest</strong> - Has only schema and default data.<br />bahmni/openelis-db:<strong>demo-latest</strong> - Has schema and demo data loaded.<br />List of image tags can be found at <a href=\"https://hub.docker.com/r/bahmni/openelis-db/tags\">bahmni/openelis-db - Tags</a> .</p></td></tr><tr><td><p>OPENELIS_DB_DUMP_PATH</p></td><td><p>When you want to restore an existing database of OpenElis from a dump file you can set the folder path to your dump file with this variable. This is a one time setup and the restore happens only when the database is clean and fresh.</p></td></tr></tbody></table><p />",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3117514903"
+      }
+    },
+    "view": {
+      "value": "<p>Bahmni/openelis image is based on OpenELIS which acts as Lab Information Management system. Atomfeed sync has been enabled to sync data from and to Bahmni EMR. The image is built and published using Github Actions from <a class=\"external-link\" href=\"https://github.com/Bahmni/OpenElis\" rel=\"nofollow\">OpenELIS</a> repository.</p><h3 id=\"OpenELISConfigurations(docker)-EnvironmentConfigurations:\">Environment Configurations:</h3><div class=\"table-wrap\"><table data-table-width=\"1800\" data-layout=\"default\" data-local-id=\"db371458-00ae-40e2-a0b6-1522703afeeb\" class=\"confluenceTable\"><colgroup><col style=\"width: 385.0px;\"/><col style=\"width: 1255.0px;\"/></colgroup><tbody><tr><th class=\"confluenceTh\"><p>Variable Name</p></th><th class=\"confluenceTh\"><p>Description</p></th></tr><tr><td class=\"confluenceTd\"><p>OPENELIS_IMAGE_TAG</p></td><td class=\"confluenceTd\"><p>This value tells which image version to be used for OpenElis Application. List of tags can be found at <a class=\"external-link\" href=\"https://hub.docker.com/r/bahmni/openelis/tags\" rel=\"nofollow\">bahmni/openelis - Tags</a> .</p></td></tr><tr><td class=\"confluenceTd\"><p>OPENELIS_DB_IMAGE_NAME</p></td><td class=\"confluenceTd\"><p>This value tells which image to be used for OpenElis Database. There are two variants available.<br/>bahmni/openelis-db:<strong>fresh-latest</strong> - Has only schema and default data.<br/>bahmni/openelis-db:<strong>demo-latest</strong> - Has schema and demo data loaded.<br/>List of image tags can be found at <a class=\"external-link\" href=\"https://hub.docker.com/r/bahmni/openelis-db/tags\" rel=\"nofollow\">bahmni/openelis-db - Tags</a> .</p></td></tr><tr><td class=\"confluenceTd\"><p>OPENELIS_DB_DUMP_PATH</p></td><td class=\"confluenceTd\"><p>When you want to restore an existing database of OpenElis from a dump file you can set the folder path to your dump file with this variable. This is a one time setup and the restore happens only when the database is clean and fresh.</p></td></tr></tbody></table></div><p />",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3117514903"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3117514903/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117514903/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 407506314
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3117514903/child",
+    "restrictions": "/rest/api/content/3117514903/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3117514903/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3117514903",
+    "webui": "/spaces/BAH/pages/3117514903/OpenELIS+Configurations+docker",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3117514903",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117514903",
+    "tinyui": "/x/l4DRuQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

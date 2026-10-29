@@ -1,0 +1,170 @@
+{
+  "id": "299958302",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/299958302",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjk5OTU4MzAy",
+  "status": "current",
+  "title": "Weekly Summary View",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "createdDate": "2017-11-23T16:57:49.955Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/299958302/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "when": "2017-11-24T15:14:21.543Z",
+    "friendlyWhen": "Nov 24, 2017",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.aWXlACUxJwEPY2A1v82pyw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$299958302.17",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/299958302"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/299958302/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>About The feature</h2><p><span>The weekly summary view is a summary of the week&rsquo;s load for each service.&nbsp;</span></p><h2>Used By</h2><p><span>Can be used by anyone who is involved in scheduling appointments and managing Patient loads. This hopes to serve as a summary snapshot of the scheduled load of patients. Based on this users can choose to schedule more appointments or not.&nbsp;</span></p><h2>How is it used</h2><ol><li>This View is the default landing page when the user accesses the appointment scheduling module. This view can be accessed anytime by clicking on the &quot;Summary&quot; Tab</li><li>The current week is displayed by default, with the current day highlighted.&nbsp;</li><li>Users can also use the date picker to select a week they choose to view. And can navigate to previous and next weeks.</li><li>Clicking on the count (blue) will take the user to a list of appointments filtered for that day and service in the <ac:link><ri:page ri:content-title=\"List View of Appointments\" ri:version-at-save=\"4\" /><ac:plain-text-link-body><![CDATA[list view]]></ac:plain-text-link-body></ac:link>.</li><li>The missed appointments are shown in red. It cannot be clicked on.&nbsp;</li></ol><p><br /></p><p><ac:image ac:border=\"true\" ac:height=\"317\" ac:width=\"929\"><ri:attachment ri:filename=\"weekly-summary.png\" ri:version-at-save=\"1\" /></ac:image></p><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b990fe84-d166-442d-b1c9-a408bacfcd95\"><ac:parameter ac:name=\"title\">On This Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"c7b7632d-e378-4c81-9d5f-ebaeced77f3d\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/299958302"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"WeeklySummaryView-AboutThefeature\">About The feature</h2><p><span>The weekly summary view is a summary of the week’s load for each service. </span></p><h2 id=\"WeeklySummaryView-UsedBy\">Used By</h2><p><span>Can be used by anyone who is involved in scheduling appointments and managing Patient loads. This hopes to serve as a summary snapshot of the scheduled load of patients. Based on this users can choose to schedule more appointments or not. </span></p><h2 id=\"WeeklySummaryView-Howisitused\">How is it used</h2><ol><li>This View is the default landing page when the user accesses the appointment scheduling module. This view can be accessed anytime by clicking on the &quot;Summary&quot; Tab</li><li>The current week is displayed by default, with the current day highlighted. </li><li>Users can also use the date picker to select a week they choose to view. And can navigate to previous and next weeks.</li><li>Clicking on the count (blue) will take the user to a list of appointments filtered for that day and service in the <a href=\"/wiki/spaces/BAH/pages/299958294/List+View+of+Appointments\" data-linked-resource-id=\"299958294\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">list view</a>.</li><li>The missed appointments are shown in red. It cannot be clicked on. </li></ol><p><br/></p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border\" height=\"317\" width=\"929\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/299958302/weekly-summary.png?version=1&amp;modificationDate=1511536349096&amp;cacheVersion=1&amp;api=v2&amp;width=929&amp;height=317\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/299958302/weekly-summary.png?version=1&amp;modificationDate=1511536349096&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"299336020\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"weekly-summary.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"299958302\" data-linked-resource-container-version=\"2\" data-media-id=\"b528dab8-9ccc-4e6c-8a61-9b7860c27ecf\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/299958302/weekly-summary.png?version=1&amp;modificationDate=1511536349096&amp;cacheVersion=1&amp;api=v2&amp;width=1007&amp;height=344 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/299958302/weekly-summary.png?version=1&amp;modificationDate=1511536349096&amp;cacheVersion=1&amp;api=v2&amp;width=929&amp;height=317 1x\"></span></p><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b990fe84-d166-442d-b1c9-a408bacfcd95\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>On This Page</b></div><div class=\"panelContent\">\n<p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"c7b7632d-e378-4c81-9d5f-ebaeced77f3d\" data-macro-name=\"toc\"> </div><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/299958302"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/299958302/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/299958302/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/299958302/child",
+    "restrictions": "/rest/api/content/299958302/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/299958302/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=299958302",
+    "webui": "/spaces/BAH/pages/299958302/Weekly+Summary+View",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/299958302",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/299958302",
+    "tinyui": "/x/HgDhEQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

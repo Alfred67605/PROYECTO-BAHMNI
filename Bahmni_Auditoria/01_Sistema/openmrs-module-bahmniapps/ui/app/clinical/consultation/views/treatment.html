@@ -1,0 +1,29 @@
+
+<div class="treatment-page treatment-page-container order-list clearfix">
+    <div class="dashboard-section-wrapper clearfix">
+        <section class="treatment-section-left">
+            <div ui-view="addTreatment"></div>
+        </section>
+        <section class="treatment-section-right clearfix">
+            <div class="pharmacist-review-banner" show-if-privilege="{{dispensePrivilege}}" ng-if="pharmacistBannerEnabled && pharmacistBanner.hasUndispensedOrders && !pharmacistBanner.confirmed">
+                <div class="pharmacist-review-banner-content">
+                    <div class="pharmacist-review-banner-message">
+                        <span class="pharmacist-review-banner-icon">i</span>
+                        <div class="pharmacist-review-banner-text">
+                            <strong>{{ ::'MEDICATION_PHARMACIST_REVIEW_HEADING' | translate }}</strong>
+                            <p>{{ ::'MEDICATION_PHARMACIST_REVIEW_SUBTEXT' | translate }}</p>
+                        </div>
+                    </div>
+                    <button type="button" class="pharmacist-review-confirm-btn" ng-click="confirmPharmacistReview()">{{ ::'MEDICATION_CONFIRM_REVIEW' | translate }}</button>
+                </div>
+            </div>
+            <dashboard patient="::patient" config="::medicationTabDisplayControls" section-groups="sectionGroups"></dashboard>
+            <new-drug-orders treatments="treatments"
+                             treatment-config="treatmentConfig"
+                             variable-dose-treatments="variableDoseTreatments"></new-drug-orders>
+            <new-order-group treatments="orderSetTreatments" order-set-name="newOrderSet.name"></new-order-group>
+            <div ng-if="drugOrderHistoryView === 'default'" ui-view="defaultHistoryView"></div>
+            <div ng-if="drugOrderHistoryView === 'custom'" ui-view="customHistoryView"></div>
+        </section>
+    </div>
+</div>

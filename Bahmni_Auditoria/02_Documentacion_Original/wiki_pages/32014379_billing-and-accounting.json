@@ -1,0 +1,171 @@
+{
+  "id": "32014379",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/32014379",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzIwMTQzNzk=",
+  "status": "current",
+  "title": "Billing and Accounting",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2015-11-02T12:13:34.700Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014379/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "when": "2019-08-14T13:52:34.213Z",
+    "friendlyWhen": "Aug 14, 2019",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "syncRev": "0.HnOsByUObZE5OoifwwtwDA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$32014379.65",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/32014379"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014379/version/8"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p><span>Using Bahmni, a doctor can prescribe drugs/medicines or place orders for patient to undergo some tests for a patient from the clinical module or consultation feature.&nbsp;</span>The patient then proceeds to the Pharmacy or to a Billing Counter to make the payment. This module describes the usage of the Billing and Accounting feature.</p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"bc64e8dd-0d8b-40d8-a994-1b210b24bb90\"><ac:rich-text-body><p>For additional information, please refer to <a href=\"https://www.erponline.vn/en/documentation/user-manuals/88-accounting-financial/216-customer-invoicing-payments\">Oddo / OpenERP documentation</a> or the <a href=\"https://doc.odoo.com/book/#books-link\">OpenERP e-book</a></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"three_equal\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"75cc2741-ab64-44c9-b537-0a202bfb8299\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">Sections</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"28bbf201-d4bb-472c-865e-0ceb60581fb2\"><ac:parameter ac:name=\"all\">true</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Patient Billing and Accounting\" ri:version-at-save=\"9\" /><ac:plain-text-link-body><![CDATA[Billing and Accounting - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"55de8170-c071-4602-aacf-72d73bdf438e\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Implementation Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Accounting Configuration\" ri:version-at-save=\"12\" /><ac:plain-text-link-body><![CDATA[Billing and Accounting - Implementer's Guide]]></ac:plain-text-link-body></ac:link>&nbsp;(OpenERP7)</span></p><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Odoo modules\" ri:version-at-save=\"6\" /><ac:plain-text-link-body><![CDATA[Odoo Configuration - Implementer's Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/32014379"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"BillingandAccounting-PurposeandBenefits\">Purpose and Benefits</h2><p><span>Using Bahmni, a doctor can prescribe drugs/medicines or place orders for patient to undergo some tests for a patient from the clinical module or consultation feature. </span>The patient then proceeds to the Pharmacy or to a Billing Counter to make the payment. This module describes the usage of the Billing and Accounting feature.</p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"bc64e8dd-0d8b-40d8-a994-1b210b24bb90\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>For additional information, please refer to <a class=\"external-link\" href=\"https://www.erponline.vn/en/documentation/user-manuals/88-accounting-financial/216-customer-invoicing-payments\" rel=\"nofollow\">Oddo / OpenERP documentation</a> or the <a class=\"external-link\" href=\"https://doc.odoo.com/book/#books-link\" rel=\"nofollow\">OpenERP e-book</a></p></div></div></div>\n</div>\n</div>\n<div class=\"columnLayout three-equal\" data-layout=\"three-equal\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"75cc2741-ab64-44c9-b537-0a202bfb8299\" data-macro-name=\"tip\"><p class=\"title\">Sections</p><div class=\"confluence-information-macro-body\"><p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"28bbf201-d4bb-472c-865e-0ceb60581fb2\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/32014614/Manage+Orders\" data-linked-resource-id=\"32014614\" data-linked-resource-version=\"17\" data-linked-resource-type=\"page\">Manage Orders</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014612/Print+Bill+and+Prescription\" data-linked-resource-id=\"32014612\" data-linked-resource-version=\"7\" data-linked-resource-type=\"page\">Print Bill and Prescription</a></li><li><a href=\"/wiki/spaces/BAH/pages/1177321536/Manual+Billing+-+Creating+Quotation+in+Odoo\" data-linked-resource-id=\"1177321536\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">Manual Billing - Creating Quotation in Odoo</a></li><li><a href=\"/wiki/spaces/BAH/pages/1177354370/Refunding+the+Invoice\" data-linked-resource-id=\"1177354370\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">Refunding the Invoice</a></li></ul><p> </p></div></div></div>\n</div>\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604217/Patient+Billing+and+Accounting\" data-linked-resource-id=\"32604217\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Billing and Accounting - Feature Guide</a></span></p>\n</div></div></div>\n</div>\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"55de8170-c071-4602-aacf-72d73bdf438e\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Implementation Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604219/Accounting+Configuration\" data-linked-resource-id=\"32604219\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Billing and Accounting - Implementer's Guide</a> (OpenERP7)</span></p><p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/899973149/Odoo+modules\" data-linked-resource-id=\"899973149\" data-linked-resource-version=\"9\" data-linked-resource-type=\"page\">Odoo Configuration - Implementer's Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/32014379"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/32014379/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014379/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 626721177
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/32014379/child",
+    "restrictions": "/rest/api/content/32014379/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/32014379/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=32014379",
+    "webui": "/spaces/BAH/pages/32014379/Billing+and+Accounting",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/32014379",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014379",
+    "tinyui": "/x/K4DoAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

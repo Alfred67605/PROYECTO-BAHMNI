@@ -1,0 +1,170 @@
+{
+  "id": "138117151",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/138117151",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTM4MTE3MTUx",
+  "status": "current",
+  "title": "Views of Appointments",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "createdDate": "2017-09-08T15:44:51.821Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/138117151/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "when": "2017-11-24T15:17:34.097Z",
+    "friendlyWhen": "Nov 24, 2017",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "syncRev": "0.JK15P0BecXiRrXaK90VR9g.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$138117151.33",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/138117151"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/138117151/version/5"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>The appointments scheduled for patients are displayed across 3 different views.&nbsp;</p><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"a6ba2ac8-3ba5-4f03-b909-fad4b5359ef8\" /></p><p><br /></p><p><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/138117151"
+      }
+    },
+    "view": {
+      "value": "<p>The appointments scheduled for patients are displayed across 3 different views. </p><p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"a6ba2ac8-3ba5-4f03-b909-fad4b5359ef8\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/299958298/Calendar+View\" data-linked-resource-id=\"299958298\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Calendar View</a></li><li><a href=\"/wiki/spaces/BAH/pages/299958294/List+View+of+Appointments\" data-linked-resource-id=\"299958294\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">List View of Appointments</a></li><li><a href=\"/wiki/spaces/BAH/pages/299958302/Weekly+Summary+View\" data-linked-resource-id=\"299958302\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Weekly Summary View</a></li></ul></p><p><br/></p><p><br/></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/138117151"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/138117151/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/138117151/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 2
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/138117151/child",
+    "restrictions": "/rest/api/content/138117151/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/138117151/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=138117151",
+    "webui": "/spaces/BAH/pages/138117151/Views+of+Appointments",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/138117151",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/138117151",
+    "tinyui": "/x/H4A7C",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "id": "111411244",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/111411244",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTExNDExMjQ0",
+  "status": "current",
+  "title": "OpenERP error \"There is no period defined\" while confirming a sale quotation",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:761926cb-ed59-41ca-9692-e6c2dcb1c400",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Ravinder Deolal",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:761926cb-ed59-41ca-9692-e6c2dcb1c400",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Ravinder Deolal",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:761926cb-ed59-41ca-9692-e6c2dcb1c400"
+      }
+    },
+    "createdDate": "2017-01-02T07:05:58.078Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/111411244/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:761926cb-ed59-41ca-9692-e6c2dcb1c400",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Ravinder Deolal",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:761926cb-ed59-41ca-9692-e6c2dcb1c400",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Ravinder Deolal",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:761926cb-ed59-41ca-9692-e6c2dcb1c400"
+      }
+    },
+    "when": "2017-01-02T07:06:38.272Z",
+    "friendlyWhen": "Jan 02, 2017",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.tjOIHoocCDevhB8oXw1E3g.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$111411244.20",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/111411244"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/111411244/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<h2>How to resolve OpenERP error &quot;There is no period defined&quot;&nbsp;</h2><p>OpenERP is throwing this error because there are no periods defined in the system for this date. This usually happens when the year changes. Users will get the below error message when confirming the sales quotation.</p><p style=\"text-align: center;\"><ac:image ac:align=\"center\" ac:border=\"true\" ac:title=\"Error message\" ac:alt=\"Error message\" ac:height=\"400\" ac:width=\"748\"><ri:attachment ri:filename=\"image2017-1-2_12-19-40.png\" /></ac:image></p><p style=\"margin-left: 90.0px;text-align: center;\"><strong>Error message shown while confirming the quotation.</strong></p><h2><span style=\"color: rgb(0,0,0);\">Steps</span></h2><p><strong><span style=\"color: rgb(0,0,0);\">1. Log in to OpenERP with Admin level privilege account.</span></strong></p><p><strong>2.&nbsp;Navigate to &ldquo;Accounting&rdquo; tab. Click on the option &ldquo;Periods&rdquo; under &ldquo;Configuration&rdquo; from the left panel.</strong></p><p><strong><ac:image ac:align=\"center\" ac:title=\"Navigate to Periods\" ac:thumbnail=\"true\" ac:alt=\"Navigate to Periods\" ac:height=\"250\"><ri:attachment ri:filename=\"image2017-1-2_12-24-52.png\" /></ac:image></strong></p><p><strong>3. Click on the &ldquo;Fiscal Years&rdquo; option.</strong></p><p><strong><ac:image ac:align=\"center\" ac:title=\"Fiscal years\" ac:thumbnail=\"true\" ac:alt=\"Fiscal years\" ac:height=\"150\"><ri:attachment ri:filename=\"image2017-1-2_12-25-46.png\" /></ac:image></strong></p><p><strong>4. Click on &ldquo;Create&rdquo; button. Define the fiscal year as shown in the example below.</strong></p><p><strong><ac:image ac:align=\"center\" ac:title=\"Create a fiscal year\" ac:alt=\"Create a fiscal year\" ac:height=\"250\"><ri:attachment ri:filename=\"image2017-1-2_12-27-8.png\" /></ac:image></strong></p><p><strong>6. Click on &ldquo;Create Monthly Periods&rdquo; and it will generate the periods as shown below.</strong></p><p><strong><ac:image ac:align=\"center\" ac:title=\"Create monthly periods\" ac:alt=\"Create monthly periods\" ac:height=\"400\"><ri:attachment ri:filename=\"image2017-1-2_12-28-30.png\" /></ac:image></strong></p><p><strong>7.&nbsp;Click on &ldquo;Save&rdquo; button to save the periods and fiscal year. There should not be any error now while confirming the quotations.</strong></p><p><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/111411244"
+      }
+    },
+    "view": {
+      "value": "<h2 id=\"OpenERPerror&quot;Thereisnoperioddefined&quot;whileconfirmingasalequotation-HowtoresolveOpenERPerror&quot;Thereisnoperioddefined&quot;\">How to resolve OpenERP error &quot;There is no period defined&quot; </h2><p>OpenERP is throwing this error because there are no periods defined in the system for this date. This usually happens when the year changes. Users will get the below error message when confirming the sales quotation.</p><p style=\"text-align: center;\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" alt=\"Error message\" height=\"400\" width=\"748\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/111411244/image2017-1-2_12-19-40.png?version=1&amp;modificationDate=1483340761108&amp;cacheVersion=1&amp;api=v2&amp;width=748&amp;height=399\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/111411244/image2017-1-2_12-19-40.png?version=1&amp;modificationDate=1483340761108&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"111411239\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-1-2_12-19-40.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"111411244\" data-linked-resource-container-version=\"2\" data-media-id=\"cda9b537-c524-4c3d-973b-adf20af9ef4a\" data-media-type=\"file\" title=\"Error message\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/111411244/image2017-1-2_12-19-40.png?version=1&amp;modificationDate=1483340761108&amp;cacheVersion=1&amp;api=v2&amp;width=1496&amp;height=798 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/111411244/image2017-1-2_12-19-40.png?version=1&amp;modificationDate=1483340761108&amp;cacheVersion=1&amp;api=v2&amp;width=748&amp;height=399 1x\"></span></p><p style=\"margin-left: 90.0px;text-align: center;\"><strong>Error message shown while confirming the quotation.</strong></p><h2 id=\"OpenERPerror&quot;Thereisnoperioddefined&quot;whileconfirmingasalequotation-Steps\"><span class=\"legacy-color-text-default\">Steps</span></h2><p><strong><span class=\"legacy-color-text-default\">1. Log in to OpenERP with Admin level privilege account.</span></strong></p><p><strong>2. Navigate to “Accounting” tab. Click on the option “Periods” under “Configuration” from the left panel.</strong></p><p><strong><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-thumbnail image-center\" alt=\"Navigate to Periods\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/111411244/image2017-1-2_12-24-52.png?version=1&amp;modificationDate=1483340760083&amp;cacheVersion=1&amp;api=v2&amp;width=277&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/111411244/image2017-1-2_12-24-52.png?version=1&amp;modificationDate=1483340760083&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"111411240\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-1-2_12-24-52.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"111411244\" data-linked-resource-container-version=\"2\" data-media-id=\"a5928bee-2190-4e5c-8e07-2597969d5de2\" data-media-type=\"file\" title=\"Navigate to Periods\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/111411244/image2017-1-2_12-24-52.png?version=1&amp;modificationDate=1483340760083&amp;cacheVersion=1&amp;api=v2&amp;width=554&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/111411244/image2017-1-2_12-24-52.png?version=1&amp;modificationDate=1483340760083&amp;cacheVersion=1&amp;api=v2&amp;width=277&amp;height=250 1x\"></span></strong></p><p><strong>3. Click on the “Fiscal Years” option.</strong></p><p><strong><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-thumbnail image-center\" alt=\"Fiscal years\" height=\"150\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/111411244/image2017-1-2_12-25-46.png?version=1&amp;modificationDate=1483340759521&amp;cacheVersion=1&amp;api=v2&amp;width=267&amp;height=150\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/111411244/image2017-1-2_12-25-46.png?version=1&amp;modificationDate=1483340759521&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"111411241\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-1-2_12-25-46.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"111411244\" data-linked-resource-container-version=\"2\" data-media-id=\"d779f85c-33fd-4c9b-9a86-744886473ef5\" data-media-type=\"file\" title=\"Fiscal years\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/111411244/image2017-1-2_12-25-46.png?version=1&amp;modificationDate=1483340759521&amp;cacheVersion=1&amp;api=v2&amp;width=534&amp;height=300 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/111411244/image2017-1-2_12-25-46.png?version=1&amp;modificationDate=1483340759521&amp;cacheVersion=1&amp;api=v2&amp;width=267&amp;height=150 1x\"></span></strong></p><p><strong>4. Click on “Create” button. Define the fiscal year as shown in the example below.</strong></p><p><strong><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"Create a fiscal year\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/111411244/image2017-1-2_12-27-8.png?version=1&amp;modificationDate=1483340759154&amp;cacheVersion=1&amp;api=v2&amp;width=772&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/111411244/image2017-1-2_12-27-8.png?version=1&amp;modificationDate=1483340759154&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"111411242\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-1-2_12-27-8.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"111411244\" data-linked-resource-container-version=\"2\" data-media-id=\"26369d69-73a2-4a2a-9ce1-a44a52a42066\" data-media-type=\"file\" title=\"Create a fiscal year\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/111411244/image2017-1-2_12-27-8.png?version=1&amp;modificationDate=1483340759154&amp;cacheVersion=1&amp;api=v2&amp;width=1544&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/111411244/image2017-1-2_12-27-8.png?version=1&amp;modificationDate=1483340759154&amp;cacheVersion=1&amp;api=v2&amp;width=772&amp;height=250 1x\"></span></strong></p><p><strong>6. Click on “Create Monthly Periods” and it will generate the periods as shown below.</strong></p><p><strong><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"Create monthly periods\" height=\"400\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/111411244/image2017-1-2_12-28-30.png?version=1&amp;modificationDate=1483340758114&amp;cacheVersion=1&amp;api=v2&amp;width=705&amp;height=400\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/111411244/image2017-1-2_12-28-30.png?version=1&amp;modificationDate=1483340758114&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"111411243\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-1-2_12-28-30.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"111411244\" data-linked-resource-container-version=\"2\" data-media-id=\"c924a0a4-5a44-4956-a8d6-787baec5831e\" data-media-type=\"file\" title=\"Create monthly periods\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/111411244/image2017-1-2_12-28-30.png?version=1&amp;modificationDate=1483340758114&amp;cacheVersion=1&amp;api=v2&amp;width=1410&amp;height=800 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/111411244/image2017-1-2_12-28-30.png?version=1&amp;modificationDate=1483340758114&amp;cacheVersion=1&amp;api=v2&amp;width=705&amp;height=400 1x\"></span></strong></p><p><strong>7. Click on “Save” button to save the periods and fiscal year. There should not be any error now while confirming the quotations.</strong></p><p><br/></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/111411244"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/111411244/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/111411244/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 4
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/111411244/child",
+    "restrictions": "/rest/api/content/111411244/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/111411244/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=111411244",
+    "webui": "/spaces/BAH/pages/111411244/OpenERP+error+There+is+no+period+defined+while+confirming+a+sale+quotation",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/111411244",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/111411244",
+    "tinyui": "/x/LACkBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

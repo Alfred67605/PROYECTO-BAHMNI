@@ -1,0 +1,172 @@
+{
+  "id": "2306736457",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2306736457",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMwNjczNjQ1Nw==",
+  "status": "current",
+  "title": "Bahmni-Mart Json File",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5ff6975591bb2e0108e513c3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "venkatesh bavisetti",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5ff6975591bb2e0108e513c3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Bavisetti Venkatesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5ff6975591bb2e0108e513c3"
+      }
+    },
+    "createdDate": "2021-04-05T08:38:14.515Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736457/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5ff6975591bb2e0108e513c3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "venkatesh bavisetti",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5ff6975591bb2e0108e513c3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Bavisetti Venkatesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5ff6975591bb2e0108e513c3"
+      }
+    },
+    "when": "2021-04-05T08:41:00.551Z",
+    "friendlyWhen": "Apr 05, 2021",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.SoD7OBjItmPGtznJOb9hMQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2306736457.12",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2306736457"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736457/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>This is the default bahmni_mart json file, where we could find reference for all the jobs mentioned below</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"5183270b-5da5-4fae-9344-64a36988f555\"><ac:plain-text-body><![CDATA[programs\npatients\nAppointments\nBed Management\nLocation\nOperation Theater\nPerson\nProvider\nVisits And Encounters\nMedication And Orders\nDiagnoses And Conditions\nBacteriology Data\nMetaData Dictionary\nObs Data\nForm2 Obs Data\nRegistration Second Page\nDisposition Data]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"c67d7db9-4bad-4e91-aef6-b8c2c0ebbb85\"><ac:plain-text-body><![CDATA[{\n  \"jobs\": [\n    {\n      \"name\": \"Programs\",\n      \"type\": \"programs\",\n      \"chunkSizeToRead\": \"500\"\n    },\n    {\n      \"name\": \"Patients\",\n      \"type\": \"patients\",\n      \"chunkSizeToRead\": \"500\"\n    },\n    {\n      \"name\": \"Appointments\",\n      \"type\": \"appointments\",\n      \"chunkSizeToRead\": \"500\",\n      \"groupedJobConfigs\": [\n        {\n          \"tableName\": \"appointment_service_default\",\n          \"columnsToIgnore\": [\n          ]\n        }\n      ]\n    },\n    {\n      \"name\": \"Bed Management\",\n      \"type\": \"bedManagement\",\n      \"chunkSizeToRead\": \"500\"\n    },\n    {\n      \"name\": \"Location\",\n      \"type\": \"location\",\n      \"chunkSizeToRead\": \"500\"\n    },\n    {\n      \"name\": \"Operation Theater\",\n      \"type\": \"operationTheater\",\n      \"chunkSizeToRead\": \"500\"\n    },\n    {\n      \"name\": \"Person\",\n      \"type\": \"person\",\n      \"chunkSizeToRead\": \"500\",\n      \"groupedJobConfigs\": [\n        {\n          \"tableName\": \"person_attributes\",\n          \"columnsToIgnore\": [\n            \"primaryContact\",\n            \"secondaryContact\",\n            \"primaryRelative\",\n            \"familyNameLocal\",\n            \"givenNameLocal\",\n            \"middleNameLocal\"\n          ]\n        },\n        {\n          \"tableName\": \"person_details_default\",\n          \"columnsToIgnore\": [\n            \"prefix\",\n            \"given_name\",\n            \"middle_name\",\n            \"family_name_prefix\",\n            \"family_name\",\n            \"family_name2\",\n            \"family_name_suffix\"\n          ]\n        }\n      ]\n    },\n    {\n      \"name\": \"Provider\",\n      \"type\": \"provider\",\n      \"chunkSizeToRead\": \"500\"\n    },\n    {\n      \"name\": \"Visits And Encounters\",\n      \"type\": \"visitsAndEncounters\",\n      \"chunkSizeToRead\": \"500\"\n    },\n    {\n      \"name\": \"Medication And Orders\",\n      \"type\": \"medicationAndOrders\",\n      \"chunkSizeToRead\": \"500\",\n      \"groupedJobConfigs\": [\n        {\n          \"tableName\": \"medication_data_default\",\n          \"columnsToIgnore\": [\n            \"instructions\",\n            \"stop_notes\"\n          ]\n        }\n      ]\n    },\n    {\n      \"name\": \"Diagnoses And Conditions\",\n      \"type\": \"diagnosesAndConditions\",\n      \"chunkSizeToRead\": \"500\"\n    },\n    {\n      \"name\": \"Bacteriology Data\",\n      \"conceptReferenceSource\": \"\",\n      \"type\": \"bacteriology\"\n    },\n    {\n      \"name\": \"MetaData Dictionary\",\n      \"type\": \"metadata\",\n      \"conceptReferenceSource\": \"\"\n    },\n    {\n      \"name\": \"Obs Data\",\n      \"type\": \"obs\",\n      \"incrementalUpdateConfig\": {\n        \"updateOn\": \"encounter_id\",\n        \"eventCategory\": \"Encounter\",\n        \"openmrsTableName\": \"encounter\"\n      },\n      \"separateTableConfig\": {\n        \"enableForAddMoreAndMultiSelect\": true,\n        \"separateTables\": [\n        ]\n      },\n      \"conceptReferenceSource\": \"\",\n      \"ignoreAllFreeTextConcepts\": true,\n      \"columnsToIgnore\": [\n        \"Image\",\n        \"Video\"\n      ]\n    },\n    {\n      \"name\": \"Form2 Obs Data\",\n      \"type\": \"form2obs\",\n      \"incrementalUpdateConfig\": {\n        \"updateOn\": \"encounter_id\",\n        \"eventCategory\": \"Encounter\",\n        \"openmrsTableName\": \"encounter\"\n      },\n      \"separateTableConfig\": {\n        \"enableForAddMoreAndMultiSelect\": true,\n        \"separateTables\": [\n        ]\n      },\n      \"conceptReferenceSource\": \"\",\n      \"ignoreAllFreeTextConcepts\": true,\n      \"columnsToIgnore\": [\n        \"Image\"\n      ]\n    },\n    {\n      \"name\": \"Registration Second Page\",\n      \"type\": \"reg\",\n      \"columnsToIgnore\": [],\n      \"separateTableConfig\": {\n        \"enableForAddMoreAndMultiSelect\": true,\n        \"separateTables\": []\n      },\n      \"incrementalUpdateConfig\": {\n        \"updateOn\": \"encounter_id\",\n        \"eventCategory\": \"Encounter\",\n        \"openmrsTableName\": \"encounter\"\n      }\n    },\n    {\n      \"name\": \"Disposition Data\",\n      \"type\": \"disposition\",\n      \"columnsToIgnore\": [],\n      \"incrementalUpdateConfig\": {\n        \"updateOn\": \"encounter_id\",\n        \"eventCategory\": \"Encounter\",\n        \"openmrsTableName\": \"encounter\"\n      }\n    }\n  ],\n  \"procedures\": [\n    {\n      \"name\": \"Discharge Date Procedure\",\n      \"sourceFilePath\": \"classpath:procedureSql/dischargeDateProc.sql\"\n    },\n    {\n      \"name\": \"Age Group Procedure\",\n      \"sourceFilePath\": \"classpath:procedureSql/ageGroupProc.sql\"\n    }\n  ],\n  \"views\": [\n    {\n      \"name\": \"patient_program_view\",\n      \"sourceFilePath\": \"classpath:viewSql/patientProgramView.sql\"\n    },\n    {\n      \"name\": \"patient_program_state_view\",\n      \"sourceFilePath\": \"classpath:viewSql/patientProgramStateView.sql\"\n    },\n    {\n      \"name\": \"patient_visits_encounters_view\",\n      \"sourceFilePath\": \"classpath:viewSql/patientVisitsEncountersView.sql\"\n    },\n    {\n      \"name\": \"appointment_admin_panel_view\",\n      \"sql\": \"SELECT * FROM appointment_service_default LEFT OUTER JOIN service_availability_default USING (appointment_service_id, service_name)\"\n    },\n    {\n      \"name\": \"patient_details_view\",\n      \"sourceFilePath\": \"classpath:viewSql/patientDetailsView.sql\"\n    },\n    {\n      \"name\": \"patient_information_view\",\n      \"sourceFilePath\": \"classpath:viewSql/patientInformationView.sql\"\n    },\n    {\n      \"name\": \"bed_management_view\",\n      \"sourceFilePath\": \"classpath:viewSql/bedManagementView.sql\"\n    },\n    {\n      \"name\": \"bed_management_locations_view\",\n      \"sourceFilePath\": \"classpath:viewSql/locationWiseDischarge.sql\"\n    },\n    {\n      \"name\": \"patient_bed_view\",\n      \"sourceFilePath\": \"classpath:viewSql/patientBedView.sql\"\n    },\n    {\n      \"name\": \"patient_operation_theater_view\",\n      \"sourceFilePath\": \"classpath:viewSql/patientOperationTheaterView.sql\"\n    },\n    {\n      \"name\": \"patient_appointment_view\",\n      \"sourceFilePath\": \"classpath:viewSql/patientAppointmentView.sql\"\n    },\n    {\n      \"name\": \"patient_program_medication_view\",\n      \"sourceFilePath\": \"classpath:viewSql/patientProgramMedicationView.sql\"\n    },\n    {\n      \"name\": \"patient_diagnosis_condition_view\",\n      \"sourceFilePath\": \"classpath:viewSql/patientDiagnosisConditionView.sql\"\n    },\n    {\n      \"name\": \"patient_bed_tags_history_view\",\n      \"sourceFilePath\": \"classpath:viewSql/patientBedTagView.sql\"\n    }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p />",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2306736457"
+      }
+    },
+    "view": {
+      "value": "<p>This is the default bahmni_mart json file, where we could find reference for all the jobs mentioned below</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"5183270b-5da5-4fae-9344-64a36988f555\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">programs\npatients\nAppointments\nBed Management\nLocation\nOperation Theater\nPerson\nProvider\nVisits And Encounters\nMedication And Orders\nDiagnoses And Conditions\nBacteriology Data\nMetaData Dictionary\nObs Data\nForm2 Obs Data\nRegistration Second Page\nDisposition Data</pre>\n</div></div><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c67d7db9-4bad-4e91-aef6-b8c2c0ebbb85\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n  &quot;jobs&quot;: [\n    {\n      &quot;name&quot;: &quot;Programs&quot;,\n      &quot;type&quot;: &quot;programs&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;\n    },\n    {\n      &quot;name&quot;: &quot;Patients&quot;,\n      &quot;type&quot;: &quot;patients&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;\n    },\n    {\n      &quot;name&quot;: &quot;Appointments&quot;,\n      &quot;type&quot;: &quot;appointments&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;,\n      &quot;groupedJobConfigs&quot;: [\n        {\n          &quot;tableName&quot;: &quot;appointment_service_default&quot;,\n          &quot;columnsToIgnore&quot;: [\n          ]\n        }\n      ]\n    },\n    {\n      &quot;name&quot;: &quot;Bed Management&quot;,\n      &quot;type&quot;: &quot;bedManagement&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;\n    },\n    {\n      &quot;name&quot;: &quot;Location&quot;,\n      &quot;type&quot;: &quot;location&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;\n    },\n    {\n      &quot;name&quot;: &quot;Operation Theater&quot;,\n      &quot;type&quot;: &quot;operationTheater&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;\n    },\n    {\n      &quot;name&quot;: &quot;Person&quot;,\n      &quot;type&quot;: &quot;person&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;,\n      &quot;groupedJobConfigs&quot;: [\n        {\n          &quot;tableName&quot;: &quot;person_attributes&quot;,\n          &quot;columnsToIgnore&quot;: [\n            &quot;primaryContact&quot;,\n            &quot;secondaryContact&quot;,\n            &quot;primaryRelative&quot;,\n            &quot;familyNameLocal&quot;,\n            &quot;givenNameLocal&quot;,\n            &quot;middleNameLocal&quot;\n          ]\n        },\n        {\n          &quot;tableName&quot;: &quot;person_details_default&quot;,\n          &quot;columnsToIgnore&quot;: [\n            &quot;prefix&quot;,\n            &quot;given_name&quot;,\n            &quot;middle_name&quot;,\n            &quot;family_name_prefix&quot;,\n            &quot;family_name&quot;,\n            &quot;family_name2&quot;,\n            &quot;family_name_suffix&quot;\n          ]\n        }\n      ]\n    },\n    {\n      &quot;name&quot;: &quot;Provider&quot;,\n      &quot;type&quot;: &quot;provider&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;\n    },\n    {\n      &quot;name&quot;: &quot;Visits And Encounters&quot;,\n      &quot;type&quot;: &quot;visitsAndEncounters&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;\n    },\n    {\n      &quot;name&quot;: &quot;Medication And Orders&quot;,\n      &quot;type&quot;: &quot;medicationAndOrders&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;,\n      &quot;groupedJobConfigs&quot;: [\n        {\n          &quot;tableName&quot;: &quot;medication_data_default&quot;,\n          &quot;columnsToIgnore&quot;: [\n            &quot;instructions&quot;,\n            &quot;stop_notes&quot;\n          ]\n        }\n      ]\n    },\n    {\n      &quot;name&quot;: &quot;Diagnoses And Conditions&quot;,\n      &quot;type&quot;: &quot;diagnosesAndConditions&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;\n    },\n    {\n      &quot;name&quot;: &quot;Bacteriology Data&quot;,\n      &quot;conceptReferenceSource&quot;: &quot;&quot;,\n      &quot;type&quot;: &quot;bacteriology&quot;\n    },\n    {\n      &quot;name&quot;: &quot;MetaData Dictionary&quot;,\n      &quot;type&quot;: &quot;metadata&quot;,\n      &quot;conceptReferenceSource&quot;: &quot;&quot;\n    },\n    {\n      &quot;name&quot;: &quot;Obs Data&quot;,\n      &quot;type&quot;: &quot;obs&quot;,\n      &quot;incrementalUpdateConfig&quot;: {\n        &quot;updateOn&quot;: &quot;encounter_id&quot;,\n        &quot;eventCategory&quot;: &quot;Encounter&quot;,\n        &quot;openmrsTableName&quot;: &quot;encounter&quot;\n      },\n      &quot;separateTableConfig&quot;: {\n        &quot;enableForAddMoreAndMultiSelect&quot;: true,\n        &quot;separateTables&quot;: [\n        ]\n      },\n      &quot;conceptReferenceSource&quot;: &quot;&quot;,\n      &quot;ignoreAllFreeTextConcepts&quot;: true,\n      &quot;columnsToIgnore&quot;: [\n        &quot;Image&quot;,\n        &quot;Video&quot;\n      ]\n    },\n    {\n      &quot;name&quot;: &quot;Form2 Obs Data&quot;,\n      &quot;type&quot;: &quot;form2obs&quot;,\n      &quot;incrementalUpdateConfig&quot;: {\n        &quot;updateOn&quot;: &quot;encounter_id&quot;,\n        &quot;eventCategory&quot;: &quot;Encounter&quot;,\n        &quot;openmrsTableName&quot;: &quot;encounter&quot;\n      },\n      &quot;separateTableConfig&quot;: {\n        &quot;enableForAddMoreAndMultiSelect&quot;: true,\n        &quot;separateTables&quot;: [\n        ]\n      },\n      &quot;conceptReferenceSource&quot;: &quot;&quot;,\n      &quot;ignoreAllFreeTextConcepts&quot;: true,\n      &quot;columnsToIgnore&quot;: [\n        &quot;Image&quot;\n      ]\n    },\n    {\n      &quot;name&quot;: &quot;Registration Second Page&quot;,\n      &quot;type&quot;: &quot;reg&quot;,\n      &quot;columnsToIgnore&quot;: [],\n      &quot;separateTableConfig&quot;: {\n        &quot;enableForAddMoreAndMultiSelect&quot;: true,\n        &quot;separateTables&quot;: []\n      },\n      &quot;incrementalUpdateConfig&quot;: {\n        &quot;updateOn&quot;: &quot;encounter_id&quot;,\n        &quot;eventCategory&quot;: &quot;Encounter&quot;,\n        &quot;openmrsTableName&quot;: &quot;encounter&quot;\n      }\n    },\n    {\n      &quot;name&quot;: &quot;Disposition Data&quot;,\n      &quot;type&quot;: &quot;disposition&quot;,\n      &quot;columnsToIgnore&quot;: [],\n      &quot;incrementalUpdateConfig&quot;: {\n        &quot;updateOn&quot;: &quot;encounter_id&quot;,\n        &quot;eventCategory&quot;: &quot;Encounter&quot;,\n        &quot;openmrsTableName&quot;: &quot;encounter&quot;\n      }\n    }\n  ],\n  &quot;procedures&quot;: [\n    {\n      &quot;name&quot;: &quot;Discharge Date Procedure&quot;,\n      &quot;sourceFilePath&quot;: &quot;classpath:procedureSql/dischargeDateProc.sql&quot;\n    },\n    {\n      &quot;name&quot;: &quot;Age Group Procedure&quot;,\n      &quot;sourceFilePath&quot;: &quot;classpath:procedureSql/ageGroupProc.sql&quot;\n    }\n  ],\n  &quot;views&quot;: [\n    {\n      &quot;name&quot;: &quot;patient_program_view&quot;,\n      &quot;sourceFilePath&quot;: &quot;classpath:viewSql/patientProgramView.sql&quot;\n    },\n    {\n      &quot;name&quot;: &quot;patient_program_state_view&quot;,\n      &quot;sourceFilePath&quot;: &quot;classpath:viewSql/patientProgramStateView.sql&quot;\n    },\n    {\n      &quot;name&quot;: &quot;patient_visits_encounters_view&quot;,\n      &quot;sourceFilePath&quot;: &quot;classpath:viewSql/patientVisitsEncountersView.sql&quot;\n    },\n    {\n      &quot;name&quot;: &quot;appointment_admin_panel_view&quot;,\n      &quot;sql&quot;: &quot;SELECT * FROM appointment_service_default LEFT OUTER JOIN service_availability_default USING (appointment_service_id, service_name)&quot;\n    },\n    {\n      &quot;name&quot;: &quot;patient_details_view&quot;,\n      &quot;sourceFilePath&quot;: &quot;classpath:viewSql/patientDetailsView.sql&quot;\n    },\n    {\n      &quot;name&quot;: &quot;patient_information_view&quot;,\n      &quot;sourceFilePath&quot;: &quot;classpath:viewSql/patientInformationView.sql&quot;\n    },\n    {\n      &quot;name&quot;: &quot;bed_management_view&quot;,\n      &quot;sourceFilePath&quot;: &quot;classpath:viewSql/bedManagementView.sql&quot;\n    },\n    {\n      &quot;name&quot;: &quot;bed_management_locations_view&quot;,\n      &quot;sourceFilePath&quot;: &quot;classpath:viewSql/locationWiseDischarge.sql&quot;\n    },\n    {\n      &quot;name&quot;: &quot;patient_bed_view&quot;,\n      &quot;sourceFilePath&quot;: &quot;classpath:viewSql/patientBedView.sql&quot;\n    },\n    {\n      &quot;name&quot;: &quot;patient_operation_theater_view&quot;,\n      &quot;sourceFilePath&quot;: &quot;classpath:viewSql/patientOperationTheaterView.sql&quot;\n    },\n    {\n      &quot;name&quot;: &quot;patient_appointment_view&quot;,\n      &quot;sourceFilePath&quot;: &quot;classpath:viewSql/patientAppointmentView.sql&quot;\n    },\n    {\n      &quot;name&quot;: &quot;patient_program_medication_view&quot;,\n      &quot;sourceFilePath&quot;: &quot;classpath:viewSql/patientProgramMedicationView.sql&quot;\n    },\n    {\n      &quot;name&quot;: &quot;patient_diagnosis_condition_view&quot;,\n      &quot;sourceFilePath&quot;: &quot;classpath:viewSql/patientDiagnosisConditionView.sql&quot;\n    },\n    {\n      &quot;name&quot;: &quot;patient_bed_tags_history_view&quot;,\n      &quot;sourceFilePath&quot;: &quot;classpath:viewSql/patientBedTagView.sql&quot;\n    }\n  ]\n}</pre>\n</div></div><p />",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2306736457"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2306736457/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736457/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1604
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2306736457/child",
+    "restrictions": "/rest/api/content/2306736457/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2306736457/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2306736457",
+    "webui": "/spaces/BAH/pages/2306736457/Bahmni-Mart+Json+File",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2306736457",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736457",
+    "tinyui": "/x/SQF_iQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

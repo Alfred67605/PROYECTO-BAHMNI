@@ -1,0 +1,179 @@
+{
+  "id": "8192018",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/8192018",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvODE5MjAxOA==",
+  "status": "current",
+  "title": "What happens in a hospital?",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:dd7e513e-bc00-497a-a42a-e2b387df0018",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mujir Shaikh (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:dd7e513e-bc00-497a-a42a-e2b387df0018",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mujiruddin Shaikh (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:dd7e513e-bc00-497a-a42a-e2b387df0018"
+      }
+    },
+    "createdDate": "2014-08-22T07:45:05.695Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/8192018/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2015-10-03T09:41:16.143Z",
+    "friendlyWhen": "Oct 03, 2015",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "0.IvtnhOwZ8h20lbV1P07bRA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$8192018.26",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/8192018"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/8192018/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:macro-id=\"f1bde387-f115-4155-b245-b894d11993e1\" ac:name=\"warning\" ac:schema-version=\"1\"><ac:rich-text-body><p>Is this page needed? Shall we consider deleting it, and instead create a document which maps a Hospital workflow, with Bahmni features?</p></ac:rich-text-body></ac:structured-macro><h2>Flow</h2><h3>Typical OPD patient flow</h3><p>registration</p><p>consultation with doctor/paramedic capturing vitals</p><p>lab tests if required</p><p>consultation after tests</p><p>drug orders</p><p>There are different flows for Emergency, IPD, only lab visits etc.</p><h2>Domain Model and Terminology</h2><p>Patient / Person</p><p>Provider - doctor, nurse, lab technician, radiologist, cashier, dispenser, registration guy</p><p>Visit</p><p>Encounter</p><p>Observation</p><p>Orders</p><p>&nbsp;</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/8192018"
+      }
+    },
+    "view": {
+      "value": "<div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f1bde387-f115-4155-b245-b894d11993e1\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Is this page needed? Shall we consider deleting it, and instead create a document which maps a Hospital workflow, with Bahmni features?</p></div></div><h2 id=\"Whathappensinahospital?-Flow\">Flow</h2><h3 id=\"Whathappensinahospital?-TypicalOPDpatientflow\">Typical OPD patient flow</h3><p>registration</p><p>consultation with doctor/paramedic capturing vitals</p><p>lab tests if required</p><p>consultation after tests</p><p>drug orders</p><p>There are different flows for Emergency, IPD, only lab visits etc.</p><h2 id=\"Whathappensinahospital?-DomainModelandTerminology\">Domain Model and Terminology</h2><p>Patient / Person</p><p>Provider - doctor, nurse, lab technician, radiologist, cashier, dispenser, registration guy</p><p>Visit</p><p>Encounter</p><p>Observation</p><p>Orders</p><p> </p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/8192018"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "review-needed",
+          "id": "30146561",
+          "label": "review-needed"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 1,
+      "_links": {
+        "next": "/rest/api/content/8192018/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/8192018/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 800710383
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/8192018/child",
+    "restrictions": "/rest/api/content/8192018/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/8192018/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=8192018",
+    "webui": "/spaces/BAH/pages/8192018/What+happens+in+a+hospital",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/8192018",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/8192018",
+    "tinyui": "/x/EgB9",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "id": "2306540158",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2306540158",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMwNjU0MDE1OA==",
+  "status": "current",
+  "title": "Bacteriology Data",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "createdDate": "2021-04-05T09:31:05.401Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306540158/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "when": "2021-04-05T09:31:21.775Z",
+    "friendlyWhen": "Apr 05, 2021",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.confluence$content$2306540158.6",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2306540158.7",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2306540158"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306540158/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p><br />All observations recorded against the concept Bacteriology Concept Set and it&rsquo;s children will be in one table.<strong> </strong>All multi select and add more sections under this concept will become separate tables.</p><p style=\"text-align: center;\">&nbsp;</p><h3 style=\"text-align: center;\"><strong>configuration</strong></h3><h5><strong>ColumnsToIgnore apply for this module ( Refer </strong><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><p>Currently bacteriology job is running with full load</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"0b1fdb32-5642-46c5-8778-70ae81cb50b3\"><ac:plain-text-body><![CDATA[{\n      \"name\": \"Bacteriology Data\",\n      \"conceptReferenceSource\": \"\",\n      \"type\": \"bacteriology\",\n      \"columnsToIgnore\": [\n        \"Image\",\n        \"Video\"\n      ]\n    }\n]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"518c1e94-6a51-4ba9-b8d8-a5219ba4b029\"><ac:rich-text-body><p><strong>If any modification done to existing bacteriology post encounter ends then it won&rsquo;t sync to mart with incremental config</strong></p></ac:rich-text-body></ac:structured-macro><hr /><h3 style=\"text-align: center;\">Existing OpenMRS tables</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6bfa3424-02d3-42e4-898c-d53cfa5edc67\"><ac:plain-text-body><![CDATA[Obs\nvisit\nprogram\npatient_program\nlocation\n]]></ac:plain-text-body></ac:structured-macro><hr /><h3 style=\"text-align: center;\">Flattened Mart Tables</h3><p>Since we do not have add mores/ multi-selects in bacteriology form in demo environment, there will be only one table :- <strong>bacteriology_concept_set</strong> which will have all the details.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"7cddd4d2-87da-466b-ac2d-817797345d92\"><ac:plain-text-body><![CDATA[bacteriology_concept_set]]></ac:plain-text-body></ac:structured-macro><p>Some of the columns in this table are as follows. Others columns are not mentioned here</p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>id_bacteriology_concept_set</p></td><td><p>Id reference to bacteriology concept set from &nbsp;</p></td></tr><tr><td><p>patient_id</p></td><td><p>&nbsp;Id reference to patient from patient table in openmrs</p></td></tr><tr><td><p>visit_id</p></td><td><p>Id reference for a visit</p></td></tr><tr><td><p>encounter_id</p></td><td><p>In which encounter data is captured</p></td></tr><tr><td><p>obs_datetime</p></td><td><p>Observation date and time</p></td></tr><tr><td><p>date_created</p></td><td><p>Date when Bacteriology details are filled for the first time</p></td></tr><tr><td><p>date_modified</p></td><td><p>Date of recent Bacteriology details updation</p></td></tr><tr><td><p>location_id</p></td><td><p>Location code</p></td></tr><tr><td><p>location_name</p></td><td><p>Location name</p></td></tr><tr><td><p>program_id</p></td><td><p>Program code</p></td></tr><tr><td><p>program_name</p></td><td><p>Name of the program</p></td></tr><tr><td><p>patient_program_id</p></td><td><p>Id reference to patient program from patient_program table in openmrs</p></td></tr><tr><td><p>Specimen_collection date</p></td><td><p>Date of collection of the specimen</p></td></tr><tr><td><p>specimen_sample_source_noncoded</p></td><td><p>Free text answers for sample source not available in DB</p></td></tr><tr><td><p>specimen_sample_source</p></td><td><p>Predefined answers for sample source available in DB</p></td></tr><tr><td><p>specimen_id</p></td><td><p>Unique id for specific observation</p></td></tr></tbody></table><p>&nbsp;</p><hr /><h3 style=\"text-align: center;\"><strong>Translations</strong></h3><p>if we need to get those values as per the translations we need to add the below <strong><span style=\"color: rgb(0,184,217);\">locale tag</span></strong> in the &ldquo;<strong>/var/www/bahmni_config/bahmni-mart/bahmni-mart.json</strong>&ldquo; file.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"f0b6523c-9a97-4804-803b-315973142b1a\"><ac:plain-text-body><![CDATA[{\n      \"name\": \"Bacteriology Data\",\n      \"conceptReferenceSource\": \"\",\n      \"type\": \"bacteriology\",\n      \"locale\" : \"fr\"\n    }\n]]></ac:plain-text-body></ac:structured-macro><p><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2306540158"
+      }
+    },
+    "view": {
+      "value": "<p><style>[data-colorid=x2mnvdg03u]{color:#00b8d9} html[data-color-mode=dark] [data-colorid=x2mnvdg03u]{color:#26deff}</style><br />All observations recorded against the concept Bacteriology Concept Set and it&rsquo;s children will be in one table.<strong> </strong>All multi select and add more sections under this concept will become separate tables.</p><p style=\"text-align: center;\">&nbsp;</p><h3 style=\"text-align: center;\" id=\"BacteriologyData-configuration\"><strong>configuration</strong></h3><h5 id=\"BacteriologyData-ColumnsToIgnoreapplyforthismodule(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix)\"><strong>ColumnsToIgnore apply for this module ( Refer </strong><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><p>Currently bacteriology job is running with full load</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0b1fdb32-5642-46c5-8778-70ae81cb50b3\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n      &quot;name&quot;: &quot;Bacteriology Data&quot;,\n      &quot;conceptReferenceSource&quot;: &quot;&quot;,\n      &quot;type&quot;: &quot;bacteriology&quot;,\n      &quot;columnsToIgnore&quot;: [\n        &quot;Image&quot;,\n        &quot;Video&quot;\n      ]\n    }\n</pre>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"518c1e94-6a51-4ba9-b8d8-a5219ba4b029\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>If any modification done to existing bacteriology post encounter ends then it won&rsquo;t sync to mart with incremental config</strong></p></div></div><hr /><h3 style=\"text-align: center;\" id=\"BacteriologyData-ExistingOpenMRStables\">Existing OpenMRS tables</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6bfa3424-02d3-42e4-898c-d53cfa5edc67\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Obs\nvisit\nprogram\npatient_program\nlocation\n</pre>\n</div></div><hr /><h3 style=\"text-align: center;\" id=\"BacteriologyData-FlattenedMartTables\">Flattened Mart Tables</h3><p>Since we do not have add mores/ multi-selects in bacteriology form in demo environment, there will be only one table :- <strong>bacteriology_concept_set</strong> which will have all the details.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7cddd4d2-87da-466b-ac2d-817797345d92\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">bacteriology_concept_set</pre>\n</div></div><p>Some of the columns in this table are as follows. Others columns are not mentioned here</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>id_bacteriology_concept_set</p></td><td class=\"confluenceTd\"><p>Id reference to bacteriology concept set from &nbsp;</p></td></tr><tr><td class=\"confluenceTd\"><p>patient_id</p></td><td class=\"confluenceTd\"><p>&nbsp;Id reference to patient from patient table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_id</p></td><td class=\"confluenceTd\"><p>Id reference for a visit</p></td></tr><tr><td class=\"confluenceTd\"><p>encounter_id</p></td><td class=\"confluenceTd\"><p>In which encounter data is captured</p></td></tr><tr><td class=\"confluenceTd\"><p>obs_datetime</p></td><td class=\"confluenceTd\"><p>Observation date and time</p></td></tr><tr><td class=\"confluenceTd\"><p>date_created</p></td><td class=\"confluenceTd\"><p>Date when Bacteriology details are filled for the first time</p></td></tr><tr><td class=\"confluenceTd\"><p>date_modified</p></td><td class=\"confluenceTd\"><p>Date of recent Bacteriology details updation</p></td></tr><tr><td class=\"confluenceTd\"><p>location_id</p></td><td class=\"confluenceTd\"><p>Location code</p></td></tr><tr><td class=\"confluenceTd\"><p>location_name</p></td><td class=\"confluenceTd\"><p>Location name</p></td></tr><tr><td class=\"confluenceTd\"><p>program_id</p></td><td class=\"confluenceTd\"><p>Program code</p></td></tr><tr><td class=\"confluenceTd\"><p>program_name</p></td><td class=\"confluenceTd\"><p>Name of the program</p></td></tr><tr><td class=\"confluenceTd\"><p>patient_program_id</p></td><td class=\"confluenceTd\"><p>Id reference to patient program from patient_program table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>Specimen_collection date</p></td><td class=\"confluenceTd\"><p>Date of collection of the specimen</p></td></tr><tr><td class=\"confluenceTd\"><p>specimen_sample_source_noncoded</p></td><td class=\"confluenceTd\"><p>Free text answers for sample source not available in DB</p></td></tr><tr><td class=\"confluenceTd\"><p>specimen_sample_source</p></td><td class=\"confluenceTd\"><p>Predefined answers for sample source available in DB</p></td></tr><tr><td class=\"confluenceTd\"><p>specimen_id</p></td><td class=\"confluenceTd\"><p>Unique id for specific observation</p></td></tr></tbody></table></div><p>&nbsp;</p><hr /><h3 style=\"text-align: center;\" id=\"BacteriologyData-Translations\"><strong>Translations</strong></h3><p>if we need to get those values as per the translations we need to add the below <strong><span data-colorid=\"x2mnvdg03u\">locale tag</span></strong> in the &ldquo;<strong>/var/www/bahmni_config/bahmni-mart/bahmni-mart.json</strong>&ldquo; file.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f0b6523c-9a97-4804-803b-315973142b1a\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n      &quot;name&quot;: &quot;Bacteriology Data&quot;,\n      &quot;conceptReferenceSource&quot;: &quot;&quot;,\n      &quot;type&quot;: &quot;bacteriology&quot;,\n      &quot;locale&quot; : &quot;fr&quot;\n    }\n</pre>\n</div></div><p><br /></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2306540158"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2306540158/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306540158/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 6669
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2306540158/child",
+    "restrictions": "/rest/api/content/2306540158/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2306540158/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2306540158",
+    "webui": "/spaces/BAH/pages/2306540158/Bacteriology+Data",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2306540158",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306540158",
+    "tinyui": "/x/fgJ7iQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

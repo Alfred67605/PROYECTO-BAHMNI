@@ -1,0 +1,173 @@
+{
+  "id": "1164050590",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/1164050590",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE2NDA1MDU5MA==",
+  "status": "current",
+  "title": "Validating the Lab Test(s) Result and Printing the Lab Report",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5e43cc7490dfb70c9e609d8c",
+      "accountType": "atlassian",
+      "email": "rahulnuchange@gmail.com",
+      "publicName": "Rahul Kumrawat",
+      "timeZone": "Asia/Calcutta",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e43cc7490dfb70c9e609d8c",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Rahul Kumrawat",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e43cc7490dfb70c9e609d8c"
+      }
+    },
+    "createdDate": "2020-03-30T11:40:24.400Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1164050590/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:0114694a-2065-4f19-96b2-e3818cd876a3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "apaule",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:0114694a-2065-4f19-96b2-e3818cd876a3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Arun Paul",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:0114694a-2065-4f19-96b2-e3818cd876a3"
+      }
+    },
+    "when": "2020-04-01T11:04:50.196Z",
+    "friendlyWhen": "Apr 01, 2020",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "syncRev": "0.KvvtGnahMOTscQwYexgNjg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$1164050590.58",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/1164050590"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1164050590/version/4"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\" ac:breakout-mode=\"full-width\"><ac:layout-cell><h2>About the Feature</h2><p>Once the results are entered for the tests performed in internal or external laboratories, same will be available for validation. The authorised user will validate the results entered for the lab tests and mark them as &ldquo;Accepted&rdquo; or &ldquo;Rejected&rdquo;.</p><h2>Used By</h2><p>Validation of Lab Tests is usually done by the respective test department HOD or an authorised validator after getting the results entered for the tests performed by a lab technician.</p><h2>How is it Used?</h2><h3>1. Validating the lab test result</h3><ol><li><p>Search for the desired test under Samples Collected - Today / Backlog tab for which the result has already been entered.</p></li><li><p>Click on the &ldquo;Validate&rdquo; icon under the &ldquo;Action&rdquo; column, which will navigate you to the &ldquo;Validation By Accession Number&rdquo; screen.</p></li><li><p>&ldquo;Validation&rdquo; screen will be displaying all the respective lab tests with corresponding result details. Referred out tests results will be listed with a flag &ldquo;R&rdquo;.</p></li><li><p>User can Accept or Reject the result for lab tests by checking the corresponding &ldquo;Accept&rdquo; / &ldquo;Reject&rdquo; flags and saving the validation by clicking the &ldquo;Save&rdquo; button.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"402\" ac:original-width=\"930\"><ri:attachment ri:filename=\"image-20200330-121942.png\" ri:version-at-save=\"1\" /></ac:image></li><li><p>Once the result is accepted, the same will be displayed in the Patient Dashboard - Laboratory Result widget. And if the same is Rejected, it will be sent for result entry again.</p></li><li><p>Rejected test results will reappears in result entry screen with &ldquo;Validation Failed&rdquo; legend , and will allow the user to re-enter the results to the lab technician.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"173\" ac:original-width=\"898\"><ri:attachment ri:filename=\"image-20200331-112917.png\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p>Results can be re-entered correctly for the rejected tests and saved after adding notes, which become mandatory if result is changed. Once saved, the same will be sent again for validation.</p></li></ol><h3>2. Print the Lab report for the validated tests</h3><ol><li><p>Click on the &ldquo;Result&rdquo; icon under the &ldquo;Action&rdquo; column appearing corresponding to the tests with accepted result in the Samples Collected - Today / Backlog tab.</p></li><li><p>Laboratory Report print will get generated displaying the test results which have been accepted while validation</p></li><li><p>Lab report will also display the patient&rsquo;s demographic details, Order Date, Accession Number and relevant flags like R = Referred Out, A = Above Normal, B = Below Normal, E = Returned.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"384\" ac:original-width=\"653\"><ri:attachment ri:filename=\"image-20200330-122743.png\" ri:version-at-save=\"1\" /></ac:image><p /></li></ol><p /></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" data-layout=\"default\" ac:macro-id=\"c9a2c489-b757-4bab-af39-a6340faa7c83\" /><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"af935c3a-d91c-4d75-87cc-a9683ccacb35\"><ac:rich-text-body><p><strong>Feature Details</strong></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/32604211/Laboratory+Management\">Feature Guide - Laboratory Management</a> </p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"99bf635a-0089-491b-8f34-90b65341d66f\"><ac:rich-text-body><p><strong>Implementation Details</strong></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/32014586/Laboratory+Module\">Implementer's Guide - Laboratory Module</a> </p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"fixed-width\" ac:breakout-mode=\"default\"><ac:layout-cell><p /></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/1164050590"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ValidatingtheLabTest(s)ResultandPrintingtheLabReport-AbouttheFeature\">About the Feature</h2><p>Once the results are entered for the tests performed in internal or external laboratories, same will be available for validation. The authorised user will validate the results entered for the lab tests and mark them as “Accepted” or “Rejected”.</p><h2 id=\"ValidatingtheLabTest(s)ResultandPrintingtheLabReport-UsedBy\">Used By</h2><p>Validation of Lab Tests is usually done by the respective test department HOD or an authorised validator after getting the results entered for the tests performed by a lab technician.</p><h2 id=\"ValidatingtheLabTest(s)ResultandPrintingtheLabReport-HowisitUsed?\">How is it Used?</h2><h3 id=\"ValidatingtheLabTest(s)ResultandPrintingtheLabReport-1.Validatingthelabtestresult\">1. Validating the lab test result</h3><ol><li><p>Search for the desired test under Samples Collected - Today / Backlog tab for which the result has already been entered.</p></li><li><p>Click on the “Validate” icon under the “Action” column, which will navigate you to the “Validation By Accession Number” screen.</p></li><li><p>“Validation” screen will be displaying all the respective lab tests with corresponding result details. Referred out tests results will be listed with a flag “R”.</p></li><li><p>User can Accept or Reject the result for lab tests by checking the corresponding “Accept” / “Reject” flags and saving the validation by clicking the “Save” button.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1164050590/image-20200330-121942.png?version=1&amp;modificationDate=1585570785067&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1164050590/image-20200330-121942.png?version=1&amp;modificationDate=1585570785067&amp;cacheVersion=1&amp;api=v2\" data-height=\"402\" data-width=\"930\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1171456004\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200330-121942.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1164050590\" data-linked-resource-container-version=\"4\" data-media-id=\"ed1b9c7a-ae32-4f2d-a744-acfaa5781665\" data-media-type=\"file\"></span></li><li><p>Once the result is accepted, the same will be displayed in the Patient Dashboard - Laboratory Result widget. And if the same is Rejected, it will be sent for result entry again.</p></li><li><p>Rejected test results will reappears in result entry screen with “Validation Failed” legend , and will allow the user to re-enter the results to the lab technician.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1164050590/image-20200331-112917.png?version=1&amp;modificationDate=1585654160525&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1164050590/image-20200331-112917.png?version=1&amp;modificationDate=1585654160525&amp;cacheVersion=1&amp;api=v2\" data-height=\"173\" data-width=\"898\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1173782836\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200331-112917.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1164050590\" data-linked-resource-container-version=\"4\" data-media-id=\"45c3f958-13ef-40eb-a75b-088d4f5d99a6\" data-media-type=\"file\"></span><p /></li><li><p>Results can be re-entered correctly for the rejected tests and saved after adding notes, which become mandatory if result is changed. Once saved, the same will be sent again for validation.</p></li></ol><h3 id=\"ValidatingtheLabTest(s)ResultandPrintingtheLabReport-2.PrinttheLabreportforthevalidatedtests\">2. Print the Lab report for the validated tests</h3><ol><li><p>Click on the “Result” icon under the “Action” column appearing corresponding to the tests with accepted result in the Samples Collected - Today / Backlog tab.</p></li><li><p>Laboratory Report print will get generated displaying the test results which have been accepted while validation</p></li><li><p>Lab report will also display the patient’s demographic details, Order Date, Accession Number and relevant flags like R = Referred Out, A = Above Normal, B = Below Normal, E = Returned.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1164050590/image-20200330-122743.png?version=1&amp;modificationDate=1585571267503&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1164050590/image-20200330-122743.png?version=1&amp;modificationDate=1585571267503&amp;cacheVersion=1&amp;api=v2\" data-height=\"384\" data-width=\"653\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1163100327\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200330-122743.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1164050590\" data-linked-resource-container-version=\"4\" data-media-id=\"59025798-fb5e-4ffa-b801-c2705617393f\" data-media-type=\"file\"></span><p /></li></ol><p /></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-layout=\"default\" data-macro-id=\"c9a2c489-b757-4bab-af39-a6340faa7c83\" data-macro-name=\"toc\"> </div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"af935c3a-d91c-4d75-87cc-a9683ccacb35\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>Feature Details</strong></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/32604211/Laboratory+Management\" rel=\"nofollow\">Feature Guide - Laboratory Management</a> </p></div></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"99bf635a-0089-491b-8f34-90b65341d66f\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>Implementation Details</strong></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/32014586/Laboratory+Module\" rel=\"nofollow\">Implementer's Guide - Laboratory Module</a> </p></div></div></div>\n</div>\n</div>\n<div class=\"columnLayout fixed-width\" data-layout=\"fixed-width\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p /></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/1164050590"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/1164050590/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1164050590/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 917
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/1164050590/child",
+    "restrictions": "/rest/api/content/1164050590/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/1164050590/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=1164050590",
+    "webui": "/spaces/BAH/pages/1164050590/Validating+the+Lab+Test+s+Result+and+Printing+the+Lab+Report",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/1164050590",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1164050590",
+    "tinyui": "/x/ngBiRQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

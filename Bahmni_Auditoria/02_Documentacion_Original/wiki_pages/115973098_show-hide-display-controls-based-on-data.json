@@ -1,0 +1,172 @@
+{
+  "id": "115973098",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/115973098",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE1OTczMDk4",
+  "status": "current",
+  "title": "Show/Hide Display Controls based on data",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:299be367-ba7e-4019-9f8d-658e0c5778f9",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Kaustav",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:299be367-ba7e-4019-9f8d-658e0c5778f9",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Kaustav Chakraborty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:299be367-ba7e-4019-9f8d-658e0c5778f9"
+      }
+    },
+    "createdDate": "2017-04-07T09:04:17.598Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115973098/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2023-11-30T14:33:34.165Z",
+    "friendlyWhen": "Nov 30, 2023",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "syncRev": "0.biaGiS4DxFWEZmpF8xHwyg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$115973098.56",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/115973098"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115973098/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<h2>Purpose</h2><p>The patient dashboard contains display controls that show specific data in sections. When the dashboard contains a lot of information, it fails to display in a single page and requires the user to scroll through the page to get to the information they want to see.</p><p>Further, these display controls show up with just the header and a blank section if there is no data to display. In order to better optimise what is displayed in the patient dashboard, we might want to display only those sections (display controls) which contain data. The other sections would not appear on the dashboard at all. This can be advantageous in situations where the dashboard should only show &quot;disease specific&quot; data. For instance we may only want to see &quot;specific information&quot; for &quot;diabetes&quot; patient, and some other data for patients with &quot;TB&quot;, etc. If there is diabetes centric data logged for the patient, the dashboard will show up those widgets, while TB ones won't show up (since concept names for diabetes may be different from TB ones). You can also consider to add more &quot;TABS&quot; in the dashboard, for creating alternative dashboards, rather than use one dashboard with lots of widgets.&nbsp;</p><p>An alternative use case is that, in some implementations, the visibility of an empty section on the patient dashboard will prompt the user to record the data to be displayed in that section. Therefore, an empty display control serves as a reminder for the user to record information.</p><p>You may need to experiment a bit to decide if you want a specific widget to be always shown, or hidden (when it has no data).</p><h2>Configuration:</h2><p>Add this property &quot;hideEmptyDisplayControl&quot; to individual display control sections in default config/openmrs/apps/ clinical/ dashboard.json&nbsp;</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"184add76-3423-4a7d-a905-86c1f5946327\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Configuration for show/hide display control</ac:parameter><ac:plain-text-body><![CDATA[\"sectionName\": { //Should be a unique name\n    \"translationKey\": \"Internationalization key or Title\", //Title of the display control\n    \"displayType\": \"Full-Page | Half-Page\", //Default is Half-Page\n    \"displayOrder\": 0, // All display controls are show in the order mentioned here\n    \"showOnlyInPrint\": true/false, //Show this display control only when printing. Default false.\n    \"hideEmptyDisplayControl\": true/false //Show this display control only when data is available. Default false.\n}\n]]></ac:plain-text-body></ac:structured-macro><h2 class=\"auto-cursor-target\"><strong>Display Controls that are supporting this property<br /><br /></strong></h2><ul class=\"ak-ul\"><li><p>Diagnosis Control&nbsp;</p></li><li><p>Treatment Display Control</p></li><li><p>Lab Order Control</p></li><li><p>Observation control</p></li><li><p>Disposition Control</p></li><li><p>Programs Display Control</p></li><li><p>Radiology</p></li><li><p>Bacteriology Results Control</p></li><li><p>Admission Details Control&nbsp;</p></li><li><p>Obs To Obs FlowSheet</p></li><li><p>Forms Display Control</p></li></ul>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/115973098"
+      }
+    },
+    "view": {
+      "value": "<h2 id=\"Show/HideDisplayControlsbasedondata-Purpose\">Purpose</h2><p>The patient dashboard contains display controls that show specific data in sections. When the dashboard contains a lot of information, it fails to display in a single page and requires the user to scroll through the page to get to the information they want to see.</p><p>Further, these display controls show up with just the header and a blank section if there is no data to display. In order to better optimise what is displayed in the patient dashboard, we might want to display only those sections (display controls) which contain data. The other sections would not appear on the dashboard at all. This can be advantageous in situations where the dashboard should only show &quot;disease specific&quot; data. For instance we may only want to see &quot;specific information&quot; for &quot;diabetes&quot; patient, and some other data for patients with &quot;TB&quot;, etc. If there is diabetes centric data logged for the patient, the dashboard will show up those widgets, while TB ones won't show up (since concept names for diabetes may be different from TB ones). You can also consider to add more &quot;TABS&quot; in the dashboard, for creating alternative dashboards, rather than use one dashboard with lots of widgets. </p><p>An alternative use case is that, in some implementations, the visibility of an empty section on the patient dashboard will prompt the user to record the data to be displayed in that section. Therefore, an empty display control serves as a reminder for the user to record information.</p><p>You may need to experiment a bit to decide if you want a specific widget to be always shown, or hidden (when it has no data).</p><h2 id=\"Show/HideDisplayControlsbasedondata-Configuration:\">Configuration:</h2><p>Add this property &quot;hideEmptyDisplayControl&quot; to individual display control sections in default config/openmrs/apps/ clinical/ dashboard.json </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"184add76-3423-4a7d-a905-86c1f5946327\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Configuration for show/hide display control</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;sectionName&quot;: { //Should be a unique name\n    &quot;translationKey&quot;: &quot;Internationalization key or Title&quot;, //Title of the display control\n    &quot;displayType&quot;: &quot;Full-Page | Half-Page&quot;, //Default is Half-Page\n    &quot;displayOrder&quot;: 0, // All display controls are show in the order mentioned here\n    &quot;showOnlyInPrint&quot;: true/false, //Show this display control only when printing. Default false.\n    &quot;hideEmptyDisplayControl&quot;: true/false //Show this display control only when data is available. Default false.\n}\n</pre>\n</div></div><h2 class=\"auto-cursor-target\" id=\"Show/HideDisplayControlsbasedondata-DisplayControlsthataresupportingthisproperty\"><strong>Display Controls that are supporting this property<br/><br/></strong></h2><ul class=\"ak-ul\"><li><p>Diagnosis Control </p></li><li><p>Treatment Display Control</p></li><li><p>Lab Order Control</p></li><li><p>Observation control</p></li><li><p>Disposition Control</p></li><li><p>Programs Display Control</p></li><li><p>Radiology</p></li><li><p>Bacteriology Results Control</p></li><li><p>Admission Details Control </p></li><li><p>Obs To Obs FlowSheet</p></li><li><p>Forms Display Control</p></li></ul>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/115973098"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/115973098/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115973098/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/115973098/child",
+    "restrictions": "/rest/api/content/115973098/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/115973098/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=115973098",
+    "webui": "/spaces/BAH/pages/115973098/Show+Hide+Display+Controls+based+on+data",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/115973098",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115973098",
+    "tinyui": "/x/6pvpBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

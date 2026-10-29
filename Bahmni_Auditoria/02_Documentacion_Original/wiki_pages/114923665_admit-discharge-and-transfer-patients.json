@@ -1,0 +1,179 @@
+{
+  "id": "114923665",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/114923665",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE0OTIzNjY1",
+  "status": "current",
+  "title": "Admit, Discharge and Transfer Patients",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "createdDate": "2017-02-23T05:45:22.161Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114923665/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "when": "2017-03-01T05:21:39.086Z",
+    "friendlyWhen": "Mar 01, 2017",
+    "message": "",
+    "number": 10,
+    "minorEdit": false,
+    "syncRev": "0.O1VKMfyyi2LfMrIHFz_NIQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$114923665.51",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/114923665"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114923665/version/10"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Configuration</h2><h3>Setup Default Visit Type</h3><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"7ff68eee-a57c-4c42-95ce-b62afe6d256a\"><ac:rich-text-body><ul><li style=\"list-style-type: disc;\"><p>The configuration for this field is mandatory.</p></li><li style=\"list-style-type: disc;\"><p>The config will set the default visit type of the patient when the user attempts to admit the patient.</p></li><li style=\"list-style-type: disc;\"><p><br /></p></li></ul></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"0efcdd33-5eac-449c-a815-8a35a64051d1\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Sample Config</ac:parameter><ac:plain-text-body><![CDATA[\"defaultVisitType\": \"IPD\"]]></ac:plain-text-body></ac:structured-macro><p><ac:image ac:align=\"center\" ac:height=\"154\" ac:width=\"523\"><ri:url ri:value=\"https://lh3.googleusercontent.com/9ONU0nfNHtkggmjCKU3iNd9PSE1fTrkOAwbL2YbCxFUxnxZxAVstVSYksdD6Ln_vVkdqAV6wfD7MXwDF001ayeZjW6apkla3ywT5hK9_W709LAoWXb_mxWZfRGz8aG7lh7uOuO8y\" /></ac:image></p><h3>Patient Movement Redirects</h3><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"7989cbb1-f9de-4f2f-996e-1956a0c4d435\"><ac:rich-text-body><p>The following configurations have to be added to app.json</p></ac:rich-text-body></ac:structured-macro><h4 style=\"list-style-type: disc;\">On Admission</h4><p>This config will redirect to the configured page in the app while trying to admit the patient</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"9477c4c2-1f97-456c-8351-3037a1ce4224\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[\"onAdmissionForwardTo\": \"#/patient/{{patientUuid}}/encounter/{{encounterUuid}}/bed\"]]></ac:plain-text-body></ac:structured-macro><p><span><br /><ac:image ac:height=\"104\" ac:width=\"624\"><ri:url ri:value=\"https://lh6.googleusercontent.com/U7Gy01NQmnn5gULEF52R3wBRnRWTlFztt7vzIGIUfW3rGtOx4HjCBVULnwRqvAOvd1AJEXMQ1fRJ661NKSi7mUC5EpQm9RuK01CLRRxnrN1FAh5971EiPGEPqMM2wt8MbIgCa-7k\" /></ac:image></span></p><h4>On Transfer</h4><p>This config will redirect to the configured page in the app while trying to&nbsp;transfer the admitted patient</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"59b28ceb-0af1-4d05-bcf9-1499f3d77f42\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[\"onTransferForwardTo\": \"#/patient/{{patientUuid}}/encounter/{{encounterUuid}}/bed\"]]></ac:plain-text-body></ac:structured-macro><p><span><br /><ac:image ac:height=\"96\" ac:width=\"624\"><ri:url ri:value=\"https://lh5.googleusercontent.com/rMP7XzXCos4IPgj2QCYfNMMx72X2NICpo55iTHwzYnD1AEaScMxs_1dmFkPQoVNWg1ZNkLQ8tj38FsoJJ6OTDmvcwi6GAhfFC50Lk6lAWHlBMdru4DXa10pKvfxOPmJ7EcO3cVnD\" /></ac:image></span></p><h4>On Discharge</h4><p>This config will redirect to the configured page in the app while trying to&nbsp;discharge the admitted patient</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"abd5755f-3fba-42bb-94ac-0765cff2d901\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[\"onDischargeForwardTo\": \"#/patient/search\"]]></ac:plain-text-body></ac:structured-macro><p><span><br /><ac:image ac:height=\"95\" ac:width=\"624\"><ri:url ri:value=\"https://lh6.googleusercontent.com/35-dt34WJGq9UPgitLHfZ9MeSjfS2jvHqpebGXKmYYrJ-gADLM90BpVnW7acposa4IOyklh_LVxAonajpd2LTq_tkPhpJrt5U2egXk3TcVCbAf_dMJDFcC6Fscg24gbIoL0fqipG\" /></ac:image></span></p><h3>Setup Max Patients per Bed</h3><p>The config is to define the number of patients a bed can accommodate at once.</p><p><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"Pasted image at 2017_02_23 03_21 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"fcb7f439-c347-48b3-a71e-bbf5eb427e7f\"><ac:rich-text-body><p>The config is not mandatory and the default value is set to 3.</p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"a32d121d-f830-4cb2-91b8-f204185485bf\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[\"maxPatientsPerBed\" : 2]]></ac:plain-text-body></ac:structured-macro><p><br /></p><h3><span>Capture Data on Patient Movement</span></h3><p>Bahmni supports configuration to capture data on selecting the Patient Movement.</p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"a5ea60e2-3046-41b2-8535-0a020ae18429\"><ac:rich-text-body><ul><li>The configuration needs to be added under the dashboard section.</li><li>The concept name should be defined in openMRS.</li><li>Only one concept can be defined at a time.</li></ul></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6e4539e1-effa-4620-85b3-7a0b6385a936\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[\"dashboard\":{\n                               \"conceptName\": \"Adt Notes\",\n}]]></ac:plain-text-body></ac:structured-macro><p><span><br /><ac:image ac:height=\"89\" ac:width=\"624\"><ri:url ri:value=\"https://lh3.googleusercontent.com/83vDWouefkOcEGKD23pRShUJodZ9FM6_tU9528EUZaaWHqr5Xxk_wi4-wdZ2HutWUe_tyoYOAX_l29uIX76ac1OORACaTY-ZOCbOSwDWfEntKDXmjK0qRoUBQNje3C_U8GGnJZtP\" /></ac:image></span></p><h3>Configure Display Controls on IPD Dashboard</h3><p><ac:link><ri:page ri:content-title=\"Display Controls\" ri:version-at-save=\"153\" /><ac:plain-text-link-body><![CDATA[Display controls]]></ac:plain-text-link-body></ac:link> can be configured on the IPD module to give a snapshot of the captured observations.</p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"9cb7fd2a-e6c8-464f-8f1b-78d2ba478d2b\"><ac:rich-text-body><p>The configuration should be added under the &ldquo;dashboard&quot; section</p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"9787346b-b410-4562-99c9-7fb6e61a79e6\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Sample Config</ac:parameter><ac:plain-text-body><![CDATA[     \"dashboard\":{\n               \"translationKey\": \"DASHBOARD_TAB_GENERAL_KEY\",\n               \"sections\": {\n               \"vitals\":{\n                    \"translationKey\":\"DASHBOARD_TITLE_VITALS_KEY\",\n                    \"type\": \"vitals\",\n                   \"displayOrder\": 0,\n                   \"isObservation\": true,\n                   \"dashboardConfig\": {\n                        \"conceptNames\": [\"Vitals\"],\n                    \"numberOfVisits\": 2\n                    }\n           }\n}]]></ac:plain-text-body></ac:structured-macro></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"f865c6d5-9fa8-4335-b1f4-f994635524ac\" /></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"698d4a82-5bc7-4a13-a03e-2c6d4414d8f7\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Ward Management\" ri:version-at-save=\"12\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"In-Patient Management (IPD)\" ri:version-at-save=\"9\" /><ac:plain-text-link-body><![CDATA[In-Patient Management (IPD) - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"In-Patient Management\" ri:version-at-save=\"26\" /><ac:plain-text-link-body><![CDATA[In-Patient Management (IPD) - User Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/114923665"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"Admit,DischargeandTransferPatients-Configuration\">Configuration</h2><h3 id=\"Admit,DischargeandTransferPatients-SetupDefaultVisitType\">Setup Default Visit Type</h3><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7ff68eee-a57c-4c42-95ce-b62afe6d256a\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><ul><li style=\"list-style-type: disc;\"><p>The configuration for this field is mandatory.</p></li><li style=\"list-style-type: disc;\"><p>The config will set the default visit type of the patient when the user attempts to admit the patient.</p></li><li style=\"list-style-type: disc;\"><p><br /></p></li></ul></div></div><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0efcdd33-5eac-449c-a815-8a35a64051d1\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Sample Config</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;defaultVisitType&quot;: &quot;IPD&quot;</pre>\n</div></div><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-external-resource image-center\" height=\"154\" width=\"523\" src=\"https://lh3.googleusercontent.com/9ONU0nfNHtkggmjCKU3iNd9PSE1fTrkOAwbL2YbCxFUxnxZxAVstVSYksdD6Ln_vVkdqAV6wfD7MXwDF001ayeZjW6apkla3ywT5hK9_W709LAoWXb_mxWZfRGz8aG7lh7uOuO8y\" data-image-src=\"https://lh3.googleusercontent.com/9ONU0nfNHtkggmjCKU3iNd9PSE1fTrkOAwbL2YbCxFUxnxZxAVstVSYksdD6Ln_vVkdqAV6wfD7MXwDF001ayeZjW6apkla3ywT5hK9_W709LAoWXb_mxWZfRGz8aG7lh7uOuO8y\" loading=\"lazy\"></span></p><h3 id=\"Admit,DischargeandTransferPatients-PatientMovementRedirects\">Patient Movement Redirects</h3><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7989cbb1-f9de-4f2f-996e-1956a0c4d435\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>The following configurations have to be added to app.json</p></div></div><h4 style=\"list-style-type: disc;\" id=\"Admit,DischargeandTransferPatients-OnAdmission\">On Admission</h4><p>This config will redirect to the configured page in the app while trying to admit the patient</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9477c4c2-1f97-456c-8351-3037a1ce4224\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;onAdmissionForwardTo&quot;: &quot;#/patient/{{patientUuid}}/encounter/{{encounterUuid}}/bed&quot;</pre>\n</div></div><p><span><br/><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-external-resource\" height=\"104\" width=\"624\" src=\"https://lh6.googleusercontent.com/U7Gy01NQmnn5gULEF52R3wBRnRWTlFztt7vzIGIUfW3rGtOx4HjCBVULnwRqvAOvd1AJEXMQ1fRJ661NKSi7mUC5EpQm9RuK01CLRRxnrN1FAh5971EiPGEPqMM2wt8MbIgCa-7k\" data-image-src=\"https://lh6.googleusercontent.com/U7Gy01NQmnn5gULEF52R3wBRnRWTlFztt7vzIGIUfW3rGtOx4HjCBVULnwRqvAOvd1AJEXMQ1fRJ661NKSi7mUC5EpQm9RuK01CLRRxnrN1FAh5971EiPGEPqMM2wt8MbIgCa-7k\" loading=\"lazy\"></span></span></p><h4 id=\"Admit,DischargeandTransferPatients-OnTransfer\">On Transfer</h4><p>This config will redirect to the configured page in the app while trying to transfer the admitted patient</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"59b28ceb-0af1-4d05-bcf9-1499f3d77f42\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;onTransferForwardTo&quot;: &quot;#/patient/{{patientUuid}}/encounter/{{encounterUuid}}/bed&quot;</pre>\n</div></div><p><span><br/><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-external-resource\" height=\"96\" width=\"624\" src=\"https://lh5.googleusercontent.com/rMP7XzXCos4IPgj2QCYfNMMx72X2NICpo55iTHwzYnD1AEaScMxs_1dmFkPQoVNWg1ZNkLQ8tj38FsoJJ6OTDmvcwi6GAhfFC50Lk6lAWHlBMdru4DXa10pKvfxOPmJ7EcO3cVnD\" data-image-src=\"https://lh5.googleusercontent.com/rMP7XzXCos4IPgj2QCYfNMMx72X2NICpo55iTHwzYnD1AEaScMxs_1dmFkPQoVNWg1ZNkLQ8tj38FsoJJ6OTDmvcwi6GAhfFC50Lk6lAWHlBMdru4DXa10pKvfxOPmJ7EcO3cVnD\" loading=\"lazy\"></span></span></p><h4 id=\"Admit,DischargeandTransferPatients-OnDischarge\">On Discharge</h4><p>This config will redirect to the configured page in the app while trying to discharge the admitted patient</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"abd5755f-3fba-42bb-94ac-0765cff2d901\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;onDischargeForwardTo&quot;: &quot;#/patient/search&quot;</pre>\n</div></div><p><span><br/><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-external-resource\" height=\"95\" width=\"624\" src=\"https://lh6.googleusercontent.com/35-dt34WJGq9UPgitLHfZ9MeSjfS2jvHqpebGXKmYYrJ-gADLM90BpVnW7acposa4IOyklh_LVxAonajpd2LTq_tkPhpJrt5U2egXk3TcVCbAf_dMJDFcC6Fscg24gbIoL0fqipG\" data-image-src=\"https://lh6.googleusercontent.com/35-dt34WJGq9UPgitLHfZ9MeSjfS2jvHqpebGXKmYYrJ-gADLM90BpVnW7acposa4IOyklh_LVxAonajpd2LTq_tkPhpJrt5U2egXk3TcVCbAf_dMJDFcC6Fscg24gbIoL0fqipG\" loading=\"lazy\"></span></span></p><h3 id=\"Admit,DischargeandTransferPatients-SetupMaxPatientsperBed\">Setup Max Patients per Bed</h3><p>The config is to define the number of patients a bed can accommodate at once.</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114923665/Pasted%20image%20at%202017_02_23%2003_21%20PM.png?version=1&amp;modificationDate=1488344952392&amp;cacheVersion=1&amp;api=v2&amp;width=596&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114923665/Pasted%20image%20at%202017_02_23%2003_21%20PM.png?version=1&amp;modificationDate=1488344952392&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115086137\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Pasted image at 2017_02_23 03_21 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114923665\" data-linked-resource-container-version=\"10\" data-media-id=\"7c8f3f00-4fd0-46c8-81a3-6364b6aa177f\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114923665/Pasted%20image%20at%202017_02_23%2003_21%20PM.png?version=1&amp;modificationDate=1488344952392&amp;cacheVersion=1&amp;api=v2&amp;width=1192&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114923665/Pasted%20image%20at%202017_02_23%2003_21%20PM.png?version=1&amp;modificationDate=1488344952392&amp;cacheVersion=1&amp;api=v2&amp;width=596&amp;height=250 1x\"></span></p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"fcb7f439-c347-48b3-a71e-bbf5eb427e7f\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>The config is not mandatory and the default value is set to 3.</p></div></div><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a32d121d-f830-4cb2-91b8-f204185485bf\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;maxPatientsPerBed&quot; : 2</pre>\n</div></div><p><br/></p><h3 id=\"Admit,DischargeandTransferPatients-CaptureDataonPatientMovement\"><span>Capture Data on Patient Movement</span></h3><p>Bahmni supports configuration to capture data on selecting the Patient Movement.</p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a5ea60e2-3046-41b2-8535-0a020ae18429\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><ul><li>The configuration needs to be added under the dashboard section.</li><li>The concept name should be defined in openMRS.</li><li>Only one concept can be defined at a time.</li></ul></div></div><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6e4539e1-effa-4620-85b3-7a0b6385a936\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;dashboard&quot;:{\n                               &quot;conceptName&quot;: &quot;Adt Notes&quot;,\n}</pre>\n</div></div><p><span><br/><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-external-resource\" height=\"89\" width=\"624\" src=\"https://lh3.googleusercontent.com/83vDWouefkOcEGKD23pRShUJodZ9FM6_tU9528EUZaaWHqr5Xxk_wi4-wdZ2HutWUe_tyoYOAX_l29uIX76ac1OORACaTY-ZOCbOSwDWfEntKDXmjK0qRoUBQNje3C_U8GGnJZtP\" data-image-src=\"https://lh3.googleusercontent.com/83vDWouefkOcEGKD23pRShUJodZ9FM6_tU9528EUZaaWHqr5Xxk_wi4-wdZ2HutWUe_tyoYOAX_l29uIX76ac1OORACaTY-ZOCbOSwDWfEntKDXmjK0qRoUBQNje3C_U8GGnJZtP\" loading=\"lazy\"></span></span></p><h3 id=\"Admit,DischargeandTransferPatients-ConfigureDisplayControlsonIPDDashboard\">Configure Display Controls on IPD Dashboard</h3><p><a href=\"/wiki/spaces/BAH/pages/37945573/Display+Controls\" data-linked-resource-id=\"37945573\" data-linked-resource-version=\"155\" data-linked-resource-type=\"page\">Display controls</a> can be configured on the IPD module to give a snapshot of the captured observations.</p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9cb7fd2a-e6c8-464f-8f1b-78d2ba478d2b\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>The configuration should be added under the “dashboard&quot; section</p></div></div><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9787346b-b410-4562-99c9-7fb6e61a79e6\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Sample Config</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">     &quot;dashboard&quot;:{\n               &quot;translationKey&quot;: &quot;DASHBOARD_TAB_GENERAL_KEY&quot;,\n               &quot;sections&quot;: {\n               &quot;vitals&quot;:{\n                    &quot;translationKey&quot;:&quot;DASHBOARD_TITLE_VITALS_KEY&quot;,\n                    &quot;type&quot;: &quot;vitals&quot;,\n                   &quot;displayOrder&quot;: 0,\n                   &quot;isObservation&quot;: true,\n                   &quot;dashboardConfig&quot;: {\n                        &quot;conceptNames&quot;: [&quot;Vitals&quot;],\n                    &quot;numberOfVisits&quot;: 2\n                    }\n           }\n}</pre>\n</div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"f865c6d5-9fa8-4335-b1f4-f994635524ac\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"698d4a82-5bc7-4a13-a03e-2c6d4414d8f7\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/16908311/Ward+Management\" data-linked-resource-id=\"16908311\" data-linked-resource-version=\"17\" data-linked-resource-type=\"page\">Ward Management</a></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604214/In-Patient+Management+IPD\" data-linked-resource-id=\"32604214\" data-linked-resource-version=\"9\" data-linked-resource-type=\"page\">In-Patient Management (IPD) - Feature Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32014373/In-Patient+Management\" data-linked-resource-id=\"32014373\" data-linked-resource-version=\"33\" data-linked-resource-type=\"page\">In-Patient Management (IPD) - User Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/114923665"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "needs-review",
+          "id": "2211643554",
+          "label": "needs-review"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 1,
+      "_links": {
+        "next": "/rest/api/content/114923665/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114923665/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/114923665/child",
+    "restrictions": "/rest/api/content/114923665/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/114923665/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=114923665",
+    "webui": "/spaces/BAH/pages/114923665/Admit+Discharge+and+Transfer+Patients",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/114923665",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114923665",
+    "tinyui": "/x/kZjZBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

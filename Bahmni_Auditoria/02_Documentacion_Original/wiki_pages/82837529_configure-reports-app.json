@@ -1,0 +1,170 @@
+{
+  "id": "82837529",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/82837529",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvODI4Mzc1Mjk=",
+  "status": "current",
+  "title": "Configure Reports App",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2016-08-25T14:57:28.304Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/82837529/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sravanthi N. S. CH.",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sravanthi N. S. CH.",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d47e0136-cbde-4dbc-8820-611d4528d1c8"
+      }
+    },
+    "when": "2016-10-13T10:38:14.141Z",
+    "friendlyWhen": "Oct 13, 2016",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "syncRev": "0.yb04nFuFIkPtZ4jBiZ3D2w.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$82837529.59",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/82837529"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/82837529/version/8"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p><span style=\"color: rgb(0,0,0);\">Reporting is an essential feature of any EMR. The data that is stored in the EMR needs to be exported and analyzed. Bahmni provides a reporting module for the same. There are some standard reports that come as a part of the reporting module and the implementer also has the ability to define some custom reports. &nbsp;&nbsp;</span></p><h2><span style=\"color: rgb(0,0,0);\">Configuring the Reports Module&nbsp;</span></h2><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"dcf5a11d-691f-45e3-aa23-96c8644c3751\"><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\">To configure multiple reports module refer&nbsp;</span><ac:link><ri:page ri:content-title=\"Configure Multiple Report Apps\" /><ac:plain-text-link-body><![CDATA[here]]></ac:plain-text-link-body></ac:link><span style=\"color: rgb(0,0,0);\">.&nbsp;</span></p></ac:rich-text-body></ac:structured-macro><p><span style=\"color: rgb(0,0,0);\"><br /></span></p><p><span style=\"color: rgb(0,0,0);\">Follow these steps to configure the reporting module and then run reports in Bahmni</span></p><p><span style=\"color: rgb(0,0,0);\">1. &nbsp;Configure reports app on home page:&nbsp;</span></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:alt=\"Home page of user\" ac:width=\"500\"><ri:attachment ri:filename=\"Screen Shot 2016-04-01 at 12.44.58 PM.png\" /></ac:image><br /><br /></span></p><p>Go to openmrs/apps/home/extension.json of your config and add&nbsp;<span style=\"color: rgb(0,0,0);\">the code snippet below:</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d44a18bb-a7af-4867-b11c-072a459e8218\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"reports\": {\n  \"id\": \"bahmni.reports\",\n  \"extensionPointId\": \"org.bahmni.home.dashboard\",\n  \"type\": \"link\",\n  \"translationKey\": \"MODULE_LABEL_REPORTS_KEY\",\n  \"url\": \"../reports/#/dashboard\",\n  \"icon\": \"fa-user\",\n  \"order\": 8,\n  \"requiredPrivilege\": \"app:reports\"\n}]]></ac:plain-text-body></ac:structured-macro><h2>Key Fields&nbsp;</h2><p>These are the attributes of the above configuration</p><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th>Key</th><th>Use</th><th>Mandatory</th></tr><tr><td>&quot;id&quot;</td><td><p>Specific Id for reports app.</p></td><td>Yes</td></tr><tr><td>&quot;<span>extensionPointId&quot;</span></td><td>Needed for configuring the reports.</td><td>Yes</td></tr><tr><td>&quot;type&quot;</td><td>Making reports app link on home page.</td><td>Yes</td></tr><tr><td colspan=\"1\"><pre>&quot;translationKey&quot;</pre></td><td colspan=\"1\">Show name in particular locale used by app.</td><td colspan=\"1\">Yes</td></tr><tr><td colspan=\"1\"><pre>&quot;url&quot;</pre></td><td colspan=\"1\">To redirect to reports page.</td><td colspan=\"1\">Yes</td></tr><tr><td colspan=\"1\"><pre>&quot;icon&quot;</pre></td><td colspan=\"1\">To display icon.</td><td colspan=\"1\">No</td></tr><tr><td colspan=\"1\"><pre>&quot;order&quot;</pre></td><td colspan=\"1\">Display in specific order.</td><td colspan=\"1\">No</td></tr><tr><td colspan=\"1\"><pre>&quot;requiredPrivilege&quot;</pre></td><td colspan=\"1\">This is needed privilege for displaying reports module.</td><td colspan=\"1\">Yes</td></tr></tbody></table><p><br /></p><p><br /></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"f24cbd23-14a9-45ce-b277-2f23faff2270\"><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\">When two factor authentication is enabled, add '<strong>bypass2fa</strong>' role to <strong>reports-user </strong>in openmrs to aviod authentication problems while running reports.</span></p><div><span style=\"color: rgb(0,0,0);\"><br /></span></div></ac:rich-text-body></ac:structured-macro><p><br /></p><h2><strong>Reports SSL&nbsp;certificate configuration:</strong></h2><p>&nbsp; &nbsp;This configures reports application to accept trusted or untrusted SSL certificates when fetching reports.json file from httpd server.&nbsp;</p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"e4baa567-5580-48ee-8559-b720db96a5d1\"><ac:parameter ac:name=\"title\">Default Behaviour</ac:parameter><ac:rich-text-body><p>By default, all the SSL certificates are trusted.</p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"013efafe-30a7-41c4-ad39-d9b3b161e51c\"><ac:parameter ac:name=\"title\">Overriding the default behaviour</ac:parameter><ac:rich-text-body><p>Default behaviour of reports can be overriden &nbsp;by reconfiguring the following property in&nbsp;<em>bahmni-reports.properties</em>&nbsp;file located at&nbsp;<strong>/etc/bahmni-reports/</strong>&nbsp;directory</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d1e1f202-ffc5-4bc0-89e6-ad3aab74deff\"><ac:parameter ac:name=\"title\">Example</ac:parameter><ac:plain-text-body><![CDATA[reports.json.ssl.accept-untrusted-certificates=false]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"6e7367e4-5b13-4717-9747-fadeb5fd18c9\"><ac:rich-text-body><p><span>In this case if the ssl certificate is untrusted, reports will be queued, but will not be generated, instead shows status as &quot;Error&quot;</span></p></ac:rich-text-body></ac:structured-macro></ac:rich-text-body></ac:structured-macro><p><br /></p><h2><strong>Reports Queue</strong></h2><p>More information of Report Queue feature can be found at&nbsp;<ac:link><ri:page ri:content-title=\"Report Management\" /></ac:link></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"c967f183-82be-4269-8271-9120d28b15e9\"><ac:parameter ac:name=\"title\">Default Behaviour</ac:parameter><ac:rich-text-body><p>By default, Report Queue feature is disabled.</p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"c22b0c1c-2133-4781-989f-7e1dbd7ba7e7\"><ac:parameter ac:name=\"title\">Overriding the default behaviour</ac:parameter><ac:rich-text-body><p>Default behaviour of reports can be overridden &nbsp;by reconfiguring following property value from&nbsp;<em>app.json</em>&nbsp;file found in&nbsp;<strong>/bahmni_config/openmrs/apps/reports</strong>&nbsp;folder</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"928216ca-dcad-4f99-ba27-7fe2550696ae\"><ac:parameter ac:name=\"title\">Example</ac:parameter><ac:plain-text-body><![CDATA[\"enableReportQueue\": true]]></ac:plain-text-body></ac:structured-macro></ac:rich-text-body></ac:structured-macro><p><br /></p><p><br /></p></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"99b8b629-37db-4a58-adb1-4714e33f853d\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"6ebfc67a-7487-4e65-95bb-388c38c37ce3\" /></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Reporting\" /><ac:plain-text-link-body><![CDATA[Reports Module - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Report Management\" /><ac:plain-text-link-body><![CDATA[Reports Module - User Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/82837529"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ConfigureReportsApp-PurposeandBenefits\">Purpose and Benefits</h2><p><span class=\"legacy-color-text-default\">Reporting is an essential feature of any EMR. The data that is stored in the EMR needs to be exported and analyzed. Bahmni provides a reporting module for the same. There are some standard reports that come as a part of the reporting module and the implementer also has the ability to define some custom reports.   </span></p><h2 id=\"ConfigureReportsApp-ConfiguringtheReportsModule\"><span class=\"legacy-color-text-default\">Configuring the Reports Module </span></h2><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"dcf5a11d-691f-45e3-aa23-96c8644c3751\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><span class=\"legacy-color-text-default\">To configure multiple reports module refer </span><a href=\"/wiki/spaces/BAH/pages/59899908/Configure+Multiple+Report+Apps\" data-linked-resource-id=\"59899908\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">here</a><span class=\"legacy-color-text-default\">. </span></p></div></div><p><span class=\"legacy-color-text-default\"><br/></span></p><p><span class=\"legacy-color-text-default\">Follow these steps to configure the reporting module and then run reports in Bahmni</span></p><p><span class=\"legacy-color-text-default\">1.  Configure reports app on home page: </span></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"Home page of user\" width=\"500\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/82837529/Screen%20Shot%202016-04-01%20at%2012.44.58%20PM.png?version=1&amp;modificationDate=1472137048331&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=312\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/82837529/Screen%20Shot%202016-04-01%20at%2012.44.58%20PM.png?version=1&amp;modificationDate=1472137048331&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"82837528\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-04-01 at 12.44.58 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"82837529\" data-linked-resource-container-version=\"8\" data-media-id=\"7479bb78-d4e6-4dc4-b8a1-f58964cb53d1\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/82837529/Screen%20Shot%202016-04-01%20at%2012.44.58%20PM.png?version=1&amp;modificationDate=1472137048331&amp;cacheVersion=1&amp;api=v2&amp;width=1000&amp;height=624 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/82837529/Screen%20Shot%202016-04-01%20at%2012.44.58%20PM.png?version=1&amp;modificationDate=1472137048331&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=312 1x\"></span><br/><br/></span></p><p>Go to openmrs/apps/home/extension.json of your config and add <span class=\"legacy-color-text-default\">the code snippet below:</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d44a18bb-a7af-4867-b11c-072a459e8218\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;reports&quot;: {\n  &quot;id&quot;: &quot;bahmni.reports&quot;,\n  &quot;extensionPointId&quot;: &quot;org.bahmni.home.dashboard&quot;,\n  &quot;type&quot;: &quot;link&quot;,\n  &quot;translationKey&quot;: &quot;MODULE_LABEL_REPORTS_KEY&quot;,\n  &quot;url&quot;: &quot;../reports/#/dashboard&quot;,\n  &quot;icon&quot;: &quot;fa-user&quot;,\n  &quot;order&quot;: 8,\n  &quot;requiredPrivilege&quot;: &quot;app:reports&quot;\n}</pre>\n</div></div><h2 id=\"ConfigureReportsApp-KeyFields\">Key Fields </h2><p>These are the attributes of the above configuration</p><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class=\"confluenceTh\">Key</th><th class=\"confluenceTh\">Use</th><th class=\"confluenceTh\">Mandatory</th></tr><tr><td class=\"confluenceTd\">&quot;id&quot;</td><td class=\"confluenceTd\"><p>Specific Id for reports app.</p></td><td class=\"confluenceTd\">Yes</td></tr><tr><td class=\"confluenceTd\">&quot;<span>extensionPointId&quot;</span></td><td class=\"confluenceTd\">Needed for configuring the reports.</td><td class=\"confluenceTd\">Yes</td></tr><tr><td class=\"confluenceTd\">&quot;type&quot;</td><td class=\"confluenceTd\">Making reports app link on home page.</td><td class=\"confluenceTd\">Yes</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><pre>&quot;translationKey&quot;</pre></td><td colspan=\"1\" class=\"confluenceTd\">Show name in particular locale used by app.</td><td colspan=\"1\" class=\"confluenceTd\">Yes</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><pre>&quot;url&quot;</pre></td><td colspan=\"1\" class=\"confluenceTd\">To redirect to reports page.</td><td colspan=\"1\" class=\"confluenceTd\">Yes</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><pre>&quot;icon&quot;</pre></td><td colspan=\"1\" class=\"confluenceTd\">To display icon.</td><td colspan=\"1\" class=\"confluenceTd\">No</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><pre>&quot;order&quot;</pre></td><td colspan=\"1\" class=\"confluenceTd\">Display in specific order.</td><td colspan=\"1\" class=\"confluenceTd\">No</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><pre>&quot;requiredPrivilege&quot;</pre></td><td colspan=\"1\" class=\"confluenceTd\">This is needed privilege for displaying reports module.</td><td colspan=\"1\" class=\"confluenceTd\">Yes</td></tr></tbody></table></div><p><br/></p><p><br/></p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f24cbd23-14a9-45ce-b277-2f23faff2270\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><span class=\"legacy-color-text-default\">When two factor authentication is enabled, add '<strong>bypass2fa</strong>' role to <strong>reports-user </strong>in openmrs to aviod authentication problems while running reports.</span></p><div><span class=\"legacy-color-text-default\"><br /></span></div></div></div><p><br/></p><h2 id=\"ConfigureReportsApp-ReportsSSLcertificateconfiguration:\"><strong>Reports SSL certificate configuration:</strong></h2><p>   This configures reports application to accept trusted or untrusted SSL certificates when fetching reports.json file from httpd server. </p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e4baa567-5580-48ee-8559-b720db96a5d1\" data-macro-name=\"info\"><p class=\"title\">Default Behaviour</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>By default, all the SSL certificates are trusted.</p></div></div><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"013efafe-30a7-41c4-ad39-d9b3b161e51c\" data-macro-name=\"tip\"><p class=\"title\">Overriding the default behaviour</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Default behaviour of reports can be overriden  by reconfiguring the following property in <em>bahmni-reports.properties</em> file located at <strong>/etc/bahmni-reports/</strong> directory</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d1e1f202-ffc5-4bc0-89e6-ad3aab74deff\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Example</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">reports.json.ssl.accept-untrusted-certificates=false</pre>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6e7367e4-5b13-4717-9747-fadeb5fd18c9\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><span>In this case if the ssl certificate is untrusted, reports will be queued, but will not be generated, instead shows status as &quot;Error&quot;</span></p></div></div></div></div><p><br/></p><h2 id=\"ConfigureReportsApp-ReportsQueue\"><strong>Reports Queue</strong></h2><p>More information of Report Queue feature can be found at <a href=\"/wiki/spaces/BAH/pages/32604225/Report+Management\" data-linked-resource-id=\"32604225\" data-linked-resource-version=\"16\" data-linked-resource-type=\"page\">Report Management</a></p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c967f183-82be-4269-8271-9120d28b15e9\" data-macro-name=\"info\"><p class=\"title\">Default Behaviour</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>By default, Report Queue feature is disabled.</p></div></div><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c22b0c1c-2133-4781-989f-7e1dbd7ba7e7\" data-macro-name=\"tip\"><p class=\"title\">Overriding the default behaviour</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Default behaviour of reports can be overridden  by reconfiguring following property value from <em>app.json</em> file found in <strong>/bahmni_config/openmrs/apps/reports</strong> folder</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"928216ca-dcad-4f99-ba27-7fe2550696ae\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Example</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;enableReportQueue&quot;: true</pre>\n</div></div></div></div><p><br/></p><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"99b8b629-37db-4a58-adb1-4714e33f853d\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"6ebfc67a-7487-4e65-95bb-388c38c37ce3\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604223/Reporting\" data-linked-resource-id=\"32604223\" data-linked-resource-version=\"42\" data-linked-resource-type=\"page\">Reports Module - Feature Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604225/Report+Management\" data-linked-resource-id=\"32604225\" data-linked-resource-version=\"16\" data-linked-resource-type=\"page\">Reports Module - User Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/82837529"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/82837529/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/82837529/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 104998429
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/82837529/child",
+    "restrictions": "/rest/api/content/82837529/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/82837529/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=82837529",
+    "webui": "/spaces/BAH/pages/82837529/Configure+Reports+App",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/82837529",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/82837529",
+    "tinyui": "/x/GQDwB",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

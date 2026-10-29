@@ -1,0 +1,171 @@
+{
+  "id": "7110693",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/7110693",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNzExMDY5Mw==",
+  "status": "current",
+  "title": "Caching",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "createdDate": "2014-07-17T12:04:25.856Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/7110693/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:e7ea82e9-0a1b-42da-8ebd-9d4738d1a4ac",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Deepak N",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:e7ea82e9-0a1b-42da-8ebd-9d4738d1a4ac",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Deepak N",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:e7ea82e9-0a1b-42da-8ebd-9d4738d1a4ac"
+      }
+    },
+    "when": "2014-07-22T16:22:00.261Z",
+    "friendlyWhen": "Jul 22, 2014",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.IlmgeijSQg3TgP9ydt58lg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$7110693.19",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/7110693"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/7110693/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>There are two types caching used in Bahmni</p><ol><li>Caching reference data at proxy server (Apache)</li><li><span style=\"line-height: 1.4285715;\">Caching static resources at client side (Browsers)</span></li></ol><h2><span style=\"color: rgb(0,51,102);\">Caching reference data&nbsp;at proxy server</span></h2><p>This is achieved by setting appropriate &quot;Expires&quot; headers on the HTTP response. The expire headers is set by bahmni-core module - org.openmrs.module.bahmnicore.web.filter.CacheHeadersFilter. Currently we cache all concepts for a duration specified in global property&nbsp;bahmni.cacheHeadersFilter.expiresDuration (in minutes). This allows proxy server like Apache to cache this response for this duration.</p><h2><span style=\"color: rgb(0,0,0);\">Caching static resources&nbsp;at client side</span></h2><p><span style=\"color: rgb(0,0,0);\">&nbsp;</span>This is achieved by sending&nbsp;<span style=\"line-height: 1.4285715;\">Cache-Control:&nbsp;</span><span style=\"line-height: 1.4285715;\">max-age=xxxxx and Etag headers. There are two types of data which can cached at client side</span></p><h3>Static resources with unique urls which can be cached for ever</h3><p>These static resources &nbsp;served by apache configured to have appropriate cache headers. This is configured using puppet scripts. The following resources belong this category</p><ul><li>The javascript and css files. We use finger printing technique to generate unique file names. These files have their md5 checksum appended to the filename.</li><li>The images uploaded via bahmni apps have a unique url per image (Eg: Radiology Documents, Patient Files, Consultation Images etc)&nbsp;</li></ul><h3>Static resources which have single url and might change on each deployment which can be cached for shorter duration</h3><p>The following resources belong this category</p><ul><li>Static html files, images in bahmni apps (We'll try to get unique urls for these too in future)</li><li>The patient images captured in registration</li></ul><p>&nbsp;</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/7110693"
+      }
+    },
+    "view": {
+      "value": "<p>There are two types caching used in Bahmni</p><ol><li>Caching reference data at proxy server (Apache)</li><li><span style=\"line-height: 1.4285715;\">Caching static resources at client side (Browsers)</span></li></ol><h2 id=\"Caching-Cachingreferencedataatproxyserver\"><span class=\"legacy-color-text-blue1\">Caching reference data at proxy server</span></h2><p>This is achieved by setting appropriate &quot;Expires&quot; headers on the HTTP response. The expire headers is set by bahmni-core module - org.openmrs.module.bahmnicore.web.filter.CacheHeadersFilter. Currently we cache all concepts for a duration specified in global property bahmni.cacheHeadersFilter.expiresDuration (in minutes). This allows proxy server like Apache to cache this response for this duration.</p><h2 id=\"Caching-Cachingstaticresourcesatclientside\"><span class=\"legacy-color-text-default\">Caching static resources at client side</span></h2><p><span class=\"legacy-color-text-default\"> </span>This is achieved by sending <span style=\"line-height: 1.4285715;\">Cache-Control: </span><span style=\"line-height: 1.4285715;\">max-age=xxxxx and Etag headers. There are two types of data which can cached at client side</span></p><h3 id=\"Caching-Staticresourceswithuniqueurlswhichcanbecachedforever\">Static resources with unique urls which can be cached for ever</h3><p>These static resources  served by apache configured to have appropriate cache headers. This is configured using puppet scripts. The following resources belong this category</p><ul><li>The javascript and css files. We use finger printing technique to generate unique file names. These files have their md5 checksum appended to the filename.</li><li>The images uploaded via bahmni apps have a unique url per image (Eg: Radiology Documents, Patient Files, Consultation Images etc) </li></ul><h3 id=\"Caching-Staticresourceswhichhavesingleurlandmightchangeoneachdeploymentwhichcanbecachedforshorterduration\">Static resources which have single url and might change on each deployment which can be cached for shorter duration</h3><p>The following resources belong this category</p><ul><li>Static html files, images in bahmni apps (We'll try to get unique urls for these too in future)</li><li>The patient images captured in registration</li></ul><p> </p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/7110693"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/7110693/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/7110693/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 6257
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/7110693/child",
+    "restrictions": "/rest/api/content/7110693/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/7110693/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=7110693",
+    "webui": "/spaces/BAH/pages/7110693/Caching",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/7110693",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/7110693",
+    "tinyui": "/x/JYBs",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

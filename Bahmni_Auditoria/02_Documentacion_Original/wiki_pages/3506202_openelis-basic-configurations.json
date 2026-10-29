@@ -1,0 +1,178 @@
+{
+  "id": "3506202",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3506202",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzUwNjIwMg==",
+  "status": "current",
+  "title": "OpenELIS Basic Configurations",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:5ded4f42-2e54-4aa7-8d99-0e638d234a4d",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Pankaj Kanchankar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:5ded4f42-2e54-4aa7-8d99-0e638d234a4d",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Pankaj Kanchankar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:5ded4f42-2e54-4aa7-8d99-0e638d234a4d"
+      }
+    },
+    "createdDate": "2014-05-05T10:39:40.060Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3506202/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Himabindu Thungathurty",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Akkinepalli",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66"
+      }
+    },
+    "when": "2017-01-18T06:19:46.932Z",
+    "friendlyWhen": "Jan 18, 2017",
+    "message": "",
+    "number": 14,
+    "minorEdit": false,
+    "syncRev": "0._JP5uix7PxelhDAMqSW1iA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$3506202.84",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3506202"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3506202/version/14"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p>This page captures basic configurations that are required to be done in OpenELIS.</p><h2>Steps</h2><h3><strong>1.&nbsp;Configure the Organization</strong></h3><p><span style=\"color: rgb(51,51,51);\">OpenELIS needs an Organization to be defined. This will be different for different implementations. To add an organization, go to &quot;Administration&quot; screen in OpenELIS.</span></p><p><strong style=\"line-height: 1.4285715;\">Configuring default organization</strong><span style=\"line-height: 1.4285715;\">:&nbsp;</span>Add the following sql as migration in &lt;implementation-config&gt;/openelis/migrations/liquibase.xml &nbsp;to configure the 'defaultOrganizationName' for the implementation.</p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"3c846ca2-cc4d-487f-ba20-2984127c1986\"><ac:rich-text-body><p>The 'defaultOrganizationName' is needed to sync department from openMRS to openELIS. In the SQL below, 'Bahmni' is used as the organization name, and should be replaced with the organization name as per the implementation.</p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"02e0c508-5a86-4d47-bd24-d4eefd748ae8\"><ac:rich-text-body><p>Health centre has been removed from OpenELIS. However existing features such as sync from OpenMRS to ELIS, patient creation in ELIS, ELIS reports and flow-back of lab results have not been interrupted and continue to function as such.</p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"9fa7d39d-6f51-42b9-870a-012e55521cd8\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[INSERT INTO site_information(id, name, lastupdated, description, value, encrypted, value_type) VALUES ( nextVal( 'site_information_seq' ) , 'defaultOrganizationName', now(), 'Default organization name', 'Bahmni', 'f', 'text' );]]></ac:plain-text-body></ac:structured-macro><p><br /></p><h3>2.<strong>Configure</strong>&nbsp;the Hospital Logo, Name and Address</h3><ul style=\"list-style-type: square;\"><li>To configure hospital logo - add the logo image in &lt;implementation&gt;_config/openelis/images folder in the name of &nbsp;labLogo.jpg as the name of the image file. (Puppet deploy will take care that it is added to the right folder to be picked up from for the report).</li><li>If you do not want to display logo for any implementation - update site_information table clinlims with name ='useLogoInReport' and set value &nbsp;to false.</li><li>To configure Hospital Name - add migration - which updates site_information table in clinlims with name = 'SiteName' and set &nbsp;value as 'name of the hospital'</li><li>To configure Hospital address - add migration - which updates site_information table in clinlims with column name = 'additional site info' and set value as 'address for the hospital'</li></ul><h3>3. Configuration through OpenELIS Admin UI</h3><ul style=\"list-style-type: square;\"><li>In the OpenELIS, go to Administration section.</li><li>Select &quot;Printed Reports Configuration&quot; to get to Report configurations.</li><li>Edit &quot;<span style=\"color: rgb(0,0,0);\">SiteName&quot; to update the</span>&nbsp;Hospital name.</li><li>Edit &quot;<span style=\"color: rgb(0,0,0);\">additional site info&quot; to update Site </span>address or any one liner about hospital.</li><li>Edit &quot;<span style=\"color: rgb(0,0,0);\">lab logo&quot; to &nbsp;upload the Logo file.</span></li><li>Set &quot;useLogoInReports&quot; to &quot;true&quot; to ensure that Hospital Logo is displayed on the report.</li></ul><h3>4. Configure Provider&nbsp;Information</h3><ul><li>To add new Requester name when creating a sample from OpenELIS UI - Add a new provider in provider table and make sure the &quot;is_active&quot; column in the person table for that provider should be checked. Then that provider name will be shown in the&nbsp;Requestor's name dropdown list.</li><li>If a lab order given from MRS to ELIS and the provider who has given lab order from MRS is already present in the ELIS then that provider name will be automatically populated for that lab order while collecting the sample.&nbsp;</li></ul></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"8450e577-7882-4e1b-ae52-c2950ec062ba\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"2ecf4e5d-ee5a-47a2-8fca-c2f2091f69d8\" /></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Laboratory Management\" /><ac:plain-text-link-body><![CDATA[Laboratory Management - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Laboratory\" /><ac:plain-text-link-body><![CDATA[Laboratory Management - User Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"93152c5d-6bea-40d9-a973-a55a64c04d31\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Configure Lab Data\" /><ac:plain-text-link-body><![CDATA[Lab Master Data Setup]]></ac:plain-text-link-body></ac:link></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3506202"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\"><style>[data-colorid=dw426fp11x]{color:#333333} html[data-color-mode=dark] [data-colorid=dw426fp11x]{color:#cccccc}</style>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"OpenELISBasicConfigurations-PurposeandBenefits\">Purpose and Benefits</h2><p>This page captures basic configurations that are required to be done in OpenELIS.</p><h2 id=\"OpenELISBasicConfigurations-Steps\">Steps</h2><h3 id=\"OpenELISBasicConfigurations-1.ConfiguretheOrganization\"><strong>1.&nbsp;Configure the Organization</strong></h3><p><span data-colorid=\"dw426fp11x\">OpenELIS needs an Organization to be defined. This will be different for different implementations. To add an organization, go to &quot;Administration&quot; screen in OpenELIS.</span></p><p><strong style=\"line-height: 1.4285715;\">Configuring default organization</strong><span style=\"line-height: 1.4285715;\">:&nbsp;</span>Add the following sql as migration in &lt;implementation-config&gt;/openelis/migrations/liquibase.xml &nbsp;to configure the 'defaultOrganizationName' for the implementation.</p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3c846ca2-cc4d-487f-ba20-2984127c1986\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>The 'defaultOrganizationName' is needed to sync department from openMRS to openELIS. In the SQL below, 'Bahmni' is used as the organization name, and should be replaced with the organization name as per the implementation.</p></div></div><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"02e0c508-5a86-4d47-bd24-d4eefd748ae8\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Health centre has been removed from OpenELIS. However existing features such as sync from OpenMRS to ELIS, patient creation in ELIS, ELIS reports and flow-back of lab results have not been interrupted and continue to function as such.</p></div></div><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9fa7d39d-6f51-42b9-870a-012e55521cd8\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: true; theme: Confluence\" data-theme=\"Confluence\">INSERT INTO site_information(id, name, lastupdated, description, value, encrypted, value_type) VALUES ( nextVal( 'site_information_seq' ) , 'defaultOrganizationName', now(), 'Default organization name', 'Bahmni', 'f', 'text' );</pre>\n</div></div><p><br /></p><h3 id=\"OpenELISBasicConfigurations-2.ConfiguretheHospitalLogo,NameandAddress\">2.<strong>Configure</strong>&nbsp;the Hospital Logo, Name and Address</h3><ul style=\"list-style-type: square;\"><li>To configure hospital logo - add the logo image in &lt;implementation&gt;_config/openelis/images folder in the name of &nbsp;labLogo.jpg as the name of the image file. (Puppet deploy will take care that it is added to the right folder to be picked up from for the report).</li><li>If you do not want to display logo for any implementation - update site_information table clinlims with name ='useLogoInReport' and set value &nbsp;to false.</li><li>To configure Hospital Name - add migration - which updates site_information table in clinlims with name = 'SiteName' and set &nbsp;value as 'name of the hospital'</li><li>To configure Hospital address - add migration - which updates site_information table in clinlims with column name = 'additional site info' and set value as 'address for the hospital'</li></ul><h3 id=\"OpenELISBasicConfigurations-3.ConfigurationthroughOpenELISAdminUI\">3. Configuration through OpenELIS Admin UI</h3><ul style=\"list-style-type: square;\"><li>In the OpenELIS, go to Administration section.</li><li>Select &quot;Printed Reports Configuration&quot; to get to Report configurations.</li><li>Edit &quot;<span class=\"legacy-color-text-default\">SiteName&quot; to update the</span>&nbsp;Hospital name.</li><li>Edit &quot;<span class=\"legacy-color-text-default\">additional site info&quot; to update Site </span>address or any one liner about hospital.</li><li>Edit &quot;<span class=\"legacy-color-text-default\">lab logo&quot; to &nbsp;upload the Logo file.</span></li><li>Set &quot;useLogoInReports&quot; to &quot;true&quot; to ensure that Hospital Logo is displayed on the report.</li></ul><h3 id=\"OpenELISBasicConfigurations-4.ConfigureProviderInformation\">4. Configure Provider&nbsp;Information</h3><ul><li>To add new Requester name when creating a sample from OpenELIS UI - Add a new provider in provider table and make sure the &quot;is_active&quot; column in the person table for that provider should be checked. Then that provider name will be shown in the&nbsp;Requestor's name dropdown list.</li><li>If a lab order given from MRS to ELIS and the provider who has given lab order from MRS is already present in the ELIS then that provider name will be automatically populated for that lab order while collecting the sample.&nbsp;</li></ul></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8450e577-7882-4e1b-ae52-c2950ec062ba\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"2ecf4e5d-ee5a-47a2-8fca-c2f2091f69d8\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604211/Laboratory+Management\" data-linked-resource-id=\"32604211\" data-linked-resource-version=\"7\" data-linked-resource-type=\"page\">Laboratory Management - Feature Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32014358/Laboratory\" data-linked-resource-id=\"32014358\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Laboratory Management - User Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"93152c5d-6bea-40d9-a973-a55a64c04d31\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/18415840/Configure+Lab+Data\" data-linked-resource-id=\"18415840\" data-linked-resource-version=\"7\" data-linked-resource-type=\"page\">Lab Master Data Setup</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3506202"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "openelis",
+          "id": "34635779",
+          "label": "openelis"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 1,
+      "_links": {
+        "next": "/rest/api/content/3506202/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3506202/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 154900812
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3506202/child",
+    "restrictions": "/rest/api/content/3506202/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3506202/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3506202",
+    "webui": "/spaces/BAH/pages/3506202/OpenELIS+Basic+Configurations",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3506202",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3506202",
+    "tinyui": "/x/GoA1",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

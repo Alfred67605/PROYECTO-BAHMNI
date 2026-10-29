@@ -1,0 +1,171 @@
+{
+  "id": "32014610",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/32014610",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzIwMTQ2MTA=",
+  "status": "current",
+  "title": "Inventory Management System",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2015-11-03T18:15:45.461Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014610/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "when": "2017-03-16T05:47:35.051Z",
+    "friendlyWhen": "Mar 16, 2017",
+    "message": "",
+    "number": 14,
+    "minorEdit": false,
+    "syncRev": "0.wNcm8krULu8QN3WSGAFVDw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$32014610.65",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/32014610"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014610/version/14"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p><span style=\"color: rgb(0,0,0);\">Bahmni uses <a href=\"https://www.odoo.com/\">Odoo</a> mostly for Sales Management, Purchase Management, and for Inventory and Accounting. OpenERP has been adapted for health facilities to work seamlessly with Bahmni.</span></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"96db54ed-14f8-4907-9387-f01b880132be\"><ac:rich-text-body><p>Since Bahmni is based on Odoo/OpenERP, you can also refer to the Odoo documentation for in-depth information on <a href=\"https://www.erponline.vn/en/documentation/user-manuals/92-warehouse-management/257-managing-physical-inventory-structure\">Warehouse Management</a>. Or here: <a href=\"https://doc.odoo.com/book/#books-link\">https://doc.odoo.com/book/#books-link</a></p></ac:rich-text-body></ac:structured-macro><h2>Steps</h2><h3>1. Configure OpenERP/Odo</h3><p>Please&nbsp;<ac:link><ri:page ri:content-title=\"OpenERP Basic Configurations\" ri:version-at-save=\"10\" /><ac:plain-text-link-body><![CDATA[refer to this link]]></ac:plain-text-link-body></ac:link>&nbsp;on details to&nbsp;Configure OpenERP/Odoo.</p><h3>2. Setup Syncing between Odoo and Bahmni</h3><p>Please&nbsp;<a href=\"https://bahmni.atlassian.net/wiki/pages/viewpage.action?pageId=114627969\">refer to this link</a>&nbsp;to setup Syncing between OpenERP/Odoo&nbsp;and Bahmni.</p><h3>3.&nbsp;Configure Location, Warehouse and Shop</h3><p>Please&nbsp;<a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Pharmacy+System#PharmacySystem-5.ConfigureLocation,WarehouseandShop\">refer to this link</a>&nbsp;to configure locations, warehouses and shops.</p><h3><span style=\"color: rgb(0,0,0);\">4. View Inventory at Different Locations</span></h3><p><span style=\"color: rgb(0,0,0);\">Since we have different locations we can analyze the current inventory or inventory over a date-range. </span></p><p><span style=\"color: rgb(0,0,0);\">To do this navigate to Warehouse &rarr; Choose location <span style=\"color: rgb(0,0,0);\">&rarr; &nbsp;S</span>elect the required option.</span></p><p><span style=\"color: rgb(0,0,0);text-align: center;\">A new location can be created by clicking on the &quot;Create&quot; button and giving appropriate parameters.</span></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\"><ac:image ac:width=\"600\"><ri:attachment ri:filename=\"Screen Shot 2016-03-08 at 16.31.37.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\"><strong>Creating a New Location in OpenERP</strong></span></p><p><span style=\"color: rgb(0,0,0);\"><br /></span></p><p style=\"margin-left: 60.0px;\"><span style=\"color: rgb(0,0,0);\"><ac:image ac:width=\"600\"><ri:attachment ri:filename=\"Screen Shot 2016-03-08 at 16.01.17.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\"><strong>Current Inventory at Pharmacy Location</strong></span></p><h3 style=\"text-align: left;\"><span style=\"color: rgb(0,0,0);\">5. View<strong>&nbsp;Product Quantity at a Particular Location</strong></span></h3><p>Search for the product in the search bar to view the actual stock and the future stock for the particular location.</p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"34a19bde-a51d-4c8f-8ef0-c1d5ebd378e9\"><ac:rich-text-body><ul><li>Future stock equals actual stock once the stock units are delivered.</li><li>Drug Orders created in openMRS sync as products in openERP.</li></ul></ac:rich-text-body></ac:structured-macro><h3 style=\"text-align: left;\"><span style=\"color: rgb(0,0,0);\"><strong><br /><ac:image ac:align=\"center\" ac:width=\"600\"><ri:attachment ri:filename=\"Screen Shot 2016-03-08 at 16.04.43.png\" ri:version-at-save=\"1\" /></ac:image></strong></span></h3><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\"><strong>Aceclofenac Stock at Pharmacy Location</strong></span></p><h3 style=\"text-align: left;\"><span style=\"color: rgb(0,0,0);\">6. View Batch Level Stock Units Per Location</span></h3><p><span style=\"color: rgb(0,0,0);\">Navigate to &quot;Serial Number by Location&quot; to view batch level stock units per location. </span></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"a71a7cee-eda5-4ddc-94a8-ae902796a4db\"><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\">openERP does a double entry of drugs. </span></p><p><span style=\"color: rgb(0,0,0);\">For example, when a drug is ordered, it is reduced at the stock location, and increases correspondingly at the customer location so that the drug quantities balance-out.</span></p></ac:rich-text-body></ac:structured-macro><p><br /></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:width=\"600\"><ri:attachment ri:filename=\"Screen Shot 2016-03-08 at 16.11.42.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\"><strong>Batch Level Stock Units of Aceclofenac across Locations</strong></span></p><h3 style=\"text-align: left;\"><span style=\"color: rgb(0,0,0);\">7. Move Stock across Locations</span></h3><p>This is used to move stock units across locations, such as X units of Aceclofenac from Stock Room to Pharmacy. This can be achieved by creating a new internal move from a configured source location to a configured destination location.</p><p><span style=\"color: rgb(0,0,0);\"><strong><ac:image ac:align=\"center\" ac:width=\"600\"><ri:attachment ri:filename=\"Screen Shot 2016-03-08 at 16.21.46.png\" ri:version-at-save=\"1\" /></ac:image></strong></span></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\"><strong>Moving Acyclovir Stock Units Across Locations</strong></span></p></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9670c6f2-8ca8-4529-ae61-a2f8c1ba9ede\"><ac:parameter ac:name=\"style\">none</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Stock / Inventory Management\" ri:version-at-save=\"13\" /><ac:plain-text-link-body><![CDATA[Stock / Inventory Management - Feature Guide]]></ac:plain-text-link-body></ac:link></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Inventory Management\" ri:version-at-save=\"5\" /><ac:plain-text-link-body><![CDATA[Stock / Inventory Management - User Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/32014610"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"InventoryManagementSystem-PurposeandBenefits\">Purpose and Benefits</h2><p><span class=\"legacy-color-text-default\">Bahmni uses <a class=\"external-link\" href=\"https://www.odoo.com/\" rel=\"nofollow\">Odoo</a> mostly for Sales Management, Purchase Management, and for Inventory and Accounting. OpenERP has been adapted for health facilities to work seamlessly with Bahmni.</span></p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"96db54ed-14f8-4907-9387-f01b880132be\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Since Bahmni is based on Odoo/OpenERP, you can also refer to the Odoo documentation for in-depth information on <a class=\"external-link\" href=\"https://www.erponline.vn/en/documentation/user-manuals/92-warehouse-management/257-managing-physical-inventory-structure\" rel=\"nofollow\">Warehouse Management</a>. Or here: <a class=\"external-link\" href=\"https://doc.odoo.com/book/#books-link\" rel=\"nofollow\">https://doc.odoo.com/book/#books-link</a></p></div></div><h2 id=\"InventoryManagementSystem-Steps\">Steps</h2><h3 id=\"InventoryManagementSystem-1.ConfigureOpenERP/Odo\">1. Configure OpenERP/Odo</h3><p>Please <a href=\"/wiki/spaces/BAH/pages/21790747/OpenERP+Basic+Configurations\" data-linked-resource-id=\"21790747\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">refer to this link</a> on details to Configure OpenERP/Odoo.</p><h3 id=\"InventoryManagementSystem-2.SetupSyncingbetweenOdooandBahmni\">2. Setup Syncing between Odoo and Bahmni</h3><p>Please <a href=\"https://bahmni.atlassian.net/wiki/pages/viewpage.action?pageId=114627969\" rel=\"nofollow\">refer to this link</a> to setup Syncing between OpenERP/Odoo and Bahmni.</p><h3 id=\"InventoryManagementSystem-3.ConfigureLocation,WarehouseandShop\">3. Configure Location, Warehouse and Shop</h3><p>Please <a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Pharmacy+System#PharmacySystem-5.ConfigureLocation,WarehouseandShop\" rel=\"nofollow\">refer to this link</a> to configure locations, warehouses and shops.</p><h3 id=\"InventoryManagementSystem-4.ViewInventoryatDifferentLocations\"><span class=\"legacy-color-text-default\">4. View Inventory at Different Locations</span></h3><p><span class=\"legacy-color-text-default\">Since we have different locations we can analyze the current inventory or inventory over a date-range. </span></p><p><span class=\"legacy-color-text-default\">To do this navigate to Warehouse → Choose location <span class=\"legacy-color-text-default\">→  S</span>elect the required option.</span></p><p><span style=\"text-align: center;\" class=\"legacy-color-text-default\">A new location can be created by clicking on the &quot;Create&quot; button and giving appropriate parameters.</span></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014610/Screen%20Shot%202016-03-08%20at%2016.31.37.png?version=1&amp;modificationDate=1457434913500&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=334\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014610/Screen%20Shot%202016-03-08%20at%2016.31.37.png?version=1&amp;modificationDate=1457434913500&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"45154334\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-03-08 at 16.31.37.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32014610\" data-linked-resource-container-version=\"14\" data-media-id=\"57044889-9bff-4561-aa16-6e82471736f0\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014610/Screen%20Shot%202016-03-08%20at%2016.31.37.png?version=1&amp;modificationDate=1457434913500&amp;cacheVersion=1&amp;api=v2&amp;width=1200&amp;height=668 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014610/Screen%20Shot%202016-03-08%20at%2016.31.37.png?version=1&amp;modificationDate=1457434913500&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=334 1x\"></span></span></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\"><strong>Creating a New Location in OpenERP</strong></span></p><p><span class=\"legacy-color-text-default\"><br/></span></p><p style=\"margin-left: 60.0px;\"><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014610/Screen%20Shot%202016-03-08%20at%2016.01.17.png?version=1&amp;modificationDate=1457433103694&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=300\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014610/Screen%20Shot%202016-03-08%20at%2016.01.17.png?version=1&amp;modificationDate=1457433103694&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"45154330\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-03-08 at 16.01.17.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32014610\" data-linked-resource-container-version=\"14\" data-media-id=\"6ac778b5-4605-4018-8518-77bded27887e\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014610/Screen%20Shot%202016-03-08%20at%2016.01.17.png?version=1&amp;modificationDate=1457433103694&amp;cacheVersion=1&amp;api=v2&amp;width=1200&amp;height=600 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014610/Screen%20Shot%202016-03-08%20at%2016.01.17.png?version=1&amp;modificationDate=1457433103694&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=300 1x\"></span></span></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\"><strong>Current Inventory at Pharmacy Location</strong></span></p><h3 style=\"text-align: left;\" id=\"InventoryManagementSystem-5.ViewProductQuantityataParticularLocation\"><span class=\"legacy-color-text-default\">5. View<strong> Product Quantity at a Particular Location</strong></span></h3><p>Search for the product in the search bar to view the actual stock and the future stock for the particular location.</p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"34a19bde-a51d-4c8f-8ef0-c1d5ebd378e9\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><ul><li>Future stock equals actual stock once the stock units are delivered.</li><li>Drug Orders created in openMRS sync as products in openERP.</li></ul></div></div><h3 style=\"text-align: left;\" id=\"InventoryManagementSystem-\"><span class=\"legacy-color-text-default\"><strong><br/><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014610/Screen%20Shot%202016-03-08%20at%2016.04.43.png?version=1&amp;modificationDate=1457433307796&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=143\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014610/Screen%20Shot%202016-03-08%20at%2016.04.43.png?version=1&amp;modificationDate=1457433307796&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"45154331\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-03-08 at 16.04.43.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32014610\" data-linked-resource-container-version=\"14\" data-media-id=\"076b83a5-c261-490c-9cbc-cc4709425df0\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014610/Screen%20Shot%202016-03-08%20at%2016.04.43.png?version=1&amp;modificationDate=1457433307796&amp;cacheVersion=1&amp;api=v2&amp;width=1200&amp;height=286 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014610/Screen%20Shot%202016-03-08%20at%2016.04.43.png?version=1&amp;modificationDate=1457433307796&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=143 1x\"></span></strong></span></h3><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\"><strong>Aceclofenac Stock at Pharmacy Location</strong></span></p><h3 style=\"text-align: left;\" id=\"InventoryManagementSystem-6.ViewBatchLevelStockUnitsPerLocation\"><span class=\"legacy-color-text-default\">6. View Batch Level Stock Units Per Location</span></h3><p><span class=\"legacy-color-text-default\">Navigate to &quot;Serial Number by Location&quot; to view batch level stock units per location. </span></p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a71a7cee-eda5-4ddc-94a8-ae902796a4db\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><span class=\"legacy-color-text-default\">openERP does a double entry of drugs. </span></p><p><span class=\"legacy-color-text-default\">For example, when a drug is ordered, it is reduced at the stock location, and increases correspondingly at the customer location so that the drug quantities balance-out.</span></p></div></div><p><br/></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014610/Screen%20Shot%202016-03-08%20at%2016.11.42.png?version=1&amp;modificationDate=1457433780533&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=310\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014610/Screen%20Shot%202016-03-08%20at%2016.11.42.png?version=1&amp;modificationDate=1457433780533&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"45154332\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-03-08 at 16.11.42.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32014610\" data-linked-resource-container-version=\"14\" data-media-id=\"474e466d-8cb2-4ba7-8e30-d90eb8d42d10\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014610/Screen%20Shot%202016-03-08%20at%2016.11.42.png?version=1&amp;modificationDate=1457433780533&amp;cacheVersion=1&amp;api=v2&amp;width=1200&amp;height=620 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014610/Screen%20Shot%202016-03-08%20at%2016.11.42.png?version=1&amp;modificationDate=1457433780533&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=310 1x\"></span></span></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\"><strong>Batch Level Stock Units of Aceclofenac across Locations</strong></span></p><h3 style=\"text-align: left;\" id=\"InventoryManagementSystem-7.MoveStockacrossLocations\"><span class=\"legacy-color-text-default\">7. Move Stock across Locations</span></h3><p>This is used to move stock units across locations, such as X units of Aceclofenac from Stock Room to Pharmacy. This can be achieved by creating a new internal move from a configured source location to a configured destination location.</p><p><span class=\"legacy-color-text-default\"><strong><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014610/Screen%20Shot%202016-03-08%20at%2016.21.46.png?version=1&amp;modificationDate=1457434328729&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=320\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014610/Screen%20Shot%202016-03-08%20at%2016.21.46.png?version=1&amp;modificationDate=1457434328729&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"45154333\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-03-08 at 16.21.46.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32014610\" data-linked-resource-container-version=\"14\" data-media-id=\"6f1777d8-31f5-4f63-820f-0fdc34573259\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014610/Screen%20Shot%202016-03-08%20at%2016.21.46.png?version=1&amp;modificationDate=1457434328729&amp;cacheVersion=1&amp;api=v2&amp;width=1200&amp;height=640 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014610/Screen%20Shot%202016-03-08%20at%2016.21.46.png?version=1&amp;modificationDate=1457434328729&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=320 1x\"></span></strong></span></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\"><strong>Moving Acyclovir Stock Units Across Locations</strong></span></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-cssliststyle=\"none\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"9670c6f2-8ca8-4529-ae61-a2f8c1ba9ede\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/32604221/Stock+Inventory+Management\" data-linked-resource-id=\"32604221\" data-linked-resource-version=\"15\" data-linked-resource-type=\"page\">Stock / Inventory Management - Feature Guide</a></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32014377/Inventory+Management\" data-linked-resource-id=\"32014377\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Stock / Inventory Management - User Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/32014610"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/32014610/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014610/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1317897154
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/32014610/child",
+    "restrictions": "/rest/api/content/32014610/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/32014610/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=32014610",
+    "webui": "/spaces/BAH/pages/32014610/Inventory+Management+System",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/32014610",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014610",
+    "tinyui": "/x/EoHoAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

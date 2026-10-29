@@ -1,0 +1,52 @@
+global:
+  nodeSelector: {}
+  affinity: {}
+  tolerations: {}
+
+replicaCount: 1
+
+metadata:
+  labels:
+    environment: dev
+
+image:
+  repository: bahmni
+  name: pacs-integration
+  tag: latest
+
+
+config:
+  TZ: ""
+  PACS_INTEGRATION_DB_HOST: ""
+  PACS_INTEGRATION_DB_PORT: ""
+  PACS_INTEGRATION_DB_NAME: ""
+  OPENMRS_HOST: ""
+  OPENMRS_PORT: ""
+  CREATE_IMAGING_STUDY_ENABLED: false
+  CONCEPT_CODE_RESOLVER_SOURCE_PRIORITY: "PACS Procedure Code"
+  HL7_SENDING_APPLICATION: "Bahmni EMR"
+  HL7_SENDING_FACILITY: "Bahmni Hospital"
+  HL7_RECEIVING_APPLICATION: "Bahmni PACS"
+  HL7_RECEIVING_FACILITY: "Bahmni Radiology"
+  DCM4CHEE_BASE_URL: ""
+  DCM4CHEE_AET: "DCM4CHEE"
+
+
+secrets:
+  PACS_INTEGRATION_DB_USERNAME: ""
+  PACS_INTEGRATION_DB_PASSWORD: ""
+  OPENMRS_ATOMFEED_USER: ""
+  OPENMRS_ATOMFEED_PASSWORD: ""
+
+
+autoscaling:
+  enabled: false
+
+service:
+  type: ClusterIP
+  port: 2576
+  targetPort: 2576
+
+nodeSelector: {}
+affinity: {}
+tolerations: {}

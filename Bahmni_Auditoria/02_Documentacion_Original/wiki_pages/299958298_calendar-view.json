@@ -1,0 +1,170 @@
+{
+  "id": "299958298",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/299958298",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjk5OTU4Mjk4",
+  "status": "current",
+  "title": "Calendar View",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "createdDate": "2017-11-23T16:57:03.537Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/299958298/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "when": "2017-11-26T08:09:57.006Z",
+    "friendlyWhen": "Nov 26, 2017",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.6h-LcsxetRHP7uhjxDJQuA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$299958298.23",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/299958298"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/299958298/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>About the View</h2><p>The calendar view is a visual representation of the appointments booked against providers in a given day. This will help them to see what appointments are already scheduled versus what slots are available.&nbsp;</p><p>All the appointments booked for one provider are indicated on one column and the appointments are colour coded based on the service they have been booked for. &nbsp;Thus providers can get an overview of the upcoming appointments and plan accordingly.&nbsp;</p><h2>How is it used</h2><ol><li>Firstly, the calendar view must be turned for a user to view the calendar in the appointment scheduling module. You will find steps to turn on and configure a calendar view <ac:link><ri:page ri:content-title=\"Configure Views of Appointments\" ri:version-at-save=\"4\" /><ac:plain-text-link-body><![CDATA[here]]></ac:plain-text-link-body></ac:link>.&nbsp;</li><li>To access the calendar view Click on the &quot;Manage Appointments&quot; Tab in the appointment scheduling app and then click on the &quot;Appointments List&quot; tab. By default, this will land the user on the Calendar view, if it is turned on.</li></ol><p><ac:image ac:align=\"center\" ac:border=\"true\" ac:height=\"104\" ac:width=\"840\"><ri:attachment ri:filename=\"access-calendar.png\" ri:version-at-save=\"1\" /></ac:image>&nbsp; &nbsp; &nbsp; &nbsp; <br />&nbsp; &nbsp; &nbsp;3. The calendar, by default takes you to the current day. One can use the date picker to navigate across days. Clicking on the &quot;Today&quot; button will take the user to the current day.&nbsp;</p><p><ac:image ac:align=\"center\" ac:border=\"true\" ac:height=\"402\" ac:width=\"768\"><ri:attachment ri:filename=\"date-calendar.png\" ri:version-at-save=\"1\" /></ac:image></p><p>&nbsp; &nbsp; &nbsp; &nbsp;4. For a given day, all the appointments for the day are grouped across the provider columns and displayed.&nbsp;<span>If there exists any appointment without provider for a given day - this list shall appear on &quot;No Provider&quot; column. &nbsp;</span></p><p><span style=\"margin-left: 0.0px;\"><ac:image ac:align=\"center\" ac:border=\"true\"><ri:attachment ri:filename=\"provider-column.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p>&nbsp; &nbsp; &nbsp; &nbsp;5. The appointments of a service appear in a <ac:link><ri:page ri:content-title=\"Set up Services &amp; Specialities\" ri:version-at-save=\"5\" /><ac:plain-text-link-body><![CDATA[label colour]]></ac:plain-text-link-body></ac:link> configured for the service. The slots duration and the label intervals of the calendar are displayed according to the parameters set as described <ac:link><ri:page ri:content-title=\"Configure Views of Appointments\" ri:version-at-save=\"4\" /><ac:plain-text-link-body><![CDATA[here]]></ac:plain-text-link-body></ac:link>. For e.g in the screenshot below , Label interval is of 1hour and the Slots are of 30 mins each.&nbsp;</p><p><ac:image ac:align=\"center\" ac:border=\"true\" ac:height=\"341\" ac:width=\"901\"><ri:attachment ri:filename=\"slots-labels.png\" ri:version-at-save=\"1\" /></ac:image></p><p>&nbsp; &nbsp; &nbsp; &nbsp;6. Create a new appointment: There are 2 ways to create an appointment from the Calendar view:</p><ul style=\"margin-left: 0.0px;\"><li style=\"margin-left: 0.0px;\">The add new appointment Button on top right - This will open a side panel to create a new appointment&nbsp;</li><li style=\"margin-left: 0.0px;\">Clicking on a slot in the calendar - In case of an empty slot, this will open a side panel, but with information from the calendar slot pre-populated - E.g Date, Start and end time, Provider. &nbsp;When we Click on a occupied slot - This will open a pop up. there will be an Add new appointment button. Clicking on it will open the side panel, but with information pre-populated.&nbsp;</li></ul><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Services are not pre-populated. It is expected of the user to fill the service explicitly.&nbsp;To know more about creating appointments, click <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/138182707/Creating+and+Managing+Appointments\">here</a>.</p><p><ac:image ac:align=\"center\" ac:border=\"true\"><ri:attachment ri:filename=\"addnew.png\" ri:version-at-save=\"1\" /></ac:image></p><p><ac:image ac:align=\"center\" ac:border=\"true\"><ri:attachment ri:filename=\"addnew-popup.png\" ri:version-at-save=\"1\" /></ac:image></p><p><ac:image ac:align=\"center\" ac:border=\"true\" ac:height=\"381\" ac:width=\"613\"><ri:attachment ri:filename=\"slot-info.png\" ri:version-at-save=\"1\" /></ac:image></p><p>&nbsp; &nbsp; &nbsp;7. When there are multiple appointments in the same slot for a provider, the patients appear as comma separated in the coloured slot. <br />&nbsp; &nbsp; &nbsp;8. Clicking on a slot opens up a pop up to change the status of the appointment. In case of multiple patients in a slot, there is a dropdown to select the patient and then proceed with the status change actions. The status buttons are enabled as per the appointment selected.&nbsp;</p><p>To know more about managing appointments and allowed status validations, click <ac:link><ri:page ri:content-title=\"Creating and Managing Appointments\" ri:version-at-save=\"6\" /><ac:plain-text-link-body><![CDATA[here]]></ac:plain-text-link-body></ac:link>.</p><p><ac:image ac:align=\"center\" ac:border=\"true\"><ri:attachment ri:filename=\"multiplepatient-popup.png\" ri:version-at-save=\"1\" /></ac:image></p><p><br />&nbsp; &nbsp; &nbsp;9. &nbsp;Missed and Completed appointments have an indication on the calendar to depict their status. Canceled appointments are not visible on a &nbsp; &nbsp; &nbsp; &nbsp; Calendar.&nbsp;</p><p><ac:image ac:align=\"center\" ac:border=\"true\"><ri:attachment ri:filename=\"status.png\" ri:version-at-save=\"1\" /></ac:image><br />&nbsp; &nbsp; &nbsp;10. &nbsp;Appointments in the calendar view can also be <ac:link><ri:page ri:content-title=\"List View of Appointments\" ri:version-at-save=\"4\" /><ac:plain-text-link-body><![CDATA[filtered ]]></ac:plain-text-link-body></ac:link>in the same way as the list view.&nbsp;</p><p><ac:image ac:align=\"center\" ac:border=\"true\" ac:height=\"334\" ac:width=\"628\"><ri:attachment ri:filename=\"filter-calendar.png\" ri:version-at-save=\"1\" /></ac:image></p><p><br /></p><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"44492675-b92d-460c-b620-abaeaeae1062\"><ac:parameter ac:name=\"title\">On This Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"11dd7cc6-0b79-44b0-b1d2-b6e4e3168c3a\" /></p></ac:rich-text-body></ac:structured-macro><p><br /></p><p><br /></p><p><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/299958298"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"CalendarView-AbouttheView\">About the View</h2><p>The calendar view is a visual representation of the appointments booked against providers in a given day. This will help them to see what appointments are already scheduled versus what slots are available. </p><p>All the appointments booked for one provider are indicated on one column and the appointments are colour coded based on the service they have been booked for.  Thus providers can get an overview of the upcoming appointments and plan accordingly. </p><h2 id=\"CalendarView-Howisitused\">How is it used</h2><ol><li>Firstly, the calendar view must be turned for a user to view the calendar in the appointment scheduling module. You will find steps to turn on and configure a calendar view <a href=\"/wiki/spaces/BAH/pages/137953307/Configure+Views+of+Appointments\" data-linked-resource-id=\"137953307\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">here</a>. </li><li>To access the calendar view Click on the &quot;Manage Appointments&quot; Tab in the appointment scheduling app and then click on the &quot;Appointments List&quot; tab. By default, this will land the user on the Calendar view, if it is turned on.</li></ol><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" height=\"104\" width=\"840\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/299958298/access-calendar.png?version=1&amp;modificationDate=1511683262324&amp;cacheVersion=1&amp;api=v2&amp;width=840&amp;height=104\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/299958298/access-calendar.png?version=1&amp;modificationDate=1511683262324&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"299336055\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"access-calendar.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"299958298\" data-linked-resource-container-version=\"2\" data-media-id=\"6cd41119-1835-48f1-8ad5-d52cf6b2fe96\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/299958298/access-calendar.png?version=1&amp;modificationDate=1511683262324&amp;cacheVersion=1&amp;api=v2&amp;width=840&amp;height=104 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/299958298/access-calendar.png?version=1&amp;modificationDate=1511683262324&amp;cacheVersion=1&amp;api=v2&amp;width=840&amp;height=104 1x\"></span>        <br/>     3. The calendar, by default takes you to the current day. One can use the date picker to navigate across days. Clicking on the &quot;Today&quot; button will take the user to the current day. </p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" height=\"402\" width=\"768\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/299958298/date-calendar.png?version=1&amp;modificationDate=1511683264691&amp;cacheVersion=1&amp;api=v2&amp;width=768&amp;height=402\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/299958298/date-calendar.png?version=1&amp;modificationDate=1511683264691&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"299860412\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"date-calendar.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"299958298\" data-linked-resource-container-version=\"2\" data-media-id=\"00782533-a2d0-400e-96c7-36cfec38a456\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/299958298/date-calendar.png?version=1&amp;modificationDate=1511683264691&amp;cacheVersion=1&amp;api=v2&amp;width=768&amp;height=402 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/299958298/date-calendar.png?version=1&amp;modificationDate=1511683264691&amp;cacheVersion=1&amp;api=v2&amp;width=768&amp;height=402 1x\"></span></p><p>       4. For a given day, all the appointments for the day are grouped across the provider columns and displayed. <span>If there exists any appointment without provider for a given day - this list shall appear on &quot;No Provider&quot; column.  </span></p><p><span style=\"margin-left: 0.0px;\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/299958298/provider-column.png?version=1&amp;modificationDate=1511683267748&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/299958298/provider-column.png?version=1&amp;modificationDate=1511683267748&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"299631070\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"provider-column.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"299958298\" data-linked-resource-container-version=\"2\" data-media-id=\"623d8c30-07a3-4e48-a51f-70c94becd995\" data-media-type=\"file\"></span></span></p><p>       5. The appointments of a service appear in a <a href=\"/wiki/spaces/BAH/pages/137953304/Set+up+Services+Specialities\" data-linked-resource-id=\"137953304\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">label colour</a> configured for the service. The slots duration and the label intervals of the calendar are displayed according to the parameters set as described <a href=\"/wiki/spaces/BAH/pages/137953307/Configure+Views+of+Appointments\" data-linked-resource-id=\"137953307\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">here</a>. For e.g in the screenshot below , Label interval is of 1hour and the Slots are of 30 mins each. </p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" height=\"341\" width=\"901\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/299958298/slots-labels.png?version=1&amp;modificationDate=1511683269304&amp;cacheVersion=1&amp;api=v2&amp;width=901&amp;height=341\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/299958298/slots-labels.png?version=1&amp;modificationDate=1511683269304&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"299598265\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"slots-labels.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"299958298\" data-linked-resource-container-version=\"2\" data-media-id=\"dac438a2-bd65-4057-b969-8102a3357310\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/299958298/slots-labels.png?version=1&amp;modificationDate=1511683269304&amp;cacheVersion=1&amp;api=v2&amp;width=901&amp;height=341 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/299958298/slots-labels.png?version=1&amp;modificationDate=1511683269304&amp;cacheVersion=1&amp;api=v2&amp;width=901&amp;height=341 1x\"></span></p><p>       6. Create a new appointment: There are 2 ways to create an appointment from the Calendar view:</p><ul style=\"margin-left: 0.0px;\"><li style=\"margin-left: 0.0px;\">The add new appointment Button on top right - This will open a side panel to create a new appointment </li><li style=\"margin-left: 0.0px;\">Clicking on a slot in the calendar - In case of an empty slot, this will open a side panel, but with information from the calendar slot pre-populated - E.g Date, Start and end time, Provider.  When we Click on a occupied slot - This will open a pop up. there will be an Add new appointment button. Clicking on it will open the side panel, but with information pre-populated. </li></ul><p>          Services are not pre-populated. It is expected of the user to fill the service explicitly. To know more about creating appointments, click <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/138182707/Creating+and+Managing+Appointments\" rel=\"nofollow\">here</a>.</p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/299958298/addnew.png?version=1&amp;modificationDate=1511683263106&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/299958298/addnew.png?version=1&amp;modificationDate=1511683263106&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"299368846\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"addnew.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"299958298\" data-linked-resource-container-version=\"2\" data-media-id=\"8734ad9b-fd04-4c16-b8e7-49b626588a07\" data-media-type=\"file\"></span></p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/299958298/addnew-popup.png?version=1&amp;modificationDate=1511683263759&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/299958298/addnew-popup.png?version=1&amp;modificationDate=1511683263759&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"299598260\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"addnew-popup.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"299958298\" data-linked-resource-container-version=\"2\" data-media-id=\"b22b2b24-fb23-4d71-bcd0-15d5e6de55d0\" data-media-type=\"file\"></span></p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" height=\"381\" width=\"613\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/299958298/slot-info.png?version=1&amp;modificationDate=1511683268623&amp;cacheVersion=1&amp;api=v2&amp;width=613&amp;height=381\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/299958298/slot-info.png?version=1&amp;modificationDate=1511683268623&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"299958614\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"slot-info.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"299958298\" data-linked-resource-container-version=\"2\" data-media-id=\"a2e921ff-f9cf-483c-91db-8212e44dd4fe\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/299958298/slot-info.png?version=1&amp;modificationDate=1511683268623&amp;cacheVersion=1&amp;api=v2&amp;width=613&amp;height=381 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/299958298/slot-info.png?version=1&amp;modificationDate=1511683268623&amp;cacheVersion=1&amp;api=v2&amp;width=613&amp;height=381 1x\"></span></p><p>     7. When there are multiple appointments in the same slot for a provider, the patients appear as comma separated in the coloured slot. <br/>     8. Clicking on a slot opens up a pop up to change the status of the appointment. In case of multiple patients in a slot, there is a dropdown to select the patient and then proceed with the status change actions. The status buttons are enabled as per the appointment selected. </p><p>To know more about managing appointments and allowed status validations, click <a href=\"/wiki/spaces/BAH/pages/138182707/Creating+and+Managing+Appointments\" data-linked-resource-id=\"138182707\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">here</a>.</p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/299958298/multiplepatient-popup.png?version=1&amp;modificationDate=1511683266678&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/299958298/multiplepatient-popup.png?version=1&amp;modificationDate=1511683266678&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"300122426\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"multiplepatient-popup.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"299958298\" data-linked-resource-container-version=\"2\" data-media-id=\"a6206f07-cbe7-449b-a324-b621be53c7cd\" data-media-type=\"file\"></span></p><p><br/>     9.  Missed and Completed appointments have an indication on the calendar to depict their status. Canceled appointments are not visible on a         Calendar. </p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/299958298/status.png?version=1&amp;modificationDate=1511683270188&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/299958298/status.png?version=1&amp;modificationDate=1511683270188&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"299598270\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"status.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"299958298\" data-linked-resource-container-version=\"2\" data-media-id=\"0160ac92-d215-4e70-9ae7-c637ef99bba7\" data-media-type=\"file\"></span><br/>     10.  Appointments in the calendar view can also be <a href=\"/wiki/spaces/BAH/pages/299958294/List+View+of+Appointments\" data-linked-resource-id=\"299958294\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">filtered </a>in the same way as the list view. </p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" height=\"334\" width=\"628\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/299958298/filter-calendar.png?version=1&amp;modificationDate=1511683265791&amp;cacheVersion=1&amp;api=v2&amp;width=628&amp;height=334\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/299958298/filter-calendar.png?version=1&amp;modificationDate=1511683265791&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"299336060\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"filter-calendar.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"299958298\" data-linked-resource-container-version=\"2\" data-media-id=\"abbce71c-3330-4c0f-9785-06610285281c\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/299958298/filter-calendar.png?version=1&amp;modificationDate=1511683265791&amp;cacheVersion=1&amp;api=v2&amp;width=628&amp;height=334 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/299958298/filter-calendar.png?version=1&amp;modificationDate=1511683265791&amp;cacheVersion=1&amp;api=v2&amp;width=628&amp;height=334 1x\"></span></p><p><br/></p><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"44492675-b92d-460c-b620-abaeaeae1062\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>On This Page</b></div><div class=\"panelContent\">\n<p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"11dd7cc6-0b79-44b0-b1d2-b6e4e3168c3a\" data-macro-name=\"toc\"> </div><p> </p>\n</div></div><p><br/></p><p><br/></p><p><br/></p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/299958298"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/299958298/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/299958298/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/299958298/child",
+    "restrictions": "/rest/api/content/299958298/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/299958298/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=299958298",
+    "webui": "/spaces/BAH/pages/299958298/Calendar+View",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/299958298",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/299958298",
+    "tinyui": "/x/GgDhEQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

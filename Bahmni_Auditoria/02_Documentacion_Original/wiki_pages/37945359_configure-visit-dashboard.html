@@ -1,0 +1,195 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Configure Visit Dashboard</title></head><body><h1>Configure Visit Dashboard</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p><br/></p><p><br/></p><h2 id="ConfigureVisitDashboard-PurposeandBenefits">Purpose and Benefits</h2><p>The Visit Dashboard displays all details about a visit of the patient. On the top, a Visit Dashboard has a date control, that can allow the provider to browse visit details in the past for a patient. One can choose various &quot;Display Controls&quot; to configure what information is visible on the patient dashboard.</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="400" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/37945359/Screen%20Shot%202016-04-22%20at%201.04.05%20pm.png?version=1&amp;modificationDate=1461310649571&amp;cacheVersion=1&amp;api=v2&amp;width=783&amp;height=400" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/37945359/Screen%20Shot%202016-04-22%20at%201.04.05%20pm.png?version=1&amp;modificationDate=1461310649571&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="55214172" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2016-04-22 at 1.04.05 pm.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="37945359" data-linked-resource-container-version="16" data-media-id="2e857ea7-1049-4550-b20c-c0602cbb0a9b" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/37945359/Screen%20Shot%202016-04-22%20at%201.04.05%20pm.png?version=1&amp;modificationDate=1461310649571&amp;cacheVersion=1&amp;api=v2&amp;width=1566&amp;height=800 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945359/Screen%20Shot%202016-04-22%20at%201.04.05%20pm.png?version=1&amp;modificationDate=1461310649571&amp;cacheVersion=1&amp;api=v2&amp;width=783&amp;height=400 1x"></span></p><p>                                                           <strong>                   Visit Dashboard</strong></p><p><strong><br/></strong></p><h2 id="ConfigureVisitDashboard-Steps">Steps</h2><h3 id="ConfigureVisitDashboard-ConfigureVisitDisplayControlonPatientDashboard">Configure Visit Display Control on Patient Dashboard</h3><div class="confluence-information-macro confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="e71d513a-2e8f-45e7-8436-05470a6a2f30" data-macro-name="tip"><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>To reach visit dashboard, one has to configure this control on patient dashboard. Please follow the instructions to <a href="/wiki/spaces/BAH/pages/100139014/Visit+Control" data-linked-resource-id="100139014" data-linked-resource-version="14" data-linked-resource-type="page">configure the visit control</a></p></div></div><p><br/><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/attachments/37945359/Visit%20Control%20on%20Patient%20Dashboard.png?version=1&amp;modificationDate=1478851693144&amp;cacheVersion=1&amp;api=v2" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/37945359/Visit%20Control%20on%20Patient%20Dashboard.png?version=1&amp;modificationDate=1478851693144&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="98402353" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Visit Control on Patient Dashboard.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="37945359" data-linked-resource-container-version="16" data-media-id="a54200ca-0f1c-4935-a01f-281b26e730dc" data-media-type="file"></span></p><p><br/></p><h3 id="ConfigureVisitDashboard-ConfigureVisitDashboard">Configure Visit Dashboard</h3><p>Any display control can be configured in visit dashboard under sections in the config. Check <a href="/wiki/spaces/BAH/pages/37945573/Display+Controls" data-linked-resource-id="37945573" data-linked-resource-version="155" data-linked-resource-type="page">Display Controls</a> to know how to configure display controls. The following is the example config for patient visit dashboard.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="4765275d-7d63-4208-8740-e2f67ec8a2bf" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Sample Visit Dashboard Configuration</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">{
+    &quot;general&quot;:{
+        &quot;translationKey&quot;: &quot;DASHBOARD_TAB_GENERAL_KEY&quot;,
+        &quot;displayByDefault&quot;: true,
+        &quot;printing&quot;: {
+            &quot;title&quot;: &quot;Bahmni&quot;,
+            &quot;header&quot;: &quot;Visit&quot;,
+            &quot;logo&quot;: &quot;../images/bahmniLogo.png&quot;
+        },
+        &quot;defaultSections&quot;: true,
+        &quot;sections&quot;: {
+            &quot;pivotTable&quot;:{
+                &quot;type&quot;: &quot;pivotTable&quot;,
+                &quot;displayOrder&quot;: 0,
+                &quot;title&quot;: &quot;Vitals Flowsheet&quot;,
+                &quot;config&quot;: {
+                    &quot;groupBy&quot;: &quot;encounters&quot;,
+                    &quot;obsConcepts&quot;: [
+                        &quot;Vitals&quot;,
+                        &quot;Pulse&quot;,
+                        &quot;Diastolic&quot;,
+                        &quot;Systolic&quot;,
+                        &quot;Temperature&quot;,
+                        &quot;RR&quot;,
+                        &quot;SPO2&quot;,
+                        &quot;Height&quot;,
+                        &quot;WEIGHT&quot;,
+                        &quot;M/C Days&quot;
+                    ],
+                    &quot;labConcepts&quot;: &quot;&quot;
+                }
+            },
+            &quot;pacsOrders&quot;:{
+                &quot;type&quot;:&quot;pacsOrders&quot;,
+                &quot;displayOrder&quot;: 1,
+                &quot;translationKey&quot;: &quot;PACS_ORDERS_VISIT_PAGE_KEY&quot;,
+                &quot;config&quot;:{
+                    &quot;orderType&quot;: &quot;Radiology Order&quot;
+                }
+            }
+        }
+    },
+    &quot;dischargeSummary&quot;:{
+        &quot;translationKey&quot;: &quot;DASHBOARD_TAB_DISCHARGE_SUMMARY_KEY&quot;,
+        &quot;printing&quot;: {
+            &quot;title&quot;: &quot;Bahmni&quot;,
+            &quot;header&quot;: &quot;Discharge Summary&quot;,
+            &quot;logo&quot;: &quot;../images/bahmniLogo.png&quot;
+        },
+        &quot;sections&quot;: {
+            &quot;PatientInformation&quot;:{
+                &quot;type&quot;: &quot;patientInformation&quot;,
+                &quot;displayOrder&quot;: 0,
+                &quot;config&quot;: {
+                    &quot;title&quot;: &quot;PatientInformation&quot;,
+                    &quot;patientAttributes&quot;: [&quot;caste&quot;, &quot;class&quot;, &quot;education&quot;, &quot;occupation&quot;, &quot;debt&quot;, &quot;distanceFromCenter&quot;, &quot;isUrban&quot;, &quot;cluster&quot;,&quot;RationCard&quot;, &quot;familyIncome&quot;],
+                    &quot;addressFields&quot;: [&quot;address1&quot;, &quot;address2&quot;, &quot;cityVillage&quot;, &quot;countryDistrict&quot;]
+                }
+            },
+            &quot;admissionDetails&quot;:{
+                &quot;type&quot;: &quot;admissionDetails&quot;,
+                &quot;displayOrder&quot;: 1,
+                &quot;config&quot;: {
+                    &quot;showDetailsButton&quot;: true,
+                    &quot;translationKey&quot;: &quot;DISCHARGE_SUMMARY_ADMISSION_DETAILS_KEY&quot;
+
+                }
+            },
+            &quot;weightInitial&quot;:{
+                &quot;type&quot;: &quot;observation&quot;,
+                &quot;displayOrder&quot;: 2,
+                &quot;translationKey&quot;:&quot;DISCHARGE_SUMMARY_AT_ADMISSION_KEY&quot;,
+                &quot;config&quot;: {
+                    &quot;conceptNames&quot;: [&quot;WEIGHT&quot;],
+                    &quot;scope&quot;: &quot;initial&quot;
+                }
+            },
+            &quot;weightLatest&quot;: {
+                &quot;type&quot;: &quot;observation&quot;,
+                &quot;displayOrder&quot;: 3,
+                &quot;translationKey&quot;:&quot;DISCHARGE_SUMMARY_AT_DISCHARGE_KEY&quot;,
+                &quot;config&quot;: {
+                    &quot;conceptNames&quot;: [&quot;WEIGHT&quot;],
+                    &quot;scope&quot;: &quot;latest&quot;
+                }
+            },
+            &quot;diagnoses&quot;:{
+                &quot;type&quot;: &quot;diagnosis&quot;,
+                &quot;displayOrder&quot;: 4,
+                &quot;config&quot;: {
+                    &quot;translationKey&quot; : &quot;DISCHARGE_SUMMARY_DIAGNOSIS_KEY&quot;,
+                    &quot;showCertainty&quot;: false,
+                    &quot;showOrder&quot;: false,
+                    &quot;showDetailsButton&quot;: true
+                }
+            },
+            &quot;clinicalNotes&quot;:{
+                &quot;type&quot;: &quot;observation&quot;,
+                &quot;displayOrder&quot;: 5,
+                &quot;translationKey&quot;: &quot;DISCHARGE_SUMMARY_CLINICAL_NOTES_KEY&quot;,
+                &quot;config&quot;: {
+                    &quot;conceptNames&quot;: [
+                        &quot;History and Examination Notes&quot;,
+                        &quot;Discharge Summary&quot;,
+                        &quot;Lab Investigation Notes&quot;,
+                        &quot;Radiology Notes&quot;,
+                        &quot;Other Notes&quot;
+                    ],
+                    &quot;scope&quot;: &quot;latest&quot;,
+                    &quot;numberOfVisits&quot;: &quot;1&quot;
+                }
+            },
+            &quot;labInvestigations&quot;:{
+                &quot;type&quot;: &quot;investigationResult&quot;,
+                &quot;displayOrder&quot;: 6,
+                &quot;config&quot;: {
+                    &quot;translationKey&quot;:&quot;LAB_INVESTIGATION&quot;,
+                    &quot;showChart&quot;: true,
+                    &quot;showTable&quot;: false,
+                    &quot;showNormalLabResults&quot;: true,
+                    &quot;showCommentsExpanded&quot;: true,
+                    &quot;showAccessionNotes&quot;: true,
+                    &quot;numberOfVisits&quot;: 10,
+                    &quot;initialAccessionCount&quot;: 1,
+                    &quot;latestAccessionCount&quot;: 1
+                }
+            },
+            &quot;Treatments&quot;: {
+                &quot;type&quot;: &quot;treatment&quot;,
+                &quot;displayOrder&quot;: 6,
+                &quot;config&quot;: {
+                    &quot;translationKey&quot;: &quot;VISIT_TITLE_TREATMENTS_KEY&quot;,
+                    &quot;showFlowSheet&quot;: true,
+                    &quot;showListView&quot;: true,
+                    &quot;showOtherActive&quot;: false,
+                    &quot;showDetailsButton&quot;: true,
+                    &quot;showRoute&quot;: true,
+                    &quot;showDrugForm&quot;: true,
+                    &quot;showProvider&quot;:false
+                }
+            },
+            &quot;adviceOnDischarge&quot;:{
+                &quot;type&quot;: &quot;observation&quot;,
+                &quot;displayOrder&quot;: 8,
+                &quot;translationKey&quot;:&quot;DISCHARGE_SUMMARY_ADVICE_ON_DISCHARGE_KEY&quot;,
+                &quot;config&quot;: {
+                    &quot;conceptNames&quot;: [
+                        &quot;Additional Advice on Discharge&quot;,
+                        &quot;Follow up Date&quot;,
+                        &quot;Discharge Summary, Plan for follow up&quot;
+                    ],
+                    &quot;scope&quot;: &quot;latest&quot;
+                }
+            }
+        }
+    },
+    &quot;orders&quot;:{
+      &quot;translationKey&quot;: &quot;DASHBOARD_TAB_ORDERS_KEY&quot;,
+      &quot;sections&quot;: {
+          &quot;Radiology Orders&quot;: {
+              &quot;type&quot;: &quot;order&quot;,
+              &quot;displayOrder&quot;: 0,
+              &quot;translationKey&quot;: &quot;Radiology Orders&quot;,
+              &quot;config&quot;: {
+                  &quot;translationKey&quot;: &quot;Radiology Orders&quot;,
+                  &quot;name&quot;: &quot;ordersControl&quot;,
+                  &quot;orderType&quot;: &quot;Radiology Order&quot;,
+                  &quot;conceptNames&quot;: [
+                      &quot;Summary&quot;
+                  ]
+              }
+          }
+      }
+
+    }
+}
+
+</pre>
+</div></div><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 99.5128%;"><colgroup><col style="width: 11.7647%;"/><col style="width: 88.2353%;"/></colgroup><tbody><tr><th class="confluenceTh">Field Name</th><th class="confluenceTh">Description</th></tr><tr><td class="confluenceTd"><span class="legacy-color-text-blue1">translationKey</span></td><td class="confluenceTd">Name of the visit tab. This will be displayed as the tab label</td></tr><tr><td class="confluenceTd">displayByDefault</td><td class="confluenceTd">Will always show this tab by default on load</td></tr><tr><td class="confluenceTd">printing</td><td class="confluenceTd">Header information when printing a visit tab</td></tr><tr><td colspan="1" class="confluenceTd">defaultSections</td><td colspan="1" class="confluenceTd">When set to false, will exclude the default pre-configured patient visit widgets, and only show the ones you configure in this tab. <strong>Note</strong>: <em>At least one dashboard/tab should have this as true. See this <a class="external-link" href="https://talk.openmrs.org/t/configure-clinical-visit-page/6125/15" rel="nofollow">discussion</a></em><em>.</em></td></tr><tr><td colspan="1" class="confluenceTd">sections</td><td colspan="1" class="confluenceTd">An array that lists all the widgets (and its configs) to be displayed in this tab. When 'defaultSections' is set to true, these sections will be append at the end of the default sections </td></tr></tbody></table></div><p><strong><br/></strong></p><p><br/></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="bbb4ee8f-fda5-47aa-a6ed-2145606d6bfa" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #1FA5A0;color: white;"><b>On this page</b></div><div class="panelContent">
+<p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="c600f8c4-b8b4-4eb8-bd41-e903ed368a03" data-macro-name="toc"> </div><p> </p>
+</div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="1e4c02a5-7279-4edb-ada2-45a3fec352fa" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #1FA5A0;color: White;"><b>Related Links</b></div><div class="panelContent">
+<p><a href="/wiki/spaces/BAH/pages/37945573/Display+Controls" data-linked-resource-id="37945573" data-linked-resource-version="155" data-linked-resource-type="page">Display Controls</a></p><p><a href="/wiki/spaces/BAH/pages/100139014/Visit+Control" data-linked-resource-id="100139014" data-linked-resource-version="14" data-linked-resource-type="page">Visit Control</a></p>
+</div></div></div>
+</div>
+</div>
+</div></body></html>

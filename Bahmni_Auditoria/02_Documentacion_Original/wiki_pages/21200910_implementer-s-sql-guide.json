@@ -1,0 +1,178 @@
+{
+  "id": "21200910",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/21200910",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjEyMDA5MTA=",
+  "status": "current",
+  "title": "Implementer's SQL Guide",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Arun Paul",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Arun Paul",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3"
+      }
+    },
+    "createdDate": "2015-05-25T09:16:35.486Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/21200910/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2016-05-22T06:47:16.080Z",
+    "friendlyWhen": "May 22, 2016",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "syncRev": "0.sL86_EKob965oJGO36Yv_g.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$21200910.26",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/21200910"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/21200910/version/4"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>To write <ac:link><ri:page ri:content-title=\"Configure Reports\" /><ac:plain-text-link-body><![CDATA[Custom Reports]]></ac:plain-text-link-body></ac:link>&nbsp;an implementer should be good with SQL statements. Most reports require you to pull database from MySQL / Postgres DB, and having a good grasp on SQL will help.</p><p>Given below a set of common SQL clauses an implementer should learn to master custom reports.</p><ul><li>SELECT</li><li>WHERE clause</li><li>HAVING clause</li><li>INNER JOIN</li><li>LEFT OUTER JOIN</li><li>RIGHT OUTER JOIN</li><li>GROUP BY</li><li>ORDER BY</li><li>SUM</li><li>IF</li><li>DATEDIFF</li><li>DATEADD</li><li>CREATE VIEW</li><li>UNION</li><li>INTERESECT</li><li>Sql Functions<br /><br /></li></ul><p>Some resources are given below:</p><ul><li><a href=\"http://www.w3schools.com/sql/\">W3 Schools</a>&nbsp;</li><li><a href=\"http://sql.learncodethehardway.org/book/\">Learn SQL the hard way&nbsp;</a></li><li><a href=\"https://www.khanacademy.org/computing/hour-of-code/hour-of-sql/v/welcome-to-sql\">Khan Academy</a></li><li><a href=\"http://www.sqlcourse.com/intro.html\">SQL Course</a></li><li><a href=\"http://www.sqlcourse2.com/intro2.html\">SQL Course 2</a><br /><br /></li></ul>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/21200910"
+      }
+    },
+    "view": {
+      "value": "<p>To write <a href=\"/wiki/spaces/BAH/pages/18415871/Configure+Reports\" data-linked-resource-id=\"18415871\" data-linked-resource-version=\"211\" data-linked-resource-type=\"page\">Custom Reports</a> an implementer should be good with SQL statements. Most reports require you to pull database from MySQL / Postgres DB, and having a good grasp on SQL will help.</p><p>Given below a set of common SQL clauses an implementer should learn to master custom reports.</p><ul><li>SELECT</li><li>WHERE clause</li><li>HAVING clause</li><li>INNER JOIN</li><li>LEFT OUTER JOIN</li><li>RIGHT OUTER JOIN</li><li>GROUP BY</li><li>ORDER BY</li><li>SUM</li><li>IF</li><li>DATEDIFF</li><li>DATEADD</li><li>CREATE VIEW</li><li>UNION</li><li>INTERESECT</li><li>Sql Functions<br/><br/></li></ul><p>Some resources are given below:</p><ul><li><a class=\"external-link\" href=\"http://www.w3schools.com/sql/\" rel=\"nofollow\">W3 Schools</a> </li><li><a class=\"external-link\" href=\"http://sql.learncodethehardway.org/book/\" rel=\"nofollow\">Learn SQL the hard way </a></li><li><a class=\"external-link\" href=\"https://www.khanacademy.org/computing/hour-of-code/hour-of-sql/v/welcome-to-sql\" rel=\"nofollow\">Khan Academy</a></li><li><a class=\"external-link\" href=\"http://www.sqlcourse.com/intro.html\" rel=\"nofollow\">SQL Course</a></li><li><a class=\"external-link\" href=\"http://www.sqlcourse2.com/intro2.html\" rel=\"nofollow\">SQL Course 2</a><br/><br/></li></ul>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/21200910"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "ramp-up",
+          "id": "62160898",
+          "label": "ramp-up"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 1,
+      "_links": {
+        "next": "/rest/api/content/21200910/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/21200910/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/21200910/child",
+    "restrictions": "/rest/api/content/21200910/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/21200910/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=21200910",
+    "webui": "/spaces/BAH/pages/21200910/Implementer+s+SQL+Guide",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/21200910",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/21200910",
+    "tinyui": "/x/DoBDAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

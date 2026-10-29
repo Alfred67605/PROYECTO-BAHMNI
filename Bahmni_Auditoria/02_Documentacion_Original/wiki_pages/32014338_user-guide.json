@@ -1,0 +1,172 @@
+{
+  "id": "32014338",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/32014338",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzIwMTQzMzg=",
+  "status": "current",
+  "title": "User Guide",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "createdDate": "2015-11-02T06:20:16.277Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014338/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2017-04-01T13:30:34.991Z",
+    "friendlyWhen": "Apr 01, 2017",
+    "message": "",
+    "number": 13,
+    "minorEdit": false,
+    "syncRev": "0.Ww2NYrmHN4TxPd4jHtC9Kw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$32014338.132",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/32014338"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014338/version/13"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"single\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"5fcb2fe3-fc90-4818-85ad-121f68213d22\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:rich-text-body><ac:image ac:align=\"left\" ac:thumbnail=\"true\" ac:width=\"80\"><ri:attachment ri:filename=\"Glyph Inventory 1_webinar-2.jpg\" ri:version-at-save=\"1\" /></ac:image><span style=\"line-height: 1.42857;\">The User guide describes detailed user workflows for Bahmni. </span><p><span>Please refer to the <ac:link><ri:page ri:content-title=\"Feature Guide\" ri:version-at-save=\"22\" /></ac:link> f</span><span>or a </span><span>high-level overview of Bahmni's </span><span>functionality.</span></p><p>Please Refer to the <ac:link><ri:page ri:content-title=\"Implementer's Guide\" ri:version-at-save=\"54\" /><ac:plain-text-link-body><![CDATA[Implementers Guide]]></ac:plain-text-link-body></ac:link> for detailed configuration options</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b7906149-fe83-449c-8cc1-cbaeb167d653\"><ac:parameter ac:name=\"titleColor\">White</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#009800</ac:parameter><ac:parameter ac:name=\"title\">Table of Contents</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"d0fcbb1b-3c81-41bd-af95-8fea9e487262\"><ac:parameter ac:name=\"all\">true</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p><br /></p><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"db28c3f4-ab09-439a-b203-91930c4b250f\"><ac:parameter ac:name=\"titleColor\">black</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#FFFF22</ac:parameter><ac:parameter ac:name=\"title\">Search User Guide</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"livesearch\" ac:schema-version=\"1\" ac:macro-id=\"a7fc3e02-c40c-4d24-ad37-5302ef3da66c\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"600d29bf-fc08-48b0-8dfa-c9a5e4f20526\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><a href=\"https://talk.openmrs.org/t/training-on-bahmni/6275/5\">(OpenMRS) Useful Discussion on User Training</a></p><p><a href=\"https://drive.google.com/drive/folders/0B2dgg_RayglSMUhhd0o5OWdubWM\">Sample Bahmni User Guide for Bangladesh (created by Arun Paul &amp; Team)</a></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"a78ef4d0-0c69-4fba-a02a-87e18fc6eadc\"><ac:rich-text-body><p><ac:image><ri:attachment ri:filename=\"cc-by-sa.png\" ri:version-at-save=\"1\" /></ac:image></p><p>The Bahmni documentation is licensed under <strong><a class=\"external-link\" href=\"https://creativecommons.org/licenses/by-sa/4.0/\" rel=\"nofollow\">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a>.&nbsp;</strong></p></ac:rich-text-body></ac:structured-macro><p><br /></p><p><br /></p><p><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/32014338"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout single\" data-layout=\"single\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"5fcb2fe3-fc90-4818-85ad-121f68213d22\" data-macro-name=\"tip\"><div class=\"confluence-information-macro-body\"><span class=\"confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-thumbnail image-left\" width=\"80\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014338/Glyph%20Inventory%201_webinar-2.jpg?version=1&amp;modificationDate=1449659027537&amp;cacheVersion=1&amp;api=v2&amp;width=80&amp;height=80\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014338/Glyph%20Inventory%201_webinar-2.jpg?version=1&amp;modificationDate=1449659027537&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"35291220\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Glyph Inventory 1_webinar-2.jpg\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/jpeg\" data-linked-resource-container-id=\"32014338\" data-linked-resource-container-version=\"13\" data-media-id=\"d08e3e45-05bf-4b14-9171-8082e15f0bca\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014338/Glyph%20Inventory%201_webinar-2.jpg?version=1&amp;modificationDate=1449659027537&amp;cacheVersion=1&amp;api=v2&amp;width=160&amp;height=160 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014338/Glyph%20Inventory%201_webinar-2.jpg?version=1&amp;modificationDate=1449659027537&amp;cacheVersion=1&amp;api=v2&amp;width=80&amp;height=80 1x\" /></span><span style=\"line-height: 1.42857;\">The User guide describes detailed user workflows for Bahmni. </span><p><span>Please refer to the <a href=\"/wiki/spaces/BAH/pages/32604183/Feature+Guide\" data-linked-resource-id=\"32604183\" data-linked-resource-version=\"24\" data-linked-resource-type=\"page\">Feature Guide</a> f</span><span>or a </span><span>high-level overview of Bahmni's </span><span>functionality.</span></p><p>Please Refer to the <a href=\"/wiki/spaces/BAH/pages/2392073/Implementer+s+Guide\" data-linked-resource-id=\"2392073\" data-linked-resource-version=\"55\" data-linked-resource-type=\"page\">Implementers Guide</a> for detailed configuration options</p></div></div></div>\n</div>\n</div>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b7906149-fe83-449c-8cc1-cbaeb167d653\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #009800;color: White;\"><b>Table of Contents</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"d0fcbb1b-3c81-41bd-af95-8fea9e487262\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/114361274/Logging+into+Bahmni\" data-linked-resource-id=\"114361274\" data-linked-resource-version=\"7\" data-linked-resource-type=\"page\">Logging into Bahmni</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/3643408386/Quick+User+Logout\" data-linked-resource-id=\"3643408386\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Quick User Logout</a></li><li><a href=\"/wiki/spaces/BAH/pages/3643408396/Maintain+Context+Between+Logout+and+Re-Login\" data-linked-resource-id=\"3643408396\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Maintain Context Between Logout and Re-Login</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/32014347/Registration\" data-linked-resource-id=\"32014347\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Registration</a></li><li><a href=\"/wiki/spaces/BAH/pages/27000864/Programs\" data-linked-resource-id=\"27000864\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Programs</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014350/Clinical\" data-linked-resource-id=\"32014350\" data-linked-resource-version=\"9\" data-linked-resource-type=\"page\">Clinical</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/115217943/Order+Medications+and+or+Tests\" data-linked-resource-id=\"115217943\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Order Medications and/or Tests</a></li><li><a href=\"/wiki/spaces/BAH/pages/115414301/Using+Conditions+List\" data-linked-resource-id=\"115414301\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Using Conditions List</a></li><li><a href=\"/wiki/spaces/BAH/pages/49545263/Using+Order+Sets\" data-linked-resource-id=\"49545263\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">Using Order Sets</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/117679771/Appointment+Scheduling+in+Bahmni\" data-linked-resource-id=\"117679771\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Appointment Scheduling in Bahmni</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/138280979/Services+Specialities\" data-linked-resource-id=\"138280979\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Services &amp; Specialities</a></li><li><a href=\"/wiki/spaces/BAH/pages/138182707/Creating+and+Managing+Appointments\" data-linked-resource-id=\"138182707\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Creating and Managing Appointments</a></li><li><a href=\"/wiki/spaces/BAH/pages/138117151/Views+of+Appointments\" data-linked-resource-id=\"138117151\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Views of Appointments</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/299958294/List+View+of+Appointments\" data-linked-resource-id=\"299958294\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">List View of Appointments</a></li><li><a href=\"/wiki/spaces/BAH/pages/299958298/Calendar+View\" data-linked-resource-id=\"299958298\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Calendar View</a></li><li><a href=\"/wiki/spaces/BAH/pages/299958302/Weekly+Summary+View\" data-linked-resource-id=\"299958302\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Weekly Summary View</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/299368645/Patient+s+Appointments+Search\" data-linked-resource-id=\"299368645\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Patient's Appointments Search</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/676986891/Operation+Theatre+Scheduling+in+Bahmni\" data-linked-resource-id=\"676986891\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Operation Theatre Scheduling in Bahmni</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/703660044/Surgical+Block\" data-linked-resource-id=\"703660044\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">Surgical Block</a></li><li><a href=\"/wiki/spaces/BAH/pages/703594508/Managing+Surgeries+in+a+Surgical+Block\" data-linked-resource-id=\"703594508\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Managing Surgeries in a Surgical Block</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/32014358/Laboratory\" data-linked-resource-id=\"32014358\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Laboratory</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/32014460/Using+Lab+Dashboard\" data-linked-resource-id=\"32014460\" data-linked-resource-version=\"19\" data-linked-resource-type=\"page\">Using Lab Dashboard</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014457/Generate+Lab+Reports\" data-linked-resource-id=\"32014457\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Generate Lab Reports</a></li><li><a href=\"/wiki/spaces/BAH/pages/1163984947/Referring+out+Laboratory+Test+s+and+Result+Entry+for+the+same\" data-linked-resource-id=\"1163984947\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Referring out Laboratory Test(s) and Result Entry for the same</a></li><li><a href=\"/wiki/spaces/BAH/pages/1164050590/Validating+the+Lab+Test+s+Result+and+Printing+the+Lab+Report\" data-linked-resource-id=\"1164050590\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">Validating the Lab Test(s) Result and Printing the Lab Report</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/32014364/Pharmacy\" data-linked-resource-id=\"32014364\" data-linked-resource-version=\"17\" data-linked-resource-type=\"page\">Pharmacy</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/1173618852/Managing+Medication+Drug+Orders\" data-linked-resource-id=\"1173618852\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">Managing Medication / Drug Orders</a></li><li><a href=\"/wiki/spaces/BAH/pages/1177190402/Returning+the+delivered+medicine+and+Refunding+the+Invoice\" data-linked-resource-id=\"1177190402\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">Returning the delivered medicine and Refunding the Invoice</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014360/Radiology\" data-linked-resource-id=\"32014360\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Radiology</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/32014462/PACS+Integration+and+Support\" data-linked-resource-id=\"32014462\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">PACS Integration and Support</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014528/Upload+Radiology+Documents\" data-linked-resource-id=\"32014528\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Upload Radiology Documents</a></li></ul></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/32014370/Patient+Documents\" data-linked-resource-id=\"32014370\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Patient Documents</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014373/In-Patient+Management\" data-linked-resource-id=\"32014373\" data-linked-resource-version=\"33\" data-linked-resource-type=\"page\">In-Patient Management</a></li><li><a href=\"/wiki/spaces/BAH/pages/707559542/Bed+Management\" data-linked-resource-id=\"707559542\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Bed Management</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014379/Billing+and+Accounting\" data-linked-resource-id=\"32014379\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Billing and Accounting</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/32014614/Manage+Orders\" data-linked-resource-id=\"32014614\" data-linked-resource-version=\"17\" data-linked-resource-type=\"page\">Manage Orders</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014612/Print+Bill+and+Prescription\" data-linked-resource-id=\"32014612\" data-linked-resource-version=\"7\" data-linked-resource-type=\"page\">Print Bill and Prescription</a></li><li><a href=\"/wiki/spaces/BAH/pages/1177321536/Manual+Billing+-+Creating+Quotation+in+Odoo\" data-linked-resource-id=\"1177321536\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">Manual Billing - Creating Quotation in Odoo</a></li><li><a href=\"/wiki/spaces/BAH/pages/1177354370/Refunding+the+Invoice\" data-linked-resource-id=\"1177354370\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">Refunding the Invoice</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/32014377/Inventory+Management\" data-linked-resource-id=\"32014377\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Inventory Management</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/1173782545/Managing+Lots+Serial+Numbers+Batches\" data-linked-resource-id=\"1173782545\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">Managing Lots / Serial Numbers (Batches)</a></li><li><a href=\"/wiki/spaces/BAH/pages/1172668475/Adjusting+Updating+the+Product+Quantity+in+Inventory\" data-linked-resource-id=\"1172668475\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">Adjusting / Updating the Product Quantity in Inventory</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/53313588/Admin+Page\" data-linked-resource-id=\"53313588\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Admin Page</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/53313622/Export+Data\" data-linked-resource-id=\"53313622\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Export Data</a></li><li><a href=\"/wiki/spaces/BAH/pages/53313590/Import+Data\" data-linked-resource-id=\"53313590\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Import Data</a></li><li><a href=\"/wiki/spaces/BAH/pages/49545249/Authoring+Order+Sets\" data-linked-resource-id=\"49545249\" data-linked-resource-version=\"17\" data-linked-resource-type=\"page\">Authoring Order Sets</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/79495184/Using+rules\" data-linked-resource-id=\"79495184\" data-linked-resource-version=\"18\" data-linked-resource-type=\"page\">Using rules</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/712507393/Ward+Management+Admin+Console\" data-linked-resource-id=\"712507393\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Ward Management Admin Console</a></li><li><a href=\"/wiki/spaces/BAH/pages/2241462320/View+Audit+Logs+Patient+Data+Access+Logs\" data-linked-resource-id=\"2241462320\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">View Audit Logs / Patient Data Access Logs</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/69664784/Two+Factor+Authentication+2FA+or+TFA+guide\" data-linked-resource-id=\"69664784\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Two Factor Authentication (2FA or TFA) guide</a></li><li><a href=\"/wiki/spaces/BAH/pages/94535745/Using+Bahmni+Connect+App\" data-linked-resource-id=\"94535745\" data-linked-resource-version=\"34\" data-linked-resource-type=\"page\">Using Bahmni Connect App</a></li><li><a href=\"/wiki/spaces/BAH/pages/116201081/Using+Atomfeed+Console\" data-linked-resource-id=\"116201081\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Using Atomfeed Console</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014522/Template+New+User+Guide+Feature\" data-linked-resource-id=\"32014522\" data-linked-resource-version=\"16\" data-linked-resource-type=\"page\">Template: New User Guide Feature</a></li><li><a href=\"/wiki/spaces/BAH/pages/115085179/Create+a+new+Form\" data-linked-resource-id=\"115085179\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Create a new Form</a></li><li><a href=\"/wiki/spaces/BAH/whiteboard/3994222593\" data-linked-resource-id=\"3994222593\" data-linked-resource-version=\"1\" data-linked-resource-type=\"whiteboard\">Untitled whiteboard (4)</a></li></ul><p> </p>\n</div></div><p><br/></p><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"db28c3f4-ab09-439a-b203-91930c4b250f\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #FFFF22;color: black;\"><b>Search User Guide</b></div><div class=\"panelContent\">\n<p>    \n    \n\n\n</p><div class=\"search-macro search-macro-medium conf-macro output-inline\" data-hasbody=\"false\" data-macro-id=\"a7fc3e02-c40c-4d24-ad37-5302ef3da66c\" data-macro-name=\"livesearch\">\n    <div class=\"aui-dd-parent\"> </div>\n    <form class=\"aui aui-dd-parent\" name=\"livesearchForm\" method=\"POST\" action=\"/wiki/dosearchsite.action\">\n        <fieldset class=\"search-macro-fields\">\n            <div class=\"search-macro-query\">\n                <input class=\"text\" type=\"text\" name=\"queryString\" autocomplete=\"off\" placeholder=\"Search\" />\n                            </div>\n                        <button type=\"submit\" class=\"search-macro-button aui-button\">\n                <span class=\"livesearch-macro-search-icon\">\n                    <svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" role=\"presentation\"><path fill=\"#5E6C84\" d=\"M16.436 15.085l3.94 4.01a1 1 0 01-1.425 1.402l-3.938-4.006a7.5 7.5 0 111.423-1.406zM10.5 16a5.5 5.5 0 100-11 5.5 5.5 0 000 11z\" fill-rule=\"evenodd\"> </path></svg>\n                </span>\n                <span class=\"search-macro-button-text\">Search</span>\n            </button>\n                        <input type=\"hidden\" name=\"where\" value=\"conf_all\" />\n            <input type=\"hidden\" name=\"additional\" value=\"space name\" />\n            <input type=\"hidden\" name=\"labels\" value=\"\" />\n            <input type=\"hidden\" name=\"contentType\" value=\"\" />\n        </fieldset>\n    </form>\n</div>\n<p> </p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"600d29bf-fc08-48b0-8dfa-c9a5e4f20526\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a class=\"external-link\" href=\"https://talk.openmrs.org/t/training-on-bahmni/6275/5\" rel=\"nofollow\">(OpenMRS) Useful Discussion on User Training</a></p><p><a class=\"external-link\" href=\"https://drive.google.com/drive/folders/0B2dgg_RayglSMUhhd0o5OWdubWM\" rel=\"nofollow\">Sample Bahmni User Guide for Bangladesh (created by Arun Paul &amp; Team)</a></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a78ef4d0-0c69-4fba-a02a-87e18fc6eadc\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelContent\">\n<p><span class=\"confluence-embedded-file-wrapper\"><img class=\"confluence-embedded-image\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014338/cc-by-sa.png?version=1&amp;modificationDate=1491053411593&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014338/cc-by-sa.png?version=1&amp;modificationDate=1491053411593&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115861843\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"cc-by-sa.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32014338\" data-linked-resource-container-version=\"13\" data-media-id=\"6d1eafde-742c-4686-936b-d7bc600c3895\" data-media-type=\"file\" /></span></p><p>The Bahmni documentation is licensed under <strong><a class=\"external-link\" href=\"https://creativecommons.org/licenses/by-sa/4.0/\" rel=\"nofollow\">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a>. </strong></p>\n</div></div><p><br/></p><p><br/></p><p><br/></p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/32014338"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/32014338/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014338/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 197189038
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/32014338/child",
+    "restrictions": "/rest/api/content/32014338/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/32014338/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=32014338",
+    "webui": "/spaces/BAH/pages/32014338/User+Guide",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/32014338",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014338",
+    "tinyui": "/x/AoDoAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

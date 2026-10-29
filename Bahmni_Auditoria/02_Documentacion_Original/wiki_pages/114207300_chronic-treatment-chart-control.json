@@ -1,0 +1,171 @@
+{
+  "id": "114207300",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/114207300",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE0MjA3MzAw",
+  "status": "current",
+  "title": "Chronic Treatment Chart Control",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2017-01-17T16:33:36.994Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114207300/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2022-11-20T11:15:12.568Z",
+    "friendlyWhen": "Nov 20, 2022",
+    "message": "Removed collapsible due to Atlassian bug",
+    "number": 12,
+    "minorEdit": false,
+    "syncRev": "0.9p-jQO7CIzJz0c7zkLY33A.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$114207300.41",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/114207300"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114207300/version/12"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose</h2><ac:structured-macro ac:name=\"excerpt\" ac:schema-version=\"1\" ac:macro-id=\"638aebc5-f96c-44fe-9484-b0037d832b70\"><ac:parameter ac:name=\"atlassian-macro-output-type\">INLINE</ac:parameter><ac:rich-text-body><p>The drugogram or the chronic treatment chart is a display that shows the current drug regimen of a patient enrolled into a treatment which involves a varying set of drugs over the course of the treatment.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"ce5c5eb4-04fa-4794-8cd2-1e9dfcc67137\"><ac:rich-text-body><p>Please read more about <a href=\"https://bahmni.atlassian.net/wiki/pages/viewpage.action?pageId=94535717\">Chronic Treatment Chart </a></p></ac:rich-text-body></ac:structured-macro><h2>Screenshot</h2><p><br /><ac:image ac:width=\"600\"><ri:attachment ri:filename=\"Screen Shot 2016-06-28 at 10.31.02 AM.png\" ri:version-at-save=\"1\" /></ac:image></p><h2>Configuration</h2><h3>Sample Config</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"c8d0fc91-89a6-42f3-b551-202d8626d630\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Add to clinical/dashboard.json for it to appear on the patient dashboard</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"Chronic Treatment Chart\": {\n\t\"displayType\": \"Full-Page\",\n\t\"title\": \"Chronic Treatment Chart\",\n    \"type\": \"chronicTreatmentChart\",\n    \"dashboardConfig\": {\n    \t\"drugs\": []\n     },\n     \"expandedViewConfig\": {\n     \t\"drugs\": []\n     }\n}]]></ac:plain-text-body></ac:structured-macro><h3>Key Field Table</h3><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th>Key</th><th>Value</th><th>Mandatory</th></tr><tr><td><p>type</p></td><td><p>type of the section or control.</p><p><strong>type should be &quot;<span>chronicTreatmentChart</span>&quot;</strong></p></td><td>Yes</td></tr><tr><td><p>drugs</p></td><td>drugs concept name which you want to show. (If you don't specify drugs in the config, it shows all the drugs which the patient is currently on)</td><td>No</td></tr></tbody></table><p><br /></p><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"9e21e6bc-65b4-4f30-a341-0dc091c2e859\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\"><ac:parameter ac:name=\"titleColor\">White</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Display Controls</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"de12be85-d772-4bad-93f7-a404f07e5146\"><ac:parameter ac:name=\"all\">true</ac:parameter><ac:parameter ac:name=\"page\"><ac:link><ri:page ri:content-title=\"Medication Controls\" ri:version-at-save=\"1\" /></ac:link></ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/114207300"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ChronicTreatmentChartControl-Purpose\">Purpose</h2><p>The drugogram or the chronic treatment chart is a display that shows the current drug regimen of a patient enrolled into a treatment which involves a varying set of drugs over the course of the treatment.</p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ce5c5eb4-04fa-4794-8cd2-1e9dfcc67137\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Please read more about <a href=\"https://bahmni.atlassian.net/wiki/pages/viewpage.action?pageId=94535717\" rel=\"nofollow\">Chronic Treatment Chart </a></p></div></div><h2 id=\"ChronicTreatmentChartControl-Screenshot\">Screenshot</h2><p><br/><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114207300/Screen%20Shot%202016-06-28%20at%2010.31.02%20AM.png?version=1&amp;modificationDate=1484670817011&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=138\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114207300/Screen%20Shot%202016-06-28%20at%2010.31.02%20AM.png?version=1&amp;modificationDate=1484670817011&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"114207223\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-06-28 at 10.31.02 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114207300\" data-linked-resource-container-version=\"12\" data-media-id=\"fb220384-e1ce-4be1-aa52-073e0e78ac0d\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114207300/Screen%20Shot%202016-06-28%20at%2010.31.02%20AM.png?version=1&amp;modificationDate=1484670817011&amp;cacheVersion=1&amp;api=v2&amp;width=1200&amp;height=276 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114207300/Screen%20Shot%202016-06-28%20at%2010.31.02%20AM.png?version=1&amp;modificationDate=1484670817011&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=138 1x\"></span></p><h2 id=\"ChronicTreatmentChartControl-Configuration\">Configuration</h2><h3 id=\"ChronicTreatmentChartControl-SampleConfig\">Sample Config</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c8d0fc91-89a6-42f3-b551-202d8626d630\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Add to clinical/dashboard.json for it to appear on the patient dashboard</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;Chronic Treatment Chart&quot;: {\n\t&quot;displayType&quot;: &quot;Full-Page&quot;,\n\t&quot;title&quot;: &quot;Chronic Treatment Chart&quot;,\n    &quot;type&quot;: &quot;chronicTreatmentChart&quot;,\n    &quot;dashboardConfig&quot;: {\n    \t&quot;drugs&quot;: []\n     },\n     &quot;expandedViewConfig&quot;: {\n     \t&quot;drugs&quot;: []\n     }\n}</pre>\n</div></div><h3 id=\"ChronicTreatmentChartControl-KeyFieldTable\">Key Field Table</h3><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class=\"confluenceTh\">Key</th><th class=\"confluenceTh\">Value</th><th class=\"confluenceTh\">Mandatory</th></tr><tr><td class=\"confluenceTd\"><p>type</p></td><td class=\"confluenceTd\"><p>type of the section or control.</p><p><strong>type should be &quot;<span>chronicTreatmentChart</span>&quot;</strong></p></td><td class=\"confluenceTd\">Yes</td></tr><tr><td class=\"confluenceTd\"><p>drugs</p></td><td class=\"confluenceTd\">drugs concept name which you want to show. (If you don't specify drugs in the config, it shows all the drugs which the patient is currently on)</td><td class=\"confluenceTd\">No</td></tr></tbody></table></div><p><br/></p><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9e21e6bc-65b4-4f30-a341-0dc091c2e859\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: White;\"><b>Related Display Controls</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"de12be85-d772-4bad-93f7-a404f07e5146\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/114207300/Chronic+Treatment+Chart+Control\" data-linked-resource-id=\"114207300\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Chronic Treatment Chart Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/98402409/Drug+Order+Treatment+Details+Control\" data-linked-resource-id=\"98402409\" data-linked-resource-version=\"13\" data-linked-resource-type=\"page\">Drug Order / Treatment Details Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/99123216/Treatment+Display+Control\" data-linked-resource-id=\"99123216\" data-linked-resource-version=\"20\" data-linked-resource-type=\"page\">Treatment Display Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114746475/Treatment+Details+Control\" data-linked-resource-id=\"114746475\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Treatment Details Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/3152838666/Sending+prescription+to+patients\" data-linked-resource-id=\"3152838666\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Sending prescription to patients</a></li></ul><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/114207300"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/114207300/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114207300/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 0
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/114207300/child",
+    "restrictions": "/rest/api/content/114207300/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/114207300/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=114207300",
+    "webui": "/spaces/BAH/pages/114207300/Chronic+Treatment+Chart+Control",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/114207300",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114207300",
+    "tinyui": "/x/RKrOBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

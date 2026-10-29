@@ -1,0 +1,172 @@
+{
+  "id": "3152838666",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3152838666",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzE1MjgzODY2Ng==",
+  "status": "current",
+  "title": "Sending prescription to patients",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "6075d6949361560068ca5992",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Abhinab Bharali",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/6075d6949361560068ca5992",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Abhinab Bharali",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=6075d6949361560068ca5992"
+      }
+    },
+    "createdDate": "2023-03-01T06:03:56.041Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3152838666/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "61073b717ab143006e0079b4",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Kavitha S",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/61073b717ab143006e0079b4",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Kavitha S",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=61073b717ab143006e0079b4"
+      }
+    },
+    "when": "2023-03-08T12:01:44.598Z",
+    "friendlyWhen": "Mar 08, 2023",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "syncRev": "0.930K1rOmaklS21PDAExAyg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$3152838666.114",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3152838666"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3152838666/version/8"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"fixed-width\" ac:breakout-mode=\"default\"><ac:layout-cell><p /></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"two_right_sidebar\" ac:breakout-mode=\"default\"><ac:layout-cell><h2>Purpose </h2><p>In cases where the patients would require a copy of their prescription, the provider should be able to send the prescription to the patient. </p><p>Currently Bahmni supports sending prescription via email and ability to download the prescription on the provider&rsquo;s system which can be handed over to the patient after printing.</p><p>Bahmni would also support sending prescriptions via SMS and WhatsApp, where the text message would contain a link to download the prescription .pdf file.</p><h4>Where to access : </h4><p>On the treatments display control, one would be able to see the share icon against each visit. Clicking on the share icon provides options to share the prescription. Currently, email and download option would be enabled</p><h4>Screenshots : </h4><ac:image ac:align=\"left\" ac:layout=\"align-start\" ac:original-height=\"251\" ac:original-width=\"847\"><ri:attachment ri:filename=\"Screenshot 2023-03-01 at 11.51.35 AM.png\" ri:version-at-save=\"1\" /><ac:caption><p>Share button on treatment display control in patient&rsquo;s dashboard</p></ac:caption></ac:image><ac:image ac:align=\"left\" ac:layout=\"align-start\" ac:original-height=\"165\" ac:original-width=\"656\"><ri:attachment ri:filename=\"Screenshot 2023-03-01 at 11.52.39 AM.png\" ri:version-at-save=\"1\" /><ac:caption><p>Email and download options enabled</p></ac:caption></ac:image><ac:image ac:align=\"left\" ac:layout=\"align-start\" ac:original-height=\"964\" ac:original-width=\"916\"><ri:attachment ri:filename=\"Screenshot 2023-03-01 at 11.59.09 AM.png\" ri:version-at-save=\"1\" /><ac:caption><p>Prescription sent as pdf</p></ac:caption></ac:image><hr /><h2>Technical overview</h2><h3>Configuration</h3><table data-layout=\"default\" ac:local-id=\"eee096ce-f7c8-495c-ba87-d47cf68359d1\"><colgroup><col style=\"width: 1130.0px;\" /></colgroup><tbody><tr><th><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e1eabbaa-7981-4e08-9f59-0cb887238529\"><ac:rich-text-body><p>Where to Configure ?</p><p>Add to <em><ac:inline-comment-marker ac:ref=\"b51e32aa-9646-4fd2-baf8-35d7e61e370f\">clinical</ac:inline-comment-marker>/dashboard.json</em> under &ldquo;treatment&rdquo; section for the print headers to be used in the pdf generation.</p></ac:rich-text-body></ac:structured-macro></th></tr></tbody></table><h3>Sample Config</h3><table data-layout=\"default\" ac:local-id=\"023d6196-2243-41d1-9e56-82b5450caeb4\"><colgroup><col style=\"width: 1130.0px;\" /></colgroup><tbody><tr><th><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"955da43c-1f41-4afb-b3b3-375574d293d5\"><ac:plain-text-body><![CDATA[\"prescriptionPrint\": {\n    \"title\": \"Bahmni\",\n    \"header\": \"Prescriptions\",\n    \"logo\": \"../images/bahmniLogo.png\"\n}]]></ac:plain-text-body></ac:structured-macro></th></tr></tbody></table><h3>Configuration to enable sending email option for prescription</h3><p>One needs to have the privilege <code>Send Email</code> for sending any mail. For this we have to assign the privilege to user&rsquo;s role.</p><ul><li><p>Go to <strong>OpenMRS &rarr;&nbsp;Manage Roles &rarr; </strong>Select Role which needs to have the privilege for sending mails<strong> &rarr;</strong> assign the privilege <code>Send Email</code> <strong>&rarr;</strong> save the role. The email won&rsquo;t be sent if the user who are triggering the email doesn&rsquo;t have this privilege.</p></li></ul><p>One can enable sending email option for prescription from the patient dashboard. For this we have to update the global property value.&nbsp;</p><ul><li><p>Go to <strong>OpenMRS &rarr;&nbsp;Admin &rarr; Advance Settings</strong> and set&nbsp;<code>bahmni.enableEmailPrescriptionOption</code> global property value to <code>true</code>. By default, the value will be <code>false</code> and the email icon won&rsquo;t be visible in the sharing options.</p></li></ul><ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p>If the patient doesn&rsquo;t have email address added to the registration details, then the email icon will be disabled and one can&rsquo;t send prescription email.</p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p>If the patient doesn&rsquo;t have email address added to the registration details, then the email icon will be disabled and one can&rsquo;t send prescription email.</p>\n</div></div></ac:adf-fallback></ac:adf-extension></ac:layout-cell><ac:layout-cell><table data-layout=\"default\" ac:local-id=\"b6d5c7d4-8e0b-4ee8-9656-4d6542e3310c\"><tbody><tr><td><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"475f8897-e03b-4b39-b4d4-abe2d51e7047\"><ac:rich-text-body><p>On this Page</p></ac:rich-text-body></ac:structured-macro></td></tr><tr><td><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" data-layout=\"default\" ac:local-id=\"22dae7ed-702d-4f54-8148-ac0ca4cb01cf\" ac:macro-id=\"3204a4f43d30b79e87dc6581e28f74a5\"><ac:parameter ac:name=\"minLevel\">1</ac:parameter><ac:parameter ac:name=\"maxLevel\">7</ac:parameter><ac:parameter ac:name=\"class\">border: 15px solid green;</ac:parameter></ac:structured-macro></td></tr></tbody></table><table data-layout=\"default\" ac:local-id=\"bae9cecf-e12a-4c26-bdf4-2f2dbb471965\"><tbody><tr><th><p><strong>Related Display Controls</strong></p></th></tr><tr><td><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" data-layout=\"default\" ac:local-id=\"4e8fa6a1-5ef7-42eb-888c-9225076b6811\" ac:macro-id=\"af9980edff7b92ec6f4a12236f5256e4\"><ac:parameter ac:name=\"page\"><ac:link><ri:page ri:content-title=\"Medication Controls\" ri:version-at-save=\"1\" /></ac:link></ac:parameter></ac:structured-macro></td></tr></tbody></table><p /><p /></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"two_equal\" ac:breakout-mode=\"default\"><ac:layout-cell><p /></ac:layout-cell><ac:layout-cell><p /></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3152838666"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout fixed-width\" data-layout=\"fixed-width\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p /></div>\n</div>\n</div>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"Sendingprescriptiontopatients-Purpose\">Purpose </h2><p>In cases where the patients would require a copy of their prescription, the provider should be able to send the prescription to the patient. </p><p>Currently Bahmni supports sending prescription via email and ability to download the prescription on the provider’s system which can be handed over to the patient after printing.</p><p>Bahmni would also support sending prescriptions via SMS and WhatsApp, where the text message would contain a link to download the prescription .pdf file.</p><h4 id=\"Sendingprescriptiontopatients-Wheretoaccess:\">Where to access : </h4><p>On the treatments display control, one would be able to see the share icon against each visit. Clicking on the share icon provides options to share the prescription. Currently, email and download option would be enabled</p><h4 id=\"Sendingprescriptiontopatients-Screenshots:\">Screenshots : </h4><span class=\"confluence-embedded-file-wrapper image-left-wrapper\"><img class=\"confluence-embedded-image image-left\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/3152838666/Screenshot%202023-03-01%20at%2011.51.35%20AM.png?version=1&amp;modificationDate=1677651704859&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3152838666/Screenshot%202023-03-01%20at%2011.51.35%20AM.png?version=1&amp;modificationDate=1677651704859&amp;cacheVersion=1&amp;api=v2\" data-height=\"251\" data-width=\"847\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3152936984\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2023-03-01 at 11.51.35 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3152838666\" data-linked-resource-container-version=\"8\" data-media-id=\"d8a9e09a-1551-46ab-abd7-bc5be9cd7349\" data-media-type=\"file\"></span><span class=\"confluence-embedded-file-wrapper image-left-wrapper\"><img class=\"confluence-embedded-image image-left\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/3152838666/Screenshot%202023-03-01%20at%2011.52.39%20AM.png?version=1&amp;modificationDate=1677651769939&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3152838666/Screenshot%202023-03-01%20at%2011.52.39%20AM.png?version=1&amp;modificationDate=1677651769939&amp;cacheVersion=1&amp;api=v2\" data-height=\"165\" data-width=\"656\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3152773152\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2023-03-01 at 11.52.39 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3152838666\" data-linked-resource-container-version=\"8\" data-media-id=\"52305ff7-4646-40d1-8580-5be5fb9c3d9e\" data-media-type=\"file\"></span><span class=\"confluence-embedded-file-wrapper image-left-wrapper\"><img class=\"confluence-embedded-image image-left\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/3152838666/Screenshot%202023-03-01%20at%2011.59.09%20AM.png?version=1&amp;modificationDate=1677652158538&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3152838666/Screenshot%202023-03-01%20at%2011.59.09%20AM.png?version=1&amp;modificationDate=1677652158538&amp;cacheVersion=1&amp;api=v2\" data-height=\"964\" data-width=\"916\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3152936998\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2023-03-01 at 11.59.09 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3152838666\" data-linked-resource-container-version=\"8\" data-media-id=\"f4faa1d0-f54f-4694-9a94-7db148f212c5\" data-media-type=\"file\"></span><hr/><h2 id=\"Sendingprescriptiontopatients-Technicaloverview\">Technical overview</h2><h3 id=\"Sendingprescriptiontopatients-Configuration\">Configuration</h3><div class=\"table-wrap\"><table data-layout=\"default\" data-local-id=\"eee096ce-f7c8-495c-ba87-d47cf68359d1\" class=\"confluenceTable\"><colgroup><col style=\"width: 1130.0px;\"/></colgroup><tbody><tr><th class=\"confluenceTh\"><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e1eabbaa-7981-4e08-9f59-0cb887238529\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Where to Configure ?</p><p>Add to <em><span class=\"inline-comment-marker\" data-ref=\"b51e32aa-9646-4fd2-baf8-35d7e61e370f\">clinical</span>/dashboard.json</em> under “treatment” section for the print headers to be used in the pdf generation.</p></div></div></th></tr></tbody></table></div><h3 id=\"Sendingprescriptiontopatients-SampleConfig\">Sample Config</h3><div class=\"table-wrap\"><table data-layout=\"default\" data-local-id=\"023d6196-2243-41d1-9e56-82b5450caeb4\" class=\"confluenceTable\"><colgroup><col style=\"width: 1130.0px;\"/></colgroup><tbody><tr><th class=\"confluenceTh\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"955da43c-1f41-4afb-b3b3-375574d293d5\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;prescriptionPrint&quot;: {\n    &quot;title&quot;: &quot;Bahmni&quot;,\n    &quot;header&quot;: &quot;Prescriptions&quot;,\n    &quot;logo&quot;: &quot;../images/bahmniLogo.png&quot;\n}</pre>\n</div></div></th></tr></tbody></table></div><h3 id=\"Sendingprescriptiontopatients-Configurationtoenablesendingemailoptionforprescription\">Configuration to enable sending email option for prescription</h3><p>One needs to have the privilege <code>Send Email</code> for sending any mail. For this we have to assign the privilege to user’s role.</p><ul><li><p>Go to <strong>OpenMRS → Manage Roles → </strong>Select Role which needs to have the privilege for sending mails<strong> →</strong> assign the privilege <code>Send Email</code> <strong>→</strong> save the role. The email won’t be sent if the user who are triggering the email doesn’t have this privilege.</p></li></ul><p>One can enable sending email option for prescription from the patient dashboard. For this we have to update the global property value. </p><ul><li><p>Go to <strong>OpenMRS → Admin → Advance Settings</strong> and set <code>bahmni.enableEmailPrescriptionOption</code> global property value to <code>true</code>. By default, the value will be <code>false</code> and the email icon won’t be visible in the sharing options.</p></li></ul><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p>If the patient doesn’t have email address added to the registration details, then the email icon will be disabled and one can’t send prescription email.</p>\n</div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"table-wrap\"><table data-layout=\"default\" data-local-id=\"b6d5c7d4-8e0b-4ee8-9656-4d6542e3310c\" class=\"confluenceTable\"><tbody><tr><td class=\"confluenceTd\"><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"475f8897-e03b-4b39-b4d4-abe2d51e7047\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>On this Page</p></div></div></td></tr><tr><td class=\"confluenceTd\"><div class=\"toc-macro client-side-toc-macro border: 15px solid green; conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-layout=\"default\" data-local-id=\"22dae7ed-702d-4f54-8148-ac0ca4cb01cf\" data-macro-id=\"3204a4f43d30b79e87dc6581e28f74a5\" data-macro-name=\"toc\"> </div></td></tr></tbody></table></div><div class=\"table-wrap\"><table data-layout=\"default\" data-local-id=\"bae9cecf-e12a-4c26-bdf4-2f2dbb471965\" class=\"confluenceTable\"><tbody><tr><th class=\"confluenceTh\"><p><strong>Related Display Controls</strong></p></th></tr><tr><td class=\"confluenceTd\"><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-layout=\"default\" data-local-id=\"4e8fa6a1-5ef7-42eb-888c-9225076b6811\" data-macro-id=\"af9980edff7b92ec6f4a12236f5256e4\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/114207300/Chronic+Treatment+Chart+Control\" data-linked-resource-id=\"114207300\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Chronic Treatment Chart Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/98402409/Drug+Order+Treatment+Details+Control\" data-linked-resource-id=\"98402409\" data-linked-resource-version=\"13\" data-linked-resource-type=\"page\">Drug Order / Treatment Details Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/99123216/Treatment+Display+Control\" data-linked-resource-id=\"99123216\" data-linked-resource-version=\"20\" data-linked-resource-type=\"page\">Treatment Display Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114746475/Treatment+Details+Control\" data-linked-resource-id=\"114746475\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Treatment Details Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/3152838666/Sending+prescription+to+patients\" data-linked-resource-id=\"3152838666\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Sending prescription to patients</a></li></ul></td></tr></tbody></table></div><p /><p /></div>\n</div>\n</div>\n<div class=\"columnLayout two-equal\" data-layout=\"two-equal\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p /></div>\n</div>\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p /></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3152838666"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3152838666/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3152838666/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 724
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3152838666/child",
+    "restrictions": "/rest/api/content/3152838666/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3152838666/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3152838666",
+    "webui": "/spaces/BAH/pages/3152838666/Sending+prescription+to+patients",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3152838666",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3152838666",
+    "tinyui": "/x/CoDsuw",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

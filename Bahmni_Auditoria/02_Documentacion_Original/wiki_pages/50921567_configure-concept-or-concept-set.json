@@ -1,0 +1,172 @@
+{
+  "id": "50921567",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/50921567",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNTA5MjE1Njc=",
+  "status": "current",
+  "title": "Configure Concept or Concept Set",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d50fbe0b-e813-4256-98ab-89ecfc6a90c0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Shanmugam R (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d50fbe0b-e813-4256-98ab-89ecfc6a90c0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Shanmugam Radhakrishnan (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d50fbe0b-e813-4256-98ab-89ecfc6a90c0"
+      }
+    },
+    "createdDate": "2016-04-07T08:06:05.521Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/50921567/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d50fbe0b-e813-4256-98ab-89ecfc6a90c0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Shanmugam R (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d50fbe0b-e813-4256-98ab-89ecfc6a90c0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Shanmugam Radhakrishnan (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d50fbe0b-e813-4256-98ab-89ecfc6a90c0"
+      }
+    },
+    "when": "2016-05-18T06:13:22.895Z",
+    "friendlyWhen": "May 18, 2016",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "syncRev": "0.pF4dCywWeWDUaL1n0rIv-g.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$50921567.62",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/50921567"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/50921567/version/5"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<h3><strong>Description</strong></h3><p><span>The concept is the basic element of flexibility in OpenMRS. Concepts are the individual data points collected from a population of patients. Concepts include both questions and answers. You can find more info at&nbsp;<ac:link><ri:page ri:content-title=\"OpenMRS Links\" /><ac:plain-text-link-body><![CDATA[Concept Dictionary Basics]]></ac:plain-text-link-body></ac:link></span></p><h3><strong>Create New Concept</strong></h3><p>When you want to create a concept you need to goto <strong>Dictionary</strong>. By selecting&nbsp;&quot;Add New Concept&quot;, you will see the screen as below.&nbsp;You must provide 'Fully Specified Name'. &nbsp;Concept Data Types specifies the type of data the concept is configured to hold, such as such as coded, text, etc. Refer to the screenshot below to know the various data types in OpenMRS:</p><p><ac:image ac:align=\"center\" ac:border=\"true\" ac:width=\"700\"><ri:attachment ri:filename=\"Concept Data Types.png\" /></ac:image></p><p style=\"text-align: center;\"><strong><br /></strong></p><p style=\"text-align: center;\"><strong><br /></strong></p><p style=\"text-align: left;\"><strong><strong>Example</strong>:<br />Fully Specified Name = Anaemia Templates, Short Name = Anaemia</strong></p><p style=\"text-align: left;\"><strong><br /></strong></p><h3 style=\"text-align: left;\"><strong>Create New Concept set</strong></h3><p>When concepts are required to be grouped then we use concept set. For eg: Blood is a sample and many lab tests can be performed with it. So, we use concept set for Blood and define lab tests as its members. The concept set is nothing but a concept with specific property enabled (Is Set?). When set is enabled, we can add members to it. The member should be another concept. You can find more info at&nbsp;<ac:link><ri:page ri:content-title=\"OpenMRS Links\" /><ac:plain-text-link-body><![CDATA[Concept Dictionary Basics]]></ac:plain-text-link-body></ac:link>.</p><p><ac:image ac:align=\"center\" ac:border=\"true\" ac:height=\"493\" ac:width=\"700\"><ri:attachment ri:filename=\"Conceptset Definition.png\" /></ac:image></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/50921567"
+      }
+    },
+    "view": {
+      "value": "<h3 id=\"ConfigureConceptorConceptSet-Description\"><strong>Description</strong></h3><p><span>The concept is the basic element of flexibility in OpenMRS. Concepts are the individual data points collected from a population of patients. Concepts include both questions and answers. You can find more info at <a href=\"/wiki/spaces/BAH/pages/20643861/OpenMRS+Links\" data-linked-resource-id=\"20643861\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">Concept Dictionary Basics</a></span></p><h3 id=\"ConfigureConceptorConceptSet-CreateNewConcept\"><strong>Create New Concept</strong></h3><p>When you want to create a concept you need to goto <strong>Dictionary</strong>. By selecting &quot;Add New Concept&quot;, you will see the screen as below. You must provide 'Fully Specified Name'.  Concept Data Types specifies the type of data the concept is configured to hold, such as such as coded, text, etc. Refer to the screenshot below to know the various data types in OpenMRS:</p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/50921567/Concept%20Data%20Types.png?version=1&amp;modificationDate=1460016419732&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=448\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/50921567/Concept%20Data%20Types.png?version=1&amp;modificationDate=1460016419732&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"50921570\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Concept Data Types.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"50921567\" data-linked-resource-container-version=\"5\" data-media-id=\"2eccba12-34b2-4776-8e89-1c0129d7b4ef\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/50921567/Concept%20Data%20Types.png?version=1&amp;modificationDate=1460016419732&amp;cacheVersion=1&amp;api=v2&amp;width=1145&amp;height=733 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/50921567/Concept%20Data%20Types.png?version=1&amp;modificationDate=1460016419732&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=448 1x\"></span></p><p style=\"text-align: center;\"><strong><br/></strong></p><p style=\"text-align: center;\"><strong><br/></strong></p><p style=\"text-align: left;\"><strong><strong>Example</strong>:<br/>Fully Specified Name = Anaemia Templates, Short Name = Anaemia</strong></p><p style=\"text-align: left;\"><strong><br/></strong></p><h3 style=\"text-align: left;\" id=\"ConfigureConceptorConceptSet-CreateNewConceptset\"><strong>Create New Concept set</strong></h3><p>When concepts are required to be grouped then we use concept set. For eg: Blood is a sample and many lab tests can be performed with it. So, we use concept set for Blood and define lab tests as its members. The concept set is nothing but a concept with specific property enabled (Is Set?). When set is enabled, we can add members to it. The member should be another concept. You can find more info at <a href=\"/wiki/spaces/BAH/pages/20643861/OpenMRS+Links\" data-linked-resource-id=\"20643861\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">Concept Dictionary Basics</a>.</p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" height=\"493\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/50921567/Conceptset%20Definition.png?version=2&amp;modificationDate=1463549463555&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=493\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/50921567/Conceptset%20Definition.png?version=2&amp;modificationDate=1463549463555&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"61505540\" data-linked-resource-version=\"2\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Conceptset Definition.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"50921567\" data-linked-resource-container-version=\"5\" data-media-id=\"c250ccd5-93ac-4a9e-8810-d01036fe2731\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/50921567/Conceptset%20Definition.png?version=2&amp;modificationDate=1463549463555&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=986 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/50921567/Conceptset%20Definition.png?version=2&amp;modificationDate=1463549463555&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=493 1x\"></span></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/50921567"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/50921567/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/50921567/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 317137518
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/50921567/child",
+    "restrictions": "/rest/api/content/50921567/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/50921567/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=50921567",
+    "webui": "/spaces/BAH/pages/50921567/Configure+Concept+or+Concept+Set",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/50921567",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/50921567",
+    "tinyui": "/x/XwAJAw",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

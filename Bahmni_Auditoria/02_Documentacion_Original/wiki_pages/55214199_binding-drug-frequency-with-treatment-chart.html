@@ -1,0 +1,193 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Binding Drug Frequency with Treatment Chart</title></head><body><h1>Binding Drug Frequency with Treatment Chart</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="BindingDrugFrequencywithTreatmentChart-Purposeandbenefits">Purpose and benefits</h2><p>This config enables a user to add custom drug frequencies, like Monday, Wednesday, Friday, in Medication. The user can also configure the<em><strong> Treatment Chart</strong></em> where a custom display control displays information according to the customized frequency.</p><h2 id="BindingDrugFrequencywithTreatmentChart-Steps"><span style="line-height: 1.42857;">Steps</span></h2><p><span style="line-height: 1.42857;">The treatment chart is available in the visit dashboard of an admitted patient</span></p><p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" width="700" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/55214199/Screen%20Shot%202016-04-25%20at%203.22.22%20PM.png?version=1&amp;modificationDate=1461578044000&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=251" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/55214199/Screen%20Shot%202016-04-25%20at%203.22.22%20PM.png?version=1&amp;modificationDate=1461578044000&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="55214247" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2016-04-25 at 3.22.22 PM.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="55214199" data-linked-resource-container-version="21" data-media-id="b0e25282-007c-4bf1-a4bf-18ff5c65ab91" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/55214199/Screen%20Shot%202016-04-25%20at%203.22.22%20PM.png?version=1&amp;modificationDate=1461578044000&amp;cacheVersion=1&amp;api=v2&amp;width=1315&amp;height=473 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/55214199/Screen%20Shot%202016-04-25%20at%203.22.22%20PM.png?version=1&amp;modificationDate=1461578044000&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=251 1x"></span></p><h3 id="BindingDrugFrequencywithTreatmentChart-Configurationinvisit.json">Configuration in visit.json</h3><p>The following config is required in <strong>apps/clinical/visit.json</strong>: </p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="658c7994-8a1f-4ff1-8743-ca04251fb22d" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Code Snippet</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">&quot;sections&quot;: {
+ &quot;Custom Treatment Chart&quot;: {
+    &quot;type&quot;: &quot;custom&quot;,
+  &quot;displayOrder&quot;: 1,
+  &quot;config&quot;: {
+      &quot;title&quot;: &quot;Custom Treatment Chart&quot;,
+  &quot;template&quot;: &quot;&lt;custom-treatment-chart config=config visit-summary=visitSummary&gt;&lt;/custom-treatment-chart&gt;&quot;,
+  &quot;showOtherActive&quot;: true,
+  &quot;frequenciesToBeHandled&quot;: [
+        &quot;Monday, Wednesday, Friday&quot;,
+  &quot;Tuesday, Thursday, Saturday&quot;,
+  &quot;Monday, Sunday, Wednesday&quot;
+  ]
+    }
+  },
+  &quot;Treatments&quot;: {
+    &quot;type&quot;: &quot;treatment&quot;,
+  &quot;title&quot;: &quot;Treatments&quot;,
+  &quot;displayOrder&quot;: 6,
+  &quot;config&quot;: {
+      &quot;translationKey&quot;: &quot;VISIT_TITLE_TREATMENTS_KEY&quot;,
+  &quot;showFlowSheet&quot;: false,
+  &quot;showListView&quot;: true,
+  &quot;showOtherActive&quot;: false,
+  &quot;showDetailsButton&quot;: true,
+  &quot;showRoute&quot;: true,
+  &quot;showDrugForm&quot;: true,
+  &quot;showProvider&quot; : true
+  }
+  }
+}</pre>
+</div></div><h3 id="BindingDrugFrequencywithTreatmentChart-ConfigurationincustomControl.js">Configuration in customControl.js</h3><p>In <strong>apps/customDisplayControl/js/customControl.js</strong> (if this file is not there in js directory, create it)</p><p>If customControl.js is already present, then add this config in the end and do not merge it with any other directive.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="9510f601-6463-4c86-a8c0-4674d865063d" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Code Snippet</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">.directive('customTreatmentChart', ['appService', 'treatmentConfig', 'treatmentService', 'spinner', '$q', function(appService, treatmentConfig, treatmentService, spinner, $q) {
+    var link = function($scope) {
+        var Constants = Bahmni.Clinical.Constants;
+        var days = [
+            'Sunday',
+            'Monday',
+            'Tuesday',
+            'Wednesday',
+            'Thursday',
+            'Friday',
+            'Saturday'
+        ];
+        $scope.contentUrl = appService.configBaseUrl() + &quot;/customDisplayControl/views/customTreatmentChart.html&quot;;
+
+        $scope.atLeastOneDrugForDay = function(day) {
+            var atLeastOneDrugForDay = false;
+            $scope.ipdDrugOrders.getIPDDrugs().forEach(function(drug) {
+                if (drug.isActiveOnDate(day.date)) {
+                    atLeastOneDrugForDay = true;
+                }
+            });
+            return atLeastOneDrugForDay;
+        };
+        $scope.getVisitStopDateTime = function() {
+            return $scope.visitSummary.stopDateTime || Bahmni.Common.Util.DateUtil.now();
+        };
+        $scope.getStatusOnDate = function(drug, date) {
+            var activeDrugOrders = _.filter(drug.orders, function(order) {
+                if ($scope.config.frequenciesToBeHandled.indexOf(order.getFrequency()) !== -1) {
+                    return getStatusBasedOnFrequency(order, date);
+                } else {
+                    return drug.getStatusOnDate(date) === 'active';
+                }
+            });
+            if (activeDrugOrders.length === 0) {
+                return 'inactive';
+            }
+            if (_.every(activeDrugOrders, function(order) {
+                    return order.getStatusOnDate(date) === 'stopped';
+                })) {
+                return 'stopped';
+            }
+            return 'active';
+        };
+        var getStatusBasedOnFrequency = function(order, date) {
+            var activeBetweenDate = order.isActiveOnDate(date);
+            var frequencies = order.getFrequency().split(&quot;,&quot;).map(function(day) {
+                return day.trim();
+            });
+            var dayNumber = moment(date).day();
+            return activeBetweenDate &amp;&amp; frequencies.indexOf(days[dayNumber]) !== -1;
+        };
+        var init = function() {
+            var getToDate = function() {
+                return $scope.visitSummary.stopDateTime || Bahmni.Common.Util.DateUtil.now();
+            };
+            var programConfig = appService.getAppDescriptor().getConfigValue(&quot;program&quot;) || {};
+            var startDate = null,
+                endDate = null,
+                getEffectiveOrdersOnly = false;
+            if (programConfig.showDetailsWithinDateRange) {
+                startDate = $stateParams.dateEnrolled;
+                endDate = $stateParams.dateCompleted;
+                if (startDate || endDate) {
+                    $scope.config.showOtherActive = false;
+                }
+                getEffectiveOrdersOnly = true;
+            }
+            return $q.all([treatmentConfig(), treatmentService.getPrescribedAndActiveDrugOrders($scope.config.patientUuid, $scope.config.numberOfVisits,
+                    $scope.config.showOtherActive, $scope.config.visitUuids || [], startDate, endDate, getEffectiveOrdersOnly)])
+                .then(function(results) {
+                    var config = results[0];
+                    var drugOrderResponse = results[1].data;
+                    var createDrugOrderViewModel = function(drugOrder) {
+                        return Bahmni.Clinical.DrugOrderViewModel.createFromContract(drugOrder, config);
+                    };
+                    for (var key in drugOrderResponse) {
+                        drugOrderResponse[key] = drugOrderResponse[key].map(createDrugOrderViewModel);
+                    }
+
+                    var groupedByVisit = _.groupBy(drugOrderResponse.visitDrugOrders, function(drugOrder) {
+                        return drugOrder.visit.startDateTime;
+                    });
+                    var treatmentSections = [];
+
+                    for (var key in groupedByVisit) {
+                        var values = Bahmni.Clinical.DrugOrder.Util.mergeContinuousTreatments(groupedByVisit[key]);
+                        treatmentSections.push({
+                            visitDate: key,
+                            drugOrders: values
+                        });
+                    }
+                    if (!_.isEmpty(drugOrderResponse[Constants.otherActiveDrugOrders])) {
+                        var mergedOtherActiveDrugOrders = Bahmni.Clinical.DrugOrder.Util.mergeContinuousTreatments(drugOrderResponse[Constants.otherActiveDrugOrders]);
+                        treatmentSections.push({
+                            visitDate: Constants.otherActiveDrugOrders,
+                            drugOrders: mergedOtherActiveDrugOrders
+                        });
+                    }
+                    $scope.treatmentSections = treatmentSections;
+                    if ($scope.visitSummary) {
+                        $scope.ipdDrugOrders = Bahmni.Clinical.VisitDrugOrder.createFromDrugOrders(drugOrderResponse.visitDrugOrders, $scope.visitSummary.startDateTime, getToDate());
+                    }
+                });
+        };
+        spinner.forPromise(init());
+    };
+    return {
+        restrict: 'E',
+        link: link,
+        scope: {
+            config: &quot;=&quot;,
+            visitSummary: '='
+        },
+        template: '&lt;ng-include src=&quot;contentUrl&quot;/&gt;'
+    }
+}]);</pre>
+</div></div><h3 id="BindingDrugFrequencywithTreatmentChart-ConfigurationrelatedtoViews">Configuration related to Views</h3><p>In <strong>apps/customDislayControl/views </strong>create a HTML file and name it &quot;customTreatmentChart.html&quot; and add the below config in it.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="b1bb199e-084b-4e95-bfa3-bc70b995bbfb" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Code Snippet</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: xml; gutter: true; theme: Confluence" data-theme="Confluence">&lt;section class=&quot;block ipd-treatment-section&quot; ng-if=&quot;::visitSummary.isAdmitted() &amp;&amp; !print&quot;&gt;
+    &lt;h2 class=&quot;section-title&quot;&gt;{{config.title}}&lt;/h2&gt;
+    &lt;table class=&quot;h-scroll&quot;&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;
+                    &lt;span&gt;{{::(visitSummary.startDateTime | bahmniDate) + ' - '+ (getVisitStopDateTime() | bahmniDate)}}&lt;/span&gt;
+                &lt;/th&gt;
+                &lt;th ng-repeat=&quot;drug in ::ipdDrugOrders.getIPDDrugs()&quot; class=&quot;drug&quot; ng-class=&quot;{active: drug.isActive()}&quot;&gt;{{drug.orders[0].getDisplayName()}}&lt;/th&gt;
+
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr ng-repeat=&quot;day in ::ipdDrugOrders.ipdDrugSchedule.days&quot; ng-if=&quot;atLeastOneDrugForDay(day)&quot;&gt;
+                &lt;td&gt;
+                    &lt;span&gt;
+ &lt;!-- D{{day.dayNumber}} ({{day.date | bahmniDate}}) --&gt;
+ {{day.date | bahmniDate}}
+                &lt;/span&gt;
+                &lt;/td&gt;
+                &lt;td ng-switch=&quot;getStatusOnDate(drug, day.date)&quot; ng-repeat=&quot;drug in ::ipdDrugOrders.ipdDrugSchedule.drugs&quot;&gt;
+                    &lt;span class=&quot;fa fa-ok&quot; ng-switch-when=&quot;active&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;fa fa-stop&quot; ng-switch-when=&quot;stopped&quot;&gt;&lt;/span&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/section&gt;</pre>
+</div></div><h3 id="BindingDrugFrequencywithTreatmentChart-ConfigurationinOpenMRS">Configuration in OpenMRS</h3><p>In OpenMRS, add a concept of class <strong>frequency</strong> and datatype <strong>N/A. </strong> As seen in screenshot below, the concept name is: &quot;Monday, Wednesday, Friday&quot;. This is because the Bahmni UI shows this concept name on the UI for selection of &quot;frequency&quot;, and hence should be easy to understand.</p><p><strong><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-content-image-border" height="400" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/55214199/Screen%20Shot%202016-04-26%20at%2011.10.14.png?version=1&amp;modificationDate=1461649191632&amp;cacheVersion=1&amp;api=v2&amp;width=603&amp;height=400" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/55214199/Screen%20Shot%202016-04-26%20at%2011.10.14.png?version=1&amp;modificationDate=1461649191632&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="55214291" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2016-04-26 at 11.10.14.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="55214199" data-linked-resource-container-version="21" data-media-id="840f2f65-0ba8-45ca-9385-1533efbc5361" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/55214199/Screen%20Shot%202016-04-26%20at%2011.10.14.png?version=1&amp;modificationDate=1461649191632&amp;cacheVersion=1&amp;api=v2&amp;width=1206&amp;height=800 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/55214199/Screen%20Shot%202016-04-26%20at%2011.10.14.png?version=1&amp;modificationDate=1461649191632&amp;cacheVersion=1&amp;api=v2&amp;width=603&amp;height=400 1x"></span><br/></strong></p><p>In OpenMRS DB, insert a row in <strong>order_frequency</strong> table with the concept ID of the concept created above to see the frequency in the frequency drop down of Medication tab.</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="400" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/55214199/Screen%20Shot%202016-04-26%20at%2011.36.12.png?version=1&amp;modificationDate=1461650739600&amp;cacheVersion=1&amp;api=v2&amp;width=1018&amp;height=400" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/55214199/Screen%20Shot%202016-04-26%20at%2011.36.12.png?version=1&amp;modificationDate=1461650739600&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="55214293" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2016-04-26 at 11.36.12.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="55214199" data-linked-resource-container-version="21" data-media-id="7170bf8b-bacf-4631-bce9-d0110a6ad723" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/55214199/Screen%20Shot%202016-04-26%20at%2011.36.12.png?version=1&amp;modificationDate=1461650739600&amp;cacheVersion=1&amp;api=v2&amp;width=1874&amp;height=736 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/55214199/Screen%20Shot%202016-04-26%20at%2011.36.12.png?version=1&amp;modificationDate=1461650739600&amp;cacheVersion=1&amp;api=v2&amp;width=1018&amp;height=400 1x"></span></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="d51f552b-de99-485d-b1b4-181ad3aa79a2" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #1FA5A0;color: white;"><b>On this page</b></div><div class="panelContent">
+<p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="c754e0bd-232c-47f6-bff6-9ce85b6f8bbc" data-macro-name="toc"> </div><p> </p>
+</div></div></div>
+</div>
+</div>
+</div></body></html>

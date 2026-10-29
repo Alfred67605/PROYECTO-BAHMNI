@@ -1,0 +1,23 @@
+#!/bin/bash -x -e
+# This Source Code Form is subject to the terms of the Mozilla Public License,
+# v. 2.0. If a copy of the MPL was not distributed with this file, You can
+# obtain one at https://www.bahmni.org/license/mplv2hd.
+#
+# Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
+# graphic logo is a trademark of OpenMRS Inc.
+
+PATH_OF_CURRENT_SCRIPT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source $PATH_OF_CURRENT_SCRIPT/vagrant_functions.sh
+#All config is here
+WEBAPP_FOLDER=/home/bahmni/apache-tomcat-8.0.12/webapps
+MODULE_DEPLOYMENT_FOLDER=/tmp/
+CWD=$1
+VERSION=$2
+PROJECT_BASE=$PATH_OF_CURRENT_SCRIPT/../../..
+SCRIPTS_DIR=$CWD/scripts/vagrant
+
+
+# Deploy pacs
+scp_to_vagrant $PROJECT_BASE/pacs-integration-webapp/target/pacs-integration.war $MODULE_DEPLOYMENT_FOLDER/pacs-integration.war
+
+run_in_vagrant -f "$SCRIPTS_DIR/deploy_war.sh"

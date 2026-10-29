@@ -1,0 +1,172 @@
+{
+  "id": "2316239224",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2316239224",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMxNjIzOTIyNA==",
+  "status": "current",
+  "title": "Operation Theatre - Module",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5ff6975591bb2e0108e513c3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "venkatesh bavisetti",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5ff6975591bb2e0108e513c3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Bavisetti Venkatesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5ff6975591bb2e0108e513c3"
+      }
+    },
+    "createdDate": "2021-04-05T09:12:29.886Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239224/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2022-11-20T12:21:58.008Z",
+    "friendlyWhen": "Nov 20, 2022",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "0.confluence$content$2316239224.20",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2316239224.21",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2316239224"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239224/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" data-layout=\"default\" ac:local-id=\"367d9b52-47b8-41ee-8fac-c7d500101e7f\" ac:macro-id=\"a8d263b5-6c40-4eea-bd5e-e38a0793b7b8\" /><h3 style=\"text-align: center;\">Configuration</h3><p>incrementalUpdateConfig is applicable ( Refer <a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"cadf5a0a-b563-4fb1-b679-02141e14513b\"><ac:plain-text-body><![CDATA[{\n      \"name\": \"Operation Theater\",\n      \"type\": \"operationTheater\",\n      \"chunkSizeToRead\": \"500\"\n}]]></ac:plain-text-body></ac:structured-macro><hr /><h3 style=\"text-align: center;\">Existing OpenMRS tables</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"2f2ca0e7-cfe6-4df2-a448-511b7949fa76\"><ac:plain-text-body><![CDATA[Surgical_block\nSurgical_appointment\nSurgical_appointment_attribute\nSurgical_appointment_attribute_type\nProvider\nPerson_name\nLocation]]></ac:plain-text-body></ac:structured-macro><hr /><h3 style=\"text-align: center;\"> Flattened Mart Tables</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8e776cd0-29fc-44d8-b1c7-55b1d232f6cf\"><ac:plain-text-body><![CDATA[surgical_block_default\nsurgical_appointment_default\nsurgical_appointment_attributes\nsurgical_appointment_attribute_type_details_default]]></ac:plain-text-body></ac:structured-macro><p><strong>Incremental Config:</strong></p><p>Please check <a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update#6.-Operation-Theater-Job:\">this</a> section on how to enable/disable incremental config for specific mart tables.</p><p><strong>a)</strong> &nbsp;<strong>surgical_block_default</strong></p><table data-layout=\"default\" ac:local-id=\"26f750c4-8636-4381-9293-4a3132c1e3a3\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>surgical_block_id</p></td><td><p>Identifier for the table</p></td></tr><tr><td><p>primary_provider_name</p></td><td><p>Name of the Surgeon&nbsp; performing the surgery</p></td></tr><tr><td><p>creator_name&nbsp;</p></td><td><p>Name of creator for surgical block</p></td></tr><tr><td><p>location_name</p></td><td><p>Location of the operation theatre</p></td></tr><tr><td><p>block_starttime</p></td><td><p>Start time for surgery block</p></td></tr><tr><td><p>block_endtime</p></td><td><p>End time for surgery block</p></td></tr><tr><td><p>date_created</p></td><td><p>Date of creation for surgical block</p></td></tr><tr><td><p>date_changed&nbsp;</p></td><td><p>Changed date if modified</p></td></tr><tr><td><p>changed_by</p></td><td><p>Name of person who changed the surgical block</p></td></tr></tbody></table><p><strong>b) surgical_appointment_default</strong></p><table data-layout=\"default\" ac:local-id=\"edfe7efd-da4c-4967-b550-6551ddd90245\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>surgical_appointment_id</p></td><td><p>Table Identifier</p></td></tr><tr><td><p>surgical_block_id&nbsp;</p></td><td><p>Identifier for surgical block related to this surgery</p></td></tr><tr><td><p>patient_id&nbsp;</p></td><td><p>Identifier for the patient undergoing surgery</p></td></tr><tr><td><p>sort_weight</p></td><td><p>Weight will be used to order the appointment</p></td></tr><tr><td><p>status</p></td><td><p>Status of the surgery</p></td></tr><tr><td><p>actual_start_datetime</p></td><td><p>Actual Surgery start time</p></td></tr><tr><td><p>actual_end_datetime</p></td><td><p>Actual time at which surgery ended</p></td></tr><tr><td><p>notes</p></td><td><p>Notes added after surgery</p></td></tr><tr><td><p>date_created</p></td><td><p>Date when the surgery appointment was created</p></td></tr><tr><td><p>date_changed</p></td><td><p>If modified the date of modification of the surgery appointment</p></td></tr><tr><td><p>creator_name</p></td><td><p>Name of the person who created the surgery appointment</p></td></tr><tr><td><p>changed_by</p></td><td><p>Name of the person who modified the surgery appointment</p></td></tr></tbody></table><p><strong>c) surgical_appointment_attributes</strong></p><table data-layout=\"default\" ac:local-id=\"b179cbfe-a53b-4152-9fda-a547c51d4343\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>surgical_appointment_id</p></td><td><p>Identifier for the surgical appointment</p></td></tr><tr><td><p>procedure</p></td><td><p>Name of the surgical procedure</p></td></tr><tr><td><p>estTimeHours</p></td><td><p>Estimated time for surgery in hours</p></td></tr><tr><td><p>estTimeMinutes</p></td><td><p>Estimated time for surgery in minutes extra to the above hours</p></td></tr><tr><td><p>cleaningTime</p></td><td><p>Time for cleaning after the surgery</p></td></tr><tr><td><p>otherSurgeon&nbsp;</p></td><td><p>Name of additional surgeon</p></td></tr><tr><td><p>surgicalAssistant</p></td><td><p>Name of assistant</p></td></tr><tr><td><p>anaesthetist</p></td><td><p>Name of the doctor who performs anesthesia</p></td></tr><tr><td><p>scrubNurse</p></td><td><p>Name of scrub nurse for the surgery</p></td></tr><tr><td><p>circulatingNurse</p></td><td><p>Name of circulating nurse ( nurse from other location )</p></td></tr><tr><td><p>notes</p></td><td><p>Notes added after surgery is done</p></td></tr></tbody></table><p><strong>d) surgical_appointment_attribute_type_details_default</strong></p><table data-layout=\"default\" ac:local-id=\"bc5f4b74-7e1b-44a9-9bdb-61e6dd035cac\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>name</p></td><td><p>Name of the attributes used in the surgical appointment table</p></td></tr><tr><td><p>description</p></td><td><p>Description of the attributes used</p></td></tr></tbody></table><hr /><h3 style=\"text-align: center;\">Mart Views</h3><p><strong>a) patient_operation_theater_view</strong></p><p>This provides a comprehensive view of operation theatre block details such as creation date, surgeries scheduled, location of the block, surgeon assigned, procedure to be carried out, etc. Since a patient can have multiple surgeries scheduled at different times there can be multiple rows , but of different data for the same patient. Patient details includes age_at_surgery (Age of the patient during surgery) and age_group_at_surgery (Age group of the patient during surgery). The surgical block date corresponds to all the surgeries planned in that block for that day. Whenever a surgery is postponed the block date will give the actual scheduled time of the surgery.</p><p><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2316239224"
+      }
+    },
+    "view": {
+      "value": "<div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-layout=\"default\" data-local-id=\"367d9b52-47b8-41ee-8fac-c7d500101e7f\" data-macro-id=\"a8d263b5-6c40-4eea-bd5e-e38a0793b7b8\" data-macro-name=\"toc\"> </div><h3 style=\"text-align: center;\" id=\"OperationTheatre-Module-Configuration\">Configuration</h3><p>incrementalUpdateConfig is applicable ( Refer <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"cadf5a0a-b563-4fb1-b679-02141e14513b\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n      &quot;name&quot;: &quot;Operation Theater&quot;,\n      &quot;type&quot;: &quot;operationTheater&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;\n}</pre>\n</div></div><hr/><h3 style=\"text-align: center;\" id=\"OperationTheatre-Module-ExistingOpenMRStables\">Existing OpenMRS tables</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"2f2ca0e7-cfe6-4df2-a448-511b7949fa76\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Surgical_block\nSurgical_appointment\nSurgical_appointment_attribute\nSurgical_appointment_attribute_type\nProvider\nPerson_name\nLocation</pre>\n</div></div><hr/><h3 style=\"text-align: center;\" id=\"OperationTheatre-Module-FlattenedMartTables\"> Flattened Mart Tables</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8e776cd0-29fc-44d8-b1c7-55b1d232f6cf\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">surgical_block_default\nsurgical_appointment_default\nsurgical_appointment_attributes\nsurgical_appointment_attribute_type_details_default</pre>\n</div></div><p><strong>Incremental Config:</strong></p><p>Please check <a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update#6.-Operation-Theater-Job:\" rel=\"nofollow\">this</a> section on how to enable/disable incremental config for specific mart tables.</p><p><strong>a)</strong>  <strong>surgical_block_default</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" data-local-id=\"26f750c4-8636-4381-9293-4a3132c1e3a3\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>surgical_block_id</p></td><td class=\"confluenceTd\"><p>Identifier for the table</p></td></tr><tr><td class=\"confluenceTd\"><p>primary_provider_name</p></td><td class=\"confluenceTd\"><p>Name of the Surgeon  performing the surgery</p></td></tr><tr><td class=\"confluenceTd\"><p>creator_name </p></td><td class=\"confluenceTd\"><p>Name of creator for surgical block</p></td></tr><tr><td class=\"confluenceTd\"><p>location_name</p></td><td class=\"confluenceTd\"><p>Location of the operation theatre</p></td></tr><tr><td class=\"confluenceTd\"><p>block_starttime</p></td><td class=\"confluenceTd\"><p>Start time for surgery block</p></td></tr><tr><td class=\"confluenceTd\"><p>block_endtime</p></td><td class=\"confluenceTd\"><p>End time for surgery block</p></td></tr><tr><td class=\"confluenceTd\"><p>date_created</p></td><td class=\"confluenceTd\"><p>Date of creation for surgical block</p></td></tr><tr><td class=\"confluenceTd\"><p>date_changed </p></td><td class=\"confluenceTd\"><p>Changed date if modified</p></td></tr><tr><td class=\"confluenceTd\"><p>changed_by</p></td><td class=\"confluenceTd\"><p>Name of person who changed the surgical block</p></td></tr></tbody></table></div><p><strong>b) surgical_appointment_default</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" data-local-id=\"edfe7efd-da4c-4967-b550-6551ddd90245\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>surgical_appointment_id</p></td><td class=\"confluenceTd\"><p>Table Identifier</p></td></tr><tr><td class=\"confluenceTd\"><p>surgical_block_id </p></td><td class=\"confluenceTd\"><p>Identifier for surgical block related to this surgery</p></td></tr><tr><td class=\"confluenceTd\"><p>patient_id </p></td><td class=\"confluenceTd\"><p>Identifier for the patient undergoing surgery</p></td></tr><tr><td class=\"confluenceTd\"><p>sort_weight</p></td><td class=\"confluenceTd\"><p>Weight will be used to order the appointment</p></td></tr><tr><td class=\"confluenceTd\"><p>status</p></td><td class=\"confluenceTd\"><p>Status of the surgery</p></td></tr><tr><td class=\"confluenceTd\"><p>actual_start_datetime</p></td><td class=\"confluenceTd\"><p>Actual Surgery start time</p></td></tr><tr><td class=\"confluenceTd\"><p>actual_end_datetime</p></td><td class=\"confluenceTd\"><p>Actual time at which surgery ended</p></td></tr><tr><td class=\"confluenceTd\"><p>notes</p></td><td class=\"confluenceTd\"><p>Notes added after surgery</p></td></tr><tr><td class=\"confluenceTd\"><p>date_created</p></td><td class=\"confluenceTd\"><p>Date when the surgery appointment was created</p></td></tr><tr><td class=\"confluenceTd\"><p>date_changed</p></td><td class=\"confluenceTd\"><p>If modified the date of modification of the surgery appointment</p></td></tr><tr><td class=\"confluenceTd\"><p>creator_name</p></td><td class=\"confluenceTd\"><p>Name of the person who created the surgery appointment</p></td></tr><tr><td class=\"confluenceTd\"><p>changed_by</p></td><td class=\"confluenceTd\"><p>Name of the person who modified the surgery appointment</p></td></tr></tbody></table></div><p><strong>c) surgical_appointment_attributes</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" data-local-id=\"b179cbfe-a53b-4152-9fda-a547c51d4343\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>surgical_appointment_id</p></td><td class=\"confluenceTd\"><p>Identifier for the surgical appointment</p></td></tr><tr><td class=\"confluenceTd\"><p>procedure</p></td><td class=\"confluenceTd\"><p>Name of the surgical procedure</p></td></tr><tr><td class=\"confluenceTd\"><p>estTimeHours</p></td><td class=\"confluenceTd\"><p>Estimated time for surgery in hours</p></td></tr><tr><td class=\"confluenceTd\"><p>estTimeMinutes</p></td><td class=\"confluenceTd\"><p>Estimated time for surgery in minutes extra to the above hours</p></td></tr><tr><td class=\"confluenceTd\"><p>cleaningTime</p></td><td class=\"confluenceTd\"><p>Time for cleaning after the surgery</p></td></tr><tr><td class=\"confluenceTd\"><p>otherSurgeon </p></td><td class=\"confluenceTd\"><p>Name of additional surgeon</p></td></tr><tr><td class=\"confluenceTd\"><p>surgicalAssistant</p></td><td class=\"confluenceTd\"><p>Name of assistant</p></td></tr><tr><td class=\"confluenceTd\"><p>anaesthetist</p></td><td class=\"confluenceTd\"><p>Name of the doctor who performs anesthesia</p></td></tr><tr><td class=\"confluenceTd\"><p>scrubNurse</p></td><td class=\"confluenceTd\"><p>Name of scrub nurse for the surgery</p></td></tr><tr><td class=\"confluenceTd\"><p>circulatingNurse</p></td><td class=\"confluenceTd\"><p>Name of circulating nurse ( nurse from other location )</p></td></tr><tr><td class=\"confluenceTd\"><p>notes</p></td><td class=\"confluenceTd\"><p>Notes added after surgery is done</p></td></tr></tbody></table></div><p><strong>d) surgical_appointment_attribute_type_details_default</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" data-local-id=\"bc5f4b74-7e1b-44a9-9bdb-61e6dd035cac\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>name</p></td><td class=\"confluenceTd\"><p>Name of the attributes used in the surgical appointment table</p></td></tr><tr><td class=\"confluenceTd\"><p>description</p></td><td class=\"confluenceTd\"><p>Description of the attributes used</p></td></tr></tbody></table></div><hr/><h3 style=\"text-align: center;\" id=\"OperationTheatre-Module-MartViews\">Mart Views</h3><p><strong>a) patient_operation_theater_view</strong></p><p>This provides a comprehensive view of operation theatre block details such as creation date, surgeries scheduled, location of the block, surgeon assigned, procedure to be carried out, etc. Since a patient can have multiple surgeries scheduled at different times there can be multiple rows , but of different data for the same patient. Patient details includes age_at_surgery (Age of the patient during surgery) and age_group_at_surgery (Age group of the patient during surgery). The surgical block date corresponds to all the surgeries planned in that block for that day. Whenever a surgery is postponed the block date will give the actual scheduled time of the surgery.</p><p><br/></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2316239224"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2316239224/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239224/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 2722
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2316239224/child",
+    "restrictions": "/rest/api/content/2316239224/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2316239224/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2316239224",
+    "webui": "/spaces/BAH/pages/2316239224/Operation+Theatre+-+Module",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2316239224",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239224",
+    "tinyui": "/x/eAEPig",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

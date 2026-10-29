@@ -1,0 +1,55 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Patient Documents Module</title></head><body><h1>Patient Documents Module</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="PatientDocumentsModule-PurposeandBenefits">Purpose and Benefits</h2><p>This feature is used to receive and capture patient's information in the form of documents (patient's paper record scans, X-Ray images and other external documents). Bahmni allows you to upload these documents and associating it to specific visits of a patient. All these documents get attached to a patient's record and are viewable from the Visit dashboard.</p><h2 id="PatientDocumentsModule-Steps"><span class="legacy-color-text-default">Steps</span></h2><h3 class="m_-7735533683910305310gmail-p3" id="PatientDocumentsModule-ConfigurePatientDocumentsApp"><strong>Configure Patient Documents App</strong></h3><p class="m_-7735533683910305310gmail-p3">To configure the Patient Documents Module/App to appear on the Home page please add the config below to this path:  <em>/bahmni/default-config/openmrs/apps/home/extension.json</em></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="5d36357b-dbd4-4515-b88e-170a9e304ecd" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">&quot;patientDocumentUpload&quot;: {
+   &quot;id&quot;: &quot;bahmni.patient.document.upload&quot;,
+   &quot;extensionPointId&quot;: &quot;org.bahmni.home.dashboard&quot;,
+   &quot;type&quot;: &quot;link&quot;,
+   &quot;translationKey&quot;: &quot;MODULE_LABEL_PATIENT_DOCUMENTS_KEY&quot;,
+   &quot;url&quot;: &quot;../document-upload/?encounterType=Patient Document&amp;topLevelConcept=Patient Document&amp;defaultOption=Patient file&quot;,
+   &quot;icon&quot;: &quot;icon-bahmni-documents&quot;,
+   &quot;order&quot;: 6,
+   &quot;requiredPrivilege&quot;: &quot;app:patient-documents&quot;
+ },</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-id="023d277e-733b-435d-8d09-2b4a7954d40b" data-macro-name="note"><p class="title">URL in the code snippet above</p><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p class="m_-7735533683910305310gmail-p3">The url is :  &quot;url&quot;: &quot;../document-upload/?encounterType=<strong>&lt;</strong><strong>X&gt;</strong>&amp;topLevelConcept=<strong>&lt;Y&gt;</strong>&amp;defaultOption=<strong>&lt;Z&gt;</strong>”,</p><ol class="m_-7735533683910305310gmail-ol1"><li class="m_-7735533683910305310gmail-li3">The extension filepath should be: extension-<strong>&lt;</strong><strong>X&gt;</strong>.json</li><li class="m_-7735533683910305310gmail-li3"><strong>&lt;Y&gt;</strong> is the top level concept in openMRS. This enables an auto-complete set while selecting Upload type:  Assign concept set name to &quot;topLevelConcept&quot; in the url.</li><li class="m_-7735533683910305310gmail-li3"><strong>&lt;Z&gt;</strong> has to be a set member of ’<strong>&lt;Y&gt;</strong>’ which is the top level concept. It is the default option that appears in the UI for upload type.</li></ol></div></div><h3 class="m_-7735533683910305310gmail-p3" id="PatientDocumentsModule-ConfigureActivePatientsTab"><strong>Configure Active Patients Tab</strong></h3><p class="m_-7735533683910305310gmail-p3">To configure the active patients Tab on the first page, add the config below to this path:  <em>/bahmni/default-config/openmrs/apps/documentUpload/extension-Patient Document.json</em></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="78aa6eee-2ba4-48c0-a6ed-0def4f8ccb67" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">{
+        &quot;bahmniDocUploadPatientsSearchActivePatients&quot;:{
+       &quot;id&quot;: &quot;bahmni.docUpload.patients.search.activePatients&quot;,
+       &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,
+       &quot;type&quot;: &quot;config&quot;,
+       &quot;extensionParams&quot;: {
+           &quot;searchHandler&quot;: &quot;emrapi.sqlSearch.activePatients&quot;,
+         &quot;translationKey&quot;: &quot;MODULE_LABEL_ACTIVE_PATIENTS_KEY&quot;,
+           &quot;forwardUrl&quot; : &quot;#/patient/{{patientUuid}}/document&quot;
+       },
+       &quot;label&quot;: &quot;Active Patients&quot;,
+       &quot;order&quot;: 1,
+       &quot;requiredPrivilege&quot;: &quot;app:patient-documents&quot;
+   },
+   &quot;bahmniDocUploadPatientsSearchAllPatients&quot;:{
+       &quot;id&quot;: &quot;bahmni.docUpload.patients.search.allPatients&quot;,
+       &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,
+       &quot;type&quot;: &quot;config&quot;,
+       &quot;extensionParams&quot;: {
+         &quot;translationKey&quot;:&quot;MODULE_LABEL_ALL_PATIENTS_KEY&quot;,
+           &quot;forwardUrl&quot; : &quot;#/patient/{{patientUuid}}/document&quot;
+       },
+       &quot;label&quot;: &quot;All patients&quot;,
+       &quot;order&quot;: 2,
+       &quot;requiredPrivilege&quot;: &quot;app:patient-documents&quot;
+   }
+}</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-id="f3f96cff-febd-414b-899d-793eb1b2c2c2" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>One can also specify the “search handler” with other global properties for SQL search.</p></div></div><h3 class="m_-7735533683910305310gmail-p3" id="PatientDocumentsModule-ConfiguringPatientDocumentTypes"><strong>Configuring Patient Document Types</strong></h3><p>To configure the types against which a Patient Document can be uploaded, you may do the following</p><ol><li>Go to concept dictionary (.../openmrs/dictionary/index.htm) and search for 'Patient Document'</li><li>You will find the concept 'Patient Document' has members that appear Document Upload module. </li><li>Add a concept (e.g. Hospitalisation Record) of type 'Misc' and datatype 'NA'.</li><li>Add the newly created concept as member of 'Patient Document'</li><li>Go back to Patient Document module and verify that the dropdown lists the newly added concept when you upload a file. </li></ol></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="e6921b04-2089-48cb-990e-45bb5d87af22" data-macro-name="tip"><p class="title">On this Page</p><div class="confluence-information-macro-body"><p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-cssliststyle="none" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="0b744f92-0474-4511-ba50-ea4dc8343d16" data-macro-name="toc"> </div><p> </p></div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="0add60ca-db50-405a-bfd6-90945fbc2b0b" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #668D3C;color: white;"><b>Feature Details</b></div><div class="panelContent">
+<p><span class="legacy-color-text-default"><a href="/wiki/spaces/BAH/pages/32604209/Patient+Document+Management" data-linked-resource-id="32604209" data-linked-resource-version="14" data-linked-resource-type="page">Patient Documents Module - Feature Guide</a></span></p>
+</div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #668D3C;color: white;"><b>Usage Details</b></div><div class="panelContent">
+<p><span class="legacy-color-text-default"><a href="/wiki/spaces/BAH/pages/32014370/Patient+Documents" data-linked-resource-id="32014370" data-linked-resource-version="8" data-linked-resource-type="page">Patient Documents Module - User Guide</a></span></p>
+</div></div></div>
+</div>
+</div>
+</div></body></html>

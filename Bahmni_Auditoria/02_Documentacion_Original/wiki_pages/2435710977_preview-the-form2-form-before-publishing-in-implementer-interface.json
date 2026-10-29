@@ -1,0 +1,172 @@
+{
+  "id": "2435710977",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2435710977",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjQzNTcxMDk3Nw==",
+  "status": "current",
+  "title": "Preview the form2 form before publishing in Implementer interface",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5e943471088a7e0c0f50e1e0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Buvaneswari Arun (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e943471088a7e0c0f50e1e0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Buvaneswari Arun (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e943471088a7e0c0f50e1e0"
+      }
+    },
+    "createdDate": "2021-04-27T18:27:24.236Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2435710977/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5e943471088a7e0c0f50e1e0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Buvaneswari Arun (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e943471088a7e0c0f50e1e0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Buvaneswari Arun (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e943471088a7e0c0f50e1e0"
+      }
+    },
+    "when": "2021-04-27T18:38:22.748Z",
+    "friendlyWhen": "Apr 27, 2021",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "1.confluence$content$2435710977.17",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2435710977.18",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2435710977"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2435710977/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"6f332a1a-a0f4-49c4-8529-c98ac9336bfd\"><ac:rich-text-body><p>This feature will be available from V0.93-Bahmni</p></ac:rich-text-body></ac:structured-macro><p>The user would like to preview the form event and control event while designing the form. so that we don&rsquo;t need to publish multiple versions of the same form when small changes are made.<br /></p><p>A new preview button is introduced which has the following functionality.</p><ul><li><p>Added preview button beside the save button on the implementer interface UI.</p></li><li><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"699\" ac:original-width=\"1442\"><ri:attachment ri:filename=\"Screenshot 2021-04-28 at 12.00.12 AM.png\" ri:version-at-save=\"1\" /></ac:image></li><li><p>When a button is clicked, a popup opens on top of the current screen</p></li><li><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"661\" ac:original-width=\"1514\"><ri:attachment ri:filename=\"Screenshot 2021-04-28 at 12.06.15 AM.png\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p>We would be able to write the following conditions and see them live on the preview popup:</p><ul><li><p>Add more (for obs, obs grp, section)</p></li><li><p>Delete of a newly added control, using add more</p></li><li><p>Hide label</p></li><li><p>Form condition for numeric, text, boolean, coded, date types of concepts.</p></li><li><p>Description for concept and concept set</p></li></ul></li><li><p>Numeric validations like absolute high/ low</p></li><li><p>Sample given below</p><ul><li><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"178\" ac:original-width=\"1517\"><ri:attachment ri:filename=\"Screenshot 2021-04-28 at 12.02.19 AM.png\" ri:version-at-save=\"1\" /></ac:image><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"450\" ac:original-width=\"1421\"><ri:attachment ri:filename=\"Screenshot 2021-04-28 at 12.02.31 AM.png\" ri:version-at-save=\"1\" /></ac:image><p /></li></ul></li></ul><p><br /></p><p />",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2435710977"
+      }
+    },
+    "view": {
+      "value": "<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6f332a1a-a0f4-49c4-8529-c98ac9336bfd\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This feature will be available from V0.93-Bahmni</p></div></div><p>The user would like to preview the form event and control event while designing the form. so that we don’t need to publish multiple versions of the same form when small changes are made.<br/></p><p>A new preview button is introduced which has the following functionality.</p><ul><li><p>Added preview button beside the save button on the implementer interface UI.</p></li><li><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/2435710977/Screenshot%202021-04-28%20at%2012.00.12%20AM.png?version=1&amp;modificationDate=1619548532183&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/2435710977/Screenshot%202021-04-28%20at%2012.00.12%20AM.png?version=1&amp;modificationDate=1619548532183&amp;cacheVersion=1&amp;api=v2\" data-height=\"699\" data-width=\"1442\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2435481605\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2021-04-28 at 12.00.12 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"2435710977\" data-linked-resource-container-version=\"2\" data-media-id=\"30c7db85-4fbe-4727-8230-2b46cd1c1d97\" data-media-type=\"file\"></span></li><li><p>When a button is clicked, a popup opens on top of the current screen</p></li><li><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/2435710977/Screenshot%202021-04-28%20at%2012.06.15%20AM.png?version=1&amp;modificationDate=1619548602296&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/2435710977/Screenshot%202021-04-28%20at%2012.06.15%20AM.png?version=1&amp;modificationDate=1619548602296&amp;cacheVersion=1&amp;api=v2\" data-height=\"661\" data-width=\"1514\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2435776513\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2021-04-28 at 12.06.15 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"2435710977\" data-linked-resource-container-version=\"2\" data-media-id=\"d3661352-0a7e-443d-ae6f-e49b443463e9\" data-media-type=\"file\"></span><p /></li><li><p>We would be able to write the following conditions and see them live on the preview popup:</p><ul><li><p>Add more (for obs, obs grp, section)</p></li><li><p>Delete of a newly added control, using add more</p></li><li><p>Hide label</p></li><li><p>Form condition for numeric, text, boolean, coded, date types of concepts.</p></li><li><p>Description for concept and concept set</p></li></ul></li><li><p>Numeric validations like absolute high/ low</p></li><li><p>Sample given below</p><ul><li><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/2435710977/Screenshot%202021-04-28%20at%2012.02.19%20AM.png?version=1&amp;modificationDate=1619548648248&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/2435710977/Screenshot%202021-04-28%20at%2012.02.19%20AM.png?version=1&amp;modificationDate=1619548648248&amp;cacheVersion=1&amp;api=v2\" data-height=\"178\" data-width=\"1517\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2435809281\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2021-04-28 at 12.02.19 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"2435710977\" data-linked-resource-container-version=\"2\" data-media-id=\"c4321155-d82b-4626-bc3b-89c50596c1ba\" data-media-type=\"file\"></span><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/2435710977/Screenshot%202021-04-28%20at%2012.02.31%20AM.png?version=1&amp;modificationDate=1619548658087&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/2435710977/Screenshot%202021-04-28%20at%2012.02.31%20AM.png?version=1&amp;modificationDate=1619548658087&amp;cacheVersion=1&amp;api=v2\" data-height=\"450\" data-width=\"1421\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2435809287\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2021-04-28 at 12.02.31 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"2435710977\" data-linked-resource-container-version=\"2\" data-media-id=\"b9eee675-2dc8-44f5-b56d-eef749bb3d02\" data-media-type=\"file\"></span><p /></li></ul></li></ul><p><br/></p><p />",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2435710977"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2435710977/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2435710977/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 300
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2435710977/child",
+    "restrictions": "/rest/api/content/2435710977/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2435710977/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2435710977",
+    "webui": "/spaces/BAH/pages/2435710977/Preview+the+form2+form+before+publishing+in+Implementer+interface",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2435710977",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2435710977",
+    "tinyui": "/x/AQAukQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

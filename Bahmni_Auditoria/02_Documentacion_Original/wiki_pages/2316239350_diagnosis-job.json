@@ -1,0 +1,172 @@
+{
+  "id": "2316239350",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2316239350",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMxNjIzOTM1MA==",
+  "status": "current",
+  "title": "Diagnosis Job",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "createdDate": "2021-04-05T09:29:15.957Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239350/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "when": "2021-04-05T09:29:42.841Z",
+    "friendlyWhen": "Apr 05, 2021",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.confluence$content$2316239350.6",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2316239350.7",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2316239350"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239350/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ul><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875680/Diagnosis#ColumnsToIgnore%2C-ignoreAllFreeTextConcepts-apply-for-this-module-(-Refer--%5BinlineCard%5D-)\">ColumnsToIgnore, ignoreAllFreeTextConcepts apply for this module ( Refer&nbsp;Appendix&nbsp;)</a></p></li></ul><ul><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875680/Diagnosis#Existing-OpenMRS-tables\">Existing OpenMRS tables</a></p></li><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875680/Diagnosis#Mart-Tables\">Mart Tables</a></p><ul><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875680/Diagnosis#Incremental-Config%3A\">Incremental Config:</a></p></li></ul></li></ul><ul><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875680/Diagnosis#Mart-Views\">Mart Views</a></p></li></ul><p>If one implementation has Diagnosis, <strong>Visit_diagnosis </strong>table will get created with existing data otherwise an empty table will be generated since <strong>Visit Diagnosis </strong>comes with Bahmni product by default.</p><p>Will get all the child concepts of <strong>Visit Diagnosis </strong>as columns.</p><h5><strong>ColumnsToIgnore, ignoreAllFreeTextConcepts apply for this module ( Refer </strong><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><p>&nbsp;To generate this table we took product dump as reference.</p><p style=\"text-align: center;\"><strong>Configuration</strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6a1af037-eca2-444c-bffe-2a5ea0e97a75\"><ac:plain-text-body><![CDATA[{\n      \"name\": \"Diagnoses And Conditions\",\n      \"type\": \"diagnosesAndConditions\",\n      \"chunkSizeToRead\": \"500\"\n}\n]]></ac:plain-text-body></ac:structured-macro><hr /><h3 style=\"text-align: center;\">Existing OpenMRS tables</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"c544ff98-d803-4216-99c0-d6096b2ba8e6\"><ac:plain-text-body><![CDATA[Obs\nConcept\nConcept_name\nlocation\nvisit\npatient_program\n]]></ac:plain-text-body></ac:structured-macro><hr /><h3 style=\"text-align: center;\">Mart Tables</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"9eefe5eb-5924-4ca7-b239-33b8fb340ec1\"><ac:plain-text-body><![CDATA[visit_diagnoses]]></ac:plain-text-body></ac:structured-macro><h4><strong>Incremental Config:</strong></h4><p>Please check <a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update#9.-Diagnoses-And-Conditions-Job:\">this</a> section on how to enable/disable incremental config for specific mart tables.</p><p>a) <strong>visit_diagnoses</strong></p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>id_visit_diagnoses</p></td><td><p>Obs id</p></td></tr><tr><td><p>patient_id</p></td><td><p>&nbsp;Id reference for patient from patient table in openmrs</p></td></tr><tr><td><p>encounter_id</p></td><td><p>In which encounter data is captured</p></td></tr><tr><td><p>visit_id</p></td><td><p>Id reference to visit from visit table in openmrs</p></td></tr><tr><td><p>obs_datetime</p></td><td><p>Obs date time from obs table in openmrs</p></td></tr><tr><td><p>date_created</p></td><td><p>date_created from visit table in openmrs</p></td></tr><tr><td><p>date_modified</p></td><td><p>date_created from visit table in openmrs</p></td></tr><tr><td><p>location_id</p></td><td><p>Id reference to location from location table.</p></td></tr><tr><td><p>location_name</p></td><td><p>Name of location from location table in openmrs</p></td></tr><tr><td><p>program_id</p></td><td><p>Id reference to program from program table in openmrs</p></td></tr><tr><td><p>program_name</p></td><td><p>Name of program from program table in openmrs</p></td></tr><tr><td><p>patient_program_id</p></td><td><p>Id reference to patient program from patient_program table in openmrs</p></td></tr><tr><td><p>bahmni_diagnosis_status</p></td><td><p>&nbsp;</p></td></tr><tr><td><p>bahmni_diagnosis_revised</p></td><td><p>&nbsp;</p></td></tr><tr><td><p>bahmni_initial_diagnosis</p></td><td><p>&nbsp;</p></td></tr><tr><td><p>coded_diagnosis</p></td><td><p>Diagnosis name which exists in database</p></td></tr><tr><td><p>non_coded_diagnosis</p></td><td><p>Free text diagnosis name which is not part of database</p></td></tr><tr><td><p>diagnosis_certainty</p></td><td><p>&nbsp;</p></td></tr><tr><td><p>diagnosis_order</p></td><td><p>&nbsp;</p></td></tr></tbody></table><hr /><h2 style=\"text-align: center;\">Mart Views</h2><p><strong>a) patient_diagnosis_condition_view</strong></p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>age_at_condition</p></td><td><p>Age of patient</p></td></tr><tr><td><p>age_group_at_condition</p></td><td><p>Age group under which the patient falls</p></td></tr><tr><td><p>birth_date</p></td><td><p>Birth date of patient</p></td></tr><tr><td><p>coded_diagnosis</p></td><td><p>Diagnosis value</p></td></tr><tr><td><p>condition_date_created</p></td><td><p>Date on which condition was recorded</p></td></tr><tr><td><p>condition_end_date</p></td><td><p>Date on which condition was removed</p></td></tr><tr><td><p>condition_id</p></td><td><p>Id reference for condition</p></td></tr><tr><td><p>condition_name</p></td><td><p>Type of condition</p></td></tr><tr><td><p>condition_onset_date</p></td><td><p>When condition was set in</p></td></tr><tr><td><p>creator</p></td><td><p>Who created the record</p></td></tr><tr><td><p>dead</p></td><td><p>&nbsp;</p></td></tr><tr><td><p>diagnosis_certainty</p></td><td><p>&nbsp;</p></td></tr><tr><td><p>diagnosis_order</p></td><td><p>&nbsp;</p></td></tr><tr><td><p>encounter_id</p></td><td><p>Id reference for encounter</p></td></tr><tr><td><p>end_reason</p></td><td><p>&nbsp;</p></td></tr><tr><td><p>gender</p></td><td><p>Gender for patient</p></td></tr><tr><td><p>nationalIdentificationNumber</p></td><td><p>ID for patient (such as passport)</p></td></tr><tr><td><p>non_coded_diagnosis</p></td><td><p>Free text diagnosis name which is not part of database</p></td></tr><tr><td><p>obs_datetime</p></td><td><p>time when observation is captured</p></td></tr><tr><td><p>patient_id</p></td><td><p>Reference ID for the patient</p></td></tr><tr><td><p>patientAddress</p></td><td><p>Patient Address</p></td></tr><tr><td><p>patientAddressLine2</p></td><td><p>Patient Address</p></td></tr><tr><td><p>patientCountry</p></td><td><p>Patient Address</p></td></tr><tr><td><p>patientDistrict</p></td><td><p>Patient Address</p></td></tr><tr><td><p>person_id</p></td><td><p>Reference ID for the person</p></td></tr><tr><td><p>previous_condition_id</p></td><td><p>ID for previous condition</p></td></tr><tr><td><p>status</p></td><td><p>Condition status</p></td></tr><tr><td><p>telephoneNumber</p></td><td><p>&nbsp;</p></td></tr></tbody></table><p>&nbsp;</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2316239350"
+      }
+    },
+    "view": {
+      "value": "<ul><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875680/Diagnosis#ColumnsToIgnore%2C-ignoreAllFreeTextConcepts-apply-for-this-module-(-Refer--%5BinlineCard%5D-)\" rel=\"nofollow\">ColumnsToIgnore, ignoreAllFreeTextConcepts apply for this module ( Refer Appendix )</a></p></li></ul><ul><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875680/Diagnosis#Existing-OpenMRS-tables\" rel=\"nofollow\">Existing OpenMRS tables</a></p></li><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875680/Diagnosis#Mart-Tables\" rel=\"nofollow\">Mart Tables</a></p><ul><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875680/Diagnosis#Incremental-Config%3A\" rel=\"nofollow\">Incremental Config:</a></p></li></ul></li></ul><ul><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875680/Diagnosis#Mart-Views\" rel=\"nofollow\">Mart Views</a></p></li></ul><p>If one implementation has Diagnosis, <strong>Visit_diagnosis </strong>table will get created with existing data otherwise an empty table will be generated since <strong>Visit Diagnosis </strong>comes with Bahmni product by default.</p><p>Will get all the child concepts of <strong>Visit Diagnosis </strong>as columns.</p><h5 id=\"DiagnosisJob-ColumnsToIgnore,ignoreAllFreeTextConceptsapplyforthismodule(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix)\"><strong>ColumnsToIgnore, ignoreAllFreeTextConcepts apply for this module ( Refer </strong><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><p> To generate this table we took product dump as reference.</p><p style=\"text-align: center;\"><strong>Configuration</strong></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6a1af037-eca2-444c-bffe-2a5ea0e97a75\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n      &quot;name&quot;: &quot;Diagnoses And Conditions&quot;,\n      &quot;type&quot;: &quot;diagnosesAndConditions&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;\n}\n</pre>\n</div></div><hr/><h3 style=\"text-align: center;\" id=\"DiagnosisJob-ExistingOpenMRStables\">Existing OpenMRS tables</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c544ff98-d803-4216-99c0-d6096b2ba8e6\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Obs\nConcept\nConcept_name\nlocation\nvisit\npatient_program\n</pre>\n</div></div><hr/><h3 style=\"text-align: center;\" id=\"DiagnosisJob-MartTables\">Mart Tables</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9eefe5eb-5924-4ca7-b239-33b8fb340ec1\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">visit_diagnoses</pre>\n</div></div><h4 id=\"DiagnosisJob-IncrementalConfig:\"><strong>Incremental Config:</strong></h4><p>Please check <a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update#9.-Diagnoses-And-Conditions-Job:\" rel=\"nofollow\">this</a> section on how to enable/disable incremental config for specific mart tables.</p><p>a) <strong>visit_diagnoses</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>id_visit_diagnoses</p></td><td class=\"confluenceTd\"><p>Obs id</p></td></tr><tr><td class=\"confluenceTd\"><p>patient_id</p></td><td class=\"confluenceTd\"><p> Id reference for patient from patient table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>encounter_id</p></td><td class=\"confluenceTd\"><p>In which encounter data is captured</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_id</p></td><td class=\"confluenceTd\"><p>Id reference to visit from visit table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>obs_datetime</p></td><td class=\"confluenceTd\"><p>Obs date time from obs table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>date_created</p></td><td class=\"confluenceTd\"><p>date_created from visit table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>date_modified</p></td><td class=\"confluenceTd\"><p>date_created from visit table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>location_id</p></td><td class=\"confluenceTd\"><p>Id reference to location from location table.</p></td></tr><tr><td class=\"confluenceTd\"><p>location_name</p></td><td class=\"confluenceTd\"><p>Name of location from location table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>program_id</p></td><td class=\"confluenceTd\"><p>Id reference to program from program table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>program_name</p></td><td class=\"confluenceTd\"><p>Name of program from program table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>patient_program_id</p></td><td class=\"confluenceTd\"><p>Id reference to patient program from patient_program table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>bahmni_diagnosis_status</p></td><td class=\"confluenceTd\"><p> </p></td></tr><tr><td class=\"confluenceTd\"><p>bahmni_diagnosis_revised</p></td><td class=\"confluenceTd\"><p> </p></td></tr><tr><td class=\"confluenceTd\"><p>bahmni_initial_diagnosis</p></td><td class=\"confluenceTd\"><p> </p></td></tr><tr><td class=\"confluenceTd\"><p>coded_diagnosis</p></td><td class=\"confluenceTd\"><p>Diagnosis name which exists in database</p></td></tr><tr><td class=\"confluenceTd\"><p>non_coded_diagnosis</p></td><td class=\"confluenceTd\"><p>Free text diagnosis name which is not part of database</p></td></tr><tr><td class=\"confluenceTd\"><p>diagnosis_certainty</p></td><td class=\"confluenceTd\"><p> </p></td></tr><tr><td class=\"confluenceTd\"><p>diagnosis_order</p></td><td class=\"confluenceTd\"><p> </p></td></tr></tbody></table></div><hr/><h2 style=\"text-align: center;\" id=\"DiagnosisJob-MartViews\">Mart Views</h2><p><strong>a) patient_diagnosis_condition_view</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>age_at_condition</p></td><td class=\"confluenceTd\"><p>Age of patient</p></td></tr><tr><td class=\"confluenceTd\"><p>age_group_at_condition</p></td><td class=\"confluenceTd\"><p>Age group under which the patient falls</p></td></tr><tr><td class=\"confluenceTd\"><p>birth_date</p></td><td class=\"confluenceTd\"><p>Birth date of patient</p></td></tr><tr><td class=\"confluenceTd\"><p>coded_diagnosis</p></td><td class=\"confluenceTd\"><p>Diagnosis value</p></td></tr><tr><td class=\"confluenceTd\"><p>condition_date_created</p></td><td class=\"confluenceTd\"><p>Date on which condition was recorded</p></td></tr><tr><td class=\"confluenceTd\"><p>condition_end_date</p></td><td class=\"confluenceTd\"><p>Date on which condition was removed</p></td></tr><tr><td class=\"confluenceTd\"><p>condition_id</p></td><td class=\"confluenceTd\"><p>Id reference for condition</p></td></tr><tr><td class=\"confluenceTd\"><p>condition_name</p></td><td class=\"confluenceTd\"><p>Type of condition</p></td></tr><tr><td class=\"confluenceTd\"><p>condition_onset_date</p></td><td class=\"confluenceTd\"><p>When condition was set in</p></td></tr><tr><td class=\"confluenceTd\"><p>creator</p></td><td class=\"confluenceTd\"><p>Who created the record</p></td></tr><tr><td class=\"confluenceTd\"><p>dead</p></td><td class=\"confluenceTd\"><p> </p></td></tr><tr><td class=\"confluenceTd\"><p>diagnosis_certainty</p></td><td class=\"confluenceTd\"><p> </p></td></tr><tr><td class=\"confluenceTd\"><p>diagnosis_order</p></td><td class=\"confluenceTd\"><p> </p></td></tr><tr><td class=\"confluenceTd\"><p>encounter_id</p></td><td class=\"confluenceTd\"><p>Id reference for encounter</p></td></tr><tr><td class=\"confluenceTd\"><p>end_reason</p></td><td class=\"confluenceTd\"><p> </p></td></tr><tr><td class=\"confluenceTd\"><p>gender</p></td><td class=\"confluenceTd\"><p>Gender for patient</p></td></tr><tr><td class=\"confluenceTd\"><p>nationalIdentificationNumber</p></td><td class=\"confluenceTd\"><p>ID for patient (such as passport)</p></td></tr><tr><td class=\"confluenceTd\"><p>non_coded_diagnosis</p></td><td class=\"confluenceTd\"><p>Free text diagnosis name which is not part of database</p></td></tr><tr><td class=\"confluenceTd\"><p>obs_datetime</p></td><td class=\"confluenceTd\"><p>time when observation is captured</p></td></tr><tr><td class=\"confluenceTd\"><p>patient_id</p></td><td class=\"confluenceTd\"><p>Reference ID for the patient</p></td></tr><tr><td class=\"confluenceTd\"><p>patientAddress</p></td><td class=\"confluenceTd\"><p>Patient Address</p></td></tr><tr><td class=\"confluenceTd\"><p>patientAddressLine2</p></td><td class=\"confluenceTd\"><p>Patient Address</p></td></tr><tr><td class=\"confluenceTd\"><p>patientCountry</p></td><td class=\"confluenceTd\"><p>Patient Address</p></td></tr><tr><td class=\"confluenceTd\"><p>patientDistrict</p></td><td class=\"confluenceTd\"><p>Patient Address</p></td></tr><tr><td class=\"confluenceTd\"><p>person_id</p></td><td class=\"confluenceTd\"><p>Reference ID for the person</p></td></tr><tr><td class=\"confluenceTd\"><p>previous_condition_id</p></td><td class=\"confluenceTd\"><p>ID for previous condition</p></td></tr><tr><td class=\"confluenceTd\"><p>status</p></td><td class=\"confluenceTd\"><p>Condition status</p></td></tr><tr><td class=\"confluenceTd\"><p>telephoneNumber</p></td><td class=\"confluenceTd\"><p> </p></td></tr></tbody></table></div><p> </p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2316239350"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2316239350/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239350/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 5099
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2316239350/child",
+    "restrictions": "/rest/api/content/2316239350/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2316239350/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2316239350",
+    "webui": "/spaces/BAH/pages/2316239350/Diagnosis+Job",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2316239350",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239350",
+    "tinyui": "/x/9gEPig",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

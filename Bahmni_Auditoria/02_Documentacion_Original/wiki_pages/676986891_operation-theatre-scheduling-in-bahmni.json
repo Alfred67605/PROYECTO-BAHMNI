@@ -1,0 +1,172 @@
+{
+  "id": "676986891",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/676986891",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNjc2OTg2ODkx",
+  "status": "current",
+  "title": "Operation Theatre Scheduling in Bahmni",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Himabindu Thungathurty",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Akkinepalli",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66"
+      }
+    },
+    "createdDate": "2018-06-18T10:54:15.462Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/676986891/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "when": "2018-08-30T13:54:37.228Z",
+    "friendlyWhen": "Aug 30, 2018",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "syncRev": "0.6QYnmuXhTbYg4t4DoUznCw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$676986891.68",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/676986891"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/676986891/version/5"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>About the Feature</h2><h2>Used By</h2><h2><span style=\"color: rgb(0,0,0);\">How is it used?</span></h2><p><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\">The Operation Theater App is available on the Home page of Bahmni.</span></span></p><p><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\"><ac:image ac:border=\"true\" ac:height=\"686\" ac:width=\"500\"><ri:attachment ri:filename=\"Screen Shot 2018-06-18 at 4.57.26 PM.png\" ri:version-at-save=\"1\" /></ac:image></span></span></p><p><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(51,51,51);\">The steps to set up and configure&nbsp;<span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\">Operation Theatre</span></span>&nbsp;can be found<span>&nbsp;</span></span>here<span style=\"color: rgb(51,51,51);\">.&nbsp;</span></span></span></p><p><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(51,51,51);\"><span style=\"color: rgb(51,51,51);\">To read about the details of using the&nbsp;<span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\">Operation Theater</span></span> feature, refer to the links below:</span></span></span></span></p><ul><li><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/703660044/Surgical+Block\">Surgical Block</a></li><li><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/703594508/Managing+Surgeries+in+a+Surgical+Block\">Managing Surgeries in a Surgical Block</a></li></ul><p><br /></p><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"eee1f9bc-49bd-44f7-86a2-f81eae2f95ca\"><ac:rich-text-body><p><span>This module is available only from release 0.91 onwards.</span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b38f48de-a4d7-4a71-8b8e-b32556a98284\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Guide</ac:parameter><ac:rich-text-body><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/676069378/Operation+Theatre\">Operation Theatre scheduling in Bahmni</a></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"eadb48f9-0847-4f57-96af-f07589a98a06\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Implementation Details</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Operation Theatre Scheduling Module\" ri:version-at-save=\"1\" /><ac:plain-text-link-body><![CDATA[Operation Theatre scheduling module]]></ac:plain-text-link-body></ac:link>&nbsp;&nbsp;&nbsp;</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/676986891"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\"><style>[data-colorid=tifru27vdi]{color:#333333} html[data-color-mode=dark] [data-colorid=tifru27vdi]{color:#cccccc}[data-colorid=mevlq6ewt8]{color:#333333} html[data-color-mode=dark] [data-colorid=mevlq6ewt8]{color:#cccccc}[data-colorid=yq2wyt0cym]{color:#333333} html[data-color-mode=dark] [data-colorid=yq2wyt0cym]{color:#cccccc}[data-colorid=le0cgq28ps]{color:#333333} html[data-color-mode=dark] [data-colorid=le0cgq28ps]{color:#cccccc}</style>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"OperationTheatreSchedulinginBahmni-AbouttheFeature\">About the Feature</h2><h2 id=\"OperationTheatreSchedulinginBahmni-UsedBy\">Used By</h2><h2 id=\"OperationTheatreSchedulinginBahmni-Howisitused?\"><span class=\"legacy-color-text-default\">How is it used?</span></h2><p><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\">The Operation Theater App is available on the Home page of Bahmni.</span></span></p><p><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border\" height=\"686\" width=\"500\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/676986891/Screen%20Shot%202018-06-18%20at%204.57.26%20PM.png?version=1&amp;modificationDate=1529321316710&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=686\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/676986891/Screen%20Shot%202018-06-18%20at%204.57.26%20PM.png?version=1&amp;modificationDate=1529321316710&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"677937160\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2018-06-18 at 4.57.26 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"676986891\" data-linked-resource-container-version=\"5\" data-media-id=\"dfbc3318-d854-45a7-8930-d7c599c3788b\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/676986891/Screen%20Shot%202018-06-18%20at%204.57.26%20PM.png?version=1&amp;modificationDate=1529321316710&amp;cacheVersion=1&amp;api=v2&amp;width=714&amp;height=980 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/676986891/Screen%20Shot%202018-06-18%20at%204.57.26%20PM.png?version=1&amp;modificationDate=1529321316710&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=686 1x\" /></span></span></span></p><p><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\"><span data-colorid=\"yq2wyt0cym\">The steps to set up and configure&nbsp;<span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\">Operation Theatre</span></span>&nbsp;can be found<span>&nbsp;</span></span>here<span data-colorid=\"mevlq6ewt8\">.&nbsp;</span></span></span></p><p><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\"><span data-colorid=\"le0cgq28ps\"><span data-colorid=\"tifru27vdi\">To read about the details of using the&nbsp;<span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\">Operation Theater</span></span> feature, refer to the links below:</span></span></span></span></p><ul><li><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/703660044/Surgical+Block\" rel=\"nofollow\">Surgical Block</a></li><li><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/703594508/Managing+Surgeries+in+a+Surgical+Block\" rel=\"nofollow\">Managing Surgeries in a Surgical Block</a></li></ul><p><br /></p><p><br /></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"eee1f9bc-49bd-44f7-86a2-f81eae2f95ca\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><span>This module is available only from release 0.91 onwards.</span></p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b38f48de-a4d7-4a71-8b8e-b32556a98284\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Guide</b></div><div class=\"panelContent\">\n<p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/676069378/Operation+Theatre\" rel=\"nofollow\">Operation Theatre scheduling in Bahmni</a></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"eadb48f9-0847-4f57-96af-f07589a98a06\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Implementation Details</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/703922251/Operation+Theatre+Scheduling+Module\" data-linked-resource-id=\"703922251\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Operation Theatre scheduling module</a>&nbsp;&nbsp;&nbsp;</p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/676986891"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/676986891/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/676986891/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 304598631
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/676986891/child",
+    "restrictions": "/rest/api/content/676986891/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/676986891/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=676986891",
+    "webui": "/spaces/BAH/pages/676986891/Operation+Theatre+Scheduling+in+Bahmni",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/676986891",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/676986891",
+    "tinyui": "/x/CwBaK",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

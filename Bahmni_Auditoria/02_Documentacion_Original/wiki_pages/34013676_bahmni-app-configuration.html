@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Bahmni App Configuration</title></head><body><h1>Bahmni App Configuration</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="BahmniAppConfiguration-ConfigurationFiles">Configuration Files</h2><p><span class="conf-macro output-inline" data-hasbody="true" data-macro-name="excerpt" data-macro-id="9d37d4ff-b4b6-4da9-93d1-b2b6259667e9">Bahmni configuration files are deployed under&nbsp;<em>/bahmni_config/openmrs/apps</em>&nbsp;of the Bahmni web server. Each implementation should have its own copy of configuration files. The configuration files are largely simple&nbsp;<a class="external-link" href="https://en.wikipedia.org/wiki/JSON" rel="nofollow">json</a>&nbsp;files.</span>A typical directory structure would look like this. </p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="4aa12fd9-a0a0-468a-bd40-9a1364255e76" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Typical Directory Structure for Configuration files</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">├── admin
+├── adt
+├── clinical
+├── customDisplayControl
+│   ├── js
+│   └── views
+├── documentUpload
+├── home
+├── orders
+├── registration
+│   ├── registrationCardLayout
+│   │   ├── css
+│   │   └── images
+│   └── supplementalPaperLayout
+│       └── css
+└── reports
+    └── sql</pre>
+</div></div><p>A sample configuration file set that has all features turned on can be found in <a class="external-link" href="https://github.com/bhamni/default-config" rel="nofollow">Github</a>. To simplify the effort, consider starting with working configuration files available in the <a class="external-link" href="https://github.com/bahmni/" rel="nofollow">Bahmni</a> organization in GIthub (look for repositories ending with &quot;-config&quot;). </p><div class="confluence-information-macro confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="cd5072da-0cde-4858-b1d1-9758f7cca8af" data-macro-name="tip"><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><ol><li><a class="external-link" href="http://www.jsoneditoronline.org/" rel="nofollow">http://www.jsoneditoronline.org/</a><span> is an online JSON editor, which is quite popular to visually validate / edit JSON file.</span></li><li><span>You can refer to other Bahmni configurations/master data of real hospitals to learn from their work, and build your own on top of that. See this page (<strong>Hospital section</strong>): <a href="/wiki/spaces/BAH/pages/1867786/List+of+Repositories+needed+for+Development+on+Bahmni" data-linked-resource-id="1867786" data-linked-resource-version="73" data-linked-resource-type="page">List of Repositories needed for Development on Bahmni</a></span></li></ol></div></div><h2 id="BahmniAppConfiguration-Apps">Apps</h2><p>Apps are the top-level applications in Bahmni. An app will contain an app.json, an extension.json and optionally some custom configuration files.</p><h4 id="BahmniAppConfiguration-app.json">app.json</h4><p>A typical app.json will look like this. It<strong> </strong>is the primary configuration file for an app. This will contain all app level configurations. It also defines extensions that can be used to extend the app. </p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="fe957f72-fdb5-4e02-b26d-14b6c0b55e2a" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>app.json</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">{
+        &quot;id&quot;: &quot;org.bahmni.newapp&quot;, // Unique ID for an app
+        &quot;extensionPoints&quot;: [
+            {
+                &quot;id&quot;: &quot;org.bahmni.newapp.newextension&quot;, // Unique ID for an extension
+                &quot;description&quot;: &quot;Makes cheese&quot; // Description for what an extension can do
+            }
+        ],
+        &quot;config&quot; : {&quot;keySpecificTonewapp&quot;: true} //A custom object that can be used by the application. Each application has settings that it can use
+}</pre>
+</div></div><h4 id="BahmniAppConfiguration-extension.json">extension.json</h4><p><strong>extension.json </strong>contains instances of extensions configured for an app. In the above example, we created an extension with id &quot;org.bahmni.newapp.newextension&quot;. This will be used in extension.json to create a new extension. Some extensions provide the ability to link to urls in a different app, thus allowing us to create entirely new apps based on urls from existing apps (Creating custom apps is a more involved topic, and not in scope of the discussion here). </p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="19943e4f-abf3-4f60-92a4-b2fe6f87e071" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>extension.json</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">{
+  // Multiple extensions can be configured within this file. Each needs a unique key, like someKey below
+
+  &quot;someKey&quot;: { //Some key. It needs to be unique within the file, and describe what this extension does
+
+    &quot;id&quot;: &quot;org.bahmni.newapp.newextension.uniqueId&quot;, //Mandatory. Unique id for this extension
+
+    &quot;extensionPointId&quot;: &quot;org.bahmni.newapp.newextension&quot;, //Mandatory. Must match an extensionPoint defined in app.json. Describes the type of extension described by this extension
+
+    &quot;type&quot;: &quot;link&quot;, //Mandatory. Currently Bahmni only supports extensions of type link and config
+
+    &quot;label&quot;: &quot;A nice label&quot;, //Optional name for this extension. Extensions may use this to show titles etc
+
+    &quot;translationKey&quot;:&quot;OBSERVATIONS_BOARD_LABEL_KEY&quot;, // Optional. If 
+
+    &quot;url&quot;: &quot;/newUrl&quot;, //Sets url of the extension to newUrl 
+
+    &quot;icon&quot;: &quot;fa-user-md&quot;, // Optional. Used if extension supports an icon
+
+    &quot;order&quot;: 1, // Optional. Used to order extensions of the same type if the extension supports it
+
+    &quot;requiredPrivilege&quot;: &quot;app:clinical:observationTab&quot; // User privileges required to activate this extension
+  }
+}</pre>
+</div></div><p>Other files are custom configuration that came out of the need to separate out configuration of specific functionality that grew too big. </p><p>Configurations possible for each app are provided below. </p><p><ul class="childpages-macro conf-macro output-block" data-hasbody="false" data-macro-id="4a243813-8519-4e81-8249-adc73a0f8d37" data-macro-name="children"><li><a href="/wiki/spaces/BAH/pages/34013780/Home+App" data-linked-resource-id="34013780" data-linked-resource-version="20" data-linked-resource-type="page">Home App</a></li><li><a href="/wiki/spaces/BAH/pages/34013806/Registration+App" data-linked-resource-id="34013806" data-linked-resource-version="27" data-linked-resource-type="page">Registration App</a></li><li><a href="/wiki/spaces/BAH/pages/36700208/Clinical+App" data-linked-resource-id="36700208" data-linked-resource-version="9" data-linked-resource-type="page">Clinical App</a></li><li><a href="/wiki/spaces/BAH/pages/97812538/Groovy+Scripts" data-linked-resource-id="97812538" data-linked-resource-version="50" data-linked-resource-type="page">Groovy Scripts</a></li><li><a href="/wiki/spaces/BAH/pages/27459635/Overriding+Configuration" data-linked-resource-id="27459635" data-linked-resource-version="15" data-linked-resource-type="page">Overriding Configuration</a></li><li><a href="/wiki/spaces/BAH/pages/115780492/Configure+White+Labeling" data-linked-resource-id="115780492" data-linked-resource-version="12" data-linked-resource-type="page">Configure White Labeling</a></li><li><a href="/wiki/spaces/BAH/pages/114661925/System+Configuration" data-linked-resource-id="114661925" data-linked-resource-version="1" data-linked-resource-type="page">System Configuration</a></li><li><a href="/wiki/spaces/BAH/pages/114529011/Retrospective+Entry+of+Data" data-linked-resource-id="114529011" data-linked-resource-version="7" data-linked-resource-type="page">Retrospective Entry of Data</a></li><li><a href="/wiki/spaces/BAH/pages/34013224/Internationalization+Support" data-linked-resource-id="34013224" data-linked-resource-version="27" data-linked-resource-type="page">Internationalization Support</a></li><li><a href="/wiki/spaces/BAH/pages/37945573/Display+Controls" data-linked-resource-id="37945573" data-linked-resource-version="155" data-linked-resource-type="page">Display Controls</a></li><li><a href="/wiki/spaces/BAH/pages/52691007/Shortcuts+in+Bahmni" data-linked-resource-id="52691007" data-linked-resource-version="18" data-linked-resource-type="page">Shortcuts in Bahmni</a></li></ul></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="e6921b04-2089-48cb-990e-45bb5d87af22" data-macro-name="tip"><p class="title">On this Page</p><div class="confluence-information-macro-body"><p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-cssliststyle="none" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="6f730d33-015e-4fce-a4ae-3e7108d67cf0" data-macro-name="toc"> </div><p> </p></div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="455f86b2-8705-4098-898a-61797fd4567f" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #1FA5A0;color: white;"><b>List of Bahmni Apps</b></div><div class="panelContent">
+<p> </p><ul class="childpages-macro conf-macro output-block" data-hasbody="false" data-macro-id="591d49ba-6128-4ff5-a8e2-717bb133a4ae" data-macro-name="children"><li><a href="/wiki/spaces/BAH/pages/34013780/Home+App" data-linked-resource-id="34013780" data-linked-resource-version="20" data-linked-resource-type="page">Home App</a></li><li><a href="/wiki/spaces/BAH/pages/34013806/Registration+App" data-linked-resource-id="34013806" data-linked-resource-version="27" data-linked-resource-type="page">Registration App</a></li><li><a href="/wiki/spaces/BAH/pages/36700208/Clinical+App" data-linked-resource-id="36700208" data-linked-resource-version="9" data-linked-resource-type="page">Clinical App</a></li><li><a href="/wiki/spaces/BAH/pages/97812538/Groovy+Scripts" data-linked-resource-id="97812538" data-linked-resource-version="50" data-linked-resource-type="page">Groovy Scripts</a></li><li><a href="/wiki/spaces/BAH/pages/27459635/Overriding+Configuration" data-linked-resource-id="27459635" data-linked-resource-version="15" data-linked-resource-type="page">Overriding Configuration</a></li><li><a href="/wiki/spaces/BAH/pages/115780492/Configure+White+Labeling" data-linked-resource-id="115780492" data-linked-resource-version="12" data-linked-resource-type="page">Configure White Labeling</a></li><li><a href="/wiki/spaces/BAH/pages/114661925/System+Configuration" data-linked-resource-id="114661925" data-linked-resource-version="1" data-linked-resource-type="page">System Configuration</a></li><li><a href="/wiki/spaces/BAH/pages/114529011/Retrospective+Entry+of+Data" data-linked-resource-id="114529011" data-linked-resource-version="7" data-linked-resource-type="page">Retrospective Entry of Data</a></li><li><a href="/wiki/spaces/BAH/pages/34013224/Internationalization+Support" data-linked-resource-id="34013224" data-linked-resource-version="27" data-linked-resource-type="page">Internationalization Support</a></li><li><a href="/wiki/spaces/BAH/pages/37945573/Display+Controls" data-linked-resource-id="37945573" data-linked-resource-version="155" data-linked-resource-type="page">Display Controls</a></li><li><a href="/wiki/spaces/BAH/pages/52691007/Shortcuts+in+Bahmni" data-linked-resource-id="52691007" data-linked-resource-version="18" data-linked-resource-type="page">Shortcuts in Bahmni</a></li></ul><p> </p>
+</div></div></div>
+</div>
+</div>
+</div></body></html>

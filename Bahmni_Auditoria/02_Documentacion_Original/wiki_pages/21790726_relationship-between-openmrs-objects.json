@@ -1,0 +1,170 @@
+{
+  "id": "21790726",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/21790726",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjE3OTA3MjY=",
+  "status": "current",
+  "title": "Relationship between OpenMRS objects",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "createdDate": "2015-06-01T11:30:07.651Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/21790726/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "when": "2015-06-02T09:10:11.630Z",
+    "friendlyWhen": "Jun 02, 2015",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "syncRev": "0.V8EBX6y4uzjLzNwhL2j2Nw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$21790726.16",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/21790726"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/21790726/version/4"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p><span>Considering each encounter type as a type of service provided to patient. It is possible that more such relationships would be required. Since the data volume is less should we model this in a single table instead of separate table for each type of relationship. There should services around this data which can answer questions like as provided in the description below.</span></p><table><tbody><tr><th>Object</th><th>Object</th><th>Name</th><th colspan=\"1\">Description</th></tr><tr><td>Location</td><td>Program (m)</td><td>Program Departments</td><td colspan=\"1\">On user login to a location, narrow down the programs which are serviced from that location</td></tr><tr><td>Program</td><td>Encounter Type (m)</td><td>Program Services</td><td colspan=\"1\">Each program could have a list of encounter types and when saving an encounter the type is derived from it</td></tr><tr><td>Location</td><td>Encounter Type (m)</td><td>Department Services</td><td colspan=\"1\"><span>Each location could have a list of encounter types, <strong>if no program is used</strong> then encounter type is picked based on the location</span></td></tr><tr><td colspan=\"1\">Program</td><td colspan=\"1\">Form (m)</td><td colspan=\"1\">Program Forms</td><td colspan=\"1\"><p>In the context of a program, provide only the choice of forms associated to it.<br />If it is less that 7 forms then we can display all of them instead of expecting user to favourite it</p></td></tr><tr><td colspan=\"1\">Location</td><td colspan=\"1\">Order Type (m)</td><td colspan=\"1\">Order Points</td><td colspan=\"1\"><p>Each location may be responsible for fulfilling certain orders.<br />On login to a location, order fulfilment application should be presented to the user.</p></td></tr></tbody></table><p>Location, Program, ET, VT, Obs Forms, Order Type, Order Class, Provider</p><p><a href=\"https://talk.openmrs.org/t/should-we-link-encounters-to-programs-using-encounter-types/2029\">https://talk.openmrs.org/t/should-we-link-encounters-to-programs-using-encounter-types/2029</a></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/21790726"
+      }
+    },
+    "view": {
+      "value": "<p><span>Considering each encounter type as a type of service provided to patient. It is possible that more such relationships would be required. Since the data volume is less should we model this in a single table instead of separate table for each type of relationship. There should services around this data which can answer questions like as provided in the description below.</span></p><div class=\"table-wrap\"><table class=\"confluenceTable\"><tbody><tr><th class=\"confluenceTh\">Object</th><th class=\"confluenceTh\">Object</th><th class=\"confluenceTh\">Name</th><th colspan=\"1\" class=\"confluenceTh\">Description</th></tr><tr><td class=\"confluenceTd\">Location</td><td class=\"confluenceTd\">Program (m)</td><td class=\"confluenceTd\">Program Departments</td><td colspan=\"1\" class=\"confluenceTd\">On user login to a location, narrow down the programs which are serviced from that location</td></tr><tr><td class=\"confluenceTd\">Program</td><td class=\"confluenceTd\">Encounter Type (m)</td><td class=\"confluenceTd\">Program Services</td><td colspan=\"1\" class=\"confluenceTd\">Each program could have a list of encounter types and when saving an encounter the type is derived from it</td></tr><tr><td class=\"confluenceTd\">Location</td><td class=\"confluenceTd\">Encounter Type (m)</td><td class=\"confluenceTd\">Department Services</td><td colspan=\"1\" class=\"confluenceTd\"><span>Each location could have a list of encounter types, <strong>if no program is used</strong> then encounter type is picked based on the location</span></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">Program</td><td colspan=\"1\" class=\"confluenceTd\">Form (m)</td><td colspan=\"1\" class=\"confluenceTd\">Program Forms</td><td colspan=\"1\" class=\"confluenceTd\"><p>In the context of a program, provide only the choice of forms associated to it.<br/>If it is less that 7 forms then we can display all of them instead of expecting user to favourite it</p></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">Location</td><td colspan=\"1\" class=\"confluenceTd\">Order Type (m)</td><td colspan=\"1\" class=\"confluenceTd\">Order Points</td><td colspan=\"1\" class=\"confluenceTd\"><p>Each location may be responsible for fulfilling certain orders.<br/>On login to a location, order fulfilment application should be presented to the user.</p></td></tr></tbody></table></div><p>Location, Program, ET, VT, Obs Forms, Order Type, Order Class, Provider</p><p><a class=\"external-link\" href=\"https://talk.openmrs.org/t/should-we-link-encounters-to-programs-using-encounter-types/2029\" rel=\"nofollow\">https://talk.openmrs.org/t/should-we-link-encounters-to-programs-using-encounter-types/2029</a></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/21790726"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/21790726/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/21790726/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 9762
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/21790726/child",
+    "restrictions": "/rest/api/content/21790726/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/21790726/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=21790726",
+    "webui": "/spaces/BAH/pages/21790726/Relationship+between+OpenMRS+objects",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/21790726",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/21790726",
+    "tinyui": "/x/BoBMAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

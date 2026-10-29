@@ -1,0 +1,185 @@
+{
+  "id": "900530309",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/900530309",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvOTAwNTMwMzA5",
+  "status": "current",
+  "title": "OT App Configuration",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "createdDate": "2019-08-06T06:31:19.964Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/900530309/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "620bff9de41f76006a6d49bd",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Rahul Ramesh",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/620bff9de41f76006a6d49bd",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Rahul Ramesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=620bff9de41f76006a6d49bd"
+      }
+    },
+    "when": "2024-05-13T13:08:52.930Z",
+    "friendlyWhen": "May 13, 2024",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "syncRev": "0.KIF905SVreVOiR93aIDcWQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$900530309.73",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/900530309"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/900530309/version/7"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p><span>You can do additional configuration of OT application through &quot;app config&quot;.&nbsp;&nbsp;</span></p><p><span>These configuration must be done in your implementation specific &quot;bahmni_config&quot;.&nbsp;</span></p><p><span>Path on server:&nbsp; <strong>/var</strong></span><strong>/www/bahmni_config/openmrs/apps/ot/app.json</strong></p><p><strong>Example:&nbsp;<a href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/apps/ot/app.json\">https://github.com/Bahmni/default-config/blob/master/openmrs/apps/ot/app.json</a><br /></strong></p><h1>Key Fields</h1><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th>Key</th><th>Use</th><th>Mandatory</th></tr><tr><td colspan=\"1\">id</td><td colspan=\"1\"><span>Some unique ID for this block.&nbsp;</span></td><td colspan=\"1\">Yes</td></tr><tr><td class=\"highlight-grey\" colspan=\"3\" data-highlight-colour=\"grey\" style=\"text-align: center;\"><strong>Extension Params</strong></td></tr><tr><td><pre>ignoredTabularViewHeadings</pre></td><td><span class=\"legacy-color-text-blue3\">To ignore columns when viewing&nbsp;patient search queues in tabular view</span></td><td>No</td></tr><tr><td>defaultViewAsSurgeonBased</td><td><div class=\"content-wrapper\"><p class=\"auto-cursor-target\">Setting below config as <code>true</code>&nbsp;would show the &ldquo;provider&rdquo; view as the default view in the calendar view, otherwise it will be OT view.</p></div></td><td>No</td></tr><tr><td><pre>identifierHeadings</pre></td><td><p><span class=\"legacy-color-text-blue3\">To set a particular column as an identifier when viewing patient search queue in tabular view</span></p></td><td><p>Yes</p></td></tr><tr><td colspan=\"1\"><pre>patientDashboardUrl</pre></td><td colspan=\"1\"><div class=\"content-wrapper\"><p class=\"auto-cursor-target\"><span>When user wants to edit a surgical appointment, the link can be configured to any url configured with additional context passed through query parameters. </span></p></div></td><td colspan=\"1\"><p>Yes</p></td></tr><tr><td colspan=\"1\">primarySurgeonsForOT</td><td colspan=\"1\"><p><span>The configuration is an array of surgeon names.&nbsp;</span><span>The name correspond to the person name of the provider that you have configured in OpenMRS provider management module.&nbsp;</span></p></td><td colspan=\"1\">No</td></tr><tr><td colspan=\"1\">printListViewTemplateUrl</td><td colspan=\"1\"><span><span>The print html is configurable to allow to custom print the columns or information needed.</span></span></td><td colspan=\"1\">Yes</td></tr><tr><td colspan=\"1\">calendarView</td><td colspan=\"1\"><p><span>The start time, end time and the interval of the calendar are configurable. The start time and end time are in 24 hr formats with hours and minutes separated by &lsquo;:&rsquo;. </span></p><p><span>The dayViewSplit is the interval to be configured in minutes.</span></p></td><td colspan=\"1\">No</td></tr><tr><td colspan=\"1\">startOfWeek</td><td colspan=\"1\">Start day of the week (&quot;Monday&quot;)</td><td colspan=\"1\">No</td></tr><tr><td colspan=\"1\">additionalCustomParam</td><td colspan=\"1\">To&nbsp;exhibit the primary diagnosis of a patient in list view,&nbsp;where a patient has multiple primary diagnoses recorded</td><td colspan=\"1\">No</td></tr></tbody></table><p class=\"auto-cursor-target\"><br /></p><h1><span>Configure patient dashboard link for the Patient Id</span></h1><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"c877e49f-6e34-4dc2-9121-a37c41dcb032\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Config</ac:parameter><ac:plain-text-body><![CDATA[“patientDashboardUrl”:{\n   “Link”: ”link to patient dashboard”,\n   “errorMessage”: ”custom error message”\n}]]></ac:plain-text-body></ac:structured-macro><p><span>When user wants to edit a surgical appointment, the link can be configured to any url configured with additional context passed through query parameters. See a sample configuration below:</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"80ecb0fc-3180-4145-8887-67f81f1a1c55\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Config</ac:parameter><ac:plain-text-body><![CDATA[\"patientDashboardUrl\": {\n   \"link\": \"/bahmni/clinical/#/programs/patient/{{patientUuid}}/dashboard?dateEnrolled={{dateEnrolled}}&programUuid={{programUuid}}&enrollment={{enrollment}}&currentTab=DASHBOARD_TAB_PATIENT_SUMMARY_KEY\"\n  \"errorMessage\": \"The patient is not enrolled to the program\"\n}]]></ac:plain-text-body></ac:structured-macro><h1><span>Configure surgeons available for OT scheduling</span></h1><p><span>Surgeon names in OT module are configurable. The configured surgeon names are listed while creating a new OT block and also in the surgeon filter. The configuration is an array of surgeon names.&nbsp;</span></p><p><span>The name correspond to the person name of the provider that you have configured in OpenMRS provider management module.&nbsp;</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"53593668-a811-4d75-884e-47a5ac79b824\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Config</ac:parameter><ac:plain-text-body><![CDATA[\"primarySurgeonsForOT\" : [\"Yogesh Jain\",\"Anjali Sharma\"]]]></ac:plain-text-body></ac:structured-macro><h1>Custom&nbsp;<span>HTML template for printing</span></h1><p><span><span>The list view in &quot;OT Scheduling&quot; has a print button for users to print the appointments listed. The print html is configurable to allow to custom print the columns or information needed. </span></span></p><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"3ac14546-1e5a-48b4-a116-e500eccf2b07\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Config</ac:parameter><ac:plain-text-body><![CDATA[\"printListViewTemplateUrl\" : \"/bahmni_config/openmrs/apps/ot/printListView.html\"]]></ac:plain-text-body></ac:structured-macro><h1><span>Autofill Planned procedures and estimated time</span></h1><p><span>While creating a new appointment, the procedure and estimated times can be auto filled from information filled in the forms. Currently these are pulled from surgeon Pre-Op Assessment and Treatment Plan and Surgeon Follow-up form. The values to be selected in the SQL are &lsquo;all_procedures&rsquo;, &lsquo;esthrs&rsquo;, &lsquo;estmins&rsquo;. Users can write custom SQLs to return select these values and add the custom sql in this configuration. The sample is as below:</span></p><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d8e71202-dc8a-4472-85d3-7dcf32e93efa\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Config</ac:parameter><ac:plain-text-body><![CDATA[\"procedureSQLGlobalProperty\" : \"bahmni sql query handler name\"]]></ac:plain-text-body></ac:structured-macro><p><strong>example</strong>:&nbsp;</p><pre>&quot;procedureSQLGlobalProperty&quot;: &quot;emrapi.sqlSearch.plannedProcedureForPatient&quot;</pre><p><span>See code:&nbsp;<a href=\"https://github.com/bahmni-msf/amman-config/blob/d040b87dd44e9269648c3f0f92bfaa0dc5ed8a95/openmrs/migrations/operationTheater/plannedProcedureForPatient.sql\">https://github.com/bahmni-msf/amman-config/blob/d040b87dd44e9269648c3f0f92bfaa0dc5ed8a95/openmrs/migrations/operationTheater/plannedProcedureForPatient.sql</a></span></p><h1><span>Calendar view start time, end time and interval</span></h1><p><span>The start time, end time and the interval of the calendar are configurable. The start time and end time are in 24 hr formats with hours and minutes separated by &lsquo;:&rsquo;. The dayViewSplit is the interval to be configured in minutes. The sample configuration is as below:</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"5d7efde7-c1d9-425b-97c0-e9b49f589f62\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Config</ac:parameter><ac:plain-text-body><![CDATA[“calendarView”: {\n   “dayViewStart”: ”08:00”,\n   “dayViewEnd”  : ”18:00”,\n   “dayViewSplit”: ”60”\n}]]></ac:plain-text-body></ac:structured-macro><h1>Primary Diagnosis Information in the OT list view</h1><p>Incorporating the provided configuration, the list view can now exhibit the primary diagnosis of a patient. In cases where a patient has multiple primary diagnoses recorded, all of them will be showcased within the OT list view. Below is a sample configuration to enable this functionality:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4969afe1-cd6b-4efa-8e50-1264e85e72fc\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Config</ac:parameter><ac:plain-text-body><![CDATA[\"additionalCustomParam\": \"patientObservations\"]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"600e9623-defe-4953-829c-83107b3544b5\"><ac:parameter ac:name=\"title\">Note</ac:parameter><ac:rich-text-body><p>This feature is accessible only if the operation theatre backend supports reading this value. To enable this functionality, set the `obs.conceptMappingsForOT` parameter to `&quot;org.openmrs.module.emrapi:Coded Diagnosis,org.openmrs.module.emrapi:Non-coded Diagnosis&quot;`. This parameter is a comma-separated list of key-value pairs in the format of source:code for concept mappings, determining which observations are to be displayed in the OT module List view.</p><p>For instance, if we aim to retrieve observations recorded under the concept mappings with the source &quot;org.openmrs.module.emrapi&quot; and code &quot;Coded Diagnosis,&quot; and another with the source &quot;org.openmrs.module.emrapi&quot; and code &quot;Non-coded Diagnosis,&quot; the parameter value should be set as follows: `&quot;org.openmrs.module.emrapi:Coded Diagnosis,org.openmrs.module.emrapi:Non-coded Diagnosis&quot;`. Note that the source and code key-value pairs are separated by a colon symbol.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/900530309"
+      }
+    },
+    "view": {
+      "value": "<p><span>You can do additional configuration of OT application through &quot;app config&quot;.  </span></p><p><span>These configuration must be done in your implementation specific &quot;bahmni_config&quot;. </span></p><p><span>Path on server:  <strong>/var</strong></span><strong>/www/bahmni_config/openmrs/apps/ot/app.json</strong></p><p><strong>Example: <a class=\"external-link\" href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/apps/ot/app.json\" rel=\"nofollow\">https://github.com/Bahmni/default-config/blob/master/openmrs/apps/ot/app.json</a><br/></strong></p><h1 id=\"OTAppConfiguration-KeyFields\">Key Fields</h1><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class=\"confluenceTh\">Key</th><th class=\"confluenceTh\">Use</th><th class=\"confluenceTh\">Mandatory</th></tr><tr><td colspan=\"1\" class=\"confluenceTd\">id</td><td colspan=\"1\" class=\"confluenceTd\"><span>Some unique ID for this block. </span></td><td colspan=\"1\" class=\"confluenceTd\">Yes</td></tr><tr><td colspan=\"3\" data-highlight-colour=\"grey\" style=\"text-align: center;\" class=\"highlight-grey confluenceTd\"><strong>Extension Params</strong></td></tr><tr><td class=\"confluenceTd\"><pre>ignoredTabularViewHeadings</pre></td><td class=\"confluenceTd\"><span class=\"legacy-color-text-blue3\">To ignore columns when viewing patient search queues in tabular view</span></td><td class=\"confluenceTd\">No</td></tr><tr><td class=\"confluenceTd\">defaultViewAsSurgeonBased</td><td class=\"confluenceTd\"><div class=\"content-wrapper\"><p class=\"auto-cursor-target\">Setting below config as <code>true</code> would show the “provider” view as the default view in the calendar view, otherwise it will be OT view.</p></div></td><td class=\"confluenceTd\">No</td></tr><tr><td class=\"confluenceTd\"><pre>identifierHeadings</pre></td><td class=\"confluenceTd\"><p><span class=\"legacy-color-text-blue3\">To set a particular column as an identifier when viewing patient search queue in tabular view</span></p></td><td class=\"confluenceTd\"><p>Yes</p></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><pre>patientDashboardUrl</pre></td><td colspan=\"1\" class=\"confluenceTd\"><div class=\"content-wrapper\"><p class=\"auto-cursor-target\"><span>When user wants to edit a surgical appointment, the link can be configured to any url configured with additional context passed through query parameters. </span></p></div></td><td colspan=\"1\" class=\"confluenceTd\"><p>Yes</p></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">primarySurgeonsForOT</td><td colspan=\"1\" class=\"confluenceTd\"><p><span>The configuration is an array of surgeon names. </span><span>The name correspond to the person name of the provider that you have configured in OpenMRS provider management module. </span></p></td><td colspan=\"1\" class=\"confluenceTd\">No</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">printListViewTemplateUrl</td><td colspan=\"1\" class=\"confluenceTd\"><span><span>The print html is configurable to allow to custom print the columns or information needed.</span></span></td><td colspan=\"1\" class=\"confluenceTd\">Yes</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">calendarView</td><td colspan=\"1\" class=\"confluenceTd\"><p><span>The start time, end time and the interval of the calendar are configurable. The start time and end time are in 24 hr formats with hours and minutes separated by ‘:’. </span></p><p><span>The dayViewSplit is the interval to be configured in minutes.</span></p></td><td colspan=\"1\" class=\"confluenceTd\">No</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">startOfWeek</td><td colspan=\"1\" class=\"confluenceTd\">Start day of the week (&quot;Monday&quot;)</td><td colspan=\"1\" class=\"confluenceTd\">No</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">additionalCustomParam</td><td colspan=\"1\" class=\"confluenceTd\">To exhibit the primary diagnosis of a patient in list view, where a patient has multiple primary diagnoses recorded</td><td colspan=\"1\" class=\"confluenceTd\">No</td></tr></tbody></table></div><h1 id=\"OTAppConfiguration-ConfigurepatientdashboardlinkforthePatientId\"><span>Configure patient dashboard link for the Patient Id</span></h1><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c877e49f-6e34-4dc2-9121-a37c41dcb032\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Config</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">“patientDashboardUrl”:{\n   “Link”: ”link to patient dashboard”,\n   “errorMessage”: ”custom error message”\n}</pre>\n</div></div><p><span>When user wants to edit a surgical appointment, the link can be configured to any url configured with additional context passed through query parameters. See a sample configuration below:</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"80ecb0fc-3180-4145-8887-67f81f1a1c55\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Config</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;patientDashboardUrl&quot;: {\n   &quot;link&quot;: &quot;/bahmni/clinical/#/programs/patient/{{patientUuid}}/dashboard?dateEnrolled={{dateEnrolled}}&amp;programUuid={{programUuid}}&amp;enrollment={{enrollment}}&amp;currentTab=DASHBOARD_TAB_PATIENT_SUMMARY_KEY&quot;\n  &quot;errorMessage&quot;: &quot;The patient is not enrolled to the program&quot;\n}</pre>\n</div></div><h1 id=\"OTAppConfiguration-ConfiguresurgeonsavailableforOTscheduling\"><span>Configure surgeons available for OT scheduling</span></h1><p><span>Surgeon names in OT module are configurable. The configured surgeon names are listed while creating a new OT block and also in the surgeon filter. The configuration is an array of surgeon names. </span></p><p><span>The name correspond to the person name of the provider that you have configured in OpenMRS provider management module. </span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"53593668-a811-4d75-884e-47a5ac79b824\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Config</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;primarySurgeonsForOT&quot; : [&quot;Yogesh Jain&quot;,&quot;Anjali Sharma&quot;]</pre>\n</div></div><h1 id=\"OTAppConfiguration-CustomHTMLtemplateforprinting\">Custom <span>HTML template for printing</span></h1><p><span><span>The list view in &quot;OT Scheduling&quot; has a print button for users to print the appointments listed. The print html is configurable to allow to custom print the columns or information needed. </span></span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3ac14546-1e5a-48b4-a116-e500eccf2b07\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Config</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;printListViewTemplateUrl&quot; : &quot;/bahmni_config/openmrs/apps/ot/printListView.html&quot;</pre>\n</div></div><h1 id=\"OTAppConfiguration-AutofillPlannedproceduresandestimatedtime\"><span>Autofill Planned procedures and estimated time</span></h1><p><span>While creating a new appointment, the procedure and estimated times can be auto filled from information filled in the forms. Currently these are pulled from surgeon Pre-Op Assessment and Treatment Plan and Surgeon Follow-up form. The values to be selected in the SQL are ‘all_procedures’, ‘esthrs’, ‘estmins’. Users can write custom SQLs to return select these values and add the custom sql in this configuration. The sample is as below:</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d8e71202-dc8a-4472-85d3-7dcf32e93efa\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Config</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;procedureSQLGlobalProperty&quot; : &quot;bahmni sql query handler name&quot;</pre>\n</div></div><p><strong>example</strong>: </p><pre>&quot;procedureSQLGlobalProperty&quot;: &quot;emrapi.sqlSearch.plannedProcedureForPatient&quot;</pre><p><span>See code: <a class=\"external-link\" href=\"https://github.com/bahmni-msf/amman-config/blob/d040b87dd44e9269648c3f0f92bfaa0dc5ed8a95/openmrs/migrations/operationTheater/plannedProcedureForPatient.sql\" rel=\"nofollow\">https://github.com/bahmni-msf/amman-config/blob/d040b87dd44e9269648c3f0f92bfaa0dc5ed8a95/openmrs/migrations/operationTheater/plannedProcedureForPatient.sql</a></span></p><h1 id=\"OTAppConfiguration-Calendarviewstarttime,endtimeandinterval\"><span>Calendar view start time, end time and interval</span></h1><p><span>The start time, end time and the interval of the calendar are configurable. The start time and end time are in 24 hr formats with hours and minutes separated by ‘:’. The dayViewSplit is the interval to be configured in minutes. The sample configuration is as below:</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"5d7efde7-c1d9-425b-97c0-e9b49f589f62\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Config</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">“calendarView”: {\n   “dayViewStart”: ”08:00”,\n   “dayViewEnd”  : ”18:00”,\n   “dayViewSplit”: ”60”\n}</pre>\n</div></div><h1 id=\"OTAppConfiguration-PrimaryDiagnosisInformationintheOTlistview\">Primary Diagnosis Information in the OT list view</h1><p>Incorporating the provided configuration, the list view can now exhibit the primary diagnosis of a patient. In cases where a patient has multiple primary diagnoses recorded, all of them will be showcased within the OT list view. Below is a sample configuration to enable this functionality:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4969afe1-cd6b-4efa-8e50-1264e85e72fc\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Config</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;additionalCustomParam&quot;: &quot;patientObservations&quot;</pre>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"600e9623-defe-4953-829c-83107b3544b5\" data-macro-name=\"note\"><p class=\"title\">Note</p><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This feature is accessible only if the operation theatre backend supports reading this value. To enable this functionality, set the `obs.conceptMappingsForOT` parameter to `&quot;org.openmrs.module.emrapi:Coded Diagnosis,org.openmrs.module.emrapi:Non-coded Diagnosis&quot;`. This parameter is a comma-separated list of key-value pairs in the format of source:code for concept mappings, determining which observations are to be displayed in the OT module List view.</p><p>For instance, if we aim to retrieve observations recorded under the concept mappings with the source &quot;org.openmrs.module.emrapi&quot; and code &quot;Coded Diagnosis,&quot; and another with the source &quot;org.openmrs.module.emrapi&quot; and code &quot;Non-coded Diagnosis,&quot; the parameter value should be set as follows: `&quot;org.openmrs.module.emrapi:Coded Diagnosis,org.openmrs.module.emrapi:Non-coded Diagnosis&quot;`. Note that the source and code key-value pairs are separated by a colon symbol.</p></div></div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/900530309"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "operation-theatre",
+          "id": "2211643551",
+          "label": "operation-theatre"
+        },
+        {
+          "prefix": "global",
+          "name": "configuration",
+          "id": "40861704",
+          "label": "configuration"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 2,
+      "_links": {
+        "next": "/rest/api/content/900530309/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/900530309/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1182431368
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/900530309/child",
+    "restrictions": "/rest/api/content/900530309/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/900530309/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=900530309",
+    "webui": "/spaces/BAH/pages/900530309/OT+App+Configuration",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/900530309",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/900530309",
+    "tinyui": "/x/hQCtNQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

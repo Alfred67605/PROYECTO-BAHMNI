@@ -1,0 +1,172 @@
+{
+  "id": "3647176711",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3647176711",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzY0NzE3NjcxMQ==",
+  "status": "current",
+  "title": "Provider Acknowledgement for Emergency Medication Administered by Ward Nurse",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "620bff9de41f76006a6d49bd",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Rahul Ramesh",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/620bff9de41f76006a6d49bd",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Rahul Ramesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=620bff9de41f76006a6d49bd"
+      }
+    },
+    "createdDate": "2024-07-20T16:42:36.848Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3647176711/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "620bff9de41f76006a6d49bd",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Rahul Ramesh",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/620bff9de41f76006a6d49bd",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Rahul Ramesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=620bff9de41f76006a6d49bd"
+      }
+    },
+    "when": "2024-08-29T17:34:13.513Z",
+    "friendlyWhen": "Aug 29, 2024",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "ncsStepVersion": "661",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3647176711.68",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3647176711"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3647176711/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\" ac:breakout-mode=\"full-width\"><ac:layout-cell><h2>Overview</h2><p>In an Inpatient Department (IPD) setting, it is essential to document and acknowledge emergency medications administered by ward nurses without a prior prescription (Rx) reference. The newly added 'Notifications' tab in the Clinical module enables providers to confirm these emergency administrations, ensuring accurate record-keeping and continuity of patient care.</p><h2>Configurations</h2><h3>Configure Notification Tab in the Clinical Module</h3><p>The <code>openmrs/apps/clinical/extension.json</code> file is crucial for configuring the 'Notifications' tab within the Clinical module. This file defines how the tab appears, where it is placed in the module, and who can access it. </p><p>By setting up this configuration, the Provider Acknowledgement (Notification) tab is seamlessly integrated into the Clinical module, providing healthcare providers with a streamlined interface for acknowledging emergency medication administrations.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"a5f92f4e-ae85-4646-8f01-00b5a0622cc7\"><ac:parameter ac:name=\"language\">json</ac:parameter><ac:plain-text-body><![CDATA[{\n    \"bahmniClinicalPatientsCustomNotifications\": {\n        \"id\": \"bahmni.clinical.patients.custom.notifications\",\n        \"extensionPointId\": \"org.bahmni.patient.search\",\n        \"type\": \"config\",\n        \"extensionParams\": {\n            \"translationKey\": \"MODULE_LABEL_NOTIFICATIONS_KEY\",\n            \"templateUrl\": \"/bahmni_config/openmrs/apps/clinical/customQueues/notifications.html\",\n            \"view\": \"custom\"\n        },\n        \"label\": \"Notifications\",\n        \"order\": 4,\n        \"requiredPrivilege\": \"app:clinical\"\n    }\n}]]></ac:plain-text-body></ac:structured-macro><p>Add the Tab&rsquo;s label in <code>openmrs/i18n/clinical/locale_en.json</code> </p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"43b4554b-9ed5-4252-9b01-f93c8d3d7084\"><ac:parameter ac:name=\"language\">json</ac:parameter><ac:plain-text-body><![CDATA[{\n    \"MODULE_LABEL_NOTIFICATIONS_KEY\": \"Notifications\"\n}]]></ac:plain-text-body></ac:structured-macro><p>The <code>locale_en.json</code> file is part of the internationalization (i18n) system in OpenMRS. This file contains the translation keys and their corresponding English values, enabling the application to display the appropriate text based on the user&rsquo;s language settings. For the 'Notifications' tab, this file ensures that the tab&rsquo;s label is correctly translated and displayed.</p><h3>Define the Notification Interface</h3><p>Now define your own custom Notification interface here in <code>openmrs/apps/clinical/customQueues/notifications.html</code> in clinic config. </p><p>The <code>notifications.html</code> file is the HTML template that defines the structure and content of the 'Notifications' tab. This template dictates how the information within the tab is displayed to the user, including the layout, elements, and overall user interface. This file is essential for creating a user-friendly experience that allows healthcare providers to efficiently acknowledge emergency medication administrations.</p><p>Bahmni provides a template for the same and add the following to <code>openmrs/apps/clinical/customQueues/notifications.html</code> .</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"74841a01-86e5-4f5b-a69d-850280efc3d7\"><ac:parameter ac:name=\"language\">html</ac:parameter><ac:plain-text-body><![CDATA[<mfe-next-ui-provider-notifications></mfe-next-ui-provider-notifications>]]></ac:plain-text-body></ac:structured-macro><h3>Define the SQL query to fetch the Unacknowledged Medications</h3><p>Below is an example of how <code>emergencyMedicationToAcknowledge</code> can be introduced via the initializer:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"2c05bfbf-05eb-44ad-ac94-de2a0b163325\"><ac:parameter ac:name=\"language\">xml</ac:parameter><ac:plain-text-body><![CDATA[<config>\n  <globalProperties>\n    <globalProperty>\n       <property>emrapi.sqlSearch.emergencyMedicationToAcknowledge</property> \n\n<value>\n\nSELECT DISTINCT\n    primaryIdentifier.identifier as identifier,\n    concat(pn.given_name, ' ', pn.family_name) as name,\n    p.gender as gender,\n    p.uuid as patient_uuid,\n    p.birthdate as date_of_birth,\n    ma.uuid as medication_administration_uuid,\n    ma.administered_date_time,\n    dg.name as administered_drug_name,\n    ma.dose as administered_dose,\n    cnd.name as administered_dose_units,\n    cnr.name as administered_route,\n    map.uuid as medication_administration_performer_uuid,\n    v.uuid as visit_uuid\nFROM medication_administration_performer map\nJOIN provider pr on pr.provider_id = map.actor_id\nJOIN medication_administration ma on map.medication_administration_id=ma.medication_administration_id\nJOIN drug dg on dg.drug_id = ma.drug_id\nJOIN ipd_slot slot on ma.medication_administration_id = slot.medication_administration_id\nJOIN ipd_schedule schedule on schedule.schedule_id = slot.schedule_id\nJOIN visit v on v.visit_id = schedule.visit_id\nJOIN (SELECT pri.patient_id, pri.identifier\n      FROM patient_identifier pri\n      JOIN patient_identifier_type pit on pri.identifier_type = pit.patient_identifier_type_id and pri.preferred = 1\n      JOIN global_property gp on gp.property=\"bahmni.primaryIdentifierType\" and gp.property_value=pit.uuid) primaryIdentifier\n      ON ma.patient_id = primaryIdentifier.patient_id\nJOIN concept_name cn on cn.concept_id = map.performer_function and cn.concept_name_type = \"FULLY_SPECIFIED\" and cn.locale='en'\nJOIN concept_name cnd on cnd.concept_id = ma.dose_units and cnd.concept_name_type = \"FULLY_SPECIFIED\" and cnd.locale='en'\nJOIN concept_name cnr on cnr.concept_id = ma.route and cnr.concept_name_type = \"FULLY_SPECIFIED\" and cnr.locale='en'\nJOIN person_name pn on ma.patient_id = pn.person_id and pn.voided = 0 and pn.preferred = 1\nJOIN patient_identifier pi on ma.patient_id = pi.patient_id\nJOIN person p on p.person_id = ma.patient_id and p.voided = 0\nWHERE cn.concept_name_type=\"FULLY_SPECIFIED\" and cn.name=\"Witness\" and pr.uuid = ${provider_uuid};\n\n</value>\n        <description>SQL query to get the list of Emergency Medications to be acknowledged</description>\n    </globalProperty>\n  </globalProperties>\n</config>]]></ac:plain-text-body></ac:structured-macro><h2>Conclusion</h2><p>This implementer guide outlines the configuration of the Provider Acknowledgement (Notifications) tab in the Clinical module, specifically designed for the provider acknowledgment of emergency medication administered by ward nurses. Proper implementation ensures accurate documentation and review of all emergency medications, enhancing patient safety and care continuity.</p></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" data-layout=\"default\" ac:local-id=\"280148eb-a062-4ee7-a114-8093b5fe2035\" ac:macro-id=\"9e24312a-4088-4e06-83c9-62aba05361ba\"><ac:parameter ac:name=\"minLevel\">1</ac:parameter><ac:parameter ac:name=\"maxLevel\">6</ac:parameter><ac:parameter ac:name=\"outline\">false</ac:parameter><ac:parameter ac:name=\"style\">default</ac:parameter><ac:parameter ac:name=\"type\">list</ac:parameter><ac:parameter ac:name=\"printable\">true</ac:parameter></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3647176711"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ProviderAcknowledgementforEmergencyMedicationAdministeredbyWardNurse-Overview\">Overview</h2><p>In an Inpatient Department (IPD) setting, it is essential to document and acknowledge emergency medications administered by ward nurses without a prior prescription (Rx) reference. The newly added 'Notifications' tab in the Clinical module enables providers to confirm these emergency administrations, ensuring accurate record-keeping and continuity of patient care.</p><h2 id=\"ProviderAcknowledgementforEmergencyMedicationAdministeredbyWardNurse-Configurations\">Configurations</h2><h3 id=\"ProviderAcknowledgementforEmergencyMedicationAdministeredbyWardNurse-ConfigureNotificationTabintheClinicalModule\">Configure Notification Tab in the Clinical Module</h3><p>The <code>openmrs/apps/clinical/extension.json</code> file is crucial for configuring the 'Notifications' tab within the Clinical module. This file defines how the tab appears, where it is placed in the module, and who can access it. </p><p>By setting up this configuration, the Provider Acknowledgement (Notification) tab is seamlessly integrated into the Clinical module, providing healthcare providers with a streamlined interface for acknowledging emergency medication administrations.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a5f92f4e-ae85-4646-8f01-00b5a0622cc7\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n    &quot;bahmniClinicalPatientsCustomNotifications&quot;: {\n        &quot;id&quot;: &quot;bahmni.clinical.patients.custom.notifications&quot;,\n        &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,\n        &quot;type&quot;: &quot;config&quot;,\n        &quot;extensionParams&quot;: {\n            &quot;translationKey&quot;: &quot;MODULE_LABEL_NOTIFICATIONS_KEY&quot;,\n            &quot;templateUrl&quot;: &quot;/bahmni_config/openmrs/apps/clinical/customQueues/notifications.html&quot;,\n            &quot;view&quot;: &quot;custom&quot;\n        },\n        &quot;label&quot;: &quot;Notifications&quot;,\n        &quot;order&quot;: 4,\n        &quot;requiredPrivilege&quot;: &quot;app:clinical&quot;\n    }\n}</pre>\n</div></div><p>Add the Tab’s label in <code>openmrs/i18n/clinical/locale_en.json</code> </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"43b4554b-9ed5-4252-9b01-f93c8d3d7084\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n    &quot;MODULE_LABEL_NOTIFICATIONS_KEY&quot;: &quot;Notifications&quot;\n}</pre>\n</div></div><p>The <code>locale_en.json</code> file is part of the internationalization (i18n) system in OpenMRS. This file contains the translation keys and their corresponding English values, enabling the application to display the appropriate text based on the user’s language settings. For the 'Notifications' tab, this file ensures that the tab’s label is correctly translated and displayed.</p><h3 id=\"ProviderAcknowledgementforEmergencyMedicationAdministeredbyWardNurse-DefinetheNotificationInterface\">Define the Notification Interface</h3><p>Now define your own custom Notification interface here in <code>openmrs/apps/clinical/customQueues/notifications.html</code> in clinic config. </p><p>The <code>notifications.html</code> file is the HTML template that defines the structure and content of the 'Notifications' tab. This template dictates how the information within the tab is displayed to the user, including the layout, elements, and overall user interface. This file is essential for creating a user-friendly experience that allows healthcare providers to efficiently acknowledge emergency medication administrations.</p><p>Bahmni provides a template for the same and add the following to <code>openmrs/apps/clinical/customQueues/notifications.html</code> .</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"74841a01-86e5-4f5b-a69d-850280efc3d7\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: html; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&lt;mfe-next-ui-provider-notifications&gt;&lt;/mfe-next-ui-provider-notifications&gt;</pre>\n</div></div><h3 id=\"ProviderAcknowledgementforEmergencyMedicationAdministeredbyWardNurse-DefinetheSQLquerytofetchtheUnacknowledgedMedications\">Define the SQL query to fetch the Unacknowledged Medications</h3><p>Below is an example of how <code>emergencyMedicationToAcknowledge</code> can be introduced via the initializer:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"2c05bfbf-05eb-44ad-ac94-de2a0b163325\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: xml; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&lt;config&gt;\n  &lt;globalProperties&gt;\n    &lt;globalProperty&gt;\n       &lt;property&gt;emrapi.sqlSearch.emergencyMedicationToAcknowledge&lt;/property&gt; \n\n&lt;value&gt;\n\nSELECT DISTINCT\n    primaryIdentifier.identifier as identifier,\n    concat(pn.given_name, ' ', pn.family_name) as name,\n    p.gender as gender,\n    p.uuid as patient_uuid,\n    p.birthdate as date_of_birth,\n    ma.uuid as medication_administration_uuid,\n    ma.administered_date_time,\n    dg.name as administered_drug_name,\n    ma.dose as administered_dose,\n    cnd.name as administered_dose_units,\n    cnr.name as administered_route,\n    map.uuid as medication_administration_performer_uuid,\n    v.uuid as visit_uuid\nFROM medication_administration_performer map\nJOIN provider pr on pr.provider_id = map.actor_id\nJOIN medication_administration ma on map.medication_administration_id=ma.medication_administration_id\nJOIN drug dg on dg.drug_id = ma.drug_id\nJOIN ipd_slot slot on ma.medication_administration_id = slot.medication_administration_id\nJOIN ipd_schedule schedule on schedule.schedule_id = slot.schedule_id\nJOIN visit v on v.visit_id = schedule.visit_id\nJOIN (SELECT pri.patient_id, pri.identifier\n      FROM patient_identifier pri\n      JOIN patient_identifier_type pit on pri.identifier_type = pit.patient_identifier_type_id and pri.preferred = 1\n      JOIN global_property gp on gp.property=&quot;bahmni.primaryIdentifierType&quot; and gp.property_value=pit.uuid) primaryIdentifier\n      ON ma.patient_id = primaryIdentifier.patient_id\nJOIN concept_name cn on cn.concept_id = map.performer_function and cn.concept_name_type = &quot;FULLY_SPECIFIED&quot; and cn.locale='en'\nJOIN concept_name cnd on cnd.concept_id = ma.dose_units and cnd.concept_name_type = &quot;FULLY_SPECIFIED&quot; and cnd.locale='en'\nJOIN concept_name cnr on cnr.concept_id = ma.route and cnr.concept_name_type = &quot;FULLY_SPECIFIED&quot; and cnr.locale='en'\nJOIN person_name pn on ma.patient_id = pn.person_id and pn.voided = 0 and pn.preferred = 1\nJOIN patient_identifier pi on ma.patient_id = pi.patient_id\nJOIN person p on p.person_id = ma.patient_id and p.voided = 0\nWHERE cn.concept_name_type=&quot;FULLY_SPECIFIED&quot; and cn.name=&quot;Witness&quot; and pr.uuid = ${provider_uuid};\n\n&lt;/value&gt;\n        &lt;description&gt;SQL query to get the list of Emergency Medications to be acknowledged&lt;/description&gt;\n    &lt;/globalProperty&gt;\n  &lt;/globalProperties&gt;\n&lt;/config&gt;</pre>\n</div></div><h2 id=\"ProviderAcknowledgementforEmergencyMedicationAdministeredbyWardNurse-Conclusion\">Conclusion</h2><p>This implementer guide outlines the configuration of the Provider Acknowledgement (Notifications) tab in the Clinical module, specifically designed for the provider acknowledgment of emergency medication administered by ward nurses. Proper implementation ensures accurate documentation and review of all emergency medications, enhancing patient safety and care continuity.</p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-cssliststyle=\"default\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6\" data-layout=\"default\" data-local-id=\"280148eb-a062-4ee7-a114-8093b5fe2035\" data-macro-id=\"9e24312a-4088-4e06-83c9-62aba05361ba\" data-macro-name=\"toc\" data-numberedoutline=\"false\" data-structure=\"list\"> </div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3647176711"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3647176711/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3647176711/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 379
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3647176711/child",
+    "restrictions": "/rest/api/content/3647176711/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3647176711/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3647176711",
+    "webui": "/spaces/BAH/pages/3647176711/Provider+Acknowledgement+for+Emergency+Medication+Administered+by+Ward+Nurse",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3647176711",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3647176711",
+    "tinyui": "/x/B4Bj2Q",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

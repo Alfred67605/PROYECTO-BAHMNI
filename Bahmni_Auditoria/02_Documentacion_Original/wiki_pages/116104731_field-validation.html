@@ -1,0 +1,50 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Field Validation</title></head><body><h1>Field Validation</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="FieldValidation-Description">Description</h2><p>We can have custom validations written in javascript for Registration Fields. </p><p>For achieving this, need to do the following</p><ul><li>Add a file called fieldValidation.js and put it under &quot;/var/www/bahmni_config/openmrs/apps/registration/&quot; directory.</li><li>Add the functions required to validate the field.</li><li>Include fieldValidation.js in bahmniapps/registration/index.html.</li></ul><p>The format of the validator should be like below</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="e9732fba-fbb0-4a00-b375-8bcbb2ffb99e" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Config</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">  &quot;&lt;field id&gt;&quot; : {
+           method: function (name, value, attributeDetails) {
+          if (.......) {
+            return true;
+          }
+          return false;
+       },
+       errorMessage: &quot;Error Message&quot;
+     }
+};</pre>
+</div></div><p>The fieldName details can be obtained from the openmrs administration module (Patient Attributes). The validators will work for non-attributes as well. For non attributes, you will need to get the field names using some html debuggers.</p><h3 id="FieldValidation-PatientNameRelatedCustomFieldValidationConfigurations"><strong><span class="legacy-color-text-default">Patient Name Related Custom Field Validation Configurations</span></strong></h3><p style="text-align: left;">If the format of the patient names need to be changed, the global property patient.nameValidationRegex needs to be updated. This field is used in server side validations by openmrs.</p><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-id="963f3447-4cf9-49cf-8754-7ae5dd01869b" data-macro-name="note"><p class="title">Note</p><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p> Error message is displayed only when return is false.  The specified field should be of non coded value type. If the field is not a patient attribute, the attributeDetails will not be given.</p></div></div><p class="auto-cursor-target"> The attribute details contain the below fields,</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 50.0609%;"><colgroup><col style="width: 38.0488%;"/><col style="width: 61.9512%;"/></colgroup><tbody><tr><th class="confluenceTh">Property</th><th class="confluenceTh">Description</th></tr><tr><td class="confluenceTd">description</td><td class="confluenceTd">Its a description</td></tr><tr><td class="confluenceTd">format</td><td class="confluenceTd">java class of the attribute</td></tr><tr><td class="confluenceTd">name</td><td class="confluenceTd">name of the attribute</td></tr><tr><td colspan="1" class="confluenceTd">uuid</td><td colspan="1" class="confluenceTd">uuid of the attribute</td></tr></tbody></table></div><p class="auto-cursor-target"><strong>Example Fields:</strong></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="13ae91e1-9865-452d-88c2-581ae2a3b08b" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">description: &quot;मरीज़ का उपनाम&quot;
+format: &quot;java.lang.String&quot;
+name: &quot;familyNameLocal&quot;
+required: false
+uuid: &quot;b4f44ade-c79a-11e2-b284-107d46e7b2c5&quot;</pre>
+</div></div><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="411d7568-523f-446b-bdaa-0c990eb0ab76" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Code Snippet</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">Bahmni.Registration.customValidator = {
+    &quot;age.days&quot;: {
+        method: function (name, value) {
+            return value &gt;= 0;
+        },
+        errorMessage: &quot;REGISTRATION_AGE_ERROR_KEY&quot;
+    },
+    &quot;Telephone Number&quot;: {
+        method: function (name, value, personAttributeDetails) {
+            return value &amp;&amp; value.length&gt; 6;
+        },
+        errorMessage: &quot;REGISTRATION_TELEPHONE_NUMBER_ERROR_KEY&quot;
+    },
+    &quot;caste&quot;: {
+        method: function (name, value, personAttributeDetails) {
+            return value.match(/^\w+$/);
+        },
+        errorMessage: &quot;REGISTRATION_CASTE_TEXT_ERROR_KEY&quot;
+    }
+};</pre>
+</div></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<p><br/></p></div>
+</div>
+</div>
+</div></body></html>

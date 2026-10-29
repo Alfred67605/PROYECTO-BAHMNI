@@ -1,0 +1,209 @@
+{
+  "id": "2136473610",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2136473610",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjEzNjQ3MzYxMA==",
+  "status": "current",
+  "title": "Viewing Odoo Payments in Clinical screens in Bahmni",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "createdDate": "2021-02-10T11:38:18.076Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2136473610/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2021-02-10T11:43:49.435Z",
+    "friendlyWhen": "Feb 10, 2021",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.q6iDVLVdhIM66c3h475ATQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2136473610.15",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2136473610"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2136473610/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>If you wish to pull information from Odoo on payments done and show them in Clinical screens, you can look at his discussion: <a href=\"https://talk.openmrs.org/t/handling-pay-before-services-in-openmrs-and-bahmni/22421\">https://talk.openmrs.org/t/handling-pay-before-services-in-openmrs-and-bahmni/22421</a>. MekomSolutions have published on OpenMRS module for communicating and pulling this information from Odoo. </p><p>Please post your questions about this module in Bahmni/OpenMRS Talk. </p><p>It can potentially look like this: </p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"283\" ac:original-width=\"517\"><ri:attachment ri:filename=\"image-20210210-114320.png\" ri:version-at-save=\"1\" /></ac:image><p />",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2136473610"
+      }
+    },
+    "view": {
+      "value": "<p>If you wish to pull information from Odoo on payments done and show them in Clinical screens, you can look at his discussion: <a class=\"external-link\" href=\"https://talk.openmrs.org/t/handling-pay-before-services-in-openmrs-and-bahmni/22421\" rel=\"nofollow\">https://talk.openmrs.org/t/handling-pay-before-services-in-openmrs-and-bahmni/22421</a>. MekomSolutions have published on OpenMRS module for communicating and pulling this information from Odoo. </p><p>Please post your questions about this module in Bahmni/OpenMRS Talk. </p><p>It can potentially look like this: </p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/2136473610/image-20210210-114320.png?version=1&amp;modificationDate=1612957402883&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/2136473610/image-20210210-114320.png?version=1&amp;modificationDate=1612957402883&amp;cacheVersion=1&amp;api=v2\" data-height=\"283\" data-width=\"517\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2138079245\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20210210-114320.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"2136473610\" data-linked-resource-container-version=\"1\" data-media-id=\"a0eb49d3-e844-4157-b7a7-a9df47a59bce\" data-media-type=\"file\"></span><p />",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2136473610"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "openmrs",
+          "id": "7831553",
+          "label": "openmrs"
+        },
+        {
+          "prefix": "global",
+          "name": "modules",
+          "id": "2127724688",
+          "label": "modules"
+        },
+        {
+          "prefix": "global",
+          "name": "odoo",
+          "id": "2127724690",
+          "label": "odoo"
+        },
+        {
+          "prefix": "global",
+          "name": "payments",
+          "id": "2127724692",
+          "label": "payments"
+        },
+        {
+          "prefix": "global",
+          "name": "interop",
+          "id": "2127724694",
+          "label": "interop"
+        },
+        {
+          "prefix": "global",
+          "name": "community",
+          "id": "2127724696",
+          "label": "community"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 6,
+      "_links": {
+        "next": "/rest/api/content/2136473610/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2136473610/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 878974265
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2136473610/child",
+    "restrictions": "/rest/api/content/2136473610/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2136473610/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2136473610",
+    "webui": "/spaces/BAH/pages/2136473610/Viewing+Odoo+Payments+in+Clinical+screens+in+Bahmni",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2136473610",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2136473610",
+    "tinyui": "/x/CgBYfw",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

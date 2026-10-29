@@ -1,0 +1,172 @@
+{
+  "id": "2306736527",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2306736527",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMwNjczNjUyNw==",
+  "status": "current",
+  "title": "Appointment Scheduling - Module",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5ff6975591bb2e0108e513c3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "venkatesh bavisetti",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5ff6975591bb2e0108e513c3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Bavisetti Venkatesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5ff6975591bb2e0108e513c3"
+      }
+    },
+    "createdDate": "2021-04-05T09:07:07.664Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736527/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5ff6975591bb2e0108e513c3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "venkatesh bavisetti",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5ff6975591bb2e0108e513c3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Bavisetti Venkatesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5ff6975591bb2e0108e513c3"
+      }
+    },
+    "when": "2021-04-05T09:21:23.776Z",
+    "friendlyWhen": "Apr 05, 2021",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.XZrgkDPf1G-rLQVQ5R1y4A.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2306736527.13",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2306736527"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736527/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" data-layout=\"default\" ac:local-id=\"3237e8c6-9db6-49d3-b01c-6c2c2ece92eb\" ac:macro-id=\"cecca7f5-37d7-4198-9067-3e72a8e8ee96\" /><h3 style=\"text-align: center;\">Configuration</h3><h5><strong>ColumnsToIgnore apply for this module ( Refer  </strong><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><h5><strong>incrementalUpdateConfig is applicable</strong> ( Refer <a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</h5><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"a1f73ca7-383a-4d6e-b363-7fc8c8e47af0\"><ac:plain-text-body><![CDATA[{\n      \"name\": \"Appointments\",\n      \"type\": \"appointments\",\n      \"chunkSizeToRead\": \"500\",\n      \"groupedJobConfigs\": [\n        {\n          \"tableName\": \"appointment_service_default\",\n          \"columnsToIgnore\": [\n          ]\n        }\n      ]\n}]]></ac:plain-text-body></ac:structured-macro><hr /><h3 style=\"text-align: center;\">Existing OpenMRS tables</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"36b60c20-4f57-4a33-a5aa-d99d98a8535c\"><ac:plain-text-body><![CDATA[Patient_appontment\nAppointment_service\nappointment_speciality\npatient_appointment_provider]]></ac:plain-text-body></ac:structured-macro><hr /><h3 style=\"text-align: center;\">Flattened Mart Tables</h3><h5>Note : The below Mart tables are created by customSql job type.</h5><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"028e8895-371d-46ef-ab1a-92aab210b683\"><ac:plain-text-body><![CDATA[patient_appointment_default\nappointment_service_default\nappointment_speciality_default\nservice_availability_default]]></ac:plain-text-body></ac:structured-macro><h4><strong>Incremental Config:</strong> </h4><p>Please check <a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update#4.-Appointments-Job:\">this</a> section on how to enable/disable incremental config for specific mart tables.</p><p><strong>a)&nbsp; patient_appointment_default</strong></p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>patient_id</p></td><td><p>Patient identification number.</p></td></tr><tr><td><p>appointment_id</p></td><td><p>Id reference for an appointment</p></td></tr><tr><td><p>appointment_location</p></td><td><p>Location where the appointment is created</p></td></tr><tr><td><p>appointment_provider</p></td><td><p>Creator of the appointment</p></td></tr><tr><td><p>appointment_service</p></td><td><p>Service of the appointment</p></td></tr><tr><td><p>appointment_service_duration</p></td><td><p>Service duration of the appointment</p></td></tr><tr><td><p>appointment_service_type</p></td><td><p>Service type of the appointment</p></td></tr><tr><td><p>appointment_service_type_duration</p></td><td><p>Service type duration of the appointment</p></td></tr><tr><td><p>appointment_speciality</p></td><td><p>Speciality of the appointment</p></td></tr><tr><td><p>appointment_start_time</p></td><td><p>Start_time of the appointment</p></td></tr><tr><td><p>appointment_status</p></td><td><p>Status of the appointment</p></td></tr><tr><td><p>appointment_end_time</p></td><td><p>End time of the appointment</p></td></tr><tr><td><p>appointment_kind</p></td><td><p>Refers whether it is WalkIn or Scheduled appt.</p></td></tr><tr><td><p>comments</p></td><td><p>Comments given during appointment creation</p></td></tr></tbody></table><p><strong>b) appointment_service_default</strong></p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>appointment_service_id&nbsp;</p></td><td><p>Id of appointment service</p></td></tr><tr><td><p>location_name</p></td><td><p>Location of the appointment</p></td></tr><tr><td><p>service_description</p></td><td><p>Description of the service</p></td></tr><tr><td><p>service_duration</p></td><td><p>Duration of the service</p></td></tr><tr><td><p>service_starttime</p></td><td><p>Start time of the service</p></td></tr><tr><td><p>service_endtime</p></td><td><p>End time of the service</p></td></tr><tr><td><p>service_max_load</p></td><td><p>Max load of the service</p></td></tr><tr><td><p>service_name</p></td><td><p>Name of the service</p></td></tr><tr><td><p>service_type</p></td><td><p>Type of the service</p></td></tr><tr><td><p>service_type_duration</p></td><td><p>Duration of service type</p></td></tr><tr><td><p>speciality</p></td><td><p>Speciality of the service</p></td></tr></tbody></table><p><br /><strong>c) appointment_speciality_default</strong></p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>speciality_id&nbsp;</p></td><td><p>Id of speciality</p></td></tr><tr><td><p>speciality</p></td><td><p>Appointment speciality&nbsp;</p></td></tr></tbody></table><p /><p><strong>d) service_availability_default</strong></p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>appointment_service_id</p></td><td><p>Id of appointment_service</p></td></tr><tr><td><p>availability_start_time</p></td><td><p>Start time of the availability</p></td></tr><tr><td><p>availability_end_time</p></td><td><p>End time of the availability</p></td></tr><tr><td><p>availability_day_of_week</p></td><td><p>Day on which service is available</p></td></tr><tr><td><p>availability_max_load</p></td><td><p>Max load of the availability</p></td></tr><tr><td><p>service_location</p></td><td><p>Location of the service</p></td></tr><tr><td><p>service_name</p></td><td><p>Name of the service</p></td></tr></tbody></table><p /><hr /><h3 style=\"text-align: center;\">Mart views</h3><p><strong>a ) patient_appointment_view&nbsp;</strong></p><p>This view combines person_details_default, person_attributes and patient_appointment_default tables. Additionally, age_during_appointment (Date difference between patient_appointment_startdate and&nbsp; birthdate) and the corresponding age group.</p><p><strong>b ) appointment_admin_panel_view&nbsp;</strong></p><p>This view combines appointment_service_default and service_availability_default&nbsp;</p><p><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2306736527"
+      }
+    },
+    "view": {
+      "value": "<div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-layout=\"default\" data-local-id=\"3237e8c6-9db6-49d3-b01c-6c2c2ece92eb\" data-macro-id=\"cecca7f5-37d7-4198-9067-3e72a8e8ee96\" data-macro-name=\"toc\"> </div><h3 style=\"text-align: center;\" id=\"AppointmentScheduling-Module-Configuration\">Configuration</h3><h5 id=\"AppointmentScheduling-Module-ColumnsToIgnoreapplyforthismodule(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix)\"><strong>ColumnsToIgnore apply for this module ( Refer  </strong><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><h5 id=\"AppointmentScheduling-Module-incrementalUpdateConfigisapplicable(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update)\"><strong>incrementalUpdateConfig is applicable</strong> ( Refer <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</h5><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a1f73ca7-383a-4d6e-b363-7fc8c8e47af0\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n      &quot;name&quot;: &quot;Appointments&quot;,\n      &quot;type&quot;: &quot;appointments&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;,\n      &quot;groupedJobConfigs&quot;: [\n        {\n          &quot;tableName&quot;: &quot;appointment_service_default&quot;,\n          &quot;columnsToIgnore&quot;: [\n          ]\n        }\n      ]\n}</pre>\n</div></div><hr/><h3 style=\"text-align: center;\" id=\"AppointmentScheduling-Module-ExistingOpenMRStables\">Existing OpenMRS tables</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"36b60c20-4f57-4a33-a5aa-d99d98a8535c\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Patient_appontment\nAppointment_service\nappointment_speciality\npatient_appointment_provider</pre>\n</div></div><hr/><h3 style=\"text-align: center;\" id=\"AppointmentScheduling-Module-FlattenedMartTables\">Flattened Mart Tables</h3><h5 id=\"AppointmentScheduling-Module-Note:ThebelowMarttablesarecreatedbycustomSqljobtype.\">Note : The below Mart tables are created by customSql job type.</h5><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"028e8895-371d-46ef-ab1a-92aab210b683\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">patient_appointment_default\nappointment_service_default\nappointment_speciality_default\nservice_availability_default</pre>\n</div></div><h4 id=\"AppointmentScheduling-Module-IncrementalConfig:\"><strong>Incremental Config:</strong> </h4><p>Please check <a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update#4.-Appointments-Job:\" rel=\"nofollow\">this</a> section on how to enable/disable incremental config for specific mart tables.</p><p><strong>a)  patient_appointment_default</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>patient_id</p></td><td class=\"confluenceTd\"><p>Patient identification number.</p></td></tr><tr><td class=\"confluenceTd\"><p>appointment_id</p></td><td class=\"confluenceTd\"><p>Id reference for an appointment</p></td></tr><tr><td class=\"confluenceTd\"><p>appointment_location</p></td><td class=\"confluenceTd\"><p>Location where the appointment is created</p></td></tr><tr><td class=\"confluenceTd\"><p>appointment_provider</p></td><td class=\"confluenceTd\"><p>Creator of the appointment</p></td></tr><tr><td class=\"confluenceTd\"><p>appointment_service</p></td><td class=\"confluenceTd\"><p>Service of the appointment</p></td></tr><tr><td class=\"confluenceTd\"><p>appointment_service_duration</p></td><td class=\"confluenceTd\"><p>Service duration of the appointment</p></td></tr><tr><td class=\"confluenceTd\"><p>appointment_service_type</p></td><td class=\"confluenceTd\"><p>Service type of the appointment</p></td></tr><tr><td class=\"confluenceTd\"><p>appointment_service_type_duration</p></td><td class=\"confluenceTd\"><p>Service type duration of the appointment</p></td></tr><tr><td class=\"confluenceTd\"><p>appointment_speciality</p></td><td class=\"confluenceTd\"><p>Speciality of the appointment</p></td></tr><tr><td class=\"confluenceTd\"><p>appointment_start_time</p></td><td class=\"confluenceTd\"><p>Start_time of the appointment</p></td></tr><tr><td class=\"confluenceTd\"><p>appointment_status</p></td><td class=\"confluenceTd\"><p>Status of the appointment</p></td></tr><tr><td class=\"confluenceTd\"><p>appointment_end_time</p></td><td class=\"confluenceTd\"><p>End time of the appointment</p></td></tr><tr><td class=\"confluenceTd\"><p>appointment_kind</p></td><td class=\"confluenceTd\"><p>Refers whether it is WalkIn or Scheduled appt.</p></td></tr><tr><td class=\"confluenceTd\"><p>comments</p></td><td class=\"confluenceTd\"><p>Comments given during appointment creation</p></td></tr></tbody></table></div><p><strong>b) appointment_service_default</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>appointment_service_id </p></td><td class=\"confluenceTd\"><p>Id of appointment service</p></td></tr><tr><td class=\"confluenceTd\"><p>location_name</p></td><td class=\"confluenceTd\"><p>Location of the appointment</p></td></tr><tr><td class=\"confluenceTd\"><p>service_description</p></td><td class=\"confluenceTd\"><p>Description of the service</p></td></tr><tr><td class=\"confluenceTd\"><p>service_duration</p></td><td class=\"confluenceTd\"><p>Duration of the service</p></td></tr><tr><td class=\"confluenceTd\"><p>service_starttime</p></td><td class=\"confluenceTd\"><p>Start time of the service</p></td></tr><tr><td class=\"confluenceTd\"><p>service_endtime</p></td><td class=\"confluenceTd\"><p>End time of the service</p></td></tr><tr><td class=\"confluenceTd\"><p>service_max_load</p></td><td class=\"confluenceTd\"><p>Max load of the service</p></td></tr><tr><td class=\"confluenceTd\"><p>service_name</p></td><td class=\"confluenceTd\"><p>Name of the service</p></td></tr><tr><td class=\"confluenceTd\"><p>service_type</p></td><td class=\"confluenceTd\"><p>Type of the service</p></td></tr><tr><td class=\"confluenceTd\"><p>service_type_duration</p></td><td class=\"confluenceTd\"><p>Duration of service type</p></td></tr><tr><td class=\"confluenceTd\"><p>speciality</p></td><td class=\"confluenceTd\"><p>Speciality of the service</p></td></tr></tbody></table></div><p><br/><strong>c) appointment_speciality_default</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>speciality_id </p></td><td class=\"confluenceTd\"><p>Id of speciality</p></td></tr><tr><td class=\"confluenceTd\"><p>speciality</p></td><td class=\"confluenceTd\"><p>Appointment speciality </p></td></tr></tbody></table></div><p /><p><strong>d) service_availability_default</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>appointment_service_id</p></td><td class=\"confluenceTd\"><p>Id of appointment_service</p></td></tr><tr><td class=\"confluenceTd\"><p>availability_start_time</p></td><td class=\"confluenceTd\"><p>Start time of the availability</p></td></tr><tr><td class=\"confluenceTd\"><p>availability_end_time</p></td><td class=\"confluenceTd\"><p>End time of the availability</p></td></tr><tr><td class=\"confluenceTd\"><p>availability_day_of_week</p></td><td class=\"confluenceTd\"><p>Day on which service is available</p></td></tr><tr><td class=\"confluenceTd\"><p>availability_max_load</p></td><td class=\"confluenceTd\"><p>Max load of the availability</p></td></tr><tr><td class=\"confluenceTd\"><p>service_location</p></td><td class=\"confluenceTd\"><p>Location of the service</p></td></tr><tr><td class=\"confluenceTd\"><p>service_name</p></td><td class=\"confluenceTd\"><p>Name of the service</p></td></tr></tbody></table></div><p /><hr/><h3 style=\"text-align: center;\" id=\"AppointmentScheduling-Module-Martviews\">Mart views</h3><p><strong>a ) patient_appointment_view </strong></p><p>This view combines person_details_default, person_attributes and patient_appointment_default tables. Additionally, age_during_appointment (Date difference between patient_appointment_startdate and  birthdate) and the corresponding age group.</p><p><strong>b ) appointment_admin_panel_view </strong></p><p>This view combines appointment_service_default and service_availability_default </p><p><br/></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2306736527"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2306736527/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736527/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1301
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2306736527/child",
+    "restrictions": "/rest/api/content/2306736527/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2306736527/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2306736527",
+    "webui": "/spaces/BAH/pages/2306736527/Appointment+Scheduling+-+Module",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2306736527",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736527",
+    "tinyui": "/x/jwF_iQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

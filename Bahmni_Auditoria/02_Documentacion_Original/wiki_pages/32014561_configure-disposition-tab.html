@@ -1,0 +1,26 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Configure Disposition Tab</title></head><body><h1>Configure Disposition Tab</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="ConfigureDispositionTab-PurposeandBenefits">Purpose and Benefits</h2><p>Disposition Tab is used by the doctor to enter the status of the patient. It does not explicitly trigger a workflow, but instead can be used to determine if an action needs to be taken with respect to the disposition.</p><p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" width="700" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/32014561/Disposition%20Tab.png?version=1&amp;modificationDate=1447329183759&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=216" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/32014561/Disposition%20Tab.png?version=1&amp;modificationDate=1447329183759&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="32604494" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Disposition Tab.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="32014561" data-linked-resource-container-version="21" data-media-id="739f1472-42bd-4fca-a100-0a78c4bfe696" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/32014561/Disposition%20Tab.png?version=1&amp;modificationDate=1447329183759&amp;cacheVersion=1&amp;api=v2&amp;width=1388&amp;height=430 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014561/Disposition%20Tab.png?version=1&amp;modificationDate=1447329183759&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=216 1x"></span></p><p style="text-align: center;"><strong>The Disposition tab in the patient dashboard</strong></p><h2 id="ConfigureDispositionTab-Steps">Steps</h2><p>To configure Disposition Tab, place the below code in clincal/extension.json:</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="101477f5-5508-4968-998b-fc288edde1d1" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">&quot;disposition&quot;: {
+    &quot;id&quot;: &quot;bahmni.clinical.consultation.disposition&quot;,
+    &quot;extensionPointId&quot;: &quot;org.bahmni.clinical.consultation.board&quot;,
+    &quot;type&quot;: &quot;link&quot;,
+    &quot;label&quot;: &quot;Disposition&quot;,
+    &quot;translationKey&quot;:&quot;DISPOSITION_BOARD_LABEL_KEY&quot;,
+    &quot;url&quot;: &quot;disposition&quot;,
+    &quot;icon&quot;: &quot;fa-user-md&quot;,
+    &quot;order&quot;: 3,
+    &quot;requiredPrivilege&quot;: &quot;app:clinical:dispositionTab&quot;
+  },</pre>
+</div></div><p> </p><div class="wiki-content"><h3 id="ConfigureDispositionTab-ConfigureDispositionConcepts:">Configure Disposition Concepts:</h3><p>     To configure disposition concepts in openmrs refer to the <a href="/wiki/spaces/BAH/pages/50921523/Configure+Disposition+Concepts" data-linked-resource-id="50921523" data-linked-resource-version="17" data-linked-resource-type="page">Configure Disposition Concepts</a></p></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="e7b3588e-96e1-4de3-a29d-46427cf35a1e" data-macro-name="tip"><p class="title">On this Page</p><div class="confluence-information-macro-body"><p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="b583a39e-8b61-4540-b945-a782d2ee406a" data-macro-name="toc"> </div><p> </p></div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="f5e76242-9ad1-477e-9fa2-70ff0a12c473" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #668D3C;color: white;"><b>Feature Details</b></div><div class="panelContent">
+<p><span class="legacy-color-text-default"><a href="/wiki/spaces/BAH/pages/40501369/Disposition" data-linked-resource-id="40501369" data-linked-resource-version="8" data-linked-resource-type="page">Disposition Tab - Feature Guide</a></span></p>
+</div></div></div>
+</div>
+</div>
+</div></body></html>

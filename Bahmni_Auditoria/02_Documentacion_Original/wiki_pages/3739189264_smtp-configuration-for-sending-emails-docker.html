@@ -1,0 +1,13 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>SMTP Configuration for sending emails (docker)</title></head><body><h1>SMTP Configuration for sending emails (docker)</h1><p>Bahmni supports sending of email notifications to patients on different events such as teleconsultation appointments, adhoc teleconsultation, prescription sharing etc. For these emails to flow out of Bahmni, SMTP server details needs to be configured in the .env file which will be used by the OpenMRS service.</p><h3 id="SMTPConfigurationforsendingemails(docker)-.envfileconfiguration">.env file configuration</h3><p>In your implementation specific env file, update the values for the below files. These properties can be retrieved from your SMTP provider such as AWS SES, Google Mail etc.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="a71b01ad-8d35-4d74-b8ac-d61f72f85eb4" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">SEND_MAIL=true
+MAIL_FROM=
+MAIL_SMTP_HOST=
+MAIL_SMTP_PORT=
+MAIL_USER=
+MAIL_PASSWORD=
+MAIL_TRANSPORT_PROTOCOL=smtps
+MAIL_SMTP_AUTH=true
+MAIL_SMTP_STARTTLS_ENABLE=true
+MAIL_SMTP_SSL_ENABLE=true
+MAIL_DEBUG=false</pre>
+</div></div><p>Once the properties are updated, recreate the service by running <code>docker compose up -d openmrs</code>.</p><p>There are also few Global properties which control email sending behaviours for OpenMRS features. Thos can be accessed by navigating to OpenMRS → Administration → Settings → Mail</p><p>Reference Links:</p><ol start="1"><li><p><a class="external-link" data-card-appearance="inline" href="https://support.google.com/a/answer/176600" rel="nofollow">https://support.google.com/a/answer/176600</a> </p></li></ol><p /></body></html>

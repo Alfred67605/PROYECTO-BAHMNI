@@ -1,0 +1,170 @@
+{
+  "id": "34013224",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/34013224",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzQwMTMyMjQ=",
+  "status": "current",
+  "title": "Internationalization Support",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2015-11-23T08:37:59.197Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34013224/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "when": "2016-03-28T04:50:22.635Z",
+    "friendlyWhen": "Mar 28, 2016",
+    "message": "",
+    "number": 27,
+    "minorEdit": false,
+    "syncRev": "0.w_l8s2JuT6amX0IUsoeIDw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$34013224.85",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/34013224"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34013224/version/27"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p><span style=\"color: rgb(0,0,0);\">Internationalization provides a way to make the application available in multiple languages.&nbsp;<span style=\"color: rgb(0,0,0);\">&nbsp;Internationalization is also referred to as&nbsp;</span><strong>i18n</strong><span style=\"color: rgb(0,0,0);\">&nbsp;because there are 18 characters between 'i' and 'n' in the word 'internationalization'. Bahmni provides support for internationalization with minimal configuration changes.</span></span></p><p><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\">All Bahmni pages (Login page, home dashboard, registration etc.) support internationalization through the app config files and Bahmni configurations support internationalization through the locale files.</span></span></p><p><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\"><br /></span></span></p><p><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\">For Bahmni work in different languages, different parts of it can be configured to offer internationalization support.&nbsp;</span></span></p><ol><li><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Product Internationalization\" /></ac:link>&nbsp;- Bahmni application code has several static labels that need to be changed to support a different language.</span></span></li><li><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Config Internationalization\" /><ac:plain-text-link-body><![CDATA[Configuration Internationalization]]></ac:plain-text-link-body></ac:link>&nbsp;- There are two kinds of configuration types that support internationalization in Bahmni - the bahmni_config files, and OpenMRS data (mainly the concepts).</span></span></li></ol><p><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\"><br /></span></span></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"1e1764c0-e992-4b8e-84ac-15accefd628a\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#D57500</ac:parameter><ac:parameter ac:name=\"title\">General Guidelines for Internationalization Support</ac:parameter><ac:rich-text-body><ol><li><span style=\"color: rgb(0,0,0);\">Internationalization support in Bahmni is available only for languages written from &quot;left to right&quot;.</span></li><li><span style=\"color: rgb(0,0,0);\">The Bahmni modules that support Internationalization have the key field &quot;<em>translationKey&quot; </em>in configuration files.</span></li></ol></ac:rich-text-body></ac:structured-macro></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"33f50fd2-dbe7-4f96-96f5-fda11c0e854b\"><ac:parameter ac:name=\"title\">Sections</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"8ffd1e3f-04f3-4035-a925-6f0c4d315222\"><ac:parameter ac:name=\"all\">true</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Multi-Lingual Support\" /><ac:plain-text-link-body><![CDATA[Internationalization Support - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p>&nbsp;</p><p>&nbsp;</p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/34013224"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"InternationalizationSupport-PurposeandBenefits\">Purpose and Benefits</h2><p><span class=\"legacy-color-text-default\">Internationalization provides a way to make the application available in multiple languages. <span class=\"legacy-color-text-default\"> Internationalization is also referred to as </span><strong>i18n</strong><span class=\"legacy-color-text-default\"> because there are 18 characters between 'i' and 'n' in the word 'internationalization'. Bahmni provides support for internationalization with minimal configuration changes.</span></span></p><p><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\">All Bahmni pages (Login page, home dashboard, registration etc.) support internationalization through the app config files and Bahmni configurations support internationalization through the locale files.</span></span></p><p><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\"><br/></span></span></p><p><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\">For Bahmni work in different languages, different parts of it can be configured to offer internationalization support. </span></span></p><ol><li><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/34439351/Product+Internationalization\" data-linked-resource-id=\"34439351\" data-linked-resource-version=\"29\" data-linked-resource-type=\"page\">Product Internationalization</a> - Bahmni application code has several static labels that need to be changed to support a different language.</span></span></li><li><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/34439353/Config+Internationalization\" data-linked-resource-id=\"34439353\" data-linked-resource-version=\"21\" data-linked-resource-type=\"page\">Configuration Internationalization</a> - There are two kinds of configuration types that support internationalization in Bahmni - the bahmni_config files, and OpenMRS data (mainly the concepts).</span></span></li></ol><p><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\"><br/></span></span></p><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"1e1764c0-e992-4b8e-84ac-15accefd628a\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #D57500;color: white;\"><b>General Guidelines for Internationalization Support</b></div><div class=\"panelContent\">\n<ol><li><span class=\"legacy-color-text-default\">Internationalization support in Bahmni is available only for languages written from &quot;left to right&quot;.</span></li><li><span class=\"legacy-color-text-default\">The Bahmni modules that support Internationalization have the key field &quot;<em>translationKey&quot; </em>in configuration files.</span></li></ol>\n</div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"33f50fd2-dbe7-4f96-96f5-fda11c0e854b\" data-macro-name=\"tip\"><p class=\"title\">Sections</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"8ffd1e3f-04f3-4035-a925-6f0c4d315222\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/34439351/Product+Internationalization\" data-linked-resource-id=\"34439351\" data-linked-resource-version=\"29\" data-linked-resource-type=\"page\">Product Internationalization</a></li><li><a href=\"/wiki/spaces/BAH/pages/34439353/Config+Internationalization\" data-linked-resource-id=\"34439353\" data-linked-resource-version=\"21\" data-linked-resource-type=\"page\">Config Internationalization</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/35291237/Concept.csv\" data-linked-resource-id=\"35291237\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Concept.csv</a></li></ul></li></ul><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/34013352/Multi-Lingual+Support\" data-linked-resource-id=\"34013352\" data-linked-resource-version=\"16\" data-linked-resource-type=\"page\">Internationalization Support - Feature Guide</a></span></p>\n</div></div><p> </p><p> </p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/34013224"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/34013224/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34013224/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 9
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/34013224/child",
+    "restrictions": "/rest/api/content/34013224/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/34013224/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=34013224",
+    "webui": "/spaces/BAH/pages/34013224/Internationalization+Support",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/34013224",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34013224",
+    "tinyui": "/x/KAAHAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

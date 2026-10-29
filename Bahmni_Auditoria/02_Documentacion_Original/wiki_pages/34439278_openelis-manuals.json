@@ -1,0 +1,179 @@
+{
+  "id": "34439278",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/34439278",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzQ0MzkyNzg=",
+  "status": "current",
+  "title": "OpenELIS Manuals",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "createdDate": "2015-12-01T11:51:42.071Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34439278/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2021-12-11T12:47:54.758Z",
+    "friendlyWhen": "Dec 11, 2021",
+    "message": "Reverted from v. 2",
+    "number": 4,
+    "minorEdit": false,
+    "syncRev": "0.z2a2k_Qwmr8vrw4orxetlA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$34439278.60",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/34439278"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34439278/version/4"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:macro-id=\"97af753d-ddf0-40a7-8bca-c31adf237871\" ac:name=\"warning\" ac:schema-version=\"1\"><ac:rich-text-body><p>The following attached documents are OpenELIS Manuals discovered from the Internet. They have been attached here as reference documents.</p></ac:rich-text-body></ac:structured-macro><p>&nbsp;</p><p>&nbsp;</p><h1>OpenELIS Manuals from the Internet</h1><p><ac:structured-macro ac:macro-id=\"6a588896-77d0-46f3-b33d-84a78da393e2\" ac:name=\"view-file\" ac:schema-version=\"1\"><ac:parameter ac:name=\"name\"><ri:attachment ri:filename=\"OpenELIS - System Architechture.pdf\" /></ac:parameter><ac:parameter ac:name=\"height\">250</ac:parameter></ac:structured-macro><ac:structured-macro ac:macro-id=\"4019b3c4-4bdd-4210-8d00-193e2abbea86\" ac:name=\"view-file\" ac:schema-version=\"1\"><ac:parameter ac:name=\"name\"><ri:attachment ri:filename=\"OpenELIS-Manual-v2.20130214.pdf\" /></ac:parameter><ac:parameter ac:name=\"height\">250</ac:parameter></ac:structured-macro></p><p>&nbsp;</p><h1>Bahmni Manual for OpenELIS (Old)</h1><p><ac:structured-macro ac:macro-id=\"edd96428-01f7-472c-8cd4-812a9184f4a1\" ac:name=\"view-file\" ac:schema-version=\"1\"><ac:parameter ac:name=\"name\"><ri:attachment ri:filename=\"OpenELIS Lab Data - Admin Guide (for Bahmni).pdf\" /></ac:parameter><ac:parameter ac:name=\"height\">250</ac:parameter></ac:structured-macro></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/34439278"
+      }
+    },
+    "view": {
+      "value": "<div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"97af753d-ddf0-40a7-8bca-c31adf237871\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>The following attached documents are OpenELIS Manuals discovered from the Internet. They have been attached here as reference documents.</p></div></div><p> </p><p> </p><h1 id=\"OpenELISManuals-OpenELISManualsfromtheInternet\">OpenELIS Manuals from the Internet</h1><p><span class=\"confluence-embedded-file-wrapper conf-macro output-inline\" data-hasbody=\"false\" data-macro-id=\"6a588896-77d0-46f3-b33d-84a78da393e2\" data-macro-name=\"view-file\"><a class=\"confluence-embedded-file\" href=\"/wiki/download/attachments/34439278/OpenELIS%20-%20System%20Architechture.pdf?version=1&amp;modificationDate=1448970702125&amp;cacheVersion=1&amp;api=v2\" data-nice-type=\"PDF Document\" data-file-src=\"/wiki/download/attachments/34439278/OpenELIS%20-%20System%20Architechture.pdf?version=1&amp;modificationDate=1448970702125&amp;cacheVersion=1&amp;api=v2\" data-linked-resource-id=\"34439271\" data-linked-resource-type=\"attachment\" data-linked-resource-container-id=\"34439278\" data-linked-resource-default-alias=\"OpenELIS - System Architechture.pdf\" data-mime-type=\"application/pdf\" data-has-thumbnail=\"true\" data-linked-resource-version=\"1\" data-media-id=\"ebb45995-3294-457a-b2e6-65f38bfa1d01\" data-media-type=\"file\"><img src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/34439278/OpenELIS%20-%20System%20Architechture.pdf?version=1&amp;modificationDate=1448970702125&amp;cacheVersion=1&amp;api=v2&amp;viewType=fileMacro\" height=\"250\" /></a></span><span class=\"confluence-embedded-file-wrapper conf-macro output-inline\" data-hasbody=\"false\" data-macro-id=\"4019b3c4-4bdd-4210-8d00-193e2abbea86\" data-macro-name=\"view-file\"><a class=\"confluence-embedded-file\" href=\"/wiki/download/attachments/34439278/OpenELIS-Manual-v2.20130214.pdf?version=1&amp;modificationDate=1448970702119&amp;cacheVersion=1&amp;api=v2\" data-nice-type=\"PDF Document\" data-file-src=\"/wiki/download/attachments/34439278/OpenELIS-Manual-v2.20130214.pdf?version=1&amp;modificationDate=1448970702119&amp;cacheVersion=1&amp;api=v2\" data-linked-resource-id=\"34439272\" data-linked-resource-type=\"attachment\" data-linked-resource-container-id=\"34439278\" data-linked-resource-default-alias=\"OpenELIS-Manual-v2.20130214.pdf\" data-mime-type=\"application/pdf\" data-has-thumbnail=\"true\" data-linked-resource-version=\"1\" data-media-id=\"daed6b7a-2bfb-4e53-bd59-1a02eb237050\" data-media-type=\"file\"><img src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/34439278/OpenELIS-Manual-v2.20130214.pdf?version=1&amp;modificationDate=1448970702119&amp;cacheVersion=1&amp;api=v2&amp;viewType=fileMacro\" height=\"250\" /></a></span></p><p> </p><h1 id=\"OpenELISManuals-BahmniManualforOpenELIS(Old)\">Bahmni Manual for OpenELIS (Old)</h1><p><span class=\"confluence-embedded-file-wrapper conf-macro output-inline\" data-hasbody=\"false\" data-macro-id=\"edd96428-01f7-472c-8cd4-812a9184f4a1\" data-macro-name=\"view-file\"><a class=\"confluence-embedded-file\" href=\"/wiki/download/attachments/34439278/OpenELIS%20Lab%20Data%20-%20Admin%20Guide%20(for%20Bahmni).pdf?version=1&amp;modificationDate=1448970702090&amp;cacheVersion=1&amp;api=v2\" data-nice-type=\"PDF Document\" data-file-src=\"/wiki/download/attachments/34439278/OpenELIS%20Lab%20Data%20-%20Admin%20Guide%20(for%20Bahmni).pdf?version=1&amp;modificationDate=1448970702090&amp;cacheVersion=1&amp;api=v2\" data-linked-resource-id=\"34439277\" data-linked-resource-type=\"attachment\" data-linked-resource-container-id=\"34439278\" data-linked-resource-default-alias=\"OpenELIS Lab Data - Admin Guide (for Bahmni).pdf\" data-mime-type=\"application/pdf\" data-has-thumbnail=\"true\" data-linked-resource-version=\"1\" data-media-id=\"2890ed13-d0bb-4c61-a590-d00aee0e0798\" data-media-type=\"file\"><img src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/34439278/OpenELIS%20Lab%20Data%20-%20Admin%20Guide%20(for%20Bahmni).pdf?version=1&amp;modificationDate=1448970702090&amp;cacheVersion=1&amp;api=v2&amp;viewType=fileMacro\" height=\"250\" /></a></span></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/34439278"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "openelis",
+          "id": "34635779",
+          "label": "openelis"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 1,
+      "_links": {
+        "next": "/rest/api/content/34439278/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34439278/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 320091860
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/34439278/child",
+    "restrictions": "/rest/api/content/34439278/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/34439278/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=34439278",
+    "webui": "/spaces/BAH/pages/34439278/OpenELIS+Manuals",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/34439278",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34439278",
+    "tinyui": "/x/boANAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

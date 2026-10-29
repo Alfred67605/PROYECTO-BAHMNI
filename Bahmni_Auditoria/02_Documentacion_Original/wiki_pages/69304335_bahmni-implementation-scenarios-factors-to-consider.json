@@ -1,0 +1,172 @@
+{
+  "id": "69304335",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/69304335",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNjkzMDQzMzU=",
+  "status": "current",
+  "title": "Bahmni Implementation Scenarios & Factors to Consider",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "createdDate": "2016-06-20T06:14:39.901Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/69304335/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2024-01-27T06:13:36.965Z",
+    "friendlyWhen": "Jan 27, 2024",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "syncRev": "0.wY0E6fsqwibLvcLJfNkY9w.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$69304335.69",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/69304335"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/69304335/version/8"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"17b5f58f-41f5-4758-b769-bbb8d57be0c9\"><ac:rich-text-body><p>This document was originally written by <ac:link><ri:user ri:userkey=\"ff808081455df9fb01458d60f6dc0003\" /></ac:link> for Bahmni customers. It has been re-published here on the wiki for the community.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"0c2b344d-3ef7-4925-ad1c-ceb95b16f071\"><ac:rich-text-body><ol><li>A relevant discussion here: <a href=\"https://talk.openmrs.org/t/the-relationship-between-bahmni-emr-openmrs-elis-and-erp/7436/2\">The relationship between Bahmni EMR, OpenELIS, OpenERP and OpenMRS</a>.</li><li>A good blog by <ac:link><ri:user ri:userkey=\"ff8080814a4bd578014a9ad055780004\" /></ac:link> on his deployment and Bahmni implementation experience in SEARCH and Hemalkasa in rural India. <a href=\"https://medium.com/bahmni-blog/bahmni-upgraded-to-v0-81-at-search-and-hemalkasa-9646237da816#.q2mn38f4r\">Read here</a>.</li><li>An insightful research article by <em>Possible Health</em> on rolling out Bahmni in <strong>Nepal</strong>:&nbsp;<em><a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5874496/\">Design and implementation of an affordable, public sector electronic medical record in rural Nepal</a></em></li><li>A good discussion on how can Bahmni/EMR adoption by clinicians/physicians be increased:&nbsp;<a href=\"https://talk.openmrs.org/t/how-do-we-enable-doctors-to-adopt-tech-and-bahmni-in-specific-in-lmic/35551\">https://talk.openmrs.org/t/how-do-we-enable-doctors-to-adopt-tech-and-bahmni-in-specific-in-lmic/35551</a></li><li>A good discussion on factors &amp; costs to consider while doing an implementation of an EMR like Bahmni: <a href=\"https://talk.openmrs.org/t/drc-hospital-implementation/18655\">https://talk.openmrs.org/t/drc-hospital-implementation/18655</a></li></ol></ac:rich-text-body></ac:structured-macro><h2>Introduction</h2><p><span class=\"legacy-color-text-default\">Bahmni is a highly configurable and modular system, it can be implemented in phases and in different ways to support hospital operations. Bahmni can be setup with all or only some of the sub-products. It is meant to be implemented considering hospital&rsquo;s setup and the end user capabilities and use cases. For example, in a hospital which has outsourced Laboratory can choose to not install and setup OpenELIS.</span></p><p><span class=\"legacy-color-text-default\">It is possible for a hospital or clinic to start with a basic implementation and then keep increasing the adoption in the facility. For example, one may start with Non-clinicals first and then introduce basic clinical entry in some departments. And as the comfort level of clinicians and other staff goes up, move to capturing more details directly in the system.</span></p><p><span class=\"legacy-color-text-default\">Here are some example scenarios in which Bahmni is being used currently.</span></p><h2><span class=\"legacy-color-text-default\">Non-Clinical Implementation</span></h2><p><span class=\"legacy-color-text-default\">In this setup Bahmni is used primarily for managing hospital&rsquo;s operations and not for any clinical purposes. The setup involves using Bahmni for Registration, Laboratory, Billing and Administrative Reporting.</span></p><p><span class=\"legacy-color-text-default\"><br /></span></p><p><span class=\"legacy-color-text-default\">Key business processes:</span></p><ul><li style=\"list-style-type: disc;\"><p><span>Patient Registration is done using the system</span></p></li><li style=\"list-style-type: disc;\"><p><span>Clinical functions like Triage, Diagnosis, Prescription, Observations, Lab / Radiology orders are on Paper by doctors and clinicians</span></p></li><li style=\"list-style-type: disc;\"><p><span>Laboratory - Based on orders given on paper - Enter samples and Lab results in the system</span></p></li><li style=\"list-style-type: disc;\"><p><span>Pharmacy - Based on paper based prescription - Enter drug orders in the system, dispense drugs, generates bill and manage inventory</span></p></li><li style=\"list-style-type: disc;\"><p><span>Billing - Based on paper orders - Enter services availed, products consumed (OPD &amp; IPD) and generate bills from paper based records</span></p></li></ul><p><span><span><br /></span></span></p><p><span class=\"legacy-color-text-default\">Example sites - SEARCH in India</span></p><h2><span class=\"legacy-color-text-default\">Basic Clinical Implementation</span></h2><p><span class=\"legacy-color-text-default\">In this setup Bahmni is used for very minimal clinical data capture and for managing hospital operations. The setup involves using Bahmni for Registration, Basic Clinicals, Laboratory, Pharmacy and / or Billing and Reporting</span></p><p><span><span><br /></span></span></p><p><span class=\"legacy-color-text-default\">Key Business Processes:</span></p><ul><li style=\"list-style-type: disc;\"><p><span>Patient Registration is done using the system</span></p></li><li style=\"list-style-type: disc;\"><p><span>Basic Clinical entry is done in system - e.g. Diagnosis, clinical history or specific observations </span></p></li><li style=\"list-style-type: disc;\"><p><span>Other clinical details are still on paper - like Prescription, Observations, Lab / Radiology orders</span></p></li><li style=\"list-style-type: disc;\"><p><span>Laboratory - Based on orders given on paper - Enter samples and Lab results in the system</span></p></li><li style=\"list-style-type: disc;\"><p><span>Pharmacy - Based on paper based prescription - Enter drug orders in the system, dispense drugs, generates bill and manage inventory</span></p></li><li style=\"list-style-type: disc;\"><p><span>Billing - Based on paper orders - Enter services availed, products consumed (OPD &amp; IPD) and generate bills from paper based records</span></p></li><li style=\"list-style-type: disc;\"><p><span>Doctors get to see clinical history on patient dashboard based on data entered by other departments</span></p></li></ul><p><span><span><br /></span></span></p><p><span class=\"legacy-color-text-default\">Example sites - Gudalur in India, Charikot in Nepal, Kaliganj and Gazipur in Bangladesh</span></p><h2><span class=\"legacy-color-text-default\">Basic Clinical Implementation - Data Entry </span></h2><p><span class=\"legacy-color-text-default\">In this setup Bahmni is used for managing hospital operations and for clinical data entry at the end of the visit. The setup involves using Bahmni for Registration, Laboratory, Pharmacy and / or Billing and Reporting. Clinical information is captured in post facto Data Entry mode</span></p><p><span><span><br /></span></span></p><p><span class=\"legacy-color-text-default\">Key Business Processes:</span></p><ul><li style=\"list-style-type: disc;\"><p><span>Patient Registration is done using the system</span></p></li><li style=\"list-style-type: disc;\"><p><span>Clinicians enter all clinical details on &nbsp;paper including diagnosis, prescriptions order etc</span></p></li><li style=\"list-style-type: disc;\"><p><span>Laboratory - Based on orders given on paper - Enter samples and Lab results in the system</span></p></li><li style=\"list-style-type: disc;\"><p><span>Pharmacy - Based on paper based prescription - Enter drug orders in the system, dispense drugs, generates bill and manage inventory</span></p></li><li style=\"list-style-type: disc;\"><p><span>Billing - Based on paper orders - Enter services availed, products consumed (OPD &amp; IPD) and generate bills from paper based records</span></p></li><li style=\"list-style-type: disc;\"><p><span>All Clinical entry is done by a data entry operator at the end of the visit (same day or next day) - e.g. Diagnosis, clinical history, observations, prescriptions, clinical notes etc. Some of the non-structured clinical details continue to be present on paper</span></p></li></ul><p><span><span><br /></span></span></p><p><span class=\"legacy-color-text-default\">Example sites - Lok Biradari Prakalp in India</span></p><h2><span class=\"legacy-color-text-default\">Complete Implementation </span></h2><p><span class=\"legacy-color-text-default\">In this setup Bahmni is used for Clinical activities as well as for managing hospital operations. The setup involves using Bahmni for Registration, Clinical (OPD &amp; IPD), Laboratory, Pharmacy and / or Billing and Reporting. </span></p><p><span><span><br /></span></span></p><p><span class=\"legacy-color-text-default\">Key Business Processes:</span></p><ul><li style=\"list-style-type: disc;\"><p><span>Patient Registration is done using the system</span></p></li><li style=\"list-style-type: disc;\"><p><span>Clinicians enter all clinical details in the system including Vitals, clinical history, diagnosis, prescriptions, Lab &amp; radiology orders etc</span></p></li><li style=\"list-style-type: disc;\"><p><span>Laboratory - Based on orders given by doctors in the system - accept samples and enter Lab results in the system</span></p></li><li style=\"list-style-type: disc;\"><p><span>Pharmacy - Based on prescription given by doctors in the system - drug orders are pre-populated in the system, dispense drugs, generates bill and manage inventory</span></p></li><li style=\"list-style-type: disc;\"><p><span>Billing - Based on clinical orders and some paper based consumption entries - Some of the services and items consumed are pre-populated - for others, enter services availed, products consumed (OPD &amp; IPD) and generate bills from paper based records</span></p></li><li style=\"list-style-type: disc;\"><p><span>Some of the non-structured clinical details including Nursing and Doctor&rsquo;s notes in IPD continue to be present on paper</span></p></li></ul><p><span><span><br /></span></span></p><p><span class=\"legacy-color-text-default\">Example sites - JSS in India and Bayalpata in Nepal</span></p><p><span><span><br /></span></span></p><h2><span class=\"legacy-color-text-default\">Program Specific Implementation </span></h2><p><span class=\"legacy-color-text-default\">In this setup Bahmni is used for capturing disease specific program data. The setup involves using Bahmni for Registration and capturing program specific Clinical data and Reporting. This typically involves installing Bahmni with only OpenMRS.</span></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"ed7ac427-cbdc-4885-9b1c-ca5be1cb99a9\"><ac:rich-text-body><p><span class=\"legacy-color-text-default\">This could be done during patient visit or as a post facto data capture</span></p></ac:rich-text-body></ac:structured-macro><p><span class=\"legacy-color-text-default\">Key Business Processes:</span></p><ul><li style=\"list-style-type: disc;\"><p><span>Patient Registration is done using the system </span></p></li><li style=\"list-style-type: disc;\"><p><span>Program enrollment, Managing program progress and End programs</span></p></li><li style=\"list-style-type: disc;\"><p><span>Capturing program specific observation forms</span></p></li></ul><p><span><span><br /></span></span></p><p><span class=\"legacy-color-text-default\">Example site: EndTB</span></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"c09fee16-fccc-4d75-bab0-7becb162b340\"><ac:parameter ac:name=\"bgColor\">#FFFBD0</ac:parameter><ac:parameter ac:name=\"title\">On this page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"4b1e225c-35d3-4ebb-ba62-9056c1566399\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/69304335"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"17b5f58f-41f5-4758-b769-bbb8d57be0c9\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This document was originally written by <a class=\"confluence-userlink user-mention\" data-account-id=\"557058:5ded4f42-2e54-4aa7-8d99-0e638d234a4d\" href=\"https://bahmni.atlassian.net/wiki/people/557058:5ded4f42-2e54-4aa7-8d99-0e638d234a4d?ref=confluence\" target=\"_blank\" data-linked-resource-id=\"2850842\" data-linked-resource-version=\"1\" data-linked-resource-type=\"userinfo\" data-base-url=\"https://bahmni.atlassian.net/wiki\">Pankaj Kanchankar</a> for Bahmni customers. It has been re-published here on the wiki for the community.</p></div></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0c2b344d-3ef7-4925-ad1c-ceb95b16f071\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><ol><li>A relevant discussion here: <a class=\"external-link\" href=\"https://talk.openmrs.org/t/the-relationship-between-bahmni-emr-openmrs-elis-and-erp/7436/2\" rel=\"nofollow\">The relationship between Bahmni EMR, OpenELIS, OpenERP and OpenMRS</a>.</li><li>A good blog by <a class=\"confluence-userlink user-mention\" data-account-id=\"557058:ed8a85e1-871d-406d-9e5a-aba9f21b3329\" href=\"https://bahmni.atlassian.net/wiki/people/557058:ed8a85e1-871d-406d-9e5a-aba9f21b3329?ref=confluence\" target=\"_blank\" data-linked-resource-id=\"14286925\" data-linked-resource-version=\"1\" data-linked-resource-type=\"userinfo\" data-base-url=\"https://bahmni.atlassian.net/wiki\">Arjun</a> on his deployment and Bahmni implementation experience in SEARCH and Hemalkasa in rural India. <a class=\"external-link\" href=\"https://medium.com/bahmni-blog/bahmni-upgraded-to-v0-81-at-search-and-hemalkasa-9646237da816#.q2mn38f4r\" rel=\"nofollow\">Read here</a>.</li><li>An insightful research article by <em>Possible Health</em> on rolling out Bahmni in <strong>Nepal</strong>: <em><a class=\"external-link\" href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5874496/\" rel=\"nofollow\">Design and implementation of an affordable, public sector electronic medical record in rural Nepal</a></em></li><li>A good discussion on how can Bahmni/EMR adoption by clinicians/physicians be increased: <a class=\"external-link\" href=\"https://talk.openmrs.org/t/how-do-we-enable-doctors-to-adopt-tech-and-bahmni-in-specific-in-lmic/35551\" rel=\"nofollow\">https://talk.openmrs.org/t/how-do-we-enable-doctors-to-adopt-tech-and-bahmni-in-specific-in-lmic/35551</a></li><li>A good discussion on factors &amp; costs to consider while doing an implementation of an EMR like Bahmni: <a class=\"external-link\" href=\"https://talk.openmrs.org/t/drc-hospital-implementation/18655\" rel=\"nofollow\">https://talk.openmrs.org/t/drc-hospital-implementation/18655</a></li></ol></div></div><h2 id=\"BahmniImplementationScenarios&amp;FactorstoConsider-Introduction\">Introduction</h2><p><span class=\"legacy-color-text-default\">Bahmni is a highly configurable and modular system, it can be implemented in phases and in different ways to support hospital operations. Bahmni can be setup with all or only some of the sub-products. It is meant to be implemented considering hospital’s setup and the end user capabilities and use cases. For example, in a hospital which has outsourced Laboratory can choose to not install and setup OpenELIS.</span></p><p><span class=\"legacy-color-text-default\">It is possible for a hospital or clinic to start with a basic implementation and then keep increasing the adoption in the facility. For example, one may start with Non-clinicals first and then introduce basic clinical entry in some departments. And as the comfort level of clinicians and other staff goes up, move to capturing more details directly in the system.</span></p><p><span class=\"legacy-color-text-default\">Here are some example scenarios in which Bahmni is being used currently.</span></p><h2 id=\"BahmniImplementationScenarios&amp;FactorstoConsider-Non-ClinicalImplementation\"><span class=\"legacy-color-text-default\">Non-Clinical Implementation</span></h2><p><span class=\"legacy-color-text-default\">In this setup Bahmni is used primarily for managing hospital’s operations and not for any clinical purposes. The setup involves using Bahmni for Registration, Laboratory, Billing and Administrative Reporting.</span></p><p><span class=\"legacy-color-text-default\"><br/></span></p><p><span class=\"legacy-color-text-default\">Key business processes:</span></p><ul><li style=\"list-style-type: disc;\"><p><span>Patient Registration is done using the system</span></p></li><li style=\"list-style-type: disc;\"><p><span>Clinical functions like Triage, Diagnosis, Prescription, Observations, Lab / Radiology orders are on Paper by doctors and clinicians</span></p></li><li style=\"list-style-type: disc;\"><p><span>Laboratory - Based on orders given on paper - Enter samples and Lab results in the system</span></p></li><li style=\"list-style-type: disc;\"><p><span>Pharmacy - Based on paper based prescription - Enter drug orders in the system, dispense drugs, generates bill and manage inventory</span></p></li><li style=\"list-style-type: disc;\"><p><span>Billing - Based on paper orders - Enter services availed, products consumed (OPD &amp; IPD) and generate bills from paper based records</span></p></li></ul><p><span><span><br/></span></span></p><p><span class=\"legacy-color-text-default\">Example sites - SEARCH in India</span></p><h2 id=\"BahmniImplementationScenarios&amp;FactorstoConsider-BasicClinicalImplementation\"><span class=\"legacy-color-text-default\">Basic Clinical Implementation</span></h2><p><span class=\"legacy-color-text-default\">In this setup Bahmni is used for very minimal clinical data capture and for managing hospital operations. The setup involves using Bahmni for Registration, Basic Clinicals, Laboratory, Pharmacy and / or Billing and Reporting</span></p><p><span><span><br/></span></span></p><p><span class=\"legacy-color-text-default\">Key Business Processes:</span></p><ul><li style=\"list-style-type: disc;\"><p><span>Patient Registration is done using the system</span></p></li><li style=\"list-style-type: disc;\"><p><span>Basic Clinical entry is done in system - e.g. Diagnosis, clinical history or specific observations </span></p></li><li style=\"list-style-type: disc;\"><p><span>Other clinical details are still on paper - like Prescription, Observations, Lab / Radiology orders</span></p></li><li style=\"list-style-type: disc;\"><p><span>Laboratory - Based on orders given on paper - Enter samples and Lab results in the system</span></p></li><li style=\"list-style-type: disc;\"><p><span>Pharmacy - Based on paper based prescription - Enter drug orders in the system, dispense drugs, generates bill and manage inventory</span></p></li><li style=\"list-style-type: disc;\"><p><span>Billing - Based on paper orders - Enter services availed, products consumed (OPD &amp; IPD) and generate bills from paper based records</span></p></li><li style=\"list-style-type: disc;\"><p><span>Doctors get to see clinical history on patient dashboard based on data entered by other departments</span></p></li></ul><p><span><span><br/></span></span></p><p><span class=\"legacy-color-text-default\">Example sites - Gudalur in India, Charikot in Nepal, Kaliganj and Gazipur in Bangladesh</span></p><h2 id=\"BahmniImplementationScenarios&amp;FactorstoConsider-BasicClinicalImplementation-DataEntry\"><span class=\"legacy-color-text-default\">Basic Clinical Implementation - Data Entry </span></h2><p><span class=\"legacy-color-text-default\">In this setup Bahmni is used for managing hospital operations and for clinical data entry at the end of the visit. The setup involves using Bahmni for Registration, Laboratory, Pharmacy and / or Billing and Reporting. Clinical information is captured in post facto Data Entry mode</span></p><p><span><span><br/></span></span></p><p><span class=\"legacy-color-text-default\">Key Business Processes:</span></p><ul><li style=\"list-style-type: disc;\"><p><span>Patient Registration is done using the system</span></p></li><li style=\"list-style-type: disc;\"><p><span>Clinicians enter all clinical details on  paper including diagnosis, prescriptions order etc</span></p></li><li style=\"list-style-type: disc;\"><p><span>Laboratory - Based on orders given on paper - Enter samples and Lab results in the system</span></p></li><li style=\"list-style-type: disc;\"><p><span>Pharmacy - Based on paper based prescription - Enter drug orders in the system, dispense drugs, generates bill and manage inventory</span></p></li><li style=\"list-style-type: disc;\"><p><span>Billing - Based on paper orders - Enter services availed, products consumed (OPD &amp; IPD) and generate bills from paper based records</span></p></li><li style=\"list-style-type: disc;\"><p><span>All Clinical entry is done by a data entry operator at the end of the visit (same day or next day) - e.g. Diagnosis, clinical history, observations, prescriptions, clinical notes etc. Some of the non-structured clinical details continue to be present on paper</span></p></li></ul><p><span><span><br/></span></span></p><p><span class=\"legacy-color-text-default\">Example sites - Lok Biradari Prakalp in India</span></p><h2 id=\"BahmniImplementationScenarios&amp;FactorstoConsider-CompleteImplementation\"><span class=\"legacy-color-text-default\">Complete Implementation </span></h2><p><span class=\"legacy-color-text-default\">In this setup Bahmni is used for Clinical activities as well as for managing hospital operations. The setup involves using Bahmni for Registration, Clinical (OPD &amp; IPD), Laboratory, Pharmacy and / or Billing and Reporting. </span></p><p><span><span><br/></span></span></p><p><span class=\"legacy-color-text-default\">Key Business Processes:</span></p><ul><li style=\"list-style-type: disc;\"><p><span>Patient Registration is done using the system</span></p></li><li style=\"list-style-type: disc;\"><p><span>Clinicians enter all clinical details in the system including Vitals, clinical history, diagnosis, prescriptions, Lab &amp; radiology orders etc</span></p></li><li style=\"list-style-type: disc;\"><p><span>Laboratory - Based on orders given by doctors in the system - accept samples and enter Lab results in the system</span></p></li><li style=\"list-style-type: disc;\"><p><span>Pharmacy - Based on prescription given by doctors in the system - drug orders are pre-populated in the system, dispense drugs, generates bill and manage inventory</span></p></li><li style=\"list-style-type: disc;\"><p><span>Billing - Based on clinical orders and some paper based consumption entries - Some of the services and items consumed are pre-populated - for others, enter services availed, products consumed (OPD &amp; IPD) and generate bills from paper based records</span></p></li><li style=\"list-style-type: disc;\"><p><span>Some of the non-structured clinical details including Nursing and Doctor’s notes in IPD continue to be present on paper</span></p></li></ul><p><span><span><br/></span></span></p><p><span class=\"legacy-color-text-default\">Example sites - JSS in India and Bayalpata in Nepal</span></p><p><span><span><br/></span></span></p><h2 id=\"BahmniImplementationScenarios&amp;FactorstoConsider-ProgramSpecificImplementation\"><span class=\"legacy-color-text-default\">Program Specific Implementation </span></h2><p><span class=\"legacy-color-text-default\">In this setup Bahmni is used for capturing disease specific program data. The setup involves using Bahmni for Registration and capturing program specific Clinical data and Reporting. This typically involves installing Bahmni with only OpenMRS.</span></p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ed7ac427-cbdc-4885-9b1c-ca5be1cb99a9\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><span class=\"legacy-color-text-default\">This could be done during patient visit or as a post facto data capture</span></p></div></div><p><span class=\"legacy-color-text-default\">Key Business Processes:</span></p><ul><li style=\"list-style-type: disc;\"><p><span>Patient Registration is done using the system </span></p></li><li style=\"list-style-type: disc;\"><p><span>Program enrollment, Managing program progress and End programs</span></p></li><li style=\"list-style-type: disc;\"><p><span>Capturing program specific observation forms</span></p></li></ul><p><span><span><br/></span></span></p><p><span class=\"legacy-color-text-default\">Example site: EndTB</span></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c09fee16-fccc-4d75-bab0-7becb162b340\" data-macro-name=\"panel\" style=\"background-color: #FFFBD0;border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #FFFBD0;\"><b>On this page</b></div><div class=\"panelContent\" style=\"background-color: #FFFBD0;\">\n<p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"4b1e225c-35d3-4ebb-ba62-9056c1566399\" data-macro-name=\"toc\"> </div><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/69304335"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/69304335/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/69304335/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 129621748
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/69304335/child",
+    "restrictions": "/rest/api/content/69304335/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/69304335/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=69304335",
+    "webui": "/spaces/BAH/pages/69304335/Bahmni+Implementation+Scenarios+Factors+to+Consider",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/69304335",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/69304335",
+    "tinyui": "/x/D4AhB",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

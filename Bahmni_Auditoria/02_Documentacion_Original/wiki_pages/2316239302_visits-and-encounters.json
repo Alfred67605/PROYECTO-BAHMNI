@@ -1,0 +1,172 @@
+{
+  "id": "2316239302",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2316239302",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMxNjIzOTMwMg==",
+  "status": "current",
+  "title": "Visits and Encounters",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "createdDate": "2021-04-05T09:27:22.009Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239302/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "when": "2021-04-05T09:27:42.231Z",
+    "friendlyWhen": "Apr 05, 2021",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.xNhFIC8WJ1wU-g7yq88NyQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2316239302.15",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2316239302"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239302/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ul><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678956/Visits+and+Encounters#Configuration\">Configuration</a></p><ul><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678956/Visits+and+Encounters#ColumnsToIgnore-apply-for-this-module-(-Refer--%5BinlineCard%5D-)\">ColumnsToIgnore apply for this module ( Refer&nbsp;https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix&nbsp;)</a></p></li><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678956/Visits+and+Encounters#incrementalUpdateConfig-is-applicable-(-Refer-%5BinlineCard%5D-)\">incrementalUpdateConfig is applicable ( Refer&nbsp;https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update&nbsp;)</a></p></li></ul></li><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678956/Visits+and+Encounters#Existing-OpenMRS-tables\">Existing OpenMRS tables</a></p></li><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678956/Visits+and+Encounters#Flattened-Mart-Tables\">Flattened Mart Tables</a></p><ul><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678956/Visits+and+Encounters#Incremental-Config%3A\">Incremental Config:</a></p></li></ul></li><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678956/Visits+and+Encounters#Mart-Views\">Mart Views</a></p></li></ul><h3 style=\"text-align: center;\">Configuration</h3><h5><strong>ColumnsToIgnore apply for this module ( Refer </strong><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><h5><strong>incrementalUpdateConfig is applicable</strong> ( Refer <a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</h5><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"43a87877-eb86-4dcc-8cff-113633895412\"><ac:plain-text-body><![CDATA[{\n      \"name\": \"Visits And Encounters\",\n      \"type\": \"visitsAndEncounters\",\n      \"chunkSizeToRead\": \"500\"\n}\n]]></ac:plain-text-body></ac:structured-macro><hr /><h3 style=\"text-align: center;\">Existing OpenMRS tables</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d53513dd-d4a4-4446-ad5d-1a67ed756949\"><ac:plain-text-body><![CDATA[visit_type\nvisit\nvisit_attribute\nvisit_attribute_type\nencounter\nencounter_type\nencounter_provider\nencounter_role\nepisode_encounter\nprovider\nperson_name\npatient\nlocation\n]]></ac:plain-text-body></ac:structured-macro><hr /><h3 style=\"text-align: center;\">Flattened Mart Tables</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8a6d4956-6c60-4719-a317-965638a9cd0e\"><ac:plain-text-body><![CDATA[patient_visit_details_default\nvisit_attribute_details_default\nvisit_attributes\npatient_encounter_details_default\n]]></ac:plain-text-body></ac:structured-macro><h4><strong>Incremental Config:</strong></h4><p>Please check <a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update#7.-Visits-and-Encounters-Job:\">this</a> section on how to enable/disable incremental config for specific mart tables.</p><p><strong>a)</strong> <strong>Visits</strong></p><p>&nbsp;&nbsp;&nbsp;&nbsp;i)&nbsp; <strong>patient_visit_details_default</strong></p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>visit_id</p></td><td><p>Id reference for a visit</p></td></tr><tr><td><p>patient_id</p></td><td><p>Id reference for a patient</p></td></tr><tr><td><p>visit_type_id</p></td><td><p>Id reference for visit type</p></td></tr><tr><td><p>visit_type_name&nbsp;</p></td><td><p>Name of visit [ IPD/ OPD/ Special OPD / Emergency etc]</p></td></tr><tr><td><p>visit_type_description&nbsp;</p></td><td><p>Description of visit type</p></td></tr><tr><td><p>visit_start_date&nbsp;</p></td><td><p>Start date of visit</p></td></tr><tr><td><p>visit_end_date</p></td><td><p>End date of visit</p></td></tr><tr><td><p>indication_concept_id</p></td><td><p>&nbsp;indication_concept_id from visit table in openmrs</p></td></tr><tr><td><p>location_id&nbsp;</p></td><td><p>Id reference for location&nbsp;</p></td></tr><tr><td><p>location_name</p><p>&nbsp;</p></td><td><p>Name of location [general ward / Registration Desk, Labor ward etc]</p></td></tr></tbody></table><p>&nbsp;ii) &nbsp; <strong>visit_attribute_details_default</strong></p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>visit_id</p></td><td><p>Id reference for a visit</p></td></tr><tr><td><p>visit_attribute_id</p></td><td><p>Id reference for a visit attribute</p></td></tr><tr><td><p>value_reference</p></td><td><p>Value for the attribute [OPD / IPD]</p></td></tr><tr><td><p>visit_attribute_type_id</p></td><td><p>Id reference for a visit attribute type</p></td></tr><tr><td><p>visit_attribute_type_name</p></td><td><p>Visit type [ Visit status / Admission status]</p></td></tr><tr><td><p>visit_attribute_type_description</p></td><td><p>&nbsp;visit attribute type description from visit_attribute_type openmrs table</p></td></tr><tr><td><p>visit_attribute_type_datatype</p></td><td><p>&nbsp;visit_attribute_type_datatype from visit_attribute_type openmrs table</p></td></tr><tr><td><p>visit_attribute_type_datatype_config</p></td><td><p>&nbsp;visit_attribute_type_datatype_config from visit_attribute_type openmrs table</p></td></tr><tr><td><p>visit_attribute_type_preferred_handler</p></td><td><p>visit_attribute_type_preferred_handler from &nbsp;visit_attribute_type openmrs table</p></td></tr><tr><td><p>visit_attribute_type_handler_config</p></td><td><p>&nbsp;visit_attribute_type_handler_config from visit_attribute_type openmrs table</p></td></tr><tr><td><p>visit_attribute_type_min_occurs</p></td><td><p>&nbsp;visit_attribute_type_min_occurs from visit_attribute_type openmrs table</p></td></tr><tr><td><p>visit_attribute_type_max_occurs</p></td><td><p>&nbsp;visit_attribute_type_min_occurs visit_attribute_type openmrs table</p></td></tr></tbody></table><p><strong>&nbsp;&nbsp;iii) &nbsp; visit_attributes</strong></p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>visit_id</p></td><td><p>Id reference for a visit</p></td></tr><tr><td><p>Visit_Status</p></td><td><p>Status of visit [OPD / IPD ]</p></td></tr><tr><td><p>Admission_Status</p></td><td><p>Status of admission [Admitted / Discharged etc]</p></td></tr></tbody></table><p><strong>b)&nbsp; &nbsp; Encounter</strong></p><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;i) patient_encounter_details_default</strong></p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>patient_id</p></td><td><p>Id reference for a patient</p></td></tr><tr><td><p>visit_id</p></td><td><p>Id reference for a visit</p></td></tr><tr><td><p>episode_id</p></td><td><p>Id reference for a episode</p></td></tr><tr><td><p>encounter_id</p></td><td><p>Id reference for a encounter</p></td></tr><tr><td><p>encounter_type_id</p></td><td><p>Id reference for a encounter type</p></td></tr><tr><td><p>encounter_type_name</p></td><td><p>Type of encounter [Consultation / REG etc]</p></td></tr><tr><td><p>encounter_type_description</p><p>&nbsp;</p></td><td><p>Description of encounter [ Consultation encounter/Registration encounter etc]</p></td></tr><tr><td><p>edit_privilege</p></td><td><p>&nbsp;edit_privilege from encounter_type table in openmrs</p></td></tr><tr><td><p>view_privilege</p></td><td><p>&nbsp;view_privilege from encounter_type table in openmrs</p></td></tr><tr><td><p>location_name</p></td><td><p>Name of location [ Labour ward/ General ward]</p></td></tr><tr><td><p>form_id</p></td><td><p>&nbsp;form_id from encounter table in openmrs</p></td></tr><tr><td><p>encounter_datetime</p></td><td><p>Date and time of encounter</p></td></tr><tr><td><p>encounter_role_id</p></td><td><p>&nbsp;Id reference for encounter role from encounter_role table in openmrs</p></td></tr><tr><td><p>encounter_role_name</p></td><td><p>&nbsp;name of encounter role encounter_role in openmrs</p></td></tr><tr><td><p>provider_id</p></td><td><p>&nbsp;Id reference of provider from encounter_provider table in openmrs</p></td></tr><tr><td><p>provider_name</p></td><td><p>&nbsp;provider name from provider table in openmrs</p></td></tr><tr><td><p>encounter_role_description</p></td><td><p>&nbsp;description of encounter role from encounter_role description table.</p></td></tr></tbody></table><hr /><h3 style=\"text-align: center;\">Mart Views</h3><p>a) <strong>Patient_visits_encounters_view</strong></p><p>This view allows the user to see the patient details data along with with all the visit and its details. It has also has the details of all the encounters at every encounter location. Each patient might have multiple visits hence the view have may have multiple rows of same patient data.</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2316239302"
+      }
+    },
+    "view": {
+      "value": "<ul><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678956/Visits+and+Encounters#Configuration\" rel=\"nofollow\">Configuration</a></p><ul><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678956/Visits+and+Encounters#ColumnsToIgnore-apply-for-this-module-(-Refer--%5BinlineCard%5D-)\" rel=\"nofollow\">ColumnsToIgnore apply for this module ( Refer https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix )</a></p></li><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678956/Visits+and+Encounters#incrementalUpdateConfig-is-applicable-(-Refer-%5BinlineCard%5D-)\" rel=\"nofollow\">incrementalUpdateConfig is applicable ( Refer https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update )</a></p></li></ul></li><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678956/Visits+and+Encounters#Existing-OpenMRS-tables\" rel=\"nofollow\">Existing OpenMRS tables</a></p></li><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678956/Visits+and+Encounters#Flattened-Mart-Tables\" rel=\"nofollow\">Flattened Mart Tables</a></p><ul><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678956/Visits+and+Encounters#Incremental-Config%3A\" rel=\"nofollow\">Incremental Config:</a></p></li></ul></li><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678956/Visits+and+Encounters#Mart-Views\" rel=\"nofollow\">Mart Views</a></p></li></ul><h3 style=\"text-align: center;\" id=\"VisitsandEncounters-Configuration\">Configuration</h3><h5 id=\"VisitsandEncounters-ColumnsToIgnoreapplyforthismodule(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix)\"><strong>ColumnsToIgnore apply for this module ( Refer </strong><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><h5 id=\"VisitsandEncounters-incrementalUpdateConfigisapplicable(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update)\"><strong>incrementalUpdateConfig is applicable</strong> ( Refer <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</h5><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"43a87877-eb86-4dcc-8cff-113633895412\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n      &quot;name&quot;: &quot;Visits And Encounters&quot;,\n      &quot;type&quot;: &quot;visitsAndEncounters&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;\n}\n</pre>\n</div></div><hr/><h3 style=\"text-align: center;\" id=\"VisitsandEncounters-ExistingOpenMRStables\">Existing OpenMRS tables</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d53513dd-d4a4-4446-ad5d-1a67ed756949\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">visit_type\nvisit\nvisit_attribute\nvisit_attribute_type\nencounter\nencounter_type\nencounter_provider\nencounter_role\nepisode_encounter\nprovider\nperson_name\npatient\nlocation\n</pre>\n</div></div><hr/><h3 style=\"text-align: center;\" id=\"VisitsandEncounters-FlattenedMartTables\">Flattened Mart Tables</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8a6d4956-6c60-4719-a317-965638a9cd0e\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">patient_visit_details_default\nvisit_attribute_details_default\nvisit_attributes\npatient_encounter_details_default\n</pre>\n</div></div><h4 id=\"VisitsandEncounters-IncrementalConfig:\"><strong>Incremental Config:</strong></h4><p>Please check <a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update#7.-Visits-and-Encounters-Job:\" rel=\"nofollow\">this</a> section on how to enable/disable incremental config for specific mart tables.</p><p><strong>a)</strong> <strong>Visits</strong></p><p>    i)  <strong>patient_visit_details_default</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>visit_id</p></td><td class=\"confluenceTd\"><p>Id reference for a visit</p></td></tr><tr><td class=\"confluenceTd\"><p>patient_id</p></td><td class=\"confluenceTd\"><p>Id reference for a patient</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_type_id</p></td><td class=\"confluenceTd\"><p>Id reference for visit type</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_type_name </p></td><td class=\"confluenceTd\"><p>Name of visit [ IPD/ OPD/ Special OPD / Emergency etc]</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_type_description </p></td><td class=\"confluenceTd\"><p>Description of visit type</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_start_date </p></td><td class=\"confluenceTd\"><p>Start date of visit</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_end_date</p></td><td class=\"confluenceTd\"><p>End date of visit</p></td></tr><tr><td class=\"confluenceTd\"><p>indication_concept_id</p></td><td class=\"confluenceTd\"><p> indication_concept_id from visit table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>location_id </p></td><td class=\"confluenceTd\"><p>Id reference for location </p></td></tr><tr><td class=\"confluenceTd\"><p>location_name</p><p> </p></td><td class=\"confluenceTd\"><p>Name of location [general ward / Registration Desk, Labor ward etc]</p></td></tr></tbody></table></div><p> ii)   <strong>visit_attribute_details_default</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>visit_id</p></td><td class=\"confluenceTd\"><p>Id reference for a visit</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_attribute_id</p></td><td class=\"confluenceTd\"><p>Id reference for a visit attribute</p></td></tr><tr><td class=\"confluenceTd\"><p>value_reference</p></td><td class=\"confluenceTd\"><p>Value for the attribute [OPD / IPD]</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_attribute_type_id</p></td><td class=\"confluenceTd\"><p>Id reference for a visit attribute type</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_attribute_type_name</p></td><td class=\"confluenceTd\"><p>Visit type [ Visit status / Admission status]</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_attribute_type_description</p></td><td class=\"confluenceTd\"><p> visit attribute type description from visit_attribute_type openmrs table</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_attribute_type_datatype</p></td><td class=\"confluenceTd\"><p> visit_attribute_type_datatype from visit_attribute_type openmrs table</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_attribute_type_datatype_config</p></td><td class=\"confluenceTd\"><p> visit_attribute_type_datatype_config from visit_attribute_type openmrs table</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_attribute_type_preferred_handler</p></td><td class=\"confluenceTd\"><p>visit_attribute_type_preferred_handler from  visit_attribute_type openmrs table</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_attribute_type_handler_config</p></td><td class=\"confluenceTd\"><p> visit_attribute_type_handler_config from visit_attribute_type openmrs table</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_attribute_type_min_occurs</p></td><td class=\"confluenceTd\"><p> visit_attribute_type_min_occurs from visit_attribute_type openmrs table</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_attribute_type_max_occurs</p></td><td class=\"confluenceTd\"><p> visit_attribute_type_min_occurs visit_attribute_type openmrs table</p></td></tr></tbody></table></div><p><strong>  iii)   visit_attributes</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>visit_id</p></td><td class=\"confluenceTd\"><p>Id reference for a visit</p></td></tr><tr><td class=\"confluenceTd\"><p>Visit_Status</p></td><td class=\"confluenceTd\"><p>Status of visit [OPD / IPD ]</p></td></tr><tr><td class=\"confluenceTd\"><p>Admission_Status</p></td><td class=\"confluenceTd\"><p>Status of admission [Admitted / Discharged etc]</p></td></tr></tbody></table></div><p><strong>b)    Encounter</strong></p><p><strong>    i) patient_encounter_details_default</strong></p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>patient_id</p></td><td class=\"confluenceTd\"><p>Id reference for a patient</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_id</p></td><td class=\"confluenceTd\"><p>Id reference for a visit</p></td></tr><tr><td class=\"confluenceTd\"><p>episode_id</p></td><td class=\"confluenceTd\"><p>Id reference for a episode</p></td></tr><tr><td class=\"confluenceTd\"><p>encounter_id</p></td><td class=\"confluenceTd\"><p>Id reference for a encounter</p></td></tr><tr><td class=\"confluenceTd\"><p>encounter_type_id</p></td><td class=\"confluenceTd\"><p>Id reference for a encounter type</p></td></tr><tr><td class=\"confluenceTd\"><p>encounter_type_name</p></td><td class=\"confluenceTd\"><p>Type of encounter [Consultation / REG etc]</p></td></tr><tr><td class=\"confluenceTd\"><p>encounter_type_description</p><p> </p></td><td class=\"confluenceTd\"><p>Description of encounter [ Consultation encounter/Registration encounter etc]</p></td></tr><tr><td class=\"confluenceTd\"><p>edit_privilege</p></td><td class=\"confluenceTd\"><p> edit_privilege from encounter_type table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>view_privilege</p></td><td class=\"confluenceTd\"><p> view_privilege from encounter_type table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>location_name</p></td><td class=\"confluenceTd\"><p>Name of location [ Labour ward/ General ward]</p></td></tr><tr><td class=\"confluenceTd\"><p>form_id</p></td><td class=\"confluenceTd\"><p> form_id from encounter table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>encounter_datetime</p></td><td class=\"confluenceTd\"><p>Date and time of encounter</p></td></tr><tr><td class=\"confluenceTd\"><p>encounter_role_id</p></td><td class=\"confluenceTd\"><p> Id reference for encounter role from encounter_role table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>encounter_role_name</p></td><td class=\"confluenceTd\"><p> name of encounter role encounter_role in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>provider_id</p></td><td class=\"confluenceTd\"><p> Id reference of provider from encounter_provider table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>provider_name</p></td><td class=\"confluenceTd\"><p> provider name from provider table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>encounter_role_description</p></td><td class=\"confluenceTd\"><p> description of encounter role from encounter_role description table.</p></td></tr></tbody></table></div><hr/><h3 style=\"text-align: center;\" id=\"VisitsandEncounters-MartViews\">Mart Views</h3><p>a) <strong>Patient_visits_encounters_view</strong></p><p>This view allows the user to see the patient details data along with with all the visit and its details. It has also has the details of all the encounters at every encounter location. Each patient might have multiple visits hence the view have may have multiple rows of same patient data.</p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2316239302"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2316239302/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239302/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 3371
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2316239302/child",
+    "restrictions": "/rest/api/content/2316239302/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2316239302/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2316239302",
+    "webui": "/spaces/BAH/pages/2316239302/Visits+and+Encounters",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2316239302",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239302",
+    "tinyui": "/x/xgEPig",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

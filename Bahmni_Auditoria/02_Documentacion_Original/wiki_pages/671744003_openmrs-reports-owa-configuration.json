@@ -1,0 +1,172 @@
+{
+  "id": "671744003",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/671744003",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNjcxNzQ0MDAz",
+  "status": "current",
+  "title": "OpenMRS Reports OWA Configuration",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Himabindu Thungathurty",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Akkinepalli",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66"
+      }
+    },
+    "createdDate": "2018-06-11T08:02:04.504Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/671744003/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "when": "2019-06-24T10:17:10.150Z",
+    "friendlyWhen": "Jun 24, 2019",
+    "message": "",
+    "number": 12,
+    "minorEdit": false,
+    "syncRev": "0.isEEE_n5HLLBk-aJNDM7hQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$671744003.119",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/671744003"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/671744003/version/12"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p>You can configure Reports OWA to run the reports that are configured in OpenMRS reporting module.</p><ul style=\"list-style-type: square;\"><li>Please follow <a href=\"https://wiki.openmrs.org/display/docs/Reporting+Module\">this</a> OpenMRS documentation to configure different type of reports in OpenMRS Reporting module.</li><li>You can watch <a href=\"https://www.youtube.com/watch?v=M57eW3begCg\">this</a> video on how to configure Reports.</li></ul><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"77a8effd-c677-4a4a-8917-4678a37e77e9\"><ac:parameter ac:name=\"title\">Note</ac:parameter><ac:rich-text-body><p>Please note that each report in Reports OWA App takes only two input parameters i.e startDate and endDate and these should be added from openmrs reporting module. Adding more than two parameters or parameter other than <strong>Date</strong> Datatype is not supported in this version of reporting OWA app.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"b07f868d-1157-4c42-8787-538963aab271\"><ac:rich-text-body><p>To configure Reports OWA app, we should have both owa.omod and reportingrest.omod. These omods will come out of box with 0.91v Bahmni installation. People who ever have 0.90v or previous version of Bahmni, they have to manually add the above omods to /opt/openmrs/modules path.</p></ac:rich-text-body></ac:structured-macro><p><br /></p><h4><strong>Steps to configure Reports OWA</strong></h4><ol><li><span>Download <em><strong>reports.zip</strong></em> file from <a href=\"http://repo.mybahmni.org.s3.amazonaws.com/owa/reports-1.0.zip\">here</a> (<a href=\"http://repo.mybahmni.org/owa/\">http://repo.mybahmni.org/owa/</a>)</span></li><li><span>You may directly copy the downloaded zip file to /opt/openmrs/owa path and unzip the folder </span></li><li>Alternatively, you may&nbsp;upload the zip file from OpenMRS UI.&nbsp; <em>OpenMRS =&gt; Administration =&gt; Open Web Apps Module =&gt; Manage Apps</em>.</li></ol><p><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"e9f3297a-d35c-421d-b18c-b12ed84af6d5\"><ac:rich-text-body><p>Please note that to upload/delete OWA from OpenMRS UI, property &quot;<strong><em>module.allow_web_admin&quot;</em></strong> value must be set to true in &quot;<strong>/opt/openmrs/etc/openmrs-runtime.properties&quot;</strong>&nbsp;file</p></ac:rich-text-body></ac:structured-macro><p><br /></p><p>Now you will be able to access Reports OWA from OpenMRS UI.</p><p><br /></p><h4><strong>Access Reports OWA from Bahmni Home page</strong></h4><p>To access directly from &quot;Bahmni&quot; you may create an extension. For example, If you would like to have this accessible from Home screen, add configuration in&nbsp;<strong><a class=\"external-link\" style=\"text-decoration: none;\" href=\"https://github.com/Bahmni/default-config/blob/release-0.89/openmrs/apps/home/extension.json\" rel=\"nofollow\">/var/www/bahmni_config/openmrs/apps/home/extension.json</a>&nbsp;</strong><span style=\"color: rgb(51,51,51);\">file like show below.</span></p><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"cd15c47a-7bb6-4a10-9196-b95c914508f6\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"collapse\">true</ac:parameter><ac:plain-text-body><![CDATA[  \"OpenMRSReports\": {\n    \"id\": \"bahmni.openmrs.reports\",\n    \"extensionPointId\": \"org.bahmni.home.dashboard\",\n    \"type\": \"link\",\n    \"translationKey\": \"OpenMRS Reports\",\n    \"url\": \"/openmrs/owa/reports/index.html\",\n    \"icon\": \"icon-bahmni-reports\",\n    \"order\": 15,\n    \"requiredPrivilege\": \"app:reports\"\n  }]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p><br /></p><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"e1bd79cd-68da-4fa9-b193-d7b4443b2c30\"><ac:parameter ac:name=\"title\">Info</ac:parameter><ac:rich-text-body><p>This module is available as a add-on to Bahmni, for versions 0.91 onwards.&nbsp;</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"0b744f92-0474-4511-ba50-ea4dc8343d16\"><ac:parameter ac:name=\"style\">none</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/671744003"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\"><style>[data-colorid=p4f3y32cjq]{color:#333333} html[data-color-mode=dark] [data-colorid=p4f3y32cjq]{color:#cccccc}</style>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p>You can configure Reports OWA to run the reports that are configured in OpenMRS reporting module.</p><ul style=\"list-style-type: square;\"><li>Please follow <a class=\"external-link\" href=\"https://wiki.openmrs.org/display/docs/Reporting+Module\" rel=\"nofollow\">this</a> OpenMRS documentation to configure different type of reports in OpenMRS Reporting module.</li><li>You can watch <a class=\"external-link\" href=\"https://www.youtube.com/watch?v=M57eW3begCg\" rel=\"nofollow\">this</a> video on how to configure Reports.</li></ul><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"77a8effd-c677-4a4a-8917-4678a37e77e9\" data-macro-name=\"note\"><p class=\"title\">Note</p><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Please note that each report in Reports OWA App takes only two input parameters i.e startDate and endDate and these should be added from openmrs reporting module. Adding more than two parameters or parameter other than <strong>Date</strong> Datatype is not supported in this version of reporting OWA app.</p></div></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b07f868d-1157-4c42-8787-538963aab271\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>To configure Reports OWA app, we should have both owa.omod and reportingrest.omod. These omods will come out of box with 0.91v Bahmni installation. People who ever have 0.90v or previous version of Bahmni, they have to manually add the above omods to /opt/openmrs/modules path.</p></div></div><p><br /></p><h4 id=\"OpenMRSReportsOWAConfiguration-StepstoconfigureReportsOWA\"><strong>Steps to configure Reports OWA</strong></h4><ol><li><span>Download <em><strong>reports.zip</strong></em> file from <a class=\"external-link\" href=\"http://repo.mybahmni.org.s3.amazonaws.com/owa/reports-1.0.zip\" rel=\"nofollow\">here</a> (<a class=\"external-link\" href=\"http://repo.mybahmni.org/owa/\" rel=\"nofollow\">http://repo.mybahmni.org/owa/</a>)</span></li><li><span>You may directly copy the downloaded zip file to /opt/openmrs/owa path and unzip the folder </span></li><li>Alternatively, you may&nbsp;upload the zip file from OpenMRS UI.&nbsp; <em>OpenMRS =&gt; Administration =&gt; Open Web Apps Module =&gt; Manage Apps</em>.</li></ol><p><br /></p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e9f3297a-d35c-421d-b18c-b12ed84af6d5\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Please note that to upload/delete OWA from OpenMRS UI, property &quot;<strong><em>module.allow_web_admin&quot;</em></strong> value must be set to true in &quot;<strong>/opt/openmrs/etc/openmrs-runtime.properties&quot;</strong>&nbsp;file</p></div></div><p><br /></p><p>Now you will be able to access Reports OWA from OpenMRS UI.</p><p><br /></p><h4 id=\"OpenMRSReportsOWAConfiguration-AccessReportsOWAfromBahmniHomepage\"><strong>Access Reports OWA from Bahmni Home page</strong></h4><p>To access directly from &quot;Bahmni&quot; you may create an extension. For example, If you would like to have this accessible from Home screen, add configuration in&nbsp;<strong><a class=\"external-link\" href=\"https://github.com/Bahmni/default-config/blob/release-0.89/openmrs/apps/home/extension.json\" rel=\"nofollow\" style=\"text-decoration: none;\">/var/www/bahmni_config/openmrs/apps/home/extension.json</a>&nbsp;</strong><span data-colorid=\"p4f3y32cjq\">file like show below.</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"cd15c47a-7bb6-4a10-9196-b95c914508f6\" data-macro-name=\"code\" style=\"border-width: 1px;\">\n <div class=\"codeHeader panelHeader pdl hide-border-bottom\">\n  <b class=\"code-title\"> </b><span class=\"collapse-source expand-control\" style=\"display:none;\"><span class=\"expand-control-icon icon\">&nbsp;</span><span class=\"expand-control-text\">Expand source</span></span><span class=\"collapse-spinner-wrapper\"> </span>\n </div>\n <div class=\"codeContent panelContent pdl hide-toolbar\">\n  <pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence; collapse: true\" data-theme=\"Confluence\">  &quot;OpenMRSReports&quot;: {\n    &quot;id&quot;: &quot;bahmni.openmrs.reports&quot;,\n    &quot;extensionPointId&quot;: &quot;org.bahmni.home.dashboard&quot;,\n    &quot;type&quot;: &quot;link&quot;,\n    &quot;translationKey&quot;: &quot;OpenMRS Reports&quot;,\n    &quot;url&quot;: &quot;/openmrs/owa/reports/index.html&quot;,\n    &quot;icon&quot;: &quot;icon-bahmni-reports&quot;,\n    &quot;order&quot;: 15,\n    &quot;requiredPrivilege&quot;: &quot;app:reports&quot;\n  }</pre>\n </div>\n</div><p><br /></p><p><br /></p><p><br /></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e1bd79cd-68da-4fa9-b193-d7b4443b2c30\" data-macro-name=\"info\"><p class=\"title\">Info</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This module is available as a add-on to Bahmni, for versions 0.91 onwards.&nbsp;</p></div></div><div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-cssliststyle=\"none\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"0b744f92-0474-4511-ba50-ea4dc8343d16\" data-macro-name=\"toc\"> </div><p> </p></div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/671744003"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/671744003/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/671744003/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 829554216
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/671744003/child",
+    "restrictions": "/rest/api/content/671744003/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/671744003/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=671744003",
+    "webui": "/spaces/BAH/pages/671744003/OpenMRS+Reports+OWA+Configuration",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/671744003",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/671744003",
+    "tinyui": "/x/AwAKK",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "id": "2318893458",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2318893458",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMxODg5MzQ1OA==",
+  "status": "current",
+  "title": "Modules",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5ff6975591bb2e0108e513c3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "venkatesh bavisetti",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5ff6975591bb2e0108e513c3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Bavisetti Venkatesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5ff6975591bb2e0108e513c3"
+      }
+    },
+    "createdDate": "2021-04-05T08:47:28.270Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2318893458/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2022-11-20T12:20:28.827Z",
+    "friendlyWhen": "Nov 20, 2022",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.j7SactLA4-Q8dS_GQeCcGg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2318893458.16",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2318893458"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2318893458/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" data-layout=\"default\" ac:local-id=\"5bc7c51a-9479-4e1f-838d-bf53f5b343fa\" ac:macro-id=\"17a5002c3330b55ade988240d0e26b19\"><ac:parameter ac:name=\"all\">true</ac:parameter></ac:structured-macro><table data-layout=\"default\" ac:local-id=\"6b3edf97-5915-439c-abcd-043be06a564a\"><colgroup><col style=\"width: 274.0px;\" /><col style=\"width: 486.0px;\" /></colgroup><tbody><tr><th><p><strong>Module Name</strong></p></th><th><p><strong>Description</strong></p></th></tr><tr><td><p /><p style=\"text-align: center;\">Programs</p></td><td><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"58a41597-00a0-4470-b848-45af94920eb6\"><ac:plain-text-body><![CDATA[Configuration\nExisting OpenMRS tables\nFlattened Mart Tables\nMart Views]]></ac:plain-text-body></ac:structured-macro></td></tr><tr><td><p /><p style=\"text-align: center;\">Patients</p></td><td><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"17c81b34-46df-4edb-a2fe-d93b2b49d7fc\"><ac:plain-text-body><![CDATA[Configuration\nExisting OpenMRS table\nMart Tables\nMart Views]]></ac:plain-text-body></ac:structured-macro></td></tr><tr><td><p /><p style=\"text-align: center;\">Appointment Scheduling</p></td><td><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"a94100b2-eff1-4a43-8416-136d4b4353c3\"><ac:plain-text-body><![CDATA[Configuration\nExisting OpenMRS tables\nFlattened Mart Tables\nMart Views]]></ac:plain-text-body></ac:structured-macro></td></tr><tr><td><p /><p style=\"text-align: center;\">Bed Management</p></td><td><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"039da3b9-0e1c-434d-947c-2fca72119ec8\"><ac:plain-text-body><![CDATA[Configuration\nExisting OpenMRS tables\nFlattened Mart Tables\nMart Views]]></ac:plain-text-body></ac:structured-macro></td></tr><tr><td><p /><p style=\"text-align: center;\">Location</p></td><td><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"eac7ea2d-0deb-4274-95c2-33e02d72ebaa\"><ac:plain-text-body><![CDATA[Configuration\nExisting OpenMRS tables\nFlattened Mart Tables]]></ac:plain-text-body></ac:structured-macro></td></tr><tr><td><p /><p style=\"text-align: center;\">Operation Theatre</p></td><td><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"94bd49fb-1af7-47f6-b8ed-9390b67b4cd1\"><ac:plain-text-body><![CDATA[Configuration\nExisting OpenMRS tables\nFlattened Mart Tables]]></ac:plain-text-body></ac:structured-macro></td></tr><tr><td><p /><p style=\"text-align: center;\">Person</p></td><td><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"a51d4d6e-cbaf-4617-880a-d0e2b5f45fb1\"><ac:plain-text-body><![CDATA[Configuration\nExisting OpenMRS tables\nFlattened Mart Tables]]></ac:plain-text-body></ac:structured-macro></td></tr><tr><td><p /><p style=\"text-align: center;\">Provider</p></td><td><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"74211236-a64c-40ec-a723-9d547e84515f\"><ac:plain-text-body><![CDATA[Configuration\nExisting OpenMRS tables\nFlattened Mart Tables]]></ac:plain-text-body></ac:structured-macro></td></tr><tr><td><p /><p style=\"text-align: center;\">Visits and Encounters</p></td><td><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"db6865d2-fd8e-449d-b917-96a955f78172\"><ac:plain-text-body><![CDATA[Configuration\nExisting OpenMRS tables\nFlattened Mart Tables\nMart Views]]></ac:plain-text-body></ac:structured-macro></td></tr><tr><td><p style=\"text-align: center;\">Medication and orders</p></td><td><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b7d996dc-a51a-4e9f-a5f3-f55d85c1d5dc\"><ac:plain-text-body><![CDATA[Configuration\nExisting OpenMRS tables\nFlattened Mart Tables]]></ac:plain-text-body></ac:structured-macro></td></tr><tr><td><p /><p style=\"text-align: center;\">Diagnosis and condition</p></td><td><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"7d0e2fb1-1679-483c-ba42-d4d7b1d52d71\"><ac:plain-text-body><![CDATA[Configuration\nExisting OpenMRS tables\nFlattened Mart Tables\nMart Views]]></ac:plain-text-body></ac:structured-macro></td></tr><tr><td><p /></td><td><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"eb2cd9c5-9f54-467c-b697-885e23d7fa31\"><ac:plain-text-body><![CDATA[Existing OpenMRS tables:\nFlattened Mart Tables:\nUsable Configurations:]]></ac:plain-text-body></ac:structured-macro></td></tr></tbody></table>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2318893458"
+      }
+    },
+    "view": {
+      "value": "<ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-layout=\"default\" data-local-id=\"5bc7c51a-9479-4e1f-838d-bf53f5b343fa\" data-macro-id=\"17a5002c3330b55ade988240d0e26b19\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/2318893508/Mart+Programs+Module\" data-linked-resource-id=\"2318893508\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Mart Programs Module</a></li><li><a href=\"/wiki/spaces/BAH/pages/2306540061/Patients\" data-linked-resource-id=\"2306540061\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Patients</a></li><li><a href=\"/wiki/spaces/BAH/pages/2306736527/Appointment+Scheduling+-+Module\" data-linked-resource-id=\"2306736527\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Appointment Scheduling - Module</a></li><li><a href=\"/wiki/spaces/BAH/pages/2306540078/Bed+Management+-+Module\" data-linked-resource-id=\"2306540078\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Bed Management - Module</a></li><li><a href=\"/wiki/spaces/BAH/pages/2306736537/Location\" data-linked-resource-id=\"2306736537\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Location</a></li><li><a href=\"/wiki/spaces/BAH/pages/2316239224/Operation+Theatre+-+Module\" data-linked-resource-id=\"2316239224\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">Operation Theatre - Module</a></li><li><a href=\"/wiki/spaces/BAH/pages/2306736554/Person+Job\" data-linked-resource-id=\"2306736554\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Person Job</a></li><li><a href=\"/wiki/spaces/BAH/pages/2316239295/Provider+Job\" data-linked-resource-id=\"2316239295\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Provider Job</a></li><li><a href=\"/wiki/spaces/BAH/pages/2316239302/Visits+and+Encounters\" data-linked-resource-id=\"2316239302\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Visits and Encounters</a></li><li><a href=\"/wiki/spaces/BAH/pages/2306736619/Medication+Job\" data-linked-resource-id=\"2306736619\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Medication Job</a></li><li><a href=\"/wiki/spaces/BAH/pages/2316239315/Orders+Job\" data-linked-resource-id=\"2316239315\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Orders Job</a></li><li><a href=\"/wiki/spaces/BAH/pages/2316239350/Diagnosis+Job\" data-linked-resource-id=\"2316239350\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Diagnosis Job</a></li><li><a href=\"/wiki/spaces/BAH/pages/2318893613/Conditions+Job\" data-linked-resource-id=\"2318893613\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Conditions Job</a></li><li><a href=\"/wiki/spaces/BAH/pages/2306540158/Bacteriology+Data\" data-linked-resource-id=\"2306540158\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Bacteriology Data</a></li><li><a href=\"/wiki/spaces/BAH/pages/2306736675/Observations+Job\" data-linked-resource-id=\"2306736675\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Observations Job</a></li><li><a href=\"/wiki/spaces/BAH/pages/2306736685/Forms+2.0+Job\" data-linked-resource-id=\"2306736685\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Forms 2.0 Job</a></li><li><a href=\"/wiki/spaces/BAH/pages/2306540197/Registration+Second+Page\" data-linked-resource-id=\"2306540197\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Registration Second Page</a></li><li><a href=\"/wiki/spaces/BAH/pages/2316239398/Metadata+Job\" data-linked-resource-id=\"2316239398\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Metadata Job</a></li><li><a href=\"/wiki/spaces/BAH/pages/2306736704/Disposition+Job\" data-linked-resource-id=\"2306736704\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Disposition Job</a></li><li><a href=\"/wiki/spaces/BAH/pages/2316239418/EAV+Entity+Attribute+Value+Job\" data-linked-resource-id=\"2316239418\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">EAV (Entity Attribute Value) Job</a></li></ul><div class=\"table-wrap\"><table data-layout=\"default\" data-local-id=\"6b3edf97-5915-439c-abcd-043be06a564a\" class=\"confluenceTable\"><colgroup><col style=\"width: 274.0px;\"/><col style=\"width: 486.0px;\"/></colgroup><tbody><tr><th class=\"confluenceTh\"><p><strong>Module Name</strong></p></th><th class=\"confluenceTh\"><p><strong>Description</strong></p></th></tr><tr><td class=\"confluenceTd\"><p /><p style=\"text-align: center;\">Programs</p></td><td class=\"confluenceTd\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"58a41597-00a0-4470-b848-45af94920eb6\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Configuration\nExisting OpenMRS tables\nFlattened Mart Tables\nMart Views</pre>\n</div></div></td></tr><tr><td class=\"confluenceTd\"><p /><p style=\"text-align: center;\">Patients</p></td><td class=\"confluenceTd\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"17c81b34-46df-4edb-a2fe-d93b2b49d7fc\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Configuration\nExisting OpenMRS table\nMart Tables\nMart Views</pre>\n</div></div></td></tr><tr><td class=\"confluenceTd\"><p /><p style=\"text-align: center;\">Appointment Scheduling</p></td><td class=\"confluenceTd\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a94100b2-eff1-4a43-8416-136d4b4353c3\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Configuration\nExisting OpenMRS tables\nFlattened Mart Tables\nMart Views</pre>\n</div></div></td></tr><tr><td class=\"confluenceTd\"><p /><p style=\"text-align: center;\">Bed Management</p></td><td class=\"confluenceTd\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"039da3b9-0e1c-434d-947c-2fca72119ec8\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Configuration\nExisting OpenMRS tables\nFlattened Mart Tables\nMart Views</pre>\n</div></div></td></tr><tr><td class=\"confluenceTd\"><p /><p style=\"text-align: center;\">Location</p></td><td class=\"confluenceTd\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"eac7ea2d-0deb-4274-95c2-33e02d72ebaa\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Configuration\nExisting OpenMRS tables\nFlattened Mart Tables</pre>\n</div></div></td></tr><tr><td class=\"confluenceTd\"><p /><p style=\"text-align: center;\">Operation Theatre</p></td><td class=\"confluenceTd\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"94bd49fb-1af7-47f6-b8ed-9390b67b4cd1\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Configuration\nExisting OpenMRS tables\nFlattened Mart Tables</pre>\n</div></div></td></tr><tr><td class=\"confluenceTd\"><p /><p style=\"text-align: center;\">Person</p></td><td class=\"confluenceTd\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a51d4d6e-cbaf-4617-880a-d0e2b5f45fb1\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Configuration\nExisting OpenMRS tables\nFlattened Mart Tables</pre>\n</div></div></td></tr><tr><td class=\"confluenceTd\"><p /><p style=\"text-align: center;\">Provider</p></td><td class=\"confluenceTd\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"74211236-a64c-40ec-a723-9d547e84515f\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Configuration\nExisting OpenMRS tables\nFlattened Mart Tables</pre>\n</div></div></td></tr><tr><td class=\"confluenceTd\"><p /><p style=\"text-align: center;\">Visits and Encounters</p></td><td class=\"confluenceTd\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"db6865d2-fd8e-449d-b917-96a955f78172\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Configuration\nExisting OpenMRS tables\nFlattened Mart Tables\nMart Views</pre>\n</div></div></td></tr><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\">Medication and orders</p></td><td class=\"confluenceTd\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b7d996dc-a51a-4e9f-a5f3-f55d85c1d5dc\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Configuration\nExisting OpenMRS tables\nFlattened Mart Tables</pre>\n</div></div></td></tr><tr><td class=\"confluenceTd\"><p /><p style=\"text-align: center;\">Diagnosis and condition</p></td><td class=\"confluenceTd\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7d0e2fb1-1679-483c-ba42-d4d7b1d52d71\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Configuration\nExisting OpenMRS tables\nFlattened Mart Tables\nMart Views</pre>\n</div></div></td></tr><tr><td class=\"confluenceTd\"><p /></td><td class=\"confluenceTd\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"eb2cd9c5-9f54-467c-b697-885e23d7fa31\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Existing OpenMRS tables:\nFlattened Mart Tables:\nUsable Configurations:</pre>\n</div></div></td></tr></tbody></table></div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2318893458"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2318893458/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2318893458/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 747
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2318893458/child",
+    "restrictions": "/rest/api/content/2318893458/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2318893458/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2318893458",
+    "webui": "/spaces/BAH/pages/2318893458/Modules",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2318893458",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2318893458",
+    "tinyui": "/x/koE3ig",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

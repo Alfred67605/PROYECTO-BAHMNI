@@ -1,0 +1,173 @@
+{
+  "id": "1177190402",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/1177190402",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE3NzE5MDQwMg==",
+  "status": "current",
+  "title": "Returning the delivered medicine and Refunding the Invoice",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5e43cc7490dfb70c9e609d8c",
+      "accountType": "atlassian",
+      "email": "rahulnuchange@gmail.com",
+      "publicName": "Rahul Kumrawat",
+      "timeZone": "Asia/Calcutta",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e43cc7490dfb70c9e609d8c",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Rahul Kumrawat",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e43cc7490dfb70c9e609d8c"
+      }
+    },
+    "createdDate": "2020-04-01T05:34:06.426Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1177190402/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:0114694a-2065-4f19-96b2-e3818cd876a3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "apaule",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:0114694a-2065-4f19-96b2-e3818cd876a3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Arun Paul",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:0114694a-2065-4f19-96b2-e3818cd876a3"
+      }
+    },
+    "when": "2020-04-01T11:30:45.352Z",
+    "friendlyWhen": "Apr 01, 2020",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "0.ukKgtWndoTooG52PGjuTFA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$1177190402.78",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/1177190402"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1177190402/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\" ac:breakout-mode=\"default\"><ac:layout-cell><h2>About the Feature</h2><p>After confirming and delivering a medication order, same can be returned back partially or fully to the respective inventory in the desired batch. User can refund the invoice for the returned medicines too.</p><ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p>The following steps and screenshots are explained as per Odoo 10, available on Bahmni 0.92 release.</p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p>The following steps and screenshots are explained as per Odoo 10, available on Bahmni 0.92 release.</p>\n</div></div></ac:adf-fallback></ac:adf-extension><h2>Used By</h2><p>This feature is used by Pharmacists and Cashiers in a hospital pharmacy.</p><h2>How is it Used?</h2><h3>1. Returning the medicine</h3><ol><li><p>Go to the Odoo - &ldquo;Sales Order&rdquo; screen under the &ldquo;Sales&rdquo; menu, which will be listing the confirmed medication sale orders.</p></li><li><p>Search for the desired patient&rsquo;s sale order and click on the same, to view the respective details.</p></li><li><p>Click on the &ldquo;Delivery&rdquo; button appearing at the top right side.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"455\" ac:original-width=\"846\"><ri:attachment ri:filename=\"image-20200401-061526.png\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p>In the &ldquo;Delivery&rdquo; screen, you can view the delivered quantity in the &ldquo;Done&rdquo; column for the listed products.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"338\" ac:original-width=\"693\"><ri:attachment ri:filename=\"image-20200401-062430.png\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p>Click on the &ldquo;Return&rdquo; button appearing at the top left side of the screen.</p></li><li><p>Update the quantity of drug to return in the &ldquo;Quantity&rdquo; field under the &ldquo;Reverse Transfer&rdquo; popup.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"229\" ac:original-width=\"524\"><ri:attachment ri:filename=\"image-20200401-062822.png\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p>Click on the &ldquo;Return&rdquo; button appearing at the bottom left corner of the popup.</p></li><li><p>Click on the &ldquo;Force Availability&rdquo; button appearing at the top left side of the screen.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"290\" ac:original-width=\"763\"><ri:attachment ri:filename=\"image-20200401-063339.png\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p>Open &ldquo;Operations&rdquo; tab and click on the list icon&nbsp; appearing in the product grid.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"305\" ac:original-width=\"758\"><ri:attachment ri:filename=\"image-20200401-064422.png\" ri:version-at-save=\"1\" /></ac:image></li><li><p>Click on &ldquo;Add an Item&rdquo; link in the &ldquo;Lot/Serial Number Details&rdquo; popup, select the desired lot in which you want to add the returned quantity of drugs and enter the same quantity in the &ldquo;Done&rdquo; field.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"223\" ac:original-width=\"518\"><ri:attachment ri:filename=\"image-20200401-065406.png\" ri:version-at-save=\"1\" /></ac:image></li><li><p>Click on the &ldquo;Save&rdquo; button in the popup and then click on &ldquo;Validate&rdquo; button in the top left side of the screen.</p></li></ol><h3>2. Refunding the Invoice</h3><ol><li><p>To refund the invoice, click on the &ldquo;Invoices&rdquo; button appearing at the top right side for the confirmed sales order.</p></li><li><p>Click on the &ldquo;Refund Invoice&rdquo; button appearing at the top left side of the screen.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"391\" ac:original-width=\"784\"><ri:attachment ri:filename=\"image-20200401-070547.png\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p>Select the desired &ldquo;Refund Method&rdquo; in the &ldquo;Refund Invoice&rdquo; popup.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"235\" ac:original-width=\"891\"><ri:attachment ri:filename=\"image-20200401-071052.png\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p>Enter the Refund Reason and Date in the respective fields accordingly and click on the &ldquo;Create Refund&rdquo; button at the bottom left side of the popup.</p></li><li><p>Open the Draft Refund record, click on the &ldquo;Validate&rdquo; button appearing at the top right side of the screen and then click on the &ldquo;Register Payment&rdquo; button.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"392\" ac:original-width=\"833\"><ri:attachment ri:filename=\"image-20200401-071839.png\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p>&nbsp;Select the Payment Journal and enter the Payment Amount in the respective fields under &ldquo;Register Payment&rdquo; popup and then click on &ldquo;Validate&rdquo; button appearing at the bottom left side of the popup.</p></li><li><p>You can print the Refund Invoice by clicking the &ldquo;Print&rdquo; button and selecting the &ldquo;Invoices&rdquo; option.<br /> </p></li></ol></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" data-layout=\"default\" ac:macro-id=\"74d2a540-6569-46c5-887d-a6c403d1c75a\" /><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"07b9ef05-889d-4560-b10e-792d3accaed5\"><ac:rich-text-body><p><strong>Feature Details</strong></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/32604205/Pharmacy+Management\">Feature Guide - Pharmacy Management </a> </p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"70f609f8-bd50-4c41-b3ec-38c80cb4a056\"><ac:rich-text-body><p><strong>Implementation Details</strong></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/32014590/Pharmacy+Configuration\">Implementer's Guide - ERP Modules - Pharmacy Configuration</a> </p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"fixed-width\" ac:breakout-mode=\"default\"><ac:layout-cell><p /></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/1177190402"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ReturningthedeliveredmedicineandRefundingtheInvoice-AbouttheFeature\">About the Feature</h2><p>After confirming and delivering a medication order, same can be returned back partially or fully to the respective inventory in the desired batch. User can refund the invoice for the returned medicines too.</p><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p>The following steps and screenshots are explained as per Odoo 10, available on Bahmni 0.92 release.</p>\n</div></div><h2 id=\"ReturningthedeliveredmedicineandRefundingtheInvoice-UsedBy\">Used By</h2><p>This feature is used by Pharmacists and Cashiers in a hospital pharmacy.</p><h2 id=\"ReturningthedeliveredmedicineandRefundingtheInvoice-HowisitUsed?\">How is it Used?</h2><h3 id=\"ReturningthedeliveredmedicineandRefundingtheInvoice-1.Returningthemedicine\">1. Returning the medicine</h3><ol><li><p>Go to the Odoo - “Sales Order” screen under the “Sales” menu, which will be listing the confirmed medication sale orders.</p></li><li><p>Search for the desired patient’s sale order and click on the same, to view the respective details.</p></li><li><p>Click on the “Delivery” button appearing at the top right side.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177190402/image-20200401-061526.png?version=1&amp;modificationDate=1585721730943&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177190402/image-20200401-061526.png?version=1&amp;modificationDate=1585721730943&amp;cacheVersion=1&amp;api=v2\" data-height=\"455\" data-width=\"846\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1177354251\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200401-061526.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1177190402\" data-linked-resource-container-version=\"3\" data-media-id=\"103b2e74-02f6-4a8d-99c4-ac5156961855\" data-media-type=\"file\"></span><p /></li><li><p>In the “Delivery” screen, you can view the delivered quantity in the “Done” column for the listed products.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177190402/image-20200401-062430.png?version=1&amp;modificationDate=1585722274654&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177190402/image-20200401-062430.png?version=1&amp;modificationDate=1585722274654&amp;cacheVersion=1&amp;api=v2\" data-height=\"338\" data-width=\"693\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1177321492\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200401-062430.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1177190402\" data-linked-resource-container-version=\"3\" data-media-id=\"93b3dbec-7f96-4b9f-834f-0445e1bf9c2b\" data-media-type=\"file\"></span><p /></li><li><p>Click on the “Return” button appearing at the top left side of the screen.</p></li><li><p>Update the quantity of drug to return in the “Quantity” field under the “Reverse Transfer” popup.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177190402/image-20200401-062822.png?version=1&amp;modificationDate=1585722505818&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177190402/image-20200401-062822.png?version=1&amp;modificationDate=1585722505818&amp;cacheVersion=1&amp;api=v2\" data-height=\"229\" data-width=\"524\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1177354260\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200401-062822.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1177190402\" data-linked-resource-container-version=\"3\" data-media-id=\"226a83c4-559b-4adb-8881-2188b7cdc44e\" data-media-type=\"file\"></span><p /></li><li><p>Click on the “Return” button appearing at the bottom left corner of the popup.</p></li><li><p>Click on the “Force Availability” button appearing at the top left side of the screen.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177190402/image-20200401-063339.png?version=1&amp;modificationDate=1585722823491&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177190402/image-20200401-063339.png?version=1&amp;modificationDate=1585722823491&amp;cacheVersion=1&amp;api=v2\" data-height=\"290\" data-width=\"763\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1177354266\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200401-063339.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1177190402\" data-linked-resource-container-version=\"3\" data-media-id=\"b57b131d-eaf6-4c79-84d9-80e78cfd5170\" data-media-type=\"file\"></span><p /></li><li><p>Open “Operations” tab and click on the list icon  appearing in the product grid.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177190402/image-20200401-064422.png?version=1&amp;modificationDate=1585723466475&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177190402/image-20200401-064422.png?version=1&amp;modificationDate=1585723466475&amp;cacheVersion=1&amp;api=v2\" data-height=\"305\" data-width=\"758\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1177190445\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200401-064422.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1177190402\" data-linked-resource-container-version=\"3\" data-media-id=\"0a09afc7-cf3f-4bef-bf21-eb72e3a61c46\" data-media-type=\"file\"></span></li><li><p>Click on “Add an Item” link in the “Lot/Serial Number Details” popup, select the desired lot in which you want to add the returned quantity of drugs and enter the same quantity in the “Done” field.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177190402/image-20200401-065406.png?version=1&amp;modificationDate=1585724050050&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177190402/image-20200401-065406.png?version=1&amp;modificationDate=1585724050050&amp;cacheVersion=1&amp;api=v2\" data-height=\"223\" data-width=\"518\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1177190488\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200401-065406.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1177190402\" data-linked-resource-container-version=\"3\" data-media-id=\"b5935b1f-339d-4110-9bae-d0bbcebc6e28\" data-media-type=\"file\"></span></li><li><p>Click on the “Save” button in the popup and then click on “Validate” button in the top left side of the screen.</p></li></ol><h3 id=\"ReturningthedeliveredmedicineandRefundingtheInvoice-2.RefundingtheInvoice\">2. Refunding the Invoice</h3><ol><li><p>To refund the invoice, click on the “Invoices” button appearing at the top right side for the confirmed sales order.</p></li><li><p>Click on the “Refund Invoice” button appearing at the top left side of the screen.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177190402/image-20200401-070547.png?version=1&amp;modificationDate=1585724752247&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177190402/image-20200401-070547.png?version=1&amp;modificationDate=1585724752247&amp;cacheVersion=1&amp;api=v2\" data-height=\"391\" data-width=\"784\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1177354287\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200401-070547.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1177190402\" data-linked-resource-container-version=\"3\" data-media-id=\"aa4c7c0d-e41c-498c-ae57-64277d97680a\" data-media-type=\"file\"></span><p /></li><li><p>Select the desired “Refund Method” in the “Refund Invoice” popup.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177190402/image-20200401-071052.png?version=1&amp;modificationDate=1585725055993&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177190402/image-20200401-071052.png?version=1&amp;modificationDate=1585725055993&amp;cacheVersion=1&amp;api=v2\" data-height=\"235\" data-width=\"891\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1177321515\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200401-071052.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1177190402\" data-linked-resource-container-version=\"3\" data-media-id=\"e0143569-7c91-40fd-ae80-c43fa2ae37fb\" data-media-type=\"file\"></span><p /></li><li><p>Enter the Refund Reason and Date in the respective fields accordingly and click on the “Create Refund” button at the bottom left side of the popup.</p></li><li><p>Open the Draft Refund record, click on the “Validate” button appearing at the top right side of the screen and then click on the “Register Payment” button.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177190402/image-20200401-071839.png?version=1&amp;modificationDate=1585725523100&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1177190402/image-20200401-071839.png?version=1&amp;modificationDate=1585725523100&amp;cacheVersion=1&amp;api=v2\" data-height=\"392\" data-width=\"833\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1177354295\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200401-071839.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1177190402\" data-linked-resource-container-version=\"3\" data-media-id=\"2126b4f2-b8c9-441f-b7f4-d3bac9296003\" data-media-type=\"file\"></span><p /></li><li><p> Select the Payment Journal and enter the Payment Amount in the respective fields under “Register Payment” popup and then click on “Validate” button appearing at the bottom left side of the popup.</p></li><li><p>You can print the Refund Invoice by clicking the “Print” button and selecting the “Invoices” option.<br/> </p></li></ol></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-layout=\"default\" data-macro-id=\"74d2a540-6569-46c5-887d-a6c403d1c75a\" data-macro-name=\"toc\"> </div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"07b9ef05-889d-4560-b10e-792d3accaed5\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>Feature Details</strong></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/32604205/Pharmacy+Management\" rel=\"nofollow\">Feature Guide - Pharmacy Management </a> </p></div></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"70f609f8-bd50-4c41-b3ec-38c80cb4a056\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>Implementation Details</strong></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/32014590/Pharmacy+Configuration\" rel=\"nofollow\">Implementer's Guide - ERP Modules - Pharmacy Configuration</a> </p></div></div></div>\n</div>\n</div>\n<div class=\"columnLayout fixed-width\" data-layout=\"fixed-width\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p /></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/1177190402"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/1177190402/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1177190402/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 647553478
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/1177190402/child",
+    "restrictions": "/rest/api/content/1177190402/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/1177190402/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=1177190402",
+    "webui": "/spaces/BAH/pages/1177190402/Returning+the+delivered+medicine+and+Refunding+the+Invoice",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/1177190402",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1177190402",
+    "tinyui": "/x/AoAqRg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

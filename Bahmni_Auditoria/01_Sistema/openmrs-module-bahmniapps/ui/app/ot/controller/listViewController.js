@@ -1,0 +1,278 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public License,
+ * v. 2.0. If a copy of the MPL was not distributed with this file, You can
+ * obtain one at https://www.bahmni.org/license/mplv2hd.
+ *
+ * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
+ * graphic logo is a trademark of OpenMRS Inc.
+ */
+
+'use strict';
+
+angular.module('bahmni.ot')
+    .controller('listViewController', ['$scope', '$rootScope', '$q', '$window', 'spinner', 'surgicalAppointmentService', 'appService', 'surgicalAppointmentHelper', 'surgicalBlockFilter', 'printer', 'otUtils',
+        function ($scope, $rootScope, $q, $window, spinner, surgicalAppointmentService, appService, surgicalAppointmentHelper, surgicalBlockFilter, printer, otUtils) {
+            var startDatetime = moment($scope.viewDate).toDate();
+            var surgicalBlockMapper = new Bahmni.OT.SurgicalBlockMapper();
+            var endDatetime = moment(startDatetime).endOf('day').toDate();
+            var surgeryAttributeTranslations = appService.getAppDescriptor().getConfigValue("surgeryAttributeTranslations") || [];
+            $scope.defaultAttributeTranslations = surgicalAppointmentHelper.getDefaultAttributeTranslations(surgeryAttributeTranslations);
+            $scope.conceptFormatAttributeName = otUtils.getConceptFormatAttributeName();
+            $scope.filteredSurgicalAttributeTypes = getFilteredSurgicalAttributeTypes();
+
+            var listViewObservationColumns = appService.getAppDescriptor().getConfigValue("listViewObservationColumns") || [];
+
+            $scope.filteredObservationColumns = listViewObservationColumns.map(function (entry) {
+                return {
+                    conceptName: entry.concept,
+                    isDate: entry.type === 'date',
+                    heading: entry.translationKey
+                };
+            });
+
+            $scope.filteredObservationColumns.forEach(function (col) {
+                $scope.defaultAttributeTranslations.set(col.heading, col.heading);
+            });
+
+            var conceptConfigMap = {};
+            listViewObservationColumns.forEach(function (entry) {
+                if (!conceptConfigMap[entry.concept]) {
+                    conceptConfigMap[entry.concept] = { conceptName: entry.concept, validityDays: entry.validityDays };
+                } else if (entry.validityDays && !conceptConfigMap[entry.concept].validityDays) {
+                    conceptConfigMap[entry.concept].validityDays = entry.validityDays;
+                }
+            });
+            var uniqueConceptConfigs = _.values(conceptConfigMap).map(function (config) {
+                config.validityDays = config.validityDays || Bahmni.OT.Constants.defaultObservationValidityDays;
+                return config;
+            });
+
+            $scope.tableInfo = getTableInfo();
+
+            function getObservationColumnsTableInfo () {
+                return ($scope.filteredObservationColumns || []).map(function (column) {
+                    return { heading: column.heading, sortInfo: null };
+                });
+            }
+
+            function getTableInfo () {
+                var appDescriptor = appService.getAppDescriptor();
+                var customTemplateUrl = appDescriptor.getConfigValue("listViewTemplateUrl");
+                var customTableInfo = appDescriptor.getConfigValue("listViewColumns") || [];
+                if (customTemplateUrl && customTableInfo.length > 0) {
+                    return customTableInfo;
+                }
+
+                var listViewAttributes = [
+                    {heading: 'Identifier', sortInfo: 'derivedAttributes.patientIdentifier'},
+                    {heading: 'Patient Name', sortInfo: 'derivedAttributes.patientName'},
+                    {heading: 'Status', sortInfo: 'status'}
+                ];
+
+                if ($scope.conceptFormatAttributeName) {
+                    listViewAttributes.push({
+                        heading: $scope.conceptFormatAttributeName,
+                        sortInfo: 'surgicalAppointmentAttributes.' + $scope.conceptFormatAttributeName + '.value'
+                    });
+                }
+
+                listViewAttributes = listViewAttributes.concat(getObservationColumnsTableInfo());
+
+                listViewAttributes = listViewAttributes.concat([
+                    {heading: 'Day', sortInfo: 'derivedAttributes.expectedStartDate'},
+                    {heading: 'Date', sortInfo: 'derivedAttributes.expectedStartDate'},
+                    {heading: 'Patient Age', sortInfo: 'derivedAttributes.patientAge'},
+                    {heading: 'Start Time', sortInfo: 'derivedAttributes.expectedStartTime'},
+                    {heading: 'Est Time', sortInfo: 'derivedAttributes.duration'},
+                    {heading: 'Actual Time', sortInfo: 'actualStartDatetime'},
+                    {heading: 'OT#', sortInfo: 'surgicalBlock.location.name'},
+                    {heading: 'Surgeon', sortInfo: 'surgicalBlock.provider.person.display'}
+                ]);
+
+                var attributesRelatedToBed = [
+                    {heading: 'Status Change Notes', sortInfo: 'notes'},
+                    {heading: 'Bed Location', sortInfo: 'bedLocation'},
+                    {heading: 'Bed ID', sortInfo: 'bedNumber'}
+                ];
+
+                if ($rootScope.showPrimaryDiagnosisForOT != null && $rootScope.showPrimaryDiagnosisForOT != "") {
+                    return listViewAttributes.concat(
+                        getSurgicalAttributesTableInfo(), attributesRelatedToBed,
+                        [{heading: 'Primary Diagnoses', sortInfo: 'patientObservations'}]
+                    );
+                }
+                return listViewAttributes.concat(getSurgicalAttributesTableInfo(), attributesRelatedToBed);
+            }
+
+            function getFilteredSurgicalAttributeTypes () {
+                var derivedSurgicalAttributes = ['estTimeHours', 'estTimeMinutes', 'cleaningTime'];
+                if ($scope.conceptFormatAttributeName) {
+                    derivedSurgicalAttributes.push($scope.conceptFormatAttributeName);
+                }
+                return surgicalAppointmentHelper.getAttributeTypesByRemovingAttributeNames($rootScope.attributeTypes, derivedSurgicalAttributes);
+            }
+
+            function getSurgicalAttributesTableInfo () {
+                return _.map($scope.filteredSurgicalAttributeTypes, function (attributeType) {
+                    var attributeName = 'surgicalAppointmentAttributes.'.concat(attributeType.name, '.value');
+                    return {
+                        heading: attributeType.name,
+                        sortInfo: attributeType.format === Bahmni.OT.Constants.providerSurgicalAttributeFormat
+                            ? attributeName.concat('.person.display') : attributeName
+                    };
+                });
+            }
+
+            var filterSurgicalBlocksAndMapAppointmentsForDisplay = function (surgicalBlocks) {
+                var clonedSurgicalBlocks = _.cloneDeep(surgicalBlocks);
+                var filteredSurgicalBlocks = surgicalBlockFilter(clonedSurgicalBlocks, $scope.filterParams);
+                var mappedSurgicalBlocks = _.map(filteredSurgicalBlocks, function (surgicalBlock) {
+                    return surgicalBlockMapper.map(surgicalBlock, $rootScope.attributeTypes, $rootScope.surgeons, uniqueConceptConfigs);
+                });
+                mappedSurgicalBlocks = _.map(mappedSurgicalBlocks, function (surgicalBlock) {
+                    var blockStartDatetime = surgicalBlock.startDatetime;
+                    surgicalBlock.surgicalAppointments = _.map(surgicalBlock.surgicalAppointments, function (appointment) {
+                        var mappedAppointment = _.cloneDeep(appointment);
+                        mappedAppointment.surgicalBlock = surgicalBlock;
+                        mappedAppointment.derivedAttributes = {};
+
+                        var estTimeHours = mappedAppointment.surgicalAppointmentAttributes['estTimeHours'] && mappedAppointment.surgicalAppointmentAttributes['estTimeHours'].value;
+                        var estTimeMinutes = mappedAppointment.surgicalAppointmentAttributes['estTimeMinutes'] && mappedAppointment.surgicalAppointmentAttributes['estTimeMinutes'].value;
+                        var cleaningTime = mappedAppointment.surgicalAppointmentAttributes['cleaningTime'] && mappedAppointment.surgicalAppointmentAttributes['cleaningTime'].value;
+
+                        mappedAppointment.derivedAttributes.duration = surgicalAppointmentHelper.getAppointmentDuration(
+                            estTimeHours, estTimeMinutes, cleaningTime
+                        );
+                        mappedAppointment.derivedAttributes.expectedStartDate = moment(blockStartDatetime).startOf('day').toDate();
+                        mappedAppointment.derivedAttributes.patientIdentifier = mappedAppointment.patient.display.split(' - ')[0];
+                        mappedAppointment.derivedAttributes.patientAge = mappedAppointment.patient.person.age;
+                        mappedAppointment.derivedAttributes.patientName = mappedAppointment.patient.display.split(' - ')[1];
+                        if (mappedAppointment.status === Bahmni.OT.Constants.completed || mappedAppointment.status === Bahmni.OT.Constants.scheduled) {
+                            mappedAppointment.derivedAttributes.expectedStartTime = blockStartDatetime;
+                            blockStartDatetime = Bahmni.Common.Util.DateUtil.addMinutes(blockStartDatetime, mappedAppointment.derivedAttributes.duration);
+                        }
+                        return mappedAppointment;
+                    });
+                    surgicalBlock.surgicalAppointments = _.filter(surgicalBlock.surgicalAppointments, function (surgicalAppointment) {
+                        if (surgicalAppointment.derivedAttributes.expectedStartTime) {
+                            var surgicalAppointmentStartDateTime = surgicalAppointment.derivedAttributes.expectedStartTime;
+                            var surgicalAppointmentEndDateTime = Bahmni.Common.Util.DateUtil.addMinutes(surgicalAppointmentStartDateTime, surgicalAppointment.derivedAttributes.duration);
+                            return surgicalAppointmentStartDateTime < endDatetime && surgicalAppointmentEndDateTime > startDatetime;
+                        }
+                        return surgicalAppointment.derivedAttributes.expectedStartDate <= endDatetime &&
+                            surgicalAppointment.derivedAttributes.expectedStartDate >= startDatetime;
+                    });
+                    return surgicalBlock;
+                });
+
+                var surgicalAppointmentList = _.reduce(mappedSurgicalBlocks, function (surgicalAppointmentList, block) {
+                    return surgicalAppointmentList.concat(block.surgicalAppointments);
+                }, []);
+
+                var filteredSurgicalAppointmentsByStatus = surgicalAppointmentHelper.filterSurgicalAppointmentsByStatus(
+                    surgicalAppointmentList, _.map($scope.filterParams.statusList, function (status) {
+                        return status.name;
+                    }));
+
+                var filteredSurgicalAppointmentsByPatient = surgicalAppointmentHelper.filterSurgicalAppointmentsByPatient(
+                    filteredSurgicalAppointmentsByStatus, $scope.filterParams.patient);
+                $scope.surgicalAppointmentList = _.sortBy(filteredSurgicalAppointmentsByPatient, ["derivedAttributes.expectedStartDate", "surgicalBlock.location.name", "derivedAttributes.expectedStartDatetime"]);
+            };
+
+            var init = function (startDatetime, endDatetime) {
+                $scope.addActualTimeDisabled = true;
+                $scope.editDisabled = true;
+                $scope.cancelDisabled = true;
+                $scope.reverseSort = false;
+                $scope.sortColumn = "";
+                return $q.all([surgicalAppointmentService.getSurgicalBlocksInDateRange(startDatetime, endDatetime, true, true)]).then(function (response) {
+                    $scope.surgicalBlocks = response[0].data.results;
+                    filterSurgicalBlocksAndMapAppointmentsForDisplay($scope.surgicalBlocks);
+                });
+            };
+
+            $scope.isCurrentDateinWeekView = function (appointmentDate) {
+                return _.isEqual(moment().startOf('day').toDate(), appointmentDate) && $scope.weekOrDay === 'week';
+            };
+            $scope.printPage = function () {
+                var printTemplateUrl = appService.getAppDescriptor().getConfigValue("printListViewTemplateUrl") || 'views/listView.html';
+                printer.print(printTemplateUrl, {
+                    surgicalAppointmentList: $scope.surgicalAppointmentList,
+                    weekStartDate: $scope.weekStartDate,
+                    weekEndDate: $scope.weekEndDate,
+                    viewDate: $scope.viewDate,
+                    weekOrDay: $scope.weekOrDay,
+                    isCurrentDate: $scope.isCurrentDateinWeekView,
+                    conceptFormatAttributeName: $scope.conceptFormatAttributeName,
+                    filteredSurgicalAttributeTypes: $scope.filteredSurgicalAttributeTypes,
+                    filteredObservationColumns: $scope.filteredObservationColumns,
+                    tableInfo: $scope.tableInfo,
+                    defaultAttributeTranslations: $scope.defaultAttributeTranslations
+                });
+            };
+
+            $scope.sortSurgicalAppointmentsBy = function (sortColumn) {
+                var emptyObjects = _.filter($scope.surgicalAppointmentList, function (appointment) {
+                    return !_.property(sortColumn)(appointment);
+                });
+                var nonEmptyObjects = _.difference($scope.surgicalAppointmentList, emptyObjects);
+                var sortedNonEmptyObjects = _.sortBy(nonEmptyObjects, sortColumn);
+                if ($scope.reverseSort) {
+                    sortedNonEmptyObjects.reverse();
+                }
+                $scope.surgicalAppointmentList = sortedNonEmptyObjects.concat(emptyObjects);
+                $scope.sortColumn = sortColumn;
+                $scope.reverseSort = !$scope.reverseSort;
+            };
+
+            $scope.selectSurgicalAppointment = function ($event, appointment) {
+                $scope.$emit("event:surgicalAppointmentSelect", appointment, appointment.surgicalBlock);
+                $event.stopPropagation();
+            };
+
+            $scope.deselectSurgicalAppointment = function ($event) {
+                $scope.$emit("event:surgicalBlockDeselect");
+                $event.stopPropagation();
+            };
+
+            $scope.$watch("viewDate", function () {
+                if ($scope.weekOrDay === 'day') {
+                    startDatetime = moment($scope.viewDate).toDate();
+                    endDatetime = moment(startDatetime).endOf('day').toDate();
+                    spinner.forPromise(init(startDatetime, endDatetime));
+                }
+            });
+
+            $scope.$watch("weekStartDate", function () {
+                if ($scope.weekOrDay === 'week') {
+                    startDatetime = moment($scope.weekStartDate).toDate();
+                    endDatetime = moment($scope.weekEndDate).endOf('day').toDate();
+                    spinner.forPromise(init(startDatetime, endDatetime));
+                }
+            });
+
+            $scope.$watch("filterParams", function (newValue, oldValue) {
+                if (newValue !== oldValue) {
+                    filterSurgicalBlocksAndMapAppointmentsForDisplay($scope.surgicalBlocks);
+                }
+            });
+
+            $scope.openPatientDashboard = function (appointment, $event) {
+                var listViewPatientDashboardUrl = appService.getAppDescriptor().getConfigValue('listViewPatientDashboardUrl');
+                if (listViewPatientDashboardUrl && appointment.patient) {
+                    var formattedUrl = appService.getAppDescriptor().formatUrl(listViewPatientDashboardUrl, {'patientUuid': appointment.patient.uuid});
+                    $window.open(formattedUrl, 'otListViewPatientDashboardUrl');
+                }
+                $event.stopPropagation();
+            };
+
+            $scope.isStatusPostponed = function (status) {
+                return status === Bahmni.OT.Constants.postponed;
+            };
+
+            $scope.isStatusCancelled = function (status) {
+                return status === Bahmni.OT.Constants.cancelled;
+            };
+
+            spinner.forPromise(init(startDatetime, endDatetime));
+        }]);

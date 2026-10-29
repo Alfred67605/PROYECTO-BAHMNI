@@ -1,0 +1,172 @@
+{
+  "id": "1474232338",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/1474232338",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTQ3NDIzMjMzOA==",
+  "status": "current",
+  "title": "Setting up sync between Bahmni and DCM4CHEE",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5e943471088a7e0c0f50e1e0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Buvaneswari Arun (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e943471088a7e0c0f50e1e0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Buvaneswari Arun (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e943471088a7e0c0f50e1e0"
+      }
+    },
+    "createdDate": "2020-07-14T18:09:06.761Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1474232338/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5e943471088a7e0c0f50e1e0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Buvaneswari Arun (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e943471088a7e0c0f50e1e0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Buvaneswari Arun (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e943471088a7e0c0f50e1e0"
+      }
+    },
+    "when": "2021-02-08T13:32:13.421Z",
+    "friendlyWhen": "Feb 08, 2021",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "syncRev": "0.g3iAmtRSLB02viktlY5hIA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$1474232338.100",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/1474232338"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1474232338/version/4"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>The below-mentioned steps can be followed to set up sync between to Bahmni and Radiology sync.</p><table data-layout=\"default\"><colgroup><col style=\"width: 680.0px;\" /></colgroup><tbody><tr><td><p>Please note that these are sample steps and need to be carefully executed especially if you are in a Production Environment!</p></td></tr></tbody></table><p><br /></p><h2>Pre Requisites - PACS - Integration and DCM4CHEE is installed.</h2><h2>1) Check if pacs-integration and &nbsp;dcm4chee service are running</h2><table data-layout=\"default\"><colgroup><col style=\"width: 680.0px;\" /></colgroup><tbody><tr><td><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"38b472b2-71cc-47ef-9ddb-04693112df4d\"><ac:plain-text-body><![CDATA[systemctl status dcm4chee\nsystemctl status pacs-integration\n\n\n# If it is not running then do\nsudo systemctl start dcm4chee\nsudo systemctl status pacs-integration]]></ac:plain-text-body></ac:structured-macro><p /></td></tr></tbody></table><h2>2) Check if you are able to connect to both the databases</h2><table data-layout=\"default\"><colgroup><col style=\"width: 680.0px;\" /></colgroup><tbody><tr><td><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"aaa0c8cd-df3f-44d6-b0d0-7ce8e7d61951\"><ac:plain-text-body><![CDATA[psql -Upostgres bahmni_pacs\npsql -Upostgres pacsdb]]></ac:plain-text-body></ac:structured-macro><p /></td></tr></tbody></table><h2>3) Stop iptables</h2><h2><em>Should be done only in case of local vagrant setup - Not in AWS or production systems.</em></h2><table data-layout=\"default\"><colgroup><col style=\"width: 680.0px;\" /></colgroup><tbody><tr><td><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"56f83bc9-be8b-48dd-9899-01bac63793bc\"><ac:plain-text-body><![CDATA[systemctl stop iptables ]]></ac:plain-text-body></ac:structured-macro><p /></td></tr></tbody></table><h2>4) Check for the logs for any errors </h2><p>In case of any exceptions in the logs the issue needs to be investigated.</p><table data-layout=\"default\"><colgroup><col style=\"width: 680.0px;\" /></colgroup><tbody><tr><td><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"774ee1bb-a370-4f84-929f-0df0af65249d\"><ac:plain-text-body><![CDATA[psql -Upostgres bahmni_pacs\npsql -Upostgres pacsdb]]></ac:plain-text-body></ac:structured-macro><p /></td></tr></tbody></table><h2>5) Make database changes in bahmni_pacs database.<br /></h2><p>Set up data in tables&nbsp;modality,&nbsp;order_type&nbsp;and&nbsp;markers&nbsp;in the&nbsp;bahmni_pacs&nbsp;postgres database.<br />Use default AE Title and ports as&nbsp;DCM4CHEE&nbsp;and&nbsp;2575</p><table data-layout=\"default\"><colgroup><col style=\"width: 680.0px;\" /></colgroup><tbody><tr><td><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6218fe90-1d9c-43bb-ac3b-4c540fda1f0f\"><ac:plain-text-body><![CDATA[psql -Upostgres bahmni_pacs\n\nINSERT into modality VALUES (1, 'DCM4CHEE','DCM4CHEE PACS', '<ip in which your instance is running>', 2575, 3000);\nINSERT into order_type VALUES(1, 'Radiology Order', 1);]]></ac:plain-text-body></ac:structured-macro><p /></td></tr></tbody></table><h2>6) Openmrs changes</h2><p>1.&nbsp;Create a new concept source in OpenMRS<br />To create a new concept source do the following:<br />In OpenMRS administration UI, click on &quot;Manage Concept Sources&quot; under concepts section.<br />Click on &quot;Add new Concept Source&quot;<br />Add a new concept source with name as 'PACS Procedure Code' and&nbsp;hl7 code as 'LOINC'<br /></p><p>2. Add Concept mapping for each Radiology concept like X-ray etc<br />For example, to add a concept mapping for &quot;abdomen ap&quot; test,<br />Search for &quot;abdomen ap&quot; in concept dictionary and click on Edit.<br />Scroll down to the &quot;Mappings&quot; and click on &quot;Add Mappings&quot;<br />Select &quot;ASSOCIATED-WITH&quot; or &quot;SAME-AS&quot; as Relationship<br />Select &quot;PACS Procedure Code&quot; as Source<br />Click on &quot;Create New Term&quot;<br />Enter a code (for ex: 1234, same code has to be setup in modality for 'abdomen ap') and select&nbsp;&quot;PACS Procedure Code&quot; as Source and save.<br />Now back on the 'Mappings' section in 'Edit Concept screen', search for the added reference term '1234' and save the concept.<br /></p><p>Step 2 has to be repeated for all the Radiology order related concepts.<br /></p><h2>7) Setup DCM4CHEE as Modality worklist</h2><p>Bahmni will send hl7 order messages to dcm4chee. dcm4chee will convert the order messages to worklist items. The items can then be polled by modality or another PACS.&nbsp;<br />Update dcm4chee to use orm2dcm_bahmni.xsl instead of default orm2dcm.xsl by going to the jmx console<br />Go to <a href=\"http://ip:8055/jmx-console/HtmlAdaptor\">http://ip:8055/jmx-console/HtmlAdaptor</a>&nbsp;&rarr; Select&nbsp;service=HL7Service,type=ORM under dcm4chee.archive &rarr; rename the <strong>orm2dcm.xsl  into orm2dcm_bahmni.xsl</strong><br />&nbsp;&rarr; Set&nbsp;Stylesheet = orm2dcm_bahmni.xsl</p><h2>8) Restart services</h2><p>RESTART Service dcm4chee<br />RESTART Service pacs-integration<br />Check for both the services and logs status</p><table data-layout=\"default\"><colgroup><col style=\"width: 680.0px;\" /></colgroup><tbody><tr><td><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4e5e4a36-6746-45d3-8816-80a862f67998\"><ac:plain-text-body><![CDATA[sudo systemctl restart pacs-integration\nsudo systemctl restart dcm4chee]]></ac:plain-text-body></ac:structured-macro><p /></td></tr></tbody></table><h2>9) Sanity Check</h2><p>Create a patient in bahmni&nbsp;&mdash;&gt; Add radiology&nbsp;orders&nbsp;&mdash;&gt; Save&mdash;&gt; Log into Radiology&mdash;&gt;Check if the order shows up in the modality list.</p><h2>10) Troubleshooting sync issues</h2><p>In case the sync is not working, investigate the following tables in bahmni-pacs db and try again. Any error will be logged in the <code>failed_events</code> table. </p><p>Logs can be found in the following location</p><p>/var/log/pac-integration/pac-integration.log</p><p>/var/lib/bahmni/dcm4chee-2.18.1-psql/server/default/log/server.log.</p><table data-layout=\"default\"><colgroup><col style=\"width: 680.0px;\" /></colgroup><tbody><tr><td><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"726527a9-2605-4171-8991-eee935ec608c\"><ac:plain-text-body><![CDATA[psql -Upostgres bahmni_pacs\ndelete from markers;\nDelete from failed_events;]]></ac:plain-text-body></ac:structured-macro><p /></td></tr></tbody></table><h2>12. Incase jmx-console is not accessible</h2><p>If that is the case ,then the following entry should be made in the /etc/httpd/conf.d/dcm4chee_ssl.conf file. <br /></p><table data-layout=\"default\"><colgroup><col style=\"width: 680.0px;\" /></colgroup><tbody><tr><td><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"36c282ff-ef73-417b-99c3-ed6a053b4f95\"><ac:plain-text-body><![CDATA[vi /etc/httpd/conf.d/dcm4chee_ssl.conf\nAdd the follwing line --> ProxyPass /jmx-console http://<ip>:8055/jmx-console\nSave the file\nRestart the pacs-integration service]]></ac:plain-text-body></ac:structured-macro><p /></td></tr></tbody></table><p /><p /><p><strong>If you still don't find the solution to your problem, please search / post your question on </strong><a href=\"http://talk.bahmni.org\"><strong>Bahmni OpenMRS Talk</strong></a><strong>.</strong></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/1474232338"
+      }
+    },
+    "view": {
+      "value": "<p>The below-mentioned steps can be followed to set up sync between to Bahmni and Radiology sync.</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 680.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p>Please note that these are sample steps and need to be carefully executed especially if you are in a Production Environment!</p></td></tr></tbody></table></div><p><br/></p><h2 id=\"SettingupsyncbetweenBahmniandDCM4CHEE-PreRequisites-PACS-IntegrationandDCM4CHEEisinstalled.\">Pre Requisites - PACS - Integration and DCM4CHEE is installed.</h2><h2 id=\"SettingupsyncbetweenBahmniandDCM4CHEE-1)Checkifpacs-integrationanddcm4cheeservicearerunning\">1) Check if pacs-integration and  dcm4chee service are running</h2><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 680.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"38b472b2-71cc-47ef-9ddb-04693112df4d\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">systemctl status dcm4chee\nsystemctl status pacs-integration\n\n\n# If it is not running then do\nsudo systemctl start dcm4chee\nsudo systemctl status pacs-integration</pre>\n</div></div><p /></td></tr></tbody></table></div><h2 id=\"SettingupsyncbetweenBahmniandDCM4CHEE-2)Checkifyouareabletoconnecttoboththedatabases\">2) Check if you are able to connect to both the databases</h2><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 680.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"aaa0c8cd-df3f-44d6-b0d0-7ce8e7d61951\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">psql -Upostgres bahmni_pacs\npsql -Upostgres pacsdb</pre>\n</div></div><p /></td></tr></tbody></table></div><h2 id=\"SettingupsyncbetweenBahmniandDCM4CHEE-3)Stopiptables\">3) Stop iptables</h2><h2 id=\"SettingupsyncbetweenBahmniandDCM4CHEE-Shouldbedoneonlyincaseoflocalvagrantsetup-NotinAWSorproductionsystems.\"><em>Should be done only in case of local vagrant setup - Not in AWS or production systems.</em></h2><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 680.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"56f83bc9-be8b-48dd-9899-01bac63793bc\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">systemctl stop iptables </pre>\n</div></div><p /></td></tr></tbody></table></div><h2 id=\"SettingupsyncbetweenBahmniandDCM4CHEE-4)Checkforthelogsforanyerrors\">4) Check for the logs for any errors </h2><p>In case of any exceptions in the logs the issue needs to be investigated.</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 680.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"774ee1bb-a370-4f84-929f-0df0af65249d\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">psql -Upostgres bahmni_pacs\npsql -Upostgres pacsdb</pre>\n</div></div><p /></td></tr></tbody></table></div><h2 id=\"SettingupsyncbetweenBahmniandDCM4CHEE-5)Makedatabasechangesinbahmni_pacsdatabase.\">5) Make database changes in bahmni_pacs database.<br/></h2><p>Set up data in tables modality, order_type and markers in the bahmni_pacs postgres database.<br/>Use default AE Title and ports as DCM4CHEE and 2575</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 680.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6218fe90-1d9c-43bb-ac3b-4c540fda1f0f\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">psql -Upostgres bahmni_pacs\n\nINSERT into modality VALUES (1, 'DCM4CHEE','DCM4CHEE PACS', '&lt;ip in which your instance is running&gt;', 2575, 3000);\nINSERT into order_type VALUES(1, 'Radiology Order', 1);</pre>\n</div></div><p /></td></tr></tbody></table></div><h2 id=\"SettingupsyncbetweenBahmniandDCM4CHEE-6)Openmrschanges\">6) Openmrs changes</h2><p>1. Create a new concept source in OpenMRS<br/>To create a new concept source do the following:<br/>In OpenMRS administration UI, click on &quot;Manage Concept Sources&quot; under concepts section.<br/>Click on &quot;Add new Concept Source&quot;<br/>Add a new concept source with name as 'PACS Procedure Code' and hl7 code as 'LOINC'<br/></p><p>2. Add Concept mapping for each Radiology concept like X-ray etc<br/>For example, to add a concept mapping for &quot;abdomen ap&quot; test,<br/>Search for &quot;abdomen ap&quot; in concept dictionary and click on Edit.<br/>Scroll down to the &quot;Mappings&quot; and click on &quot;Add Mappings&quot;<br/>Select &quot;ASSOCIATED-WITH&quot; or &quot;SAME-AS&quot; as Relationship<br/>Select &quot;PACS Procedure Code&quot; as Source<br/>Click on &quot;Create New Term&quot;<br/>Enter a code (for ex: 1234, same code has to be setup in modality for 'abdomen ap') and select &quot;PACS Procedure Code&quot; as Source and save.<br/>Now back on the 'Mappings' section in 'Edit Concept screen', search for the added reference term '1234' and save the concept.<br/></p><p>Step 2 has to be repeated for all the Radiology order related concepts.<br/></p><h2 id=\"SettingupsyncbetweenBahmniandDCM4CHEE-7)SetupDCM4CHEEasModalityworklist\">7) Setup DCM4CHEE as Modality worklist</h2><p>Bahmni will send hl7 order messages to dcm4chee. dcm4chee will convert the order messages to worklist items. The items can then be polled by modality or another PACS. <br/>Update dcm4chee to use orm2dcm_bahmni.xsl instead of default orm2dcm.xsl by going to the jmx console<br/>Go to <a class=\"external-link\" href=\"http://ip:8055/jmx-console/HtmlAdaptor\" rel=\"nofollow\">http://ip:8055/jmx-console/HtmlAdaptor</a> → Select service=HL7Service,type=ORM under dcm4chee.archive → rename the <strong>orm2dcm.xsl  into orm2dcm_bahmni.xsl</strong><br/> → Set Stylesheet = orm2dcm_bahmni.xsl</p><h2 id=\"SettingupsyncbetweenBahmniandDCM4CHEE-8)Restartservices\">8) Restart services</h2><p>RESTART Service dcm4chee<br/>RESTART Service pacs-integration<br/>Check for both the services and logs status</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 680.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4e5e4a36-6746-45d3-8816-80a862f67998\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">sudo systemctl restart pacs-integration\nsudo systemctl restart dcm4chee</pre>\n</div></div><p /></td></tr></tbody></table></div><h2 id=\"SettingupsyncbetweenBahmniandDCM4CHEE-9)SanityCheck\">9) Sanity Check</h2><p>Create a patient in bahmni —&gt; Add radiology orders —&gt; Save—&gt; Log into Radiology—&gt;Check if the order shows up in the modality list.</p><h2 id=\"SettingupsyncbetweenBahmniandDCM4CHEE-10)Troubleshootingsyncissues\">10) Troubleshooting sync issues</h2><p>In case the sync is not working, investigate the following tables in bahmni-pacs db and try again. Any error will be logged in the <code>failed_events</code> table. </p><p>Logs can be found in the following location</p><p>/var/log/pac-integration/pac-integration.log</p><p>/var/lib/bahmni/dcm4chee-2.18.1-psql/server/default/log/server.log.</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 680.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"726527a9-2605-4171-8991-eee935ec608c\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">psql -Upostgres bahmni_pacs\ndelete from markers;\nDelete from failed_events;</pre>\n</div></div><p /></td></tr></tbody></table></div><h2 id=\"SettingupsyncbetweenBahmniandDCM4CHEE-12.Incasejmx-consoleisnotaccessible\">12. Incase jmx-console is not accessible</h2><p>If that is the case ,then the following entry should be made in the /etc/httpd/conf.d/dcm4chee_ssl.conf file. <br/></p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 680.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"36c282ff-ef73-417b-99c3-ed6a053b4f95\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">vi /etc/httpd/conf.d/dcm4chee_ssl.conf\nAdd the follwing line --&gt; ProxyPass /jmx-console http://&lt;ip&gt;:8055/jmx-console\nSave the file\nRestart the pacs-integration service</pre>\n</div></div><p /></td></tr></tbody></table></div><p /><p /><p><strong>If you still don't find the solution to your problem, please search / post your question on </strong><a class=\"external-link\" href=\"http://talk.bahmni.org\" rel=\"nofollow\"><strong>Bahmni OpenMRS Talk</strong></a><strong>.</strong></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/1474232338"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/1474232338/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1474232338/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 739135040
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/1474232338/child",
+    "restrictions": "/rest/api/content/1474232338/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/1474232338/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=1474232338",
+    "webui": "/spaces/BAH/pages/1474232338/Setting+up+sync+between+Bahmni+and+DCM4CHEE",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/1474232338",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1474232338",
+    "tinyui": "/x/EgDfVw",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

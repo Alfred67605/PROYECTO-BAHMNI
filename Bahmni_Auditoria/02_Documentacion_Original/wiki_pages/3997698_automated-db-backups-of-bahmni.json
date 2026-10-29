@@ -1,0 +1,179 @@
+{
+  "id": "3997698",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3997698",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzk5NzY5OA==",
+  "status": "current",
+  "title": "Automated DB backups of Bahmni",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "createdDate": "2014-05-12T13:22:41.511Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3997698/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2024-01-05T05:46:56.631Z",
+    "friendlyWhen": "Jan 05, 2024",
+    "message": "",
+    "number": 24,
+    "minorEdit": false,
+    "syncRev": "0.357V2mOly7-6-4r0z_5y0Q.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$3997698.88",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3997698"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3997698/version/24"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"a9f947d4-2cb8-469d-94e8-1b0992a0dcd7\"><ac:parameter ac:name=\"title\">Geographically Separate Locations </ac:parameter><ac:rich-text-body><p>If you are considering a backup strategy for Production Data, do consider storing the backup offsite. A geographically different location ensures that events like flooding or fire, don't destroy all the backups too!</p><p>Please read this document on how to perform an <ac:link><ri:page ri:content-title=\"Performing a Backup of Bahmni Data on USB or External Drive\" ri:version-at-save=\"7\" /><ac:plain-text-link-body><![CDATA[encrypted backup on a USB]]></ac:plain-text-link-body></ac:link>.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"warning\" ac:schema-version=\"1\" ac:macro-id=\"282ee471-54a6-4407-a351-2ffe2836f44d\"><ac:rich-text-body><ol><li>This section of Bahmni backups is for Legacy version of Bahmni that runs on CentOS (prior to Bahmni Lite v1.0). These commands &quot;bahmni -i &lt;action&gt;&quot; are not available on Docker/Kubernetes version of Bahmni. For Docker version of Bahmni, see Docker documentation: <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3222601729/Performing+a+Backup+Restore+of+Container+Data+Files+docker\">Performing a Backup / Restore of Container Data &amp; Files (docker). </a></li><li>A training was conducted in Dec-2023, on how to perform a backup of all data from Bahmni on Centos V0.92/0.93. That will be very useful too. Please see the videos in the training guide here: <ac:link><ri:page ri:content-title=\"Migrating Bahmni from CentOS to Docker (Training)\" ri:version-at-save=\"3\" /></ac:link></li></ol></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"c9c80f8d-6e7b-45f8-8420-bdbc621adffb\"><ac:rich-text-body><p><strong>Please read this document on overall Bahmni BACKUP/RESTORE from V0.88 onwards of Bahmni:</strong><span> </span><ac:link><ri:page ri:content-title=\"Backup/Restore commands\" ri:version-at-save=\"94\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><h3>DB Backup using bahmni command line tool (available from v0.81 onwards)</h3><p>'bahmni' command line tool will be available in the machine where we install the 'bahmni-installer' rpm -<ac:link ac:anchor=\"Step2:PerformthefollowingstepstoinstalltheRPMs\"><ri:page ri:content-title=\"Install Bahmni on CentOS\" ri:version-at-save=\"178\" /></ac:link></p><p>To take db-backup, following command has to be executed:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8d6ff97a-eb0f-4dbc-b297-2f121f9434fd\"><ac:plain-text-body><![CDATA[bahmni -i local db-backup]]></ac:plain-text-body></ac:structured-macro><p>If custom inventory file is setup, following command has to be executed:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b88c0b13-bc27-4558-bb9d-ce06eb8c50a8\"><ac:plain-text-body><![CDATA[bahmni -i <inventory_file_name> db-backup]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p>The command will take the backup of each database into a seperate file in the machine where the databases are present at file location&nbsp;<strong>/db-backup</strong>&nbsp;as below:</p><p><ac:image ac:width=\"850\"><ri:attachment ri:filename=\"Screen Shot 2016-05-25 at 3.55.00 pm.png\" ri:version-at-save=\"1\" /></ac:image></p><p><br /></p><p>Optionally, it would also allow you to copy the backup to the machine from where the command is executed by shooting the following question:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d7873f93-3f07-4482-8cd9-ec9d950dce6e\"><ac:plain-text-body><![CDATA[Do you want to copy db backup to local machine in /db-backup directory? y/N: y]]></ac:plain-text-body></ac:structured-macro><p>This would be useful in multi-machine setup where databases are present at different location. When all databases are present in the same machine from which command is executed, 'N' can be given as the answer to the above question.</p><h3>DB Restore using bahmni command line tool (available from v0.81 onwards)</h3><p>To restore the database, `db-restore` command from bahmni command line tool can be used. The command can restore only one database at a time and it will drop the database if already present and then restore the specified dump file.</p><p><br /></p><div>The syntax of db-restore command is as follows:</div><div><p><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"af812525-fcc9-4b8a-b7f2-b2a0fc1b74b3\"><ac:plain-text-body><![CDATA[bahmni -db <database_name> -path <zipped_sql_file_path> db-restore\n \n# If custom inventory file is present\nbahmni -i <inventory_file_name> -db <database_name> -path <zipped_sql_file_path> db-restore\n\n\n#Examples:\nbahmni -i jss -db openmrs -path /db-backup/openmrs_dump_20160525-155357.sql.gz db-restore\nbahmni -i jss -db clinlims path /db-backup/clinlims_dump_20160525-155359.sql.gz db-restore]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></div><h2>Automated db-backup</h2><h4>Download the backup script&nbsp;</h4><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b29c5496-99d9-4a9e-a5b5-0cbc7eb4c194\"><ac:plain-text-body><![CDATA[wget  https://gist.githubusercontent.com/sravanthi17/27e239bfe1e0773d982f7b715fa582b3/raw/178ccc164693d9c134dd3324387ce38b3dd7783b/db-backup.sh {path_to_save_script}]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"warning\" ac:schema-version=\"1\" ac:macro-id=\"7ff67075-f00f-45eb-88d2-1e1c632f89b0\"><ac:rich-text-body><p>replace {path_to_save_script} with the proper value. This is where the script will be downloaded to.</p></ac:rich-text-body></ac:structured-macro><p><br /></p><h4>Create a crontab</h4><p>If you want to setup an automated schedule to backup, then you can create a crontab entry to trigger this command periodically. For example:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"49ac0218-91d5-4341-b04a-e420492a3027\"><ac:parameter ac:name=\"language\">bash</ac:parameter><ac:parameter ac:name=\"title\">Auto-schedule backups of DB</ac:parameter><ac:plain-text-body><![CDATA[# Edit the crontab file of root user\ncrontab -u root -e \n \n# Make entry as (for running twice a day at 2PM, and 10PM)\n00 14,22 * * * sudo {path_to_save_script}/backup.sh \n\n00 14,22 * * * sudo {path_to_save_script}/backup.sh \n \n# eg. 00 14,22 * * * sudo {path_to_save_script}/backup.sh \n# eg. 00 14,22 * * * sudo {path_to_save_script}/backup.sh ]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"dcff5cd1-5e3a-49db-8d6e-2a265095f175\"><ac:parameter ac:name=\"title\">crontab may fail for sudo</ac:parameter><ac:rich-text-body><p>cron may fail silently for above command on some installations, since we use the<strong> sudo</strong> command in our scripts. To enable sudo commands to run in cron, you need to disable <strong>requiretty</strong>. Run <strong>visudo</strong> command, and comment out the line: <strong>Defaults requiretty</strong></p><p>For more details on this read: <a href=\"http://unix.stackexchange.com/questions/49077/why-does-cron-silently-fail-to-run-sudo-stuff-in-my-script\">http://unix.stackexchange.com/questions/49077/why-does-cron-silently-fail-to-run-sudo-stuff-in-my-script</a></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"7c2f51cd-88a9-4956-b5f5-5687add725a8\"><ac:parameter ac:name=\"language\">bash</ac:parameter><ac:parameter ac:name=\"title\">Auto delete of old files</ac:parameter><ac:plain-text-body><![CDATA[# Add this entry in crontab to delete files older than 15 days from /db-backup folder (every evening at 6 PM)\n00 18 * * * /usr/bin/find /db-backup -type f -mtime +15 -exec /bin/rm -f {} \\;]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p>For more examples on crontab entries read this: <a href=\"http://www.thegeekstuff.com/2009/06/15-practical-crontab-examples/\">crontab</a></p><p><br /></p><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"53e24c77-5613-462e-8884-c286290c0c64\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><ol><li><a href=\"https://talk.openmrs.org/t/how-do-i-copy-migrate-all-the-bahmni-setup-done-on-one-machine-to-another-machine/4519\">H</a><a href=\"https://talk.openmrs.org/t/how-do-i-copy-migrate-all-the-bahmni-setup-done-on-one-machine-to-another-machine/4519\">ow do I copy all the setup / data from one machine to another?</a></li><li><a href=\"https://talk.openmrs.org/t/how-to-start-with-a-fresh-clean-database-for-bahmni/4139\">(Discussion) Starting with a fresh database</a></li><li><a href=\"https://talk.openmrs.org/t/database-related-questions-access-change-password-backup/4513\">(Discussion) How to manage credentials for Bahmni?</a></li></ol></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3997698"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a9f947d4-2cb8-469d-94e8-1b0992a0dcd7\" data-macro-name=\"info\"><p class=\"title\">Geographically Separate Locations </p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>If you are considering a backup strategy for Production Data, do consider storing the backup offsite. A geographically different location ensures that events like flooding or fire, don't destroy all the backups too!</p><p>Please read this document on how to perform an <a href=\"/wiki/spaces/BAH/pages/92111010/Performing+a+Backup+of+Bahmni+Data+on+USB+or+External+Drive\" data-linked-resource-id=\"92111010\" data-linked-resource-version=\"7\" data-linked-resource-type=\"page\">encrypted backup on a USB</a>.</p></div></div><div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"282ee471-54a6-4407-a351-2ffe2836f44d\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><ol><li>This section of Bahmni backups is for Legacy version of Bahmni that runs on CentOS (prior to Bahmni Lite v1.0). These commands &quot;bahmni -i &lt;action&gt;&quot; are not available on Docker/Kubernetes version of Bahmni. For Docker version of Bahmni, see Docker documentation: <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3222601729/Performing+a+Backup+Restore+of+Container+Data+Files+docker\" rel=\"nofollow\">Performing a Backup / Restore of Container Data &amp; Files (docker). </a></li><li>A training was conducted in Dec-2023, on how to perform a backup of all data from Bahmni on Centos V0.92/0.93. That will be very useful too. Please see the videos in the training guide here: <a href=\"/wiki/spaces/BAH/pages/3298590813/Migrating+Bahmni+from+CentOS+to+Docker+Training\" data-linked-resource-id=\"3298590813\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">Migrating Bahmni from CentOS to Docker (Training)</a></li></ol></div></div><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c9c80f8d-6e7b-45f8-8420-bdbc621adffb\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>Please read this document on overall Bahmni BACKUP/RESTORE from V0.88 onwards of Bahmni:</strong><span> </span><a href=\"/wiki/spaces/BAH/pages/114729037/Backup+Restore+commands\" data-linked-resource-id=\"114729037\" data-linked-resource-version=\"94\" data-linked-resource-type=\"page\">Backup/Restore commands</a></p></div></div><h3 id=\"AutomatedDBbackupsofBahmni-DBBackupusingbahmnicommandlinetool(availablefromv0.81onwards)\">DB Backup using bahmni command line tool (available from v0.81 onwards)</h3><p>'bahmni' command line tool will be available in the machine where we install the 'bahmni-installer' rpm -<a href=\"/wiki/spaces/BAH/pages/33128505/Install+Bahmni+on+CentOS#InstallBahmnionCentOS-Step2:PerformthefollowingstepstoinstalltheRPMs\" data-linked-resource-id=\"33128505\" data-linked-resource-version=\"178\" data-linked-resource-type=\"page\">Install Bahmni on CentOS#Step2:PerformthefollowingstepstoinstalltheRPMs</a></p><p>To take db-backup, following command has to be executed:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8d6ff97a-eb0f-4dbc-b297-2f121f9434fd\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">bahmni -i local db-backup</pre>\n</div></div><p>If custom inventory file is setup, following command has to be executed:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b88c0b13-bc27-4558-bb9d-ce06eb8c50a8\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">bahmni -i &lt;inventory_file_name&gt; db-backup</pre>\n</div></div><p><br/></p><p>The command will take the backup of each database into a seperate file in the machine where the databases are present at file location <strong>/db-backup</strong> as below:</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"850\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3997698/Screen%20Shot%202016-05-25%20at%203.55.00%20pm.png?version=1&amp;modificationDate=1464171951139&amp;cacheVersion=1&amp;api=v2&amp;width=850&amp;height=127\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3997698/Screen%20Shot%202016-05-25%20at%203.55.00%20pm.png?version=1&amp;modificationDate=1464171951139&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"61997243\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-05-25 at 3.55.00 pm.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3997698\" data-linked-resource-container-version=\"24\" data-media-id=\"3724891c-20e7-4fcc-b5f3-da7cd831a5b8\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3997698/Screen%20Shot%202016-05-25%20at%203.55.00%20pm.png?version=1&amp;modificationDate=1464171951139&amp;cacheVersion=1&amp;api=v2&amp;width=1700&amp;height=254 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3997698/Screen%20Shot%202016-05-25%20at%203.55.00%20pm.png?version=1&amp;modificationDate=1464171951139&amp;cacheVersion=1&amp;api=v2&amp;width=850&amp;height=127 1x\"></span></p><p><br/></p><p>Optionally, it would also allow you to copy the backup to the machine from where the command is executed by shooting the following question:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d7873f93-3f07-4482-8cd9-ec9d950dce6e\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Do you want to copy db backup to local machine in /db-backup directory? y/N: y</pre>\n</div></div><p>This would be useful in multi-machine setup where databases are present at different location. When all databases are present in the same machine from which command is executed, 'N' can be given as the answer to the above question.</p><h3 id=\"AutomatedDBbackupsofBahmni-DBRestoreusingbahmnicommandlinetool(availablefromv0.81onwards)\">DB Restore using bahmni command line tool (available from v0.81 onwards)</h3><p>To restore the database, `db-restore` command from bahmni command line tool can be used. The command can restore only one database at a time and it will drop the database if already present and then restore the specified dump file.</p><p><br/></p><div>The syntax of db-restore command is as follows:</div><div><p><br/></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"af812525-fcc9-4b8a-b7f2-b2a0fc1b74b3\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">bahmni -db &lt;database_name&gt; -path &lt;zipped_sql_file_path&gt; db-restore\n \n# If custom inventory file is present\nbahmni -i &lt;inventory_file_name&gt; -db &lt;database_name&gt; -path &lt;zipped_sql_file_path&gt; db-restore\n\n\n#Examples:\nbahmni -i jss -db openmrs -path /db-backup/openmrs_dump_20160525-155357.sql.gz db-restore\nbahmni -i jss -db clinlims path /db-backup/clinlims_dump_20160525-155359.sql.gz db-restore</pre>\n</div></div></div><h2 id=\"AutomatedDBbackupsofBahmni-Automateddb-backup\">Automated db-backup</h2><h4 id=\"AutomatedDBbackupsofBahmni-Downloadthebackupscript\">Download the backup script </h4><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b29c5496-99d9-4a9e-a5b5-0cbc7eb4c194\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">wget  https://gist.githubusercontent.com/sravanthi17/27e239bfe1e0773d982f7b715fa582b3/raw/178ccc164693d9c134dd3324387ce38b3dd7783b/db-backup.sh {path_to_save_script}</pre>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7ff67075-f00f-45eb-88d2-1e1c632f89b0\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>replace {path_to_save_script} with the proper value. This is where the script will be downloaded to.</p></div></div><p><br/></p><h4 id=\"AutomatedDBbackupsofBahmni-Createacrontab\">Create a crontab</h4><p>If you want to setup an automated schedule to backup, then you can create a crontab entry to trigger this command periodically. For example:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"49ac0218-91d5-4341-b04a-e420492a3027\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Auto-schedule backups of DB</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\"># Edit the crontab file of root user\ncrontab -u root -e \n \n# Make entry as (for running twice a day at 2PM, and 10PM)\n00 14,22 * * * sudo {path_to_save_script}/backup.sh \n\n00 14,22 * * * sudo {path_to_save_script}/backup.sh \n \n# eg. 00 14,22 * * * sudo {path_to_save_script}/backup.sh \n# eg. 00 14,22 * * * sudo {path_to_save_script}/backup.sh </pre>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"dcff5cd1-5e3a-49db-8d6e-2a265095f175\" data-macro-name=\"info\"><p class=\"title\">crontab may fail for sudo</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>cron may fail silently for above command on some installations, since we use the<strong> sudo</strong> command in our scripts. To enable sudo commands to run in cron, you need to disable <strong>requiretty</strong>. Run <strong>visudo</strong> command, and comment out the line: <strong>Defaults requiretty</strong></p><p>For more details on this read: <a class=\"external-link\" href=\"http://unix.stackexchange.com/questions/49077/why-does-cron-silently-fail-to-run-sudo-stuff-in-my-script\" rel=\"nofollow\">http://unix.stackexchange.com/questions/49077/why-does-cron-silently-fail-to-run-sudo-stuff-in-my-script</a></p></div></div><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7c2f51cd-88a9-4956-b5f5-5687add725a8\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Auto delete of old files</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\"># Add this entry in crontab to delete files older than 15 days from /db-backup folder (every evening at 6 PM)\n00 18 * * * /usr/bin/find /db-backup -type f -mtime +15 -exec /bin/rm -f {} \\;</pre>\n</div></div><p><br/></p><p>For more examples on crontab entries read this: <a class=\"external-link\" href=\"http://www.thegeekstuff.com/2009/06/15-practical-crontab-examples/\" rel=\"nofollow\">crontab</a></p><p><br/></p><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"53e24c77-5613-462e-8884-c286290c0c64\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<ol><li><a class=\"external-link\" href=\"https://talk.openmrs.org/t/how-do-i-copy-migrate-all-the-bahmni-setup-done-on-one-machine-to-another-machine/4519\" rel=\"nofollow\">H</a><a class=\"external-link\" href=\"https://talk.openmrs.org/t/how-do-i-copy-migrate-all-the-bahmni-setup-done-on-one-machine-to-another-machine/4519\" rel=\"nofollow\">ow do I copy all the setup / data from one machine to another?</a></li><li><a class=\"external-link\" href=\"https://talk.openmrs.org/t/how-to-start-with-a-fresh-clean-database-for-bahmni/4139\" rel=\"nofollow\">(Discussion) Starting with a fresh database</a></li><li><a class=\"external-link\" href=\"https://talk.openmrs.org/t/database-related-questions-access-change-password-backup/4513\" rel=\"nofollow\">(Discussion) How to manage credentials for Bahmni?</a></li></ol>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3997698"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "review-needed",
+          "id": "30146561",
+          "label": "review-needed"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 1,
+      "_links": {
+        "next": "/rest/api/content/3997698/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3997698/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3997698/child",
+    "restrictions": "/rest/api/content/3997698/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3997698/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3997698",
+    "webui": "/spaces/BAH/pages/3997698/Automated+DB+backups+of+Bahmni",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3997698",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3997698",
+    "tinyui": "/x/AgA9",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

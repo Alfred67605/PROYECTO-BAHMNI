@@ -1,0 +1,171 @@
+{
+  "id": "111411310",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/111411310",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTExNDExMzEw",
+  "status": "current",
+  "title": "Configure Reports in OpenERP",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:30baaa2c-eb10-4bb1-b552-9327170b8e3f",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Amol Chavan",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:30baaa2c-eb10-4bb1-b552-9327170b8e3f",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Amol Chavan",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:30baaa2c-eb10-4bb1-b552-9327170b8e3f"
+      }
+    },
+    "createdDate": "2017-01-03T11:58:38.368Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/111411310/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "when": "2017-02-03T06:05:16.258Z",
+    "friendlyWhen": "Feb 03, 2017",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "syncRev": "0.kyPLKWFaSnYEJm6O2v1p5g.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$111411310.38",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/111411310"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/111411310/version/7"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p><span style=\"color: rgb(0,0,0);\">User can export reports using this configuration for any analysis. User can create filter list and save it for future use.<br style=\"color: rgb(0,0,0);\" /></span></p><h2><span style=\"color: rgb(0,0,0);\">Steps</span></h2><h3><span style=\"color: rgb(0,0,0);\">1.&nbsp;Login</span></h3><p>Login to OpenERP with admin privileges.</p><h3><span style=\"color: rgb(0,0,0);\"><strong>2. Click on Purchases, Purchase Orders</strong>.</span></h3><p><br /></p><p><span style=\"color: rgb(0,0,0);\">Choose Purchases and then Purchase Order from left side panel as shown in the screenshot below.</span></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"ffe7ba81-a545-45c8-b1af-4374e780f2e2\"><ac:parameter ac:name=\"title\">Example</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\">As an example, we have added Purchase flow, similarly we can export any module report like Sales,Accounting,Warehouse</span></p></ac:rich-text-body></ac:structured-macro><p><br /></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:title=\"Click on Purchases then click on Purchase order\" ac:alt=\"Click on Purchases then click on Purchase order\" ac:width=\"1000\"><ri:attachment ri:filename=\"Purchase Orders   OpenERP.png\" /></ac:image></span></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\"><strong>Purchase Orders.</strong></span><br /></span></p><h3><span style=\"color: rgb(0,0,0);\"><strong>3.</strong> Add<strong> the date filter from the Advance filter.</strong><br /></span></h3><p><br /></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\"><strong><ac:image ac:width=\"1000\"><ri:attachment ri:filename=\"Advance_Date_filter_New.png\" /></ac:image><br /></strong></span></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\"><strong>Advance Filters.</strong></span></p><h3><span><span style=\"color: rgb(0,0,0);\"><strong>3. </strong></span><strong>Click on</strong></span><strong> Reference<strong> Column &amp; Export Report</strong>.</strong></h3><p style=\"text-align: center;\"><ac:image ac:width=\"1000\"><ri:attachment ri:filename=\"Purchase Orders   OpenERP_Export.png\" /></ac:image></p><p style=\"text-align: center;\"><strong>Column name &amp; Export Report .</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><h3 style=\"text-align: left;\"><strong>4.We can add</strong> columns<strong> from the Available fields &amp; save the List for the future use.</strong></h3><p style=\"text-align: center;\"><ac:image ac:width=\"1000\"><ri:attachment ri:filename=\"Purchase Orders   OpenERP_Future_List.png\" /></ac:image></p><p style=\"text-align: center;\"><strong>Save Fields List</strong></p><p style=\"text-align: left;\">User can add configuration &amp; export report in any module of openerp.</p><p><br /></p></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"eddf93f6-bb0d-414a-90d5-d02ec0df0800\"><ac:parameter ac:name=\"style\">none</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/111411310"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ConfigureReportsinOpenERP-PurposeandBenefits\">Purpose and Benefits</h2><p><span class=\"legacy-color-text-default\">User can export reports using this configuration for any analysis. User can create filter list and save it for future use.<br style=\"color: rgb(0,0,0);\"/></span></p><h2 id=\"ConfigureReportsinOpenERP-Steps\"><span class=\"legacy-color-text-default\">Steps</span></h2><h3 id=\"ConfigureReportsinOpenERP-1.Login\"><span class=\"legacy-color-text-default\">1. Login</span></h3><p>Login to OpenERP with admin privileges.</p><h3 id=\"ConfigureReportsinOpenERP-2.ClickonPurchases,PurchaseOrders.\"><span class=\"legacy-color-text-default\"><strong>2. Click on Purchases, Purchase Orders</strong>.</span></h3><p><br/></p><p><span class=\"legacy-color-text-default\">Choose Purchases and then Purchase Order from left side panel as shown in the screenshot below.</span></p><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ffe7ba81-a545-45c8-b1af-4374e780f2e2\" data-macro-name=\"tip\"><p class=\"title\">Example</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><span class=\"legacy-color-text-default\">As an example, we have added Purchase flow, similarly we can export any module report like Sales,Accounting,Warehouse</span></p></div></div><p><br/></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"Click on Purchases then click on Purchase order\" width=\"1000\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/111411310/Purchase%20Orders%20%20%20OpenERP.png?version=1&amp;modificationDate=1483444719653&amp;cacheVersion=1&amp;api=v2&amp;width=1000&amp;height=357\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/111411310/Purchase%20Orders%20%20%20OpenERP.png?version=1&amp;modificationDate=1483444719653&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"111411293\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Purchase Orders   OpenERP.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"111411310\" data-linked-resource-container-version=\"7\" data-media-id=\"45eb7717-752d-4031-8a60-6f7d78c7bede\" data-media-type=\"file\" title=\"Click on Purchases then click on Purchase order\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/111411310/Purchase%20Orders%20%20%20OpenERP.png?version=1&amp;modificationDate=1483444719653&amp;cacheVersion=1&amp;api=v2&amp;width=1033&amp;height=369 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/111411310/Purchase%20Orders%20%20%20OpenERP.png?version=1&amp;modificationDate=1483444719653&amp;cacheVersion=1&amp;api=v2&amp;width=1000&amp;height=357 1x\"></span></span></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\"><strong>Purchase Orders.</strong></span><br/></span></p><h3 id=\"ConfigureReportsinOpenERP-3.AddthedatefilterfromtheAdvancefilter.\"><span class=\"legacy-color-text-default\"><strong>3.</strong> Add<strong> the date filter from the Advance filter.</strong><br/></span></h3><p><br/></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\"><strong><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"1000\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/111411310/Advance_Date_filter_New.png?version=1&amp;modificationDate=1483444720151&amp;cacheVersion=1&amp;api=v2&amp;width=1000&amp;height=500\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/111411310/Advance_Date_filter_New.png?version=1&amp;modificationDate=1483444720151&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"111411291\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Advance_Date_filter_New.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"111411310\" data-linked-resource-container-version=\"7\" data-media-id=\"178c38ef-c57b-4a00-81d0-9828c46cb5b2\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/111411310/Advance_Date_filter_New.png?version=1&amp;modificationDate=1483444720151&amp;cacheVersion=1&amp;api=v2&amp;width=1838&amp;height=919 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/111411310/Advance_Date_filter_New.png?version=1&amp;modificationDate=1483444720151&amp;cacheVersion=1&amp;api=v2&amp;width=1000&amp;height=500 1x\"></span><br/></strong></span></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\"><strong>Advance Filters.</strong></span></p><h3 id=\"ConfigureReportsinOpenERP-3.ClickonReferenceColumn&amp;ExportReport.\"><span><span class=\"legacy-color-text-default\"><strong>3. </strong></span><strong>Click on</strong></span><strong> Reference<strong> Column &amp; Export Report</strong>.</strong></h3><p style=\"text-align: center;\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"1000\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/111411310/Purchase%20Orders%20%20%20OpenERP_Export.png?version=1&amp;modificationDate=1483444719092&amp;cacheVersion=1&amp;api=v2&amp;width=1000&amp;height=506\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/111411310/Purchase%20Orders%20%20%20OpenERP_Export.png?version=1&amp;modificationDate=1483444719092&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"111411294\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Purchase Orders   OpenERP_Export.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"111411310\" data-linked-resource-container-version=\"7\" data-media-id=\"9c98cd93-b72e-4569-939c-64e08fdd0720\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/111411310/Purchase%20Orders%20%20%20OpenERP_Export.png?version=1&amp;modificationDate=1483444719092&amp;cacheVersion=1&amp;api=v2&amp;width=1835&amp;height=929 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/111411310/Purchase%20Orders%20%20%20OpenERP_Export.png?version=1&amp;modificationDate=1483444719092&amp;cacheVersion=1&amp;api=v2&amp;width=1000&amp;height=506 1x\"></span></p><p style=\"text-align: center;\"><strong>Column name &amp; Export Report .</strong>                       </p><h3 style=\"text-align: left;\" id=\"ConfigureReportsinOpenERP-4.WecanaddcolumnsfromtheAvailablefields&amp;savetheListforthefutureuse.\"><strong>4.We can add</strong> columns<strong> from the Available fields &amp; save the List for the future use.</strong></h3><p style=\"text-align: center;\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"1000\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/111411310/Purchase%20Orders%20%20%20OpenERP_Future_List.png?version=1&amp;modificationDate=1483444718382&amp;cacheVersion=1&amp;api=v2&amp;width=921&amp;height=626\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/111411310/Purchase%20Orders%20%20%20OpenERP_Future_List.png?version=1&amp;modificationDate=1483444718382&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"111411299\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Purchase Orders   OpenERP_Future_List.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"111411310\" data-linked-resource-container-version=\"7\" data-media-id=\"77840c19-99db-4e1b-8fb9-d5b3e8a2ed2a\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/111411310/Purchase%20Orders%20%20%20OpenERP_Future_List.png?version=1&amp;modificationDate=1483444718382&amp;cacheVersion=1&amp;api=v2&amp;width=921&amp;height=626 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/111411310/Purchase%20Orders%20%20%20OpenERP_Future_List.png?version=1&amp;modificationDate=1483444718382&amp;cacheVersion=1&amp;api=v2&amp;width=921&amp;height=626 1x\"></span></p><p style=\"text-align: center;\"><strong>Save Fields List</strong></p><p style=\"text-align: left;\">User can add configuration &amp; export report in any module of openerp.</p><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-cssliststyle=\"none\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"eddf93f6-bb0d-414a-90d5-d02ec0df0800\" data-macro-name=\"toc\"> </div><p> </p></div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/111411310"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/111411310/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/111411310/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 718565185
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/111411310/child",
+    "restrictions": "/rest/api/content/111411310/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/111411310/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=111411310",
+    "webui": "/spaces/BAH/pages/111411310/Configure+Reports+in+OpenERP",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/111411310",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/111411310",
+    "tinyui": "/x/bgCkBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

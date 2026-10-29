@@ -1,0 +1,172 @@
+{
+  "id": "115085179",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/115085179",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE1MDg1MTc5",
+  "status": "current",
+  "title": "Create a new Form",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:f128f81b-6cd6-413f-84e4-0cb2a7a99981",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Yang Zeng (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:f128f81b-6cd6-413f-84e4-0cb2a7a99981",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Yang Zeng (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:f128f81b-6cd6-413f-84e4-0cb2a7a99981"
+      }
+    },
+    "createdDate": "2017-03-01T03:54:54.272Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115085179/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5cb5a65957a5370e560f651c",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sravya Kanagarla",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5cb5a65957a5370e560f651c",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sravya Kanagarla",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5cb5a65957a5370e560f651c"
+      }
+    },
+    "when": "2019-05-06T07:07:33.043Z",
+    "friendlyWhen": "May 06, 2019",
+    "message": "",
+    "number": 14,
+    "minorEdit": false,
+    "syncRev": "0.CSFrlXTG9qISEZCndwAaKg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$115085179.87",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/115085179"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115085179/version/14"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p><span style=\"color: rgb(0,0,0);\">Form Builder provides an easy way to create a new form and add the controls which are required into it. This way is more convenient for an implementer to create a form than the standard way of using a JSON file.</span></p><p><br /></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"8b9467e7-e78b-46cc-85ed-bc7e10321fb8\"><ac:parameter ac:name=\"title\">Forms Directory</ac:parameter><ac:rich-text-body><p>All the forms are saved in <strong>/home/bahmni/clinical_forms/ </strong>directory. The directory is set as a global property <strong>'bahmni.forms.directory'.&nbsp;</strong>Implementers can change the directory by updating the global property.</p></ac:rich-text-body></ac:structured-macro><h2><span style=\"color: rgb(0,0,0);\">Steps</span></h2><h3><span style=\"color: rgb(0,0,0);\">1. Go to Form Builder</span></h3><p><span style=\"color: rgb(0,0,0);\">Home Dashboard&nbsp;&rarr; Implementer Interface&nbsp;&rarr; Form Builder</span></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"image2017-3-1_14-7-37.png\" ri:version-at-save=\"1\" /></ac:image><br /></span></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\"><strong>Form builder dashboard</strong></span></p><h3 style=\"text-align: left;\"><span style=\"color: rgb(0,0,0);\"><strong>2. Create a New Form</strong></span></h3><p style=\"text-align: left;\"><span style=\"color: rgb(0,0,0);\">Click on the</span> <em><span style=\"color: rgb(0,0,0);\">Create a Form </span></em><span style=\"color: rgb(0,0,0);\">button and enter a name for the new form.</span></p><p><span style=\"color: rgb(0,0,0);\"><strong><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"image2017-3-1_14-30-33.png\" ri:version-at-save=\"1\" /></ac:image></strong></span></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\"><strong style=\"text-align: center;\">Create a form</strong></span></p><p style=\"text-align: left;\"><br /></p><h3><span style=\"color: rgb(0,0,0);\"><strong>3. Add Controls and Save the Form</strong></span></h3><p><span style=\"color: rgb(0,0,0);\"><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/115085295/Add+Controls\">Add some controls</a> into the form. The new form will be given a version named &quot;v1&quot; automatically.&nbsp;</span>After the form is saved, the&nbsp;<span style=\"color: rgb(153,204,0);\"><em><span style=\"color: rgb(0,0,0);\">publish </span></em><span style=\"color: rgb(0,0,0);\">button</span>&nbsp;<span style=\"color: rgb(0,0,0);\">is enabled.</span></span></p><p><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"image2017-3-1_18-30-45.png\" ri:version-at-save=\"1\" /></ac:image></p><h3><span style=\"color: rgb(0,0,0);\">4. Publish the Form</span></h3><p><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(153,204,0);\"><span style=\"color: rgb(0,0,0);\">Click on the <em>publish</em> button, the form will be published into the Bahmni app which means it can be used by the doctor. Once a form is published, it can only be edited directly. To edit a form <em>after it is published</em>, please <a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Edit+a+published+form\">refer to these steps</a>.</span></span></span></p><p><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(153,204,0);\"><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"image2017-3-1_18-32-5.png\" ri:version-at-save=\"1\" /></ac:image></span></span></span></p><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"0b744f92-0474-4511-ba50-ea4dc8343d16\"><ac:parameter ac:name=\"style\">none</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"4084f2de-c0c2-4eeb-b02a-1184ccf78a4a\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Add Controls\" ri:version-at-save=\"16\" /></ac:link></p><p><ac:link><ri:page ri:content-title=\"Edit a Published Form\" ri:version-at-save=\"11\" /></ac:link></p><p><ac:link><ri:page ri:content-title=\"Rename a Form\" ri:version-at-save=\"6\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/115085179"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"CreateanewForm-PurposeandBenefits\">Purpose and Benefits</h2><p><span class=\"legacy-color-text-default\">Form Builder provides an easy way to create a new form and add the controls which are required into it. This way is more convenient for an implementer to create a form than the standard way of using a JSON file.</span></p><p><br/></p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8b9467e7-e78b-46cc-85ed-bc7e10321fb8\" data-macro-name=\"note\"><p class=\"title\">Forms Directory</p><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>All the forms are saved in <strong>/home/bahmni/clinical_forms/ </strong>directory. The directory is set as a global property <strong>'bahmni.forms.directory'. </strong>Implementers can change the directory by updating the global property.</p></div></div><h2 id=\"CreateanewForm-Steps\"><span class=\"legacy-color-text-default\">Steps</span></h2><h3 id=\"CreateanewForm-1.GotoFormBuilder\"><span class=\"legacy-color-text-default\">1. Go to Form Builder</span></h3><p><span class=\"legacy-color-text-default\">Home Dashboard → Implementer Interface → Form Builder</span></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115085179/image2017-3-1_14-7-37.png?version=1&amp;modificationDate=1488348458929&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=199\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/115085179/image2017-3-1_14-7-37.png?version=1&amp;modificationDate=1488348458929&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115087201\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-3-1_14-7-37.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"115085179\" data-linked-resource-container-version=\"14\" data-media-id=\"9d67233f-3873-4c74-827d-c2d7b7c0f831\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115085179/image2017-3-1_14-7-37.png?version=1&amp;modificationDate=1488348458929&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=398 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/115085179/image2017-3-1_14-7-37.png?version=1&amp;modificationDate=1488348458929&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=199 1x\"></span><br/></span></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\"><strong>Form builder dashboard</strong></span></p><h3 style=\"text-align: left;\" id=\"CreateanewForm-2.CreateaNewForm\"><span class=\"legacy-color-text-default\"><strong>2. Create a New Form</strong></span></h3><p style=\"text-align: left;\"><span class=\"legacy-color-text-default\">Click on the</span> <em><span class=\"legacy-color-text-default\">Create a Form </span></em><span class=\"legacy-color-text-default\">button and enter a name for the new form.</span></p><p><span class=\"legacy-color-text-default\"><strong><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115085179/image2017-3-1_14-30-33.png?version=1&amp;modificationDate=1488349836325&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=275\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/115085179/image2017-3-1_14-30-33.png?version=1&amp;modificationDate=1488349836325&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115087466\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-3-1_14-30-33.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"115085179\" data-linked-resource-container-version=\"14\" data-media-id=\"ad847f7c-ae57-4eac-b91b-b8f05142683b\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115085179/image2017-3-1_14-30-33.png?version=1&amp;modificationDate=1488349836325&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=550 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/115085179/image2017-3-1_14-30-33.png?version=1&amp;modificationDate=1488349836325&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=275 1x\"></span></strong></span></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\"><strong style=\"text-align: center;\">Create a form</strong></span></p><p style=\"text-align: left;\"><br/></p><h3 id=\"CreateanewForm-3.AddControlsandSavetheForm\"><span class=\"legacy-color-text-default\"><strong>3. Add Controls and Save the Form</strong></span></h3><p><span class=\"legacy-color-text-default\"><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/115085295/Add+Controls\" rel=\"nofollow\">Add some controls</a> into the form. The new form will be given a version named &quot;v1&quot; automatically. </span>After the form is saved, the <span class=\"legacy-color-text-green3\"><em><span class=\"legacy-color-text-default\">publish </span></em><span class=\"legacy-color-text-default\">button</span> <span class=\"legacy-color-text-default\">is enabled.</span></span></p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115085179/image2017-3-1_18-30-45.png?version=1&amp;modificationDate=1488364246926&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=319\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/115085179/image2017-3-1_18-30-45.png?version=1&amp;modificationDate=1488364246926&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115090560\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-3-1_18-30-45.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"115085179\" data-linked-resource-container-version=\"14\" data-media-id=\"4944859c-87a6-4e81-ba34-7ff847a6de3c\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115085179/image2017-3-1_18-30-45.png?version=1&amp;modificationDate=1488364246926&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=638 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/115085179/image2017-3-1_18-30-45.png?version=1&amp;modificationDate=1488364246926&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=319 1x\"></span></p><h3 id=\"CreateanewForm-4.PublishtheForm\"><span class=\"legacy-color-text-default\">4. Publish the Form</span></h3><p><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-green3\"><span class=\"legacy-color-text-default\">Click on the <em>publish</em> button, the form will be published into the Bahmni app which means it can be used by the doctor. Once a form is published, it can only be edited directly. To edit a form <em>after it is published</em>, please <a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Edit+a+published+form\" rel=\"nofollow\">refer to these steps</a>.</span></span></span></p><p><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-green3\"><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115085179/image2017-3-1_18-32-5.png?version=1&amp;modificationDate=1488364327979&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=350\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/115085179/image2017-3-1_18-32-5.png?version=1&amp;modificationDate=1488364327979&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115090573\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-3-1_18-32-5.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"115085179\" data-linked-resource-container-version=\"14\" data-media-id=\"4a3b1837-32d9-463d-b32c-ede3be3a6128\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115085179/image2017-3-1_18-32-5.png?version=1&amp;modificationDate=1488364327979&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=700 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/115085179/image2017-3-1_18-32-5.png?version=1&amp;modificationDate=1488364327979&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=350 1x\"></span></span></span></span></p><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-cssliststyle=\"none\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"0b744f92-0474-4511-ba50-ea4dc8343d16\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4084f2de-c0c2-4eeb-b02a-1184ccf78a4a\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/115085295/Add+Controls\" data-linked-resource-id=\"115085295\" data-linked-resource-version=\"16\" data-linked-resource-type=\"page\">Add Controls</a></p><p><a href=\"/wiki/spaces/BAH/pages/115085335/Edit+a+Published+Form\" data-linked-resource-id=\"115085335\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Edit a Published Form</a></p><p><a href=\"/wiki/spaces/BAH/pages/115085378/Rename+a+Form\" data-linked-resource-id=\"115085378\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Rename a Form</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/115085179"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/115085179/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115085179/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 948844054
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/115085179/child",
+    "restrictions": "/rest/api/content/115085179/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/115085179/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=115085179",
+    "webui": "/spaces/BAH/pages/115085179/Create+a+new+Form",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/115085179",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115085179",
+    "tinyui": "/x/ew-cBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

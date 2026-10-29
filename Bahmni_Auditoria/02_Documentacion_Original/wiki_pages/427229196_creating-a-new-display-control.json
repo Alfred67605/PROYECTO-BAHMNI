@@ -1,0 +1,172 @@
+{
+  "id": "427229196",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/427229196",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNDI3MjI5MTk2",
+  "status": "current",
+  "title": "Creating a New Display Control",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Himabindu Thungathurty",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Akkinepalli",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66"
+      }
+    },
+    "createdDate": "2018-01-16T07:16:00.690Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/427229196/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Himabindu Thungathurty",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Akkinepalli",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66"
+      }
+    },
+    "when": "2018-01-24T17:28:43.238Z",
+    "friendlyWhen": "Jan 24, 2018",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "0.hyOqvoNnD8Dk0OY-Jjcf-g.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$427229196.78",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/427229196"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/427229196/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"18a9041b-410f-4709-901f-3203bd5a4973\"><ac:parameter ac:name=\"title\">Note</ac:parameter><ac:rich-text-body><p>Its a Work in Progress Document</p></ac:rich-text-body></ac:structured-macro><p><br /></p><p><span>Display controls are widgets that can be added to various pages to better configure them. They can be customised&nbsp;to show specific information and will automatically align to the context of the screen. Check </span><span><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/37945573/Display+Controls\">this</a></span><span> page to see the list of display control that comes out of box with Bahmni.</span></p><p><span>There are two different types of display controls that we support in Bahmni.</span></p><h3><span><span>1. Generic Bahmni Display Controls</span></span></h3><p><span>Generic display controls come out of the box with Bahmni product and if you want to add a display control to the core product, it needs code change in </span><span><a href=\"https://github.com/Bahmni/openmrs-module-bahmniapps\">bahmniapps</a></span><span>. Any Bahmni implementation can use this display control.&nbsp;</span><span>Let&rsquo;s take <a href=\"https://github.com/Bahmni/default-config/blob/release-0.90/openmrs/apps/clinical/dashboard.json#L22\">Diagnosis</a> display control as an example.</span></p><ul><li><span><span>Add a new html file in <a href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/tree/master/ui/app/common/displaycontrols/dashboard/views/sections\">bahmniapps</a>. The value of </span><strong>type</strong><span> is name of the html file. </span><strong>type</strong><span> is mandatory field in any display control.</span></span></li></ul><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"cbb52ae0-1ae1-4b86-9522-413450c3bd87\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[  \"type\":\"diagnosis\" ]]></ac:plain-text-body></ac:structured-macro><p><span><span class=\"auto-cursor-target\" style=\"margin-left: 0.0px;\">The below is the code snippet for diagnosis.html file.</span></span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"cfbbc8ca-2787-400d-ab36-1979cb5ac298\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[<div ng-controller=\"PatientDashboardDiagnosisController\" class=\"dashboard-diagnosis-section\">\n   <h2 ng-click=\"openSummaryDialog()\" class=\"section-title has-link\">\n       <span class=\"title-link\"> {{::section | titleTranslate}} </span>\n       <i class=\"fa fa-external-link\"></i>\n   </h2>\n<bahmni-diagnosis patient-uuid=\"::patient.uuid\" config=\"::section\" show-latest-diagnosis=\"false\"\n                 show-ruled-out-diagnoses=\"::section.showRuledOutDiagnoses\"\n                 hide-title=\"true\"></bahmni-diagnosis>\n</div>\n]]></ac:plain-text-body></ac:structured-macro><p><span>A html file will have a directive which will handle the rendering part.&nbsp;</span><span><strong>&lt;bahmni-diagnosis&gt;</strong> is an angular directive.To know more about angular directives check <a href=\"https://docs.angularjs.org/guide/directive\">this</a> page.</span></p><p><span>Once we done with the changes, we can add below display control config in <em>openmrs/apps/clinical/dashboard.json</em> file.</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"ef257d2e-6cd0-4a3b-93c4-73cfde82c252\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[\"diagnosis\":{ \n   \"translationKey\":\"DASHBOARD_TITLE_DIAGNOSIS_KEY\",\n   \"type\":\"diagnosis\",\n   \"showCertainty\":true,\n   \"showOrder\":true,\n   \"showDetailsButton\":true,\n   \"displayOrder\":1\n}]]></ac:plain-text-body></ac:structured-macro><p>In the above example, diagnosis config got saved as <strong><a href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/blob/master/ui/app/common/displaycontrols/dashboard/controllers/patientDashboardDiagnosisController.js#L6\">section</a></strong>&nbsp;and being sent as a parameter to<strong> </strong><span>&lt;bahmni-diagnosis&gt; directive. This is how the config detail gets picked from dashboard.json file.</span></p><p><span><span>We can also send the concept names in the display control. The observations for that concept will be displayed. These concept names are configurable and gets picked from the display control config dynamically as mentioned <a href=\"https://github.com/Bahmni/default-config/blob/release-0.90/openmrs/apps/clinical/dashboard.json#L149\">here</a>.</span></span></p><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"ffabf71d-f711-412d-babe-b74bf4e9e535\"><ac:parameter ac:name=\"title\">Info</ac:parameter><ac:rich-text-body><p>If you are working on a ticket where it needs to add a new display control to core product, then we need to follow above steps to configure Generic Display Control.</p></ac:rich-text-body></ac:structured-macro><h3><span><span>2.&nbsp;Custom Display Controls</span></span></h3><p><span>Bahmni provides </span><strong>customDisplayControl</strong><span> module which provides basic connection between the application and configuration. These are the display controls which can be customised by the implementer/developer and don't need any code change in bahmniapps. Anyone who has their API exposed, can directly create their custom directive and configure the display controls. And these are mostly specific to implementation configuration. <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/93716500/Custom+Controls\">Custom Display Control</a></span><span>&nbsp;wiki page has detailed steps on how to configure the display controls.</span></p><p><span><span>Let&rsquo;s take Appointments display controls in the patient clinical dashboard. This is a custom directive and specific to implementation(default-config). It has </span><a href=\"https://github.com/Bahmni/default-config/blob/release-0.90/openmrs/apps/clinical/dashboard.json#L397\"><span>patient-appointments-dashboard</span></a><span> directive configured.</span></span></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"d03d3bad-81c9-4192-af90-1397e74bf69c\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"5f3f8789-861a-4018-a341-7dd5b4ca5f2b\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"e7d0e58b-f441-497a-95a0-0414b6fbe62e\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Implementation Details</ac:parameter><ac:rich-text-body><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/37945573/Display+Controls\">Display Controls</a></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/93716500/Custom+Controls\">Custom Display Controls</a></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p>&nbsp; &nbsp; &nbsp;</ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/427229196"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"18a9041b-410f-4709-901f-3203bd5a4973\" data-macro-name=\"info\"><p class=\"title\">Note</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Its a Work in Progress Document</p></div></div><p><br/></p><p><span>Display controls are widgets that can be added to various pages to better configure them. They can be customised to show specific information and will automatically align to the context of the screen. Check </span><span><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/37945573/Display+Controls\" rel=\"nofollow\">this</a></span><span> page to see the list of display control that comes out of box with Bahmni.</span></p><p><span>There are two different types of display controls that we support in Bahmni.</span></p><h3 id=\"CreatingaNewDisplayControl-1.GenericBahmniDisplayControls\"><span><span>1. Generic Bahmni Display Controls</span></span></h3><p><span>Generic display controls come out of the box with Bahmni product and if you want to add a display control to the core product, it needs code change in </span><span><a class=\"external-link\" href=\"https://github.com/Bahmni/openmrs-module-bahmniapps\" rel=\"nofollow\">bahmniapps</a></span><span>. Any Bahmni implementation can use this display control. </span><span>Let’s take <a class=\"external-link\" href=\"https://github.com/Bahmni/default-config/blob/release-0.90/openmrs/apps/clinical/dashboard.json#L22\" rel=\"nofollow\">Diagnosis</a> display control as an example.</span></p><ul><li><span><span>Add a new html file in <a class=\"external-link\" href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/tree/master/ui/app/common/displaycontrols/dashboard/views/sections\" rel=\"nofollow\">bahmniapps</a>. The value of </span><strong>type</strong><span> is name of the html file. </span><strong>type</strong><span> is mandatory field in any display control.</span></span></li></ul><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"cbb52ae0-1ae1-4b86-9522-413450c3bd87\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">  &quot;type&quot;:&quot;diagnosis&quot; </pre>\n</div></div><p><span><span style=\"margin-left: 0.0px;\" class=\"auto-cursor-target\">The below is the code snippet for diagnosis.html file.</span></span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"cfbbc8ca-2787-400d-ab36-1979cb5ac298\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&lt;div ng-controller=&quot;PatientDashboardDiagnosisController&quot; class=&quot;dashboard-diagnosis-section&quot;&gt;\n   &lt;h2 ng-click=&quot;openSummaryDialog()&quot; class=&quot;section-title has-link&quot;&gt;\n       &lt;span class=&quot;title-link&quot;&gt; {{::section | titleTranslate}} &lt;/span&gt;\n       &lt;i class=&quot;fa fa-external-link&quot;&gt;&lt;/i&gt;\n   &lt;/h2&gt;\n&lt;bahmni-diagnosis patient-uuid=&quot;::patient.uuid&quot; config=&quot;::section&quot; show-latest-diagnosis=&quot;false&quot;\n                 show-ruled-out-diagnoses=&quot;::section.showRuledOutDiagnoses&quot;\n                 hide-title=&quot;true&quot;&gt;&lt;/bahmni-diagnosis&gt;\n&lt;/div&gt;\n</pre>\n</div></div><p><span>A html file will have a directive which will handle the rendering part. </span><span><strong>&lt;bahmni-diagnosis&gt;</strong> is an angular directive.To know more about angular directives check <a class=\"external-link\" href=\"https://docs.angularjs.org/guide/directive\" rel=\"nofollow\">this</a> page.</span></p><p><span>Once we done with the changes, we can add below display control config in <em>openmrs/apps/clinical/dashboard.json</em> file.</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ef257d2e-6cd0-4a3b-93c4-73cfde82c252\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;diagnosis&quot;:{ \n   &quot;translationKey&quot;:&quot;DASHBOARD_TITLE_DIAGNOSIS_KEY&quot;,\n   &quot;type&quot;:&quot;diagnosis&quot;,\n   &quot;showCertainty&quot;:true,\n   &quot;showOrder&quot;:true,\n   &quot;showDetailsButton&quot;:true,\n   &quot;displayOrder&quot;:1\n}</pre>\n</div></div><p>In the above example, diagnosis config got saved as <strong><a class=\"external-link\" href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/blob/master/ui/app/common/displaycontrols/dashboard/controllers/patientDashboardDiagnosisController.js#L6\" rel=\"nofollow\">section</a></strong> and being sent as a parameter to<strong> </strong><span>&lt;bahmni-diagnosis&gt; directive. This is how the config detail gets picked from dashboard.json file.</span></p><p><span><span>We can also send the concept names in the display control. The observations for that concept will be displayed. These concept names are configurable and gets picked from the display control config dynamically as mentioned <a class=\"external-link\" href=\"https://github.com/Bahmni/default-config/blob/release-0.90/openmrs/apps/clinical/dashboard.json#L149\" rel=\"nofollow\">here</a>.</span></span></p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ffabf71d-f711-412d-babe-b74bf4e9e535\" data-macro-name=\"info\"><p class=\"title\">Info</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>If you are working on a ticket where it needs to add a new display control to core product, then we need to follow above steps to configure Generic Display Control.</p></div></div><h3 id=\"CreatingaNewDisplayControl-2.CustomDisplayControls\"><span><span>2. Custom Display Controls</span></span></h3><p><span>Bahmni provides </span><strong>customDisplayControl</strong><span> module which provides basic connection between the application and configuration. These are the display controls which can be customised by the implementer/developer and don't need any code change in bahmniapps. Anyone who has their API exposed, can directly create their custom directive and configure the display controls. And these are mostly specific to implementation configuration. <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/93716500/Custom+Controls\" rel=\"nofollow\">Custom Display Control</a></span><span> wiki page has detailed steps on how to configure the display controls.</span></p><p><span><span>Let’s take Appointments display controls in the patient clinical dashboard. This is a custom directive and specific to implementation(default-config). It has </span><a class=\"external-link\" href=\"https://github.com/Bahmni/default-config/blob/release-0.90/openmrs/apps/clinical/dashboard.json#L397\" rel=\"nofollow\"><span>patient-appointments-dashboard</span></a><span> directive configured.</span></span></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d03d3bad-81c9-4192-af90-1397e74bf69c\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"5f3f8789-861a-4018-a341-7dd5b4ca5f2b\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e7d0e58b-f441-497a-95a0-0414b6fbe62e\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Implementation Details</b></div><div class=\"panelContent\">\n<p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/37945573/Display+Controls\" rel=\"nofollow\">Display Controls</a></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/93716500/Custom+Controls\" rel=\"nofollow\">Custom Display Controls</a></p>\n</div></div>     </div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/427229196"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/427229196/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/427229196/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 403
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/427229196/child",
+    "restrictions": "/rest/api/content/427229196/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/427229196/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=427229196",
+    "webui": "/spaces/BAH/pages/427229196/Creating+a+New+Display+Control",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/427229196",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/427229196",
+    "tinyui": "/x/DAB3GQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

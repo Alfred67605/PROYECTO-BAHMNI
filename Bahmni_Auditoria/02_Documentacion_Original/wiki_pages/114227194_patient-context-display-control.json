@@ -1,0 +1,171 @@
+{
+  "id": "114227194",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/114227194",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE0MjI3MTk0",
+  "status": "current",
+  "title": "Patient Context Display Control",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2017-01-19T06:00:27.367Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114227194/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2022-11-20T11:17:57.877Z",
+    "friendlyWhen": "Nov 20, 2022",
+    "message": "Removed collapsible due to Atlassian bug",
+    "number": 8,
+    "minorEdit": false,
+    "syncRev": "0.-bkNA-AwWoU15BljASvWtA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$114227194.48",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/114227194"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114227194/version/8"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose</h2><ac:structured-macro ac:name=\"excerpt\" ac:schema-version=\"1\" ac:macro-id=\"638aebc5-f96c-44fe-9484-b0037d832b70\"><ac:parameter ac:name=\"atlassian-macro-output-type\">INLINE</ac:parameter><ac:rich-text-body><p><span><span style=\"color: rgb(0,0,0);\">It helps the clinician to easily view</span><span> patient information on all the pages in clinical app. It can also be configured to display core patient data like name, identifier, gender, age by default.</span></span></p></ac:rich-text-body></ac:structured-macro><p><br /></p><h2>Screenshot</h2><p><br /><ac:image ac:align=\"left\" ac:width=\"700\"><ri:attachment ri:filename=\"image2016-2-10 16:25:32.png\" ri:version-at-save=\"1\" /></ac:image></p><h2>Configuration</h2><h3>Sample Config</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"dd2406c1-159f-4fad-ae94-70e10155531c\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Add to clinical/app.json </ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"patientContext\": {\n    \"programAttributes\": [\n        \"Registration Number\",\n        \"Registration Facility\"\n    ],\n\t\"personAttributes\": [\n\t\t\"class\",\n\t\t\"caste\"\n\t],\n\t\"additionalPatientIdentifiers\": [\n\t\t\"National ID\"\n\t],\n    \"preferredIdentifier\": \"Registration Number\"\n},]]></ac:plain-text-body></ac:structured-macro><h3>Key Field Table</h3><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th>Key</th><th>Info</th><th colspan=\"1\">Mandatory</th></tr><tr><td><p>programAttributes</p></td><td><p>List of program attributes to be displayed. The names of program attributes have to be specified.</p></td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\">personAttributes</td><td colspan=\"1\">List of person attributes to be displayed. The names of person attributes have to be specified</td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\">additionalPatientidentifiers</td><td colspan=\"1\">List of additional patient identifiers to be displayed.</td><td colspan=\"1\">N</td></tr><tr><td><p>preferredIdentifier</p></td><td><p>It can be the name of either a person attribute or a program attribute. The value of that attribute will be displayed instead of the patient identifier. If configured, that attribute will be removed from the other patient data displayed. If both person and program attributes have the same name, program attribute takes precedence.</p></td><td colspan=\"1\">N</td></tr></tbody></table><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"9e21e6bc-65b4-4f30-a341-0dc091c2e859\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\"><ac:parameter ac:name=\"titleColor\">White</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Display Controls</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"300f309a-b2b6-43e3-99c8-d9eccea4c73b\"><ac:parameter ac:name=\"all\">true</ac:parameter><ac:parameter ac:name=\"page\"><ac:link><ri:page ri:content-title=\"Patient Controls\" ri:version-at-save=\"1\" /></ac:link></ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/114227194"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"PatientContextDisplayControl-Purpose\">Purpose</h2><p><span class=\"conf-macro output-inline\" data-hasbody=\"true\" data-macro-id=\"638aebc5-f96c-44fe-9484-b0037d832b70\" data-macro-name=\"excerpt\"><span class=\"legacy-color-text-default\">It helps the clinician to easily view</span><span> patient information on all the pages in clinical app. It can also be configured to display core patient data like name, identifier, gender, age by default.</span></span><br/></p><h2 id=\"PatientContextDisplayControl-Screenshot\">Screenshot</h2><p><br/><span class=\"confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-left\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114227194/image2016-2-10%2016:25:32.png?version=1&amp;modificationDate=1484805627387&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=28\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114227194/image2016-2-10%2016:25:32.png?version=1&amp;modificationDate=1484805627387&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"114227161\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2016-2-10 16:25:32.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114227194\" data-linked-resource-container-version=\"8\" data-media-id=\"1b5ca7d5-4f07-42fb-98b7-f3723d5c8148\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114227194/image2016-2-10%2016:25:32.png?version=1&amp;modificationDate=1484805627387&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=56 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114227194/image2016-2-10%2016:25:32.png?version=1&amp;modificationDate=1484805627387&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=28 1x\"></span></p><h2 id=\"PatientContextDisplayControl-Configuration\">Configuration</h2><h3 id=\"PatientContextDisplayControl-SampleConfig\">Sample Config</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"dd2406c1-159f-4fad-ae94-70e10155531c\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Add to clinical/app.json </b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;patientContext&quot;: {\n    &quot;programAttributes&quot;: [\n        &quot;Registration Number&quot;,\n        &quot;Registration Facility&quot;\n    ],\n\t&quot;personAttributes&quot;: [\n\t\t&quot;class&quot;,\n\t\t&quot;caste&quot;\n\t],\n\t&quot;additionalPatientIdentifiers&quot;: [\n\t\t&quot;National ID&quot;\n\t],\n    &quot;preferredIdentifier&quot;: &quot;Registration Number&quot;\n},</pre>\n</div></div><h3 id=\"PatientContextDisplayControl-KeyFieldTable\">Key Field Table</h3><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class=\"confluenceTh\">Key</th><th class=\"confluenceTh\">Info</th><th colspan=\"1\" class=\"confluenceTh\">Mandatory</th></tr><tr><td class=\"confluenceTd\"><p>programAttributes</p></td><td class=\"confluenceTd\"><p>List of program attributes to be displayed. The names of program attributes have to be specified.</p></td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">personAttributes</td><td colspan=\"1\" class=\"confluenceTd\">List of person attributes to be displayed. The names of person attributes have to be specified</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">additionalPatientidentifiers</td><td colspan=\"1\" class=\"confluenceTd\">List of additional patient identifiers to be displayed.</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td class=\"confluenceTd\"><p>preferredIdentifier</p></td><td class=\"confluenceTd\"><p>It can be the name of either a person attribute or a program attribute. The value of that attribute will be displayed instead of the patient identifier. If configured, that attribute will be removed from the other patient data displayed. If both person and program attributes have the same name, program attribute takes precedence.</p></td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr></tbody></table></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9e21e6bc-65b4-4f30-a341-0dc091c2e859\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: White;\"><b>Related Display Controls</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"300f309a-b2b6-43e3-99c8-d9eccea4c73b\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/114227194/Patient+Context+Display+Control\" data-linked-resource-id=\"114227194\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Patient Context Display Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114227474/Patient+Profile+Control\" data-linked-resource-id=\"114227474\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Patient Profile Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/100139014/Visit+Control\" data-linked-resource-id=\"100139014\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Visit Control</a></li></ul><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/114227194"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/114227194/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114227194/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 0
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/114227194/child",
+    "restrictions": "/rest/api/content/114227194/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/114227194/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=114227194",
+    "webui": "/spaces/BAH/pages/114227194/Patient+Context+Display+Control",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/114227194",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114227194",
+    "tinyui": "/x/_vfOBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

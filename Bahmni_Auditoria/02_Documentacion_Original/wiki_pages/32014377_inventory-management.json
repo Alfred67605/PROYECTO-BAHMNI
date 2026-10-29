@@ -1,0 +1,172 @@
+{
+  "id": "32014377",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/32014377",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzIwMTQzNzc=",
+  "status": "current",
+  "title": "Inventory Management",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2015-11-02T12:12:04.665Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014377/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5e43cc7490dfb70c9e609d8c",
+      "accountType": "atlassian",
+      "email": "rahulnuchange@gmail.com",
+      "publicName": "Rahul Kumrawat",
+      "timeZone": "Asia/Calcutta",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e43cc7490dfb70c9e609d8c",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Rahul Kumrawat",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e43cc7490dfb70c9e609d8c"
+      }
+    },
+    "when": "2020-04-14T11:31:26.503Z",
+    "friendlyWhen": "Apr 14, 2020",
+    "message": "",
+    "number": 12,
+    "minorEdit": false,
+    "syncRev": "0.RCzY6uux5mybDTqd7oFiQA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$32014377.67",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/32014377"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014377/version/12"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"single\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"5b2acf1b-050d-4bec-8826-9045b48bba45\"><ac:rich-text-body><p><span style=\"color: rgb(23,43,77);\">The following steps and screenshots are explained as per Odoo 10, available on Bahmni 0.92 release.</span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"c0b3f0ed-cf21-4999-983b-932443107a8a\"><ac:rich-text-body><p>Since Odoo (OpenERP with Bahmni v0.91 and earlier) is an open source product with thousands of existing customers and a community &ndash; its own online documentation is also available online (see Related Links). You can also refer to the documentation to understand ERP functions better, or in cases where you need more clarity than the documentation provided by Bahmni on ERP features.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>About the Feature</h2><p><span style=\"color: rgb(0,0,0);\">Bahmni uses&nbsp;</span><a class=\"external-link\" href=\"https://www.odoo.com/\" rel=\"nofollow\">Odoo</a><span style=\"color: rgb(0,0,0);\">&nbsp;predominantly for Sales Management, Purchase Management, and for Inventory and Accounting. Odoo has also been adapted for healthcare management, to work seamlessly with Bahmni.&nbsp;</span></p><h2><span style=\"color: rgb(0,0,0);\">Used By</span></h2><p><span style=\"color: rgb(0,0,0);\">Stock/Inventory Management is used by the Pharmacist/Hospital Admin and is used to purchase orders, for Stock Movement and to generate Inventory Status Reports.</span></p><h2><span style=\"color: rgb(0,0,0);\">How is it Used?</span></h2><ul><li style=\"list-style-type: disc;\"><p><span>Internal moves - Please see documentation on <ac:link><ri:page ri:content-title=\"Pharmacy\" ri:version-at-save=\"16\" /><ac:plain-text-link-body><![CDATA[Stock Transfer]]></ac:plain-text-link-body></ac:link></span></p></li><li style=\"list-style-type: disc;\"><span>Initial Physical Stock entry</span></li></ul><p>For each product, it is possible to configure batch numbers and sale price. When a quotation for sale is created, the following is provided-</p><ul><li>Depending on how you have setup pricing (Basic Sale Price, Pricelists, Lots Markup etc), the unit price for order lines would be calculated.&nbsp;</li><li>For each item in the quotation, the user can select the batch number from an available list of batch numbers. This will ensure that invalid batch numbers are not entered.<br /><ac:image><ri:attachment ri:filename=\"Odoo_Quotation_Select_Product_Batch.png\" ri:version-at-save=\"1\" /></ac:image></li></ul><p><br /></p><ul><li>Note in OpenERP 7, for each item in the quotation, the price entered is validated against the sale price configured for the product to ensure that price more than sale price is not entered. This is not yet available with Odoo (with Bahmni v0.92)</li></ul><p><br /></p><ac:structured-macro ac:name=\"expand\" ac:schema-version=\"1\" ac:macro-id=\"d181cca5-62c2-4b43-8d6f-57c2c57360c1\"><ac:parameter ac:name=\"title\">OpenERP7 Sale Price Validation</ac:parameter><ac:rich-text-body><p><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"image2016-4-5 11:36:46.png\" ri:version-at-save=\"1\" /></ac:image></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ul><li>Stock Location for delivery: When a Shop is selected for the quotation, the mapped Stock Location would be set. (See section Shops in <ac:link><ri:page ri:content-title=\"Odoo Sales Configuration\" ri:version-at-save=\"10\" /></ac:link>). This information is available in the &quot;Other Information&quot; tab. (see also below). The validations of the stock levels, availability are done against this particular stock location, and the customer delivery order will be created with this stock location and subsequently inventory adjusted at the stock location.&nbsp;</li></ul><p><br /></p><p>&nbsp;<ac:image><ri:attachment ri:filename=\"Odoo_Customer_Quotation_Associated_Stock_Location.png\" ri:version-at-save=\"1\" /></ac:image>&nbsp;</p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"6462b5e2-1d86-451d-a8c5-c39c2f99335c\"><ac:rich-text-body><p><strong><span style=\"color: rgb(0,0,0);\">Bahmni configuration for each implementation can vary drastically. As the screens and workflows are not constant across all installations of Bahmni, we have refrained from prescribing them. </span></strong></p><p><strong><span style=\"color: rgb(0,0,0);\">Please refer to the Guides below for further details about the feature.</span></strong></p><div><strong><span style=\"color: rgb(0,0,0);\"><br /></span></strong></div></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Stock / Inventory Management\" ri:version-at-save=\"15\" /><ac:plain-text-link-body><![CDATA[Stock / Inventory Management - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"3fe3feef-06ea-4aac-b9a1-a6bbe83b0bec\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Implemnentation Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Inventory Management System\" ri:version-at-save=\"14\" /><ac:plain-text-link-body><![CDATA[Stock / Inventory Management - Implementer's Guide]]></ac:plain-text-link-body></ac:link></span></p><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Odoo Inventory Configuration\" ri:version-at-save=\"8\" /><ac:plain-text-link-body><![CDATA[Inventory Configuration - Implementer's Guide]]></ac:plain-text-link-body></ac:link> (Odoo)</span></p><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Odoo Sales Configuration\" ri:version-at-save=\"10\" /><ac:plain-text-link-body><![CDATA[Sales Configuration - Implementer's Guide]]></ac:plain-text-link-body></ac:link> (Odoo)</span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b7fceb7f-8862-485e-acc5-19cc9d2dadc3\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Inventory Management System\" ri:version-at-save=\"14\" /><ac:plain-text-link-body><![CDATA[O]]></ac:plain-text-link-body></ac:link><a href=\"https://doc.odoo.com/book/#books-link\">penERP7 Documentation</a></span></p><p><span style=\"color: rgb(0,0,0);\"><a href=\"https://www.odoo.com/documentation/10.0/\">Odoo 10 Documentation</a></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/32014377"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout single\" data-layout=\"single\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"5b2acf1b-050d-4bec-8826-9045b48bba45\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><span class=\"legacy-color-text-blue3\">The following steps and screenshots are explained as per Odoo 10, available on Bahmni 0.92 release.</span></p></div></div><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c0b3f0ed-cf21-4999-983b-932443107a8a\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Since Odoo (OpenERP with Bahmni v0.91 and earlier) is an open source product with thousands of existing customers and a community – its own online documentation is also available online (see Related Links). You can also refer to the documentation to understand ERP functions better, or in cases where you need more clarity than the documentation provided by Bahmni on ERP features.</p></div></div></div>\n</div>\n</div>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"InventoryManagement-AbouttheFeature\">About the Feature</h2><p><span class=\"legacy-color-text-default\">Bahmni uses </span><a class=\"external-link\" href=\"https://www.odoo.com/\" rel=\"nofollow\">Odoo</a><span class=\"legacy-color-text-default\"> predominantly for Sales Management, Purchase Management, and for Inventory and Accounting. Odoo has also been adapted for healthcare management, to work seamlessly with Bahmni. </span></p><h2 id=\"InventoryManagement-UsedBy\"><span class=\"legacy-color-text-default\">Used By</span></h2><p><span class=\"legacy-color-text-default\">Stock/Inventory Management is used by the Pharmacist/Hospital Admin and is used to purchase orders, for Stock Movement and to generate Inventory Status Reports.</span></p><h2 id=\"InventoryManagement-HowisitUsed?\"><span class=\"legacy-color-text-default\">How is it Used?</span></h2><ul><li style=\"list-style-type: disc;\"><p><span>Internal moves - Please see documentation on <a href=\"/wiki/spaces/BAH/pages/32014364/Pharmacy\" data-linked-resource-id=\"32014364\" data-linked-resource-version=\"17\" data-linked-resource-type=\"page\">Stock Transfer</a></span></p></li><li style=\"list-style-type: disc;\"><span>Initial Physical Stock entry</span></li></ul><p>For each product, it is possible to configure batch numbers and sale price. When a quotation for sale is created, the following is provided-</p><ul><li>Depending on how you have setup pricing (Basic Sale Price, Pricelists, Lots Markup etc), the unit price for order lines would be calculated. </li><li>For each item in the quotation, the user can select the batch number from an available list of batch numbers. This will ensure that invalid batch numbers are not entered.<br/><span class=\"confluence-embedded-file-wrapper\"><img class=\"confluence-embedded-image\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014377/Odoo_Quotation_Select_Product_Batch.png?version=1&amp;modificationDate=1565789985226&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014377/Odoo_Quotation_Select_Product_Batch.png?version=1&amp;modificationDate=1565789985226&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"907968694\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Odoo_Quotation_Select_Product_Batch.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32014377\" data-linked-resource-container-version=\"12\" data-media-id=\"4a868649-0161-48c1-96e4-6a0b08bef523\" data-media-type=\"file\"></span></li></ul><p><br/></p><ul><li>Note in OpenERP 7, for each item in the quotation, the price entered is validated against the sale price configured for the product to ensure that price more than sale price is not entered. This is not yet available with Odoo (with Bahmni v0.92)</li></ul><p><br/></p><div class=\"expand-container conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d181cca5-62c2-4b43-8d6f-57c2c57360c1\" data-macro-name=\"expand\" id=\"expander-485262839\"><div id=\"expander-control-485262839\" class=\"expand-control\"><span class=\"expand-control-icon icon\"> </span><span class=\"expand-control-text\">OpenERP7 Sale Price Validation</span></div><div id=\"expander-content-485262839\" class=\"expand-content expand-hidden\"><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014377/image2016-4-5%2011:36:46.png?version=1&amp;modificationDate=1490245439934&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=366\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014377/image2016-4-5%2011:36:46.png?version=1&amp;modificationDate=1490245439934&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115658801\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2016-4-5 11:36:46.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32014377\" data-linked-resource-container-version=\"12\" data-media-id=\"2c0f32fa-88a9-4162-8d86-a48f3a473ecf\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014377/image2016-4-5%2011:36:46.png?version=1&amp;modificationDate=1490245439934&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=732 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014377/image2016-4-5%2011:36:46.png?version=1&amp;modificationDate=1490245439934&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=366 1x\" /></span></p></div></div><ul><li>Stock Location for delivery: When a Shop is selected for the quotation, the mapped Stock Location would be set. (See section Shops in <a href=\"/wiki/spaces/BAH/pages/900464675/Odoo+Sales+Configuration\" data-linked-resource-id=\"900464675\" data-linked-resource-version=\"18\" data-linked-resource-type=\"page\">Odoo Sales Configuration</a>). This information is available in the &quot;Other Information&quot; tab. (see also below). The validations of the stock levels, availability are done against this particular stock location, and the customer delivery order will be created with this stock location and subsequently inventory adjusted at the stock location. </li></ul><p><br/></p><p> <span class=\"confluence-embedded-file-wrapper\"><img class=\"confluence-embedded-image\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014377/Odoo_Customer_Quotation_Associated_Stock_Location.png?version=1&amp;modificationDate=1565790575772&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014377/Odoo_Customer_Quotation_Associated_Stock_Location.png?version=1&amp;modificationDate=1565790575772&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"907935876\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Odoo_Customer_Quotation_Associated_Stock_Location.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32014377\" data-linked-resource-container-version=\"12\" data-media-id=\"8c36806c-fc65-4a07-9330-3461e92931bf\" data-media-type=\"file\"></span> </p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6462b5e2-1d86-451d-a8c5-c39c2f99335c\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong><span class=\"legacy-color-text-default\">Bahmni configuration for each implementation can vary drastically. As the screens and workflows are not constant across all installations of Bahmni, we have refrained from prescribing them. </span></strong></p><p><strong><span class=\"legacy-color-text-default\">Please refer to the Guides below for further details about the feature.</span></strong></p><div><strong><span class=\"legacy-color-text-default\"><br /></span></strong></div></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604221/Stock+Inventory+Management\" data-linked-resource-id=\"32604221\" data-linked-resource-version=\"15\" data-linked-resource-type=\"page\">Stock / Inventory Management - Feature Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3fe3feef-06ea-4aac-b9a1-a6bbe83b0bec\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Implemnentation Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32014610/Inventory+Management+System\" data-linked-resource-id=\"32014610\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Stock / Inventory Management - Implementer's Guide</a></span></p><p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/900530225/Odoo+Inventory+Configuration\" data-linked-resource-id=\"900530225\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Inventory Configuration - Implementer's Guide</a> (Odoo)</span></p><p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/900464675/Odoo+Sales+Configuration\" data-linked-resource-id=\"900464675\" data-linked-resource-version=\"18\" data-linked-resource-type=\"page\">Sales Configuration - Implementer's Guide</a> (Odoo)</span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b7fceb7f-8862-485e-acc5-19cc9d2dadc3\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32014610/Inventory+Management+System\" data-linked-resource-id=\"32014610\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">O</a><a class=\"external-link\" href=\"https://doc.odoo.com/book/#books-link\" rel=\"nofollow\">penERP7 Documentation</a></span></p><p><span class=\"legacy-color-text-default\"><a class=\"external-link\" href=\"https://www.odoo.com/documentation/10.0/\" rel=\"nofollow\">Odoo 10 Documentation</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/32014377"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/32014377/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014377/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 680408268
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/32014377/child",
+    "restrictions": "/rest/api/content/32014377/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/32014377/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=32014377",
+    "webui": "/spaces/BAH/pages/32014377/Inventory+Management",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/32014377",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014377",
+    "tinyui": "/x/KYDoAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "id": "32014599",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/32014599",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzIwMTQ1OTk=",
+  "status": "current",
+  "title": "Configure Patient Card Prints",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2015-11-03T18:10:09.483Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014599/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5aeb15c28946622c5c3d61f8",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Er. Nishant Kumar",
+      "timeZone": "Asia/Calcutta",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5aeb15c28946622c5c3d61f8",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Nishant Kumar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5aeb15c28946622c5c3d61f8"
+      }
+    },
+    "when": "2021-05-13T09:30:07.142Z",
+    "friendlyWhen": "May 13, 2021",
+    "message": "",
+    "number": 32,
+    "minorEdit": false,
+    "syncRev": "0.zaHA40d5ElRUqXKUmPF-Wg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$32014599.119",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/32014599"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014599/version/32"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p>In Bahmni, patient registration cards can be printed out to serve as a method of identification. This is particularly useful where the patient's records cannot be digitally accessed during the hospital workflow.&nbsp;The registration print functionality is completely configurable based on user requirements.&nbsp;</p><h2><span style=\"color: rgb(0,0,0);\">Steps</span></h2><p><span style=\"color: rgb(0,0,0);\">The Print functionality for registration appears in the Registration module as shown below :</span></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2015-11-18 at 12.09.47 PM.png\" ri:version-at-save=\"1\" /></ac:image><br /></span></p><p><span style=\"color: rgb(0,0,0);\">To configure the Registration print refer to&nbsp;<a href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/apps/registration/app.json\">https://github.com/Bahmni/default-config/blob/master/openmrs/apps/registration/app.json</a></span></p><p><span style=\"color: rgb(0,0,0);\">The app.json contains the following snippet which can be changed to fit the implementation :&nbsp;</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"0c03861a-4b2f-438f-aa20-195fd647a4bc\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"printOptions\": [\n            {\n\t\t\t\t\"translationKey\": \"REG_CARD_PRINT\",\n\t\t\t\t\"templateUrl\": \"/bahmni_config/openmrs/apps/registration/registrationCardLayout/print.html\",\n\t\t\t\t\"shortcutKey\": \"p\"\n\t\t\t},\n            {\n\t\t\t\t\"label\": \"P<u>r</u>int Supplemental Paper\",\n\t\t\t\t\"templateUrl\": \"/bahmni_config/openmrs/apps/registration/supplementalPaperLayout/print.html\",\n\t\t\t\t\"shortcutKey\": \"r\"\n\t\t\t}]]></ac:plain-text-body></ac:structured-macro><p>printOptions is an array that defines the print buttons.&nbsp;</p><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th>Key</th><th>Value</th><th colspan=\"1\">Mandatory</th></tr><tr><td>translationKey</td><td><p>If the label is to be internationalized, then a translationKey should be provided. The Key should be defined in locale.json.</p><p>Example: translationKey: &quot;REG_CARD_PRINT&quot;</p><p><span>REG_CARD_PRINT should be defined in locale.json in this manner - <span>REG_CARD_PRINT: 'Print Reg Card'</span></span></p></td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\">label</td><td colspan=\"1\"><p>If Internationalization is not required, then use label instead of translationKey for showing the label on the print button. If translationKey and label both are provided then translationKey will take the precedence.</p><p>Example: label: &nbsp;'Print Reg Card'</p></td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\">templateUrl</td><td colspan=\"1\">This will define the path for the URL that has the data that is to be printed.</td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\">shortcutKey</td><td colspan=\"1\">This can be used to provide a keyboard shortcut for the Print button.</td><td colspan=\"1\">N</td></tr></tbody></table><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"41b6940c-0f87-44e8-8af6-a30c845d4fce\"><ac:parameter ac:name=\"title\">Card Print options</ac:parameter><ac:rich-text-body><p class=\"auto-cursor-target\"><strong>For more options on how to show various Patient attributes, addresses or observations/indicator values in the card print layouts see these examples:</strong></p><ol><li class=\"auto-cursor-target\"><a href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/apps/registration/registrationCardLayout/print.html\">https://github.com/Bahmni/default-config/blob/master/openmrs/apps/registration/registrationCardLayout/print.html</a></li><li class=\"auto-cursor-target\"><a href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/apps/registration/supplementalPaperLayout/print.html\">https://github.com/Bahmni/default-config/blob/master/openmrs/apps/registration/supplementalPaperLayout/print.html</a></li></ol></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\">Default Config is located in&nbsp;<span style=\"color: rgb(36,41,46);\">/var/www/bahmni_config</span></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e7b3588e-96e1-4de3-a29d-46427cf35a1e\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"6b409c8b-7ffa-46ea-9379-7d389b861c6d\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Patient Registration\" ri:version-at-save=\"38\" /><ac:plain-text-link-body><![CDATA[Registration - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/32014599"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\"><style>[data-colorid=dpv9rzbigu]{color:#24292e} html[data-color-mode=dark] [data-colorid=dpv9rzbigu]{color:#d1d6db}</style>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ConfigurePatientCardPrints-PurposeandBenefits\">Purpose and Benefits</h2><p>In Bahmni, patient registration cards can be printed out to serve as a method of identification. This is particularly useful where the patient's records cannot be digitally accessed during the hospital workflow.&nbsp;The registration print functionality is completely configurable based on user requirements.&nbsp;</p><h2 id=\"ConfigurePatientCardPrints-Steps\"><span class=\"legacy-color-text-default\">Steps</span></h2><p><span class=\"legacy-color-text-default\">The Print functionality for registration appears in the Registration module as shown below :</span></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014599/Screen%20Shot%202015-11-18%20at%2012.09.47%20PM.png?version=1&amp;modificationDate=1447828814557&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=60\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014599/Screen%20Shot%202015-11-18%20at%2012.09.47%20PM.png?version=1&amp;modificationDate=1447828814557&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"33456152\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2015-11-18 at 12.09.47 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32014599\" data-linked-resource-container-version=\"32\" data-media-id=\"658da5e0-0444-4823-8853-df574e176abb\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014599/Screen%20Shot%202015-11-18%20at%2012.09.47%20PM.png?version=1&amp;modificationDate=1447828814557&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=120 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014599/Screen%20Shot%202015-11-18%20at%2012.09.47%20PM.png?version=1&amp;modificationDate=1447828814557&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=60 1x\" /></span><br /></span></p><p><span class=\"legacy-color-text-default\">To configure the Registration print refer to&nbsp;<a class=\"external-link\" href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/apps/registration/app.json\" rel=\"nofollow\">https://github.com/Bahmni/default-config/blob/master/openmrs/apps/registration/app.json</a></span></p><p><span class=\"legacy-color-text-default\">The app.json contains the following snippet which can be changed to fit the implementation :&nbsp;</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0c03861a-4b2f-438f-aa20-195fd647a4bc\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;printOptions&quot;: [\n            {\n\t\t\t\t&quot;translationKey&quot;: &quot;REG_CARD_PRINT&quot;,\n\t\t\t\t&quot;templateUrl&quot;: &quot;/bahmni_config/openmrs/apps/registration/registrationCardLayout/print.html&quot;,\n\t\t\t\t&quot;shortcutKey&quot;: &quot;p&quot;\n\t\t\t},\n            {\n\t\t\t\t&quot;label&quot;: &quot;P&lt;u&gt;r&lt;/u&gt;int Supplemental Paper&quot;,\n\t\t\t\t&quot;templateUrl&quot;: &quot;/bahmni_config/openmrs/apps/registration/supplementalPaperLayout/print.html&quot;,\n\t\t\t\t&quot;shortcutKey&quot;: &quot;r&quot;\n\t\t\t}</pre>\n</div></div><p>printOptions is an array that defines the print buttons.&nbsp;</p><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th class=\"confluenceTh\">Key</th><th class=\"confluenceTh\">Value</th><th colspan=\"1\" class=\"confluenceTh\">Mandatory</th></tr><tr><td class=\"confluenceTd\">translationKey</td><td class=\"confluenceTd\"><p>If the label is to be internationalized, then a translationKey should be provided. The Key should be defined in locale.json.</p><p>Example: translationKey: &quot;REG_CARD_PRINT&quot;</p><p><span>REG_CARD_PRINT should be defined in locale.json in this manner - <span>REG_CARD_PRINT: 'Print Reg Card'</span></span></p></td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">label</td><td colspan=\"1\" class=\"confluenceTd\"><p>If Internationalization is not required, then use label instead of translationKey for showing the label on the print button. If translationKey and label both are provided then translationKey will take the precedence.</p><p>Example: label: &nbsp;'Print Reg Card'</p></td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">templateUrl</td><td colspan=\"1\" class=\"confluenceTd\">This will define the path for the URL that has the data that is to be printed.</td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">shortcutKey</td><td colspan=\"1\" class=\"confluenceTd\">This can be used to provide a keyboard shortcut for the Print button.</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr></tbody></table></div><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"41b6940c-0f87-44e8-8af6-a30c845d4fce\" data-macro-name=\"tip\"><p class=\"title\">Card Print options</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p class=\"auto-cursor-target\"><strong>For more options on how to show various Patient attributes, addresses or observations/indicator values in the card print layouts see these examples:</strong></p><ol><li class=\"auto-cursor-target\"><a class=\"external-link\" href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/apps/registration/registrationCardLayout/print.html\" rel=\"nofollow\">https://github.com/Bahmni/default-config/blob/master/openmrs/apps/registration/registrationCardLayout/print.html</a></li><li class=\"auto-cursor-target\"><a class=\"external-link\" href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/apps/registration/supplementalPaperLayout/print.html\" rel=\"nofollow\">https://github.com/Bahmni/default-config/blob/master/openmrs/apps/registration/supplementalPaperLayout/print.html</a></li></ol></div></div><p class=\"auto-cursor-target\">Default Config is located in&nbsp;<span data-colorid=\"dpv9rzbigu\">/var/www/bahmni_config</span></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e7b3588e-96e1-4de3-a29d-46427cf35a1e\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"6b409c8b-7ffa-46ea-9379-7d389b861c6d\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604190/Patient+Registration\" data-linked-resource-id=\"32604190\" data-linked-resource-version=\"38\" data-linked-resource-type=\"page\">Registration - Feature Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/32014599"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/32014599/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014599/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 808436298
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/32014599/child",
+    "restrictions": "/rest/api/content/32014599/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/32014599/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=32014599",
+    "webui": "/spaces/BAH/pages/32014599/Configure+Patient+Card+Prints",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/32014599",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014599",
+    "tinyui": "/x/B4HoAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

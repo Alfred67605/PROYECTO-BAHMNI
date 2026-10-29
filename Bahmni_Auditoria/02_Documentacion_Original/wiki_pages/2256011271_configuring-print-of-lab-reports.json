@@ -1,0 +1,172 @@
+{
+  "id": "2256011271",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2256011271",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjI1NjAxMTI3MQ==",
+  "status": "current",
+  "title": "Configuring print of lab reports",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d62343b8-23de-4ab4-a2f4-9ffda65f91cc",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Vinay Venu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d62343b8-23de-4ab4-a2f4-9ffda65f91cc",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Vinay Venu",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d62343b8-23de-4ab4-a2f4-9ffda65f91cc"
+      }
+    },
+    "createdDate": "2021-03-18T03:41:33.731Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2256011271/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5e943471088a7e0c0f50e1e0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Buvaneswari Arun (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e943471088a7e0c0f50e1e0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Buvaneswari Arun (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e943471088a7e0c0f50e1e0"
+      }
+    },
+    "when": "2021-04-04T15:32:51.419Z",
+    "friendlyWhen": "Apr 04, 2021",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "4.confluence$content$2256011271.25",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2256011271.28",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2256011271"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2256011271/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"5df5acb4-bfb6-459a-bbfc-bbb73fa94aec\"><ac:rich-text-body><p>This feature is available from V0.93-Bahmni</p></ac:rich-text-body></ac:structured-macro><p>The default print of laboratory reports can be slightly modified using the Administration section of Bahmni Lab. </p><p /><p>Login to &ldquo;LABORATORY&rdquo; from the Bahmni home page. </p><p>Go to Administration &rarr; Printed Reports Configuration. You will see a screen like this. </p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"487\" ac:original-width=\"1402\"><ri:attachment ri:filename=\"image-20210318-034835.png\" ri:version-at-save=\"1\" /></ac:image><p /><p>Changing the Site Name will modify the header. Adding additional site info will create a subheader on the print report. The lab logo option provides an option to modify the logo printed on the top left of the print page. Here is a sample report. See the change in name of the hospital, the location and the logo on the left top. </p><p /><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"349\" ac:original-width=\"736\"><ri:attachment ri:filename=\"image-20210318-034808.png\" ri:version-at-save=\"1\" /></ac:image><p />",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2256011271"
+      }
+    },
+    "view": {
+      "value": "<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"5df5acb4-bfb6-459a-bbfc-bbb73fa94aec\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This feature is available from V0.93-Bahmni</p></div></div><p>The default print of laboratory reports can be slightly modified using the Administration section of Bahmni Lab. </p><p /><p>Login to “LABORATORY” from the Bahmni home page. </p><p>Go to Administration → Printed Reports Configuration. You will see a screen like this. </p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/2256011271/image-20210318-034835.png?version=1&amp;modificationDate=1616039319910&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/2256011271/image-20210318-034835.png?version=1&amp;modificationDate=1616039319910&amp;cacheVersion=1&amp;api=v2\" data-height=\"487\" data-width=\"1402\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2257289232\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20210318-034835.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"2256011271\" data-linked-resource-container-version=\"3\" data-media-id=\"7c61f6bb-5959-4860-8625-2d363bce5563\" data-media-type=\"file\"></span><p /><p>Changing the Site Name will modify the header. Adding additional site info will create a subheader on the print report. The lab logo option provides an option to modify the logo printed on the top left of the print page. Here is a sample report. See the change in name of the hospital, the location and the logo on the left top. </p><p /><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/2256011271/image-20210318-034808.png?version=1&amp;modificationDate=1616039291780&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/2256011271/image-20210318-034808.png?version=1&amp;modificationDate=1616039291780&amp;cacheVersion=1&amp;api=v2\" data-height=\"349\" data-width=\"736\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2257289226\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20210318-034808.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"2256011271\" data-linked-resource-container-version=\"3\" data-media-id=\"bb0a74e4-b070-4311-95c9-5017b4eeaf10\" data-media-type=\"file\"></span><p />",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2256011271"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2256011271/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2256011271/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 485282908
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2256011271/child",
+    "restrictions": "/rest/api/content/2256011271/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2256011271/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2256011271",
+    "webui": "/spaces/BAH/pages/2256011271/Configuring+print+of+lab+reports",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2256011271",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2256011271",
+    "tinyui": "/x/BwB4hg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

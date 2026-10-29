@@ -1,0 +1,172 @@
+{
+  "id": "2306736554",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2306736554",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMwNjczNjU1NA==",
+  "status": "current",
+  "title": "Person Job",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "createdDate": "2021-04-05T09:24:52.092Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736554/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "when": "2021-04-05T09:26:23.912Z",
+    "friendlyWhen": "Apr 05, 2021",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.confluence$content$2306736554.11",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2306736554.12",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2306736554"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736554/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ul><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349306905/Person#configuration\">configuration</a></p><ul><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349306905/Person#ColumnsToIgnore-apply-for-this-module-(-Refer--%5BinlineCard%5D-)\">ColumnsToIgnore apply for this module ( Refer&nbsp;https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix&nbsp;)</a></p></li><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349306905/Person#incrementalUpdateConfig-is-applicable-(-Refer-%5BinlineCard%5D-)\">incrementalUpdateConfig is applicable ( Refer&nbsp;https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update&nbsp;)</a></p></li></ul></li><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349306905/Person#Existing-OpenMRS-tables\">Existing OpenMRS tables</a></p></li><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349306905/Person#Flattened-Mart-Tables\">Flattened Mart Tables</a></p><ul><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349306905/Person#Incremental-Config%3A\">Incremental Config:</a></p></li></ul></li></ul><h3 style=\"text-align: center;\">configuration</h3><h5><strong>ColumnsToIgnore apply for this module ( Refer </strong><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><h5><strong>incrementalUpdateConfig is applicable</strong> ( Refer <a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</h5><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"5ec5b103-f736-4822-897d-8333cdb956b9\"><ac:plain-text-body><![CDATA[{\n      \"name\": \"Person\",\n      \"type\": \"person\",\n      \"chunkSizeToRead\": \"500\",\n      \"groupedJobConfigs\": [\n        {\n          \"tableName\": \"person_details_default\",\n          \"columnsToIgnore\": []\n        }\n        ]\n}\n]]></ac:plain-text-body></ac:structured-macro><hr /><h3 style=\"text-align: center;\">Existing OpenMRS tables</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"462c67e6-fb65-4c69-9c37-c0eb39ddf321\"><ac:plain-text-body><![CDATA[person\nperson_name\nPatient_identifier\nperson_address\nperson_attribute_type\naddress_hierarchy_level\n]]></ac:plain-text-body></ac:structured-macro><hr /><h3 style=\"text-align: center;\">Flattened Mart Tables</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"90bdf1b3-3d05-4bb0-baaa-0bff33777436\"><ac:plain-text-body><![CDATA[person_details_default\nperson_address_default\nperson_attribute_info_default\naddress_hierarchy_level_default\n]]></ac:plain-text-body></ac:structured-macro><h4><strong>Incremental Config:</strong></h4><p>Please check <a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update#1.-Person-Job:\">this</a> section on how to enable/disable incremental config for specific mart tables.</p><p><strong>a) person_details_default - </strong>This table provides all the person related information.</p><p>openmrs tables used:- person, person_name</p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p><strong>Column Name</strong></p></td><td><p><strong>Description</strong></p></td></tr><tr><td><p>person_id</p></td><td><p>Id reference to the person, from person table in openmrs</p></td></tr><tr><td><p>person_name_id</p></td><td><p>Name of person from person_name table in openmrs</p></td></tr><tr><td><p>preferred</p></td><td><p>Preferred from person_name table in openmrs</p></td></tr><tr><td><p>gender</p></td><td><p>gender of person from person table in openmrs</p></td></tr><tr><td><p>birthyear</p></td><td><p>year of person birth</p></td></tr><tr><td><p>birthtime</p></td><td><p>Time of person birth</p></td></tr><tr><td><p>birthdate_estimated</p></td><td><p>provided date of birth is estimated or accurate, is indicated with birth_estimated ( true/false )</p></td></tr><tr><td><p>age</p></td><td><p>age of person from person table</p></td></tr><tr><td><p>age_group</p></td><td><p>Under which age range the patient belongs</p></td></tr><tr><td><p>dead</p></td><td><p>death status from person table ( true of false )</p></td></tr><tr><td><p>death_date</p></td><td><p>death date in case</p></td></tr><tr><td><p>deathdate_estimated</p></td><td><p>if death date is not accurate then this field indicates the same ( boolean value true/false )</p></td></tr><tr><td><p>cause_of_death</p></td><td><p>cause of death from person table</p></td></tr></tbody></table><p><strong>b) person_address_default - </strong>This table provides all the address information of persons.</p><p>openmrs tables used:- person_address</p><table data-layout=\"default\"><colgroup><col style=\"width: 357.0px;\" /><col style=\"width: 403.0px;\" /></colgroup><tbody><tr><td><p><strong>Column Name</strong></p></td><td><p><strong>Description</strong></p></td></tr><tr><td><p>person_id</p></td><td><p>Patient identifier</p></td></tr><tr><td><p>preferred</p></td><td><p>Preferred address of the patients if they have multiple addresses</p></td></tr><tr><td><p>address1 - address15</p></td><td><p>Represents different fields in address (Configurable)</p></td></tr><tr><td><p>city_village</p></td><td><p>City/Village of the patient</p></td></tr><tr><td><p>state_province</p></td><td><p>State/Province of the patient</p></td></tr><tr><td><p>postal_code</p></td><td><p>Postal code of the patient&rsquo;s residential area</p></td></tr><tr><td><p>country</p></td><td><p>Country of patient&rsquo;s residence</p></td></tr><tr><td><p>county_district</p></td><td><p>&nbsp;District of the patient&rsquo;s residence</p></td></tr><tr><td><p>latitude</p></td><td><p>Latitude of the area of residence</p></td></tr><tr><td><p>longitude</p></td><td><p>Longitude of the area of residence</p></td></tr><tr><td><p>start_date</p></td><td><p>Date when the patient started living in that area</p></td></tr><tr><td><p>end_date</p></td><td><p>Date when the patient stopped being in that area</p></td></tr></tbody></table><p><strong>c) person_attribute_info_default - </strong>This table provides all the information related person attributes</p><p>openmrs table used:- person_attribute_type</p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p><strong>Column Name</strong></p></td><td><p><strong>Description</strong></p></td></tr><tr><td><p>person_attribute_type_id</p></td><td><p>Id reference to the person attribute, from person_attribute_type table in openmrs</p></td></tr><tr><td><p>name</p></td><td><p>name of the person attribute type</p></td></tr><tr><td><p>description</p></td><td><p>description of the person attribute type</p></td></tr></tbody></table><p><strong>d) address_hierarchy_level_default- </strong>This table provides us the address hierarchy level information.</p><p>openmrs table used:- address_hierarchy_level</p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p><strong>Column Name</strong></p></td><td><p><strong>Description</strong></p></td></tr><tr><td><p>address_hierarchy_level_id</p></td><td><p>Id reference to the address, from address_hierarchy_level table in openmrs</p></td></tr><tr><td><p>name</p></td><td><p>name of the address field</p></td></tr><tr><td><p>parent_level_id</p></td><td><p>parent_level_id of address field</p></td></tr><tr><td><p>address_filed</p></td><td><p>To which address filed the data is filled in.</p></td></tr></tbody></table><p><strong>e) person_attributes</strong> : This table contains&nbsp; all the patient attributes that where used in the registration page. Columns will be generated dynamically based on the attributes that were used as a part of that specific implementation.</p><p>Eg : givenName, familyName, isCaretakerRequired, caretakerGender</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2306736554"
+      }
+    },
+    "view": {
+      "value": "<ul><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349306905/Person#configuration\" rel=\"nofollow\">configuration</a></p><ul><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349306905/Person#ColumnsToIgnore-apply-for-this-module-(-Refer--%5BinlineCard%5D-)\" rel=\"nofollow\">ColumnsToIgnore apply for this module ( Refer https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix )</a></p></li><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349306905/Person#incrementalUpdateConfig-is-applicable-(-Refer-%5BinlineCard%5D-)\" rel=\"nofollow\">incrementalUpdateConfig is applicable ( Refer https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update )</a></p></li></ul></li><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349306905/Person#Existing-OpenMRS-tables\" rel=\"nofollow\">Existing OpenMRS tables</a></p></li><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349306905/Person#Flattened-Mart-Tables\" rel=\"nofollow\">Flattened Mart Tables</a></p><ul><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349306905/Person#Incremental-Config%3A\" rel=\"nofollow\">Incremental Config:</a></p></li></ul></li></ul><h3 style=\"text-align: center;\" id=\"PersonJob-configuration\">configuration</h3><h5 id=\"PersonJob-ColumnsToIgnoreapplyforthismodule(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix)\"><strong>ColumnsToIgnore apply for this module ( Refer </strong><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><h5 id=\"PersonJob-incrementalUpdateConfigisapplicable(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update)\"><strong>incrementalUpdateConfig is applicable</strong> ( Refer <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</h5><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"5ec5b103-f736-4822-897d-8333cdb956b9\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n      &quot;name&quot;: &quot;Person&quot;,\n      &quot;type&quot;: &quot;person&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;,\n      &quot;groupedJobConfigs&quot;: [\n        {\n          &quot;tableName&quot;: &quot;person_details_default&quot;,\n          &quot;columnsToIgnore&quot;: []\n        }\n        ]\n}\n</pre>\n</div></div><hr/><h3 style=\"text-align: center;\" id=\"PersonJob-ExistingOpenMRStables\">Existing OpenMRS tables</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"462c67e6-fb65-4c69-9c37-c0eb39ddf321\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">person\nperson_name\nPatient_identifier\nperson_address\nperson_attribute_type\naddress_hierarchy_level\n</pre>\n</div></div><hr/><h3 style=\"text-align: center;\" id=\"PersonJob-FlattenedMartTables\">Flattened Mart Tables</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"90bdf1b3-3d05-4bb0-baaa-0bff33777436\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">person_details_default\nperson_address_default\nperson_attribute_info_default\naddress_hierarchy_level_default\n</pre>\n</div></div><h4 id=\"PersonJob-IncrementalConfig:\"><strong>Incremental Config:</strong></h4><p>Please check <a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update#1.-Person-Job:\" rel=\"nofollow\">this</a> section on how to enable/disable incremental config for specific mart tables.</p><p><strong>a) person_details_default - </strong>This table provides all the person related information.</p><p>openmrs tables used:- person, person_name</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>person_id</p></td><td class=\"confluenceTd\"><p>Id reference to the person, from person table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>person_name_id</p></td><td class=\"confluenceTd\"><p>Name of person from person_name table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>preferred</p></td><td class=\"confluenceTd\"><p>Preferred from person_name table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>gender</p></td><td class=\"confluenceTd\"><p>gender of person from person table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>birthyear</p></td><td class=\"confluenceTd\"><p>year of person birth</p></td></tr><tr><td class=\"confluenceTd\"><p>birthtime</p></td><td class=\"confluenceTd\"><p>Time of person birth</p></td></tr><tr><td class=\"confluenceTd\"><p>birthdate_estimated</p></td><td class=\"confluenceTd\"><p>provided date of birth is estimated or accurate, is indicated with birth_estimated ( true/false )</p></td></tr><tr><td class=\"confluenceTd\"><p>age</p></td><td class=\"confluenceTd\"><p>age of person from person table</p></td></tr><tr><td class=\"confluenceTd\"><p>age_group</p></td><td class=\"confluenceTd\"><p>Under which age range the patient belongs</p></td></tr><tr><td class=\"confluenceTd\"><p>dead</p></td><td class=\"confluenceTd\"><p>death status from person table ( true of false )</p></td></tr><tr><td class=\"confluenceTd\"><p>death_date</p></td><td class=\"confluenceTd\"><p>death date in case</p></td></tr><tr><td class=\"confluenceTd\"><p>deathdate_estimated</p></td><td class=\"confluenceTd\"><p>if death date is not accurate then this field indicates the same ( boolean value true/false )</p></td></tr><tr><td class=\"confluenceTd\"><p>cause_of_death</p></td><td class=\"confluenceTd\"><p>cause of death from person table</p></td></tr></tbody></table></div><p><strong>b) person_address_default - </strong>This table provides all the address information of persons.</p><p>openmrs tables used:- person_address</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 357.0px;\"/><col style=\"width: 403.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>person_id</p></td><td class=\"confluenceTd\"><p>Patient identifier</p></td></tr><tr><td class=\"confluenceTd\"><p>preferred</p></td><td class=\"confluenceTd\"><p>Preferred address of the patients if they have multiple addresses</p></td></tr><tr><td class=\"confluenceTd\"><p>address1 - address15</p></td><td class=\"confluenceTd\"><p>Represents different fields in address (Configurable)</p></td></tr><tr><td class=\"confluenceTd\"><p>city_village</p></td><td class=\"confluenceTd\"><p>City/Village of the patient</p></td></tr><tr><td class=\"confluenceTd\"><p>state_province</p></td><td class=\"confluenceTd\"><p>State/Province of the patient</p></td></tr><tr><td class=\"confluenceTd\"><p>postal_code</p></td><td class=\"confluenceTd\"><p>Postal code of the patient’s residential area</p></td></tr><tr><td class=\"confluenceTd\"><p>country</p></td><td class=\"confluenceTd\"><p>Country of patient’s residence</p></td></tr><tr><td class=\"confluenceTd\"><p>county_district</p></td><td class=\"confluenceTd\"><p> District of the patient’s residence</p></td></tr><tr><td class=\"confluenceTd\"><p>latitude</p></td><td class=\"confluenceTd\"><p>Latitude of the area of residence</p></td></tr><tr><td class=\"confluenceTd\"><p>longitude</p></td><td class=\"confluenceTd\"><p>Longitude of the area of residence</p></td></tr><tr><td class=\"confluenceTd\"><p>start_date</p></td><td class=\"confluenceTd\"><p>Date when the patient started living in that area</p></td></tr><tr><td class=\"confluenceTd\"><p>end_date</p></td><td class=\"confluenceTd\"><p>Date when the patient stopped being in that area</p></td></tr></tbody></table></div><p><strong>c) person_attribute_info_default - </strong>This table provides all the information related person attributes</p><p>openmrs table used:- person_attribute_type</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>person_attribute_type_id</p></td><td class=\"confluenceTd\"><p>Id reference to the person attribute, from person_attribute_type table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>name</p></td><td class=\"confluenceTd\"><p>name of the person attribute type</p></td></tr><tr><td class=\"confluenceTd\"><p>description</p></td><td class=\"confluenceTd\"><p>description of the person attribute type</p></td></tr></tbody></table></div><p><strong>d) address_hierarchy_level_default- </strong>This table provides us the address hierarchy level information.</p><p>openmrs table used:- address_hierarchy_level</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>address_hierarchy_level_id</p></td><td class=\"confluenceTd\"><p>Id reference to the address, from address_hierarchy_level table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>name</p></td><td class=\"confluenceTd\"><p>name of the address field</p></td></tr><tr><td class=\"confluenceTd\"><p>parent_level_id</p></td><td class=\"confluenceTd\"><p>parent_level_id of address field</p></td></tr><tr><td class=\"confluenceTd\"><p>address_filed</p></td><td class=\"confluenceTd\"><p>To which address filed the data is filled in.</p></td></tr></tbody></table></div><p><strong>e) person_attributes</strong> : This table contains  all the patient attributes that where used in the registration page. Columns will be generated dynamically based on the attributes that were used as a part of that specific implementation.</p><p>Eg : givenName, familyName, isCaretakerRequired, caretakerGender</p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2306736554"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2306736554/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736554/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 3048
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2306736554/child",
+    "restrictions": "/rest/api/content/2306736554/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2306736554/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2306736554",
+    "webui": "/spaces/BAH/pages/2306736554/Person+Job",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2306736554",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736554",
+    "tinyui": "/x/qgF_iQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

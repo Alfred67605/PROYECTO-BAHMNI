@@ -1,0 +1,172 @@
+{
+  "id": "2306736537",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2306736537",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMwNjczNjUzNw==",
+  "status": "current",
+  "title": "Location",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5ff6975591bb2e0108e513c3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "venkatesh bavisetti",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5ff6975591bb2e0108e513c3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Bavisetti Venkatesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5ff6975591bb2e0108e513c3"
+      }
+    },
+    "createdDate": "2021-04-05T09:11:42.648Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736537/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5ff6975591bb2e0108e513c3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "venkatesh bavisetti",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5ff6975591bb2e0108e513c3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Bavisetti Venkatesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5ff6975591bb2e0108e513c3"
+      }
+    },
+    "when": "2021-04-05T09:12:13.962Z",
+    "friendlyWhen": "Apr 05, 2021",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.RoYSx0i0oZbiH9srNfu39A.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2306736537.9",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2306736537"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736537/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p /><h3 style=\"text-align: center;\">configuration</h3><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" data-layout=\"default\" ac:local-id=\"68ea7de5-7d1f-476c-8e89-a84fc7de61c2\" ac:macro-id=\"af6cd699-aa07-4109-bae9-5c061df16dab\" /><h5><strong>incrementalUpdateConfig is applicable</strong> ( Refer <a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</h5><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b700fc94-8fcb-4b82-a810-e244a5c463a2\"><ac:plain-text-body><![CDATA[{\n      \"name\": \"Location\",\n      \"type\": \"location\",\n      \"chunkSizeToRead\": \"500\"\n}]]></ac:plain-text-body></ac:structured-macro><p style=\"text-align: center;\"><strong>Existing OpenMRS tables</strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"49b05873-026e-4a6f-ba4b-782b0e3fceab\"><ac:plain-text-body><![CDATA[location\nlocation_tag_name\nlocation_tag_map\nlocation_attribute\nlocation_attribute_type]]></ac:plain-text-body></ac:structured-macro><hr /><h3 style=\"text-align: center;\">Flattened Mart Tables</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b23ed750-daa8-4044-bab4-587ee020291e\"><ac:plain-text-body><![CDATA[location_default\nlocation_tag_map_default\nlocation_attribute_details_default]]></ac:plain-text-body></ac:structured-macro><p><strong>a)</strong> <strong>location_default</strong> - This table provides the location and all the details of locations.</p><p>Openmrs tables used: location</p><table data-layout=\"default\"><colgroup><col style=\"width: 357.0px;\" /><col style=\"width: 403.0px;\" /></colgroup><tbody><tr><td><p><strong>Column Name</strong></p></td><td><p><strong>Description</strong></p></td></tr><tr><td><p>location_id</p></td><td><p>Unique column id from location table from openmrs</p></td></tr><tr><td><p>name</p></td><td><p>Name of the location</p></td></tr><tr><td><p>description</p></td><td><p>Description for that particular location</p></td></tr><tr><td><p>address1 - address15</p></td><td><p>Represents different fields in address (Configurable)</p></td></tr><tr><td><p>city_village</p></td><td><p>City/Village of the patient</p></td></tr><tr><td><p>state_province</p></td><td><p>State/Province of the patient</p></td></tr><tr><td><p>postal_code</p></td><td><p>Postal code of the patient&rsquo;s residential area</p></td></tr><tr><td><p>country</p></td><td><p>Country of patient&rsquo;s residence</p></td></tr><tr><td><p>county_district</p></td><td><p>&nbsp;District of the patient&rsquo;s residence</p></td></tr><tr><td><p>latitude</p></td><td><p>Latitude of the area of residence</p></td></tr><tr><td><p>longitude</p></td><td><p>Longitude of the area of residence</p></td></tr><tr><td><p>start_date</p></td><td><p>Date when the patient started living in that area</p></td></tr><tr><td><p>end_date</p></td><td><p>Date when the patient stopped being in that area</p></td></tr><tr><td><p>parent_location</p></td><td><p>parent locations id</p></td></tr></tbody></table><p>b) <strong>location_tag_map_default</strong> - This table provides the location tag map details</p><p>Openmrs Tables used :- location, location_tag_name, location_tag_map</p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p><strong>Column Name</strong></p></td><td><p><strong>Description</strong></p></td></tr><tr><td><p>location_id</p></td><td><p>Unique column id from location table in openmrs</p></td></tr><tr><td><p>location_tag_id</p></td><td><p>Unique column id from location_tag table in openmrs</p></td></tr><tr><td><p>location_tag_name</p></td><td><p>Name of location from location_tag table in openmrs</p></td></tr><tr><td><p>location_tag_description</p></td><td><p>Location Tag description from location_tag table in openmrs</p></td></tr></tbody></table><p>c) <strong>location_attribute_details_default -</strong></p><p>Openmrs Tables used :- location, location_attribute , location_attribute_type</p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p><strong>Column Name</strong></p></td><td><p><strong>Description</strong></p></td></tr><tr><td><p>location_attribute_id</p></td><td><p>Unique column id from location_attribute table in openmrs</p></td></tr><tr><td><p>attribute_type_id</p></td><td><p>location attribute type id from location_attribute table in openmrs</p></td></tr><tr><td><p>value_reference</p></td><td><p>value_reference from location_attribute table in openmrs</p></td></tr><tr><td><p>location_attribute_type_name</p></td><td><p>value_reference from location_attribute table in openmrs</p></td></tr><tr><td><p>location_attribute_type_description</p></td><td><p>location_attribute_type description from location_attribute table in openmrs</p></td></tr><tr><td><p>location_attribute_type_datatype</p></td><td><p>location_attribute_type_datatype from location_attribute table in openmrs</p></td></tr><tr><td><p>location_attribute_type_datatype_config</p></td><td><p>location_attribute_type_datatype_config from location_attribute table in openmrs</p></td></tr><tr><td><p>location_attribute_type_preferred_handler</p></td><td><p>location_attribute_type_preferred_handler from location_attribute table in openmrs</p></td></tr><tr><td><p>location_attribute_type_handler_config</p></td><td><p>location_attribute_type_handler_config from location_attribute table in openmrs</p></td></tr><tr><td><p>location_attribute_type_min_occurs</p></td><td><p>location_attribute_type_min_occurs from location_attribute table in openmrs</p></td></tr><tr><td><p>location_attribute_type_min_occurs</p></td><td><p>location_attribute_type_min_occurs from location_attribute table in openmrs</p></td></tr></tbody></table><p />",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2306736537"
+      }
+    },
+    "view": {
+      "value": "<p /><h3 style=\"text-align: center;\" id=\"Location-configuration\">configuration</h3><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-layout=\"default\" data-local-id=\"68ea7de5-7d1f-476c-8e89-a84fc7de61c2\" data-macro-id=\"af6cd699-aa07-4109-bae9-5c061df16dab\" data-macro-name=\"toc\"> </div><h5 id=\"Location-incrementalUpdateConfigisapplicable(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update)\"><strong>incrementalUpdateConfig is applicable</strong> ( Refer <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</h5><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b700fc94-8fcb-4b82-a810-e244a5c463a2\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n      &quot;name&quot;: &quot;Location&quot;,\n      &quot;type&quot;: &quot;location&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;\n}</pre>\n</div></div><p style=\"text-align: center;\"><strong>Existing OpenMRS tables</strong></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"49b05873-026e-4a6f-ba4b-782b0e3fceab\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">location\nlocation_tag_name\nlocation_tag_map\nlocation_attribute\nlocation_attribute_type</pre>\n</div></div><hr/><h3 style=\"text-align: center;\" id=\"Location-FlattenedMartTables\">Flattened Mart Tables</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b23ed750-daa8-4044-bab4-587ee020291e\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">location_default\nlocation_tag_map_default\nlocation_attribute_details_default</pre>\n</div></div><p><strong>a)</strong> <strong>location_default</strong> - This table provides the location and all the details of locations.</p><p>Openmrs tables used: location</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 357.0px;\"/><col style=\"width: 403.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>location_id</p></td><td class=\"confluenceTd\"><p>Unique column id from location table from openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>name</p></td><td class=\"confluenceTd\"><p>Name of the location</p></td></tr><tr><td class=\"confluenceTd\"><p>description</p></td><td class=\"confluenceTd\"><p>Description for that particular location</p></td></tr><tr><td class=\"confluenceTd\"><p>address1 - address15</p></td><td class=\"confluenceTd\"><p>Represents different fields in address (Configurable)</p></td></tr><tr><td class=\"confluenceTd\"><p>city_village</p></td><td class=\"confluenceTd\"><p>City/Village of the patient</p></td></tr><tr><td class=\"confluenceTd\"><p>state_province</p></td><td class=\"confluenceTd\"><p>State/Province of the patient</p></td></tr><tr><td class=\"confluenceTd\"><p>postal_code</p></td><td class=\"confluenceTd\"><p>Postal code of the patient’s residential area</p></td></tr><tr><td class=\"confluenceTd\"><p>country</p></td><td class=\"confluenceTd\"><p>Country of patient’s residence</p></td></tr><tr><td class=\"confluenceTd\"><p>county_district</p></td><td class=\"confluenceTd\"><p> District of the patient’s residence</p></td></tr><tr><td class=\"confluenceTd\"><p>latitude</p></td><td class=\"confluenceTd\"><p>Latitude of the area of residence</p></td></tr><tr><td class=\"confluenceTd\"><p>longitude</p></td><td class=\"confluenceTd\"><p>Longitude of the area of residence</p></td></tr><tr><td class=\"confluenceTd\"><p>start_date</p></td><td class=\"confluenceTd\"><p>Date when the patient started living in that area</p></td></tr><tr><td class=\"confluenceTd\"><p>end_date</p></td><td class=\"confluenceTd\"><p>Date when the patient stopped being in that area</p></td></tr><tr><td class=\"confluenceTd\"><p>parent_location</p></td><td class=\"confluenceTd\"><p>parent locations id</p></td></tr></tbody></table></div><p>b) <strong>location_tag_map_default</strong> - This table provides the location tag map details</p><p>Openmrs Tables used :- location, location_tag_name, location_tag_map</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>location_id</p></td><td class=\"confluenceTd\"><p>Unique column id from location table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>location_tag_id</p></td><td class=\"confluenceTd\"><p>Unique column id from location_tag table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>location_tag_name</p></td><td class=\"confluenceTd\"><p>Name of location from location_tag table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>location_tag_description</p></td><td class=\"confluenceTd\"><p>Location Tag description from location_tag table in openmrs</p></td></tr></tbody></table></div><p>c) <strong>location_attribute_details_default -</strong></p><p>Openmrs Tables used :- location, location_attribute , location_attribute_type</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>location_attribute_id</p></td><td class=\"confluenceTd\"><p>Unique column id from location_attribute table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>attribute_type_id</p></td><td class=\"confluenceTd\"><p>location attribute type id from location_attribute table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>value_reference</p></td><td class=\"confluenceTd\"><p>value_reference from location_attribute table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>location_attribute_type_name</p></td><td class=\"confluenceTd\"><p>value_reference from location_attribute table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>location_attribute_type_description</p></td><td class=\"confluenceTd\"><p>location_attribute_type description from location_attribute table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>location_attribute_type_datatype</p></td><td class=\"confluenceTd\"><p>location_attribute_type_datatype from location_attribute table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>location_attribute_type_datatype_config</p></td><td class=\"confluenceTd\"><p>location_attribute_type_datatype_config from location_attribute table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>location_attribute_type_preferred_handler</p></td><td class=\"confluenceTd\"><p>location_attribute_type_preferred_handler from location_attribute table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>location_attribute_type_handler_config</p></td><td class=\"confluenceTd\"><p>location_attribute_type_handler_config from location_attribute table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>location_attribute_type_min_occurs</p></td><td class=\"confluenceTd\"><p>location_attribute_type_min_occurs from location_attribute table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>location_attribute_type_min_occurs</p></td><td class=\"confluenceTd\"><p>location_attribute_type_min_occurs from location_attribute table in openmrs</p></td></tr></tbody></table></div><p />",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2306736537"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2306736537/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736537/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 2099
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2306736537/child",
+    "restrictions": "/rest/api/content/2306736537/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2306736537/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2306736537",
+    "webui": "/spaces/BAH/pages/2306736537/Location",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2306736537",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736537",
+    "tinyui": "/x/mQF_iQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

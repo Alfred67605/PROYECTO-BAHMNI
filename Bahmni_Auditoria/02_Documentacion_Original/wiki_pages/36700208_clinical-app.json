@@ -1,0 +1,170 @@
+{
+  "id": "36700208",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/36700208",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzY3MDAyMDg=",
+  "status": "current",
+  "title": "Clinical App",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:c54772f2-46b5-43c0-be04-96923ee59750",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Vinay Venu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:c54772f2-46b5-43c0-be04-96923ee59750",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Vinay Venu",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:c54772f2-46b5-43c0-be04-96923ee59750"
+      }
+    },
+    "createdDate": "2016-01-05T05:00:00.409Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/36700208/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "when": "2016-03-24T06:31:23.590Z",
+    "friendlyWhen": "Mar 24, 2016",
+    "message": "",
+    "number": 9,
+    "minorEdit": false,
+    "syncRev": "0.uAz2ozEKGATV_aALypLRVA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$36700208.44",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/36700208"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/36700208/version/9"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Description</h2><p>The Clinical App contains configuration for the Clinical Module.</p><p>The configuration files should be under bahmni_config/openmrs/apps/clinical of your web server. The app configuration needs an app.json, an extension.json, medication.json, dashboard.json, visit.json. Optionally, you could add a formConditions.js and an extension-x.json. Please see the list below for further details about configuring the JSON files.</p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"d6a4fb3e-218f-4efd-8a3b-f24022e2a2f9\"><ac:parameter ac:name=\"title\">JSON files in the Clinical App</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"a4a3ac4d-b692-477e-84a0-6cc090462550\"><ac:parameter ac:name=\"all\">true</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p>&nbsp;</p><p>&nbsp;</p></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"2e090de1-f033-4179-bcca-609200e0a042\"><ac:parameter ac:name=\"titleColor\">White</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Clinical Module\" /><ac:plain-text-link-body><![CDATA[Clinical Module - Implementer's Guide]]></ac:plain-text-link-body></ac:link></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/36700208"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ClinicalApp-Description\">Description</h2><p>The Clinical App contains configuration for the Clinical Module.</p><p>The configuration files should be under bahmni_config/openmrs/apps/clinical of your web server. The app configuration needs an app.json, an extension.json, medication.json, dashboard.json, visit.json. Optionally, you could add a formConditions.js and an extension-x.json. Please see the list below for further details about configuring the JSON files.</p><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d6a4fb3e-218f-4efd-8a3b-f24022e2a2f9\" data-macro-name=\"tip\"><p class=\"title\">JSON files in the Clinical App</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"a4a3ac4d-b692-477e-84a0-6cc090462550\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/36700210/medication.json\" data-linked-resource-id=\"36700210\" data-linked-resource-version=\"62\" data-linked-resource-type=\"page\">medication.json</a></li><li><a href=\"/wiki/spaces/BAH/pages/37945559/extension.json\" data-linked-resource-id=\"37945559\" data-linked-resource-version=\"16\" data-linked-resource-type=\"page\">extension.json</a></li><li><a href=\"/wiki/spaces/BAH/pages/37945561/app.json\" data-linked-resource-id=\"37945561\" data-linked-resource-version=\"18\" data-linked-resource-type=\"page\">app.json</a></li><li><a href=\"/wiki/spaces/BAH/pages/37945563/visit.json\" data-linked-resource-id=\"37945563\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">visit.json</a></li><li><a href=\"/wiki/spaces/BAH/pages/37945565/formConditions.js\" data-linked-resource-id=\"37945565\" data-linked-resource-version=\"28\" data-linked-resource-type=\"page\">formConditions.js</a></li><li><a href=\"/wiki/spaces/BAH/pages/37945567/extension-programs.json\" data-linked-resource-id=\"37945567\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">extension-programs.json</a></li><li><a href=\"/wiki/spaces/BAH/pages/37945569/dashboard.json\" data-linked-resource-id=\"37945569\" data-linked-resource-version=\"34\" data-linked-resource-type=\"page\">dashboard.json</a></li></ul><p> </p></div></div><p> </p><p> </p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"2e090de1-f033-4179-bcca-609200e0a042\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: White;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/32014548/Clinical+Module\" data-linked-resource-id=\"32014548\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Clinical Module - Implementer's Guide</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/36700208"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/36700208/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/36700208/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 2
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/36700208/child",
+    "restrictions": "/rest/api/content/36700208/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/36700208/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=36700208",
+    "webui": "/spaces/BAH/pages/36700208/Clinical+App",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/36700208",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/36700208",
+    "tinyui": "/x/MAAwAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

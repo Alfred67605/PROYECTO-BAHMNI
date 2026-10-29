@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Conditional Attributes</title></head><body><h1>Conditional Attributes</h1><h2 id="ConditionalAttributes-Description">Description</h2><p>This configuration allows users to show or hide sections in registration create new patient page based on conditions. For this a specific file named &quot;attributesConditions.js&quot; must be defined. </p><p>This file &quot;attributesConditions.js&quot; should be located in &quot;/var/www/bahmni_config/openmrs/apps/registration/&quot; directory. </p><p><br/></p><p>For example: If  age is less than 18, only then show the &quot;Guardian Details&quot; section.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="ee76464c-8809-4230-a596-d49984a926ba" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Config for sections</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">            &quot;patientInformation&quot;: {
+                &quot;patientContact&quot;: {
+                    &quot;title&quot;: &quot;Patient Contact&quot;,
+                    &quot;translationKey&quot;: &quot;Patient Contact&quot;,
+                    &quot;attributes&quot;: [
+                        &quot;phoneNumber1&quot;,
+                        &quot;phoneNumber2&quot;,
+                        &quot;emailAddress&quot;,
+                    ]
+                },
+                &quot;guardian&quot;: {
+                    &quot;title&quot;: &quot;Guardian Details&quot;,
+                    &quot;translationKey&quot;: &quot;Guardian Details&quot;,
+                    &quot;attributes&quot;: [
+                        &quot;guardianNameEnglish&quot;,
+                        &quot;guardianGender&quot;,
+                        &quot;guardianDob&quot;,
+                        &quot;guardianAge&quot;,
+                        &quot;guardianNationality&quot;
+                    ]
+                },
+            }</pre>
+</div></div><p>Here, 'patientContact' and 'guardian' are the sections. Below is the javascript that is needed to show the guardian section if patient's age is less than 18.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="a74dda10-ad26-490d-8078-885761d2585e" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>attributesConditions.js</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">var showOrHideGuardianSection = function (patient) {
+    var returnValues = {
+        show: [],
+        hide: []
+    };
+    if (patient[&quot;age&quot;].years &lt; 18) {
+        returnValues.show.push(&quot;guardian&quot;)
+    } else {
+        returnValues.hide.push(&quot;guardian&quot;)
+    }
+    return returnValues
+};
+
+Bahmni.Registration.AttributesConditions.rules = {
+    'age': function (patient) {
+        return showOrHideGuardianSection(patient);
+    },
+
+    'birthdate': function (patient) {
+        return showOrHideGuardianSection(patient);
+    },
+	'isGuardianRequired': function(patient) {
+    	var returnValues = {
+        	show: [],
+        	hide: []
+    	};
+    	if (patient[&quot;isGuardianRequired&quot;]) {
+        	returnValues.show.push(&quot;guardian&quot;);
+	    } else {
+    	    returnValues.hide.push(&quot;guardian&quot;);
+    	}
+    	return returnValues;
+	}
+};</pre>
+</div></div><ul><li>Here, 'age' is the field on which the condition has to be written. </li><li>A function has to be written which takes in 'patient' as parameter. The patient is the object that contains all the values that are filled in the form. </li><li>The values can be accessed like 'patient[&quot;&lt;attribute name&gt;&quot;]'. </li><li>This function will be called whenever the value changes of the particular patient attribute(age in this example). </li><li>The function has to return an object with 'show' and 'hide' as variables. </li><li>These variables are the arrays that contains the name of the sections to be hidden or shown. </li><li>The conditions can be written based on age, gender, birthdate, birthtime, birthdateEstimated and any other patient attribute. For example, in the third function, 'isGuardianRequired' is a patient attribute. If 'isGuardianRequired' is checked, then it will show &quot;Guardian Details&quot; section otherwise hide. Notice that in '<strong style="line-height: 1.42857;">returnValues.show.push(&quot;guardian&quot;)</strong>', 'guardian' is the key of the section(refer the first code block above).</li></ul></body></html>

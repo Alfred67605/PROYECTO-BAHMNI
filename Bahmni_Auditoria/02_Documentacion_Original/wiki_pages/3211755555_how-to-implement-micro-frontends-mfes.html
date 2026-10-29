@@ -1,0 +1,352 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>How to implement micro-frontends (MFEs)</title></head><body><h1>How to implement micro-frontends (MFEs)</h1><div class="contentLayout2"><style>[data-colorid=hty72ez1fa]{color:#bf2600} html[data-color-mode=dark] [data-colorid=hty72ez1fa]{color:#ff6640}</style>
+<div class="columnLayout fixed-width" data-layout="fixed-width">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p>This guide will go step by step through implementing your own MFE with Bahmni. For example purposes, let&rsquo;s say you want to create a micro-frontend named <code>diagnostics</code> which will export a single component called <code>DiagnosticsDashboard</code>.</p><h1 id="Howtoimplementmicro-frontends(MFEs)-Step1:CreateaMFErepository">Step 1: Create a MFE repository</h1><p>You can clone <a class="external-link" href="https://github.com/Bahmni/bahmni-microfrontend-reference" rel="nofollow">bahmni-microfrontend-reference</a> repository for a solid starting point. The <a class="external-link" href="https://github.com/Bahmni/bahmni-microfrontend-reference/blob/main/README.md" rel="nofollow">README.md</a> will contain a checklist for you to go through and set-up the repository with essential information. </p><p>Once you follow through the checklist, you should end up with a module name of <code>bahmni_diagnostics</code> in the ModuleFederation plugin and <code>DiagnosticsDashboard</code> should be part of the <code>exposes</code> property of the same.</p><hr /><h1 id="Howtoimplementmicro-frontends(MFEs)-Step2:DecideonaservingstrategyforyourMFE">Step 2: Decide on a serving strategy for your MFE</h1><p>On running <code>yarn build</code>, you should get built files in <code>dist/federation/</code> folder. Files within this need to be served from a web server. This would be our remote URL.</p><h3 id="Howtoimplementmicro-frontends(MFEs)-2.1:Dockercontainerwithproxy">2.1: Docker container with proxy</h3><p>The reference repository assumes that you want to serve your MFE from within the <code>bahmni-docker</code> setup as a single container based on a reverse proxy. If you go through this route, follow the steps below</p><p><strong>2.1.1: </strong>Update the GitHub workflow and Dockerfile to build an image named <code>bahmni/microfrontend-diagnostics</code>.</p><p><strong>2.1.2: </strong>Add appropriate entry into the docker-compose setup that you are using. This could be <a class="external-link" href="https://github.com/Bahmni/bahmni-docker" rel="nofollow">bahmni-docker</a> or some fork of it as per your use case. You should end up with a container named (for example) <code>diagnostics</code>. <u>An example entry</u> with volume mount for local development is shown below.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="e0a4494f-7a5a-48d4-9a22-285e5d77e695" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">diagnostics:
+  image: bahmni/microfrontend-diagnostics:latest
+  profiles: [&quot;emr&quot;, &quot;bahmni-lite&quot;, &quot;bahmni-mart&quot;]
+  volumes:
+  - &quot;${DIAGNOSTICS_PATH:?}/dist/federation/:/usr/local/apache2/htdocs/diagnostics&quot;</pre>
+</div></div><p><strong>2.1.3: </strong>Add a proxy entry for the container in your proxy setup. Assuming you are using <a class="external-link" href="https://github.com/Bahmni/bahmni-proxy" rel="nofollow">bahmni-proxy</a>, add a reverse proxy rule to <code>resources/bahmni-proxy.conf</code></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="ff72cc1d-05e0-498a-8c95-6726113aac05" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence"># diagnostics
+ProxyPass /diagnostics http://diagnostics/diagnostics
+ProxyPassReverse /diagnostics http://diagnostics/diagnostics</pre>
+</div></div><p>This make the apache folder accessible at <code>/diagnostics</code> proxy. Confirm that <code>https://&lt;bahmni-host&gt;/diagnostics/remoteEntry.js</code> is accessible.</p><hr /><h1 id="Howtoimplementmicro-frontends(MFEs)-Step3:CreateMFEmoduleinopenmrs-module-bahmniapps">Step 3: Create MFE module in <code>openmrs-module-bahmniapps</code></h1><h3 id="Howtoimplementmicro-frontends(MFEs)-3.1:Createsourcefilestoholdnewangularmodule">3.1: Create source files to hold new angular module</h3></div>
+</div>
+</div>
+<div class="columnLayout two-equal" data-layout="two-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="2444d82f-f647-4984-90ef-d75097d7f96a" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">mkdir micro-frontends/src/diagnostics
+touch micro-frontends/src/diagnostics/index.js</pre>
+</div></div></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="ff3076e0-5e0b-4cfc-9c92-3ed0ce5aee76" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">/* micro-frontends/src/diagnostics/index.js */
+
+// Follow the below module naming convention
+angular.module('bahmni.mfe.diagnostics', [/* add any dependencies */]);</pre>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout fixed-width" data-layout="fixed-width">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h3 id="Howtoimplementmicro-frontends(MFEs)-3.2:AddWebPackentrypointfornewmodule">3.2: Add WebPack entry point for new module</h3><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="5b48abd3-9284-4e96-8490-372ca7685796" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">/* micro-frontends/webpack.config.js */
+
+module.exports = {
+  // ... other stuff
+  entry: {
+    // ...
+    diagnostics: &quot;./src/diagnostics/index.js&quot;
+  }
+}</pre>
+</div></div><p>Completing the above steps adds a new WebPack module which will be built into <code>ui/app/micro-frontends-dist/diagnostics.min.js</code> and `<code>ui/app/micro-frontends-dist/diagnostics.min.css</code>.</p><h3 id="Howtoimplementmicro-frontends(MFEs)-3.3:Mockoutyourmodulefortests">3.3: Mock out your module for tests</h3></div>
+</div>
+</div>
+<div class="columnLayout two-equal" data-layout="two-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p>Assuming that your MFE will have full test coverage in your own repository, you should mock out this module for unit tests in Bahmni to make things easier. This needs to be done in <code>ui/test/__mocks__/micro-frontends.js</code></p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="fd8e676b-8cf5-484d-8c1d-055835e0167b" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">/* ui/test/__mocks__/micro-frontends.js */
+
+// add an empty module as a mock
+angular.module('bahmni.mfe.diagnostics', []);</pre>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout fixed-width" data-layout="fixed-width">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<hr /><h1 id="Howtoimplementmicro-frontends(MFEs)-Step4:CreateahostingReactcomponent">Step 4: Create a hosting React component</h1><h3 id="Howtoimplementmicro-frontends(MFEs)-4.1:AddModuleFederationconfigforyourMFE">4.1: Add ModuleFederation config for your MFE</h3><p>This sets up the remote URL accessible for dynamic imports</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="6855714c-f1e1-4a52-b7d8-b033dd42ae7d" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">/* micro-frontends/webpack.config.js */
+
+module.exports = {
+  // ... other stuff
+  plugins: [
+    // ...
+    new ModuleFederationPlugin({
+      // ...
+      remotes: {
+        // ...
+        
+        // IF using proxy, do this
+        // Add your MFE with the federated module name and proxy path
+        &quot;@openmrs-mf/diagnostics&quot;: remoteProxiedAtHostDomain({ name: &quot;bahmni_diagnostics&quot;, path: &quot;diagnostics&quot;})
+        
+        // if not using proxy, add the static URL instead of using remoteProxiedAtHostDomain
+      }
+    })
+  ]
+}</pre>
+</div></div><h3 id="Howtoimplementmicro-frontends(MFEs)-4.2:CreateahostingReactcomponentloadingtheremotecomponent">4.2: Create a hosting React component loading the remote component</h3><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="661b75d9-aacb-4ba2-8841-bf760d20c52b" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">/* micro-frontends/src/diagnostics/Dashboard.jsx */
+
+import PropTypes from &quot;prop-types&quot;;
+import React, { Suspense, lazy } from &quot;react&quot;;
+
+export function Dashboard(props) {
+  // on run, this will fetch remoteEntry.js and load the DiagnosticsDashboard component from there
+  const LazyComp = lazy(() =&gt; import(&quot;@openmrs-mf/diagnostics/DiagnosticsDashboard&quot;));
+
+  return (
+    &lt;&gt;
+      &lt;Suspense fallback={&lt;p&gt;Loading...&lt;/p&gt;}&gt;
+        &lt;LazyComp
+          hostData={props.hostData}
+          hostApi={props.hostApi}
+        /&gt;
+      &lt;/Suspense&gt;
+    &lt;/&gt;
+  );
+}
+
+// Without propTypes, react2angular won't render the component
+Dashboard.propTypes = {
+  hostData: PropTypes.shape({
+    // Set up your input data shape as needed here, below is an example
+    patient: PropTypes.shape({
+      uuid: PropTypes.string.isRequired,
+    }).isRequired,
+  }),
+  hostApi: PropTypes.shape({
+    // Set up your output (callbacks) shape as needed. below is an example
+    onConfirm: PropTypes.func,
+  }),
+};</pre>
+</div></div><h1 id="Howtoimplementmicro-frontends(MFEs)-Step5:Registerangularcomponent">Step 5: Register angular component</h1><p>The angular module created in Step 3 would need a wrapper angular component added to, which will interface with the hosting component created in Step 4. There are two ways to achieve this</p></div>
+</div>
+</div>
+<div class="columnLayout two-equal" data-layout="two-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h3 id="Howtoimplementmicro-frontends(MFEs)-optionA(recommended):UseReact2AngularBridgeBuilderabstraction">option A (recommended): Use React2AngularBridgeBuilder abstraction</h3><p>We have created a good abstraction which simplifies the wrapper build process using conventions. Check it out at <code>micro-frontends/src/utils/bridge-builder.js</code></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="3bb35104-25bb-45e3-8603-b5cd8a8781dc" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">/* micro-frontends/src/diagnostics/index.js */
+import { React2AngularBridgeBuilder } from &quot;../utils/bridge-builder&quot;;
+import { Dashboard } from 'Dashboard.jsx';
+
+// Extract module name to make it easier
+const MODULE_NAME = &quot;bahmni.mfe.diagnostics&quot;
+angular.module(MODULE_NAME, []);
+
+const builder = new React2AngularBridgeBuilder({
+  moduleName: MODULE_NAME,
+  // use the following convention mfe&lt;camelCaseNameOfModule&gt;
+  componentPrefix: &quot;mfeDiagnostics&quot;,
+});
+
+builder.createComponent(&quot;Dashboard&quot;, Dashboard);
+// The above registers an angular component named 'mfeDiagnosticsDashboard'</pre>
+</div></div></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h3 id="Howtoimplementmicro-frontends(MFEs)-optionB:Manual">option B: Manual</h3><p>If you need more control over the wrapper build process, you can do it manually, following what the abstraction in <code>micro-frontends/src/utils/bridge-builder.js</code> does internally.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="1e5708c8-14be-4e7d-8195-fac6504b6149" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">/* micro-frontends/src/diagnostics/index.js */
+import { Dashboard } from 'Dashboard.jsx';
+import { react2angular } from &quot;react2angular&quot;;
+
+// Extract module name to make it easier
+const MODULE_NAME = &quot;bahmni.mfe.diagnostics&quot;
+
+angular.module(MODULE_NAME, []);
+
+angular.module(MODULE_NAME)
+  .component('mfeDiagnosticsDashboard', react2angular(Dashboard));
+  
+// The above registers an angular component named 'mfeDiagnosticsDashboard'</pre>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout fixed-width" data-layout="fixed-width">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<hr /><h1 id="Howtoimplementmicro-frontends(MFEs)-Step6:UseyourMFEinanangularmodule">Step 6: Use your MFE in an angular module</h1><p>To use your MFE in a given angular module, you just need to include the the module as a dependency and add the required built files along with react to the html entry point. Let&rsquo;s take the example of the <code>clinical</code> module.</p></div>
+</div>
+</div>
+<div class="columnLayout two-equal" data-layout="two-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="56461204-1ae5-4a72-89d2-943fb3a94e1c" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: html; gutter: false; theme: Confluence" data-theme="Confluence">&lt;!-- ui/app/clinical/index.html --&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;!-- common mfe styles --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;../micro-frontends-dist/shared.min.css&quot;/&gt;
+  
+  &lt;!-- global specific styles of diagnostics mfe --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;../micro-frontends-dist/diagnostics.min.css&quot;/&gt;
+  
+  &lt;!-- build:css clinical.min.css --&gt;
+  &lt;!-- DO NOT ADD MFE STYLES INSIDE THE GRUNT BUILD BLOCK --&gt;
+  &lt;!-- endbuild --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;!-- Adding react since an micro-frontend will be used --&gt;
+  &lt;script src=&quot;../components/react/react.production.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;../components/react-dom/react-dom.production.min.js&quot;&gt;&lt;/script&gt;
+
+  &lt;!-- form-controls also needs react so make sure you include react before this --&gt;
+  &lt;script src=&quot;../components/bahmni-form-controls/helpers.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;../components/bahmni-form-controls/bundle.js&quot;&gt;&lt;/script&gt;
+
+  &lt;!-- shared js including polyfills --&gt;
+  &lt;script src=&quot;../micro-frontends-dist/shared.min.js&quot;&gt;&lt;/script&gt;
+
+  &lt;!-- load the mfe js --&gt;
+  &lt;script src=&quot;../micro-frontends-dist/diagnostics.min.js&quot;&gt;&lt;/script&gt;
+  
+  &lt;!-- build:js clinical.min.js --&gt;
+  &lt;!-- DO NOT ADD MFE STYLES INSIDE THE GRUNT BUILD BLOCK --&gt;
+  &lt;!-- endbuild --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</div></div><p /><p /></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="1e36464e-0b62-4af5-a678-e9aa2d075dda" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">
+
+
+
+---------- Add shared css first
+
+
+---------- Then add mfe css
+
+---------- IMPORTANT: Make sure no mfe css is inside a build block like this
+
+
+
+
+
+
+---------- Include the react packages if not already present
+
+
+
+
+
+
+
+---------- Add the shared JS for mfes
+
+
+---------- Add the JS of the mfe
+
+
+---------- IMPORTANT: Make sure no mfe js is inside a build block like this. All MFE code needs
+           to be ABOVE this block
+           
+           </pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="1e1b6358-78e5-42cf-8b2c-aa4546fe6019" data-macro-name="info"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>It is very important to correctly order and place the javascript and css files within the index.html. There are build marker positions in here which will make Grunt pick up minified files within and try to minify again. This will fail with the mfe build. Follow the instructions in the comments given </p></div></div></div>
+</div>
+</div>
+<div class="columnLayout two-equal" data-layout="two-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p>The last step after this is to include the module as a dependency in your init.js file. </p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="5cd0e2b5-7e1a-422c-9d92-4da26b93a135" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">/* ui/app/clinical/init.js */
+
+// ...
+angular.module('bahmni.clinical', [
+  // other dependencies
+  'bahmni.mfe.diagnostics'
+])</pre>
+</div></div><p /></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p>Which then allows you to render your component in a template like this</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="2451410f-5be3-41cd-83a0-4837afe21405" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: html; gutter: false; theme: Confluence" data-theme="Confluence">&lt;!-- ui/app/clinical/dashboard/views/dashboard.html --&gt;
+
+&lt;mfe-diagnostics-dashboard host-data=&quot;hostData&quot; host-api=&quot;hostApi&quot;&gt;
+&lt;/mfe-diagnostics-dashboard&gt;</pre>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout fixed-width" data-layout="fixed-width">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<hr /><h1 id="Howtoimplementmicro-frontends(MFEs)-Managinginformationflow">Managing information flow</h1><p>Currently, we have not set up any kind of event bus architecture for communication between host and MFE components. As a convention, we will use <code>hostData</code> and <code>hostApi</code> keys to do this communication.</p><h2 id="Howtoimplementmicro-frontends(MFEs)-PassingdatafromHosttoMFE">Passing data from Host to MFE</h2><p>The remote MFE can receive data from the host angular application though standard React props. As a matter of convention, it has been decided to wrap these inputs in a single prop object called <code>hostData</code>. An example usage would look like</p></div>
+</div>
+</div>
+<div class="columnLayout two-equal" data-layout="two-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="97176575-db2b-47ff-a7b2-791ba19e9223" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">// in the controller
+$scope.hostData = {
+  patient: {
+    // patient info
+  },
+  otherData: &quot;// other data&quot;
+}</pre>
+</div></div></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="3298890c-e736-40cf-b8f1-a6a4572c6546" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: html; gutter: false; theme: Confluence" data-theme="Confluence">&lt;!-- in the template --&gt;
+&lt;mfe-example-component1 host-data=&quot;hostData&quot;&gt;&lt;/mfe-example-component1&gt;</pre>
+</div></div><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="d7170079-5168-47f3-9890-cc80828c8f35" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">// in the React entry component
+export function Component1(props) {
+  return &lt;div&gt;{props.hostData.patient.name}&lt;/div&gt;
+}</pre>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout fixed-width" data-layout="fixed-width">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p><strong>Note:</strong> Remember, angularJs maps camelCase bindings to kebab-case so the <code>hostData</code> prop will be bound to <code>host-data</code> binding in the html.</p><h2 id="Howtoimplementmicro-frontends(MFEs)-HostreactingtoeventsfromMFE">Host reacting to events from MFE</h2><p>For now, we have decided to rely on the host app passing callbacks to the MFE through a conventional prop named <code>hostApi</code> which needs to be an object. An example usage would look like</p></div>
+</div>
+</div>
+<div class="columnLayout two-equal" data-layout="two-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="8af79574-d6d4-404d-980a-db7d4327690d" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">// in the controller
+$scope.hostApi = {
+  onClose: function() {
+    closeModal();
+  },
+  onConfirm: function(id) {
+    service.confirmValues(id);
+  }
+}</pre>
+</div></div></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="12125ec0-9787-4113-b620-295952948890" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: html; gutter: false; theme: Confluence" data-theme="Confluence">&lt;!-- in the template --&gt;
+&lt;mfe-example-component1 host-api=&quot;hostApi&quot;&gt;&lt;/mfe-example-component1&gt;</pre>
+</div></div><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="2a0599c4-d46d-4c8d-a0b8-1acd0e5a0fd2" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">// in the React entry component
+export function Component1(props) {
+  // *See notes
+  return &lt;button onClick={props.hostApi?.onClose?.()&gt;Close&lt;/button&gt;
+}</pre>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout fixed-width" data-layout="fixed-width">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h4 id="Howtoimplementmicro-frontends(MFEs)-ImportantnoteregardinghostApi"><span data-colorid="hty72ez1fa">Important note regarding hostApi</span></h4><p>For some reason, the <code>react2angular</code> adapter take an extra tick to resolve the functions within <code>hostApi</code> binding. Due to this, even if your propTypes mark the hostApi functions as required, React will throw reference errors for accessing functions in undefined and similar. I recommend using the optional chaining operator (<code>?.</code>) to get around this</p><p /></div>
+</div>
+</div>
+</div></body></html>

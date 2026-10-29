@@ -1,0 +1,172 @@
+{
+  "id": "3657465931",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3657465931",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzY1NzQ2NTkzMQ==",
+  "status": "current",
+  "title": "Odoo 16 Transactional Data Migration",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "createdDate": "2024-07-26T12:06:57.505Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3657465931/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "when": "2024-07-30T02:06:55.510Z",
+    "friendlyWhen": "Jul 30, 2024",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3657465931.15",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3657465931"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3657465931/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>When considering transactional data migration, it is recommended to approach Odoo 16 as a new system and begin from scratch. There have been substantial changes in the model, and migrating data, even if feasible, will necessitate additional or custom scripting.</p><p>Our recommendations include:</p><ul><li><p>Prepare for the discontinuation of older versions (Odoo 10 or OpenERP 7).</p></li><li><p>Configure Odoo according to the guidelines provided in the setup pages.</p></li><li><p>Transfer the master data</p></li><li><p>Think about the essential transactional data required for the new version to guarantee seamless operations.</p></li></ul><ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p>Accounting Module by Odoo has been made available only in Enterprise version of Odoo. So a community module by Cybrosys Technologies has been <a href=\"https://github.com/Bahmni/bahmni-odoo-modules/tree/main/community_modules/base_accounting_kit\">added</a> as an optional module for implementers to install and try out. If your implementation uses extensive accounting features, we recommend installing this module and exploring the features and validate if it fits to your needs and then proceed with the migration.</p><p><em><strong>Note:</strong> This is an external community module, and not maintained by Bahmni community.</em></p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p>Accounting Module by Odoo has been made available only in Enterprise version of Odoo. So a community module by Cybrosys Technologies has been <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-odoo-modules/tree/main/community_modules/base_accounting_kit\" rel=\"nofollow\">added</a> as an optional module for implementers to install and try out. If your implementation uses extensive accounting features, we recommend installing this module and exploring the features and validate if it fits to your needs and then proceed with the migration.</p><p><em><strong>Note:</strong> This is an external community module, and not maintained by Bahmni community.</em></p>\n</div></div></ac:adf-fallback></ac:adf-extension><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"95d93d99-a43b-453a-88c6-42b143e054a5\"><ac:rich-text-body><p><em><strong><span style=\"color: rgb(255,86,48);\">Note: </span></strong></em>These guides serve as a reference for importing essential data. If your implementation includes additional modules or extensions, we recommend thoroughly investigating and expanding the import process accordingly. We also welcome the community to propose new pages if you have attempted a different import process.</p></ac:rich-text-body></ac:structured-macro><p>The following pages offer a guide on importing stock information and patient outstanding information into Odoo 16 by using the CSV/Excel based import process.</p><ol start=\"1\"><li><p><ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Importing Stock Data into Odoo 16\" ri:version-at-save=\"1\" /><ac:link-body>Importing Stock Data into Odoo 16</ac:link-body></ac:link> </p></li><li><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3662839815/Importing+patient+outstanding+data+into+Odoo+16\" data-card-appearance=\"inline\">https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3662839815/Importing+patient+outstanding+data+into+Odoo+16</a> </p></li></ol>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3657465931"
+      }
+    },
+    "view": {
+      "value": "<p><style>[data-colorid=d1qieqzid9]{color:#ff5630} html[data-color-mode=dark] [data-colorid=d1qieqzid9]{color:#cf2600}</style>When considering transactional data migration, it is recommended to approach Odoo 16 as a new system and begin from scratch. There have been substantial changes in the model, and migrating data, even if feasible, will necessitate additional or custom scripting.</p><p>Our recommendations include:</p><ul><li><p>Prepare for the discontinuation of older versions (Odoo 10 or OpenERP 7).</p></li><li><p>Configure Odoo according to the guidelines provided in the setup pages.</p></li><li><p>Transfer the master data</p></li><li><p>Think about the essential transactional data required for the new version to guarantee seamless operations.</p></li></ul><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p>Accounting Module by Odoo has been made available only in Enterprise version of Odoo. So a community module by Cybrosys Technologies has been <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-odoo-modules/tree/main/community_modules/base_accounting_kit\" rel=\"nofollow\">added</a> as an optional module for implementers to install and try out. If your implementation uses extensive accounting features, we recommend installing this module and exploring the features and validate if it fits to your needs and then proceed with the migration.</p><p><em><strong>Note:</strong> This is an external community module, and not maintained by Bahmni community.</em></p>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"95d93d99-a43b-453a-88c6-42b143e054a5\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><em><strong><span data-colorid=\"d1qieqzid9\">Note: </span></strong></em>These guides serve as a reference for importing essential data. If your implementation includes additional modules or extensions, we recommend thoroughly investigating and expanding the import process accordingly. We also welcome the community to propose new pages if you have attempted a different import process.</p></div></div><p>The following pages offer a guide on importing stock information and patient outstanding information into Odoo 16 by using the CSV/Excel based import process.</p><ol start=\"1\"><li><p><a href=\"/wiki/spaces/BAH/pages/3662872598/Importing+Stock+Data+into+Odoo+16\" data-linked-resource-id=\"3662872598\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">Importing Stock Data into Odoo 16</a> </p></li><li><p><a data-card-appearance=\"inline\" href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3662839815/Importing+patient+outstanding+data+into+Odoo+16\" rel=\"nofollow\">https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3662839815/Importing+patient+outstanding+data+into+Odoo+16</a> </p></li></ol>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3657465931"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3657465931/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3657465931/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1317
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3657465931/child",
+    "restrictions": "/rest/api/content/3657465931/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3657465931/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3657465931",
+    "webui": "/spaces/BAH/pages/3657465931/Odoo+16+Transactional+Data+Migration",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3657465931",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3657465931",
+    "tinyui": "/x/S4AA2g",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

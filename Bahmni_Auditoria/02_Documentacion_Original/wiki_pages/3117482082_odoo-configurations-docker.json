@@ -1,0 +1,174 @@
+{
+  "id": "3117482082",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3117482082",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzExNzQ4MjA4Mg==",
+  "status": "current",
+  "title": "Odoo Configurations (docker)",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "createdDate": "2022-12-09T06:17:16.343Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117482082/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "when": "2024-07-23T04:47:42.960Z",
+    "friendlyWhen": "Jul 23, 2024",
+    "message": "",
+    "number": 10,
+    "minorEdit": false,
+    "syncRev": "0.Gv8arl6kzGkoM6UscilZWQ.0",
+    "syncRevSource": "synchrony-ack",
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3117482082.67",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3117482082"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117482082/version/10"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\" ac:breakout-mode=\"default\"><ac:layout-cell><p><a href=\"https://hub.docker.com/r/bahmni/odoo-16\">Bahmni/odoo-16</a> image is based on Odoo v16.0 which acts as a billing and inventory management system integrated with Bahmni. The image is built using Github Actions from the <a href=\"https://github.com/Bahmni/bahmni-odoo-modules\">bahmni-odoo-modules</a> repository.</p><p /><ac:structured-macro ac:name=\"expand\" ac:schema-version=\"1\" ac:macro-id=\"eccef77f-e4c8-46eb-9a7b-ad38c71d381d\"><ac:parameter ac:name=\"title\">Odoo 10 with limited support</ac:parameter><ac:rich-text-body><p><a href=\"https://hub.docker.com/r/bahmni/odoo-10\">Bahmni/odoo-10</a> image is based on Odoo v10.0 which acts as a billing and inventory management system integrated with Bahmni.  The image is built and published using Github actions from <a href=\"https://github.com/Bahmni/odoo-modules\">odoo-modules</a> repository. <span style=\"color: rgb(255,86,48);\">Note: Odoo 10 is out of support from Odoo community and there will be only limited support on bug-fixes or security patches. It is recommended to migrate to Odoo 16.</span></p></ac:rich-text-body></ac:structured-macro><p>Bahmni/odoo-connect image is used to enable atomfeed sync to fetch drugs, lab-tests, patient medication orders to Odoo. The image is built and published using Github actions from <a href=\"https://github.com/Bahmni/openerp-atomfeed-service\">openerp-atomfeed-service</a> repository.</p></ac:layout-cell><ac:layout-cell><p><strong>On This Page</strong></p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" data-layout=\"default\" ac:local-id=\"9eeced38-02f5-49c0-a11f-50b516e4ec9a\" ac:macro-id=\"ce1564f3-05e4-4add-b243-9f1f3353664c\" /></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"fixed-width\" ac:breakout-mode=\"default\"><ac:layout-cell><p /><h2>Sub-Domain or Exposing Port for Odoo</h2><p>Odoo cannot be routed through proxy on the same domain as other Bahmni services. So either it can be accessed directly on port 8069 or through a sub-domain mapping to the same public IP address as Bahmni. The index page of Bahmni detects the URL by which you access the server and if it an IP or localhost, the redirection happens to <code>http://&lt;ip/localhost&gt;:8069</code> and if it is a FQDN, the redirection happens to <code>erp-&lt;your-fqdn&gt;</code>. The prefix <code>erp</code> is a configuration and it can be configured from <a href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/apps/home/whiteLabel.json#L35\">here</a>. Based on the prefix, you can create a A record that maps the domain to the server IP address in your DNS provider. For a production system accessed over internet it is recommended to setup the domain based routing and add an SSL certificate. </p><h2>One Time Setup for Odoo 16:</h2><p>As Bahmni Standard ships with metadata configured and the data being synced with sub-systems, Odoo DB by default boots up with a database backup image. In some hosts Odoo 16 might fail to start throwing a permission denied error . Run the following command the first time.</p><p><code>docker compose exec -it --user root odoo chown -R odoo:odoo /var/lib/odoo/filestore &amp;&amp; docker compose restart odoo</code></p><h2>Setting up Odoo 10:</h2><p>Bahmni releases on docker will ship with Odoo 16 as the default version as part of <code>bahmni-standard</code> profile. Odoo 10 is out of support from the Odoo community, so it is expected that the support for bug fixes or security patches will be very limited. It is recommended to migrate to Odoo 16. You can read more the Odoo upgrade initiative from <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3293478913/Upgrade+Bahmni+to+Odoo+v16\">here</a>.</p><p>If you would want to run Odoo 10 along with bahmni custom modules and integration, it is possible to start it up with a custom profile which can be enabled from .env files. </p><ul><li><p>In <code>bahmni-docker/bahmni-standard</code> repository, you will find that there are three services odoo-10, odoo-10-db, odoo-10-connect tagged with profile odoo-10. </p></li><li><p>You can start these services by adding the <code>odoo-10</code> profile to the <code>COMPOSE_PROFILES</code> variables in the .env file. </p></li><li><p>The profile can also be passed from the command line using the --profiles option <code>docker compose --profile odoo-10 up -d</code></p></li><li><p>Note: Odoo 10 by default starts up on port 8070. If you want to still run it on 8069, you can update the port mapping for the odoo-10 service in docker-compose.yml</p></li></ul><h2>One-time Setup for Odoo 10</h2><p>The below steps needs to be performed only once when Odoo is created and is applicable only if you are running Odoo 10</p><ol start=\"1\"><li><p>Once the container spins up, login to the application.</p></li><li><p>Navigate to <code>Apps</code> from the menu bar.</p></li><li><p>Click on <code>Bahmni Account</code> app and then click on <code>Upgrade</code>.</p></li><li><p>Wait for the upgrade to complete and you will redirected to home page.</p></li><li><p>After redirection, refresh your page once.</p></li></ol><p>Now Odoo should be working fine. If you don't see old patient data coming into Odoo in 10 mins, please read Odoo not synchronizing old patient data.</p><h2>Environment Configurations</h2><h4>Odoo Variables</h4><table data-table-width=\"1800\" data-layout=\"default\" ac:local-id=\"efb8df44-34cd-4f14-8040-29a2c115d349\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><th><p>Variable Name</p></th><th><p>Description</p></th></tr><tr><td><p>ODOO_IMAGE_TAG</p></td><td><p>This value tells which image version to be used for Odoo Application. List of tags can be found at <a href=\"https://hub.docker.com/r/bahmni/odoo-16/tags\">bahmni/odoo-16 - Tags</a> .</p></td></tr><tr><td><p>ODOO_DB_IMAGE_NAME</p></td><td><p>This value specifies the database image used for Odoo database instance. Defaults to postgres:16</p></td></tr><tr><td><p>ODOO_DB_HOST</p></td><td><p>This value specifies the host name for the database to be used by Odoo.</p></td></tr><tr><td><p>ODOO_DB_USER</p></td><td><p>This value is used as username for Odoo Postgres DB instance. This is also referenced in Odoo application.</p></td></tr><tr><td><p>ODOO_DB_PASSWORD</p></td><td><p>This value is used as password for Odoo Postgres DB instance. This is also referenced in Odoo application.</p></td></tr><tr><td><p>EXTRA_ADDONS_PATH</p></td><td><p>When you want to installl an additional addon, you can set the path of the root directory which contains your module directory.</p></td></tr></tbody></table><p>Note: The same set of above variables are available for configuring Odoo 10 as well. Those variables are prefixed with <code>ODOO_10</code> instead of <code>ODOO</code>.</p><h4>Odoo Connect Configurations</h4><table data-table-width=\"1800\" data-layout=\"default\" ac:local-id=\"bbaacc37-f997-42a4-a5d2-e79c6db0b953\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><th><p>Variable Name</p></th><th><p>Description</p></th></tr><tr><td><p>ODOO_CONNECT_IMAGE_TAG</p></td><td><p>This value tells which image version to be used for Odoo Connect Application. List of tags can be found at <a href=\"https://hub.docker.com/r/bahmni/odoo-connect/tags\">bahmni/odoo-connect - Tags</a> .</p></td></tr></tbody></table><h2>Odoo not synchronizing old patient data</h2><p>Perform the followinng steps if older patient data is not being sent to Odoo. This likely happened because the ATOM Feed reader has already exhausted its max retry limit for failed events (by default set to 5 times). You can set the Failed events retry back to 1, and that should sync them immediately. Steps to fix this:</p><ol start=\"1\"><li><p>Open terminal in your local machine, in <code>bahmni-docker</code> folder.</p></li><li><p>Execute <code>docker ps</code> to see the list of running containers.</p></li><li><p>Connect to the Odoo postgres DB container by executing the command: <code>docker container exec -it bahmni-docker_odoodb_1 /bin/bash</code> where <code>bahmni-docker_odoodb_1</code> is the name of the odoo postgres container. You should now be within the container.</p></li><li><p>Connect to the postgres console using command: <code>psql -Uodoo odoo</code>. For more info on how to connect to Bahmni Databases, refer to this wiki page: <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/49545219\">Connecting to various databases</a>.</p></li><li><p>In the psql prompt type: <code>select count(*) from failed_events;</code> This will show you the number of failed events.</p></li><li><p>If 1 or more events are there, then you can fire the query: <code>select id,retries from failed_events;</code>. You should see all failed events have reached their retry limit.</p></li><li><p>Fire an <em>update</em> statement to reset the retry count for all failed events: <code>update failed_events set retries=1;</code></p></li><li><p>Now in about a minute, all failed events should be processed and old patient data should get synced to Odoo.</p></li><li><p>To exit the container, first type <code>\\q</code> to exit postgres shell, and then type <code>exit</code> to exit bash shell without stopping the postgres container.</p></li></ol><h2>Loading Additional Addons to Odoo</h2><p>When you want to load additional addons to Odoo instance, you can set the EXTRA_ADDONS_PATH with the directory that contains your modules.</p><ol start=\"1\"><li><p>Bring down Odoo if it is already running by doing docker-compose down .</p></li><li><p>Set the path of your root directory of modules to EXTRA_ADDONS_PATH variable.</p></li><li><p>Restart Odoo instance by running <code>docker-compose up</code></p></li><li><p>Login to the application</p></li><li><p>Navigate to <code>Settings</code> page in the web and enable Developer Mode</p></li><li><p>Navigate to Apps page and Click on <code>Update Apps List</code></p></li><li><p>Your new module will be listed and you can install it.</p></li></ol><p>Note: If you want to add additional addons for Odoo 10, update value for <code>EXTRA_ODOO_10_ADDONS_PATH</code> in the .env files</p><h2>Development setup for Bahmni Odoo Modules</h2><p>Note: Do these steps only if you need to development setup and update Bahmni Odoo modules.</p><ol start=\"1\"><li><p>Clone the <em>Bahmni/bahmni-odoo-modules</em> repo at <a href=\"https://github.com/Bahmni/bahmni-odoo-modules\" data-card-appearance=\"inline\">https://github.com/Bahmni/bahmni-odoo-modules</a> </p></li><li><p>Bring Bahmni down by running <code>docker-compose down -v</code> from <code>bahmni-docker/bahmni-standard</code> directory.</p></li><li><p>Update the <code>BAHMNI_ODOO_MODULES_PATH</code> variable in .env file with the cloned directory path. Also update COMPOSE_PROFILE=odoo so that only odoo services start.</p></li><li><p>Now in <code>docker-compose.yml</code> uncomment the volume commented under odoo service.</p></li><li><p>Start Odoo services by running <code>docker-compose up</code></p></li><li><p>Enable developer mode in Odoo by navigating to <code>Settings</code> page in Odoo Web and click <code>Activate the Developer Mode</code></p></li><li><p>After you perform a change, do the following steps to reflect the changes.</p></li><li><p>Run <code>docker-compose restart odoo</code> (if using odoo 16) or <code>docker compose restart odoo-10</code> (if using odoo-10)</p></li><li><p>Now in the browser navigate to <code>Apps</code> menu. Click on the app that is updated and click <code>Upgrade</code>.</p></li><li><p>Now you should see the changes reflected. If not try from Step 8 &amp; 9 once again.</p></li></ol><p>Note: The development setup can be done by following the same steps except that the bahmni/odoo-modules needs to be cloned and its path to be updated in <code>BAHMNI_ODOO_10_MODULES_PATH</code> variable</p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3117482082"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\"><style>[data-colorid=frmlkvs87h]{color:#ff5630} html[data-color-mode=dark] [data-colorid=frmlkvs87h]{color:#cf2600}</style>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p><a class=\"external-link\" href=\"https://hub.docker.com/r/bahmni/odoo-16\" rel=\"nofollow\">Bahmni/odoo-16</a> image is based on Odoo v16.0 which acts as a billing and inventory management system integrated with Bahmni. The image is built using Github Actions from the <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-odoo-modules\" rel=\"nofollow\">bahmni-odoo-modules</a> repository.</p><p /><div class=\"expand-container conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"eccef77f-e4c8-46eb-9a7b-ad38c71d381d\" data-macro-name=\"expand\" id=\"expander-408553522\"><div id=\"expander-control-408553522\" class=\"expand-control\"><span class=\"expand-control-icon icon\">&nbsp;</span><span class=\"expand-control-text\">Odoo 10 with limited support</span></div><div id=\"expander-content-408553522\" class=\"expand-content expand-hidden\"><p><a class=\"external-link\" href=\"https://hub.docker.com/r/bahmni/odoo-10\" rel=\"nofollow\">Bahmni/odoo-10</a> image is based on Odoo v10.0 which acts as a billing and inventory management system integrated with Bahmni.  The image is built and published using Github actions from <a class=\"external-link\" href=\"https://github.com/Bahmni/odoo-modules\" rel=\"nofollow\">odoo-modules</a> repository. <span data-colorid=\"frmlkvs87h\">Note: Odoo 10 is out of support from Odoo community and there will be only limited support on bug-fixes or security patches. It is recommended to migrate to Odoo 16.</span></p></div></div><p>Bahmni/odoo-connect image is used to enable atomfeed sync to fetch drugs, lab-tests, patient medication orders to Odoo. The image is built and published using Github actions from <a class=\"external-link\" href=\"https://github.com/Bahmni/openerp-atomfeed-service\" rel=\"nofollow\">openerp-atomfeed-service</a> repository.</p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<p><strong>On This Page</strong></p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-layout=\"default\" data-local-id=\"9eeced38-02f5-49c0-a11f-50b516e4ec9a\" data-macro-id=\"ce1564f3-05e4-4add-b243-9f1f3353664c\" data-macro-name=\"toc\"> </div></div>\n</div>\n</div>\n<div class=\"columnLayout fixed-width\" data-layout=\"fixed-width\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p /><h2 id=\"OdooConfigurations(docker)-Sub-DomainorExposingPortforOdoo\">Sub-Domain or Exposing Port for Odoo</h2><p>Odoo cannot be routed through proxy on the same domain as other Bahmni services. So either it can be accessed directly on port 8069 or through a sub-domain mapping to the same public IP address as Bahmni. The index page of Bahmni detects the URL by which you access the server and if it an IP or localhost, the redirection happens to <code>http://&lt;ip/localhost&gt;:8069</code> and if it is a FQDN, the redirection happens to <code>erp-&lt;your-fqdn&gt;</code>. The prefix <code>erp</code> is a configuration and it can be configured from <a class=\"external-link\" href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/apps/home/whiteLabel.json#L35\" rel=\"nofollow\">here</a>. Based on the prefix, you can create a A record that maps the domain to the server IP address in your DNS provider. For a production system accessed over internet it is recommended to setup the domain based routing and add an SSL certificate. </p><h2 id=\"OdooConfigurations(docker)-OneTimeSetupforOdoo16:\">One Time Setup for Odoo 16:</h2><p>As Bahmni Standard ships with metadata configured and the data being synced with sub-systems, Odoo DB by default boots up with a database backup image. In some hosts Odoo 16 might fail to start throwing a permission denied error . Run the following command the first time.</p><p><code>docker compose exec -it --user root odoo chown -R odoo:odoo /var/lib/odoo/filestore &amp;&amp; docker compose restart odoo</code></p><h2 id=\"OdooConfigurations(docker)-SettingupOdoo10:\">Setting up Odoo 10:</h2><p>Bahmni releases on docker will ship with Odoo 16 as the default version as part of <code>bahmni-standard</code> profile. Odoo 10 is out of support from the Odoo community, so it is expected that the support for bug fixes or security patches will be very limited. It is recommended to migrate to Odoo 16. You can read more the Odoo upgrade initiative from <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3293478913/Upgrade+Bahmni+to+Odoo+v16\" rel=\"nofollow\">here</a>.</p><p>If you would want to run Odoo 10 along with bahmni custom modules and integration, it is possible to start it up with a custom profile which can be enabled from .env files. </p><ul><li><p>In <code>bahmni-docker/bahmni-standard</code> repository, you will find that there are three services odoo-10, odoo-10-db, odoo-10-connect tagged with profile odoo-10. </p></li><li><p>You can start these services by adding the <code>odoo-10</code> profile to the <code>COMPOSE_PROFILES</code> variables in the .env file. </p></li><li><p>The profile can also be passed from the command line using the --profiles option <code>docker compose --profile odoo-10 up -d</code></p></li><li><p>Note: Odoo 10 by default starts up on port 8070. If you want to still run it on 8069, you can update the port mapping for the odoo-10 service in docker-compose.yml</p></li></ul><h2 id=\"OdooConfigurations(docker)-One-timeSetupforOdoo10\">One-time Setup for Odoo 10</h2><p>The below steps needs to be performed only once when Odoo is created and is applicable only if you are running Odoo 10</p><ol start=\"1\"><li><p>Once the container spins up, login to the application.</p></li><li><p>Navigate to <code>Apps</code> from the menu bar.</p></li><li><p>Click on <code>Bahmni Account</code> app and then click on <code>Upgrade</code>.</p></li><li><p>Wait for the upgrade to complete and you will redirected to home page.</p></li><li><p>After redirection, refresh your page once.</p></li></ol><p>Now Odoo should be working fine. If you don't see old patient data coming into Odoo in 10 mins, please read Odoo not synchronizing old patient data.</p><h2 id=\"OdooConfigurations(docker)-EnvironmentConfigurations\">Environment Configurations</h2><h4 id=\"OdooConfigurations(docker)-OdooVariables\">Odoo Variables</h4><div class=\"table-wrap\"><table data-table-width=\"1800\" data-layout=\"default\" data-local-id=\"efb8df44-34cd-4f14-8040-29a2c115d349\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><th class=\"confluenceTh\"><p>Variable Name</p></th><th class=\"confluenceTh\"><p>Description</p></th></tr><tr><td class=\"confluenceTd\"><p>ODOO_IMAGE_TAG</p></td><td class=\"confluenceTd\"><p>This value tells which image version to be used for Odoo Application. List of tags can be found at <a class=\"external-link\" href=\"https://hub.docker.com/r/bahmni/odoo-16/tags\" rel=\"nofollow\">bahmni/odoo-16 - Tags</a> .</p></td></tr><tr><td class=\"confluenceTd\"><p>ODOO_DB_IMAGE_NAME</p></td><td class=\"confluenceTd\"><p>This value specifies the database image used for Odoo database instance. Defaults to postgres:16</p></td></tr><tr><td class=\"confluenceTd\"><p>ODOO_DB_HOST</p></td><td class=\"confluenceTd\"><p>This value specifies the host name for the database to be used by Odoo.</p></td></tr><tr><td class=\"confluenceTd\"><p>ODOO_DB_USER</p></td><td class=\"confluenceTd\"><p>This value is used as username for Odoo Postgres DB instance. This is also referenced in Odoo application.</p></td></tr><tr><td class=\"confluenceTd\"><p>ODOO_DB_PASSWORD</p></td><td class=\"confluenceTd\"><p>This value is used as password for Odoo Postgres DB instance. This is also referenced in Odoo application.</p></td></tr><tr><td class=\"confluenceTd\"><p>EXTRA_ADDONS_PATH</p></td><td class=\"confluenceTd\"><p>When you want to installl an additional addon, you can set the path of the root directory which contains your module directory.</p></td></tr></tbody></table></div><p>Note: The same set of above variables are available for configuring Odoo 10 as well. Those variables are prefixed with <code>ODOO_10</code> instead of <code>ODOO</code>.</p><h4 id=\"OdooConfigurations(docker)-OdooConnectConfigurations\">Odoo Connect Configurations</h4><div class=\"table-wrap\"><table data-table-width=\"1800\" data-layout=\"default\" data-local-id=\"bbaacc37-f997-42a4-a5d2-e79c6db0b953\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><th class=\"confluenceTh\"><p>Variable Name</p></th><th class=\"confluenceTh\"><p>Description</p></th></tr><tr><td class=\"confluenceTd\"><p>ODOO_CONNECT_IMAGE_TAG</p></td><td class=\"confluenceTd\"><p>This value tells which image version to be used for Odoo Connect Application. List of tags can be found at <a class=\"external-link\" href=\"https://hub.docker.com/r/bahmni/odoo-connect/tags\" rel=\"nofollow\">bahmni/odoo-connect - Tags</a> .</p></td></tr></tbody></table></div><h2 id=\"OdooConfigurations(docker)-Odoonotsynchronizingoldpatientdata\">Odoo not synchronizing old patient data</h2><p>Perform the followinng steps if older patient data is not being sent to Odoo. This likely happened because the ATOM Feed reader has already exhausted its max retry limit for failed events (by default set to 5 times). You can set the Failed events retry back to 1, and that should sync them immediately. Steps to fix this:</p><ol start=\"1\"><li><p>Open terminal in your local machine, in <code>bahmni-docker</code> folder.</p></li><li><p>Execute <code>docker ps</code> to see the list of running containers.</p></li><li><p>Connect to the Odoo postgres DB container by executing the command: <code>docker container exec -it bahmni-docker_odoodb_1 /bin/bash</code> where <code>bahmni-docker_odoodb_1</code> is the name of the odoo postgres container. You should now be within the container.</p></li><li><p>Connect to the postgres console using command: <code>psql -Uodoo odoo</code>. For more info on how to connect to Bahmni Databases, refer to this wiki page: <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/49545219\" rel=\"nofollow\">Connecting to various databases</a>.</p></li><li><p>In the psql prompt type: <code>select count(*) from failed_events;</code> This will show you the number of failed events.</p></li><li><p>If 1 or more events are there, then you can fire the query: <code>select id,retries from failed_events;</code>. You should see all failed events have reached their retry limit.</p></li><li><p>Fire an <em>update</em> statement to reset the retry count for all failed events: <code>update failed_events set retries=1;</code></p></li><li><p>Now in about a minute, all failed events should be processed and old patient data should get synced to Odoo.</p></li><li><p>To exit the container, first type <code>\\q</code> to exit postgres shell, and then type <code>exit</code> to exit bash shell without stopping the postgres container.</p></li></ol><h2 id=\"OdooConfigurations(docker)-LoadingAdditionalAddonstoOdoo\">Loading Additional Addons to Odoo</h2><p>When you want to load additional addons to Odoo instance, you can set the EXTRA_ADDONS_PATH with the directory that contains your modules.</p><ol start=\"1\"><li><p>Bring down Odoo if it is already running by doing docker-compose down .</p></li><li><p>Set the path of your root directory of modules to EXTRA_ADDONS_PATH variable.</p></li><li><p>Restart Odoo instance by running <code>docker-compose up</code></p></li><li><p>Login to the application</p></li><li><p>Navigate to <code>Settings</code> page in the web and enable Developer Mode</p></li><li><p>Navigate to Apps page and Click on <code>Update Apps List</code></p></li><li><p>Your new module will be listed and you can install it.</p></li></ol><p>Note: If you want to add additional addons for Odoo 10, update value for <code>EXTRA_ODOO_10_ADDONS_PATH</code> in the .env files</p><h2 id=\"OdooConfigurations(docker)-DevelopmentsetupforBahmniOdooModules\">Development setup for Bahmni Odoo Modules</h2><p>Note: Do these steps only if you need to development setup and update Bahmni Odoo modules.</p><ol start=\"1\"><li><p>Clone the <em>Bahmni/bahmni-odoo-modules</em> repo at <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://github.com/Bahmni/bahmni-odoo-modules\" rel=\"nofollow\">https://github.com/Bahmni/bahmni-odoo-modules</a> </p></li><li><p>Bring Bahmni down by running <code>docker-compose down -v</code> from <code>bahmni-docker/bahmni-standard</code> directory.</p></li><li><p>Update the <code>BAHMNI_ODOO_MODULES_PATH</code> variable in .env file with the cloned directory path. Also update COMPOSE_PROFILE=odoo so that only odoo services start.</p></li><li><p>Now in <code>docker-compose.yml</code> uncomment the volume commented under odoo service.</p></li><li><p>Start Odoo services by running <code>docker-compose up</code></p></li><li><p>Enable developer mode in Odoo by navigating to <code>Settings</code> page in Odoo Web and click <code>Activate the Developer Mode</code></p></li><li><p>After you perform a change, do the following steps to reflect the changes.</p></li><li><p>Run <code>docker-compose restart odoo</code> (if using odoo 16) or <code>docker compose restart odoo-10</code> (if using odoo-10)</p></li><li><p>Now in the browser navigate to <code>Apps</code> menu. Click on the app that is updated and click <code>Upgrade</code>.</p></li><li><p>Now you should see the changes reflected. If not try from Step 8 &amp; 9 once again.</p></li></ol><p>Note: The development setup can be done by following the same steps except that the bahmni/odoo-modules needs to be cloned and its path to be updated in <code>BAHMNI_ODOO_10_MODULES_PATH</code> variable</p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3117482082"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3117482082/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117482082/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 448804076
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3117482082/child",
+    "restrictions": "/rest/api/content/3117482082/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3117482082/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3117482082",
+    "webui": "/spaces/BAH/pages/3117482082/Odoo+Configurations+docker",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3117482082",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117482082",
+    "tinyui": "/x/YgDRuQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

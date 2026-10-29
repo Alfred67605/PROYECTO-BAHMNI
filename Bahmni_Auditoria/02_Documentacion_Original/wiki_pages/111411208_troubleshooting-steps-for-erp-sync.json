@@ -1,0 +1,171 @@
+{
+  "id": "111411208",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/111411208",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTExNDExMjA4",
+  "status": "current",
+  "title": "Troubleshooting steps for ERP sync",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:b74a1e67-0853-4f05-a2a7-e88691b3cd4a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Akhil Malhotra (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:b74a1e67-0853-4f05-a2a7-e88691b3cd4a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Akhil Malhotra (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:b74a1e67-0853-4f05-a2a7-e88691b3cd4a"
+      }
+    },
+    "createdDate": "2016-12-30T05:25:29.055Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/111411208/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sravanthi N. S. CH.",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sravanthi N. S. CH.",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d47e0136-cbde-4dbc-8820-611d4528d1c8"
+      }
+    },
+    "when": "2017-02-21T10:29:01.779Z",
+    "friendlyWhen": "Feb 21, 2017",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "syncRev": "0.LWISjUmFpNv5Wi3Bc6ahOg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$111411208.64",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/111411208"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/111411208/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><ac:structured-macro ac:name=\"warning\" ac:schema-version=\"1\" ac:macro-id=\"b793d244-5c67-4732-bf19-32e6e07317e4\"><ac:rich-text-body><p>Please note that these are troubleshooting steps and need to be carefully executed especially if you are in a Production Environment!</p></ac:rich-text-body></ac:structured-macro><p><br /></p><p>The below mentioned steps can help in debugging issues in&nbsp;OpenMRS to OpenERP/Odoo sync.&nbsp;<strong>Depending on the cause&nbsp;</strong>please try the appropriate suggestions:</p><h2>1) Check if openerp and &nbsp;bahmni-erp-connect service are running</h2><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d5b6a757-73fe-4c12-8dc9-f814621f093e\"><ac:plain-text-body><![CDATA[sudo service bahmni-erp-connect status\nsudo service openerp status\n\n\n# If it is not running then do\nsudo service openerp start\nsudo service bahmni-erp-connect start]]></ac:plain-text-body></ac:structured-macro><p><br /></p><h2>2) Check connection credentials</h2><p>If bahmni-erp-connect service is already running then we need to check OpenERP username and password below and after updating them to required ones we need to restart bahmni-erp-connect service:</p><p><strong>Path</strong>: /opt/bahmni-erp-connect/bahmni-erp-connect/WEB-INF/classes</p><p><strong>Filename</strong>: atomfeed.properties</p><p>openerp.user=admin (default username)</p><p>openerp.password=password (default password)</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"1fe23c63-18fa-4557-ad7d-767174976a1d\"><ac:plain-text-body><![CDATA[sudo service bahmni-erp-connect restart]]></ac:plain-text-body></ac:structured-macro><p><br /></p><h2>3) Check markers table of <em>openerp</em> database</h2><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"cb48667d-67ee-4e84-a6e2-3776dc707e54\"><ac:plain-text-body><![CDATA[# Connect to pgsql client\npsql -Uopenerp\n\n\n# See table contents\nselect * from markers;\n\n\n# Check if there are any failed events\nselect * from failed_events;]]></ac:plain-text-body></ac:structured-macro><p>Verify if columns &ldquo;last_read_entry_id&rdquo; and &ldquo;feed_uri_for_last_read_entry&rdquo; have the correct entries for corresponding feed_uri.</p><p>Postman extension in chrome can you be used to check for the latest atomfeeds or specific atomfeeds.</p><p>Need to analyse the entries in failed_events table by reading the contents in &ldquo;error_message&rdquo; column in failed_events table and proceed accordingly.</p><p>Please refer <ac:link><ri:page ri:content-title=\"Atom Feed Based Synchronization in Bahmni\" /></ac:link>&nbsp; for Details on Atom Feed Based Sync.</p><h2>4) Check Shop Mapping in OpenERP</h2><p align=\"left\">&nbsp;In OpenERP software check if: Sales --&gt; Configuration --&gt; Order Type Shop &ndash; Shop Mapping:</p><p><strong>Order Type</strong> : Drug Order</p><p><strong>Shop</strong> : Implementation Specific Shop name</p><p><strong>Local Shop</strong> : Keep it blank</p><p><strong>Location Name</strong> : Keep it blank.</p><p>Restart openerp service: <em><strong>sudo service openerp restart</strong></em></p><h2>5) Check Units to Be Synced in OpenERP</h2><p>In OpenERP software check if: Sales --&gt; Configuration --&gt; Units to be Synced:</p><p>- Should have all the Drug Units added whatever is present in Bahmni with the exact names.</p><p>e.g : Capsule(s), Tablet(s)</p><p><br /></p><p><strong>If you still don't find the solution to your problem, please search / post your question on <a href=\"http://talk.bahmni.org\">Bahmni OpenMRS Talk</a></strong><strong>.</strong></p></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"19eff2df-31ce-4843-9899-6996ae3e7a98\"><ac:parameter ac:name=\"title\">Related Pages</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Atom Feed Based Synchronization in Bahmni\" /><ac:plain-text-link-body><![CDATA[Atom Feed Synchronization in Bahmni]]></ac:plain-text-link-body></ac:link></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"cee882ed-21d1-4a91-831e-02cd6988423d\"><ac:parameter ac:name=\"title\">On this page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"c9bcc3f0-92f2-4054-af20-4333ee64772d\" /></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/111411208"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b793d244-5c67-4732-bf19-32e6e07317e4\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Please note that these are troubleshooting steps and need to be carefully executed especially if you are in a Production Environment!</p></div></div><p><br/></p><p>The below mentioned steps can help in debugging issues in OpenMRS to OpenERP/Odoo sync. <strong>Depending on the cause </strong>please try the appropriate suggestions:</p><h2 id=\"TroubleshootingstepsforERPsync-1)Checkifopenerpandbahmni-erp-connectservicearerunning\">1) Check if openerp and  bahmni-erp-connect service are running</h2><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d5b6a757-73fe-4c12-8dc9-f814621f093e\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">sudo service bahmni-erp-connect status\nsudo service openerp status\n\n\n# If it is not running then do\nsudo service openerp start\nsudo service bahmni-erp-connect start</pre>\n</div></div><p><br/></p><h2 id=\"TroubleshootingstepsforERPsync-2)Checkconnectioncredentials\">2) Check connection credentials</h2><p>If bahmni-erp-connect service is already running then we need to check OpenERP username and password below and after updating them to required ones we need to restart bahmni-erp-connect service:</p><p><strong>Path</strong>: /opt/bahmni-erp-connect/bahmni-erp-connect/WEB-INF/classes</p><p><strong>Filename</strong>: atomfeed.properties</p><p>openerp.user=admin (default username)</p><p>openerp.password=password (default password)</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"1fe23c63-18fa-4557-ad7d-767174976a1d\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">sudo service bahmni-erp-connect restart</pre>\n</div></div><p><br/></p><h2 id=\"TroubleshootingstepsforERPsync-3)Checkmarkerstableofopenerpdatabase\">3) Check markers table of <em>openerp</em> database</h2><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"cb48667d-67ee-4e84-a6e2-3776dc707e54\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\"># Connect to pgsql client\npsql -Uopenerp\n\n\n# See table contents\nselect * from markers;\n\n\n# Check if there are any failed events\nselect * from failed_events;</pre>\n</div></div><p>Verify if columns “last_read_entry_id” and “feed_uri_for_last_read_entry” have the correct entries for corresponding feed_uri.</p><p>Postman extension in chrome can you be used to check for the latest atomfeeds or specific atomfeeds.</p><p>Need to analyse the entries in failed_events table by reading the contents in “error_message” column in failed_events table and proceed accordingly.</p><p>Please refer <a href=\"/wiki/spaces/BAH/pages/3506200/Atom+Feed+Based+Synchronization+in+Bahmni\" data-linked-resource-id=\"3506200\" data-linked-resource-version=\"20\" data-linked-resource-type=\"page\">Atom Feed Based Synchronization in Bahmni</a>  for Details on Atom Feed Based Sync.</p><h2 id=\"TroubleshootingstepsforERPsync-4)CheckShopMappinginOpenERP\">4) Check Shop Mapping in OpenERP</h2><p align=\"left\"> In OpenERP software check if: Sales --&gt; Configuration --&gt; Order Type Shop – Shop Mapping:</p><p><strong>Order Type</strong> : Drug Order</p><p><strong>Shop</strong> : Implementation Specific Shop name</p><p><strong>Local Shop</strong> : Keep it blank</p><p><strong>Location Name</strong> : Keep it blank.</p><p>Restart openerp service: <em><strong>sudo service openerp restart</strong></em></p><h2 id=\"TroubleshootingstepsforERPsync-5)CheckUnitstoBeSyncedinOpenERP\">5) Check Units to Be Synced in OpenERP</h2><p>In OpenERP software check if: Sales --&gt; Configuration --&gt; Units to be Synced:</p><p>- Should have all the Drug Units added whatever is present in Bahmni with the exact names.</p><p>e.g : Capsule(s), Tablet(s)</p><p><br/></p><p><strong>If you still don't find the solution to your problem, please search / post your question on <a class=\"external-link\" href=\"http://talk.bahmni.org\" rel=\"nofollow\">Bahmni OpenMRS Talk</a></strong><strong>.</strong></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"19eff2df-31ce-4843-9899-6996ae3e7a98\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>Related Pages</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/3506200/Atom+Feed+Based+Synchronization+in+Bahmni\" data-linked-resource-id=\"3506200\" data-linked-resource-version=\"20\" data-linked-resource-type=\"page\">Atom Feed Synchronization in Bahmni</a></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"cee882ed-21d1-4a91-831e-02cd6988423d\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>On this page</b></div><div class=\"panelContent\">\n<p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"c9bcc3f0-92f2-4054-af20-4333ee64772d\" data-macro-name=\"toc\"> </div><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/111411208"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/111411208/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/111411208/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 6
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/111411208/child",
+    "restrictions": "/rest/api/content/111411208/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/111411208/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=111411208",
+    "webui": "/spaces/BAH/pages/111411208/Troubleshooting+steps+for+ERP+sync",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/111411208",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/111411208",
+    "tinyui": "/x/CACkBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

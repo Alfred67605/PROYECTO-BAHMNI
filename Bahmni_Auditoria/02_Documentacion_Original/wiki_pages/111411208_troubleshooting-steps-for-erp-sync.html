@@ -1,0 +1,37 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Troubleshooting steps for ERP sync</title></head><body><h1>Troubleshooting steps for ERP sync</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class="confluence-information-macro confluence-information-macro-warning conf-macro output-block" data-hasbody="true" data-macro-id="b793d244-5c67-4732-bf19-32e6e07317e4" data-macro-name="warning"><span class="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>Please note that these are troubleshooting steps and need to be carefully executed especially if you are in a Production Environment!</p></div></div><p><br/></p><p>The below mentioned steps can help in debugging issues in OpenMRS to OpenERP/Odoo sync. <strong>Depending on the cause </strong>please try the appropriate suggestions:</p><h2 id="TroubleshootingstepsforERPsync-1)Checkifopenerpandbahmni-erp-connectservicearerunning">1) Check if openerp and  bahmni-erp-connect service are running</h2><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="d5b6a757-73fe-4c12-8dc9-f814621f093e" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">sudo service bahmni-erp-connect status
+sudo service openerp status
+
+
+# If it is not running then do
+sudo service openerp start
+sudo service bahmni-erp-connect start</pre>
+</div></div><p><br/></p><h2 id="TroubleshootingstepsforERPsync-2)Checkconnectioncredentials">2) Check connection credentials</h2><p>If bahmni-erp-connect service is already running then we need to check OpenERP username and password below and after updating them to required ones we need to restart bahmni-erp-connect service:</p><p><strong>Path</strong>: /opt/bahmni-erp-connect/bahmni-erp-connect/WEB-INF/classes</p><p><strong>Filename</strong>: atomfeed.properties</p><p>openerp.user=admin (default username)</p><p>openerp.password=password (default password)</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="1fe23c63-18fa-4557-ad7d-767174976a1d" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">sudo service bahmni-erp-connect restart</pre>
+</div></div><p><br/></p><h2 id="TroubleshootingstepsforERPsync-3)Checkmarkerstableofopenerpdatabase">3) Check markers table of <em>openerp</em> database</h2><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="cb48667d-67ee-4e84-a6e2-3776dc707e54" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence"># Connect to pgsql client
+psql -Uopenerp
+
+
+# See table contents
+select * from markers;
+
+
+# Check if there are any failed events
+select * from failed_events;</pre>
+</div></div><p>Verify if columns “last_read_entry_id” and “feed_uri_for_last_read_entry” have the correct entries for corresponding feed_uri.</p><p>Postman extension in chrome can you be used to check for the latest atomfeeds or specific atomfeeds.</p><p>Need to analyse the entries in failed_events table by reading the contents in “error_message” column in failed_events table and proceed accordingly.</p><p>Please refer <a href="/wiki/spaces/BAH/pages/3506200/Atom+Feed+Based+Synchronization+in+Bahmni" data-linked-resource-id="3506200" data-linked-resource-version="20" data-linked-resource-type="page">Atom Feed Based Synchronization in Bahmni</a>  for Details on Atom Feed Based Sync.</p><h2 id="TroubleshootingstepsforERPsync-4)CheckShopMappinginOpenERP">4) Check Shop Mapping in OpenERP</h2><p align="left"> In OpenERP software check if: Sales --&gt; Configuration --&gt; Order Type Shop – Shop Mapping:</p><p><strong>Order Type</strong> : Drug Order</p><p><strong>Shop</strong> : Implementation Specific Shop name</p><p><strong>Local Shop</strong> : Keep it blank</p><p><strong>Location Name</strong> : Keep it blank.</p><p>Restart openerp service: <em><strong>sudo service openerp restart</strong></em></p><h2 id="TroubleshootingstepsforERPsync-5)CheckUnitstoBeSyncedinOpenERP">5) Check Units to Be Synced in OpenERP</h2><p>In OpenERP software check if: Sales --&gt; Configuration --&gt; Units to be Synced:</p><p>- Should have all the Drug Units added whatever is present in Bahmni with the exact names.</p><p>e.g : Capsule(s), Tablet(s)</p><p><br/></p><p><strong>If you still don't find the solution to your problem, please search / post your question on <a class="external-link" href="http://talk.bahmni.org" rel="nofollow">Bahmni OpenMRS Talk</a></strong><strong>.</strong></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="19eff2df-31ce-4843-9899-6996ae3e7a98" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;"><b>Related Pages</b></div><div class="panelContent">
+<p><a href="/wiki/spaces/BAH/pages/3506200/Atom+Feed+Based+Synchronization+in+Bahmni" data-linked-resource-id="3506200" data-linked-resource-version="20" data-linked-resource-type="page">Atom Feed Synchronization in Bahmni</a></p>
+</div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="cee882ed-21d1-4a91-831e-02cd6988423d" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;"><b>On this page</b></div><div class="panelContent">
+<p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="c9bcc3f0-92f2-4054-af20-4333ee64772d" data-macro-name="toc"> </div><p> </p>
+</div></div></div>
+</div>
+</div>
+</div></body></html>

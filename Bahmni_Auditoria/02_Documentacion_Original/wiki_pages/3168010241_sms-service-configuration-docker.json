@@ -1,0 +1,172 @@
+{
+  "id": "3168010241",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3168010241",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzE2ODAxMDI0MQ==",
+  "status": "current",
+  "title": "SMS Service Configuration (docker)",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "61073b717ab143006e0079b4",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Kavitha S",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/61073b717ab143006e0079b4",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Kavitha S",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=61073b717ab143006e0079b4"
+      }
+    },
+    "createdDate": "2023-04-05T05:36:21.018Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3168010241/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "61073b717ab143006e0079b4",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Kavitha S",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/61073b717ab143006e0079b4",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Kavitha S",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=61073b717ab143006e0079b4"
+      }
+    },
+    "when": "2023-04-10T11:53:52.515Z",
+    "friendlyWhen": "Apr 10, 2023",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "13.confluence$content$3168010241.119",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$3168010241.121",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3168010241"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3168010241/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p><a href=\"https://hub.docker.com/r/bahmni/sms-service\"><u>Bahmni/sms-service</u></a> image runs the functionality for Bahmni SMS service. The image is built and published using Github Actions from <a href=\"https://github.com/Bahmni/sms-service\"><u>sms-service</u></a> repository.</p><h2>Environment Configurations</h2><table data-layout=\"default\" ac:local-id=\"305443b7-cac5-40be-9ba3-c830c24daf34\"><colgroup><col style=\"width: 380.0px;\" /><col style=\"width: 380.0px;\" /></colgroup><tbody><tr><th><p>Variable Name</p></th><th><p>Description</p></th></tr><tr><td><p>SMS_SERVICE_IMAGE_TAG</p></td><td><p>This value specifies which image version needs to be used for appointments service. List of tags can be found at <a href=\"https://hub.docker.com/r/bahmni/sms-service/tags\"><u>bahmni/sms-service - Tags</u></a>.</p></td></tr><tr><td><p>SMS_TOKEN</p></td><td><p>This value points to the token being used for sending SMS. One can set this value if they&rsquo;ve valid tokens generated to access the SMS provider&rsquo;s API. </p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"ee4ca1eb-5512-4401-8391-da056389b481\"><ac:parameter ac:name=\"panelIcon\">:notepad_spiral:</ac:parameter><ac:parameter ac:name=\"panelIconId\">1f5d2</ac:parameter><ac:parameter ac:name=\"panelIconText\">🗒️</ac:parameter><ac:parameter ac:name=\"bgColor\">#E6FCFF</ac:parameter><ac:rich-text-body><p>More details about the service provider being used in Bahmni is available down the page</p></ac:rich-text-body></ac:structured-macro></td></tr><tr><td><p>SMS_ORIGINATOR</p></td><td><p>This value specifies the originator which is used for configuring the SMS header. One can specify the brand name to this value if they have registered originator.</p></td></tr><tr><td><p>SMS_OPENMRS_HOST</p></td><td><p>This value specifies the host name of the OpenMRS application</p></td></tr><tr><td><p>SMS_OPENMRS_PORT</p></td><td><p>This value specifies the port number of the OpenMRS application</p></td></tr></tbody></table><h2>Starting SMS service</h2><p>For SMS service, there is an application profile <code>sms</code>  in docker which can be used to bring up the SMS service.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"ad2e8055-e489-40a0-a977-76b65c37e926\"><ac:parameter ac:name=\"language\">bash</ac:parameter><ac:plain-text-body><![CDATA[# From bahmni-lite/ or bahmni-standard/ subfolder, \n# execute this command to bring up sms-service\ndocker compose --profile sms up -d\n]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"84dfe34e-0eb6-4ebd-8d3b-9da900330a4f\"><ac:rich-text-body><p>Currently SMS service is being used in Registration and Appointments module in Bahmni. </p><p>To know how to configure sending SMS in registration module, refer <ac:link><ri:page ri:content-title=\"Configure Sending SMS and WhatsApp message on Patient Registration\" ri:version-at-save=\"2\" /><ac:link-body><u>here</u></ac:link-body></ac:link> and for appointments module, refer <ac:link><ri:page ri:content-title=\"Configuration to enable SMS alerts for Appointments\" ri:version-at-save=\"2\" /><ac:link-body><u>here</u></ac:link-body></ac:link></p></ac:rich-text-body></ac:structured-macro><h2>Development on SMS service</h2><p>When you want to develop on SMS service code, follow the below steps.</p><ol start=\"1\"><li><p>Clone the <a href=\"https://github.com/Bahmni/sms-service\"><u>sms-service</u></a> repository in your local machine.</p></li><li><p>Follow the instructions in the README of the repository to install the required tools and dependencies.</p></li><li><p>Build the project as instructed in the README and build the docker image using <code>docker compose build</code></p></li><li><p>Start / Recreate sms-service by doing  <code>docker-compose up -d sms-service</code></p></li><li><p>For every change you make, build the sms-service code and image <strong>&rarr;</strong> recreate the sms-service container, then the changes will reflect on the next trigger of SMS</p></li></ol><p /><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"84fb5c0d-53ed-4286-8889-94e4168bf69b\"><ac:rich-text-body><p>One can write their own implementation of SMS with preferable SMS providers and by exposing the API, it can be used in any of the Bahmni repositories for sending SMS. </p><p><a href=\"https://github.com/Bahmni/sms-service\"><u>sms-service</u></a> is a reference implementation which uses D7 SMS service provider for sending SMS. If anyone wants to use different SMS service providers, then they can fork out <a href=\"https://github.com/Bahmni/sms-service\"><u>sms-service</u></a> repository and write their own implementation of the interfaces with the preferred service providers.</p></ac:rich-text-body></ac:structured-macro><h2><strong>SMS API Overview :</strong></h2><p>We are currently using D7 SMS API for sending sms in Bahmni.&nbsp;The functionality is implemented in the repo <a href=\"https://github.com/Bahmni/sms-service\"><u>sms-service</u></a>. If sms-service is up and running, then we will be able to send sms.</p><p><em><strong>Prerequisite</strong></em>: A paid account in D7 networks and an authorization token needs to be generated.</p><p /><p><strong>D7 SMS</strong> - <a href=\"https://d7networks.com/\" data-card-appearance=\"inline\">https://d7networks.com/</a> </p><ul><li><p>For India D7 has two solutions one is the International in this route we have configured by default for all new customers in India which does not require the DLT registration and the price will be at <strong>0.04$ per SMS.</strong></p></li><li><p>On the other hand, if we want to configure the price at <strong>0.003$ per SMS </strong>which is a Domestic route<strong> </strong>the customer needs to complete the DLT registration and be required to share the DLT registered details as per the TRAI regulations. We can also configure the originator (sender address) if we register on DLT.</p></li><li><p>It will accept 700 characters in SMS text and 1 SMS will be considered as 160 characters. Please find the character wise SMS details below.</p></li></ul><ac:image ac:align=\"left\" ac:layout=\"align-start\" ac:original-height=\"268\" ac:original-width=\"1538\" ac:width=\"272\"><ri:attachment ri:filename=\"AkX6JANZL4VInWCdjur04XBeolSC6emCKup291ZnH-qQZsv0EqrCRqG5dWd05cACOCoCS6LRl0kNmmljITHFn0BeDQPlur5yV1VAvuzTWPXvjJcKhwvQs4I0DkeYfjruCyvXnQ13lrnUnMSmq-t0Cnc\" ri:version-at-save=\"1\" /></ac:image><p><em><strong>Note:</strong> Trial account will have free credits worth 0.2$ which allows sending around 6 sms</em></p><p /><p><strong>Working:</strong></p><ac:image ac:align=\"left\" ac:layout=\"align-start\" ac:original-height=\"381\" ac:original-width=\"1335\" ac:width=\"374\"><ri:attachment ri:filename=\"Screenshot 2023-04-05 at 11.29.48 AM.png\" ri:version-at-save=\"1\" /></ac:image><p><strong>Sample JSON for D7 SMS</strong></p><ac:image ac:align=\"left\" ac:layout=\"align-start\" ac:original-height=\"542\" ac:original-width=\"1010\" ac:width=\"204\"><ri:attachment ri:filename=\"YirOEmNmqpe2DXtYV1KRyllvH3DZu1Rv9d1ITmCewNa3amkY8jfUXqw4TXb9vofliSpMbdPf7zdFqKxhop_xLoi5aZqNlemlZBup9XA1DmTxTeCk_DxCJiaM6EUjXnqsJhCmdHIDCdPf5t-QEWIy4vg\" ri:version-at-save=\"1\" /></ac:image><p />",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3168010241"
+      }
+    },
+    "view": {
+      "value": "<p><a class=\"external-link\" href=\"https://hub.docker.com/r/bahmni/sms-service\" rel=\"nofollow\"><u>Bahmni/sms-service</u></a> image runs the functionality for Bahmni SMS service. The image is built and published using Github Actions from <a class=\"external-link\" href=\"https://github.com/Bahmni/sms-service\" rel=\"nofollow\"><u>sms-service</u></a> repository.</p><h2 id=\"SMSServiceConfiguration(docker)-EnvironmentConfigurations\">Environment Configurations</h2><div class=\"table-wrap\"><table data-layout=\"default\" data-local-id=\"305443b7-cac5-40be-9ba3-c830c24daf34\" class=\"confluenceTable\"><colgroup><col style=\"width: 380.0px;\"/><col style=\"width: 380.0px;\"/></colgroup><tbody><tr><th class=\"confluenceTh\"><p>Variable Name</p></th><th class=\"confluenceTh\"><p>Description</p></th></tr><tr><td class=\"confluenceTd\"><p>SMS_SERVICE_IMAGE_TAG</p></td><td class=\"confluenceTd\"><p>This value specifies which image version needs to be used for appointments service. List of tags can be found at <a class=\"external-link\" href=\"https://hub.docker.com/r/bahmni/sms-service/tags\" rel=\"nofollow\"><u>bahmni/sms-service - Tags</u></a>.</p></td></tr><tr><td class=\"confluenceTd\"><p>SMS_TOKEN</p></td><td class=\"confluenceTd\"><p>This value points to the token being used for sending SMS. One can set this value if they’ve valid tokens generated to access the SMS provider’s API. </p><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ee4ca1eb-5512-4401-8391-da056389b481\" data-macro-name=\"panel\" style=\"background-color: #E6FCFF;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #E6FCFF;\">\n<p>More details about the service provider being used in Bahmni is available down the page</p>\n</div></div></td></tr><tr><td class=\"confluenceTd\"><p>SMS_ORIGINATOR</p></td><td class=\"confluenceTd\"><p>This value specifies the originator which is used for configuring the SMS header. One can specify the brand name to this value if they have registered originator.</p></td></tr><tr><td class=\"confluenceTd\"><p>SMS_OPENMRS_HOST</p></td><td class=\"confluenceTd\"><p>This value specifies the host name of the OpenMRS application</p></td></tr><tr><td class=\"confluenceTd\"><p>SMS_OPENMRS_PORT</p></td><td class=\"confluenceTd\"><p>This value specifies the port number of the OpenMRS application</p></td></tr></tbody></table></div><h2 id=\"SMSServiceConfiguration(docker)-StartingSMSservice\">Starting SMS service</h2><p>For SMS service, there is an application profile <code>sms</code>  in docker which can be used to bring up the SMS service.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ad2e8055-e489-40a0-a977-76b65c37e926\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\"># From bahmni-lite/ or bahmni-standard/ subfolder, \n# execute this command to bring up sms-service\ndocker compose --profile sms up -d\n</pre>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"84dfe34e-0eb6-4ebd-8d3b-9da900330a4f\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Currently SMS service is being used in Registration and Appointments module in Bahmni. </p><p>To know how to configure sending SMS in registration module, refer <a href=\"/wiki/spaces/BAH/pages/3168075777/Configure+Sending+SMS+and+WhatsApp+message+on+Patient+Registration\" data-linked-resource-id=\"3168075777\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\"><u>here</u></a> and for appointments module, refer <a href=\"/wiki/spaces/BAH/pages/3168075832/Configuration+to+enable+SMS+alerts+for+Appointments\" data-linked-resource-id=\"3168075832\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\"><u>here</u></a></p></div></div><h2 id=\"SMSServiceConfiguration(docker)-DevelopmentonSMSservice\">Development on SMS service</h2><p>When you want to develop on SMS service code, follow the below steps.</p><ol start=\"1\"><li><p>Clone the <a class=\"external-link\" href=\"https://github.com/Bahmni/sms-service\" rel=\"nofollow\"><u>sms-service</u></a> repository in your local machine.</p></li><li><p>Follow the instructions in the README of the repository to install the required tools and dependencies.</p></li><li><p>Build the project as instructed in the README and build the docker image using <code>docker compose build</code></p></li><li><p>Start / Recreate sms-service by doing  <code>docker-compose up -d sms-service</code></p></li><li><p>For every change you make, build the sms-service code and image <strong>→</strong> recreate the sms-service container, then the changes will reflect on the next trigger of SMS</p></li></ol><p /><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"84fb5c0d-53ed-4286-8889-94e4168bf69b\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>One can write their own implementation of SMS with preferable SMS providers and by exposing the API, it can be used in any of the Bahmni repositories for sending SMS. </p><p><a class=\"external-link\" href=\"https://github.com/Bahmni/sms-service\" rel=\"nofollow\"><u>sms-service</u></a> is a reference implementation which uses D7 SMS service provider for sending SMS. If anyone wants to use different SMS service providers, then they can fork out <a class=\"external-link\" href=\"https://github.com/Bahmni/sms-service\" rel=\"nofollow\"><u>sms-service</u></a> repository and write their own implementation of the interfaces with the preferred service providers.</p></div></div><h2 id=\"SMSServiceConfiguration(docker)-SMSAPIOverview:\"><strong>SMS API Overview :</strong></h2><p>We are currently using D7 SMS API for sending sms in Bahmni. The functionality is implemented in the repo <a class=\"external-link\" href=\"https://github.com/Bahmni/sms-service\" rel=\"nofollow\"><u>sms-service</u></a>. If sms-service is up and running, then we will be able to send sms.</p><p><em><strong>Prerequisite</strong></em>: A paid account in D7 networks and an authorization token needs to be generated.</p><p /><p><strong>D7 SMS</strong> - <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://d7networks.com/\" rel=\"nofollow\">https://d7networks.com/</a> </p><ul><li><p>For India D7 has two solutions one is the International in this route we have configured by default for all new customers in India which does not require the DLT registration and the price will be at <strong>0.04$ per SMS.</strong></p></li><li><p>On the other hand, if we want to configure the price at <strong>0.003$ per SMS </strong>which is a Domestic route<strong> </strong>the customer needs to complete the DLT registration and be required to share the DLT registered details as per the TRAI regulations. We can also configure the originator (sender address) if we register on DLT.</p></li><li><p>It will accept 700 characters in SMS text and 1 SMS will be considered as 160 characters. Please find the character wise SMS details below.</p></li></ul><span class=\"confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-left\" width=\"272\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3168010241/AkX6JANZL4VInWCdjur04XBeolSC6emCKup291ZnH-qQZsv0EqrCRqG5dWd05cACOCoCS6LRl0kNmmljITHFn0BeDQPlur5yV1VAvuzTWPXvjJcKhwvQs4I0DkeYfjruCyvXnQ13lrnUnMSmq-t0Cnc?version=1&amp;modificationDate=1680674153426&amp;cacheVersion=1&amp;api=v2&amp;width=272&amp;height=47\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3168010241/AkX6JANZL4VInWCdjur04XBeolSC6emCKup291ZnH-qQZsv0EqrCRqG5dWd05cACOCoCS6LRl0kNmmljITHFn0BeDQPlur5yV1VAvuzTWPXvjJcKhwvQs4I0DkeYfjruCyvXnQ13lrnUnMSmq-t0Cnc?version=1&amp;modificationDate=1680674153426&amp;cacheVersion=1&amp;api=v2\" data-height=\"268\" data-width=\"1538\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3167944722\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"AkX6JANZL4VInWCdjur04XBeolSC6emCKup291ZnH-qQZsv0EqrCRqG5dWd05cACOCoCS6LRl0kNmmljITHFn0BeDQPlur5yV1VAvuzTWPXvjJcKhwvQs4I0DkeYfjruCyvXnQ13lrnUnMSmq-t0Cnc\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3168010241\" data-linked-resource-container-version=\"2\" data-media-id=\"2e7c2757-fa97-4fa8-8267-ab5ef86fe0d0\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3168010241/AkX6JANZL4VInWCdjur04XBeolSC6emCKup291ZnH-qQZsv0EqrCRqG5dWd05cACOCoCS6LRl0kNmmljITHFn0BeDQPlur5yV1VAvuzTWPXvjJcKhwvQs4I0DkeYfjruCyvXnQ13lrnUnMSmq-t0Cnc?version=1&amp;modificationDate=1680674153426&amp;cacheVersion=1&amp;api=v2&amp;width=544&amp;height=94 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3168010241/AkX6JANZL4VInWCdjur04XBeolSC6emCKup291ZnH-qQZsv0EqrCRqG5dWd05cACOCoCS6LRl0kNmmljITHFn0BeDQPlur5yV1VAvuzTWPXvjJcKhwvQs4I0DkeYfjruCyvXnQ13lrnUnMSmq-t0Cnc?version=1&amp;modificationDate=1680674153426&amp;cacheVersion=1&amp;api=v2&amp;width=272&amp;height=47 1x\"></span><p><em><strong>Note:</strong> Trial account will have free credits worth 0.2$ which allows sending around 6 sms</em></p><p /><p><strong>Working:</strong></p><span class=\"confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-left\" width=\"374\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3168010241/Screenshot%202023-04-05%20at%2011.29.48%20AM.png?version=1&amp;modificationDate=1680674415995&amp;cacheVersion=1&amp;api=v2&amp;width=374&amp;height=106\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3168010241/Screenshot%202023-04-05%20at%2011.29.48%20AM.png?version=1&amp;modificationDate=1680674415995&amp;cacheVersion=1&amp;api=v2\" data-height=\"381\" data-width=\"1335\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3167944743\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2023-04-05 at 11.29.48 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3168010241\" data-linked-resource-container-version=\"2\" data-media-id=\"60c8ac8b-7e3c-4b0e-bb66-2cad3cc1d692\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3168010241/Screenshot%202023-04-05%20at%2011.29.48%20AM.png?version=1&amp;modificationDate=1680674415995&amp;cacheVersion=1&amp;api=v2&amp;width=748&amp;height=212 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3168010241/Screenshot%202023-04-05%20at%2011.29.48%20AM.png?version=1&amp;modificationDate=1680674415995&amp;cacheVersion=1&amp;api=v2&amp;width=374&amp;height=106 1x\"></span><p><strong>Sample JSON for D7 SMS</strong></p><span class=\"confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-left\" width=\"204\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3168010241/YirOEmNmqpe2DXtYV1KRyllvH3DZu1Rv9d1ITmCewNa3amkY8jfUXqw4TXb9vofliSpMbdPf7zdFqKxhop_xLoi5aZqNlemlZBup9XA1DmTxTeCk_DxCJiaM6EUjXnqsJhCmdHIDCdPf5t-QEWIy4vg?version=1&amp;modificationDate=1680674153450&amp;cacheVersion=1&amp;api=v2&amp;width=204&amp;height=109\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3168010241/YirOEmNmqpe2DXtYV1KRyllvH3DZu1Rv9d1ITmCewNa3amkY8jfUXqw4TXb9vofliSpMbdPf7zdFqKxhop_xLoi5aZqNlemlZBup9XA1DmTxTeCk_DxCJiaM6EUjXnqsJhCmdHIDCdPf5t-QEWIy4vg?version=1&amp;modificationDate=1680674153450&amp;cacheVersion=1&amp;api=v2\" data-height=\"542\" data-width=\"1010\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3167944735\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"YirOEmNmqpe2DXtYV1KRyllvH3DZu1Rv9d1ITmCewNa3amkY8jfUXqw4TXb9vofliSpMbdPf7zdFqKxhop_xLoi5aZqNlemlZBup9XA1DmTxTeCk_DxCJiaM6EUjXnqsJhCmdHIDCdPf5t-QEWIy4vg\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3168010241\" data-linked-resource-container-version=\"2\" data-media-id=\"50767e64-a455-424b-9627-7ed0966caec9\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3168010241/YirOEmNmqpe2DXtYV1KRyllvH3DZu1Rv9d1ITmCewNa3amkY8jfUXqw4TXb9vofliSpMbdPf7zdFqKxhop_xLoi5aZqNlemlZBup9XA1DmTxTeCk_DxCJiaM6EUjXnqsJhCmdHIDCdPf5t-QEWIy4vg?version=1&amp;modificationDate=1680674153450&amp;cacheVersion=1&amp;api=v2&amp;width=408&amp;height=218 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3168010241/YirOEmNmqpe2DXtYV1KRyllvH3DZu1Rv9d1ITmCewNa3amkY8jfUXqw4TXb9vofliSpMbdPf7zdFqKxhop_xLoi5aZqNlemlZBup9XA1DmTxTeCk_DxCJiaM6EUjXnqsJhCmdHIDCdPf5t-QEWIy4vg?version=1&amp;modificationDate=1680674153450&amp;cacheVersion=1&amp;api=v2&amp;width=204&amp;height=109 1x\"></span><p />",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3168010241"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3168010241/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3168010241/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 737888410
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3168010241/child",
+    "restrictions": "/rest/api/content/3168010241/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3168010241/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3168010241",
+    "webui": "/spaces/BAH/pages/3168010241/SMS+Service+Configuration+docker",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3168010241",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3168010241",
+    "tinyui": "/x/AQDUv",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

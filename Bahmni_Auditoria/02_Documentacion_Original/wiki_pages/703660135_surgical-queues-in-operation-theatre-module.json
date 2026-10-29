@@ -1,0 +1,172 @@
+{
+  "id": "703660135",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/703660135",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNzAzNjYwMTM1",
+  "status": "current",
+  "title": "Surgical Queues in Operation Theatre Module",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Himabindu Thungathurty",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Akkinepalli",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66"
+      }
+    },
+    "createdDate": "2018-08-20T12:09:53.765Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/703660135/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Himabindu Thungathurty",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Akkinepalli",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66"
+      }
+    },
+    "when": "2018-08-20T12:15:46.020Z",
+    "friendlyWhen": "Aug 20, 2018",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.DTUpCcOJovmkuPWValInpQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$703660135.43",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/703660135"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/703660135/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p>There are two surgical queues in OT app.</p><ul><li><strong><strong>To be scheduled:&nbsp;</strong></strong><span>This queue shows a list of patients that have a surgeon pre-op assessment form or a surgeon follow up form filled with &ldquo;Patient consent&rdquo; as &ldquo;yes&rdquo; and who do not have an surgery scheduled post filling the form. </span><span>The queue also shows a list of postponed surgeries.</span></li></ul><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Note:&nbsp; </strong>Sorted on&nbsp;date of form filled (earliest first)<ul><li><strong><strong>Scheduled:&nbsp;</strong></strong>This queue shows a list of patients that have &ldquo;scheduled&rdquo; appointments sorted on date of surgery (earliest first). Detailed document on the queues can be found <a href=\"https://docs.google.com/document/d/16ekQcH7LcdgsfPQW4CRgBngpBoL8m3xT9cK6IlMMFaY/edit\">here.</a></li></ul><p><strong>Validations and constraints:</strong></p><ul><li><span>If there is no form filled for a user and a surgery has been created and postponed. This surgery will not be shown on the &ldquo;to be scheduled&rdquo; queue</span></li><li><span>Multiple postponed surgeries for a user will not be shown on &ldquo;to be scheduled&rdquo; queue</span></li><li><span>Once the surgery is completed/postponed or cancelled the surgery is not shown in the &ldquo;scheduled&rdquo; queue.</span></li></ul></ac:layout-cell><ac:layout-cell><p><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/703660135"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p>There are two surgical queues in OT app.</p><ul><li><strong><strong>To be scheduled: </strong></strong><span>This queue shows a list of patients that have a surgeon pre-op assessment form or a surgeon follow up form filled with “Patient consent” as “yes” and who do not have an surgery scheduled post filling the form. </span><span>The queue also shows a list of postponed surgeries.</span></li></ul><strong>                     Note:  </strong>Sorted on date of form filled (earliest first)<ul><li><strong><strong>Scheduled: </strong></strong>This queue shows a list of patients that have “scheduled” appointments sorted on date of surgery (earliest first). Detailed document on the queues can be found <a class=\"external-link\" href=\"https://docs.google.com/document/d/16ekQcH7LcdgsfPQW4CRgBngpBoL8m3xT9cK6IlMMFaY/edit\" rel=\"nofollow\">here.</a></li></ul><p><strong>Validations and constraints:</strong></p><ul><li><span>If there is no form filled for a user and a surgery has been created and postponed. This surgery will not be shown on the “to be scheduled” queue</span></li><li><span>Multiple postponed surgeries for a user will not be shown on “to be scheduled” queue</span></li><li><span>Once the surgery is completed/postponed or cancelled the surgery is not shown in the “scheduled” queue.</span></li></ul></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<p><br/></p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/703660135"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/703660135/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/703660135/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 108689546
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/703660135/child",
+    "restrictions": "/rest/api/content/703660135/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/703660135/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=703660135",
+    "webui": "/spaces/BAH/pages/703660135/Surgical+Queues+in+Operation+Theatre+Module",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/703660135",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/703660135",
+    "tinyui": "/x/ZwDxKQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

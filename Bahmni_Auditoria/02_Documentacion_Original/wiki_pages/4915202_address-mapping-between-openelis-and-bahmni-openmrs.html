@@ -1,0 +1,58 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Address Mapping between OpenELIS and Bahmni / OpenMRS</title></head><body><h1>Address Mapping between OpenELIS and Bahmni / OpenMRS</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p>The address hierarchy in Bahmni is based on the Address Hierarchy in OpenMRS. In OpenMRS, when you create the address hierarchy, you need to ensure that it follows specific order to map to correct labels in ELIS.</p><p>Refer to below mapping for ELIS fields and Address Hierarchy Fields:</p><div class="table-wrap"><table class="wrapped confluenceTable"><tbody><tr><th class="confluenceTh">Field / Label in ELIS</th><th class="confluenceTh">Field in OpenMRS</th></tr><tr><td class="confluenceTd"> House No, Street</td><td class="confluenceTd">Address1</td></tr><tr><td class="confluenceTd">Village</td><td class="confluenceTd">City_Village</td></tr><tr><td class="confluenceTd">Gram Panchayat</td><td class="confluenceTd"><span>Address2</span></td></tr><tr><td colspan="1" class="confluenceTd">Tehsil</td><td colspan="1" class="confluenceTd"><span>Address3</span></td></tr><tr><td colspan="1" class="confluenceTd">District</td><td colspan="1" class="confluenceTd">County_District</td></tr><tr><td colspan="1" class="confluenceTd">State</td><td colspan="1" class="confluenceTd">StateProvince</td></tr></tbody></table></div><p><br/></p><p>If you don't see the address fields that you want to map to in the address hierarchy mapping list then update the Address Template under Locations &gt; Manage Address Template.</p><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="fecd43fb-27ac-4b59-a4f6-26ff9f8dbd3d" data-macro-name="info"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>Please refer to <span> </span><a class="external-link" href="https://wiki.openmrs.org/display/docs/Administering+Address+Templates" rel="nofollow">Administering Address Templates (OpenMRS Documentation)</a> document to understand the details of the XML and the valid tags</p></div></div><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="be80bc73-a304-455c-9f7f-910108cf0df7" data-macro-name="code" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">Sample Address Template</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon"> </span><span class="expand-control-text">Expand source</span></span><span class="collapse-spinner-wrapper"> </span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: xml; gutter: false; theme: Confluence; collapse: true" data-theme="Confluence">&lt;org.openmrs.layout.web.address.AddressTemplate&gt;
+                        &lt;nameMappings class=&quot;properties&quot;&gt;
+                          &lt;property name=&quot;address1&quot; value=&quot;Location.address1&quot;/&gt;
+                          &lt;property name=&quot;address2&quot; value=&quot;Location.address2&quot;/&gt;
+                          &lt;property name=&quot;address3&quot; value=&quot;Tehsil&quot;/&gt;
+                          &lt;property name=&quot;address4&quot; value=&quot;Location.address4&quot;/&gt;
+                          &lt;property name=&quot;address5&quot; value=&quot;Location.address5&quot;/&gt;
+                          &lt;property name=&quot;address6&quot; value=&quot;Location.address6&quot;/&gt;
+                          &lt;property name=&quot;postalCode&quot; value=&quot;Location.postalCode&quot;/&gt;
+                          &lt;property name=&quot;longitude&quot; value=&quot;Location.longitude&quot;/&gt;
+                          &lt;property name=&quot;startDate&quot; value=&quot;PersonAddress.startDate&quot;/&gt;
+                          &lt;property name=&quot;country&quot; value=&quot;Location.country&quot;/&gt;
+                          &lt;property name=&quot;countyDistrict&quot; value=&quot;Location.district&quot;/&gt;
+                          &lt;property name=&quot;endDate&quot; value=&quot;personAddress.endDate&quot;/&gt;
+                          &lt;property name=&quot;stateProvince&quot; value=&quot;Location.stateProvince&quot;/&gt;
+                          &lt;property name=&quot;latitude&quot; value=&quot;Location.latitude&quot;/&gt;
+                          &lt;property name=&quot;cityVillage&quot; value=&quot;Location.cityVillage&quot;/&gt;
+                        &lt;/nameMappings&gt;
+                        &lt;sizeMappings class=&quot;properties&quot;&gt;
+                          &lt;property name=&quot;postalCode&quot; value=&quot;10&quot;/&gt;
+                          &lt;property name=&quot;longitude&quot; value=&quot;10&quot;/&gt;
+                          &lt;property name=&quot;address2&quot; value=&quot;40&quot;/&gt;
+                          &lt;property name=&quot;address1&quot; value=&quot;40&quot;/&gt;
+                          &lt;property name=&quot;startDate&quot; value=&quot;10&quot;/&gt;
+                          &lt;property name=&quot;country&quot; value=&quot;10&quot;/&gt;
+                          &lt;property name=&quot;endDate&quot; value=&quot;10&quot;/&gt;
+                          &lt;property name=&quot;stateProvince&quot; value=&quot;10&quot;/&gt;
+                          &lt;property name=&quot;latitude&quot; value=&quot;10&quot;/&gt;
+                          &lt;property name=&quot;cityVillage&quot; value=&quot;10&quot;/&gt;
+                        &lt;/sizeMappings&gt;
+                        &lt;lineByLineFormat&gt;
+                          &lt;string&gt;address1&lt;/string&gt;
+                          &lt;string&gt;address2&lt;/string&gt;
+                          &lt;string&gt;cityVillage stateProvince country postalCode&lt;/string&gt;
+                          &lt;string&gt;latitude longitude&lt;/string&gt;
+                          &lt;string&gt;startDate endDate&lt;/string&gt;
+                        &lt;/lineByLineFormat&gt;
+                      &lt;/org.openmrs.layout.web.address.AddressTemplate&gt;</pre>
+ </div>
+</div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="866353f1-246c-400f-87d1-f17c22aaefd5" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #1FA5A0;color: white;"><b>Related Links</b></div><div class="panelContent">
+<ul><li><a class="external-link" href="https://wiki.openmrs.org/display/docs/Administering+Address+Templates" rel="nofollow">Administering Address Templates (OpenMRS Documentation)</a></li></ul>
+</div></div></div>
+</div>
+</div>
+</div></body></html>

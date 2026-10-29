@@ -1,0 +1,171 @@
+{
+  "id": "21790747",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/21790747",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjE3OTA3NDc=",
+  "status": "current",
+  "title": "OpenERP Basic Configurations",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Arun Paul",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Arun Paul",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3"
+      }
+    },
+    "createdDate": "2015-06-02T04:31:17.082Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/21790747/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:a9ea0f01-7e02-4871-ac63-bad156262723",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sanjaya Poudel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:a9ea0f01-7e02-4871-ac63-bad156262723",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sanjaya Poudel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:a9ea0f01-7e02-4871-ac63-bad156262723"
+      }
+    },
+    "when": "2019-01-29T07:59:18.686Z",
+    "friendlyWhen": "Jan 29, 2019",
+    "message": "",
+    "number": 11,
+    "minorEdit": false,
+    "syncRev": "0.WtlcKS7CMdvT7Lm6qM0cKw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$21790747.64",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/21790747"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/21790747/version/11"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2><span style=\"color: rgb(0,0,0);\">Steps</span></h2><p><span style=\"color: rgb(0,0,0);\">Post installation of <a href=\"https://bahmni.atlassian.net/wiki/pages/viewpage.action?pageId=35291242#InstallBahmnionCentOS(AdvancedInstallationOptions)-Step5:SetupdeploymentConfiguration\">Bahmni with OpenERP</a>, the following configuration steps need to be done to get the Pharmacy, Billing &amp; Accounting and Inventory Modules setup</span></p><p><span style=\"color: rgb(0,0,0);\">1.&nbsp;Remove the line &quot;<code>update --all</code>&quot; from the &quot;<code>sudo vi /etc/init.d/openerp</code>&quot; file.</span></p><p><span style=\"color: rgb(0,0,0);\">2. Install the following Modules</span></p><ol><li><span style=\"color: rgb(0,0,0);\">&nbsp; Warehouse Management Module&nbsp;</span></li><li><span style=\"color: rgb(0,0,0);\">&nbsp; Sales Management Module</span></li><li><span style=\"color: rgb(0,0,0);\">&nbsp; Purchase Management Module&nbsp;</span></li><li><span style=\"color: rgb(0,0,0);\">&nbsp; Accounting and Finance Module&nbsp;</span></li><li><span style=\"color: rgb(0,0,0);\">&nbsp; SEARCH Reports Module (if you want these Accounting reports)</span></li></ol><p><span style=\"color: rgb(0,0,0);\">When asked about the Financial Account system choose: (INR, 0, 0, Indian Account System)</span></p><p><span style=\"color: rgb(0,0,0);\">3. &nbsp;Enable the following in Setting <span style=\"color: rgb(0,0,0);\">&rarr;</span>&nbsp;config <span style=\"color: rgb(0,0,0);\">&rarr;</span>&nbsp;warehouse :</span></p><ul><li>Track Serial Number on Products</li><li>Expiry Date on Serial Number</li><li>Manage Multiple Location</li><li>Manage different unit of measures on Products</li></ul><p><span style=\"color: rgb(0,0,0);\">3) Settings <span style=\"color: rgb(0,0,0);\">&rarr;&nbsp;</span>config <span style=\"color: rgb(0,0,0);\">&rarr;</span>&nbsp;General Settings -&gt; Allow user to import data from CSV files</span></p><p><span style=\"color: rgb(0,0,0);\">4) Settings <span style=\"color: rgb(0,0,0);\">&rarr;&nbsp;</span>Users <span style=\"color: rgb(0,0,0);\">&rarr;&nbsp;</span>Administrator choose (Edit) &mdash; Access rights <span style=\"color: rgb(0,0,0);\">&rarr;&nbsp;</span>enable Technical Features.</span></p><p><span style=\"color: rgb(0,0,0);\">5) Logout from OpenERP and then re-Login</span></p><p><span style=\"color: rgb(0,0,0);\">6) Go to Settings <span style=\"color: rgb(0,0,0);\">&rarr;</span>&nbsp;Modules <span style=\"color: rgb(0,0,0);\">&rarr;</span>&nbsp;Update Module List (Updated)</span></p><p>7) Restart OpenERP: '<code>sudo service openerp stop</code>', and then '<code>sudo service openerp start</code><em>'</em></p><p><span style=\"color: rgb(0,0,0);\">8) Install the following modules required for Bahmni. Just search with the given name and install them.</span></p><ol><li><code><span class=\"pl-s\" style=\"color: rgb(0,0,0);\"><span class=\"pl-pds\">base</span></span></code></li><li><code><span style=\"color: rgb(0,0,0);\"><span class=\"pl-s\">auth_crypt</span></span></code></li><li><code><span style=\"color: rgb(0,0,0);\"><span class=\"pl-s\">product</span></span></code></li><li><code><span style=\"color: rgb(0,0,0);\"><span class=\"pl-s\">account</span></span></code></li><li><code><span style=\"color: rgb(0,0,0);\"><span class=\"pl-s\">account_voucher</span></span></code></li><li><code><span style=\"color: rgb(0,0,0);\"><span class=\"pl-s\">purchase</span></span></code></li><li><code><span style=\"color: rgb(0,0,0);\"><span class=\"pl-s\">account_accountant</span></span></code></li><li><code><span style=\"color: rgb(0,0,0);\"><span class=\"pl-s\">stock</span></span></code></li><li><code><span style=\"color: rgb(0,0,0);\"><span class=\"pl-s\">sale</span></span></code></li><li><code><span style=\"color: rgb(0,0,0);\"><span class=\"pl-s\">sale_stock</span></span></code></li><li><code><span style=\"color: rgb(0,0,0);\"><span class=\"pl-s\">purchase</span></span></code></li><li><code><span style=\"color: rgb(0,0,0);\"><span class=\"pl-s\">product_expiry</span></span></code></li><li><code><span style=\"color: rgb(0,0,0);\"><span class=\"pl-s\">bahmni_web_extensions</span></span></code></li><li><code><span style=\"color: rgb(0,0,0);\"><span class=\"pl-s\">bahmni_pharmacy_product</span></span></code></li><li><code><span style=\"color: rgb(0,0,0);\"><span class=\"pl-s\">bahmni_stock_batch_sale_price</span></span></code></li><li><code><span style=\"color: rgb(0,0,0);\"><span class=\"pl-s\">bahmni_sale_discount</span></span></code></li><li><code><span style=\"color: rgb(0,0,0);\"><span class=\"pl-s\">bahmni_customer_payment</span></span></code></li><li><code><span style=\"color: rgb(0,0,0);\"><span class=\"pl-s\">bahmni_internal_stock_move</span></span></code></li></ol><p><br />9) Uninstall Bahmni Logger. Ensure these are also installed:</p><ul><li>Bahmni Purchase flow enhancement</li><li>Bahmni Print Bill</li><li>Don't install Bahmni Seed Data install (Since it is JSS specific)</li><li>Don&rsquo;t install Lab seed data</li><li>Don&rsquo;t install DHIS2 stock export</li></ul><p><span style=\"color: rgb(0,0,0);\">10) Go to Settings &rarr; Companies &rarr;&nbsp;</span><span style=\"color: rgb(0,0,0);\">Edit and add your hospital details: name, logo, address, etc.</span></p><p><span style=\"color: rgb(0,0,0);\">11) Go to Warehouse <span style=\"color: rgb(0,0,0);\">&rarr;&nbsp;</span>Configurations/Warehouses &rarr;&nbsp;Edit/Add a warehouse (keep settings default).</span></p><p><span style=\"color: rgb(0,0,0);\">12) Go to Sales <span style=\"color: rgb(0,0,0);\">&rarr;&nbsp;</span>Shop <span style=\"color: rgb(0,0,0);\">&rarr;</span>&nbsp;Edit/Add your shop (and choose Warehouse). Shop name must be &quot;Pharmacy&quot;.</span></p><p><span style=\"color: rgb(0,0,0);\">13) To add a Billing User, go to Settings -&gt; Users -&gt; Add User.</span></p><p><span style=\"color: rgb(0,0,0);\">Give access rights to:</span></p><ul><li><span style=\"color: rgb(0,0,0);\"> Sales: Manager Warehouse: <code>None</code> or <code>User</code> (One of the authorization: Warehouse or Purchases Needs to be <code>User</code> to make bills)&nbsp;</span></li><li><span style=\"color: rgb(0,0,0);\">Account &amp; Finance: Accountant Purchases: <code>None</code><span style=\"color: rgb(0,0,0);\">&nbsp;or&nbsp;</span><code>User</code>&nbsp;(One of the authorization: Warehouse or Purchases Needs to be User to make bills)&nbsp;</span></li><li><span style=\"color: rgb(0,0,0);\">Human Resources: Employee </span></li><li><span style=\"color: rgb(0,0,0);\">Sharing: Blank</span></li><li><span style=\"color: rgb(0,0,0);\">Administration: Blank</span></li></ul><p>14<span style=\"color: rgb(0,0,0);\">) In Technical settings change:</span></p><ul><li><span style=\"color: rgb(0,0,0);\">Manage Multiple Units of Measure&nbsp;</span></li><li><span style=\"color: rgb(0,0,0);\">Manage Serial Numbers Enabled adding final SaleOrder charge&nbsp;</span></li><li><span style=\"color: rgb(0,0,0);\">Manage Multiple Locations and Warehouses</span></li></ul><p><span style=\"color: rgb(0,0,0);\">14) Go to to Sales &gt; Configuration &gt; Products (Drop Down) &gt; Product Categories.&nbsp;Create a product category named &quot;Drug&quot; under &quot;All products / Saleable&quot;.&nbsp;</span></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"3a68ed21-17b2-4528-a31c-92f3809435df\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Pages</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"9335f0c3-24e8-4693-9da0-9a4407568ea6\"><ac:parameter ac:name=\"all\">true</ac:parameter><ac:parameter ac:name=\"page\"><ac:link><ri:page ri:content-title=\"OpenERP Configuration\" ri:version-at-save=\"7\" /></ac:link></ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/21790747"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"OpenERPBasicConfigurations-Steps\"><span class=\"legacy-color-text-default\">Steps</span></h2><p><span class=\"legacy-color-text-default\">Post installation of <a href=\"https://bahmni.atlassian.net/wiki/pages/viewpage.action?pageId=35291242#InstallBahmnionCentOS(AdvancedInstallationOptions)-Step5:SetupdeploymentConfiguration\" rel=\"nofollow\">Bahmni with OpenERP</a>, the following configuration steps need to be done to get the Pharmacy, Billing &amp; Accounting and Inventory Modules setup</span></p><p><span class=\"legacy-color-text-default\">1. Remove the line &quot;<code>update --all</code>&quot; from the &quot;<code>sudo vi /etc/init.d/openerp</code>&quot; file.</span></p><p><span class=\"legacy-color-text-default\">2. Install the following Modules</span></p><ol><li><span class=\"legacy-color-text-default\">  Warehouse Management Module </span></li><li><span class=\"legacy-color-text-default\">  Sales Management Module</span></li><li><span class=\"legacy-color-text-default\">  Purchase Management Module </span></li><li><span class=\"legacy-color-text-default\">  Accounting and Finance Module </span></li><li><span class=\"legacy-color-text-default\">  SEARCH Reports Module (if you want these Accounting reports)</span></li></ol><p><span class=\"legacy-color-text-default\">When asked about the Financial Account system choose: (INR, 0, 0, Indian Account System)</span></p><p><span class=\"legacy-color-text-default\">3.  Enable the following in Setting <span class=\"legacy-color-text-default\">→</span> config <span class=\"legacy-color-text-default\">→</span> warehouse :</span></p><ul><li>Track Serial Number on Products</li><li>Expiry Date on Serial Number</li><li>Manage Multiple Location</li><li>Manage different unit of measures on Products</li></ul><p><span class=\"legacy-color-text-default\">3) Settings <span class=\"legacy-color-text-default\">→ </span>config <span class=\"legacy-color-text-default\">→</span> General Settings -&gt; Allow user to import data from CSV files</span></p><p><span class=\"legacy-color-text-default\">4) Settings <span class=\"legacy-color-text-default\">→ </span>Users <span class=\"legacy-color-text-default\">→ </span>Administrator choose (Edit) — Access rights <span class=\"legacy-color-text-default\">→ </span>enable Technical Features.</span></p><p><span class=\"legacy-color-text-default\">5) Logout from OpenERP and then re-Login</span></p><p><span class=\"legacy-color-text-default\">6) Go to Settings <span class=\"legacy-color-text-default\">→</span> Modules <span class=\"legacy-color-text-default\">→</span> Update Module List (Updated)</span></p><p>7) Restart OpenERP: '<code>sudo service openerp stop</code>', and then '<code>sudo service openerp start</code><em>'</em></p><p><span class=\"legacy-color-text-default\">8) Install the following modules required for Bahmni. Just search with the given name and install them.</span></p><ol><li><code><span class=\"pl-s legacy-color-text-default\"><span class=\"pl-pds\">base</span></span></code></li><li><code><span class=\"legacy-color-text-default\"><span class=\"pl-s\">auth_crypt</span></span></code></li><li><code><span class=\"legacy-color-text-default\"><span class=\"pl-s\">product</span></span></code></li><li><code><span class=\"legacy-color-text-default\"><span class=\"pl-s\">account</span></span></code></li><li><code><span class=\"legacy-color-text-default\"><span class=\"pl-s\">account_voucher</span></span></code></li><li><code><span class=\"legacy-color-text-default\"><span class=\"pl-s\">purchase</span></span></code></li><li><code><span class=\"legacy-color-text-default\"><span class=\"pl-s\">account_accountant</span></span></code></li><li><code><span class=\"legacy-color-text-default\"><span class=\"pl-s\">stock</span></span></code></li><li><code><span class=\"legacy-color-text-default\"><span class=\"pl-s\">sale</span></span></code></li><li><code><span class=\"legacy-color-text-default\"><span class=\"pl-s\">sale_stock</span></span></code></li><li><code><span class=\"legacy-color-text-default\"><span class=\"pl-s\">purchase</span></span></code></li><li><code><span class=\"legacy-color-text-default\"><span class=\"pl-s\">product_expiry</span></span></code></li><li><code><span class=\"legacy-color-text-default\"><span class=\"pl-s\">bahmni_web_extensions</span></span></code></li><li><code><span class=\"legacy-color-text-default\"><span class=\"pl-s\">bahmni_pharmacy_product</span></span></code></li><li><code><span class=\"legacy-color-text-default\"><span class=\"pl-s\">bahmni_stock_batch_sale_price</span></span></code></li><li><code><span class=\"legacy-color-text-default\"><span class=\"pl-s\">bahmni_sale_discount</span></span></code></li><li><code><span class=\"legacy-color-text-default\"><span class=\"pl-s\">bahmni_customer_payment</span></span></code></li><li><code><span class=\"legacy-color-text-default\"><span class=\"pl-s\">bahmni_internal_stock_move</span></span></code></li></ol><p><br/>9) Uninstall Bahmni Logger. Ensure these are also installed:</p><ul><li>Bahmni Purchase flow enhancement</li><li>Bahmni Print Bill</li><li>Don't install Bahmni Seed Data install (Since it is JSS specific)</li><li>Don’t install Lab seed data</li><li>Don’t install DHIS2 stock export</li></ul><p><span class=\"legacy-color-text-default\">10) Go to Settings → Companies → </span><span class=\"legacy-color-text-default\">Edit and add your hospital details: name, logo, address, etc.</span></p><p><span class=\"legacy-color-text-default\">11) Go to Warehouse <span class=\"legacy-color-text-default\">→ </span>Configurations/Warehouses → Edit/Add a warehouse (keep settings default).</span></p><p><span class=\"legacy-color-text-default\">12) Go to Sales <span class=\"legacy-color-text-default\">→ </span>Shop <span class=\"legacy-color-text-default\">→</span> Edit/Add your shop (and choose Warehouse). Shop name must be &quot;Pharmacy&quot;.</span></p><p><span class=\"legacy-color-text-default\">13) To add a Billing User, go to Settings -&gt; Users -&gt; Add User.</span></p><p><span class=\"legacy-color-text-default\">Give access rights to:</span></p><ul><li><span class=\"legacy-color-text-default\"> Sales: Manager Warehouse: <code>None</code> or <code>User</code> (One of the authorization: Warehouse or Purchases Needs to be <code>User</code> to make bills) </span></li><li><span class=\"legacy-color-text-default\">Account &amp; Finance: Accountant Purchases: <code>None</code><span class=\"legacy-color-text-default\"> or </span><code>User</code> (One of the authorization: Warehouse or Purchases Needs to be User to make bills) </span></li><li><span class=\"legacy-color-text-default\">Human Resources: Employee </span></li><li><span class=\"legacy-color-text-default\">Sharing: Blank</span></li><li><span class=\"legacy-color-text-default\">Administration: Blank</span></li></ul><p>14<span class=\"legacy-color-text-default\">) In Technical settings change:</span></p><ul><li><span class=\"legacy-color-text-default\">Manage Multiple Units of Measure </span></li><li><span class=\"legacy-color-text-default\">Manage Serial Numbers Enabled adding final SaleOrder charge </span></li><li><span class=\"legacy-color-text-default\">Manage Multiple Locations and Warehouses</span></li></ul><p><span class=\"legacy-color-text-default\">14) Go to to Sales &gt; Configuration &gt; Products (Drop Down) &gt; Product Categories. Create a product category named &quot;Drug&quot; under &quot;All products / Saleable&quot;. </span></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3a68ed21-17b2-4528-a31c-92f3809435df\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Pages</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"9335f0c3-24e8-4693-9da0-9a4407568ea6\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/21790747/OpenERP+Basic+Configurations\" data-linked-resource-id=\"21790747\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">OpenERP Basic Configurations</a></li><li><a href=\"/wiki/spaces/BAH/pages/114627969/OpenERP+Syncing+Config\" data-linked-resource-id=\"114627969\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">OpenERP Syncing Config</a></li><li><a href=\"/wiki/spaces/BAH/pages/28311588/OpenERP+Custom+fields\" data-linked-resource-id=\"28311588\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">OpenERP Custom fields</a></li><li><a href=\"/wiki/spaces/BAH/pages/5570574/OpenERP+Custom+Filters\" data-linked-resource-id=\"5570574\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">OpenERP Custom Filters</a></li></ul><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/21790747"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/21790747/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/21790747/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 151381317
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/21790747/child",
+    "restrictions": "/rest/api/content/21790747/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/21790747/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=21790747",
+    "webui": "/spaces/BAH/pages/21790747/OpenERP+Basic+Configurations",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/21790747",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/21790747",
+    "tinyui": "/x/G4BMAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

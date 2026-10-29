@@ -1,0 +1,170 @@
+{
+  "id": "144801828",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/144801828",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTQ0ODAxODI4",
+  "status": "current",
+  "title": "User Roles and Privileges for Appointment Scheduling",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "createdDate": "2017-09-21T10:46:16.355Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/144801828/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "when": "2018-07-10T10:06:00.678Z",
+    "friendlyWhen": "Jul 10, 2018",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "syncRev": "0.rt71_G8hGZBlgPV_xGeMZg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$144801828.54",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/144801828"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/144801828/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h3><span>User Roles</span></h3><p><span>User can be assigned different privileges so as to provide different levels of access to the appointment scheduling module.&nbsp;</span><span>For example, to view appointments or Create appointments or Create services.</span></p><p><span>There are three different user roles available in Appointment Scheduling App which are mentioned below,</span></p><ul><li><span>Read Only Access</span></li><li><span>Manage Appointments</span></li><li><span>Full Access</span></li></ul><p><span>Users can have either a &ldquo;Read only&rdquo; role, &ldquo;Manage Appointments&rdquo; role and &ldquo;Full Access&rdquo; for the App.</span></p><p><br /></p><p style=\"display: inline;\"><strong>Read Only:&nbsp;</strong><span>Can only view Manage Appointments Tab. No actions can be performed. Any effort for action will give error message.</span></p><p><strong>Manage Appointments:&nbsp;</strong>This user will have access only to &ldquo;Manage appointments.&rdquo; Can perform all actions in the app. Admin tab will be hidden.</p><p><strong>Full Access:&nbsp;</strong>&nbsp;This user will have access to Both the tabs of &ldquo;Manage appointments&rdquo; and &ldquo;Admin&rdquo;. The user will be able to create, edit appointments and services.</p><h3><span>Privileges</span></h3><p><span>Appointment scheduling module has a set of privileges associated with it.</span></p><ol><li><strong>app:appointments</strong><span>: Privilege to view appointment scheduling app in the home page. This is the UI privilege that will allow user to view the appointment scheduling app in the home page. On entering the module, user with this privilege can view appointments summary, Manage Appointments Tab.</span></li><li><strong>app:appointments:manageAppointmentsTab</strong><span>: Privilege to view action buttons (Edit, Check-In, Missed, Complete, Cancel) against an appointment and &lsquo;Add new appointment&rsquo; button in appointment scheduling module UI.</span></li><li><strong>app:appointments:adminTab</strong><span>: Privilege to view adminTab in appointment scheduling module UI.</span></li><li><strong>View Appointments</strong><span>: Privilege from the appointment scheduling omod required to fetch appointments from the database.</span></li><li><strong>View Appointment Services</strong><span>: Privilege from the appointment scheduling omod required to fetch appointment services from the database.</span></li><li><strong>Manage Appointments</strong><span>: Privilege from the appointments scheduling omod required to create/edit/cancel an appointment.</span></li><li><strong>Manage Appointment Services</strong><span>: Privilege from the appointment scheduling omod required to create/edit/cancel an appointment service.</span></li></ol><p><strong>Read only&nbsp;</strong></p><p><span>For Read Only role to work as expected, the following privileges must be assigned to that role. If any of the privileges are not assigned, it can be assigned from Openmrs. Privileges required are: app:appointments, Get Admission Locations, Get Beds, Get Locations, Get Patient Identifiers, Get Patients, Get Providers, View Appointments, View Appointment Services</span></p><p><strong>Manage Appointments</strong></p><p><span><span>For Manage Appointments role to work as expected, the following privileges must be assigned to that role. If any of the privileges are not assigned, it can be assigned from Openmrs. Privileges required are: app:appointments, app:appointments:manageAppointmentsTab, Get Admission Locations, Get Beds, Get Locations, Get Patient Identifiers, Get Patients, Get Providers, View Appointments, View Appointment Services, Manage Appointments</span></span></p><p><strong>Full Access</strong></p><p><span><span>For Full Access role to work as expected, the following privileges must be assigned to that role. If any of the privileges are not assigned, it can be assigned from Openmrs. Privileges required are: app:appointments, app:appointments:manageAppointmentsTab, app:appointments:adminTab, Get Admission Locations, Get Beds, Get Locations, Get Patient Identifiers, Get Patients, Get Providers, View Appointments, View Appointment Services, Manage Appointments, Manage Appointment Services</span></span></p><h3><strong>How to Assign User roles</strong></h3><p><span>Roles can be assigned from either openMRS or the database.</span></p><h4><strong>Assigning User Roles from openMRS</strong></h4><ul><li>Login into openMRS</li><li><p><span>Go to Administration</span></p></li><li><p><span>Go to Manage Users</span></p></li><li><p><span>Select user and assign necessary roles (Appointments:ReadOnly, Appointments:ManageAppointments and Appointments:FullAccess)</span></p></li></ul><h4><strong style=\"margin-left: 0.0px;\">Assigning User Roles from the Database:</strong></h4><p><strong style=\"margin-left: 0.0px;\">Read Only:</strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"7d1b43cc-2dd0-4e1e-ad53-40a60bfa3df4\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:plain-text-body><![CDATA[INSERT INTO user_role VALUES (user_id, \"Appointments:ReadOnly\");\n]]></ac:plain-text-body></ac:structured-macro><p><strong style=\"margin-left: 0.0px;\">&nbsp;Manage Appointments:</strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"f45c2671-a2c0-48b1-9e3f-6777e687ab59\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:plain-text-body><![CDATA[INSERT INTO user_role VALUES (user_id, \"Appointments:ManageAppointments\");\n]]></ac:plain-text-body></ac:structured-macro><p>&nbsp;<strong>Full Access:</strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"c40d7cbb-8437-4d49-b8f1-3ea162293d1d\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:plain-text-body><![CDATA[INSERT INTO user_role VALUES (user_id, Appointments:FullAccess\");\n]]></ac:plain-text-body></ac:structured-macro><p><em><span>Note: User_id is from the from users table.</span></em></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"705dd2d2-5f2b-42ce-abe4-991d8f77ea76\"><ac:parameter ac:name=\"titleColor\">black</ac:parameter><ac:parameter ac:name=\"title\">On This Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"8a1a8f86-dcef-4211-8ac3-fba29df37252\" /></p></ac:rich-text-body></ac:structured-macro><p><br /></p><p><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/144801828"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h3 id=\"UserRolesandPrivilegesforAppointmentScheduling-UserRoles\"><span>User Roles</span></h3><p><span>User can be assigned different privileges so as to provide different levels of access to the appointment scheduling module. </span><span>For example, to view appointments or Create appointments or Create services.</span></p><p><span>There are three different user roles available in Appointment Scheduling App which are mentioned below,</span></p><ul><li><span>Read Only Access</span></li><li><span>Manage Appointments</span></li><li><span>Full Access</span></li></ul><p><span>Users can have either a “Read only” role, “Manage Appointments” role and “Full Access” for the App.</span></p><p><br/></p><p style=\"display: inline;\"><strong>Read Only: </strong><span>Can only view Manage Appointments Tab. No actions can be performed. Any effort for action will give error message.</span></p><p><strong>Manage Appointments: </strong>This user will have access only to “Manage appointments.” Can perform all actions in the app. Admin tab will be hidden.</p><p><strong>Full Access: </strong> This user will have access to Both the tabs of “Manage appointments” and “Admin”. The user will be able to create, edit appointments and services.</p><h3 id=\"UserRolesandPrivilegesforAppointmentScheduling-Privileges\"><span>Privileges</span></h3><p><span>Appointment scheduling module has a set of privileges associated with it.</span></p><ol><li><strong>app:appointments</strong><span>: Privilege to view appointment scheduling app in the home page. This is the UI privilege that will allow user to view the appointment scheduling app in the home page. On entering the module, user with this privilege can view appointments summary, Manage Appointments Tab.</span></li><li><strong>app:appointments:manageAppointmentsTab</strong><span>: Privilege to view action buttons (Edit, Check-In, Missed, Complete, Cancel) against an appointment and ‘Add new appointment’ button in appointment scheduling module UI.</span></li><li><strong>app:appointments:adminTab</strong><span>: Privilege to view adminTab in appointment scheduling module UI.</span></li><li><strong>View Appointments</strong><span>: Privilege from the appointment scheduling omod required to fetch appointments from the database.</span></li><li><strong>View Appointment Services</strong><span>: Privilege from the appointment scheduling omod required to fetch appointment services from the database.</span></li><li><strong>Manage Appointments</strong><span>: Privilege from the appointments scheduling omod required to create/edit/cancel an appointment.</span></li><li><strong>Manage Appointment Services</strong><span>: Privilege from the appointment scheduling omod required to create/edit/cancel an appointment service.</span></li></ol><p><strong>Read only </strong></p><p><span>For Read Only role to work as expected, the following privileges must be assigned to that role. If any of the privileges are not assigned, it can be assigned from Openmrs. Privileges required are: app:appointments, Get Admission Locations, Get Beds, Get Locations, Get Patient Identifiers, Get Patients, Get Providers, View Appointments, View Appointment Services</span></p><p><strong>Manage Appointments</strong></p><p><span><span>For Manage Appointments role to work as expected, the following privileges must be assigned to that role. If any of the privileges are not assigned, it can be assigned from Openmrs. Privileges required are: app:appointments, app:appointments:manageAppointmentsTab, Get Admission Locations, Get Beds, Get Locations, Get Patient Identifiers, Get Patients, Get Providers, View Appointments, View Appointment Services, Manage Appointments</span></span></p><p><strong>Full Access</strong></p><p><span><span>For Full Access role to work as expected, the following privileges must be assigned to that role. If any of the privileges are not assigned, it can be assigned from Openmrs. Privileges required are: app:appointments, app:appointments:manageAppointmentsTab, app:appointments:adminTab, Get Admission Locations, Get Beds, Get Locations, Get Patient Identifiers, Get Patients, Get Providers, View Appointments, View Appointment Services, Manage Appointments, Manage Appointment Services</span></span></p><h3 id=\"UserRolesandPrivilegesforAppointmentScheduling-HowtoAssignUserroles\"><strong>How to Assign User roles</strong></h3><p><span>Roles can be assigned from either openMRS or the database.</span></p><h4 id=\"UserRolesandPrivilegesforAppointmentScheduling-AssigningUserRolesfromopenMRS\"><strong>Assigning User Roles from openMRS</strong></h4><ul><li>Login into openMRS</li><li><p><span>Go to Administration</span></p></li><li><p><span>Go to Manage Users</span></p></li><li><p><span>Select user and assign necessary roles (Appointments:ReadOnly, Appointments:ManageAppointments and Appointments:FullAccess)</span></p></li></ul><h4 id=\"UserRolesandPrivilegesforAppointmentScheduling-AssigningUserRolesfromtheDatabase:\"><strong style=\"margin-left: 0.0px;\">Assigning User Roles from the Database:</strong></h4><p><strong style=\"margin-left: 0.0px;\">Read Only:</strong></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7d1b43cc-2dd0-4e1e-ad53-40a60bfa3df4\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: false; theme: Confluence\" data-theme=\"Confluence\">INSERT INTO user_role VALUES (user_id, &quot;Appointments:ReadOnly&quot;);\n</pre>\n</div></div><p><strong style=\"margin-left: 0.0px;\"> Manage Appointments:</strong></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f45c2671-a2c0-48b1-9e3f-6777e687ab59\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: false; theme: Confluence\" data-theme=\"Confluence\">INSERT INTO user_role VALUES (user_id, &quot;Appointments:ManageAppointments&quot;);\n</pre>\n</div></div><p> <strong>Full Access:</strong></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c40d7cbb-8437-4d49-b8f1-3ea162293d1d\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: false; theme: Confluence\" data-theme=\"Confluence\">INSERT INTO user_role VALUES (user_id, Appointments:FullAccess&quot;);\n</pre>\n</div></div><p><em><span>Note: User_id is from the from users table.</span></em></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"705dd2d2-5f2b-42ce-abe4-991d8f77ea76\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;color: black;\"><b>On This Page</b></div><div class=\"panelContent\">\n<p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"8a1a8f86-dcef-4211-8ac3-fba29df37252\" data-macro-name=\"toc\"> </div><p> </p>\n</div></div><p><br/></p><p><br/></p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/144801828"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/144801828/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/144801828/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 506043287
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/144801828/child",
+    "restrictions": "/rest/api/content/144801828/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/144801828/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=144801828",
+    "webui": "/spaces/BAH/pages/144801828/User+Roles+and+Privileges+for+Appointment+Scheduling",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/144801828",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/144801828",
+    "tinyui": "/x/JIChC",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

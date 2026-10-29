@@ -1,0 +1,172 @@
+{
+  "id": "116104731",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/116104731",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE2MTA0NzMx",
+  "status": "current",
+  "title": "Field Validation",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Himabindu Thungathurty",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Akkinepalli",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66"
+      }
+    },
+    "createdDate": "2017-04-13T07:22:41.773Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/116104731/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2022-11-20T11:22:47.436Z",
+    "friendlyWhen": "Nov 20, 2022",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "syncRev": "0.ctUGczuIgW1SyvqfoyXgEA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$116104731.80",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/116104731"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/116104731/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Description</h2><p>We can have custom validations written in javascript for Registration Fields.&nbsp;</p><p>For achieving this, need to do the following</p><ul><li>Add a file called fieldValidation.js and put it under &quot;/var/www/bahmni_config/openmrs/apps/registration/&quot; directory.</li><li>Add the functions required to validate the field.</li><li>Include&nbsp;fieldValidation.js in&nbsp;bahmniapps/registration/index.html.</li></ul><p>The format of the validator should be like below</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"e9732fba-fbb0-4a00-b375-8bcbb2ffb99e\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Config</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[  \"<field id>\" : {\n           method: function (name, value, attributeDetails) {\n          if (.......) {\n            return true;\n          }\n          return false;\n       },\n       errorMessage: \"Error Message\"\n     }\n};]]></ac:plain-text-body></ac:structured-macro><p>The fieldName details can be obtained from the openmrs administration module (Patient Attributes). The validators will work for non-attributes as well. For non attributes, you will need to get the field names using some html debuggers.</p><h3><strong><span style=\"color: rgb(0,0,0);\">Patient Name Related Custom Field Validation Configurations</span></strong></h3><p style=\"text-align: left;\">If the format of the patient names need to be changed, the global property&nbsp;patient.nameValidationRegex needs to be updated. This field is used in server side validations by openmrs.</p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"963f3447-4cf9-49cf-8754-7ae5dd01869b\"><ac:parameter ac:name=\"title\">Note</ac:parameter><ac:rich-text-body><p>&nbsp;Error message is displayed only when return is false. &nbsp;The specified field should be of non coded value type. If the field is not a patient attribute, the attributeDetails will not be given.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\">&nbsp;The attribute details contain the below fields,</p><table class=\"relative-table wrapped\" style=\"width: 50.0609%;\"><colgroup><col style=\"width: 38.0488%;\" /><col style=\"width: 61.9512%;\" /></colgroup><tbody><tr><th>Property</th><th>Description</th></tr><tr><td>description</td><td>Its a description</td></tr><tr><td>format</td><td>java class of the attribute</td></tr><tr><td>name</td><td>name of the attribute</td></tr><tr><td colspan=\"1\">uuid</td><td colspan=\"1\">uuid of the attribute</td></tr></tbody></table><p class=\"auto-cursor-target\"><strong>Example Fields:</strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"13ae91e1-9865-452d-88c2-581ae2a3b08b\"><ac:plain-text-body><![CDATA[description: \"मरीज़ का उपनाम\"\nformat: \"java.lang.String\"\nname: \"familyNameLocal\"\nrequired: false\nuuid: \"b4f44ade-c79a-11e2-b284-107d46e7b2c5\"]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"411d7568-523f-446b-bdaa-0c990eb0ab76\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Code Snippet</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[Bahmni.Registration.customValidator = {\n    \"age.days\": {\n        method: function (name, value) {\n            return value >= 0;\n        },\n        errorMessage: \"REGISTRATION_AGE_ERROR_KEY\"\n    },\n    \"Telephone Number\": {\n        method: function (name, value, personAttributeDetails) {\n            return value && value.length> 6;\n        },\n        errorMessage: \"REGISTRATION_TELEPHONE_NUMBER_ERROR_KEY\"\n    },\n    \"caste\": {\n        method: function (name, value, personAttributeDetails) {\n            return value.match(/^\\w+$/);\n        },\n        errorMessage: \"REGISTRATION_CASTE_TEXT_ERROR_KEY\"\n    }\n};]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/116104731"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"FieldValidation-Description\">Description</h2><p>We can have custom validations written in javascript for Registration Fields. </p><p>For achieving this, need to do the following</p><ul><li>Add a file called fieldValidation.js and put it under &quot;/var/www/bahmni_config/openmrs/apps/registration/&quot; directory.</li><li>Add the functions required to validate the field.</li><li>Include fieldValidation.js in bahmniapps/registration/index.html.</li></ul><p>The format of the validator should be like below</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e9732fba-fbb0-4a00-b375-8bcbb2ffb99e\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Config</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">  &quot;&lt;field id&gt;&quot; : {\n           method: function (name, value, attributeDetails) {\n          if (.......) {\n            return true;\n          }\n          return false;\n       },\n       errorMessage: &quot;Error Message&quot;\n     }\n};</pre>\n</div></div><p>The fieldName details can be obtained from the openmrs administration module (Patient Attributes). The validators will work for non-attributes as well. For non attributes, you will need to get the field names using some html debuggers.</p><h3 id=\"FieldValidation-PatientNameRelatedCustomFieldValidationConfigurations\"><strong><span class=\"legacy-color-text-default\">Patient Name Related Custom Field Validation Configurations</span></strong></h3><p style=\"text-align: left;\">If the format of the patient names need to be changed, the global property patient.nameValidationRegex needs to be updated. This field is used in server side validations by openmrs.</p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"963f3447-4cf9-49cf-8754-7ae5dd01869b\" data-macro-name=\"note\"><p class=\"title\">Note</p><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> Error message is displayed only when return is false.  The specified field should be of non coded value type. If the field is not a patient attribute, the attributeDetails will not be given.</p></div></div><p class=\"auto-cursor-target\"> The attribute details contain the below fields,</p><div class=\"table-wrap\"><table class=\"relative-table wrapped confluenceTable\" style=\"width: 50.0609%;\"><colgroup><col style=\"width: 38.0488%;\"/><col style=\"width: 61.9512%;\"/></colgroup><tbody><tr><th class=\"confluenceTh\">Property</th><th class=\"confluenceTh\">Description</th></tr><tr><td class=\"confluenceTd\">description</td><td class=\"confluenceTd\">Its a description</td></tr><tr><td class=\"confluenceTd\">format</td><td class=\"confluenceTd\">java class of the attribute</td></tr><tr><td class=\"confluenceTd\">name</td><td class=\"confluenceTd\">name of the attribute</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">uuid</td><td colspan=\"1\" class=\"confluenceTd\">uuid of the attribute</td></tr></tbody></table></div><p class=\"auto-cursor-target\"><strong>Example Fields:</strong></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"13ae91e1-9865-452d-88c2-581ae2a3b08b\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">description: &quot;मरीज़ का उपनाम&quot;\nformat: &quot;java.lang.String&quot;\nname: &quot;familyNameLocal&quot;\nrequired: false\nuuid: &quot;b4f44ade-c79a-11e2-b284-107d46e7b2c5&quot;</pre>\n</div></div><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"411d7568-523f-446b-bdaa-0c990eb0ab76\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Code Snippet</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">Bahmni.Registration.customValidator = {\n    &quot;age.days&quot;: {\n        method: function (name, value) {\n            return value &gt;= 0;\n        },\n        errorMessage: &quot;REGISTRATION_AGE_ERROR_KEY&quot;\n    },\n    &quot;Telephone Number&quot;: {\n        method: function (name, value, personAttributeDetails) {\n            return value &amp;&amp; value.length&gt; 6;\n        },\n        errorMessage: &quot;REGISTRATION_TELEPHONE_NUMBER_ERROR_KEY&quot;\n    },\n    &quot;caste&quot;: {\n        method: function (name, value, personAttributeDetails) {\n            return value.match(/^\\w+$/);\n        },\n        errorMessage: &quot;REGISTRATION_CASTE_TEXT_ERROR_KEY&quot;\n    }\n};</pre>\n</div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<p><br/></p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/116104731"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/116104731/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/116104731/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 315300222
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/116104731/child",
+    "restrictions": "/rest/api/content/116104731/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/116104731/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=116104731",
+    "webui": "/spaces/BAH/pages/116104731/Field+Validation",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/116104731",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/116104731",
+    "tinyui": "/x/G57rBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

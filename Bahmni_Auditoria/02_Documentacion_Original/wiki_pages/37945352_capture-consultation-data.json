@@ -1,0 +1,170 @@
+{
+  "id": "37945352",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/37945352",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzc5NDUzNTI=",
+  "status": "current",
+  "title": "Capture Consultation Data",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2016-01-18T05:30:16.154Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945352/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:71a9651c-a54f-4253-866d-c8bdde23ed9e",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Hemanth S R",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:71a9651c-a54f-4253-866d-c8bdde23ed9e",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Hemanth S R",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:71a9651c-a54f-4253-866d-c8bdde23ed9e"
+      }
+    },
+    "when": "2016-06-16T11:07:02.708Z",
+    "friendlyWhen": "Jun 16, 2016",
+    "message": "",
+    "number": 12,
+    "minorEdit": false,
+    "syncRev": "0.8SaLAMiBSduWEntVoHjJsQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$37945352.53",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/37945352"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945352/version/12"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Displaying a Prompt when Navigating Away Consultation/Closing the Browser/Webpage</h2><h3>Displaying a Prompt when Navigating Away From Consultation</h3><p>&nbsp;</p><p>This is undesirable as the User can lose any unsaved information for the current patient. To improve usability, the user is shown a prompt asking to save any unsaved changes. This is configurable for an installation.</p><p>Please find the code snippet below:</p><h3><span style=\"font-size: 16.0px;font-weight: bold;line-height: 1.5;\">Display Pop-up Message to Save Data when Closing the Browser/Webpage</span></h3><p>Similar to what functions above, there is a checkpoint to prompt the User to save any unsaved changes when he navigates within the Consultation section, stays on the same patient and tries to close the browser/webpage. This checkpoint is configurable.</p><p>Please find the code snippet below:&nbsp;</p><p>For example , in Clinical/app.json</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"09356833-4c73-474e-a98a-c2cdfd17717b\"><ac:plain-text-body><![CDATA[ \n\n“config” : {\n“showSaveConfirmDialog” : true\n}]]></ac:plain-text-body></ac:structured-macro><p>&nbsp;</p><h3><strong>Show recent patient button on consultation</strong></h3><p>Currently we have ability to switch recent patients as well as search active patients on patient dashboard. If you want the same functionality on consultation page you can configure as follows:</p><p>You can configure &quot;<strong>allowPatientSwitchOnConsultation</strong>&quot; on config section of app.json in clinical module. You can pass <strong>true/false</strong> to this config. The default value is&nbsp;<strong>false</strong>.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"9ebc784f-3ff9-498e-96ab-c1612ddea129\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Sample Config</ac:parameter><ac:plain-text-body><![CDATA[\"config\": {\n\t\"allowPatientSwitchOnConsultation\": true\n}]]></ac:plain-text-body></ac:structured-macro><p>&nbsp;</p><p>&nbsp;</p></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"bd20b0bb-a5e8-44cd-a124-2b8ff0189325\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">In this section</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"c9a5694e-972d-4576-b5f1-e52112b5115a\" /></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"80b00a22-cee8-42a5-860f-e819c818e4fb\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><a href=\"https://talk.openmrs.org/t/understanding-observations-diagnosis-and-consultation-tabs/3811\">(Discussion) Relationship between Observation, Diagnosis, Orders</a></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/37945352"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"CaptureConsultationData-DisplayingaPromptwhenNavigatingAwayConsultation/ClosingtheBrowser/Webpage\">Displaying a Prompt when Navigating Away Consultation/Closing the Browser/Webpage</h2><h3 id=\"CaptureConsultationData-DisplayingaPromptwhenNavigatingAwayFromConsultation\">Displaying a Prompt when Navigating Away From Consultation</h3><p> </p><p>This is undesirable as the User can lose any unsaved information for the current patient. To improve usability, the user is shown a prompt asking to save any unsaved changes. This is configurable for an installation.</p><p>Please find the code snippet below:</p><h3 id=\"CaptureConsultationData-DisplayPop-upMessagetoSaveDatawhenClosingtheBrowser/Webpage\"><span style=\"font-size: 16.0px;font-weight: bold;line-height: 1.5;\">Display Pop-up Message to Save Data when Closing the Browser/Webpage</span></h3><p>Similar to what functions above, there is a checkpoint to prompt the User to save any unsaved changes when he navigates within the Consultation section, stays on the same patient and tries to close the browser/webpage. This checkpoint is configurable.</p><p>Please find the code snippet below: </p><p>For example , in Clinical/app.json</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"09356833-4c73-474e-a98a-c2cdfd17717b\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\"> \n\n“config” : {\n“showSaveConfirmDialog” : true\n}</pre>\n</div></div><p> </p><h3 id=\"CaptureConsultationData-Showrecentpatientbuttononconsultation\"><strong>Show recent patient button on consultation</strong></h3><p>Currently we have ability to switch recent patients as well as search active patients on patient dashboard. If you want the same functionality on consultation page you can configure as follows:</p><p>You can configure &quot;<strong>allowPatientSwitchOnConsultation</strong>&quot; on config section of app.json in clinical module. You can pass <strong>true/false</strong> to this config. The default value is <strong>false</strong>.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9ebc784f-3ff9-498e-96ab-c1612ddea129\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Sample Config</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;config&quot;: {\n\t&quot;allowPatientSwitchOnConsultation&quot;: true\n}</pre>\n</div></div><p> </p><p> </p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"bd20b0bb-a5e8-44cd-a124-2b8ff0189325\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>In this section</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"c9a5694e-972d-4576-b5f1-e52112b5115a\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/32014552/Create+a+New+Observation+Form\" data-linked-resource-id=\"32014552\" data-linked-resource-version=\"110\" data-linked-resource-type=\"page\">Create a New Observation Form</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014550/Configure+Observations+Tab\" data-linked-resource-id=\"32014550\" data-linked-resource-version=\"81\" data-linked-resource-type=\"page\">Configure Observations Tab</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014556/Configure+Diagnosis+Tab\" data-linked-resource-id=\"32014556\" data-linked-resource-version=\"30\" data-linked-resource-type=\"page\">Configure Diagnosis Tab</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014561/Configure+Disposition+Tab\" data-linked-resource-id=\"32014561\" data-linked-resource-version=\"21\" data-linked-resource-type=\"page\">Configure Disposition Tab</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014566/Configure+Consultation+UI\" data-linked-resource-id=\"32014566\" data-linked-resource-version=\"19\" data-linked-resource-type=\"page\">Configure Consultation UI</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014568/Configure+Orders+Tab+for+Lab+and+Radiology\" data-linked-resource-id=\"32014568\" data-linked-resource-version=\"54\" data-linked-resource-type=\"page\">Configure Orders Tab for Lab and Radiology</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014570/Configure+Medication+Tab\" data-linked-resource-id=\"32014570\" data-linked-resource-version=\"67\" data-linked-resource-type=\"page\">Configure Medication Tab</a></li><li><a href=\"/wiki/spaces/BAH/pages/34013226/Configure+Bacteriology+Tab\" data-linked-resource-id=\"34013226\" data-linked-resource-version=\"39\" data-linked-resource-type=\"page\">Configure Bacteriology Tab</a></li><li><a href=\"/wiki/spaces/BAH/pages/37355579/Encounter+Session\" data-linked-resource-id=\"37355579\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Encounter Session</a></li></ul><p> </p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"80b00a22-cee8-42a5-860f-e819c818e4fb\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a class=\"external-link\" href=\"https://talk.openmrs.org/t/understanding-observations-diagnosis-and-consultation-tabs/3811\" rel=\"nofollow\">(Discussion) Relationship between Observation, Diagnosis, Orders</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/37945352"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/37945352/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945352/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 3
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/37945352/child",
+    "restrictions": "/rest/api/content/37945352/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/37945352/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=37945352",
+    "webui": "/spaces/BAH/pages/37945352/Capture+Consultation+Data",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/37945352",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945352",
+    "tinyui": "/x/CABDAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "id": "712507393",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/712507393",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNzEyNTA3Mzkz",
+  "status": "current",
+  "title": "Ward Management Admin Console",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "createdDate": "2018-08-31T10:05:36.470Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/712507393/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "606ff87ba23f99007562c82d",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sanofer Sameera S",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/606ff87ba23f99007562c82d",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sanofer Sameera S",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=606ff87ba23f99007562c82d"
+      }
+    },
+    "when": "2024-07-31T10:18:47.321Z",
+    "friendlyWhen": "Jul 31, 2024",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "syncRev": "0.VT18_nw6RTVXDuGx7R7zDQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$712507393.47",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/712507393"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/712507393/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"61142db0-270e-4fa2-bdab-a2f7ad05aa69\"><ac:rich-text-body><p>Admin ward management console allows users to create and manage IPD wards/beds. This feature is available in Bahmni EMR under &quot;<strong>Admin</strong>&quot;&nbsp;&rarr; &quot;<strong>Beds</strong>&quot; app.&nbsp;</p></ac:rich-text-body></ac:structured-macro><p><ac:image><ri:attachment ri:filename=\"Beds App (Admin).png\" ri:version-at-save=\"1\" /></ac:image></p><p><br /></p><h2>Manage Admission Locations &amp; Wards</h2><p>Wards are grouped under &lsquo;Admission Locations&rsquo;.</p><p>Nesting of ward hierarchy can be up to 2 levels as shown below:</p><p><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"image2018-8-31_16-39-57.png\" ri:version-at-save=\"1\" /></ac:image></p><p><br /></p><p>This means under Admission locations there could be a Ward with level one and under it if desired there could be other ward(s) which are room(s) under level one ward.&nbsp;Ward can be assigned bed layout or can have a child admission location.</p><p><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"Bed Layout (Admin Screen).png\" ri:version-at-save=\"1\" /></ac:image></p><p>User can add new bed layout to admission location or child admission location by selecting &lsquo;Set Bed Layout&rsquo;.&nbsp; Set the number of Rows/Columns you have in ward (like 3 Rows and 4 columns).</p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"0822dd20-9bb6-4093-a0f8-9d3e6f962c92\"><ac:parameter ac:name=\"title\">Note</ac:parameter><ac:rich-text-body><p>For an optimal bed management experience, maintain a two-level hierarchy. Do not assign bed layouts directly to wards; instead, assign them to child admission locations under the wards.</p></ac:rich-text-body></ac:structured-macro><p><br /></p><p><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"Ward Bed Layout (Admin Screen).png\" ri:version-at-save=\"1\" /></ac:image></p><p><br /></p><p>Also existing bed layout could be edited later. It could be shrunk too if beds in it are not occupied by patients. But Bed layout could always be expanded.</p><p>Bed could be added in a bed layout at a row and column with a bed type, bed number.</p><p><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"image2018-8-31_16-43-2.png\" ri:version-at-save=\"1\" /></ac:image></p><h2>Managing Bed Types</h2><p>These bed types can be added/edited by choosing the tab &lsquo;Bed Types&rsquo; and selecting &lsquo;Add New&rsquo;/&rsquo;Edit&rsquo;.</p><p><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"Bed Types (Admin Screen).png\" ri:version-at-save=\"1\" /></ac:image></p><p>While creating a Bed in Bed Layout, one can select from the list of Bed Types, to associate with the Bed.</p><p><br /></p><h2>Managing Bed Tags</h2><p>Bed Tags can be used to indicate special features in specific beds. For instance which beds have &quot;oxygen&quot; tanks, or have special powered beds for certain patients, etc. One can attach one/more tags to a bed to indicate optional features available in beds, so that while assigning beds to patients, one is sure an appropriate bed is assigned given the conditions/needs of the patient.</p><p>Similarly, user can create/edit bed tags by choosing the tab &lsquo;Bed Tags&rsquo; and selecting &lsquo;Add New&rsquo;/&rsquo;Edit&rsquo;.</p><p><br /></p><p><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"Bed Tags (Admin Screen).png\" ri:version-at-save=\"1\" /></ac:image></p><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"3ecf2457-c384-4f3d-adf5-76df71218a1f\"><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"0d8b5b03-614e-49d7-8188-e2e1538748f7\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/712507393"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p><br/></p><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"61142db0-270e-4fa2-bdab-a2f7ad05aa69\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Admin ward management console allows users to create and manage IPD wards/beds. This feature is available in Bahmni EMR under &quot;<strong>Admin</strong>&quot; → &quot;<strong>Beds</strong>&quot; app. </p></div></div><p><span class=\"confluence-embedded-file-wrapper\"><img class=\"confluence-embedded-image\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/712507393/Beds%20App%20(Admin).png?version=1&amp;modificationDate=1615790924578&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/712507393/Beds%20App%20(Admin).png?version=1&amp;modificationDate=1615790924578&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2241626147\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Beds App (Admin).png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"712507393\" data-linked-resource-container-version=\"6\" data-media-id=\"12dc396b-73bf-410e-9ab2-78ca59b985f7\" data-media-type=\"file\"></span></p><p><br/></p><h2 id=\"WardManagementAdminConsole-ManageAdmissionLocations&amp;Wards\">Manage Admission Locations &amp; Wards</h2><p>Wards are grouped under ‘Admission Locations’.</p><p>Nesting of ward hierarchy can be up to 2 levels as shown below:</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/712507393/image2018-8-31_16-39-57.png?version=1&amp;modificationDate=1535713802427&amp;cacheVersion=1&amp;api=v2&amp;width=435&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/712507393/image2018-8-31_16-39-57.png?version=1&amp;modificationDate=1535713802427&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"712704018\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2018-8-31_16-39-57.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"712507393\" data-linked-resource-container-version=\"6\" data-media-id=\"fc7e155e-ec2a-4119-b0df-b0116ca16b2b\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/712507393/image2018-8-31_16-39-57.png?version=1&amp;modificationDate=1535713802427&amp;cacheVersion=1&amp;api=v2&amp;width=870&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/712507393/image2018-8-31_16-39-57.png?version=1&amp;modificationDate=1535713802427&amp;cacheVersion=1&amp;api=v2&amp;width=435&amp;height=250 1x\"></span></p><p><br/></p><p>This means under Admission locations there could be a Ward with level one and under it if desired there could be other ward(s) which are room(s) under level one ward. Ward can be assigned bed layout or can have a child admission location.</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/712507393/Bed%20Layout%20(Admin%20Screen).png?version=1&amp;modificationDate=1615789818003&amp;cacheVersion=1&amp;api=v2&amp;width=391&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/712507393/Bed%20Layout%20(Admin%20Screen).png?version=1&amp;modificationDate=1615789818003&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2241691670\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Bed Layout (Admin Screen).png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"712507393\" data-linked-resource-container-version=\"6\" data-media-id=\"4463058a-fd24-4c99-b973-7033995ce9bd\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/712507393/Bed%20Layout%20(Admin%20Screen).png?version=1&amp;modificationDate=1615789818003&amp;cacheVersion=1&amp;api=v2&amp;width=782&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/712507393/Bed%20Layout%20(Admin%20Screen).png?version=1&amp;modificationDate=1615789818003&amp;cacheVersion=1&amp;api=v2&amp;width=391&amp;height=250 1x\"></span></p><p>User can add new bed layout to admission location or child admission location by selecting ‘Set Bed Layout’.  Set the number of Rows/Columns you have in ward (like 3 Rows and 4 columns).</p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0822dd20-9bb6-4093-a0f8-9d3e6f962c92\" data-macro-name=\"info\"><p class=\"title\">Note</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>For an optimal bed management experience, maintain a two-level hierarchy. Do not assign bed layouts directly to wards; instead, assign them to child admission locations under the wards.</p></div></div><p><br/></p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/712507393/Ward%20Bed%20Layout%20(Admin%20Screen).png?version=1&amp;modificationDate=1615790498718&amp;cacheVersion=1&amp;api=v2&amp;width=394&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/712507393/Ward%20Bed%20Layout%20(Admin%20Screen).png?version=1&amp;modificationDate=1615790498718&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2240806932\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Ward Bed Layout (Admin Screen).png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"712507393\" data-linked-resource-container-version=\"6\" data-media-id=\"f1cbabd2-e623-4cf9-834e-a3d5469143a5\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/712507393/Ward%20Bed%20Layout%20(Admin%20Screen).png?version=1&amp;modificationDate=1615790498718&amp;cacheVersion=1&amp;api=v2&amp;width=788&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/712507393/Ward%20Bed%20Layout%20(Admin%20Screen).png?version=1&amp;modificationDate=1615790498718&amp;cacheVersion=1&amp;api=v2&amp;width=394&amp;height=250 1x\"></span></p><p><br/></p><p>Also existing bed layout could be edited later. It could be shrunk too if beds in it are not occupied by patients. But Bed layout could always be expanded.</p><p>Bed could be added in a bed layout at a row and column with a bed type, bed number.</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/712507393/image2018-8-31_16-43-2.png?version=1&amp;modificationDate=1535713985499&amp;cacheVersion=1&amp;api=v2&amp;width=373&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/712507393/image2018-8-31_16-43-2.png?version=1&amp;modificationDate=1535713985499&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"712507425\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2018-8-31_16-43-2.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"712507393\" data-linked-resource-container-version=\"6\" data-media-id=\"05e36c92-f8f5-4893-b600-ba0c58c84e61\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/712507393/image2018-8-31_16-43-2.png?version=1&amp;modificationDate=1535713985499&amp;cacheVersion=1&amp;api=v2&amp;width=602&amp;height=403 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/712507393/image2018-8-31_16-43-2.png?version=1&amp;modificationDate=1535713985499&amp;cacheVersion=1&amp;api=v2&amp;width=373&amp;height=250 1x\"></span></p><h2 id=\"WardManagementAdminConsole-ManagingBedTypes\">Managing Bed Types</h2><p>These bed types can be added/edited by choosing the tab ‘Bed Types’ and selecting ‘Add New’/’Edit’.</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/712507393/Bed%20Types%20(Admin%20Screen).png?version=1&amp;modificationDate=1615790576913&amp;cacheVersion=1&amp;api=v2&amp;width=504&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/712507393/Bed%20Types%20(Admin%20Screen).png?version=1&amp;modificationDate=1615790576913&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2241626136\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Bed Types (Admin Screen).png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"712507393\" data-linked-resource-container-version=\"6\" data-media-id=\"5ddd7fc1-0d99-48d9-88c7-7d33b461e4cc\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/712507393/Bed%20Types%20(Admin%20Screen).png?version=1&amp;modificationDate=1615790576913&amp;cacheVersion=1&amp;api=v2&amp;width=1008&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/712507393/Bed%20Types%20(Admin%20Screen).png?version=1&amp;modificationDate=1615790576913&amp;cacheVersion=1&amp;api=v2&amp;width=504&amp;height=250 1x\"></span></p><p>While creating a Bed in Bed Layout, one can select from the list of Bed Types, to associate with the Bed.</p><p><br/></p><h2 id=\"WardManagementAdminConsole-ManagingBedTags\">Managing Bed Tags</h2><p>Bed Tags can be used to indicate special features in specific beds. For instance which beds have &quot;oxygen&quot; tanks, or have special powered beds for certain patients, etc. One can attach one/more tags to a bed to indicate optional features available in beds, so that while assigning beds to patients, one is sure an appropriate bed is assigned given the conditions/needs of the patient.</p><p>Similarly, user can create/edit bed tags by choosing the tab ‘Bed Tags’ and selecting ‘Add New’/’Edit’.</p><p><br/></p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/712507393/Bed%20Tags%20(Admin%20Screen).png?version=1&amp;modificationDate=1615790817151&amp;cacheVersion=1&amp;api=v2&amp;width=406&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/712507393/Bed%20Tags%20(Admin%20Screen).png?version=1&amp;modificationDate=1615790817151&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2241691703\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Bed Tags (Admin Screen).png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"712507393\" data-linked-resource-container-version=\"6\" data-media-id=\"32886fc3-db00-4037-968c-9e36f3b293e2\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/712507393/Bed%20Tags%20(Admin%20Screen).png?version=1&amp;modificationDate=1615790817151&amp;cacheVersion=1&amp;api=v2&amp;width=812&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/712507393/Bed%20Tags%20(Admin%20Screen).png?version=1&amp;modificationDate=1615790817151&amp;cacheVersion=1&amp;api=v2&amp;width=406&amp;height=250 1x\"></span></p><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3ecf2457-c384-4f3d-adf5-76df71218a1f\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelContent\">\n<p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"0d8b5b03-614e-49d7-8188-e2e1538748f7\" data-macro-name=\"toc\"> </div><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/712507393"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/712507393/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/712507393/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1073741824
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/712507393/child",
+    "restrictions": "/rest/api/content/712507393/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/712507393/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=712507393",
+    "webui": "/spaces/BAH/pages/712507393/Ward+Management+Admin+Console",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/712507393",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/712507393",
+    "tinyui": "/x/AQB4Kg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "id": "237338635",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/237338635",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjM3MzM4NjM1",
+  "status": "current",
+  "title": "Form Builder Internationalization",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:609f12f6-2af6-4fd7-b713-f19fc124f992",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "hanisha potturi (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:609f12f6-2af6-4fd7-b713-f19fc124f992",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Hanisha Potturi (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:609f12f6-2af6-4fd7-b713-f19fc124f992"
+      }
+    },
+    "createdDate": "2017-11-07T07:29:07.181Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/237338635/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:72e2a20d-600c-4f7b-9453-e231f31268a5",
+      "accountType": "atlassian",
+      "email": "shashig@thoughtworks.com",
+      "publicName": "Shashikanth Gadgay (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:72e2a20d-600c-4f7b-9453-e231f31268a5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Shashikanth Gadgay (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:72e2a20d-600c-4f7b-9453-e231f31268a5"
+      }
+    },
+    "when": "2017-11-09T05:31:39.740Z",
+    "friendlyWhen": "Nov 09, 2017",
+    "message": "",
+    "number": 11,
+    "minorEdit": false,
+    "syncRev": "0.wexkonsewHBfPinZcmHCKQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$237338635.61",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/237338635"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/237338635/version/11"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<h2>Purpose and Benefits</h2><p><span style=\"color: rgb(0,0,0);\">Form Builder Internationalization feature provides ability to implementer for translating published forms to different locales. With this feature user can see the form data in the language of logged in locale if the form is translated by implementer</span><span style=\"color: rgb(0,0,0);\">.</span></p><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"3e98f83c-1a83-45c7-9d38-c716c15f1a7b\"><ac:parameter ac:name=\"title\">Form Translations Directory</ac:parameter><ac:rich-text-body><p>All the translations are saved in <strong>/home/bahmni/clinical_forms/translations/&nbsp;</strong>directory. Implementer can also edit the translations directly in the corresponding file. Immediately after form publish the file will only have translations for default locale. The directory is set as a global property <strong>'bahmni.formTranslations.directory'</strong>. It can be changed by updating the global property.</p></ac:rich-text-body></ac:structured-macro><p><br /></p><p><strong><span style=\"color: rgb(0,0,0);\">Steps to internationalize a form:</span></strong></p><ul><li>Create a form and publish it.</li></ul><ul><li><span style=\"color: rgb(0,0,0);\">Go to&nbsp;<span style=\"color: rgb(0,0,0);\">Home Dashboard&nbsp;&rarr; Implementer Interface&nbsp;&rarr; Form Builder. Click on translate icon for the form that needs to be internationalized.</span></span></li></ul><p><br /></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <ac:image ac:width=\"800\"><ri:attachment ri:filename=\"image2017-11-7_13-20-38.png\" ri:version-at-save=\"1\" /></ac:image></p><p><br /></p><ul><li>The page will intially have translations for default locale.To generate translations for other locale click on the drop down of locales on the top.</li></ul><p><br /></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<ac:image ac:width=\"800\"><ri:attachment ri:filename=\"Screen Shot 2017-11-07 at 1.36.01 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><p><br /></p><ul><li>Click on the drop down to select another value for the translation or write new one.</li></ul><p><br /></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<ac:image ac:width=\"800\"><ri:attachment ri:filename=\"Screen Shot 2017-11-07 at 1.39.56 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><ul><li>Save the edited translations before switching to other locale.</li></ul><p><br /></p><p><br /></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"ca5434a0-5256-4052-b717-ec0fd8d4c422\"><ac:parameter ac:name=\"title\">Note</ac:parameter><ac:rich-text-body><p>Default locale used to translate form on publish is picked form openmrs global property&nbsp;<strong>default_locale.&nbsp;</strong>If default locale is changed after creating forms then all the forms needs to be recreated and concepts added in forms should have names for the changed locale&nbsp;in openmrs.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/237338635"
+      }
+    },
+    "view": {
+      "value": "<h2 id=\"FormBuilderInternationalization-PurposeandBenefits\">Purpose and Benefits</h2><p><span class=\"legacy-color-text-default\">Form Builder Internationalization feature provides ability to implementer for translating published forms to different locales. With this feature user can see the form data in the language of logged in locale if the form is translated by implementer</span><span class=\"legacy-color-text-default\">.</span></p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3e98f83c-1a83-45c7-9d38-c716c15f1a7b\" data-macro-name=\"note\"><p class=\"title\">Form Translations Directory</p><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>All the translations are saved in <strong>/home/bahmni/clinical_forms/translations/ </strong>directory. Implementer can also edit the translations directly in the corresponding file. Immediately after form publish the file will only have translations for default locale. The directory is set as a global property <strong>'bahmni.formTranslations.directory'</strong>. It can be changed by updating the global property.</p></div></div><p><br/></p><p><strong><span class=\"legacy-color-text-default\">Steps to internationalize a form:</span></strong></p><ul><li>Create a form and publish it.</li></ul><ul><li><span class=\"legacy-color-text-default\">Go to <span class=\"legacy-color-text-default\">Home Dashboard → Implementer Interface → Form Builder. Click on translate icon for the form that needs to be internationalized.</span></span></li></ul><p><br/></p><p>          <span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"800\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/237338635/image2017-11-7_13-20-38.png?version=1&amp;modificationDate=1510041041483&amp;cacheVersion=1&amp;api=v2&amp;width=800&amp;height=127\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/237338635/image2017-11-7_13-20-38.png?version=1&amp;modificationDate=1510041041483&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"237404184\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-11-7_13-20-38.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"237338635\" data-linked-resource-container-version=\"11\" data-media-id=\"008f4db5-b4fb-4f2c-ae89-9b96c96546e9\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/237338635/image2017-11-7_13-20-38.png?version=1&amp;modificationDate=1510041041483&amp;cacheVersion=1&amp;api=v2&amp;width=1600&amp;height=254 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/237338635/image2017-11-7_13-20-38.png?version=1&amp;modificationDate=1510041041483&amp;cacheVersion=1&amp;api=v2&amp;width=800&amp;height=127 1x\"></span></p><p><br/></p><ul><li>The page will intially have translations for default locale.To generate translations for other locale click on the drop down of locales on the top.</li></ul><p><br/></p><p>          <span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"800\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/237338635/Screen%20Shot%202017-11-07%20at%201.36.01%20PM.png?version=1&amp;modificationDate=1510042014241&amp;cacheVersion=1&amp;api=v2&amp;width=800&amp;height=130\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/237338635/Screen%20Shot%202017-11-07%20at%201.36.01%20PM.png?version=1&amp;modificationDate=1510042014241&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"237404235\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2017-11-07 at 1.36.01 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"237338635\" data-linked-resource-container-version=\"11\" data-media-id=\"a70c22e1-a228-41f4-aff8-fd84d7f948b2\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/237338635/Screen%20Shot%202017-11-07%20at%201.36.01%20PM.png?version=1&amp;modificationDate=1510042014241&amp;cacheVersion=1&amp;api=v2&amp;width=1600&amp;height=260 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/237338635/Screen%20Shot%202017-11-07%20at%201.36.01%20PM.png?version=1&amp;modificationDate=1510042014241&amp;cacheVersion=1&amp;api=v2&amp;width=800&amp;height=130 1x\"></span></p><p><br/></p><ul><li>Click on the drop down to select another value for the translation or write new one.</li></ul><p><br/></p><p>          <span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"800\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/237338635/Screen%20Shot%202017-11-07%20at%201.39.56%20PM.png?version=1&amp;modificationDate=1510042247054&amp;cacheVersion=1&amp;api=v2&amp;width=800&amp;height=210\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/237338635/Screen%20Shot%202017-11-07%20at%201.39.56%20PM.png?version=1&amp;modificationDate=1510042247054&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"225738841\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2017-11-07 at 1.39.56 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"237338635\" data-linked-resource-container-version=\"11\" data-media-id=\"c6cacd8e-8abe-419e-b2db-ee3f6979cf31\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/237338635/Screen%20Shot%202017-11-07%20at%201.39.56%20PM.png?version=1&amp;modificationDate=1510042247054&amp;cacheVersion=1&amp;api=v2&amp;width=1600&amp;height=420 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/237338635/Screen%20Shot%202017-11-07%20at%201.39.56%20PM.png?version=1&amp;modificationDate=1510042247054&amp;cacheVersion=1&amp;api=v2&amp;width=800&amp;height=210 1x\"></span></p><ul><li>Save the edited translations before switching to other locale.</li></ul><p><br/></p><p><br/></p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ca5434a0-5256-4052-b717-ec0fd8d4c422\" data-macro-name=\"note\"><p class=\"title\">Note</p><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Default locale used to translate form on publish is picked form openmrs global property <strong>default_locale. </strong>If default locale is changed after creating forms then all the forms needs to be recreated and concepts added in forms should have names for the changed locale in openmrs.</p></div></div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/237338635"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/237338635/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/237338635/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 4
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/237338635/child",
+    "restrictions": "/rest/api/content/237338635/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/237338635/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=237338635",
+    "webui": "/spaces/BAH/pages/237338635/Form+Builder+Internationalization",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/237338635",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/237338635",
+    "tinyui": "/x/C4AlDg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

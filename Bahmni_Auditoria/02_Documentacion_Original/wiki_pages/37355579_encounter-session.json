@@ -1,0 +1,170 @@
+{
+  "id": "37355579",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/37355579",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzczNTU1Nzk=",
+  "status": "current",
+  "title": "Encounter Session",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "createdDate": "2016-01-12T15:58:51.641Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37355579/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:c6cd7bce-1c6d-44ab-b0f0-9d94554e67c2",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Ranjan Sakalley",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:c6cd7bce-1c6d-44ab-b0f0-9d94554e67c2",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Ranjan Sakalley",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:c6cd7bce-1c6d-44ab-b0f0-9d94554e67c2"
+      }
+    },
+    "when": "2016-01-12T17:56:20.311Z",
+    "friendlyWhen": "Jan 12, 2016",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.o3BQQxTdmSUOEyIS7J1c7w.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$37355579.30",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/37355579"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37355579/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>Bahmni is designed to be used at point of care as well as data entry mode. In point of care scenario the user goes into consultation mode and potentially captures data into different tabs (medications, observations, diagnosis etc). To support the users being able to enter data in forms, save, enter some data, save and so on - Bahmni has a concept of encounter session. This session is the duration for which an encounter is alive (via Bahmni) for a user. Within this session duration, the data will be available in the application for the user to change it. (Important to note here that a different user would not see the data within consultation, edit mode, even if they open the same observation form). This session duration is controlled by&nbsp;<em>bahmni.encountersession.duration </em>global property in set in OpenMRS. The unit for this property is in minutes. After this duration the user will see a blank form.</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/37355579"
+      }
+    },
+    "view": {
+      "value": "<p>Bahmni is designed to be used at point of care as well as data entry mode. In point of care scenario the user goes into consultation mode and potentially captures data into different tabs (medications, observations, diagnosis etc). To support the users being able to enter data in forms, save, enter some data, save and so on - Bahmni has a concept of encounter session. This session is the duration for which an encounter is alive (via Bahmni) for a user. Within this session duration, the data will be available in the application for the user to change it. (Important to note here that a different user would not see the data within consultation, edit mode, even if they open the same observation form). This session duration is controlled by <em>bahmni.encountersession.duration </em>global property in set in OpenMRS. The unit for this property is in minutes. After this duration the user will see a blank form.</p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/37355579"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/37355579/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37355579/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 9
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/37355579/child",
+    "restrictions": "/rest/api/content/37355579/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/37355579/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=37355579",
+    "webui": "/spaces/BAH/pages/37355579/Encounter+Session",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/37355579",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37355579",
+    "tinyui": "/x/OwA6Ag",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

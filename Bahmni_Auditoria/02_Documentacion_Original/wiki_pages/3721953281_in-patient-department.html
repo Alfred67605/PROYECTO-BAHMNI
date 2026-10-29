@@ -1,0 +1,313 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>In-Patient Department</title></head><body><h1>In-Patient Department</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="In-PatientDepartment-Overview">Overview</h2><p>The advancement of Electronic Medical Record (EMR) systems has transformed healthcare by enhancing the management of patient information and optimizing clinical processes. Among the various components of an EMR, the In-Patient Department (IPD) module is particularly critical. It plays a pivotal role in elevating the standard of care for in-patients, ensuring that healthcare providers can deliver comprehensive, efficient, and coordinated care throughout a patient’s stay.</p><h2 id="In-PatientDepartment-IPDDashboard">IPD Dashboard</h2><p>The In-Patient Department (IPD) Dashboard is a critical component in the clinical workflow, providing a centralized interface for managing patient data. It displays comprehensive patient information such as vitals, allergies, diagnoses, treatments, nursing tasks, and drug administration schedules. This guide provides detailed explanations of the configuration settings available for the IPD Dashboard, allowing implementers to tailor the dashboard to meet specific clinical needs.</p><h3 id="In-PatientDepartment-KeyFields">Key Fields </h3><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="dd478603-bb62-48b3-9711-4eb7499075d1" data-macro-name="info"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>The IPD Dashboard configurations should be added to the <code>app.json</code> file located in the <code>standard-config/openmrs/apps/ipdDashboard</code> subfolder.</p></div></div><div class="expand-container conf-macro output-block" data-hasbody="true" data-macro-id="3573e9c9-c406-47b0-84ee-d9bbca100440" data-macro-name="expand" id="expander-615716676"><div id="expander-control-615716676" class="expand-control"><span class="expand-control-icon icon"> </span><span class="expand-control-text">Sample In-Patient Department (IPD) Dashboard Configuration</span></div><div id="expander-content-615716676" class="expand-content expand-hidden"><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="740c7c72-fbf7-468f-914f-3a5968877cd5" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">{
+  &quot;config&quot;: {
+    &quot;contactDetails&quot;: [&quot;phoneNumber&quot;],
+    &quot;enable24HourTimers&quot;: true,
+    &quot;drugChartScheduleFrequencies&quot;: [
+      {
+        &quot;name&quot;: &quot;Twice a day&quot;,
+        &quot;frequencyPerDay&quot;: 2,
+        &quot;scheduleTiming&quot;: [
+          &quot;6:00&quot;,
+          &quot;18:00&quot;
+        ]
+      },
+      {
+        &quot;name&quot;: &quot;Thrice a day&quot;,
+        &quot;frequencyPerDay&quot;: 3,
+        &quot;scheduleTiming&quot;: [
+          &quot;6:00&quot;,
+          &quot;14:00&quot;,
+          &quot;22:00&quot;
+        ]
+      },
+      {
+        &quot;name&quot;: &quot;Four times a day&quot;,
+        &quot;frequencyPerDay&quot;: 4,
+        &quot;scheduleTiming&quot;: [
+          &quot;6:00&quot;,
+          &quot;12:00&quot;,
+          &quot;18:00&quot;,
+          &quot;23:45&quot;
+        ]
+      }
+    ],
+    &quot;drugChartStartTimeFrequencies&quot;: [
+      &quot;Immediately&quot;,
+      &quot;Once a day&quot;,
+      &quot;Every Hour&quot;,
+      &quot;Every 2 hours&quot;,
+      &quot;Every 3 hours&quot;,
+      &quot;Every 4 hours&quot;,
+      &quot;Every 6 hours&quot;,
+      &quot;Every 8 hours&quot;,
+      &quot;Every 12 hours&quot;,
+      &quot;On alternate days&quot;,
+      &quot;Once a week&quot;,
+      &quot;Twice a week&quot;,
+      &quot;Thrice a week&quot;,
+      &quot;Every 2 weeks&quot;,
+      &quot;Every 3 weeks&quot;,
+      &quot;Once a month&quot;,
+      &quot;Five times a day&quot;,
+      &quot;Four days a week&quot;,
+      &quot;Five days a week&quot;,
+      &quot;Six days a week&quot;
+    ]
+  },
+  &quot;sections&quot;: [
+    {
+      &quot;title&quot;: &quot;Vitals and Nutritional Values&quot;,
+      &quot;componentKey&quot;: &quot;VT&quot;,
+      &quot;displayOrder&quot;: 1,
+      &quot;refreshKey&quot;: 1
+    },
+    {
+      &quot;title&quot;: &quot;Allergies&quot;,
+      &quot;componentKey&quot;: &quot;AL&quot;,
+      &quot;displayOrder&quot;: 2,
+      &quot;refreshKey&quot;: 2
+    },
+    {
+      &quot;title&quot;: &quot;Diagnosis&quot;,
+      &quot;componentKey&quot;: &quot;DG&quot;,
+      &quot;displayOrder&quot;: 3,
+      &quot;refreshKey&quot;: 3
+    },
+    {
+      &quot;title&quot;: &quot;Treatments&quot;,
+      &quot;componentKey&quot;: &quot;TR&quot;,
+      &quot;displayOrder&quot;: 4,
+      &quot;refreshKey&quot;: 4
+    },
+    {
+      &quot;title&quot;: &quot;Nursing Tasks&quot;,
+      &quot;componentKey&quot;: &quot;NT&quot;,
+      &quot;displayOrder&quot;: 5,
+      &quot;refreshKey&quot;: 5
+    },
+    {
+      &quot;title&quot;: &quot;Drug Chart&quot;,
+      &quot;componentKey&quot;: &quot;DC&quot;,
+      &quot;displayOrder&quot;: 6,
+      &quot;refreshKey&quot;: 6
+    }
+  ],
+  &quot;nonMedicationTaskTypes&quot;: [&quot;Measurement procedure&quot;, &quot;Medication administration assessment&quot;, &quot;Multidisciplinary assessment&quot;],
+  &quot;nursingTasks&quot;: {
+    &quot;timeInMinutesFromNowToShowTaskAsRelevant&quot;: 30,
+    &quot;timeInMinutesFromNowToShowPastTaskAsLate&quot;: 60,
+    &quot;timeInMinutesFromStartTimeToShowAdministeredTaskAsLate&quot;: 60
+  },
+  &quot;drugChart&quot;: {
+    &quot;timeInMinutesFromNowToShowPastTaskAsLate&quot;: 60,
+    &quot;timeInMinutesFromStartTimeToShowAdministeredTaskAsLate&quot;: 60
+  },
+  &quot;drugChartSlider&quot;: {
+    &quot;timeInMinutesToDisableSlotPostScheduledTime&quot;: 60
+  },
+  &quot;enable24HourTime&quot;: false,
+  &quot;medicationTags&quot;: {
+    &quot;asNeeded&quot;: &quot;Rx-PRN&quot;,
+    &quot;Immediately&quot;: &quot;Rx-STAT&quot;,
+    &quot;default&quot;: &quot;Rx&quot;,
+    &quot;emergency&quot;: &quot;EMERG&quot;
+  },
+  &quot;shiftDetails&quot;: {
+    &quot;1&quot;: { &quot;shiftStartTime&quot;: &quot;08:00&quot;, &quot;shiftEndTime&quot;: &quot;19:00&quot; },
+    &quot;2&quot;: { &quot;shiftStartTime&quot;: &quot;19:00&quot;, &quot;shiftEndTime&quot;: &quot;08:00&quot; }
+  },
+  &quot;intakeOutputConfig&quot;: {
+    &quot;periodDetails&quot;: {
+      &quot;startTime&quot;: &quot;08:00&quot;,
+      &quot;durationInHours&quot;: &quot;24&quot;
+    },
+    &quot;normalHighValue&quot;: 10000,
+    &quot;normalLowValue&quot;: 0,
+    &quot;timeConceptNames&quot;: [&quot;Intake Date &amp; Time&quot;, &quot;Output Date &amp; Time&quot;],
+    &quot;intakeRouteConcept&quot;: &quot;Intake Route&quot;,
+    &quot;intakeQuantityConcept&quot;: &quot;Intake Quantity&quot;,
+    &quot;outputRouteConcept&quot;: &quot;Output Route&quot;,
+    &quot;outputQuantityConcept&quot;: &quot;Output Quantity&quot;,
+    &quot;dashboardConfig&quot;: {
+      &quot;numberOfVisits&quot;: 10,
+      &quot;conceptNames&quot;: [&quot;Intake Section&quot;, &quot;Output Section&quot;]
+    }
+  },
+  &quot;vitalsConfig&quot;: {
+    &quot;latestVitalsConceptValues&quot;: {
+      &quot;spO2&quot;: &quot;Arterial Blood Oxygen Saturation (Pulse Oximeter)&quot;,
+      &quot;weight&quot;: &quot;Weight (kg)&quot;,
+      &quot;bmi&quot;: &quot;Body mass index&quot;,
+      &quot;respiratoryRate&quot;: &quot;Respiratory Rate&quot;,
+      &quot;systolicPressure&quot;: &quot;Systolic blood pressure&quot;,
+      &quot;diastolicPressure&quot;: &quot;Diastolic blood pressure&quot;,
+      &quot;temperature&quot;: &quot;Temperature&quot;,
+      &quot;pulse&quot;: &quot;Pulse&quot;,
+      &quot;height&quot;: &quot;Height (cm)&quot;
+    },
+    &quot;vitalsHistoryConceptValues&quot;: {
+      &quot;spO2&quot;: &quot;Arterial Blood Oxygen Saturation (Pulse Oximeter)&quot;,
+      &quot;weight&quot;: &quot;Weight (kg)&quot;,
+      &quot;bmi&quot;: &quot;Body mass index&quot;,
+      &quot;respiratoryRate&quot;: &quot;Respiratory Rate&quot;,
+      &quot;systolicPressure&quot;: &quot;Systolic blood pressure&quot;,
+      &quot;diastolicPressure&quot;: &quot;Diastolic blood pressure&quot;,
+      &quot;temperature&quot;: &quot;Temperature&quot;,
+      &quot;pulse&quot;: &quot;Pulse&quot;,
+      &quot;height&quot;: &quot;Height (cm)&quot;,
+      &quot;muac&quot;: &quot;Mid-upper arm circumference&quot;
+    }
+  }
+}
+
+
+</pre>
+</div></div></div></div><h4 id="In-PatientDepartment-GeneralConfiguration">General Configuration</h4><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="5e53302d-eaae-4d38-b9d7-d58a3f013102" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">{
+  &quot;config&quot;: {
+      &quot;contactDetails&quot;: [&quot;phoneNumber&quot;],
+      &quot;enable24HourTimers&quot;: true,
+  }
+}</pre>
+</div></div><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="9f86f004-3bfd-4d7d-967f-338394f969aa" class="confluenceTable"><tbody><tr><th class="confluenceTh"><p><strong>Key</strong></p></th><th class="confluenceTh"><p><strong>Uses</strong></p></th><th class="confluenceTh"><p><strong>Mandatory</strong></p></th></tr><tr><td class="confluenceTd"><p>contactDetails</p></td><td class="confluenceTd"><p>Defines the contact details that are displayed on the Patient Header section, such as phone numbers or other relevant patient communication methods.</p></td><td class="confluenceTd"><p>False</p></td></tr><tr><td class="confluenceTd"><p>enable24HourTime</p></td><td class="confluenceTd"><p>A boolean flag that determines whether timers are displayed in a 24-hour format.</p></td><td class="confluenceTd"><p>False</p></td></tr></tbody></table></div><h4 id="In-PatientDepartment-DrugChartConfiguration">Drug Chart Configuration</h4><h5 id="In-PatientDepartment-drugChartScheduleFrequencies">drugChartScheduleFrequencies</h5><p>Specifies predefined medication schedule frequencies that appear in the Drug Chart section. </p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="23c502d7-2687-4fdc-ae0d-96182df3eafa" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">&quot;drugChartScheduleFrequencies&quot;: [
+      {
+        &quot;name&quot;: &quot;Twice a day&quot;,
+        &quot;frequencyPerDay&quot;: 2,
+        &quot;scheduleTiming&quot;: [
+          &quot;6:00&quot;,
+          &quot;18:00&quot;
+        ]
+      },
+]</pre>
+</div></div><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="ff02347d-a602-421e-a9b7-2e14d318cfcd" class="confluenceTable"><tbody><tr><th class="confluenceTh"><p><strong>Key</strong></p></th><th class="confluenceTh"><p><strong>Uses</strong></p></th><th class="confluenceTh"><p><strong>Mandatory</strong></p></th></tr><tr><td class="confluenceTd"><p>name</p></td><td class="confluenceTd"><p>Name of the frequency</p></td><td class="confluenceTd"><p>True</p></td></tr><tr><td class="confluenceTd"><p>scheduleTiming</p></td><td class="confluenceTd"><p>When the medication is to be administered in 24 hour format.</p></td><td class="confluenceTd"><p /></td></tr><tr><td class="confluenceTd"><p>frequencyPerDay</p></td><td class="confluenceTd"><p>Number of times the medication is to be administered per day</p></td><td class="confluenceTd"><p>True</p></td></tr></tbody></table></div><h5 id="In-PatientDepartment-drugChartStartTimeFrequencies">drugChartStartTimeFrequencies</h5><p>Lists available options for when to start a medication administration schedule. </p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="34373ef8-b714-4939-90ce-9379be900d0f" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">&quot;drugChartStartTimeFrequencies&quot;: [
+      &quot;Immediately&quot;,
+      &quot;Once a day&quot;,
+      &quot;Every Hour&quot;,
+      &quot;Every 2 hours&quot;,
+      &quot;Every 3 hours&quot;,
+      &quot;Every 4 hours&quot;,
+      &quot;Every 6 hours&quot;,
+      &quot;Every 8 hours&quot;,
+      &quot;Every 12 hours&quot;,
+      &quot;On alternate days&quot;,
+      &quot;Once a week&quot;,
+      &quot;Twice a week&quot;,
+      &quot;Thrice a week&quot;,
+      &quot;Every 2 weeks&quot;,
+      &quot;Every 3 weeks&quot;,
+      &quot;Once a month&quot;,
+      &quot;Five times a day&quot;,
+      &quot;Four days a week&quot;,
+      &quot;Five days a week&quot;,
+      &quot;Six days a week&quot;
+]</pre>
+</div></div><h4 id="In-PatientDepartment-SectionConfiguration">Section Configuration</h4><p>This part of the configuration determines the layout and content of the IPD Dashboard. Each section corresponds to a key area of patient management. You can read more about the different sections in IPD Dashboard <a href="https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3719102466/IPD+Dashboard#Overview-of-IPD-Dashboard-Sections" rel="nofollow">here</a>.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="98ff553c-5ec2-447e-a83c-1b5f2f31c4aa" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">&quot;sections&quot;: [
+    {
+      &quot;title&quot;: &quot;Vitals and Nutritional Values&quot;,
+      &quot;componentKey&quot;: &quot;VT&quot;,
+      &quot;displayOrder&quot;: 1,
+      &quot;refreshKey&quot;: 1
+    },
+    {
+      &quot;title&quot;: &quot;Allergies&quot;,
+      &quot;componentKey&quot;: &quot;AL&quot;,
+      &quot;displayOrder&quot;: 2,
+      &quot;refreshKey&quot;: 2
+    }
+  ]</pre>
+</div></div><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="6a209fbd-6b43-44a4-b204-18f5c924aeea" class="confluenceTable"><tbody><tr><th class="confluenceTh"><p><strong>Key</strong></p></th><th class="confluenceTh"><p><strong>Usage</strong></p></th><th class="confluenceTh"><p><strong>Mandatory</strong></p></th></tr><tr><td class="confluenceTd"><p>title</p></td><td class="confluenceTd"><p>The display name of the section on the dashboard.</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>componentKey</p></td><td class="confluenceTd"><p>A unique identifier for the section, used internally to distinguish between different components.</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>displayOrder</p></td><td class="confluenceTd"><p>Defines the order in which the section appears on the dashboard. A lower number places the section higher up.</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>refreshKey</p></td><td class="confluenceTd"><p>A unique identifier that allows for refreshing the section's data.</p></td><td class="confluenceTd"><p>Yes</p></td></tr></tbody></table></div><p>Here are the <code>title</code> and <code>componentKey</code> pairs available in the IPD Dashboard:</p><ol start="1"><li><p><strong>Vitals and Nutritional Values</strong>: <code>VT</code></p></li><li><p><strong>Allergies</strong>: <code>AL</code></p></li><li><p><strong>Diagnosis</strong>: <code>DG</code></p></li><li><p><strong>Treatments</strong>: <code>TR</code></p></li><li><p><strong>Nursing Tasks</strong>: <code>NT</code></p></li><li><p><strong>Drug Chart</strong>: <code>DC</code></p></li></ol><h4 id="In-PatientDepartment-NursingTaskConfiguration">Nursing Task Configuration</h4><p>This part of the configuration determines the various configurable elements of the Nursing Tasks Section of the IPD Dashboard.</p><h5 id="In-PatientDepartment-nonMedicationTaskTypes">nonMedicationTaskTypes</h5><p>Lists the tasks type concepts that are not related to medication but are important for patient care, such as assessments or procedures.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="6aadc00a-c262-41de-9d74-ff82f9d2ed66" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">&quot;nonMedicationTaskTypes&quot;: [&quot;Measurement procedure&quot;, &quot;Medication administration assessment&quot;, &quot;Multidisciplinary assessment&quot;]</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="2207b77c-71f6-4ef6-b2c3-9355ae89ebdd" data-macro-name="info"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>All non-medication task types should be added under the concept set named &quot;All Nursing Tasks.&quot; This concept set serves as a convenient placeholder for various nursing-related tasks, which is to be defined and managed by the implementer. To add non-medication task types via the initializer, please refer to the sample provided <a class="external-link" href="https://github.com/Bahmni/standard-config/blob/master/masterdata/configuration/concepts/taskTypes_example.csv" rel="nofollow">here</a>.</p></div></div><h5 id="In-PatientDepartment-nursingTasks">nursingTasks</h5><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="ce8d7c29-df8e-4e22-bba8-2f93b7a4f8b0" class="confluenceTable"><tbody><tr><th class="confluenceTh"><p><strong>Key</strong></p></th><th class="confluenceTh"><p><strong>Usage</strong></p></th><th class="confluenceTh"><p><strong>Mandatory</strong></p></th></tr><tr><td class="confluenceTd"><p>timeInMinutesFromNowToShowTaskAsRelevant</p></td><td class="confluenceTd"><p>The window in minutes before a task is due that it should be highlighted as relevant.</p></td><td class="confluenceTd"><p>True</p></td></tr><tr><td class="confluenceTd"><p>timeInMinutesFromNowToShowPastTaskAsLate</p></td><td class="confluenceTd"><p>The window in minutes after which a past task is marked as late.</p></td><td class="confluenceTd"><p>True</p></td></tr><tr><td class="confluenceTd"><p>timeInMinutesFromStartTimeToShowAdministeredTaskAsLate</p></td><td class="confluenceTd"><p>The window in minutes after the start time within which a task must be administered before it is marked as late.</p></td><td class="confluenceTd"><p>True</p></td></tr></tbody></table></div><h4 id="In-PatientDepartment-DrugChartConfiguration.1">Drug Chart Configuration</h4><p>This part of the configuration determines the various configurable elements of the Drug Chart Section of the IPD Dashboard.</p><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="f1cf92c4-dc21-4b73-b495-28f4ac752620" class="confluenceTable"><tbody><tr><th class="confluenceTh"><p><strong>Key</strong></p></th><th class="confluenceTh"><p><strong>Usage</strong></p></th><th class="confluenceTh"><p><strong>Mandatory</strong></p></th></tr><tr><td class="confluenceTd"><p>timeInMinutesFromNowToShowPastTaskAsLate</p></td><td class="confluenceTd"><p>This defines the time window after which past drug administration tasks are marked as late.</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>timeInMinutesFromStartTimeToShowAdministeredTaskAsLate</p></td><td class="confluenceTd"><p>Time window in minutes after which an administered drug task is marked as late if not completed.</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>timeInMinutesToDisableSlotPostScheduledTime</p></td><td class="confluenceTd"><p>Defines the time after the scheduled time when the slot for administering a medication becomes disabled.</p></td><td class="confluenceTd"><p>Yes</p></td></tr></tbody></table></div><h4 id="In-PatientDepartment-MedicationTagsConfiguration">Medication Tags Configuration</h4><p>Defines labels or tags used to categorize medications on the dashboard.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="0328d9d0-84d3-4faa-8083-8e7d9b4da8d0" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">&quot;medicationTags&quot;: {
+    &quot;asNeeded&quot;: &quot;Rx-PRN&quot;,
+    &quot;Immediately&quot;: &quot;Rx-STAT&quot;,
+    &quot;default&quot;: &quot;Rx&quot;,
+    &quot;emergency&quot;: &quot;EMERG&quot;
+}</pre>
+</div></div><h4 id="In-PatientDepartment-ShiftDetailsConfiguration">Shift Details Configuration</h4><p>Defines the start and end times of shifts within the hospital, which is crucial for scheduling tasks and medication administration.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="746b93d6-c1a8-4b98-81f4-1c5f83c49fc6" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">&quot;shiftDetails&quot;: {
+    &quot;1&quot;: { &quot;shiftStartTime&quot;: &quot;08:00&quot;, &quot;shiftEndTime&quot;: &quot;19:00&quot; },
+    &quot;2&quot;: { &quot;shiftStartTime&quot;: &quot;19:00&quot;, &quot;shiftEndTime&quot;: &quot;08:00&quot; }
+},
+// This configuration creates two shifts: one from 08:00 to 19:00 and another from 19:00 to 08:00.</pre>
+</div></div><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="0aa936b4-144d-4b56-8789-41dbbdcc8eb9" class="confluenceTable"><tbody><tr><th class="confluenceTh"><p><strong>Key</strong></p></th><th class="confluenceTh"><p><strong>Usage</strong></p></th><th class="confluenceTh"><p><strong>Mandatory</strong></p></th></tr><tr><td class="confluenceTd"><p>shiftStartTime</p></td><td class="confluenceTd"><p>Specifies the shift start time for a particular shift.</p></td><td class="confluenceTd"><p>True</p></td></tr><tr><td class="confluenceTd"><p>shiftEndTime</p></td><td class="confluenceTd"><p>Specifies the shift end time for a particular shift.</p></td><td class="confluenceTd"><p>True</p></td></tr></tbody></table></div><h4 id="In-PatientDepartment-Intake/OutputConfiguration">Intake/Output Configuration</h4><p>Defines the configurations related to Input/Output display control.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="83d02473-2d92-4416-9afe-808bc8a833fa" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">&quot;intakeOutputConfig&quot;: {
+    &quot;periodDetails&quot;: {
+      &quot;startTime&quot;: &quot;08:00&quot;,
+      &quot;durationInHours&quot;: &quot;24&quot;
+    },
+    &quot;normalHighValue&quot;: 10000,
+    &quot;normalLowValue&quot;: 0,
+    &quot;timeConceptNames&quot;: [&quot;Intake Date &amp; Time&quot;, &quot;Output Date &amp; Time&quot;],
+    &quot;intakeRouteConcept&quot;: &quot;Intake Route&quot;,
+    &quot;intakeQuantityConcept&quot;: &quot;Intake Quantity&quot;,
+    &quot;outputRouteConcept&quot;: &quot;Output Route&quot;,
+    &quot;outputQuantityConcept&quot;: &quot;Output Quantity&quot;,
+    &quot;dashboardConfig&quot;: {
+      &quot;numberOfVisits&quot;: 10,
+      &quot;conceptNames&quot;: [&quot;Intake Section&quot;, &quot;Output Section&quot;]
+    }
+}</pre>
+</div></div><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="cef6b54a-8c85-45ca-998e-bb0123c5419f" class="confluenceTable"><tbody><tr><th class="confluenceTh"><p><strong>Key</strong></p></th><th class="confluenceTh"><p><strong>Usage</strong></p></th><th class="confluenceTh"><p><strong>Mandatory</strong></p></th></tr><tr><td class="confluenceTd"><p>periodDetails</p></td><td class="confluenceTd"><p>Configures the period timings for intake and output measurements, including the start time (<code>startTime</code>) and duration (<code>durationInHours</code>).</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>normalHighValue</p></td><td class="confluenceTd"><p>Defines the normal high value for intake/output measurements.</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>normalLowValue</p></td><td class="confluenceTd"><p>Defines the normal low value for intake/output measurements.</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>timeConceptNames</p></td><td class="confluenceTd"><p>The names of the concepts used to track the time of intake and output events.</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>intakeRouteConcept</p></td><td class="confluenceTd"><p>Configures the concept names used to capture intake routes.</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>intakeQuantityConcept</p></td><td class="confluenceTd"><p>Configures the concept names used to capture output quantities.</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>outputRouteConcept</p></td><td class="confluenceTd"><p>Configures the concept names used to capture output routes.</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>outputQuantityConcept</p></td><td class="confluenceTd"><p>Configures the concept names used to capture output quantities.</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>dashboardConfig</p></td><td class="confluenceTd"><p>Additional configurations related to how intake and output data is displayed on the dashboard.</p></td><td class="confluenceTd"><p>Yes</p></td></tr></tbody></table></div><h5 id="In-PatientDepartment-dashboardConfig">dashboardConfig</h5><p>Additional configurations related to how intake and output data is displayed on the dashboard.</p><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="6f3d0c50-6a36-49be-8d98-07e48aeb0960" class="confluenceTable"><tbody><tr><th class="confluenceTh"><p><strong>Key</strong></p></th><th class="confluenceTh"><p><strong>Usage</strong></p></th><th class="confluenceTh"><p><strong>Mandatory</strong></p></th></tr><tr><td class="confluenceTd"><p>numberOfVisits</p></td><td class="confluenceTd"><p>Defines how many visits' data are to be show.</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>conceptNames</p></td><td class="confluenceTd"><p>Configures the concept names used to capture intake and output data.</p></td><td class="confluenceTd"><p>Yes</p></td></tr></tbody></table></div><h4 id="In-PatientDepartment-VitalsConfiguration">Vitals Configuration</h4><h5 id="In-PatientDepartment-latestVitalsConceptValues">latestVitalsConceptValues</h5><p>Maps the latest vital signs to their corresponding concept names.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="16bb1a92-bb5d-4cce-b02a-e1002228e553" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">&quot;vitalsConfig&quot;: {
+    &quot;latestVitalsConceptValues&quot;: {
+      &quot;spO2&quot;: &quot;Arterial Blood Oxygen Saturation (Pulse Oximeter)&quot;,
+      &quot;weight&quot;: &quot;Weight (kg)&quot;,
+      &quot;bmi&quot;: &quot;Body mass index&quot;,
+      &quot;respiratoryRate&quot;: &quot;Respiratory Rate&quot;,
+      &quot;systolicPressure&quot;: &quot;Systolic blood pressure&quot;,
+      &quot;diastolicPressure&quot;: &quot;Diastolic blood pressure&quot;,
+      &quot;temperature&quot;: &quot;Temperature&quot;,
+      &quot;pulse&quot;: &quot;Pulse&quot;,
+      &quot;height&quot;: &quot;Height (cm)&quot;
+    }
+}</pre>
+</div></div><h5 id="In-PatientDepartment-vitalsHistoryConceptValues">vitalsHistoryConceptValues</h5><p>Maps historical vital sign data to their corresponding concept names, allowing the display of historical trends.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="e6b8bea5-2ec6-4049-92a5-3c826fe7e41b" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">&quot;vitalsConfig&quot;: {
+   &quot;vitalsHistoryConceptValues&quot;: {
+      &quot;spO2&quot;: &quot;Arterial Blood Oxygen Saturation (Pulse Oximeter)&quot;,
+      &quot;weight&quot;: &quot;Weight (kg)&quot;,
+      &quot;bmi&quot;: &quot;Body mass index&quot;,
+      &quot;respiratoryRate&quot;: &quot;Respiratory Rate&quot;,
+      &quot;systolicPressure&quot;: &quot;Systolic blood pressure&quot;,
+      &quot;diastolicPressure&quot;: &quot;Diastolic blood pressure&quot;,
+      &quot;temperature&quot;: &quot;Temperature&quot;,
+      &quot;pulse&quot;: &quot;Pulse&quot;,
+      &quot;height&quot;: &quot;Height (cm)&quot;,
+      &quot;muac&quot;: &quot;Mid-upper arm circumference&quot;
+    }
+}</pre>
+</div></div><h1 id="In-PatientDepartment-EventsConfig">Events Config</h1><p>Non-Medication Tasks are specific actions required to be performed for a patient that do not involve administering medication. These tasks are critical for patient care and can include a wide range of activities, such as monitoring vital signs, repositioning patients, or other care-related duties.</p><p>There are two primary methods through which Non-Medication Tasks are created:</p><ol start="1"><li><p><strong>Manually Created Tasks</strong>: Initiated by nursing staff to address specific care needs of an admitted patient.</p></li><li><p><strong>Automated Tasks</strong>: System-generated tasks triggered by events such as patient admission, shift changes, or patient movement.</p></li></ol><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="d8882d13-cabb-4ca0-b75a-0409c487c50a" data-macro-name="info"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>To generate system-generated tasks triggered by events such as patient admission, shift changes, or patient movement add the following configuration to the <code>openmrs/apps/ipdDashboard/eventsConfig.json</code>.</p></div></div><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="d527cf5c-0a05-488f-8bad-42bab5f17e55" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">[
+  {
+    &quot;event&quot;: &quot;PATIENT_ADMIT&quot;,
+    &quot;tasks&quot;: [
+      {
+        &quot;name&quot;: &quot;Collect patient history&quot;,
+        &quot;type&quot;: &quot;Multidisciplinary assessmen&quot;
+      }
+    ]
+  }
+]</pre>
+</div></div><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="125bd22d-9239-4de3-bbad-3c231e8f70db" class="confluenceTable"><tbody><tr><th class="confluenceTh"><p><strong>Key</strong></p></th><th class="confluenceTh"><p><strong>Usage</strong></p></th><th class="confluenceTh"><p><strong>Mandatory</strong></p></th></tr><tr><td class="confluenceTd"><p>event</p></td><td class="confluenceTd"><p>Defines the event which will trigger the following tasks to be created for the patient</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>tasks</p></td><td class="confluenceTd"><p>Defines the an array of tasks that gets created when an event occurs</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>name</p></td><td class="confluenceTd"><p>Name of the event</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>type</p></td><td class="confluenceTd"><p>Defines the tasks type concept that the task is related to</p></td><td class="confluenceTd"><p>No</p></td></tr></tbody></table></div><h1 id="In-PatientDepartment-CareViewDashboard">Care View Dashboard</h1><p>The Careview Dashboard, also referred to as the Ward Level Dashboard, is a centralized interface designed to streamline patient management within a specific ward. This dashboard consolidates relevant patient information, including medication and non-medication tasks, for in-patient department (IPD) patients admitted to a particular ward. </p><p>This guide provides a detailed explanation of the configuration options available in the <code>app.json</code> file under the <code>&lt;bahmni_config_name&gt;/openmrs/apps/careViewDashboard</code> directory. Each key and its functionality are explained in detail to ensure that implementers can effectively customize the dashboard. </p><p>Below is the JSON structure and an explanation of each key.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="83b09e1a-cd46-4725-a396-d4c27450049b" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">{
+  &quot;pageSizeOptions&quot;: [10,20,30,40,50],
+  &quot;defaultPageSize&quot;: 10,
+  &quot;timeframeLimitInHours&quot;: 2
+}</pre>
+</div></div><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="179bb5b3-93de-4b53-a219-e38d0c4a1bea" class="confluenceTable"><tbody><tr><th class="confluenceTh"><p><strong>Key</strong></p></th><th class="confluenceTh"><p><strong>Usage</strong></p></th><th class="confluenceTh"><p><strong>Mandatory</strong></p></th></tr><tr><td class="confluenceTd"><p>pageSizeOptions</p></td><td class="confluenceTd"><p>Defines the available options for the number of patient records displayed per page</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>defaultPageSize</p></td><td class="confluenceTd"><p>Specifies the default number of patient records that will be displayed per page when the dashboard is loaded.</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>timeframeLimitInHours</p></td><td class="confluenceTd"><p>Configures the time window, in hours, for which the dashboard will display medication and non medication tasks</p></td><td class="confluenceTd"><p>Yes</p></td></tr></tbody></table></div><h2 id="In-PatientDepartment-Conclusion">Conclusion</h2><p>The IPD is highly customizable, allowing healthcare facilities to tailor the interface to their specific workflows. By understanding and utilizing the configuration settings detailed in this guide, implementers can ensure the dashboard meets the clinical needs of the institution, improving both usability and patient care.</p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="toc-macro client-side-toc-macro  conf-macro output-block" data-cssliststyle="default" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6" data-layout="default" data-local-id="250e1086-063a-4aed-8649-545ce7be0dcf" data-macro-id="e897e072-1a59-4cf1-ac82-8bd8c895dfe9" data-macro-name="toc" data-numberedoutline="false" data-structure="list"> </div></div>
+</div>
+</div>
+</div></body></html>

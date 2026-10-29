@@ -1,0 +1,173 @@
+{
+  "id": "1173618852",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/1173618852",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE3MzYxODg1Mg==",
+  "status": "current",
+  "title": "Managing Medication / Drug Orders",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5e43cc7490dfb70c9e609d8c",
+      "accountType": "atlassian",
+      "email": "rahulnuchange@gmail.com",
+      "publicName": "Rahul Kumrawat",
+      "timeZone": "Asia/Calcutta",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e43cc7490dfb70c9e609d8c",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Rahul Kumrawat",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e43cc7490dfb70c9e609d8c"
+      }
+    },
+    "createdDate": "2020-03-31T09:48:49.280Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1173618852/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:0114694a-2065-4f19-96b2-e3818cd876a3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "apaule",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:0114694a-2065-4f19-96b2-e3818cd876a3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Arun Paul",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:0114694a-2065-4f19-96b2-e3818cd876a3"
+      }
+    },
+    "when": "2020-04-01T11:31:01.277Z",
+    "friendlyWhen": "Apr 01, 2020",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "0.qMVu3K1WpNzwqHM3-Nh0OA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$1173618852.124",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/1173618852"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1173618852/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\" ac:breakout-mode=\"default\"><ac:layout-cell><h2>About the Feature</h2><p>Once a Medication / Drug or prescription ordered by the doctor from Clinical Services app, same can be seen as a quotation in Odoo with Draft status. This section describes about confirming and delivering the ordered drugs.</p><ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p>The following steps and screenshots are explained as per Odoo 10, available on Bahmni 0.92 release.</p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p>The following steps and screenshots are explained as per Odoo 10, available on Bahmni 0.92 release.</p>\n</div></div></ac:adf-fallback></ac:adf-extension><h2>Used By</h2><p>This feature is used by Pharmacist.</p><h2>How is it Used?</h2><h3>1. Updating &amp; confirming the drug order</h3><ol><li><p>Click on the &ldquo;Sales&rdquo; menu appearing in the navigation menu at the top of the screen in <strong>Odoo</strong> application.</p></li><li><p>Click on the &ldquo;Quotations&rdquo; option in the left panel appearing under the &ldquo;Sales&rdquo; to navigate to the &ldquo;Quotations&rdquo; screen, which will be listing the Draft Quotations of various patients.</p></li><li><p>Search the quotation of the desired patient entering the patient name or identifier in the search field appearing at the top right of the screen.</p></li><li><p>Click on the searched quotation to view the prescription order sent from the service unit for the respective patient.</p></li><li><p>Click on the &ldquo;Edit&rdquo; button appearing at the top left side of the screen.</p></li><li><p>Update the quantity of drugs in the &ldquo;Order Lines&rdquo; if required.</p></li><li><p>Select the desired batch in the Batch No. column field for each product. Once the batch is selected, accordingly the sale price will get populated in the &ldquo;Unit Price&rdquo;. </p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"428\" ac:original-width=\"854\"><ri:attachment ri:filename=\"SQmBBt_ol9EfxOkZTHqk7NVctVjozca_bmTKaDn77iyVRDEa7tPq1gUuPxpaj0Kwr3OAZzGSD1SBifMCPhHmC04LwX2LR1vsGJWzVCkMmPHwManwRPZ6TND3Iez7nbevZDTRoqwS\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p>Click on the &ldquo;Confirm Sale&rdquo; button, which will confirm the sales.</p></li></ol><ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p>&ldquo;Unit Price&ldquo; will populate on select the batch for a product only when the &ldquo;<strong>Markup - Determine sale price based on cost price markup</strong>&ldquo; flag kept checked under   Sales &gt; Configuration &gt; Settings &gt; Quotations &amp; Sales.</p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p>&ldquo;Unit Price&ldquo; will populate on select the batch for a product only when the &ldquo;<strong>Markup - Determine sale price based on cost price markup</strong>&ldquo; flag kept checked under   Sales &gt; Configuration &gt; Settings &gt; Quotations &amp; Sales.</p>\n</div></div></ac:adf-fallback></ac:adf-extension><h3>2. Create Invoice for a confirmed sale order</h3><ol><li><p>To create invoice, click on &ldquo;Create Invoice&ldquo; button appearing at the top left corner of the screen in a confirmed Sale Order.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"414\" ac:original-width=\"843\"><ri:attachment ri:filename=\"image-20200331-104816.png\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p> Select desired invoice option in the popup and click on &ldquo;Create Invoices&rdquo; button.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"189\" ac:original-width=\"490\"><ri:attachment ri:filename=\"image-20200331-105146.png\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p>Click on &ldquo;Invoices&ldquo; icon appearing at the top right corner of the quotation, which will navigate to the Invoice screen displaying the Invoice details.</p></li><li><p>Click on &ldquo;Validate&rdquo; button appearing at the top left corner of the sale order and then on the &ldquo;Register Payment&rdquo; button, which will open &ldquo;Register Payment&rdquo; popup.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"226\" ac:original-width=\"527\"><ri:attachment ri:filename=\"image-20200331-105620.png\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p>Select the payment type, enter the payment amount and click on &ldquo;Validate&rdquo; button in the popup. </p></li></ol><ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p>When &ldquo;<strong>Skip Invoice Options</strong>&rdquo; flag in Settings &gt; Users &gt; Users &gt; Technical Settings is kept checked for logged in user, Invoice will get created automatically on &ldquo;Confirm Sale&rdquo; action and &ldquo;Register Payment&rdquo; popup will appear for payment details. </p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p>When &ldquo;<strong>Skip Invoice Options</strong>&rdquo; flag in Settings &gt; Users &gt; Users &gt; Technical Settings is kept checked for logged in user, Invoice will get created automatically on &ldquo;Confirm Sale&rdquo; action and &ldquo;Register Payment&rdquo; popup will appear for payment details. </p>\n</div></div></ac:adf-fallback></ac:adf-extension><h3>3. Deliver the drug(s) from the confirmed drug sale order</h3><ol><li><p>Once sale is confirmed, a delivery order (for any stockable line item) will be created and can be accessed by clicking the &ldquo;Delivery&rdquo; icon appearing in the right side of the screen.</p></li><li><p>In the delivery screen, you can view the available quantity of the drug in the selected lot.</p></li><li><p>Click on the list icon appearing in the product grid and enter the delivered quantity of drug in the &ldquo;Done&rdquo; field under the &ldquo;Lot/Serial Number Details&rdquo; popup.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"215\" ac:original-width=\"531\"><ri:attachment ri:filename=\"image-20200331-110550.png\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p>Click on the &ldquo;Validate&rdquo; button appearing at the top left side of the screen to deliver the Done quantity of drugs and the same quantity will get reduced from the selected batch of inventory.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"316\" ac:original-width=\"840\"><ri:attachment ri:filename=\"LURsdJ4ozIdsxXP-XlBpZfO64OAkU4lwuoe3z4etANEbBE7PqMG9JAuinMxuqdsVHIw1MxnpLMbIEs10gamENnSzBkSeP4KEEte2K4-n-IUcmdA8HW0wTA64MSeUqC28Vy2FV3Pc\" ri:version-at-save=\"1\" /></ac:image><p /></li></ol><ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p>When &ldquo;<strong>Delivery - Validate delivery when order confirmed</strong>&rdquo; flag kept checked under   Sales &gt; Configuration &gt; Settings &gt; Quotations &amp; Sales, the drug will get delivered automatically on &ldquo;Confirm Sale&rdquo; option if demanded quantity is available.</p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p>When &ldquo;<strong>Delivery - Validate delivery when order confirmed</strong>&rdquo; flag kept checked under   Sales &gt; Configuration &gt; Settings &gt; Quotations &amp; Sales, the drug will get delivered automatically on &ldquo;Confirm Sale&rdquo; option if demanded quantity is available.</p>\n</div></div></ac:adf-fallback></ac:adf-extension></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" data-layout=\"default\" ac:macro-id=\"1a9db005-20b6-4355-ad3b-e064bb506b97\" /><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"d13f43cf-d0b7-4789-b407-667328552620\"><ac:rich-text-body><p><strong>Feature Details</strong></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/32604205/Pharmacy+Management\">Feature Guide - Pharmacy Management</a> </p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"23fe8f8d-4be3-4797-ae44-37929ec80a75\"><ac:rich-text-body><p><strong>Implementation Details</strong></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/32014590/Pharmacy+Configuration\">Implementer's Guide - ERP Modules - Pharmacy Configuration</a> </p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"two_right_sidebar\" ac:breakout-mode=\"default\"><ac:layout-cell><p /></ac:layout-cell><ac:layout-cell><p /></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"fixed-width\" ac:breakout-mode=\"default\"><ac:layout-cell><p /></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/1173618852"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ManagingMedication/DrugOrders-AbouttheFeature\">About the Feature</h2><p>Once a Medication / Drug or prescription ordered by the doctor from Clinical Services app, same can be seen as a quotation in Odoo with Draft status. This section describes about confirming and delivering the ordered drugs.</p><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p>The following steps and screenshots are explained as per Odoo 10, available on Bahmni 0.92 release.</p>\n</div></div><h2 id=\"ManagingMedication/DrugOrders-UsedBy\">Used By</h2><p>This feature is used by Pharmacist.</p><h2 id=\"ManagingMedication/DrugOrders-HowisitUsed?\">How is it Used?</h2><h3 id=\"ManagingMedication/DrugOrders-1.Updating&amp;confirmingthedrugorder\">1. Updating &amp; confirming the drug order</h3><ol><li><p>Click on the “Sales” menu appearing in the navigation menu at the top of the screen in <strong>Odoo</strong> application.</p></li><li><p>Click on the “Quotations” option in the left panel appearing under the “Sales” to navigate to the “Quotations” screen, which will be listing the Draft Quotations of various patients.</p></li><li><p>Search the quotation of the desired patient entering the patient name or identifier in the search field appearing at the top right of the screen.</p></li><li><p>Click on the searched quotation to view the prescription order sent from the service unit for the respective patient.</p></li><li><p>Click on the “Edit” button appearing at the top left side of the screen.</p></li><li><p>Update the quantity of drugs in the “Order Lines” if required.</p></li><li><p>Select the desired batch in the Batch No. column field for each product. Once the batch is selected, accordingly the sale price will get populated in the “Unit Price”. </p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173618852/SQmBBt_ol9EfxOkZTHqk7NVctVjozca_bmTKaDn77iyVRDEa7tPq1gUuPxpaj0Kwr3OAZzGSD1SBifMCPhHmC04LwX2LR1vsGJWzVCkMmPHwManwRPZ6TND3Iez7nbevZDTRoqwS?version=1&amp;modificationDate=1585651160824&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173618852/SQmBBt_ol9EfxOkZTHqk7NVctVjozca_bmTKaDn77iyVRDEa7tPq1gUuPxpaj0Kwr3OAZzGSD1SBifMCPhHmC04LwX2LR1vsGJWzVCkMmPHwManwRPZ6TND3Iez7nbevZDTRoqwS?version=1&amp;modificationDate=1585651160824&amp;cacheVersion=1&amp;api=v2\" data-height=\"428\" data-width=\"854\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1173618913\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"SQmBBt_ol9EfxOkZTHqk7NVctVjozca_bmTKaDn77iyVRDEa7tPq1gUuPxpaj0Kwr3OAZzGSD1SBifMCPhHmC04LwX2LR1vsGJWzVCkMmPHwManwRPZ6TND3Iez7nbevZDTRoqwS\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1173618852\" data-linked-resource-container-version=\"3\" data-media-id=\"a713eb74-735b-4b80-a7b4-08df52fc7494\" data-media-type=\"file\"></span><p /></li><li><p>Click on the “Confirm Sale” button, which will confirm the sales.</p></li></ol><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p>“Unit Price“ will populate on select the batch for a product only when the “<strong>Markup - Determine sale price based on cost price markup</strong>“ flag kept checked under   Sales &gt; Configuration &gt; Settings &gt; Quotations &amp; Sales.</p>\n</div></div><h3 id=\"ManagingMedication/DrugOrders-2.CreateInvoiceforaconfirmedsaleorder\">2. Create Invoice for a confirmed sale order</h3><ol><li><p>To create invoice, click on “Create Invoice“ button appearing at the top left corner of the screen in a confirmed Sale Order.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173618852/image-20200331-104816.png?version=1&amp;modificationDate=1585651700876&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173618852/image-20200331-104816.png?version=1&amp;modificationDate=1585651700876&amp;cacheVersion=1&amp;api=v2\" data-height=\"414\" data-width=\"843\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1172668609\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200331-104816.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1173618852\" data-linked-resource-container-version=\"3\" data-media-id=\"60bffab7-f907-4c9c-9baa-f448cbb261d6\" data-media-type=\"file\"></span><p /></li><li><p> Select desired invoice option in the popup and click on “Create Invoices” button.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173618852/image-20200331-105146.png?version=1&amp;modificationDate=1585651909670&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173618852/image-20200331-105146.png?version=1&amp;modificationDate=1585651909670&amp;cacheVersion=1&amp;api=v2\" data-height=\"189\" data-width=\"490\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1173618921\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200331-105146.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1173618852\" data-linked-resource-container-version=\"3\" data-media-id=\"5d18845a-db35-45cc-91b0-f8f5c139b810\" data-media-type=\"file\"></span><p /></li><li><p>Click on “Invoices“ icon appearing at the top right corner of the quotation, which will navigate to the Invoice screen displaying the Invoice details.</p></li><li><p>Click on “Validate” button appearing at the top left corner of the sale order and then on the “Register Payment” button, which will open “Register Payment” popup.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173618852/image-20200331-105620.png?version=1&amp;modificationDate=1585652183582&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173618852/image-20200331-105620.png?version=1&amp;modificationDate=1585652183582&amp;cacheVersion=1&amp;api=v2\" data-height=\"226\" data-width=\"527\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1173782785\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200331-105620.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1173618852\" data-linked-resource-container-version=\"3\" data-media-id=\"0ba4cd3c-9a08-42a9-b51e-b850203a3d89\" data-media-type=\"file\"></span><p /></li><li><p>Select the payment type, enter the payment amount and click on “Validate” button in the popup. </p></li></ol><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p>When “<strong>Skip Invoice Options</strong>” flag in Settings &gt; Users &gt; Users &gt; Technical Settings is kept checked for logged in user, Invoice will get created automatically on “Confirm Sale” action and “Register Payment” popup will appear for payment details. </p>\n</div></div><h3 id=\"ManagingMedication/DrugOrders-3.Deliverthedrug(s)fromtheconfirmeddrugsaleorder\">3. Deliver the drug(s) from the confirmed drug sale order</h3><ol><li><p>Once sale is confirmed, a delivery order (for any stockable line item) will be created and can be accessed by clicking the “Delivery” icon appearing in the right side of the screen.</p></li><li><p>In the delivery screen, you can view the available quantity of the drug in the selected lot.</p></li><li><p>Click on the list icon appearing in the product grid and enter the delivered quantity of drug in the “Done” field under the “Lot/Serial Number Details” popup.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173618852/image-20200331-110550.png?version=1&amp;modificationDate=1585652754427&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173618852/image-20200331-110550.png?version=1&amp;modificationDate=1585652754427&amp;cacheVersion=1&amp;api=v2\" data-height=\"215\" data-width=\"531\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1173749880\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200331-110550.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1173618852\" data-linked-resource-container-version=\"3\" data-media-id=\"1c31c8e2-1d8f-4e35-8cfb-d72c6e3a9cee\" data-media-type=\"file\"></span><p /></li><li><p>Click on the “Validate” button appearing at the top left side of the screen to deliver the Done quantity of drugs and the same quantity will get reduced from the selected batch of inventory.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173618852/LURsdJ4ozIdsxXP-XlBpZfO64OAkU4lwuoe3z4etANEbBE7PqMG9JAuinMxuqdsVHIw1MxnpLMbIEs10gamENnSzBkSeP4KEEte2K4-n-IUcmdA8HW0wTA64MSeUqC28Vy2FV3Pc?version=1&amp;modificationDate=1585651140104&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173618852/LURsdJ4ozIdsxXP-XlBpZfO64OAkU4lwuoe3z4etANEbBE7PqMG9JAuinMxuqdsVHIw1MxnpLMbIEs10gamENnSzBkSeP4KEEte2K4-n-IUcmdA8HW0wTA64MSeUqC28Vy2FV3Pc?version=1&amp;modificationDate=1585651140104&amp;cacheVersion=1&amp;api=v2\" data-height=\"316\" data-width=\"840\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1173618904\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"LURsdJ4ozIdsxXP-XlBpZfO64OAkU4lwuoe3z4etANEbBE7PqMG9JAuinMxuqdsVHIw1MxnpLMbIEs10gamENnSzBkSeP4KEEte2K4-n-IUcmdA8HW0wTA64MSeUqC28Vy2FV3Pc\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1173618852\" data-linked-resource-container-version=\"3\" data-media-id=\"2fd52835-82a1-4ca5-a383-7942f12f838d\" data-media-type=\"file\"></span><p /></li></ol><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p>When “<strong>Delivery - Validate delivery when order confirmed</strong>” flag kept checked under   Sales &gt; Configuration &gt; Settings &gt; Quotations &amp; Sales, the drug will get delivered automatically on “Confirm Sale” option if demanded quantity is available.</p>\n</div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-layout=\"default\" data-macro-id=\"1a9db005-20b6-4355-ad3b-e064bb506b97\" data-macro-name=\"toc\"> </div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d13f43cf-d0b7-4789-b407-667328552620\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>Feature Details</strong></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/32604205/Pharmacy+Management\" rel=\"nofollow\">Feature Guide - Pharmacy Management</a> </p></div></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"23fe8f8d-4be3-4797-ae44-37929ec80a75\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>Implementation Details</strong></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/32014590/Pharmacy+Configuration\" rel=\"nofollow\">Implementer's Guide - ERP Modules - Pharmacy Configuration</a> </p></div></div></div>\n</div>\n</div>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p /></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<p /></div>\n</div>\n</div>\n<div class=\"columnLayout fixed-width\" data-layout=\"fixed-width\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p /></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/1173618852"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/1173618852/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1173618852/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 647552654
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/1173618852/child",
+    "restrictions": "/rest/api/content/1173618852/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/1173618852/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=1173618852",
+    "webui": "/spaces/BAH/pages/1173618852/Managing+Medication+Drug+Orders",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/1173618852",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1173618852",
+    "tinyui": "/x/pAD0RQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

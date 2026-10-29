@@ -1,0 +1,171 @@
+{
+  "id": "14712833",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/14712833",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTQ3MTI4MzM=",
+  "status": "current",
+  "title": "Bahmni Architecture",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "createdDate": "2015-01-12T06:17:04.708Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/14712833/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2024-01-10T05:27:57.005Z",
+    "friendlyWhen": "Jan 10, 2024",
+    "message": "",
+    "number": 18,
+    "minorEdit": false,
+    "syncRev": "0.KqRpNwO9oiCpJX65stghSg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$14712833.103",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/14712833"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/14712833/version/18"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p>Bahmni is made up of four services which are integrated with each other. All integration happens using the atom (this RSS) feeds exposed by the individual services and consumed by the background threads in consuming processes. The first two slides below are for application and reporting architecture (This excludes all of OpenERP and canned OpenELIS reports)</p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"38e37d07-134c-4cb4-a80c-f74c47e6d080\"><ac:rich-text-body><p>Please see this training video on Bahmni Architecture also: <ac:link><ri:page ri:content-title=\"Bahmni - Starting off the Bahmni Journey - Dec 2021 (Training)\" ri:version-at-save=\"3\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><p><br /></p><p><ac:structured-macro ac:name=\"view-file\" ac:schema-version=\"1\" ac:macro-id=\"5ae8f3ea-3f83-4b83-a3a3-38aa13f3b15e\"><ac:parameter ac:name=\"name\"><ri:attachment ri:filename=\"Bahmni EDA.pptx\" ri:version-at-save=\"1\" /></ac:parameter><ac:parameter ac:name=\"height\">400</ac:parameter></ac:structured-macro></p><p><br /></p><p><ac:structured-macro ac:name=\"widget\" ac:schema-version=\"1\" ac:macro-id=\"a26bfc31-3111-438e-8a16-ad890277563a\"><ac:parameter ac:name=\"width\">750</ac:parameter><ac:parameter ac:name=\"url\"><ri:url ri:value=\"https://docs.google.com/presentation/d/16Wud_m4Yzq6mm3IH2Q6H4jSHEtjNiU1WA2HVHnslPvQ/edit?usp=sharing\" /></ac:parameter><ac:parameter ac:name=\"height\">500</ac:parameter></ac:structured-macro></p><h3>Integration between application services</h3><p>Each service publishes the key state changes via a RSS kind of feed (ATOM). The services also run background jobs which consume the feed published by other services. (e.g. When a patient is registered in OpenMRS then it captures the event for it. Both OpenERP and OpenELIS consume these events via the OpenMRS's change feed)</p><p><strong>Integrations</strong></p><table class=\"wrapped\"><colgroup><col /><col /><col /><col /></colgroup><tbody><tr><th>Source</th><th>Destination</th><th>Source Resource</th><th colspan=\"1\">Destination Resource</th></tr><tr><td>OpenMRS</td><td>OpenELIS</td><td>Patient</td><td colspan=\"1\">Patient</td></tr><tr><td>OpenMRS</td><td>OpenERP</td><td>Patient</td><td colspan=\"1\">Customer</td></tr><tr><td colspan=\"1\">OpenMRS</td><td colspan=\"1\">OpenELIS</td><td colspan=\"1\">Lab Order</td><td colspan=\"1\">Draft Accession</td></tr><tr><td colspan=\"1\">OpenMRS</td><td colspan=\"1\">OpenERP</td><td colspan=\"1\">Orders</td><td colspan=\"1\">Quotation</td></tr><tr><td colspan=\"1\">OpenELIS</td><td colspan=\"1\">OpenMRS</td><td colspan=\"1\">Accession, Sample &amp; Results</td><td colspan=\"1\">Encounter (lab results)</td></tr><tr><td colspan=\"1\">OpenMRS</td><td colspan=\"1\">OpenELIS</td><td colspan=\"1\">Concept</td><td colspan=\"1\">Sample types, Lab Test, Panel</td></tr><tr><td colspan=\"1\">OpenMRS</td><td colspan=\"1\">OpenERP</td><td colspan=\"1\">Concept</td><td colspan=\"1\">Drug</td></tr></tbody></table><p><strong>&nbsp;</strong></p><p><strong>For Bahmni PACS design, please refer to this document:&nbsp;<ac:link><ri:page ri:content-title=\"Bahmni PACS Roadmap\" ri:version-at-save=\"21\" /></ac:link></strong></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"05c552ed-7a73-4ac4-9e42-b724d9a22873\"><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><a href=\"https://sharedhealth.atlassian.net/wiki/display/docs/Atom+Feed\">Atom Feed Integration Design</a></p><p><ac:link><ri:page ri:content-title=\"Bahmni Server Deployment Architecture\" ri:version-at-save=\"17\" /><ac:plain-text-link-body><![CDATA[Server Deployment Architecture]]></ac:plain-text-link-body></ac:link></p><p><ac:link><ri:page ri:content-title=\"Bahmni PACS Roadmap\" ri:version-at-save=\"21\" /><ac:plain-text-link-body><![CDATA[Bahmni PACS Setup]]></ac:plain-text-link-body></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/14712833"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p>Bahmni is made up of four services which are integrated with each other. All integration happens using the atom (this RSS) feeds exposed by the individual services and consumed by the background threads in consuming processes. The first two slides below are for application and reporting architecture (This excludes all of OpenERP and canned OpenELIS reports)</p><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"38e37d07-134c-4cb4-a80c-f74c47e6d080\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Please see this training video on Bahmni Architecture also: <a href=\"/wiki/spaces/BAH/pages/2955345944/Bahmni+-+Starting+off+the+Bahmni+Journey+-+Dec+2021+Training\" data-linked-resource-id=\"2955345944\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">Bahmni - Starting off the Bahmni Journey - Dec 2021 (Training)</a></p></div></div><p><br/></p><p><span class=\"confluence-embedded-file-wrapper conf-macro output-inline\" data-hasbody=\"false\" data-macro-id=\"5ae8f3ea-3f83-4b83-a3a3-38aa13f3b15e\" data-macro-name=\"view-file\"><a class=\"confluence-embedded-file\" href=\"/wiki/download/attachments/14712833/Bahmni%20EDA.pptx?version=1&amp;modificationDate=1503551866604&amp;cacheVersion=1&amp;api=v2\" data-nice-type=\"Microsoft PowerPoint Presentation\" data-file-src=\"/wiki/download/attachments/14712833/Bahmni%20EDA.pptx?version=1&amp;modificationDate=1503551866604&amp;cacheVersion=1&amp;api=v2\" data-linked-resource-id=\"124223489\" data-linked-resource-type=\"attachment\" data-linked-resource-container-id=\"14712833\" data-linked-resource-default-alias=\"Bahmni EDA.pptx\" data-mime-type=\"application/vnd.openxmlformats-officedocument.presentationml.presentation\" data-has-thumbnail=\"true\" data-linked-resource-version=\"1\" data-media-id=\"d102c006-c933-43f0-b439-305e99a509fe\" data-media-type=\"file\"><img src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/14712833/Bahmni%20EDA.pptx?version=1&amp;modificationDate=1503551866604&amp;cacheVersion=1&amp;api=v2&amp;viewType=fileMacro\" height=\"400\" /></a></span></p><p><br/></p><p><iframe class=\"conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"a26bfc31-3111-438e-8a16-ad890277563a\" data-macro-name=\"widget\" frameborder=\"0\" height=\"500\" src=\"//docs.google.com/presentation/d/16Wud_m4Yzq6mm3IH2Q6H4jSHEtjNiU1WA2HVHnslPvQ/embed\" width=\"750\"> </iframe></p><h3 id=\"BahmniArchitecture-Integrationbetweenapplicationservices\">Integration between application services</h3><p>Each service publishes the key state changes via a RSS kind of feed (ATOM). The services also run background jobs which consume the feed published by other services. (e.g. When a patient is registered in OpenMRS then it captures the event for it. Both OpenERP and OpenELIS consume these events via the OpenMRS's change feed)</p><p><strong>Integrations</strong></p><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><th class=\"confluenceTh\">Source</th><th class=\"confluenceTh\">Destination</th><th class=\"confluenceTh\">Source Resource</th><th colspan=\"1\" class=\"confluenceTh\">Destination Resource</th></tr><tr><td class=\"confluenceTd\">OpenMRS</td><td class=\"confluenceTd\">OpenELIS</td><td class=\"confluenceTd\">Patient</td><td colspan=\"1\" class=\"confluenceTd\">Patient</td></tr><tr><td class=\"confluenceTd\">OpenMRS</td><td class=\"confluenceTd\">OpenERP</td><td class=\"confluenceTd\">Patient</td><td colspan=\"1\" class=\"confluenceTd\">Customer</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">OpenMRS</td><td colspan=\"1\" class=\"confluenceTd\">OpenELIS</td><td colspan=\"1\" class=\"confluenceTd\">Lab Order</td><td colspan=\"1\" class=\"confluenceTd\">Draft Accession</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">OpenMRS</td><td colspan=\"1\" class=\"confluenceTd\">OpenERP</td><td colspan=\"1\" class=\"confluenceTd\">Orders</td><td colspan=\"1\" class=\"confluenceTd\">Quotation</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">OpenELIS</td><td colspan=\"1\" class=\"confluenceTd\">OpenMRS</td><td colspan=\"1\" class=\"confluenceTd\">Accession, Sample &amp; Results</td><td colspan=\"1\" class=\"confluenceTd\">Encounter (lab results)</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">OpenMRS</td><td colspan=\"1\" class=\"confluenceTd\">OpenELIS</td><td colspan=\"1\" class=\"confluenceTd\">Concept</td><td colspan=\"1\" class=\"confluenceTd\">Sample types, Lab Test, Panel</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">OpenMRS</td><td colspan=\"1\" class=\"confluenceTd\">OpenERP</td><td colspan=\"1\" class=\"confluenceTd\">Concept</td><td colspan=\"1\" class=\"confluenceTd\">Drug</td></tr></tbody></table></div><p><strong> </strong></p><p><strong>For Bahmni PACS design, please refer to this document: <a href=\"/wiki/spaces/BAH/pages/22380584/Bahmni+PACS+Roadmap\" data-linked-resource-id=\"22380584\" data-linked-resource-version=\"21\" data-linked-resource-type=\"page\">Bahmni PACS Roadmap</a></strong></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"05c552ed-7a73-4ac4-9e42-b724d9a22873\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a class=\"external-link\" href=\"https://sharedhealth.atlassian.net/wiki/display/docs/Atom+Feed\" rel=\"nofollow\">Atom Feed Integration Design</a></p><p><a href=\"/wiki/spaces/BAH/pages/1310730/Bahmni+Server+Deployment+Architecture\" data-linked-resource-id=\"1310730\" data-linked-resource-version=\"17\" data-linked-resource-type=\"page\">Server Deployment Architecture</a></p><p><a href=\"/wiki/spaces/BAH/pages/22380584/Bahmni+PACS+Roadmap\" data-linked-resource-id=\"22380584\" data-linked-resource-version=\"21\" data-linked-resource-type=\"page\">Bahmni PACS Setup</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/14712833"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/14712833/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/14712833/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 73
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/14712833/child",
+    "restrictions": "/rest/api/content/14712833/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/14712833/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=14712833",
+    "webui": "/spaces/BAH/pages/14712833/Bahmni+Architecture",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/14712833",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/14712833",
+    "tinyui": "/x/AYDg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

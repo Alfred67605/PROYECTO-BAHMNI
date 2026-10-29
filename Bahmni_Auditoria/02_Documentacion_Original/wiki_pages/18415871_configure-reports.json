@@ -1,0 +1,178 @@
+{
+  "id": "18415871",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/18415871",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTg0MTU4NzE=",
+  "status": "current",
+  "title": "Configure Reports",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Arun Paul",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Arun Paul",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3"
+      }
+    },
+    "createdDate": "2015-04-09T06:41:43.534Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/18415871/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2021-03-23T07:43:19.166Z",
+    "friendlyWhen": "Mar 23, 2021",
+    "message": "",
+    "number": 211,
+    "minorEdit": false,
+    "syncRev": "0.i5Rhg9DqIouOXMw09_EcfQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$18415871.388",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/18415871"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/18415871/version/211"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p>Bahmni provides multiple models for performing Reporting / Analytics - each with its own pros/cons. Please see the various options as explained below:</p><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"51f2c83c-b8d3-4d97-aac0-997cb96af119\" /></p><p><br /></p><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/18415871"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p>Bahmni provides multiple models for performing Reporting / Analytics - each with its own pros/cons. Please see the various options as explained below:</p><p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"51f2c83c-b8d3-4d97-aac0-997cb96af119\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/2270265367/Reporting+Overview+Bahmni\" data-linked-resource-id=\"2270265367\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Reporting Overview (Bahmni)</a></li><li><a href=\"/wiki/spaces/BAH/pages/90472551/Reports\" data-linked-resource-id=\"90472551\" data-linked-resource-version=\"57\" data-linked-resource-type=\"page\">Reports</a></li><li><a href=\"/wiki/spaces/BAH/pages/90472547/Canned+Reports\" data-linked-resource-id=\"90472547\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Canned Reports</a></li><li><a href=\"/wiki/spaces/BAH/pages/2273280109/Custom+SQL+Reports\" data-linked-resource-id=\"2273280109\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Custom SQL Reports</a></li><li><a href=\"/wiki/spaces/BAH/pages/715260067/Bahmni+Mart+Reports\" data-linked-resource-id=\"715260067\" data-linked-resource-version=\"9\" data-linked-resource-type=\"page\">Bahmni Mart Reports</a></li><li><a href=\"/wiki/spaces/BAH/pages/90472545/Prior+Versions\" data-linked-resource-id=\"90472545\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Prior Versions</a></li></ul></p><p><br/></p><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n</div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/18415871"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "review-needed",
+          "id": "30146561",
+          "label": "review-needed"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 1,
+      "_links": {
+        "next": "/rest/api/content/18415871/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/18415871/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 565173496
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/18415871/child",
+    "restrictions": "/rest/api/content/18415871/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/18415871/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=18415871",
+    "webui": "/spaces/BAH/pages/18415871/Configure+Reports",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/18415871",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/18415871",
+    "tinyui": "/x/-wAZAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

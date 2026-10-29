@@ -1,0 +1,174 @@
+{
+  "id": "2316239295",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2316239295",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMxNjIzOTI5NQ==",
+  "status": "current",
+  "title": "Provider Job",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "createdDate": "2021-04-05T09:26:41.757Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239295/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "when": "2021-04-05T09:27:04.524Z",
+    "friendlyWhen": "Apr 05, 2021",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.confluence$content$2316239295.6",
+    "syncRevSource": "synchrony-ack",
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$2316239295.8",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2316239295"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239295/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ul><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349241345/Provider#Configuration\">&nbsp;Configuration</a></p><ul><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349241345/Provider#ColumnsToIgnore-apply-for-this-module-(-Refer--%5BinlineCard%5D-)\">ColumnsToIgnore apply for this module ( Refer&nbsp;https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix&nbsp;)</a></p></li><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349241345/Provider#incrementalUpdateConfig-is-applicable-(-Refer-%5BinlineCard%5D-)\">incrementalUpdateConfig is applicable ( Refer&nbsp;https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update&nbsp;)</a></p></li></ul></li><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349241345/Provider#Existing-OpenMRS-tables\">Existing OpenMRS tables</a></p><ul><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349241345/Provider#Incremental-Config%3A\">Incremental Config:</a></p></li></ul></li></ul><h3 style=\"text-align: center;\">&nbsp;<strong>Configuration</strong></h3><h5><strong>ColumnsToIgnore apply for this module ( Refer </strong><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><h5><strong>incrementalUpdateConfig is applicable</strong> ( Refer <a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</h5><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"cc19ba2b-f14b-489b-877f-437da9d98516\"><ac:plain-text-body><![CDATA[ {\n      \"name\": \"Provider\",\n      \"type\": \"provider\",\n      \"chunkSizeToRead\": \"500\"\n}\n]]></ac:plain-text-body></ac:structured-macro><hr /><h3 style=\"text-align: center;\"><strong>Existing OpenMRS tables</strong></h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"e6fbcc67-7899-4774-a525-ffdaf0f91ed9\"><ac:plain-text-body><![CDATA[provider\nprovider_attribute\nprovider_attribute_type\n]]></ac:plain-text-body></ac:structured-macro><hr /><p style=\"text-align: center;\"><strong>Flattened Mart Tables</strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"63c2c5aa-bb55-4a24-8cce-eedabaea93a3\"><ac:plain-text-body><![CDATA[provider_default\nprovdier_attributes\nprovider_attribute_details_default\n]]></ac:plain-text-body></ac:structured-macro><h4><strong>Incremental Config:</strong></h4><p>Please check <a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update#10.-Provider-Job:\">this</a> section on how to enable/disable incremental config for specific mart tables.</p><p>a) <strong>provider_default:- </strong>This table gives all the provider information in an implementation</p><p>Openmrs tables used: provider</p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p><strong>Column Name</strong></p></td><td><p><strong>Description</strong></p></td></tr><tr><td><p>provider_id</p></td><td><p>provider id as in Openmrs</p></td></tr><tr><td><p>person_id</p></td><td><p>person id as in Openmrs</p></td></tr><tr><td><p>name</p></td><td><p>name of the provider</p></td></tr><tr><td><p>identifier</p></td><td><p>provider identifier for that provider ( Not patient identifier )</p></td></tr><tr><td><p>provider_role_id</p></td><td><p>role_id for that provider</p></td></tr></tbody></table><p>b) <strong>provider_attribute:- </strong>This table gives all the provider attribute information in an implementation</p><p>Openmrs tables used: provider:- provider, provider_attribute, provider_attribute_type</p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p><strong>Column Name</strong></p></td><td><p><strong>Description</strong></p></td></tr><tr><td><p>provider_id</p></td><td><p>provider id as in Openmrs</p></td></tr><tr><td><p>All other provider attributes as separate columns.</p></td><td><p>&nbsp;</p></td></tr></tbody></table><p><strong>c) provider_attribute_details_default - </strong>This table displays all the provider attribute details</p><p>openmrs tables used:- provider, provider_attribute, provider_attribute_type.</p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p><strong>Column Name</strong></p></td><td><p><strong>Description</strong></p></td></tr><tr><td><p>provider_attribute_id</p></td><td><p>Id reference for provider attribute ( provider_attribute table in openmrs )</p></td></tr><tr><td><p>attribute_type_id</p></td><td><p>Id reference for attribute type ( provider_attribute table in openmrs )</p></td></tr><tr><td><p>provider_id</p></td><td><p>Id reference for provider ( provider table in openmrs)</p></td></tr><tr><td><p>value_reference</p></td><td><p>value reference is from provider_attribute table in openmrs</p></td></tr><tr><td><p>provider_attribute_type_name</p></td><td><p>attribute type name from provider_attribute_type table in openmrs</p></td></tr><tr><td><p>provider_attribute_type_description</p></td><td><p>Description of attribute type from provider_attribute_type table in openmrs</p></td></tr><tr><td><p>provider_attribute_datatype</p></td><td><p>Date type of attribute type from provider_attribute_type table in openmrs</p></td></tr><tr><td><p>provider_attribute_datatype_config</p></td><td><p>Date type config of attribute type from provider_attribute_type table in openmrs</p></td></tr><tr><td><p>provider_attribute_type_preferred_handler</p></td><td><p>preferred_handler of attribute type from provider_attribute_type table in openmrs</p></td></tr><tr><td><p>provider_attribute_type_handler_config</p></td><td><p>handler_type of attribute type from provider_attribute_type table in openmrs</p></td></tr><tr><td><p>provider_attribute_type_min_occurs</p></td><td><p>min_occurs of attribute type from provider_attribute_type table in openmrs</p></td></tr><tr><td><p>provider_attribute_type_max_occurs</p></td><td><p>max_occurs of attribute type from provider_attribute_type table in openmrs</p></td></tr></tbody></table>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2316239295"
+      }
+    },
+    "view": {
+      "value": "<ul><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349241345/Provider#Configuration\" rel=\"nofollow\"> Configuration</a></p><ul><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349241345/Provider#ColumnsToIgnore-apply-for-this-module-(-Refer--%5BinlineCard%5D-)\" rel=\"nofollow\">ColumnsToIgnore apply for this module ( Refer https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix )</a></p></li><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349241345/Provider#incrementalUpdateConfig-is-applicable-(-Refer-%5BinlineCard%5D-)\" rel=\"nofollow\">incrementalUpdateConfig is applicable ( Refer https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update )</a></p></li></ul></li><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349241345/Provider#Existing-OpenMRS-tables\" rel=\"nofollow\">Existing OpenMRS tables</a></p><ul><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/349241345/Provider#Incremental-Config%3A\" rel=\"nofollow\">Incremental Config:</a></p></li></ul></li></ul><h3 style=\"text-align: center;\" id=\"ProviderJob-Configuration\"> <strong>Configuration</strong></h3><h5 id=\"ProviderJob-ColumnsToIgnoreapplyforthismodule(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix)\"><strong>ColumnsToIgnore apply for this module ( Refer </strong><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><h5 id=\"ProviderJob-incrementalUpdateConfigisapplicable(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update)\"><strong>incrementalUpdateConfig is applicable</strong> ( Refer <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</h5><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"cc19ba2b-f14b-489b-877f-437da9d98516\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\"> {\n      &quot;name&quot;: &quot;Provider&quot;,\n      &quot;type&quot;: &quot;provider&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;\n}\n</pre>\n</div></div><hr/><h3 style=\"text-align: center;\" id=\"ProviderJob-ExistingOpenMRStables\"><strong>Existing OpenMRS tables</strong></h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e6fbcc67-7899-4774-a525-ffdaf0f91ed9\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">provider\nprovider_attribute\nprovider_attribute_type\n</pre>\n</div></div><hr/><p style=\"text-align: center;\"><strong>Flattened Mart Tables</strong></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"63c2c5aa-bb55-4a24-8cce-eedabaea93a3\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">provider_default\nprovdier_attributes\nprovider_attribute_details_default\n</pre>\n</div></div><h4 id=\"ProviderJob-IncrementalConfig:\"><strong>Incremental Config:</strong></h4><p>Please check <a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update#10.-Provider-Job:\" rel=\"nofollow\">this</a> section on how to enable/disable incremental config for specific mart tables.</p><p>a) <strong>provider_default:- </strong>This table gives all the provider information in an implementation</p><p>Openmrs tables used: provider</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>provider_id</p></td><td class=\"confluenceTd\"><p>provider id as in Openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>person_id</p></td><td class=\"confluenceTd\"><p>person id as in Openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>name</p></td><td class=\"confluenceTd\"><p>name of the provider</p></td></tr><tr><td class=\"confluenceTd\"><p>identifier</p></td><td class=\"confluenceTd\"><p>provider identifier for that provider ( Not patient identifier )</p></td></tr><tr><td class=\"confluenceTd\"><p>provider_role_id</p></td><td class=\"confluenceTd\"><p>role_id for that provider</p></td></tr></tbody></table></div><p>b) <strong>provider_attribute:- </strong>This table gives all the provider attribute information in an implementation</p><p>Openmrs tables used: provider:- provider, provider_attribute, provider_attribute_type</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>provider_id</p></td><td class=\"confluenceTd\"><p>provider id as in Openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>All other provider attributes as separate columns.</p></td><td class=\"confluenceTd\"><p> </p></td></tr></tbody></table></div><p><strong>c) provider_attribute_details_default - </strong>This table displays all the provider attribute details</p><p>openmrs tables used:- provider, provider_attribute, provider_attribute_type.</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>provider_attribute_id</p></td><td class=\"confluenceTd\"><p>Id reference for provider attribute ( provider_attribute table in openmrs )</p></td></tr><tr><td class=\"confluenceTd\"><p>attribute_type_id</p></td><td class=\"confluenceTd\"><p>Id reference for attribute type ( provider_attribute table in openmrs )</p></td></tr><tr><td class=\"confluenceTd\"><p>provider_id</p></td><td class=\"confluenceTd\"><p>Id reference for provider ( provider table in openmrs)</p></td></tr><tr><td class=\"confluenceTd\"><p>value_reference</p></td><td class=\"confluenceTd\"><p>value reference is from provider_attribute table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>provider_attribute_type_name</p></td><td class=\"confluenceTd\"><p>attribute type name from provider_attribute_type table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>provider_attribute_type_description</p></td><td class=\"confluenceTd\"><p>Description of attribute type from provider_attribute_type table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>provider_attribute_datatype</p></td><td class=\"confluenceTd\"><p>Date type of attribute type from provider_attribute_type table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>provider_attribute_datatype_config</p></td><td class=\"confluenceTd\"><p>Date type config of attribute type from provider_attribute_type table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>provider_attribute_type_preferred_handler</p></td><td class=\"confluenceTd\"><p>preferred_handler of attribute type from provider_attribute_type table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>provider_attribute_type_handler_config</p></td><td class=\"confluenceTd\"><p>handler_type of attribute type from provider_attribute_type table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>provider_attribute_type_min_occurs</p></td><td class=\"confluenceTd\"><p>min_occurs of attribute type from provider_attribute_type table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>provider_attribute_type_max_occurs</p></td><td class=\"confluenceTd\"><p>max_occurs of attribute type from provider_attribute_type table in openmrs</p></td></tr></tbody></table></div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2316239295"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2316239295/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239295/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 3076
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2316239295/child",
+    "restrictions": "/rest/api/content/2316239295/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2316239295/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2316239295",
+    "webui": "/spaces/BAH/pages/2316239295/Provider+Job",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2316239295",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239295",
+    "tinyui": "/x/vwEPig",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

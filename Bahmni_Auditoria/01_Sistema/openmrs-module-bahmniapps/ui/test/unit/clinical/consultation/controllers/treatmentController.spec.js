@@ -1,0 +1,96 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public License,
+ * v. 2.0. If a copy of the MPL was not distributed with this file, You can
+ * obtain one at https://www.bahmni.org/license/mplv2hd.
+ *
+ * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
+ * graphic logo is a trademark of OpenMRS Inc.
+ */
+
+'use strict';
+
+describe('TreatmentController', function () {
+    var $controller, $rootScope, $scope, appService, mockAppDescriptor, filter;
+    var clinicalAppConfigService, cdssService;
+    beforeEach(module('bahmni.clinical'));
+
+    beforeEach(inject(function (_$controller_, _$rootScope_, _$filter_) {
+        $controller = _$controller_;
+        $rootScope = _$rootScope_;
+        $scope = $rootScope.$new();
+        clinicalAppConfigService = jasmine.createSpyObj('clinicalAppConfigService', ['getVisitTypeForRetrospectiveEntries']);
+        cdssService = jasmine.createSpyObj('cdssService', ['sortInteractionsByStatus']);
+        mockAppDescriptor = jasmine.createSpyObj('appDescriptor', ['getExtensionById', 'getConfigValue']);
+        mockAppDescriptor.getExtensionById.and.returnValue({extensionParams: {sections: {allergies: {}}}});
+        mockAppDescriptor.getConfigValue.and.returnValue(null);
+
+        appService = jasmine.createSpyObj('appService', ['getAppDescriptor']);
+        appService.getAppDescriptor.and.returnValue(mockAppDescriptor);
+        filter = _$filter_;
+    }));
+
+    var createController = function () {
+        return $controller('TreatmentController', {
+            $scope: $scope,
+            treatmentConfig: {drugOrderHistoryConfig: {view: 'default'}},
+            $stateParams: {tabConfigName: 'allMedicationTabConfig'},
+            appService: appService,
+            clinicalAppConfigService: clinicalAppConfigService,
+            cdssService: cdssService,
+            $filter: filter
+        });
+    };
+
+    describe('pharmacist review banner', function () {
+        it('should not initialize pharmacistBanner when feature flag is disabled', function () {
+            createController();
+            expect($scope.pharmacistBannerEnabled).toBe(false);
+            expect($scope.pharmacistBanner).toBeUndefined();
+        });
+
+        it('should initialize pharmacistBanner when feature flag is enabled', function () {
+            mockAppDescriptor.getConfigValue.and.returnValue(true);
+            createController();
+            expect($scope.pharmacistBannerEnabled).toBe(true);
+            expect($scope.pharmacistBanner).toEqual({confirmed: false, hasUndispensedOrders: false});
+        });
+
+        it('should set pharmacistBanner.confirmed to true on confirmPharmacistReview when enabled', function () {
+            mockAppDescriptor.getConfigValue.and.returnValue(true);
+            createController();
+            $scope.confirmPharmacistReview();
+            expect($scope.pharmacistBanner.confirmed).toBe(true);
+        });
+
+        it('should set dispensePrivilege from constants when enabled', function () {
+            mockAppDescriptor.getConfigValue.and.returnValue(true);
+            createController();
+            expect($scope.dispensePrivilege).toEqual('bahmni:clinical:dispense');
+        });
+    });
+
+    it('should initialize the newlyAddedTabTreatments', function () {
+        var controller = $controller('TreatmentController', {
+            $scope: $scope,
+            treatmentConfig: {drugOrderHistoryConfig: {view: 'default'}},
+            $stateParams: {tabConfigName: 'allMedicationTabConfig'},
+            appService: appService,
+            clinicalAppConfigService: clinicalAppConfigService,
+            cdssService: cdssService,
+            $filter: filter
+        });
+        controller.initializeTreatments = jasmine.createSpy('initializeTreatments');
+        $scope.consultation = {
+            newlyAddedTabTreatments: {
+                allMedicationTabConfig: {
+                    treatments: [],
+                    orderSetTreatments: [],
+                    newOrderSet: "new order"
+                }
+            }
+        }
+        $scope.$apply();
+        expect($scope.newOrderSet).toEqual("new order");
+    });
+
+});

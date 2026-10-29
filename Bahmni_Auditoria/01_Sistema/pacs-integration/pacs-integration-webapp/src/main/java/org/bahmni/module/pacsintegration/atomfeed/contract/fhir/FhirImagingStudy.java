@@ -1,0 +1,96 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public License,
+ * v. 2.0. If a copy of the MPL was not distributed with this file, You can
+ * obtain one at https://www.bahmni.org/license/mplv2hd.
+ *
+ * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
+ * graphic logo is a trademark of OpenMRS Inc.
+ */
+
+package org.bahmni.module.pacsintegration.atomfeed.contract.fhir;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+import java.util.List;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class FhirImagingStudy {
+    
+    private String resourceType = "ImagingStudy";
+    private String id;
+    private List<FhirIdentifier> identifier;
+    private String status;
+    private FhirReference subject;
+    private List<FhirReference> basedOn;
+    private FhirReference location;
+    private String description;
+    
+    public FhirImagingStudy() {
+    }
+    
+    public String getResourceType() {
+        return resourceType;
+    }
+    
+    public void setResourceType(String resourceType) {
+        this.resourceType = resourceType;
+    }
+    
+    public String getId() {
+        return id;
+    }
+    
+    public void setId(String id) {
+        this.id = id;
+    }
+    
+    public List<FhirIdentifier> getIdentifier() {
+        return identifier;
+    }
+    
+    public void setIdentifier(List<FhirIdentifier> identifier) {
+        this.identifier = identifier;
+    }
+    
+    public String getStatus() {
+        return status;
+    }
+    
+    public void setStatus(String status) {
+        this.status = status;
+    }
+    
+    public FhirReference getSubject() {
+        return subject;
+    }
+    
+    public void setSubject(FhirReference subject) {
+        this.subject = subject;
+    }
+    
+    public List<FhirReference> getBasedOn() {
+        return basedOn;
+    }
+    
+    public void setBasedOn(List<FhirReference> basedOn) {
+        this.basedOn = basedOn;
+    }
+    
+    public FhirReference getLocation() {
+        return location;
+    }
+    
+    public void setLocation(FhirReference location) {
+        this.location = location;
+    }
+    
+    public String getDescription() {
+        return description;
+    }
+    
+    public void setDescription(String description) {
+        this.description = description;
+    }
+}

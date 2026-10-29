@@ -1,0 +1,172 @@
+{
+  "id": "3662872598",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3662872598",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzY2Mjg3MjU5OA==",
+  "status": "current",
+  "title": "Importing Stock Data into Odoo 16",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "createdDate": "2024-07-30T01:59:15.531Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3662872598/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "when": "2024-07-31T04:19:01.599Z",
+    "friendlyWhen": "Jul 31, 2024",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3662872598.17",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3662872598"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3662872598/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p>This guide assumes that there is a single warehouse configured with different stock locations. </p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p>This guide assumes that there is a single warehouse configured with different stock locations. </p>\n</div></div></ac:adf-fallback></ac:adf-extension><p>Stock data is crucial transactional information within an inventory management system. The import process consists of two key steps. The initial step involves creating the required Lot/Serial Numbers, followed by loading the on-hand quantity for those lots across various stock locations.</p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"743bf971-9cd2-4a9e-bf21-0605142e87ed\"><ac:parameter ac:name=\"panelIcon\">:track_previous:</ac:parameter><ac:parameter ac:name=\"panelIconId\">23ee</ac:parameter><ac:parameter ac:name=\"panelIconText\">⏮️</ac:parameter><ac:parameter ac:name=\"bgColor\">#E6FCFF</ac:parameter><ac:rich-text-body><p>Before proceeding with the steps below, ensure you have completed the masterdata migration process as mentioned <ac:link><ri:page ri:content-title=\"Odoo 16 Masterdata and Metadata Migration\" ri:version-at-save=\"7\" /><ac:link-body>here</ac:link-body></ac:link> and validated it.</p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"64f507e4-c7c5-4c36-9d28-15fe49fa46d1\"><ac:parameter ac:name=\"panelIcon\">:light_bulb_on:</ac:parameter><ac:parameter ac:name=\"panelIconId\">atlassian-light_bulb_on</ac:parameter><ac:parameter ac:name=\"panelIconText\">:light_bulb_on:</ac:parameter><ac:parameter ac:name=\"bgColor\">#E3FCEF</ac:parameter><ac:rich-text-body><p><strong>Tip: </strong>We suggest conducting a physical inventory stock check to collect the latest on-hand inventory information and then importing it into the new system. This process will guarantee that only the current available lots are imported, excluding any older or expired ones.</p><p>If you want to migrate from existing system, then some scripting needs to be done to get the required data from Odoo 10 or OpenERP 7.</p></ac:rich-text-body></ac:structured-macro><h3>Step 1: Lot/Serial Numbers creation:</h3><p>For products that require tracking by lots, a lot number (Batch Number) must be created along with an expiration date before the on-hand quantity can be recorded. Please consult <a href=\"https://www.odoo.com/documentation/16.0/applications/inventory_and_mrp/inventory/product_management/product_tracking/lots.html\">this page</a> for detailed instructions on enabling Tracking By Lots in Odoo 16.</p><ol start=\"1\"><li><p>Prepare a CSV file following the template below for the lots available at the Stock Location.<br /></p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"83\" ac:original-width=\"1306\" ac:custom-width=\"true\" ac:alt=\"image-20240730-023531.png\" ac:width=\"1305\"><ri:attachment ri:filename=\"image-20240730-023531.png\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p>Please navigate to <code>Menu -&gt; Inventory -&gt; Products -&gt; Lots/Serial Numbers</code>.</p></li><li><p>On the subsequent page, select <code>Favorites -&gt; Import Records</code>.</p></li><li><p>Proceed by clicking on the <code>Upload File</code> button to upload the CSV file that you have prepared.</p></li><li><p>Subsequently, a mapping page will appear where the fields from the CSV file will be matched to Odoo 16 fields. Kindly review this mapping to ensure its accuracy.<br /></p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"631\" ac:original-width=\"1792\" ac:custom-width=\"true\" ac:alt=\"image-20240730-024114.png\" ac:width=\"1305\"><ri:attachment ri:filename=\"image-20240730-024114.png\" ri:version-at-save=\"1\" /></ac:image></li><li><p>Please proceed by clicking on <code>Test</code> to verify if the data from the CSV can be successfully imported. In case you encounter any validation errors, kindly rectify the CSV accordingly and attempt the upload once more. Common errors to watch out for include:</p><ol start=\"1\"><li><p>Incorrect Product Name or a Product that is not listed in Odoo 16.</p></li><li><p>Presence of an Empty Expiration Date or an Incorrect date format other than (YYYY-MM-DD).</p></li></ol></li><li><p>Upon resolving all validation errors, proceed by clicking on the Import button. Following a successful import, you will be able to locate the Lots that have been created by navigating to the <code>Menu -&gt; Inventory -&gt; Products -&gt; Lots/Serial Numbers</code> page.</p></li></ol><h3>Step 2: Adding Inventory Adjustment to load on hand quantity</h3><p>Now that the lots have been created, the subsequent task involves setting the current on-hand quantities for those lots and products. This can be accomplished by utilizing the Inventory Adjustments feature within Odoo. For further information regarding Inventory Adjustments in Odoo, please consult <a href=\"https://www.odoo.com/documentation/16.0/applications/inventory_and_mrp/inventory/warehouses_storage/inventory_management/count_products.html\">this page</a>.</p><ol start=\"1\"><li><p>Prepare a CSV file with the following template for every Stock Location that you want to load data.<br /></p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"112\" ac:original-width=\"1215\" ac:custom-width=\"true\" ac:alt=\"image-20240730-030425.png\" ac:width=\"1215\"><ri:attachment ri:filename=\"image-20240730-030425.png\" ri:version-at-save=\"1\" /></ac:image><p><strong><span style=\"color: rgb(191,38,0);\">Note: The Quantity is assumed to be in the respective Product's Stock Keeping Unit. Scheduled can be the date on which import is happening.</span></strong></p></li><li><p>Please navigate to <code>Menu -&gt; Inventory -&gt; Products -&gt; Lots/Serial Numbers</code>.</p></li><li><p>On the subsequent page, select <code>Favorites -&gt; Import Records</code>.</p></li><li><p>Proceed by clicking on the <code>Upload File</code> button to upload the CSV file that you have prepared.</p></li><li><p>Subsequently, a mapping page will appear where the fields from the CSV file will be matched to Odoo 16 fields. Kindly review this mapping to ensure its accuracy.<br /></p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"426\" ac:original-width=\"1790\" ac:custom-width=\"true\" ac:alt=\"image-20240730-030619.png\" ac:width=\"1305\"><ri:attachment ri:filename=\"image-20240730-030619.png\" ri:version-at-save=\"1\" /></ac:image><p> </p></li><li><p>Please proceed by clicking on <code>Test</code> to verify if the data from the CSV can be successfully imported. In case you encounter any validation errors, kindly rectify the CSV accordingly and attempt the upload once more.</p><p><em><strong><span style=\"color: rgb(191,38,0);\">Known Issue: </span></strong></em>When the same lot is assigned to different products, you may encounter discrepancies during the Excel-based import process. The lots selected for inventory adjustment might not match the actual product lots due to Odoo's matching mechanism, which selects the first lot by name. To address this issue, consider replacing the Lot/Serial Number with the corresponding database ID. Below is a sample Python script that connects to the database and retrieves the ID of the lot.</p><p>In the mapping screen, use Lot/Serial Number / Database ID for the field mapping Lot/Serial Number</p><p>Please note that this script is a temporary solution tailored to specific implementation requirements. Ensure to adjust the configurations according to your specific needs or rewrite it in a language you are more comfortable with.</p></li></ol><ac:structured-macro ac:name=\"expand\" ac:schema-version=\"1\" ac:macro-id=\"bfb008b2-7a00-4982-a17f-dcce80c5af7b\"><ac:parameter ac:name=\"title\">Script to Map database ID for lots</ac:parameter><ac:rich-text-body><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8b777545-e00b-48ce-be1e-5edc7a67e227\"><ac:parameter ac:name=\"language\">py</ac:parameter><ac:plain-text-body><![CDATA[‌import time\nimport psycopg2\nimport csv\ninputfile=open('./adjustments.csv','r')\noutputfile=open('./adjustments_with_lot_id.csv','w')\nfields = [\"Product\",\"Lot/Serial Number\",\"Counted Quantity\",\"Location\",\"Scheduled Date\"]\nwriter = csv.DictWriter(outputfile, fieldnames=fields,quoting=csv.QUOTE_ALL)\nwriter.writeheader()\nresult=[]\nconn = psycopg2.connect(\n   database=\"odoo\", user='odoo', password='odoo', host='127.0.0.1', port= '5432')\ncur = conn.cursor() \ninputfile.readline()\ncsvFile = csv.reader(inputfile)\nfor line in csvFile:\n    lineitems=line\n    name=str(lineitems[0])\n    lot=str(lineitems[1])\n    query=\"select id,name from stock_lot where product_id=(select id from product_product where product_tmpl_id=(select id from product_template where active=true AND type='product' AND name->>'en_US'='\"+name+\"')) AND name='\"+lot+\"';\"\n    cur.execute(query)\n    rows = cur.fetchall()\n    if(len(rows)>0):\n        data={}\n        data[fields[0]]=str(lineitems[0])\n        data[fields[1]]=str(rows[0][0])\n        data[fields[2]]=lineitems[2]\n        data[fields[3]]=lineitems[3]\n        data[fields[4]]=lineitems[4]\n        writer.writerow(data)\n    else:\n        print(\"Product lot not found: \"+name+\" \"+lot)\n]]></ac:plain-text-body></ac:structured-macro></ac:rich-text-body></ac:structured-macro><ol start=\"7\"><li><p>Upon resolving all validation errors, proceed by clicking on the Import button. Following a successful import, you will be able to see the inventory adjustments being created.</p></li><li><p>Now click on the Apply All button to apply the adjustments to the quantity. This will prompt for a message, enter a message that states this is the initial stock load</p></li><li><p>On successful completion of Apply process, the quantities will be updated for each lot.</p></li><li><p>You can follow the same steps for every Stock Location that you have.</p></li></ol><p />",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3662872598"
+      }
+    },
+    "view": {
+      "value": "<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><style>[data-colorid=o73saagh9z]{color:#bf2600} html[data-color-mode=dark] [data-colorid=o73saagh9z]{color:#ff6640}[data-colorid=nus3i5isuz]{color:#bf2600} html[data-color-mode=dark] [data-colorid=nus3i5isuz]{color:#ff6640}</style><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p>This guide assumes that there is a single warehouse configured with different stock locations. </p>\n</div></div><p>Stock data is crucial transactional information within an inventory management system. The import process consists of two key steps. The initial step involves creating the required Lot/Serial Numbers, followed by loading the on-hand quantity for those lots across various stock locations.</p><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"743bf971-9cd2-4a9e-bf21-0605142e87ed\" data-macro-name=\"panel\" style=\"background-color: #E6FCFF;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #E6FCFF;\">\n<p>Before proceeding with the steps below, ensure you have completed the masterdata migration process as mentioned <a href=\"/wiki/spaces/BAH/pages/3657105576/Odoo+16+Masterdata+and+Metadata+Migration\" data-linked-resource-id=\"3657105576\" data-linked-resource-version=\"7\" data-linked-resource-type=\"page\">here</a> and validated it.</p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"64f507e4-c7c5-4c36-9d28-15fe49fa46d1\" data-macro-name=\"panel\" style=\"background-color: #E3FCEF;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #E3FCEF;\">\n<p><strong>Tip: </strong>We suggest conducting a physical inventory stock check to collect the latest on-hand inventory information and then importing it into the new system. This process will guarantee that only the current available lots are imported, excluding any older or expired ones.</p><p>If you want to migrate from existing system, then some scripting needs to be done to get the required data from Odoo 10 or OpenERP 7.</p>\n</div></div><h3 id=\"ImportingStockDataintoOdoo16-Step1:Lot/SerialNumberscreation:\">Step 1: Lot/Serial Numbers creation:</h3><p>For products that require tracking by lots, a lot number (Batch Number) must be created along with an expiration date before the on-hand quantity can be recorded. Please consult <a class=\"external-link\" href=\"https://www.odoo.com/documentation/16.0/applications/inventory_and_mrp/inventory/product_management/product_tracking/lots.html\" rel=\"nofollow\">this page</a> for detailed instructions on enabling Tracking By Lots in Odoo 16.</p><ol start=\"1\"><li><p>Prepare a CSV file following the template below for the lots available at the Stock Location.<br /></p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"image-20240730-023531.png\" width=\"1305\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3662872598/image-20240730-023531.png?version=1&amp;modificationDate=1722306936367&amp;cacheVersion=1&amp;api=v2&amp;width=1305&amp;height=82\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3662872598/image-20240730-023531.png?version=1&amp;modificationDate=1722306936367&amp;cacheVersion=1&amp;api=v2\" data-height=\"83\" data-width=\"1306\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3662839847\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240730-023531.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3662872598\" data-linked-resource-container-version=\"3\" data-media-id=\"1a6ab613-e1c9-43c3-abf8-c46c76bd5b13\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3662872598/image-20240730-023531.png?version=1&amp;modificationDate=1722306936367&amp;cacheVersion=1&amp;api=v2&amp;width=2610&amp;height=164 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3662872598/image-20240730-023531.png?version=1&amp;modificationDate=1722306936367&amp;cacheVersion=1&amp;api=v2&amp;width=1305&amp;height=82 1x\" /></span><p /></li><li><p>Please navigate to <code>Menu -&gt; Inventory -&gt; Products -&gt; Lots/Serial Numbers</code>.</p></li><li><p>On the subsequent page, select <code>Favorites -&gt; Import Records</code>.</p></li><li><p>Proceed by clicking on the <code>Upload File</code> button to upload the CSV file that you have prepared.</p></li><li><p>Subsequently, a mapping page will appear where the fields from the CSV file will be matched to Odoo 16 fields. Kindly review this mapping to ensure its accuracy.<br /></p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"image-20240730-024114.png\" width=\"1305\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3662872598/image-20240730-024114.png?version=1&amp;modificationDate=1722307279394&amp;cacheVersion=1&amp;api=v2&amp;width=1305&amp;height=459\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3662872598/image-20240730-024114.png?version=1&amp;modificationDate=1722307279394&amp;cacheVersion=1&amp;api=v2\" data-height=\"631\" data-width=\"1792\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3662610466\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240730-024114.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3662872598\" data-linked-resource-container-version=\"3\" data-media-id=\"4662c57f-7301-4c41-9b29-fd836601e0ef\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3662872598/image-20240730-024114.png?version=1&amp;modificationDate=1722307279394&amp;cacheVersion=1&amp;api=v2&amp;width=2610&amp;height=918 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3662872598/image-20240730-024114.png?version=1&amp;modificationDate=1722307279394&amp;cacheVersion=1&amp;api=v2&amp;width=1305&amp;height=459 1x\" /></span></li><li><p>Please proceed by clicking on <code>Test</code> to verify if the data from the CSV can be successfully imported. In case you encounter any validation errors, kindly rectify the CSV accordingly and attempt the upload once more. Common errors to watch out for include:</p><ol start=\"1\"><li><p>Incorrect Product Name or a Product that is not listed in Odoo 16.</p></li><li><p>Presence of an Empty Expiration Date or an Incorrect date format other than (YYYY-MM-DD).</p></li></ol></li><li><p>Upon resolving all validation errors, proceed by clicking on the Import button. Following a successful import, you will be able to locate the Lots that have been created by navigating to the <code>Menu -&gt; Inventory -&gt; Products -&gt; Lots/Serial Numbers</code> page.</p></li></ol><h3 id=\"ImportingStockDataintoOdoo16-Step2:AddingInventoryAdjustmenttoloadonhandquantity\">Step 2: Adding Inventory Adjustment to load on hand quantity</h3><p>Now that the lots have been created, the subsequent task involves setting the current on-hand quantities for those lots and products. This can be accomplished by utilizing the Inventory Adjustments feature within Odoo. For further information regarding Inventory Adjustments in Odoo, please consult <a class=\"external-link\" href=\"https://www.odoo.com/documentation/16.0/applications/inventory_and_mrp/inventory/warehouses_storage/inventory_management/count_products.html\" rel=\"nofollow\">this page</a>.</p><ol start=\"1\"><li><p>Prepare a CSV file with the following template for every Stock Location that you want to load data.<br /></p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"image-20240730-030425.png\" width=\"1215\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3662872598/image-20240730-030425.png?version=1&amp;modificationDate=1722308669321&amp;cacheVersion=1&amp;api=v2&amp;width=1215&amp;height=111\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3662872598/image-20240730-030425.png?version=1&amp;modificationDate=1722308669321&amp;cacheVersion=1&amp;api=v2\" data-height=\"112\" data-width=\"1215\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3662610476\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240730-030425.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3662872598\" data-linked-resource-container-version=\"3\" data-media-id=\"ee998669-edf6-4623-a113-a4e79e72073a\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3662872598/image-20240730-030425.png?version=1&amp;modificationDate=1722308669321&amp;cacheVersion=1&amp;api=v2&amp;width=2430&amp;height=222 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3662872598/image-20240730-030425.png?version=1&amp;modificationDate=1722308669321&amp;cacheVersion=1&amp;api=v2&amp;width=1215&amp;height=111 1x\" /></span><p><strong><span data-colorid=\"o73saagh9z\">Note: The Quantity is assumed to be in the respective Product's Stock Keeping Unit. Scheduled can be the date on which import is happening.</span></strong></p></li><li><p>Please navigate to <code>Menu -&gt; Inventory -&gt; Products -&gt; Lots/Serial Numbers</code>.</p></li><li><p>On the subsequent page, select <code>Favorites -&gt; Import Records</code>.</p></li><li><p>Proceed by clicking on the <code>Upload File</code> button to upload the CSV file that you have prepared.</p></li><li><p>Subsequently, a mapping page will appear where the fields from the CSV file will be matched to Odoo 16 fields. Kindly review this mapping to ensure its accuracy.<br /></p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"image-20240730-030619.png\" width=\"1305\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3662872598/image-20240730-030619.png?version=1&amp;modificationDate=1722308783652&amp;cacheVersion=1&amp;api=v2&amp;width=1305&amp;height=310\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3662872598/image-20240730-030619.png?version=1&amp;modificationDate=1722308783652&amp;cacheVersion=1&amp;api=v2\" data-height=\"426\" data-width=\"1790\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3662970938\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240730-030619.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3662872598\" data-linked-resource-container-version=\"3\" data-media-id=\"c9f7e7d7-9a84-4d8b-8060-1bd386f06bd5\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3662872598/image-20240730-030619.png?version=1&amp;modificationDate=1722308783652&amp;cacheVersion=1&amp;api=v2&amp;width=2610&amp;height=620 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3662872598/image-20240730-030619.png?version=1&amp;modificationDate=1722308783652&amp;cacheVersion=1&amp;api=v2&amp;width=1305&amp;height=310 1x\" /></span><p> </p></li><li><p>Please proceed by clicking on <code>Test</code> to verify if the data from the CSV can be successfully imported. In case you encounter any validation errors, kindly rectify the CSV accordingly and attempt the upload once more.</p><p><em><strong><span data-colorid=\"nus3i5isuz\">Known Issue: </span></strong></em>When the same lot is assigned to different products, you may encounter discrepancies during the Excel-based import process. The lots selected for inventory adjustment might not match the actual product lots due to Odoo's matching mechanism, which selects the first lot by name. To address this issue, consider replacing the Lot/Serial Number with the corresponding database ID. Below is a sample Python script that connects to the database and retrieves the ID of the lot.</p><p>In the mapping screen, use Lot/Serial Number / Database ID for the field mapping Lot/Serial Number</p><p>Please note that this script is a temporary solution tailored to specific implementation requirements. Ensure to adjust the configurations according to your specific needs or rewrite it in a language you are more comfortable with.</p></li></ol><div class=\"expand-container conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"bfb008b2-7a00-4982-a17f-dcce80c5af7b\" data-macro-name=\"expand\" id=\"expander-2010299227\"><div id=\"expander-control-2010299227\" class=\"expand-control\"><span class=\"expand-control-icon icon\">&nbsp;</span><span class=\"expand-control-text\">Script to Map database ID for lots</span></div><div id=\"expander-content-2010299227\" class=\"expand-content expand-hidden\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8b777545-e00b-48ce-be1e-5edc7a67e227\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: py; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&zwnj;import time\nimport psycopg2\nimport csv\ninputfile=open('./adjustments.csv','r')\noutputfile=open('./adjustments_with_lot_id.csv','w')\nfields = [&quot;Product&quot;,&quot;Lot/Serial Number&quot;,&quot;Counted Quantity&quot;,&quot;Location&quot;,&quot;Scheduled Date&quot;]\nwriter = csv.DictWriter(outputfile, fieldnames=fields,quoting=csv.QUOTE_ALL)\nwriter.writeheader()\nresult=[]\nconn = psycopg2.connect(\n   database=&quot;odoo&quot;, user='odoo', password='odoo', host='127.0.0.1', port= '5432')\ncur = conn.cursor() \ninputfile.readline()\ncsvFile = csv.reader(inputfile)\nfor line in csvFile:\n    lineitems=line\n    name=str(lineitems[0])\n    lot=str(lineitems[1])\n    query=&quot;select id,name from stock_lot where product_id=(select id from product_product where product_tmpl_id=(select id from product_template where active=true AND type='product' AND name-&gt;&gt;'en_US'='&quot;+name+&quot;')) AND name='&quot;+lot+&quot;';&quot;\n    cur.execute(query)\n    rows = cur.fetchall()\n    if(len(rows)&gt;0):\n        data={}\n        data[fields[0]]=str(lineitems[0])\n        data[fields[1]]=str(rows[0][0])\n        data[fields[2]]=lineitems[2]\n        data[fields[3]]=lineitems[3]\n        data[fields[4]]=lineitems[4]\n        writer.writerow(data)\n    else:\n        print(&quot;Product lot not found: &quot;+name+&quot; &quot;+lot)\n</pre>\n</div></div></div></div><ol start=\"7\"><li><p>Upon resolving all validation errors, proceed by clicking on the Import button. Following a successful import, you will be able to see the inventory adjustments being created.</p></li><li><p>Now click on the Apply All button to apply the adjustments to the quantity. This will prompt for a message, enter a message that states this is the initial stock load</p></li><li><p>On successful completion of Apply process, the quantities will be updated for each lot.</p></li><li><p>You can follow the same steps for every Stock Location that you have.</p></li></ol><p />",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3662872598"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3662872598/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3662872598/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 855
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3662872598/child",
+    "restrictions": "/rest/api/content/3662872598/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3662872598/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3662872598",
+    "webui": "/spaces/BAH/pages/3662872598/Importing+Stock+Data+into+Odoo+16",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3662872598",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3662872598",
+    "tinyui": "/x/FgBT2g",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

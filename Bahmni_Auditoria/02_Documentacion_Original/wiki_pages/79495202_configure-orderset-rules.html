@@ -1,0 +1,39 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Configure Orderset rules</title></head><body><h1>Configure Orderset rules</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="ConfigureOrdersetrules-Purpose">Purpose</h2><p>Orderset rules to be applied to calculate the dosage that can vary from implementation to implementation. To facilitate that, Rules engine is designed with extensibility in mind. By default Bahmni provides two rules &quot;mg/kg&quot; and &quot;mg/m2&quot; out of the box and these rules can also be configured with the help of csv file. Please check <a href="/wiki/spaces/BAH/pages/79495184/Using+rules" data-linked-resource-id="79495184" data-linked-resource-version="18" data-linked-resource-type="page">Using rules</a> link for further information.</p><h2 id="ConfigureOrdersetrules-Extendingrulesenginewithnewrules:"><strong>Extending rules engine with new rules:</strong></h2><p>Rules engine can be extended by writing appropriate groovy scripts and deploying at rules engine folder. Rules engine does nothing but transferring calls to its appropriate dosage calculator rule. Dosage calculator rule should adhere to the following interface in order to pickup automatically by the rules engine and apply the calculation.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="f711f171-bd37-4c38-ab0e-6e33211ebd32" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>DosageRule interface</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence">public interface DosageRule {
+     Dose calculateDose(DosageRequest request) throws Exception ;
+    }</pre>
+</div></div><h2 id="ConfigureOrdersetrules-Asamplegroovyrule:"><strong>A sample groovy rule:</strong></h2><p>The following groovy rule is only for illustration purpose. Write a groovy class implementing DosageRule interface and attribute the class with &quot;RuleName&quot; attribute to assign a name for this particular rule. Rule assigned here will automatically populated at the drug order set creation Rules dropdown. If No rule name is assigned using &quot;RuleName&quot; attribute, then class name will be chosen as the rule name by default.</p><div class="expand-container conf-macro output-block" data-hasbody="true" data-macro-id="75662ed0-5a73-4ba2-8f84-48fdabd786c6" data-macro-name="expand" id="expander-55847274"><div id="expander-control-55847274" class="expand-control"><span class="expand-control-icon icon"> </span><span class="expand-control-text">Expand to see NewRule.groovy</span></div><div id="expander-content-55847274" class="expand-content expand-hidden"><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="d18a4d2b-8b75-4bca-8dae-f037da39af74" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">package org.openmrs.module.rulesengine.rule 
+import org.openmrs.module.rulesengine.domain.DosageRequest 
+import org.openmrs.module.rulesengine.domain.Dose 
+import org.openmrs.module.rulesengine.domain.RuleName 
+@RuleName(name = &quot;testrule&quot;) 
+class NewDosageRule implements DosageRule 
+{ 
+@Override 
+Dose calculateDose(DosageRequest request) throws Exception
+ { // write the new logic for calculating dosage and return Dose object. 
+		Patient patient = PatientService.getPatientByUuid(request.getPatientUuid());
+
+       	Double weight = ObservationService.getLatestObsValueNumeric(patient, ObservationService.ConceptRepo.WEIGHT);
+
+       Double roundUpValue = BahmniMath.getTwoDigitRoundUpValue(weight * request.getBaseDose());
+       return new Dose(request.getDrugName(),roundUpValue, Dose.DoseUnit.mg);
+	} 
+}</pre>
+</div></div></div></div><p>After writing the rule, the same has to be deployed in the appropriate place for the rule engine to pickup automatically.</p><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="029d95fc-6331-45d2-a546-7fc9c1a39283" data-macro-name="info"><p class="title">Rules location</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>All the new rules written in groovy language should be deployed at:</p><pre>/opt/openmrs/bahmni_config/openmrs/rulesengine/rulesengineextension</pre></div></div><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-id="8eea8868-e618-486f-b929-9d36ee6a3282" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>After deploying the rules at the above location, restart openmrs for the rules engine to pickup new rules.Existing default rules that are already part of rules engine should already be populated. System must be restarted only for new groovy file based rules.</p><p><br /></p></div></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="e6921b04-2089-48cb-990e-45bb5d87af22" data-macro-name="tip"><p class="title">On this Page</p><div class="confluence-information-macro-body"><p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-cssliststyle="none" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="c4595788-6917-461b-96d9-94b7ac28d98e" data-macro-name="toc"> </div><p> </p></div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="f83cf687-22fe-421c-8c64-105227793a5a" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #668D3C;color: white;"><b>Feature Details</b></div><div class="panelContent">
+<p><a href="/wiki/spaces/BAH/pages/79495184/Using+rules" data-linked-resource-id="79495184" data-linked-resource-version="18" data-linked-resource-type="page">Using rules</a></p>
+</div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="4084f2de-c0c2-4eeb-b02a-1184ccf78a4a" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #1FA5A0;color: white;"><b>Related Links</b></div><div class="panelContent">
+<p><a href="/wiki/spaces/BAH/pages/49545249/Authoring+Order+Sets" data-linked-resource-id="49545249" data-linked-resource-version="17" data-linked-resource-type="page">Authoring Order Sets</a></p>
+</div></div></div>
+</div>
+</div>
+</div></body></html>

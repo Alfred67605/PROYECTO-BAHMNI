@@ -1,0 +1,1352 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public License,
+ * v. 2.0. If a copy of the MPL was not distributed with this file, You can
+ * obtain one at https://www.bahmni.org/license/mplv2hd.
+ *
+ * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
+ * graphic logo is a trademark of OpenMRS Inc.
+ */
+
+'use strict';
+
+var LOADING_DOSE_STAGE_NAME = 'Loading Dose';
+var LOADING_DOSE_FREQUENCY_DISPLAY = 'Once';
+
+angular.module('bahmni.clinical')
+    .controller('AddTreatmentController', ['$scope', '$rootScope', 'contextChangeHandler', 'treatmentConfig', 'drugService',
+        '$timeout', 'clinicalAppConfigService', 'ngDialog', '$window', 'messagingService', 'appService', 'activeDrugOrders',
+        'orderSetService', '$q', 'locationService', 'spinner', '$translate', '$state', 'cdssService', 'observationsService', 'diagnosisService', 'visitService',
+        function ($scope, $rootScope, contextChangeHandler, treatmentConfig, drugService, $timeout,
+            clinicalAppConfigService, ngDialog, $window, messagingService, appService, activeDrugOrders,
+            orderSetService, $q, locationService, spinner, $translate, $state, cdssService, observationsService, diagnosisService, visitService) {
+            var DateUtil = Bahmni.Common.Util.DateUtil;
+            var DrugOrderViewModel = Bahmni.Clinical.DrugOrderViewModel;
+            var scrollTop = _.partial($window.scrollTo, 0, 0);
+
+            $scope.showOrderSetDetails = true;
+            $scope.addTreatment = true;
+            $scope.canOrderSetBeAdded = true;
+            $scope.isSearchDisabled = false;
+            $scope.cdssEnabled = false;
+            $scope.clearButtonClicked = false;
+            $scope.conceptSource = localStorage.getItem("conceptSource") || "";
+
+            $scope.allMedicinesInPrescriptionAvailableForIPD = appService.getAppDescriptor().getConfigValue("allMedicinesInPrescriptionAvailableForIPD") !== null ? appService.getAppDescriptor().getConfigValue("allMedicinesInPrescriptionAvailableForIPD") : true;
+            var currentVisitType;
+            if ($scope.allMedicinesInPrescriptionAvailableForIPD) {
+                visitService.search(
+                    {patient: $state.params.patientUuid, includeInactive: false, v: "custom:(uuid,visitType,startDatetime,stopDatetime,location,encounters:(uuid))"}
+                ).then(function (response) {
+                    currentVisitType = response.data.results[0].visitType.display;
+                });
+            }
+
+            $scope.getFilteredOrderSets = function (searchTerm) {
+                if (searchTerm && searchTerm.length >= 3) {
+                    orderSetService.getOrderSetsByQuery(searchTerm).then(function (response) {
+                        $scope.orderSets = response.data.results;
+                        _.each($scope.orderSets, function (orderSet) {
+                            _.each(orderSet.orderSetMembers, setUpOrderSetTransactionalData);
+                        });
+                    });
+                } else {
+                    $scope.orderSets = {};
+                }
+            };
+
+            $scope.treatmentActionLinks = clinicalAppConfigService.getTreatmentActionLink();
+
+            var preFetchDrugsForGivenConceptSet = function () {
+                drugService.getSetMembersOfConcept(treatmentConfig.getDrugConceptSet()).then(function (result) {
+                    $scope.drugs = result.map(Bahmni.Clinical.DrugSearchResult.create);
+                });
+            };
+            if (treatmentConfig.isDropDownForGivenConceptSet()) {
+                preFetchDrugsForGivenConceptSet();
+            }
+            if (treatmentConfig.isAutoCompleteForAllConcepts()) {
+                $scope.getDrugs = function (request) {
+                    return drugService.search(request.term);
+                };
+            }
+            if (treatmentConfig.isAutoCompleteForGivenConceptSet()) {
+                $scope.getDrugs = function (request) {
+                    return drugService.getSetMembersOfConcept(treatmentConfig.getDrugConceptSet(), request.term);
+                };
+            }
+
+            $scope.doseFractions = treatmentConfig.getDoseFractions();
+            $scope.hideOrderSet = treatmentConfig.inputOptionsConfig.hideOrderSet;
+
+            $scope.showDoseFractions = treatmentConfig.inputOptionsConfig.showDoseFractions;
+            $scope.isDoseFractionsAvailable = function () {
+                return $scope.doseFractions && !_.isEmpty($scope.doseFractions) ? true : false;
+            };
+
+            $scope.isRuleMode = function (treatment) {
+                if (treatment.dosingRule != undefined || treatment.dosingRule != null) {
+                    return true;
+                }
+                return false;
+            };
+
+            $scope.isSelected = function (drug) {
+                var selectedDrug = $scope.treatment.drug;
+                return selectedDrug && drug.drug.name === selectedDrug.name;
+            };
+
+            $scope.selectFromDefaultDrugList = function () {
+                $scope.onSelect($scope.treatment.selectedItem);
+            };
+
+            $scope.auditOptions = function () {
+                return appService
+                    .getAppDescriptor()
+                    .getConfigValue('cdssDismissalOptionsToDisplay');
+            };
+
+            $scope.submitAudit = function (index) {
+                var patientUuid = $scope.patient.uuid;
+                var message = $scope.newAlerts[index].summary.replace(/"/g, '');
+                var eventType = 'Dismissed: ' + $scope.treatment.audit;
+                $scope.newAlerts.splice(index, 1);
+                return drugService
+                    .cdssAudit(patientUuid, eventType, message, 'CDSS')
+                    .then(function () {
+                        $scope.treatment.audit = '';
+                    });
+            };
+
+            $scope.$on('$stateChangeStart', function () {
+                if ($scope.addForm.$dirty && !$scope.clearButtonClicked) {
+                    $state.dirtyConsultationForm = true;
+                }
+            });
+
+            $scope.$on("event:changes-saved", function () {
+                $scope.addForm.$dirty = false;
+            });
+
+            var postSave = $rootScope.$on('event:save-successful', function () {
+                getAlerts();
+            });
+
+            $scope.$on('$destroy', function () {
+                postSave();
+            });
+
+            var markVariable = function (variable) {
+                $scope[variable] = true;
+                $timeout(function () {
+                    $scope[variable] = false;
+                });
+            };
+
+            var markEitherVariableDrugOrUniformDrug = function (drug) {
+                if (drug.isVariableDosingType()) {
+                    markVariable('editDrugEntryVariableFrequency');
+                } else {
+                    markVariable('editDrugEntryUniformFrequency');
+                }
+            };
+
+            markVariable("startNewDrugEntry");
+
+            var setDrugOrderBeingEdited, clearHighlights;
+            (function () {
+                var drugOrderBeingEdited = null;
+
+                setDrugOrderBeingEdited = function (drugOder) {
+                    drugOrderBeingEdited = drugOder;
+                };
+
+                clearHighlights = function () {
+                    $scope.treatments.forEach(setIsNotBeingEdited);
+                    $scope.orderSetTreatments.forEach(setIsNotBeingEdited);
+                    if (drugOrderBeingEdited) {
+                        drugOrderBeingEdited.isBeingEdited = false;
+                        drugOrderBeingEdited.isDiscontinuedAllowed = true;
+                    }
+                };
+            })();
+
+            var encounterDate = DateUtil.parse($scope.consultation.encounterDateTime);
+            var newTreatment = function () {
+                var newTreatment = new Bahmni.Clinical.DrugOrderViewModel(treatmentConfig, null, encounterDate);
+                newTreatment.isEditAllowed = false;
+                return newTreatment;
+            };
+
+            $scope.treatment = newTreatment();
+            treatmentConfig.durationUnits.forEach(function (durationUnit) {
+                if (_.isEqual(durationUnit, $scope.treatment.durationUnit)) {
+                    $scope.treatment.durationUnit = durationUnit;
+                }
+            });
+
+            var watchFunctionForQuantity = function () {
+                var treatment = $scope.treatment;
+                return {
+                    uniformDosingType: treatment.uniformDosingType,
+                    variableDosingType: treatment.variableDosingType,
+                    doseUnits: treatment.doseUnits,
+                    duration: treatment.duration,
+                    durationUnit: treatment.durationUnit
+                };
+            };
+
+            (function () {
+                drugService.getCdssEnabled().then(function (response) {
+                    $scope.cdssEnabled = response.data;
+                });
+            })();
+
+            var isSameDrugBeingDiscontinuedAndOrdered = function () {
+                var existingTreatment = false;
+                angular.forEach($scope.consultation.discontinuedDrugs, function (drugOrder) {
+                    existingTreatment = _.some($scope.treatments, function (treatment) {
+                        return treatment.getDisplayName() === drugOrder.getDisplayName() && treatment.careSetting === drugOrder.careSetting;
+                    }) && drugOrder.isMarkedForDiscontinue;
+                });
+                return existingTreatment;
+            };
+
+            var clearOtherDrugOrderActions = function (drugOrders) {
+                drugOrders.forEach(function (drugOrder) {
+                    drugOrder.isDiscontinuedAllowed = true;
+                    drugOrder.isBeingEdited = false;
+                });
+            };
+
+            var setNonCodedDrugConcept = function (treatment) {
+                if (treatment.drugNonCoded) {
+                    treatment.concept = treatmentConfig.nonCodedDrugconcept;
+                }
+            };
+
+            $scope.refillDrug = function (drugOrder, alreadyActiveSimilarOrder) {
+                $scope.bulkSelectCheckbox = false;
+                var existingOrderStopDate = alreadyActiveSimilarOrder ? alreadyActiveSimilarOrder.effectiveStopDate : null;
+                var refillDrugOrder = drugOrder.refill(existingOrderStopDate);
+                setNonCodedDrugConcept(refillDrugOrder);
+                setDrugOrderBeingEdited(drugOrder);
+                $scope.treatments.push(refillDrugOrder);
+                markVariable("startNewDrugEntry");
+                ngDialog.close();
+            };
+
+            $scope.refillOrderSet = function (drugOrder) {
+                ngDialog.close();
+                var drugOrdersOfOrderGroup = _.filter($scope.consultation.activeAndScheduledDrugOrders, function (treatment) {
+                    return treatment.orderGroupUuid === drugOrder.orderGroupUuid;
+                });
+
+                var refilledOrderGroupOrders = [];
+                drugOrdersOfOrderGroup.forEach(function (drugOrder) {
+                    setNonCodedDrugConcept(drugOrder);
+                    if (drugOrder.effectiveStopDate) {
+                        refilledOrderGroupOrders.push(drugOrder.refill());
+                    }
+                });
+
+                setSortWeightForOrderSetDrugs(refilledOrderGroupOrders);
+
+                // Fetch the orderSet for the drugOrder
+                var matchedOrderSet = _.find(orderSets, { uuid: drugOrder.orderSetUuid });
+
+                // Find the drugs in ordered DrugOrderSet which matches with the matchedOrderSet SetMembers
+                var orderSetMembersOfMatchedOrderSet = matchedOrderSet.orderSetMembers;
+                var matchedMembers = [];
+
+                _.each(refilledOrderGroupOrders, function (drugOrder) {
+                    _.each(orderSetMembersOfMatchedOrderSet, function (orderSetMember) {
+                        if (orderSetMember.orderTemplate.drug) {
+                            if (orderSetMember.orderTemplate.drug.uuid === _.get(drugOrder, 'drug.uuid')) { matchedMembers.push(orderSetMember); }
+                        } else {
+                            if (orderSetMember.concept.uuid === drugOrder.concept.uuid) { matchedMembers.push(orderSetMember); }
+                        }
+                    });
+                });
+
+                var listOfPromises = _.map(matchedMembers, function (eachMember, index) {
+                    if (eachMember.orderTemplate) {
+                        var doseUnits = eachMember.orderTemplate.dosingInstructions.doseUnits;
+                        var baseDose = eachMember.orderTemplate.dosingInstructions.dose;
+                        var drugName = eachMember.orderTemplate.concept.name;
+                        return orderSetService.getCalculatedDose($scope.patient.uuid, drugName, baseDose, doseUnits, $scope.newOrderSet.name)
+                            .then(function (calculatedDosage) {
+                                refilledOrderGroupOrders[index].uniformDosingType.dose = calculatedDosage.dose;
+                                refilledOrderGroupOrders[index].uniformDosingType.doseUnits = calculatedDosage.doseUnit;
+                                refilledOrderGroupOrders[index].calculateQuantityAndUnit();
+                            });
+                    }
+                });
+
+                spinner.forPromise($q.all(listOfPromises).then(function () {
+                    Array.prototype.push.apply($scope.treatments, refilledOrderGroupOrders);
+                }));
+            };
+
+            $scope.$on("event:refillDrugOrder", function (event, drugOrder, alreadyActiveSimilarOrder) {
+                // Todo -- Removed orderset refill logic , since its needs more analysis
+
+                /* if (drugOrder.orderGroupUuid) {
+                    ngDialog.open({
+                        template: 'consultation/views/treatmentSections/refillDrugOrderSetModal.html',
+                        scope: $scope,
+                        data: {
+                            drugOrder: drugOrder,
+                            alreadyActiveSimilarOrder: alreadyActiveSimilarOrder
+                        }
+                    });
+                    $scope.popupActive = true;
+                    return;
+                } */
+
+                $scope.refillDrug(drugOrder, alreadyActiveSimilarOrder);
+                getAlerts();
+            });
+
+            var refillDrugOrders = function (drugOrders) {
+                drugOrders.forEach(function (drugOrder) {
+                    setNonCodedDrugConcept(drugOrder);
+                    if (drugOrder.effectiveStopDate && !drugOrder.isVariableDoseOrder) {
+                        var refill = drugOrder.refill();
+                        $scope.treatments.push(refill);
+                    }
+                });
+            };
+
+            $scope.$on("event:sectionUpdated", function (event, drugOrder) {
+                _.remove($scope.consultation.activeAndScheduledDrugOrders, function (activeOrder) {
+                    return activeOrder.uuid === drugOrder.uuid;
+                });
+            });
+
+            $scope.$on("event:refillDrugOrders", function (event, drugOrders) {
+                $scope.bulkSelectCheckbox = false;
+                refillDrugOrders(drugOrders);
+                getAlerts();
+            });
+
+            $scope.$on("event:updateDrugOrderType", function (event, drugOrder) {
+                $scope.treatments.push(drugOrder);
+            });
+
+            $scope.$on("event:discontinueDrugOrder", function (event, drugOrder) {
+                drugOrder.isMarkedForDiscontinue = true;
+                drugOrder.isEditAllowed = false;
+                drugOrder.dateStopped = DateUtil.now();
+                $scope.consultation.discontinuedDrugs.push(drugOrder);
+                $scope.minDateStopped = DateUtil.getDateWithoutTime(drugOrder.effectiveStartDate < DateUtil.now() ? drugOrder.effectiveStartDate : DateUtil.now());
+            });
+
+            $scope.$on("event:undoDiscontinueDrugOrder", function (event, drugOrder) {
+                $scope.consultation.discontinuedDrugs = _.reject($scope.consultation.discontinuedDrugs, function (removableOrder) {
+                    return removableOrder.uuid === drugOrder.uuid;
+                });
+                $scope.consultation.removableDrugs = _.reject($scope.consultation.removableDrugs, function (removableOrder) {
+                    return removableOrder.previousOrderUuid === drugOrder.uuid;
+                });
+                drugOrder.orderReasonConcept = null;
+                drugOrder.dateStopped = null;
+                drugOrder.orderReasonText = null;
+                drugOrder.isMarkedForDiscontinue = false;
+                drugOrder.isEditAllowed = true;
+            });
+
+            var selectDrugFromDropdown = function (drug_) {
+                if (treatmentConfig.isDropDownForGivenConceptSet()) {
+                    $scope.treatment.selectedItem = _.find($scope.drugs, function (drug) {
+                        return drug.drug.uuid === drug_.uuid;
+                    });
+                }
+            };
+
+            $scope.$on("event:reviseDrugOrder", function (event, drugOrder, drugOrders) {
+                clearOtherDrugOrderActions(drugOrders);
+                drugOrder.isBeingEdited = true;
+                drugOrder.isDiscontinuedAllowed = false;
+                $scope.treatments.forEach(setIsNotBeingEdited);
+                setDrugOrderBeingEdited(drugOrder);
+                $scope.treatment = drugOrder.revise();
+                selectDrugFromDropdown(drugOrder.drug);
+                markEitherVariableDrugOrUniformDrug($scope.treatment);
+                $scope.treatment.currentIndex = $scope.treatments.length + 1;
+                if ($scope.treatment.frequencyType === Bahmni.Clinical.Constants.dosingTypes.variable) {
+                    $scope.treatment.isUniformFrequency = false;
+                }
+                $scope.treatment.quantity = $scope.treatment.quantity ? $scope.treatment.quantity : null;
+            });
+
+            $scope.$watch(watchFunctionForQuantity, function () {
+                $scope.treatment.calculateQuantityAndUnit();
+            }, true);
+
+            $scope.calculateDose = function (treatment) {
+                if (treatment.dosingRule != null || treatment.dosingRule != undefined) {
+                    var visitUuid = treatmentConfig.orderSet.calculateDoseOnlyOnCurrentVisitValues ? $scope.activeVisit.uuid : undefined;
+                    var drugName = treatment.drug ? treatment.drug.name : treatment.drugNonCoded;
+                    var calculatedDose = orderSetService.getCalculatedDose($scope.patient.uuid, drugName, treatment.uniformDosingType.dose, treatment.uniformDosingType.doseUnits, '', treatment.dosingRule, visitUuid);
+                    treatment.dosingRule = undefined;
+                    calculatedDose.then(function (calculatedDosage) {
+                        treatment.uniformDosingType.dose = calculatedDosage.dose;
+                        treatment.calculateQuantityAndUnit();
+                        return treatment;
+                    });
+                    return treatment;
+                }
+            };
+
+            $scope.$watch('calculateDose', $scope.treatment, true);
+
+            $scope.getFinalDosingUnits = function (treatment) {
+                const ruleUnitList = $scope.ruleUnitsMap && $scope.ruleUnitsMap[treatment.dosingRule] ? $scope.ruleUnitsMap[treatment.dosingRule] : [];
+                if ($scope.isRuleMode(treatment) && ruleUnitList.length > 0) {
+                    return treatmentConfig.getDoseUnits().filter(function (unitMap) {
+                        if (ruleUnitList.includes(unitMap.name)) {
+                            return unitMap;
+                        }
+                    });
+                } else {
+                    return treatmentConfig.getDoseUnits();
+                }
+            };
+
+            $scope.add = function () {
+                var treatments = $scope.treatments;
+                if (($scope.addTreatmentWithPatientWeight.hasOwnProperty('duration') && ($scope.obs.length == 0 ||
+                        (($scope.currentEpoch - $scope.obs[0].observationDateTime) / 1000 > $scope.addTreatmentWithPatientWeight.duration))) ||
+                    ($scope.addTreatmentWithDiagnosis.hasOwnProperty('order') && $scope.confirmedDiagnoses.length == 0)) {
+                    return;
+                }
+                if ($scope.allMedicinesInPrescriptionAvailableForIPD && currentVisitType === 'IPD') {
+                    $scope.treatment.careSetting = Bahmni.Clinical.Constants.careSetting.inPatient;
+                }
+                if ($scope.treatment.isNewOrderSet) {
+                    treatments = $scope.orderSetTreatments;
+                }
+                $scope.treatment.dosingInstructionType = Bahmni.Clinical.Constants.flexibleDosingInstructionsClass;
+                if ($scope.treatment.isNonCodedDrug) {
+                    $scope.treatment.drugNonCoded = $scope.treatment.drugNameDisplay;
+                }
+                $scope.treatment.setUniformDoseFraction();
+                var newDrugOrder = $scope.treatment;
+                setNonCodedDrugConcept($scope.treatment);
+
+                newDrugOrder.calculateEffectiveStopDate();
+
+                if (getConflictingDrugOrder(newDrugOrder)) {
+                    if ($scope.alreadyActiveSimilarOrder.isNewOrderSet) {
+                        $scope.conflictingIndex = _.findIndex($scope.orderSetTreatments, $scope.alreadyActiveSimilarOrder);
+                    } else {
+                        $scope.conflictingIndex = _.findIndex($scope.treatments, $scope.alreadyActiveSimilarOrder);
+                    }
+                    ngDialog.open({
+                        template: 'consultation/views/treatmentSections/conflictingDrugOrderModal.html',
+                        scope: $scope
+                    });
+                    $scope.popupActive = true;
+                    return;
+                }
+                if (!$scope.treatment.quantity) {
+                    $scope.treatment.quantity = 0;
+                }
+
+                if ($scope.treatment.isBeingEdited) {
+                    treatments.splice($scope.treatment.currentIndex, 1, $scope.treatment);
+                    $scope.treatment.isBeingEdited = false;
+                    getAlerts();
+                } else {
+                    treatments.push($scope.treatment);
+                    getAlerts();
+                }
+                $scope.clearForm();
+            };
+
+            var getAlerts = function () {
+                return cdssService.getAlerts($scope.cdssEnabled, $scope.consultation, $scope.patient);
+            };
+
+            // Matches DrugOrderViewModel.getDisplayName() format so VDP entries compare equal to regular drug orders.
+            var vdpDisplayNameFor = function (drugName, drugForm) {
+                return drugForm ? drugName + ' (' + drugForm + ')' : drugName;
+            };
+
+            var buildVdpOrdersForConflictCheck = function (variableDoseTreatments, excludeIndex) {
+                return (variableDoseTreatments || [])
+                    .filter(function (vdp, index) {
+                        return excludeIndex === undefined || index !== excludeIndex;
+                    })
+                    .map(function (vdp) {
+                        var start = vdp.startDate ? new Date(vdp.startDate) : new Date();
+                        var stop = vdp.totalDays > 0 ? new Date(start.getTime() + vdp.totalDays * 86400000) : null;
+                        return {
+                            getDisplayName: function () { return vdp.drugName; },
+                            effectiveStartDate: start,
+                            effectiveStopDate: stop,
+                            careSetting: vdp.careSetting,
+                            overlappingScheduledWith: function (other) {
+                                if (!other.effectiveStopDate && !stop) { return true; }
+                                if (!other.effectiveStopDate) { return DateUtil.diffInSeconds(stop, other.effectiveStartDate) > -1; }
+                                if (!stop) { return DateUtil.diffInSeconds(start, other.effectiveStartDate) > -1 && DateUtil.diffInSeconds(start, other.effectiveStopDate) < 1; }
+                                return DateUtil.diffInSeconds(start, other.effectiveStopDate) <= 0 && DateUtil.diffInSeconds(stop, other.effectiveStartDate) > -1;
+                            }
+                        };
+                    });
+            };
+
+            var getConflictingDrugOrder = function (newDrugOrder, vdpExcludeIndex) {
+                var allDrugOrders = $scope.treatments.concat($scope.orderSetTreatments);
+                allDrugOrders = _.reject(allDrugOrders, newDrugOrder);
+                var unsavedNotBeingEditedOrders = _.filter(allDrugOrders, { isBeingEdited: false });
+                var existingDrugOrders;
+                if (newDrugOrder.isBeingEdited) {
+                    existingDrugOrders = _.reject($scope.consultation.activeAndScheduledDrugOrders, { uuid: newDrugOrder.previousOrderUuid });
+                } else {
+                    existingDrugOrders = $scope.consultation.activeAndScheduledDrugOrders;
+                }
+                existingDrugOrders = existingDrugOrders.concat(unsavedNotBeingEditedOrders);
+
+                existingDrugOrders = existingDrugOrders.concat(buildVdpOrdersForConflictCheck($scope.consultation.variableDoseTreatments, vdpExcludeIndex));
+
+                var potentiallyOverlappingOrders = existingDrugOrders.filter(function (drugOrder) {
+                    return (drugOrder.getDisplayName() === newDrugOrder.getDisplayName() && drugOrder.overlappingScheduledWith(newDrugOrder) && newDrugOrder.careSetting === drugOrder.careSetting);
+                });
+
+                setEffectiveDates(newDrugOrder, potentiallyOverlappingOrders);
+
+                var alreadyActiveSimilarOrders = existingDrugOrders.filter(function (drugOrder) {
+                    return (drugOrder.getDisplayName() === newDrugOrder.getDisplayName() && drugOrder.overlappingScheduledWith(newDrugOrder) && newDrugOrder.careSetting === drugOrder.careSetting);
+                });
+
+                if (alreadyActiveSimilarOrders.length > 0) {
+                    $scope.alreadyActiveSimilarOrder = _.sortBy(potentiallyOverlappingOrders, 'effectiveStartDate').reverse()[0];
+                    return $scope.alreadyActiveSimilarOrder;
+                }
+                return false;
+            };
+
+            var isEffectiveStartDateSameAsToday = function (newDrugOrder) {
+                return DateUtil.isSameDate(newDrugOrder.effectiveStartDate, DateUtil.parse(newDrugOrder.encounterDate)) &&
+                    DateUtil.isSameDate(newDrugOrder.effectiveStartDate, DateUtil.now());
+            };
+
+            var setEffectiveDates = function (newDrugOrder, existingDrugOrders) {
+                newDrugOrder.scheduledDate = newDrugOrder.effectiveStartDate;
+                existingDrugOrders.forEach(function (existingDrugOrder) {
+                    if (DateUtil.isSameDate(existingDrugOrder.effectiveStartDate, newDrugOrder.effectiveStopDate) && !DateUtil.isSameDate(existingDrugOrder.effectiveStopDate, newDrugOrder.effectiveStartDate)) {
+                        if (!newDrugOrder.previousOrderUuid || newDrugOrder.previousOrderDurationInDays === newDrugOrder.durationInDays) {
+                            newDrugOrder.effectiveStopDate = DateUtil.subtractSeconds(existingDrugOrder.effectiveStartDate, 1);
+                        }
+                        if (newDrugOrder.previousOrderUuid || DateUtil.isSameDate(newDrugOrder.effectiveStartDate, newDrugOrder.encounterDate)) {
+                            newDrugOrder.autoExpireDate = newDrugOrder.effectiveStopDate;
+                        }
+                    }
+                    if (DateUtil.isSameDate(existingDrugOrder.effectiveStopDate, newDrugOrder.effectiveStartDate) && DateUtil.isSameDate(DateUtil.addSeconds(existingDrugOrder.effectiveStopDate, 1), newDrugOrder.effectiveStartDate)) { // compare date part only of datetime
+                        if (!existingDrugOrder.uuid) {
+                            existingDrugOrder.effectiveStopDate = DateUtil.subtractSeconds(existingDrugOrder.effectiveStopDate, 1);
+                        }
+                        newDrugOrder.effectiveStartDate = DateUtil.addSeconds(existingDrugOrder.effectiveStopDate, 1);
+                    }
+                });
+                if (isEffectiveStartDateSameAsToday(newDrugOrder)) {
+                    newDrugOrder.scheduledDate = null;
+                }
+            };
+
+            $scope.closeDialog = function () {
+                ngDialog.close();
+            };
+
+            $scope.refillConflictingDrug = function (drugOrder, alreadyActiveSimilarOrder) {
+                $scope.popupActive = false;
+                ngDialog.close();
+                $scope.clearForm();
+                $scope.$broadcast("event:refillDrugOrder", drugOrder, alreadyActiveSimilarOrder);
+            };
+
+            $scope.revise = function (drugOrder, index) {
+                $scope.popupActive = false;
+                ngDialog.close();
+                if (drugOrder.uuid) {
+                    $scope.$broadcast("event:reviseDrugOrder", drugOrder, $scope.consultation.activeAndScheduledDrugOrders);
+                } else {
+                    edit(drugOrder, index);
+                }
+            };
+
+            $scope.toggleShowAdditionalInstructions = function (treatment) {
+                treatment.showAdditionalInstructions = !treatment.showAdditionalInstructions;
+            };
+
+            $scope.toggleAsNeeded = function (treatment) {
+                treatment.asNeeded = !treatment.asNeeded;
+            };
+
+            var edit = function (drugOrder, index) {
+                clearHighlights();
+                var treatment = drugOrder;
+                markEitherVariableDrugOrUniformDrug(treatment);
+                treatment.isBeingEdited = true;
+                $scope.treatment = treatment.cloneForEdit(index, treatmentConfig);
+                if ($scope.treatment.quantity === 0) {
+                    $scope.treatment.quantity = null;
+                    $scope.treatment.quantityEnteredManually = false;
+                }
+                selectDrugFromDropdown(treatment.drug);
+            };
+
+            $scope.$on("event:editDrugOrder", function (event, drugOrder, index) {
+                edit(drugOrder, index);
+            });
+
+            $scope.$on("event:removeDrugOrder", function (event, index) {
+                $scope.treatments.splice(index, 1);
+            });
+
+            $scope.incompleteDrugOrders = function () {
+                var anyValuesFilled = $scope.treatment.drug || $scope.treatment.uniformDosingType.dose ||
+                    $scope.treatment.uniformDosingType.frequency || $scope.treatment.variableDosingType.morningDose ||
+                    $scope.treatment.variableDosingType.afternoonDose || $scope.treatment.variableDosingType.eveningDose ||
+                    $scope.treatment.variableDosingType.nightDose ||
+                    $scope.treatment.duration || $scope.treatment.quantity || $scope.treatment.isNonCodedDrug || $scope.treatment.drugNameDisplay;
+                return (anyValuesFilled && $scope.addForm.$invalid);
+            };
+
+            $scope.isVariableDoseValid = function (variableDosingType) {
+                var nonZeroCount = [
+                    variableDosingType.morningDose,
+                    variableDosingType.afternoonDose,
+                    variableDosingType.eveningDose,
+                    variableDosingType.nightDose
+                ].filter(function (dose) { return dose > 0; }).length;
+                return nonZeroCount >= Bahmni.Clinical.Constants.minRequiredDoseBoxes;
+            };
+            $scope.unaddedDrugOrders = function () {
+                return $scope.addForm.$valid;
+            };
+
+            var contextChange = function () {
+                var errorMessages = Bahmni.Clinical.Constants.errorMessages;
+                if (isSameDrugBeingDiscontinuedAndOrdered()) {
+                    return { allow: false, errorMessage: $translate.instant(errorMessages.discontinuingAndOrderingSameDrug) };
+                }
+                if ($scope.incompleteDrugOrders()) {
+                    $scope.formInvalid = true;
+                    return { allow: false };
+                }
+                if ($scope.unaddedDrugOrders()) {
+                    return { allow: false, errorMessage: $translate.instant(errorMessages.incompleteForm) };
+                }
+                return { allow: true };
+            };
+
+            var setIsNotBeingEdited = function (treatment) {
+                treatment.isBeingEdited = false;
+            };
+
+            $scope.closeAlert = function (index) {
+                $scope.newAlerts = $scope.newAlerts.filter(function (_alert, alertIndex) {
+                    return alertIndex !== index;
+                });
+            };
+
+            $scope.toggleAlertDetails = function (index) {
+                $scope.newAlerts[index].showDetails =
+                  !$scope.newAlerts[index].showDetails;
+            };
+
+            $scope.getDataResults = function (drugs) {
+                var searchString = $scope.treatment.drugNameDisplay;
+                var listOfDrugSynonyms = _.map(drugs, function (drug) {
+                    return Bahmni.Clinical.DrugSearchResult.getAllMatchingSynonyms(drug, searchString);
+                });
+                return _.flatten(listOfDrugSynonyms);
+            };
+
+            (function () {
+                var selectedItem;
+                $scope.onSelect = function (item) {
+                    selectedItem = item;
+                    $scope.onChange();
+                };
+                $scope.onAccept = function () {
+                    $scope.treatment.acceptedItem = $scope.treatment.drugNameDisplay;
+                    $scope.onChange();
+                };
+
+                $scope.onChange = function () {
+                    if (selectedItem) {
+                        $scope.treatment.isNonCodedDrug = false;
+                        delete $scope.treatment.drugNonCoded;
+                        $scope.treatment.changeDrug({
+                            name: selectedItem.drug.name,
+                            form: selectedItem.drug.dosageForm && selectedItem.drug.dosageForm.display,
+                            uuid: selectedItem.drug.uuid,
+                            drugReferenceMaps: selectedItem.drug.drugReferenceMaps
+                        });
+                        selectedItem = null;
+                        return;
+                    }
+                    if ($scope.treatment.acceptedItem) {
+                        $scope.treatment.isNonCodedDrug = !$scope.treatment.isNonCodedDrug;
+                        $scope.treatment.drugNonCoded = $scope.treatment.acceptedItem;
+                        delete $scope.treatment.drug;
+                        delete $scope.treatment.acceptedItem;
+                        return;
+                    }
+                    delete $scope.treatment.drug;
+                    $scope.newAlerts = [];
+                };
+            })();
+
+            $scope.clearForm = function () {
+                $scope.treatment = newTreatment();
+                $scope.formInvalid = false;
+                clearHighlights();
+                markVariable("startNewDrugEntry");
+            };
+
+            $scope.openActionLink = function (extension) {
+                var url, location;
+                locationService.getLoggedInLocation().then(function (response) {
+                    location = response.name;
+                    url = extension.url
+                        .replace("{{patient_ref}}", $scope.patient.identifier)
+                        .replace("{{location_ref}}", location);
+                    $window.open(url, "_blank");
+                });
+            };
+
+            $scope.toggleTabIndexWithinModal = function (event) {
+                var buttonsToFocusOn = ["modal-revise-button", "modal-refill-button"];
+                var focusedButton = event.target;
+                focusedButton.tabIndex = 1;
+
+                buttonsToFocusOn.splice(buttonsToFocusOn.indexOf(focusedButton.id), 1);
+                var otherButton = buttonsToFocusOn[0];
+                $("#" + otherButton)[0].tabIndex = 2;
+            };
+
+            $scope.toggleDrugOrderAttribute = function (orderAttribute) {
+                orderAttribute.value = orderAttribute.value ? false : true;
+            };
+            contextChangeHandler.add(contextChange);
+
+            var getActiveDrugOrders = function (activeDrugOrders) {
+                var activeDrugOrdersList = activeDrugOrders || [];
+                return activeDrugOrdersList.map(function (drugOrder) {
+                    return DrugOrderViewModel.createFromContract(drugOrder, treatmentConfig);
+                });
+            };
+
+            var removeOrder = function (removableOrder) {
+                removableOrder.action = Bahmni.Clinical.Constants.orderActions.discontinue;
+                removableOrder.previousOrderUuid = removableOrder.uuid;
+                removableOrder.uuid = undefined;
+                $scope.consultation.removableDrugs.push(removableOrder);
+            };
+
+            var saveTreatment = function () {
+                var tabNames = Object.keys($scope.consultation.newlyAddedTabTreatments || {});
+                var allTreatmentsAcrossTabs = _.flatten(_.map(tabNames, function (tabName) {
+                    return $scope.consultation.newlyAddedTabTreatments[tabName].treatments;
+                }));
+                var orderSetTreatmentsAcrossTabs = _.flatten(_.map(tabNames, function (tabName) {
+                    return $scope.consultation.newlyAddedTabTreatments[tabName].orderSetTreatments;
+                }));
+                var includedOrderSetTreatments = _.filter(orderSetTreatmentsAcrossTabs, function (treatment) {
+                    return treatment.orderSetUuid ? treatment.include : true;
+                });
+                $scope.consultation.newlyAddedTreatments = allTreatmentsAcrossTabs.concat(includedOrderSetTreatments);
+                if ($scope.consultation.discontinuedDrugs) {
+                    $scope.consultation.discontinuedDrugs.forEach(function (discontinuedDrug) {
+                        var removableOrder = _.find(activeDrugOrders, { uuid: discontinuedDrug.uuid });
+                        if (discontinuedDrug) {
+                            removableOrder.orderReasonText = discontinuedDrug.orderReasonText;
+                            removableOrder.dateActivated = null;
+                            removableOrder.scheduledDate = discontinuedDrug.dateStopped;
+                            removableOrder.dateStopped = discontinuedDrug.dateStopped;
+
+                            if (discontinuedDrug.orderReasonConcept && discontinuedDrug.orderReasonConcept.name) {
+                                removableOrder.orderReasonConcept = {
+                                    name: discontinuedDrug.orderReasonConcept.name.name,
+                                    uuid: discontinuedDrug.orderReasonConcept.uuid
+                                };
+                            }
+                        }
+                        if (removableOrder) {
+                            removeOrder(removableOrder);
+                        }
+                    });
+                }
+            };
+
+            var putCalculatedDose = function (orderTemplate) {
+                var visitUuid = treatmentConfig.orderSet.calculateDoseOnlyOnCurrentVisitValues ? $scope.activeVisit.uuid : undefined;
+                var calculatedDose = orderSetService.getCalculatedDose(
+                    $scope.patient.uuid,
+                    orderTemplate.concept.name,
+                    orderTemplate.dosingInstructions.dose,
+                    orderTemplate.dosingInstructions.doseUnits,
+                    $scope.newOrderSet.name,
+                    orderTemplate.dosingInstructions.dosingRule,
+                    visitUuid
+                );
+                if (calculatedDose.$$state.status == 0) $scope.isSearchDisabled = false;
+                return calculatedDose.then(function (calculatedDosage) {
+                    orderTemplate.dosingInstructions.dose = calculatedDosage.dose;
+                    orderTemplate.dosingInstructions.doseUnits = calculatedDosage.doseUnit;
+                    return orderTemplate;
+                });
+            };
+
+            var deleteDrugIfEmpty = function (template) {
+                if (_.isEmpty(template.drug)) {
+                    delete template.drug; // _.isEmpty({}) is true.
+                }
+            };
+
+            var setUpOrderSetTransactionalData = function (orderSetMember) {
+                orderSetMember.orderTemplateMetaData = orderSetMember.orderTemplate;
+                orderSetMember.orderTemplate = JSON.parse(orderSetMember.orderTemplate);
+                orderSetMember.orderTemplate.concept = {
+                    name: orderSetMember.concept.display,
+                    uuid: orderSetMember.concept.uuid
+                };
+                deleteDrugIfEmpty(orderSetMember.orderTemplate);
+            };
+            var calculateDoseForTemplatesIn = function (orderSet) {
+                $scope.newOrderSet.name = orderSet.name;
+                var orderSetMemberTemplates = _.map(orderSet.orderSetMembers, 'orderTemplate');
+                var promisesToCalculateDose = _.map(orderSetMemberTemplates, putCalculatedDose);
+                var returnOrderSet = function () { return orderSet; };
+                return $q.all(promisesToCalculateDose).then(returnOrderSet);
+            };
+            var createDrugOrderViewModel = function (orderTemplate) {
+                orderTemplate.effectiveStartDate = $scope.newOrderSet.date;
+                var drugOrder = Bahmni.Clinical.DrugOrder.create(orderTemplate);
+                var drugOrderViewModel = Bahmni.Clinical.DrugOrderViewModel.createFromContract(drugOrder, treatmentConfig);
+                drugOrderViewModel.instructions = orderTemplate.administrationInstructions;
+                drugOrderViewModel.additionalInstructions = orderTemplate.additionalInstructions;
+                drugOrderViewModel.isNewOrderSet = true;
+                drugOrderViewModel.dosingInstructionType = Bahmni.Clinical.Constants.flexibleDosingInstructionsClass;
+                drugOrderViewModel.quantity = drugOrderViewModel.quantity || 0;
+                drugOrderViewModel.calculateDurationUnit();
+                drugOrderViewModel.calculateQuantityAndUnit();
+                drugOrderViewModel.calculateEffectiveStopDate();
+                drugOrderViewModel.setUniformDoseFraction();
+                return drugOrderViewModel;
+            };
+
+            var setSortWeightForOrderSetDrugs = function (orderSetDrugs) {
+                _.each(orderSetDrugs, function (drugOrder, index) {
+                    if (drugOrder.sortWeight !== undefined) {
+                        drugOrder.sortWeight = drugOrder.sortWeight + orderSetDrugs.length;
+                    } else {
+                        drugOrder.sortWeight = index + 1;
+                    }
+                });
+            };
+
+            var createDrugOrdersAndGetConflicts = function (orderSet) {
+                var conflictingDrugOrders = [];
+                var orderSetMemberTemplates = _.map(orderSet.orderSetMembers, 'orderTemplate');
+                _.each(orderSetMemberTemplates, function (orderTemplate) {
+                    var drugOrderViewModel = createDrugOrderViewModel(orderTemplate);
+                    drugOrderViewModel.orderSetUuid = orderSet.uuid;
+                    var conflictingDrugOrder = getConflictingDrugOrder(drugOrderViewModel);
+                    if (!conflictingDrugOrder) {
+                        drugOrderViewModel.include = true;
+                    } else {
+                        conflictingDrugOrders.push(conflictingDrugOrder);
+                    }
+                    $scope.orderSetTreatments.push(drugOrderViewModel);
+                });
+                setSortWeightForOrderSetDrugs($scope.orderSetTreatments);
+                return conflictingDrugOrders;
+            };
+            var showConflictMessageIfAny = function (conflictingDrugOrders) {
+                if (_.isEmpty(conflictingDrugOrders)) {
+                    return;
+                }
+                _.each($scope.orderSetTreatments, function (orderSetDrugOrder) {
+                    orderSetDrugOrder.include = false;
+                });
+                ngDialog.open({
+                    template: 'consultation/views/treatmentSections/conflictingOrderSet.html',
+                    data: { 'conflictingDrugOrders': conflictingDrugOrders }
+                });
+                $scope.popupActive = true;
+            };
+            $scope.addOrderSet = function (orderSet) {
+                $scope.isSearchDisabled = true;
+                scrollTop();
+                var setUpNewOrderSet = function () {
+                    $scope.newOrderSet.name = orderSet.name;
+                    $scope.newOrderSet.uuid = orderSet.uuid;
+                    $scope.isSearchDisabled = true;
+                };
+                calculateDoseForTemplatesIn(orderSet)
+                    .then(createDrugOrdersAndGetConflicts)
+                    .then(showConflictMessageIfAny)
+                    .then(setUpNewOrderSet)
+                    .then(getAlerts);
+            };
+
+            $scope.removeOrderSet = function () {
+                $scope.isSearchDisabled = false;
+                delete $scope.newOrderSet.name;
+                delete $scope.newOrderSet.uuid;
+                $scope.orderSetTreatments.splice(0, $scope.orderSetTreatments.length);
+            };
+
+            $scope.$on("event:includeOrderSetDrugOrder", function (event, drugOrder) {
+                var conflictingDrugOrder = getConflictingDrugOrder(drugOrder);
+                if (conflictingDrugOrder) {
+                    drugOrder.include = false;
+                    ngDialog.open({
+                        template: 'consultation/views/treatmentSections/conflictingOrderSet.html',
+                        data: { 'conflictingDrugOrders': [conflictingDrugOrder] }
+                    });
+                    $scope.popupActive = true;
+                }
+            });
+
+            $scope.consultation.preSaveHandler.register("drugOrderSaveHandlerKey", saveTreatment);
+
+            var mergeActiveAndScheduledWithDiscontinuedOrders = function () {
+                _.each($scope.consultation.discontinuedDrugs, function (discontinuedDrug) {
+                    _.remove($scope.consultation.activeAndScheduledDrugOrders, { 'uuid': discontinuedDrug.uuid });
+                    $scope.consultation.activeAndScheduledDrugOrders.push(discontinuedDrug);
+                });
+            };
+
+            var showRulesInMedication = function (medicationConfig) {
+                $scope.showRulesInMedication = false;
+                if (medicationConfig !== 'undefined' && medicationConfig.tabConfig !== 'undefined' && medicationConfig.tabConfig.allMedicationTabConfig
+                    !== 'undefined' && medicationConfig.tabConfig.allMedicationTabConfig.orderSet !== 'undefined') {
+                    if (medicationConfig.tabConfig.allMedicationTabConfig.orderSet.showRulesInMedication) {
+                        $scope.showRulesInMedication = true;
+                    }
+                }
+            };
+
+            $scope.$watch('treatment.route', function (newValue, oldValue) {
+                if (newValue !== oldValue) {
+                    $scope.checkForContinuousMedication(newValue);
+                }
+            });
+
+            $scope.$watch('treatment.quantity', function (newValue) {
+                if (newValue === 0 && $scope.isContinuousMedication && !$scope.treatment.uniformDosingType.frequency) {
+                    $scope.treatment.quantity = null;
+                }
+            });
+
+            $scope.$watch('treatment.dosingRule', function (newRule) {
+                if (!newRule) {
+                    $scope.treatment.uniformDosingType.doseUnits = undefined;
+                    $scope.treatment.variableDosingType.doseUnits = undefined;
+                    $scope.treatment.quantityUnit = undefined;
+                    return;
+                }
+                var ruleUnits = $scope.ruleUnitsMap[newRule];
+                if (ruleUnits && ruleUnits.length === 1) {
+                    $scope.treatment.uniformDosingType.doseUnits = ruleUnits[0];
+                    $scope.treatment.quantityUnit = ruleUnits[0];
+                }
+                if (!$scope.treatment.isUniformDosingType() && ruleUnits && ruleUnits.length > 0 && ruleUnits[0]) {
+                    $scope.treatment.variableDosingType.doseUnits = ruleUnits[0];
+                    $scope.treatment.quantityUnit = ruleUnits[0];
+                }
+            });
+
+            $scope.checkForContinuousMedication = function (route) {
+                $scope.isContinuousMedication = $scope.continuousMedicationRoutes.includes(route);
+            };
+
+            var setContinuousMedicationRoutes = function (medicationConfig) {
+                $scope.continuousMedicationRoutes = [];
+                if (medicationConfig && medicationConfig.tabConfig && medicationConfig.tabConfig.allMedicationTabConfig
+                    && medicationConfig.tabConfig.allMedicationTabConfig.inputOptionsConfig) {
+                    $scope.continuousMedicationRoutes = medicationConfig.tabConfig.allMedicationTabConfig.inputOptionsConfig.continuousMedicationRoutes || [];
+                }
+            };
+
+            var setRuleUnitsMap = function (medicationConfig) {
+                $scope.ruleUnitsMap = {};
+                if (medicationConfig && medicationConfig.tabConfig && medicationConfig.tabConfig.allMedicationTabConfig
+                    && medicationConfig.tabConfig.allMedicationTabConfig.orderSet) {
+                    $scope.ruleUnitsMap = medicationConfig.tabConfig.allMedicationTabConfig.orderSet.dosageRuleUnitsMap || {};
+                }
+                $scope.$watch('treatment.dosingRule', function (newRule) {
+                    if (!newRule) return;
+                    var ruleUnits = $scope.ruleUnitsMap[newRule];
+                    if (ruleUnits && ruleUnits.length === 1) {
+                        $scope.treatment.uniformDosingType.doseUnits = ruleUnits[0];
+                    }
+                });
+            };
+
+            $scope.verifyAdd = function (treatment) {
+                if (!$scope.addTreatmentWithPatientWeight.hasOwnProperty('duration') && !$scope.addTreatmentWithDiagnosis.hasOwnProperty('order')) {
+                    return $scope.addForm.$valid && $scope.calculateDose(treatment);
+                } else {
+                    var patientWeightError = false;
+                    var diagnosisError = false;
+                    if ($scope.addTreatmentWithPatientWeight && $scope.addTreatmentWithPatientWeight.hasOwnProperty('duration')) {
+                        if ($scope.obs.length == 0 || (($scope.currentEpoch - $scope.obs[0].observationDateTime) / 1000 > $scope.addTreatmentWithPatientWeight.duration)) {
+                            patientWeightError = true;
+                        }
+                    }
+                    if ($scope.addTreatmentWithDiagnosis && $scope.addTreatmentWithDiagnosis.hasOwnProperty('order')) {
+                        if ($scope.confirmedDiagnoses.length == 0) {
+                            diagnosisError = true;
+                        }
+                    }
+                    if (patientWeightError && diagnosisError) {
+                        messagingService.showMessage("error", $translate.instant("PATIENT_WEIGHT_AND_DIAGNOSIS_ERROR"));
+                        $scope.clearForm();
+                        return false;
+                    } else if (patientWeightError) {
+                        messagingService.showMessage("error", $translate.instant("ENTER_PATIENT_WEIGHT_ERROR"));
+                        $scope.clearForm();
+                        return false;
+                    } else if (diagnosisError) {
+                        messagingService.showMessage("error", $translate.instant("ENTER_DIAGNOSIS_ERROR"));
+                        $scope.clearForm();
+                        return false;
+                    } else {
+                        $scope.addToNewTreatment = true;
+                        return $scope.addForm.$valid && $scope.calculateDose(treatment);
+                    }
+                }
+            };
+
+            var init = function () {
+                $scope.consultation.removableDrugs = $scope.consultation.removableDrugs || [];
+                $scope.consultation.discontinuedDrugs = $scope.consultation.discontinuedDrugs || [];
+                $scope.consultation.drugOrdersWithUpdatedOrderAttributes = $scope.consultation.drugOrdersWithUpdatedOrderAttributes || {};
+                $scope.consultation.activeAndScheduledDrugOrders = getActiveDrugOrders(activeDrugOrders);
+
+                mergeActiveAndScheduledWithDiscontinuedOrders();
+
+                $scope.treatmentConfig = treatmentConfig;// $scope.treatmentConfig used only in UI
+                var medicationConfig = appService.getAppDescriptor().getConfigForPage('medication') || {};
+                $scope.addTreatmentWithPatientWeight = appService.getAppDescriptor().getConfigValue('addTreatmentWithPatientWeight') || {};
+                $scope.addTreatmentWithDiagnosis = appService.getAppDescriptor().getConfigValue('addTreatmentWithDiagnosis') || {};
+                if ($scope.addTreatmentWithPatientWeight.hasOwnProperty('duration')) {
+                    observationsService.fetch($scope.patient.uuid, $scope.addTreatmentWithPatientWeight.conceptNames, null, 10, null, null, null, null).then(function (response) {
+                        $scope.currentEpoch = Math.floor(new Date().getTime() / 1000) * 1000;
+                        $scope.obs = response.data;
+                    });
+                }
+
+                if ($scope.addTreatmentWithDiagnosis.hasOwnProperty('order')) {
+                    diagnosisService.getPatientDiagnosis($scope.patient.uuid).then(function (response) {
+                        $scope.currentEpoch = Math.floor(new Date().getTime() / 1000) * 1000;
+                        $scope.confirmedDiagnoses = response.data.filter(function (diagnosis) {
+                            return diagnosis.order === $scope.addTreatmentWithDiagnosis.order && diagnosis.diagnosisStatusConcept === null;
+                        });
+                    });
+                }
+                $scope.addToNewTreatment = true;
+                showRulesInMedication(medicationConfig);
+                setRuleUnitsMap(medicationConfig);
+                setContinuousMedicationRoutes(medicationConfig);
+
+                $scope.showVariableDoseProtocol =
+                    appService.getAppDescriptor().getConfigValue('enableVariableDoseProtocol') === true;
+
+                if ($scope.showVariableDoseProtocol) {
+                    var orderSetConfig = medicationConfig && medicationConfig.tabConfig &&
+                        medicationConfig.tabConfig.allMedicationTabConfig &&
+                        medicationConfig.tabConfig.allMedicationTabConfig.orderSet;
+
+                    var buildVariableDoseHostData = function (overrides) {
+                        return angular.extend({
+                            doseUnits: treatmentConfig.getDoseUnits(),
+                            routes: treatmentConfig.getRoutes(),
+                            dosingRules: $scope.showRulesInMedication ? (treatmentConfig.dosingRules || []) : [],
+                            drugFormDefaults: treatmentConfig.inputOptionsConfig.drugFormDefaults || {},
+                            dosageRuleUnitsMap: $scope.showRulesInMedication ? ((orderSetConfig && orderSetConfig.dosageRuleUnitsMap) || {}) : {},
+                            dosingInstructions: treatmentConfig.getDosingInstructions(),
+                            frequencies: treatmentConfig.getFrequencies(),
+                            durationUnits: treatmentConfig.getDurationUnits()
+                        }, overrides || {});
+                    };
+
+                    $scope.variableDoseHostData = buildVariableDoseHostData();
+                    var editingVariableDoseIndex = -1;
+                    var revisingVariableDoseDrugOrder = null;
+
+                    $scope.$on('event:editVariableDoseOrder', function (event, index) {
+                        editingVariableDoseIndex = index;
+                        revisingVariableDoseDrugOrder = null;
+                        var entry = $scope.consultation.variableDoseTreatments[index];
+                        var initialValues = Bahmni.Clinical.FhirDosingUtils.toVariableDoseModalInitialValues(entry);
+                        if (entry && entry.dosingRule) {
+                            initialValues.dosingRule = entry.dosingRule;
+                        }
+                        $scope.variableDoseHostData = buildVariableDoseHostData({ editMode: true, initialValues: initialValues });
+                        $scope.variableDoseHostApi.openModal(initialValues, false, true);
+                    });
+
+                    $scope.$on('event:reviseVariableDoseOrder', function (event, drugOrder) {
+                        editingVariableDoseIndex = -1;
+                        revisingVariableDoseDrugOrder = drugOrder;
+                        var initialValues = Bahmni.Clinical.FhirDosingUtils.toVariableDoseModalInitialValues({
+                            drug: drugOrder.drug,
+                            drugNonCoded: drugOrder.drugNonCoded || null,
+                            units: (drugOrder.dosingInstructions && drugOrder.dosingInstructions.doseUnits) || drugOrder.quantityUnit || '',
+                            route: (drugOrder.dosingInstructions && drugOrder.dosingInstructions.route) || drugOrder.route || '',
+                            startDate: drugOrder.effectiveStartDate,
+                            dosingRule: drugOrder.dosingRule || '',
+                            stages: drugOrder.stages || []
+                        });
+                        $scope.variableDoseHostData = buildVariableDoseHostData({ editMode: true, initialValues: initialValues });
+                        $scope.variableDoseHostApi.openModal(initialValues, true, true);
+                        drugOrder.isBeingEdited = true;
+                    });
+
+                    var vdpCareSettingFor = function (data) {
+                        return (currentVisitType === 'IPD' && !(data && data.isDischargeMedication))
+                            ? Bahmni.Clinical.Constants.careSetting.inPatient
+                            : Bahmni.Clinical.Constants.careSetting.outPatient;
+                    };
+
+                    var extractDrugName = function (data) {
+                        return data.drugNonCoded ? data.drugNonCoded : (data.drug ? data.drug.name : '');
+                    };
+
+                    // Loading dose overlaps stage 1's first day, so it isn't counted as an extra day.
+                    var vdpTotalDaysFor = function (data) {
+                        return (data.stages || []).reduce(function (sum, s) {
+                            return sum + Bahmni.Clinical.FhirDosingUtils.normalizeToDays(s.duration, s.durationUnit);
+                        }, 0);
+                    };
+
+                    var vdpDrugFormFor = function (data) {
+                        return (!data.isNonCodedDrug && data.drug && data.drug.dosageForm) ? data.drug.dosageForm.display : '';
+                    };
+
+                    var buildPendingVdpDrugOrder = function (data) {
+                        var start = data.startDate ? new Date(data.startDate) : new Date();
+                        var totalDays = vdpTotalDaysFor(data);
+                        return {
+                            getDisplayName: function () { return vdpDisplayNameFor(extractDrugName(data), vdpDrugFormFor(data)); },
+                            careSetting: vdpCareSettingFor(data),
+                            effectiveStartDate: start,
+                            effectiveStopDate: totalDays > 0 ? new Date(start.getTime() + totalDays * Bahmni.Clinical.Constants.millisecondsPerDay) : null,
+                            isBeingEdited: false
+                        };
+                    };
+
+                    var findConflictingVdpOrder = function (data) {
+                        var newDrugOrder = buildPendingVdpDrugOrder(data);
+                        var vdpExcludeIndex = editingVariableDoseIndex >= 0 ? editingVariableDoseIndex : undefined;
+                        var conflict = getConflictingDrugOrder(newDrugOrder, vdpExcludeIndex);
+                        return conflict || null;
+                    };
+
+                    $scope.variableDoseHostApi = {
+                        onClose: function () {
+                            $scope.variableDoseHostData = buildVariableDoseHostData();
+                            editingVariableDoseIndex = -1;
+                            if (revisingVariableDoseDrugOrder) {
+                                revisingVariableDoseDrugOrder.isBeingEdited = false;
+                                revisingVariableDoseDrugOrder = null;
+                            }
+                        },
+                        checkVdpConflict: function (data) {
+                            if (!data || (!data.drug && !data.drugNonCoded)) {
+                                return null;
+                            }
+                            try {
+                                var conflictingOrder = findConflictingVdpOrder(data);
+                                if (!conflictingOrder) {
+                                    return null;
+                                }
+                                return {
+                                    drugName: extractDrugName(data),
+                                    startDate: conflictingOrder.effectiveStartDate,
+                                    stopDate: conflictingOrder.effectiveStopDate
+                                };
+                            } catch (error) {
+                                console.error('VDP conflict check failed:', error);
+                                return null;
+                            }
+                        },
+                        onSave: function (data, isSavedOrder) {
+                            if (($scope.addTreatmentWithPatientWeight.hasOwnProperty('duration') &&
+                                    ($scope.obs.length === 0 ||
+                                     (($scope.currentEpoch - $scope.obs[0].observationDateTime) / 1000 > $scope.addTreatmentWithPatientWeight.duration))) ||
+                                ($scope.addTreatmentWithDiagnosis.hasOwnProperty('order') && $scope.confirmedDiagnoses.length === 0)) {
+                                return;
+                            }
+                            var conflictingActiveOrder = findConflictingVdpOrder(data);
+                            if (conflictingActiveOrder) {
+                                $scope.alreadyActiveSimilarOrder = conflictingActiveOrder;
+                                ngDialog.open({
+                                    template: 'consultation/views/treatmentSections/conflictingDrugOrderModal.html',
+                                    scope: $scope
+                                });
+                                $scope.popupActive = true;
+                                return;
+                            }
+                            $timeout(function () {
+                                $scope.consultation.variableDoseTreatments = $scope.consultation.variableDoseTreatments || [];
+                                var unit = data.units || '';
+                                var realStages = data.stages || [];
+                                var dosingRule = data.dosingRule || '';
+                                var drugName = extractDrugName(data);
+                                var careSetting = vdpCareSettingFor(data);
+
+                                var calcDose = function (baseDose) {
+                                    if (!dosingRule || !baseDose) { return $q.resolve({ dose: baseDose, doseUnit: unit }); }
+                                    return orderSetService.getCalculatedDose(
+                                        $scope.patient.uuid, drugName, baseDose, unit, '', dosingRule, undefined
+                                    ).catch(function () { return { dose: baseDose, doseUnit: unit }; });
+                                };
+
+                                var loadingDosePromise = data.loadingDose
+                                    ? calcDose(data.loadingDose.dose)
+                                    : $q.resolve(null);
+
+                                var stagePromises = realStages.map(function (s) {
+                                    return calcDose(s.dose).then(function (result) {
+                                        return { stageName: s.stageName, calculatedDose: String(result.dose), doseUnit: result.doseUnit || unit, original: s };
+                                    });
+                                });
+
+                                $q.all([loadingDosePromise].concat(stagePromises)).then(function (results) {
+                                    var calculatedLoadingDose = results[0];
+                                    var calculatedStages = results.slice(1);
+
+                                    var totalDays = vdpTotalDaysFor(data);
+
+                                    var stageCount = realStages.length;
+
+                                    var stages = [];
+                                    var cumulativeDate = data.startDate ? new Date(data.startDate) : new Date();
+
+                                    var sequenceOffset = data.loadingDose && calculatedLoadingDose ? 1 : 0;
+
+                                    if (data.loadingDose && calculatedLoadingDose) {
+                                        stages.push({
+                                            stageName: LOADING_DOSE_STAGE_NAME,
+                                            sequence: 1,
+                                            isLoadingDose: true,
+                                            dose: String(calculatedLoadingDose.dose || data.loadingDose.dose || ''),
+                                            unit: calculatedLoadingDose.doseUnit || unit,
+                                            frequency: LOADING_DOSE_FREQUENCY_DISPLAY,
+                                            duration: '1',
+                                            durationUnit: 'Occurrence(s)',
+                                            instructions: data.loadingDose.instructions || '',
+                                            rate: data.loadingDose.rate || '',
+                                            additives: data.loadingDose.additives || '',
+                                            additionalInstructions: data.loadingDose.additionalInstructions || '',
+                                            startDate: new Date(cumulativeDate)
+                                        });
+                                    }
+
+                                    var getFrequencyObject = function (frequencyName) {
+                                        if (!frequencyName) { return null; }
+                                        var freqs = treatmentConfig.getFrequencies();
+                                        return _.find(freqs, function (f) { return f.name === frequencyName; });
+                                    };
+
+                                    var stageFrequencyPerDay = function (frequencyName) {
+                                        var freq = getFrequencyObject(frequencyName);
+                                        return freq ? (freq.frequencyPerDay || 1) : 1;
+                                    };
+
+                                    var getRouteObject = function (routeName) {
+                                        if (!routeName) { return null; }
+                                        var routes = treatmentConfig.getRoutes();
+                                        return _.find(routes, function (r) { return r.name === routeName; });
+                                    };
+
+                                    calculatedStages.forEach(function (cs, idx) {
+                                        var s = cs.original;
+                                        var stageDays = Bahmni.Clinical.FhirDosingUtils.normalizeToDays(s.duration, s.durationUnit);
+                                        stages.push({
+                                            stageName: s.stageName,
+                                            sequence: sequenceOffset + idx + 1,
+                                            dose: cs.calculatedDose,
+                                            unit: cs.doseUnit,
+                                            frequency: s.frequency || '',
+                                            frequencyObject: getFrequencyObject(s.frequency),
+                                            frequencyPerDay: stageFrequencyPerDay(s.frequency),
+                                            duration: s.duration,
+                                            durationUnit: s.durationUnit || '',
+                                            instructions: s.instructions || '',
+                                            rate: s.rate || '',
+                                            additives: s.additives || '',
+                                            additionalInstructions: s.additionalInstructions || '',
+                                            startDate: new Date(cumulativeDate)
+                                        });
+                                        cumulativeDate = new Date(cumulativeDate.getTime() + stageDays * 86400000);
+                                    });
+
+                                    var totalDosage = calculatedStages.reduce(function (sum, cs) {
+                                        var s = cs.original;
+                                        return sum + (parseFloat(cs.calculatedDose) || 0) * stageFrequencyPerDay(s.frequency) * Bahmni.Clinical.FhirDosingUtils.normalizeToDays(s.duration, s.durationUnit);
+                                    }, 0);
+                                    if (data.loadingDose && calculatedLoadingDose) {
+                                        totalDosage += parseFloat(calculatedLoadingDose.dose || 0);
+                                    }
+
+                                    var entry = {
+                                        drug: data.isNonCodedDrug ? null : (data.drug || null),
+                                        drugNonCoded: data.isNonCodedDrug ? data.drugNonCoded : null,
+                                        concept: data.isNonCodedDrug ? treatmentConfig.nonCodedDrugconcept : null,
+                                        drugName: extractDrugName(data),
+                                        drugForm: (!data.isNonCodedDrug && data.drug && data.drug.dosageForm) ? data.drug.dosageForm.display : '',
+                                        units: unit,
+                                        route: data.route || '',
+                                        routeObject: getRouteObject(data.route),
+                                        dosingRule: dosingRule,
+                                        quantity: totalDosage,
+                                        quantityUnit: unit,
+                                        careSetting: careSetting,
+                                        startDate: data.startDate,
+                                        stageCount: stageCount,
+                                        hasLoadingDose: !!(data.loadingDose && calculatedLoadingDose),
+                                        totalDays: totalDays,
+                                        totalDurationUnit: Bahmni.Clinical.FhirDosingUtils.getBaseDurationUnitName(treatmentConfig.getDurationUnits()),
+                                        stages: stages
+                                    };
+                                    $scope.consultation.variableDoseTreatments = $scope.consultation.variableDoseTreatments || [];
+                                    if (editingVariableDoseIndex >= 0) {
+                                        $scope.consultation.variableDoseTreatments.splice(editingVariableDoseIndex, 1, entry);
+                                        editingVariableDoseIndex = -1;
+                                    } else if (isSavedOrder) {
+                                        entry.previousOrderUuid = revisingVariableDoseDrugOrder.uuid;
+                                        entry.action = Bahmni.Clinical.Constants.orderActions.revise;
+                                        revisingVariableDoseDrugOrder.isBeingEdited = false;
+                                        revisingVariableDoseDrugOrder = null;
+                                        $scope.consultation.variableDoseTreatments.push(entry);
+                                    } else {
+                                        $scope.consultation.variableDoseTreatments.push(entry);
+                                    }
+                                    $scope.variableDoseHostData = buildVariableDoseHostData();
+                                });
+                            });
+                        },
+                        searchDrugs: function (term) {
+                            return new Promise(function (resolve, reject) {
+                                $timeout(function () {
+                                    return drugService.search(term);
+                                }, 0).then(function (results) {
+                                    resolve(results || []);
+                                }).catch(reject);
+                            });
+                        }
+                    };
+                }
+            };
+            init();
+        }]);

@@ -1,0 +1,43 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Birth Certificate</title></head><body><h1>Birth Certificate</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="BirthCertificate-Purpose">Purpose</h1><p>It can be used to create a control to add a Birth Certificate<br/></p><h1 id="BirthCertificate-Configuration">Configuration</h1><h3 id="BirthCertificate-AddabirthCertificatedirective">Add a birthCertificate directive</h3><p>Consider the following example to add a birthCertificate as a new directive:</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="17d94f20-36f0-4e17-adcc-65a80c5be9c0" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">'use strict';
+angular.module('bahmni.common.displaycontrol.custom')
+    .directive('birthCertificate', ['observationsService', 'appService', 'spinner', function (observationsService, appService, spinner) {
+            var link = function ($scope,element) {
+                var conceptNames = [&quot;HEIGHT&quot;];
+                $scope.contentUrl = appService.configBaseUrl() + &quot;/customDisplayControl/views/birthCertificate.html&quot;;
+                spinner.forPromise(observationsService.fetch($scope.patient.uuid, conceptNames, &quot;latest&quot;, undefined, $scope.visitUuid, undefined).then(function (response) {
+                    $scope.observations = response.data;
+                }), element);
+            };
+            return {
+                restrict: 'E',
+                template: '&lt;ng-include src=&quot;contentUrl&quot;/&gt;',
+                link: link
+            }
+    }])</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-id="3f50859a-3cdf-41c0-8e4d-b9535cbd90aa" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><ul><li>In the above example, the concept names we want to fetch is configured in the variable <strong>conceptNames</strong>.</li><li>To display the spinner for each display control while loading, <strong>element </strong>should be passed in spinner.forPromise() as shown in the above example.</li><li>You can create your own template in the directive &quot;<strong>openmrs/apps/customDisplayControl/views/</strong>&quot;</li></ul></div></div><h3 id="BirthCertificate-CreateabirthCertificateDisplaypage">Create a birthCertificate Display page</h3><p>Consider the following example to create a birthCertificate.html:</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="11a319be-ef47-46c6-ae00-a2aebbbd0275" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: xml; gutter: true; theme: Confluence" data-theme="Confluence">&lt;div&gt;
+    {{config.title}}
+    &lt;section class=&quot;dashboard-section&quot;&gt;
+        &lt;ul class=&quot;form-field&quot;&gt;
+            &lt;li ng-repeat=&quot;obsGroup in observations&quot;&gt;
+                &lt;span class=&quot;obs-date&quot;&gt; {{obsGroup.conceptNameToDisplay }} &lt;/span&gt;
+                &lt;span class=&quot;obs-date&quot;&gt; {{obsGroup.value}} &lt;/span&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/section&gt;
+&lt;/div&gt;</pre>
+</div></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="confluence-information-macro confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="9e21e6bc-65b4-4f30-a341-0dc091c2e859" data-macro-name="tip"><p class="title">On this Page</p><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="c600f8c4-b8b4-4eb8-bd41-e903ed368a03" data-macro-name="toc"> </div><p> </p></div></div><p><br/></p><p><br/></p><p><br/></p><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="11c594ed-5883-4869-a352-0f4f6562d86e" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #1FA5A0;color: White;"><b>Related Display Controls</b></div><div class="panelContent">
+<p> </p><ul class="childpages-macro conf-macro output-block" data-hasbody="false" data-macro-id="29ef04e9-1015-4259-b197-362659aadaa1" data-macro-name="children"><li><a href="/wiki/spaces/BAH/pages/114186103/Clinical+Observation+Controls" data-linked-resource-id="114186103" data-linked-resource-version="5" data-linked-resource-type="page">Clinical Observation Controls</a></li><li><a href="/wiki/spaces/BAH/pages/115973098/Show+Hide+Display+Controls+based+on+data" data-linked-resource-id="115973098" data-linked-resource-version="6" data-linked-resource-type="page">Show/Hide Display Controls based on data</a></li><li><a href="/wiki/spaces/BAH/pages/93716500/Custom+Controls" data-linked-resource-id="93716500" data-linked-resource-version="20" data-linked-resource-type="page">Custom Controls</a></li><li><a href="/wiki/spaces/BAH/pages/114204226/In-Patient+Department+IPD+Controls" data-linked-resource-id="114204226" data-linked-resource-version="1" data-linked-resource-type="page">In-Patient Department (IPD) Controls</a></li><li><a href="/wiki/spaces/BAH/pages/114206048/Lab+and+Radiology+Controls" data-linked-resource-id="114206048" data-linked-resource-version="2" data-linked-resource-type="page">Lab and Radiology Controls</a></li><li><a href="/wiki/spaces/BAH/pages/114207149/Medication+Controls" data-linked-resource-id="114207149" data-linked-resource-version="1" data-linked-resource-type="page">Medication Controls</a></li><li><a href="/wiki/spaces/BAH/pages/114218923/Miscellaneous+Controls" data-linked-resource-id="114218923" data-linked-resource-version="1" data-linked-resource-type="page">Miscellaneous Controls</a></li><li><a href="/wiki/spaces/BAH/pages/114227069/Patient+Controls" data-linked-resource-id="114227069" data-linked-resource-version="1" data-linked-resource-type="page">Patient Controls</a></li><li><a href="/wiki/spaces/BAH/pages/114227604/Tracking+Controls" data-linked-resource-id="114227604" data-linked-resource-version="1" data-linked-resource-type="page">Tracking Controls</a></li></ul><p> </p>
+</div></div></div>
+</div>
+</div>
+</div></body></html>

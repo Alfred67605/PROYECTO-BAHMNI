@@ -1,0 +1,171 @@
+{
+  "id": "98402388",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/98402388",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvOTg0MDIzODg=",
+  "status": "current",
+  "title": "Forms Display Control",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sravanthi N. S. CH.",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sravanthi N. S. CH.",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d47e0136-cbde-4dbc-8820-611d4528d1c8"
+      }
+    },
+    "createdDate": "2016-11-11T12:42:00.246Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/98402388/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "6202c5baa29402006878ba30",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Riya Kumari",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/6202c5baa29402006878ba30",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Riya Kumari",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=6202c5baa29402006878ba30"
+      }
+    },
+    "when": "2023-11-29T13:03:17.993Z",
+    "friendlyWhen": "Nov 29, 2023",
+    "message": "",
+    "number": 33,
+    "minorEdit": false,
+    "syncRev": "0.mnqzqeiB2JQ7DlPhcl4gHw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$98402388.124",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/98402388"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/98402388/version/33"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h1>Purpose</h1><ac:structured-macro ac:name=\"excerpt\" ac:schema-version=\"1\" ac:macro-id=\"109d827b-fa79-4bee-b1aa-b907de729581\"><ac:parameter ac:name=\"atlassian-macro-output-type\">INLINE</ac:parameter><ac:rich-text-body><p>It is used to list the Forms or Observation Templates that have been created within the configured number visits with a provision to view details and edit from/template from this control.</p></ac:rich-text-body></ac:structured-macro><h1>Screenshot</h1><p class=\"auto-cursor-target\"><ac:image ac:width=\"800\"><ri:attachment ri:filename=\"Screen Shot 2016-11-11 at 10.15.24 pm.png\" ri:version-at-save=\"1\" /></ac:image></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"60d8bfae-8a07-4407-b9f4-4505402af910\"><ac:parameter ac:name=\"title\">Note</ac:parameter><ac:rich-text-body><p><span>In the above screenshot, Baseline and Treatment Initiation are the two forms filled. The other templates that are configured in the below sample config are <span>&quot;Baseline&quot;,&quot;Treatment Initiation&quot;,&quot;Serious Adverse Events Template&quot;,&quot;Pregnancy Report Form Template&quot;</span></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"49e46d39-3d36-45ca-b5cb-5e69ff77aa05\"><ac:parameter ac:name=\"title\">How to Edit the Template/Form ?</ac:parameter><ac:rich-text-body><p>To edit a particular form/template from this control, click on the <strong>pencil</strong> icon displayed against a particular form/template. Please refer above screenshot.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"0d51c40f-6487-45df-a718-959e7010e269\"><ac:parameter ac:name=\"title\">How to View the Form/Template ?</ac:parameter><ac:rich-text-body><p>To view a particular form and the observations captured for that form via this control, click on the <strong>eye</strong> icon against a particular form.<span> Please refer above screenshot.</span></p></ac:rich-text-body></ac:structured-macro><p><br /></p><h1>Configuration</h1><h3>Sample Config</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4d6bbb96-4374-41b6-a1d0-4e21d20e25e9\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Add to clinical/dashboard.json for it to appear on the patient dashboard</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"adverseEventsForms\": {\n\t\"type\": \"forms\",\n    \"displayOrder\": 6,\n    \"dashboardConfig\": {\n        \"maximumNoOfVisits\": 10\n    },\n    \"formGroup\":[\"Baseline\",\"Treatment Initiation\",\"Serious Adverse Events Template\",\"Pregnancy Report Form Template\"],\n    \"translationKey\": \"DASHBOARD_TITLE_BASELINE_FORMS\",\n    \"hideEmptyDisplayControl\": false\n}]]></ac:plain-text-body></ac:structured-macro><h3 class=\"auto-cursor-target\">Key Field Table</h3><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th>Key</th><th>Info</th><th colspan=\"1\">Mandatory</th></tr><tr><td><p>type</p></td><td><div class=\"content-wrapper\"><p>Indicates the display control.</p><p><strong>For Forms Control, value of type should be &quot;forms&quot;</strong></p></div></td><td colspan=\"1\">Y</td></tr><tr><td><p>maximumNoOfVisits</p></td><td><p>Specifies the maximum number of visits for which to display data</p></td><td colspan=\"1\">N</td></tr><tr><td><p><span>dashboardConfig</span></p></td><td><p><span style=\"color: rgb(77,77,77);\">Indicates</span><span style=\"color: rgb(77,77,77);\"> that all the configurations mentioned under this are for the patient dashboard</span></p></td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\"><p>displayOrder</p></td><td colspan=\"1\"><p>The order in which the display control will be displayed</p></td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\"><p>translationKey</p></td><td colspan=\"1\"><p>Internationalizes the display control</p></td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\"><p>formGroup</p></td><td colspan=\"1\"><p>Observation templates that will be visible.</p></td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\">hideEmptyDisplayControl</td><td colspan=\"1\">Hides the display control if no value is present for it when set to true, default value is set to false</td><td colspan=\"1\">N</td></tr></tbody></table><h2>Display only date without time</h2><h3>Purpose</h3><p>This configuration is used to display just date with out time on Forms Display Control.</p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"73c3086c-6834-4dc5-a182-e81442406810\"><ac:parameter ac:name=\"title\">Default behaviour</ac:parameter><ac:rich-text-body><p>By default it will show both date and time.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"6782207b-cff4-4ef7-acc8-4f8f97d0752a\"><ac:parameter ac:name=\"title\">Where to Configure ?</ac:parameter><ac:rich-text-body><p>Add the configuration in<em>&nbsp;clinical,app.json</em>&nbsp;under the <em>config</em> section.</p></ac:rich-text-body></ac:structured-macro><h3>Sample Config</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"becc2d3f-a31d-47f0-b85f-36c94b5c2608\"><ac:parameter ac:name=\"title\">To be added in clinical, app.json under config section</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"config\" : {\n\"showFormsDate\" : true\n}]]></ac:plain-text-body></ac:structured-macro><h3 class=\"auto-cursor-target\">Key Field Table</h3><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th>Key</th><th>Description</th><th colspan=\"1\">Note</th></tr><tr><td>showFormsDate</td><td><div class=\"content-wrapper\"><p>Determines whether only date <span>(without time)</span> is to be displayed or not</p></div></td><td colspan=\"1\"><div class=\"content-wrapper\"><ul><li><span>By default both date and time are shown.</span></li><li>If value is set to false, <em>only</em> date is shown</li></ul></div></td></tr></tbody></table><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"0021349d-1176-428e-98ff-3e479af1ba49\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\"><ac:parameter ac:name=\"titleColor\">White</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Display Controls</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"d3a47878-f1ee-43ad-aa8c-6ce68330aa55\"><ac:parameter ac:name=\"all\">true</ac:parameter><ac:parameter ac:name=\"page\"><ac:link><ri:page ri:content-title=\"Clinical Observation Controls\" ri:version-at-save=\"5\" /></ac:link></ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/98402388"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\"><style>[data-colorid=oczbmb3h76]{color:#4d4d4d} html[data-color-mode=dark] [data-colorid=oczbmb3h76]{color:#b2b2b2}[data-colorid=k6tv8rh981]{color:#4d4d4d} html[data-color-mode=dark] [data-colorid=k6tv8rh981]{color:#b2b2b2}</style>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h1 id=\"FormsDisplayControl-Purpose\">Purpose</h1><p>It is used to list the Forms or Observation Templates that have been created within the configured number visits with a provision to view details and edit from/template from this control.</p><h1 id=\"FormsDisplayControl-Screenshot\">Screenshot</h1><p class=\"auto-cursor-target\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"800\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/98402388/Screen%20Shot%202016-11-11%20at%2010.15.24%20pm.png?version=1&amp;modificationDate=1478882829121&amp;cacheVersion=1&amp;api=v2&amp;width=800&amp;height=127\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/98402388/Screen%20Shot%202016-11-11%20at%2010.15.24%20pm.png?version=1&amp;modificationDate=1478882829121&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"98402392\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-11-11 at 10.15.24 pm.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"98402388\" data-linked-resource-container-version=\"33\" data-media-id=\"a2d27091-26e9-435d-b9cf-f7c64ee2af60\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/98402388/Screen%20Shot%202016-11-11%20at%2010.15.24%20pm.png?version=1&amp;modificationDate=1478882829121&amp;cacheVersion=1&amp;api=v2&amp;width=1308&amp;height=208 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/98402388/Screen%20Shot%202016-11-11%20at%2010.15.24%20pm.png?version=1&amp;modificationDate=1478882829121&amp;cacheVersion=1&amp;api=v2&amp;width=800&amp;height=127 1x\" /></span></p><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"60d8bfae-8a07-4407-b9f4-4505402af910\" data-macro-name=\"tip\"><p class=\"title\">Note</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><span>In the above screenshot, Baseline and Treatment Initiation are the two forms filled. The other templates that are configured in the below sample config are <span>&quot;Baseline&quot;,&quot;Treatment Initiation&quot;,&quot;Serious Adverse Events Template&quot;,&quot;Pregnancy Report Form Template&quot;</span></span></p></div></div><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"49e46d39-3d36-45ca-b5cb-5e69ff77aa05\" data-macro-name=\"note\"><p class=\"title\">How to Edit the Template/Form ?</p><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>To edit a particular form/template from this control, click on the <strong>pencil</strong> icon displayed against a particular form/template. Please refer above screenshot.</p></div></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0d51c40f-6487-45df-a718-959e7010e269\" data-macro-name=\"info\"><p class=\"title\">How to View the Form/Template ?</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>To view a particular form and the observations captured for that form via this control, click on the <strong>eye</strong> icon against a particular form.<span> Please refer above screenshot.</span></p></div></div><p><br /></p><h1 id=\"FormsDisplayControl-Configuration\">Configuration</h1><h3 id=\"FormsDisplayControl-SampleConfig\">Sample Config</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4d6bbb96-4374-41b6-a1d0-4e21d20e25e9\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Add to clinical/dashboard.json for it to appear on the patient dashboard</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;adverseEventsForms&quot;: {\n\t&quot;type&quot;: &quot;forms&quot;,\n    &quot;displayOrder&quot;: 6,\n    &quot;dashboardConfig&quot;: {\n        &quot;maximumNoOfVisits&quot;: 10\n    },\n    &quot;formGroup&quot;:[&quot;Baseline&quot;,&quot;Treatment Initiation&quot;,&quot;Serious Adverse Events Template&quot;,&quot;Pregnancy Report Form Template&quot;],\n    &quot;translationKey&quot;: &quot;DASHBOARD_TITLE_BASELINE_FORMS&quot;,\n    &quot;hideEmptyDisplayControl&quot;: false\n}</pre>\n</div></div><h3 class=\"auto-cursor-target\" id=\"FormsDisplayControl-KeyFieldTable\">Key Field Table</h3><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th class=\"confluenceTh\">Key</th><th class=\"confluenceTh\">Info</th><th colspan=\"1\" class=\"confluenceTh\">Mandatory</th></tr><tr><td class=\"confluenceTd\"><p>type</p></td><td class=\"confluenceTd\"><div class=\"content-wrapper\"><p>Indicates the display control.</p><p><strong>For Forms Control, value of type should be &quot;forms&quot;</strong></p></div></td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td class=\"confluenceTd\"><p>maximumNoOfVisits</p></td><td class=\"confluenceTd\"><p>Specifies the maximum number of visits for which to display data</p></td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td class=\"confluenceTd\"><p><span>dashboardConfig</span></p></td><td class=\"confluenceTd\"><p><span data-colorid=\"oczbmb3h76\">Indicates</span><span data-colorid=\"k6tv8rh981\"> that all the configurations mentioned under this are for the patient dashboard</span></p></td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><p>displayOrder</p></td><td colspan=\"1\" class=\"confluenceTd\"><p>The order in which the display control will be displayed</p></td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><p>translationKey</p></td><td colspan=\"1\" class=\"confluenceTd\"><p>Internationalizes the display control</p></td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><p>formGroup</p></td><td colspan=\"1\" class=\"confluenceTd\"><p>Observation templates that will be visible.</p></td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">hideEmptyDisplayControl</td><td colspan=\"1\" class=\"confluenceTd\">Hides the display control if no value is present for it when set to true, default value is set to false</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr></tbody></table></div><h2 id=\"FormsDisplayControl-Displayonlydatewithouttime\">Display only date without time</h2><h3 id=\"FormsDisplayControl-Purpose.1\">Purpose</h3><p>This configuration is used to display just date with out time on Forms Display Control.</p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"73c3086c-6834-4dc5-a182-e81442406810\" data-macro-name=\"info\"><p class=\"title\">Default behaviour</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>By default it will show both date and time.</p></div></div><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6782207b-cff4-4ef7-acc8-4f8f97d0752a\" data-macro-name=\"tip\"><p class=\"title\">Where to Configure ?</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Add the configuration in<em>&nbsp;clinical,app.json</em>&nbsp;under the <em>config</em> section.</p></div></div><h3 id=\"FormsDisplayControl-SampleConfig.1\">Sample Config</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"becc2d3f-a31d-47f0-b85f-36c94b5c2608\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>To be added in clinical, app.json under config section</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;config&quot; : {\n&quot;showFormsDate&quot; : true\n}</pre>\n</div></div><h3 class=\"auto-cursor-target\" id=\"FormsDisplayControl-KeyFieldTable.1\">Key Field Table</h3><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th class=\"confluenceTh\">Key</th><th class=\"confluenceTh\">Description</th><th colspan=\"1\" class=\"confluenceTh\">Note</th></tr><tr><td class=\"confluenceTd\">showFormsDate</td><td class=\"confluenceTd\"><div class=\"content-wrapper\"><p>Determines whether only date <span>(without time)</span> is to be displayed or not</p></div></td><td colspan=\"1\" class=\"confluenceTd\"><div class=\"content-wrapper\"><ul><li><span>By default both date and time are shown.</span></li><li>If value is set to false, <em>only</em> date is shown</li></ul></div></td></tr></tbody></table></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0021349d-1176-428e-98ff-3e479af1ba49\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: White;\"><b>Related Display Controls</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"d3a47878-f1ee-43ad-aa8c-6ce68330aa55\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/102891583/Diagnosis+Control\" data-linked-resource-id=\"102891583\" data-linked-resource-version=\"29\" data-linked-resource-type=\"page\">Diagnosis Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114186506/Disease+Template+Control\" data-linked-resource-id=\"114186506\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Disease Template Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/98402388/Forms+Display+Control\" data-linked-resource-id=\"98402388\" data-linked-resource-version=\"33\" data-linked-resource-type=\"page\">Forms Display Control</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/3505586199/New+Forms+React+Display+Control\" data-linked-resource-id=\"3505586199\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">New Forms React Display Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/3562766355/Print+Forms\" data-linked-resource-id=\"3562766355\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Print Forms</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/114188767/Observation+Control\" data-linked-resource-id=\"114188767\" data-linked-resource-version=\"15\" data-linked-resource-type=\"page\">Observation Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/98402359/Obs+To+Obs+FlowSheet\" data-linked-resource-id=\"98402359\" data-linked-resource-version=\"56\" data-linked-resource-type=\"page\">Obs To Obs FlowSheet</a></li></ul><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/98402388"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/98402388/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/98402388/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 391307667
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/98402388/child",
+    "restrictions": "/rest/api/content/98402388/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/98402388/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=98402388",
+    "webui": "/spaces/BAH/pages/98402388/Forms+Display+Control",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/98402388",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/98402388",
+    "tinyui": "/x/VIDdBQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

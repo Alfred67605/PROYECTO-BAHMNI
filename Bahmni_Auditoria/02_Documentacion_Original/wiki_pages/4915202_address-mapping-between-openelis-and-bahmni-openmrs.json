@@ -1,0 +1,170 @@
+{
+  "id": "4915202",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/4915202",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNDkxNTIwMg==",
+  "status": "current",
+  "title": "Address Mapping between OpenELIS and Bahmni / OpenMRS",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:5ded4f42-2e54-4aa7-8d99-0e638d234a4d",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Pankaj Kanchankar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:5ded4f42-2e54-4aa7-8d99-0e638d234a4d",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Pankaj Kanchankar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:5ded4f42-2e54-4aa7-8d99-0e638d234a4d"
+      }
+    },
+    "createdDate": "2014-05-26T13:03:23.635Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/4915202/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sravanthi N. S. CH.",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sravanthi N. S. CH.",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d47e0136-cbde-4dbc-8820-611d4528d1c8"
+      }
+    },
+    "when": "2016-12-23T05:22:38.099Z",
+    "friendlyWhen": "Dec 23, 2016",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "syncRev": "0.tIoTpcWRosKaWfiZccYcUA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$4915202.42",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/4915202"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/4915202/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p>The address hierarchy in Bahmni is based on the Address Hierarchy in OpenMRS. In OpenMRS, when you create the address hierarchy, you need to ensure that it follows specific order to map to correct labels in ELIS.</p><p>Refer to below mapping for ELIS fields and Address Hierarchy Fields:</p><table class=\"wrapped\"><tbody><tr><th>Field / Label in ELIS</th><th>Field in OpenMRS</th></tr><tr><td>&nbsp;House No, Street</td><td>Address1</td></tr><tr><td>Village</td><td>City_Village</td></tr><tr><td>Gram Panchayat</td><td><span>Address2</span></td></tr><tr><td colspan=\"1\">Tehsil</td><td colspan=\"1\"><span>Address3</span></td></tr><tr><td colspan=\"1\">District</td><td colspan=\"1\">County_District</td></tr><tr><td colspan=\"1\">State</td><td colspan=\"1\">StateProvince</td></tr></tbody></table><p><br /></p><p>If you don't see the address fields that you want to map to in the address hierarchy mapping list then update the Address Template under Locations &gt;&nbsp;Manage Address Template.</p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"fecd43fb-27ac-4b59-a4f6-26ff9f8dbd3d\"><ac:rich-text-body><p>Please refer to <span> </span><a href=\"https://wiki.openmrs.org/display/docs/Administering+Address+Templates\">Administering Address Templates (OpenMRS Documentation)</a> document to understand the details of the XML and the valid tags</p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"be80bc73-a304-455c-9f7f-910108cf0df7\"><ac:parameter ac:name=\"language\">xml</ac:parameter><ac:parameter ac:name=\"title\">Sample Address Template</ac:parameter><ac:parameter ac:name=\"collapse\">true</ac:parameter><ac:plain-text-body><![CDATA[<org.openmrs.layout.web.address.AddressTemplate>\n                        <nameMappings class=\"properties\">\n                          <property name=\"address1\" value=\"Location.address1\"/>\n                          <property name=\"address2\" value=\"Location.address2\"/>\n                          <property name=\"address3\" value=\"Tehsil\"/>\n                          <property name=\"address4\" value=\"Location.address4\"/>\n                          <property name=\"address5\" value=\"Location.address5\"/>\n                          <property name=\"address6\" value=\"Location.address6\"/>\n                          <property name=\"postalCode\" value=\"Location.postalCode\"/>\n                          <property name=\"longitude\" value=\"Location.longitude\"/>\n                          <property name=\"startDate\" value=\"PersonAddress.startDate\"/>\n                          <property name=\"country\" value=\"Location.country\"/>\n                          <property name=\"countyDistrict\" value=\"Location.district\"/>\n                          <property name=\"endDate\" value=\"personAddress.endDate\"/>\n                          <property name=\"stateProvince\" value=\"Location.stateProvince\"/>\n                          <property name=\"latitude\" value=\"Location.latitude\"/>\n                          <property name=\"cityVillage\" value=\"Location.cityVillage\"/>\n                        </nameMappings>\n                        <sizeMappings class=\"properties\">\n                          <property name=\"postalCode\" value=\"10\"/>\n                          <property name=\"longitude\" value=\"10\"/>\n                          <property name=\"address2\" value=\"40\"/>\n                          <property name=\"address1\" value=\"40\"/>\n                          <property name=\"startDate\" value=\"10\"/>\n                          <property name=\"country\" value=\"10\"/>\n                          <property name=\"endDate\" value=\"10\"/>\n                          <property name=\"stateProvince\" value=\"10\"/>\n                          <property name=\"latitude\" value=\"10\"/>\n                          <property name=\"cityVillage\" value=\"10\"/>\n                        </sizeMappings>\n                        <lineByLineFormat>\n                          <string>address1</string>\n                          <string>address2</string>\n                          <string>cityVillage stateProvince country postalCode</string>\n                          <string>latitude longitude</string>\n                          <string>startDate endDate</string>\n                        </lineByLineFormat>\n                      </org.openmrs.layout.web.address.AddressTemplate>]]></ac:plain-text-body></ac:structured-macro></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"866353f1-246c-400f-87d1-f17c22aaefd5\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><ul><li><a href=\"https://wiki.openmrs.org/display/docs/Administering+Address+Templates\">Administering Address Templates (OpenMRS Documentation)</a></li></ul></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/4915202"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p>The address hierarchy in Bahmni is based on the Address Hierarchy in OpenMRS. In OpenMRS, when you create the address hierarchy, you need to ensure that it follows specific order to map to correct labels in ELIS.</p><p>Refer to below mapping for ELIS fields and Address Hierarchy Fields:</p><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><tbody><tr><th class=\"confluenceTh\">Field / Label in ELIS</th><th class=\"confluenceTh\">Field in OpenMRS</th></tr><tr><td class=\"confluenceTd\"> House No, Street</td><td class=\"confluenceTd\">Address1</td></tr><tr><td class=\"confluenceTd\">Village</td><td class=\"confluenceTd\">City_Village</td></tr><tr><td class=\"confluenceTd\">Gram Panchayat</td><td class=\"confluenceTd\"><span>Address2</span></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">Tehsil</td><td colspan=\"1\" class=\"confluenceTd\"><span>Address3</span></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">District</td><td colspan=\"1\" class=\"confluenceTd\">County_District</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">State</td><td colspan=\"1\" class=\"confluenceTd\">StateProvince</td></tr></tbody></table></div><p><br/></p><p>If you don't see the address fields that you want to map to in the address hierarchy mapping list then update the Address Template under Locations &gt; Manage Address Template.</p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"fecd43fb-27ac-4b59-a4f6-26ff9f8dbd3d\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Please refer to <span> </span><a class=\"external-link\" href=\"https://wiki.openmrs.org/display/docs/Administering+Address+Templates\" rel=\"nofollow\">Administering Address Templates (OpenMRS Documentation)</a> document to understand the details of the XML and the valid tags</p></div></div><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"be80bc73-a304-455c-9f7f-910108cf0df7\" data-macro-name=\"code\" style=\"border-width: 1px;\">\n <div class=\"codeHeader panelHeader pdl hide-border-bottom\" style=\"border-bottom-width: 1px;\">\n  <b class=\"code-title\">Sample Address Template</b><span class=\"collapse-source expand-control\" style=\"display:none;\"><span class=\"expand-control-icon icon\"> </span><span class=\"expand-control-text\">Expand source</span></span><span class=\"collapse-spinner-wrapper\"> </span>\n </div>\n <div class=\"codeContent panelContent pdl hide-toolbar\">\n  <pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: xml; gutter: false; theme: Confluence; collapse: true\" data-theme=\"Confluence\">&lt;org.openmrs.layout.web.address.AddressTemplate&gt;\n                        &lt;nameMappings class=&quot;properties&quot;&gt;\n                          &lt;property name=&quot;address1&quot; value=&quot;Location.address1&quot;/&gt;\n                          &lt;property name=&quot;address2&quot; value=&quot;Location.address2&quot;/&gt;\n                          &lt;property name=&quot;address3&quot; value=&quot;Tehsil&quot;/&gt;\n                          &lt;property name=&quot;address4&quot; value=&quot;Location.address4&quot;/&gt;\n                          &lt;property name=&quot;address5&quot; value=&quot;Location.address5&quot;/&gt;\n                          &lt;property name=&quot;address6&quot; value=&quot;Location.address6&quot;/&gt;\n                          &lt;property name=&quot;postalCode&quot; value=&quot;Location.postalCode&quot;/&gt;\n                          &lt;property name=&quot;longitude&quot; value=&quot;Location.longitude&quot;/&gt;\n                          &lt;property name=&quot;startDate&quot; value=&quot;PersonAddress.startDate&quot;/&gt;\n                          &lt;property name=&quot;country&quot; value=&quot;Location.country&quot;/&gt;\n                          &lt;property name=&quot;countyDistrict&quot; value=&quot;Location.district&quot;/&gt;\n                          &lt;property name=&quot;endDate&quot; value=&quot;personAddress.endDate&quot;/&gt;\n                          &lt;property name=&quot;stateProvince&quot; value=&quot;Location.stateProvince&quot;/&gt;\n                          &lt;property name=&quot;latitude&quot; value=&quot;Location.latitude&quot;/&gt;\n                          &lt;property name=&quot;cityVillage&quot; value=&quot;Location.cityVillage&quot;/&gt;\n                        &lt;/nameMappings&gt;\n                        &lt;sizeMappings class=&quot;properties&quot;&gt;\n                          &lt;property name=&quot;postalCode&quot; value=&quot;10&quot;/&gt;\n                          &lt;property name=&quot;longitude&quot; value=&quot;10&quot;/&gt;\n                          &lt;property name=&quot;address2&quot; value=&quot;40&quot;/&gt;\n                          &lt;property name=&quot;address1&quot; value=&quot;40&quot;/&gt;\n                          &lt;property name=&quot;startDate&quot; value=&quot;10&quot;/&gt;\n                          &lt;property name=&quot;country&quot; value=&quot;10&quot;/&gt;\n                          &lt;property name=&quot;endDate&quot; value=&quot;10&quot;/&gt;\n                          &lt;property name=&quot;stateProvince&quot; value=&quot;10&quot;/&gt;\n                          &lt;property name=&quot;latitude&quot; value=&quot;10&quot;/&gt;\n                          &lt;property name=&quot;cityVillage&quot; value=&quot;10&quot;/&gt;\n                        &lt;/sizeMappings&gt;\n                        &lt;lineByLineFormat&gt;\n                          &lt;string&gt;address1&lt;/string&gt;\n                          &lt;string&gt;address2&lt;/string&gt;\n                          &lt;string&gt;cityVillage stateProvince country postalCode&lt;/string&gt;\n                          &lt;string&gt;latitude longitude&lt;/string&gt;\n                          &lt;string&gt;startDate endDate&lt;/string&gt;\n                        &lt;/lineByLineFormat&gt;\n                      &lt;/org.openmrs.layout.web.address.AddressTemplate&gt;</pre>\n </div>\n</div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"866353f1-246c-400f-87d1-f17c22aaefd5\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<ul><li><a class=\"external-link\" href=\"https://wiki.openmrs.org/display/docs/Administering+Address+Templates\" rel=\"nofollow\">Administering Address Templates (OpenMRS Documentation)</a></li></ul>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/4915202"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/4915202/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/4915202/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 112008474
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/4915202/child",
+    "restrictions": "/rest/api/content/4915202/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/4915202/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=4915202",
+    "webui": "/spaces/BAH/pages/4915202/Address+Mapping+between+OpenELIS+and+Bahmni+OpenMRS",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/4915202",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/4915202",
+    "tinyui": "/x/AgBL",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

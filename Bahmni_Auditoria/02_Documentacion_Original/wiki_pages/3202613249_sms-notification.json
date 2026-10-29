@@ -1,0 +1,172 @@
+{
+  "id": "3202613249",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3202613249",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzIwMjYxMzI0OQ==",
+  "status": "current",
+  "title": "SMS Notification",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "createdDate": "2023-06-28T06:27:28.895Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3202613249/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "638713789341d1f136084eda",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Anubhav Bansal",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/638713789341d1f136084eda",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Anubhav Bansal",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=638713789341d1f136084eda"
+      }
+    },
+    "when": "2023-11-29T13:58:36.068Z",
+    "friendlyWhen": "Nov 29, 2023",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "ncsStepVersion": "1101",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3202613249.23",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3202613249"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3202613249/version/4"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"c9bb7844-eba4-4c88-a579-bd99ebbf00fc\"><ac:rich-text-body><p>Since Bahmni Lite v1.0, Bahmni provides the ability to send SMS notification to patients for events like Patient Registered, or Appointment Scheduled, etc. This requires Bahmni to make use of a 3rd party SMS Gateway, which needs to be configured, for sending SMS. For more details read: <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"SMS Service Configuration (docker)\" ri:version-at-save=\"2\" /><ac:link-body>SMS Service Configuration (docker)</ac:link-body></ac:link> </p></ac:rich-text-body></ac:structured-macro><p><strong>To send sms we have to ensure that following global properties should enable:</strong></p><p><strong>. </strong>When we send sms during registration we have to make sure that global properties like &ldquo;<code>sms.enableRegistrationSMSAlert</code>&quot;, &ldquo;<code>sms.enableRegistrationSMSAlert</code>&quot; or &ldquo;<code>sms.enableRegistrationSMSAlert</code>&quot; should be enable true based on the requirement of sending sms.</p><p><strong>Communication module is added :</strong></p><p>. It generate the message which we have to send to the clients. sms-service generate authentication token and communication module use this token to send message with the help of sms-service. <a href=\"https://github.com/Bahmni/openmrs-module-communication\">git repo</a></p><p /><p />",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3202613249"
+      }
+    },
+    "view": {
+      "value": "<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c9bb7844-eba4-4c88-a579-bd99ebbf00fc\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Since Bahmni Lite v1.0, Bahmni provides the ability to send SMS notification to patients for events like Patient Registered, or Appointment Scheduled, etc. This requires Bahmni to make use of a 3rd party SMS Gateway, which needs to be configured, for sending SMS. For more details read: <a href=\"/wiki/spaces/BAH/pages/3168010241/SMS+Service+Configuration+docker\" data-linked-resource-id=\"3168010241\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">SMS Service Configuration (docker)</a> </p></div></div><p><strong>To send sms we have to ensure that following global properties should enable:</strong></p><p><strong>. </strong>When we send sms during registration we have to make sure that global properties like “<code>sms.enableRegistrationSMSAlert</code>&quot;, “<code>sms.enableRegistrationSMSAlert</code>&quot; or “<code>sms.enableRegistrationSMSAlert</code>&quot; should be enable true based on the requirement of sending sms.</p><p><strong>Communication module is added :</strong></p><p>. It generate the message which we have to send to the clients. sms-service generate authentication token and communication module use this token to send message with the help of sms-service. <a class=\"external-link\" href=\"https://github.com/Bahmni/openmrs-module-communication\" rel=\"nofollow\">git repo</a></p><p /><p />",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3202613249"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3202613249/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3202613249/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1895943584
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3202613249/child",
+    "restrictions": "/rest/api/content/3202613249/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3202613249/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3202613249",
+    "webui": "/spaces/BAH/pages/3202613249/SMS+Notification",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3202613249",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3202613249",
+    "tinyui": "/x/AQDkvg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

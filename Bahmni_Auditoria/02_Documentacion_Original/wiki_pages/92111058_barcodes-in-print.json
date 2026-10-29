@@ -1,0 +1,170 @@
+{
+  "id": "92111058",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/92111058",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvOTIxMTEwNTg=",
+  "status": "current",
+  "title": "Barcodes in Print",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sravanthi N. S. CH.",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sravanthi N. S. CH.",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d47e0136-cbde-4dbc-8820-611d4528d1c8"
+      }
+    },
+    "createdDate": "2016-10-12T08:54:46.435Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/92111058/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sravanthi N. S. CH.",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sravanthi N. S. CH.",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d47e0136-cbde-4dbc-8820-611d4528d1c8"
+      }
+    },
+    "when": "2016-11-02T07:55:25.649Z",
+    "friendlyWhen": "Nov 02, 2016",
+    "message": "",
+    "number": 14,
+    "minorEdit": false,
+    "syncRev": "0.gRRPLUMYCOoI0fKq-l2KNQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$92111058.64",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/92111058"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/92111058/version/14"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2 class=\"graf graf--p\">Steps to generate Barcode in the Print</h2><p class=\"graf graf--p\">Download <a class=\"markup--anchor markup--p-anchor\" href=\"https://cdn.jsdelivr.net/jsbarcode/3.5.1/JsBarcode.all.min.js\">JsBarcode.all.min.js</a>&nbsp;and include in the html script tag</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"c396de77-c4f5-4807-b5f2-d2991cb2f98e\"><ac:plain-text-body><![CDATA[<script src=\"{{path}}/JsBarcode.all.min.js\"></script>]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"33db772c-0401-4d88-89ec-1c456276a2c6\"><ac:rich-text-body><p>path = the path of the downloaded file (JSBarcode.all.min.js). One can choose different files from <a href=\"https://github.com/lindell/JsBarcode\">https://github.com/lindell/JsBarcode</a> depending on the configurations</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><p>Create an image tag with parameter&nbsp;<em class=\"markup--em markup--p-em\">jsbarcode-value&nbsp;</em>which holds the value that can be used to generate the barcode.&nbsp;</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"91aa21f7-a2cc-490e-9cd4-0ead70e1df9e\"><ac:plain-text-body><![CDATA[<img id=\"barcode\"\n  jsbarcode-value=\"{{patient.primaryIdentifier.identifier}}\"\n</img>]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"c5fa3f37-b4c2-4cc3-863a-53c0cfc1d6c2\"><ac:rich-text-body><p><span>In above code snippet,</span><span style=\"color: rgb(0,0,0);\"> <em><strong>patient.primaryIdentifier.identifier</strong></em>&nbsp;will hold the identifier of the patient. This identifier which is alphanumeric (most cases) is used to generate the barcode.</span></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"fcb11b07-77a7-4161-912b-8a1ba6b73e73\"><ac:rich-text-body><p>One can choose to give different configurations for the size of the barcode and the position etc. Please refer <a href=\"https://github.com/lindell/JsBarcode/wiki/Options\">https://github.com/lindell/JsBarcode/wiki/Options</a><span style=\"color: rgb(0,0,0);\"><br /></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><p class=\"graf graf--p\">Initialize the barcode generation by adding &nbsp;below mentioned script tag</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d73a0208-e500-41d6-ae26-6555bcbdb88b\"><ac:plain-text-body><![CDATA[<script>\n  (function() {  \n     JsBarcode(\"#barcode\").init();    \n  })();\n</script>]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"bb2bc5b8-ddc6-4303-8e52-369870cb28f7\"><ac:rich-text-body><p>Sample <a href=\"https://github.com/Bahmni/default-config/blob/4607f26326808c6a3342f8b4446dc1c6f88dcc17/openmrs/apps/registration/registrationCardLayout/printWithBarcode.html\">html page</a> with the above mentioned configurations</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><p><ac:image ac:title=\"Sample Print Card with Barcode\" ac:alt=\"Sample Print Card with Barcode\" ac:height=\"250\"><ri:attachment ri:filename=\"Screen Shot 2016-10-10 at 12.14.41 pm.png\" /></ac:image></p><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"warning\" ac:schema-version=\"1\" ac:macro-id=\"842cac28-5636-4d1c-b6e9-1d7c41411bfe\"><ac:rich-text-body><p>This is not for Printing on Registration ID card. This works for normal printer.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"8d1838dd-8b02-4368-9f72-1b4003b91e42\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Configure Patient Card Prints\" /></ac:link></p><p><a href=\"https://medium.com/bahmni-blog/using-barcodes-in-bahmni-9c6eab83c760#.citawd6zd\">Blog on Using Barcodes in Bahmni</a></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/92111058"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 class=\"graf graf--p\" id=\"BarcodesinPrint-StepstogenerateBarcodeinthePrint\">Steps to generate Barcode in the Print</h2><p class=\"graf graf--p\">Download <a class=\"external-link\" href=\"https://cdn.jsdelivr.net/jsbarcode/3.5.1/JsBarcode.all.min.js\" rel=\"nofollow\">JsBarcode.all.min.js</a> and include in the html script tag</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c396de77-c4f5-4807-b5f2-d2991cb2f98e\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&lt;script src=&quot;{{path}}/JsBarcode.all.min.js&quot;&gt;&lt;/script&gt;</pre>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"33db772c-0401-4d88-89ec-1c456276a2c6\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>path = the path of the downloaded file (JSBarcode.all.min.js). One can choose different files from <a class=\"external-link\" href=\"https://github.com/lindell/JsBarcode\" rel=\"nofollow\">https://github.com/lindell/JsBarcode</a> depending on the configurations</p></div></div><p>Create an image tag with parameter <em class=\"markup--em markup--p-em\">jsbarcode-value </em>which holds the value that can be used to generate the barcode. </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"91aa21f7-a2cc-490e-9cd4-0ead70e1df9e\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&lt;img id=&quot;barcode&quot;\n  jsbarcode-value=&quot;{{patient.primaryIdentifier.identifier}}&quot;\n&lt;/img&gt;</pre>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c5fa3f37-b4c2-4cc3-863a-53c0cfc1d6c2\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><span>In above code snippet,</span><span class=\"legacy-color-text-default\"> <em><strong>patient.primaryIdentifier.identifier</strong></em> will hold the identifier of the patient. This identifier which is alphanumeric (most cases) is used to generate the barcode.</span></p></div></div><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"fcb11b07-77a7-4161-912b-8a1ba6b73e73\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>One can choose to give different configurations for the size of the barcode and the position etc. Please refer <a class=\"external-link\" href=\"https://github.com/lindell/JsBarcode/wiki/Options\" rel=\"nofollow\">https://github.com/lindell/JsBarcode/wiki/Options</a><span class=\"legacy-color-text-default\"><br /></span></p></div></div><p class=\"graf graf--p\">Initialize the barcode generation by adding  below mentioned script tag</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d73a0208-e500-41d6-ae26-6555bcbdb88b\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&lt;script&gt;\n  (function() {  \n     JsBarcode(&quot;#barcode&quot;).init();    \n  })();\n&lt;/script&gt;</pre>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"bb2bc5b8-ddc6-4303-8e52-369870cb28f7\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Sample <a class=\"external-link\" href=\"https://github.com/Bahmni/default-config/blob/4607f26326808c6a3342f8b4446dc1c6f88dcc17/openmrs/apps/registration/registrationCardLayout/printWithBarcode.html\" rel=\"nofollow\">html page</a> with the above mentioned configurations</p></div></div><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" alt=\"Sample Print Card with Barcode\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/92111058/Screen%20Shot%202016-10-10%20at%2012.14.41%20pm.png?version=1&amp;modificationDate=1476337564440&amp;cacheVersion=1&amp;api=v2&amp;width=352&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/92111058/Screen%20Shot%202016-10-10%20at%2012.14.41%20pm.png?version=1&amp;modificationDate=1476337564440&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"92111111\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-10-10 at 12.14.41 pm.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"92111058\" data-linked-resource-container-version=\"14\" data-media-id=\"c9a0c218-1e71-4ca8-825a-1442566bcc29\" data-media-type=\"file\" title=\"Sample Print Card with Barcode\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/92111058/Screen%20Shot%202016-10-10%20at%2012.14.41%20pm.png?version=1&amp;modificationDate=1476337564440&amp;cacheVersion=1&amp;api=v2&amp;width=676&amp;height=480 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/92111058/Screen%20Shot%202016-10-10%20at%2012.14.41%20pm.png?version=1&amp;modificationDate=1476337564440&amp;cacheVersion=1&amp;api=v2&amp;width=352&amp;height=250 1x\"></span></p><div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"842cac28-5636-4d1c-b6e9-1d7c41411bfe\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This is not for Printing on Registration ID card. This works for normal printer.</p></div></div><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8d1838dd-8b02-4368-9f72-1b4003b91e42\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/32014599/Configure+Patient+Card+Prints\" data-linked-resource-id=\"32014599\" data-linked-resource-version=\"32\" data-linked-resource-type=\"page\">Configure Patient Card Prints</a></p><p><a class=\"external-link\" href=\"https://medium.com/bahmni-blog/using-barcodes-in-bahmni-9c6eab83c760#.citawd6zd\" rel=\"nofollow\">Blog on Using Barcodes in Bahmni</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/92111058"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/92111058/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/92111058/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 165062963
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/92111058/child",
+    "restrictions": "/rest/api/content/92111058/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/92111058/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=92111058",
+    "webui": "/spaces/BAH/pages/92111058/Barcodes+in+Print",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/92111058",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/92111058",
+    "tinyui": "/x/0oB9BQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

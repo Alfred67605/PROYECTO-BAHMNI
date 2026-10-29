@@ -1,0 +1,170 @@
+{
+  "id": "32014360",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/32014360",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzIwMTQzNjA=",
+  "status": "current",
+  "title": "Radiology",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2015-11-02T10:49:25.595Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014360/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "when": "2016-04-05T10:29:48.303Z",
+    "friendlyWhen": "Apr 05, 2016",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "syncRev": "0.wyZR5u91bNJrhHzrB5mA7w.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$32014360.57",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/32014360"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014360/version/8"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>About the Feature</h2><div>Bahmni supports two ways of managing Radiology workflows:</div><ul><li><p>Via Manual Radiology Upload</p></li><li>Using PACS Integration*<br /><br /></li></ul><div>*Picture Archiving and Communication System (PACS) is a medical imaging technology which provides storage and convenient access to radiology &nbsp;images from multiple imaging equipments. The images are transmitted digitally from the imaging devices and can be seen using a DICOM image viewer which could be native or web based.</div><div><h2><span style=\"color: rgb(0,0,0);\">Used By</span></h2><p><span style=\"color: rgb(0,0,0);\">The orders are usually placed by doctors and sometimes by other staff on behalf of the doctor based on pre-decided protocols. The radiology images are seen by Doctors for diagnostic purposes.&nbsp;</span></p><h2><span style=\"color: rgb(0,0,0);\">How is it Used?</span></h2><p>Bahmni supports both PACS integration and manual upload of radiology images. Please refer to the links below for the steps involved in managing Radiology workflows using Bahmni.</p><ul><li><ac:link><ri:page ri:content-title=\"PACS Integration and Support\" /><ac:plain-text-link-body><![CDATA[Using PACS Integration]]></ac:plain-text-link-body></ac:link></li><li><p><ac:link><ri:page ri:content-title=\"Upload Radiology Documents\" /><ac:plain-text-link-body><![CDATA[Via Radiology Upload]]></ac:plain-text-link-body></ac:link></p></li></ul></div></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Radiology and PACS\" /><ac:plain-text-link-body><![CDATA[Radiology and PACS - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"3fe3feef-06ea-4aac-b9a1-a6bbe83b0bec\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Implemnentation Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Radiology and PACS Integration\" /><ac:plain-text-link-body><![CDATA[Radiology and PACS - Implementer's Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/32014360"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"Radiology-AbouttheFeature\">About the Feature</h2><div>Bahmni supports two ways of managing Radiology workflows:</div><ul><li><p>Via Manual Radiology Upload</p></li><li>Using PACS Integration*<br/><br/></li></ul><div>*Picture Archiving and Communication System (PACS) is a medical imaging technology which provides storage and convenient access to radiology  images from multiple imaging equipments. The images are transmitted digitally from the imaging devices and can be seen using a DICOM image viewer which could be native or web based.</div><div><h2 id=\"Radiology-UsedBy\"><span class=\"legacy-color-text-default\">Used By</span></h2><p><span class=\"legacy-color-text-default\">The orders are usually placed by doctors and sometimes by other staff on behalf of the doctor based on pre-decided protocols. The radiology images are seen by Doctors for diagnostic purposes. </span></p><h2 id=\"Radiology-HowisitUsed?\"><span class=\"legacy-color-text-default\">How is it Used?</span></h2><p>Bahmni supports both PACS integration and manual upload of radiology images. Please refer to the links below for the steps involved in managing Radiology workflows using Bahmni.</p><ul><li><a href=\"/wiki/spaces/BAH/pages/32014462/PACS+Integration+and+Support\" data-linked-resource-id=\"32014462\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Using PACS Integration</a></li><li><p><a href=\"/wiki/spaces/BAH/pages/32014528/Upload+Radiology+Documents\" data-linked-resource-id=\"32014528\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Via Radiology Upload</a></p></li></ul></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604202/Radiology+and+PACS\" data-linked-resource-id=\"32604202\" data-linked-resource-version=\"15\" data-linked-resource-type=\"page\">Radiology and PACS - Feature Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3fe3feef-06ea-4aac-b9a1-a6bbe83b0bec\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Implemnentation Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32014588/Radiology+and+PACS+Integration\" data-linked-resource-id=\"32014588\" data-linked-resource-version=\"48\" data-linked-resource-type=\"page\">Radiology and PACS - Implementer's Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/32014360"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/32014360/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014360/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 647553751
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/32014360/child",
+    "restrictions": "/rest/api/content/32014360/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/32014360/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=32014360",
+    "webui": "/spaces/BAH/pages/32014360/Radiology",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/32014360",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014360",
+    "tinyui": "/x/GIDoAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "id": "3242590216",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3242590216",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzI0MjU5MDIxNg==",
+  "status": "current",
+  "title": "Bahmni and openIMIS Integration",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "createdDate": "2023-10-23T10:38:23.630Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3242590216/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2024-01-18T07:51:34.076Z",
+    "friendlyWhen": "Jan 18, 2024",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3242590216.36",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3242590216"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3242590216/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"c72ed1ed-13c6-460d-9f52-6ae2276f77c3\"><ac:rich-text-body><p><strong>openIMIS</strong> is a versatile open source software which supports the administration of health financing, claims and social protection schemes. It is recognised as a digital public good by the Digital Public Goods Alliance and is listed in Digital Square&rsquo;s Global Goods Guidebook as an emergent global good in digital health. Read more at <a href=\"https://openimis.org/\" data-card-appearance=\"inline\">https://openimis.org/</a>  </p></ac:rich-text-body></ac:structured-macro><h2>Bahmni &amp; openIMIS Integration for Nepal</h2><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"11c7233b-542d-420b-9eb6-6bd406134dfa\"><ac:rich-text-body><p>This integration has <strong>not</strong> yet been tested with latest Bahmni v1.0 Standard/Lite docker instances, and is not packaged out-of-the-box with Bahmni. This is a community implementation by the NepalEHR team that has customized Bahmni a bit, and written the integration pieces (which are all opensource). </p></ac:rich-text-body></ac:structured-macro><ol start=\"1\"><li><p><strong>Brief overview of Nepal implementation of Bahmni + openIMIS</strong>: <a href=\"https://openimis.org/nepal-health-insurance\" data-card-appearance=\"inline\">https://openimis.org/nepal-health-insurance</a> </p></li><li><p><strong>Architecture:</strong> Of Bahmni &rarr; OpeIMIS integation over FHIR can be seen here: <a href=\"https://openimis.atlassian.net/wiki/spaces/OP/pages/773652496/Bahmni-OpenIMIS+Integration+Architecture\" data-card-appearance=\"inline\">https://openimis.atlassian.net/wiki/spaces/OP/pages/773652496/Bahmni-OpenIMIS+Integration+Architecture</a> (utilizes a new omod, integration-feed-service and an odoo-plugin).</p></li><li><p><strong>Demo: </strong>A demo video of how Bahmni &rarr; OpenIMIS integration looks (along with Eligibility Check and Claim Submissions in Nepal version of Bahmni) can be seen here: <a href=\"https://talk.openmrs.org/t/lessons-learnt-from-integration-of-bahmni-with-openimis/26350/4?u=gsluthra\" data-card-appearance=\"inline\">https://talk.openmrs.org/t/lessons-learnt-from-integration-of-bahmni-with-openimis/26350/4?u=gsluthra</a></p></li><li><p><strong>User Guide</strong> documentation: <a href=\"https://openimis.atlassian.net/wiki/spaces/OP/pages/909246472/Bahmni-OpenIMIS+Integration+User+guide\" data-card-appearance=\"inline\">https://openimis.atlassian.net/wiki/spaces/OP/pages/909246472/Bahmni-OpenIMIS+Integration+User+guide</a> </p></li><li><p><strong>System Installation</strong> guide: <a href=\"https://openimis.atlassian.net/wiki/spaces/OP/pages/909344769/Bahmni-OpenIMIS+Integration+System+Installation+guide\" data-card-appearance=\"inline\">https://openimis.atlassian.net/wiki/spaces/OP/pages/909344769/Bahmni-OpenIMIS+Integration+System+Installation+guide</a> </p></li><li><p>Code for insurance-connect: <a href=\"https://github.com/Bahmni/bahmni-insurance-connect/tree/master\" data-card-appearance=\"inline\">https://github.com/Bahmni/bahmni-insurance-connect/tree/master</a> </p></li></ol><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"613\" ac:original-width=\"856\" ac:custom-width=\"true\" ac:alt=\"image-20240118-074840.png\" ac:width=\"760\"><ri:attachment ri:filename=\"image-20240118-074840.png\" ri:version-at-save=\"1\" /><ac:caption><p>openIMIS functionalities. See more at: <a href=\"https://openimis.org/\">https://openimis.org/</a> </p></ac:caption></ac:image><p />",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3242590216"
+      }
+    },
+    "view": {
+      "value": "<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c72ed1ed-13c6-460d-9f52-6ae2276f77c3\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>openIMIS</strong> is a versatile open source software which supports the administration of health financing, claims and social protection schemes. It is recognised as a digital public good by the Digital Public Goods Alliance and is listed in Digital Square’s Global Goods Guidebook as an emergent global good in digital health. Read more at <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://openimis.org/\" rel=\"nofollow\">https://openimis.org/</a>  </p></div></div><h2 id=\"BahmniandopenIMISIntegration-Bahmni&amp;openIMISIntegrationforNepal\">Bahmni &amp; openIMIS Integration for Nepal</h2><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"11c7233b-542d-420b-9eb6-6bd406134dfa\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This integration has <strong>not</strong> yet been tested with latest Bahmni v1.0 Standard/Lite docker instances, and is not packaged out-of-the-box with Bahmni. This is a community implementation by the NepalEHR team that has customized Bahmni a bit, and written the integration pieces (which are all opensource). </p></div></div><ol start=\"1\"><li><p><strong>Brief overview of Nepal implementation of Bahmni + openIMIS</strong>: <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://openimis.org/nepal-health-insurance\" rel=\"nofollow\">https://openimis.org/nepal-health-insurance</a> </p></li><li><p><strong>Architecture:</strong> Of Bahmni → OpeIMIS integation over FHIR can be seen here: <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://openimis.atlassian.net/wiki/spaces/OP/pages/773652496/Bahmni-OpenIMIS+Integration+Architecture\" rel=\"nofollow\">https://openimis.atlassian.net/wiki/spaces/OP/pages/773652496/Bahmni-OpenIMIS+Integration+Architecture</a> (utilizes a new omod, integration-feed-service and an odoo-plugin).</p></li><li><p><strong>Demo: </strong>A demo video of how Bahmni → OpenIMIS integration looks (along with Eligibility Check and Claim Submissions in Nepal version of Bahmni) can be seen here: <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://talk.openmrs.org/t/lessons-learnt-from-integration-of-bahmni-with-openimis/26350/4?u=gsluthra\" rel=\"nofollow\">https://talk.openmrs.org/t/lessons-learnt-from-integration-of-bahmni-with-openimis/26350/4?u=gsluthra</a></p></li><li><p><strong>User Guide</strong> documentation: <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://openimis.atlassian.net/wiki/spaces/OP/pages/909246472/Bahmni-OpenIMIS+Integration+User+guide\" rel=\"nofollow\">https://openimis.atlassian.net/wiki/spaces/OP/pages/909246472/Bahmni-OpenIMIS+Integration+User+guide</a> </p></li><li><p><strong>System Installation</strong> guide: <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://openimis.atlassian.net/wiki/spaces/OP/pages/909344769/Bahmni-OpenIMIS+Integration+System+Installation+guide\" rel=\"nofollow\">https://openimis.atlassian.net/wiki/spaces/OP/pages/909344769/Bahmni-OpenIMIS+Integration+System+Installation+guide</a> </p></li><li><p>Code for insurance-connect: <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://github.com/Bahmni/bahmni-insurance-connect/tree/master\" rel=\"nofollow\">https://github.com/Bahmni/bahmni-insurance-connect/tree/master</a> </p></li></ol><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"image-20240118-074840.png\" width=\"760\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3242590216/image-20240118-074840.png?version=1&amp;modificationDate=1705564125145&amp;cacheVersion=1&amp;api=v2&amp;width=760&amp;height=544\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3242590216/image-20240118-074840.png?version=1&amp;modificationDate=1705564125145&amp;cacheVersion=1&amp;api=v2\" data-height=\"613\" data-width=\"856\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3319922778\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240118-074840.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3242590216\" data-linked-resource-container-version=\"6\" data-media-id=\"9e467151-4427-4583-a338-d44e8a7b3d0e\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3242590216/image-20240118-074840.png?version=1&amp;modificationDate=1705564125145&amp;cacheVersion=1&amp;api=v2&amp;width=856&amp;height=613 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3242590216/image-20240118-074840.png?version=1&amp;modificationDate=1705564125145&amp;cacheVersion=1&amp;api=v2&amp;width=760&amp;height=544 1x\"></span><p />",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3242590216"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "insurance",
+          "id": "3319857229",
+          "label": "insurance"
+        },
+        {
+          "prefix": "global",
+          "name": "integration",
+          "id": "3320283164",
+          "label": "integration"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 2,
+      "_links": {
+        "next": "/rest/api/content/3242590216/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3242590216/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 543223690
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3242590216/child",
+    "restrictions": "/rest/api/content/3242590216/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3242590216/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3242590216",
+    "webui": "/spaces/BAH/pages/3242590216/Bahmni+and+openIMIS+Integration",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3242590216",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3242590216",
+    "tinyui": "/x/CABGwQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

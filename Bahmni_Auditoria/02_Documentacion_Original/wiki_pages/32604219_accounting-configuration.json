@@ -1,0 +1,171 @@
+{
+  "id": "32604219",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/32604219",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzI2MDQyMTk=",
+  "status": "current",
+  "title": "Accounting Configuration",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2015-11-07T06:59:19.320Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32604219/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2017-04-13T06:26:44.090Z",
+    "friendlyWhen": "Apr 13, 2017",
+    "message": "",
+    "number": 12,
+    "minorEdit": false,
+    "syncRev": "0.L2KBVo3ovLjpZthwldINuw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$32604219.76",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/32604219"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32604219/version/12"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p><span style=\"color: rgb(0,0,0);\">Bahmni integrates OpenMRS with OpenERP&nbsp;which is a an open source ERP product. It is useful in Billing, Stock management. Any patient registered in OpenMRS is automatically synced as a customer in OpenERP.&nbsp;</span></p><h2>Steps</h2><p>1.&nbsp;<ac:link><ri:page ri:content-title=\"OpenERP Basic Configurations\" ri:version-at-save=\"10\" /><ac:plain-text-link-body><![CDATA[Configure OpenERP/Odoo]]></ac:plain-text-link-body></ac:link>.</p><p>2.&nbsp;<ac:link><ri:page ri:content-title=\"OpenERP Syncing Config\" ri:version-at-save=\"7\" /><ac:plain-text-link-body><![CDATA[Setup Syncing]]></ac:plain-text-link-body></ac:link>&nbsp;between Odoo and Bahmni.</p><p><strong>3.&nbsp;<span style=\"color: rgb(0,0,0);\">Set up Fiscal Year and Period</span></strong></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"ee0432d8-72c8-4c14-b5d5-bacef805c49e\"><ac:rich-text-body><p>This is r<span style=\"color: rgb(0,0,0);\">equired to be done on an annual basis.</span></p></ac:rich-text-body></ac:structured-macro><p><span style=\"color: rgb(0,0,0);\">1. Log in to OpenERP with Admin level privilege account.</span></p><p>2.&nbsp;Navigate to the &ldquo;<em>Accounting</em>&rdquo; tab. Click on the option &ldquo;<em>Periods</em>&rdquo; under &ldquo;<em>Configuration</em>&rdquo; from the left panel.</p><p><strong><ac:image ac:align=\"center\" ac:title=\"Navigate to Periods\" ac:thumbnail=\"true\" ac:alt=\"Navigate to Periods\" ac:width=\"200\"><ri:attachment ri:filename=\"image2017-1-2_12-24-52.png\" ri:version-at-save=\"1\" /></ac:image></strong></p><p>3. Click on the &ldquo;<em>Fiscal Years</em>&rdquo; option.</p><p><strong><ac:image ac:align=\"center\" ac:title=\"Fiscal years\" ac:thumbnail=\"true\" ac:alt=\"Fiscal years\" ac:width=\"200\"><ri:attachment ri:filename=\"image2017-1-2_12-25-46.png\" ri:version-at-save=\"1\" /></ac:image></strong></p><p>4. Click on &ldquo;<em>Create</em>&rdquo; button. Define the fiscal year as shown in the example below</p><p><strong><ac:image ac:align=\"center\" ac:title=\"Create a fiscal year\" ac:alt=\"Create a fiscal year\" ac:width=\"700\"><ri:attachment ri:filename=\"image2017-1-2_12-27-8.png\" ri:version-at-save=\"1\" /></ac:image></strong></p><p>6. Click on &ldquo;<em>Create Monthly Periods</em>&rdquo; and it will generate the periods as shown below.</p><p><strong><ac:image ac:align=\"center\" ac:title=\"Create monthly periods\" ac:alt=\"Create monthly periods\" ac:width=\"700\"><ri:attachment ri:filename=\"image2017-1-2_12-28-30.png\" ri:version-at-save=\"1\" /></ac:image></strong></p><p>7.&nbsp;Click on &ldquo;<em>Save</em>&rdquo; button to save the periods and fiscal year. There should not be any error now while confirming the quotations.</p><ac:structured-macro ac:name=\"warning\" ac:schema-version=\"1\" ac:macro-id=\"db35df17-b3ca-408f-a1ea-3ff4af97b090\"><ac:rich-text-body><p>Note that if the fiscal year and period is not set on an annual basis, users will get the error message <span>below </span>when confirming the sales quotation.</p><p>OpenERP throws this error because there are no periods defined in the system for this date.&nbsp;</p></ac:rich-text-body></ac:structured-macro><p><br /></p><p style=\"text-align: center;\"><ac:image ac:align=\"center\" ac:border=\"true\" ac:title=\"Error message\" ac:alt=\"Error message\" ac:width=\"700\"><ri:attachment ri:filename=\"image2017-1-2_12-19-40.png\" ri:version-at-save=\"1\" /></ac:image></p><p style=\"margin-left: 90.0px;text-align: center;\"><strong>Error message shown while confirming the quotation</strong></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"a83680d6-451a-4c14-9815-cca6f8c522eb\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"ee426b09-2bf9-4eaf-8234-c33b5d8493bc\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"1d660af3-5d3e-450d-858f-e2cc0b627132\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"a76a4389-8325-425f-8012-2f668cc7e56a\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Billing and Accounting\" ri:version-at-save=\"6\" /><ac:plain-text-link-body><![CDATA[Billing and Accounting System - Feature Guide]]></ac:plain-text-link-body></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Patient Billing and Accounting\" ri:version-at-save=\"9\" /><ac:plain-text-link-body><![CDATA[Billing and Accounting System - User Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"4084f2de-c0c2-4eeb-b02a-1184ccf78a4a\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><a href=\"https://www.erponline.vn/en/documentation/user-manuals/88-accounting-financial/216-customer-invoicing-payments\">Oddo/OpenERP Quotations/Invoicing/Sales Order</a><span>.</span></p><p><span><a href=\"https://doc.odoo.com/book/#books-link\">O</a><a href=\"https://doc.odoo.com/book/#books-link\">penERP Documentation</a></span></p><p><span><ac:link><ri:page ri:content-title=\"Billing/Pharmacy App\" ri:version-at-save=\"4\" /><ac:plain-text-link-body><![CDATA[Billing/Pharmacy App: For the pharmacist to easily dispense Medications]]></ac:plain-text-link-body></ac:link><br /></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/32604219"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"AccountingConfiguration-PurposeandBenefits\">Purpose and Benefits</h2><p><span class=\"legacy-color-text-default\">Bahmni integrates OpenMRS with OpenERP which is a an open source ERP product. It is useful in Billing, Stock management. Any patient registered in OpenMRS is automatically synced as a customer in OpenERP. </span></p><h2 id=\"AccountingConfiguration-Steps\">Steps</h2><p>1. <a href=\"/wiki/spaces/BAH/pages/21790747/OpenERP+Basic+Configurations\" data-linked-resource-id=\"21790747\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Configure OpenERP/Odoo</a>.</p><p>2. <a href=\"/wiki/spaces/BAH/pages/114627969/OpenERP+Syncing+Config\" data-linked-resource-id=\"114627969\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Setup Syncing</a> between Odoo and Bahmni.</p><p><strong>3. <span class=\"legacy-color-text-default\">Set up Fiscal Year and Period</span></strong></p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ee0432d8-72c8-4c14-b5d5-bacef805c49e\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This is r<span class=\"legacy-color-text-default\">equired to be done on an annual basis.</span></p></div></div><p><span class=\"legacy-color-text-default\">1. Log in to OpenERP with Admin level privilege account.</span></p><p>2. Navigate to the “<em>Accounting</em>” tab. Click on the option “<em>Periods</em>” under “<em>Configuration</em>” from the left panel.</p><p><strong><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-thumbnail image-center\" alt=\"Navigate to Periods\" width=\"200\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32604219/image2017-1-2_12-24-52.png?version=1&amp;modificationDate=1488173158108&amp;cacheVersion=1&amp;api=v2&amp;width=200&amp;height=180\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32604219/image2017-1-2_12-24-52.png?version=1&amp;modificationDate=1488173158108&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115012624\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-1-2_12-24-52.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32604219\" data-linked-resource-container-version=\"12\" data-media-id=\"e25700de-c8c1-423a-8e16-840bcda0f419\" data-media-type=\"file\" title=\"Navigate to Periods\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32604219/image2017-1-2_12-24-52.png?version=1&amp;modificationDate=1488173158108&amp;cacheVersion=1&amp;api=v2&amp;width=400&amp;height=360 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32604219/image2017-1-2_12-24-52.png?version=1&amp;modificationDate=1488173158108&amp;cacheVersion=1&amp;api=v2&amp;width=200&amp;height=180 1x\"></span></strong></p><p>3. Click on the “<em>Fiscal Years</em>” option.</p><p><strong><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-thumbnail image-center\" alt=\"Fiscal years\" width=\"200\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32604219/image2017-1-2_12-25-46.png?version=1&amp;modificationDate=1488173158426&amp;cacheVersion=1&amp;api=v2&amp;width=200&amp;height=112\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32604219/image2017-1-2_12-25-46.png?version=1&amp;modificationDate=1488173158426&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115012628\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-1-2_12-25-46.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32604219\" data-linked-resource-container-version=\"12\" data-media-id=\"094d4960-d58d-46b1-a672-93c64dcf4629\" data-media-type=\"file\" title=\"Fiscal years\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32604219/image2017-1-2_12-25-46.png?version=1&amp;modificationDate=1488173158426&amp;cacheVersion=1&amp;api=v2&amp;width=400&amp;height=224 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32604219/image2017-1-2_12-25-46.png?version=1&amp;modificationDate=1488173158426&amp;cacheVersion=1&amp;api=v2&amp;width=200&amp;height=112 1x\"></span></strong></p><p>4. Click on “<em>Create</em>” button. Define the fiscal year as shown in the example below</p><p><strong><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"Create a fiscal year\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32604219/image2017-1-2_12-27-8.png?version=1&amp;modificationDate=1488173158827&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=226\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32604219/image2017-1-2_12-27-8.png?version=1&amp;modificationDate=1488173158827&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115012632\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-1-2_12-27-8.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32604219\" data-linked-resource-container-version=\"12\" data-media-id=\"8c3ee10f-071c-4d9d-9756-30a4874e28fb\" data-media-type=\"file\" title=\"Create a fiscal year\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32604219/image2017-1-2_12-27-8.png?version=1&amp;modificationDate=1488173158827&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=452 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32604219/image2017-1-2_12-27-8.png?version=1&amp;modificationDate=1488173158827&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=226 1x\"></span></strong></p><p>6. Click on “<em>Create Monthly Periods</em>” and it will generate the periods as shown below.</p><p><strong><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"Create monthly periods\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32604219/image2017-1-2_12-28-30.png?version=1&amp;modificationDate=1488173159379&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=396\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32604219/image2017-1-2_12-28-30.png?version=1&amp;modificationDate=1488173159379&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115012636\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-1-2_12-28-30.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32604219\" data-linked-resource-container-version=\"12\" data-media-id=\"4f1075e6-100a-4178-b0b4-0e4833bd7a4a\" data-media-type=\"file\" title=\"Create monthly periods\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32604219/image2017-1-2_12-28-30.png?version=1&amp;modificationDate=1488173159379&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=792 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32604219/image2017-1-2_12-28-30.png?version=1&amp;modificationDate=1488173159379&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=396 1x\"></span></strong></p><p>7. Click on “<em>Save</em>” button to save the periods and fiscal year. There should not be any error now while confirming the quotations.</p><div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"db35df17-b3ca-408f-a1ea-3ff4af97b090\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Note that if the fiscal year and period is not set on an annual basis, users will get the error message <span>below </span>when confirming the sales quotation.</p><p>OpenERP throws this error because there are no periods defined in the system for this date. </p></div></div><p><br/></p><p style=\"text-align: center;\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" alt=\"Error message\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32604219/image2017-1-2_12-19-40.png?version=1&amp;modificationDate=1488173157536&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=374\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32604219/image2017-1-2_12-19-40.png?version=1&amp;modificationDate=1488173157536&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115012620\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-1-2_12-19-40.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32604219\" data-linked-resource-container-version=\"12\" data-media-id=\"55263b34-e71e-48a2-9996-7efb35b1531c\" data-media-type=\"file\" title=\"Error message\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32604219/image2017-1-2_12-19-40.png?version=1&amp;modificationDate=1488173157536&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=748 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32604219/image2017-1-2_12-19-40.png?version=1&amp;modificationDate=1488173157536&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=374 1x\"></span></p><p style=\"margin-left: 90.0px;text-align: center;\"><strong>Error message shown while confirming the quotation</strong></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a83680d6-451a-4c14-9815-cca6f8c522eb\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"ee426b09-2bf9-4eaf-8234-c33b5d8493bc\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"1d660af3-5d3e-450d-858f-e2cc0b627132\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"a76a4389-8325-425f-8012-2f668cc7e56a\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/32014379/Billing+and+Accounting\" data-linked-resource-id=\"32014379\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Billing and Accounting System - Feature Guide</a></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604217/Patient+Billing+and+Accounting\" data-linked-resource-id=\"32604217\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Billing and Accounting System - User Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4084f2de-c0c2-4eeb-b02a-1184ccf78a4a\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a class=\"external-link\" href=\"https://www.erponline.vn/en/documentation/user-manuals/88-accounting-financial/216-customer-invoicing-payments\" rel=\"nofollow\">Oddo/OpenERP Quotations/Invoicing/Sales Order</a><span>.</span></p><p><span><a class=\"external-link\" href=\"https://doc.odoo.com/book/#books-link\" rel=\"nofollow\">O</a><a class=\"external-link\" href=\"https://doc.odoo.com/book/#books-link\" rel=\"nofollow\">penERP Documentation</a></span></p><p><span><a href=\"/wiki/spaces/BAH/pages/115777052/Billing+Pharmacy+App\" data-linked-resource-id=\"115777052\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Billing/Pharmacy App: For the pharmacist to easily dispense Medications</a><br /></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/32604219"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/32604219/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32604219/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 14
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/32604219/child",
+    "restrictions": "/rest/api/content/32604219/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/32604219/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=32604219",
+    "webui": "/spaces/BAH/pages/32604219/Accounting+Configuration",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/32604219",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32604219",
+    "tinyui": "/x/O4DxAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

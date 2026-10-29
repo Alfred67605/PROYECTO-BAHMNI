@@ -1,0 +1,171 @@
+{
+  "id": "138313802",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/138313802",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTM4MzEzODAy",
+  "status": "current",
+  "title": "Manage Appointments",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "createdDate": "2017-09-08T15:38:55.354Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/138313802/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "when": "2021-09-27T10:43:08.786Z",
+    "friendlyWhen": "Sept 27, 2021",
+    "message": "",
+    "number": 12,
+    "minorEdit": false,
+    "syncRev": "0.e37di2xOMFXkmlHHJRNfNA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$138313802.87",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/138313802"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/138313802/version/12"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h3><strong>Create Appointments -&nbsp;</strong><strong>Patient search Field</strong></h3><p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<ac:image ac:border=\"true\" ac:height=\"250\" ac:width=\"490\"><ri:attachment ri:filename=\"Screen Shot 2018-02-02 at 12.28.30 PM.png\" ri:version-at-save=\"1\" /></ac:image></strong></p><p>Appointments are booked against a service for a patient. The web API that searches for the patient is configurable.</p><p>If the url is not configured it is defaulted to the end point in bahmni core:&nbsp;<a href=\"https://192.168.33.10/openmrs/ws/rest/v1/bahmnicore/search/patient?loginlocation=?&amp;q=?&amp;startIndex=0.\">openmrs/ws/rest/v1/bahmnicore/search/patient?loginlocation=?&amp;q=?&amp;startIndex=0.</a>&nbsp; If an implementation wants to leverage the lucene API or search patient by some other field, they can configure the appropriate URL here.&nbsp;</p><p>{{loginLocationUuid}} and&nbsp;{{searchValue}} are the context variables which will be provided at run time.&nbsp;{{searchValue}} is the user input on the create appointment screen.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"374ba52f-a6e8-4f90-8368-520b5f2f38dc\"><ac:plain-text-body><![CDATA[\"patientSearchUrl\": \"/bahmnicore/search/patient/lucene?loginLocationUuid={{loginLocationUuid}}&identifier={{searchValue}}\" ]]></ac:plain-text-body></ac:structured-macro><p>By default, as soon as the user enters the search term in the search field, the search gets triggered. However this length at which search is triggered is configurable. So in case the usual identifier length is longer and if we want to reduce the number API calls we can override this to a greater value.</p><p><span style=\"color: rgb(51,51,51);\">Go to app.json for appointment module (/var/www/bahmni_config/openmrs/apps/appointments) and specify the character length</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"ec320047-7357-411d-b1f6-85740b169379\"><ac:plain-text-body><![CDATA[\"minCharLengthToTriggerPatientSearch\": 5]]></ac:plain-text-body></ac:structured-macro><h3><strong>Edit Appointments - Allow Services to Edit</strong></h3><p><span>Appointments are created against a service for a patient. Sometimes it is required of the user to edit this service at a later point in time. While in some cases, the implementation might choose to not allow this. In the latter case it is expected of the user to cancel the appointment and create a new one.&nbsp;</span></p><p><span>Users will be able to turn on the ability to edit </span><span>services in </span><span>previously created </span><span>appointments based on this configuration:</span></p><p><span>Go to app.json for appointment module (/var/www/bahmni_config/openmrs/apps/appointments) and set</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"12f5c70a-625f-46b4-b5bb-da99db5ff238\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[\"isServiceOnAppointmentEditable\": true,]]></ac:plain-text-body></ac:structured-macro><p><span>When this is set to true, the user is allowed to edit both &lsquo;Service&rsquo; and &lsquo;Speciality&rsquo; (as services are tied to a speciality).</span></p><p><span>To turn off edit service for Edit Appointment&nbsp;</span><span>Go to app.json for appointment module (/var/www/bahmni_config/openmrs/apps/appointments) and set </span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"653e0469-a462-4d05-9486-9f8a1a8ae762\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[\"isServiceOnAppointmentEditable\": false,]]></ac:plain-text-body></ac:structured-macro><p><span>Then the fields &lsquo;Speciality&rsquo; and &lsquo;Service&rsquo; appear non editable.&nbsp;</span><span>Please note that the patient name will not be editable in both the cases.&nbsp;</span></p><h3><strong>Appointment Status Change Validation</strong></h3><p><span>A given appointment can have the following statuses:</span></p><ol><li><span><strong>Scheduled</strong>: Appointment is scheduled for a patient.</span></li><li><span><strong>CheckedIn</strong>: Patient with the appointment has checkedIn to the hospital/clinic.</span></li><li><span><strong>Missed</strong>: Patient has missed the appointment.</span></li><li><span><strong>Completed</strong>: Patient has completed the appointment with the care provider.</span></li><li><span><strong>Cancelled</strong>: Appointment has been cancelled.</span></li></ol><p><span>The change of appointment status from one status to another can be controlled by configuration.</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"7442275b-2f81-47aa-af8e-e722223dfd3d\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[“Config”: {\n    “allowedActionsByStatus”: {\n        “<From status>”: [<comma separated list of statuses allowed as next status>]\n    }\n}]]></ac:plain-text-body></ac:structured-macro><p><span>Example:</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"7f9a92f8-037f-4aa1-8e42-24d1d8903048\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[“Config”: {\n   \"allowedActionsByStatus\": {\n      \"Scheduled\": [\"CheckedIn\", \"Missed\", \"Cancelled\"],\n      \"CheckedIn\": [\"Completed\", \"Missed\", \"Cancelled\"]\n    }\n}]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p><span>In the above example, it is configured that appointment with current status as &ldquo;Scheduled&rdquo; can be changed to &ldquo;CheckedIn&rdquo;, &ldquo;Missed&rdquo; and &ldquo;Cancelled&rdquo;. An appointment with current status as &ldquo;CheckedIn&rdquo; can be changed to &ldquo;Completed&rdquo;, &ldquo;Missed&rdquo; and &ldquo;Cancelled&rdquo;</span></p><h3><strong>Allowed actions for a status</strong></h3><p><span>allowedActionsByStatus: Object with all the allowed actions for a status. &lt;&lt; To be added &gt;&gt;</span></p><p><br /></p><h3><strong>Reset Appointment Status</strong></h3><p><br />This feature is available from Bahmni 0.93. In Bahmni we allow the undo of the Check-in action. However, for actions like Missed or complete, we cannot undo this change. In case of manual error in changing the status, one can undo the status change from &quot;Missed&quot;/&quot;Checkin&quot;/&quot;Cancelled&quot; state to &quot;Scheduled&quot; state.&nbsp;</p><p>A new privilege &ldquo;Reset Appointment Status&rdquo;&nbsp; is added for this purpose. This privilege has to be assigned to the users to allow reset the status. If the user doesn&rsquo;t have this privilege they will not be able to reset the status. They will be able to see the &quot;Reset&quot; button but button will not be enabled if the user doesn't have privilege.</p><p>The feature is behind the toggle. To enable it please add below configuration in&nbsp;<strong>/bahmni_config/openmrs/apps/appointments/app.json</strong> file</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d56b556b-0ce9-4068-9fb8-986989c26c90\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[\"enableResetAppointmentStatusesFor\": [“CheckedIn”, “Missed”, “Cancelled”]]]></ac:plain-text-body></ac:structured-macro><ol><li>In the list we have to mention all the statuses from which we want to move back to scheduled.</li><li>In order to see the Reset button enabled on screen, &ldquo;Reset Appointment Status&rdquo; privilege must be assigned to the user</li><li>Existing users of Undo check-in must follow these steps:<ol><li>Add the privilege &ldquo;Reset Appointment Status&rdquo; to all roles that you want to assign this ability to reset. If you do not add this to the config, the &ldquo;Undo-checkin&rdquo; action will be disabled on screen.</li><li>If along with Checkin, you would want to allow other statuses to be reset, then add the above config and mentioned the respective statuses in the list as shown above.</li><li>If this is not added to the config, as long as the user has the &ldquo;Reset Appointment Status&rdquo; privilege assigned, they will be able to do &ldquo;Undo Check-In&rdquo;.</li></ol></li></ol><p><br /></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ac:image ac:border=\"true\" ac:height=\"116\" ac:width=\"700\"><ri:attachment ri:filename=\"image2021-9-27_16-12-34.png\" ri:version-at-save=\"1\" /></ac:image></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p><p><strong>Note</strong>: The Reset Appointment feature is available only on the appointment List view page. Its not available in the Appointment Calendar View page</p><h3><strong>Scheduler for Complete or Missed Appointments:</strong></h3><p>Depending on the implementation, you<span>&nbsp;can mark appointments either with missed or complete status manually or you can configure the scheduler to do so.&nbsp;</span></p><p><span>If you want the scheduler to mark appointments complete, enable the scheduler through </span><strong>global property i</strong><span>n OpenMRS Advanced settings:</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"3898c2b7-30ed-492b-b878-7c5ef21aaefa\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[SchedulerMarksComplete:true]]></ac:plain-text-body></ac:structured-macro><p><span>Similarly you can use the scheduler to mark appointments as missed by marking the global property as true</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"9fb976df-7393-420e-9963-96472642f8c7\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[SchedulerMarksMissed:true]]></ac:plain-text-body></ac:structured-macro><p><span>If they are false then you have mark appoinment as missed or completed manually from UI.&nbsp;</span></p><p><span>You will find the user guide for creating and managing appointments <ac:link><ri:page ri:content-title=\"Creating and Managing Appointments\" ri:version-at-save=\"11\" /><ac:plain-text-link-body><![CDATA[here]]></ac:plain-text-link-body></ac:link>.&nbsp;</span></p><p><br /></p><p><br /></p></ac:layout-cell><ac:layout-cell><p><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"e67d968e-4a61-4b05-be6f-0a1df34eb5ab\"><ac:parameter ac:name=\"title\">On This Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"b5436c1f-4a46-4872-8877-c445dbcc8276\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><br /><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><span style=\"color: rgb(51,51,51);\"><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/138182707/Creating+and+Managing+Appointments\">&nbsp;</a></span></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/138313802"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\"><style>[data-colorid=ofc9tji8ne]{color:#333333} html[data-color-mode=dark] [data-colorid=ofc9tji8ne]{color:#cccccc}[data-colorid=bleyip1bs4]{color:#333333} html[data-color-mode=dark] [data-colorid=bleyip1bs4]{color:#cccccc}</style>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h3 id=\"ManageAppointments-CreateAppointments-PatientsearchField\"><strong>Create Appointments -&nbsp;</strong><strong>Patient search Field</strong></h3><p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border\" height=\"250\" width=\"490\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/138313802/Screen%20Shot%202018-02-02%20at%2012.28.30%20PM.png?version=1&amp;modificationDate=1517554755478&amp;cacheVersion=1&amp;api=v2&amp;width=490&amp;height=249\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/138313802/Screen%20Shot%202018-02-02%20at%2012.28.30%20PM.png?version=1&amp;modificationDate=1517554755478&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"468942878\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2018-02-02 at 12.28.30 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"138313802\" data-linked-resource-container-version=\"12\" data-media-id=\"0d4c14e8-8b6f-45f0-8d08-564f00070c87\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/138313802/Screen%20Shot%202018-02-02%20at%2012.28.30%20PM.png?version=1&amp;modificationDate=1517554755478&amp;cacheVersion=1&amp;api=v2&amp;width=894&amp;height=456 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/138313802/Screen%20Shot%202018-02-02%20at%2012.28.30%20PM.png?version=1&amp;modificationDate=1517554755478&amp;cacheVersion=1&amp;api=v2&amp;width=490&amp;height=249 1x\" /></span></strong></p><p>Appointments are booked against a service for a patient. The web API that searches for the patient is configurable.</p><p>If the url is not configured it is defaulted to the end point in bahmni core:&nbsp;<a class=\"external-link\" href=\"https://192.168.33.10/openmrs/ws/rest/v1/bahmnicore/search/patient?loginlocation=?&amp;q=?&amp;startIndex=0.\" rel=\"nofollow\">openmrs/ws/rest/v1/bahmnicore/search/patient?loginlocation=?&amp;q=?&amp;startIndex=0.</a>&nbsp; If an implementation wants to leverage the lucene API or search patient by some other field, they can configure the appropriate URL here.&nbsp;</p><p>{{loginLocationUuid}} and&nbsp;{{searchValue}} are the context variables which will be provided at run time.&nbsp;{{searchValue}} is the user input on the create appointment screen.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"374ba52f-a6e8-4f90-8368-520b5f2f38dc\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;patientSearchUrl&quot;: &quot;/bahmnicore/search/patient/lucene?loginLocationUuid={{loginLocationUuid}}&amp;identifier={{searchValue}}&quot; </pre>\n</div></div><p>By default, as soon as the user enters the search term in the search field, the search gets triggered. However this length at which search is triggered is configurable. So in case the usual identifier length is longer and if we want to reduce the number API calls we can override this to a greater value.</p><p><span data-colorid=\"ofc9tji8ne\">Go to app.json for appointment module (/var/www/bahmni_config/openmrs/apps/appointments) and specify the character length</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ec320047-7357-411d-b1f6-85740b169379\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;minCharLengthToTriggerPatientSearch&quot;: 5</pre>\n</div></div><h3 id=\"ManageAppointments-EditAppointments-AllowServicestoEdit\"><strong>Edit Appointments - Allow Services to Edit</strong></h3><p><span>Appointments are created against a service for a patient. Sometimes it is required of the user to edit this service at a later point in time. While in some cases, the implementation might choose to not allow this. In the latter case it is expected of the user to cancel the appointment and create a new one.&nbsp;</span></p><p><span>Users will be able to turn on the ability to edit </span><span>services in </span><span>previously created </span><span>appointments based on this configuration:</span></p><p><span>Go to app.json for appointment module (/var/www/bahmni_config/openmrs/apps/appointments) and set</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"12f5c70a-625f-46b4-b5bb-da99db5ff238\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;isServiceOnAppointmentEditable&quot;: true,</pre>\n</div></div><p><span>When this is set to true, the user is allowed to edit both &lsquo;Service&rsquo; and &lsquo;Speciality&rsquo; (as services are tied to a speciality).</span></p><p><span>To turn off edit service for Edit Appointment&nbsp;</span><span>Go to app.json for appointment module (/var/www/bahmni_config/openmrs/apps/appointments) and set </span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"653e0469-a462-4d05-9486-9f8a1a8ae762\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;isServiceOnAppointmentEditable&quot;: false,</pre>\n</div></div><p><span>Then the fields &lsquo;Speciality&rsquo; and &lsquo;Service&rsquo; appear non editable.&nbsp;</span><span>Please note that the patient name will not be editable in both the cases.&nbsp;</span></p><h3 id=\"ManageAppointments-AppointmentStatusChangeValidation\"><strong>Appointment Status Change Validation</strong></h3><p><span>A given appointment can have the following statuses:</span></p><ol><li><span><strong>Scheduled</strong>: Appointment is scheduled for a patient.</span></li><li><span><strong>CheckedIn</strong>: Patient with the appointment has checkedIn to the hospital/clinic.</span></li><li><span><strong>Missed</strong>: Patient has missed the appointment.</span></li><li><span><strong>Completed</strong>: Patient has completed the appointment with the care provider.</span></li><li><span><strong>Cancelled</strong>: Appointment has been cancelled.</span></li></ol><p><span>The change of appointment status from one status to another can be controlled by configuration.</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7442275b-2f81-47aa-af8e-e722223dfd3d\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&ldquo;Config&rdquo;: {\n    &ldquo;allowedActionsByStatus&rdquo;: {\n        &ldquo;&lt;From status&gt;&rdquo;: [&lt;comma separated list of statuses allowed as next status&gt;]\n    }\n}</pre>\n</div></div><p><span>Example:</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7f9a92f8-037f-4aa1-8e42-24d1d8903048\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&ldquo;Config&rdquo;: {\n   &quot;allowedActionsByStatus&quot;: {\n      &quot;Scheduled&quot;: [&quot;CheckedIn&quot;, &quot;Missed&quot;, &quot;Cancelled&quot;],\n      &quot;CheckedIn&quot;: [&quot;Completed&quot;, &quot;Missed&quot;, &quot;Cancelled&quot;]\n    }\n}</pre>\n</div></div><p><br /></p><p><span>In the above example, it is configured that appointment with current status as &ldquo;Scheduled&rdquo; can be changed to &ldquo;CheckedIn&rdquo;, &ldquo;Missed&rdquo; and &ldquo;Cancelled&rdquo;. An appointment with current status as &ldquo;CheckedIn&rdquo; can be changed to &ldquo;Completed&rdquo;, &ldquo;Missed&rdquo; and &ldquo;Cancelled&rdquo;</span></p><h3 id=\"ManageAppointments-Allowedactionsforastatus\"><strong>Allowed actions for a status</strong></h3><p><span>allowedActionsByStatus: Object with all the allowed actions for a status. &lt;&lt; To be added &gt;&gt;</span></p><p><br /></p><h3 id=\"ManageAppointments-ResetAppointmentStatus\"><strong>Reset Appointment Status</strong></h3><p><br />This feature is available from Bahmni 0.93. In Bahmni we allow the undo of the Check-in action. However, for actions like Missed or complete, we cannot undo this change. In case of manual error in changing the status, one can undo the status change from &quot;Missed&quot;/&quot;Checkin&quot;/&quot;Cancelled&quot; state to &quot;Scheduled&quot; state.&nbsp;</p><p>A new privilege &ldquo;Reset Appointment Status&rdquo;&nbsp; is added for this purpose. This privilege has to be assigned to the users to allow reset the status. If the user doesn&rsquo;t have this privilege they will not be able to reset the status. They will be able to see the &quot;Reset&quot; button but button will not be enabled if the user doesn't have privilege.</p><p>The feature is behind the toggle. To enable it please add below configuration in&nbsp;<strong>/bahmni_config/openmrs/apps/appointments/app.json</strong> file</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d56b556b-0ce9-4068-9fb8-986989c26c90\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;enableResetAppointmentStatusesFor&quot;: [&ldquo;CheckedIn&rdquo;, &ldquo;Missed&rdquo;, &ldquo;Cancelled&rdquo;]</pre>\n</div></div><ol><li>In the list we have to mention all the statuses from which we want to move back to scheduled.</li><li>In order to see the Reset button enabled on screen, &ldquo;Reset Appointment Status&rdquo; privilege must be assigned to the user</li><li>Existing users of Undo check-in must follow these steps:<ol><li>Add the privilege &ldquo;Reset Appointment Status&rdquo; to all roles that you want to assign this ability to reset. If you do not add this to the config, the &ldquo;Undo-checkin&rdquo; action will be disabled on screen.</li><li>If along with Checkin, you would want to allow other statuses to be reset, then add the above config and mentioned the respective statuses in the list as shown above.</li><li>If this is not added to the config, as long as the user has the &ldquo;Reset Appointment Status&rdquo; privilege assigned, they will be able to do &ldquo;Undo Check-In&rdquo;.</li></ol></li></ol><p><br /></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border\" height=\"116\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/138313802/image2021-9-27_16-12-34.png?version=1&amp;modificationDate=1632739356224&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=116\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/138313802/image2021-9-27_16-12-34.png?version=1&amp;modificationDate=1632739356224&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2906619940\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2021-9-27_16-12-34.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"138313802\" data-linked-resource-container-version=\"12\" data-media-id=\"776c475f-f744-45f9-8f0b-3f8dc561f4fa\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/138313802/image2021-9-27_16-12-34.png?version=1&amp;modificationDate=1632739356224&amp;cacheVersion=1&amp;api=v2&amp;width=986&amp;height=164 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/138313802/image2021-9-27_16-12-34.png?version=1&amp;modificationDate=1632739356224&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=116 1x\" /></span></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p><p><strong>Note</strong>: The Reset Appointment feature is available only on the appointment List view page. Its not available in the Appointment Calendar View page</p><h3 id=\"ManageAppointments-SchedulerforCompleteorMissedAppointments:\"><strong>Scheduler for Complete or Missed Appointments:</strong></h3><p>Depending on the implementation, you<span>&nbsp;can mark appointments either with missed or complete status manually or you can configure the scheduler to do so.&nbsp;</span></p><p><span>If you want the scheduler to mark appointments complete, enable the scheduler through </span><strong>global property i</strong><span>n OpenMRS Advanced settings:</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3898c2b7-30ed-492b-b878-7c5ef21aaefa\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">SchedulerMarksComplete:true</pre>\n</div></div><p><span>Similarly you can use the scheduler to mark appointments as missed by marking the global property as true</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9fb976df-7393-420e-9963-96472642f8c7\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">SchedulerMarksMissed:true</pre>\n</div></div><p><span>If they are false then you have mark appoinment as missed or completed manually from UI.&nbsp;</span></p><p><span>You will find the user guide for creating and managing appointments <a href=\"/wiki/spaces/BAH/pages/138182707/Creating+and+Managing+Appointments\" data-linked-resource-id=\"138182707\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">here</a>.&nbsp;</span></p><p><br /></p><p><br /></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<p><br /></p><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e67d968e-4a61-4b05-be6f-0a1df34eb5ab\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>On This Page</b></div><div class=\"panelContent\">\n<p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"b5436c1f-4a46-4872-8877-c445dbcc8276\" data-macro-name=\"toc\"> </div><p> </p>\n</div></div><br /><p class=\"auto-cursor-target\"><span data-colorid=\"bleyip1bs4\"><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/138182707/Creating+and+Managing+Appointments\" rel=\"nofollow\">&nbsp;</a></span></p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/138313802"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/138313802/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/138313802/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 267433993
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/138313802/child",
+    "restrictions": "/rest/api/content/138313802/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/138313802/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=138313802",
+    "webui": "/spaces/BAH/pages/138313802/Manage+Appointments",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/138313802",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/138313802",
+    "tinyui": "/x/SoA_C",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

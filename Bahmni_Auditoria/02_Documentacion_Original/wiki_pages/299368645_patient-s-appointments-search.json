@@ -1,0 +1,170 @@
+{
+  "id": "299368645",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/299368645",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjk5MzY4NjQ1",
+  "status": "current",
+  "title": "Patient's Appointments Search",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "createdDate": "2017-11-24T11:15:42.516Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/299368645/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "when": "2018-03-30T10:41:41.294Z",
+    "friendlyWhen": "Mar 30, 2018",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.P0SxiOAnQfWvmGwPonKC1g.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$299368645.52",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/299368645"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/299368645/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>About the feature:</h2><p><span>Users would like to search for patients and view the list of appointments against a patient. Patient Search is available in list view of appointments. User can search for a patient by name or by ID. The search result is a list of all appointments against the patient. Currently filters are not available on this page. Actions can be performed on the appointments in the same way as the <ac:link><ri:page ri:content-title=\"List View of Appointments\" ri:version-at-save=\"4\" /><ac:plain-text-link-body><![CDATA[List view]]></ac:plain-text-link-body></ac:link>.&nbsp;</span></p><h2>Used by</h2><p><span>Providers can use this to view past and future appointments of a particular patient. </span></p><h2>How is it used</h2><ul><li><span>In List View of appointments at the top right, there is a patient search field.</span></li></ul><p><ac:image ac:border=\"true\" ac:height=\"436\" ac:width=\"814\"><ri:attachment ri:filename=\"Screen Shot 2017-11-24 at 12.55.34 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><p><br /></p><ul><li><span>On Searching the user, a list of all the appointments against that user will be shown.</span></li><li>The filters and navigations across days and to calendar view are disabled and there is a &ldquo;Reset Search&rdquo; link available to go back to the list view the user came from.</li></ul><p><br /></p><p><span><ac:image ac:border=\"true\" ac:height=\"370\" ac:width=\"929\"><ri:attachment ri:filename=\"Screen Shot 2017-11-24 at 12.56.24 PM.png\" ri:version-at-save=\"1\" /></ac:image></span></p><ul><li><span>A user can perform all the configured actions on the appointment from patient search page.</span></li></ul><p><span><ac:image ac:border=\"true\" ac:height=\"423\" ac:width=\"824\"><ri:attachment ri:filename=\"Screen Shot 2017-11-24 at 12.57.25 PM.png\" ri:version-at-save=\"1\" /></ac:image></span></p><ul><li><span>A user can also print the results of this page by clicking on the print button.&nbsp;</span>This print has the same configuration as the <ac:link><ri:page ri:content-title=\"Configure Views of Appointments\" ri:version-at-save=\"4\" /><ac:plain-text-link-body><![CDATA[list view print]]></ac:plain-text-link-body></ac:link> with additional date column added.</li><li>The column headers are also sortable both in both ascending order and descending order. A user can click on the column name and an arrow appears beside the name, representing the type of sort. An upward arrow represents ascending order and a downward arrow represents a descending arrow.</li></ul><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"7c94265c-1e62-4f71-86cb-300771770fb4\"><ac:parameter ac:name=\"title\">On This Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"3e18af8c-c850-4338-89e9-e8e465f6bccd\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/299368645"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"Patient&#39;sAppointmentsSearch-Aboutthefeature:\">About the feature:</h2><p><span>Users would like to search for patients and view the list of appointments against a patient. Patient Search is available in list view of appointments. User can search for a patient by name or by ID. The search result is a list of all appointments against the patient. Currently filters are not available on this page. Actions can be performed on the appointments in the same way as the <a href=\"/wiki/spaces/BAH/pages/299958294/List+View+of+Appointments\" data-linked-resource-id=\"299958294\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">List view</a>. </span></p><h2 id=\"Patient&#39;sAppointmentsSearch-Usedby\">Used by</h2><p><span>Providers can use this to view past and future appointments of a particular patient. </span></p><h2 id=\"Patient&#39;sAppointmentsSearch-Howisitused\">How is it used</h2><ul><li><span>In List View of appointments at the top right, there is a patient search field.</span></li></ul><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border\" height=\"436\" width=\"814\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/299368645/Screen%20Shot%202017-11-24%20at%2012.55.34%20PM.png?version=1&amp;modificationDate=1511524565793&amp;cacheVersion=1&amp;api=v2&amp;width=814&amp;height=436\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/299368645/Screen%20Shot%202017-11-24%20at%2012.55.34%20PM.png?version=1&amp;modificationDate=1511524565793&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"299860202\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2017-11-24 at 12.55.34 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"299368645\" data-linked-resource-container-version=\"2\" data-media-id=\"9a2477cc-eec9-4f42-b58b-320877c96d56\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/299368645/Screen%20Shot%202017-11-24%20at%2012.55.34%20PM.png?version=1&amp;modificationDate=1511524565793&amp;cacheVersion=1&amp;api=v2&amp;width=814&amp;height=436 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/299368645/Screen%20Shot%202017-11-24%20at%2012.55.34%20PM.png?version=1&amp;modificationDate=1511524565793&amp;cacheVersion=1&amp;api=v2&amp;width=814&amp;height=436 1x\"></span></p><p><br/></p><ul><li><span>On Searching the user, a list of all the appointments against that user will be shown.</span></li><li>The filters and navigations across days and to calendar view are disabled and there is a “Reset Search” link available to go back to the list view the user came from.</li></ul><p><br/></p><p><span><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border\" height=\"370\" width=\"929\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/299368645/Screen%20Shot%202017-11-24%20at%2012.56.24%20PM.png?version=1&amp;modificationDate=1511524628517&amp;cacheVersion=1&amp;api=v2&amp;width=929&amp;height=370\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/299368645/Screen%20Shot%202017-11-24%20at%2012.56.24%20PM.png?version=1&amp;modificationDate=1511524628517&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"299335878\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2017-11-24 at 12.56.24 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"299368645\" data-linked-resource-container-version=\"2\" data-media-id=\"b011af59-0b17-47a8-b258-b4cbe8eea0c7\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/299368645/Screen%20Shot%202017-11-24%20at%2012.56.24%20PM.png?version=1&amp;modificationDate=1511524628517&amp;cacheVersion=1&amp;api=v2&amp;width=1011&amp;height=403 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/299368645/Screen%20Shot%202017-11-24%20at%2012.56.24%20PM.png?version=1&amp;modificationDate=1511524628517&amp;cacheVersion=1&amp;api=v2&amp;width=929&amp;height=370 1x\"></span></span></p><ul><li><span>A user can perform all the configured actions on the appointment from patient search page.</span></li></ul><p><span><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border\" height=\"423\" width=\"824\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/299368645/Screen%20Shot%202017-11-24%20at%2012.57.25%20PM.png?version=1&amp;modificationDate=1511524694259&amp;cacheVersion=1&amp;api=v2&amp;width=824&amp;height=423\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/299368645/Screen%20Shot%202017-11-24%20at%2012.57.25%20PM.png?version=1&amp;modificationDate=1511524694259&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"299630796\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2017-11-24 at 12.57.25 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"299368645\" data-linked-resource-container-version=\"2\" data-media-id=\"7fb0e8ab-d1da-4386-b20e-3544d6d24c1d\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/299368645/Screen%20Shot%202017-11-24%20at%2012.57.25%20PM.png?version=1&amp;modificationDate=1511524694259&amp;cacheVersion=1&amp;api=v2&amp;width=824&amp;height=423 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/299368645/Screen%20Shot%202017-11-24%20at%2012.57.25%20PM.png?version=1&amp;modificationDate=1511524694259&amp;cacheVersion=1&amp;api=v2&amp;width=824&amp;height=423 1x\"></span></span></p><ul><li><span>A user can also print the results of this page by clicking on the print button. </span>This print has the same configuration as the <a href=\"/wiki/spaces/BAH/pages/137953307/Configure+Views+of+Appointments\" data-linked-resource-id=\"137953307\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">list view print</a> with additional date column added.</li><li>The column headers are also sortable both in both ascending order and descending order. A user can click on the column name and an arrow appears beside the name, representing the type of sort. An upward arrow represents ascending order and a downward arrow represents a descending arrow.</li></ul><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7c94265c-1e62-4f71-86cb-300771770fb4\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>On This Page</b></div><div class=\"panelContent\">\n<p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"3e18af8c-c850-4338-89e9-e8e465f6bccd\" data-macro-name=\"toc\"> </div><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/299368645"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/299368645/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/299368645/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 360
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/299368645/child",
+    "restrictions": "/rest/api/content/299368645/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/299368645/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=299368645",
+    "webui": "/spaces/BAH/pages/299368645/Patient+s+Appointments+Search",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/299368645",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/299368645",
+    "tinyui": "/x/xQDYEQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

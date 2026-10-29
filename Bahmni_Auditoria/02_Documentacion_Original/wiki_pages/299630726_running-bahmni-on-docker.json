@@ -1,0 +1,174 @@
+{
+  "id": "299630726",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/299630726",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjk5NjMwNzI2",
+  "status": "current",
+  "title": "Running Bahmni on Docker",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "createdDate": "2017-11-24T10:33:35.004Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/299630726/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "when": "2023-02-14T10:08:44.057Z",
+    "friendlyWhen": "Feb 14, 2023",
+    "message": "",
+    "number": 48,
+    "minorEdit": false,
+    "syncRev": "0.6P_jNqe9Ckt3shoFsCLNeg.0",
+    "syncRevSource": "synchrony-ack",
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$299630726.377",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/299630726"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/299630726/version/48"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\" ac:breakout-mode=\"full-width\"><ac:layout-cell><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"7d0932a8-b058-495b-89c7-b53d963044b5\"><ac:rich-text-body><p>The following guide helps you in installing Bahmni using&nbsp;<a href=\"https://www.docker.com/whatisdocker/\">Docker</a>.&nbsp;Docker is an open platform for developers and system admins to build, ship, and run distributed applications. Following instructions are mainly targeted for Mac OS X and Linux users. But they should work with any operating system that supports Docker. You will need to first install docker (and docker-compose). If you are new to Docker, then we encourage you to watch this 15-min introduction to Docker: <a href=\"https://www.youtube.com/watch?v=rOTqprHv1YE\" data-card-appearance=\"inline\">https://www.youtube.com/watch?v=rOTqprHv1YE</a> </p></ac:rich-text-body></ac:structured-macro><p /><p>To get started with Bahmni on Docker, please see: <ac:link><ri:page ri:content-title=\"Getting Started Quickly with Bahmni on Docker\" ri:version-at-save=\"36\" /><ac:link-body>Getting Started Quickly with Bahmni on Docker</ac:link-body></ac:link>.</p><p /><ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p>To start with Bahmni Lite on Docker, please refer <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117744129/Getting+Started+Quickly+with+Bahmni+on+Docker#Running-Bahmni-Lite\">this</a>.</p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p>To start with Bahmni Lite on Docker, please refer <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117744129/Getting+Started+Quickly+with+Bahmni+on+Docker#Running-Bahmni-Lite\" rel=\"nofollow\">this</a>.</p>\n</div></div></ac:adf-fallback></ac:adf-extension><p /><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"862bd0b5-4f5f-4222-ad2d-8f99d5e3b244\"><ac:rich-text-body><p>To start with Bahmni Standard on Docker, please refer <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117744129/Getting+Started+Quickly+with+Bahmni+on+Docker#Running-Bahmni-Standard\">this</a>.</p></ac:rich-text-body></ac:structured-macro></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"8049f987-c0c9-4acf-845d-20d79700b62e\"><ac:rich-text-body><p>Bahmni On Docker</p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" data-layout=\"default\" ac:local-id=\"32a64e89-f04e-46bb-952f-257c831199b4\" ac:macro-id=\"22a62791720475fbb95c1cf02b3ee6e0\" /><p /><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"309\" ac:original-width=\"1202\" ac:width=\"557\"><ri:attachment ri:filename=\"image-20221209-090518.png\" ri:version-at-save=\"1\" /></ac:image></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"fixed-width\" ac:breakout-mode=\"default\"><ac:layout-cell><p> </p><p /></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/299630726"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7d0932a8-b058-495b-89c7-b53d963044b5\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>The following guide helps you in installing Bahmni using <a class=\"external-link\" href=\"https://www.docker.com/whatisdocker/\" rel=\"nofollow\">Docker</a>. Docker is an open platform for developers and system admins to build, ship, and run distributed applications. Following instructions are mainly targeted for Mac OS X and Linux users. But they should work with any operating system that supports Docker. You will need to first install docker (and docker-compose). If you are new to Docker, then we encourage you to watch this 15-min introduction to Docker: <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://www.youtube.com/watch?v=rOTqprHv1YE\" rel=\"nofollow\">https://www.youtube.com/watch?v=rOTqprHv1YE</a> </p></div></div><p /><p>To get started with Bahmni on Docker, please see: <a href=\"/wiki/spaces/BAH/pages/3117744129/Getting+Started+Quickly+with+Bahmni+on+Docker\" data-linked-resource-id=\"3117744129\" data-linked-resource-version=\"49\" data-linked-resource-type=\"page\">Getting Started Quickly with Bahmni on Docker</a>.</p><p /><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p>To start with Bahmni Lite on Docker, please refer <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117744129/Getting+Started+Quickly+with+Bahmni+on+Docker#Running-Bahmni-Lite\" rel=\"nofollow\">this</a>.</p>\n</div></div><p /><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"862bd0b5-4f5f-4222-ad2d-8f99d5e3b244\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>To start with Bahmni Standard on Docker, please refer <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117744129/Getting+Started+Quickly+with+Bahmni+on+Docker#Running-Bahmni-Standard\" rel=\"nofollow\">this</a>.</p></div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8049f987-c0c9-4acf-845d-20d79700b62e\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Bahmni On Docker</p></div></div><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-layout=\"default\" data-local-id=\"32a64e89-f04e-46bb-952f-257c831199b4\" data-macro-id=\"22a62791720475fbb95c1cf02b3ee6e0\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/3117744129/Getting+Started+Quickly+with+Bahmni+on+Docker\" data-linked-resource-id=\"3117744129\" data-linked-resource-version=\"49\" data-linked-resource-type=\"page\">Getting Started Quickly with Bahmni on Docker</a></li><li><a href=\"/wiki/spaces/BAH/pages/3123249153/Running+Bahmni+Lite+with+fresh+database+or+with+CIEL+data+docker\" data-linked-resource-id=\"3123249153\" data-linked-resource-version=\"16\" data-linked-resource-type=\"page\">Running Bahmni Lite with fresh database or with CIEL data (docker)</a></li><li><a href=\"/wiki/spaces/BAH/pages/3117219857/Docker+Compose+Profiles\" data-linked-resource-id=\"3117219857\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Docker Compose Profiles</a></li><li><a href=\"/wiki/spaces/BAH/pages/3117449270/Using+Implementation+specific+Configuration+docker\" data-linked-resource-id=\"3117449270\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Using Implementation specific Configuration (docker)</a></li><li><a href=\"/wiki/spaces/BAH/pages/3117187073/OpenMRS+Configurations+docker\" data-linked-resource-id=\"3117187073\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">OpenMRS Configurations (docker)</a></li><li><a href=\"/wiki/spaces/BAH/pages/3117449349/Bahmni-Web+Configurations+docker\" data-linked-resource-id=\"3117449349\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">Bahmni-Web Configurations (docker)</a></li><li><a href=\"/wiki/spaces/BAH/pages/3117646002/Reports+Configurations+docker\" data-linked-resource-id=\"3117646002\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Reports Configurations (docker)</a></li><li><a href=\"/wiki/spaces/BAH/pages/3117514903/OpenELIS+Configurations+docker\" data-linked-resource-id=\"3117514903\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">OpenELIS Configurations (docker)</a></li><li><a href=\"/wiki/spaces/BAH/pages/3117482082/Odoo+Configurations+docker\" data-linked-resource-id=\"3117482082\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Odoo Configurations (docker)</a></li><li><a href=\"/wiki/spaces/BAH/pages/3113091089/Crater+with+Bahmni+Lite+docker\" data-linked-resource-id=\"3113091089\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Crater with Bahmni Lite (docker)</a></li><li><a href=\"/wiki/spaces/BAH/pages/3117613179/PACS+Configurations+docker\" data-linked-resource-id=\"3117613179\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">PACS Configurations (docker)</a></li><li><a href=\"/wiki/spaces/BAH/pages/3117514967/Implementer+Interface+Configurations+docker\" data-linked-resource-id=\"3117514967\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">Implementer Interface Configurations (docker)</a></li><li><a href=\"/wiki/spaces/BAH/pages/3117482143/Metabase+Configuration+docker\" data-linked-resource-id=\"3117482143\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Metabase Configuration (docker)</a></li><li><a href=\"/wiki/spaces/BAH/pages/3125870734/Bahmni-Mart+Configuration+docker\" data-linked-resource-id=\"3125870734\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Bahmni-Mart Configuration (docker)</a></li><li><a href=\"/wiki/spaces/BAH/pages/3117613272/Appointments+Configuration+docker\" data-linked-resource-id=\"3117613272\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Appointments Configuration (docker)</a></li><li><a href=\"/wiki/spaces/BAH/pages/3168010241/SMS+Service+Configuration+docker\" data-linked-resource-id=\"3168010241\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">SMS Service Configuration (docker)</a></li><li><a href=\"/wiki/spaces/BAH/pages/3217522692/Configuring+SSL+HTTPs+certificate+docker\" data-linked-resource-id=\"3217522692\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">Configuring SSL/HTTPs certificate (docker)</a></li><li><a href=\"/wiki/spaces/BAH/pages/3169517585/Upgrading+Bahmni+on+CentOS+to+Bahmni+Standard+or+Lite+on+Docker\" data-linked-resource-id=\"3169517585\" data-linked-resource-version=\"16\" data-linked-resource-type=\"page\">Upgrading Bahmni on CentOS to Bahmni Standard (or Lite) on Docker</a></li><li><a href=\"/wiki/spaces/BAH/pages/3117613282/Running+with+Poor+or+No+Internet+Connectivity+docker\" data-linked-resource-id=\"3117613282\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Running with Poor or No Internet Connectivity (docker)</a></li><li><a href=\"/wiki/spaces/BAH/pages/3222601729/Performing+a+Backup+Restore+of+Container+Data+Files+docker\" data-linked-resource-id=\"3222601729\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Performing a Backup / Restore of Container Data &amp; Files (docker)</a></li><li><a href=\"/wiki/spaces/BAH/pages/3131801637/Running+Bahmni+Lite+with+DB+backup+from+cloud+Docker\" data-linked-resource-id=\"3131801637\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Running Bahmni Lite with DB backup from cloud (Docker)</a></li><li><a href=\"/wiki/spaces/BAH/pages/3225583617/Running+Bahmni+Docker+using+Colima\" data-linked-resource-id=\"3225583617\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Running Bahmni Docker using Colima</a></li><li><a href=\"/wiki/spaces/BAH/pages/3119710209/Common+Troubleshooting+Guide+docker\" data-linked-resource-id=\"3119710209\" data-linked-resource-version=\"25\" data-linked-resource-type=\"page\">Common Troubleshooting Guide (docker)</a></li><li><a href=\"/wiki/spaces/BAH/pages/3195142161/Docker+Timezone+Configuration\" data-linked-resource-id=\"3195142161\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Docker Timezone Configuration</a></li><li><a href=\"/wiki/spaces/BAH/pages/3739189264/SMTP+Configuration+for+sending+emails+docker\" data-linked-resource-id=\"3739189264\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">SMTP Configuration for sending emails (docker)</a></li><li><a href=\"/wiki/spaces/BAH/embed/4046225429\" data-linked-resource-id=\"4046225429\" data-linked-resource-version=\"1\" data-linked-resource-type=\"embed\">Untitled Smart Link (3)</a></li></ul><p /><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"557\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/299630726/image-20221209-090518.png?version=1&amp;modificationDate=1670576721538&amp;cacheVersion=1&amp;api=v2&amp;width=557&amp;height=143\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/299630726/image-20221209-090518.png?version=1&amp;modificationDate=1670576721538&amp;cacheVersion=1&amp;api=v2\" data-height=\"309\" data-width=\"1202\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3117449443\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20221209-090518.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"299630726\" data-linked-resource-container-version=\"48\" data-media-id=\"a27334db-45b1-46f7-9e42-7e5f52b8c941\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/299630726/image-20221209-090518.png?version=1&amp;modificationDate=1670576721538&amp;cacheVersion=1&amp;api=v2&amp;width=1114&amp;height=286 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/299630726/image-20221209-090518.png?version=1&amp;modificationDate=1670576721538&amp;cacheVersion=1&amp;api=v2&amp;width=557&amp;height=143 1x\"></span></div>\n</div>\n</div>\n<div class=\"columnLayout fixed-width\" data-layout=\"fixed-width\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p> </p><p /></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/299630726"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/299630726/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/299630726/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 158599555
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/299630726/child",
+    "restrictions": "/rest/api/content/299630726/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/299630726/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=299630726",
+    "webui": "/spaces/BAH/pages/299630726/Running+Bahmni+on+Docker",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/299630726",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/299630726",
+    "tinyui": "/x/hgDcEQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

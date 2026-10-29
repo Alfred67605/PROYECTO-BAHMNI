@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Integration Points</title></head><body><h1>Integration Points</h1><div class="contentLayout2"><style>[data-colorid=bterrirxvg]{color:#333333} html[data-color-mode=dark] [data-colorid=bterrirxvg]{color:#cccccc}[data-colorid=nridvrj2au]{color:#333333} html[data-color-mode=dark] [data-colorid=nridvrj2au]{color:#cccccc}[data-colorid=mz3hdx93se]{color:#333333} html[data-color-mode=dark] [data-colorid=mz3hdx93se]{color:#cccccc}</style>
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="IntegrationPoints-AboutIntegrationPoints">About Integration Points&nbsp;</h2><p><span>When getting the data for appointments, if users would want to display additional information per appointment from other modules in Bahmni.</span></p><p><span>This can be made possible by extending the interface ''</span><span>AppointmentResponseExtension'' and implementing the run method which takes appointment as input and returns a map of attributes. </span><span>The returned map values are added to the appointments additional information</span></p><h2 id="IntegrationPoints-Howtosetup">How to set up&nbsp;</h2><p>This extension code should be added in the implementation specific omods.</p><p><span style="margin-left: 0.0px;">1.&nbsp;Add appointments module as required module in the </span><span>&nbsp;omod/src/main/resources/config.xml</span></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="65d7fa6f-adcc-4d4a-8520-5c86dedd6b9d" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: xml; gutter: false; theme: Confluence" data-theme="Confluence">&lt;require_module&gt;org.openmrs.module.appointments&lt;/require_module&gt;</pre>
+</div></div><p>2. Add appointments module dependency in the pom.xml</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="bed290a0-d064-4aae-9dea-fcf70de29e98" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: xml; gutter: false; theme: Confluence" data-theme="Confluence">&lt;dependency&gt;
+&nbsp;&nbsp;&nbsp;&lt;groupId&gt;org.openmrs.module&lt;/groupId&gt;
+&nbsp;&nbsp;&nbsp;&lt;artifactId&gt;appointments-omod&lt;/artifactId&gt;
+&nbsp;&nbsp;&nbsp;&lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
+&nbsp;&nbsp;&nbsp;&lt;scope&gt;provided&lt;/scope&gt;
+&lt;/dependency&gt;</pre>
+</div></div><p><span>3. Implement extension point</span></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="507be31e-237b-411c-9f8c-33fef748e330" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence">@Component
+public class PatientBedDetails implements AppointmentResponseExtension {
+&nbsp;&nbsp;&nbsp;@Override
+&nbsp;&nbsp;&nbsp;public Map&lt;String, String&gt; run(Appointment appointment) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Map&lt;String, String&gt; additionalInfo = new HashMap&lt;&gt;();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BedManagementService bedManagementService = Context.getService(BedManagementService.class);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BedDetails bedDetails = bedManagementService.getBedAssignmentDetailsByPatient(appointment.getPatient());
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(bedDetails!= null) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additionalInfo.put(&quot;LOCATION_KEY&quot;, bedDetails.getPhysicalLocation().getName());
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additionalInfo.put(&quot;BED_NUMBER_KEY&quot;, bedDetails.getBedNumber());
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return additionalInfo;
+&nbsp;&nbsp;&nbsp;}
+}</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="37e336dd-c97b-4c9b-b0e2-bec9631e1bfa" data-macro-name="info"><p class="title">Note</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><ol><li><span data-colorid="bterrirxvg">In the code above , you can use any service to fetch the relevant data from the database</span></li><li><span data-colorid="mz3hdx93se"><span data-colorid="nridvrj2au">As an Example we taken bedDetails. You can use relevant model, as per the use case, to get the data.</span></span></li></ol></div></div><p><br /></p><p><br /></p><p><br /></p><p><br /></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="3ddaab34-1f85-4e7d-9246-8c3d0b6d7639" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;"><b>On This Page</b></div><div class="panelContent">
+<p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="f68c96e2-e787-4bfc-8876-768476c34b9d" data-macro-name="toc"> </div><p> </p>
+</div></div></div>
+</div>
+</div>
+</div></body></html>

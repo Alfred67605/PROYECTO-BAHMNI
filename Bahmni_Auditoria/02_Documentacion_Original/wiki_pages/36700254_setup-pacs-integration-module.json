@@ -1,0 +1,171 @@
+{
+  "id": "36700254",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/36700254",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzY3MDAyNTQ=",
+  "status": "current",
+  "title": "Setup PACS Integration module",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2016-01-05T11:17:16.928Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/36700254/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5e943471088a7e0c0f50e1e0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Buvaneswari Arun (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e943471088a7e0c0f50e1e0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Buvaneswari Arun (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e943471088a7e0c0f50e1e0"
+      }
+    },
+    "when": "2021-04-04T08:13:22.453Z",
+    "friendlyWhen": "Apr 04, 2021",
+    "message": "",
+    "number": 31,
+    "minorEdit": false,
+    "syncRev": "0.ctUj-Y3HADlG-Caemy7aSg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$36700254.138",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/36700254"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/36700254/version/31"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p>Bahmni pacs-integration is Bahmni's Radiology System that can send Radiology Orders to digital X-Ray machines and in turn receive X-Ray images that can be viewed in Bahmni. This is the first step in the process, namely setting up the PACS Integration Webapp module to create a Radiology order and send it to the digital X-Ray machines (Modality).</p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"61273aaa-44b6-40c4-8c6a-5cf83bf689dc\"><ac:parameter ac:name=\"title\">Note</ac:parameter><ac:rich-text-body><p>For testing the PACS-integration setup, use the&nbsp;<ac:link><ri:page ri:content-title=\"Test PACS Setup with Bahmni PACS Simulator\" ri:version-at-save=\"28\" /></ac:link>. We have developed this to ensure easy testing as it is not always feasible to test with the Client's machine. This Simulator takes the orders and uploads a sample X-Ray to DCM4CHEE.</p></ac:rich-text-body></ac:structured-macro><h2><span style=\"color: rgb(0,0,0);\">Steps</span></h2><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"e61c677f-f0ca-452c-9563-be0ea8bff406\"><ac:parameter ac:name=\"title\">Note</ac:parameter><ac:rich-text-body><p>To order a Radiology X-Ray, all the X-Rays should be displayed in the Orders Tab of Bahmni Consultation under a separate Radiology Orders section as Lab Orders.&nbsp;First ensure that the <ac:link><ri:page ri:content-title=\"Configure Orders Tab for Lab and Radiology\" ri:version-at-save=\"53\" /><ac:plain-text-link-body><![CDATA[Radiology Order Section is setup]]></ac:plain-text-link-body></ac:link> prior to setting up PACS integration.</p></ac:rich-text-body></ac:structured-macro><p>Ensure that pacs-integration service is installed. The steps for installation is mentioned in <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/33128505/Install+Bahmni+on+CentOS#InstallBahmnionCentOS-Installingdcm4chee&amp;pacs-integrationserverforRadiology\">Install Bahmni</a> guide.</p><p>If the service is installed it will create a database schema called bahmni_pacs in postgres. Following data setup needs to be done to have the pacs-integration working so that it picks up radiology orders and converts them into HL7 ORM messages to be sent further to a PACS or a modality.</p><h3><span style=\"color: rgb(0,0,0);\">Data Setup</span></h3><p><span style=\"color: rgb(0,0,0);\">&nbsp;</span>Set up data in tables&nbsp;<em><strong>modality</strong></em>, <em><strong>order_type</strong></em> and <em><strong>markers</strong></em>&nbsp;in the&nbsp;<strong><em>bahmni_pacs</em></strong>&nbsp;postgres database.</p><ul><li><em>modality</em>&nbsp;table should have the details of HL7 server listening to ORM message - IP address, port, AE Title.<br />If you are using dcm4chee as the modality worklist server the default values pertaining to dcm4chee will have to be added. The default AE Title and ports are <em><strong>DCM4CHEE</strong></em> and <strong><strong><em>2575</em></strong></strong><p><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"9f0ba74c-863f-424a-a217-11df1a861c5e\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:parameter ac:name=\"title\">Sample entry when sending orders to dcm4chee</ac:parameter><ac:plain-text-body><![CDATA[INSERT into modality VALUES (1, 'DCM4CHEE','DCM4CHEE PACS', '192.168.33.10', 2575, 3000);]]></ac:plain-text-body></ac:structured-macro><p><br /></p><strong><em><br /></em></strong></li></ul><ul><li><p><em>In order_type</em> table, order_type name should be the same as order_type &nbsp;in the OpenMRS database. The modality id from <em>modality</em>&nbsp;table is used to send the particular order type orders to the given modality.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"820c80e5-d368-413b-999e-bb727d785b31\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:parameter ac:name=\"title\">Sample order_type entry for sending Radiology orders</ac:parameter><ac:plain-text-body><![CDATA[insert into order_type values(1, 'Radiology Order', 1);]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></li></ul><ul><li><p><em>markers</em>&nbsp;table should be set with the latest markers and feed details to avoid it reading from the start. A sample query for the same would look like</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"89e30b79-0a1e-41c2-9e4a-8c698304271f\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:plain-text-body><![CDATA[insert into markers (feed_uri,last_read_entry_id, feed_uri_for_last_read_entry) values ('http://localhost:8050/openmrs/ws/atomfeed/encounter/recent', 'tag:atomfeed.ict4h.org:889f9b69-83f5-4ee8-8f4c-e65df761b423','http://localhost:8050/openmrs/ws/atomfeed/encounter/59593');]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"warning\" ac:schema-version=\"1\" ac:macro-id=\"7b50f852-95e4-4abd-8524-719762b0b665\"><ac:rich-text-body><p>Please enter the right values for &nbsp;<em>last_read_entry_id</em> and<em> feed_uri_for_last_read_entry</em>.&nbsp;</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></li></ul><p>Set up Procedure Codes for mapping the Bahmni X-Rays to Digital X-Ray Machine's X-Rays</p><ul><li>Follow steps on page <ac:link><ri:page ri:content-title=\"Map PACS procedure codes\" ri:version-at-save=\"5\" /><ac:plain-text-link-body><![CDATA[Mapping Procedure Codes]]></ac:plain-text-link-body></ac:link>.</li><li>In case you need to set up PACS in your local machine, Please follow the <ac:link><ri:page ri:content-title=\"Setting up sync between Bahmni and DCM4CHEE\" ri:version-at-save=\"4\" /><ac:plain-text-link-body><![CDATA[PACS-DCM4CHEE Sync instructions.]]></ac:plain-text-link-body></ac:link></li></ul><p style=\"margin-left: 30.0px;\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"c268d033-b1ef-41c7-a606-a6698d365262\"><ac:parameter ac:name=\"style\">none</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Radiology and PACS\" ri:version-at-save=\"13\" /><ac:plain-text-link-body><![CDATA[Radiology and PACS - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Radiology\" ri:version-at-save=\"8\" /><ac:plain-text-link-body><![CDATA[Radiology and PACS - User Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/36700254"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"SetupPACSIntegrationmodule-PurposeandBenefits\">Purpose and Benefits</h2><p>Bahmni pacs-integration is Bahmni's Radiology System that can send Radiology Orders to digital X-Ray machines and in turn receive X-Ray images that can be viewed in Bahmni. This is the first step in the process, namely setting up the PACS Integration Webapp module to create a Radiology order and send it to the digital X-Ray machines (Modality).</p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"61273aaa-44b6-40c4-8c6a-5cf83bf689dc\" data-macro-name=\"info\"><p class=\"title\">Note</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>For testing the PACS-integration setup, use the <a href=\"/wiki/spaces/BAH/pages/23396367/Test+PACS+Setup+with+Bahmni+PACS+Simulator\" data-linked-resource-id=\"23396367\" data-linked-resource-version=\"34\" data-linked-resource-type=\"page\">Test PACS Setup with Bahmni PACS Simulator</a>. We have developed this to ensure easy testing as it is not always feasible to test with the Client's machine. This Simulator takes the orders and uploads a sample X-Ray to DCM4CHEE.</p></div></div><h2 id=\"SetupPACSIntegrationmodule-Steps\"><span class=\"legacy-color-text-default\">Steps</span></h2><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e61c677f-f0ca-452c-9563-be0ea8bff406\" data-macro-name=\"note\"><p class=\"title\">Note</p><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>To order a Radiology X-Ray, all the X-Rays should be displayed in the Orders Tab of Bahmni Consultation under a separate Radiology Orders section as Lab Orders. First ensure that the <a href=\"/wiki/spaces/BAH/pages/32014568/Configure+Orders+Tab+for+Lab+and+Radiology\" data-linked-resource-id=\"32014568\" data-linked-resource-version=\"54\" data-linked-resource-type=\"page\">Radiology Order Section is setup</a> prior to setting up PACS integration.</p></div></div><p>Ensure that pacs-integration service is installed. The steps for installation is mentioned in <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/33128505/Install+Bahmni+on+CentOS#InstallBahmnionCentOS-Installingdcm4chee&amp;pacs-integrationserverforRadiology\" rel=\"nofollow\">Install Bahmni</a> guide.</p><p>If the service is installed it will create a database schema called bahmni_pacs in postgres. Following data setup needs to be done to have the pacs-integration working so that it picks up radiology orders and converts them into HL7 ORM messages to be sent further to a PACS or a modality.</p><h3 id=\"SetupPACSIntegrationmodule-DataSetup\"><span class=\"legacy-color-text-default\">Data Setup</span></h3><p><span class=\"legacy-color-text-default\"> </span>Set up data in tables <em><strong>modality</strong></em>, <em><strong>order_type</strong></em> and <em><strong>markers</strong></em> in the <strong><em>bahmni_pacs</em></strong> postgres database.</p><ul><li><em>modality</em> table should have the details of HL7 server listening to ORM message - IP address, port, AE Title.<br/>If you are using dcm4chee as the modality worklist server the default values pertaining to dcm4chee will have to be added. The default AE Title and ports are <em><strong>DCM4CHEE</strong></em> and <strong><strong><em>2575</em></strong></strong><p><br/></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9f0ba74c-863f-424a-a217-11df1a861c5e\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Sample entry when sending orders to dcm4chee</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: false; theme: Confluence\" data-theme=\"Confluence\">INSERT into modality VALUES (1, 'DCM4CHEE','DCM4CHEE PACS', '192.168.33.10', 2575, 3000);</pre>\n</div></div><p><br/></p><strong><em><br/></em></strong></li></ul><ul><li><p><em>In order_type</em> table, order_type name should be the same as order_type  in the OpenMRS database. The modality id from <em>modality</em> table is used to send the particular order type orders to the given modality.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"820c80e5-d368-413b-999e-bb727d785b31\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Sample order_type entry for sending Radiology orders</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: false; theme: Confluence\" data-theme=\"Confluence\">insert into order_type values(1, 'Radiology Order', 1);</pre>\n</div></div></li></ul><ul><li><p><em>markers</em> table should be set with the latest markers and feed details to avoid it reading from the start. A sample query for the same would look like</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"89e30b79-0a1e-41c2-9e4a-8c698304271f\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: false; theme: Confluence\" data-theme=\"Confluence\">insert into markers (feed_uri,last_read_entry_id, feed_uri_for_last_read_entry) values ('http://localhost:8050/openmrs/ws/atomfeed/encounter/recent', 'tag:atomfeed.ict4h.org:889f9b69-83f5-4ee8-8f4c-e65df761b423','http://localhost:8050/openmrs/ws/atomfeed/encounter/59593');</pre>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7b50f852-95e4-4abd-8524-719762b0b665\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Please enter the right values for  <em>last_read_entry_id</em> and<em> feed_uri_for_last_read_entry</em>. </p></div></div></li></ul><p>Set up Procedure Codes for mapping the Bahmni X-Rays to Digital X-Ray Machine's X-Rays</p><ul><li>Follow steps on page <a href=\"/wiki/spaces/BAH/pages/24969224/Map+PACS+procedure+codes\" data-linked-resource-id=\"24969224\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Mapping Procedure Codes</a>.</li><li>In case you need to set up PACS in your local machine, Please follow the <a href=\"/wiki/spaces/BAH/pages/1474232338/Setting+up+sync+between+Bahmni+and+DCM4CHEE\" data-linked-resource-id=\"1474232338\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">PACS-DCM4CHEE Sync instructions.</a></li></ul><p style=\"margin-left: 30.0px;\"><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-cssliststyle=\"none\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"c268d033-b1ef-41c7-a606-a6698d365262\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604202/Radiology+and+PACS\" data-linked-resource-id=\"32604202\" data-linked-resource-version=\"15\" data-linked-resource-type=\"page\">Radiology and PACS - Feature Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32014360/Radiology\" data-linked-resource-id=\"32014360\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Radiology and PACS - User Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/36700254"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/36700254/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/36700254/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 125568284
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/36700254/child",
+    "restrictions": "/rest/api/content/36700254/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/36700254/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=36700254",
+    "webui": "/spaces/BAH/pages/36700254/Setup+PACS+Integration+module",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/36700254",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/36700254",
+    "tinyui": "/x/XgAwAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "id": "3225583617",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3225583617",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzIyNTU4MzYxNw==",
+  "status": "current",
+  "title": "Running Bahmni Docker using Colima",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "createdDate": "2023-09-07T09:21:30.583Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3225583617/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "62e6d8dcec6b328032f07d44",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Vijay Anand Shanmughadass",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/62e6d8dcec6b328032f07d44",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Vijay Anand Shanmughadass",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=62e6d8dcec6b328032f07d44"
+      }
+    },
+    "when": "2023-11-28T06:12:10.608Z",
+    "friendlyWhen": "Nov 28, 2023",
+    "message": "",
+    "number": 14,
+    "minorEdit": false,
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3225583617.56",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3225583617"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3225583617/version/14"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"fixed-width\" ac:breakout-mode=\"default\"><ac:layout-cell><p /></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"two_right_sidebar\" ac:breakout-mode=\"wide\"><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"bbc75408-f353-4ef8-8ead-8742c480452a\"><ac:rich-text-body><p>Colima is an alternative to Docker, which has gained popularity due to recent license changes for <strong>Docker <u>Desktop</u></strong>. The following page documents the steps needed to run Bahmni using Colima. </p><p>Read more about Colima here: <a href=\"https://github.com/abiosoft/colima\" data-card-appearance=\"inline\">https://github.com/abiosoft/colima</a> </p><p>Read more about Docker Desktop license changes here: <a href=\"https://www.docker.com/blog/updating-product-subscriptions/\" data-card-appearance=\"inline\">https://www.docker.com/blog/updating-product-subscriptions/</a> </p></ac:rich-text-body></ac:structured-macro><h2>Docker Desktop is licensed: </h2><p>Docker Desktop is a licensed software. It is licensed under the Docker Subscription Service Agreement. The agreement states that Docker Desktop is free for personal use, education, and non-commercial open source projects. Otherwise, it requires a paid subscription for professional use. Paid subscriptions are also required for government entities.</p><p>The following are the requirements for free use of Docker Desktop:</p><ul><li><p>Individuals</p></li><li><p>Non-commercial open source developers</p></li><li><p>Students and educators</p></li><li><p>Small businesses of fewer than 250 employees AND less than $10 million in revenue</p></li></ul><h2>Alternatives: </h2><p>If you want to use Docker CLI/Engine for free, you can use Colima or Rancher. Both projects are free to use and offer similar functionality. </p><ul><li><p>Docker CLI/Engine is the command-line interface for Docker. It is free to use.</p></li><li><p>Colima is an open source project that allows you to run Docker Engine in a virtual machine. It is free to use.</p></li><li><p>Rancher is a commercial project that provides a web-based interface for managing Docker Engine. However, Rancher also offers a free community edition that allows you to use Docker Engine for free.</p></li></ul><h2>Installing Colima:</h2><p>Colima is an open source project that provides a way to run Docker Engine on macOS and Linux without the need for Docker Desktop. It is a lightweight alternative to Docker Desktop that offers similar functionality.</p><p>To use Docker Engine with Colima, you will need to install the following:</p><ul><li><p>Docker Engine</p></li><li><p>Colima</p></li></ul><p>You can install Docker Engine using the following commands:</p><ul><li><p>macOS: <code>brew install docker</code></p></li><li><p>Linux: <code>apt install docker</code></p></li></ul><p>You can install Colima using the following commands:</p><ul><li><p>macOS: <code>brew install colima</code></p></li><li><p>Linux: <code>pip install colima</code></p></li></ul><p>Once you have installed Docker Engine and Colima, you can start using Docker by running the following command:</p><p><code>colima start</code></p><p>This will start a Docker Engine VM in the background. You can then run Docker commands by using the <code>docker</code> command.</p><h2>Configuring Colima for Bahmni:</h2><p>Update the CPU settings and Memory settings as follows: </p><p><code>colima start --edit</code></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"a213fc6e-c572-4292-a0f8-2e6b221404df\"><ac:plain-text-body><![CDATA[# Number of CPUs to be allocated to the virtual machine.\n# Default: 2\ncpu: 8\n\n# Size of the memory in GiB to be allocated to the virtual machine.\n# Default: 2\nmemory: 12]]></ac:plain-text-body></ac:structured-macro><h2>Running Docker Compose:</h2><p>When using Colima, the Docker Compose commands remain largely consistent with standard Docker Compose commands. Colima leverages the Docker runtime under the hood, ensuring compatibility with existing Docker workflows. For example</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"5774d02c-e84e-4fdb-b7cb-a6cb12334460\"><ac:plain-text-body><![CDATA[docker compose version\n\ndocker compose --profile <PROFILE_NAME> up --pull=always -d\n\ndocker compose --profile <PROFILE_NAME> down -v]]></ac:plain-text-body></ac:structured-macro><p>Furthermore, the current Docker deployment projects should continue to function seamlessly as before.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"658b6c76-85ae-42aa-914d-7a6d5486dc81\"><ac:plain-text-body><![CDATA[https://github.com/Bahmni/bahmni-docker\n\nhttps://github.com/Bahmni/snomed-bahmni-docker]]></ac:plain-text-body></ac:structured-macro><h2>Useful References:</h2><p><a href=\"https://www.swyx.io/running-docker-without-docker-desktop\" data-card-appearance=\"inline\">https://www.swyx.io/running-docker-without-docker-desktop</a> </p><h2>Troubleshooting:</h2><ul><li><p>If using Mac M1, when we run the following command</p></li></ul><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6146eb5c-7647-4332-bfd7-8e70bdda4b97\"><ac:plain-text-body><![CDATA[brew install docker]]></ac:plain-text-body></ac:structured-macro><p>if we get the following error, </p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8b7ddd8b-7dc5-4297-8c23-7dea4e94ef8f\"><ac:plain-text-body><![CDATA[Warning: Treating docker as a formula. For the cask, use homebrew/cask/docker\nError: Cannot install under Rosetta 2 in ARM default prefix (/opt/homebrew)!\nTo rerun under ARM use:\n    arch -arm64 brew install ...\nTo install under x86_64, install Homebrew into /usr/local.]]></ac:plain-text-body></ac:structured-macro><p>use the following command as suggested</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"028b0771-e096-49db-aa91-cff936711fd6\"><ac:plain-text-body><![CDATA[arch -arm64 brew install docker\narch -arm64 brew install colima]]></ac:plain-text-body></ac:structured-macro><p>Again if we get the following error</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6a83dc5d-6f9e-4c2b-b8dd-47976c731b26\"><ac:plain-text-body><![CDATA[Warning: Treating docker as a formula. For the cask, use homebrew/cask/docker\nError: No developer tools installed.\nInstall the Command Line Tools:\n  xcode-select --install]]></ac:plain-text-body></ac:structured-macro><p>use the following command as suggested</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d5e751a9-ebe2-456a-864a-2b4ba0866907\"><ac:plain-text-body><![CDATA[xcode-select --install]]></ac:plain-text-body></ac:structured-macro><p /><ul><li><p>If you encounter the following problem while executing Docker commands:</p></li></ul><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"091cd047-c7dd-4f87-9330-0ff05836d26e\"><ac:plain-text-body><![CDATA[Cannot connect to the Docker daemon at unix:///Users/<username>/.colima/default/docker.sock. Is the docker daemon running?]]></ac:plain-text-body></ac:structured-macro><p>you can resolve it by initiating Colima with the command:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"5b468481-2479-4b23-9b5e-8d1d9938f7c6\"><ac:plain-text-body><![CDATA[colima start --runtime docker]]></ac:plain-text-body></ac:structured-macro><p /><ul><li><p>If using Mac M1 and your docker is running on the old version of &ldquo;docker-compose&ldquo; and unable to run &ldquo;docker compose&rdquo;, follow the instructions given here:</p><ul><li><p>Uninstall docker-compose CLI plugin</p><ul><li><p><a href=\"https://docs.docker.com/compose/install/uninstall/\" data-card-appearance=\"inline\">https://docs.docker.com/compose/install/uninstall/</a> </p></li></ul></li><li><p>Installing docker compose CLI plugin</p><ul><li><p><a href=\"https://maksimrv.medium.com/note-install-docker-compose-plugin-on-m1-a73ce97fd8f8\" data-card-appearance=\"inline\">https://maksimrv.medium.com/note-install-docker-compose-plugin-on-m1-a73ce97fd8f8</a>  </p></li></ul></li></ul></li></ul></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"e18432d5-ce17-4940-affe-7f6b0269e258\"><ac:rich-text-body><p><strong>Running Bahmni on Docker</strong></p></ac:rich-text-body></ac:structured-macro><p><ac:structured-macro ac:name=\"pagetree\" ac:schema-version=\"1\" ac:local-id=\"671d2b0b-52bb-466e-85d6-c2fffc1a2f4c\" ac:macro-id=\"fadead4aaeeb51d660817f0e741d51c1\"><ac:parameter ac:name=\"root\"><ac:link><ri:page ri:content-title=\"Running Bahmni on Docker\" ri:version-at-save=\"48\" /></ac:link></ac:parameter><ac:parameter ac:name=\"startDepth\">1</ac:parameter></ac:structured-macro></p></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"fixed-width\" ac:breakout-mode=\"default\"><ac:layout-cell><p /></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3225583617"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout fixed-width\" data-layout=\"fixed-width\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p /></div>\n</div>\n</div>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"bbc75408-f353-4ef8-8ead-8742c480452a\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Colima is an alternative to Docker, which has gained popularity due to recent license changes for <strong>Docker <u>Desktop</u></strong>. The following page documents the steps needed to run Bahmni using Colima. </p><p>Read more about Colima here: <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://github.com/abiosoft/colima\" rel=\"nofollow\">https://github.com/abiosoft/colima</a> </p><p>Read more about Docker Desktop license changes here: <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://www.docker.com/blog/updating-product-subscriptions/\" rel=\"nofollow\">https://www.docker.com/blog/updating-product-subscriptions/</a> </p></div></div><h2 id=\"RunningBahmniDockerusingColima-DockerDesktopislicensed:\">Docker Desktop is licensed: </h2><p>Docker Desktop is a licensed software. It is licensed under the Docker Subscription Service Agreement. The agreement states that Docker Desktop is free for personal use, education, and non-commercial open source projects. Otherwise, it requires a paid subscription for professional use. Paid subscriptions are also required for government entities.</p><p>The following are the requirements for free use of Docker Desktop:</p><ul><li><p>Individuals</p></li><li><p>Non-commercial open source developers</p></li><li><p>Students and educators</p></li><li><p>Small businesses of fewer than 250 employees AND less than $10 million in revenue</p></li></ul><h2 id=\"RunningBahmniDockerusingColima-Alternatives:\">Alternatives: </h2><p>If you want to use Docker CLI/Engine for free, you can use Colima or Rancher. Both projects are free to use and offer similar functionality. </p><ul><li><p>Docker CLI/Engine is the command-line interface for Docker. It is free to use.</p></li><li><p>Colima is an open source project that allows you to run Docker Engine in a virtual machine. It is free to use.</p></li><li><p>Rancher is a commercial project that provides a web-based interface for managing Docker Engine. However, Rancher also offers a free community edition that allows you to use Docker Engine for free.</p></li></ul><h2 id=\"RunningBahmniDockerusingColima-InstallingColima:\">Installing Colima:</h2><p>Colima is an open source project that provides a way to run Docker Engine on macOS and Linux without the need for Docker Desktop. It is a lightweight alternative to Docker Desktop that offers similar functionality.</p><p>To use Docker Engine with Colima, you will need to install the following:</p><ul><li><p>Docker Engine</p></li><li><p>Colima</p></li></ul><p>You can install Docker Engine using the following commands:</p><ul><li><p>macOS: <code>brew install docker</code></p></li><li><p>Linux: <code>apt install docker</code></p></li></ul><p>You can install Colima using the following commands:</p><ul><li><p>macOS: <code>brew install colima</code></p></li><li><p>Linux: <code>pip install colima</code></p></li></ul><p>Once you have installed Docker Engine and Colima, you can start using Docker by running the following command:</p><p><code>colima start</code></p><p>This will start a Docker Engine VM in the background. You can then run Docker commands by using the <code>docker</code> command.</p><h2 id=\"RunningBahmniDockerusingColima-ConfiguringColimaforBahmni:\">Configuring Colima for Bahmni:</h2><p>Update the CPU settings and Memory settings as follows: </p><p><code>colima start --edit</code></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a213fc6e-c572-4292-a0f8-2e6b221404df\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\"># Number of CPUs to be allocated to the virtual machine.\n# Default: 2\ncpu: 8\n\n# Size of the memory in GiB to be allocated to the virtual machine.\n# Default: 2\nmemory: 12</pre>\n</div></div><h2 id=\"RunningBahmniDockerusingColima-RunningDockerCompose:\">Running Docker Compose:</h2><p>When using Colima, the Docker Compose commands remain largely consistent with standard Docker Compose commands. Colima leverages the Docker runtime under the hood, ensuring compatibility with existing Docker workflows. For example</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"5774d02c-e84e-4fdb-b7cb-a6cb12334460\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">docker compose version\n\ndocker compose --profile &lt;PROFILE_NAME&gt; up --pull=always -d\n\ndocker compose --profile &lt;PROFILE_NAME&gt; down -v</pre>\n</div></div><p>Furthermore, the current Docker deployment projects should continue to function seamlessly as before.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"658b6c76-85ae-42aa-914d-7a6d5486dc81\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">https://github.com/Bahmni/bahmni-docker\n\nhttps://github.com/Bahmni/snomed-bahmni-docker</pre>\n</div></div><h2 id=\"RunningBahmniDockerusingColima-UsefulReferences:\">Useful References:</h2><p><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://www.swyx.io/running-docker-without-docker-desktop\" rel=\"nofollow\">https://www.swyx.io/running-docker-without-docker-desktop</a> </p><h2 id=\"RunningBahmniDockerusingColima-Troubleshooting:\">Troubleshooting:</h2><ul><li><p>If using Mac M1, when we run the following command</p></li></ul><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6146eb5c-7647-4332-bfd7-8e70bdda4b97\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">brew install docker</pre>\n</div></div><p>if we get the following error, </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8b7ddd8b-7dc5-4297-8c23-7dea4e94ef8f\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Warning: Treating docker as a formula. For the cask, use homebrew/cask/docker\nError: Cannot install under Rosetta 2 in ARM default prefix (/opt/homebrew)!\nTo rerun under ARM use:\n    arch -arm64 brew install ...\nTo install under x86_64, install Homebrew into /usr/local.</pre>\n</div></div><p>use the following command as suggested</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"028b0771-e096-49db-aa91-cff936711fd6\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">arch -arm64 brew install docker\narch -arm64 brew install colima</pre>\n</div></div><p>Again if we get the following error</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6a83dc5d-6f9e-4c2b-b8dd-47976c731b26\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Warning: Treating docker as a formula. For the cask, use homebrew/cask/docker\nError: No developer tools installed.\nInstall the Command Line Tools:\n  xcode-select --install</pre>\n</div></div><p>use the following command as suggested</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d5e751a9-ebe2-456a-864a-2b4ba0866907\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">xcode-select --install</pre>\n</div></div><p /><ul><li><p>If you encounter the following problem while executing Docker commands:</p></li></ul><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"091cd047-c7dd-4f87-9330-0ff05836d26e\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Cannot connect to the Docker daemon at unix:///Users/&lt;username&gt;/.colima/default/docker.sock. Is the docker daemon running?</pre>\n</div></div><p>you can resolve it by initiating Colima with the command:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"5b468481-2479-4b23-9b5e-8d1d9938f7c6\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">colima start --runtime docker</pre>\n</div></div><p /><ul><li><p>If using Mac M1 and your docker is running on the old version of “docker-compose“ and unable to run “docker compose”, follow the instructions given here:</p><ul><li><p>Uninstall docker-compose CLI plugin</p><ul><li><p><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://docs.docker.com/compose/install/uninstall/\" rel=\"nofollow\">https://docs.docker.com/compose/install/uninstall/</a> </p></li></ul></li><li><p>Installing docker compose CLI plugin</p><ul><li><p><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://maksimrv.medium.com/note-install-docker-compose-plugin-on-m1-a73ce97fd8f8\" rel=\"nofollow\">https://maksimrv.medium.com/note-install-docker-compose-plugin-on-m1-a73ce97fd8f8</a>  </p></li></ul></li></ul></li></ul></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e18432d5-ce17-4940-affe-7f6b0269e258\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>Running Bahmni on Docker</strong></p></div></div><p>\n\n\n<div class=\"plugin_pagetree conf-macro output-inline\" data-hasbody=\"false\" data-local-id=\"671d2b0b-52bb-466e-85d6-c2fffc1a2f4c\" data-macro-id=\"fadead4aaeeb51d660817f0e741d51c1\" data-macro-name=\"pagetree\">\n\n                        \n                \n        <ul class=\"plugin_pagetree_children_list plugin_pagetree_children_list_noleftspace\">\n            <div class=\"plugin_pagetree_children\">\n            </div>\n        </ul>\n\n        <fieldset class=\"hidden\">\n            <input type=\"hidden\" name=\"treeId\" value=\"\" />\n            <input type=\"hidden\" name=\"treeRequestId\" value=\"/wiki/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=false\" />\n            <input type=\"hidden\" name=\"treePageId\" value=\"3225583617\" />\n\n            <input type=\"hidden\" name=\"noRoot\" value=\"false\" />\n            <input type=\"hidden\" name=\"rootPageId\" value=\"299630726\" />\n\n            <input type=\"hidden\" name=\"rootPage\" value=\"\" />\n            <input type=\"hidden\" name=\"startDepth\" value=\"1\" />\n            <input type=\"hidden\" name=\"spaceKey\" value=\"BAH\" />\n\n            <input type=\"hidden\" name=\"i18n-pagetree.loading\" value=\"Loading...\" />\n            <input type=\"hidden\" name=\"i18n-pagetree.error.permission\" value=\"Unable to load page tree. It seems that you do not have permission to view the root page.\" />\n            <input type=\"hidden\" name=\"i18n-pagetree.eeror.general\" value=\"There was a problem retrieving the page tree. Please check the server log file for more information.\" />\n            <input type=\"hidden\" name=\"loginUrl\" value=\"/wiki/login.action?os_destination=%2Frest%2Fapi%2Fcontent%2F3225583617%3Fexpand%3Dbody.storage%2Cbody.view%2Cversion%2Cmetadata.labels%2Chistory\" />\n            <input type=\"hidden\" name=\"mobile\" value=\"false\" />\n\n                        <fieldset class=\"hidden\">\n                                                            <input type=\"hidden\" name=\"ancestorId\" value=\"299630726\" />\n                                                </fieldset>\n        </fieldset>\n    </div>\n\n</p></div>\n</div>\n</div>\n<div class=\"columnLayout fixed-width\" data-layout=\"fixed-width\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p /></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3225583617"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3225583617/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3225583617/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 944377393
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3225583617/child",
+    "restrictions": "/rest/api/content/3225583617/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3225583617/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3225583617",
+    "webui": "/spaces/BAH/pages/3225583617/Running+Bahmni+Docker+using+Colima",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3225583617",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3225583617",
+    "tinyui": "/x/AYBCw",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

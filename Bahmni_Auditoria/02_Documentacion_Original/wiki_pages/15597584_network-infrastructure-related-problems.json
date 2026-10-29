@@ -1,0 +1,171 @@
+{
+  "id": "15597584",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/15597584",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTU1OTc1ODQ=",
+  "status": "current",
+  "title": "Network / Infrastructure Related Problems",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:ed8a85e1-871d-406d-9e5a-aba9f21b3329",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Arjun",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:ed8a85e1-871d-406d-9e5a-aba9f21b3329",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Arjun",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:ed8a85e1-871d-406d-9e5a-aba9f21b3329"
+      }
+    },
+    "createdDate": "2015-02-13T05:31:09.831Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/15597584/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2015-11-10T10:31:00.481Z",
+    "friendlyWhen": "Nov 10, 2015",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "0.DZoKJghhmomvOFI9GX_sdA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$15597584.13",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/15597584"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/15597584/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p><strong>Network Card replacement</strong></p><ol><li>Shut the system down. Replace the card physically and start the machine.</li><li>ifconfig would not show up the new interface. If it shows up that you might be all good and skip next steps.</li><li>ifconfig -a . Find out the new interface that has been created for the new card. Say this is eth1.&nbsp;</li><li>Open up a file /etc/sysconfig/network-scripts/ifcfg-eth1.&nbsp;</li><li>The file should be similar to other interface file, if exists, say ifcfg-eth0. It's contents would look like&nbsp;<br /><pre class=\"bbcodeblock\">DEVICE=eth1\nBOOTPROTO=dhcp\nHWADDR=00:08:74:46:D7:E5\nONBOOT=yes\nDHCP_HOSTNAME=delllap.jesnet\nTYPE=Ethernet</pre><p>You can find details of all possible configurations in the CentOS manual.</p></li><li><p>Then restart the network service. service network restart.</p></li><li>ifconfig should now show up the new interface eth1.</li></ol><p>If the interface names are not coming up correctly, you might want to update the&nbsp;</p><pre class=\"userinput\" style=\"margin-left: 2.0em;\">/etc/udev/rules.d/70-persistent-net.rules</pre><p>Refer to&nbsp;<a class=\"external-link\" href=\"http://www.linuxfromscratch.org/blfs/view/development/chapter07/network.html\" rel=\"nofollow\">http://www.linuxfromscratch.org/blfs/view/development/chapter07/network.html</a></p><p>Further reading (just in case) :&nbsp;<a class=\"external-link\" href=\"http://jeeva.us/Linux/Network\" rel=\"nofollow\">http://jeeva.us/Linux/Network</a></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/15597584"
+      }
+    },
+    "view": {
+      "value": "<p><strong>Network Card replacement</strong></p><ol><li>Shut the system down. Replace the card physically and start the machine.</li><li>ifconfig would not show up the new interface. If it shows up that you might be all good and skip next steps.</li><li>ifconfig -a . Find out the new interface that has been created for the new card. Say this is eth1. </li><li>Open up a file /etc/sysconfig/network-scripts/ifcfg-eth1. </li><li>The file should be similar to other interface file, if exists, say ifcfg-eth0. It's contents would look like <br/><pre class=\"bbcodeblock\">DEVICE=eth1\nBOOTPROTO=dhcp\nHWADDR=00:08:74:46:D7:E5\nONBOOT=yes\nDHCP_HOSTNAME=delllap.jesnet\nTYPE=Ethernet</pre><p>You can find details of all possible configurations in the CentOS manual.</p></li><li><p>Then restart the network service. service network restart.</p></li><li>ifconfig should now show up the new interface eth1.</li></ol><p>If the interface names are not coming up correctly, you might want to update the </p><pre style=\"margin-left: 2.0em;\" class=\"userinput\">/etc/udev/rules.d/70-persistent-net.rules</pre><p>Refer to <a class=\"external-link\" href=\"http://www.linuxfromscratch.org/blfs/view/development/chapter07/network.html\" rel=\"nofollow\">http://www.linuxfromscratch.org/blfs/view/development/chapter07/network.html</a></p><p>Further reading (just in case) : <a class=\"external-link\" href=\"http://jeeva.us/Linux/Network\" rel=\"nofollow\">http://jeeva.us/Linux/Network</a></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/15597584"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/15597584/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/15597584/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/15597584/child",
+    "restrictions": "/rest/api/content/15597584/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/15597584/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=15597584",
+    "webui": "/spaces/BAH/pages/15597584/Network+Infrastructure+Related+Problems",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/15597584",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/15597584",
+    "tinyui": "/x/EADu",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

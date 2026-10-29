@@ -1,0 +1,170 @@
+{
+  "id": "8912898",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/8912898",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvODkxMjg5OA==",
+  "status": "current",
+  "title": "Bahmni Observation Templates",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "createdDate": "2014-08-28T07:06:33.346Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/8912898/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "when": "2014-09-03T07:14:40.295Z",
+    "friendlyWhen": "Sept 03, 2014",
+    "message": "",
+    "number": 11,
+    "minorEdit": false,
+    "syncRev": "0.i0Xs8W4a-hI1XjvXO3KGvQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$8912898.17",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/8912898"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/8912898/version/11"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>There are certain observation templates which should packaged by default with bahmni. These packaged observation templates can be divided into two categories.</p><ul style=\"list-style-type: square;\"><li>Disease or condition specific - Things like gynaecology, cancer, tuberculosis, etc.</li><li>Clinical methodology based - Things like History, Examination, Discharge, etc.</li></ul><p>The purpose for doing this is to provide a starting point for any implementation, standardise names for things like chief complaints, lifestyle (see below) in our code, reports, analysis.</p><p><span style=\"color: rgb(0,128,0);\"><strong>Implementation</strong></span></p><p>From the source control perspective this should be maintained in its own repository, may be called bahmni-clinical-content. If we decide to do this via the liquibase scripts we should define stored procs to make it easy to add/change these. Using CURL is also an option.</p><p><span style=\"color: rgb(0,128,0);\"><strong>Specification for the templates</strong></span></p><p><em><strong>History<br /></strong></em>- Case summary<br />- History<br />- Examination</p><p><em><strong>Complaints<br /></strong></em>- Chief complaint(s)<br />- Chief complaint notes</p><p><em><strong>Detailed History<br /></strong></em>- Social history<br />- Family history<br />- Past medical history<br />- Past surgical history<br />- Treatment history<br />- Immunisation history<br />- Home medications<br />- Personal history - values {Smoking, Alcohol} (with duration)&nbsp;similar to chief complaint<br />- Occupational history<br />- History of present illness</p><p><strong><em>Detailed physical examination<br /></em></strong>- Review of systems<br />--&nbsp;<span style=\"color: rgb(37,37,37);\">Cardiovascular<br /></span><span style=\"color: rgb(37,37,37);\">--&nbsp;</span><span style=\"color: rgb(37,37,37);\">Respiratory<br /></span><span style=\"color: rgb(37,37,37);\">--&nbsp;</span><span style=\"color: rgb(37,37,37);\">Gastrointestinal<br /></span><span style=\"color: rgb(37,37,37);line-height: 1.4285715;\">--&nbsp;</span><span style=\"color: rgb(37,37,37);\">Genitourinary<br /></span><span style=\"color: rgb(37,37,37);\">--&nbsp;</span><span style=\"color: rgb(37,37,37);\">Nervous<br /></span><span style=\"color: rgb(37,37,37);\">--&nbsp;</span><span style=\"color: rgb(37,37,37);\">Cranial nerves<br /></span><span style=\"color: rgb(37,37,37);\">--&nbsp;</span><span style=\"color: rgb(37,37,37);\">Endocrine<br /></span><span style=\"color: rgb(37,37,37);\">--&nbsp;</span><span style=\"color: rgb(37,37,37);\">Musculoskeletal<br /></span><span style=\"color: rgb(37,37,37);\">--&nbsp;</span><span style=\"color: rgb(37,37,37);line-height: 1.4285715;\">Skin<br /></span>- Physical examination</p><p><strong><em>Vitals</em><br /></strong>- Blood pressure<br />- Pulse<br />- Temperature<br />- Respiratory rate<br />- SpO2<br />- Vital notes</p><p><em><strong>Nutrition<strong><br /></strong></strong></em>- Height<em><strong><strong><br /></strong></strong></em>- Weight<em><strong><strong><br /></strong></strong></em>- BMI<em><strong><strong><br /></strong></strong></em>- BMI status<em><strong><strong><br /></strong></strong></em>- BSA</p><p><em><strong>Returning patient</strong></em><br />- New Complaints (chief complaints)<br />- Improvements</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/8912898"
+      }
+    },
+    "view": {
+      "value": "<p><style>[data-colorid=lsgs3lr9p1]{color:#252525} html[data-color-mode=dark] [data-colorid=lsgs3lr9p1]{color:#dadada}[data-colorid=axk4kgi5kk]{color:#252525} html[data-color-mode=dark] [data-colorid=axk4kgi5kk]{color:#dadada}[data-colorid=oms8q5d93c]{color:#252525} html[data-color-mode=dark] [data-colorid=oms8q5d93c]{color:#dadada}[data-colorid=jh4bc7flii]{color:#252525} html[data-color-mode=dark] [data-colorid=jh4bc7flii]{color:#dadada}[data-colorid=hxlu0jl1nq]{color:#252525} html[data-color-mode=dark] [data-colorid=hxlu0jl1nq]{color:#dadada}[data-colorid=v5e4l2tgpo]{color:#252525} html[data-color-mode=dark] [data-colorid=v5e4l2tgpo]{color:#dadada}[data-colorid=w8uypjscr4]{color:#252525} html[data-color-mode=dark] [data-colorid=w8uypjscr4]{color:#dadada}[data-colorid=kofty8db33]{color:#252525} html[data-color-mode=dark] [data-colorid=kofty8db33]{color:#dadada}[data-colorid=pssvkltffp]{color:#252525} html[data-color-mode=dark] [data-colorid=pssvkltffp]{color:#dadada}[data-colorid=obooenq4kz]{color:#252525} html[data-color-mode=dark] [data-colorid=obooenq4kz]{color:#dadada}[data-colorid=afa1hpmpk0]{color:#252525} html[data-color-mode=dark] [data-colorid=afa1hpmpk0]{color:#dadada}[data-colorid=im05koj90l]{color:#252525} html[data-color-mode=dark] [data-colorid=im05koj90l]{color:#dadada}[data-colorid=w7tjco6j01]{color:#252525} html[data-color-mode=dark] [data-colorid=w7tjco6j01]{color:#dadada}[data-colorid=yff9zeew5c]{color:#252525} html[data-color-mode=dark] [data-colorid=yff9zeew5c]{color:#dadada}[data-colorid=a7uxfqegtn]{color:#252525} html[data-color-mode=dark] [data-colorid=a7uxfqegtn]{color:#dadada}[data-colorid=dtbewx8ova]{color:#252525} html[data-color-mode=dark] [data-colorid=dtbewx8ova]{color:#dadada}[data-colorid=citr09sxkw]{color:#252525} html[data-color-mode=dark] [data-colorid=citr09sxkw]{color:#dadada}</style>There are certain observation templates which should packaged by default with bahmni. These packaged observation templates can be divided into two categories.</p><ul style=\"list-style-type: square;\"><li>Disease or condition specific - Things like gynaecology, cancer, tuberculosis, etc.</li><li>Clinical methodology based - Things like History, Examination, Discharge, etc.</li></ul><p>The purpose for doing this is to provide a starting point for any implementation, standardise names for things like chief complaints, lifestyle (see below) in our code, reports, analysis.</p><p><span class=\"legacy-color-text-green2\"><strong>Implementation</strong></span></p><p>From the source control perspective this should be maintained in its own repository, may be called bahmni-clinical-content. If we decide to do this via the liquibase scripts we should define stored procs to make it easy to add/change these. Using CURL is also an option.</p><p><span class=\"legacy-color-text-green2\"><strong>Specification for the templates</strong></span></p><p><em><strong>History<br /></strong></em>- Case summary<br />- History<br />- Examination</p><p><em><strong>Complaints<br /></strong></em>- Chief complaint(s)<br />- Chief complaint notes</p><p><em><strong>Detailed History<br /></strong></em>- Social history<br />- Family history<br />- Past medical history<br />- Past surgical history<br />- Treatment history<br />- Immunisation history<br />- Home medications<br />- Personal history - values {Smoking, Alcohol} (with duration)&nbsp;similar to chief complaint<br />- Occupational history<br />- History of present illness</p><p><strong><em>Detailed physical examination<br /></em></strong>- Review of systems<br />--&nbsp;<span data-colorid=\"jh4bc7flii\">Cardiovascular<br /></span><span data-colorid=\"im05koj90l\">--&nbsp;</span><span data-colorid=\"dtbewx8ova\">Respiratory<br /></span><span data-colorid=\"afa1hpmpk0\">--&nbsp;</span><span data-colorid=\"w8uypjscr4\">Gastrointestinal<br /></span><span data-colorid=\"axk4kgi5kk\" style=\"line-height: 1.4285715;\">--&nbsp;</span><span data-colorid=\"oms8q5d93c\">Genitourinary<br /></span><span data-colorid=\"w7tjco6j01\">--&nbsp;</span><span data-colorid=\"a7uxfqegtn\">Nervous<br /></span><span data-colorid=\"lsgs3lr9p1\">--&nbsp;</span><span data-colorid=\"citr09sxkw\">Cranial nerves<br /></span><span data-colorid=\"hxlu0jl1nq\">--&nbsp;</span><span data-colorid=\"v5e4l2tgpo\">Endocrine<br /></span><span data-colorid=\"obooenq4kz\">--&nbsp;</span><span data-colorid=\"yff9zeew5c\">Musculoskeletal<br /></span><span data-colorid=\"pssvkltffp\">--&nbsp;</span><span data-colorid=\"kofty8db33\" style=\"line-height: 1.4285715;\">Skin<br /></span>- Physical examination</p><p><strong><em>Vitals</em><br /></strong>- Blood pressure<br />- Pulse<br />- Temperature<br />- Respiratory rate<br />- SpO2<br />- Vital notes</p><p><em><strong>Nutrition<strong><br /></strong></strong></em>- Height<em><strong><strong><br /></strong></strong></em>- Weight<em><strong><strong><br /></strong></strong></em>- BMI<em><strong><strong><br /></strong></strong></em>- BMI status<em><strong><strong><br /></strong></strong></em>- BSA</p><p><em><strong>Returning patient</strong></em><br />- New Complaints (chief complaints)<br />- Improvements</p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/8912898"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/8912898/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/8912898/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/8912898/child",
+    "restrictions": "/rest/api/content/8912898/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/8912898/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=8912898",
+    "webui": "/spaces/BAH/pages/8912898/Bahmni+Observation+Templates",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/8912898",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/8912898",
+    "tinyui": "/x/AgCI",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

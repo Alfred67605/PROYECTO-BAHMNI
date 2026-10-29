@@ -1,0 +1,170 @@
+{
+  "id": "9633805",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/9633805",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvOTYzMzgwNQ==",
+  "status": "current",
+  "title": "OpenMRS meta data management",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "createdDate": "2014-09-12T17:43:08.827Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/9633805/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "when": "2014-09-14T07:21:15.410Z",
+    "friendlyWhen": "Sept 14, 2014",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "0.GTzwmt1O2_jxUuxYNC-DVw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$9633805.17",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/9633805"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/9633805/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<table><tbody><tr><th>Type</th><th>Current Mechanism</th><th colspan=\"1\">Desired Mechanism</th></tr><tr><td><strong>Beds</strong></td><td>SQL</td><td colspan=\"1\"><span><span>OpenMRS </span>Admin UI</span></td></tr><tr><td>Care Setting</td><td>?</td><td colspan=\"1\">-</td></tr><tr><td colspan=\"1\"><p><strong>Clinical content</strong><br />. Obs Concepts, Drugs, Procedures, Lab Concepts, <br /><span>Diagnoses, Chief Complaints</span><br /><span>. Observation templates<br /></span>. <span>Order</span> templates&nbsp;</p></td><td colspan=\"1\"><p><span>Ruby, CSV</span><br />Legacy UI<br />Reference Data<br />(not including pre-packaged concept sets provided <br />via liquibase by Bahmni e.g. All Observation Templates)</p></td><td colspan=\"1\"><p><span><span>. Meta Data Sharing (MDS)</span><br />. OpenMRS </span>Admin UI and <span>CSV file import via </span><span>OpenMRS </span><span>Admin UI</span><br /> if not managed by MDS<span>&nbsp;</span><br /><span>(Price managed via OpenERP)</span></p></td></tr><tr><td colspan=\"1\"><strong>Reference Terms</strong><br />ICD Reference terms<br /><span>ICD drug references</span>&nbsp;</td><td colspan=\"1\">CSV file imported by implementer</td><td colspan=\"1\"><span>CSV file imported by implementer</span><br />Bahmni to package ICD csv file in default_config</td></tr><tr><td colspan=\"1\"><strong>Concept Classes</strong></td><td colspan=\"1\">Using defaults from OpenMRS<br />New classes added by Bahmni<br />Legacy UI</td><td colspan=\"1\"><p><span>Using defaults from OpenMRS</span><br /><strong>Delete</strong> classes added by Bahmni<br />Legacy UI&nbsp;</p></td></tr><tr><td colspan=\"1\"><strong>Providers</strong><br />Providers, Users<br />Their roles and privileges</td><td colspan=\"1\">Legacy UI</td><td colspan=\"1\"><span>OpenMRS </span><span>Admin UI&nbsp;</span></td></tr><tr><td colspan=\"1\"><strong>Services</strong><br />Encounter Types<br />Location<br />(Their mapping)&nbsp;</td><td colspan=\"1\">. In Patient ET provided by EMR API<br />. Bahmni provides (Registration, Radiology, <strong>Investigation</strong>, <br />LAB_RESULT, Patient Document, <strong>VALIDATION_NOTES</strong>)<br />. Location managed via Legacy UI<br />. Mapping created via SQL by implementer</td><td colspan=\"1\"><span>. In Patient ET provided by EMR API</span><br /><span>. Bahmni provides (Registration, Radiology, </span><br /><span>LAB_RESULT, Patient Document)<br /></span>. Implementer creates ET, Locations, mapping<br /> via OpenMRS Admin UI</td></tr><tr><td colspan=\"1\"><strong>Patient</strong><br />Patient identifier<br /><span>Patient attributes<br />Patient address&nbsp;</span></td><td colspan=\"1\">&nbsp;</td><td colspan=\"1\"><span>OpenMRS </span><span>Admin UI</span></td></tr><tr><td colspan=\"1\"><strong>Program</strong><br />. Program<br />. Observation Template, Program mapping, <br />Patient attributes, Drug order templates</td><td colspan=\"1\"><span>Legacy UI</span></td><td colspan=\"1\"><p><span>OpenMRS </span><span>Admin UI</span></p></td></tr><tr><td colspan=\"1\">Scheduled Jobs</td><td colspan=\"1\"><span>Legacy UI</span></td><td colspan=\"1\"><span>Legacy UI</span></td></tr><tr><td colspan=\"1\"><strong>Visit</strong><br />Visit Type<br />Visit Attributes<br />New visit creation on admission&nbsp;</td><td colspan=\"1\">Legacy UI</td><td colspan=\"1\"><span>OpenMRS </span><span>Admin UI</span></td></tr></tbody></table>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/9633805"
+      }
+    },
+    "view": {
+      "value": "<div class=\"table-wrap\"><table class=\"confluenceTable\"><tbody><tr><th class=\"confluenceTh\">Type</th><th class=\"confluenceTh\">Current Mechanism</th><th colspan=\"1\" class=\"confluenceTh\">Desired Mechanism</th></tr><tr><td class=\"confluenceTd\"><strong>Beds</strong></td><td class=\"confluenceTd\">SQL</td><td colspan=\"1\" class=\"confluenceTd\"><span><span>OpenMRS </span>Admin UI</span></td></tr><tr><td class=\"confluenceTd\">Care Setting</td><td class=\"confluenceTd\">?</td><td colspan=\"1\" class=\"confluenceTd\">-</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><p><strong>Clinical content</strong><br/>. Obs Concepts, Drugs, Procedures, Lab Concepts, <br/><span>Diagnoses, Chief Complaints</span><br/><span>. Observation templates<br/></span>. <span>Order</span> templates </p></td><td colspan=\"1\" class=\"confluenceTd\"><p><span>Ruby, CSV</span><br/>Legacy UI<br/>Reference Data<br/>(not including pre-packaged concept sets provided <br/>via liquibase by Bahmni e.g. All Observation Templates)</p></td><td colspan=\"1\" class=\"confluenceTd\"><p><span><span>. Meta Data Sharing (MDS)</span><br/>. OpenMRS </span>Admin UI and <span>CSV file import via </span><span>OpenMRS </span><span>Admin UI</span><br/> if not managed by MDS<span> </span><br/><span>(Price managed via OpenERP)</span></p></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><strong>Reference Terms</strong><br/>ICD Reference terms<br/><span>ICD drug references</span> </td><td colspan=\"1\" class=\"confluenceTd\">CSV file imported by implementer</td><td colspan=\"1\" class=\"confluenceTd\"><span>CSV file imported by implementer</span><br/>Bahmni to package ICD csv file in default_config</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><strong>Concept Classes</strong></td><td colspan=\"1\" class=\"confluenceTd\">Using defaults from OpenMRS<br/>New classes added by Bahmni<br/>Legacy UI</td><td colspan=\"1\" class=\"confluenceTd\"><p><span>Using defaults from OpenMRS</span><br/><strong>Delete</strong> classes added by Bahmni<br/>Legacy UI </p></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><strong>Providers</strong><br/>Providers, Users<br/>Their roles and privileges</td><td colspan=\"1\" class=\"confluenceTd\">Legacy UI</td><td colspan=\"1\" class=\"confluenceTd\"><span>OpenMRS </span><span>Admin UI </span></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><strong>Services</strong><br/>Encounter Types<br/>Location<br/>(Their mapping) </td><td colspan=\"1\" class=\"confluenceTd\">. In Patient ET provided by EMR API<br/>. Bahmni provides (Registration, Radiology, <strong>Investigation</strong>, <br/>LAB_RESULT, Patient Document, <strong>VALIDATION_NOTES</strong>)<br/>. Location managed via Legacy UI<br/>. Mapping created via SQL by implementer</td><td colspan=\"1\" class=\"confluenceTd\"><span>. In Patient ET provided by EMR API</span><br/><span>. Bahmni provides (Registration, Radiology, </span><br/><span>LAB_RESULT, Patient Document)<br/></span>. Implementer creates ET, Locations, mapping<br/> via OpenMRS Admin UI</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><strong>Patient</strong><br/>Patient identifier<br/><span>Patient attributes<br/>Patient address </span></td><td colspan=\"1\" class=\"confluenceTd\"> </td><td colspan=\"1\" class=\"confluenceTd\"><span>OpenMRS </span><span>Admin UI</span></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><strong>Program</strong><br/>. Program<br/>. Observation Template, Program mapping, <br/>Patient attributes, Drug order templates</td><td colspan=\"1\" class=\"confluenceTd\"><span>Legacy UI</span></td><td colspan=\"1\" class=\"confluenceTd\"><p><span>OpenMRS </span><span>Admin UI</span></p></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">Scheduled Jobs</td><td colspan=\"1\" class=\"confluenceTd\"><span>Legacy UI</span></td><td colspan=\"1\" class=\"confluenceTd\"><span>Legacy UI</span></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><strong>Visit</strong><br/>Visit Type<br/>Visit Attributes<br/>New visit creation on admission </td><td colspan=\"1\" class=\"confluenceTd\">Legacy UI</td><td colspan=\"1\" class=\"confluenceTd\"><span>OpenMRS </span><span>Admin UI</span></td></tr></tbody></table></div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/9633805"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/9633805/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/9633805/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 8260
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/9633805/child",
+    "restrictions": "/rest/api/content/9633805/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/9633805/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=9633805",
+    "webui": "/spaces/BAH/pages/9633805/OpenMRS+meta+data+management",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/9633805",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/9633805",
+    "tinyui": "/x/DQCT",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

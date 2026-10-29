@@ -1,0 +1,177 @@
+{
+  "id": "2850829",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2850829",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjg1MDgyOQ==",
+  "status": "current",
+  "title": "Concept Set UI",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:c54772f2-46b5-43c0-be04-96923ee59750",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Vinay Venu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:c54772f2-46b5-43c0-be04-96923ee59750",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Vinay Venu",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:c54772f2-46b5-43c0-be04-96923ee59750"
+      }
+    },
+    "createdDate": "2014-04-16T09:23:34.796Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2850829/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:c1661d04-74ea-4f6b-8402-1ec98ee511cc",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Dominic Surrao",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:c1661d04-74ea-4f6b-8402-1ec98ee511cc",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Dominic Surrao",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:c1661d04-74ea-4f6b-8402-1ec98ee511cc"
+      }
+    },
+    "when": "2017-07-08T14:50:46.853Z",
+    "friendlyWhen": "Jul 08, 2017",
+    "message": "",
+    "number": 11,
+    "minorEdit": false,
+    "syncRev": "0.2qXwb7GCsbwJSa9Byz-FZg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2850829.56",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2850829"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2850829/version/11"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p>We are dealing with OpenMRS Concepts for various purposes by different types of users.<br />- Diagnoses: search and specify during consultation<br />- Tests: (Radiology/Lab) search and specify during consultation<br />- Drugs: search and specify treatment<br />- Notes by doctors/nurses<br />- Obs: as observations. e.g. Vitals recording by nurse, nurse/doctor noting down complaints/symtoms, screens noting down preliminary observations, intake/outtake etc.</p><p><br />The storage of such observations are done as below.<br />- Drugs/tests as Orders (Order table), results as observations (Obs table) tied to orders<br />- Others are stored as observations within encounters - diagnoses, vitals, any other notes, intake/outtake etc.</p><p><br /></p><p>This document specifically discusses setup/display/behavior/storage of observations that should be recorded through a &quot;Concept-set-UI&quot;</p><p><strong>Setup:</strong><br />- the setup of the schema is defined in OpenMRS.</p><p>For example: observations to be done in a Vitals recording UI can be defined in OpenMRS as a VITALS_CONCEPT of class 'ConvSet'</p><p><em><strong>VITALS_CONCEPT</strong></em>&nbsp;(is set = true, Class = ConvSet or Misc, Datatype = N/A, with set members below)</p><ul style=\"margin-left: 10.0px;\"><li>&nbsp;BP (is set = true, Class = Finding or Symptom/Finding, Datatype = N/A, with set members below)<ul style=\"margin-left: 10.0px;\"><li>&nbsp; Systolic (Class = Finding, Datatype = Numeric, Absolute High = 160, Normal High = 120, Absolute low = 90)</li><li>&nbsp; Diastolic (Class = Finding, Datatype = Numeric, Absolute High = 110, Normal High = 120, Absolute low = 70)</li></ul></li><li>&nbsp;Temperature&nbsp; (Class = Finding, Datatype = Numeric)</li><li>&nbsp;Last Visit (Class = Misc, Datatype = Date)</li></ul><p><br /></p><p><br />The above concept-set (VITALS_CONCEPT) can be used in Bahmni Apps to records vitals for a patient.<br />Usually, through configuration. For example in clinical-&gt;consultation the vitals tab can be configured as an extension</p><pre>{\n    &quot;id&quot;: &quot;bahmni.clinical.consultation.vitals&quot;,\n    &quot;extensionPointId&quot;: &quot;org.bahmni.clinical.consultation.board&quot;,\n    &quot;type&quot;: &quot;link&quot;,\n    &quot;label&quot;: &quot;Vitals&quot;,\n    &quot;url&quot;: &quot;concept-set/vitals_concept&quot;,\n    &quot;icon&quot;: &quot;icon-user-md&quot;,\n    &quot;order&quot;: 6,\n    &quot;requiredPrivilege&quot;: &quot;app:clinical&quot;\n}</pre><p>In the above example, the url can be routed to a handler of &quot;concept-set&quot; with &quot;vitals_concept&quot; as argument indicating the concept-set to render.</p><p>While rendering the UI, we need to read and interpret the schema defined above. In addition to this, we also need the UI to be capable of doing the following UI level interactions.<br />* Input kind - numeric, text, date time, single select, multi select<br />* Validation - default, supported only for numeric datatypes in OpenMRS. Overridable or not?<br />* Display - group by sections, group by observation, display description and how<br />* required - whether mandatory or not</p><p>To configure all the above, we will have definitions associated with concepts that will govern the display and behavior in &quot;Concept-set&quot; UIs.<br />For each concept to be rendered on UI, we will have an associated configuration. All such configurations will be in a single file.</p><p><br /></p><pre>{\n    &quot;Symptoms&quot; : {\n        &quot;autocomplete&quot;: true,\n        &quot;multiselect&quot;: {\n           &quot;type&quot; : grid\n        },\n        &quot;abnormalIndicator&quot;: true\n        &quot;validator&quot;: null\n    },\n    &quot;Temperature&quot;: {},\n    &quot;BP&quot; : {\n\n       &quot;required&quot;:true,\n        &quot;validator&quot;: {\n            &quot;validate&quot;: function(context) {\n                //implementation specific\n                //if context.patient.age &gt; 18 and context.patient.gender = 'F', return [false, &quot;blood pressure too high&quot;]\n            }\n        }\n    },\n    &quot;Chief Complaints&quot; : {\n        &quot;dropdown&quot;: true\n      },</pre><pre><span style=\"color: rgb(102,14,122);\"> &quot;defaults&quot; </span>: {<br />      <span style=\"color: rgb(102,14,122);\">&quot;Number of living children&quot; </span>: <span style=\"color: rgb(0,0,255);\">1</span>,<br />      <span style=\"color: rgb(102,14,122);\">&quot;Accepted Family Planning methods&quot;</span>: [<span style=\"color: rgb(0,128,0);\">&quot;Condoms&quot;</span>, <span style=\"color: rgb(0,128,0);\">&quot;Pills&quot;</span>],<br />      <span style=\"color: rgb(102,14,122);\">&quot;Pain management given&quot;</span>: <span style=\"color: rgb(0,0,128);\">true</span>,<br />      <span style=\"color: rgb(102,14,122);\">&quot;Safe Abortion, Remarks&quot;</span>: <span style=\"color: rgb(0,128,0);\">&quot;Remarks&quot;</span>,<br />      <span style=\"color: rgb(102,14,122);\">&quot;Malaria, Death Date&quot;</span>: <span style=\"color: rgb(0,128,0);\">&quot;2015-12-01&quot;<br /></span>   }</pre><pre>}</pre><p>NOTE: &quot;abnormalIndicator&quot; is under discussion and maybe changed if we decide to move it as part of schema definition (OpenMRS concept definition).</p><p><br />Default behaviors:<br />select : for any concept-set member of datatype &quot;Coded&quot;, the answers are given as options in a single select dropdown.<br />multi-select : must be mentioned in configuration like above for a given concept. The control by default is a dropdown. For grid, we will have a special control.<br />autocomplete: for any concept-set member of datatype &quot;Coded&quot;, the answers are eligible for autocomplete.<br />dropdown: for any concept-set member of datatype &quot;Coded&quot;, the answers are eligible for dropdown.</p><p>&quot;<strong>defaults</strong>&quot; section contains the default values that concept can contain in the form. Key must be concept full name and value is the default value for each concept.</p><p><br /></p><p><br /></p><p><strong>Persistence:</strong></p><p>All observations are stored against an encounter by a provider. For observations coming out of a Concept-set interface, there would be several observation groups created depending on how a concept-set is defined in OpenMRS.</p><p>For example, think of an UI through which some observations maybe done in Cardiology</p><p>C<strong>ardiology_Questionaire &gt; CardiologyConceptSet</strong></p><ul style=\"margin-left: 10.0px;\"><li>Temperature (Numeric) &gt; TemperatureConcept</li><li>Allergies (DataType: Coded,&nbsp; answers: Dust, pollen, Shrimp) &gt; AllergiesConcept</li><li>BP (ConceptSet ) &gt; BPConceptSet<ul style=\"margin-left: 10.0px;\"><li>Systolic &gt; SystolicConept</li><li>Diastolic &gt; DiastolicConept</li></ul></li></ul><h3>&nbsp;</h3><p><br />Observations for an Encounter : E1, maybe stored in database using ObsGroup structure as below (NOTE: there would be another level of obsgroup when combined with abnormal observation)</p><p><strong>Obs1 &gt; CardiologyConceptSet</strong></p><ul style=\"margin-left: 10.0px;\"><li>Obs2 &gt; Parent:Obs1 - Value:101 &gt; TempConcept</li><li>Obs3 &gt; Parent:Obs1 - Value:Dust &gt; AllergiesConcept</li><li>Obs4 &gt; Parent:Obs1 - Value:Pollen &gt; AllergiesConcept</li><li>Obs5 &gt; Parent:Obs1 - &gt; BPConceptSet<ul style=\"margin-left: 10.0px;\"><li>Obs6 &gt; Parent:Obs5 - value:79&nbsp;&nbsp; &gt; SystolicConept</li><li>Obs7 &gt; Parent:Obs5 - value:120&nbsp; &gt; DiastolicConept</li></ul></li></ul><p><strong>Ability to configure future dates as permissible on date fields:</strong></p><p>To allow future dates in the concepts of datatype &quot;date&quot; or &quot;datetime&quot; , set the allowFutureDates to true in the conceptSetUI in app.json. By default future dates are not allowed in date fields.</p><p>For example in clinical/app.json</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"64d08e55-8637-47da-a8e2-0cc41c783a70\"><ac:plain-text-body><![CDATA[\"config\": {\n\t\t\"conceptSetUI\" : {\n\t\t\t\t\t\"Tuberculosis, Next Followup Visit\": {\n    \t\t\t\t\t\"allowFutureDates\": true\n\t\t\t\t\t\t},\n\t\t\t\t\t\"Datetime\" : {\n\t\t\t\t\t\t\"allowFutureDates\": false\n\t\t\t\t\t\t}\n\t\t\t\t}\n\n}]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p><strong>Ability to Disable the Notes &nbsp;for particular concept in Observation Form</strong></p><p><strong>&nbsp;&nbsp;</strong>Currently Notes icon is by default displayed for all the concepts. Concepts of dataType Text and Image are exceptional. In order to configure the notes to be disabled for particular concept in the observation form use the below configuration. Default behaviour is to show the notes always.</p><p>For example: In clinical/app.json</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"194b57a4-cc53-4307-b296-0f530303fd3f\"><ac:plain-text-body><![CDATA[\"config\": {\n\t\t\"conceptSetUI\" : {\n\t\t\t\n\t\t\t\t\"Visual acuity, left eye\" : {\n\t\t\t\t\t\t   \"disableAddNotes\": true\n\t\t\t\t\t\t}\n\t\t}\n}]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><table class=\"wrapped\"><tbody><tr><th>Key</th><th>Value</th></tr><tr><td><span>Visual acuity, left eye</span></td><td>Fully specified name of the concept</td></tr><tr><td><pre>disableAddNotes</pre></td><td>Configuration to disable notes (default is to show the notes)</td></tr></tbody></table><p class=\"auto-cursor-target\"><br /></p><p><br /></p><p class=\"auto-cursor-target\"><br /></p><p><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p><br /></p><p><br /></p><p class=\"auto-cursor-target\"><a href=\"https://bahmni.atlassian.net/wiki/display/BAH/app.json\"><br /></a></p><p class=\"auto-cursor-target\"><a href=\"https://bahmni.atlassian.net/wiki/display/BAH/app.json\"><br /></a></p><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"fcc44a16-1008-4b79-9760-5b2d6b2451bc\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#59C4C5</ac:parameter><ac:parameter ac:name=\"title\">Related links</ac:parameter><ac:rich-text-body><p><a href=\"https://bahmni.atlassian.net/wiki/display/BAH/app.json\">app.json</a></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2850829"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\"><style>[data-colorid=krmv7vopow]{color:#660e7a} html[data-color-mode=dark] [data-colorid=krmv7vopow]{color:#dd85f1}[data-colorid=snz7ns8h6a]{color:#660e7a} html[data-color-mode=dark] [data-colorid=snz7ns8h6a]{color:#dd85f1}[data-colorid=l2p8mtuk80]{color:#660e7a} html[data-color-mode=dark] [data-colorid=l2p8mtuk80]{color:#dd85f1}[data-colorid=r0ee594toy]{color:#660e7a} html[data-color-mode=dark] [data-colorid=r0ee594toy]{color:#dd85f1}[data-colorid=u8q1nyls2o]{color:#660e7a} html[data-color-mode=dark] [data-colorid=u8q1nyls2o]{color:#dd85f1}[data-colorid=qi7r057wb6]{color:#660e7a} html[data-color-mode=dark] [data-colorid=qi7r057wb6]{color:#dd85f1}</style>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p>We are dealing with OpenMRS Concepts for various purposes by different types of users.<br />- Diagnoses: search and specify during consultation<br />- Tests: (Radiology/Lab) search and specify during consultation<br />- Drugs: search and specify treatment<br />- Notes by doctors/nurses<br />- Obs: as observations. e.g. Vitals recording by nurse, nurse/doctor noting down complaints/symtoms, screens noting down preliminary observations, intake/outtake etc.</p><p><br />The storage of such observations are done as below.<br />- Drugs/tests as Orders (Order table), results as observations (Obs table) tied to orders<br />- Others are stored as observations within encounters - diagnoses, vitals, any other notes, intake/outtake etc.</p><p><br /></p><p>This document specifically discusses setup/display/behavior/storage of observations that should be recorded through a &quot;Concept-set-UI&quot;</p><p><strong>Setup:</strong><br />- the setup of the schema is defined in OpenMRS.</p><p>For example: observations to be done in a Vitals recording UI can be defined in OpenMRS as a VITALS_CONCEPT of class 'ConvSet'</p><p><em><strong>VITALS_CONCEPT</strong></em>&nbsp;(is set = true, Class = ConvSet or Misc, Datatype = N/A, with set members below)</p><ul style=\"margin-left: 10.0px;\"><li>&nbsp;BP (is set = true, Class = Finding or Symptom/Finding, Datatype = N/A, with set members below)<ul style=\"margin-left: 10.0px;\"><li>&nbsp; Systolic (Class = Finding, Datatype = Numeric, Absolute High = 160, Normal High = 120, Absolute low = 90)</li><li>&nbsp; Diastolic (Class = Finding, Datatype = Numeric, Absolute High = 110, Normal High = 120, Absolute low = 70)</li></ul></li><li>&nbsp;Temperature&nbsp; (Class = Finding, Datatype = Numeric)</li><li>&nbsp;Last Visit (Class = Misc, Datatype = Date)</li></ul><p><br /></p><p><br />The above concept-set (VITALS_CONCEPT) can be used in Bahmni Apps to records vitals for a patient.<br />Usually, through configuration. For example in clinical-&gt;consultation the vitals tab can be configured as an extension</p><pre>{\n    &quot;id&quot;: &quot;bahmni.clinical.consultation.vitals&quot;,\n    &quot;extensionPointId&quot;: &quot;org.bahmni.clinical.consultation.board&quot;,\n    &quot;type&quot;: &quot;link&quot;,\n    &quot;label&quot;: &quot;Vitals&quot;,\n    &quot;url&quot;: &quot;concept-set/vitals_concept&quot;,\n    &quot;icon&quot;: &quot;icon-user-md&quot;,\n    &quot;order&quot;: 6,\n    &quot;requiredPrivilege&quot;: &quot;app:clinical&quot;\n}</pre><p>In the above example, the url can be routed to a handler of &quot;concept-set&quot; with &quot;vitals_concept&quot; as argument indicating the concept-set to render.</p><p>While rendering the UI, we need to read and interpret the schema defined above. In addition to this, we also need the UI to be capable of doing the following UI level interactions.<br />* Input kind - numeric, text, date time, single select, multi select<br />* Validation - default, supported only for numeric datatypes in OpenMRS. Overridable or not?<br />* Display - group by sections, group by observation, display description and how<br />* required - whether mandatory or not</p><p>To configure all the above, we will have definitions associated with concepts that will govern the display and behavior in &quot;Concept-set&quot; UIs.<br />For each concept to be rendered on UI, we will have an associated configuration. All such configurations will be in a single file.</p><p><br /></p><pre>{\n    &quot;Symptoms&quot; : {\n        &quot;autocomplete&quot;: true,\n        &quot;multiselect&quot;: {\n           &quot;type&quot; : grid\n        },\n        &quot;abnormalIndicator&quot;: true\n        &quot;validator&quot;: null\n    },\n    &quot;Temperature&quot;: {},\n    &quot;BP&quot; : {\n\n       &quot;required&quot;:true,\n        &quot;validator&quot;: {\n            &quot;validate&quot;: function(context) {\n                //implementation specific\n                //if context.patient.age &gt; 18 and context.patient.gender = 'F', return [false, &quot;blood pressure too high&quot;]\n            }\n        }\n    },\n    &quot;Chief Complaints&quot; : {\n        &quot;dropdown&quot;: true\n      },</pre><pre><span data-colorid=\"r0ee594toy\"> &quot;defaults&quot; </span>: {<br />      <span data-colorid=\"krmv7vopow\">&quot;Number of living children&quot; </span>: <span class=\"legacy-color-text-blue4\">1</span>,<br />      <span data-colorid=\"qi7r057wb6\">&quot;Accepted Family Planning methods&quot;</span>: [<span class=\"legacy-color-text-green2\">&quot;Condoms&quot;</span>, <span class=\"legacy-color-text-green2\">&quot;Pills&quot;</span>],<br />      <span data-colorid=\"snz7ns8h6a\">&quot;Pain management given&quot;</span>: <span class=\"legacy-color-text-blue2\">true</span>,<br />      <span data-colorid=\"l2p8mtuk80\">&quot;Safe Abortion, Remarks&quot;</span>: <span class=\"legacy-color-text-green2\">&quot;Remarks&quot;</span>,<br />      <span data-colorid=\"u8q1nyls2o\">&quot;Malaria, Death Date&quot;</span>: <span class=\"legacy-color-text-green2\">&quot;2015-12-01&quot;<br /></span>   }</pre><pre>}</pre><p>NOTE: &quot;abnormalIndicator&quot; is under discussion and maybe changed if we decide to move it as part of schema definition (OpenMRS concept definition).</p><p><br />Default behaviors:<br />select : for any concept-set member of datatype &quot;Coded&quot;, the answers are given as options in a single select dropdown.<br />multi-select : must be mentioned in configuration like above for a given concept. The control by default is a dropdown. For grid, we will have a special control.<br />autocomplete: for any concept-set member of datatype &quot;Coded&quot;, the answers are eligible for autocomplete.<br />dropdown: for any concept-set member of datatype &quot;Coded&quot;, the answers are eligible for dropdown.</p><p>&quot;<strong>defaults</strong>&quot; section contains the default values that concept can contain in the form. Key must be concept full name and value is the default value for each concept.</p><p><br /></p><p><br /></p><p><strong>Persistence:</strong></p><p>All observations are stored against an encounter by a provider. For observations coming out of a Concept-set interface, there would be several observation groups created depending on how a concept-set is defined in OpenMRS.</p><p>For example, think of an UI through which some observations maybe done in Cardiology</p><p>C<strong>ardiology_Questionaire &gt; CardiologyConceptSet</strong></p><ul style=\"margin-left: 10.0px;\"><li>Temperature (Numeric) &gt; TemperatureConcept</li><li>Allergies (DataType: Coded,&nbsp; answers: Dust, pollen, Shrimp) &gt; AllergiesConcept</li><li>BP (ConceptSet ) &gt; BPConceptSet<ul style=\"margin-left: 10.0px;\"><li>Systolic &gt; SystolicConept</li><li>Diastolic &gt; DiastolicConept</li></ul></li></ul><h3 id=\"ConceptSetUI-\">&nbsp;</h3><p><br />Observations for an Encounter : E1, maybe stored in database using ObsGroup structure as below (NOTE: there would be another level of obsgroup when combined with abnormal observation)</p><p><strong>Obs1 &gt; CardiologyConceptSet</strong></p><ul style=\"margin-left: 10.0px;\"><li>Obs2 &gt; Parent:Obs1 - Value:101 &gt; TempConcept</li><li>Obs3 &gt; Parent:Obs1 - Value:Dust &gt; AllergiesConcept</li><li>Obs4 &gt; Parent:Obs1 - Value:Pollen &gt; AllergiesConcept</li><li>Obs5 &gt; Parent:Obs1 - &gt; BPConceptSet<ul style=\"margin-left: 10.0px;\"><li>Obs6 &gt; Parent:Obs5 - value:79&nbsp;&nbsp; &gt; SystolicConept</li><li>Obs7 &gt; Parent:Obs5 - value:120&nbsp; &gt; DiastolicConept</li></ul></li></ul><p><strong>Ability to configure future dates as permissible on date fields:</strong></p><p>To allow future dates in the concepts of datatype &quot;date&quot; or &quot;datetime&quot; , set the allowFutureDates to true in the conceptSetUI in app.json. By default future dates are not allowed in date fields.</p><p>For example in clinical/app.json</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"64d08e55-8637-47da-a8e2-0cc41c783a70\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;config&quot;: {\n\t\t&quot;conceptSetUI&quot; : {\n\t\t\t\t\t&quot;Tuberculosis, Next Followup Visit&quot;: {\n    \t\t\t\t\t&quot;allowFutureDates&quot;: true\n\t\t\t\t\t\t},\n\t\t\t\t\t&quot;Datetime&quot; : {\n\t\t\t\t\t\t&quot;allowFutureDates&quot;: false\n\t\t\t\t\t\t}\n\t\t\t\t}\n\n}</pre>\n</div></div><p><br /></p><p><strong>Ability to Disable the Notes &nbsp;for particular concept in Observation Form</strong></p><p><strong>&nbsp;&nbsp;</strong>Currently Notes icon is by default displayed for all the concepts. Concepts of dataType Text and Image are exceptional. In order to configure the notes to be disabled for particular concept in the observation form use the below configuration. Default behaviour is to show the notes always.</p><p>For example: In clinical/app.json</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"194b57a4-cc53-4307-b296-0f530303fd3f\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;config&quot;: {\n\t\t&quot;conceptSetUI&quot; : {\n\t\t\t\n\t\t\t\t&quot;Visual acuity, left eye&quot; : {\n\t\t\t\t\t\t   &quot;disableAddNotes&quot;: true\n\t\t\t\t\t\t}\n\t\t}\n}</pre>\n</div></div><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><tbody><tr><th class=\"confluenceTh\">Key</th><th class=\"confluenceTh\">Value</th></tr><tr><td class=\"confluenceTd\"><span>Visual acuity, left eye</span></td><td class=\"confluenceTd\">Fully specified name of the concept</td></tr><tr><td class=\"confluenceTd\"><pre>disableAddNotes</pre></td><td class=\"confluenceTd\">Configuration to disable notes (default is to show the notes)</td></tr></tbody></table></div><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p class=\"auto-cursor-target\"><a href=\"https://bahmni.atlassian.net/wiki/display/BAH/app.json\" rel=\"nofollow\"><br /></a></p><p class=\"auto-cursor-target\"><a href=\"https://bahmni.atlassian.net/wiki/display/BAH/app.json\" rel=\"nofollow\"><br /></a></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"fcc44a16-1008-4b79-9760-5b2d6b2451bc\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #59C4C5;color: white;\"><b>Related links</b></div><div class=\"panelContent\">\n<p><a href=\"https://bahmni.atlassian.net/wiki/display/BAH/app.json\" rel=\"nofollow\">app.json</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2850829"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "review-needed",
+          "id": "30146561",
+          "label": "review-needed"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 1,
+      "_links": {
+        "next": "/rest/api/content/2850829/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2850829/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2850829/child",
+    "restrictions": "/rest/api/content/2850829/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2850829/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2850829",
+    "webui": "/spaces/BAH/pages/2850829/Concept+Set+UI",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2850829",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2850829",
+    "tinyui": "/x/DYAr",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

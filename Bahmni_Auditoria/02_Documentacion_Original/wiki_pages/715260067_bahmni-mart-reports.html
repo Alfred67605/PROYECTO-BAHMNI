@@ -1,0 +1,44 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Bahmni Mart Reports</title></head><body><h1>Bahmni Mart Reports</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class="confluence-information-macro confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="8b0e7baf-85fb-4f2e-96d4-dd8aef77cf25" data-macro-name="tip"><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><div><div><p>[V0.93] Bahmni Mart provides a way of transferring data from Bahmni into a dedicated database for reporting/analytics purposes – to make it easy to perform reporting, and to avoid performance issues in a running EMR system, due to heavy SQLs. Bahmni Mart can then be connected with Metabase, an open source analytics tool, quite similar to PowerBI, Tabluea, etc. to create visualisations, dashboards and reports. </p><p>At the core, Bahmni Mart is a flattened and <span>simplified database intended for analytics wherein hierarchical structures have been flattened and pivoted and many other entities denormalized. You may plugin data visualization tools <a class="external-link" href="https://www.metabase.com/start/oss/" rel="nofollow">Metabase</a>, Superset etc on top of this database. </span><span>At the same time, you may want to integrate Bahmni Reports with Bahmni mart. The following sections detail how this can be done. </span></p></div></div></div></div><p><br/></p><div class="confluence-information-macro confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="2ceec546-0400-4e4a-8ed9-89c94ecac804" data-macro-name="tip"><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>For diagrams and high level feature details on Bahmni Mart, please refer to this document section in Implementor Guide: <a href="/wiki/spaces/BAH/pages/695959553/Bahmni+Mart" data-linked-resource-id="695959553" data-linked-resource-version="26" data-linked-resource-type="page">Bahmni Mart</a></p></div></div><p><br/></p><h2 id="BahmniMartReports-ConfigureDatasourceDefinitionforBahmniMart">Configure Datasource Definition for Bahmni Mart</h2><p>Configure the datasource definition like in the example below. </p><p><strong>file: <em><span class="s1">/opt/bahmni-reports/etc/</span>bahmni-reports.properties</em></strong></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="828160bb-aa0c-41e3-962a-1746265262b4" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Datasource definition</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">bahmni.mart.url=jdbc:postgresql://localhost:5432/analytics
+bahmni.mart.username=analytics
+bahmni.mart.password='somepwd'</pre>
+</div></div><h2 class="auto-cursor-target" id="BahmniMartReports-ConfigureinReportsApplicationConfig">Configure in Reports Application Config</h2><p>Once the datasource is defined, you will then need to define a report type in your application configuration. </p><p><strong>file: /var/www/<span class="s1">bahmni_config/openmrs/apps/reports/reports.json</span></strong></p><h3 id="BahmniMartReports-MartGenericReport">Mart Generic Report</h3><p>You will need to define a &quot;<em>MartGeneric</em>&quot; type</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="8e1cb125-e8f6-446b-94f1-81b9e72b656e" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">&quot;bahmniMartTestReport&quot;: {
+    &quot;name&quot;: &quot;Mart Test Report&quot;,
+    &quot;type&quot;: &quot;MartGeneric&quot;,
+    &quot;config&quot;: {
+       &quot;sqlPath&quot;: &quot;/var/www/bahmni_config/openmrs/apps/reports/sql/testMartCode.sql&quot;
+    }
+}</pre>
+</div></div><h3 class="auto-cursor-target" id="BahmniMartReports-MartConcatenatedReports">Mart Concatenated Reports</h3><p>You may also want to run concatenated reports on the mart data source. For that you can define a '<em>MartConcatenated</em>' type. For more information on Concatenated Reports, please see <a href="/wiki/spaces/BAH/pages/90472551/Reports#Reports-ReportConcatMultipleReports" data-linked-resource-id="90472551" data-linked-resource-version="57" data-linked-resource-type="page">here</a></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="f26b9083-ccdb-4f27-ac11-44abe3a00cd3" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">{
+  &quot;customReport21&quot;: {
+    &quot;name&quot;: &quot;Indicators(Custom Excel)&quot;,
+    &quot;type&quot;: &quot;MartConcatenated&quot;,
+    &quot;config&quot;: {
+      &quot;reports&quot;: [
+        {
+          &quot;name&quot;: &quot;Bahmni Mart Test&quot;,
+          &quot;type&quot;: &quot;MartGeneric&quot;,
+          &quot;config&quot;: {
+            &quot;sqlPath&quot;: &quot;/var/www/bahmni_config/openmrs/apps/reports/sql/NewPatientConsultations.sql&quot;
+          }
+        }
+      ]
+    }
+  }
+}</pre>
+</div></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="confluence-information-macro confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="99b8b629-37db-4a58-adb1-4714e33f853d" data-macro-name="tip"><p class="title">On this Page</p><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="6ebfc67a-7487-4e65-95bb-388c38c37ce3" data-macro-name="toc"> </div><p> </p></div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="0add60ca-db50-405a-bfd6-90945fbc2b0b" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #668D3C;color: white;"><b>Feature Details</b></div><div class="panelContent">
+<p><a href="/wiki/spaces/BAH/pages/695959553/Bahmni+Mart" data-linked-resource-id="695959553" data-linked-resource-version="26" data-linked-resource-type="page">Bahmni Mart (Installation &amp; Setup)</a></p>
+</div></div></div>
+</div>
+</div>
+</div></body></html>

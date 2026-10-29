@@ -1,0 +1,170 @@
+{
+  "id": "23789603",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/23789603",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjM3ODk2MDM=",
+  "status": "current",
+  "title": "Program Management",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:a9fa6e8d-0289-4556-9d22-5e1034e227ba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Achinta Roy",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:a9fa6e8d-0289-4556-9d22-5e1034e227ba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Achinta Roy",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:a9fa6e8d-0289-4556-9d22-5e1034e227ba"
+      }
+    },
+    "createdDate": "2015-07-07T06:21:44.737Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/23789603/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:609f12f6-2af6-4fd7-b713-f19fc124f992",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "hanisha potturi (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:609f12f6-2af6-4fd7-b713-f19fc124f992",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Hanisha Potturi (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:609f12f6-2af6-4fd7-b713-f19fc124f992"
+      }
+    },
+    "when": "2016-02-04T12:49:07.149Z",
+    "friendlyWhen": "Feb 04, 2016",
+    "message": "",
+    "number": 22,
+    "minorEdit": false,
+    "syncRev": "0.tkizU5slt3hS6Ig_iTYAqA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$23789603.80",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/23789603"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/23789603/version/22"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"d3b8d3c1-1ace-4528-ab5a-4754edc2dc51\" /></p><h1>Configure Programs tab in Clinical Patient Search</h1><p>Add the following configuration to the extension.json file present in the clinical apps config folder.</p><p>&nbsp;</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"cbe775e2-2bd8-41cc-a08c-ca7a5e6503ae\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">config/openmrs/apps/clinical/extension.json</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"bahmniCLinicalPatientsSearchActicePatientsForPrograms\" : {\n  \"id\": \"bahmni.clinical.patients.search.allPatients\",\n  \"extensionPointId\": \"org.bahmni.patient.search\",\n  \"type\": \"config\",\n  \"extensionParams\": {\n    \"searchHandler\": \"emrapi.sqlSearch.activePatientsByProvider\",\n    \"display\":\"Programs\",\n    \"forwardUrl\" : \"#/programs/patient/{{patientUuid}}/consultationContext\"\n },\n  \"label\": \"Programs\",\n  \"order\": 1,\n  \"requiredPrivilege\": \"app:clinical\"\n}]]></ac:plain-text-body></ac:structured-macro><p>A new tab &quot;Programs&quot; will be shown in the clinical patient search page</p><p><ac:image ac:align=\"center\" ac:border=\"true\" ac:height=\"150\" ac:width=\"886\"><ri:attachment ri:filename=\"Screen Shot 2015-10-05 at 6.46.09 pm.png\" /></ac:image></p><p><span style=\"color: rgb(0,0,0);\">&nbsp;</span></p><hr /><h1><span style=\"color: rgb(0,0,0);\">Configuring Programs app in dashboard</span></h1><p><span style=\"color: rgb(0,0,0);\">&nbsp;</span></p><p>Implementer can configure a separate app for 'programs' on the application dashboard. The program app would be the same as the clinical app with separate configuration for patient queues.</p><p><span style=\"color: rgb(0,0,0);\">&nbsp;</span></p><p>The name of the extension config will be picked up from app's url. The convention to introduce is that the first param after # in the app's url would be the name of the extension config that needs to be picked up.</p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"eb78d565-9b65-422f-9731-513543dc89ec\"><ac:rich-text-body><p>As an example, The app's url should look like <a style=\"line-height: 1.42857;\" rel=\"nofollow\">https://172.18.2.10/bahmni/clinical/#/{{extension_name}}/patient/search</a></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"9f951cfd-9001-411a-a3f9-62ba322137d5\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">home/extension.json</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"programs\": {\n  \"id\": \"bahmni.programs\",\n  \"extensionPointId\": \"org.bahmni.home.dashboard\",\n  \"type\": \"link\",\n  \"label\": \"Programs\",\n  \"url\": \"../clinical/#/programs/patient/search\",\n  \"icon\": \"fa-tasks\",\n  \"order\": 2,\n  \"requiredPrivilege\": \"app:clinical\"\n}]]></ac:plain-text-body></ac:structured-macro><p><span style=\"color: rgb(0,0,0);\"><br /></span></p><p><span style=\"color: rgb(0,0,0);\">And the programs can have its own configuration</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"9f51c89a-cedd-46cc-89d9-36c5fdaf679d\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">clinical/extension-PROGRAMS.json</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[{\n  \"bahmniClinicalPatientsSearchActivePatientsForPrograms\": {\n    \"id\": \"bahmni.clinical.patients.search.activePatients\",\n    \"extensionPointId\": \"org.bahmni.patient.search\",\n    \"type\": \"config\",\n    \"extensionParams\": {\n      \"searchHandler\": \"emrapi.sqlSearch.activePatients\",\n      \"display\": \"Programs\",\n      \"forwardUrl\": \"#/programs/patient/{{patientUuid}}/consultationContext\"\n    },\n    \"label\": \"Active\",\n    \"order\": 1,\n    \"requiredPrivilege\": \"app:clinical\"\n  },\n  \"bahmniClinicalPatientsSearchAllPatients\": {\n    \"id\": \"bahmni.clinical.patients.search.allPatients\",\n    \"extensionPointId\": \"org.bahmni.patient.search\",\n    \"type\": \"config\",\n    \"extensionParams\": {\n      \"display\": \"All\",\n      \"forwardUrl\": \"#/programs/patient/{{patientUuid}}/dashboard\"\n    },\n    \"label\": \"All\",\n    \"order\": 2,\n    \"requiredPrivilege\": \"app:clinical\"\n  }\n}]]></ac:plain-text-body></ac:structured-macro><p><span style=\"color: rgb(0,0,0);\">&nbsp;</span></p><hr /><h1><span style=\"color: rgb(0,0,0);\">Creating new Programs in OpenMRS</span></h1><p><span style=\"line-height: 1.42857;\">Programs creation is done in OpenMRS app as shown in the gif below.&nbsp;</span></p><p><ac:image ac:align=\"center\" ac:border=\"true\" ac:height=\"400\" ac:width=\"766\"><ri:attachment ri:filename=\"programs creation flow.gif\" /></ac:image></p><ac:structured-macro ac:name=\"warning\" ac:schema-version=\"1\" ac:macro-id=\"9ca131e5-f876-4c92-ae17-6b6193aeaa02\"><ac:rich-text-body><p>Having more than one workflow for a program is not supported</p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"warning\" ac:schema-version=\"1\" ac:macro-id=\"0382aed8-8788-4684-91ee-a3dffb7ca3ff\"><ac:rich-text-body><p>Initial &amp; terminal states flags should not be used as they are not supported by Bahmni</p></ac:rich-text-body></ac:structured-macro><hr /><h1><span style=\"color: rgb(0,0,0);\">Associating program to encounter type</span></h1><p>To associate program to encounter type, Bahmni uses the generic entity mapping concept which can be configured as explained below</p><ol><li><p>In the entity_mapping_type table, add a record to define the mapping between program and encounter type</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"c747447e-1342-4dd6-b7e7-ec2e2fa11f97\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:parameter ac:name=\"title\">entity_mapping_type entry</ac:parameter><ac:plain-text-body><![CDATA[insert into entity_mapping_type(name, uuid, entity1_type, entity2_type, date_created) \nvalues ('program_encountertype', uuid(), 'org.openmrs.Program', 'org.openmrs.EncounterType', now())]]></ac:plain-text-body></ac:structured-macro></li><li><p>In the entity_mapping table, insert a record to create the mapping between a specific program and the specific encounter type</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4258808b-dafe-4603-9dc8-e7b6e9b7f5fd\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:parameter ac:name=\"title\">entity_mapping entry</ac:parameter><ac:plain-text-body><![CDATA[insert into entity_mapping(uuid, entity_mapping_type_id, entity1_uuid, entity2_uuid, date_created) \nvalues (uuid(), <id_of_the_record_created_in_step_1>, <uuid_of_program>, <uuid_of_encounter_type>, now()) ]]></ac:plain-text-body></ac:structured-macro></li></ol><p>&nbsp;</p><hr /><h1>Associating program to observation template</h1><p>To associate program to observation template (concept), Bahmni uses the same generic entity mapping as above</p><ol><li><p>In the entity_mapping_type table, add a record to define the mapping between program and concept</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"99bace1e-8b39-4465-9ba9-3b0950b3fc1b\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:parameter ac:name=\"title\">entity_mapping_type entry</ac:parameter><ac:plain-text-body><![CDATA[insert into entity_mapping_type(name, uuid, entity1_type, entity2_type, date_created) \nvalues ('program_obstemplate', uuid(), 'org.openmrs.Program', 'org.openmrs.Concept', now())]]></ac:plain-text-body></ac:structured-macro></li><li><p>In the entity_mapping table, insert a record to create the mapping between a specific program and the specific concept</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"9f0cc82e-040a-4b68-8924-2ac7e7edeb35\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:parameter ac:name=\"title\">entity_mapping entry</ac:parameter><ac:plain-text-body><![CDATA[insert into entity_mapping(uuid, entity_mapping_type_id, entity1_uuid, entity2_uuid, date_created) \nvalues (uuid(), <id_of_the_record_created_in_step_1>, <uuid_of_program>, <uuid_of_concept>, now()) ]]></ac:plain-text-body></ac:structured-macro></li></ol><hr /><h1>Configuring the dashboard and Medication tab to show data within program enrollment date range</h1><p>&nbsp;To view all the data in dashboard and medication tab &nbsp;within the program enrollment date range add this config to clinical/app.json.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"c37e36bb-d50c-408e-8cc2-2f753ccd143f\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:parameter ac:name=\"title\">entity_mapping entry</ac:parameter><ac:plain-text-body><![CDATA[\"config\" : {\n\t\"program\": {\n\t\t\"showDetailsWithinDateRange\" : true,\n\t}\n}]]></ac:plain-text-body></ac:structured-macro><p>&nbsp;</p><hr /><p>&nbsp;</p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"c7218fc8-5153-4cf6-a36c-1c824a78b94d\"><ac:rich-text-body><p>To associate programs to patients, please see <ac:link><ri:page ri:content-title=\"Programs\" /><ac:plain-text-link-body><![CDATA[this user guide]]></ac:plain-text-link-body></ac:link></p></ac:rich-text-body></ac:structured-macro><p>&nbsp;</p><p><span class=\"confluence-embedded-file-wrapper\"><br /></span></p><p><span class=\"confluence-embedded-file-wrapper\"><br /></span></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/23789603"
+      }
+    },
+    "view": {
+      "value": "<p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"d3b8d3c1-1ace-4528-ab5a-4754edc2dc51\" data-macro-name=\"toc\"> </div></p><h1 id=\"ProgramManagement-ConfigureProgramstabinClinicalPatientSearch\">Configure Programs tab in Clinical Patient Search</h1><p>Add the following configuration to the extension.json file present in the clinical apps config folder.</p><p> </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"cbe775e2-2bd8-41cc-a08c-ca7a5e6503ae\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>config/openmrs/apps/clinical/extension.json</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;bahmniCLinicalPatientsSearchActicePatientsForPrograms&quot; : {\n  &quot;id&quot;: &quot;bahmni.clinical.patients.search.allPatients&quot;,\n  &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,\n  &quot;type&quot;: &quot;config&quot;,\n  &quot;extensionParams&quot;: {\n    &quot;searchHandler&quot;: &quot;emrapi.sqlSearch.activePatientsByProvider&quot;,\n    &quot;display&quot;:&quot;Programs&quot;,\n    &quot;forwardUrl&quot; : &quot;#/programs/patient/{{patientUuid}}/consultationContext&quot;\n },\n  &quot;label&quot;: &quot;Programs&quot;,\n  &quot;order&quot;: 1,\n  &quot;requiredPrivilege&quot;: &quot;app:clinical&quot;\n}</pre>\n</div></div><p>A new tab &quot;Programs&quot; will be shown in the clinical patient search page</p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" height=\"150\" width=\"886\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/23789603/Screen%20Shot%202015-10-05%20at%206.46.09%20pm.png?version=1&amp;modificationDate=1444051054502&amp;cacheVersion=1&amp;api=v2&amp;width=886&amp;height=149\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/23789603/Screen%20Shot%202015-10-05%20at%206.46.09%20pm.png?version=1&amp;modificationDate=1444051054502&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"29818993\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2015-10-05 at 6.46.09 pm.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"23789603\" data-linked-resource-container-version=\"22\" data-media-id=\"9a9b8e9e-de39-4586-8cad-05e3c22df644\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/23789603/Screen%20Shot%202015-10-05%20at%206.46.09%20pm.png?version=1&amp;modificationDate=1444051054502&amp;cacheVersion=1&amp;api=v2&amp;width=1772&amp;height=298 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/23789603/Screen%20Shot%202015-10-05%20at%206.46.09%20pm.png?version=1&amp;modificationDate=1444051054502&amp;cacheVersion=1&amp;api=v2&amp;width=886&amp;height=149 1x\"></span></p><p><span class=\"legacy-color-text-default\"> </span></p><hr/><h1 id=\"ProgramManagement-ConfiguringProgramsappindashboard\"><span class=\"legacy-color-text-default\">Configuring Programs app in dashboard</span></h1><p><span class=\"legacy-color-text-default\"> </span></p><p>Implementer can configure a separate app for 'programs' on the application dashboard. The program app would be the same as the clinical app with separate configuration for patient queues.</p><p><span class=\"legacy-color-text-default\"> </span></p><p>The name of the extension config will be picked up from app's url. The convention to introduce is that the first param after # in the app's url would be the name of the extension config that needs to be picked up.</p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"eb78d565-9b65-422f-9731-513543dc89ec\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>As an example, The app's url should look like <a rel=\"nofollow\" style=\"line-height: 1.42857;\">https://172.18.2.10/bahmni/clinical/#/{{extension_name}}/patient/search</a></p></div></div><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9f951cfd-9001-411a-a3f9-62ba322137d5\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>home/extension.json</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;programs&quot;: {\n  &quot;id&quot;: &quot;bahmni.programs&quot;,\n  &quot;extensionPointId&quot;: &quot;org.bahmni.home.dashboard&quot;,\n  &quot;type&quot;: &quot;link&quot;,\n  &quot;label&quot;: &quot;Programs&quot;,\n  &quot;url&quot;: &quot;../clinical/#/programs/patient/search&quot;,\n  &quot;icon&quot;: &quot;fa-tasks&quot;,\n  &quot;order&quot;: 2,\n  &quot;requiredPrivilege&quot;: &quot;app:clinical&quot;\n}</pre>\n</div></div><p><span class=\"legacy-color-text-default\"><br/></span></p><p><span class=\"legacy-color-text-default\">And the programs can have its own configuration</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9f51c89a-cedd-46cc-89d9-36c5fdaf679d\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>clinical/extension-PROGRAMS.json</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">{\n  &quot;bahmniClinicalPatientsSearchActivePatientsForPrograms&quot;: {\n    &quot;id&quot;: &quot;bahmni.clinical.patients.search.activePatients&quot;,\n    &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,\n    &quot;type&quot;: &quot;config&quot;,\n    &quot;extensionParams&quot;: {\n      &quot;searchHandler&quot;: &quot;emrapi.sqlSearch.activePatients&quot;,\n      &quot;display&quot;: &quot;Programs&quot;,\n      &quot;forwardUrl&quot;: &quot;#/programs/patient/{{patientUuid}}/consultationContext&quot;\n    },\n    &quot;label&quot;: &quot;Active&quot;,\n    &quot;order&quot;: 1,\n    &quot;requiredPrivilege&quot;: &quot;app:clinical&quot;\n  },\n  &quot;bahmniClinicalPatientsSearchAllPatients&quot;: {\n    &quot;id&quot;: &quot;bahmni.clinical.patients.search.allPatients&quot;,\n    &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,\n    &quot;type&quot;: &quot;config&quot;,\n    &quot;extensionParams&quot;: {\n      &quot;display&quot;: &quot;All&quot;,\n      &quot;forwardUrl&quot;: &quot;#/programs/patient/{{patientUuid}}/dashboard&quot;\n    },\n    &quot;label&quot;: &quot;All&quot;,\n    &quot;order&quot;: 2,\n    &quot;requiredPrivilege&quot;: &quot;app:clinical&quot;\n  }\n}</pre>\n</div></div><p><span class=\"legacy-color-text-default\"> </span></p><hr/><h1 id=\"ProgramManagement-CreatingnewProgramsinOpenMRS\"><span class=\"legacy-color-text-default\">Creating new Programs in OpenMRS</span></h1><p><span style=\"line-height: 1.42857;\">Programs creation is done in OpenMRS app as shown in the gif below. </span></p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" height=\"400\" width=\"766\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/23789603/programs%20creation%20flow.gif?version=1&amp;modificationDate=1439279145702&amp;cacheVersion=1&amp;api=v2&amp;width=766&amp;height=399\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/23789603/programs%20creation%20flow.gif?version=1&amp;modificationDate=1439279145702&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"26476555\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"programs creation flow.gif\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/gif\" data-linked-resource-container-id=\"23789603\" data-linked-resource-container-version=\"22\" data-media-id=\"9a087eb2-1dde-41c0-869b-9d17b5da0480\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/23789603/programs%20creation%20flow.gif?version=1&amp;modificationDate=1439279145702&amp;cacheVersion=1&amp;api=v2&amp;width=1433&amp;height=748 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/23789603/programs%20creation%20flow.gif?version=1&amp;modificationDate=1439279145702&amp;cacheVersion=1&amp;api=v2&amp;width=766&amp;height=399 1x\"></span></p><div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9ca131e5-f876-4c92-ae17-6b6193aeaa02\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Having more than one workflow for a program is not supported</p></div></div><div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0382aed8-8788-4684-91ee-a3dffb7ca3ff\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Initial &amp; terminal states flags should not be used as they are not supported by Bahmni</p></div></div><hr/><h1 id=\"ProgramManagement-Associatingprogramtoencountertype\"><span class=\"legacy-color-text-default\">Associating program to encounter type</span></h1><p>To associate program to encounter type, Bahmni uses the generic entity mapping concept which can be configured as explained below</p><ol><li><p>In the entity_mapping_type table, add a record to define the mapping between program and encounter type</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c747447e-1342-4dd6-b7e7-ec2e2fa11f97\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>entity_mapping_type entry</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: false; theme: Confluence\" data-theme=\"Confluence\">insert into entity_mapping_type(name, uuid, entity1_type, entity2_type, date_created) \nvalues ('program_encountertype', uuid(), 'org.openmrs.Program', 'org.openmrs.EncounterType', now())</pre>\n</div></div></li><li><p>In the entity_mapping table, insert a record to create the mapping between a specific program and the specific encounter type</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4258808b-dafe-4603-9dc8-e7b6e9b7f5fd\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>entity_mapping entry</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: false; theme: Confluence\" data-theme=\"Confluence\">insert into entity_mapping(uuid, entity_mapping_type_id, entity1_uuid, entity2_uuid, date_created) \nvalues (uuid(), &lt;id_of_the_record_created_in_step_1&gt;, &lt;uuid_of_program&gt;, &lt;uuid_of_encounter_type&gt;, now()) </pre>\n</div></div></li></ol><p> </p><hr/><h1 id=\"ProgramManagement-Associatingprogramtoobservationtemplate\">Associating program to observation template</h1><p>To associate program to observation template (concept), Bahmni uses the same generic entity mapping as above</p><ol><li><p>In the entity_mapping_type table, add a record to define the mapping between program and concept</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"99bace1e-8b39-4465-9ba9-3b0950b3fc1b\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>entity_mapping_type entry</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: false; theme: Confluence\" data-theme=\"Confluence\">insert into entity_mapping_type(name, uuid, entity1_type, entity2_type, date_created) \nvalues ('program_obstemplate', uuid(), 'org.openmrs.Program', 'org.openmrs.Concept', now())</pre>\n</div></div></li><li><p>In the entity_mapping table, insert a record to create the mapping between a specific program and the specific concept</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9f0cc82e-040a-4b68-8924-2ac7e7edeb35\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>entity_mapping entry</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: false; theme: Confluence\" data-theme=\"Confluence\">insert into entity_mapping(uuid, entity_mapping_type_id, entity1_uuid, entity2_uuid, date_created) \nvalues (uuid(), &lt;id_of_the_record_created_in_step_1&gt;, &lt;uuid_of_program&gt;, &lt;uuid_of_concept&gt;, now()) </pre>\n</div></div></li></ol><hr/><h1 id=\"ProgramManagement-ConfiguringthedashboardandMedicationtabtoshowdatawithinprogramenrollmentdaterange\">Configuring the dashboard and Medication tab to show data within program enrollment date range</h1><p> To view all the data in dashboard and medication tab  within the program enrollment date range add this config to clinical/app.json.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c37e36bb-d50c-408e-8cc2-2f753ccd143f\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>entity_mapping entry</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;config&quot; : {\n\t&quot;program&quot;: {\n\t\t&quot;showDetailsWithinDateRange&quot; : true,\n\t}\n}</pre>\n</div></div><p> </p><hr/><p> </p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c7218fc8-5153-4cf6-a36c-1c824a78b94d\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>To associate programs to patients, please see <a href=\"/wiki/spaces/BAH/pages/27000864/Programs\" data-linked-resource-id=\"27000864\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">this user guide</a></p></div></div><p> </p><p><span class=\"confluence-embedded-file-wrapper\"><br/></span></p><p><span class=\"confluence-embedded-file-wrapper\"><br/></span></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/23789603"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/23789603/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/23789603/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/23789603/child",
+    "restrictions": "/rest/api/content/23789603/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/23789603/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=23789603",
+    "webui": "/spaces/BAH/pages/23789603/Program+Management",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/23789603",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/23789603",
+    "tinyui": "/x/IwBrAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

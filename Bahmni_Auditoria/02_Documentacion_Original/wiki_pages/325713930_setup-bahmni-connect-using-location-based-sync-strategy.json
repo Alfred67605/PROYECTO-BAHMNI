@@ -1,0 +1,171 @@
+{
+  "id": "325713930",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/325713930",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzI1NzEzOTMw",
+  "status": "current",
+  "title": "Setup Bahmni Connect using Location based sync strategy",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:609f12f6-2af6-4fd7-b713-f19fc124f992",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "hanisha potturi (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:609f12f6-2af6-4fd7-b713-f19fc124f992",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Hanisha Potturi (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:609f12f6-2af6-4fd7-b713-f19fc124f992"
+      }
+    },
+    "createdDate": "2017-11-30T10:30:41.759Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/325713930/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "when": "2018-09-05T10:13:43.622Z",
+    "friendlyWhen": "Sept 05, 2018",
+    "message": "",
+    "number": 10,
+    "minorEdit": false,
+    "syncRev": "0.p7TYG0ioQFdLviUnbNfm6w.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$325713930.133",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/325713930"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/325713930/version/10"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>Before you start using Connect (as PWA or Android App), you must setup the synchronization strategy first.&nbsp; &nbsp;</p><h3><strong>Steps</strong></h3><h5>Set LocationSync strategy in Openmrs global property.&nbsp;</h5><p>In Openmrs go to Advanced Settings and set sync strategy property</p><p><strong><strong>bahmniOfflineSync</strong>.<strong>strategy </strong></strong>with&nbsp;<strong>org.bahmni.module.bahmniOfflineSync.strategy.LocationBasedSyncStrategy</strong>.</p><p><br /></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<ac:image ac:width=\"600\"><ri:attachment ri:filename=\"Screen Shot 2017-11-30 at 4.09.06 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><p><br /></p><h5>Set up address hierarchy levels and address hierarchy entries.</h5><ol><li>Refer this link&nbsp;<ac:link><ri:page ri:content-title=\"Configure Address Hierarchy\" ri:version-at-save=\"16\" /></ac:link>&nbsp;to setup address hierarchy levels and adding address hierarchy entries using CSV upload.</li><li>Add user generated id for each address hierarchy entry in the database.</li></ol><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"3c0f5b75-c807-4c9d-a955-2e5cc8c8e2f6\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:plain-text-body><![CDATA[update address_hierarchy_entry set user_generated_id=<user_generated_id> where address_hierarchy_entry_id=<id>; ]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p>Sample user generated ids</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"dbd59e16-8ff3-46fa-b11c-e6087e25231e\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:plain-text-body><![CDATA[select address_hierarchy_entry_id , name, level_id , parent_id , user_generated_id from address_hierarchy_entry;]]></ac:plain-text-body></ac:structured-macro><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<ac:image ac:width=\"500\"><ri:attachment ri:filename=\"Screen Shot 2017-11-30 at 4.25.47 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><h5>Specify address for login location.</h5><p>In OpenMRS navigate to <em>Manage Locations</em> and add address to login location. Only the patients whose address matches with address of login location will sync to connect device.</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ac:image ac:width=\"500\"><ri:attachment ri:filename=\"Screen Shot 2017-11-30 at 4.26.59 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><p><br /></p><h5>Add Patient Attribute called addressCode.</h5><p>In&nbsp;OpenMRS go to <em>Manage Person Attribute Types</em> and add new person attribute type called <strong>addressCode</strong>.</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ac:image ac:width=\"500\"><ri:attachment ri:filename=\"Screen Shot 2017-11-30 at 4.30.34 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><p><br /></p><h5>Configure visit and encounter type.</h5><p>In OpenMRS, &quot;Administration =&gt; Visits =&gt; Manage Visit Types&quot;, create a visit type with name &quot;FIELD&quot;.&nbsp;&nbsp;</p><p>In OpenMRS, &quot;Administration =&gt; Encounters =&gt; Manage Encounter Types&quot; and create an encounter type with name &quot;Field&quot;.</p><p>&nbsp;&nbsp;</p><h5>Setup registration app config</h5><p class=\"auto-cursor-target\" style=\"text-align: left;\">&nbsp;Add the below config in registration.app.json file</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6c55a40a-a042-41d2-a97d-01bf9191d11c\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[ \"addressHierarchy\": {\n      \"showAddressFieldsTopDown\": true\n },\n \"defaultVisitType\": \"FIELD\"]]></ac:plain-text-body></ac:structured-macro><p><br /></p><h5>Generate concatenated configs&nbsp;</h5><p><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"5dff0a80-e32e-4948-b968-7b5847bf4164\"><ac:parameter ac:name=\"language\">bash</ac:parameter><ac:plain-text-body><![CDATA[bahmni -i local concat-configs ]]></ac:plain-text-body></ac:structured-macro><h5><br /><br /></h5><h5>Create patient zip files</h5><p><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"3e0fb341-e7e7-4cc6-adef-152bd25d3847\"><ac:parameter ac:name=\"language\">bash</ac:parameter><ac:plain-text-body><![CDATA[bahmni -i local create-connect-artifacts]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><p><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/325713930"
+      }
+    },
+    "view": {
+      "value": "<p>Before you start using Connect (as PWA or Android App), you must setup the synchronization strategy first.   </p><h3 id=\"SetupBahmniConnectusingLocationbasedsyncstrategy-Steps\"><strong>Steps</strong></h3><h5 id=\"SetupBahmniConnectusingLocationbasedsyncstrategy-SetLocationSyncstrategyinOpenmrsglobalproperty.\">Set LocationSync strategy in Openmrs global property. </h5><p>In Openmrs go to Advanced Settings and set sync strategy property</p><p><strong><strong>bahmniOfflineSync</strong>.<strong>strategy </strong></strong>with <strong>org.bahmni.module.bahmniOfflineSync.strategy.LocationBasedSyncStrategy</strong>.</p><p><br/></p><p>          <span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/325713930/Screen%20Shot%202017-11-30%20at%204.09.06%20PM.png?version=1&amp;modificationDate=1512038373004&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=46\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/325713930/Screen%20Shot%202017-11-30%20at%204.09.06%20PM.png?version=1&amp;modificationDate=1512038373004&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"325943304\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2017-11-30 at 4.09.06 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"325713930\" data-linked-resource-container-version=\"10\" data-media-id=\"969c2da3-f161-4ee2-9ea0-2c2a8fa8173a\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/325713930/Screen%20Shot%202017-11-30%20at%204.09.06%20PM.png?version=1&amp;modificationDate=1512038373004&amp;cacheVersion=1&amp;api=v2&amp;width=1200&amp;height=92 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/325713930/Screen%20Shot%202017-11-30%20at%204.09.06%20PM.png?version=1&amp;modificationDate=1512038373004&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=46 1x\"></span></p><p><br/></p><h5 id=\"SetupBahmniConnectusingLocationbasedsyncstrategy-Setupaddresshierarchylevelsandaddresshierarchyentries.\">Set up address hierarchy levels and address hierarchy entries.</h5><ol><li>Refer this link <a href=\"/wiki/spaces/BAH/pages/37945505/Configure+Address+Hierarchy\" data-linked-resource-id=\"37945505\" data-linked-resource-version=\"16\" data-linked-resource-type=\"page\">Configure Address Hierarchy</a> to setup address hierarchy levels and adding address hierarchy entries using CSV upload.</li><li>Add user generated id for each address hierarchy entry in the database.</li></ol><p>              </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3c0f5b75-c807-4c9d-a955-2e5cc8c8e2f6\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: false; theme: Confluence\" data-theme=\"Confluence\">update address_hierarchy_entry set user_generated_id=&lt;user_generated_id&gt; where address_hierarchy_entry_id=&lt;id&gt;; </pre>\n</div></div><p><br/></p><p>Sample user generated ids</p><p>              </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"dbd59e16-8ff3-46fa-b11c-e6087e25231e\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: false; theme: Confluence\" data-theme=\"Confluence\">select address_hierarchy_entry_id , name, level_id , parent_id , user_generated_id from address_hierarchy_entry;</pre>\n</div></div><p>              <span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"500\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/325713930/Screen%20Shot%202017-11-30%20at%204.25.47%20PM.png?version=1&amp;modificationDate=1512039360793&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=110\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/325713930/Screen%20Shot%202017-11-30%20at%204.25.47%20PM.png?version=1&amp;modificationDate=1512039360793&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"325779479\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2017-11-30 at 4.25.47 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"325713930\" data-linked-resource-container-version=\"10\" data-media-id=\"56008e1b-d958-431d-b010-593e6b0442ed\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/325713930/Screen%20Shot%202017-11-30%20at%204.25.47%20PM.png?version=1&amp;modificationDate=1512039360793&amp;cacheVersion=1&amp;api=v2&amp;width=1000&amp;height=220 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/325713930/Screen%20Shot%202017-11-30%20at%204.25.47%20PM.png?version=1&amp;modificationDate=1512039360793&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=110 1x\"></span></p><h5 id=\"SetupBahmniConnectusingLocationbasedsyncstrategy-Specifyaddressforloginlocation.\">Specify address for login location.</h5><p>In OpenMRS navigate to <em>Manage Locations</em> and add address to login location. Only the patients whose address matches with address of login location will sync to connect device.</p><p>           <span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"500\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/325713930/Screen%20Shot%202017-11-30%20at%204.26.59%20PM.png?version=1&amp;modificationDate=1512039531794&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=241\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/325713930/Screen%20Shot%202017-11-30%20at%204.26.59%20PM.png?version=1&amp;modificationDate=1512039531794&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"325943318\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2017-11-30 at 4.26.59 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"325713930\" data-linked-resource-container-version=\"10\" data-media-id=\"7f7eef8b-3383-4d15-a3cd-89f6c6f180f1\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/325713930/Screen%20Shot%202017-11-30%20at%204.26.59%20PM.png?version=1&amp;modificationDate=1512039531794&amp;cacheVersion=1&amp;api=v2&amp;width=1000&amp;height=482 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/325713930/Screen%20Shot%202017-11-30%20at%204.26.59%20PM.png?version=1&amp;modificationDate=1512039531794&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=241 1x\"></span></p><p><br/></p><h5 id=\"SetupBahmniConnectusingLocationbasedsyncstrategy-AddPatientAttributecalledaddressCode.\">Add Patient Attribute called addressCode.</h5><p>In OpenMRS go to <em>Manage Person Attribute Types</em> and add new person attribute type called <strong>addressCode</strong>.</p><p>         <span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"500\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/325713930/Screen%20Shot%202017-11-30%20at%204.30.34%20PM.png?version=1&amp;modificationDate=1512039700418&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=167\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/325713930/Screen%20Shot%202017-11-30%20at%204.30.34%20PM.png?version=1&amp;modificationDate=1512039700418&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"325746716\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2017-11-30 at 4.30.34 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"325713930\" data-linked-resource-container-version=\"10\" data-media-id=\"d55e1887-49bf-4568-bb25-2e48da53f409\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/325713930/Screen%20Shot%202017-11-30%20at%204.30.34%20PM.png?version=1&amp;modificationDate=1512039700418&amp;cacheVersion=1&amp;api=v2&amp;width=1000&amp;height=334 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/325713930/Screen%20Shot%202017-11-30%20at%204.30.34%20PM.png?version=1&amp;modificationDate=1512039700418&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=167 1x\"></span></p><p><br/></p><h5 id=\"SetupBahmniConnectusingLocationbasedsyncstrategy-Configurevisitandencountertype.\">Configure visit and encounter type.</h5><p>In OpenMRS, &quot;Administration =&gt; Visits =&gt; Manage Visit Types&quot;, create a visit type with name &quot;FIELD&quot;.  </p><p>In OpenMRS, &quot;Administration =&gt; Encounters =&gt; Manage Encounter Types&quot; and create an encounter type with name &quot;Field&quot;.</p><p>  </p><h5 id=\"SetupBahmniConnectusingLocationbasedsyncstrategy-Setupregistrationappconfig\">Setup registration app config</h5><p style=\"text-align: left;\" class=\"auto-cursor-target\"> Add the below config in registration.app.json file</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6c55a40a-a042-41d2-a97d-01bf9191d11c\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\"> &quot;addressHierarchy&quot;: {\n      &quot;showAddressFieldsTopDown&quot;: true\n },\n &quot;defaultVisitType&quot;: &quot;FIELD&quot;</pre>\n</div></div><p><br/></p><h5 id=\"SetupBahmniConnectusingLocationbasedsyncstrategy-Generateconcatenatedconfigs\">Generate concatenated configs </h5><p><br/></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"5dff0a80-e32e-4948-b968-7b5847bf4164\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">bahmni -i local concat-configs </pre>\n</div></div><h5 id=\"SetupBahmniConnectusingLocationbasedsyncstrategy-\"><br/><br/></h5><h5 id=\"SetupBahmniConnectusingLocationbasedsyncstrategy-Createpatientzipfiles\">Create patient zip files</h5><p><br/></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3e0fb341-e7e7-4cc6-adef-152bd25d3847\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">bahmni -i local create-connect-artifacts</pre>\n</div></div><p><br/></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/325713930"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/325713930/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/325713930/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 511770002
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/325713930/child",
+    "restrictions": "/rest/api/content/325713930/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/325713930/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=325713930",
+    "webui": "/spaces/BAH/pages/325713930/Setup+Bahmni+Connect+using+Location+based+sync+strategy",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/325713930",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/325713930",
+    "tinyui": "/x/CgBqEw",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

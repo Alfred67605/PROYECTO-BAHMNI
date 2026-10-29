@@ -1,0 +1,174 @@
+{
+  "id": "899973149",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/899973149",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvODk5OTczMTQ5",
+  "status": "current",
+  "title": "Odoo modules",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "createdDate": "2019-08-05T09:59:10.669Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/899973149/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "when": "2024-08-13T09:44:37.096Z",
+    "friendlyWhen": "Aug 13, 2024",
+    "message": "",
+    "number": 9,
+    "minorEdit": false,
+    "syncRev": "0.fig2Rkvta4jgdDWBWbVonw.0",
+    "syncRevSource": "synchrony",
+    "ncsStepVersion": "523",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$899973149.73",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/899973149"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/899973149/version/9"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p /><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"c5405c47-a171-4c20-871d-c537cca4d23a\"><ac:rich-text-body><h3>Compatibility across different versions</h3><p>Integration with Odoo version 16 is available from Bahmni Standard 1.0.0 (on docker) and it is the supported version going forward.</p><p>Odoo 10 is also available on bahmni-docker for implementers to help migrate from 0.93 to latest version with a database backup, but will not receive any updates or security patches and it is recommended to migrate to Odoo 16.</p><p>Integration with Odoo version 10 is only available from Bahmni 0.92 version onwards. </p><p>Bahmni 0.91 and earlier works with OpenERP 7.&nbsp;</p></ac:rich-text-body></ac:structured-macro><p /><p><span style=\"color: rgb(0,0,0);\">Bahmni integrates OpenMRS with </span><a href=\"https://www.odoo.com/\"><span style=\"color: rgb(0,0,0);\">Odoo</span></a><span style=\"color: rgb(0,0,0);\">, an open source ERP product. Through Odoo, you can then manage Customers, Billing, Pharmacy and Stock management etc.&nbsp;</span>Before you start using Odoo, you need to setup Odoo as per your operational needs. This is only meant to be a guide for effectively working with the rest of Bahmni components (mainly EMR).&nbsp; For comprehensive guide on setup and usage of Odoo, please refer to the <a href=\"https://www.odoo.com/documentation/16.0/\">Odoo 16 documentation</a>. Odoo has wonderful webinars, easily available on its Youtube channel.&nbsp;</p><p><span style=\"color: rgb(0,0,0);\">The pages listed below assist you to setup and configure Odoo to work effectively in conjunction with Bahmni Clinical functions.&nbsp;</span></p><p /><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" data-layout=\"default\" ac:local-id=\"f2d1a523-5824-4432-8e9f-4d93e78f91a7\" ac:macro-id=\"c95c4252-fb01-4963-bede-3caa88476fc0\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:rich-text-body><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" data-layout=\"default\" ac:local-id=\"23d27728-377e-4bb4-8d73-170750257a8c\" ac:macro-id=\"01dc3a2d-c881-4e94-8c2b-84e7afd86e90\"><ac:parameter ac:name=\"excerptType\">simple</ac:parameter></ac:structured-macro></ac:rich-text-body></ac:structured-macro><p /><p />",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/899973149"
+      }
+    },
+    "view": {
+      "value": "<p /><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c5405c47-a171-4c20-871d-c537cca4d23a\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><h3 id=\"Odoomodules-Compatibilityacrossdifferentversions\">Compatibility across different versions</h3><p>Integration with Odoo version 16 is available from Bahmni Standard 1.0.0 (on docker) and it is the supported version going forward.</p><p>Odoo 10 is also available on bahmni-docker for implementers to help migrate from 0.93 to latest version with a database backup, but will not receive any updates or security patches and it is recommended to migrate to Odoo 16.</p><p>Integration with Odoo version 10 is only available from Bahmni 0.92 version onwards. </p><p>Bahmni 0.91 and earlier works with OpenERP 7. </p></div></div><p /><p><span class=\"legacy-color-text-default\">Bahmni integrates OpenMRS with </span><a class=\"external-link\" href=\"https://www.odoo.com/\" rel=\"nofollow\"><span class=\"legacy-color-text-default\">Odoo</span></a><span class=\"legacy-color-text-default\">, an open source ERP product. Through Odoo, you can then manage Customers, Billing, Pharmacy and Stock management etc. </span>Before you start using Odoo, you need to setup Odoo as per your operational needs. This is only meant to be a guide for effectively working with the rest of Bahmni components (mainly EMR).  For comprehensive guide on setup and usage of Odoo, please refer to the <a class=\"external-link\" href=\"https://www.odoo.com/documentation/16.0/\" rel=\"nofollow\">Odoo 16 documentation</a>. Odoo has wonderful webinars, easily available on its Youtube channel. </p><p><span class=\"legacy-color-text-default\">The pages listed below assist you to setup and configure Odoo to work effectively in conjunction with Bahmni Clinical functions. </span></p><p /><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-layout=\"default\" data-local-id=\"f2d1a523-5824-4432-8e9f-4d93e78f91a7\" data-macro-id=\"c95c4252-fb01-4963-bede-3caa88476fc0\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelContent\">\n<ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-layout=\"default\" data-local-id=\"23d27728-377e-4bb4-8d73-170750257a8c\" data-macro-id=\"01dc3a2d-c881-4e94-8c2b-84e7afd86e90\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/3692167169/Odoo+16+System+Configuration\" data-linked-resource-id=\"3692167169\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Odoo 16 System Configuration</a></li><li><a href=\"/wiki/spaces/BAH/pages/900530238/Odoo+10+System+Configuration\" data-linked-resource-id=\"900530238\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Odoo 10 System Configuration</a></li><li><a href=\"/wiki/spaces/BAH/pages/900464675/Odoo+Sales+Configuration\" data-linked-resource-id=\"900464675\" data-linked-resource-version=\"18\" data-linked-resource-type=\"page\">Odoo Sales Configuration</a></li><li><a href=\"/wiki/spaces/BAH/pages/900497457/Odoo+Purchase+Configuration\" data-linked-resource-id=\"900497457\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Odoo Purchase Configuration</a></li><li><a href=\"/wiki/spaces/BAH/pages/900530219/Odoo+Accounting+Configuration\" data-linked-resource-id=\"900530219\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Odoo Accounting Configuration</a></li><li><a href=\"/wiki/spaces/BAH/pages/900530225/Odoo+Inventory+Configuration\" data-linked-resource-id=\"900530225\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Odoo Inventory Configuration</a></li><li><a href=\"/wiki/spaces/BAH/pages/3690168321/Custom+Reports+in+Odoo+16\" data-linked-resource-id=\"3690168321\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Custom Reports in Odoo 16</a></li><li><a href=\"/wiki/spaces/BAH/pages/3657105447/Odoo+16+Migration+Guide\" data-linked-resource-id=\"3657105447\" data-linked-resource-version=\"7\" data-linked-resource-type=\"page\">Odoo 16 Migration Guide</a></li><li><a href=\"/wiki/spaces/BAH/pages/3690725380/Optional+Community+Modules+for+Odoo+16\" data-linked-resource-id=\"3690725380\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Optional Community Modules for Odoo 16</a></li><li><a href=\"/wiki/spaces/BAH/pages/900530355/ERP+FAQs+Troubleshooting\" data-linked-resource-id=\"900530355\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">ERP FAQs &amp; Troubleshooting</a></li><li><a href=\"/wiki/spaces/BAH/pages/2136473610/Viewing+Odoo+Payments+in+Clinical+screens+in+Bahmni\" data-linked-resource-id=\"2136473610\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Viewing Odoo Payments in Clinical screens in Bahmni</a></li></ul>\n</div></div><p /><p />",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/899973149"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/899973149/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/899973149/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1994092296
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/899973149/child",
+    "restrictions": "/rest/api/content/899973149/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/899973149/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=899973149",
+    "webui": "/spaces/BAH/pages/899973149/Odoo+modules",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/899973149",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/899973149",
+    "tinyui": "/x/HYCkNQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

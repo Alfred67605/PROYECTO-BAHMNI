@@ -1,0 +1,174 @@
+{
+  "id": "3117187073",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3117187073",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzExNzE4NzA3Mw==",
+  "status": "current",
+  "title": "OpenMRS Configurations (docker)",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "createdDate": "2022-12-09T03:01:11.727Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117187073/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "when": "2024-07-22T11:16:08.441Z",
+    "friendlyWhen": "Jul 22, 2024",
+    "message": "",
+    "number": 12,
+    "minorEdit": false,
+    "syncRev": "0.ZjU3kw_EyiEmVLHVOTZ2aw.0",
+    "syncRevSource": "synchrony-ack",
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3117187073.68",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3117187073"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117187073/version/12"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\" ac:breakout-mode=\"default\"><ac:layout-cell><p><a href=\"https://hub.docker.com/r/bahmni/openmrs\">Bahmni/openmrs</a> image is built based on <a href=\"https://hub.docker.com/r/openmrs/openmrs-core\">openmrs/openmrs-core</a> image. This acts as the backend for all EMR related services in Bahmni. This image is built and published with Github Actions from <a href=\"https://github.com/Bahmni/openmrs-distro-bahmni\">openmrs-distro-bahmni</a> repository.</p></ac:layout-cell><ac:layout-cell><p><strong>On this Page</strong></p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" data-layout=\"default\" ac:local-id=\"75ca0741-181e-4c06-8fc9-94e546230f0b\" ac:macro-id=\"988d6ce3e3c86744e56ca7ef5bfc3f50\"><ac:parameter ac:name=\"minLevel\">1</ac:parameter><ac:parameter ac:name=\"maxLevel\">7</ac:parameter></ac:structured-macro></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"fixed-width\" ac:breakout-mode=\"default\"><ac:layout-cell><h2>Environment Variables:</h2><table data-table-width=\"1800\" data-layout=\"default\" ac:local-id=\"5672bbbe-8c58-4861-accd-4fd356296340\"><colgroup><col /><col style=\"width: 209.0px;\" /><col style=\"width: 509.0px;\" /></colgroup><tbody><tr><th class=\"numberingColumn\" /><th><p>Variable Name</p></th><th><p>Description</p></th></tr><tr><td class=\"numberingColumn\">1</td><td><p>OPENMRS_IMAGE_TAG</p></td><td><p>This value tells which image version to be used for Bahmni OpenMRS. List of tags can be found at <a href=\"https://hub.docker.com/r/bahmni/openmrs/tags\">bahmni/openmrs - Tags</a> .</p></td></tr><tr><td class=\"numberingColumn\">2</td><td><p>OPENMRS_DB_NAME</p></td><td><p>Database name for OpenMRS application</p></td></tr><tr><td class=\"numberingColumn\">3</td><td><p>OPENMRS_DB_HOST</p></td><td><p>Host name of the MySQL Database server.</p></td></tr><tr><td class=\"numberingColumn\">4</td><td><p>OPENMRS_DB_USERNAME</p></td><td><p>Username of the OpenMRS Database. OpenMRS container will create a database user with this credential.</p></td></tr><tr><td class=\"numberingColumn\">5</td><td><p>OPENMRS_DB_PASSWORD</p></td><td><p>Password of the OpenMRS Database. OpenMRS container will create a database user with this credential.</p></td></tr><tr><td class=\"numberingColumn\">6</td><td><p>OPENMRS_DB_CREATE_TABLES</p></td><td><p>Takes either true/false. Setting this to true, OpenMRS creates the tables necessary or running the application. Note: Set this to true only when you are running with an empty MySQL Database.</p></td></tr><tr><td class=\"numberingColumn\">7</td><td><p>OPENMRS_DB_AUTO_UPDATE</p></td><td><p>Takes either true/false. When set to true, the migrations are run and schema is kept up to date.</p></td></tr><tr><td class=\"numberingColumn\">8</td><td><p>OPENMRS_MODULE_WEB_ADMIN</p></td><td><p>Takes either true/false. Settings this to true allows you to manage OpenMRS Modules through the Web UI. It is recommended to set to false in production.</p></td></tr><tr><td class=\"numberingColumn\">9</td><td><p>OPENMRS_DEBUG</p></td><td><p>Takes either true/false. Enables the debug mode of OpenMRS</p></td></tr><tr><td class=\"numberingColumn\">10</td><td><p>OPENMRS_UPLOAD_FILES_PATH</p></td><td><p>This variable can be specified with a directory of the host machine where the uploaded files from OpenMRS needs to be stored. Defaults to <code>openmrs-uploads</code> directory in the docker-compose directory itself.</p></td></tr><tr><td class=\"numberingColumn\">11</td><td><p>MYSQL_ROOT_PASSWORD</p></td><td><p>This is the root password for MySQL Database Server used by OpenMRS DB service.</p></td></tr><tr><td class=\"numberingColumn\">12</td><td><p>OPENMRS_DB_IMAGE_NAME</p></td><td><p>This is used to set the type of database container to start up. You can use mysql:5.6 and set <code>OPENMRS_DB_CREATE_TABLES</code> to true to start with fresh setup with no data loaded.</p></td></tr></tbody></table><h2>Login into OpenMRS Admin UI &amp; First-time steps</h2><p>To check if OpenMRS container is ready, see the OpenMRS Logs and ensure you see this line in the tomcat logs:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"cb05a884-d0a7-46e6-bbb8-661af116572a\"><ac:plain-text-body><![CDATA[INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [\"http-nio-8080\"]\nINFO [main] org.apache.catalina.startup.Catalina.start Server startup in 119674 ms]]></ac:plain-text-body></ac:structured-macro><p>In your browser, go to the following URL: <a href=\"https://localhost/openmrs/\">https://localhost/openmrs/</a> (Creds: superman/Admin123).</p><p><strong>If this is your FIRST TIME login into OpenMRS, you will need to create Search Index. Perform these steps:</strong></p><ol start=\"1\"><li><p>Login into OpenMRS Admin UI.</p></li><li><p>Go to Administration &rarr; Search Index (<a href=\"https://localhost/openmrs/admin/maintenance/searchIndex.htm\">https://localhost/openmrs/admin/maintenance/searchIndex.htm</a>)</p></li><li><p>Click on &ldquo;Rebuild Search Index&rdquo;. This should take less than 2 minutes. </p></li><li><p>Once done, you can now use OpenMRS and Bahmni. </p></li></ol><h2>View OpenMRS Logs</h2><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"c1b97f63-1d60-4273-beb4-b6958ea6cba7\"><ac:plain-text-body><![CDATA[# To see OpenMRS logs (from the appropriate docker-compose sub-folder)\ndocker-compose logs openmrs -f\n\n# Another way\ndocker logs <openmrs-container-id> -f\n\n# To get container ID of all containers \ndocker ps]]></ac:plain-text-body></ac:structured-macro><h2>Debugging OpenMRS Application</h2><p>Since OpenMRS is running on Tomcat, remote debugging can be enabled and can be connected with IDE supporting remote debugging.(Eclipse, Intellij IDEA etc.)</p><ol start=\"1\"><li><p>Enable debugging by uncommenting &amp; setting <code>OMRS_DEV_DEBUG_PORT</code> to some port (e.g 8000) in the <a href=\"https://github.com/Bahmni/bahmni-docker/blob/master/.env#L80\">.env</a> and <a href=\"https://github.com/Bahmni/bahmni-docker/blob/master/docker-compose.yml#L152#L170\">docker-compose</a> files</p></li><li><p>Now remote debugging for OpenMRS is exposed on port <code>OMRS_DEV_DEBUG_PORT</code> in your local machine.</p></li><li><p>Now you can follow the IDE configuration to setup remote debugging using host as <code>localhost</code> and port as the value of <code>OMRS_DEV_DEBUG_PORT</code>.</p></li><li><p>For example in Intellij IDEA navigate to Run -&gt; Edit Configurations. In the dialog box click on <code>+</code> icon to create a new config and select <code>Remote JVM Debug</code>. Fill in the host,port and name and click Apply. Now you can use the debugger.</p></li></ol><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"8f475cff-0643-4327-b80b-6cdc1aaac814\"><ac:rich-text-body><p>Make sure to disable debugging if you are running in a Production Environment</p></ac:rich-text-body></ac:structured-macro><h2>Setting up a fresh OpenMRS Instance</h2><p>By default, the configuration of openmrs and openmrsdb services are set to load demo data from a backup file. If you want to start the installation with a fresh schema, set <code>OPENMRS_DB_CREATE_TABLES</code> to <code>true</code> and then set <code>OPENMRS_DB_IMAGE_NAME</code> to <code>mysql:8.0</code>. Now when start the schema will be created by liquibase migrations of OpenMRS and other OMODS loaded.</p><p /><h2>Apache Tomcat Environment Variables</h2><p>To set CATALINA_HOME and JAVA_OPTS or other Environment variables used by the Tomcat startup scripts, set the value of <a href=\"https://github.com/Bahmni/bahmni-docker/blob/master/docker-compose.yml#L153#L154\">these variables</a>, <a href=\"https://github.com/Bahmni/bahmni-docker/blob/master/.env#L81#L82\">here</a>. The values of CATALINA_HOME and JAVA_OPTS are set as</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6eaab7aa-1541-4106-8e6f-4ea2a289713a\"><ac:plain-text-body><![CDATA[JAVA_OPTS=\"$OMRS_JAVA_SERVER_OPTS\"\nCATALINA_OPTS=\"${OMRS_JAVA_MEMORY_OPTS} -DOPENMRS_INSTALLATION_SCRIPT=${OMRS_SERVER_PROPERTIES_FILE} -DOPENMRS_APPLICATION_DATA_DIRECTORY=${OMRS_DATA_DIR}/\"\n]]></ac:plain-text-body></ac:structured-macro><p>Values of <code>OMRS_SERVER_PROPERTIES_FILE</code> by default is set to <code>/openmrs/openmrs-server.properties</code> and <code>OMRS_DATA_DIR</code> set to <code>/openmrs/data</code></p><p style=\"margin-left: 30.0px;\" /><h2>Configuring Database connection pool max size</h2><p>The number of maximum connections that would be made from openmrs to the database instance can be controlled.</p><p>There is a variable called as <code>OMR_C3P0_MAX_SIZE</code> in the env file with the default value of 50. If you have a smaller instance of database which is not capable of handling this many connections then this value can be decreased accordingly. Also if you have more number of simultaneous users you can increase this value based on database instance capacity. Once you update the value, recreate the container by running <code>docker compose up -d</code> . More about performance baselining can be found <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3071639561/BahmniLite+Performance+Baselining+AWS+Gatling\">here</a>.</p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3117187073"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p><a class=\"external-link\" href=\"https://hub.docker.com/r/bahmni/openmrs\" rel=\"nofollow\">Bahmni/openmrs</a> image is built based on <a class=\"external-link\" href=\"https://hub.docker.com/r/openmrs/openmrs-core\" rel=\"nofollow\">openmrs/openmrs-core</a> image. This acts as the backend for all EMR related services in Bahmni. This image is built and published with Github Actions from <a class=\"external-link\" href=\"https://github.com/Bahmni/openmrs-distro-bahmni\" rel=\"nofollow\">openmrs-distro-bahmni</a> repository.</p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<p><strong>On this Page</strong></p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-layout=\"default\" data-local-id=\"75ca0741-181e-4c06-8fc9-94e546230f0b\" data-macro-id=\"988d6ce3e3c86744e56ca7ef5bfc3f50\" data-macro-name=\"toc\"> </div></div>\n</div>\n</div>\n<div class=\"columnLayout fixed-width\" data-layout=\"fixed-width\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"OpenMRSConfigurations(docker)-EnvironmentVariables:\">Environment Variables:</h2><div class=\"table-wrap\"><table data-table-width=\"1800\" data-layout=\"default\" data-local-id=\"5672bbbe-8c58-4861-accd-4fd356296340\" class=\"confluenceTable\"><colgroup><col/><col style=\"width: 209.0px;\"/><col style=\"width: 509.0px;\"/></colgroup><tbody><tr><th class=\"numberingColumn confluenceTh\" /><th class=\"confluenceTh\"><p>Variable Name</p></th><th class=\"confluenceTh\"><p>Description</p></th></tr><tr><td class=\"numberingColumn confluenceTd\">1</td><td class=\"confluenceTd\"><p>OPENMRS_IMAGE_TAG</p></td><td class=\"confluenceTd\"><p>This value tells which image version to be used for Bahmni OpenMRS. List of tags can be found at <a class=\"external-link\" href=\"https://hub.docker.com/r/bahmni/openmrs/tags\" rel=\"nofollow\">bahmni/openmrs - Tags</a> .</p></td></tr><tr><td class=\"numberingColumn confluenceTd\">2</td><td class=\"confluenceTd\"><p>OPENMRS_DB_NAME</p></td><td class=\"confluenceTd\"><p>Database name for OpenMRS application</p></td></tr><tr><td class=\"numberingColumn confluenceTd\">3</td><td class=\"confluenceTd\"><p>OPENMRS_DB_HOST</p></td><td class=\"confluenceTd\"><p>Host name of the MySQL Database server.</p></td></tr><tr><td class=\"numberingColumn confluenceTd\">4</td><td class=\"confluenceTd\"><p>OPENMRS_DB_USERNAME</p></td><td class=\"confluenceTd\"><p>Username of the OpenMRS Database. OpenMRS container will create a database user with this credential.</p></td></tr><tr><td class=\"numberingColumn confluenceTd\">5</td><td class=\"confluenceTd\"><p>OPENMRS_DB_PASSWORD</p></td><td class=\"confluenceTd\"><p>Password of the OpenMRS Database. OpenMRS container will create a database user with this credential.</p></td></tr><tr><td class=\"numberingColumn confluenceTd\">6</td><td class=\"confluenceTd\"><p>OPENMRS_DB_CREATE_TABLES</p></td><td class=\"confluenceTd\"><p>Takes either true/false. Setting this to true, OpenMRS creates the tables necessary or running the application. Note: Set this to true only when you are running with an empty MySQL Database.</p></td></tr><tr><td class=\"numberingColumn confluenceTd\">7</td><td class=\"confluenceTd\"><p>OPENMRS_DB_AUTO_UPDATE</p></td><td class=\"confluenceTd\"><p>Takes either true/false. When set to true, the migrations are run and schema is kept up to date.</p></td></tr><tr><td class=\"numberingColumn confluenceTd\">8</td><td class=\"confluenceTd\"><p>OPENMRS_MODULE_WEB_ADMIN</p></td><td class=\"confluenceTd\"><p>Takes either true/false. Settings this to true allows you to manage OpenMRS Modules through the Web UI. It is recommended to set to false in production.</p></td></tr><tr><td class=\"numberingColumn confluenceTd\">9</td><td class=\"confluenceTd\"><p>OPENMRS_DEBUG</p></td><td class=\"confluenceTd\"><p>Takes either true/false. Enables the debug mode of OpenMRS</p></td></tr><tr><td class=\"numberingColumn confluenceTd\">10</td><td class=\"confluenceTd\"><p>OPENMRS_UPLOAD_FILES_PATH</p></td><td class=\"confluenceTd\"><p>This variable can be specified with a directory of the host machine where the uploaded files from OpenMRS needs to be stored. Defaults to <code>openmrs-uploads</code> directory in the docker-compose directory itself.</p></td></tr><tr><td class=\"numberingColumn confluenceTd\">11</td><td class=\"confluenceTd\"><p>MYSQL_ROOT_PASSWORD</p></td><td class=\"confluenceTd\"><p>This is the root password for MySQL Database Server used by OpenMRS DB service.</p></td></tr><tr><td class=\"numberingColumn confluenceTd\">12</td><td class=\"confluenceTd\"><p>OPENMRS_DB_IMAGE_NAME</p></td><td class=\"confluenceTd\"><p>This is used to set the type of database container to start up. You can use mysql:5.6 and set <code>OPENMRS_DB_CREATE_TABLES</code> to true to start with fresh setup with no data loaded.</p></td></tr></tbody></table></div><h2 id=\"OpenMRSConfigurations(docker)-LoginintoOpenMRSAdminUI&amp;First-timesteps\">Login into OpenMRS Admin UI &amp; First-time steps</h2><p>To check if OpenMRS container is ready, see the OpenMRS Logs and ensure you see this line in the tomcat logs:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"cb05a884-d0a7-46e6-bbb8-661af116572a\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [&quot;http-nio-8080&quot;]\nINFO [main] org.apache.catalina.startup.Catalina.start Server startup in 119674 ms</pre>\n</div></div><p>In your browser, go to the following URL: <a class=\"external-link\" href=\"https://localhost/openmrs/\" rel=\"nofollow\">https://localhost/openmrs/</a> (Creds: superman/Admin123).</p><p><strong>If this is your FIRST TIME login into OpenMRS, you will need to create Search Index. Perform these steps:</strong></p><ol start=\"1\"><li><p>Login into OpenMRS Admin UI.</p></li><li><p>Go to Administration → Search Index (<a class=\"external-link\" href=\"https://localhost/openmrs/admin/maintenance/searchIndex.htm\" rel=\"nofollow\">https://localhost/openmrs/admin/maintenance/searchIndex.htm</a>)</p></li><li><p>Click on “Rebuild Search Index”. This should take less than 2 minutes. </p></li><li><p>Once done, you can now use OpenMRS and Bahmni. </p></li></ol><h2 id=\"OpenMRSConfigurations(docker)-ViewOpenMRSLogs\">View OpenMRS Logs</h2><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c1b97f63-1d60-4273-beb4-b6958ea6cba7\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\"># To see OpenMRS logs (from the appropriate docker-compose sub-folder)\ndocker-compose logs openmrs -f\n\n# Another way\ndocker logs &lt;openmrs-container-id&gt; -f\n\n# To get container ID of all containers \ndocker ps</pre>\n</div></div><h2 id=\"OpenMRSConfigurations(docker)-DebuggingOpenMRSApplication\">Debugging OpenMRS Application</h2><p>Since OpenMRS is running on Tomcat, remote debugging can be enabled and can be connected with IDE supporting remote debugging.(Eclipse, Intellij IDEA etc.)</p><ol start=\"1\"><li><p>Enable debugging by uncommenting &amp; setting <code>OMRS_DEV_DEBUG_PORT</code> to some port (e.g 8000) in the <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-docker/blob/master/.env#L80\" rel=\"nofollow\">.env</a> and <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-docker/blob/master/docker-compose.yml#L152#L170\" rel=\"nofollow\">docker-compose</a> files</p></li><li><p>Now remote debugging for OpenMRS is exposed on port <code>OMRS_DEV_DEBUG_PORT</code> in your local machine.</p></li><li><p>Now you can follow the IDE configuration to setup remote debugging using host as <code>localhost</code> and port as the value of <code>OMRS_DEV_DEBUG_PORT</code>.</p></li><li><p>For example in Intellij IDEA navigate to Run -&gt; Edit Configurations. In the dialog box click on <code>+</code> icon to create a new config and select <code>Remote JVM Debug</code>. Fill in the host,port and name and click Apply. Now you can use the debugger.</p></li></ol><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8f475cff-0643-4327-b80b-6cdc1aaac814\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Make sure to disable debugging if you are running in a Production Environment</p></div></div><h2 id=\"OpenMRSConfigurations(docker)-SettingupafreshOpenMRSInstance\">Setting up a fresh OpenMRS Instance</h2><p>By default, the configuration of openmrs and openmrsdb services are set to load demo data from a backup file. If you want to start the installation with a fresh schema, set <code>OPENMRS_DB_CREATE_TABLES</code> to <code>true</code> and then set <code>OPENMRS_DB_IMAGE_NAME</code> to <code>mysql:8.0</code>. Now when start the schema will be created by liquibase migrations of OpenMRS and other OMODS loaded.</p><p /><h2 id=\"OpenMRSConfigurations(docker)-ApacheTomcatEnvironmentVariables\">Apache Tomcat Environment Variables</h2><p>To set CATALINA_HOME and JAVA_OPTS or other Environment variables used by the Tomcat startup scripts, set the value of <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-docker/blob/master/docker-compose.yml#L153#L154\" rel=\"nofollow\">these variables</a>, <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-docker/blob/master/.env#L81#L82\" rel=\"nofollow\">here</a>. The values of CATALINA_HOME and JAVA_OPTS are set as</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6eaab7aa-1541-4106-8e6f-4ea2a289713a\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">JAVA_OPTS=&quot;$OMRS_JAVA_SERVER_OPTS&quot;\nCATALINA_OPTS=&quot;${OMRS_JAVA_MEMORY_OPTS} -DOPENMRS_INSTALLATION_SCRIPT=${OMRS_SERVER_PROPERTIES_FILE} -DOPENMRS_APPLICATION_DATA_DIRECTORY=${OMRS_DATA_DIR}/&quot;\n</pre>\n</div></div><p>Values of <code>OMRS_SERVER_PROPERTIES_FILE</code> by default is set to <code>/openmrs/openmrs-server.properties</code> and <code>OMRS_DATA_DIR</code> set to <code>/openmrs/data</code></p><p style=\"margin-left: 30.0px;\"></p><h2 id=\"OpenMRSConfigurations(docker)-ConfiguringDatabaseconnectionpoolmaxsize\">Configuring Database connection pool max size</h2><p>The number of maximum connections that would be made from openmrs to the database instance can be controlled.</p><p>There is a variable called as <code>OMR_C3P0_MAX_SIZE</code> in the env file with the default value of 50. If you have a smaller instance of database which is not capable of handling this many connections then this value can be decreased accordingly. Also if you have more number of simultaneous users you can increase this value based on database instance capacity. Once you update the value, recreate the container by running <code>docker compose up -d</code> . More about performance baselining can be found <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3071639561/BahmniLite+Performance+Baselining+AWS+Gatling\" rel=\"nofollow\">here</a>.</p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3117187073"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3117187073/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117187073/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 283613028
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3117187073/child",
+    "restrictions": "/rest/api/content/3117187073/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3117187073/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3117187073",
+    "webui": "/spaces/BAH/pages/3117187073/OpenMRS+Configurations+docker",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3117187073",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117187073",
+    "tinyui": "/x/AYDMuQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

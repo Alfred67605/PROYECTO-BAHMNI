@@ -1,0 +1,170 @@
+{
+  "id": "8912909",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/8912909",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvODkxMjkwOQ==",
+  "status": "current",
+  "title": "Reporting from OpenMRS database",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "createdDate": "2014-08-28T09:11:24.182Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/8912909/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "when": "2014-08-30T16:34:20.911Z",
+    "friendlyWhen": "Aug 30, 2014",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "syncRev": "0.UKxGWDwxUuaidergDuV0Iw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$8912909.18",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/8912909"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/8912909/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>Reporting from OpenMRS database is challenging for following reasons:</p><ol><li>It is normalised transactional database. This means that a lot of joins have to be made most of the time.</li><li>Few things work in key-value fashion like concepts+observations and patient attributes. Observations/Concepts especially pose a big challenge because of so many things key things have to be modelled as observation in OpenMRS - e.g. diagnosis, chief complaints, disposition, treatment types, lab results. A key-value stored model in relational database is not amenable for reporting easily.</li><li>Reporting is usually done using certain dimensions in mind. Again normalised database is not best suited for it.</li><li>Concept data in OpenMRS when organised in hierarchical fashion makes it harder to query information based on parent of a particular concept. e.g. want to know all the people who were diagnosed with infectious diseases.</li></ol><p>To get around some of the issues to make reporting easier we could do the following:</p><ol><li>Define views which join related tables together e.g. Person, Patient, Patient Attributes could be put together in one view; Concept, Obs, Concept_Name could be put together as one view.</li><li>On these de-normalised views (from 1) we could create some domain specific views for diagnosis, chief complaints, disposition, lab result etc.</li><li>On views from 1 and 2 we could create views which introduces dimensions (see the dimension list below).</li><li>Explore the possibility of organising diagnosis in a flatter structure and use reference term mapping.</li></ol><p><strong>Dimensions</strong></p><p>Hospital level --&gt; Date, Location</p><p>Patient level --&gt; Age, Gender, Tribe,&nbsp;<em>Socio-Economic status,&nbsp;</em></p><p>Program level -&gt; Program outcome, Program name</p><p>Visit level --&gt; Visit Type</p><p>Encounters level --&gt; Treatment type (surgery, treatment, procedure), Treatment outcome</p><p>&nbsp;</p><p>Any view at a particular level would be able to provide columns for dimensions their and higher level. For example a program view should not only provide program outcome, program name with every program instance but also age, gender, tribe, date and location. All the views can be defined such that they repeat the applicable dimensions for every row.</p><p><strong>Questions</strong></p><p>Should referred-in and referred-out be handled using visit attributes.</p><p>Do we have lab department information in OpenMRS? Should we maintain this as location instead of concept?</p><p><strong>References</strong></p><p><a href=\"http://stratosprovatopoulos.com/web-development/mysql/pivot-table-with-dynamic-columns/\">http://stratosprovatopoulos.com/web-development/mysql/pivot-table-with-dynamic-columns/</a></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/8912909"
+      }
+    },
+    "view": {
+      "value": "<p>Reporting from OpenMRS database is challenging for following reasons:</p><ol><li>It is normalised transactional database. This means that a lot of joins have to be made most of the time.</li><li>Few things work in key-value fashion like concepts+observations and patient attributes. Observations/Concepts especially pose a big challenge because of so many things key things have to be modelled as observation in OpenMRS - e.g. diagnosis, chief complaints, disposition, treatment types, lab results. A key-value stored model in relational database is not amenable for reporting easily.</li><li>Reporting is usually done using certain dimensions in mind. Again normalised database is not best suited for it.</li><li>Concept data in OpenMRS when organised in hierarchical fashion makes it harder to query information based on parent of a particular concept. e.g. want to know all the people who were diagnosed with infectious diseases.</li></ol><p>To get around some of the issues to make reporting easier we could do the following:</p><ol><li>Define views which join related tables together e.g. Person, Patient, Patient Attributes could be put together in one view; Concept, Obs, Concept_Name could be put together as one view.</li><li>On these de-normalised views (from 1) we could create some domain specific views for diagnosis, chief complaints, disposition, lab result etc.</li><li>On views from 1 and 2 we could create views which introduces dimensions (see the dimension list below).</li><li>Explore the possibility of organising diagnosis in a flatter structure and use reference term mapping.</li></ol><p><strong>Dimensions</strong></p><p>Hospital level --&gt; Date, Location</p><p>Patient level --&gt; Age, Gender, Tribe, <em>Socio-Economic status, </em></p><p>Program level -&gt; Program outcome, Program name</p><p>Visit level --&gt; Visit Type</p><p>Encounters level --&gt; Treatment type (surgery, treatment, procedure), Treatment outcome</p><p> </p><p>Any view at a particular level would be able to provide columns for dimensions their and higher level. For example a program view should not only provide program outcome, program name with every program instance but also age, gender, tribe, date and location. All the views can be defined such that they repeat the applicable dimensions for every row.</p><p><strong>Questions</strong></p><p>Should referred-in and referred-out be handled using visit attributes.</p><p>Do we have lab department information in OpenMRS? Should we maintain this as location instead of concept?</p><p><strong>References</strong></p><p><a class=\"external-link\" href=\"http://stratosprovatopoulos.com/web-development/mysql/pivot-table-with-dynamic-columns/\" rel=\"nofollow\">http://stratosprovatopoulos.com/web-development/mysql/pivot-table-with-dynamic-columns/</a></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/8912909"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/8912909/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/8912909/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 10242
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/8912909/child",
+    "restrictions": "/rest/api/content/8912909/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/8912909/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=8912909",
+    "webui": "/spaces/BAH/pages/8912909/Reporting+from+OpenMRS+database",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/8912909",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/8912909",
+    "tinyui": "/x/DQCI",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

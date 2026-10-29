@@ -1,0 +1,170 @@
+{
+  "id": "37945565",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/37945565",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzc5NDU1NjU=",
+  "status": "current",
+  "title": "formConditions.js",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:c54772f2-46b5-43c0-be04-96923ee59750",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Vinay Venu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:c54772f2-46b5-43c0-be04-96923ee59750",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Vinay Venu",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:c54772f2-46b5-43c0-be04-96923ee59750"
+      }
+    },
+    "createdDate": "2016-01-21T06:20:26.234Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945565/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "when": "2017-12-14T07:00:03.469Z",
+    "friendlyWhen": "Dec 14, 2017",
+    "message": "",
+    "number": 28,
+    "minorEdit": false,
+    "syncRev": "0.AihIt-vGwpYpKyoZK_ugOQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$37945565.99",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/37945565"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945565/version/28"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Description</h2><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"2aa2eb19-66a0-46f3-89af-afcf18719143\"><ac:parameter ac:name=\"title\">Forms 1.0</ac:parameter><ac:rich-text-body><p>This section is relevant for Form 1.0, forms that are built using &quot;ConceptSetUI&quot;.&nbsp;</p></ac:rich-text-body></ac:structured-macro><p><br /></p><p><a href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/apps/clinical/formConditions.js\">FormConditions.js</a> is&nbsp;located under <em>bahmni_config/openmrs/apps/clinical</em>.</p><p>This configuration allows users to enable or disable observation fields as well as show errors based on specific conditions or inputs on the form.</p><p class=\"p2\">Some sections of the form are only filled when a particular set of information is needed. So, if we disable such fields, it simplifies the form.</p><p class=\"p2\">Consider for example the case where there are two dates being entered in a form and one of the date should be always lesser than the other one. This condition can be checked in this JavaScript file and an appropriate error message can be shown upon validation.</p><h2>Steps</h2><p class=\"p2\">The following function takes two inputs (formName and formFieldValues) and returns an object that contains array of enable and disable field/s and an error message if any.<span style=\"line-height: 1.42857;\">This code snippet will make &quot;Posture&quot; option disabled on initial rendering. Once data is entered for &quot;Systolic Data&quot; field, &quot;Posture&quot; option is enabled.</span></p><h3>Example</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"f5167c18-4f89-4d36-ab0d-91dfaa919694\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA['Systolic Data' : function (formName, formFieldValues) {\n        var systolic = formFieldValues['Systolic'];\n        if (systolic) {\n            return {\n                enable: [\"Posture\"]\n            }\n        } else {\n            return {\n                disable: [\"Posture\"],\n\t\t\t\terror: \"Error message here if any\"\n            }\n        }\n\t}\n\n ]]></ac:plain-text-body></ac:structured-macro><p class=\"p2\">&nbsp;In this case, the returned object will be-</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"f6a906f9-2af3-46b8-ae0e-34b8cbad73e1\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[{\n      enable: [\"Posture\"],\n      disable: [],\n      error: \"Error message here if any\"\n}]]></ac:plain-text-body></ac:structured-macro><p class=\"p2\"><strong>Passing Patient Context:</strong></p><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"6393a6aa-3638-4199-98a9-b28289d4bf3e\"><ac:rich-text-body><p>From version 0.90, the form condition function takes an extra input (patient) which can be used to get patient's age, identifier or gender. See example below.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><span style=\"font-size: 16.0px;\">Example</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"e4af9455-452f-44a7-942f-020c345e55a5\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA['ANC' : function (formName, formFieldValues, patient) {\n        if (patient.gender === \"F\") {\n            return {\n                enable: [\"LMP\", \"Delivery Date\"]\n            }\n        } else {\n            return {\n                disable: [\"LMP\", \"Delivery Date\"]\n\t\t\t\terror: \"Error message here if any\"\n            }\n        }\n\t}\n\n ]]></ac:plain-text-body></ac:structured-macro><p class=\"p2\">&nbsp;In this case, the returned object will be-</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"542709cf-4105-42c5-b3bc-2ddfc657255d\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[{\n      enable: [\"LMP\", \"Delivery Date\"],\n      disable: [],\n      error: \"Error message here if any\"\n}]]></ac:plain-text-body></ac:structured-macro><h2>Function signature which needs to be used</h2><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"0d3c05c6-ebdc-4623-b122-ab199a0802f1\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[<Concept Full Name> : function (formName, formFieldValues, patient) { }]]></ac:plain-text-body></ac:structured-macro><h2><strong>Overriding Form Conditions:</strong></h2><p>Over-riding form conditions is needed when a particular implementation needs to override the master Bahmni config to support varied implementation specific needs.</p><p>Existing form conditions can be overriden by the formConditions.js file in /implementation_config/openmrs/apps/clinical folder.</p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"546c349d-3156-4361-a691-de380c7bdcc5\"><ac:rich-text-body><p>The .JS file to override master form conditions to suffice implementation requirements resides in the client</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><p>&nbsp;Bahmni.ConceptSet.FormConditions.<em>rulesOverride</em> is used as variable.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8861cd50-eefc-43fc-b08b-8ed3a3acbe1e\"><ac:plain-text-body><![CDATA[Bahmni.ConceptSet.FormConditions.rulesOverride\t= {\n'Systolic Data' : null,\n'Diastolic Data' : function (formName, formFieldValues, patient) {\n        var diastolic = formFieldValues['Diastolic'];\n        if (diastolic) {\n            return {\n                enable: [\"Posture\"]\n            }\n        } else {\n            return {\n                disable: [\"Posture\"],\n\t\t\t\terror: \"Error message here if any\"\n            }\n        }\n\t}\n}]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"948c0220-9400-4cf5-b816-be1aed007a35\"><ac:rich-text-body><p>The &nbsp;form field based on which conditional enabling and disabling is done should be above the fields that are getting disabled or enabled.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"8c40fdfc-3645-46d4-8db9-76e416ea5591\"><ac:rich-text-body><p>For example if we are disabling Blood Pressure based on Pulse Data, then Pulse Data should be above the Blood Pressure. <span>Please refer the image below.</span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><p><br /></p><p><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"Screen Shot 2016-08-31 at 3.25.48 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"9e4f9769-17bb-4ca3-8e1e-b5067da8696b\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"13cc9e04-08ac-434c-9a19-a0c344e40966\" />&nbsp;</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/37945565"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"formConditions.js-Description\">Description</h2><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"2aa2eb19-66a0-46f3-89af-afcf18719143\" data-macro-name=\"info\"><p class=\"title\">Forms 1.0</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This section is relevant for Form 1.0, forms that are built using &quot;ConceptSetUI&quot;. </p></div></div><p><br/></p><p><a class=\"external-link\" href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/apps/clinical/formConditions.js\" rel=\"nofollow\">FormConditions.js</a> is located under <em>bahmni_config/openmrs/apps/clinical</em>.</p><p>This configuration allows users to enable or disable observation fields as well as show errors based on specific conditions or inputs on the form.</p><p class=\"p2\">Some sections of the form are only filled when a particular set of information is needed. So, if we disable such fields, it simplifies the form.</p><p class=\"p2\">Consider for example the case where there are two dates being entered in a form and one of the date should be always lesser than the other one. This condition can be checked in this JavaScript file and an appropriate error message can be shown upon validation.</p><h2 id=\"formConditions.js-Steps\">Steps</h2><p class=\"p2\">The following function takes two inputs (formName and formFieldValues) and returns an object that contains array of enable and disable field/s and an error message if any.<span style=\"line-height: 1.42857;\">This code snippet will make &quot;Posture&quot; option disabled on initial rendering. Once data is entered for &quot;Systolic Data&quot; field, &quot;Posture&quot; option is enabled.</span></p><h3 id=\"formConditions.js-Example\">Example</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f5167c18-4f89-4d36-ab0d-91dfaa919694\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">'Systolic Data' : function (formName, formFieldValues) {\n        var systolic = formFieldValues['Systolic'];\n        if (systolic) {\n            return {\n                enable: [&quot;Posture&quot;]\n            }\n        } else {\n            return {\n                disable: [&quot;Posture&quot;],\n\t\t\t\terror: &quot;Error message here if any&quot;\n            }\n        }\n\t}\n\n </pre>\n</div></div><p class=\"p2\"> In this case, the returned object will be-</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f6a906f9-2af3-46b8-ae0e-34b8cbad73e1\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n      enable: [&quot;Posture&quot;],\n      disable: [],\n      error: &quot;Error message here if any&quot;\n}</pre>\n</div></div><p class=\"p2\"><strong>Passing Patient Context:</strong></p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6393a6aa-3638-4199-98a9-b28289d4bf3e\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>From version 0.90, the form condition function takes an extra input (patient) which can be used to get patient's age, identifier or gender. See example below.</p></div></div><p class=\"auto-cursor-target\"><span style=\"font-size: 16.0px;\">Example</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e4af9455-452f-44a7-942f-020c345e55a5\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">'ANC' : function (formName, formFieldValues, patient) {\n        if (patient.gender === &quot;F&quot;) {\n            return {\n                enable: [&quot;LMP&quot;, &quot;Delivery Date&quot;]\n            }\n        } else {\n            return {\n                disable: [&quot;LMP&quot;, &quot;Delivery Date&quot;]\n\t\t\t\terror: &quot;Error message here if any&quot;\n            }\n        }\n\t}\n\n </pre>\n</div></div><p class=\"p2\"> In this case, the returned object will be-</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"542709cf-4105-42c5-b3bc-2ddfc657255d\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n      enable: [&quot;LMP&quot;, &quot;Delivery Date&quot;],\n      disable: [],\n      error: &quot;Error message here if any&quot;\n}</pre>\n</div></div><h2 id=\"formConditions.js-Functionsignaturewhichneedstobeused\">Function signature which needs to be used</h2><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0d3c05c6-ebdc-4623-b122-ab199a0802f1\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&lt;Concept Full Name&gt; : function (formName, formFieldValues, patient) { }</pre>\n</div></div><h2 id=\"formConditions.js-OverridingFormConditions:\"><strong>Overriding Form Conditions:</strong></h2><p>Over-riding form conditions is needed when a particular implementation needs to override the master Bahmni config to support varied implementation specific needs.</p><p>Existing form conditions can be overriden by the formConditions.js file in /implementation_config/openmrs/apps/clinical folder.</p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"546c349d-3156-4361-a691-de380c7bdcc5\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>The .JS file to override master form conditions to suffice implementation requirements resides in the client</p></div></div><p> Bahmni.ConceptSet.FormConditions.<em>rulesOverride</em> is used as variable.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8861cd50-eefc-43fc-b08b-8ed3a3acbe1e\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Bahmni.ConceptSet.FormConditions.rulesOverride\t= {\n'Systolic Data' : null,\n'Diastolic Data' : function (formName, formFieldValues, patient) {\n        var diastolic = formFieldValues['Diastolic'];\n        if (diastolic) {\n            return {\n                enable: [&quot;Posture&quot;]\n            }\n        } else {\n            return {\n                disable: [&quot;Posture&quot;],\n\t\t\t\terror: &quot;Error message here if any&quot;\n            }\n        }\n\t}\n}</pre>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"948c0220-9400-4cf5-b816-be1aed007a35\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>The  form field based on which conditional enabling and disabling is done should be above the fields that are getting disabled or enabled.</p></div></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8c40fdfc-3645-46d4-8db9-76e416ea5591\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>For example if we are disabling Blood Pressure based on Pulse Data, then Pulse Data should be above the Blood Pressure. <span>Please refer the image below.</span></p></div></div><p><br/></p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945565/Screen%20Shot%202016-08-31%20at%203.25.48%20PM.png?version=1&amp;modificationDate=1472637376565&amp;cacheVersion=1&amp;api=v2&amp;width=635&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945565/Screen%20Shot%202016-08-31%20at%203.25.48%20PM.png?version=1&amp;modificationDate=1472637376565&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"83951627\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-08-31 at 3.25.48 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945565\" data-linked-resource-container-version=\"28\" data-media-id=\"4faa35ec-4bdc-45b0-b957-88f7aab5fb75\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945565/Screen%20Shot%202016-08-31%20at%203.25.48%20PM.png?version=1&amp;modificationDate=1472637376565&amp;cacheVersion=1&amp;api=v2&amp;width=1270&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945565/Screen%20Shot%202016-08-31%20at%203.25.48%20PM.png?version=1&amp;modificationDate=1472637376565&amp;cacheVersion=1&amp;api=v2&amp;width=635&amp;height=250 1x\"></span></p><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9e4f9769-17bb-4ca3-8e1e-b5067da8696b\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"13cc9e04-08ac-434c-9a19-a0c344e40966\" data-macro-name=\"toc\"> </div> <p> </p></div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/37945565"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/37945565/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945565/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/37945565/child",
+    "restrictions": "/rest/api/content/37945565/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/37945565/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=37945565",
+    "webui": "/spaces/BAH/pages/37945565/formConditions.js",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/37945565",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945565",
+    "tinyui": "/x/3QBDAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

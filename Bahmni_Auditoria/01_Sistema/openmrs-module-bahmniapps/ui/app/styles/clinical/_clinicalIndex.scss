@@ -1,0 +1,51 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public License,
+ * v. 2.0. If a copy of the MPL was not distributed with this file, You can
+ * obtain one at https://www.bahmni.org/license/mplv2hd.
+ *
+ * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
+ * graphic logo is a trademark of OpenMRS Inc.
+ */
+
+@import "patientSearch";
+@import "visit";
+@import "consultation";
+@import "diagnosis";
+@import "disposition";
+@import "treatment/treatment";
+@import "treatment/variableDoseOrders";
+@import "observations";
+@import "patientDashboard";
+@import "../common/discardDraftConfirmation";
+@import "charts";
+@import "orders";
+@import "program";
+@import "bacteriology";
+@import "patientSearchDesktop";
+@import "observationsDesktop";
+@import "drugOrderTemplate";
+@import "patientMonitering";
+@import "tableMobile";
+@import "scrollable-tabs";
+
+body {
+    font-size: 14px;
+    //@media (max-width : 768px){
+    //  font-size: 15px;
+    //}
+}
+
+.consultation-content {
+    margin-top: 45px;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 95px;
+
+        .template-control {
+            top: 150px;
+            box-shadow: none;
+        }
+    }
+
+    
+}

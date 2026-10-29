@@ -1,0 +1,172 @@
+{
+  "id": "42729508",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/42729508",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNDI3Mjk1MDg=",
+  "status": "current",
+  "title": "Adding Scanned Documents to Forms",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:3017ba85-9f9f-4194-8c30-36d6fb413770",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Bharat Akkinepalli",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:3017ba85-9f9f-4194-8c30-36d6fb413770",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Bharat Akkinepalli",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:3017ba85-9f9f-4194-8c30-36d6fb413770"
+      }
+    },
+    "createdDate": "2016-02-28T05:42:50.005Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/42729508/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:3017ba85-9f9f-4194-8c30-36d6fb413770",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Bharat Akkinepalli",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:3017ba85-9f9f-4194-8c30-36d6fb413770",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Bharat Akkinepalli",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:3017ba85-9f9f-4194-8c30-36d6fb413770"
+      }
+    },
+    "when": "2016-02-28T05:53:20.278Z",
+    "friendlyWhen": "Feb 28, 2016",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.k7hhb9159Y4rwu-M9Bcdww.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$42729508.17",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/42729508"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/42729508/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<h2>Purpose and Benefits</h2><p>Sometimes, we may have to store some documents as part of the forms. &nbsp;Bahmni supports scanning the documents using a webcam on your device and uploading them in a form. &nbsp;There are various document types that are supported like jpeg, pdf. &nbsp;</p><h2>Steps to configure documents in the form</h2><ol><li>Create a concept with the concept class as &quot;Image&quot;, concept datatype as &quot;<span style=\"color: rgb(0,0,0);\">Complex&quot; and Handler as &quot;<span style=\"color: rgb(0,0,0);\">BinaryDataHandler&quot;</span></span></li><li>Add this newly created concept to any of your existing concept set which represents a form (i.e. this concept set should be part of &quot;All Observation Templates&quot;)</li><li>View the newly added field in the form. &nbsp;This field has a &quot;+&quot; button beside the label which will help you upload the images.</li><li>The value filled in the form can be seen on the Patient Dashboard corresponding to the relevant Observation Display control.</li></ol>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/42729508"
+      }
+    },
+    "view": {
+      "value": "<h2 id=\"AddingScannedDocumentstoForms-PurposeandBenefits\">Purpose and Benefits</h2><p>Sometimes, we may have to store some documents as part of the forms.  Bahmni supports scanning the documents using a webcam on your device and uploading them in a form.  There are various document types that are supported like jpeg, pdf.  </p><h2 id=\"AddingScannedDocumentstoForms-Stepstoconfiguredocumentsintheform\">Steps to configure documents in the form</h2><ol><li>Create a concept with the concept class as &quot;Image&quot;, concept datatype as &quot;<span class=\"legacy-color-text-default\">Complex&quot; and Handler as &quot;<span class=\"legacy-color-text-default\">BinaryDataHandler&quot;</span></span></li><li>Add this newly created concept to any of your existing concept set which represents a form (i.e. this concept set should be part of &quot;All Observation Templates&quot;)</li><li>View the newly added field in the form.  This field has a &quot;+&quot; button beside the label which will help you upload the images.</li><li>The value filled in the form can be seen on the Patient Dashboard corresponding to the relevant Observation Display control.</li></ol>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/42729508"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/42729508/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/42729508/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 3
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/42729508/child",
+    "restrictions": "/rest/api/content/42729508/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/42729508/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=42729508",
+    "webui": "/spaces/BAH/pages/42729508/Adding+Scanned+Documents+to+Forms",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/42729508",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/42729508",
+    "tinyui": "/x/JACMAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

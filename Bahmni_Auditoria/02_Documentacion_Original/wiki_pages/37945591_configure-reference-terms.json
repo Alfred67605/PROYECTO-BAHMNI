@@ -1,0 +1,170 @@
+{
+  "id": "37945591",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/37945591",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzc5NDU1OTE=",
+  "status": "current",
+  "title": "Configure Reference Terms",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2016-01-21T06:34:10.710Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945591/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:34691764-3661-4ae2-8bed-828436595072",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Siddhartha Mohapatra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:34691764-3661-4ae2-8bed-828436595072",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Siddhartha Mohapatra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:34691764-3661-4ae2-8bed-828436595072"
+      }
+    },
+    "when": "2016-12-27T10:51:39.894Z",
+    "friendlyWhen": "Dec 27, 2016",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "syncRev": "0.MPmXjBHUce0xKa13JHZZuQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$37945591.27",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/37945591"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945591/version/5"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Description</h2><p>Reference terms map concepts to standard OpenMRS dictionary concepts. &nbsp;</p><h2>Steps</h2><p><span style=\"color: rgb(0,0,0);\">Below are the steps to manage the concept reference terms.</span></p><ol><li><span style=\"color: rgb(0,0,0);\">Go to &quot;Administration&rarr;Manage Concept Sources&quot; and&nbsp;check whether you have the required dictionary added as concept source (check the below screenshot)</span><br /><span style=\"color: rgb(0,0,0);\"><br /></span><span style=\"color: rgb(0,0,0);\"><ac:image ac:height=\"400\"><ri:attachment ri:filename=\"Screenshot from 2016 04 01 12 43 25.png\" /></ac:image></span><br /><span style=\"color: rgb(0,0,0);\"><br /></span><br /><span style=\"color: rgb(0,0,0);\"><br /></span></li><li><span style=\"color: rgb(0,0,0);\">If it is not there, create a new one using &quot;Add New Concept Source&quot;<br /></span><span style=\"color: rgb(0,0,0);\"><br /></span><br /><span style=\"color: rgb(0,0,0);\"><ac:image ac:height=\"400\"><ri:attachment ri:filename=\"Screenshot from 2016 04 01 12 42 25.png\" /></ac:image></span><br /><span style=\"color: rgb(0,0,0);\"><br /></span><br /><span style=\"color: rgb(0,0,0);\"><br /></span></li><li><span style=\"color: rgb(0,0,0);\">The name and description are mandatory fields. They are free text entry fields and they do not expect any predefined values.</span><br /><span style=\"color: rgb(0,0,0);\"><br /><ac:image ac:height=\"150\"><ri:attachment ri:filename=\"Screenshot from 2016-04-01 12-42-49.png\" /></ac:image></span><br /><br /><span style=\"color: rgb(0,0,0);\"><br /></span></li><li><span style=\"color: rgb(0,0,0);\">After creating the concept source, create the concept reference terms. You can go to that page using &quot;Administration&rarr; Manage Concept Reference Terms&quot; navigation.</span><br /><span style=\"color: rgb(0,0,0);\"><br /></span><span style=\"color: rgb(0,0,0);\"><ac:image ac:height=\"400\"><ri:attachment ri:filename=\"Screenshot from 2016 04 01 12 43 40.png\" /></ac:image></span><br /><span style=\"color: rgb(0,0,0);\"><br /></span><br /><span style=\"color: rgb(0,0,0);\"><br /></span></li><li><span style=\"color: rgb(0,0,0);\">You can add a new reference term or search for the existing reference terms and edit them.</span><br /><span style=\"color: rgb(0,0,0);\"><br /></span><span style=\"color: rgb(0,0,0);\"><ac:image ac:height=\"150\"><ri:attachment ri:filename=\"Screenshot from 2016 04 01 12 44 09.png\" /></ac:image><br /></span></li><li><span style=\"color: rgb(0,0,0);\">You need to provide some key as reference term code and select the source type as it's required. You can also have other reference terms mapped to a reference term.</span><br /><span style=\"color: rgb(0,0,0);\"><br /></span><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"Screenshot from 2016-04-01 12-48-28.png\" /></ac:image><br /><span style=\"color: rgb(0,0,0);\"><br /></span></li><li><span style=\"color: rgb(0,0,0);\">Once you have the reference term created, you can map it to any concept using &quot;Mappings&quot; option. You can add multiple mappings for a concept.</span><br /><br /><span style=\"color: rgb(0,0,0);\"><ac:image ac:height=\"400\"><ri:attachment ri:filename=\"Screenshot from 2016 04 01 12 49 26.png\" /></ac:image><br /></span><br /><span style=\"color: rgb(0,0,0);\"><br /></span></li><li><span style=\"color: rgb(0,0,0);\">You just need to start typing the reference term code and the respective source will be auto-selected. Note that you can manually select the mapping relationship (like SAME-AS, NARROWER-THAN etc) and these are not configurable from the UI.&nbsp;</span><br /><span style=\"color: rgb(0,0,0);\"><br /></span><ac:image><ri:attachment ri:filename=\"Screenshot from 2016 04 01 12 49 47.png\" /></ac:image><br /><span style=\"color: rgb(0,0,0);\"><br /></span></li><li><span style=\"color: rgb(0,0,0);\">You can also create a new reference term from the edit concept page on the fly as well (see the highlighted button in the above screenshot).</span><br /><span style=\"color: rgb(0,0,0);\"><br /></span><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"Screenshot from 2016-04-01 12-50-22.png\" /></ac:image><br /><br /></li><li>Once you add the reference terms, they will start appearing in the respective concept page in OpenMRS. A sample concept with reference terms screenshot attached below.<br /><br /><ac:image ac:height=\"400\"><ri:attachment ri:filename=\"OpenMRS   Viewing Concept CD4 COUNT.png\" /></ac:image><br /><br /></li></ol></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"9e4f9769-17bb-4ca3-8e1e-b5067da8696b\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"762672fb-dc0f-425e-97b1-d972e4aa0209\" />&nbsp;</p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/37945591"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ConfigureReferenceTerms-Description\">Description</h2><p>Reference terms map concepts to standard OpenMRS dictionary concepts.  </p><h2 id=\"ConfigureReferenceTerms-Steps\">Steps</h2><p><span class=\"legacy-color-text-default\">Below are the steps to manage the concept reference terms.</span></p><ol><li><span class=\"legacy-color-text-default\">Go to &quot;Administration→Manage Concept Sources&quot; and check whether you have the required dictionary added as concept source (check the below screenshot)</span><br/><span class=\"legacy-color-text-default\"><br/></span><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"400\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016%2004%2001%2012%2043%2025.png?version=1&amp;modificationDate=1459503697493&amp;cacheVersion=1&amp;api=v2&amp;width=806&amp;height=400\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945591/Screenshot%20from%202016%2004%2001%2012%2043%2025.png?version=1&amp;modificationDate=1459503697493&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"49545354\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot from 2016 04 01 12 43 25.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945591\" data-linked-resource-container-version=\"5\" data-media-id=\"f38d89f0-d7db-4568-8d55-842eed79ee92\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016%2004%2001%2012%2043%2025.png?version=1&amp;modificationDate=1459503697493&amp;cacheVersion=1&amp;api=v2&amp;width=1612&amp;height=800 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016%2004%2001%2012%2043%2025.png?version=1&amp;modificationDate=1459503697493&amp;cacheVersion=1&amp;api=v2&amp;width=806&amp;height=400 1x\"></span></span><br/><span class=\"legacy-color-text-default\"><br/></span><br/><span class=\"legacy-color-text-default\"><br/></span></li><li><span class=\"legacy-color-text-default\">If it is not there, create a new one using &quot;Add New Concept Source&quot;<br/></span><span class=\"legacy-color-text-default\"><br/></span><br/><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"400\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016%2004%2001%2012%2042%2025.png?version=1&amp;modificationDate=1459503706465&amp;cacheVersion=1&amp;api=v2&amp;width=834&amp;height=400\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945591/Screenshot%20from%202016%2004%2001%2012%2042%2025.png?version=1&amp;modificationDate=1459503706465&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"49545355\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot from 2016 04 01 12 42 25.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945591\" data-linked-resource-container-version=\"5\" data-media-id=\"4f0a5681-bc23-47f4-9156-c2d17c5ad783\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016%2004%2001%2012%2042%2025.png?version=1&amp;modificationDate=1459503706465&amp;cacheVersion=1&amp;api=v2&amp;width=1668&amp;height=800 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016%2004%2001%2012%2042%2025.png?version=1&amp;modificationDate=1459503706465&amp;cacheVersion=1&amp;api=v2&amp;width=834&amp;height=400 1x\"></span></span><br/><span class=\"legacy-color-text-default\"><br/></span><br/><span class=\"legacy-color-text-default\"><br/></span></li><li><span class=\"legacy-color-text-default\">The name and description are mandatory fields. They are free text entry fields and they do not expect any predefined values.</span><br/><span class=\"legacy-color-text-default\"><br/><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"150\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016-04-01%2012-42-49.png?version=1&amp;modificationDate=1459504126464&amp;cacheVersion=1&amp;api=v2&amp;width=660&amp;height=150\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945591/Screenshot%20from%202016-04-01%2012-42-49.png?version=1&amp;modificationDate=1459504126464&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"49545356\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot from 2016-04-01 12-42-49.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945591\" data-linked-resource-container-version=\"5\" data-media-id=\"4f7e25e4-459f-4992-b4aa-91a9e2ddc0e4\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016-04-01%2012-42-49.png?version=1&amp;modificationDate=1459504126464&amp;cacheVersion=1&amp;api=v2&amp;width=1320&amp;height=300 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016-04-01%2012-42-49.png?version=1&amp;modificationDate=1459504126464&amp;cacheVersion=1&amp;api=v2&amp;width=660&amp;height=150 1x\"></span></span><br/><br/><span class=\"legacy-color-text-default\"><br/></span></li><li><span class=\"legacy-color-text-default\">After creating the concept source, create the concept reference terms. You can go to that page using &quot;Administration→ Manage Concept Reference Terms&quot; navigation.</span><br/><span class=\"legacy-color-text-default\"><br/></span><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"400\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016%2004%2001%2012%2043%2040.png?version=1&amp;modificationDate=1459504294629&amp;cacheVersion=1&amp;api=v2&amp;width=801&amp;height=400\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945591/Screenshot%20from%202016%2004%2001%2012%2043%2040.png?version=1&amp;modificationDate=1459504294629&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"49545357\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot from 2016 04 01 12 43 40.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945591\" data-linked-resource-container-version=\"5\" data-media-id=\"39e2644b-821f-4b07-9f26-c1aae8338cff\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016%2004%2001%2012%2043%2040.png?version=1&amp;modificationDate=1459504294629&amp;cacheVersion=1&amp;api=v2&amp;width=1602&amp;height=800 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016%2004%2001%2012%2043%2040.png?version=1&amp;modificationDate=1459504294629&amp;cacheVersion=1&amp;api=v2&amp;width=801&amp;height=400 1x\"></span></span><br/><span class=\"legacy-color-text-default\"><br/></span><br/><span class=\"legacy-color-text-default\"><br/></span></li><li><span class=\"legacy-color-text-default\">You can add a new reference term or search for the existing reference terms and edit them.</span><br/><span class=\"legacy-color-text-default\"><br/></span><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"150\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016%2004%2001%2012%2044%2009.png?version=1&amp;modificationDate=1459504401199&amp;cacheVersion=1&amp;api=v2&amp;width=743&amp;height=150\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945591/Screenshot%20from%202016%2004%2001%2012%2044%2009.png?version=1&amp;modificationDate=1459504401199&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"49545358\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot from 2016 04 01 12 44 09.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945591\" data-linked-resource-container-version=\"5\" data-media-id=\"bfe7927b-c2a9-4cfc-8f30-04ee65560265\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016%2004%2001%2012%2044%2009.png?version=1&amp;modificationDate=1459504401199&amp;cacheVersion=1&amp;api=v2&amp;width=1486&amp;height=300 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016%2004%2001%2012%2044%2009.png?version=1&amp;modificationDate=1459504401199&amp;cacheVersion=1&amp;api=v2&amp;width=743&amp;height=150 1x\"></span><br/></span></li><li><span class=\"legacy-color-text-default\">You need to provide some key as reference term code and select the source type as it's required. You can also have other reference terms mapped to a reference term.</span><br/><span class=\"legacy-color-text-default\"><br/></span><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016-04-01%2012-48-28.png?version=1&amp;modificationDate=1459504774569&amp;cacheVersion=1&amp;api=v2&amp;width=701&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945591/Screenshot%20from%202016-04-01%2012-48-28.png?version=1&amp;modificationDate=1459504774569&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"49545360\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot from 2016-04-01 12-48-28.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945591\" data-linked-resource-container-version=\"5\" data-media-id=\"ffec9d7b-6727-48eb-8903-003a4455f3fd\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016-04-01%2012-48-28.png?version=1&amp;modificationDate=1459504774569&amp;cacheVersion=1&amp;api=v2&amp;width=1402&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016-04-01%2012-48-28.png?version=1&amp;modificationDate=1459504774569&amp;cacheVersion=1&amp;api=v2&amp;width=701&amp;height=250 1x\"></span><br/><span class=\"legacy-color-text-default\"><br/></span></li><li><span class=\"legacy-color-text-default\">Once you have the reference term created, you can map it to any concept using &quot;Mappings&quot; option. You can add multiple mappings for a concept.</span><br/><br/><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"400\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016%2004%2001%2012%2049%2026.png?version=1&amp;modificationDate=1459504952028&amp;cacheVersion=1&amp;api=v2&amp;width=396&amp;height=400\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945591/Screenshot%20from%202016%2004%2001%2012%2049%2026.png?version=1&amp;modificationDate=1459504952028&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"49545361\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot from 2016 04 01 12 49 26.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945591\" data-linked-resource-container-version=\"5\" data-media-id=\"af153c3c-2532-4527-93ff-011b28554dd5\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016%2004%2001%2012%2049%2026.png?version=1&amp;modificationDate=1459504952028&amp;cacheVersion=1&amp;api=v2&amp;width=792&amp;height=800 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016%2004%2001%2012%2049%2026.png?version=1&amp;modificationDate=1459504952028&amp;cacheVersion=1&amp;api=v2&amp;width=396&amp;height=400 1x\"></span><br/></span><br/><span class=\"legacy-color-text-default\"><br/></span></li><li><span class=\"legacy-color-text-default\">You just need to start typing the reference term code and the respective source will be auto-selected. Note that you can manually select the mapping relationship (like SAME-AS, NARROWER-THAN etc) and these are not configurable from the UI. </span><br/><span class=\"legacy-color-text-default\"><br/></span><span class=\"confluence-embedded-file-wrapper\"><img class=\"confluence-embedded-image\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945591/Screenshot%20from%202016%2004%2001%2012%2049%2047.png?version=1&amp;modificationDate=1459505237975&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945591/Screenshot%20from%202016%2004%2001%2012%2049%2047.png?version=1&amp;modificationDate=1459505237975&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"49545362\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot from 2016 04 01 12 49 47.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945591\" data-linked-resource-container-version=\"5\" data-media-id=\"600f018c-be4b-471a-90cb-dc896cb60294\" data-media-type=\"file\"></span><br/><span class=\"legacy-color-text-default\"><br/></span></li><li><span class=\"legacy-color-text-default\">You can also create a new reference term from the edit concept page on the fly as well (see the highlighted button in the above screenshot).</span><br/><span class=\"legacy-color-text-default\"><br/></span><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016-04-01%2012-50-22.png?version=1&amp;modificationDate=1459505345269&amp;cacheVersion=1&amp;api=v2&amp;width=394&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945591/Screenshot%20from%202016-04-01%2012-50-22.png?version=1&amp;modificationDate=1459505345269&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"49545363\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot from 2016-04-01 12-50-22.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945591\" data-linked-resource-container-version=\"5\" data-media-id=\"5c43da84-8ca5-48ea-8356-6b0fbd6ef98c\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016-04-01%2012-50-22.png?version=1&amp;modificationDate=1459505345269&amp;cacheVersion=1&amp;api=v2&amp;width=538&amp;height=341 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/Screenshot%20from%202016-04-01%2012-50-22.png?version=1&amp;modificationDate=1459505345269&amp;cacheVersion=1&amp;api=v2&amp;width=394&amp;height=250 1x\"></span><br/><br/></li><li>Once you add the reference terms, they will start appearing in the respective concept page in OpenMRS. A sample concept with reference terms screenshot attached below.<br/><br/><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"400\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/OpenMRS%20%20%20Viewing%20Concept%20CD4%20COUNT.png?version=1&amp;modificationDate=1459505627299&amp;cacheVersion=1&amp;api=v2&amp;width=423&amp;height=400\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945591/OpenMRS%20%20%20Viewing%20Concept%20CD4%20COUNT.png?version=1&amp;modificationDate=1459505627299&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"49545366\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"OpenMRS   Viewing Concept CD4 COUNT.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945591\" data-linked-resource-container-version=\"5\" data-media-id=\"6a18938d-3ab3-4a6c-8034-5db6a09f06ec\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/OpenMRS%20%20%20Viewing%20Concept%20CD4%20COUNT.png?version=1&amp;modificationDate=1459505627299&amp;cacheVersion=1&amp;api=v2&amp;width=846&amp;height=800 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945591/OpenMRS%20%20%20Viewing%20Concept%20CD4%20COUNT.png?version=1&amp;modificationDate=1459505627299&amp;cacheVersion=1&amp;api=v2&amp;width=423&amp;height=400 1x\"></span><br/><br/></li></ol></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9e4f9769-17bb-4ca3-8e1e-b5067da8696b\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"762672fb-dc0f-425e-97b1-d972e4aa0209\" data-macro-name=\"toc\"> </div> <p> </p></div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/37945591"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/37945591/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945591/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 388720306
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/37945591/child",
+    "restrictions": "/rest/api/content/37945591/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/37945591/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=37945591",
+    "webui": "/spaces/BAH/pages/37945591/Configure+Reference+Terms",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/37945591",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945591",
+    "tinyui": "/x/9wBDAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

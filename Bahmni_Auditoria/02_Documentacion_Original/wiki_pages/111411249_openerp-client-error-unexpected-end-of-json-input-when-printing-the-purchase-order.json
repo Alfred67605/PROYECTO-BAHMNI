@@ -1,0 +1,172 @@
+{
+  "id": "111411249",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/111411249",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTExNDExMjQ5",
+  "status": "current",
+  "title": "OpenERP client error “Unexpected end of JSON Input” when printing the purchase order",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:761926cb-ed59-41ca-9692-e6c2dcb1c400",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Ravinder Deolal",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:761926cb-ed59-41ca-9692-e6c2dcb1c400",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Ravinder Deolal",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:761926cb-ed59-41ca-9692-e6c2dcb1c400"
+      }
+    },
+    "createdDate": "2017-01-02T09:12:36.597Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/111411249/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:761926cb-ed59-41ca-9692-e6c2dcb1c400",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Ravinder Deolal",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:761926cb-ed59-41ca-9692-e6c2dcb1c400",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Ravinder Deolal",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:761926cb-ed59-41ca-9692-e6c2dcb1c400"
+      }
+    },
+    "when": "2017-01-02T09:12:36.597Z",
+    "friendlyWhen": "Jan 02, 2017",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.o5iwcjBaV1_IbwQ29g2XpA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$111411249.9",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/111411249"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/111411249/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<h2>How to resolve&nbsp;&ldquo;Unexpected end of JSON Input&rdquo; when printing the purchase order</h2><p><span style=\"color: rgb(0,0,0);\">&nbsp;</span>The issue is caused by the difference in the version of python lib werkzeug version. OpenERP currently use version 0.8.3. Below is the error message which will be displayed if the there is a difference in version.</p><p><br /></p><p><ac:image ac:align=\"center\" ac:border=\"true\" ac:title=\"Unexpected end of JSON Input\" ac:alt=\"Unexpected end of JSON Input\" ac:height=\"400\" ac:width=\"694\"><ri:attachment ri:filename=\"image2017-1-2_14-29-37.png\" /></ac:image></p><p><br /></p><h2><span style=\"color: rgb(0,0,0);\">Steps</span></h2><p>Check werkzeug version by running below command.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"ad5669f8-88be-45e5-b6cf-5719368ed97b\"><ac:parameter ac:name=\"language\">text</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[pip show werkzeug|grep Version\n]]></ac:plain-text-body></ac:structured-macro><p>If the version displayed is different than 0.8.3 then follow the below steps.</p><ul><li>Stop OpenERP service</li></ul><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4bf64ef2-314b-4a22-a4ca-d88bbf92f614\"><ac:parameter ac:name=\"language\">text</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[sudo service openerp stop\n]]></ac:plain-text-body></ac:structured-macro><p><br /></p><ul><li>Downgrade the version using the command</li></ul><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"9d7e6fd2-c747-4c2b-8020-b611d60bfb67\"><ac:parameter ac:name=\"language\">text</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[sudo pip install werkzeug==0.8.3]]></ac:plain-text-body></ac:structured-macro><p><br /></p><ul><li>Verify the version after downgrade. It should point to 0.8.3</li></ul><p><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b87e42d4-3246-4e16-9e76-9884b0678a78\"><ac:parameter ac:name=\"language\">text</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[pip show werkzeug|grep Version]]></ac:plain-text-body></ac:structured-macro><p><br /></p><ul><li>Start OpenERP service</li></ul><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b359ae38-020a-416f-8858-a3bbb1829cf0\"><ac:parameter ac:name=\"language\">text</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[sudo service openerp start\n]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p style=\"margin-left: 30.0px;\"><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/111411249"
+      }
+    },
+    "view": {
+      "value": "<h2 id=\"OpenERPclienterror“UnexpectedendofJSONInput”whenprintingthepurchaseorder-Howtoresolve“UnexpectedendofJSONInput”whenprintingthepurchaseorder\">How to resolve “Unexpected end of JSON Input” when printing the purchase order</h2><p><span class=\"legacy-color-text-default\"> </span>The issue is caused by the difference in the version of python lib werkzeug version. OpenERP currently use version 0.8.3. Below is the error message which will be displayed if the there is a difference in version.</p><p><br/></p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" alt=\"Unexpected end of JSON Input\" height=\"400\" width=\"694\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/111411249/image2017-1-2_14-29-37.png?version=1&amp;modificationDate=1483348356620&amp;cacheVersion=1&amp;api=v2&amp;width=694&amp;height=399\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/111411249/image2017-1-2_14-29-37.png?version=1&amp;modificationDate=1483348356620&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"111411248\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-1-2_14-29-37.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"111411249\" data-linked-resource-container-version=\"1\" data-media-id=\"24a4ad50-580a-468b-8c60-b57bfc6166fb\" data-media-type=\"file\" title=\"Unexpected end of JSON Input\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/111411249/image2017-1-2_14-29-37.png?version=1&amp;modificationDate=1483348356620&amp;cacheVersion=1&amp;api=v2&amp;width=1388&amp;height=798 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/111411249/image2017-1-2_14-29-37.png?version=1&amp;modificationDate=1483348356620&amp;cacheVersion=1&amp;api=v2&amp;width=694&amp;height=399 1x\"></span></p><p><br/></p><h2 id=\"OpenERPclienterror“UnexpectedendofJSONInput”whenprintingthepurchaseorder-Steps\"><span class=\"legacy-color-text-default\">Steps</span></h2><p>Check werkzeug version by running below command.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ad5669f8-88be-45e5-b6cf-5719368ed97b\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: text; gutter: true; theme: Confluence\" data-theme=\"Confluence\">pip show werkzeug|grep Version\n</pre>\n</div></div><p>If the version displayed is different than 0.8.3 then follow the below steps.</p><ul><li>Stop OpenERP service</li></ul><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4bf64ef2-314b-4a22-a4ca-d88bbf92f614\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: text; gutter: true; theme: Confluence\" data-theme=\"Confluence\">sudo service openerp stop\n</pre>\n</div></div><p><br/></p><ul><li>Downgrade the version using the command</li></ul><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9d7e6fd2-c747-4c2b-8020-b611d60bfb67\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: text; gutter: true; theme: Confluence\" data-theme=\"Confluence\">sudo pip install werkzeug==0.8.3</pre>\n</div></div><p><br/></p><ul><li>Verify the version after downgrade. It should point to 0.8.3</li></ul><p><br/></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b87e42d4-3246-4e16-9e76-9884b0678a78\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: text; gutter: true; theme: Confluence\" data-theme=\"Confluence\">pip show werkzeug|grep Version</pre>\n</div></div><p><br/></p><ul><li>Start OpenERP service</li></ul><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b359ae38-020a-416f-8858-a3bbb1829cf0\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: text; gutter: true; theme: Confluence\" data-theme=\"Confluence\">sudo service openerp start\n</pre>\n</div></div><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p style=\"margin-left: 30.0px;\"><br/></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/111411249"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/111411249/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/111411249/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 5
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/111411249/child",
+    "restrictions": "/rest/api/content/111411249/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/111411249/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=111411249",
+    "webui": "/spaces/BAH/pages/111411249/OpenERP+client+error+Unexpected+end+of+JSON+Input+when+printing+the+purchase+order",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/111411249",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/111411249",
+    "tinyui": "/x/MQCkBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

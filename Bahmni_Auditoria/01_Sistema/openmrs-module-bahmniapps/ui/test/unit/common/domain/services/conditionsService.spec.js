@@ -1,0 +1,142 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public License,
+ * v. 2.0. If a copy of the MPL was not distributed with this file, You can
+ * obtain one at https://www.bahmni.org/license/mplv2hd.
+ *
+ * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
+ * graphic logo is a trademark of OpenMRS Inc.
+ */
+
+'use strict';
+
+describe("conditionsService", function () {
+    var _$http;
+    var _provide;
+    var conditionsService;
+
+    beforeEach(function () {
+        module('bahmni.common.domain');
+        module(function ($provide) {
+            _$http = jasmine.createSpyObj('$http', ['post', 'get', 'delete']);
+            _provide = $provide;
+            _provide.value('$http', _$http);
+        });
+        inject(function (_conditionsService_) {
+            conditionsService = _conditionsService_;
+        });
+    });
+
+    describe("save", function () {
+        it("should map before saving", function (done) {
+            var conditions = [{
+                unwantedProperty:'unwantedProperty'
+            }];
+
+            _$http.post.and.returnValue(specUtil.respondWithPromise(Q, {data: []}));
+
+            conditionsService.save(conditions, 'patientUuid').then(function () {
+                expect(_$http.post.calls.mostRecent().args[0]).toEqual(Bahmni.Common.Constants.conditionUrl);
+                expect(_$http.post.calls.mostRecent().args[1].unwantedProperty).toBeUndefined();
+            }).catch(notifyError).finally(done);
+        });
+
+        it("should skip conditions that already have a uuid (already persisted, unchanged)", function (done) {
+            var conditions = [{
+                uuid: 'existing-uuid',
+                concept: { uuid: 'concept-uuid' },
+                status: 'ACTIVE',
+                onSetDate: '2024-01-01'
+            }];
+
+            conditionsService.save(conditions, 'patientUuid').then(function () {
+                expect(_$http.post).not.toHaveBeenCalled();
+            }).catch(notifyError).finally(done);
+        });
+
+        it("should POST when condition has no uuid (new condition)", function (done) {
+            var conditions = [{
+                concept: { uuid: 'concept-uuid' },
+                status: 'ACTIVE',
+                onSetDate: '2024-01-01'
+            }];
+
+            _$http.post.and.returnValue(specUtil.respondWithPromise(Q, {data: {}}));
+
+            conditionsService.save(conditions, 'patientUuid').then(function () {
+                expect(_$http.post).toHaveBeenCalled();
+                expect(_$http.post.calls.mostRecent().args[0]).toEqual(Bahmni.Common.Constants.conditionUrl);
+            }).catch(notifyError).finally(done);
+        });
+
+        it("should DELETE the old record then POST the new one when a condition was modified", function (done) {
+            var conditions = [{
+                _previousUuid: 'old-uuid',
+                concept: { uuid: 'concept-uuid' },
+                status: 'INACTIVE',
+                onSetDate: '2024-01-01'
+            }];
+
+            _$http.delete.and.returnValue(specUtil.respondWithPromise(Q, {data: {}}));
+            _$http.post.and.returnValue(specUtil.respondWithPromise(Q, {data: {}}));
+
+            conditionsService.save(conditions, 'patientUuid').then(function () {
+                expect(_$http.delete).toHaveBeenCalled();
+                expect(_$http.delete.calls.mostRecent().args[0]).toEqual(Bahmni.Common.Constants.conditionUrl + '/old-uuid');
+                expect(_$http.post).toHaveBeenCalled();
+                expect(_$http.post.calls.mostRecent().args[0]).toEqual(Bahmni.Common.Constants.conditionUrl);
+            }).catch(notifyError).finally(done);
+        });
+    });
+
+    describe("getConditionHistory",function () {
+        it("should fetch from condition History Url",function (done) {
+            _$http.get.and.returnValue(specUtil.respondWithPromise(Q, {data: {results: []}}));
+
+            conditionsService.getConditionHistory('patientUuid').then(function () {
+                expect(_$http.get.calls.mostRecent().args[0]).toEqual(Bahmni.Common.Constants.conditionHistoryUrl);
+                expect(_$http.get.calls.mostRecent().args[1].params.patientUuid).toBe('patientUuid');
+                expect(_$http.get.calls.mostRecent().args[1].params.v).toBe('full');
+                expect(_$http.get.calls.mostRecent().args[1].params.includeInactive).toBe(true);
+            }).catch(notifyError).finally(done);
+        });
+    });
+    
+    describe("getConditions",function () {
+        it("should fetch and transform conditions",function (done) {
+            var mockResponse = {
+                data: {
+                    results: [
+                        {
+                            uuid: '001',
+                            condition: {
+                                coded: {uuid: 'concept-uuid', display: 'Headache'}
+                            },
+                            clinicalStatus: 'ACTIVE',
+                            onsetDate: '2017-01-01',
+                            voided: false
+                        }
+                    ]
+                }
+            };
+            _$http.get.and.returnValue(specUtil.respondWithPromise(Q, mockResponse));
+
+            conditionsService.getConditions('patientUuid').then(function (conditions) {
+                expect(_$http.get.calls.mostRecent().args[0]).toEqual(Bahmni.Common.Constants.conditionHistoryUrl);
+                expect(conditions).toBeDefined();
+                expect(conditions.length).toBeGreaterThan(0);
+            }).catch(notifyError).finally(done);
+        });
+    });
+
+    describe("getFollowUpConditionConcept",function () {
+        it("should fetch from conceptSearchByFullNameUrl",function (done) {
+            _$http.get.and.returnValue(specUtil.respondWithPromise(Q, {data: []}));
+
+            conditionsService.getFollowUpConditionConcept().then(function () {
+                expect(_$http.get.calls.mostRecent().args[0]).toEqual(Bahmni.Common.Constants.conceptSearchByFullNameUrl);
+                expect(_$http.get.calls.mostRecent().args[1].params.name).toBe(Bahmni.Common.Constants.followUpConditionConcept);
+                expect(_$http.get.calls.mostRecent().args[1].params.v).toBe("custom:(uuid,name:(name))");
+            }).catch(notifyError).finally(done);
+        });
+    });
+});

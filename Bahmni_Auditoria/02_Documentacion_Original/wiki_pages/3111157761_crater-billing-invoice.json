@@ -1,0 +1,172 @@
+{
+  "id": "3111157761",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3111157761",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzExMTE1Nzc2MQ==",
+  "status": "current",
+  "title": "Crater Billing & Invoice",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "62250c4449c9000070215704",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gokul Kuppan",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/62250c4449c9000070215704",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gokul Kuppan",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=62250c4449c9000070215704"
+      }
+    },
+    "createdDate": "2022-11-25T05:58:51.684Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3111157761/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2023-06-15T09:44:48.353Z",
+    "friendlyWhen": "Jun 15, 2023",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "syncRev": "0.h_b6X6p9Dt0a-V_3pqlP4g.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$3111157761.42",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3111157761"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3111157761/version/4"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"single\"><ac:layout-cell><p><span class=\"conf-macro output-inline\" style=\"color: rgb(0,0,0);\">Bahmni integrates OpenMRS with <a href=\"https://craterapp.com/\">Crater</a> (version 6.0.6), an open source product. Through Crater, you can then manage Customers, Billing, Payments and invoice etc.&nbsp;</span><span>Before you start using Crater, you need to setup Crater as per your operational needs. This is only meant to be a guide for effectively working with the rest of Bahmni components (mainly EMR).&nbsp; For comprehensive guide on setup and usage of Crater, please refer to the <a href=\"https://docs.craterapp.com/\">Crater documentation</a>.</span></p><p><span>To install crater with Bahmni, please refer to Bahmni <strong>Lite</strong> Docker installation setup:&nbsp;<ac:link><ri:page ri:content-title=\"Getting Started Quickly with Bahmni on Docker\" ri:version-at-save=\"40\" /></ac:link> </span></p><p><br /></p><p><span><ac:image ac:height=\"400\"><ri:attachment ri:filename=\"image2023-6-15_14-8-22.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p class=\"auto-cursor-target\"><span style=\"color: rgb(0,0,0);\">The pages listed below assist you to setup and configure Crater to work effectively in conjunction with Bahmni Clinical functions.</span></p></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"three_equal\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"75cc2741-ab64-44c9-b537-0a202bfb8299\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">Sections</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"28bbf201-d4bb-472c-865e-0ceb60581fb2\"><ac:parameter ac:name=\"all\">true</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3111157761"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout single\" data-layout=\"single\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p><span class=\"conf-macro output-inline legacy-color-text-default\">Bahmni integrates OpenMRS with <a class=\"external-link\" href=\"https://craterapp.com/\" rel=\"nofollow\">Crater</a> (version 6.0.6), an open source product. Through Crater, you can then manage Customers, Billing, Payments and invoice etc. </span><span>Before you start using Crater, you need to setup Crater as per your operational needs. This is only meant to be a guide for effectively working with the rest of Bahmni components (mainly EMR).  For comprehensive guide on setup and usage of Crater, please refer to the <a class=\"external-link\" href=\"https://docs.craterapp.com/\" rel=\"nofollow\">Crater documentation</a>.</span></p><p><span>To install crater with Bahmni, please refer to Bahmni <strong>Lite</strong> Docker installation setup: <a href=\"/wiki/spaces/BAH/pages/3117744129/Getting+Started+Quickly+with+Bahmni+on+Docker\" data-linked-resource-id=\"3117744129\" data-linked-resource-version=\"49\" data-linked-resource-type=\"page\">Getting Started Quickly with Bahmni on Docker</a> </span></p><p><br/></p><p><span><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"400\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3111157761/image2023-6-15_14-8-22.png?version=1&amp;modificationDate=1686818305354&amp;cacheVersion=1&amp;api=v2&amp;width=800&amp;height=400\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3111157761/image2023-6-15_14-8-22.png?version=1&amp;modificationDate=1686818305354&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3197796392\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2023-6-15_14-8-22.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3111157761\" data-linked-resource-container-version=\"4\" data-media-id=\"98f0c53a-f377-493c-bb4f-6fa0bdd21b37\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3111157761/image2023-6-15_14-8-22.png?version=1&amp;modificationDate=1686818305354&amp;cacheVersion=1&amp;api=v2&amp;width=1280&amp;height=640 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3111157761/image2023-6-15_14-8-22.png?version=1&amp;modificationDate=1686818305354&amp;cacheVersion=1&amp;api=v2&amp;width=800&amp;height=400 1x\"></span></span></p><p class=\"auto-cursor-target\"><span class=\"legacy-color-text-default\">The pages listed below assist you to setup and configure Crater to work effectively in conjunction with Bahmni Clinical functions.</span></p></div>\n</div>\n</div>\n<div class=\"columnLayout three-equal\" data-layout=\"three-equal\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"75cc2741-ab64-44c9-b537-0a202bfb8299\" data-macro-name=\"tip\"><p class=\"title\">Sections</p><div class=\"confluence-information-macro-body\"><p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"28bbf201-d4bb-472c-865e-0ceb60581fb2\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/3110207654/Crater+Customization\" data-linked-resource-id=\"3110207654\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Crater Customization</a></li></ul><p> </p></div></div></div>\n</div>\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n</div>\n</div>\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n</div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3111157761"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3111157761/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3111157761/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 400058309
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3111157761/child",
+    "restrictions": "/rest/api/content/3111157761/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3111157761/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3111157761",
+    "webui": "/spaces/BAH/pages/3111157761/Crater+Billing+Invoice",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3111157761",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3111157761",
+    "tinyui": "/x/AYBwuQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

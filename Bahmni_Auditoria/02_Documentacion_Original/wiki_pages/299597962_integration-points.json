@@ -1,0 +1,170 @@
+{
+  "id": "299597962",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/299597962",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjk5NTk3OTYy",
+  "status": "current",
+  "title": "Integration Points",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "createdDate": "2017-11-24T10:29:36.301Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/299597962/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "when": "2017-11-26T08:33:40.769Z",
+    "friendlyWhen": "Nov 26, 2017",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "syncRev": "0.H13HkwBIXY1QO-_claUggA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$299597962.62",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/299597962"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/299597962/version/4"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>About Integration Points&nbsp;</h2><p><span>When getting the data for appointments, if users would want to display additional information per appointment from other modules in Bahmni.</span></p><p><span>This can be made possible by extending the interface ''</span><span>AppointmentResponseExtension'' and implementing the run method which takes appointment as input and returns a map of attributes. </span><span>The returned map values are added to the appointments additional information</span></p><h2>How to set up&nbsp;</h2><p>This extension code should be added in the implementation specific omods.</p><p><span style=\"margin-left: 0.0px;\">1.&nbsp;Add appointments module as required module in the </span><span>&nbsp;omod/src/main/resources/config.xml</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"65d7fa6f-adcc-4d4a-8520-5c86dedd6b9d\"><ac:parameter ac:name=\"language\">xml</ac:parameter><ac:plain-text-body><![CDATA[<require_module>org.openmrs.module.appointments</require_module>]]></ac:plain-text-body></ac:structured-macro><p>2. Add appointments module dependency in the pom.xml</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"bed290a0-d064-4aae-9dea-fcf70de29e98\"><ac:parameter ac:name=\"language\">xml</ac:parameter><ac:plain-text-body><![CDATA[<dependency>\n   <groupId>org.openmrs.module</groupId>\n   <artifactId>appointments-omod</artifactId>\n   <version>1.0-SNAPSHOT</version>\n   <scope>provided</scope>\n</dependency>]]></ac:plain-text-body></ac:structured-macro><p><span>3. Implement extension point</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"507be31e-237b-411c-9f8c-33fef748e330\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[@Component\npublic class PatientBedDetails implements AppointmentResponseExtension {\n   @Override\n   public Map<String, String> run(Appointment appointment) {\n       Map<String, String> additionalInfo = new HashMap<>();\n       BedManagementService bedManagementService = Context.getService(BedManagementService.class);\n       BedDetails bedDetails = bedManagementService.getBedAssignmentDetailsByPatient(appointment.getPatient());\n       if(bedDetails!= null) {\n           additionalInfo.put(\"LOCATION_KEY\", bedDetails.getPhysicalLocation().getName());\n           additionalInfo.put(\"BED_NUMBER_KEY\", bedDetails.getBedNumber());\n       }\n       return additionalInfo;\n   }\n}]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"37e336dd-c97b-4c9b-b0e2-bec9631e1bfa\"><ac:parameter ac:name=\"title\">Note</ac:parameter><ac:rich-text-body><ol><li><span style=\"color: rgb(51,51,51);\">In the code above , you can use any service to fetch the relevant data from the database</span></li><li><span style=\"color: rgb(51,51,51);\"><span style=\"color: rgb(51,51,51);\">As an Example we taken bedDetails. You can use relevant model, as per the use case, to get the data.</span></span></li></ol></ac:rich-text-body></ac:structured-macro><p><br /></p><p><br /></p><p><br /></p><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"3ddaab34-1f85-4e7d-9246-8c3d0b6d7639\"><ac:parameter ac:name=\"title\">On This Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"f68c96e2-e787-4bfc-8876-768476c34b9d\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/299597962"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\"><style>[data-colorid=bterrirxvg]{color:#333333} html[data-color-mode=dark] [data-colorid=bterrirxvg]{color:#cccccc}[data-colorid=nridvrj2au]{color:#333333} html[data-color-mode=dark] [data-colorid=nridvrj2au]{color:#cccccc}[data-colorid=mz3hdx93se]{color:#333333} html[data-color-mode=dark] [data-colorid=mz3hdx93se]{color:#cccccc}</style>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"IntegrationPoints-AboutIntegrationPoints\">About Integration Points&nbsp;</h2><p><span>When getting the data for appointments, if users would want to display additional information per appointment from other modules in Bahmni.</span></p><p><span>This can be made possible by extending the interface ''</span><span>AppointmentResponseExtension'' and implementing the run method which takes appointment as input and returns a map of attributes. </span><span>The returned map values are added to the appointments additional information</span></p><h2 id=\"IntegrationPoints-Howtosetup\">How to set up&nbsp;</h2><p>This extension code should be added in the implementation specific omods.</p><p><span style=\"margin-left: 0.0px;\">1.&nbsp;Add appointments module as required module in the </span><span>&nbsp;omod/src/main/resources/config.xml</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"65d7fa6f-adcc-4d4a-8520-5c86dedd6b9d\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: xml; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&lt;require_module&gt;org.openmrs.module.appointments&lt;/require_module&gt;</pre>\n</div></div><p>2. Add appointments module dependency in the pom.xml</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"bed290a0-d064-4aae-9dea-fcf70de29e98\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: xml; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&lt;dependency&gt;\n&nbsp;&nbsp;&nbsp;&lt;groupId&gt;org.openmrs.module&lt;/groupId&gt;\n&nbsp;&nbsp;&nbsp;&lt;artifactId&gt;appointments-omod&lt;/artifactId&gt;\n&nbsp;&nbsp;&nbsp;&lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;\n&nbsp;&nbsp;&nbsp;&lt;scope&gt;provided&lt;/scope&gt;\n&lt;/dependency&gt;</pre>\n</div></div><p><span>3. Implement extension point</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"507be31e-237b-411c-9f8c-33fef748e330\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: java; gutter: false; theme: Confluence\" data-theme=\"Confluence\">@Component\npublic class PatientBedDetails implements AppointmentResponseExtension {\n&nbsp;&nbsp;&nbsp;@Override\n&nbsp;&nbsp;&nbsp;public Map&lt;String, String&gt; run(Appointment appointment) {\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Map&lt;String, String&gt; additionalInfo = new HashMap&lt;&gt;();\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BedManagementService bedManagementService = Context.getService(BedManagementService.class);\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BedDetails bedDetails = bedManagementService.getBedAssignmentDetailsByPatient(appointment.getPatient());\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(bedDetails!= null) {\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additionalInfo.put(&quot;LOCATION_KEY&quot;, bedDetails.getPhysicalLocation().getName());\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additionalInfo.put(&quot;BED_NUMBER_KEY&quot;, bedDetails.getBedNumber());\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return additionalInfo;\n&nbsp;&nbsp;&nbsp;}\n}</pre>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"37e336dd-c97b-4c9b-b0e2-bec9631e1bfa\" data-macro-name=\"info\"><p class=\"title\">Note</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><ol><li><span data-colorid=\"bterrirxvg\">In the code above , you can use any service to fetch the relevant data from the database</span></li><li><span data-colorid=\"mz3hdx93se\"><span data-colorid=\"nridvrj2au\">As an Example we taken bedDetails. You can use relevant model, as per the use case, to get the data.</span></span></li></ol></div></div><p><br /></p><p><br /></p><p><br /></p><p><br /></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3ddaab34-1f85-4e7d-9246-8c3d0b6d7639\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>On This Page</b></div><div class=\"panelContent\">\n<p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"f68c96e2-e787-4bfc-8876-768476c34b9d\" data-macro-name=\"toc\"> </div><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/299597962"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/299597962/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/299597962/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 625347934
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/299597962/child",
+    "restrictions": "/rest/api/content/299597962/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/299597962/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=299597962",
+    "webui": "/spaces/BAH/pages/299597962/Integration+Points",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/299597962",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/299597962",
+    "tinyui": "/x/ioDbEQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

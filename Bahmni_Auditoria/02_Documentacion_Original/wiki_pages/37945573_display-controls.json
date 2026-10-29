@@ -1,0 +1,179 @@
+{
+  "id": "37945573",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/37945573",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzc5NDU1NzM=",
+  "status": "current",
+  "title": "Display Controls",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:c54772f2-46b5-43c0-be04-96923ee59750",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Vinay Venu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:c54772f2-46b5-43c0-be04-96923ee59750",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Vinay Venu",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:c54772f2-46b5-43c0-be04-96923ee59750"
+      }
+    },
+    "createdDate": "2016-01-21T06:21:54.798Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945573/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:5f7b22cd-80df-411d-b437-6bd8b4723a5e",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Ramashish Joshi",
+      "timeZone": "America/Chicago",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:5f7b22cd-80df-411d-b437-6bd8b4723a5e",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Ramashish Joshi",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:5f7b22cd-80df-411d-b437-6bd8b4723a5e"
+      }
+    },
+    "when": "2020-10-14T16:00:44.668Z",
+    "friendlyWhen": "Oct 14, 2020",
+    "message": "",
+    "number": 155,
+    "minorEdit": false,
+    "syncRev": "0.Tjo-qvxCRF2lm-IewwCWeg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$37945573.409",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/37945573"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945573/version/155"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h1>Purpose</h1><p>Display controls are widgets that can be added to various pages to better configure them. They can be customized to show specific information and will automatically align to the context of the screen. For example, a Treatment Display Control on the Patient Dashboard may show all treatments for a patient, but will limit treatments for a single visit when used on the Visit page.&nbsp;</p><p>You can find information on how to show/hide display controls on the dashboard <ac:link><ri:page ri:content-title=\"Show/Hide Display Controls based on data\" ri:version-at-save=\"3\" /><ac:plain-text-link-body><![CDATA[here]]></ac:plain-text-link-body></ac:link>.</p><p><ac:link><ri:page ri:content-title=\"Configure Display Controls in Print\" ri:version-at-save=\"5\" /><ac:plain-text-link-body><![CDATA[Refer this ]]></ac:plain-text-link-body></ac:link>to configure display controls in print</p><h1>List of Display Controls</h1><p>Below is a list of Bahmni Display Controls</p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"9dc83234-155d-4544-8489-48fb3e191f4d\"><ac:parameter ac:name=\"titleColor\">White</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#F17D50</ac:parameter><ac:parameter ac:name=\"title\">Bahmni Display Controls</ac:parameter><ac:rich-text-body><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"7e34c460-a69c-4d6f-b992-42f51c9b4df3\"><ac:parameter ac:name=\"all\">true</ac:parameter><ac:parameter ac:name=\"style\">h3</ac:parameter><ac:parameter ac:name=\"sort\">title</ac:parameter><ac:parameter ac:name=\"excerptType\">simple</ac:parameter></ac:structured-macro></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"b442ac28-2ea7-484c-a964-d0384dbe672a\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"966aa2b6-fc4f-4a2d-ae92-4d1396993b3b\"><ac:parameter ac:name=\"maxLevel\">2</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/37945573"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h1 id=\"DisplayControls-Purpose\">Purpose</h1><p>Display controls are widgets that can be added to various pages to better configure them. They can be customized to show specific information and will automatically align to the context of the screen. For example, a Treatment Display Control on the Patient Dashboard may show all treatments for a patient, but will limit treatments for a single visit when used on the Visit page. </p><p>You can find information on how to show/hide display controls on the dashboard <a href=\"/wiki/spaces/BAH/pages/115973098/Show+Hide+Display+Controls+based+on+data\" data-linked-resource-id=\"115973098\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">here</a>.</p><p><a href=\"/wiki/spaces/BAH/pages/72581122/Configure+Display+Controls+in+Print\" data-linked-resource-id=\"72581122\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Refer this </a>to configure display controls in print</p><h1 id=\"DisplayControls-ListofDisplayControls\">List of Display Controls</h1><p>Below is a list of Bahmni Display Controls</p><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9dc83234-155d-4544-8489-48fb3e191f4d\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #F17D50;color: White;\"><b>Bahmni Display Controls</b></div><div class=\"panelContent\">\n<div class=\"conf-macro output-block\" data-hasbody=\"false\" data-macro-name=\"children\" data-macro-id=\"7e34c460-a69c-4d6f-b992-42f51c9b4df3\"><h3><a href=\"/wiki/spaces/BAH/pages/114186103/Clinical+Observation+Controls\" data-linked-resource-id=\"114186103\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Clinical Observation Controls</a></h3>\n<ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/102891583/Diagnosis+Control\" data-linked-resource-id=\"102891583\" data-linked-resource-version=\"29\" data-linked-resource-type=\"page\">Diagnosis Control</a> — <span class=\"smalltext\">It is used for the clinician to easily view a list of all diagnoses (with in configured number of visits) that the patient is diagnosed.</span></li><li><a href=\"/wiki/spaces/BAH/pages/114186506/Disease+Template+Control\" data-linked-resource-id=\"114186506\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Disease Template Control</a> — <span class=\"smalltext\">Disease Template Control can be configured to display all the observation values captured against the particular disease like Cancer, Diabetes or TB.</span></li><li><a href=\"/wiki/spaces/BAH/pages/98402388/Forms+Display+Control\" data-linked-resource-id=\"98402388\" data-linked-resource-version=\"33\" data-linked-resource-type=\"page\">Forms Display Control</a> — <span class=\"smalltext\">It is used to list the Forms or Observation Templates that have been created within the configured number visits with a provision to view details and edit from/template from this control.</span><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/3505586199/New+Forms+React+Display+Control\" data-linked-resource-id=\"3505586199\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">New Forms React Display Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/3562766355/Print+Forms\" data-linked-resource-id=\"3562766355\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Print Forms</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/114188767/Observation+Control\" data-linked-resource-id=\"114188767\" data-linked-resource-version=\"15\" data-linked-resource-type=\"page\">Observation Control</a> — <span class=\"smalltext\">Observation Control can be configured to display all the observation values captured against the configured concepts (and within the configured number of visits). This control also has a provision to add initial and latest observation value (across all visits). The control can display values in a grid (tabular format, one column for each visit) or in section format (one for each visit).</span></li><li><a href=\"/wiki/spaces/BAH/pages/98402359/Obs+To+Obs+FlowSheet\" data-linked-resource-id=\"98402359\" data-linked-resource-version=\"56\" data-linked-resource-type=\"page\">Obs To Obs FlowSheet</a> — <span class=\"smalltext\">Obs To Obs Flowsheet is configured to view the observation data in tabular format. It will display the observation value vs multiple observation values. There is a provision to configure editing observations from this control.</span></li></ul><h3><a href=\"/wiki/spaces/BAH/pages/93716500/Custom+Controls\" data-linked-resource-id=\"93716500\" data-linked-resource-version=\"20\" data-linked-resource-type=\"page\">Custom Controls</a></h3>\n<p>Bahmni allows implementers to create their own Custom Controls. The examples include:</p>\n<ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/700088324/Appointments+Display+Control\" data-linked-resource-id=\"700088324\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">Appointments Display Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114217801/Birth+Certificate\" data-linked-resource-id=\"114217801\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Birth Certificate</a> — <span class=\"smalltext\">It can be used to create a control to add a Birth Certificate</span></li><li><a href=\"/wiki/spaces/BAH/pages/99647502/Patient+Monitoring+Tool\" data-linked-resource-id=\"99647502\" data-linked-resource-version=\"28\" data-linked-resource-type=\"page\">Patient Monitoring Tool</a> — <span class=\"smalltext\">It gives a visual representation of the planned treatment schedule for the patient, the patient's current position in the treatment schedule and missed or erroneously captured data.</span></li></ul><h3><a href=\"/wiki/spaces/BAH/pages/114204226/In-Patient+Department+IPD+Controls\" data-linked-resource-id=\"114204226\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">In-Patient Department (IPD) Controls</a></h3>\n<ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/114204313/Admission+Details+Control\" data-linked-resource-id=\"114204313\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Admission Details Control</a> — <span class=\"smalltext\">Admission Details Control is used to list the details of the patient like Bed and Ward number where the patient got assigned, Admission Date and Notes, Discharge Date and Notes details.</span></li><li><a href=\"/wiki/spaces/BAH/pages/114204754/Disposition+Control\" data-linked-resource-id=\"114204754\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Disposition Control</a> — <span class=\"smalltext\">Disposition Control is used to list the actions/instructions given to that patient by the doctors. The instructions are like &quot;Admit to the hospital&quot;, &quot;Discharge from the hospital&quot;, &quot;Transfer to a different ward/bed”..etc</span></li></ul><h3><a href=\"/wiki/spaces/BAH/pages/114206048/Lab+and+Radiology+Controls\" data-linked-resource-id=\"114206048\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Lab and Radiology Controls</a></h3>\n<ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/114206168/Bacteriology+Results+Control\" data-linked-resource-id=\"114206168\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Bacteriology Results Control</a> — <span class=\"smalltext\">Bacteriology results control is used to list the bacteriology samples and the corresponding results captured against those samples (for a particular patient)</span></li><li><a href=\"/wiki/spaces/BAH/pages/114206305/Lab+Order+Control\" data-linked-resource-id=\"114206305\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Lab Order Control</a> — <span class=\"smalltext\">This Control is used to list all the lab orders and the results captured against those orders for a particular patient.</span></li><li><a href=\"/wiki/spaces/BAH/pages/114206500/Order+Fulfillment+Control\" data-linked-resource-id=\"114206500\" data-linked-resource-version=\"9\" data-linked-resource-type=\"page\">Order Fulfillment Control</a> — <span class=\"smalltext\">It displays all the orders (for configured number of visits) and their corresponding fulfillment details for an orderType configured.</span></li><li><a href=\"/wiki/spaces/BAH/pages/114206820/PACS+Orders+Control\" data-linked-resource-id=\"114206820\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">PACS Orders Control</a> — <span class=\"smalltext\">This Control is used to list all the Pacs Orders and the corresponding results for a particular patient.</span></li><li><a href=\"/wiki/spaces/BAH/pages/114207086/Radiology+Control\" data-linked-resource-id=\"114207086\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Radiology Control</a> — <span class=\"smalltext\">Radiology Control is used to list the Radiology Orders given to the patient for that particular visit.</span></li></ul><h3><a href=\"/wiki/spaces/BAH/pages/114207149/Medication+Controls\" data-linked-resource-id=\"114207149\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Medication Controls</a></h3>\n<ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/114207300/Chronic+Treatment+Chart+Control\" data-linked-resource-id=\"114207300\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Chronic Treatment Chart Control</a> — <span class=\"smalltext\">The drugogram or the chronic treatment chart is a display that shows the current drug regimen of a patient enrolled into a treatment which involves a varying set of drugs over the course of the treatment.</span></li><li><a href=\"/wiki/spaces/BAH/pages/98402409/Drug+Order+Treatment+Details+Control\" data-linked-resource-id=\"98402409\" data-linked-resource-version=\"13\" data-linked-resource-type=\"page\">Drug Order / Treatment Details Control</a> — <span class=\"smalltext\">This control can be configured to view the drug order details (prescription details) for a particular patient.</span></li><li><a href=\"/wiki/spaces/BAH/pages/3152838666/Sending+prescription+to+patients\" data-linked-resource-id=\"3152838666\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Sending prescription to patients</a></li><li><a href=\"/wiki/spaces/BAH/pages/114746475/Treatment+Details+Control\" data-linked-resource-id=\"114746475\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Treatment Details Control</a> — <span class=\"smalltext\">Treatment/Drug Details Control can be configured to display all the the prescription or drug order details (for configured number of visits).</span></li><li><a href=\"/wiki/spaces/BAH/pages/99123216/Treatment+Display+Control\" data-linked-resource-id=\"99123216\" data-linked-resource-version=\"20\" data-linked-resource-type=\"page\">Treatment Display Control</a> — <span class=\"smalltext\">Treatment/Drug Order Control can be configured to display all the the prescription or drug order details (for configured number of visits) for particular patient.</span></li></ul><h3><a href=\"/wiki/spaces/BAH/pages/114218923/Miscellaneous+Controls\" data-linked-resource-id=\"114218923\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Miscellaneous Controls</a></h3>\n<ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/114219028/Navigation+Links+Control\" data-linked-resource-id=\"114219028\" data-linked-resource-version=\"7\" data-linked-resource-type=\"page\">Navigation Links Control</a> — <span class=\"smalltext\">Navigation Links Control can be configured to list the links of required pages. Clicking on the link will help navigate to that particular page. One can use the default links that are provided or can also configure custom links.</span></li></ul><h3><a href=\"/wiki/spaces/BAH/pages/114227069/Patient+Controls\" data-linked-resource-id=\"114227069\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Patient Controls</a></h3>\n<ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/114227194/Patient+Context+Display+Control\" data-linked-resource-id=\"114227194\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Patient Context Display Control</a> — <span class=\"smalltext\">It helps the clinician to easily view patient information on all the pages in clinical app. It can also be configured to display core patient data like name, identifier, gender, age by default.</span></li><li><a href=\"/wiki/spaces/BAH/pages/114227474/Patient+Profile+Control\" data-linked-resource-id=\"114227474\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Patient Profile Control</a> — <span class=\"smalltext\">Patient Profile Control can be configured to show all the patient related information such as name, gender, date of birth, identifier, address, relationships, patient or person attributes etc.</span></li><li><a href=\"/wiki/spaces/BAH/pages/100139014/Visit+Control\" data-linked-resource-id=\"100139014\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Visit Control</a> — <span class=\"smalltext\">It displays the visit information of a patient along with start date, end date and the type of the visit. The active/current visit is marked with an asterisk (*).</span></li></ul><h3><a href=\"/wiki/spaces/BAH/pages/115973098/Show+Hide+Display+Controls+based+on+data\" data-linked-resource-id=\"115973098\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Show/Hide Display Controls based on data</a></h3>\n<h3><a href=\"/wiki/spaces/BAH/pages/114227604/Tracking+Controls\" data-linked-resource-id=\"114227604\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Tracking Controls</a></h3>\n<ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/114227756/Flowsheet+Control\" data-linked-resource-id=\"114227756\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Flowsheet Control</a> — <span class=\"smalltext\">It is a tabular control for showing Observations, Lab Tests and Drugs/Prescriptions (for configured concepts) across time, grouped by Visit or Encounter for a particular patient.</span></li><li><a href=\"/wiki/spaces/BAH/pages/114228167/Graph+Control\" data-linked-resource-id=\"114228167\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Graph Control</a> — <span class=\"smalltext\">Observation Graph Control is configured to display the observations values as a graph against observation date time, age or any other concept for configured number of visits.</span></li><li><a href=\"/wiki/spaces/BAH/pages/100139061/Programs+Display+Control\" data-linked-resource-id=\"100139061\" data-linked-resource-version=\"9\" data-linked-resource-type=\"page\">Programs Display Control</a> — <span class=\"smalltext\">A patient can be enrolled into one or more programs such as TB, Malaria, HIV, ANC, etc. The programs display control will show all the list of active and inactive programs for a patient.This control cannot be configured on Visit dashboard.</span></li></ul></div>\n</div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b442ac28-2ea7-484c-a964-d0384dbe672a\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2\" data-macro-id=\"966aa2b6-fc4f-4a2d-ae92-4d1396993b3b\" data-macro-name=\"toc\"> </div><p> </p></div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/37945573"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "review-needed",
+          "id": "30146561",
+          "label": "review-needed"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 1,
+      "_links": {
+        "next": "/rest/api/content/37945573/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945573/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 219
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/37945573/child",
+    "restrictions": "/rest/api/content/37945573/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/37945573/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=37945573",
+    "webui": "/spaces/BAH/pages/37945573/Display+Controls",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/37945573",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945573",
+    "tinyui": "/x/5QBDAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "id": "3117613282",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3117613282",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzExNzYxMzI4Mg==",
+  "status": "current",
+  "title": "Running with Poor or No Internet Connectivity (docker)",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "70121:ef0ffadd-a1ee-4520-8b14-2664a7e7208d",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:ef0ffadd-a1ee-4520-8b14-2664a7e7208d",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:ef0ffadd-a1ee-4520-8b14-2664a7e7208d"
+      }
+    },
+    "createdDate": "2022-12-09T08:06:15.534Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117613282/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2023-12-10T14:06:30.700Z",
+    "friendlyWhen": "Dec 10, 2023",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "syncRev": "0.confluence$content$3117613282.35",
+    "syncRevSource": "synchrony-ack",
+    "ncsStepVersion": "181",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3117613282.42",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3117613282"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117613282/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\" ac:breakout-mode=\"default\"><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"effc42d0-02bf-4bb9-8130-c37c68d6de9e\"><ac:rich-text-body><p>This method explains how to copy docker images from one machine to another (via USB/network/etc) without relying on a docker hub service. </p></ac:rich-text-body></ac:structured-macro><p>Installing Bahmni using docker-compose would require better internet connectivity since the individual Bahmni services/application images (odoo, openmrs, reports, implementer interface etc) needs to be downloaded on the host machine before running the containers. This would be a challenge for facilities where there is poor to no internet connectivity. Please follow below steps as a work-around to perform the installation</p><ul><li><p>Download and create archive backup for all Bahmni application images at the location <strong>where you have internet connectivity</strong></p></li></ul><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"0f62089b-3a22-4c70-bdad-fb6034529e04\"><ac:plain-text-body><![CDATA[docker pull bahmni/bahmni-web\ndocker save bahmni/bahmni-web > bahmni_web.tar]]></ac:plain-text-body></ac:structured-macro><p>If you have capacity constrains, you can also gzip the archive and make the backup smaller</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"12da5705-e0ae-4a97-ba2f-82ad26421967\"><ac:plain-text-body><![CDATA[docker save bahmni/bahmni-web | gzip > bahmni_web.tar.gz]]></ac:plain-text-body></ac:structured-macro><p><strong>Note</strong>: please check the <a href=\"https://github.com/Bahmni/bahmni-docker/blob/master/docker-compose.yml\">bahmni docker-compose</a> for the list of services/application images that you would need to download and create archive e.g. bahmni/openmrs, bahmni/implementer-interface etc. Also note that if you prefer a specific version of the image then add a tag e.g. <code>docker pull bahmni/bahmni-web:1.0.0</code></p><ul><li><p>Once you have the archives, you can easily port these into usb hard drive or pen drive</p></li><li><p>You can then mount the usb pen drive to your host machine and load docker images from the archive</p></li></ul><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"51bb4194-cddb-461a-8cfb-13e6f1be6984\"><ac:plain-text-body><![CDATA[docker load --input bahmni_web.tar\n\n# Show all docker images on the machine\ndocker images]]></ac:plain-text-body></ac:structured-macro><ul><li><p>Once all the images are loaded onto the host machine, you can follow the usual <ac:link><ri:page ri:content-title=\"Getting Started Quickly with Bahmni on Docker\" ri:version-at-save=\"46\" /><ac:link-body>docker compose setup steps</ac:link-body></ac:link> to run Bahmni.</p></li></ul></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"b7216754-380b-4d66-af57-fd3cf9ff4d75\"><ac:rich-text-body><p><strong>Running Bahmni On Docker</strong></p></ac:rich-text-body></ac:structured-macro><p><ac:structured-macro ac:name=\"pagetree\" ac:schema-version=\"1\" ac:local-id=\"a963caad-f3e3-4c56-af9e-80fe833b6f30\" ac:macro-id=\"366f9de2aaddd04b8b8f76d7f3b6f487\"><ac:parameter ac:name=\"root\"><ac:link><ri:page ri:content-title=\"Running Bahmni on Docker\" ri:version-at-save=\"48\" /></ac:link></ac:parameter><ac:parameter ac:name=\"startDepth\">1</ac:parameter></ac:structured-macro></p></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"fixed-width\" ac:breakout-mode=\"default\"><ac:layout-cell><p /></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3117613282"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"effc42d0-02bf-4bb9-8130-c37c68d6de9e\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This method explains how to copy docker images from one machine to another (via USB/network/etc) without relying on a docker hub service. </p></div></div><p>Installing Bahmni using docker-compose would require better internet connectivity since the individual Bahmni services/application images (odoo, openmrs, reports, implementer interface etc) needs to be downloaded on the host machine before running the containers. This would be a challenge for facilities where there is poor to no internet connectivity. Please follow below steps as a work-around to perform the installation</p><ul><li><p>Download and create archive backup for all Bahmni application images at the location <strong>where you have internet connectivity</strong></p></li></ul><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0f62089b-3a22-4c70-bdad-fb6034529e04\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">docker pull bahmni/bahmni-web\ndocker save bahmni/bahmni-web &gt; bahmni_web.tar</pre>\n</div></div><p>If you have capacity constrains, you can also gzip the archive and make the backup smaller</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"12da5705-e0ae-4a97-ba2f-82ad26421967\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">docker save bahmni/bahmni-web | gzip &gt; bahmni_web.tar.gz</pre>\n</div></div><p><strong>Note</strong>: please check the <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-docker/blob/master/docker-compose.yml\" rel=\"nofollow\">bahmni docker-compose</a> for the list of services/application images that you would need to download and create archive e.g. bahmni/openmrs, bahmni/implementer-interface etc. Also note that if you prefer a specific version of the image then add a tag e.g. <code>docker pull bahmni/bahmni-web:1.0.0</code></p><ul><li><p>Once you have the archives, you can easily port these into usb hard drive or pen drive</p></li><li><p>You can then mount the usb pen drive to your host machine and load docker images from the archive</p></li></ul><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"51bb4194-cddb-461a-8cfb-13e6f1be6984\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">docker load --input bahmni_web.tar\n\n# Show all docker images on the machine\ndocker images</pre>\n</div></div><ul><li><p>Once all the images are loaded onto the host machine, you can follow the usual <a href=\"/wiki/spaces/BAH/pages/3117744129/Getting+Started+Quickly+with+Bahmni+on+Docker\" data-linked-resource-id=\"3117744129\" data-linked-resource-version=\"49\" data-linked-resource-type=\"page\">docker compose setup steps</a> to run Bahmni.</p></li></ul></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b7216754-380b-4d66-af57-fd3cf9ff4d75\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>Running Bahmni On Docker</strong></p></div></div><p>\n\n\n<div class=\"plugin_pagetree conf-macro output-inline\" data-hasbody=\"false\" data-local-id=\"a963caad-f3e3-4c56-af9e-80fe833b6f30\" data-macro-id=\"366f9de2aaddd04b8b8f76d7f3b6f487\" data-macro-name=\"pagetree\">\n\n                        \n                \n        <ul class=\"plugin_pagetree_children_list plugin_pagetree_children_list_noleftspace\">\n            <div class=\"plugin_pagetree_children\">\n            </div>\n        </ul>\n\n        <fieldset class=\"hidden\">\n            <input type=\"hidden\" name=\"treeId\" value=\"\" />\n            <input type=\"hidden\" name=\"treeRequestId\" value=\"/wiki/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=false\" />\n            <input type=\"hidden\" name=\"treePageId\" value=\"3117613282\" />\n\n            <input type=\"hidden\" name=\"noRoot\" value=\"false\" />\n            <input type=\"hidden\" name=\"rootPageId\" value=\"299630726\" />\n\n            <input type=\"hidden\" name=\"rootPage\" value=\"\" />\n            <input type=\"hidden\" name=\"startDepth\" value=\"1\" />\n            <input type=\"hidden\" name=\"spaceKey\" value=\"BAH\" />\n\n            <input type=\"hidden\" name=\"i18n-pagetree.loading\" value=\"Loading...\" />\n            <input type=\"hidden\" name=\"i18n-pagetree.error.permission\" value=\"Unable to load page tree. It seems that you do not have permission to view the root page.\" />\n            <input type=\"hidden\" name=\"i18n-pagetree.eeror.general\" value=\"There was a problem retrieving the page tree. Please check the server log file for more information.\" />\n            <input type=\"hidden\" name=\"loginUrl\" value=\"/wiki/login.action?os_destination=%2Frest%2Fapi%2Fcontent%2F3117613282%3Fexpand%3Dbody.storage%2Cbody.view%2Cversion%2Cmetadata.labels%2Chistory\" />\n            <input type=\"hidden\" name=\"mobile\" value=\"false\" />\n\n                        <fieldset class=\"hidden\">\n                                                            <input type=\"hidden\" name=\"ancestorId\" value=\"299630726\" />\n                                                </fieldset>\n        </fieldset>\n    </div>\n\n</p></div>\n</div>\n</div>\n<div class=\"columnLayout fixed-width\" data-layout=\"fixed-width\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p /></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3117613282"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3117613282/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117613282/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 861781696
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3117613282/child",
+    "restrictions": "/rest/api/content/3117613282/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3117613282/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3117613282",
+    "webui": "/spaces/BAH/pages/3117613282/Running+with+Poor+or+No+Internet+Connectivity+docker",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3117613282",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3117613282",
+    "tinyui": "/x/4gDTuQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

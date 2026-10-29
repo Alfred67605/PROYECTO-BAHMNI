@@ -1,0 +1,41 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Setting up 3G dongle/USB Modems for linux</title></head><body><h1>Setting up 3G dongle/USB Modems for linux</h1><div class="confluence-information-macro confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="cdb10aba-2403-436a-88c7-c6ff423bc7c7" data-macro-name="tip"><style>[data-colorid=yu6bzv942t]{color:#666666} html[data-color-mode=dark] [data-colorid=yu6bzv942t]{color:#999999}</style><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>In some places, 3G USB modems might be only way to connect our servers to internet. Below is a guideline to install and use 3G dongles in linux.</p></div></div><p>&nbsp;</p><div><div>Install wvdial to be used for dialing 3G modem</div><div><p>&nbsp;</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="74e1276c-3be7-4216-9b10-96ef18a9c50f" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">yum install wvdial</pre>
+</div></div><p>&nbsp;</p></div></div><div>Now create a configuration file for wvdial in &lsquo;<span>/etc/wvdial.conf</span>'</div><div><p>&nbsp;</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="1d566946-9148-4a07-a12a-f53d5b8eadba" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">    vi /etc/wvdial.conf</pre>
+</div></div></div><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="be6e4d3b-95fe-4a88-a1b6-1296aa7d2602" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Dialer Defaults</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">[Dialer Defaults]
+Init1 = ATZ
+Init2 = ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2
+Init3 = AT+CGDCONT=1,&quot;IP&rdquo;,&quot;&lt;APN of Internet provider&gt;&quot;
+Stupid Mode = 1
+Modem Type = USB Modem
+New PPPD = no
+Modem = /dev/ttyUSB2
+ISDN = 0
+Auto Reconnect = 1
+Phone = *99#
+Username = &lt;Provider username&gt;
+Password = &lt;Provider password&gt;
+Baud = 460800
+Carrier Check = no
+</pre>
+</div></div><div>Install required libraries and tools.</div><div><p>&nbsp;</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="d7449fb4-c318-4cb4-b711-3a7b2626f537" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">yum install tcl usbutils libusb1-devel</pre>
+</div></div><p>&nbsp;</p></div><div>Download <strong>usb_modeswitch</strong> and <strong>usb_modeswitch_data</strong></div><div><p>&nbsp;</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="18716edb-85ef-4fc0-96a2-98ee2f96347d" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Download using wget command</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">wget http://www.draisberghof.de/usb_modeswitch/usb-modeswitch-data-20151101.tar.bz2 #or latest
+wget http://www.draisberghof.de/usb_modeswitch/usb-modeswitch-2.2.6.tar.bz2  #or latest</pre>
+</div></div><p>&nbsp;</p></div><div>Extract and install</div><div><code><code><span>&nbsp; &nbsp;&nbsp;</span></code></code><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="4d78b74c-1aff-4026-9e36-a4e50a0804a4" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">tar xvfj usb-modewitch-2.2.6.tar.bz2
+tar xvfj usb-modewitch-data-20151101.tar.bz2
+
+cd usb-modewitch-2.2.6
+make install
+
+cd usb-modewitch-data-20151101
+make install</pre>
+</div></div><p>&nbsp;</p></div><div><code><span><br /></span></code></div><div><code><strong>usb_modeswitch</strong> creates some udev rules to automatically change the mode of 3G dongle to act as usb_modem</code></div><div>Now plug in your 3G dongle, it should automatically be detected.</div><div><p>&nbsp;</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="06ea0b18-2198-4c47-ac68-06e0f11f2e97" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">     dmesg | grep tty   # should show something like 'GSM modem (1-port) converter now attached to ttyUSB0'
+     sudo wvdial &amp;
+
+</pre>
+</div></div><p>&nbsp;</p></div><div><span style="line-height: 1.42857;">Now this should start dialing via 3G modem, and internet should be started.</span></div><div><span style="line-height: 1.42857;"><br /></span></div><div><p>&nbsp;</p><div class="confluence-information-macro confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="3874bac1-deac-44eb-a66b-b1bbf80b1ea4" data-macro-name="tip"><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p><strong>For more info -&nbsp;<span data-colorid="yu6bzv942t"><a class="external-link" href="http://www.draisberghof.de/usb_modeswitch/" rel="nofollow">http://www.draisberghof.de/usb_modeswitch/</a></span></strong></p></div></div><p>&nbsp;</p></div><div><span><br /></span></div></body></html>

@@ -1,0 +1,172 @@
+{
+  "id": "3690725380",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3690725380",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzY5MDcyNTM4MA==",
+  "status": "current",
+  "title": "Optional Community Modules for Odoo 16",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "createdDate": "2024-08-12T16:12:22.314Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3690725380/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "when": "2024-08-12T17:15:17.029Z",
+    "friendlyWhen": "Aug 12, 2024",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "ncsStepVersion": "2498",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3690725380.55",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3690725380"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3690725380/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>Starting with Odoo 16 integration for Bahmni, the <code>bahmni/odoo-16</code> docker image includes optional community modules to help implementers install them as needed. Please note these are community modules either downloaded from <a href=\"https://apps.odoo.com/apps\">Odoo App store</a> or <a href=\"https://github.com/OCA\">Odoo Community Association Github</a> or other opensource forums.</p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"702ffd91-7d86-4403-bbd9-3aae6bd4c7a2\"><ac:parameter ac:name=\"panelIcon\">:computer:</ac:parameter><ac:parameter ac:name=\"panelIconId\">1f4bb</ac:parameter><ac:parameter ac:name=\"panelIconText\">💻</ac:parameter><ac:parameter ac:name=\"bgColor\">#E3FCEF</ac:parameter><ac:rich-text-body><p>If you have developed or utilised a community module in your implementation, we invite you to submit pull requests to the <a href=\"https://github.com/Bahmni/bahmni-odoo-modules\">bahmni-odoo-modules</a> repository under the community_modules directory. This will allow for the review and potential inclusion of these modules in the Bahmni Odoo 16 image, benefiting other community implementers.</p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"c8a0d0a2-11b5-4494-a167-9ca505947b8b\"><ac:parameter ac:name=\"panelIcon\">:light_bulb_on:</ac:parameter><ac:parameter ac:name=\"panelIconId\">atlassian-light_bulb_on</ac:parameter><ac:parameter ac:name=\"panelIconText\">:light_bulb_on:</ac:parameter><ac:parameter ac:name=\"bgColor\">#EAE6FF</ac:parameter><ac:rich-text-body><p>There are numerous modules accessible on Odoo Community Association (OCA) <a href=\"https://github.com/OCA\">Github</a> that address specific business needs. So we recommend leveraging those modules if you are in need of an extension.</p></ac:rich-text-body></ac:structured-macro><h3>1. base_accounting_kit, base_account_budget</h3><p>With Odoo 16, Accounting features are not available by default in Community version and needs enterprise license to use the module. So a community module by Cybrosys Technologies named as Odoo 16 Full Accounting Kit has been bundled. <strong>Note: </strong>We highly recommend installing and exploring this module on a test / pre-prod instance before installing on your production environment.</p><ac:image ac:align=\"left\" ac:layout=\"align-start\" ac:original-height=\"130\" ac:original-width=\"408\" ac:custom-width=\"true\" ac:alt=\"image-20240812-165946.png\" ac:width=\"518\"><ri:attachment ri:filename=\"image-20240812-165946.png\" ri:version-at-save=\"1\" /></ac:image><h3>2. report_pdf_options</h3><p>When Print action is used on any menu of Odoo 16, by default the PDF gets downloaded. In order to open a print preview or view the file, this module can be used to configure the default options. This module is downloaded from <a href=\"https://apps.odoo.com/apps/modules/16.0/report_pdf_options\">here</a>.</p><ac:image ac:align=\"left\" ac:layout=\"align-start\" ac:original-height=\"116\" ac:original-width=\"411\" ac:custom-width=\"true\" ac:alt=\"image-20240812-170436.png\" ac:width=\"411\"><ri:attachment ri:filename=\"image-20240812-170436.png\" ri:version-at-save=\"1\" /></ac:image><h3>3. br_custom_list_view</h3><p>This module supports adding of Serial Numbers to different tree views across Odoo screens. You can install this module to have serial numbers shown across screens of Odoo 16. This module is downloaded from <a href=\"https://apps.odoo.com/apps/modules/16.0/br_custom_list_view\">here</a>.</p><ac:image ac:align=\"left\" ac:layout=\"align-start\" ac:original-height=\"149\" ac:original-width=\"435\" ac:custom-width=\"true\" ac:alt=\"image-20240812-170823.png\" ac:width=\"435\"><ri:attachment ri:filename=\"image-20240812-170823.png\" ri:version-at-save=\"1\" /></ac:image><h3>4. stock_picking_filter_lot</h3><p>This module is used to filter the Lots/Serial Numbers that are shown in Inventory transfers / Sale Quotations. This module can be installed to list only the lot numbers that are available in the specified source location. This module has been pulled from <a href=\"https://github.com/OCA/stock-logistics-workflow/tree/16.0/stock_picking_filter_lot\">here</a>.</p><ac:image ac:align=\"left\" ac:layout=\"align-start\" ac:original-height=\"106\" ac:original-width=\"469\" ac:custom-width=\"true\" ac:alt=\"image-20240812-171126.png\" ac:width=\"469\"><ri:attachment ri:filename=\"image-20240812-171126.png\" ri:version-at-save=\"1\" /></ac:image><p /><p />",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3690725380"
+      }
+    },
+    "view": {
+      "value": "<p>Starting with Odoo 16 integration for Bahmni, the <code>bahmni/odoo-16</code> docker image includes optional community modules to help implementers install them as needed. Please note these are community modules either downloaded from <a class=\"external-link\" href=\"https://apps.odoo.com/apps\" rel=\"nofollow\">Odoo App store</a> or <a class=\"external-link\" href=\"https://github.com/OCA\" rel=\"nofollow\">Odoo Community Association Github</a> or other opensource forums.</p><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"702ffd91-7d86-4403-bbd9-3aae6bd4c7a2\" data-macro-name=\"panel\" style=\"background-color: #E3FCEF;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #E3FCEF;\">\n<p>If you have developed or utilised a community module in your implementation, we invite you to submit pull requests to the <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-odoo-modules\" rel=\"nofollow\">bahmni-odoo-modules</a> repository under the community_modules directory. This will allow for the review and potential inclusion of these modules in the Bahmni Odoo 16 image, benefiting other community implementers.</p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c8a0d0a2-11b5-4494-a167-9ca505947b8b\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p>There are numerous modules accessible on Odoo Community Association (OCA) <a class=\"external-link\" href=\"https://github.com/OCA\" rel=\"nofollow\">Github</a> that address specific business needs. So we recommend leveraging those modules if you are in need of an extension.</p>\n</div></div><h3 id=\"OptionalCommunityModulesforOdoo16-1.base_accounting_kit,base_account_budget\">1. base_accounting_kit, base_account_budget</h3><p>With Odoo 16, Accounting features are not available by default in Community version and needs enterprise license to use the module. So a community module by Cybrosys Technologies named as Odoo 16 Full Accounting Kit has been bundled. <strong>Note: </strong>We highly recommend installing and exploring this module on a test / pre-prod instance before installing on your production environment.</p><span class=\"confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-left\" alt=\"image-20240812-165946.png\" width=\"518\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3690725380/image-20240812-165946.png?version=1&amp;modificationDate=1723481992475&amp;cacheVersion=1&amp;api=v2&amp;width=518&amp;height=165\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3690725380/image-20240812-165946.png?version=1&amp;modificationDate=1723481992475&amp;cacheVersion=1&amp;api=v2\" data-height=\"130\" data-width=\"408\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3689807896\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240812-165946.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3690725380\" data-linked-resource-container-version=\"1\" data-media-id=\"87ed35fa-ba24-49a8-8cb5-2b00581a50c9\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3690725380/image-20240812-165946.png?version=1&amp;modificationDate=1723481992475&amp;cacheVersion=1&amp;api=v2&amp;width=816&amp;height=260 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3690725380/image-20240812-165946.png?version=1&amp;modificationDate=1723481992475&amp;cacheVersion=1&amp;api=v2&amp;width=518&amp;height=165 1x\"></span><h3 id=\"OptionalCommunityModulesforOdoo16-2.report_pdf_options\">2. report_pdf_options</h3><p>When Print action is used on any menu of Odoo 16, by default the PDF gets downloaded. In order to open a print preview or view the file, this module can be used to configure the default options. This module is downloaded from <a class=\"external-link\" href=\"https://apps.odoo.com/apps/modules/16.0/report_pdf_options\" rel=\"nofollow\">here</a>.</p><span class=\"confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-left\" alt=\"image-20240812-170436.png\" width=\"411\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3690725380/image-20240812-170436.png?version=1&amp;modificationDate=1723482281029&amp;cacheVersion=1&amp;api=v2&amp;width=411&amp;height=116\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3690725380/image-20240812-170436.png?version=1&amp;modificationDate=1723482281029&amp;cacheVersion=1&amp;api=v2\" data-height=\"116\" data-width=\"411\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3690430473\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240812-170436.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3690725380\" data-linked-resource-container-version=\"1\" data-media-id=\"c624486c-4540-4a81-9c83-d05f83e3f79d\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3690725380/image-20240812-170436.png?version=1&amp;modificationDate=1723482281029&amp;cacheVersion=1&amp;api=v2&amp;width=822&amp;height=232 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3690725380/image-20240812-170436.png?version=1&amp;modificationDate=1723482281029&amp;cacheVersion=1&amp;api=v2&amp;width=411&amp;height=116 1x\"></span><h3 id=\"OptionalCommunityModulesforOdoo16-3.br_custom_list_view\">3. br_custom_list_view</h3><p>This module supports adding of Serial Numbers to different tree views across Odoo screens. You can install this module to have serial numbers shown across screens of Odoo 16. This module is downloaded from <a class=\"external-link\" href=\"https://apps.odoo.com/apps/modules/16.0/br_custom_list_view\" rel=\"nofollow\">here</a>.</p><span class=\"confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-left\" alt=\"image-20240812-170823.png\" width=\"435\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3690725380/image-20240812-170823.png?version=1&amp;modificationDate=1723482506676&amp;cacheVersion=1&amp;api=v2&amp;width=435&amp;height=149\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3690725380/image-20240812-170823.png?version=1&amp;modificationDate=1723482506676&amp;cacheVersion=1&amp;api=v2\" data-height=\"149\" data-width=\"435\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3689906185\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240812-170823.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3690725380\" data-linked-resource-container-version=\"1\" data-media-id=\"a7bd454a-601b-4d3d-b084-7e08b3251162\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3690725380/image-20240812-170823.png?version=1&amp;modificationDate=1723482506676&amp;cacheVersion=1&amp;api=v2&amp;width=870&amp;height=298 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3690725380/image-20240812-170823.png?version=1&amp;modificationDate=1723482506676&amp;cacheVersion=1&amp;api=v2&amp;width=435&amp;height=149 1x\"></span><h3 id=\"OptionalCommunityModulesforOdoo16-4.stock_picking_filter_lot\">4. stock_picking_filter_lot</h3><p>This module is used to filter the Lots/Serial Numbers that are shown in Inventory transfers / Sale Quotations. This module can be installed to list only the lot numbers that are available in the specified source location. This module has been pulled from <a class=\"external-link\" href=\"https://github.com/OCA/stock-logistics-workflow/tree/16.0/stock_picking_filter_lot\" rel=\"nofollow\">here</a>.</p><span class=\"confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-left\" alt=\"image-20240812-171126.png\" width=\"469\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3690725380/image-20240812-171126.png?version=1&amp;modificationDate=1723482690446&amp;cacheVersion=1&amp;api=v2&amp;width=469&amp;height=106\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3690725380/image-20240812-171126.png?version=1&amp;modificationDate=1723482690446&amp;cacheVersion=1&amp;api=v2\" data-height=\"106\" data-width=\"469\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3690594318\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240812-171126.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3690725380\" data-linked-resource-container-version=\"1\" data-media-id=\"611c9269-42f5-42e8-871d-a87e18a84d86\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3690725380/image-20240812-171126.png?version=1&amp;modificationDate=1723482690446&amp;cacheVersion=1&amp;api=v2&amp;width=938&amp;height=212 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3690725380/image-20240812-171126.png?version=1&amp;modificationDate=1723482690446&amp;cacheVersion=1&amp;api=v2&amp;width=469&amp;height=106 1x\"></span><p /><p />",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3690725380"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3690725380/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3690725380/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 878973684
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3690725380/child",
+    "restrictions": "/rest/api/content/3690725380/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3690725380/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3690725380",
+    "webui": "/spaces/BAH/pages/3690725380/Optional+Community+Modules+for+Odoo+16",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3690725380",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3690725380",
+    "tinyui": "/x/BAD82w",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

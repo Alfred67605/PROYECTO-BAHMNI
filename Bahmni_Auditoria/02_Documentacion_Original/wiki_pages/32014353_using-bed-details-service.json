@@ -1,0 +1,170 @@
+{
+  "id": "32014353",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/32014353",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzIwMTQzNTM=",
+  "status": "current",
+  "title": "Using Bed Details Service",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:5a688b4e-41db-406f-9513-7b68d5600121",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "padmavati",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:5a688b4e-41db-406f-9513-7b68d5600121",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "padmavati",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:5a688b4e-41db-406f-9513-7b68d5600121"
+      }
+    },
+    "createdDate": "2015-11-02T09:18:20.609Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014353/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:5a688b4e-41db-406f-9513-7b68d5600121",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "padmavati",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:5a688b4e-41db-406f-9513-7b68d5600121",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "padmavati",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:5a688b4e-41db-406f-9513-7b68d5600121"
+      }
+    },
+    "when": "2015-11-02T09:18:20.609Z",
+    "friendlyWhen": "Nov 02, 2015",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.p5f4H6Sy30XjWQH3sdEWvQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$32014353.29",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/32014353"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014353/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>If any implementation need to get the bed details based on visit, that particular implementation can use the bedDetailsService.js. We have to call &nbsp;bedDetailsService.getBedDetailsByVisit method &nbsp;by passing the visitUuid. For now that method will return the wardName and bedNumber. If we want more details we can modify the method constructBedDetails, to return whatever details we want.</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/32014353"
+      }
+    },
+    "view": {
+      "value": "<p>If any implementation need to get the bed details based on visit, that particular implementation can use the bedDetailsService.js. We have to call  bedDetailsService.getBedDetailsByVisit method  by passing the visitUuid. For now that method will return the wardName and bedNumber. If we want more details we can modify the method constructBedDetails, to return whatever details we want.</p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/32014353"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/32014353/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014353/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 2586
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/32014353/child",
+    "restrictions": "/rest/api/content/32014353/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/32014353/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=32014353",
+    "webui": "/spaces/BAH/pages/32014353/Using+Bed+Details+Service",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/32014353",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014353",
+    "tinyui": "/x/EYDoAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

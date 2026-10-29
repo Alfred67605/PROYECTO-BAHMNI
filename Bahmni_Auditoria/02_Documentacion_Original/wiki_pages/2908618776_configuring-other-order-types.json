@@ -1,0 +1,172 @@
+{
+  "id": "2908618776",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2908618776",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjkwODYxODc3Ng==",
+  "status": "current",
+  "title": "Configuring other order types",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "createdDate": "2021-09-29T12:20:18.091Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2908618776/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "when": "2024-07-18T16:11:01.015Z",
+    "friendlyWhen": "Jul 18, 2024",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "syncRev": "0.Vh9Q20XACu_8Y8DyFLp5ug.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2908618776.41",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2908618776"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2908618776/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><div><h2>Purpose and Benefits</h2><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"4cea7481-aaba-4b09-89b5-8bba0f1225af\"><ac:rich-text-body><p>This feature was introduced in Bahmni V0.93</p></ac:rich-text-body></ac:structured-macro><p><br /></p><p>The Order Tab allows the user to define any products or services to be ordered for the patient.</p><p>For example, if you would want to have &ldquo;Counseling&rdquo; as order type displayed on &ldquo;orders&rdquo; tab of consultation, it may look something like below</p></div><p><br /></p><p><ac:image ac:height=\"400\"><ri:attachment ri:filename=\"Screenshot 2021-09-29 at 4.28.17 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><p><br /></p><div><p style=\"text-align: center;\"><strong>Order Placement tab</strong></p></div><h2>Master Data Setup</h2><ol><li><p class=\"auto-cursor-target\">Setup an order type. Example - &ldquo;Counseling service&rdquo;</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"fc74b469-1b62-4993-a09f-594b65bff09d\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[insert into order_type (name, description, creator, date_created, retired, uuid, java_class_name) values('Counseling service', 'Counseling service to patients', 1, now(), 0, uuid(), 'org.openmrs.Order');]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></li><li><p>Map the above &ldquo;order type&rdquo; to a concept class specifically for &ldquo;Counseling service&rdquo;. You can create a &ldquo;concept class&rdquo; from OpenMRS administration if a suitable one does not exist.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b2fea6af-e5fe-4032-9017-e42f1f4ed88a\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[//Use this query to find appropriate concept class\nselect * from concept_class;\n\n//Now fire the insert statement to create a mapping to appropriate concept class.\ninsert into order_type_class_map (order_type_id, concept_class_id) values(<order type id>, <concept class id>);\n\n\n]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></li><li>In OpenMRS concept dictionary, setup a concept set for grouping &lsquo;Counseling&rsquo; services under &ldquo;All orderables&rdquo;<p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b570042f-bee8-4b8e-be3b-4df93d0b1fa9\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[All Orderables\n- Other Services\n --Counseling\n   ---Family Planning\n   ---Mental Health   ]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\">While defining &ldquo;Family Planning&rdquo; Concept, please mark the &ldquo;saleable&rdquo; attribute to &ldquo;true&rdquo; and ensure that class chosen is what you have mapped to the order type above.</p><p class=\"auto-cursor-target\"><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"Screenshot 2021-09-29 at 5.07.18 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"d1043195-1732-4d67-a44f-eeb5900f3d99\"><ac:parameter ac:name=\"title\">Bulk Update Script</ac:parameter><ac:rich-text-body><p>A script has been developed to bulk update the <code>saleable</code>&nbsp;attribute to true by reading the concept UUIDs from a CSV file. Refer <a href=\"https://github.com/Bahmni/bahmni-scripts/tree/master/metadataScripts\">bahmni-scripts/metadatScripts/openmrs/set_saleable_attribute.sh</a> script for more details.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></li><li>Setup &ldquo;Order type&rdquo; and &ldquo;Shop mapping&rdquo; in Odoo.</li></ol><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Please follow instructions in the <ac:link><ri:page ri:content-title=\"Odoo Sales Configuration\" ri:version-at-save=\"11\" /><ac:plain-text-link-body><![CDATA[Odoo sales configuration]]></ac:plain-text-link-body></ac:link>.</p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"0e946e18-3c2e-4a73-ae6d-cff7d89401e9\"><ac:rich-text-body><p><strong>On This Page:</strong></p><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"0b1fb4dc-d4d3-4031-9baa-9f959aa24a67\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span class=\"legacy-color-text-default\"><ac:link><ri:page ri:content-title=\"Ordering Laboratory and Radiology Tests\" ri:version-at-save=\"8\" /><ac:plain-text-link-body><![CDATA[Laboratory and Radiology Tab - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"8d910550-b229-4d7e-9a31-a6fab6802cfe\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">See Also</ac:parameter><ac:rich-text-body><p><span class=\"legacy-color-text-default\"><ac:link><ri:page ri:content-title=\"Odoo Sales Configuration\" ri:version-at-save=\"11\" /></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2908618776"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div><h2 id=\"Configuringotherordertypes-PurposeandBenefits\">Purpose and Benefits</h2><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4cea7481-aaba-4b09-89b5-8bba0f1225af\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This feature was introduced in Bahmni V0.93</p></div></div><p><br/></p><p>The Order Tab allows the user to define any products or services to be ordered for the patient.</p><p>For example, if you would want to have “Counseling” as order type displayed on “orders” tab of consultation, it may look something like below</p></div><p><br/></p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"400\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/2908618776/Screenshot%202021-09-29%20at%204.28.17%20PM.png?version=1&amp;modificationDate=1632918135249&amp;cacheVersion=1&amp;api=v2&amp;width=1006&amp;height=400\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/2908618776/Screenshot%202021-09-29%20at%204.28.17%20PM.png?version=1&amp;modificationDate=1632918135249&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2907799579\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2021-09-29 at 4.28.17 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"2908618776\" data-linked-resource-container-version=\"6\" data-media-id=\"9e65f6d9-20cb-4f2d-97ea-fd6c356ca33a\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/2908618776/Screenshot%202021-09-29%20at%204.28.17%20PM.png?version=1&amp;modificationDate=1632918135249&amp;cacheVersion=1&amp;api=v2&amp;width=2012&amp;height=800 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/2908618776/Screenshot%202021-09-29%20at%204.28.17%20PM.png?version=1&amp;modificationDate=1632918135249&amp;cacheVersion=1&amp;api=v2&amp;width=1006&amp;height=400 1x\"></span></p><p><br/></p><div><p style=\"text-align: center;\"><strong>Order Placement tab</strong></p></div><h2 id=\"Configuringotherordertypes-MasterDataSetup\">Master Data Setup</h2><ol><li><p class=\"auto-cursor-target\">Setup an order type. Example - “Counseling service”</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"fc74b469-1b62-4993-a09f-594b65bff09d\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: true; theme: Confluence\" data-theme=\"Confluence\">insert into order_type (name, description, creator, date_created, retired, uuid, java_class_name) values('Counseling service', 'Counseling service to patients', 1, now(), 0, uuid(), 'org.openmrs.Order');</pre>\n</div></div></li><li><p>Map the above “order type” to a concept class specifically for “Counseling service”. You can create a “concept class” from OpenMRS administration if a suitable one does not exist.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b2fea6af-e5fe-4032-9017-e42f1f4ed88a\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: true; theme: Confluence\" data-theme=\"Confluence\">//Use this query to find appropriate concept class\nselect * from concept_class;\n\n//Now fire the insert statement to create a mapping to appropriate concept class.\ninsert into order_type_class_map (order_type_id, concept_class_id) values(&lt;order type id&gt;, &lt;concept class id&gt;);\n\n\n</pre>\n</div></div></li><li>In OpenMRS concept dictionary, setup a concept set for grouping ‘Counseling’ services under “All orderables”<div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b570042f-bee8-4b8e-be3b-4df93d0b1fa9\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">All Orderables\n- Other Services\n --Counseling\n   ---Family Planning\n   ---Mental Health   </pre>\n</div></div><p class=\"auto-cursor-target\">While defining “Family Planning” Concept, please mark the “saleable” attribute to “true” and ensure that class chosen is what you have mapped to the order type above.</p><p class=\"auto-cursor-target\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/2908618776/Screenshot%202021-09-29%20at%205.07.18%20PM.png?version=1&amp;modificationDate=1632918487200&amp;cacheVersion=1&amp;api=v2&amp;width=408&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/2908618776/Screenshot%202021-09-29%20at%205.07.18%20PM.png?version=1&amp;modificationDate=1632918487200&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2907799590\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2021-09-29 at 5.07.18 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"2908618776\" data-linked-resource-container-version=\"6\" data-media-id=\"51512d7c-6d32-4cba-9ccf-89a0aa234467\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/2908618776/Screenshot%202021-09-29%20at%205.07.18%20PM.png?version=1&amp;modificationDate=1632918487200&amp;cacheVersion=1&amp;api=v2&amp;width=816&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/2908618776/Screenshot%202021-09-29%20at%205.07.18%20PM.png?version=1&amp;modificationDate=1632918487200&amp;cacheVersion=1&amp;api=v2&amp;width=408&amp;height=250 1x\"></span></p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d1043195-1732-4d67-a44f-eeb5900f3d99\" data-macro-name=\"info\"><p class=\"title\">Bulk Update Script</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>A script has been developed to bulk update the <code>saleable</code> attribute to true by reading the concept UUIDs from a CSV file. Refer <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-scripts/tree/master/metadataScripts\" rel=\"nofollow\">bahmni-scripts/metadatScripts/openmrs/set_saleable_attribute.sh</a> script for more details.</p></div></div></li><li>Setup “Order type” and “Shop mapping” in Odoo.</li></ol><p>           Please follow instructions in the <a href=\"/wiki/spaces/BAH/pages/900464675/Odoo+Sales+Configuration\" data-linked-resource-id=\"900464675\" data-linked-resource-version=\"18\" data-linked-resource-type=\"page\">Odoo sales configuration</a>.</p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0e946e18-3c2e-4a73-ae6d-cff7d89401e9\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>On This Page:</strong></p><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"0b1fb4dc-d4d3-4031-9baa-9f959aa24a67\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/40501372/Ordering+Laboratory+and+Radiology+Tests\" data-linked-resource-id=\"40501372\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Laboratory and Radiology Tab - Feature Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8d910550-b229-4d7e-9a31-a6fab6802cfe\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>See Also</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/900464675/Odoo+Sales+Configuration\" data-linked-resource-id=\"900464675\" data-linked-resource-version=\"18\" data-linked-resource-type=\"page\">Odoo Sales Configuration</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2908618776"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2908618776/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2908618776/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 669631884
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2908618776/child",
+    "restrictions": "/rest/api/content/2908618776/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2908618776/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2908618776",
+    "webui": "/spaces/BAH/pages/2908618776/Configuring+other+order+types",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2908618776",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2908618776",
+    "tinyui": "/x/GABerQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "id": "2316239398",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2316239398",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMxNjIzOTM5OA==",
+  "status": "current",
+  "title": "Metadata Job",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "createdDate": "2021-04-05T09:33:30.002Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239398/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "when": "2021-04-05T09:33:49.780Z",
+    "friendlyWhen": "Apr 05, 2021",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.confluence$content$2316239398.6",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2316239398.7",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2316239398"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239398/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<h3 style=\"text-align: center;\"><strong>Configuration</strong></h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d437cceb-513c-4770-9166-f9ec28825e70\"><ac:plain-text-body><![CDATA[{\n      \"name\": \"MetaData Dictionary\",\n      \"type\": \"metadata\",\n      \"conceptReferenceSource\": \"\"\n}\n]]></ac:plain-text-body></ac:structured-macro><hr /><p style=\"text-align: center;\"><strong>Existing OpenMRS tables</strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"9c8e1231-3b50-4c4e-b990-89f061c6beb4\"><ac:plain-text-body><![CDATA[concept\nconcept_set\nconcept_name\n]]></ac:plain-text-body></ac:structured-macro><hr /><p style=\"text-align: center;\"><strong>Flattened Mart Tables</strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"5ad5d646-7971-4d1c-b492-85f12d3083a1\"><ac:plain-text-body><![CDATA[meta_data_dictionary]]></ac:plain-text-body></ac:structured-macro><p><strong>a) meta_data_dictionary- </strong>The metadata dictionary table displays all the information of concept sets that are mapped to <strong>All Observation Templates</strong> OpenMrs table. If there is a concept set &lsquo;Disposition&rsquo; and two concept set members are mapped to it, below are the sample entries in the meta_data_dictionary mart table.</p><table data-layout=\"default\"><colgroup><col style=\"width: 113.33px;\" /><col style=\"width: 113.33px;\" /><col style=\"width: 113.33px;\" /><col style=\"width: 113.33px;\" /><col style=\"width: 113.33px;\" /><col style=\"width: 113.33px;\" /></colgroup><tbody><tr><th><p><strong>fully_specified_name</strong></p></th><th><p><strong>question</strong></p></th><th><p><strong>question_datatype</strong></p></th><th><p><strong>description</strong></p></th><th><p><strong>answer</strong></p></th><th><p><strong>answer_code</strong></p></th></tr></tbody></table><table data-layout=\"default\"><colgroup><col style=\"width: 113.33px;\" /><col style=\"width: 113.33px;\" /><col style=\"width: 113.33px;\" /><col style=\"width: 113.33px;\" /><col style=\"width: 113.33px;\" /><col style=\"width: 113.33px;\" /></colgroup><tbody><tr><th><p><strong>fully_specified_name</strong></p></th><th><p><strong>question</strong></p></th><th><p><strong>question_datatype</strong></p></th><th><p><strong>description</strong></p></th><th><p><strong>answer</strong></p></th><th><p><strong>answer_code</strong></p></th></tr><tr><td><p>Disposition</p></td><td><p>Disposition</p></td><td><p>Coded</p></td><td><p>&nbsp;</p></td><td><p>Answerconcept-1</p></td><td><p>&nbsp;</p></td></tr><tr><td><p>Disposition</p></td><td><p>Disposition</p></td><td><p>Coded</p></td><td><p>&nbsp;</p></td><td><p>Answerconcept-2</p></td><td><p>&nbsp;</p></td></tr></tbody></table><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p><strong>Column Name</strong></p></td><td><p><strong>Description</strong></p></td></tr><tr><td><p>fully_specified_name</p></td><td><p>Full Name of concept from concept_name table in openmrs</p></td></tr><tr><td><p>question</p></td><td><p>Short Name of concept from concept_name table in openmrs</p></td></tr><tr><td><p>question_datatype</p></td><td><p>Data type of the concept</p></td></tr><tr><td><p>description</p></td><td><p>Description/ helptext of a concept</p></td></tr><tr><td><p>answer</p></td><td><p>answers mapped to the coded question concepts</p></td></tr><tr><td><p>answer_code</p></td><td><p>answer code</p></td></tr></tbody></table><p><strong>Note</strong>: Both Form 1 and Form2 uses concepts, concept_set and concept_name.</p><p><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2316239398"
+      }
+    },
+    "view": {
+      "value": "<h3 style=\"text-align: center;\" id=\"MetadataJob-Configuration\"><strong>Configuration</strong></h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d437cceb-513c-4770-9166-f9ec28825e70\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n      &quot;name&quot;: &quot;MetaData Dictionary&quot;,\n      &quot;type&quot;: &quot;metadata&quot;,\n      &quot;conceptReferenceSource&quot;: &quot;&quot;\n}\n</pre>\n</div></div><hr/><p style=\"text-align: center;\"><strong>Existing OpenMRS tables</strong></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9c8e1231-3b50-4c4e-b990-89f061c6beb4\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">concept\nconcept_set\nconcept_name\n</pre>\n</div></div><hr/><p style=\"text-align: center;\"><strong>Flattened Mart Tables</strong></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"5ad5d646-7971-4d1c-b492-85f12d3083a1\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">meta_data_dictionary</pre>\n</div></div><p><strong>a) meta_data_dictionary- </strong>The metadata dictionary table displays all the information of concept sets that are mapped to <strong>All Observation Templates</strong> OpenMrs table. If there is a concept set ‘Disposition’ and two concept set members are mapped to it, below are the sample entries in the meta_data_dictionary mart table.</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 113.33px;\"/><col style=\"width: 113.33px;\"/><col style=\"width: 113.33px;\"/><col style=\"width: 113.33px;\"/><col style=\"width: 113.33px;\"/><col style=\"width: 113.33px;\"/></colgroup><tbody><tr><th class=\"confluenceTh\"><p><strong>fully_specified_name</strong></p></th><th class=\"confluenceTh\"><p><strong>question</strong></p></th><th class=\"confluenceTh\"><p><strong>question_datatype</strong></p></th><th class=\"confluenceTh\"><p><strong>description</strong></p></th><th class=\"confluenceTh\"><p><strong>answer</strong></p></th><th class=\"confluenceTh\"><p><strong>answer_code</strong></p></th></tr></tbody></table></div><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 113.33px;\"/><col style=\"width: 113.33px;\"/><col style=\"width: 113.33px;\"/><col style=\"width: 113.33px;\"/><col style=\"width: 113.33px;\"/><col style=\"width: 113.33px;\"/></colgroup><tbody><tr><th class=\"confluenceTh\"><p><strong>fully_specified_name</strong></p></th><th class=\"confluenceTh\"><p><strong>question</strong></p></th><th class=\"confluenceTh\"><p><strong>question_datatype</strong></p></th><th class=\"confluenceTh\"><p><strong>description</strong></p></th><th class=\"confluenceTh\"><p><strong>answer</strong></p></th><th class=\"confluenceTh\"><p><strong>answer_code</strong></p></th></tr><tr><td class=\"confluenceTd\"><p>Disposition</p></td><td class=\"confluenceTd\"><p>Disposition</p></td><td class=\"confluenceTd\"><p>Coded</p></td><td class=\"confluenceTd\"><p> </p></td><td class=\"confluenceTd\"><p>Answerconcept-1</p></td><td class=\"confluenceTd\"><p> </p></td></tr><tr><td class=\"confluenceTd\"><p>Disposition</p></td><td class=\"confluenceTd\"><p>Disposition</p></td><td class=\"confluenceTd\"><p>Coded</p></td><td class=\"confluenceTd\"><p> </p></td><td class=\"confluenceTd\"><p>Answerconcept-2</p></td><td class=\"confluenceTd\"><p> </p></td></tr></tbody></table></div><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\"/><col style=\"width: 340.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>fully_specified_name</p></td><td class=\"confluenceTd\"><p>Full Name of concept from concept_name table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>question</p></td><td class=\"confluenceTd\"><p>Short Name of concept from concept_name table in openmrs</p></td></tr><tr><td class=\"confluenceTd\"><p>question_datatype</p></td><td class=\"confluenceTd\"><p>Data type of the concept</p></td></tr><tr><td class=\"confluenceTd\"><p>description</p></td><td class=\"confluenceTd\"><p>Description/ helptext of a concept</p></td></tr><tr><td class=\"confluenceTd\"><p>answer</p></td><td class=\"confluenceTd\"><p>answers mapped to the coded question concepts</p></td></tr><tr><td class=\"confluenceTd\"><p>answer_code</p></td><td class=\"confluenceTd\"><p>answer code</p></td></tr></tbody></table></div><p><strong>Note</strong>: Both Form 1 and Form2 uses concepts, concept_set and concept_name.</p><p><br/></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2316239398"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2316239398/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239398/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 7902
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2316239398/child",
+    "restrictions": "/rest/api/content/2316239398/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2316239398/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2316239398",
+    "webui": "/spaces/BAH/pages/2316239398/Metadata+Job",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2316239398",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239398",
+    "tinyui": "/x/JgIPig",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

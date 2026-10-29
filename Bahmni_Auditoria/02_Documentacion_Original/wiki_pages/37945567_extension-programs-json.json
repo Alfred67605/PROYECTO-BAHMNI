@@ -1,0 +1,170 @@
+{
+  "id": "37945567",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/37945567",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzc5NDU1Njc=",
+  "status": "current",
+  "title": "extension-programs.json",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:c54772f2-46b5-43c0-be04-96923ee59750",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Vinay Venu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:c54772f2-46b5-43c0-be04-96923ee59750",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Vinay Venu",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:c54772f2-46b5-43c0-be04-96923ee59750"
+      }
+    },
+    "createdDate": "2016-01-21T06:20:54.403Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945567/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "when": "2016-04-11T06:34:58.049Z",
+    "friendlyWhen": "Apr 11, 2016",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "syncRev": "0.a9-1PpLPzDvPtP2viCyn-g.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$37945567.30",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/37945567"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945567/version/8"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Description</h2><p>This JSON file is used to configure clinical extensions for programs<em>. </em>It&nbsp;contains entries for Patient Search tabs to configure the Patient Search queues based on programs and it is also used in the&nbsp;Consultation page&nbsp;to configure the tabs in Program Consultation.</p><h2><span style=\"font-size: 20.0px;line-height: 1.5;\">Steps</span></h2><h3><span style=\"color: rgb(0,0,0);\">Configure Patient Search Queue</span></h3><p><span style=\"color: rgb(0,0,0);\">Patient Search queue is displayed on navigating to the Programs module. It contains a list of patient queues based on the configuration.&nbsp;</span></p><p><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\">The configuration information and details of the json format is same as extension.json. Please refer to&nbsp;</span><a href=\"https://bahmni.atlassian.net/wiki/display/BAH/extension.json\">extension.json</a><span style=\"color: rgb(0,0,0);\">&nbsp;for details.</span></span></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2016-03-23 at 3.38.17 PM.png\" /></ac:image></span></p><p style=\"text-align: center;\"><strong><span style=\"color: rgb(0,0,0);\">Patient Search Queue on the Programs Module</span></strong></p></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"9e4f9769-17bb-4ca3-8e1e-b5067da8696b\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"2f22bd2f-47f0-4955-af65-751e0b84fbd6\" />&nbsp;</p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/37945567"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"extension-programs.json-Description\">Description</h2><p>This JSON file is used to configure clinical extensions for programs<em>. </em>It contains entries for Patient Search tabs to configure the Patient Search queues based on programs and it is also used in the Consultation page to configure the tabs in Program Consultation.</p><h2 id=\"extension-programs.json-Steps\"><span style=\"font-size: 20.0px;line-height: 1.5;\">Steps</span></h2><h3 id=\"extension-programs.json-ConfigurePatientSearchQueue\"><span class=\"legacy-color-text-default\">Configure Patient Search Queue</span></h3><p><span class=\"legacy-color-text-default\">Patient Search queue is displayed on navigating to the Programs module. It contains a list of patient queues based on the configuration. </span></p><p><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\">The configuration information and details of the json format is same as extension.json. Please refer to </span><a href=\"https://bahmni.atlassian.net/wiki/display/BAH/extension.json\" rel=\"nofollow\">extension.json</a><span class=\"legacy-color-text-default\"> for details.</span></span></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945567/Screen%20Shot%202016-03-23%20at%203.38.17%20PM.png?version=1&amp;modificationDate=1458727773323&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=161\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945567/Screen%20Shot%202016-03-23%20at%203.38.17%20PM.png?version=1&amp;modificationDate=1458727773323&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"47775914\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-03-23 at 3.38.17 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945567\" data-linked-resource-container-version=\"8\" data-media-id=\"82debdd2-b615-48c2-aba3-b26f146e876d\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945567/Screen%20Shot%202016-03-23%20at%203.38.17%20PM.png?version=1&amp;modificationDate=1458727773323&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=322 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945567/Screen%20Shot%202016-03-23%20at%203.38.17%20PM.png?version=1&amp;modificationDate=1458727773323&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=161 1x\"></span></span></p><p style=\"text-align: center;\"><strong><span class=\"legacy-color-text-default\">Patient Search Queue on the Programs Module</span></strong></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9e4f9769-17bb-4ca3-8e1e-b5067da8696b\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"2f22bd2f-47f0-4955-af65-751e0b84fbd6\" data-macro-name=\"toc\"> </div> <p> </p></div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/37945567"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/37945567/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945567/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/37945567/child",
+    "restrictions": "/rest/api/content/37945567/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/37945567/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=37945567",
+    "webui": "/spaces/BAH/pages/37945567/extension-programs.json",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/37945567",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945567",
+    "tinyui": "/x/3wBDAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

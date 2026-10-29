@@ -1,0 +1,171 @@
+{
+  "id": "114529259",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/114529259",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE0NTI5MjU5",
+  "status": "current",
+  "title": "Clinical App - Retrospective Data Entry",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "createdDate": "2017-02-07T07:59:01.125Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114529259/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "when": "2017-06-20T12:36:19.853Z",
+    "friendlyWhen": "Jun 20, 2017",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "syncRev": "0.EmMxxCNqZq5ylbb2iW3VQg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$114529259.41",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/114529259"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114529259/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p><br /></p><h2>Purpose and Benefits</h2><p><span><span style=\"color: rgb(0,0,0);\">The retrospective entry mode feature is currently supported only within the clinical app. It is a useful feature that allows data to be entered into Bahmni that was captured on paper by a doctor or that was missed due to a system/network outage.</span></span></p><h2>Note</h2><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"c70c45d3-7a5a-4cc5-975c-a9fe831bba3d\"><ac:parameter ac:name=\"title\">Things to Remember</ac:parameter><ac:rich-text-body><ol><li><p><strong>Bulk</strong> retrospective data entry is currently NOT supported.</p></li><li><p><span style=\"color: rgb(0,0,0);\">&nbsp;The feature is available only on the following tabs</span></p><ol><li style=\"list-style-type: decimal;\"><p>Observations (Forms)</p></li><li style=\"list-style-type: decimal;\"><p>Diagnosis</p></li><li style=\"list-style-type: decimal;\"><p>Consultation</p></li><li style=\"list-style-type: decimal;\"><p>Medications</p></li></ol></li><li><p><span style=\"color: rgb(0,0,0);\">Retrospective Mode</span><span style=\"color: rgb(0,0,0);\">&nbsp;is not available on tabs like Orders, Disposition and Bacteriology.&nbsp;</span></p></li></ol></ac:rich-text-body></ac:structured-macro><h2>Steps</h2><p><span><span>1. Click on Registration Desk</span></span></p><p><span style=\"color: rgb(0,0,0);\">2. On clicking the above button, the below pop up dialog appears to choose date, location and on behalf of (provider).</span></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"retro-2.png\" ri:version-at-save=\"1\" /></ac:image><br /></span></p><p><span style=\"color: rgb(0,0,0);\">User with appropriate privilege can change the following:</span></p><ol><li><p>Date - choose a past date for which data is to be entered</p></li><li style=\"list-style-type: decimal;\"><p>Location - record data against a particular login location</p></li><li style=\"list-style-type: decimal;\"><p>Provider - inform Bahmni of the actual provider to record data with</p></li></ol><p><span style=\"color: rgb(0,0,0);\">3. On selecting an older date the system enters into retrospective entry mode. <span style=\"color: rgb(0,0,0);\">All the data recorded in this mode will get recorded with the selected date, location and provider.&nbsp;</span></span></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"6cf83fe3-812e-464b-9d83-9e2e8ad8c797\"><ac:rich-text-body><p>In Retrospective Mode, t<span style=\"color: rgb(0,0,0);\">he corner button displays the selected details and <strong>the title strip turns blue</strong> to keep the user informed that it is in retrospective entry mode.</span></p></ac:rich-text-body></ac:structured-macro><p><br /></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:height=\"150\"><ri:attachment ri:filename=\"patient listing-retro.png\" ri:version-at-save=\"1\" /></ac:image><br /></span></p><p style=\"text-align: center;\"><strong><span style=\"color: rgb(0,0,0);\">Retrospective Mode: Patient Listing</span></strong></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:height=\"250\"><ri:attachment ri:filename=\"dashboard-retro.png\" ri:version-at-save=\"1\" /></ac:image><br /></span></p><p style=\"text-align: center;\"><strong><span style=\"color: rgb(0,0,0);\"><strong style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\">Retrospective Mode:&nbsp;</span></strong>Patient Dashboard</span></strong></p><p><span><span><br /></span></span></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:width=\"598\"><ri:attachment ri:filename=\"ObsTab-retro.png\" ri:version-at-save=\"1\" /></ac:image><br /></span></p><p style=\"text-align: center;\"><strong><span style=\"color: rgb(0,0,0);\"><strong style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\">Retrospective Mode:&nbsp;</span></strong>Observations Tab</span></strong></p><p style=\"text-align: left;\"><br /></p><p><span style=\"color: rgb(0,0,0);\">4. When the data is recorded retrospectively, the data is recorded with the selected location, date, provider and&nbsp;</span><span style=\"color: rgb(0,0,0);\">default visit type</span><span style=\"color: rgb(0,0,0);\">.</span></p><p><span style=\"color: rgb(0,0,0);\">The data in display control shows up date and provider information like below:</span></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:height=\"250\"><ri:attachment ri:filename=\"dashboard-retro-12.00am.png\" ri:version-at-save=\"1\" /></ac:image><br /></span></p><p><strong><span style=\"color: rgb(0,0,0);\">Note that the time shown is start of the day (12:00 am) -- see screenshot above.</span><span style=\"color: rgb(0,0,0);\">&nbsp;</span></strong></p><p><span style=\"color: rgb(0,0,0);\">4.&nbsp;</span><span style=\"color: rgb(0,0,0);\">Retrospective Mode</span><span style=\"color: rgb(0,0,0);\">&nbsp;is not available on tabs like Orders, Disposition and Bacteriology. When entry from a particular tab is not available a message is displayed to indicate the same</span></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:height=\"150\"><ri:attachment ri:filename=\"orderentry-denied.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\">&nbsp; &nbsp; &nbsp;<strong> Retrospective Mode</strong>:&nbsp;<strong>Orders Tab</strong></span></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:width=\"598\"><ri:attachment ri:filename=\"Disposition denied.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong>Retrospective Mode: Disposition</strong></span></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:width=\"598\"><ri:attachment ri:filename=\"bacteriology denied.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p><span style=\"color: rgb(0,0,0);\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Retrospective Mode: Bacteriology</strong></span></p><h2><span style=\"color: rgb(0,0,0);\">Configuration</span></h2><p>The visit type for retrospective entries can be configured in clinical/app.json of config.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"45a22cb7-3506-4733-9e7f-09151d667e35\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"config\" : {\n       \"visitTypeForRetrospectiveEntries\": \"OPD\"\n}]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p><span style=\"color: rgb(0,0,0);\"><br /></span></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e4e357ee-8b8f-40f4-8c33-40938be496b2\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"6e166a6b-4aeb-481e-9b2c-17b7eccb86d3\" />&nbsp;</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"c3ec6e1f-581d-4d29-8e0f-535154dd71bb\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Retrospective Data Support\" ri:version-at-save=\"7\" /><ac:plain-text-link-body><![CDATA[Retrospective Data - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/114529259"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p><br/></p><h2 id=\"ClinicalApp-RetrospectiveDataEntry-PurposeandBenefits\">Purpose and Benefits</h2><p><span><span class=\"legacy-color-text-default\">The retrospective entry mode feature is currently supported only within the clinical app. It is a useful feature that allows data to be entered into Bahmni that was captured on paper by a doctor or that was missed due to a system/network outage.</span></span></p><h2 id=\"ClinicalApp-RetrospectiveDataEntry-Note\">Note</h2><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c70c45d3-7a5a-4cc5-975c-a9fe831bba3d\" data-macro-name=\"note\"><p class=\"title\">Things to Remember</p><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><ol><li><p><strong>Bulk</strong> retrospective data entry is currently NOT supported.</p></li><li><p><span class=\"legacy-color-text-default\"> The feature is available only on the following tabs</span></p><ol><li style=\"list-style-type: decimal;\"><p>Observations (Forms)</p></li><li style=\"list-style-type: decimal;\"><p>Diagnosis</p></li><li style=\"list-style-type: decimal;\"><p>Consultation</p></li><li style=\"list-style-type: decimal;\"><p>Medications</p></li></ol></li><li><p><span class=\"legacy-color-text-default\">Retrospective Mode</span><span class=\"legacy-color-text-default\"> is not available on tabs like Orders, Disposition and Bacteriology. </span></p></li></ol></div></div><h2 id=\"ClinicalApp-RetrospectiveDataEntry-Steps\">Steps</h2><p><span><span>1. Click on Registration Desk</span></span></p><p><span class=\"legacy-color-text-default\">2. On clicking the above button, the below pop up dialog appears to choose date, location and on behalf of (provider).</span></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/retro-2.png?version=1&amp;modificationDate=1497960280782&amp;cacheVersion=1&amp;api=v2&amp;width=587&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114529259/retro-2.png?version=1&amp;modificationDate=1497960280782&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"117328225\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"retro-2.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114529259\" data-linked-resource-container-version=\"6\" data-media-id=\"19c39e0f-41e9-443a-a09a-38efdb50146b\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/retro-2.png?version=1&amp;modificationDate=1497960280782&amp;cacheVersion=1&amp;api=v2&amp;width=1174&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/retro-2.png?version=1&amp;modificationDate=1497960280782&amp;cacheVersion=1&amp;api=v2&amp;width=587&amp;height=250 1x\"></span><br/></span></p><p><span class=\"legacy-color-text-default\">User with appropriate privilege can change the following:</span></p><ol><li><p>Date - choose a past date for which data is to be entered</p></li><li style=\"list-style-type: decimal;\"><p>Location - record data against a particular login location</p></li><li style=\"list-style-type: decimal;\"><p>Provider - inform Bahmni of the actual provider to record data with</p></li></ol><p><span class=\"legacy-color-text-default\">3. On selecting an older date the system enters into retrospective entry mode. <span class=\"legacy-color-text-default\">All the data recorded in this mode will get recorded with the selected date, location and provider. </span></span></p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6cf83fe3-812e-464b-9d83-9e2e8ad8c797\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>In Retrospective Mode, t<span class=\"legacy-color-text-default\">he corner button displays the selected details and <strong>the title strip turns blue</strong> to keep the user informed that it is in retrospective entry mode.</span></p></div></div><p><br/></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" height=\"150\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/patient%20listing-retro.png?version=1&amp;modificationDate=1497961465315&amp;cacheVersion=1&amp;api=v2&amp;width=530&amp;height=150\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114529259/patient%20listing-retro.png?version=1&amp;modificationDate=1497961465315&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"117328408\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"patient listing-retro.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114529259\" data-linked-resource-container-version=\"6\" data-media-id=\"62e5efa6-e48c-447a-b498-b82cbce94a1d\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/patient%20listing-retro.png?version=1&amp;modificationDate=1497961465315&amp;cacheVersion=1&amp;api=v2&amp;width=1060&amp;height=300 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/patient%20listing-retro.png?version=1&amp;modificationDate=1497961465315&amp;cacheVersion=1&amp;api=v2&amp;width=530&amp;height=150 1x\"></span><br/></span></p><p style=\"text-align: center;\"><strong><span class=\"legacy-color-text-default\">Retrospective Mode: Patient Listing</span></strong></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/dashboard-retro.png?version=1&amp;modificationDate=1497961656770&amp;cacheVersion=1&amp;api=v2&amp;width=463&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114529259/dashboard-retro.png?version=1&amp;modificationDate=1497961656770&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"117328492\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"dashboard-retro.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114529259\" data-linked-resource-container-version=\"6\" data-media-id=\"53c91045-117a-4f0f-bd76-ab43165441c7\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/dashboard-retro.png?version=1&amp;modificationDate=1497961656770&amp;cacheVersion=1&amp;api=v2&amp;width=926&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/dashboard-retro.png?version=1&amp;modificationDate=1497961656770&amp;cacheVersion=1&amp;api=v2&amp;width=463&amp;height=250 1x\"></span><br/></span></p><p style=\"text-align: center;\"><strong><span class=\"legacy-color-text-default\"><strong style=\"text-align: center;\"><span class=\"legacy-color-text-default\">Retrospective Mode: </span></strong>Patient Dashboard</span></strong></p><p><span><span><br/></span></span></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"598\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/ObsTab-retro.png?version=1&amp;modificationDate=1497961497809&amp;cacheVersion=1&amp;api=v2&amp;width=598&amp;height=191\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114529259/ObsTab-retro.png?version=1&amp;modificationDate=1497961497809&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"117328427\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"ObsTab-retro.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114529259\" data-linked-resource-container-version=\"6\" data-media-id=\"9e186b17-70b0-4401-80d5-414ae2c16482\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/ObsTab-retro.png?version=1&amp;modificationDate=1497961497809&amp;cacheVersion=1&amp;api=v2&amp;width=1196&amp;height=382 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/ObsTab-retro.png?version=1&amp;modificationDate=1497961497809&amp;cacheVersion=1&amp;api=v2&amp;width=598&amp;height=191 1x\"></span><br/></span></p><p style=\"text-align: center;\"><strong><span class=\"legacy-color-text-default\"><strong style=\"text-align: center;\"><span class=\"legacy-color-text-default\">Retrospective Mode: </span></strong>Observations Tab</span></strong></p><p style=\"text-align: left;\"><br/></p><p><span class=\"legacy-color-text-default\">4. When the data is recorded retrospectively, the data is recorded with the selected location, date, provider and </span><span class=\"legacy-color-text-default\">default visit type</span><span class=\"legacy-color-text-default\">.</span></p><p><span class=\"legacy-color-text-default\">The data in display control shows up date and provider information like below:</span></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/dashboard-retro-12.00am.png?version=1&amp;modificationDate=1497961506209&amp;cacheVersion=1&amp;api=v2&amp;width=447&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114529259/dashboard-retro-12.00am.png?version=1&amp;modificationDate=1497961506209&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"117328439\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"dashboard-retro-12.00am.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114529259\" data-linked-resource-container-version=\"6\" data-media-id=\"648e36a3-d8b6-4233-9b66-7c40df086b1b\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/dashboard-retro-12.00am.png?version=1&amp;modificationDate=1497961506209&amp;cacheVersion=1&amp;api=v2&amp;width=666&amp;height=372 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/dashboard-retro-12.00am.png?version=1&amp;modificationDate=1497961506209&amp;cacheVersion=1&amp;api=v2&amp;width=447&amp;height=250 1x\"></span><br/></span></p><p><strong><span class=\"legacy-color-text-default\">Note that the time shown is start of the day (12:00 am) -- see screenshot above.</span><span class=\"legacy-color-text-default\"> </span></strong></p><p><span class=\"legacy-color-text-default\">4. </span><span class=\"legacy-color-text-default\">Retrospective Mode</span><span class=\"legacy-color-text-default\"> is not available on tabs like Orders, Disposition and Bacteriology. When entry from a particular tab is not available a message is displayed to indicate the same</span></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" height=\"150\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/orderentry-denied.png?version=1&amp;modificationDate=1497961511283&amp;cacheVersion=1&amp;api=v2&amp;width=597&amp;height=150\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114529259/orderentry-denied.png?version=1&amp;modificationDate=1497961511283&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"117328450\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"orderentry-denied.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114529259\" data-linked-resource-container-version=\"6\" data-media-id=\"1a5dd990-77fb-42c6-8f5d-664f7d01aa75\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/orderentry-denied.png?version=1&amp;modificationDate=1497961511283&amp;cacheVersion=1&amp;api=v2&amp;width=1194&amp;height=300 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/orderentry-denied.png?version=1&amp;modificationDate=1497961511283&amp;cacheVersion=1&amp;api=v2&amp;width=597&amp;height=150 1x\"></span></span></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\">     <strong> Retrospective Mode</strong>: <strong>Orders Tab</strong></span></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"598\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/Disposition%20denied.png?version=1&amp;modificationDate=1497961837475&amp;cacheVersion=1&amp;api=v2&amp;width=598&amp;height=118\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114529259/Disposition%20denied.png?version=1&amp;modificationDate=1497961837475&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"117328547\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Disposition denied.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114529259\" data-linked-resource-container-version=\"6\" data-media-id=\"6370cc2c-ada2-448a-99ad-77fd8566a2d8\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/Disposition%20denied.png?version=1&amp;modificationDate=1497961837475&amp;cacheVersion=1&amp;api=v2&amp;width=1196&amp;height=236 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/Disposition%20denied.png?version=1&amp;modificationDate=1497961837475&amp;cacheVersion=1&amp;api=v2&amp;width=598&amp;height=118 1x\"></span></span></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\">         <strong>Retrospective Mode: Disposition</strong></span></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"598\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/bacteriology%20denied.png?version=1&amp;modificationDate=1497961838509&amp;cacheVersion=1&amp;api=v2&amp;width=598&amp;height=80\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114529259/bacteriology%20denied.png?version=1&amp;modificationDate=1497961838509&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"117328558\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"bacteriology denied.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114529259\" data-linked-resource-container-version=\"6\" data-media-id=\"e328e307-0623-4754-8600-96c7d1454b9d\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/bacteriology%20denied.png?version=1&amp;modificationDate=1497961838509&amp;cacheVersion=1&amp;api=v2&amp;width=1196&amp;height=160 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114529259/bacteriology%20denied.png?version=1&amp;modificationDate=1497961838509&amp;cacheVersion=1&amp;api=v2&amp;width=598&amp;height=80 1x\"></span></span></p><p><span class=\"legacy-color-text-default\">                                                   <strong>                                            Retrospective Mode: Bacteriology</strong></span></p><h2 id=\"ClinicalApp-RetrospectiveDataEntry-Configuration\"><span class=\"legacy-color-text-default\">Configuration</span></h2><p>The visit type for retrospective entries can be configured in clinical/app.json of config.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"45a22cb7-3506-4733-9e7f-09151d667e35\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;config&quot; : {\n       &quot;visitTypeForRetrospectiveEntries&quot;: &quot;OPD&quot;\n}</pre>\n</div></div><p><br/></p><p><span class=\"legacy-color-text-default\"><br/></span></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e4e357ee-8b8f-40f4-8c33-40938be496b2\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"6e166a6b-4aeb-481e-9b2c-17b7eccb86d3\" data-macro-name=\"toc\"> </div> <p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c3ec6e1f-581d-4d29-8e0f-535154dd71bb\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/114539569/Retrospective+Data+Support\" data-linked-resource-id=\"114539569\" data-linked-resource-version=\"7\" data-linked-resource-type=\"page\">Retrospective Data - Feature Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/114529259"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/114529259/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114529259/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 285188225
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/114529259/child",
+    "restrictions": "/rest/api/content/114529259/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/114529259/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=114529259",
+    "webui": "/spaces/BAH/pages/114529259/Clinical+App+-+Retrospective+Data+Entry",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/114529259",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114529259",
+    "tinyui": "/x/65PTBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

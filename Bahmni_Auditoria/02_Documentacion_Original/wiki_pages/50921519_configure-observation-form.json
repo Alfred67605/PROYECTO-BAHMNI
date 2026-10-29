@@ -1,0 +1,173 @@
+{
+  "id": "50921519",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/50921519",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNTA5MjE1MTk=",
+  "status": "current",
+  "title": "Configure Observation Form",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d50fbe0b-e813-4256-98ab-89ecfc6a90c0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Shanmugam R (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d50fbe0b-e813-4256-98ab-89ecfc6a90c0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Shanmugam Radhakrishnan (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d50fbe0b-e813-4256-98ab-89ecfc6a90c0"
+      }
+    },
+    "createdDate": "2016-04-07T07:41:02.640Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/50921519/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:5f7b22cd-80df-411d-b437-6bd8b4723a5e",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Ramashish Joshi",
+      "timeZone": "America/Chicago",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:5f7b22cd-80df-411d-b437-6bd8b4723a5e",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Ramashish Joshi",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:5f7b22cd-80df-411d-b437-6bd8b4723a5e"
+      }
+    },
+    "when": "2017-06-12T21:26:36.050Z",
+    "friendlyWhen": "Jun 12, 2017",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "syncRev": "0.KSCHDIRyw6CmCte8yz-PTA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$50921519.60",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/50921519"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/50921519/version/8"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Description</h2><p>Observation Form is used to capture various information which are observed by the provider. If we need to capture this information in Bahmni then we need to define in OpenMRS. The form is nothing but Concept Set and it includes various sub set of concept or concept set.&nbsp;</p><h2>Steps</h2><h3>1. Configure All Observation Templates</h3><p style=\"text-align: left;\">&nbsp; &nbsp;Create concept set with Fully Specified Name as &quot;All Observation Templates&quot;. This is root concept set and the name must be &quot;All Observation Templates&quot;. Find&nbsp;<ac:link><ri:page ri:content-title=\"Configure Concept or Concept Set\" ri:version-at-save=\"5\" /><ac:plain-text-link-body><![CDATA[more info]]></ac:plain-text-link-body></ac:link> about concept or concept set.</p><p style=\"text-align: left;\"><strong>Note</strong>: Default Bahmni Implementation has set of Observation Forms. To Remove the Observation forms shown through &quot;Add New Obs Forms&quot; button which will not be used at all by a hospital, edit the &quot;Set Members&quot; field of&nbsp;&quot;All Observation Templates&quot; concept and remove the specific member.&nbsp;</p><h3><strong style=\"line-height: 1.5;\">2. Configure New/Existing Observation Forms<span style=\"color: rgb(0,0,0);\">&nbsp;</span></strong></h3><ol><li><p>If we want add new observation form/template then create concept set with concept members.</p></li><li><p>Add the new concept set to the &quot;<strong>All Observation Templates</strong>&quot; concept set.</p></li><li>Add the word &quot;template&quot; to the Fully specified name to avoid naming collision with diagnosis related concepts.</li><li>As the Short<em>&nbsp;name</em>&nbsp;is displayed in the UI, provide a clear and concise name for the short name.<br /><span style=\"color: rgb(0,0,0);\">&nbsp;</span></li></ol><p><strong>Example</strong>:<br />Fully Specified Name = Anaemia Templates, Short Name = Anaemia<br />Fully Specified Name&nbsp;= Anaemia Intake Template, Short Name&nbsp;= Anaemia - Intake<em>&nbsp;(<u>note</u>&nbsp;there is no comma in Fully Specified Name)</em></p><p>Refer to the screenshot below for further information:</p><p>&nbsp;</p><p style=\"text-align: center;\"><ac:image ac:border=\"true\" ac:width=\"700\"><ri:attachment ri:filename=\"All Observation Templates.png\" ri:version-at-save=\"1\" /></ac:image><span style=\"color: rgb(0,0,0);\">&nbsp;</span></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\">&nbsp;</span><strong>&quot;All Observation Templates&quot; in OpenMRS</strong></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"930811b2-9d0d-4336-97d2-a883602e1e17\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"b046e189-1c6a-4b80-98c7-fa63b0e94677\" />&nbsp;</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/50921519"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ConfigureObservationForm-Description\">Description</h2><p>Observation Form is used to capture various information which are observed by the provider. If we need to capture this information in Bahmni then we need to define in OpenMRS. The form is nothing but Concept Set and it includes various sub set of concept or concept set. </p><h2 id=\"ConfigureObservationForm-Steps\">Steps</h2><h3 id=\"ConfigureObservationForm-1.ConfigureAllObservationTemplates\">1. Configure All Observation Templates</h3><p style=\"text-align: left;\">   Create concept set with Fully Specified Name as &quot;All Observation Templates&quot;. This is root concept set and the name must be &quot;All Observation Templates&quot;. Find <a href=\"/wiki/spaces/BAH/pages/50921567/Configure+Concept+or+Concept+Set\" data-linked-resource-id=\"50921567\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">more info</a> about concept or concept set.</p><p style=\"text-align: left;\"><strong>Note</strong>: Default Bahmni Implementation has set of Observation Forms. To Remove the Observation forms shown through &quot;Add New Obs Forms&quot; button which will not be used at all by a hospital, edit the &quot;Set Members&quot; field of &quot;All Observation Templates&quot; concept and remove the specific member. </p><h3 id=\"ConfigureObservationForm-2.ConfigureNew/ExistingObservationForms\"><strong style=\"line-height: 1.5;\">2. Configure New/Existing Observation Forms<span class=\"legacy-color-text-default\"> </span></strong></h3><ol><li><p>If we want add new observation form/template then create concept set with concept members.</p></li><li><p>Add the new concept set to the &quot;<strong>All Observation Templates</strong>&quot; concept set.</p></li><li>Add the word &quot;template&quot; to the Fully specified name to avoid naming collision with diagnosis related concepts.</li><li>As the Short<em> name</em> is displayed in the UI, provide a clear and concise name for the short name.<br/><span class=\"legacy-color-text-default\"> </span></li></ol><p><strong>Example</strong>:<br/>Fully Specified Name = Anaemia Templates, Short Name = Anaemia<br/>Fully Specified Name = Anaemia Intake Template, Short Name = Anaemia - Intake<em> (<u>note</u> there is no comma in Fully Specified Name)</em></p><p>Refer to the screenshot below for further information:</p><p> </p><p style=\"text-align: center;\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/50921519/All%20Observation%20Templates.png?version=1&amp;modificationDate=1460014929118&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=530\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/50921519/All%20Observation%20Templates.png?version=1&amp;modificationDate=1460014929118&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"50921524\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"All Observation Templates.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"50921519\" data-linked-resource-container-version=\"8\" data-media-id=\"3cf3ef7f-4d68-47b3-87e4-9525bcff8ea2\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/50921519/All%20Observation%20Templates.png?version=1&amp;modificationDate=1460014929118&amp;cacheVersion=1&amp;api=v2&amp;width=956&amp;height=724 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/50921519/All%20Observation%20Templates.png?version=1&amp;modificationDate=1460014929118&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=530 1x\"></span><span class=\"legacy-color-text-default\"> </span></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\"> </span><strong>&quot;All Observation Templates&quot; in OpenMRS</strong></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"930811b2-9d0d-4336-97d2-a883602e1e17\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"b046e189-1c6a-4b80-98c7-fa63b0e94677\" data-macro-name=\"toc\"> </div> <p> </p></div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/50921519"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/50921519/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/50921519/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 746634246
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/50921519/child",
+    "restrictions": "/rest/api/content/50921519/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/50921519/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=50921519",
+    "webui": "/spaces/BAH/pages/50921519/Configure+Observation+Form",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/50921519",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/50921519",
+    "tinyui": "/x/LwAJAw",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

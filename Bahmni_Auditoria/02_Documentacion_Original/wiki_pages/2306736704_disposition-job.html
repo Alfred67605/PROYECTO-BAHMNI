@@ -1,0 +1,35 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Disposition Job</title></head><body><h1>Disposition Job</h1><h3 style="text-align: center;" id="DispositionJob-Configuration"><style>[data-colorid=p89u5wlwcc]{color:#00b8d9} html[data-color-mode=dark] [data-colorid=p89u5wlwcc]{color:#26deff}</style><strong>Configuration</strong></h3><h5 id="DispositionJob-ColumnsToIgnoreapplyforthismodule(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix)"><strong>ColumnsToIgnore apply for this module ( Refer </strong><a class="external-link" data-card-appearance="inline" href="https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix" rel="nofollow">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><h5 id="DispositionJob-incrementalUpdateConfigisapplicable(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update)"><strong>incrementalUpdateConfig is applicable</strong> ( Refer <a class="external-link" data-card-appearance="inline" href="https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update" rel="nofollow">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</h5><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="3e8e328c-49d1-45eb-b720-55f64787181a" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence"> {
+      &quot;name&quot;: &quot;Disposition Data&quot;,
+      &quot;type&quot;: &quot;disposition&quot;,
+      &quot;columnsToIgnore&quot;: [],
+      &quot;incrementalUpdateConfig&quot;: {
+        &quot;updateOn&quot;: &quot;encounter_id&quot;,
+        &quot;eventCategory&quot;: &quot;Encounter&quot;,
+        &quot;openmrsTableName&quot;: &quot;encounter&quot;
+      }
+    }
+]
+</pre>
+</div></div><hr /><h3 style="text-align: center;" id="DispositionJob-ExistingOpenMRStables">Existing OpenMRS tables</h3><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="1dd39fa5-c617-4692-adfe-75f19991ce56" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">concept
+concept_set
+concept_name
+patient
+visit
+obs
+location
+program
+patient_program
+ecnounter
+</pre>
+</div></div><hr /><p style="text-align: center;"><strong>Flattened Mart Tables</strong></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="2ae8edbd-3563-4206-81d1-cdfc402334ae" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">disposition_set</pre>
+</div></div><p><strong>a) dispostion_set- </strong>This table provides the information about the disposition of the patient enrolled from programs/clinical module.</p><div class="table-wrap"><table data-layout="default" class="confluenceTable"><colgroup><col style="width: 340.0px;" /><col style="width: 340.0px;" /></colgroup><tbody><tr><td class="confluenceTd"><p><strong>Column Name</strong></p></td><td class="confluenceTd"><p><strong>Description</strong></p></td></tr><tr><td class="confluenceTd"><p>id_disposition_set</p></td><td class="confluenceTd"><p>Id reference to the disposition set</p></td></tr><tr><td class="confluenceTd"><p>patient_id</p></td><td class="confluenceTd"><p>Id reference to the patient from patient table in openmrs</p></td></tr><tr><td class="confluenceTd"><p>encounter_id</p></td><td class="confluenceTd"><p>Id reference to the encounter from encounter table in openmrs</p></td></tr><tr><td class="confluenceTd"><p>visit_id</p></td><td class="confluenceTd"><p>Id reference to the visit from the visit table in openmrs</p></td></tr><tr><td class="confluenceTd"><p>obs_datetime</p></td><td class="confluenceTd"><p>obs date time from obs table in openmrs</p></td></tr><tr><td class="confluenceTd"><p>date_created</p></td><td class="confluenceTd"><p>date of disposition got created</p></td></tr><tr><td class="confluenceTd"><p>date_modified</p></td><td class="confluenceTd"><p>date of disposition got modified</p></td></tr><tr><td class="confluenceTd"><p>location_id</p></td><td class="confluenceTd"><p>location id of the patient</p></td></tr><tr><td class="confluenceTd"><p>location_name</p></td><td class="confluenceTd"><p>location name</p></td></tr><tr><td class="confluenceTd"><p>program_id</p></td><td class="confluenceTd"><p>Id reference to what program that particular patient is assigned to</p></td></tr><tr><td class="confluenceTd"><p>program_name</p></td><td class="confluenceTd"><p>Name of the program assigned</p></td></tr><tr><td class="confluenceTd"><p>patient_program_id</p></td><td class="confluenceTd"><p>patient_program_id from patient_program openmrs table</p></td></tr><tr><td class="confluenceTd"><p>disposition_note</p></td><td class="confluenceTd"><p>Disposition note entered while enrolling for disposition</p></td></tr><tr><td class="confluenceTd"><p>disposition</p></td><td class="confluenceTd"><p>Disposition of which the patient enrolled to</p></td></tr></tbody></table></div><p>&nbsp;</p><hr /><h3 style="text-align: center;" id="DispositionJob-Translations"><strong>Translations</strong></h3><p>if we need to get those values as per the translations we need to add the below <strong><span data-colorid="p89u5wlwcc">locale tag</span></strong> in the &ldquo;<strong>/var/www/bahmni_config/bahmni-mart/bahmni-mart.json</strong>&ldquo; file.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="af33bcf4-4dd6-42bb-83f0-40023ccbe65b" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">{
+      &quot;name&quot;: &quot;Disposition Data&quot;,
+      &quot;type&quot;: &quot;disposition&quot;,
+      &quot;locale&quot;: &quot;fr&quot;     
+}
+</pre>
+</div></div><p>&nbsp;</p></body></html>

@@ -1,0 +1,172 @@
+{
+  "id": "69664784",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/69664784",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNjk2NjQ3ODQ=",
+  "status": "current",
+  "title": "Two Factor Authentication (2FA or TFA) guide",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d50fbe0b-e813-4256-98ab-89ecfc6a90c0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Shanmugam R (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d50fbe0b-e813-4256-98ab-89ecfc6a90c0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Shanmugam Radhakrishnan (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d50fbe0b-e813-4256-98ab-89ecfc6a90c0"
+      }
+    },
+    "createdDate": "2016-06-21T10:36:52.760Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/69664784/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:be7622eb-3e03-4f74-aa58-a88279f9d910",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Venkata Jaswanth U",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:be7622eb-3e03-4f74-aa58-a88279f9d910",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Venkata Jaswanth U",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:be7622eb-3e03-4f74-aa58-a88279f9d910"
+      }
+    },
+    "when": "2016-08-22T08:01:52.393Z",
+    "friendlyWhen": "Aug 22, 2016",
+    "message": "Added resend otp",
+    "number": 5,
+    "minorEdit": false,
+    "syncRev": "0.ED5XBg7pqTXWen5SZ29upQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$69664784.32",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/69664784"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/69664784/version/5"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>About the Feature</h2><p><span style=\"color: rgb(34,34,34);\"><a class=\"external-link\" href=\"https://en.wikipedia.org/wiki/Two-factor_authentication\" rel=\"nofollow\">2FA</a>&nbsp;is additional security mechanism to protect the user from fraudulent act.&nbsp;Bahmni using basic authentication (username, password) from OpenMRS so far. We are introducing&nbsp;</span><a class=\"external-link\" href=\"https://en.wikipedia.org/wiki/Two-factor_authentication\" rel=\"nofollow\">2FA</a><span style=\"color: rgb(34,34,34);\">&nbsp;in Bahmni to enhance the security. This feature is optional for an implementation. When this feature is enabled then user will be authenticated with username and password first and on success, the user will get SMS with&nbsp;<a class=\"external-link\" href=\"https://en.wikipedia.org/wiki/One-time_password\" rel=\"nofollow\">OTP</a>&nbsp;in his/her registered mobile. The user has to authenticate with OTP before proceed to use the system.</span></p><h2><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\">How is it Used?</span></span></h2><ol><li><span style=\"color: rgb(0,0,0);\">When the two-factor-authentication is enabled , the user has to authenticate using his/her password in the login screen.</span><ac:image ac:align=\"center\" ac:height=\"250\"><ri:attachment ri:filename=\"Screen Shot 2016-07-04 at 10.44.04 AM.png\" /></ac:image><br /><br /></li><li>On successful authentication, user will receive an OTP which has to be entered to login to the Bahmni.<br /><ac:image ac:align=\"center\" ac:width=\"429\"><ri:attachment ri:filename=\"image2016-8-22 13:27:47.png\" /></ac:image><br /><br /></li><li>If the user doesn't receive OTP because of some network issues, <strong>'Resend OTP'</strong> button can be clicked to get a new OTP. User has to enter the new received OTP to successfully login.<br /><br /><br /></li></ol></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"6462b5e2-1d86-451d-a8c5-c39c2f99335c\"><ac:rich-text-body><p><strong><span style=\"color: rgb(0,0,0);\">Bahmni configuration for each implementation can vary drastically. As the screens and workflows are not constant across all installations of Bahmni, we have refrained from prescribing them. </span></strong></p><p><strong><span style=\"color: rgb(0,0,0);\">Please refer to the Guides below for further details about the feature.</span></strong></p><div><strong><span style=\"color: rgb(0,0,0);\"><br /></span></strong></div></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Two Factor Authentication (2FA/TFA)\" /><ac:plain-text-link-body><![CDATA[2FA - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"3fe3feef-06ea-4aac-b9a1-a6bbe83b0bec\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Implemnentation Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Two Factor Authentication (2FA or TFA) Implementation\" /><ac:plain-text-link-body><![CDATA[2FA - Implementer's Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p>&nbsp;</p><p>&nbsp;</p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/69664784"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\"><style>[data-colorid=d4ymlrkr3x]{color:#222222} html[data-color-mode=dark] [data-colorid=d4ymlrkr3x]{color:#dddddd}[data-colorid=lozrrl09cz]{color:#222222} html[data-color-mode=dark] [data-colorid=lozrrl09cz]{color:#dddddd}</style>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"TwoFactorAuthentication(2FAorTFA)guide-AbouttheFeature\">About the Feature</h2><p><span data-colorid=\"lozrrl09cz\"><a class=\"external-link\" href=\"https://en.wikipedia.org/wiki/Two-factor_authentication\" rel=\"nofollow\">2FA</a>&nbsp;is additional security mechanism to protect the user from fraudulent act.&nbsp;Bahmni using basic authentication (username, password) from OpenMRS so far. We are introducing&nbsp;</span><a class=\"external-link\" href=\"https://en.wikipedia.org/wiki/Two-factor_authentication\" rel=\"nofollow\">2FA</a><span data-colorid=\"d4ymlrkr3x\">&nbsp;in Bahmni to enhance the security. This feature is optional for an implementation. When this feature is enabled then user will be authenticated with username and password first and on success, the user will get SMS with&nbsp;<a class=\"external-link\" href=\"https://en.wikipedia.org/wiki/One-time_password\" rel=\"nofollow\">OTP</a>&nbsp;in his/her registered mobile. The user has to authenticate with OTP before proceed to use the system.</span></p><h2 id=\"TwoFactorAuthentication(2FAorTFA)guide-HowisitUsed?\"><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\">How is it Used?</span></span></h2><ol><li><span class=\"legacy-color-text-default\">When the two-factor-authentication is enabled , the user has to authenticate using his/her password in the login screen.</span><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/69664784/Screen%20Shot%202016-07-04%20at%2010.44.04%20AM.png?version=1&amp;modificationDate=1467609893709&amp;cacheVersion=1&amp;api=v2&amp;width=429&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/69664784/Screen%20Shot%202016-07-04%20at%2010.44.04%20AM.png?version=1&amp;modificationDate=1467609893709&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"71860301\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-07-04 at 10.44.04 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"69664784\" data-linked-resource-container-version=\"5\" data-media-id=\"7a7e7127-75ad-4324-834f-08b75e001fd6\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/69664784/Screen%20Shot%202016-07-04%20at%2010.44.04%20AM.png?version=1&amp;modificationDate=1467609893709&amp;cacheVersion=1&amp;api=v2&amp;width=858&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/69664784/Screen%20Shot%202016-07-04%20at%2010.44.04%20AM.png?version=1&amp;modificationDate=1467609893709&amp;cacheVersion=1&amp;api=v2&amp;width=429&amp;height=250 1x\" /></span><br /><br /></li><li>On successful authentication, user will receive an OTP which has to be entered to login to the Bahmni.<br /><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"429\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/69664784/image2016-8-22%2013:27:47.png?version=1&amp;modificationDate=1471852667638&amp;cacheVersion=1&amp;api=v2&amp;width=429&amp;height=265\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/69664784/image2016-8-22%2013:27:47.png?version=1&amp;modificationDate=1471852667638&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"81592510\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2016-8-22 13:27:47.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"69664784\" data-linked-resource-container-version=\"5\" data-media-id=\"c07d145f-179e-481a-b66d-224e9972e3ad\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/69664784/image2016-8-22%2013:27:47.png?version=1&amp;modificationDate=1471852667638&amp;cacheVersion=1&amp;api=v2&amp;width=858&amp;height=530 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/69664784/image2016-8-22%2013:27:47.png?version=1&amp;modificationDate=1471852667638&amp;cacheVersion=1&amp;api=v2&amp;width=429&amp;height=265 1x\" /></span><br /><br /></li><li>If the user doesn't receive OTP because of some network issues, <strong>'Resend OTP'</strong> button can be clicked to get a new OTP. User has to enter the new received OTP to successfully login.<br /><br /><br /></li></ol></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6462b5e2-1d86-451d-a8c5-c39c2f99335c\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong><span class=\"legacy-color-text-default\">Bahmni configuration for each implementation can vary drastically. As the screens and workflows are not constant across all installations of Bahmni, we have refrained from prescribing them. </span></strong></p><p><strong><span class=\"legacy-color-text-default\">Please refer to the Guides below for further details about the feature.</span></strong></p><div><strong><span class=\"legacy-color-text-default\"><br /></span></strong></div></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/69664776/Two+Factor+Authentication+2FA+TFA\" data-linked-resource-id=\"69664776\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">2FA - Feature Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3fe3feef-06ea-4aac-b9a1-a6bbe83b0bec\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Implemnentation Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/69664782/Two+Factor+Authentication+2FA+or+TFA+Implementation\" data-linked-resource-id=\"69664782\" data-linked-resource-version=\"24\" data-linked-resource-type=\"page\">2FA - Implementer's Guide</a></span></p>\n</div></div><p>&nbsp;</p><p>&nbsp;</p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/69664784"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/69664784/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/69664784/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 787782450
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/69664784/child",
+    "restrictions": "/rest/api/content/69664784/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/69664784/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=69664784",
+    "webui": "/spaces/BAH/pages/69664784/Two+Factor+Authentication+2FA+or+TFA+guide",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/69664784",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/69664784",
+    "tinyui": "/x/EAAnB",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

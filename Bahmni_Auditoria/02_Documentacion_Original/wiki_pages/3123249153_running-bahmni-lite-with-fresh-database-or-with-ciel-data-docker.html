@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Running Bahmni Lite with fresh database or with CIEL data (docker)</title></head><body><h1>Running Bahmni Lite with fresh database or with CIEL data (docker)</h1><div class="contentLayout2">
+<div class="columnLayout fixed-width" data-layout="fixed-width">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p /></div>
+</div>
+</div>
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class="confluence-information-macro confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="839526ea-ef7f-4002-8f5a-dd4ff1c01696" data-macro-name="tip"><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>Bahmni LITE comes with <a href="/wiki/spaces/BAH/pages/3311534130/Bahmni+and+CIEL+dictionary" data-linked-resource-id="3311534130" data-linked-resource-version="5" data-linked-resource-type="page">CIEL Concept dictionary</a>, which comprises of over 50K medical terms. This can slow down the first time initialization of DB. To decrease startup time, Bahmni publishes pre-loaded DBs based on mysql v5.6 and mysql v5.7. The default OpenMRS DB image of bahmni-lite points to the <code>bahmni/openmrs-db:1.0.0-lite-mysql5.7</code>. This can be configured and changed as per your requirements. The DB dump with CIEL data is maintained here on github: <a class="external-link" data-card-appearance="inline" href="https://github.com/Bahmni/bahmni-scripts/tree/master/demo/db-backups/1.0.0-lite" rel="nofollow">https://github.com/Bahmni/bahmni-scripts/tree/master/demo/db-backups/1.0.0-lite</a> </p></div></div><p>DB Images pre-loaded with CIEL concepts are:</p><ul><li><p><code>bahmni/openmrs-db:1.0.0-lite-mysql5.6</code>: OpenMRS DB based on mysql v5.6</p></li><li><p><code>bahmni/openmrs-db:1.0.0-lite-mysql5.7</code>: OpenMRS DB based on mysql v5.7</p></li></ul><p>These images can be used by changing the <a class="external-link" href="https://github.com/Bahmni/bahmni-docker/blob/0c4ab521b3e70b99c87c84adc0b9e3c07950df9b/bahmni-lite/.env#L30" rel="nofollow">OPENMRS_DB_IMAGE_NAME</a> variable in .<a class="external-link" href="https://github.com/Bahmni/bahmni-docker/blob/master/bahmni-lite/.env" rel="nofollow">env</a> file of bahmni-lite</p><h2 id="RunningBahmniLitewithfreshdatabaseorwithCIELdata(docker)-TostartBahmniwithafreshDB,performthefollowingone-timesteps:"><strong>To start Bahmni with a fresh DB, perform the following one-time steps:</strong></h2><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-id="36211a38-a751-4b7e-98bd-651d4ea096e9" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>If you have already started Bahmni, please make sure to bring down all the containers by running <code>docker compose --profile &lt;profile_used_at_start&gt; down -v</code></p></div></div><ol start="1"><li><p>Change the <a class="external-link" href="https://github.com/Bahmni/bahmni-docker/blob/0c4ab521b3e70b99c87c84adc0b9e3c07950df9b/bahmni-lite/.env#L30" rel="nofollow">OPENMRS_DB_IMAGE_NAME</a> variable to <code>mysql:5.6</code> or <code>mysql:5.7</code>  in <a class="external-link" href="https://github.com/Bahmni/bahmni-docker/blob/master/bahmni-lite/.env" rel="nofollow">.env</a> file of Bahmni Lite (this means use MySQL published fresh docker image)</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="254127ac-1b36-454a-b0ef-a219a1988f9b" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">OPENMRS_DB_IMAGE_NAME=mysql:5.6</pre>
+</div></div></li><li><p>Set the <code>OPENMRS_DB_CREATE_TABLES</code> variable to <code>'true'</code> in <a class="external-link" href="https://github.com/Bahmni/bahmni-docker/blob/0c4ab521b3e70b99c87c84adc0b9e3c07950df9b/bahmni-lite/.env#L35" rel="nofollow">.env</a> file of bahmni-lite</p></li><li><p>Comment out the volume mounts for <code>configuration_checksums</code> in <a class="external-link" href="https://github.com/Bahmni/bahmni-docker/blob/0c4ab521b3e70b99c87c84adc0b9e3c07950df9b/bahmni-lite/docker-compose.yml#L80" rel="nofollow">openmrs</a> and <a class="external-link" href="https://github.com/Bahmni/bahmni-docker/blob/0c4ab521b3e70b99c87c84adc0b9e3c07950df9b/bahmni-lite/docker-compose.yml#L99" rel="nofollow">openmrsdb</a> service in the <a class="external-link" href="https://github.com/Bahmni/bahmni-docker/blob/master/bahmni-lite/docker-compose.yml" rel="nofollow">docker-compose.yml</a> of Bahmni Lite. Doing this will make sure that the initializer module re-executes the changelogs. Note: the default initialiser configuration can be <a class="external-link" href="https://github.com/Bahmni/clinic-config/tree/main/masterdata/configuration" rel="nofollow">seen here</a>. To run with your own “config”, see this <a href="https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117449270/Using+Implementation+specific+Configuration+docker" rel="nofollow">documentation</a>. </p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="f51a8916-6de6-49a5-993e-c5ba670b6129" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence"># Add a '#' in front of the configuration_checksum lines in volume sub-section of the individual services to comment them out
+# - 'configuration_checksums:/openmrs/data/configuration_checksums'
+# - 'configuration_checksums:/configuration_checksums'</pre>
+</div></div></li><li><p>Now start Bahmni LITE, and see the openmrs logs to understand when the initialiser logs finish execution. </p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="82b9cc29-ef36-4cb0-9e56-2bc773d15674" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence"># Start Bahmni LITE (in bahmni-lite/ subfolder)
+docker compose up -d
+
+# See OpenMRS Logs
+docker compose logs openmrs -f</pre>
+</div></div></li></ol></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="" data-macro-name="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;"><div class="panelContent" style="background-color: #EAE6FF;">
+<p><strong>Running Bahmni with Docker</strong></p>
+</div></div><p>
+
+
+<div class="plugin_pagetree conf-macro output-inline" data-hasbody="false" data-local-id="85bebfef-128f-4fec-b799-585d2d7aba1a" data-macro-id="2d7d160f6385ee7ea42e4c0bb4cb85aa" data-macro-name="pagetree">
+
+                        
+                
+        <ul class="plugin_pagetree_children_list plugin_pagetree_children_list_noleftspace">
+            <div class="plugin_pagetree_children">
+            </div>
+        </ul>
+
+        <fieldset class="hidden">
+            <input type="hidden" name="treeId" value="" />
+            <input type="hidden" name="treeRequestId" value="/wiki/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=false" />
+            <input type="hidden" name="treePageId" value="3123249153" />
+
+            <input type="hidden" name="noRoot" value="false" />
+            <input type="hidden" name="rootPageId" value="299630726" />
+
+            <input type="hidden" name="rootPage" value="" />
+            <input type="hidden" name="startDepth" value="1" />
+            <input type="hidden" name="spaceKey" value="BAH" />
+
+            <input type="hidden" name="i18n-pagetree.loading" value="Loading..." />
+            <input type="hidden" name="i18n-pagetree.error.permission" value="Unable to load page tree. It seems that you do not have permission to view the root page." />
+            <input type="hidden" name="i18n-pagetree.eeror.general" value="There was a problem retrieving the page tree. Please check the server log file for more information." />
+            <input type="hidden" name="loginUrl" value="/wiki/login.action?os_destination=%2Frest%2Fapi%2Fcontent%2F3123249153%3Fexpand%3Dbody.storage%2Cbody.view%2Cversion%2Cmetadata.labels%2Chistory" />
+            <input type="hidden" name="mobile" value="false" />
+
+                        <fieldset class="hidden">
+                                                            <input type="hidden" name="ancestorId" value="299630726" />
+                                                </fieldset>
+        </fieldset>
+    </div>
+
+</p></div>
+</div>
+</div>
+</div></body></html>

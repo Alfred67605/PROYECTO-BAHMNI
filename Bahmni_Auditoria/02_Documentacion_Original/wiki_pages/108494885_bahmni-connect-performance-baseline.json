@@ -1,0 +1,170 @@
+{
+  "id": "108494885",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/108494885",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTA4NDk0ODg1",
+  "status": "current",
+  "title": "Bahmni Connect Performance Baseline",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:34691764-3661-4ae2-8bed-828436595072",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Siddhartha Mohapatra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:34691764-3661-4ae2-8bed-828436595072",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Siddhartha Mohapatra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:34691764-3661-4ae2-8bed-828436595072"
+      }
+    },
+    "createdDate": "2016-12-16T07:40:36.658Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/108494885/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:34691764-3661-4ae2-8bed-828436595072",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Siddhartha Mohapatra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:34691764-3661-4ae2-8bed-828436595072",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Siddhartha Mohapatra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:34691764-3661-4ae2-8bed-828436595072"
+      }
+    },
+    "when": "2016-12-26T12:30:40.974Z",
+    "friendlyWhen": "Dec 26, 2016",
+    "message": "",
+    "number": 24,
+    "minorEdit": false,
+    "syncRev": "0.roUrrqDXp3rQjtv9D9z1XA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$108494885.71",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/108494885"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/108494885/version/24"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><ac:structured-macro ac:name=\"warning\" ac:schema-version=\"1\" ac:macro-id=\"7a7b175c-15c8-4cf7-ae42-cda27f67fdb0\"><ac:rich-text-body><p>This page is currently in progress and the numbers are not currently ready for public consumption. We are in process of testing Bahmni Connect under various loads and configurations, and are also executing some spikes to improve performance even further. Please watch this page for final numbers. Thanks!</p></ac:rich-text-body></ac:structured-macro><p><br /></p><h2><strong><u>Introduction</u></strong></h2><p>To ensure the connect app works fine in various network conditions and load, there are performance tests done to come up with representative numbers. These numbers will help in capacity planning for the app and understanding the right Software/Hardware requirements before setting up the app.</p><p><br /></p><h2><u><strong>Device/Configuration used for performance</strong></u></h2><table class=\"wrapped\"><colgroup><col /><col /><col /><col /></colgroup><tbody><tr><td><strong>Device/</strong><br /><strong>Config</strong></td><td><strong>Chrome (Win)</strong></td><td><strong>Samsung Tab</strong></td><td><strong>Bahmni Server (AWS)</strong></td></tr><tr><td>version</td><td>Win 7 (32-bit)</td><td>-</td><td style=\"text-align: right;\">0.86</td></tr><tr><td>Android</td><td>-</td><td>4.2.2</td><td>-</td></tr><tr><td>RAM</td><td>*4 GB</td><td>1 GB</td><td>8 GB</td></tr><tr><td>CPU</td><td>*2.40Ghz</td><td>1.2Ghz Dual Core</td><td>2.40GHz 2 cores</td></tr><tr><td>Storage</td><td>-</td><td>3.5 GB (8GB)</td><td>32 GB</td></tr><tr><td>IP/Hostname</td><td><br /></td><td>-</td><td><div class=\"content-wrapper\"><p>Hosted on AWS</p></div></td></tr></tbody></table><p><br /></p><h3><u><strong>Initial Sync Time Vs Network Bandwidth (Chrome/Tab)</strong></u></h3><table class=\"wrapped\"><colgroup><col /><col /><col /><col /><col /></colgroup><tbody><tr><td><p><strong>Device</strong></p></td><td><p><strong>Network Bandwidth</strong></p></td><td><p><strong>#Patient</strong></p></td><td><p><strong># Events</strong></p></td><td><p><strong>Total Time</strong></p><p><strong>(Min)</strong></p></td></tr><tr><td><p>Chrome</p></td><td><p>2G (450kb/s-150kb/s)</p></td><td><p>30</p></td><td><p>9685</p></td><td><p>48</p></td></tr><tr><td><p>Chrome</p></td><td><p>Wifi (1.9Mb/s - 1.2Mb/s)</p></td><td><p>30</p></td><td><p>9685</p></td><td><p>30</p></td></tr><tr><td><p>Samsung Tab</p></td><td><p>Wifi (1.5Mb/s - 1.9Mb/s)</p></td><td><p>30</p></td><td><p>9685</p></td><td><p>95</p></td></tr><tr><td><p>Samsung Tab</p></td><td><p>2G (450kb/s-150kb/s)</p></td><td><p>30</p></td><td><p>9685</p></td><td><p>120</p></td></tr></tbody></table><p><strong><br /></strong></p><h3><u><strong>Device Performance Post Sync: Chrome/Tab</strong></u></h3><table class=\"wrapped\"><colgroup><col /><col /><col /><col /></colgroup><tbody><tr><td><p><strong>Device</strong></p></td><td><p><strong>Flow</strong></p></td><td><p><strong>#Encounters</strong></p></td><td><p><strong>Total Time (Secs)</strong></p></td></tr><tr><td rowspan=\"4\"><p><br /></p><p style=\"text-align: center;\" align=\"center\">Chrome</p></td><td><p>Create Patient -&gt; Save</p></td><td rowspan=\"4\"><p style=\"text-align: center;\" align=\"center\">3500</p></td><td><p>1.78</p></td></tr><tr><td><p>Clinical -&gt; Patient Listing</p></td><td><p>10.11</p></td></tr><tr><td><p>Patient Listing -&gt; Patient Dashboard</p></td><td><p>7.5</p></td></tr><tr><td><p>*Patient Dashboard -&gt; Observation</p></td><td><p>2</p></td></tr><tr><td rowspan=\"4\"><p><br /></p><p style=\"text-align: center;\" align=\"center\">Samsung Tab</p></td><td><p>Create Patient -&gt; Save</p></td><td rowspan=\"4\"><p style=\"text-align: center;\" align=\"center\">3500</p></td><td><p>5</p></td></tr><tr><td><p>Clinical -&gt; Patient Listing</p></td><td><p>8</p></td></tr><tr><td><p>Patient Listing -&gt; Patient Dashboard</p></td><td><p>17</p></td></tr><tr><td><p>*Patient Dashboard -&gt; Observation</p></td><td><p>3</p></td></tr></tbody></table><p><u><strong><br /></strong></u></p><h2><u><strong>Observations</strong></u></h2><p>1. Post sync, there's a lag of 4-5 secs on both the Chrome and Tab. Thus, a blank screen appears for every navigation that is performed on the devices.&quot;</p><p>2. If Sync fails for 16000+ events, the refresh doesn't start the sync again for remaining events, which is expected. Appears some storage issue with indexed DB in chrome&quot;</p><p>3. The size of the DB grows along with the no. of events respectively. Refer the chart</p><p>4. If there are 5 devices running initial sync in parallel, the CPU utilization of mysql on bahmni server&nbsp;was recorded more than 75%&quot;</p><p>5. The overall time for Sync depends on #Events, Network bandwidth, OS Configuration.&nbsp;For instance, 16000+ events took more than 3.5+ hours&quot;</p><p><br /></p><h2><u><strong>Recommendations</strong></u></h2><ol><li>Bahmni Connect worked fine for smaller set of patients i.e. Patients: 30 and Encounters: 3500, thus, need to define the sync strategy accordingly to choose the smaller set of patients and encounters.</li><li>To configure multiple devices in parallel, choose 2-3 devices at a time to configure as this will reduce the sync time on each device. Don't plan more than 5 devices at a time as it might make the server very slow and chances are likely high to get sync failures.</li><li>At any point if the sync fails, the sync can be restarted by logging again to the app. Sync will start again from the last failed event and thus, will keep the existing data in tact.</li></ol><p><br /></p><h2><u><strong>Known Issues</strong></u></h2><ol><li><span class=\"card-name view-mode-only\">Diagnosis goes undefined if the Nutritional value is left empty</span></li><li><p><span class=\"card-name view-mode-only\">Performance Bug - If the initial sync fails for more than 16k events, the sync doesn't resume post refresh. Investigation has been started to resolve this</span></p></li><li>Chrome: Adding Connect app extension and opening the app fails with &quot;Offline Data not setup&quot;, if the chrome session was already active.&nbsp;<br /><strong>WorkAround:</strong> Close the chrome App and open the app again.</li><li>If user opens another tab/s in the same chrome instance, then initial sync stops.&nbsp;<br /><strong>WorkAround:&nbsp;</strong>Open another chrome instance, instead of another tab in the same chrome instance</li></ol><p><br /></p></ac:layout-cell><ac:layout-cell><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"1a33fcf2-59c1-4fe6-8883-997a5c6aabb1\" /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/108494885"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7a7b175c-15c8-4cf7-ae42-cda27f67fdb0\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This page is currently in progress and the numbers are not currently ready for public consumption. We are in process of testing Bahmni Connect under various loads and configurations, and are also executing some spikes to improve performance even further. Please watch this page for final numbers. Thanks!</p></div></div><p><br/></p><h2 id=\"BahmniConnectPerformanceBaseline-Introduction\"><strong><u>Introduction</u></strong></h2><p>To ensure the connect app works fine in various network conditions and load, there are performance tests done to come up with representative numbers. These numbers will help in capacity planning for the app and understanding the right Software/Hardware requirements before setting up the app.</p><p><br/></p><h2 id=\"BahmniConnectPerformanceBaseline-Device/Configurationusedforperformance\"><u><strong>Device/Configuration used for performance</strong></u></h2><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><td class=\"confluenceTd\"><strong>Device/</strong><br/><strong>Config</strong></td><td class=\"confluenceTd\"><strong>Chrome (Win)</strong></td><td class=\"confluenceTd\"><strong>Samsung Tab</strong></td><td class=\"confluenceTd\"><strong>Bahmni Server (AWS)</strong></td></tr><tr><td class=\"confluenceTd\">version</td><td class=\"confluenceTd\">Win 7 (32-bit)</td><td class=\"confluenceTd\">-</td><td style=\"text-align: right;\" class=\"confluenceTd\">0.86</td></tr><tr><td class=\"confluenceTd\">Android</td><td class=\"confluenceTd\">-</td><td class=\"confluenceTd\">4.2.2</td><td class=\"confluenceTd\">-</td></tr><tr><td class=\"confluenceTd\">RAM</td><td class=\"confluenceTd\">*4 GB</td><td class=\"confluenceTd\">1 GB</td><td class=\"confluenceTd\">8 GB</td></tr><tr><td class=\"confluenceTd\">CPU</td><td class=\"confluenceTd\">*2.40Ghz</td><td class=\"confluenceTd\">1.2Ghz Dual Core</td><td class=\"confluenceTd\">2.40GHz 2 cores</td></tr><tr><td class=\"confluenceTd\">Storage</td><td class=\"confluenceTd\">-</td><td class=\"confluenceTd\">3.5 GB (8GB)</td><td class=\"confluenceTd\">32 GB</td></tr><tr><td class=\"confluenceTd\">IP/Hostname</td><td class=\"confluenceTd\"><br/></td><td class=\"confluenceTd\">-</td><td class=\"confluenceTd\"><div class=\"content-wrapper\"><p>Hosted on AWS</p></div></td></tr></tbody></table></div><p><br/></p><h3 id=\"BahmniConnectPerformanceBaseline-InitialSyncTimeVsNetworkBandwidth(Chrome/Tab)\"><u><strong>Initial Sync Time Vs Network Bandwidth (Chrome/Tab)</strong></u></h3><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col/><col/><col/><col/><col/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Device</strong></p></td><td class=\"confluenceTd\"><p><strong>Network Bandwidth</strong></p></td><td class=\"confluenceTd\"><p><strong>#Patient</strong></p></td><td class=\"confluenceTd\"><p><strong># Events</strong></p></td><td class=\"confluenceTd\"><p><strong>Total Time</strong></p><p><strong>(Min)</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>Chrome</p></td><td class=\"confluenceTd\"><p>2G (450kb/s-150kb/s)</p></td><td class=\"confluenceTd\"><p>30</p></td><td class=\"confluenceTd\"><p>9685</p></td><td class=\"confluenceTd\"><p>48</p></td></tr><tr><td class=\"confluenceTd\"><p>Chrome</p></td><td class=\"confluenceTd\"><p>Wifi (1.9Mb/s - 1.2Mb/s)</p></td><td class=\"confluenceTd\"><p>30</p></td><td class=\"confluenceTd\"><p>9685</p></td><td class=\"confluenceTd\"><p>30</p></td></tr><tr><td class=\"confluenceTd\"><p>Samsung Tab</p></td><td class=\"confluenceTd\"><p>Wifi (1.5Mb/s - 1.9Mb/s)</p></td><td class=\"confluenceTd\"><p>30</p></td><td class=\"confluenceTd\"><p>9685</p></td><td class=\"confluenceTd\"><p>95</p></td></tr><tr><td class=\"confluenceTd\"><p>Samsung Tab</p></td><td class=\"confluenceTd\"><p>2G (450kb/s-150kb/s)</p></td><td class=\"confluenceTd\"><p>30</p></td><td class=\"confluenceTd\"><p>9685</p></td><td class=\"confluenceTd\"><p>120</p></td></tr></tbody></table></div><p><strong><br/></strong></p><h3 id=\"BahmniConnectPerformanceBaseline-DevicePerformancePostSync:Chrome/Tab\"><u><strong>Device Performance Post Sync: Chrome/Tab</strong></u></h3><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong>Device</strong></p></td><td class=\"confluenceTd\"><p><strong>Flow</strong></p></td><td class=\"confluenceTd\"><p><strong>#Encounters</strong></p></td><td class=\"confluenceTd\"><p><strong>Total Time (Secs)</strong></p></td></tr><tr><td rowspan=\"4\" class=\"confluenceTd\"><p><br/></p><p style=\"text-align: center;\" align=\"center\">Chrome</p></td><td class=\"confluenceTd\"><p>Create Patient -&gt; Save</p></td><td rowspan=\"4\" class=\"confluenceTd\"><p style=\"text-align: center;\" align=\"center\">3500</p></td><td class=\"confluenceTd\"><p>1.78</p></td></tr><tr><td class=\"confluenceTd\"><p>Clinical -&gt; Patient Listing</p></td><td class=\"confluenceTd\"><p>10.11</p></td></tr><tr><td class=\"confluenceTd\"><p>Patient Listing -&gt; Patient Dashboard</p></td><td class=\"confluenceTd\"><p>7.5</p></td></tr><tr><td class=\"confluenceTd\"><p>*Patient Dashboard -&gt; Observation</p></td><td class=\"confluenceTd\"><p>2</p></td></tr><tr><td rowspan=\"4\" class=\"confluenceTd\"><p><br/></p><p style=\"text-align: center;\" align=\"center\">Samsung Tab</p></td><td class=\"confluenceTd\"><p>Create Patient -&gt; Save</p></td><td rowspan=\"4\" class=\"confluenceTd\"><p style=\"text-align: center;\" align=\"center\">3500</p></td><td class=\"confluenceTd\"><p>5</p></td></tr><tr><td class=\"confluenceTd\"><p>Clinical -&gt; Patient Listing</p></td><td class=\"confluenceTd\"><p>8</p></td></tr><tr><td class=\"confluenceTd\"><p>Patient Listing -&gt; Patient Dashboard</p></td><td class=\"confluenceTd\"><p>17</p></td></tr><tr><td class=\"confluenceTd\"><p>*Patient Dashboard -&gt; Observation</p></td><td class=\"confluenceTd\"><p>3</p></td></tr></tbody></table></div><p><u><strong><br/></strong></u></p><h2 id=\"BahmniConnectPerformanceBaseline-Observations\"><u><strong>Observations</strong></u></h2><p>1. Post sync, there's a lag of 4-5 secs on both the Chrome and Tab. Thus, a blank screen appears for every navigation that is performed on the devices.&quot;</p><p>2. If Sync fails for 16000+ events, the refresh doesn't start the sync again for remaining events, which is expected. Appears some storage issue with indexed DB in chrome&quot;</p><p>3. The size of the DB grows along with the no. of events respectively. Refer the chart</p><p>4. If there are 5 devices running initial sync in parallel, the CPU utilization of mysql on bahmni server was recorded more than 75%&quot;</p><p>5. The overall time for Sync depends on #Events, Network bandwidth, OS Configuration. For instance, 16000+ events took more than 3.5+ hours&quot;</p><p><br/></p><h2 id=\"BahmniConnectPerformanceBaseline-Recommendations\"><u><strong>Recommendations</strong></u></h2><ol><li>Bahmni Connect worked fine for smaller set of patients i.e. Patients: 30 and Encounters: 3500, thus, need to define the sync strategy accordingly to choose the smaller set of patients and encounters.</li><li>To configure multiple devices in parallel, choose 2-3 devices at a time to configure as this will reduce the sync time on each device. Don't plan more than 5 devices at a time as it might make the server very slow and chances are likely high to get sync failures.</li><li>At any point if the sync fails, the sync can be restarted by logging again to the app. Sync will start again from the last failed event and thus, will keep the existing data in tact.</li></ol><p><br/></p><h2 id=\"BahmniConnectPerformanceBaseline-KnownIssues\"><u><strong>Known Issues</strong></u></h2><ol><li><span class=\"card-name view-mode-only\">Diagnosis goes undefined if the Nutritional value is left empty</span></li><li><p><span class=\"card-name view-mode-only\">Performance Bug - If the initial sync fails for more than 16k events, the sync doesn't resume post refresh. Investigation has been started to resolve this</span></p></li><li>Chrome: Adding Connect app extension and opening the app fails with &quot;Offline Data not setup&quot;, if the chrome session was already active. <br/><strong>WorkAround:</strong> Close the chrome App and open the app again.</li><li>If user opens another tab/s in the same chrome instance, then initial sync stops. <br/><strong>WorkAround: </strong>Open another chrome instance, instead of another tab in the same chrome instance</li></ol><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"1a33fcf2-59c1-4fe6-8883-997a5c6aabb1\" data-macro-name=\"toc\"> </div></p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/108494885"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/108494885/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/108494885/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 2
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/108494885/child",
+    "restrictions": "/rest/api/content/108494885/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/108494885/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=108494885",
+    "webui": "/spaces/BAH/pages/108494885/Bahmni+Connect+Performance+Baseline",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/108494885",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/108494885",
+    "tinyui": "/x/JYB3Bg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,83 @@
+[
+  {
+    "component": "default-config",
+    "repoUrl": "https://github.com/Bahmni/default-config.git",
+    "branch": "HEAD",
+    "commit": "6b2ab4f6b61c40f125cc3f5f71c170803a05e872",
+    "date": "2024-07-22 10:50:02 +0530",
+    "localPath": "c:\\Users\\llano\\Downloads\\PROYEC\\Bahmni_Auditoria\\01_Sistema\\default-config",
+    "description": "Configuración oficial por defecto / distribución Standard de Bahmni"
+  },
+  {
+    "component": "bahmni-odoo-modules",
+    "repoUrl": "https://github.com/Bahmni/bahmni-odoo-modules.git",
+    "branch": "main",
+    "commit": "f1691c9a33403a73d72132a7e7f7140fd4ab0c5f",
+    "date": "2026-10-07 10:59:49 +0530",
+    "localPath": "c:\\Users\\llano\\Downloads\\PROYEC\\Bahmni_Auditoria\\01_Sistema\\bahmni-odoo-modules",
+    "description": "Módulos Odoo v16 ERP para facturación, inventario y farmacia de Bahmni Standard"
+  },
+  {
+    "component": "pacs-integration",
+    "repoUrl": "https://github.com/Bahmni/pacs-integration.git",
+    "branch": "master",
+    "commit": "72cf630b281ff61dfa03c8b9678c76899ee249ff",
+    "date": "2026-10-07 12:33:34 +0530",
+    "localPath": "c:\\Users\\llano\\Downloads\\PROYEC\\Bahmni_Auditoria\\01_Sistema\\pacs-integration",
+    "description": "Servicio de integración PACS y sincronización con DCM4CHEE"
+  },
+  {
+    "component": "bahmni-core",
+    "repoUrl": "https://github.com/Bahmni/bahmni-core.git",
+    "branch": "master",
+    "commit": "4eb74aa001dec8a7c6f7337fe15006188efff43d",
+    "date": "2026-10-12 12:40:32 +0530",
+    "localPath": "c:\\Users\\llano\\Downloads\\PROYEC\\Bahmni_Auditoria\\01_Sistema\\bahmni-core",
+    "description": "Módulos OpenMRS centrales y clientes Atomfeed de Bahmni"
+  },
+  {
+    "component": "bahmni-lite-e2e-tests",
+    "repoUrl": "https://github.com/Bahmni/bahmni-lite-e2e-tests.git",
+    "branch": "main",
+    "commit": "de34c2f390fa3f9ad900eefcd1a5fc130d8af34c",
+    "date": "2024-08-11 18:37:30 +0530",
+    "localPath": "c:\\Users\\llano\\Downloads\\PROYEC\\Bahmni_Auditoria\\04_Pruebas_Funcionales\\bahmni-lite-e2e-tests",
+    "description": "Pruebas E2E automatizadas oficiales de Bahmni"
+  },
+  {
+    "component": "bahmni-appointments-functional-tests",
+    "repoUrl": "https://github.com/Bahmni/bahmni-appointments-functional-tests.git",
+    "branch": "master",
+    "commit": "6548b2df67176778692ffbed163bc1823877bd55",
+    "date": "2019-12-03 22:54:48 +0530",
+    "localPath": "c:\\Users\\llano\\Downloads\\PROYEC\\Bahmni_Auditoria\\04_Pruebas_Funcionales\\bahmni-appointments-functional-tests",
+    "description": "Suite de pruebas funcionales para agendamiento de citas de Bahmni"
+  },
+  {
+    "component": "performance-test",
+    "repoUrl": "https://github.com/Bahmni/performance-test.git",
+    "branch": "master",
+    "commit": "ecab765fe2f4e7f1ad69c7962b4c2634f5477e2b",
+    "date": "2023-04-19 18:45:57 +0530",
+    "localPath": "c:\\Users\\llano\\Downloads\\PROYEC\\Bahmni_Auditoria\\05_Pruebas_Rendimiento\\performance-test",
+    "description": "Suite de pruebas de rendimiento (Gatling/JMeter) de Bahmni"
+  },
+  {
+    "component": "bahmni-test-data-generator",
+    "repoUrl": "https://github.com/Bahmni/bahmni-test-data-generator.git",
+    "branch": "main",
+    "commit": "a65b9ebca533242f439cd87aab261800f6a8d52d",
+    "date": "2022-09-06 18:10:29 +0530",
+    "localPath": "c:\\Users\\llano\\Downloads\\PROYEC\\Bahmni_Auditoria\\05_Pruebas_Rendimiento\\bahmni-test-data-generator",
+    "description": "Generador de datos de prueba sintéticos para pruebas de carga y rendimiento"
+  },
+  {
+    "component": "bahmni-decision-records",
+    "repoUrl": "https://github.com/Bahmni/bahmni-decision-records.git",
+    "branch": "main",
+    "commit": "c1b6db1aa6b15b7bb0a2f98d2ec9e88f42905822",
+    "date": "2021-11-09 10:10:08 +0530",
+    "localPath": "c:\\Users\\llano\\Downloads\\PROYEC\\Bahmni_Auditoria\\06_Arquitectura_y_Datos\\bahmni-decision-records",
+    "description": "Registros de Decisiones Arquitectónicas (ADR) de Bahmni"
+  }
+]

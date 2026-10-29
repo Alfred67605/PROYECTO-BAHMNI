@@ -1,0 +1,171 @@
+{
+  "id": "37945505",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/37945505",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzc5NDU1MDU=",
+  "status": "current",
+  "title": "Configure Address Hierarchy",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:c54772f2-46b5-43c0-be04-96923ee59750",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Vinay Venu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:c54772f2-46b5-43c0-be04-96923ee59750",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Vinay Venu",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:c54772f2-46b5-43c0-be04-96923ee59750"
+      }
+    },
+    "createdDate": "2016-01-20T05:57:55.151Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945505/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Himabindu Thungathurty",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Akkinepalli",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66"
+      }
+    },
+    "when": "2017-04-17T05:58:24.483Z",
+    "friendlyWhen": "Apr 17, 2017",
+    "message": "",
+    "number": 16,
+    "minorEdit": false,
+    "syncRev": "0.0RvsDwYj2Ta9gIXfFrEpZQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$37945505.115",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/37945505"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945505/version/16"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h1>Purpose</h1><p>Bahmni uses the Address Hierarchy module of OpenMRS to keep a list of address entries. Follow steps below to configure a new address hierarchy for your implementation.</p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"2e185108-2d8d-4d33-bf6c-02ec6f87d516\"><ac:rich-text-body><p>This step is not mandatory.&nbsp;</p></ac:rich-text-body></ac:structured-macro><h1>Configuration</h1><p>There are two things which can be configured in address section:</p><ol><li>The way you want to enter the address (Top-down/Bottom-up)</li><li>The level from which the fields should have strict autocomplete (values should only be selected from autocomplete search list).</li></ol><p>Bahmni&nbsp;allows you to configure address hierarchy form by two ways.</p><ul><li>Bottom - Up&nbsp;(Ex:- Village &ndash; Tehsil&nbsp;&ndash; District - State)</li></ul><p><ac:image><ri:attachment ri:filename=\"Screen Shot 2016-08-22 at 11.47.42 am.png\" ri:version-at-save=\"1\" /></ac:image></p><p>When a item is selected from the 'Village' Dropdown, all the above levels will be autopopulated automatically.</p><ul><li>Top - Down (Ex:- State &ndash; District - Tehsil&nbsp;&ndash; Village)</li></ul><p><ac:image><ri:attachment ri:filename=\"Screen Shot 2016-08-22 at 11.51.36 am.png\" ri:version-at-save=\"1\" /></ac:image></p><p>When parent level is filled, the child level will be filtered based on the value entered in parent field. For example, If 'Chattisgarh' is entered in State, only the districts which comes under 'Chattisgarh' will be &nbsp;present in the autocomplete list of 'District' field.</p><p>To configure it, &nbsp;the following can be added in app.json's config section.&nbsp;</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"164ed4ab-62aa-44aa-ae02-e18b63c975c0\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Sample Config</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"addressHierarchy\": {\n   \"showAddressFieldsTopDown\": true,\n   \"strictAutocompleteFromLevel\": \"address3\" //address3 is the addressfield name of Tehsil\n}]]></ac:plain-text-body></ac:structured-macro><p><br /></p><ul><li>Bottom up' approach is the default address hierarchy configuration. If top down approach has to be supported, then 'showAddressFieldsTopDown' should be set to true.</li><li>In both top-down and bottom-up address hierarchy, the address fields supports free text by default. If the field has to support only autocomplete then the address level from which it should support strict autocomplete can be specified using following configuration&nbsp;<br />Example:<br />&quot;strictAutocompleteFromLevel&quot;: &quot;address3&quot;<br />&nbsp;In the above example starting from tehsil all the above levels(eg: district and state) will support strict autocomplete.</li></ul><hr /><p><br /></p><h1>Steps</h1><h3>1) Upload CSV with address mappings</h3><p>Address Hierarchy needs to be configured in OpenMRS for it to be displayed in the Bahmni UI. It is best set up by uploading a Comma Separated Values (CSV) file with the desired address hierarchy.&nbsp;For e.g., if&nbsp;a hierarchy is defined as <em style=\"line-height: 1.42857;\">State -&gt; District -&gt; Taluka / Block -&gt; Village / City</em> then the CSV should have the format of <em style=\"line-height: 1.42857;\">State, District, Taluka , Village&nbsp;</em></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"52db49af-5a55-4a3e-8911-0aabf7d66bc6\"><ac:rich-text-body><p>Note that the CSV columns should be in the order of Bigger Geographical region to Smaller region. Otherwise the address fields would appear in reverse order on the Registration page and auto-complete will not be useful.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"67b31136-8355-4baf-b24f-0c696315690d\"><ac:parameter ac:name=\"title\">Example</ac:parameter><ac:rich-text-body><p>For example, refer below. Also refer to attached&nbsp;<a style=\"text-decoration: underline;\" href=\"https://bahmni.atlassian.net/wiki/download/attachments/1867784/SEARCH_address_hierarchy.csv?version=1&amp;modificationDate=1398859381750&amp;api=v2\" rel=\"nofollow\">address_hierarchy.csv</a></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><table class=\"wrapped relative-table\" style=\"width: 54.324%;\"><colgroup><col style=\"width: 19.3258%;\" /><col style=\"width: 22.0225%;\" /><col style=\"width: 18.6517%;\" /><col style=\"width: 20.4494%;\" /><col style=\"width: 19.5506%;\" /></colgroup><tbody><tr><td style=\"text-align: center;\" colspan=\"1\"><span style=\"color: rgb(0,0,255);\"><strong>Hierarchy</strong></span></td><td style=\"text-align: center;\"><strong>State</strong></td><td style=\"text-align: center;\"><strong>District</strong></td><td style=\"text-align: center;\"><strong>Taluka</strong></td><td style=\"text-align: center;\"><strong>Village</strong></td></tr></tbody></table><p class=\"auto-cursor-target\"><br /></p><table class=\"wrapped\"><colgroup><col /><col /><col /><col /><col /></colgroup><tbody><tr><td colspan=\"1\"><span style=\"color: rgb(255,0,0);\"><strong>Incorrect</strong></span></td><td>Maharashtra</td><td>Ghot</td><td>Chamorshi</td><td>Gadchiroli</td></tr><tr><td colspan=\"1\"><span style=\"color: rgb(0,0,255);\"><strong>Correct</strong></span></td><td>Maharashtra</td><td>Gadchiroli</td><td>Chamorshi</td><td>Chamorshi</td></tr></tbody></table><p>After creating such a CSV, visit OpenMRS &gt; Administration &gt; Manage Address Hierarchy page to upload it.</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><ac:image ac:border=\"true\" ac:height=\"295\" ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2015-11-16 at 2.01.41 PM.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p>In the &quot;<strong class=\"boxHeader\" style=\"margin-left: auto;\">Upload Address Hierarchy&quot;&nbsp;</strong>section:</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><ac:image ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2015-11-16 at 2.04.07 PM.png\" ri:version-at-save=\"1\" /></ac:image></span></p><h4><strong>Settings for the Screenshot above:</strong></h4><ul><li><span style=\"color: rgb(0,0,0);\"><strong>Select</strong> the&nbsp;CSV file to upload</span></li><li><span style=\"color: rgb(0,0,0);\"><strong>Delimiter</strong> (regex format): &nbsp;',' (without quotes)</span></li><li><span style=\"color: rgb(0,0,0);\"><strong>User-Generated Id Delimiter</strong> (regex format): leave as blank</span></li><li><span style=\"color: rgb(0,0,0);\"><strong>Overwrite Existing Hierarchy</strong>:&nbsp;If there is&nbsp;an existing address hierarchy that needs to be replaced, then it should be marked as &quot;checked&quot;. If this is left &quot;unchecked&quot; then new addresses will get appended to the existing hierarchy.</span></li><li><span style=\"color: rgb(0,0,0);\">Click&nbsp;<em>Upload</em></span></li></ul><h3><span style=\"color: rgb(0,0,0);\">2) Map Address Fields</span><strong><span style=\"color: rgb(0,0,0);\">&nbsp;</span></strong></h3><p><span style=\"color: rgb(0,0,0);\">Once the Address CSV is successfully uploaded, a list of fields will be visible in the&nbsp;<strong class=\"boxHeader\" style=\"margin-left: auto;\"><em>Address Hierarchy Levels</em>&nbsp;</strong>as shown below:</span></p><p><span style=\"color: rgb(0,0,0);\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><ac:image ac:border=\"true\" ac:width=\"700\"><ri:attachment ri:filename=\"Address_hierarchy.png\" ri:version-at-save=\"1\" /></ac:image></span></span><br /></span></p><h4><strong>Settings for the Screenshot above:</strong></h4><ul><li><span style=\"color: rgb(0,0,0);\">Click on the Edit link next to the field to specify the&nbsp;<em>Name</em>,&nbsp;<em>Address Field</em>&quot; and&nbsp;<em>Required</em>&nbsp;flag.</span></li><li><strong>Name</strong><em>:</em><span style=\"color: rgb(0,0,0);\">&nbsp;is what would be the Label displayed to the user on Registration Page.</span></li><li><strong>Address</strong> <strong>Field</strong><em>:&nbsp;</em><span style=\"color: rgb(0,0,0);\">is stored in the &quot;<em>person_address</em>&quot; table. From DB perspective this does not matter but keeping these closest to relevant fields is a good practice.</span></li></ul><p><span style=\"color: rgb(0,0,0);\"><br /></span></p><p><span style=\"color: rgb(0,0,0);\">Once this is done for all fields, the address hierarchy setup is complete.</span></p><div><span style=\"color: rgb(0,0,0);\"><br /></span></div></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"23cc8dfe-9354-4993-9445-96cd949ad44f\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"7f1f95ac-9ed3-4606-9fc1-3457d505761e\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"9228476c-7aed-4fff-ad73-4b3dba7013eb\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><ul><li><a href=\"https://wiki.openmrs.org/display/docs/Address+Hierarchy+Module\">Address Hierarchy Module (OpenMRS Documentation)</a>&nbsp;</li><li><ac:link><ri:page ri:content-title=\"Address Mapping between OpenELIS and Bahmni / OpenMRS\" ri:version-at-save=\"6\" /><ac:plain-text-link-body><![CDATA[OpenELIS and OpenMRS Address Mappings]]></ac:plain-text-link-body></ac:link></li><li><a href=\"https://talk.openmrs.org/t/trying-to-build-a-comprehensive-address-hierarchy-for-india/9697/5\">India Address Hierarchy (OpenMRS Talk Discussion)</a></li></ul></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/37945505"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h1 id=\"ConfigureAddressHierarchy-Purpose\">Purpose</h1><p>Bahmni uses the Address Hierarchy module of OpenMRS to keep a list of address entries. Follow steps below to configure a new address hierarchy for your implementation.</p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"2e185108-2d8d-4d33-bf6c-02ec6f87d516\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This step is not mandatory. </p></div></div><h1 id=\"ConfigureAddressHierarchy-Configuration\">Configuration</h1><p>There are two things which can be configured in address section:</p><ol><li>The way you want to enter the address (Top-down/Bottom-up)</li><li>The level from which the fields should have strict autocomplete (values should only be selected from autocomplete search list).</li></ol><p>Bahmni allows you to configure address hierarchy form by two ways.</p><ul><li>Bottom - Up (Ex:- Village – Tehsil – District - State)</li></ul><p><span class=\"confluence-embedded-file-wrapper\"><img class=\"confluence-embedded-image\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945505/Screen%20Shot%202016-08-22%20at%2011.47.42%20am.png?version=1&amp;modificationDate=1492408260993&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945505/Screen%20Shot%202016-08-22%20at%2011.47.42%20am.png?version=1&amp;modificationDate=1492408260993&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"116152230\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-08-22 at 11.47.42 am.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945505\" data-linked-resource-container-version=\"16\" data-media-id=\"fdacc9fe-a125-4954-bfbc-253527d192e2\" data-media-type=\"file\"></span></p><p>When a item is selected from the 'Village' Dropdown, all the above levels will be autopopulated automatically.</p><ul><li>Top - Down (Ex:- State – District - Tehsil – Village)</li></ul><p><span class=\"confluence-embedded-file-wrapper\"><img class=\"confluence-embedded-image\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945505/Screen%20Shot%202016-08-22%20at%2011.51.36%20am.png?version=1&amp;modificationDate=1492408392555&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945505/Screen%20Shot%202016-08-22%20at%2011.51.36%20am.png?version=1&amp;modificationDate=1492408392555&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"116152274\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-08-22 at 11.51.36 am.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945505\" data-linked-resource-container-version=\"16\" data-media-id=\"f13c05c4-c0f8-40e7-b72c-54ba2ba1dad9\" data-media-type=\"file\"></span></p><p>When parent level is filled, the child level will be filtered based on the value entered in parent field. For example, If 'Chattisgarh' is entered in State, only the districts which comes under 'Chattisgarh' will be  present in the autocomplete list of 'District' field.</p><p>To configure it,  the following can be added in app.json's config section. </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"164ed4ab-62aa-44aa-ae02-e18b63c975c0\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Sample Config</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;addressHierarchy&quot;: {\n   &quot;showAddressFieldsTopDown&quot;: true,\n   &quot;strictAutocompleteFromLevel&quot;: &quot;address3&quot; //address3 is the addressfield name of Tehsil\n}</pre>\n</div></div><p><br/></p><ul><li>Bottom up' approach is the default address hierarchy configuration. If top down approach has to be supported, then 'showAddressFieldsTopDown' should be set to true.</li><li>In both top-down and bottom-up address hierarchy, the address fields supports free text by default. If the field has to support only autocomplete then the address level from which it should support strict autocomplete can be specified using following configuration <br/>Example:<br/>&quot;strictAutocompleteFromLevel&quot;: &quot;address3&quot;<br/> In the above example starting from tehsil all the above levels(eg: district and state) will support strict autocomplete.</li></ul><hr/><p><br/></p><h1 id=\"ConfigureAddressHierarchy-Steps\">Steps</h1><h3 id=\"ConfigureAddressHierarchy-1)UploadCSVwithaddressmappings\">1) Upload CSV with address mappings</h3><p>Address Hierarchy needs to be configured in OpenMRS for it to be displayed in the Bahmni UI. It is best set up by uploading a Comma Separated Values (CSV) file with the desired address hierarchy. For e.g., if a hierarchy is defined as <em style=\"line-height: 1.42857;\">State -&gt; District -&gt; Taluka / Block -&gt; Village / City</em> then the CSV should have the format of <em style=\"line-height: 1.42857;\">State, District, Taluka , Village </em></p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"52db49af-5a55-4a3e-8911-0aabf7d66bc6\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Note that the CSV columns should be in the order of Bigger Geographical region to Smaller region. Otherwise the address fields would appear in reverse order on the Registration page and auto-complete will not be useful.</p></div></div><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"67b31136-8355-4baf-b24f-0c696315690d\" data-macro-name=\"tip\"><p class=\"title\">Example</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>For example, refer below. Also refer to attached <a href=\"https://bahmni.atlassian.net/wiki/download/attachments/1867784/SEARCH_address_hierarchy.csv?version=1&amp;modificationDate=1398859381750&amp;api=v2\" rel=\"nofollow\" style=\"text-decoration: underline;\">address_hierarchy.csv</a></p></div></div><div class=\"table-wrap\"><table class=\"wrapped relative-table confluenceTable\" style=\"width: 54.324%;\"><colgroup><col style=\"width: 19.3258%;\"/><col style=\"width: 22.0225%;\"/><col style=\"width: 18.6517%;\"/><col style=\"width: 20.4494%;\"/><col style=\"width: 19.5506%;\"/></colgroup><tbody><tr><td style=\"text-align: center;\" class=\"confluenceTd\" colspan=\"1\"><span class=\"legacy-color-text-blue4\"><strong>Hierarchy</strong></span></td><td style=\"text-align: center;\" class=\"confluenceTd\"><strong>State</strong></td><td style=\"text-align: center;\" class=\"confluenceTd\"><strong>District</strong></td><td style=\"text-align: center;\" class=\"confluenceTd\"><strong>Taluka</strong></td><td style=\"text-align: center;\" class=\"confluenceTd\"><strong>Village</strong></td></tr></tbody></table></div><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col/><col/><col/><col/><col/></colgroup><tbody><tr><td colspan=\"1\" class=\"confluenceTd\"><span class=\"legacy-color-text-red2\"><strong>Incorrect</strong></span></td><td class=\"confluenceTd\">Maharashtra</td><td class=\"confluenceTd\">Ghot</td><td class=\"confluenceTd\">Chamorshi</td><td class=\"confluenceTd\">Gadchiroli</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><span class=\"legacy-color-text-blue4\"><strong>Correct</strong></span></td><td class=\"confluenceTd\">Maharashtra</td><td class=\"confluenceTd\">Gadchiroli</td><td class=\"confluenceTd\">Chamorshi</td><td class=\"confluenceTd\">Chamorshi</td></tr></tbody></table></div><p>After creating such a CSV, visit OpenMRS &gt; Administration &gt; Manage Address Hierarchy page to upload it.</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border\" height=\"295\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945505/Screen%20Shot%202015-11-16%20at%202.01.41%20PM.png?version=1&amp;modificationDate=1453269475199&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=294\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945505/Screen%20Shot%202015-11-16%20at%202.01.41%20PM.png?version=1&amp;modificationDate=1453269475199&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"37945502\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2015-11-16 at 2.01.41 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945505\" data-linked-resource-container-version=\"16\" data-media-id=\"4ea09324-8ff7-4e10-8426-05bfbebdb453\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945505/Screen%20Shot%202015-11-16%20at%202.01.41%20PM.png?version=1&amp;modificationDate=1453269475199&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=588 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945505/Screen%20Shot%202015-11-16%20at%202.01.41%20PM.png?version=1&amp;modificationDate=1453269475199&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=294 1x\"></span></span></p><p>In the &quot;<strong style=\"margin-left: auto;\" class=\"boxHeader\">Upload Address Hierarchy&quot; </strong>section:</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945505/Screen%20Shot%202015-11-16%20at%202.04.07%20PM.png?version=1&amp;modificationDate=1453269475187&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=137\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945505/Screen%20Shot%202015-11-16%20at%202.04.07%20PM.png?version=1&amp;modificationDate=1453269475187&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"37945503\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2015-11-16 at 2.04.07 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945505\" data-linked-resource-container-version=\"16\" data-media-id=\"7cfe77b8-dd65-43cf-981b-ea408df2ff85\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945505/Screen%20Shot%202015-11-16%20at%202.04.07%20PM.png?version=1&amp;modificationDate=1453269475187&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=274 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945505/Screen%20Shot%202015-11-16%20at%202.04.07%20PM.png?version=1&amp;modificationDate=1453269475187&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=137 1x\"></span></span></p><h4 id=\"ConfigureAddressHierarchy-SettingsfortheScreenshotabove:\"><strong>Settings for the Screenshot above:</strong></h4><ul><li><span class=\"legacy-color-text-default\"><strong>Select</strong> the CSV file to upload</span></li><li><span class=\"legacy-color-text-default\"><strong>Delimiter</strong> (regex format):  ',' (without quotes)</span></li><li><span class=\"legacy-color-text-default\"><strong>User-Generated Id Delimiter</strong> (regex format): leave as blank</span></li><li><span class=\"legacy-color-text-default\"><strong>Overwrite Existing Hierarchy</strong>: If there is an existing address hierarchy that needs to be replaced, then it should be marked as &quot;checked&quot;. If this is left &quot;unchecked&quot; then new addresses will get appended to the existing hierarchy.</span></li><li><span class=\"legacy-color-text-default\">Click <em>Upload</em></span></li></ul><h3 id=\"ConfigureAddressHierarchy-2)MapAddressFields\"><span class=\"legacy-color-text-default\">2) Map Address Fields</span><strong><span class=\"legacy-color-text-default\"> </span></strong></h3><p><span class=\"legacy-color-text-default\">Once the Address CSV is successfully uploaded, a list of fields will be visible in the <strong style=\"margin-left: auto;\" class=\"boxHeader\"><em>Address Hierarchy Levels</em> </strong>as shown below:</span></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945505/Address_hierarchy.png?version=1&amp;modificationDate=1453269475169&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=97\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945505/Address_hierarchy.png?version=1&amp;modificationDate=1453269475169&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"37945504\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Address_hierarchy.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945505\" data-linked-resource-container-version=\"16\" data-media-id=\"78350c3d-188e-4a0f-99a2-c868554d9c2c\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945505/Address_hierarchy.png?version=1&amp;modificationDate=1453269475169&amp;cacheVersion=1&amp;api=v2&amp;width=1151&amp;height=161 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945505/Address_hierarchy.png?version=1&amp;modificationDate=1453269475169&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=97 1x\"></span></span></span><br/></span></p><h4 id=\"ConfigureAddressHierarchy-SettingsfortheScreenshotabove:.1\"><strong>Settings for the Screenshot above:</strong></h4><ul><li><span class=\"legacy-color-text-default\">Click on the Edit link next to the field to specify the <em>Name</em>, <em>Address Field</em>&quot; and <em>Required</em> flag.</span></li><li><strong>Name</strong><em>:</em><span class=\"legacy-color-text-default\"> is what would be the Label displayed to the user on Registration Page.</span></li><li><strong>Address</strong> <strong>Field</strong><em>: </em><span class=\"legacy-color-text-default\">is stored in the &quot;<em>person_address</em>&quot; table. From DB perspective this does not matter but keeping these closest to relevant fields is a good practice.</span></li></ul><p><span class=\"legacy-color-text-default\"><br/></span></p><p><span class=\"legacy-color-text-default\">Once this is done for all fields, the address hierarchy setup is complete.</span></p><div><span class=\"legacy-color-text-default\"><br/></span></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"23cc8dfe-9354-4993-9445-96cd949ad44f\" data-macro-name=\"info\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"7f1f95ac-9ed3-4606-9fc1-3457d505761e\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9228476c-7aed-4fff-ad73-4b3dba7013eb\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<ul><li><a class=\"external-link\" href=\"https://wiki.openmrs.org/display/docs/Address+Hierarchy+Module\" rel=\"nofollow\">Address Hierarchy Module (OpenMRS Documentation)</a> </li><li><a href=\"/wiki/spaces/BAH/pages/4915202/Address+Mapping+between+OpenELIS+and+Bahmni+OpenMRS\" data-linked-resource-id=\"4915202\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">OpenELIS and OpenMRS Address Mappings</a></li><li><a class=\"external-link\" href=\"https://talk.openmrs.org/t/trying-to-build-a-comprehensive-address-hierarchy-for-india/9697/5\" rel=\"nofollow\">India Address Hierarchy (OpenMRS Talk Discussion)</a></li></ul>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/37945505"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/37945505/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945505/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 30806366
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/37945505/child",
+    "restrictions": "/rest/api/content/37945505/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/37945505/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=37945505",
+    "webui": "/spaces/BAH/pages/37945505/Configure+Address+Hierarchy",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/37945505",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945505",
+    "tinyui": "/x/oQBDAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

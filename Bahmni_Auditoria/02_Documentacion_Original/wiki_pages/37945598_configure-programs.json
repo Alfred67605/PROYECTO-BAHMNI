@@ -1,0 +1,170 @@
+{
+  "id": "37945598",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/37945598",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzc5NDU1OTg=",
+  "status": "current",
+  "title": "Configure Programs",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2016-01-21T06:59:24.719Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945598/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sravanthi N. S. CH.",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sravanthi N. S. CH.",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d47e0136-cbde-4dbc-8820-611d4528d1c8"
+      }
+    },
+    "when": "2016-12-23T05:27:13.553Z",
+    "friendlyWhen": "Dec 23, 2016",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "syncRev": "0.CRlziN9CWYdZo02Om3Os0Q.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$37945598.45",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/37945598"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945598/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h3><span style=\"font-size: 16.0px;font-weight: bold;line-height: 1.5;\">1.&nbsp;</span><span style=\"color: rgb(0,0,0);\">Create new Programs in OpenMRS</span></h3><div><div class=\"syntaxhighlighter  js\"><p><span>To configure the Programs Section for specific programs navigate to the OpenMRS module to Manage Programs. Follow the steps as shown in the image below to setup a new program.</span></p></div></div><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><ac:image ac:align=\"center\" ac:border=\"true\" ac:width=\"700\"><ri:attachment ri:filename=\"programs creation flow.gif\" /></ac:image></span></p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><br /></span></p><div><h3 class=\"syntaxhighlighter nogutter  sql\">2. Retire a Program</h3></div><p>Retiring a Program can be done through OpenMRS in the Manage Programs screen. To retire a program, select one from the list as shown below:</p><p><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"Screen Shot 2016-04-01 at 1.21.02 PM.png\" /></ac:image></p><p>As in this case the Dengue program is checked.&nbsp;</p><p>Click on the Program to open the Program detail screen. Select &quot;Yes&quot; in the drop down for &quot;Retired&quot; value. Click&nbsp;<em style=\"line-height: 1.42857;\">Save</em>&nbsp;to retire the selected program.</p><p><ac:image ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2015-11-23 at 11.09.59 AM.png\" /></ac:image></p><p>This is the screen which results after any program is retired. The retired program is struck out.</p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"Screen Shot 2016-04-01 at 1.22.34 PM.png\" /></ac:image></span></p><h3 class=\"syntaxhighlighter nogutter  sql\">3. Un-retire a Program</h3><p>It is possible to again un-retire the program by following the same process.</p><p>a. Select the program to be un-retired</p><p>b. Click on the program to navigate to the Edit Program page.</p><p>c. Change the retired value from &quot;yes&quot; to &quot;no&quot; and save.&nbsp;</p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><br /></span></p></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"9e4f9769-17bb-4ca3-8e1e-b5067da8696b\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"6a71be86-e575-4d8d-8e0c-45b730b2ae3f\" />&nbsp;</p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/37945598"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h3 id=\"ConfigurePrograms-1.CreatenewProgramsinOpenMRS\"><span style=\"font-size: 16.0px;font-weight: bold;line-height: 1.5;\">1. </span><span class=\"legacy-color-text-default\">Create new Programs in OpenMRS</span></h3><div><div class=\"syntaxhighlighter  js\"><p><span>To configure the Programs Section for specific programs navigate to the OpenMRS module to Manage Programs. Follow the steps as shown in the image below to setup a new program.</span></p></div></div><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945598/programs%20creation%20flow.gif?version=1&amp;modificationDate=1458723853336&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=365\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945598/programs%20creation%20flow.gif?version=1&amp;modificationDate=1458723853336&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"47775805\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"programs creation flow.gif\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/gif\" data-linked-resource-container-id=\"37945598\" data-linked-resource-container-version=\"6\" data-media-id=\"e6ee18a8-031b-4853-bbfb-0ac0393ec7e0\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945598/programs%20creation%20flow.gif?version=1&amp;modificationDate=1458723853336&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=730 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945598/programs%20creation%20flow.gif?version=1&amp;modificationDate=1458723853336&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=365 1x\"></span></span></p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><br/></span></p><div><h3 class=\"syntaxhighlighter nogutter  sql\" id=\"ConfigurePrograms-2.RetireaProgram\">2. Retire a Program</h3></div><p>Retiring a Program can be done through OpenMRS in the Manage Programs screen. To retire a program, select one from the list as shown below:</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945598/Screen%20Shot%202016-04-01%20at%201.21.02%20PM.png?version=1&amp;modificationDate=1459497073185&amp;cacheVersion=1&amp;api=v2&amp;width=1132&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945598/Screen%20Shot%202016-04-01%20at%201.21.02%20PM.png?version=1&amp;modificationDate=1459497073185&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"49545326\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-04-01 at 1.21.02 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945598\" data-linked-resource-container-version=\"6\" data-media-id=\"be8a81ab-834c-4617-b302-59f8dc5cadff\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945598/Screen%20Shot%202016-04-01%20at%201.21.02%20PM.png?version=1&amp;modificationDate=1459497073185&amp;cacheVersion=1&amp;api=v2&amp;width=2264&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945598/Screen%20Shot%202016-04-01%20at%201.21.02%20PM.png?version=1&amp;modificationDate=1459497073185&amp;cacheVersion=1&amp;api=v2&amp;width=1132&amp;height=250 1x\"></span></p><p>As in this case the Dengue program is checked. </p><p>Click on the Program to open the Program detail screen. Select &quot;Yes&quot; in the drop down for &quot;Retired&quot; value. Click <em style=\"line-height: 1.42857;\">Save</em> to retire the selected program.</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945598/Screen%20Shot%202015-11-23%20at%2011.09.59%20AM.png?version=1&amp;modificationDate=1458723943565&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=195\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945598/Screen%20Shot%202015-11-23%20at%2011.09.59%20AM.png?version=1&amp;modificationDate=1458723943565&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"47775812\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2015-11-23 at 11.09.59 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945598\" data-linked-resource-container-version=\"6\" data-media-id=\"01219560-4ce2-4104-8478-9e4db920997c\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945598/Screen%20Shot%202015-11-23%20at%2011.09.59%20AM.png?version=1&amp;modificationDate=1458723943565&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=390 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945598/Screen%20Shot%202015-11-23%20at%2011.09.59%20AM.png?version=1&amp;modificationDate=1458723943565&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=195 1x\"></span></p><p>This is the screen which results after any program is retired. The retired program is struck out.</p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945598/Screen%20Shot%202016-04-01%20at%201.22.34%20PM.png?version=1&amp;modificationDate=1459497168095&amp;cacheVersion=1&amp;api=v2&amp;width=1146&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/37945598/Screen%20Shot%202016-04-01%20at%201.22.34%20PM.png?version=1&amp;modificationDate=1459497168095&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"49545329\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-04-01 at 1.22.34 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"37945598\" data-linked-resource-container-version=\"6\" data-media-id=\"5b754bd7-9f5b-49da-a362-ced70486ac3f\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/37945598/Screen%20Shot%202016-04-01%20at%201.22.34%20PM.png?version=1&amp;modificationDate=1459497168095&amp;cacheVersion=1&amp;api=v2&amp;width=2292&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945598/Screen%20Shot%202016-04-01%20at%201.22.34%20PM.png?version=1&amp;modificationDate=1459497168095&amp;cacheVersion=1&amp;api=v2&amp;width=1146&amp;height=250 1x\"></span></span></p><h3 class=\"syntaxhighlighter nogutter  sql\" id=\"ConfigurePrograms-3.Un-retireaProgram\">3. Un-retire a Program</h3><p>It is possible to again un-retire the program by following the same process.</p><p>a. Select the program to be un-retired</p><p>b. Click on the program to navigate to the Edit Program page.</p><p>c. Change the retired value from &quot;yes&quot; to &quot;no&quot; and save. </p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><br/></span></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9e4f9769-17bb-4ca3-8e1e-b5067da8696b\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"6a71be86-e575-4d8d-8e0c-45b730b2ae3f\" data-macro-name=\"toc\"> </div> <p> </p></div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/37945598"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/37945598/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945598/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 460303094
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/37945598/child",
+    "restrictions": "/rest/api/content/37945598/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/37945598/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=37945598",
+    "webui": "/spaces/BAH/pages/37945598/Configure+Programs",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/37945598",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/37945598",
+    "tinyui": "/x/-gBDAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

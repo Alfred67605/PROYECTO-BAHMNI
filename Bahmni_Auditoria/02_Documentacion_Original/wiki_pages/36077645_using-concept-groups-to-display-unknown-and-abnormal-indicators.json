@@ -1,0 +1,171 @@
+{
+  "id": "36077645",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/36077645",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzYwNzc2NDU=",
+  "status": "current",
+  "title": "Using Concept Groups to Display Unknown and Abnormal Indicators",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:72e2a20d-600c-4f7b-9453-e231f31268a5",
+      "accountType": "atlassian",
+      "email": "shashig@thoughtworks.com",
+      "publicName": "Shashikanth Gadgay (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:72e2a20d-600c-4f7b-9453-e231f31268a5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Shashikanth Gadgay (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:72e2a20d-600c-4f7b-9453-e231f31268a5"
+      }
+    },
+    "createdDate": "2015-12-29T11:47:25.057Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/36077645/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:0f43b7f8-f2e8-46f6-b0be-ad5f3fc23ddf",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Abishek Anand",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:0f43b7f8-f2e8-46f6-b0be-ad5f3fc23ddf",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Abishek Anand",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:0f43b7f8-f2e8-46f6-b0be-ad5f3fc23ddf"
+      }
+    },
+    "when": "2016-04-22T08:54:35.347Z",
+    "friendlyWhen": "Apr 22, 2016",
+    "message": "",
+    "number": 11,
+    "minorEdit": false,
+    "syncRev": "0.c5IcrLfNsS7vttU8XW3Mtw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$36077645.66",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/36077645"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/36077645/version/11"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p><span style=\"color: rgb(0,0,0);\">Unknown and abnormal indicators in forms are used to provide additional information to the observation. In the case of unknown it can be used when accurate measurements cannot be made. The abnormal indicator will be automatically checked for numeric concepts if the value entered is outside the Normal High and Normal Low limits defined in Openmrs as shown in the screenshots below.</span></p><h2><span style=\"color: rgb(0,0,0);\">Sections</span></h2><h3>Using Concept Groups to display Unknown Indicator</h3><p>In order to configure unknown indication for any concept, there is a specific way of grouping the concepts.</p><ul><li>Create a root concept set of class &quot;<strong>Concept Details</strong>&quot; and Datatype&nbsp;<strong>&quot;N/A&quot;</strong>&nbsp;. Example:&nbsp;<strong>Diastolic Data</strong></li><li>Root concept should have 2 set members<ul><li>Original concept that you want to see on the page. Example:&nbsp;<strong>Diastolic(Can be any concept or concept set)</strong></li><li>Unknown concept of type &quot;<strong>Boolean</strong>&quot; and class &quot;<strong>Unknown</strong>&quot;. Example:&nbsp;<strong>Diastolic Unknown</strong><strong><br /></strong></li></ul></li></ul><p><ac:image ac:height=\"400\"><ri:attachment ri:filename=\"image2015-12-29 17:8:42.png\" /></ac:image></p><p><strong><br /></strong></p><p><ac:image ac:height=\"400\"><ri:attachment ri:filename=\"image2015-12-29 17:12:48.png\" /></ac:image></p><p><ac:image ac:height=\"400\"><ri:attachment ri:filename=\"image2015-12-29 17:18:18.png\" /></ac:image></p><p>This is how it appears on the page :</p><p><ac:image ac:width=\"750\"><ri:attachment ri:filename=\"image2015-12-29 17:14:47.png\" /></ac:image></p><h3>Using Concept Groups to display Abnormal Indicator</h3><p>In order to configure abnormal indication for any concept, there is a specific way of grouping the concepts.</p><ul><li>Create a root concept set of class &quot;<strong>Concept Details</strong>&quot;. Example:&nbsp;<strong>Pulse Data</strong></li><li>Root concept should have 2 set members<ul><li>Original concept that you want to see on the page. Example:&nbsp;<strong>Pulse (Can be any concept or concept set)</strong></li><li>Abnormal concept of type &quot;<strong>Boolean</strong>&quot; and class &quot;<strong>Abnormal</strong>&quot;. Example:&nbsp;<strong>Pulse Abnormal</strong></li></ul></li></ul><p><ac:image ac:height=\"400\"><ri:attachment ri:filename=\"Screen Shot 2015-12-03 at 10.31.39 am.png\" /></ac:image></p><p><strong><ac:image ac:width=\"500\"><ri:attachment ri:filename=\"Screen Shot 2015-12-03 at 10.32.11 am.png\" /></ac:image>&nbsp;</strong></p><p><strong><ac:image ac:height=\"400\"><ri:attachment ri:filename=\"Screen Shot 2015-12-03 at 10.31.58 am.png\" /></ac:image></strong></p><p><strong><br /></strong></p><pre>This is how it appears on the page :</pre><p><strong><ac:image><ri:attachment ri:filename=\"Screen Shot 2015-12-03 at 10.33.18 am.png\" /></ac:image><br /></strong></p><div class=\"wiki-content\"><h2><strong>Hiding Abnormal Button on Forms:</strong></h2><p>&nbsp;1) Showing the abnormal &nbsp;button on observations is configurable. To hide the abnormal button in the entire template use the following configuration format.</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; FullySpecifiedNameOfTemplate : {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;hideAbnormalButton&quot; : true</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><h3>Example:</h3><div><div class=\"syntaxhighlighter sh-confluence nogutter  bash\"><p>&nbsp;</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6fae9bec-3296-4a97-8d14-ab6afd112617\"><ac:plain-text-body><![CDATA[ \"Lab Results Hemotology Template\" :{\n   \"hideAbnormalButton\" : true\n }]]></ac:plain-text-body></ac:structured-macro><p>2) To hide the abnormal button for a particular group of concepts under particular concept set, following is the format.</p></div></div><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; FullySpecifiedNameOfConceptGroup :&nbsp;{</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;hideAbnormalButton&quot; : true</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><h3>Example:</h3><div><div class=\"syntaxhighlighter sh-confluence nogutter  bash\"><p>&nbsp;</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"475a05a8-a6d9-4b5f-963d-cc939f61db03\"><ac:plain-text-body><![CDATA[\"Lab, Haematology\" : {\n    \"hideAbnormalButton\" : true\n }]]></ac:plain-text-body></ac:structured-macro><p>3)To hide the abnormal button at the leaf level &nbsp;concept, following is the format.</p></div></div><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; FullySpecifiedNameOfLeafConcept :&nbsp;{</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;hideAbnormalButton&quot; : true</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><div><div class=\"syntaxhighlighter sh-confluence nogutter  bash\"><h3>Example:</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"e14f083c-d34e-4956-ac66-211d68ed83ae\"><ac:plain-text-body><![CDATA[\"Absolute Neutrophil Count\" : {\n       \"hideAbnormalButton\" : true\n  }]]></ac:plain-text-body></ac:structured-macro><p>4)Leaf level concept configuration will override the template level or it's parent concept configuration. For example if you want to hide all the abnormal buttons in&nbsp;<strong style=\"line-height: 1.42857;\">&nbsp;Lab Results Haematology template</strong>&nbsp;except &nbsp;</p></div></div><p>&nbsp;<strong>Absolute Neutrophil Count</strong>&nbsp;leaf concept following is the required configuration.</p><div><div class=\"syntaxhighlighter sh-confluence nogutter  bash\"><h3>Example:</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"aeca3b5d-d2e6-4a4d-be31-86032b981e44\"><ac:plain-text-body><![CDATA[\"Lab Results Hemotology Template\" :{\n   \"hideAbnormalButton\" : true\n} \n\"Absolute Neutrophil Count\" : {\n       \"hideAbnormalButton\" : false\n }\n]]></ac:plain-text-body></ac:structured-macro><p>If you don't mention any configuration abnormal button will display by default.<a class=\"like-button\" style=\"line-height: 1.42857;\" href=\"https://bahmni.atlassian.net/wiki/pages/viewpage.action?pageId=34439344\">&nbsp;</a></p></div></div></div></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"1cccd5b2-cb53-4443-8d74-9ab2b0ca6712\" /></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Capturing Observations\" /><ac:plain-text-link-body><![CDATA[Observations Form - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/36077645"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"UsingConceptGroupstoDisplayUnknownandAbnormalIndicators-PurposeandBenefits\">Purpose and Benefits</h2><p><span class=\"legacy-color-text-default\">Unknown and abnormal indicators in forms are used to provide additional information to the observation. In the case of unknown it can be used when accurate measurements cannot be made. The abnormal indicator will be automatically checked for numeric concepts if the value entered is outside the Normal High and Normal Low limits defined in Openmrs as shown in the screenshots below.</span></p><h2 id=\"UsingConceptGroupstoDisplayUnknownandAbnormalIndicators-Sections\"><span class=\"legacy-color-text-default\">Sections</span></h2><h3 id=\"UsingConceptGroupstoDisplayUnknownandAbnormalIndicators-UsingConceptGroupstodisplayUnknownIndicator\">Using Concept Groups to display Unknown Indicator</h3><p>In order to configure unknown indication for any concept, there is a specific way of grouping the concepts.</p><ul><li>Create a root concept set of class &quot;<strong>Concept Details</strong>&quot; and Datatype <strong>&quot;N/A&quot;</strong> . Example: <strong>Diastolic Data</strong></li><li>Root concept should have 2 set members<ul><li>Original concept that you want to see on the page. Example: <strong>Diastolic(Can be any concept or concept set)</strong></li><li>Unknown concept of type &quot;<strong>Boolean</strong>&quot; and class &quot;<strong>Unknown</strong>&quot;. Example: <strong>Diastolic Unknown</strong><strong><br/></strong></li></ul></li></ul><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"400\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/36077645/image2015-12-29%2017:8:42.png?version=1&amp;modificationDate=1451389645149&amp;cacheVersion=1&amp;api=v2&amp;width=464&amp;height=400\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/36077645/image2015-12-29%2017:8:42.png?version=1&amp;modificationDate=1451389645149&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"36077637\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2015-12-29 17:8:42.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"36077645\" data-linked-resource-container-version=\"11\" data-media-id=\"b35ff673-879f-4f76-987c-90b7b72c4246\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/36077645/image2015-12-29%2017:8:42.png?version=1&amp;modificationDate=1451389645149&amp;cacheVersion=1&amp;api=v2&amp;width=928&amp;height=800 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/36077645/image2015-12-29%2017:8:42.png?version=1&amp;modificationDate=1451389645149&amp;cacheVersion=1&amp;api=v2&amp;width=464&amp;height=400 1x\"></span></p><p><strong><br/></strong></p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"400\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/36077645/image2015-12-29%2017:12:48.png?version=1&amp;modificationDate=1451389645117&amp;cacheVersion=1&amp;api=v2&amp;width=412&amp;height=400\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/36077645/image2015-12-29%2017:12:48.png?version=1&amp;modificationDate=1451389645117&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"36077642\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2015-12-29 17:12:48.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"36077645\" data-linked-resource-container-version=\"11\" data-media-id=\"02b932f5-c8ec-4da8-b307-4900eb90dcd2\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/36077645/image2015-12-29%2017:12:48.png?version=1&amp;modificationDate=1451389645117&amp;cacheVersion=1&amp;api=v2&amp;width=824&amp;height=800 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/36077645/image2015-12-29%2017:12:48.png?version=1&amp;modificationDate=1451389645117&amp;cacheVersion=1&amp;api=v2&amp;width=412&amp;height=400 1x\"></span></p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"400\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/36077645/image2015-12-29%2017:18:18.png?version=1&amp;modificationDate=1451389699917&amp;cacheVersion=1&amp;api=v2&amp;width=518&amp;height=400\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/36077645/image2015-12-29%2017:18:18.png?version=1&amp;modificationDate=1451389699917&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"36077647\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2015-12-29 17:18:18.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"36077645\" data-linked-resource-container-version=\"11\" data-media-id=\"5aa7e15a-c4fd-469a-9b18-25d6cb44a95c\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/36077645/image2015-12-29%2017:18:18.png?version=1&amp;modificationDate=1451389699917&amp;cacheVersion=1&amp;api=v2&amp;width=1036&amp;height=800 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/36077645/image2015-12-29%2017:18:18.png?version=1&amp;modificationDate=1451389699917&amp;cacheVersion=1&amp;api=v2&amp;width=518&amp;height=400 1x\"></span></p><p>This is how it appears on the page :</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"750\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/36077645/image2015-12-29%2017:14:47.png?version=1&amp;modificationDate=1451389645108&amp;cacheVersion=1&amp;api=v2&amp;width=750&amp;height=52\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/36077645/image2015-12-29%2017:14:47.png?version=1&amp;modificationDate=1451389645108&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"36077643\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2015-12-29 17:14:47.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"36077645\" data-linked-resource-container-version=\"11\" data-media-id=\"b726aa4f-1583-48c1-a175-93a39ec6fbb5\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/36077645/image2015-12-29%2017:14:47.png?version=1&amp;modificationDate=1451389645108&amp;cacheVersion=1&amp;api=v2&amp;width=1374&amp;height=96 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/36077645/image2015-12-29%2017:14:47.png?version=1&amp;modificationDate=1451389645108&amp;cacheVersion=1&amp;api=v2&amp;width=750&amp;height=52 1x\"></span></p><h3 id=\"UsingConceptGroupstoDisplayUnknownandAbnormalIndicators-UsingConceptGroupstodisplayAbnormalIndicator\">Using Concept Groups to display Abnormal Indicator</h3><p>In order to configure abnormal indication for any concept, there is a specific way of grouping the concepts.</p><ul><li>Create a root concept set of class &quot;<strong>Concept Details</strong>&quot;. Example: <strong>Pulse Data</strong></li><li>Root concept should have 2 set members<ul><li>Original concept that you want to see on the page. Example: <strong>Pulse (Can be any concept or concept set)</strong></li><li>Abnormal concept of type &quot;<strong>Boolean</strong>&quot; and class &quot;<strong>Abnormal</strong>&quot;. Example: <strong>Pulse Abnormal</strong></li></ul></li></ul><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"400\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/36077645/Screen%20Shot%202015-12-03%20at%2010.31.39%20am.png?version=1&amp;modificationDate=1451389645178&amp;cacheVersion=1&amp;api=v2&amp;width=531&amp;height=400\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/36077645/Screen%20Shot%202015-12-03%20at%2010.31.39%20am.png?version=1&amp;modificationDate=1451389645178&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"36077634\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2015-12-03 at 10.31.39 am.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"36077645\" data-linked-resource-container-version=\"11\" data-media-id=\"d2c31b40-1ea0-47b5-b713-a10bdc76b46c\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/36077645/Screen%20Shot%202015-12-03%20at%2010.31.39%20am.png?version=1&amp;modificationDate=1451389645178&amp;cacheVersion=1&amp;api=v2&amp;width=1062&amp;height=800 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/36077645/Screen%20Shot%202015-12-03%20at%2010.31.39%20am.png?version=1&amp;modificationDate=1451389645178&amp;cacheVersion=1&amp;api=v2&amp;width=531&amp;height=400 1x\"></span></p><p><strong><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"500\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/36077645/Screen%20Shot%202015-12-03%20at%2010.32.11%20am.png?version=1&amp;modificationDate=1451389645169&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=506\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/36077645/Screen%20Shot%202015-12-03%20at%2010.32.11%20am.png?version=1&amp;modificationDate=1451389645169&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"36077635\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2015-12-03 at 10.32.11 am.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"36077645\" data-linked-resource-container-version=\"11\" data-media-id=\"cc11a29b-8e25-4eeb-a35d-069b33f49630\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/36077645/Screen%20Shot%202015-12-03%20at%2010.32.11%20am.png?version=1&amp;modificationDate=1451389645169&amp;cacheVersion=1&amp;api=v2&amp;width=1000&amp;height=1012 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/36077645/Screen%20Shot%202015-12-03%20at%2010.32.11%20am.png?version=1&amp;modificationDate=1451389645169&amp;cacheVersion=1&amp;api=v2&amp;width=500&amp;height=506 1x\"></span> </strong></p><p><strong><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"400\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/36077645/Screen%20Shot%202015-12-03%20at%2010.31.58%20am.png?version=1&amp;modificationDate=1451389645160&amp;cacheVersion=1&amp;api=v2&amp;width=530&amp;height=400\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/36077645/Screen%20Shot%202015-12-03%20at%2010.31.58%20am.png?version=1&amp;modificationDate=1451389645160&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"36077636\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2015-12-03 at 10.31.58 am.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"36077645\" data-linked-resource-container-version=\"11\" data-media-id=\"08b16f5b-c740-4500-bd6c-66b3436d95b3\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/36077645/Screen%20Shot%202015-12-03%20at%2010.31.58%20am.png?version=1&amp;modificationDate=1451389645160&amp;cacheVersion=1&amp;api=v2&amp;width=1060&amp;height=800 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/36077645/Screen%20Shot%202015-12-03%20at%2010.31.58%20am.png?version=1&amp;modificationDate=1451389645160&amp;cacheVersion=1&amp;api=v2&amp;width=530&amp;height=400 1x\"></span></strong></p><p><strong><br/></strong></p><pre>This is how it appears on the page :</pre><p><strong><span class=\"confluence-embedded-file-wrapper\"><img class=\"confluence-embedded-image\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/36077645/Screen%20Shot%202015-12-03%20at%2010.33.18%20am.png?version=1&amp;modificationDate=1452165260830&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/36077645/Screen%20Shot%202015-12-03%20at%2010.33.18%20am.png?version=1&amp;modificationDate=1452165260830&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"36700350\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2015-12-03 at 10.33.18 am.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"36077645\" data-linked-resource-container-version=\"11\" data-media-id=\"c0d15fc6-45c5-4153-ab3f-11473dcb1ac1\" data-media-type=\"file\"></span><br/></strong></p><div class=\"wiki-content\"><h2 id=\"UsingConceptGroupstoDisplayUnknownandAbnormalIndicators-HidingAbnormalButtononForms:\"><strong>Hiding Abnormal Button on Forms:</strong></h2><p> 1) Showing the abnormal  button on observations is configurable. To hide the abnormal button in the entire template use the following configuration format.</p><p>              FullySpecifiedNameOfTemplate : {</p><p>                    &quot;hideAbnormalButton&quot; : true</p><p>              }</p><h3 id=\"UsingConceptGroupstoDisplayUnknownandAbnormalIndicators-Example:\">Example:</h3><div><div class=\"syntaxhighlighter sh-confluence nogutter  bash\"><p> </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6fae9bec-3296-4a97-8d14-ab6afd112617\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\"> &quot;Lab Results Hemotology Template&quot; :{\n   &quot;hideAbnormalButton&quot; : true\n }</pre>\n</div></div><p>2) To hide the abnormal button for a particular group of concepts under particular concept set, following is the format.</p></div></div><p>            FullySpecifiedNameOfConceptGroup : {</p><p>                     &quot;hideAbnormalButton&quot; : true</p><p>            }</p><h3 id=\"UsingConceptGroupstoDisplayUnknownandAbnormalIndicators-Example:.1\">Example:</h3><div><div class=\"syntaxhighlighter sh-confluence nogutter  bash\"><p> </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"475a05a8-a6d9-4b5f-963d-cc939f61db03\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;Lab, Haematology&quot; : {\n    &quot;hideAbnormalButton&quot; : true\n }</pre>\n</div></div><p>3)To hide the abnormal button at the leaf level  concept, following is the format.</p></div></div><p>            FullySpecifiedNameOfLeafConcept : {</p><p>                          &quot;hideAbnormalButton&quot; : true</p><p>              }</p><div><div class=\"syntaxhighlighter sh-confluence nogutter  bash\"><h3 id=\"UsingConceptGroupstoDisplayUnknownandAbnormalIndicators-Example:.2\">Example:</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e14f083c-d34e-4956-ac66-211d68ed83ae\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;Absolute Neutrophil Count&quot; : {\n       &quot;hideAbnormalButton&quot; : true\n  }</pre>\n</div></div><p>4)Leaf level concept configuration will override the template level or it's parent concept configuration. For example if you want to hide all the abnormal buttons in <strong style=\"line-height: 1.42857;\"> Lab Results Haematology template</strong> except  </p></div></div><p> <strong>Absolute Neutrophil Count</strong> leaf concept following is the required configuration.</p><div><div class=\"syntaxhighlighter sh-confluence nogutter  bash\"><h3 id=\"UsingConceptGroupstoDisplayUnknownandAbnormalIndicators-Example:.3\">Example:</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"aeca3b5d-d2e6-4a4d-be31-86032b981e44\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;Lab Results Hemotology Template&quot; :{\n   &quot;hideAbnormalButton&quot; : true\n} \n&quot;Absolute Neutrophil Count&quot; : {\n       &quot;hideAbnormalButton&quot; : false\n }\n</pre>\n</div></div><p>If you don't mention any configuration abnormal button will display by default.<a class=\"like-button\" href=\"https://bahmni.atlassian.net/wiki/pages/viewpage.action?pageId=34439344\" rel=\"nofollow\" style=\"line-height: 1.42857;\"> </a></p></div></div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"1cccd5b2-cb53-4443-8d74-9ab2b0ca6712\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/40501363/Capturing+Observations\" data-linked-resource-id=\"40501363\" data-linked-resource-version=\"17\" data-linked-resource-type=\"page\">Observations Form - Feature Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/36077645"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/36077645/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/36077645/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 0
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/36077645/child",
+    "restrictions": "/rest/api/content/36077645/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/36077645/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=36077645",
+    "webui": "/spaces/BAH/pages/36077645/Using+Concept+Groups+to+Display+Unknown+and+Abnormal+Indicators",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/36077645",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/36077645",
+    "tinyui": "/x/TYAmAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

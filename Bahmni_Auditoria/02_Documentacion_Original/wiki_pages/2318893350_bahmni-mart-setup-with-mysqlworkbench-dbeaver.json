@@ -1,0 +1,174 @@
+{
+  "id": "2318893350",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2318893350",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMxODg5MzM1MA==",
+  "status": "current",
+  "title": "Bahmni-Mart Setup with MySQLWorkbench & DBeaver",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5ff6975591bb2e0108e513c3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "venkatesh bavisetti",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5ff6975591bb2e0108e513c3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Bavisetti Venkatesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5ff6975591bb2e0108e513c3"
+      }
+    },
+    "createdDate": "2021-04-05T08:24:52.936Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2318893350/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:3e8e7719-cb9e-4745-8a81-03ddb46f33af",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Pritam Das",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:3e8e7719-cb9e-4745-8a81-03ddb46f33af",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Pritam Das",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:3e8e7719-cb9e-4745-8a81-03ddb46f33af"
+      }
+    },
+    "when": "2021-04-14T07:03:34.852Z",
+    "friendlyWhen": "Apr 14, 2021",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "0.confluence$content$2318893350.33",
+    "syncRevSource": "synchrony-ack",
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$2318893350.35",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2318893350"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2318893350/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p><strong>Prerequisites:</strong></p><ol><li><p>Generate public key using</p></li></ol><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"7fd69df0-437a-4256-b42e-55cad1ec0c3e\"><ac:plain-text-body><![CDATA[ssh-keygen -t rsa ]]></ac:plain-text-body></ac:structured-macro><ol><li><p>For latest DBeaver, ​Run this on your key to convert it to RSA private key.</p></li></ol><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d3ca53ab-e161-4233-9084-d394bf0b7407\"><ac:plain-text-body><![CDATA[ssh-keygen -p -m PEM -f ~/.ssh/id_rsa ]]></ac:plain-text-body></ac:structured-macro><p><strong>MYSQL:</strong></p><p><strong>Tools:</strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"c6a83a3b-bbd6-45a4-a80e-56fc5bd4fc82\"><ac:plain-text-body><![CDATA[1.MySQLWorkbench\n2.DBeaver ]]></ac:plain-text-body></ac:structured-macro><p><strong>Connecting using MySQLWorkbench:</strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"3f4617f5-35fc-45a9-973d-7cea562dae2d\"><ac:plain-text-body><![CDATA[Change the connection method to Standard TCP/IP over SSH, by default, connection method will be set to Standard (TCP/IP) \nHostname: “<DomainName>” \nUsername: “centos”\nSSH key file path: “provide the path to id_rsa file” \nMySQL Hostname: “localhost” \nMySQL Server Port: “3306” \nUsername: “root”]]></ac:plain-text-body></ac:structured-macro><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"638\" ac:original-width=\"832\"><ri:attachment ri:filename=\"11_1.png\" ri:version-at-save=\"1\" /></ac:image><p>Once all the details are added, Test Connection and ideally you see the &ldquo;Connection Successful&rdquo; popup.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"211\" ac:original-width=\"373\" ac:width=\"680\"><ri:attachment ri:filename=\"Picture 2.png\" ri:version-at-save=\"3\" /></ac:image><p /><p><strong>POSTGRESS:</strong></p><p><strong>Tools:</strong></p><h2><a href=\"https://dbeaver.io/\">DBeaver</a></h2><h3><strong>Connecting to POSTGRESS using DBeaver:</strong></h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"89275be8-1d94-44ea-bacf-567a2d93da6c\"><ac:plain-text-body><![CDATA[Select postgress DB while creating a new connection \nSelect SSH tab and check “Use SSH Tunnel” option \nHost/IP: “<DomainName>” \nPort: 22 \nUser Name: “centos” \nAuthentication Method: “Public Key” \nPrivate Key: “provide the path to id_rsa file” ]]></ac:plain-text-body></ac:structured-macro><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"402\" ac:original-width=\"468\" ac:width=\"680\"><ri:attachment ri:filename=\"Picture 3.png\" ri:version-at-save=\"3\" /></ac:image><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"1040\" ac:original-width=\"936\"><ri:attachment ri:filename=\"12_1.png\" ri:version-at-save=\"1\" /></ac:image><p /><p>Once all the details are added, Test Connection and ideally you see the &ldquo;Connection Successful&rdquo; popup.&nbsp;</p><p />",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2318893350"
+      }
+    },
+    "view": {
+      "value": "<p><strong>Prerequisites:</strong></p><ol><li><p>Generate public key using</p></li></ol><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7fd69df0-437a-4256-b42e-55cad1ec0c3e\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">ssh-keygen -t rsa </pre>\n</div></div><ol><li><p>For latest DBeaver, ​Run this on your key to convert it to RSA private key.</p></li></ol><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d3ca53ab-e161-4233-9084-d394bf0b7407\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">ssh-keygen -p -m PEM -f ~/.ssh/id_rsa </pre>\n</div></div><p><strong>MYSQL:</strong></p><p><strong>Tools:</strong></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c6a83a3b-bbd6-45a4-a80e-56fc5bd4fc82\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">1.MySQLWorkbench\n2.DBeaver </pre>\n</div></div><p><strong>Connecting using MySQLWorkbench:</strong></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3f4617f5-35fc-45a9-973d-7cea562dae2d\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Change the connection method to Standard TCP/IP over SSH, by default, connection method will be set to Standard (TCP/IP) \nHostname: “&lt;DomainName&gt;” \nUsername: “centos”\nSSH key file path: “provide the path to id_rsa file” \nMySQL Hostname: “localhost” \nMySQL Server Port: “3306” \nUsername: “root”</pre>\n</div></div><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/2318893350/11_1.png?version=1&amp;modificationDate=1618383729393&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/2318893350/11_1.png?version=1&amp;modificationDate=1618383729393&amp;cacheVersion=1&amp;api=v2\" data-height=\"638\" data-width=\"832\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2361524258\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"11_1.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"2318893350\" data-linked-resource-container-version=\"3\" data-media-id=\"fc136671-e149-4e49-b668-a30fb0ef7f01\" data-media-type=\"file\"></span><p>Once all the details are added, Test Connection and ideally you see the “Connection Successful” popup.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"680\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/2318893350/Picture%202.png?version=3&amp;modificationDate=1617611552243&amp;cacheVersion=1&amp;api=v2&amp;width=680&amp;height=384\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/2318893350/Picture%202.png?version=3&amp;modificationDate=1617611552243&amp;cacheVersion=1&amp;api=v2\" data-height=\"211\" data-width=\"373\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2306736405\" data-linked-resource-version=\"3\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Picture 2.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"2318893350\" data-linked-resource-container-version=\"3\" data-media-id=\"7fe6065c-3a11-4f31-8533-3729f46c2d07\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/2318893350/Picture%202.png?version=3&amp;modificationDate=1617611552243&amp;cacheVersion=1&amp;api=v2&amp;width=746&amp;height=422 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/2318893350/Picture%202.png?version=3&amp;modificationDate=1617611552243&amp;cacheVersion=1&amp;api=v2&amp;width=680&amp;height=384 1x\"></span><p /><p><strong>POSTGRESS:</strong></p><p><strong>Tools:</strong></p><h2 id=\"Bahmni-MartSetupwithMySQLWorkbench&amp;DBeaver-DBeaver\"><a class=\"external-link\" href=\"https://dbeaver.io/\" rel=\"nofollow\">DBeaver</a></h2><h3 id=\"Bahmni-MartSetupwithMySQLWorkbench&amp;DBeaver-ConnectingtoPOSTGRESSusingDBeaver:\"><strong>Connecting to POSTGRESS using DBeaver:</strong></h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"89275be8-1d94-44ea-bacf-567a2d93da6c\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Select postgress DB while creating a new connection \nSelect SSH tab and check “Use SSH Tunnel” option \nHost/IP: “&lt;DomainName&gt;” \nPort: 22 \nUser Name: “centos” \nAuthentication Method: “Public Key” \nPrivate Key: “provide the path to id_rsa file” </pre>\n</div></div><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"680\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/2318893350/Picture%203.png?version=3&amp;modificationDate=1617611612105&amp;cacheVersion=1&amp;api=v2&amp;width=680&amp;height=584\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/2318893350/Picture%203.png?version=3&amp;modificationDate=1617611612105&amp;cacheVersion=1&amp;api=v2\" data-height=\"402\" data-width=\"468\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2306736411\" data-linked-resource-version=\"3\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Picture 3.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"2318893350\" data-linked-resource-container-version=\"3\" data-media-id=\"eb743840-8113-4b87-9908-bc8fb8891264\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/2318893350/Picture%203.png?version=3&amp;modificationDate=1617611612105&amp;cacheVersion=1&amp;api=v2&amp;width=936&amp;height=804 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/2318893350/Picture%203.png?version=3&amp;modificationDate=1617611612105&amp;cacheVersion=1&amp;api=v2&amp;width=680&amp;height=584 1x\"></span><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/2318893350/12_1.png?version=1&amp;modificationDate=1618383806314&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/2318893350/12_1.png?version=1&amp;modificationDate=1618383806314&amp;cacheVersion=1&amp;api=v2\" data-height=\"1040\" data-width=\"936\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2361524265\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"12_1.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"2318893350\" data-linked-resource-container-version=\"3\" data-media-id=\"ba0dfb87-b444-493e-92fd-7aa89fdffd56\" data-media-type=\"file\"></span><p /><p>Once all the details are added, Test Connection and ideally you see the “Connection Successful” popup. </p><p />",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2318893350"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2318893350/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2318893350/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1039
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2318893350/child",
+    "restrictions": "/rest/api/content/2318893350/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2318893350/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2318893350",
+    "webui": "/spaces/BAH/pages/2318893350/Bahmni-Mart+Setup+with+MySQLWorkbench+DBeaver",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2318893350",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2318893350",
+    "tinyui": "/x/JoE3ig",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

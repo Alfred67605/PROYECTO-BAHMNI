@@ -1,0 +1,171 @@
+{
+  "id": "28311564",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/28311564",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjgzMTE1NjQ=",
+  "status": "current",
+  "title": "Encounter Matching",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:a7770ce3-cd5b-4d29-a074-93f41c2e5761",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Shruthi",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:a7770ce3-cd5b-4d29-a074-93f41c2e5761",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Shruthi D A",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:a7770ce3-cd5b-4d29-a074-93f41c2e5761"
+      }
+    },
+    "createdDate": "2015-09-08T02:33:16.383Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/28311564/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:3080216a-e728-484c-8831-1cdbccc33222",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Preethi",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:3080216a-e728-484c-8831-1cdbccc33222",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Preethi",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:3080216a-e728-484c-8831-1cdbccc33222"
+      }
+    },
+    "when": "2016-01-12T16:22:50.702Z",
+    "friendlyWhen": "Jan 12, 2016",
+    "message": "",
+    "number": 12,
+    "minorEdit": false,
+    "syncRev": "0.ZJ-PqwyTyi12qnX_XOBbSA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$28311564.61",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/28311564"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/28311564/version/12"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>Visit is selected by the visitUuid sent in the&nbsp;EncounterTransaction. Within the visit, the encounter is <strong style=\"line-height: 1.42857;\">filtered</strong> based on the following logic for regular encounters, retrospective encounter, on behalf of encounters and encounter edits.&nbsp;, in that order</p><p><strong style=\"line-height: 1.42857;\">Regular Consultation &amp; Retrospective Consultation</strong></p><ol><li>by encounterUuid if sent by the client.</li><li>by encounterType</li><li>by sessionTime (for retrospective entry, the client should send the date as 12:00)</li><li>by provider if provider or on behalf of provider</li><li>by user if not a provider</li></ol><p><strong>Visit Document</strong></p><ol><li>by encounterType</li><li>by provider</li></ol><h2><strong>Encounter Type Matching</strong></h2><p><strong>Regular Consultation Encounter &amp; Retrospective Consultation Encounter</strong></p><p>Encounter type to be used for finding an encounter or creating a new encounter for regular consultation or retrospective consultation is based on <strong>either</strong> of the following logic in the given order,</p><ol><li><p><span style=\"line-height: 1.42857;\">by location uuid -&nbsp;mapping present in entity_mapping table with entity_mapping_type as '</span><strong style=\"line-height: 1.42857;\">l</strong><strong style=\"line-height: 1.42857;\">ocation_encountertype</strong><span style=\"line-height: 1.42857;\">' &nbsp;(OR)</span><br />&nbsp; &nbsp; - Location encounter type mapping can be inserted using the following query:<br />&nbsp; &nbsp; &nbsp;&nbsp;</p><ac:structured-macro ac:macro-id=\"fa724494-5c70-43a1-b984-61a5a469198e\" ac:name=\"code\" ac:schema-version=\"1\"><ac:parameter ac:name=\"language\">sql</ac:parameter><ac:parameter ac:name=\"title\">location_encountertype</ac:parameter><ac:plain-text-body><![CDATA[insert into entity_mapping(uuid, entity_mapping_type_id, entity1_uuid, entity2_uuid, date_created) \nvalues (uuid(), <mapping_id_of_location_encountertype>, <uuid_of_location>, <uuid_of_encounter_type>, now())]]></ac:plain-text-body></ac:structured-macro></li><li>by default encounter type provided in global property (<span style=\"color: rgb(0,0,0);\"><strong>&nbsp;<span style=\"line-height: 1.42857;\">bahmni.encounterType.</span></strong></span><span style=\"color: rgb(0,128,0);\"><span style=\"color: rgb(0,0,0);\"><strong>default</strong></span>).</span></li></ol><p><strong>Program Consultation Encounter</strong></p><p>Encounter type to be used for finding an encounter or creating a new encounter for program consultation is based on&nbsp;<strong>either</strong>&nbsp;of the following logic in the given order,</p><ol><li>by programUuid - mapping present in entity_mapping table with entity_mapping_type as '<a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Program+Management#ProgramManagement-Associatingprogramtoencountertype\">program_encountertype</a>' (OR)</li><li>by default encounter type provided in global property (<span style=\"color: rgb(0,0,0);\"><strong>&nbsp;<span>bahmni.encounterType.</span></strong></span><span style=\"color: rgb(0,128,0);\"><span style=\"color: rgb(0,0,0);\"><strong>default</strong></span>).</span></li></ol><p>For other encounters, following encounter types are picked irrespective of location:</p><ol><li>Registration Encounter - 'REG'</li><li>Radiology Upload Encounter - 'RADIOLOGY'</li><li>Patient Document Encounter - 'Patient Document'</li><li>Admission Encounter - 'ADMISSION'</li><li>Discharge Encounter - 'DISCHARGE'</li><li>Transfer Encounter - 'TRANSFER'</li></ol>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/28311564"
+      }
+    },
+    "view": {
+      "value": "<p>Visit is selected by the visitUuid sent in the EncounterTransaction. Within the visit, the encounter is <strong style=\"line-height: 1.42857;\">filtered</strong> based on the following logic for regular encounters, retrospective encounter, on behalf of encounters and encounter edits. , in that order</p><p><strong style=\"line-height: 1.42857;\">Regular Consultation &amp; Retrospective Consultation</strong></p><ol><li>by encounterUuid if sent by the client.</li><li>by encounterType</li><li>by sessionTime (for retrospective entry, the client should send the date as 12:00)</li><li>by provider if provider or on behalf of provider</li><li>by user if not a provider</li></ol><p><strong>Visit Document</strong></p><ol><li>by encounterType</li><li>by provider</li></ol><h2 id=\"EncounterMatching-EncounterTypeMatching\"><strong>Encounter Type Matching</strong></h2><p><strong>Regular Consultation Encounter &amp; Retrospective Consultation Encounter</strong></p><p>Encounter type to be used for finding an encounter or creating a new encounter for regular consultation or retrospective consultation is based on <strong>either</strong> of the following logic in the given order,</p><ol><li><p><span style=\"line-height: 1.42857;\">by location uuid - mapping present in entity_mapping table with entity_mapping_type as '</span><strong style=\"line-height: 1.42857;\">l</strong><strong style=\"line-height: 1.42857;\">ocation_encountertype</strong><span style=\"line-height: 1.42857;\">'  (OR)</span><br/>    - Location encounter type mapping can be inserted using the following query:<br/>      </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"fa724494-5c70-43a1-b984-61a5a469198e\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>location_encountertype</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: sql; gutter: false; theme: Confluence\" data-theme=\"Confluence\">insert into entity_mapping(uuid, entity_mapping_type_id, entity1_uuid, entity2_uuid, date_created) \nvalues (uuid(), &lt;mapping_id_of_location_encountertype&gt;, &lt;uuid_of_location&gt;, &lt;uuid_of_encounter_type&gt;, now())</pre>\n</div></div></li><li>by default encounter type provided in global property (<span class=\"legacy-color-text-default\"><strong> <span style=\"line-height: 1.42857;\">bahmni.encounterType.</span></strong></span><span class=\"legacy-color-text-green2\"><span class=\"legacy-color-text-default\"><strong>default</strong></span>).</span></li></ol><p><strong>Program Consultation Encounter</strong></p><p>Encounter type to be used for finding an encounter or creating a new encounter for program consultation is based on <strong>either</strong> of the following logic in the given order,</p><ol><li>by programUuid - mapping present in entity_mapping table with entity_mapping_type as '<a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Program+Management#ProgramManagement-Associatingprogramtoencountertype\" rel=\"nofollow\">program_encountertype</a>' (OR)</li><li>by default encounter type provided in global property (<span class=\"legacy-color-text-default\"><strong> <span>bahmni.encounterType.</span></strong></span><span class=\"legacy-color-text-green2\"><span class=\"legacy-color-text-default\"><strong>default</strong></span>).</span></li></ol><p>For other encounters, following encounter types are picked irrespective of location:</p><ol><li>Registration Encounter - 'REG'</li><li>Radiology Upload Encounter - 'RADIOLOGY'</li><li>Patient Document Encounter - 'Patient Document'</li><li>Admission Encounter - 'ADMISSION'</li><li>Discharge Encounter - 'DISCHARGE'</li><li>Transfer Encounter - 'TRANSFER'</li></ol>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/28311564"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/28311564/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/28311564/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1133
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/28311564/child",
+    "restrictions": "/rest/api/content/28311564/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/28311564/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=28311564",
+    "webui": "/spaces/BAH/pages/28311564/Encounter+Matching",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/28311564",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/28311564",
+    "tinyui": "/x/DACwAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

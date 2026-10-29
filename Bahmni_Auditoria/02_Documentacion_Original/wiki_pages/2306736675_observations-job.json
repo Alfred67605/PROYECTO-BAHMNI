@@ -1,0 +1,172 @@
+{
+  "id": "2306736675",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2306736675",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMwNjczNjY3NQ==",
+  "status": "current",
+  "title": "Observations Job",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "createdDate": "2021-04-05T09:31:30.600Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736675/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "when": "2021-04-05T09:31:53.688Z",
+    "friendlyWhen": "Apr 05, 2021",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.confluence$content$2306736675.6",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2306736675.7",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2306736675"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736675/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<h3 style=\"text-align: center;\"><br /><strong>Configuration</strong></h3><h5><strong>ColumnsToIgnore, , ignoreAllFreeTextConcepts, separateTableConfig, enableForAddMoreAndMultiSelect apply for this module ( Refer </strong><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><h5><strong>incrementalUpdateConfig is applicable</strong> ( Refer <a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</h5><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"a355560e-4c56-4994-b815-c7a647e7822a\"><ac:plain-text-body><![CDATA[{\n      \"name\": \"Obs Data\",\n      \"type\": \"obs\",\n      \"incrementalUpdateConfig\": {\n        \"updateOn\": \"encounter_id\",\n        \"eventCategory\": \"Encounter\",\n        \"openmrsTableName\": \"encounter\"\n      },\n      \"separateTableConfig\": {\n        \"enableForAddMoreAndMultiSelect\": true,\n        \"separateTables\": [\n        ]\n      },\n      \"conceptReferenceSource\": \"\",\n      \"ignoreAllFreeTextConcepts\": true,\n      \"columnsToIgnore\": [\n      ]\n}\n]]></ac:plain-text-body></ac:structured-macro><hr /><h3 style=\"text-align: center;\"><strong>Existing OpenMRS tables</strong></h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"3d4bcde9-e6a3-48d1-ab04-0353ccff81fd\"><ac:plain-text-body><![CDATA[Obs]]></ac:plain-text-body></ac:structured-macro><hr /><h3 style=\"text-align: center;\">Flattened Mart Tables</h3><p>All forms that are under the concept ALL OBSERVATION TEMPLATES will become separate tables in the mart database. Any multi select or add more sections under these forms will become separate tables by default. One can also choose the concepts they want to have as separate tables using separate Tables configuration in obs job.</p><p>Since we have 51 forms under All Observation Template of demo environment currently, there will be 51 separate tables. Additionally all multi select, add more sections and concepts from seperateTables config will become separate tables.</p><p>Below are the columns that are common in every form table</p><table data-layout=\"default\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td><p>patient_id</p></td><td><p>&nbsp;Id reference to the patient from patient table</p></td></tr><tr><td><p>encounter_id</p></td><td><p>In which encounter data is captured</p></td></tr><tr><td><p>obs_datetime</p></td><td><p>Observation date and time</p></td></tr><tr><td><p>location_id</p></td><td><p>Location code</p></td></tr><tr><td><p>location_name</p></td><td><p>Location name</p></td></tr><tr><td><p>program_id</p></td><td><p>Program code</p></td></tr><tr><td><p>program_name</p></td><td><p>Name of the program</p></td></tr><tr><td><p>date_created&nbsp;</p></td><td><p>Date of form creation (When filled for the first time)</p></td></tr><tr><td><p>date_modified</p></td><td><p>Date of recent form updation (When any form fields are filled again or modified in same encounter)</p></td></tr><tr><td><p>visit_id</p></td><td><p>In which visit data is captured</p></td></tr></tbody></table><hr /><h3 style=\"text-align: center;\">Translations</h3><p>if we need to get those values as per the translations we need to add the below <strong><span style=\"color: rgb(0,184,217);\">locale tag</span></strong> in the &ldquo;<strong>/var/www/bahmni_config/bahmni-mart/bahmni-mart.json</strong>&ldquo; file.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"38cae190-5342-4356-a8dc-de8fe98e702c\"><ac:plain-text-body><![CDATA[{\n      \"name\": \"Obs Data\",\n      \"type\": \"obs\",\n      \"locale\": \"fr\"\n      }\n]]></ac:plain-text-body></ac:structured-macro><p>&nbsp;</p><h3 style=\"margin-left: 180.0px;\"><strong>Changing form name in production</strong></h3><p><br />Whenever we update the form name ( by updating concept set name in form1 and updating form name from implementer interface in form2 ) and run mart with incremental load a new table is created in mart with new form name. It also migrates the existing observation in old table to new table and any modifications to old observations or new observations are reflected/loaded into new form table only. This makes the old form table useless and inconsistent with current data in system. The old table can only be deleted by running mart on Full load.</p><p><strong>Note:&nbsp;</strong>To avoid confusion it is always recommended to run mart on full load after the form name is updated. </p><h3 style=\"text-align: center;\">Use-Cases</h3><p>Some Additional information in use-case view:-</p><ol><li><p><strong>When a form has a multi select coded answer</strong></p><ol><li><p>Separate table with the question name is created and the multi select answers are inserted in each row</p></li><li><p>If the same question is used in a separate form, then the data is inserted in the same table if the table is created for the multi select question.</p></li></ol></li><li><p><strong>When a form has a section which is not add more</strong></p><ol><li><p>The section data is inserted in the same form table without creating a new table</p></li></ol></li><li><p><strong>When a form has a section which is add more</strong></p><ol><li><p>Section data is inserted in a separate table.</p></li><li><p>Table name will be formname_Section name</p></li></ol></li><li><p><strong>When a form has a section which is not add more and a multi select coded answer</strong></p><ol><li><p>Section data is inserted in Form table</p></li><li><p>Multi select answer is inserted in a separate table</p></li></ol></li><li><p><strong>When a form has a section which is add more and a multi select coded answer</strong></p><ol><li><p>Section data is inserted in a separate section table</p></li><li><p>Multi select answer is inserted in a separate table</p></li></ol></li><li><p><strong>When the data is voided from the patient observation</strong></p><ol><li><p>The data is removed from the table column</p></li></ol></li><li><p><strong>When the form has translations added (From form builder implementer interface) and the mart is run in english</strong></p><ol><li><p>Data is inserted according to the english translations</p></li></ol></li><li><p><strong>When the form has translations added and the mart is run in french</strong></p><ol><li><p>Data is inserted according to the french translations</p></li><li><p>Previous data is also changed according to french translations</p></li></ol></li><li><p><strong>When the column name is added in columns to ignore, (Fully specified name of the concept)</strong></p><ol><li><p>The column is removed from the table</p></li><li><p>The entire table data is removed when there is only one column in the table and the same concept is added in columns to ignore.</p></li></ol></li><li><p><strong>When the entire form is reconstructed, (All the form fields are removed and now concepts are added)</strong></p><ol><li><p>Existing data is removed from the table, and the new columns are added to the table</p></li><li><p>New data is added to the form table when the observation is filled to a patient</p></li></ol></li></ol>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2306736675"
+      }
+    },
+    "view": {
+      "value": "<h3 style=\"text-align: center;\" id=\"ObservationsJob-Configuration\"><style>[data-colorid=hx6z97ol2g]{color:#00b8d9} html[data-color-mode=dark] [data-colorid=hx6z97ol2g]{color:#26deff}</style><br /><strong>Configuration</strong></h3><h5 id=\"ObservationsJob-ColumnsToIgnore,,ignoreAllFreeTextConcepts,separateTableConfig,enableForAddMoreAndMultiSelectapplyforthismodule(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix)\"><strong>ColumnsToIgnore, , ignoreAllFreeTextConcepts, separateTableConfig, enableForAddMoreAndMultiSelect apply for this module ( Refer </strong><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329875787/Appendix</a> <strong>)</strong></h5><h5 id=\"ObservationsJob-incrementalUpdateConfigisapplicable(Referhttps://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update)\"><strong>incrementalUpdateConfig is applicable</strong> ( Refer <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329679036/Incremental+Update</a> )</h5><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a355560e-4c56-4994-b815-c7a647e7822a\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n      &quot;name&quot;: &quot;Obs Data&quot;,\n      &quot;type&quot;: &quot;obs&quot;,\n      &quot;incrementalUpdateConfig&quot;: {\n        &quot;updateOn&quot;: &quot;encounter_id&quot;,\n        &quot;eventCategory&quot;: &quot;Encounter&quot;,\n        &quot;openmrsTableName&quot;: &quot;encounter&quot;\n      },\n      &quot;separateTableConfig&quot;: {\n        &quot;enableForAddMoreAndMultiSelect&quot;: true,\n        &quot;separateTables&quot;: [\n        ]\n      },\n      &quot;conceptReferenceSource&quot;: &quot;&quot;,\n      &quot;ignoreAllFreeTextConcepts&quot;: true,\n      &quot;columnsToIgnore&quot;: [\n      ]\n}\n</pre>\n</div></div><hr /><h3 style=\"text-align: center;\" id=\"ObservationsJob-ExistingOpenMRStables\"><strong>Existing OpenMRS tables</strong></h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3d4bcde9-e6a3-48d1-ab04-0353ccff81fd\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Obs</pre>\n</div></div><hr /><h3 style=\"text-align: center;\" id=\"ObservationsJob-FlattenedMartTables\">Flattened Mart Tables</h3><p>All forms that are under the concept ALL OBSERVATION TEMPLATES will become separate tables in the mart database. Any multi select or add more sections under these forms will become separate tables by default. One can also choose the concepts they want to have as separate tables using separate Tables configuration in obs job.</p><p>Since we have 51 forms under All Observation Template of demo environment currently, there will be 51 separate tables. Additionally all multi select, add more sections and concepts from seperateTables config will become separate tables.</p><p>Below are the columns that are common in every form table</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 340.0px;\" /><col style=\"width: 340.0px;\" /></colgroup><tbody><tr><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Column Name</strong></p></td><td class=\"confluenceTd\"><p style=\"text-align: center;\"><strong>Description</strong></p></td></tr><tr><td class=\"confluenceTd\"><p>patient_id</p></td><td class=\"confluenceTd\"><p>&nbsp;Id reference to the patient from patient table</p></td></tr><tr><td class=\"confluenceTd\"><p>encounter_id</p></td><td class=\"confluenceTd\"><p>In which encounter data is captured</p></td></tr><tr><td class=\"confluenceTd\"><p>obs_datetime</p></td><td class=\"confluenceTd\"><p>Observation date and time</p></td></tr><tr><td class=\"confluenceTd\"><p>location_id</p></td><td class=\"confluenceTd\"><p>Location code</p></td></tr><tr><td class=\"confluenceTd\"><p>location_name</p></td><td class=\"confluenceTd\"><p>Location name</p></td></tr><tr><td class=\"confluenceTd\"><p>program_id</p></td><td class=\"confluenceTd\"><p>Program code</p></td></tr><tr><td class=\"confluenceTd\"><p>program_name</p></td><td class=\"confluenceTd\"><p>Name of the program</p></td></tr><tr><td class=\"confluenceTd\"><p>date_created&nbsp;</p></td><td class=\"confluenceTd\"><p>Date of form creation (When filled for the first time)</p></td></tr><tr><td class=\"confluenceTd\"><p>date_modified</p></td><td class=\"confluenceTd\"><p>Date of recent form updation (When any form fields are filled again or modified in same encounter)</p></td></tr><tr><td class=\"confluenceTd\"><p>visit_id</p></td><td class=\"confluenceTd\"><p>In which visit data is captured</p></td></tr></tbody></table></div><hr /><h3 style=\"text-align: center;\" id=\"ObservationsJob-Translations\">Translations</h3><p>if we need to get those values as per the translations we need to add the below <strong><span data-colorid=\"hx6z97ol2g\">locale tag</span></strong> in the &ldquo;<strong>/var/www/bahmni_config/bahmni-mart/bahmni-mart.json</strong>&ldquo; file.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"38cae190-5342-4356-a8dc-de8fe98e702c\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n      &quot;name&quot;: &quot;Obs Data&quot;,\n      &quot;type&quot;: &quot;obs&quot;,\n      &quot;locale&quot;: &quot;fr&quot;\n      }\n</pre>\n</div></div><p>&nbsp;</p><h3 style=\"margin-left: 180.0px;\" id=\"ObservationsJob-Changingformnameinproduction\"><strong>Changing form name in production</strong></h3><p><br />Whenever we update the form name ( by updating concept set name in form1 and updating form name from implementer interface in form2 ) and run mart with incremental load a new table is created in mart with new form name. It also migrates the existing observation in old table to new table and any modifications to old observations or new observations are reflected/loaded into new form table only. This makes the old form table useless and inconsistent with current data in system. The old table can only be deleted by running mart on Full load.</p><p><strong>Note:&nbsp;</strong>To avoid confusion it is always recommended to run mart on full load after the form name is updated. </p><h3 style=\"text-align: center;\" id=\"ObservationsJob-Use-Cases\">Use-Cases</h3><p>Some Additional information in use-case view:-</p><ol><li><p><strong>When a form has a multi select coded answer</strong></p><ol><li><p>Separate table with the question name is created and the multi select answers are inserted in each row</p></li><li><p>If the same question is used in a separate form, then the data is inserted in the same table if the table is created for the multi select question.</p></li></ol></li><li><p><strong>When a form has a section which is not add more</strong></p><ol><li><p>The section data is inserted in the same form table without creating a new table</p></li></ol></li><li><p><strong>When a form has a section which is add more</strong></p><ol><li><p>Section data is inserted in a separate table.</p></li><li><p>Table name will be formname_Section name</p></li></ol></li><li><p><strong>When a form has a section which is not add more and a multi select coded answer</strong></p><ol><li><p>Section data is inserted in Form table</p></li><li><p>Multi select answer is inserted in a separate table</p></li></ol></li><li><p><strong>When a form has a section which is add more and a multi select coded answer</strong></p><ol><li><p>Section data is inserted in a separate section table</p></li><li><p>Multi select answer is inserted in a separate table</p></li></ol></li><li><p><strong>When the data is voided from the patient observation</strong></p><ol><li><p>The data is removed from the table column</p></li></ol></li><li><p><strong>When the form has translations added (From form builder implementer interface) and the mart is run in english</strong></p><ol><li><p>Data is inserted according to the english translations</p></li></ol></li><li><p><strong>When the form has translations added and the mart is run in french</strong></p><ol><li><p>Data is inserted according to the french translations</p></li><li><p>Previous data is also changed according to french translations</p></li></ol></li><li><p><strong>When the column name is added in columns to ignore, (Fully specified name of the concept)</strong></p><ol><li><p>The column is removed from the table</p></li><li><p>The entire table data is removed when there is only one column in the table and the same concept is added in columns to ignore.</p></li></ol></li><li><p><strong>When the entire form is reconstructed, (All the form fields are removed and now concepts are added)</strong></p><ol><li><p>Existing data is removed from the table, and the new columns are added to the table</p></li><li><p>New data is added to the form table when the observation is filled to a patient</p></li></ol></li></ol>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2306736675"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2306736675/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736675/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 6935
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2306736675/child",
+    "restrictions": "/rest/api/content/2306736675/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2306736675/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2306736675",
+    "webui": "/spaces/BAH/pages/2306736675/Observations+Job",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2306736675",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306736675",
+    "tinyui": "/x/IwJ_iQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

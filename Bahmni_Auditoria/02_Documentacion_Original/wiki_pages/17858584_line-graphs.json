@@ -1,0 +1,170 @@
+{
+  "id": "17858584",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/17858584",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTc4NTg1ODQ=",
+  "status": "current",
+  "title": "Line Graphs",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:1c083db5-29a7-423d-b0d0-77f492b020b4",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "SN",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:1c083db5-29a7-423d-b0d0-77f492b020b4",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "SN",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:1c083db5-29a7-423d-b0d0-77f492b020b4"
+      }
+    },
+    "createdDate": "2015-03-27T12:51:27.825Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/17858584/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:1c083db5-29a7-423d-b0d0-77f492b020b4",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "SN",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:1c083db5-29a7-423d-b0d0-77f492b020b4",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "SN",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:1c083db5-29a7-423d-b0d0-77f492b020b4"
+      }
+    },
+    "when": "2015-03-27T12:51:27.825Z",
+    "friendlyWhen": "Mar 27, 2015",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.kHf9aUouS1vFEJxVoJhk-A.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$17858584.14",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/17858584"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/17858584/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>&nbsp;</p><p>When doctors use Bahmni system to look at data for patients, it will be very useful for them to look at certain concepts as graphs or trends so that they can get an idea of how the patient in faring with the given treatment. Also this information can be conveyed quickly when the data is visualised as a graph instead of a table.</p><p>This feature provides the ability to trend numeric observations such as height, weight, BP, Haemoglobin, growth charts etc within or across visits for a patient.</p><p>&nbsp;</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/17858584"
+      }
+    },
+    "view": {
+      "value": "<p> </p><p>When doctors use Bahmni system to look at data for patients, it will be very useful for them to look at certain concepts as graphs or trends so that they can get an idea of how the patient in faring with the given treatment. Also this information can be conveyed quickly when the data is visualised as a graph instead of a table.</p><p>This feature provides the ability to trend numeric observations such as height, weight, BP, Haemoglobin, growth charts etc within or across visits for a patient.</p><p> </p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/17858584"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/17858584/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/17858584/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/17858584/child",
+    "restrictions": "/rest/api/content/17858584/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/17858584/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=17858584",
+    "webui": "/spaces/BAH/pages/17858584/Line+Graphs",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/17858584",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/17858584",
+    "tinyui": "/x/GIAQAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "id": "49545219",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/49545219",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNDk1NDUyMTk=",
+  "status": "current",
+  "title": "Connecting to various databases",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "createdDate": "2016-04-01T06:03:09.532Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/49545219/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2023-12-14T07:03:00.331Z",
+    "friendlyWhen": "Dec 14, 2023",
+    "message": "",
+    "number": 17,
+    "minorEdit": false,
+    "syncRev": "0.NukJIFcYslT-YeQM5Qf65Q.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$49545219.120",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/49545219"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/49545219/version/17"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h1>Introduction</h1><p><span class=\"legacy-color-text-pink3\"><strong>This page lists details on how to connect to various databases in Bahmni.</strong></span></p><p>Bahmni comprises of different sub-components, like OpenMRS, OpenELIS, OpenERP/Odoo, Dcm4chee, PACS-Integration service, etc. Each component talks to its own database, which may be created within MySQL or Postgres. To see the contents of a particular database, you will need to use the right command line tool for MySQL or Postgres, and also appropriate credentials.&nbsp;</p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"d51f4d26-5ee7-4701-86db-dd42b5604c21\"><ac:parameter ac:name=\"title\">MySQL Database Server</ac:parameter><ac:rich-text-body><p>For MySQL Databases, the&nbsp;<strong>mysql&nbsp;</strong>command is used to connect to mysql databases, and view tables and data. Please refer to this resource to see all the commonly used MySQL Commands:&nbsp;<a href=\"https://www.pantz.org/software/mysql/mysqlcommands.html\">MySQL Cheatsheet</a>&nbsp;</p><p><strong>Note:</strong> If you are connecting to MySQL running inside a Vagrant Box (or a VM) from your host machine, you will need to connect to IP: 192.168.33.10 and port: 3306.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"f875e56a-7a7a-4234-a0f1-3a5f587a5fe9\"><ac:parameter ac:name=\"title\">PostgreSQL Databases</ac:parameter><ac:rich-text-body><p>For PostgreSQL Databases, the psql command is used to connect to PostgreSQL databases, and view tables and data. Please refer to this resource to see all the commonly used commands: <a href=\"http://www.thegeekstuff.com/2009/04/15-practical-postgresql-database-adminstration-commands/\">PostgreSQL DB Administration Commands</a>. If you want to use a graphical GUI tool for psql, then you can try out <a href=\"http://www.pgadmin.org/\">PgAdmin</a>.</p><p><span>To connect to PostgreSQL DB as admin, and alter databases, or drop them use the command: &quot;</span><code><strong>psql -Upostgres</strong></code><span>&quot;.</span></p><p><span><strong>Note:</strong> If you are connecting to PostgreSQL running inside a Vagrant Box (or a VM), you may need to refer to this for ensuring the proper ports are open, in case you aren't able to connect from host machine: <a href=\"http://stackoverflow.com/questions/14139017/cannot-connect-to-postgres-running-on-vm-from-host-machine-using-md5-method\">http://stackoverflow.com/questions/14139017/cannot-connect-to-postgres-running-on-vm-from-host-machine-using-md5-method</a></span></p><p><br /></p></ac:rich-text-body></ac:structured-macro><p><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"bc6009c9-b87d-44a2-9fc2-157c279b98b2\"><ac:parameter ac:name=\"title\">SSH Tunnel for Postgres / MySql DB</ac:parameter><ac:rich-text-body><p><span>You can also try using the SSH Tunnelling connection options for connecting to databases. <a href=\"https://support.cloud.engineyard.com/hc/en-us/articles/205408088-Access-Your-Database-Remotely-Through-an-SSH-Tunnel\">More details here</a>. Sample screenshot here: <a href=\"http://pasteboard.co/rUg67MP.jpg\">http://pasteboard.co/rUg67MP.jpg</a></span></p></ac:rich-text-body></ac:structured-macro><p><br /></p><h1>List of Application Databases</h1><p><br /></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"fed26ec1-eb6d-4b05-91d4-2f045cc60a85\"><ac:rich-text-body><p>The connection credentials shown here are the default. These may have been modified during installation by the Administrator.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><table class=\"wrapped\"><colgroup><col /><col /><col /><col /><col /></colgroup><tbody><tr><th><br /></th><th>Application</th><th>DB Server Type</th><th>Database Name</th><th colspan=\"1\">Connection Command</th></tr><tr><td>1.</td><td>OpenMRS (EMR)</td><td><span class=\"legacy-color-text-blue4\"><strong>MySQL</strong></span></td><td><ac:inline-comment-marker ac:ref=\"6b75d6df-b8ad-4873-a236-bad66ad58528\">openmrs</ac:inline-comment-marker></td><td colspan=\"1\"><div class=\"content-wrapper\"><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"16656542-1dec-44d1-a6c7-6c8e76f9d328\"><ac:parameter ac:name=\"language\">bash</ac:parameter><ac:plain-text-body><![CDATA[> mysql -uopenmrs-user -ppassword openmrs\n\n# For Bahmni 0.92\n> mysql -uroot -pP@ssw0rd openmrs]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></div></td></tr><tr><td>2.</td><td>OpenELIS (Lab)</td><td><span class=\"legacy-color-text-green4\"><strong>PostgreSQL</strong></span></td><td>clinlims</td><td colspan=\"1\"><div class=\"content-wrapper\"><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"81a4f791-3d54-4d47-a913-2cf5daefe8e9\"><ac:plain-text-body><![CDATA[> psql -Uclinlims clinlims]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></div></td></tr><tr><td>3.</td><td>OpenERP/Odoo</td><td><span class=\"legacy-color-text-green4\"><strong>PostgreSQL</strong></span></td><td><span>openerp/odoo</span></td><td colspan=\"1\"><div class=\"content-wrapper\"><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"70f44b9a-9913-43d0-a26d-b482bb5bd56c\"><ac:plain-text-body><![CDATA[> psql -Uopenerp openerp\nOR\n> psql -Uodoo odoo]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></div></td></tr><tr><td colspan=\"1\">4.</td><td colspan=\"1\">dcm4chee</td><td colspan=\"1\"><span class=\"legacy-color-text-green4\"><strong>PostgreSQL</strong></span></td><td colspan=\"1\">pacsdb</td><td colspan=\"1\"><div class=\"content-wrapper\"><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8e1704dd-4bac-4e6d-ba5e-ff9b01a87b7a\"><ac:plain-text-body><![CDATA[> psql -Upostgres pacsdb]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></div></td></tr><tr><td colspan=\"1\">5.</td><td colspan=\"1\">PACS Integration Service</td><td colspan=\"1\"><span class=\"legacy-color-text-green4\"><strong>PostgreSQL</strong></span></td><td colspan=\"1\">bahmni_pacs</td><td colspan=\"1\"><div class=\"content-wrapper\"><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"9b0250e0-4136-4566-b895-5157f45f8538\"><ac:plain-text-body><![CDATA[> psql -Upostgres bahmni_pacs]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></div></td></tr><tr><td colspan=\"1\">6.</td><td colspan=\"1\">Crater (Bahmni LITE)</td><td colspan=\"1\"><span class=\"legacy-color-text-blue4\"><strong>MySQL</strong></span></td><td colspan=\"1\">crater</td><td colspan=\"1\"><div class=\"content-wrapper\"><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"27386375-da2c-4bc9-a25a-e200db6e9110\"><ac:plain-text-body><![CDATA[# connect to crater db\n> mysql -ucrater -pcrater crater\n# connect to crater atomfeed db\n> mysql -ucrater_atomfeed_user  -ppassw0rd crater_atomfeed]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></div></td></tr><tr><td colspan=\"1\"><br /></td><td colspan=\"1\"><br /></td><td colspan=\"1\"><br /></td><td colspan=\"1\"><br /></td><td colspan=\"1\"><br /></td></tr></tbody></table><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"ac3fb904-ba22-4b8f-8f8e-1ff94929c546\"><ac:rich-text-body><p>Related Reading: Debugging performance issues in MySQL / Postgres DB: <ac:link><ri:page ri:content-title=\"Troubleshooting performance issues in SQL, OpenERP and OpenELIS\" ri:version-at-save=\"9\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"2cec85fa-c08b-4b02-a6f9-4f6ca44367e4\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">On this page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"f40f1677-2991-4af7-8a5b-9ed0dbd65467\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"f47c45e9-c8c0-4e63-9161-45dac6ffd88c\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Anonymizing Bahmni Database\" ri:version-at-save=\"11\" /></ac:link>&nbsp;</p><p><a href=\"https://stackoverflow.com/questions/1926079/how-many-rows-in-a-database-are-too-many\">(StackOverflow) Can a million rows be stored in a DB</a>?</p><p><a href=\"https://wiki.openmrs.org/display/docs/Using+UTF-8+Characters\">OpenMRS - Supporting Other Languages (UTF-8)</a></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/49545219"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h1 id=\"Connectingtovariousdatabases-Introduction\">Introduction</h1><p><span class=\"legacy-color-text-pink3\"><strong>This page lists details on how to connect to various databases in Bahmni.</strong></span></p><p>Bahmni comprises of different sub-components, like OpenMRS, OpenELIS, OpenERP/Odoo, Dcm4chee, PACS-Integration service, etc. Each component talks to its own database, which may be created within MySQL or Postgres. To see the contents of a particular database, you will need to use the right command line tool for MySQL or Postgres, and also appropriate credentials. </p><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d51f4d26-5ee7-4701-86db-dd42b5604c21\" data-macro-name=\"tip\"><p class=\"title\">MySQL Database Server</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>For MySQL Databases, the <strong>mysql </strong>command is used to connect to mysql databases, and view tables and data. Please refer to this resource to see all the commonly used MySQL Commands: <a class=\"external-link\" href=\"https://www.pantz.org/software/mysql/mysqlcommands.html\" rel=\"nofollow\">MySQL Cheatsheet</a> </p><p><strong>Note:</strong> If you are connecting to MySQL running inside a Vagrant Box (or a VM) from your host machine, you will need to connect to IP: 192.168.33.10 and port: 3306.</p></div></div><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f875e56a-7a7a-4234-a0f1-3a5f587a5fe9\" data-macro-name=\"tip\"><p class=\"title\">PostgreSQL Databases</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>For PostgreSQL Databases, the psql command is used to connect to PostgreSQL databases, and view tables and data. Please refer to this resource to see all the commonly used commands: <a class=\"external-link\" href=\"http://www.thegeekstuff.com/2009/04/15-practical-postgresql-database-adminstration-commands/\" rel=\"nofollow\">PostgreSQL DB Administration Commands</a>. If you want to use a graphical GUI tool for psql, then you can try out <a class=\"external-link\" href=\"http://www.pgadmin.org/\" rel=\"nofollow\">PgAdmin</a>.</p><p><span>To connect to PostgreSQL DB as admin, and alter databases, or drop them use the command: &quot;</span><code><strong>psql -Upostgres</strong></code><span>&quot;.</span></p><p><span><strong>Note:</strong> If you are connecting to PostgreSQL running inside a Vagrant Box (or a VM), you may need to refer to this for ensuring the proper ports are open, in case you aren't able to connect from host machine: <a class=\"external-link\" href=\"http://stackoverflow.com/questions/14139017/cannot-connect-to-postgres-running-on-vm-from-host-machine-using-md5-method\" rel=\"nofollow\">http://stackoverflow.com/questions/14139017/cannot-connect-to-postgres-running-on-vm-from-host-machine-using-md5-method</a></span></p><p><br /></p></div></div><p><br/></p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"bc6009c9-b87d-44a2-9fc2-157c279b98b2\" data-macro-name=\"info\"><p class=\"title\">SSH Tunnel for Postgres / MySql DB</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><span>You can also try using the SSH Tunnelling connection options for connecting to databases. <a class=\"external-link\" href=\"https://support.cloud.engineyard.com/hc/en-us/articles/205408088-Access-Your-Database-Remotely-Through-an-SSH-Tunnel\" rel=\"nofollow\">More details here</a>. Sample screenshot here: <a class=\"external-link\" href=\"http://pasteboard.co/rUg67MP.jpg\" rel=\"nofollow\">http://pasteboard.co/rUg67MP.jpg</a></span></p></div></div><p><br/></p><h1 id=\"Connectingtovariousdatabases-ListofApplicationDatabases\">List of Application Databases</h1><p><br/></p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"fed26ec1-eb6d-4b05-91d4-2f045cc60a85\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>The connection credentials shown here are the default. These may have been modified during installation by the Administrator.</p></div></div><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col/><col/><col/><col/><col/></colgroup><tbody><tr><th class=\"confluenceTh\"><br/></th><th class=\"confluenceTh\">Application</th><th class=\"confluenceTh\">DB Server Type</th><th class=\"confluenceTh\">Database Name</th><th colspan=\"1\" class=\"confluenceTh\">Connection Command</th></tr><tr><td class=\"confluenceTd\">1.</td><td class=\"confluenceTd\">OpenMRS (EMR)</td><td class=\"confluenceTd\"><span class=\"legacy-color-text-blue4\"><strong>MySQL</strong></span></td><td class=\"confluenceTd\"><span class=\"inline-comment-marker\" data-ref=\"6b75d6df-b8ad-4873-a236-bad66ad58528\">openmrs</span></td><td colspan=\"1\" class=\"confluenceTd\"><div class=\"content-wrapper\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"16656542-1dec-44d1-a6c7-6c8e76f9d328\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&gt; mysql -uopenmrs-user -ppassword openmrs\n\n# For Bahmni 0.92\n&gt; mysql -uroot -pP@ssw0rd openmrs</pre>\n</div></div></div></td></tr><tr><td class=\"confluenceTd\">2.</td><td class=\"confluenceTd\">OpenELIS (Lab)</td><td class=\"confluenceTd\"><span class=\"legacy-color-text-green4\"><strong>PostgreSQL</strong></span></td><td class=\"confluenceTd\">clinlims</td><td colspan=\"1\" class=\"confluenceTd\"><div class=\"content-wrapper\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"81a4f791-3d54-4d47-a913-2cf5daefe8e9\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&gt; psql -Uclinlims clinlims</pre>\n</div></div></div></td></tr><tr><td class=\"confluenceTd\">3.</td><td class=\"confluenceTd\">OpenERP/Odoo</td><td class=\"confluenceTd\"><span class=\"legacy-color-text-green4\"><strong>PostgreSQL</strong></span></td><td class=\"confluenceTd\"><span>openerp/odoo</span></td><td colspan=\"1\" class=\"confluenceTd\"><div class=\"content-wrapper\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"70f44b9a-9913-43d0-a26d-b482bb5bd56c\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&gt; psql -Uopenerp openerp\nOR\n&gt; psql -Uodoo odoo</pre>\n</div></div></div></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">4.</td><td colspan=\"1\" class=\"confluenceTd\">dcm4chee</td><td colspan=\"1\" class=\"confluenceTd\"><span class=\"legacy-color-text-green4\"><strong>PostgreSQL</strong></span></td><td colspan=\"1\" class=\"confluenceTd\">pacsdb</td><td colspan=\"1\" class=\"confluenceTd\"><div class=\"content-wrapper\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8e1704dd-4bac-4e6d-ba5e-ff9b01a87b7a\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&gt; psql -Upostgres pacsdb</pre>\n</div></div></div></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">5.</td><td colspan=\"1\" class=\"confluenceTd\">PACS Integration Service</td><td colspan=\"1\" class=\"confluenceTd\"><span class=\"legacy-color-text-green4\"><strong>PostgreSQL</strong></span></td><td colspan=\"1\" class=\"confluenceTd\">bahmni_pacs</td><td colspan=\"1\" class=\"confluenceTd\"><div class=\"content-wrapper\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9b0250e0-4136-4566-b895-5157f45f8538\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&gt; psql -Upostgres bahmni_pacs</pre>\n</div></div></div></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">6.</td><td colspan=\"1\" class=\"confluenceTd\">Crater (Bahmni LITE)</td><td colspan=\"1\" class=\"confluenceTd\"><span class=\"legacy-color-text-blue4\"><strong>MySQL</strong></span></td><td colspan=\"1\" class=\"confluenceTd\">crater</td><td colspan=\"1\" class=\"confluenceTd\"><div class=\"content-wrapper\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"27386375-da2c-4bc9-a25a-e200db6e9110\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\"># connect to crater db\n&gt; mysql -ucrater -pcrater crater\n# connect to crater atomfeed db\n&gt; mysql -ucrater_atomfeed_user  -ppassw0rd crater_atomfeed</pre>\n</div></div></div></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><br/></td><td colspan=\"1\" class=\"confluenceTd\"><br/></td><td colspan=\"1\" class=\"confluenceTd\"><br/></td><td colspan=\"1\" class=\"confluenceTd\"><br/></td><td colspan=\"1\" class=\"confluenceTd\"><br/></td></tr></tbody></table></div><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ac3fb904-ba22-4b8f-8f8e-1ff94929c546\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Related Reading: Debugging performance issues in MySQL / Postgres DB: <a href=\"/wiki/spaces/BAH/pages/3259335448/Troubleshooting+performance+issues+in+SQL+OpenERP+and+OpenELIS\" data-linked-resource-id=\"3259335448\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Troubleshooting performance issues in SQL, OpenERP and OpenELIS</a></p></div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"2cec85fa-c08b-4b02-a6f9-4f6ca44367e4\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>On this page</b></div><div class=\"panelContent\">\n<p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"f40f1677-2991-4af7-8a5b-9ed0dbd65467\" data-macro-name=\"toc\"> </div><p> </p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f47c45e9-c8c0-4e63-9161-45dac6ffd88c\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/66912271/Anonymizing+Bahmni+Database\" data-linked-resource-id=\"66912271\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Anonymizing Bahmni Database</a> </p><p><a class=\"external-link\" href=\"https://stackoverflow.com/questions/1926079/how-many-rows-in-a-database-are-too-many\" rel=\"nofollow\">(StackOverflow) Can a million rows be stored in a DB</a>?</p><p><a class=\"external-link\" href=\"https://wiki.openmrs.org/display/docs/Using+UTF-8+Characters\" rel=\"nofollow\">OpenMRS - Supporting Other Languages (UTF-8)</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/49545219"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/49545219/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/49545219/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 387823756
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/49545219/child",
+    "restrictions": "/rest/api/content/49545219/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/49545219/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=49545219",
+    "webui": "/spaces/BAH/pages/49545219/Connecting+to+various+databases",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/49545219",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/49545219",
+    "tinyui": "/x/AwD0Ag",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

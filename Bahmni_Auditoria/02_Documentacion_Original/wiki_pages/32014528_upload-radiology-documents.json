@@ -1,0 +1,170 @@
+{
+  "id": "32014528",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/32014528",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzIwMTQ1Mjg=",
+  "status": "current",
+  "title": "Upload Radiology Documents",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2015-11-03T13:13:56.288Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014528/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "when": "2017-06-14T02:12:20.240Z",
+    "friendlyWhen": "Jun 14, 2017",
+    "message": "",
+    "number": 11,
+    "minorEdit": false,
+    "syncRev": "0.j73Mt4G5AQV-nFCSJHCI7w.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$32014528.61",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/32014528"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014528/version/11"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>About the Feature</h2><p>Bahmni provides functionality to upload radiology documents and associate them to a patient visit. Documents can be uploaded to an already existing visit or a new visit can be created.</p><h2><span style=\"color: rgb(0,0,0);\">Used By</span></h2><p><span style=\"color: rgb(0,0,0);\">Radiology documents are uploaded by radiology technicians and viewed by doctors for diagnostic purposes.</span></p><h2><span style=\"color: rgb(0,0,0);\">How is it Used?</span></h2><ul><li><span style=\"color: rgb(0,0,0);\">Navigate to Radiology upload module from the Bahmni home page and select a patient to upload documents for</span></li></ul><p><span style=\"color: rgb(0,0,0);\"><br /></span></p><p><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"image2016-4-22 13:0:58.png\" ri:version-at-save=\"1\" /></ac:image></p><p>&nbsp;</p><ul><li><span style=\"color: rgb(0,0,0);line-height: 1.42857;\">On select of a patient you will be taken to the document upload screen. You can upload documents to a new visit by clicking the new visit tab</span></li></ul><p><span style=\"color: rgb(0,0,0);line-height: 1.42857;\"><br /></span></p><p><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"image2016-4-22 13:14:38.png\" ri:version-at-save=\"1\" /></ac:image><br /><br /><span style=\"color: rgb(0,0,0);\">Click the scan button to upload documents. The type of the uploaded document will have to be selected from the dropdown.&nbsp;</span><span style=\"color: rgb(0,0,0);\">The dates selected should not overlap with any existing visit of the patient. If they do, an error message will be displayed asking the user to upload the document to the appropriate visit.</span><br /><span style=\"color: rgb(0,0,0);\"><br /></span></p><ul><li><span style=\"color: rgb(0,0,0);\">To upload a document to an existing visit, expand the tab of the appropriate visit and upload the document</span></li></ul><p><span style=\"color: rgb(0,0,0);\"><br /></span></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"image2016-4-22 13:16:2.png\" ri:version-at-save=\"1\" /></ac:image></span><span style=\"color: rgb(0,0,0);\">&nbsp;</span></p><p><span style=\"color: rgb(0,0,0);\">&nbsp;</span></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"fe9e777b-789d-44be-99a5-88941280217a\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"1f1c1010-6fb8-4989-95d2-7a04b30f7142\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Radiology+and+PACS\">Radiology and PACS - Feature Guide</a></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"e362d9ee-c9aa-4bc5-aa2f-7ad0b6617623\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Implementation Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Manual+Radiology+Upload\">Radiology Upload - Implementer's Guide</a></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/32014528"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"UploadRadiologyDocuments-AbouttheFeature\">About the Feature</h2><p>Bahmni provides functionality to upload radiology documents and associate them to a patient visit. Documents can be uploaded to an already existing visit or a new visit can be created.</p><h2 id=\"UploadRadiologyDocuments-UsedBy\"><span class=\"legacy-color-text-default\">Used By</span></h2><p><span class=\"legacy-color-text-default\">Radiology documents are uploaded by radiology technicians and viewed by doctors for diagnostic purposes.</span></p><h2 id=\"UploadRadiologyDocuments-HowisitUsed?\"><span class=\"legacy-color-text-default\">How is it Used?</span></h2><ul><li><span class=\"legacy-color-text-default\">Navigate to Radiology upload module from the Bahmni home page and select a patient to upload documents for</span></li></ul><p><span class=\"legacy-color-text-default\"><br/></span></p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014528/image2016-4-22%2013:0:58.png?version=1&amp;modificationDate=1464155987230&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=377\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014528/image2016-4-22%2013:0:58.png?version=1&amp;modificationDate=1464155987230&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"61997167\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2016-4-22 13:0:58.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32014528\" data-linked-resource-container-version=\"11\" data-media-id=\"56825861-e696-4d26-82fa-6770de6ee65b\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014528/image2016-4-22%2013:0:58.png?version=1&amp;modificationDate=1464155987230&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=754 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014528/image2016-4-22%2013:0:58.png?version=1&amp;modificationDate=1464155987230&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=377 1x\"></span></p><p> </p><ul><li><span style=\"line-height: 1.42857;\" class=\"legacy-color-text-default\">On select of a patient you will be taken to the document upload screen. You can upload documents to a new visit by clicking the new visit tab</span></li></ul><p><span style=\"line-height: 1.42857;\" class=\"legacy-color-text-default\"><br/></span></p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014528/image2016-4-22%2013:14:38.png?version=1&amp;modificationDate=1464155987250&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=318\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014528/image2016-4-22%2013:14:38.png?version=1&amp;modificationDate=1464155987250&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"61997168\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2016-4-22 13:14:38.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32014528\" data-linked-resource-container-version=\"11\" data-media-id=\"0afeeac3-07ca-4cc9-b594-bbc90acd1073\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014528/image2016-4-22%2013:14:38.png?version=1&amp;modificationDate=1464155987250&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=636 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014528/image2016-4-22%2013:14:38.png?version=1&amp;modificationDate=1464155987250&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=318 1x\"></span><br/><br/><span class=\"legacy-color-text-default\">Click the scan button to upload documents. The type of the uploaded document will have to be selected from the dropdown. </span><span class=\"legacy-color-text-default\">The dates selected should not overlap with any existing visit of the patient. If they do, an error message will be displayed asking the user to upload the document to the appropriate visit.</span><br/><span class=\"legacy-color-text-default\"><br/></span></p><ul><li><span class=\"legacy-color-text-default\">To upload a document to an existing visit, expand the tab of the appropriate visit and upload the document</span></li></ul><p><span class=\"legacy-color-text-default\"><br/></span></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014528/image2016-4-22%2013:16:2.png?version=1&amp;modificationDate=1464155987263&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=304\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014528/image2016-4-22%2013:16:2.png?version=1&amp;modificationDate=1464155987263&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"61997169\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2016-4-22 13:16:2.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32014528\" data-linked-resource-container-version=\"11\" data-media-id=\"def60926-df8a-4b94-b0b5-0a2be404b573\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014528/image2016-4-22%2013:16:2.png?version=1&amp;modificationDate=1464155987263&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=608 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014528/image2016-4-22%2013:16:2.png?version=1&amp;modificationDate=1464155987263&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=304 1x\"></span></span><span class=\"legacy-color-text-default\"> </span></p><p><span class=\"legacy-color-text-default\"> </span></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"fe9e777b-789d-44be-99a5-88941280217a\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"1f1c1010-6fb8-4989-95d2-7a04b30f7142\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Radiology+and+PACS\" rel=\"nofollow\">Radiology and PACS - Feature Guide</a></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e362d9ee-c9aa-4bc5-aa2f-7ad0b6617623\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Implementation Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Manual+Radiology+Upload\" rel=\"nofollow\">Radiology Upload - Implementer's Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/32014528"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/32014528/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014528/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 950
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/32014528/child",
+    "restrictions": "/rest/api/content/32014528/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/32014528/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=32014528",
+    "webui": "/spaces/BAH/pages/32014528/Upload+Radiology+Documents",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/32014528",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014528",
+    "tinyui": "/x/wIDoAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

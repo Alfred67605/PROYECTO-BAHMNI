@@ -1,0 +1,43 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public License,
+ * v. 2.0. If a copy of the MPL was not distributed with this file, You can
+ * obtain one at https://www.bahmni.org/license/mplv2hd.
+ *
+ * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
+ * graphic logo is a trademark of OpenMRS Inc.
+ */
+
+@charset "UTF-8";
+
+/*BAHMNI css files*/
+
+@import "bahmni-helper/variables";
+@import "bahmni-components/typography";
+@import "common/angularFix";
+
+body{
+  pre{
+    margin: 0;
+  }
+}
+.print-wrapper {
+  clear: both;
+  ul, ol, li {
+    margin: 0;
+    padding: 0;
+  }
+
+  ol {
+    display: inline-block;
+  }
+
+  ul {
+    list-style: none;
+  }
+  .fl, .left {float: left;}
+  .fr, .right {float: right;}
+  section.block, .dashboard-section{
+    margin: 10px 0;
+  }
+}
+@import "print";

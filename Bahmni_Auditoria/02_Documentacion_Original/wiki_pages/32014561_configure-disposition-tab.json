@@ -1,0 +1,170 @@
+{
+  "id": "32014561",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/32014561",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzIwMTQ1NjE=",
+  "status": "current",
+  "title": "Configure Disposition Tab",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2015-11-03T17:49:59.300Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014561/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:609f12f6-2af6-4fd7-b713-f19fc124f992",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "hanisha potturi (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:609f12f6-2af6-4fd7-b713-f19fc124f992",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Hanisha Potturi (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:609f12f6-2af6-4fd7-b713-f19fc124f992"
+      }
+    },
+    "when": "2016-04-07T07:56:30.192Z",
+    "friendlyWhen": "Apr 07, 2016",
+    "message": "",
+    "number": 21,
+    "minorEdit": false,
+    "syncRev": "0.d9jWJJ1TLTxckW9fS4snWw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$32014561.76",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/32014561"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014561/version/21"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p>Disposition Tab is used by the doctor to enter the status of the patient. It does not explicitly trigger a workflow, but instead can be used to determine if an action needs to be taken with respect to the disposition.</p><p><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"Disposition Tab.png\" /></ac:image></p><p style=\"text-align: center;\"><strong>The Disposition tab in the patient dashboard</strong></p><h2>Steps</h2><p>To configure Disposition Tab, place the below code in clincal/extension.json:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"101477f5-5508-4968-998b-fc288edde1d1\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"disposition\": {\n    \"id\": \"bahmni.clinical.consultation.disposition\",\n    \"extensionPointId\": \"org.bahmni.clinical.consultation.board\",\n    \"type\": \"link\",\n    \"label\": \"Disposition\",\n    \"translationKey\":\"DISPOSITION_BOARD_LABEL_KEY\",\n    \"url\": \"disposition\",\n    \"icon\": \"fa-user-md\",\n    \"order\": 3,\n    \"requiredPrivilege\": \"app:clinical:dispositionTab\"\n  },]]></ac:plain-text-body></ac:structured-macro><p>&nbsp;</p><div class=\"wiki-content\"><h3>Configure Disposition Concepts:</h3><p>&nbsp; &nbsp; &nbsp;To configure disposition concepts in openmrs refer to the&nbsp;<ac:link><ri:page ri:content-title=\"Configure Disposition Concepts\" /></ac:link></p></div></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e7b3588e-96e1-4de3-a29d-46427cf35a1e\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"b583a39e-8b61-4540-b945-a782d2ee406a\" /></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Disposition\" /><ac:plain-text-link-body><![CDATA[Disposition Tab - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/32014561"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ConfigureDispositionTab-PurposeandBenefits\">Purpose and Benefits</h2><p>Disposition Tab is used by the doctor to enter the status of the patient. It does not explicitly trigger a workflow, but instead can be used to determine if an action needs to be taken with respect to the disposition.</p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014561/Disposition%20Tab.png?version=1&amp;modificationDate=1447329183759&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=216\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014561/Disposition%20Tab.png?version=1&amp;modificationDate=1447329183759&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"32604494\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Disposition Tab.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32014561\" data-linked-resource-container-version=\"21\" data-media-id=\"739f1472-42bd-4fca-a100-0a78c4bfe696\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014561/Disposition%20Tab.png?version=1&amp;modificationDate=1447329183759&amp;cacheVersion=1&amp;api=v2&amp;width=1388&amp;height=430 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014561/Disposition%20Tab.png?version=1&amp;modificationDate=1447329183759&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=216 1x\"></span></p><p style=\"text-align: center;\"><strong>The Disposition tab in the patient dashboard</strong></p><h2 id=\"ConfigureDispositionTab-Steps\">Steps</h2><p>To configure Disposition Tab, place the below code in clincal/extension.json:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"101477f5-5508-4968-998b-fc288edde1d1\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;disposition&quot;: {\n    &quot;id&quot;: &quot;bahmni.clinical.consultation.disposition&quot;,\n    &quot;extensionPointId&quot;: &quot;org.bahmni.clinical.consultation.board&quot;,\n    &quot;type&quot;: &quot;link&quot;,\n    &quot;label&quot;: &quot;Disposition&quot;,\n    &quot;translationKey&quot;:&quot;DISPOSITION_BOARD_LABEL_KEY&quot;,\n    &quot;url&quot;: &quot;disposition&quot;,\n    &quot;icon&quot;: &quot;fa-user-md&quot;,\n    &quot;order&quot;: 3,\n    &quot;requiredPrivilege&quot;: &quot;app:clinical:dispositionTab&quot;\n  },</pre>\n</div></div><p> </p><div class=\"wiki-content\"><h3 id=\"ConfigureDispositionTab-ConfigureDispositionConcepts:\">Configure Disposition Concepts:</h3><p>     To configure disposition concepts in openmrs refer to the <a href=\"/wiki/spaces/BAH/pages/50921523/Configure+Disposition+Concepts\" data-linked-resource-id=\"50921523\" data-linked-resource-version=\"17\" data-linked-resource-type=\"page\">Configure Disposition Concepts</a></p></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e7b3588e-96e1-4de3-a29d-46427cf35a1e\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"b583a39e-8b61-4540-b945-a782d2ee406a\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/40501369/Disposition\" data-linked-resource-id=\"40501369\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Disposition Tab - Feature Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/32014561"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/32014561/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014561/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 3
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/32014561/child",
+    "restrictions": "/rest/api/content/32014561/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/32014561/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=32014561",
+    "webui": "/spaces/BAH/pages/32014561/Configure+Disposition+Tab",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/32014561",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014561",
+    "tinyui": "/x/4YDoAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

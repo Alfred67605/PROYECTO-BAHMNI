@@ -1,0 +1,197 @@
+{
+  "id": "900530355",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/900530355",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvOTAwNTMwMzU1",
+  "status": "current",
+  "title": "ERP FAQs & Troubleshooting",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "createdDate": "2019-08-06T07:33:59.683Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/900530355/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "when": "2019-08-22T13:30:56.324Z",
+    "friendlyWhen": "Aug 22, 2019",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "syncRev": "0.DwatPW5Jofwcbi75MnX2hg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$900530355.74",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/900530355"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/900530355/version/8"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h1>Migration Guide</h1><p>There has been significant change from OpenERP7 to Odoo10. Hence an automated migration is not possible.&nbsp;</p><p>In addition, if you have added any additional module, custom or stock, then it can further complicate the migration.&nbsp; &nbsp;</p><ol><li>You can find a comprehensive technical guide relevant to Migration from OpenERP7 to Odoo10 in the attached document <ac:link><ri:attachment ri:filename=\"Final_OpenERP_to_Odoo_v10_Migration.pdf\" ri:version-at-save=\"1\" /><ac:plain-text-link-body><![CDATA[\"Final_OpenERP_to_Odoo_v10_Migration.pdf\"]]></ac:plain-text-link-body></ac:link></li><li>For data migration, please refer to the attached document <ac:link><ri:attachment ri:filename=\"Data Migration from OpenERP7 to Odoo 10.pdf\" ri:version-at-save=\"1\" /><ac:plain-text-link-body><![CDATA[\"Data Migration from OpenERP7 to Odoo 10.pdf\"]]></ac:plain-text-link-body></ac:link></li></ol><p><br /></p><p><strong>Caution</strong>: Please do not try this on production system. Its advisable that you test out first on your test/staging environments before you proceed with data migration.&nbsp;</p><p>We would advise that you look at Odoo as a completely different system and start afresh. There are significant changes in model and migrating data even if possible will require additional/custom scripting.&nbsp;</p><p>We would suggest</p><ul style=\"list-style-type: square;\"><li>Plan for closure of OpenERP</li><li>Setup Odoo as described in configuration/setup pages</li><li>Import master data (using CSV or Excel) - export from OpenERP, cleanup, import in Odoo.&nbsp;</li></ul><h1>Not ready to upgrade to Odoo, what can I do?</h1><p>There might be plenty of reasons for you not to upgrade to Odoo 10 yet. For example, you are middle of the Financial Year and you maintain your accounting in OpenERP.&nbsp;</p><p>Bahmni 0.92 works perfectly fine with OpenERP 7. So you can install Bahmni 0.92 in a separate machine (without Odoo) and then configure settings to connect to older OpenERP 7 running separately.&nbsp;</p><p>To connect to older OpenERP7, you need to change a few properties of &quot;Bahmni ERP Connect&quot;.&nbsp;</p><p><br /></p><h2>Using bahmni erp-connect v0.92</h2><ul style=\"list-style-type: square;\"><li><p>Install <strong>bahmni-erp-connect</strong> on a the new system (see <ac:link><ri:page ri:content-title=\"Install Bahmni on CentOS (Advanced Installation Options)\" ri:version-at-save=\"168\" /><ac:plain-text-link-body><![CDATA[Advanced Installation]]></ac:plain-text-link-body></ac:link> on how to install specific component's rpm installation).&nbsp;</p></li><li>Find and edit the file &quot;<strong>/opt/bahmni-erp-connect/bahmni-erp-connect/WEB-INF/classes/erp-atomfeed.properties</strong>&quot;. Change the following properties<ul style=\"list-style-type: square;\"><li><strong>jdbc.url</strong>=jdbc:postgresql://[OpenERP Machine IP Address or FQDN]/openerp&nbsp;</li><li><strong>openerp.port</strong>=8069</li><li><strong>openerp.host</strong>=[OpenERP machine IP Address or FQDN of the ]</li><li><strong>openerp.database</strong>=openerp</li><li><strong>openerp.user</strong>=[openerp login user]</li><li><strong>openerp.password</strong>=[openerp login user password]</li></ul></li></ul><p><br /></p><p><strong>Note:</strong> For &quot;Bahmni-erp-connect&quot; to talk to OpenERP7 running on another machine, you need to ensure</p><ul><li>The old machine is visible from the new machine over HTTP</li><li>The old machine's port 8069 is allowed/accessible from the new machine</li><li>Postgres Openerp database allows connection from the old machine</li></ul><p><br /></p><h2>Using bahmni erp-connect v0.91</h2><ul><li>On the old environment, where OpenERP7 is running, file and edit the file <strong>&quot;/opt/bahmni-erp-connect/bahmni-erp-connect/WEB-INF/classes/atomfeed.properties&quot;</strong><ul><li>customer.feed.generator.uri=<span class=\"nolink\">http://[OpenMRS Machine IP Address or FQDN]:8050/openmrs/ws/atomfeed/patient/recent</span></li><li>saleorder.feed.generator.uri=<span class=\"nolink\">http://<span class=\"nolink\">[OpenMRS Machine IP Address or FQDN]</span>:8050/openmrs/ws/atomfeed/encounter/recent</span></li><li>drug.feed.generator.uri=<span class=\"nolink\">http://<span class=\"nolink\">[OpenMRS Machine IP Address or FQDN]</span>:8050/openmrs/ws/atomfeed/drug/recent</span></li><li>lab.feed.generator.uri=<span class=\"nolink\">http://<span class=\"nolink\">[OpenMRS Machine IP Address or FQDN]</span>:8050/openmrs/ws/atomfeed/lab/recent</span></li><li>openmrs.auth.uri=<span class=\"nolink\">http://<span class=\"nolink\">[OpenMRS Machine IP Address or FQDN]</span>:8050/openmrs/ws/rest/v1/session</span></li><li>openelis.saleorder.feed.generator.uri=<span class=\"nolink\">http://<span class=\"nolink\">[OpenELIS Machine IP Address or FQDN]</span>:8052/openelis/ws/feed/patient/recent</span></li><li>openelis.uri=<span class=\"nolink\">http://<span class=\"nolink\">[<span class=\"nolink\"><span class=\"nolink\">OpenELIS</span></span> Machine IP Address or FQDN]</span>:8052/openelis</span></li></ul></li></ul><p><br /></p><p><strong>Note:</strong> For &quot;Bahmni-erp-connect&quot; 0.91 to work with Bahmni 0.92 on new machine, you need to ensure</p><ul><li>The new machine is visible to the old machine over HTTP for ports of&nbsp;OpenMRS and OpenELIS (8050, 8052 by default)</li></ul><h1><span>Troubleshooting</span></h1><p><span>Lots of things can go wrong if things are not configured properly. Below are some tips that will help you in investigating and troubleshooting issues.</span></p><h2><span><span>Change Odoo log level</span></span></h2><p><span>By default, upon installation, Odoo log level would be set to &quot;error&quot;, meaning only errors would be logged. If you are trying to figure out, troubleshoot issues, change the log level to &quot;debug&quot; to get more information. For this,&nbsp;</span></p><ul><li><span>Edit odoo configuration file - <strong>/etc/odoo.conf</strong>,&nbsp; and change log level to &ldquo;debug&rdquo;.&nbsp;</span><ul><li><span><span>log_level = debug</span></span></li></ul></li><li><span><span>After changing the file, you will need to restart Odoo</span></span><ul><li><span><span><span>service odoo restart</span></span></span></li></ul></li><li>Odoo log file can be found here -&nbsp; /var/log/odoo/odoo.log</li></ul><p><br /></p><h2><span>Change erp-connect log level</span></h2><p><span>A specific microservice &quot;bahmni-erp-connect&quot; is responsible for integration between OpenMRS &amp; Odoo. You can get additional info by looking at this service's log and additionally changing the log level of this service.&nbsp;</span></p><ul><li><span>bahmni-erp-connect log file location: /var/log/bahmni-erp-connect/bahmni-erp-connect.log</span></li><li><span>Edit log level by editing file,&nbsp;<span>f/opt/bahmni-erp-connect/bahmni-erp-connect/WEB-INF/classes/log4j.xml</span></span><ul><li>change specific logger's log level to DEBUG, root logger level to DEBUG</li></ul></li><li>After editing the file, you will need to restart bahmni-erp-connect<br /><ul><li>service bahmni-erp-connect restart</li></ul></li></ul></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"8450e577-7882-4e1b-ae52-c2950ec062ba\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"2ecf4e5d-ee5a-47a2-8fca-c2f2091f69d8\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"dfae23fc-227f-479f-a9e1-054d08f5bd9f\"><ac:parameter ac:name=\"titleColor\">White</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/103350284/Upgrade+to+Latest+Bahmni+Release#UpgradetoLatestBahmniRelease-UpgradetoBahmni0.92\">Upgrade To Bahmni 0.92</a></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/900530355"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h1 id=\"ERPFAQs&amp;Troubleshooting-MigrationGuide\">Migration Guide</h1><p>There has been significant change from OpenERP7 to Odoo10. Hence an automated migration is not possible. </p><p>In addition, if you have added any additional module, custom or stock, then it can further complicate the migration.   </p><ol><li>You can find a comprehensive technical guide relevant to Migration from OpenERP7 to Odoo10 in the attached document <a href=\"/wiki/download/attachments/900530355/Final_OpenERP_to_Odoo_v10_Migration.pdf?version=1&amp;modificationDate=1565078815435&amp;cacheVersion=1&amp;api=v2\" data-linked-resource-id=\"900464851\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Final_OpenERP_to_Odoo_v10_Migration.pdf\" data-nice-type=\"PDF Document\" data-linked-resource-content-type=\"application/pdf\" data-linked-resource-container-id=\"900530355\" data-linked-resource-container-version=\"8\">&quot;Final_OpenERP_to_Odoo_v10_Migration.pdf&quot;</a></li><li>For data migration, please refer to the attached document <a href=\"/wiki/download/attachments/900530355/Data%20Migration%20from%20OpenERP7%20to%20Odoo%2010.pdf?version=1&amp;modificationDate=1565078813997&amp;cacheVersion=1&amp;api=v2\" data-linked-resource-id=\"900563186\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Data Migration from OpenERP7 to Odoo 10.pdf\" data-nice-type=\"PDF Document\" data-linked-resource-content-type=\"application/pdf\" data-linked-resource-container-id=\"900530355\" data-linked-resource-container-version=\"8\">&quot;Data Migration from OpenERP7 to Odoo 10.pdf&quot;</a></li></ol><p><br/></p><p><strong>Caution</strong>: Please do not try this on production system. Its advisable that you test out first on your test/staging environments before you proceed with data migration. </p><p>We would advise that you look at Odoo as a completely different system and start afresh. There are significant changes in model and migrating data even if possible will require additional/custom scripting. </p><p>We would suggest</p><ul style=\"list-style-type: square;\"><li>Plan for closure of OpenERP</li><li>Setup Odoo as described in configuration/setup pages</li><li>Import master data (using CSV or Excel) - export from OpenERP, cleanup, import in Odoo. </li></ul><h1 id=\"ERPFAQs&amp;Troubleshooting-NotreadytoupgradetoOdoo,whatcanIdo?\">Not ready to upgrade to Odoo, what can I do?</h1><p>There might be plenty of reasons for you not to upgrade to Odoo 10 yet. For example, you are middle of the Financial Year and you maintain your accounting in OpenERP. </p><p>Bahmni 0.92 works perfectly fine with OpenERP 7. So you can install Bahmni 0.92 in a separate machine (without Odoo) and then configure settings to connect to older OpenERP 7 running separately. </p><p>To connect to older OpenERP7, you need to change a few properties of &quot;Bahmni ERP Connect&quot;. </p><p><br/></p><h2 id=\"ERPFAQs&amp;Troubleshooting-Usingbahmnierp-connectv0.92\">Using bahmni erp-connect v0.92</h2><ul style=\"list-style-type: square;\"><li><p>Install <strong>bahmni-erp-connect</strong> on a the new system (see <a href=\"/wiki/spaces/BAH/pages/35291242/Install+Bahmni+on+CentOS+Advanced+Installation+Options\" data-linked-resource-id=\"35291242\" data-linked-resource-version=\"177\" data-linked-resource-type=\"page\">Advanced Installation</a> on how to install specific component's rpm installation). </p></li><li>Find and edit the file &quot;<strong>/opt/bahmni-erp-connect/bahmni-erp-connect/WEB-INF/classes/erp-atomfeed.properties</strong>&quot;. Change the following properties<ul style=\"list-style-type: square;\"><li><strong>jdbc.url</strong>=jdbc:postgresql://[OpenERP Machine IP Address or FQDN]/openerp </li><li><strong>openerp.port</strong>=8069</li><li><strong>openerp.host</strong>=[OpenERP machine IP Address or FQDN of the ]</li><li><strong>openerp.database</strong>=openerp</li><li><strong>openerp.user</strong>=[openerp login user]</li><li><strong>openerp.password</strong>=[openerp login user password]</li></ul></li></ul><p><br/></p><p><strong>Note:</strong> For &quot;Bahmni-erp-connect&quot; to talk to OpenERP7 running on another machine, you need to ensure</p><ul><li>The old machine is visible from the new machine over HTTP</li><li>The old machine's port 8069 is allowed/accessible from the new machine</li><li>Postgres Openerp database allows connection from the old machine</li></ul><p><br/></p><h2 id=\"ERPFAQs&amp;Troubleshooting-Usingbahmnierp-connectv0.91\">Using bahmni erp-connect v0.91</h2><ul><li>On the old environment, where OpenERP7 is running, file and edit the file <strong>&quot;/opt/bahmni-erp-connect/bahmni-erp-connect/WEB-INF/classes/atomfeed.properties&quot;</strong><ul><li>customer.feed.generator.uri=<span class=\"nolink\">http://[OpenMRS Machine IP Address or FQDN]:8050/openmrs/ws/atomfeed/patient/recent</span></li><li>saleorder.feed.generator.uri=<span class=\"nolink\">http://<span class=\"nolink\">[OpenMRS Machine IP Address or FQDN]</span>:8050/openmrs/ws/atomfeed/encounter/recent</span></li><li>drug.feed.generator.uri=<span class=\"nolink\">http://<span class=\"nolink\">[OpenMRS Machine IP Address or FQDN]</span>:8050/openmrs/ws/atomfeed/drug/recent</span></li><li>lab.feed.generator.uri=<span class=\"nolink\">http://<span class=\"nolink\">[OpenMRS Machine IP Address or FQDN]</span>:8050/openmrs/ws/atomfeed/lab/recent</span></li><li>openmrs.auth.uri=<span class=\"nolink\">http://<span class=\"nolink\">[OpenMRS Machine IP Address or FQDN]</span>:8050/openmrs/ws/rest/v1/session</span></li><li>openelis.saleorder.feed.generator.uri=<span class=\"nolink\">http://<span class=\"nolink\">[OpenELIS Machine IP Address or FQDN]</span>:8052/openelis/ws/feed/patient/recent</span></li><li>openelis.uri=<span class=\"nolink\">http://<span class=\"nolink\">[<span class=\"nolink\"><span class=\"nolink\">OpenELIS</span></span> Machine IP Address or FQDN]</span>:8052/openelis</span></li></ul></li></ul><p><br/></p><p><strong>Note:</strong> For &quot;Bahmni-erp-connect&quot; 0.91 to work with Bahmni 0.92 on new machine, you need to ensure</p><ul><li>The new machine is visible to the old machine over HTTP for ports of OpenMRS and OpenELIS (8050, 8052 by default)</li></ul><h1 id=\"ERPFAQs&amp;Troubleshooting-Troubleshooting\"><span>Troubleshooting</span></h1><p><span>Lots of things can go wrong if things are not configured properly. Below are some tips that will help you in investigating and troubleshooting issues.</span></p><h2 id=\"ERPFAQs&amp;Troubleshooting-ChangeOdoologlevel\"><span><span>Change Odoo log level</span></span></h2><p><span>By default, upon installation, Odoo log level would be set to &quot;error&quot;, meaning only errors would be logged. If you are trying to figure out, troubleshoot issues, change the log level to &quot;debug&quot; to get more information. For this, </span></p><ul><li><span>Edit odoo configuration file - <strong>/etc/odoo.conf</strong>,  and change log level to “debug”. </span><ul><li><span><span>log_level = debug</span></span></li></ul></li><li><span><span>After changing the file, you will need to restart Odoo</span></span><ul><li><span><span><span>service odoo restart</span></span></span></li></ul></li><li>Odoo log file can be found here -  /var/log/odoo/odoo.log</li></ul><p><br/></p><h2 id=\"ERPFAQs&amp;Troubleshooting-Changeerp-connectloglevel\"><span>Change erp-connect log level</span></h2><p><span>A specific microservice &quot;bahmni-erp-connect&quot; is responsible for integration between OpenMRS &amp; Odoo. You can get additional info by looking at this service's log and additionally changing the log level of this service. </span></p><ul><li><span>bahmni-erp-connect log file location: /var/log/bahmni-erp-connect/bahmni-erp-connect.log</span></li><li><span>Edit log level by editing file, <span>f/opt/bahmni-erp-connect/bahmni-erp-connect/WEB-INF/classes/log4j.xml</span></span><ul><li>change specific logger's log level to DEBUG, root logger level to DEBUG</li></ul></li><li>After editing the file, you will need to restart bahmni-erp-connect<br/><ul><li>service bahmni-erp-connect restart</li></ul></li></ul></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8450e577-7882-4e1b-ae52-c2950ec062ba\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"2ecf4e5d-ee5a-47a2-8fca-c2f2091f69d8\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"dfae23fc-227f-479f-a9e1-054d08f5bd9f\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: White;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/103350284/Upgrade+to+Latest+Bahmni+Release#UpgradetoLatestBahmniRelease-UpgradetoBahmni0.92\" rel=\"nofollow\">Upgrade To Bahmni 0.92</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/900530355"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "atomfeed-sync",
+          "id": "2207580166",
+          "label": "atomfeed-sync"
+        },
+        {
+          "prefix": "global",
+          "name": "openerp",
+          "id": "2207580168",
+          "label": "openerp"
+        },
+        {
+          "prefix": "global",
+          "name": "odoo",
+          "id": "2127724690",
+          "label": "odoo"
+        },
+        {
+          "prefix": "global",
+          "name": "sync",
+          "id": "2207580171",
+          "label": "sync"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 4,
+      "_links": {
+        "next": "/rest/api/content/900530355/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/900530355/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 878973726
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/900530355/child",
+    "restrictions": "/rest/api/content/900530355/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/900530355/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=900530355",
+    "webui": "/spaces/BAH/pages/900530355/ERP+FAQs+Troubleshooting",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/900530355",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/900530355",
+    "tinyui": "/x/swCtNQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

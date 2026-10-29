@@ -1,0 +1,171 @@
+{
+  "id": "53837989",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/53837989",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNTM4Mzc5ODk=",
+  "status": "current",
+  "title": "Configuring Access Keys in Bahmni",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sravanthi N. S. CH.",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sravanthi N. S. CH.",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d47e0136-cbde-4dbc-8820-611d4528d1c8"
+      }
+    },
+    "createdDate": "2016-04-18T11:27:01.686Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/53837989/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:a2bf908b-fc93-4553-a36f-d98bec490816",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sushma V (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:a2bf908b-fc93-4553-a36f-d98bec490816",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sushma Rao (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:a2bf908b-fc93-4553-a36f-d98bec490816"
+      }
+    },
+    "when": "2016-05-25T11:08:53.664Z",
+    "friendlyWhen": "May 25, 2016",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "syncRev": "0.iP6Cgld8LrJi9Z02qk4c6A.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$53837989.18",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/53837989"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/53837989/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>As part of internationalization, Bahmni allows the user to configuring access keys that are supported in Bahmni.</p><p><span style=\"color: rgb(0,0,0);\"><strong>directory_location = &quot;/var/www/bahmni_config/openmrs/i18n&quot;</strong></span></p><p><span style=\"color: rgb(0,0,0);\"><strong>selected_locale = locale selected at the time of login (Example : en)</strong></span></p><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th>Access Key</th><th>Default Value</th><th colspan=\"1\">Location to override</th></tr><tr><td><span style=\"color: rgb(0,128,0);\">CLINICAL_PRINT_ACCESS_KEY</span></td><td>R</td><td colspan=\"1\">{{directory_location}}/clinical/<span>locale_{{selected_locale}}.json</span></td></tr><tr><td><span style=\"color: rgb(0,128,0);\">MEDICATION_AS_NEEDED_ACCESS_KEY</span></td><td>O</td><td colspan=\"1\"><span>{{directory_location}}/clinical/</span><span>locale_{{selected_locale}}.json</span></td></tr><tr><td colspan=\"1\"><span style=\"color: rgb(0,128,0);\">CONSULTATION_SHORTCUT_KEY</span></td><td colspan=\"1\">C</td><td colspan=\"1\"><span>{{directory_location}}/clinical/</span><span>locale_{{selected_locale}}.json</span></td></tr><tr><td colspan=\"1\"><span style=\"color: rgb(0,128,0);\">REGISTRATION_SAVE_ACCESS_KEY</span></td><td colspan=\"1\">S</td><td colspan=\"1\"><span>{{directory_location}}/registration/locale_{{selected_locale}}.json</span></td></tr><tr><td colspan=\"1\"><span style=\"color: rgb(0,128,0);\">REGISTRATION_BACK_ACCESS_KEY</span></td><td colspan=\"1\">B</td><td colspan=\"1\"><span>{{directory_location}}/registration/locale_{{selected_locale}}.json</span></td></tr><tr><td colspan=\"1\"><span style=\"color: rgb(0,128,0);\">REGISTRATION_ENTER_VISIT_DETAILS_ACCESS_KEY</span></td><td colspan=\"1\">V</td><td colspan=\"1\"><span>{{directory_location}}/registration/locale_{{selected_locale}}.json</span></td></tr></tbody></table><p>&nbsp;</p><p><strong>Registration Print</strong></p><p><strong><br /></strong>Print buttons on Registration Page are configurable in Bahmni. For each Print option configured, one can configure access key. Refer&nbsp;<ac:link><ri:page ri:content-title=\"Configure Patient Card Prints\" /></ac:link>.</p><table class=\"wrapped\"><tbody><tr><th>Action</th><th>Access key</th></tr><tr><td>Print</td><td>character configured for &quot;<span style=\"color: rgb(24,54,145);\">shortcutKey</span>&quot;</td></tr></tbody></table><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/53837989"
+      }
+    },
+    "view": {
+      "value": "<p><style>[data-colorid=ibhm09qkm3]{color:#183691} html[data-color-mode=dark] [data-colorid=ibhm09qkm3]{color:#6e8ce7}</style>As part of internationalization, Bahmni allows the user to configuring access keys that are supported in Bahmni.</p><p><span class=\"legacy-color-text-default\"><strong>directory_location = &quot;/var/www/bahmni_config/openmrs/i18n&quot;</strong></span></p><p><span class=\"legacy-color-text-default\"><strong>selected_locale = locale selected at the time of login (Example : en)</strong></span></p><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th class=\"confluenceTh\">Access Key</th><th class=\"confluenceTh\">Default Value</th><th colspan=\"1\" class=\"confluenceTh\">Location to override</th></tr><tr><td class=\"confluenceTd\"><span class=\"legacy-color-text-green2\">CLINICAL_PRINT_ACCESS_KEY</span></td><td class=\"confluenceTd\">R</td><td colspan=\"1\" class=\"confluenceTd\">{{directory_location}}/clinical/<span>locale_{{selected_locale}}.json</span></td></tr><tr><td class=\"confluenceTd\"><span class=\"legacy-color-text-green2\">MEDICATION_AS_NEEDED_ACCESS_KEY</span></td><td class=\"confluenceTd\">O</td><td colspan=\"1\" class=\"confluenceTd\"><span>{{directory_location}}/clinical/</span><span>locale_{{selected_locale}}.json</span></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><span class=\"legacy-color-text-green2\">CONSULTATION_SHORTCUT_KEY</span></td><td colspan=\"1\" class=\"confluenceTd\">C</td><td colspan=\"1\" class=\"confluenceTd\"><span>{{directory_location}}/clinical/</span><span>locale_{{selected_locale}}.json</span></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><span class=\"legacy-color-text-green2\">REGISTRATION_SAVE_ACCESS_KEY</span></td><td colspan=\"1\" class=\"confluenceTd\">S</td><td colspan=\"1\" class=\"confluenceTd\"><span>{{directory_location}}/registration/locale_{{selected_locale}}.json</span></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><span class=\"legacy-color-text-green2\">REGISTRATION_BACK_ACCESS_KEY</span></td><td colspan=\"1\" class=\"confluenceTd\">B</td><td colspan=\"1\" class=\"confluenceTd\"><span>{{directory_location}}/registration/locale_{{selected_locale}}.json</span></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><span class=\"legacy-color-text-green2\">REGISTRATION_ENTER_VISIT_DETAILS_ACCESS_KEY</span></td><td colspan=\"1\" class=\"confluenceTd\">V</td><td colspan=\"1\" class=\"confluenceTd\"><span>{{directory_location}}/registration/locale_{{selected_locale}}.json</span></td></tr></tbody></table></div><p>&nbsp;</p><p><strong>Registration Print</strong></p><p><strong><br /></strong>Print buttons on Registration Page are configurable in Bahmni. For each Print option configured, one can configure access key. Refer&nbsp;<a href=\"/wiki/spaces/BAH/pages/32014599/Configure+Patient+Card+Prints\" data-linked-resource-id=\"32014599\" data-linked-resource-version=\"32\" data-linked-resource-type=\"page\">Configure Patient Card Prints</a>.</p><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><tbody><tr><th class=\"confluenceTh\">Action</th><th class=\"confluenceTh\">Access key</th></tr><tr><td class=\"confluenceTd\">Print</td><td class=\"confluenceTd\">character configured for &quot;<span data-colorid=\"ibhm09qkm3\">shortcutKey</span>&quot;</td></tr></tbody></table></div><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/53837989"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/53837989/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/53837989/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/53837989/child",
+    "restrictions": "/rest/api/content/53837989/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/53837989/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=53837989",
+    "webui": "/spaces/BAH/pages/53837989/Configuring+Access+Keys+in+Bahmni",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/53837989",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/53837989",
+    "tinyui": "/x/pYA1Aw",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

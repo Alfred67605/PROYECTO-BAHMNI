@@ -1,0 +1,172 @@
+{
+  "id": "3657105447",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3657105447",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzY1NzEwNTQ0Nw==",
+  "status": "current",
+  "title": "Odoo 16 Migration Guide",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "createdDate": "2024-07-26T02:58:31.188Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3657105447/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "when": "2024-07-31T04:50:35.180Z",
+    "friendlyWhen": "Jul 31, 2024",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3657105447.208",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3657105447"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3657105447/version/7"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\" ac:breakout-mode=\"default\"><ac:layout-cell><p>Starting with Bahmni Standard 1.0.0, Odoo 16 is the default version integrated and shipped out of the box with Bahmni Docker. Further details about this initiative can be found <ac:link><ri:page ri:content-title=\"Upgrade Bahmni to Odoo (v16)\" ri:version-at-save=\"9\" /><ac:link-body>here</ac:link-body></ac:link>.</p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"eb37ac72-837a-469f-b049-8c3c237548a9\"><ac:rich-text-body><p><strong>Note:</strong> The migration to Odoo 16 will differ from a typical backup and restore process. This guide outlines the approach of setting up a fresh Odoo 16 environment and subsequently importing the necessary metadata/master data, along with minimal transactional data such as stock information and outstanding invoices. If your implementation includes additional Odoo modules or customizations, we recommend thoroughly reviewing the features available in Odoo 16 to identify and incorporate relevant modules in the new version.</p></ac:rich-text-body></ac:structured-macro></ac:layout-cell><ac:layout-cell><ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p>Related Links</p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p>Related Links</p>\n</div></div></ac:adf-fallback></ac:adf-extension><ol start=\"1\"><li><p><a href=\"https://github.com/Bahmni/bahmni-odoo-modules\">Bahmni Odoo 16 Extension Modules Code Repository</a></p></li><li><p><a href=\"https://www.odoo.com/documentation/16.0/applications.html\">Odoo 16 Documentation</a></p></li><li><p><a href=\"https://youtu.be/y4QmUx0oFSU?si=Xa74jmA4RoXDKkw_\">Shareback session about OpenERP 7 to Odoo 16 Migration</a></p></li></ol></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"fixed-width\" ac:breakout-mode=\"default\"><ac:layout-cell><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"09242277-1573-4306-a5e9-a4d2c02a394b\"><ac:parameter ac:name=\"panelIcon\">:tools:</ac:parameter><ac:parameter ac:name=\"panelIconId\">1f6e0</ac:parameter><ac:parameter ac:name=\"panelIconText\">🛠️</ac:parameter><ac:parameter ac:name=\"bgColor\">#FFFAE6</ac:parameter><ac:rich-text-body><p>This guide is Work in Progress</p></ac:rich-text-body></ac:structured-macro><h2>Preparation for upgrade</h2><ol start=\"1\"><li><p><strong>Explore and get familiarised with Odoo 16: </strong>Before beginning the migration, take time to explore and understand the new features and enhancements in Odoo 16. This includes reviewing the user interface changes, new functionalities, and any updates to existing modules. Familiarising yourself with the new version will help in identifying the benefits and potential impacts on your business processes. Refer this <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117744129/Getting+Started+Quickly+with+Bahmni+on+Docker#Running-Bahmni-Standard\">page</a> quickly setup a local environment using docker or you can try out on one of the demo environments.</p></li><li><p><strong>Understand the data that needs to be imported: </strong>Identify the specific data sets that need to be transferred to the new Odoo 16 instance. This includes essential metadata, master data such as customer and vendor information, company information, and key transactional data like stock levels and outstanding invoices. Understanding what data is critical will help in planning the migration process and ensuring data integrity.</p></li><li><p><strong> Think of a timeline for migration: </strong>As Odoo primarily supports billing and accounting operations, it's crucial to plan a timeline for the migration and rollout. This will ensure that reporting and other business functions remain uninterrupted. Careful planning will help in managing the transition to Odoo 16 smoothly, avoiding disruptions in daily operations and maintaining continuity in financial activities.</p></li><li><p><strong>Prepare additional hardware: </strong>To carry out the upgrade, we recommend setting up a test, pre-prod environment to verify the import process, sync with EMR and data validation. This will help migration with minimal downtime.</p></li></ol><h2>Basic Configurations in Odoo</h2><p>Spin up only Odoo and Odoo DB (without starting Odoo connect) with a fresh database by following the steps below:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"47d8f14c-d74d-444f-88f7-bb2f2c48ecc5\"><ac:plain-text-body><![CDATA[Update your .env file to use a fresh postgres database:\nODOO_DB_IMAGE_NAME=postgres:16.1\n\ndocker compose up -d odoo\n\nOdoo should be accessible at http://localhost:8069 (or) http://<ip>:8069]]></ac:plain-text-body></ac:structured-macro><p>Before commencing the data migration process, it is advisable to review the additional child pages within the Odoo Modules section to set up the necessary basic configurations for the Odoo system. This process should encompass, at the very least, the following essential items:</p><ol start=\"1\"><li><p>Company Information &rarr; Company Name, Currency, Round Off Value</p></li><li><p>Odoo Default Module Level Configurations &rarr; Sales Configurations (UoM, Price-lists), Invoicing Configurations (Default Sales, Purchase Tax), Inventory Configurations (Enabling Tracking by Lots, Stock Locations, Warehouses, Payment Methods)</p></li><li><p>Install any additional modules and configure those if your implementation uses/needs it.</p></li></ol><ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p>Accounting Module by Odoo has been made available only in Enterprise version of Odoo. So a community module by Cybrosys Technologies has been <a href=\"https://github.com/Bahmni/bahmni-odoo-modules/tree/main/community_modules/base_accounting_kit\">added</a> as an optional module for implementers to install and try out. If your implementation uses extensive accounting features, we recommend installing this module and exploring the features. </p><p><em><strong>Note:</strong> This is an external community module, and not maintained by Bahmni community.</em></p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p>Accounting Module by Odoo has been made available only in Enterprise version of Odoo. So a community module by Cybrosys Technologies has been <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-odoo-modules/tree/main/community_modules/base_accounting_kit\" rel=\"nofollow\">added</a> as an optional module for implementers to install and try out. If your implementation uses extensive accounting features, we recommend installing this module and exploring the features. </p><p><em><strong>Note:</strong> This is an external community module, and not maintained by Bahmni community.</em></p>\n</div></div></ac:adf-fallback></ac:adf-extension><h2>Data Migration and rollout</h2><p>Migration of essential data from your current Odoo implementations can be executed from both OpenERP 7 and Odoo 10. The migration procedure should be conducted in two distinct phases: first transferring the metadata and master data, then proceeding with the import of transactional data. It is recommended to go through the below guides sequentially to ensure a smooth migration.</p><h3>Step 1: <ac:link><ri:page ri:content-title=\"Odoo 16 Masterdata and Metadata Migration\" ri:version-at-save=\"7\" /><ac:link-body>Masterdata Migration</ac:link-body></ac:link></h3><h3>Step 2: <ac:link><ri:page ri:content-title=\"Odoo 16 Transactional Data Migration\" ri:version-at-save=\"3\" /><ac:link-body>Transactional Data Migration</ac:link-body></ac:link></h3><h3>Step 3: <ac:link><ri:page ri:content-title=\"Starting the Odoo Connect and sync with EMR\" ri:version-at-save=\"3\" /><ac:link-body>Starting Odoo Connect and Sync with Bahmni</ac:link-body></ac:link></h3><h3>Step 4: Rollout to users</h3><p /><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"05e6498c-f418-4a62-8032-b86a84c76529\"><ac:parameter ac:name=\"panelIcon\">:light_bulb_on:</ac:parameter><ac:parameter ac:name=\"panelIconId\">atlassian-light_bulb_on</ac:parameter><ac:parameter ac:name=\"panelIconText\">:light_bulb_on:</ac:parameter><ac:parameter ac:name=\"bgColor\">#E6FCFF</ac:parameter><ac:rich-text-body><p><strong>Tips for a Smooth Migration Process</strong></p><ul><li><p>Initiate the master data migration process at least one day prior to going live.</p></li><li><p>Ensure to create backups of the database at every stage of the migration process. This practice enables a quick rollback to the previous step instead of restarting the entire process.</p></li><li><p>Schedule the migration to take place outside of regular working hours. This allows for the synchronization to be paused and resumed seamlessly on the new system.</p></li><li><p>Maintain the pre-production or test environment operational for a few days post-live migration. This approach facilitates the replication of any potential scenarios and aids in finding effective solutions.</p></li></ul></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3657105447"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p>Starting with Bahmni Standard 1.0.0, Odoo 16 is the default version integrated and shipped out of the box with Bahmni Docker. Further details about this initiative can be found <a href=\"/wiki/spaces/BAH/pages/3293478913/Upgrade+Bahmni+to+Odoo+v16\" data-linked-resource-id=\"3293478913\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">here</a>.</p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"eb37ac72-837a-469f-b049-8c3c237548a9\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>Note:</strong> The migration to Odoo 16 will differ from a typical backup and restore process. This guide outlines the approach of setting up a fresh Odoo 16 environment and subsequently importing the necessary metadata/master data, along with minimal transactional data such as stock information and outstanding invoices. If your implementation includes additional Odoo modules or customizations, we recommend thoroughly reviewing the features available in Odoo 16 to identify and incorporate relevant modules in the new version.</p></div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p>Related Links</p>\n</div></div><ol start=\"1\"><li><p><a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-odoo-modules\" rel=\"nofollow\">Bahmni Odoo 16 Extension Modules Code Repository</a></p></li><li><p><a class=\"external-link\" href=\"https://www.odoo.com/documentation/16.0/applications.html\" rel=\"nofollow\">Odoo 16 Documentation</a></p></li><li><p><a class=\"external-link\" href=\"https://youtu.be/y4QmUx0oFSU?si=Xa74jmA4RoXDKkw_\" rel=\"nofollow\">Shareback session about OpenERP 7 to Odoo 16 Migration</a></p></li></ol></div>\n</div>\n</div>\n<div class=\"columnLayout fixed-width\" data-layout=\"fixed-width\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"09242277-1573-4306-a5e9-a4d2c02a394b\" data-macro-name=\"panel\" style=\"background-color: #FFFAE6;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #FFFAE6;\">\n<p>This guide is Work in Progress</p>\n</div></div><h2 id=\"Odoo16MigrationGuide-Preparationforupgrade\">Preparation for upgrade</h2><ol start=\"1\"><li><p><strong>Explore and get familiarised with Odoo 16: </strong>Before beginning the migration, take time to explore and understand the new features and enhancements in Odoo 16. This includes reviewing the user interface changes, new functionalities, and any updates to existing modules. Familiarising yourself with the new version will help in identifying the benefits and potential impacts on your business processes. Refer this <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117744129/Getting+Started+Quickly+with+Bahmni+on+Docker#Running-Bahmni-Standard\" rel=\"nofollow\">page</a> quickly setup a local environment using docker or you can try out on one of the demo environments.</p></li><li><p><strong>Understand the data that needs to be imported: </strong>Identify the specific data sets that need to be transferred to the new Odoo 16 instance. This includes essential metadata, master data such as customer and vendor information, company information, and key transactional data like stock levels and outstanding invoices. Understanding what data is critical will help in planning the migration process and ensuring data integrity.</p></li><li><p><strong> Think of a timeline for migration: </strong>As Odoo primarily supports billing and accounting operations, it's crucial to plan a timeline for the migration and rollout. This will ensure that reporting and other business functions remain uninterrupted. Careful planning will help in managing the transition to Odoo 16 smoothly, avoiding disruptions in daily operations and maintaining continuity in financial activities.</p></li><li><p><strong>Prepare additional hardware: </strong>To carry out the upgrade, we recommend setting up a test, pre-prod environment to verify the import process, sync with EMR and data validation. This will help migration with minimal downtime.</p></li></ol><h2 id=\"Odoo16MigrationGuide-BasicConfigurationsinOdoo\">Basic Configurations in Odoo</h2><p>Spin up only Odoo and Odoo DB (without starting Odoo connect) with a fresh database by following the steps below:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"47d8f14c-d74d-444f-88f7-bb2f2c48ecc5\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Update your .env file to use a fresh postgres database:\nODOO_DB_IMAGE_NAME=postgres:16.1\n\ndocker compose up -d odoo\n\nOdoo should be accessible at http://localhost:8069 (or) http://&lt;ip&gt;:8069</pre>\n</div></div><p>Before commencing the data migration process, it is advisable to review the additional child pages within the Odoo Modules section to set up the necessary basic configurations for the Odoo system. This process should encompass, at the very least, the following essential items:</p><ol start=\"1\"><li><p>Company Information → Company Name, Currency, Round Off Value</p></li><li><p>Odoo Default Module Level Configurations → Sales Configurations (UoM, Price-lists), Invoicing Configurations (Default Sales, Purchase Tax), Inventory Configurations (Enabling Tracking by Lots, Stock Locations, Warehouses, Payment Methods)</p></li><li><p>Install any additional modules and configure those if your implementation uses/needs it.</p></li></ol><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p>Accounting Module by Odoo has been made available only in Enterprise version of Odoo. So a community module by Cybrosys Technologies has been <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-odoo-modules/tree/main/community_modules/base_accounting_kit\" rel=\"nofollow\">added</a> as an optional module for implementers to install and try out. If your implementation uses extensive accounting features, we recommend installing this module and exploring the features. </p><p><em><strong>Note:</strong> This is an external community module, and not maintained by Bahmni community.</em></p>\n</div></div><h2 id=\"Odoo16MigrationGuide-DataMigrationandrollout\">Data Migration and rollout</h2><p>Migration of essential data from your current Odoo implementations can be executed from both OpenERP 7 and Odoo 10. The migration procedure should be conducted in two distinct phases: first transferring the metadata and master data, then proceeding with the import of transactional data. It is recommended to go through the below guides sequentially to ensure a smooth migration.</p><h3 id=\"Odoo16MigrationGuide-Step1:MasterdataMigration\">Step 1: <a href=\"/wiki/spaces/BAH/pages/3657105576/Odoo+16+Masterdata+and+Metadata+Migration\" data-linked-resource-id=\"3657105576\" data-linked-resource-version=\"7\" data-linked-resource-type=\"page\">Masterdata Migration</a></h3><h3 id=\"Odoo16MigrationGuide-Step2:TransactionalDataMigration\">Step 2: <a href=\"/wiki/spaces/BAH/pages/3657465931/Odoo+16+Transactional+Data+Migration\" data-linked-resource-id=\"3657465931\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">Transactional Data Migration</a></h3><h3 id=\"Odoo16MigrationGuide-Step3:StartingOdooConnectandSyncwithBahmni\">Step 3: <a href=\"/wiki/spaces/BAH/pages/3657138340/Starting+the+Odoo+Connect+and+sync+with+EMR\" data-linked-resource-id=\"3657138340\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">Starting Odoo Connect and Sync with Bahmni</a></h3><h3 id=\"Odoo16MigrationGuide-Step4:Rollouttousers\">Step 4: Rollout to users</h3><p /><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"05e6498c-f418-4a62-8032-b86a84c76529\" data-macro-name=\"panel\" style=\"background-color: #E6FCFF;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #E6FCFF;\">\n<p><strong>Tips for a Smooth Migration Process</strong></p><ul><li><p>Initiate the master data migration process at least one day prior to going live.</p></li><li><p>Ensure to create backups of the database at every stage of the migration process. This practice enables a quick rollback to the previous step instead of restarting the entire process.</p></li><li><p>Schedule the migration to take place outside of regular working hours. This allows for the synchronization to be paused and resumed seamlessly on the new system.</p></li><li><p>Maintain the pre-production or test environment operational for a few days post-live migration. This approach facilitates the replication of any potential scenarios and aids in finding effective solutions.</p></li></ul>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3657105447"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3657105447/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3657105447/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 878973623
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3657105447/child",
+    "restrictions": "/rest/api/content/3657105447/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3657105447/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3657105447",
+    "webui": "/spaces/BAH/pages/3657105447/Odoo+16+Migration+Guide",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3657105447",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3657105447",
+    "tinyui": "/x/JwD72Q",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

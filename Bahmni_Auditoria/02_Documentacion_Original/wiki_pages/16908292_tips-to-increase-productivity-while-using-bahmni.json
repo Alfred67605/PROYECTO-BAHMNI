@@ -1,0 +1,170 @@
+{
+  "id": "16908292",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/16908292",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTY5MDgyOTI=",
+  "status": "current",
+  "title": "Tips to increase productivity while using Bahmni",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:ed8a85e1-871d-406d-9e5a-aba9f21b3329",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Arjun",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:ed8a85e1-871d-406d-9e5a-aba9f21b3329",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Arjun",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:ed8a85e1-871d-406d-9e5a-aba9f21b3329"
+      }
+    },
+    "createdDate": "2015-03-02T09:42:08.378Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/16908292/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:1c16c37d-b2b1-4002-ac28-33e53fb88ea0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Pradipta Kundu (Unlicensed)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:1c16c37d-b2b1-4002-ac28-33e53fb88ea0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Pradipta Kundu (Unlicensed)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:1c16c37d-b2b1-4002-ac28-33e53fb88ea0"
+      }
+    },
+    "when": "2015-03-02T10:27:41.025Z",
+    "friendlyWhen": "Mar 02, 2015",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "syncRev": "0.ttLgXhU-z9bMiscoMqjomw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$16908292.14",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/16908292"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/16908292/version/4"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>There are a few tips that doctors can use to increase their productivity while using the app.</p><h4>iPAD</h4><ul><li>Set the screen lock limit to maximum. E.g. 15 mins to avoid unlocking for every patient. Don't make it &quot;Never&quot; for security and power saving.</li><li>Set Bahmni as home page.</li><li>Keep minimum tabs open for better device/browser/internet speed.</li><li>Train on how to close unnecessary opened apps. This might come handy while fixing a slow iPAD.</li><li>Personalise the usage by setting keyboard shortcut for frequently used terms in Bahmni. Each doctor can identify and set his shortcuts.</li><li>Suggest trying restarting the iPAD when nothing seems to be working.&nbsp;</li></ul><h4>Chrome book</h4>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/16908292"
+      }
+    },
+    "view": {
+      "value": "<p>There are a few tips that doctors can use to increase their productivity while using the app.</p><h4 id=\"TipstoincreaseproductivitywhileusingBahmni-iPAD\">iPAD</h4><ul><li>Set the screen lock limit to maximum. E.g. 15 mins to avoid unlocking for every patient. Don't make it &quot;Never&quot; for security and power saving.</li><li>Set Bahmni as home page.</li><li>Keep minimum tabs open for better device/browser/internet speed.</li><li>Train on how to close unnecessary opened apps. This might come handy while fixing a slow iPAD.</li><li>Personalise the usage by setting keyboard shortcut for frequently used terms in Bahmni. Each doctor can identify and set his shortcuts.</li><li>Suggest trying restarting the iPAD when nothing seems to be working. </li></ul><h4 id=\"TipstoincreaseproductivitywhileusingBahmni-Chromebook\">Chrome book</h4>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/16908292"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/16908292/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/16908292/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/16908292/child",
+    "restrictions": "/rest/api/content/16908292/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/16908292/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=16908292",
+    "webui": "/spaces/BAH/pages/16908292/Tips+to+increase+productivity+while+using+Bahmni",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/16908292",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/16908292",
+    "tinyui": "/x/BAACAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

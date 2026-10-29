@@ -1,0 +1,171 @@
+{
+  "id": "115414301",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/115414301",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE1NDE0MzAx",
+  "status": "current",
+  "title": "Using Conditions List",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:b74a1e67-0853-4f05-a2a7-e88691b3cd4a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Akhil Malhotra (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:b74a1e67-0853-4f05-a2a7-e88691b3cd4a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Akhil Malhotra (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:b74a1e67-0853-4f05-a2a7-e88691b3cd4a"
+      }
+    },
+    "createdDate": "2017-03-14T05:55:12.938Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115414301/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "when": "2017-11-07T12:12:45.526Z",
+    "friendlyWhen": "Nov 07, 2017",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "syncRev": "0.CaV7pegQKFBGl2M7jCRhew.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$115414301.36",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/115414301"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115414301/version/5"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>About the Feature</h2><p><span style=\"color: rgb(0,0,0);\">Conditions list is a list of conditions that the patients has suffered or is suffering from which will have a long term impact on the health-care delivery decisions for the patient.</span></p><p>Conditions is the most important clinical information of a patient. Bahmni provides the ability to capture and edit conditions for patients on the diagnoses tab inside clinical consultation. Clinicians&nbsp;can use this feature to capture conditions of patients and manage their old conditions. In the database these conditions can be mapped to ICD-10 codes for reporting purposes.</p><h2>Used By</h2><p><span style=\"color: rgb(0,0,0);\">It is used by the doctors for recording conditions for the patient.</span></p><h2>How is it used?</h2><p>On the Diagnoses page, there is a separate box for recording conditions. The doctor has to search for the condition through this autocomplete search box and select the condition they want to record for the patient. The doctor then has to select the status of the condition (Active, Inactive, History-of), the start date (optional) and they can also add a note (optional) to the condition and click on &quot;Add&quot;. On clicking &quot;Save&quot;, the condition is added to the patient's condition list.</p><p>Also, a confirmed encounter diagnosis can be moved to the conditions list. Once a diagnosis is recorded with the status as confirmed, &quot;Add as Condition&quot; button appears in front of that diagnosis. Clicking on this adds the corresponding condition to the patient's condition list.</p><p style=\"text-align: center;\"><ac:image ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2017-03-14 at 11.55.38 AM.png\" ri:version-at-save=\"1\" /></ac:image></p><p><span>There is also an ability to associate encounters with one or more conditions to mark the purpose/reason of the visit as &ldquo;Follow-up&rdquo; to those conditions. A condition can span multiple visits as long as its status is active.&nbsp;</span>Doctors can now mark an encounter as a follow-up encounter for one or more conditions. When a patient comes to the hospital for follow-up of one of their conditions, the doctor has to click on the &quot;Follow-up&quot; button that is highlighted to depict that the encounter is marked as a follow-up encounter of that condition.</p><p>You can find information about hiding condition Lists <ac:link><ri:page ri:content-title=\"Configure Diagnosis Tab\" ri:version-at-save=\"27\" /><ac:plain-text-link-body><![CDATA[here]]></ac:plain-text-link-body></ac:link>.</p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Recording+Conditions\">Conditions List - Feature Guide</a></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/115414301"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"UsingConditionsList-AbouttheFeature\">About the Feature</h2><p><span class=\"legacy-color-text-default\">Conditions list is a list of conditions that the patients has suffered or is suffering from which will have a long term impact on the health-care delivery decisions for the patient.</span></p><p>Conditions is the most important clinical information of a patient. Bahmni provides the ability to capture and edit conditions for patients on the diagnoses tab inside clinical consultation. Clinicians can use this feature to capture conditions of patients and manage their old conditions. In the database these conditions can be mapped to ICD-10 codes for reporting purposes.</p><h2 id=\"UsingConditionsList-UsedBy\">Used By</h2><p><span class=\"legacy-color-text-default\">It is used by the doctors for recording conditions for the patient.</span></p><h2 id=\"UsingConditionsList-Howisitused?\">How is it used?</h2><p>On the Diagnoses page, there is a separate box for recording conditions. The doctor has to search for the condition through this autocomplete search box and select the condition they want to record for the patient. The doctor then has to select the status of the condition (Active, Inactive, History-of), the start date (optional) and they can also add a note (optional) to the condition and click on &quot;Add&quot;. On clicking &quot;Save&quot;, the condition is added to the patient's condition list.</p><p>Also, a confirmed encounter diagnosis can be moved to the conditions list. Once a diagnosis is recorded with the status as confirmed, &quot;Add as Condition&quot; button appears in front of that diagnosis. Clicking on this adds the corresponding condition to the patient's condition list.</p><p style=\"text-align: center;\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115414301/Screen%20Shot%202017-03-14%20at%2011.55.38%20AM.png?version=1&amp;modificationDate=1489472785173&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=320\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/115414301/Screen%20Shot%202017-03-14%20at%2011.55.38%20AM.png?version=1&amp;modificationDate=1489472785173&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115414839\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2017-03-14 at 11.55.38 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"115414301\" data-linked-resource-container-version=\"5\" data-media-id=\"d6b13943-1214-464d-955c-791bef9bd38c\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115414301/Screen%20Shot%202017-03-14%20at%2011.55.38%20AM.png?version=1&amp;modificationDate=1489472785173&amp;cacheVersion=1&amp;api=v2&amp;width=1339&amp;height=613 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/115414301/Screen%20Shot%202017-03-14%20at%2011.55.38%20AM.png?version=1&amp;modificationDate=1489472785173&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=320 1x\"></span></p><p><span>There is also an ability to associate encounters with one or more conditions to mark the purpose/reason of the visit as “Follow-up” to those conditions. A condition can span multiple visits as long as its status is active. </span>Doctors can now mark an encounter as a follow-up encounter for one or more conditions. When a patient comes to the hospital for follow-up of one of their conditions, the doctor has to click on the &quot;Follow-up&quot; button that is highlighted to depict that the encounter is marked as a follow-up encounter of that condition.</p><p>You can find information about hiding condition Lists <a href=\"/wiki/spaces/BAH/pages/32014556/Configure+Diagnosis+Tab\" data-linked-resource-id=\"32014556\" data-linked-resource-version=\"30\" data-linked-resource-type=\"page\">here</a>.</p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"https://bahmni.atlassian.net/wiki/display/BAH/Recording+Conditions\" rel=\"nofollow\">Conditions List - Feature Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/115414301"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/115414301/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115414301/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 306293056
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/115414301/child",
+    "restrictions": "/rest/api/content/115414301/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/115414301/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=115414301",
+    "webui": "/spaces/BAH/pages/115414301/Using+Conditions+List",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/115414301",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115414301",
+    "tinyui": "/x/HRXhBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

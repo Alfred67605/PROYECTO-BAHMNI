@@ -1,0 +1,172 @@
+{
+  "id": "2392081",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2392081",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjM5MjA4MQ==",
+  "status": "current",
+  "title": "Bahmni - OpenMRS Ref Apps Interoperability",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:dd7e513e-bc00-497a-a42a-e2b387df0018",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mujir Shaikh (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:dd7e513e-bc00-497a-a42a-e2b387df0018",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mujiruddin Shaikh (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:dd7e513e-bc00-497a-a42a-e2b387df0018"
+      }
+    },
+    "createdDate": "2014-04-11T06:08:02.169Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2392081/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:dd7e513e-bc00-497a-a42a-e2b387df0018",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mujir Shaikh (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:dd7e513e-bc00-497a-a42a-e2b387df0018",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mujiruddin Shaikh (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:dd7e513e-bc00-497a-a42a-e2b387df0018"
+      }
+    },
+    "when": "2014-04-14T06:23:26.364Z",
+    "friendlyWhen": "Apr 14, 2014",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "syncRev": "0.XGLW5EYXzkZ3MMnrpURGTA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2392081.32",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2392081"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2392081/version/5"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<div>In general, Bahmni stores data in OpenMRS recommended conventions (so there is data level integration and any OpenMRS module can understand the data that Bahmni stores and vice versa) and, sits in the same web application (so no single sign-on issues). This means to integrate any OpenMRS Reference Application App with Bahmni, we could just hyperlink between the two. We don't need tight integration between the two.</div><p>There are some variations (from the OpenMRS conventions) in the way Bahmni stores data.</p><ul><li>Ruled out diagnosis (stored as observations, and not as diagnosis, as agreed with OpenMRS community).&nbsp;<ul><li><span style=\"line-height: 1.4285715;\">One variation is we force clinicians to create 'presumed' diagnosis if they want to rule-out a diagnosis.</span></li><li><span style=\"line-height: 1.4285715;\">'Ruled Out' is stored as a 'Diagnosis Status' within the diagnosis obs group.</span></li><li><span style=\"line-height: 1.4285715;\">We also need to store the first diagnosis for that concept. Initial Diagnosis Observation Id goes as an observation in the observation group for later diagnosis.</span></li></ul></li><li><span>Lab test results/radio results - stored as obs group (with isabnormal flag)</span></li><li>Accession Notes (after lab manager validates the lab results in an accession)</li><li>Xcompound observations</li></ul>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2392081"
+      }
+    },
+    "view": {
+      "value": "<div>In general, Bahmni stores data in OpenMRS recommended conventions (so there is data level integration and any OpenMRS module can understand the data that Bahmni stores and vice versa) and, sits in the same web application (so no single sign-on issues). This means to integrate any OpenMRS Reference Application App with Bahmni, we could just hyperlink between the two. We don't need tight integration between the two.</div><p>There are some variations (from the OpenMRS conventions) in the way Bahmni stores data.</p><ul><li>Ruled out diagnosis (stored as observations, and not as diagnosis, as agreed with OpenMRS community). <ul><li><span style=\"line-height: 1.4285715;\">One variation is we force clinicians to create 'presumed' diagnosis if they want to rule-out a diagnosis.</span></li><li><span style=\"line-height: 1.4285715;\">'Ruled Out' is stored as a 'Diagnosis Status' within the diagnosis obs group.</span></li><li><span style=\"line-height: 1.4285715;\">We also need to store the first diagnosis for that concept. Initial Diagnosis Observation Id goes as an observation in the observation group for later diagnosis.</span></li></ul></li><li><span>Lab test results/radio results - stored as obs group (with isabnormal flag)</span></li><li>Accession Notes (after lab manager validates the lab results in an accession)</li><li>Xcompound observations</li></ul>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2392081"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2392081/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2392081/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 436
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2392081/child",
+    "restrictions": "/rest/api/content/2392081/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2392081/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2392081",
+    "webui": "/spaces/BAH/pages/2392081/Bahmni+-+OpenMRS+Ref+Apps+Interoperability",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2392081",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2392081",
+    "tinyui": "/x/EYAk",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

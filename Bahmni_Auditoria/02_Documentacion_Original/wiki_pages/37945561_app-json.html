@@ -1,0 +1,214 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>app.json</title></head><body><h1>app.json</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="app.json-Description">Description</h2><p>Configuration files can be located under bahmni_config/openmrs/apps/clinical of your web server. Bahmni configuration is done using json files. Amongst them the app.json file contains all the application-level configuration. The other json files are explained in the <a href="https://bahmni.atlassian.net/wiki/display/BAH/Clinical+App" rel="nofollow">Clinical App</a> section. </p><h2 id="app.json-Configuration">Configuration</h2><h3 id="app.json-app.jsonMainSection">app.json Main Section</h3><p>The app.json main section contains all the app level configurations. It also defines extensions that can be used to extend the app. </p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="a677f196-a0c1-47ad-b154-8f0a0939191a" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">{
+	&quot;id&quot;: &quot;bahmni.clinical&quot; // Unique ID used for the app
+	&quot;extensionPoints&quot;: [
+			{
+				&quot;id&quot;: &quot;org.bahmni.clinical.consultation.board&quot;, // Unique ID for the extension
+				&quot;description&quot;: &quot;Bahmni Clinical Consultation Page&quot; // Brief description of the extension
+			},
+			{
+				&quot;id&quot;: &quot;org.bahmni.clinical.conceptSetGroup.*&quot;,
+				&quot;description&quot;: &quot;Define conceptsets part of a conceptset group&quot;
+			},
+			{
+				&quot;id&quot;: &quot;org.bahmni.clinical.orders&quot;,
+				&quot;description&quot;: &quot;Bahmni Orders Page&quot;
+			},
+			{
+				&quot;id&quot;: &quot;org.bahmni.patient.search&quot;,
+				&quot;description&quot;: &quot;Bahmni Patient search, lookups Page&quot;
+			}
+	],
+	&quot;contextModel&quot;: [
+		&quot;patientUuid&quot;,
+		&quot;visitUuid&quot;
+	],
+	&quot;config&quot;: {} //A custom object that can be used by the application. Each application has settings that it can use
+}
+
+</pre>
+</div></div><h3 id="app.json-app.jsonconfigsection">app.json config section</h3><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="898189c7-29d5-4fac-8256-fa7125e75e46" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">&quot;config&quot; : {
+	&quot;quickPrints&quot;:false, // [Optional] To enable quick print functionality in dashboard set to `true`
+    &quot;diagnosisStatus&quot;: &quot;Inactive&quot;,
+	&quot;hideFormName&quot;: true, // [Optional] By setting the &quot;hideFormName&quot;: true, the form name will no longer be displayed, ensuring only observation details are shown. By default the form name will be displayed.
+    &quot;program&quot;: {
+        &quot;patientInformation&quot;: {
+            &quot;ageLimit&quot;:100
+        }
+    },
+    &quot;obsIgnoreList&quot; : [], // Optional array of concepts that should not be shown in clinical
+    &quot;otherInvestigationsMap&quot;: {
+        &quot;Radiology&quot;: &quot;Radiology Order&quot;,
+        &quot;Endoscopy&quot;: &quot;Endoscopy Order&quot;
+    },
+    &quot;allowConsultationWhenNoOpenVisit&quot;: false,
+    &quot;defaultVisitType&quot;: &quot;OPD&quot;,
+    &quot;visitTypeForRetrospectiveEntries&quot;: &quot;Special OPD&quot;,
+    &quot;maxConceptSetLevels&quot;: 3,
+    &quot;allowOnlyCodedDiagnosis&quot;: false,
+	&quot;ignoredTabularViewHeadings&quot;: [&quot;extraIdentifierVal&quot;,&quot;uuid&quot;,&quot;activeVisitUuid&quot;,&quot;hasBeenAdmitted&quot;,&quot;display&quot;,&quot;image&quot;,&quot;$$hashKey&quot;,&quot;birthDate&quot;,&quot;extraIdentifiers&quot;,&quot;personId&quot;,&quot;deathDate&quot;,&quot;addressFieldValue&quot;,&quot;dateCreated&quot;,&quot;customAttribute&quot;,&quot;patientProgramAttributeValue&quot;], // [Required] To ignore columns when viewing clinical queues in tabular view
+    &quot;identifierHeadings&quot;: [&quot;identifier&quot;], // [Required] To set a particular column as an identifier when viewing clinical queue in tabular view
+    &quot;conceptSetUI&quot;: {
+        &quot;Chief Complaint Data&quot;: {
+            &quot;allowAddMore&quot; : true
+            &quot;autocomplete&quot; : true,
+            &quot;durationRequired&quot; : false,
+            &quot;codedConceptName&quot; : &quot;Chief Complaint&quot;,
+            &quot;nonCodedConceptName&quot; : &quot;Non-Coded Chief Complaint&quot;
+        },
+        &quot;Posture&quot; : {
+
+            &quot;buttonSelect&quot; : true
+        },
+        &quot;P/A Presenting Part&quot; : {
+            &quot;buttonSelect&quot; : true
+        },
+        &quot;FHS&quot; : {
+            &quot;buttonSelect&quot; : true
+        },
+        &quot;P/S (Per Speculum) - Cervix&quot; : {
+            &quot;grid&quot; : true
+        },
+        &quot;Anaemia, Stopped Since When&quot; : {
+            &quot;conciseText&quot; : true
+        },
+        &quot;Examination Notes&quot; :{
+            &quot;conciseText&quot; : true
+        },
+        &quot;P/A Presenting Part&quot; : {
+            &quot;multiSelect&quot; : true
+        },
+        &quot;Tuberculosis Intake Template&quot; : {
+            &quot;computeDrugs&quot; : true
+        },
+        &quot;Set1&quot; :{
+            &quot;allowAddMore&quot; :true
+        },
+        &quot;Set2&quot; :{
+            &quot;allowAddMore&quot; :true
+        },
+        &quot;Coded3&quot; :{
+            &quot;multiSelect&quot; :true
+        },
+        &quot;Image&quot; :{
+            &quot;allowAddMore&quot; :true
+        },
+        &quot;Gynaecology, Gravida&quot; :{
+            &quot;stepper&quot; :true
+        },
+        &quot;Accepted Family Planning methods&quot;:{
+            &quot;multiSelect&quot;: true
+        },
+        &quot;defaults&quot; : {
+            &quot;Number of living children&quot; : 1,
+            &quot;Accepted Family Planning methods&quot;: [&quot;Condoms&quot;, &quot;Pills&quot;],
+            &quot;Pain management given&quot;: true,
+            &quot;Safe Abortion, Remarks&quot;: &quot;Remarks&quot;,
+            &quot;Malaria, Death Date&quot;: &quot;2015-12-01&quot;
+        }
+    },
+    &quot;visitPage&quot;: {
+        &quot;observationDisplay&quot; : {
+            &quot;conceptNames&quot;: []
+        }
+    },
+    &quot;drugOrder&quot;: {
+        &quot;defaultDurationUnit&quot;: &quot;Day(s)&quot;,
+        &quot;defaultInstructions&quot;: &quot;As directed&quot;,
+        &quot;frequencyDefaultDurationUnitsMap&quot;: [
+            {&quot;minFrequency&quot;:5, &quot;maxFrequency&quot;: null, &quot;defaultDurationUnit&quot;: &quot;Hour(s)&quot;},
+            {&quot;minFrequency&quot;:&quot;1/7&quot;, &quot;maxFrequency&quot;: 5, &quot;defaultDurationUnit&quot;: &quot;Day(s)&quot;},
+            {&quot;minFrequency&quot;:&quot;1/30&quot;, &quot;maxFrequency&quot;: &quot;1/7&quot;, &quot;defaultDurationUnit&quot;: &quot;Week(s)&quot;},
+            {&quot;minFrequency&quot;:null, &quot;maxFrequency&quot;: &quot;1/30&quot;, &quot;defaultDurationUnit&quot;: &quot;Month(s)&quot;}
+        ],
+        &quot;drugFormDefaults&quot;: {
+            &quot;Ayurvedic&quot;: {
+                &quot;doseUnits&quot;: &quot;Teaspoon&quot;,
+                &quot;route&quot;: &quot;Oral&quot;
+            },
+            &quot;Capsule&quot;: {
+                &quot;doseUnits&quot;: &quot;Capsule(s)&quot;,
+                &quot;route&quot;: &quot;Oral&quot;
+            },
+            &quot;Cream&quot;: {
+                &quot;route&quot;: &quot;Topical&quot;
+            },
+            &quot;Drops&quot;: {
+                &quot;doseUnits&quot;: &quot;Drop&quot;,
+                &quot;route&quot;: &quot;Topical&quot;
+            },
+            &quot;Food Supplement&quot;: {
+                &quot;doseUnits&quot;: &quot;Unit(s)&quot;,
+                &quot;route&quot;: &quot;Oral&quot;
+            },
+            &quot;Gel&quot;: {
+                &quot;route&quot;: &quot;Topical&quot;
+            },
+            &quot;Granule&quot;: {
+                &quot;doseUnits&quot;: &quot;Unit(s)&quot;,
+                &quot;route&quot;: &quot;Oral&quot;
+            },
+            &quot;Inhaler&quot;: {
+                &quot;doseUnits&quot;: &quot;Puff(s)&quot;,
+                &quot;route&quot;: &quot;Inhalation&quot;
+            },
+            &quot;Injection&quot;: {
+                &quot;doseUnits&quot;: &quot;mg&quot;,
+                &quot;route&quot;: &quot;Intravenous&quot;
+            },
+            &quot;Jelly&quot;: {
+                &quot;route&quot;: &quot;Topical&quot;
+            },
+            &quot;Liquid&quot;: {
+                &quot;doseUnits&quot;: &quot;ml&quot;,
+                &quot;route&quot;: &quot;Oral&quot;
+            },
+            &quot;Lotion&quot;: {
+                &quot;route&quot;: &quot;Topical&quot;
+            },
+            &quot;Ointment&quot;: {
+                &quot;route&quot;: &quot;Topical&quot;
+            },
+            &quot;Pessary&quot;: {
+                &quot;doseUnits&quot;: &quot;Unit(s)&quot;,
+                &quot;route&quot;: &quot;Per Vaginal&quot;
+            },
+            &quot;Powder&quot;: {
+                &quot;doseUnits&quot;: &quot;mg&quot;,
+                &quot;route&quot;: &quot;Topical&quot;
+            },
+            &quot;Solution&quot;: {
+                &quot;doseUnits&quot;: &quot;ml&quot;,
+                &quot;route&quot;: &quot;Topical&quot;
+            },
+            &quot;Spray&quot;: {
+                &quot;doseUnits&quot;: &quot;Puff(s)&quot;,
+                &quot;route&quot;: &quot;Nasal&quot;
+            },
+            &quot;Syrup&quot;: {
+                &quot;doseUnits&quot;: &quot;ml&quot;,
+                &quot;route&quot;: &quot;Oral&quot;
+            },
+            &quot;Tablet&quot;: {
+                &quot;doseUnits&quot;: &quot;Tablet(s)&quot;,
+                &quot;route&quot;: &quot;Oral&quot;
+            }
+        }
+    }
+}
+</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="dfe99e1c-d46b-4641-84e3-ca141aed7746" data-macro-name="info"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>From version <strong>0.90</strong>, <strong>obsIgnoreList</strong> for programs will supported as well.</p></div></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<p><br/></p><div class="confluence-information-macro confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="9e4f9769-17bb-4ca3-8e1e-b5067da8696b" data-macro-name="tip"><p class="title">On this Page</p><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="02cd33e5-c0c5-44b6-a2e0-86c88c1e66d3" data-macro-name="toc"> </div> <p> </p></div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="e485a1ad-ef82-4f06-9c5c-71058fc18a9e" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #59C4C5;color: white;"><b>Related links</b></div><div class="panelContent">
+<p><a href="https://bahmni.atlassian.net/wiki/display/BAH/Concept+Set+UI" rel="nofollow">Concept Set UI configuration</a></p>
+</div></div><p class="auto-cursor-target"><a href="https://bahmni.atlassian.net/wiki/display/BAH/Concept+Set+UI" rel="nofollow"><br/></a></p><p><br/></p></div>
+</div>
+</div>
+</div></body></html>

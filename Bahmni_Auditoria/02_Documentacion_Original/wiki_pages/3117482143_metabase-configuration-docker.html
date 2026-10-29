@@ -1,0 +1,61 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Metabase Configuration (docker)</title></head><body><h1>Metabase Configuration (docker)</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p>Metabase is an opensource, popular, analytics and reporting tool, which can be used to connect to Mart DB, OpenMRS DB, etc. to create visualisation, dashboards, reports, etc in data stored in Bahmni. Bahmni comes pre-packaged with metabase and mart, in docker compose (for both bahmni-lite and bahmni-standard). Before you use Metabase for production data, please ensure you have setup correct permissions/groups for users, so they don’t get access to ALL the data. Read more on that here: <a href="/wiki/spaces/BAH/pages/3130884148/Securing+Metabase+Bahmni+Mart+Analytics+Tool" data-linked-resource-id="3130884148" data-linked-resource-version="3" data-linked-resource-type="page">Securing Metabase &amp; Bahmni Mart Analytics Tool</a> . To better understand Bahmni Mart please read: <a href="/wiki/spaces/BAH/pages/695959553/Bahmni+Mart" data-linked-resource-id="695959553" data-linked-resource-version="26" data-linked-resource-type="page">Bahmni Mart</a> </p><h2 id="MetabaseConfiguration(docker)-EnvironmentConfigurations:">Environment Configurations:</h2><div class="table-wrap"><table data-layout="default" data-local-id="dcf1deb8-a371-4844-8704-2bf45c4ef4b1" class="confluenceTable"><colgroup><col style="width: 352.0px;"/><col style="width: 655.0px;"/></colgroup><tbody><tr><th class="confluenceTh"><p>Variable Name</p></th><th class="confluenceTh"><p>Description</p></th></tr><tr><td class="confluenceTd"><p>METABASE_IMAGE_TAG</p></td><td class="confluenceTd"><p>This value tells which image version to be used for Metabase. A list of tags can be found at <a class="external-link" href="https://hub.docker.com/r/metabase/metabase/tags" rel="nofollow">bahmni/Metabase image - Tags</a>.</p></td></tr><tr><td class="confluenceTd"><p>METABASE_POSTGRES_IMAGE_TAG</p></td><td class="confluenceTd"><p>This value tells which image version to be used for Postgres image. A list of tags can be found at <a class="external-link" href="https://hub.docker.com/_/postgres/tags" rel="nofollow">postgres - Tags</a>.</p></td></tr><tr><td class="confluenceTd"><p>METABASE_DB_HOST</p></td><td class="confluenceTd"><p>Host of the Metabase application database.</p></td></tr><tr><td class="confluenceTd"><p>METABASE_DB_PORT</p></td><td class="confluenceTd"><p>Port of the Metabase application database.</p></td></tr><tr><td class="confluenceTd"><p>METABASE_DB_NAME</p></td><td class="confluenceTd"><p>Name of the Metabase application database.</p></td></tr><tr><td class="confluenceTd"><p>METABASE_DB_USER</p></td><td class="confluenceTd"><p>Username of the Metabase application database.</p></td></tr><tr><td class="confluenceTd"><p>METABASE_DB_PASSWORD</p></td><td class="confluenceTd"><p>Password of the Metabase application database.</p></td></tr><tr><td class="confluenceTd"><p>MB_ADMIN_EMAIL</p></td><td class="confluenceTd"><p>Email-Id of the Metabase application Admin user.</p></td></tr><tr><td class="confluenceTd"><p>MB_ADMIN_FIRST_NAME</p></td><td class="confluenceTd"><p>First name of the Metabase application Admin user.</p></td></tr><tr><td class="confluenceTd"><p>MB_ADMIN_PASSWORD</p></td><td class="confluenceTd"><p>Password of the Metabase application Admin user.</p></td></tr><tr><td class="confluenceTd"><p>OPENMRS_DB_HOST</p></td><td class="confluenceTd"><p>Host of the OpenMRS database.</p></td></tr><tr><td class="confluenceTd"><p> OPENMRS_DB_NAME</p></td><td class="confluenceTd"><p>Name of the OpenMRS database.</p></td></tr><tr><td class="confluenceTd"><p>OPENMRS_DB_USERNAME</p></td><td class="confluenceTd"><p>Username of the OpenMRS  database.</p></td></tr><tr><td class="confluenceTd"><p> OPENMRS_DB_PASSWORD</p></td><td class="confluenceTd"><p>Password of the OpenMRS  database.</p></td></tr><tr><td class="confluenceTd"><p>OPENMRS_DB_TYPE</p></td><td class="confluenceTd"><p>Type of the OpenMRS database.</p></td></tr></tbody></table></div><p /><h2 id="MetabaseConfiguration(docker)-StartingMetabasefromBahmniDocker">Starting Metabase from Bahmni Docker</h2><p /><h4 id="MetabaseConfiguration(docker)-Metabasewillstartwithbelowdetails:"> Metabase will start with below details:</h4><ol start="1"><li><p>A pre-configured Admin user.</p></li><li><p>Pre-connected to OpenMRS DB and MART DB.</p></li><li><p>Few sample reports.</p></li></ol><p> </p><h4 id="MetabaseConfiguration(docker)-TostartMetabaseinlocalfollowthebelowcommands.">To start Metabase in local follow the below commands.</h4><p /><ol start="1"><li><p>We need OpenMRS DB to be up and running before starting Metabase else the Sample reports will not be generated.</p></li><li><p> Start metabase profile from docker-compose.yaml</p></li></ol><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="c17f1ca2-3c46-43b5-b672-80f176906519" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence"># Edit the profile to &quot;bahmni-mart&quot; to bring up all services incl metabase 
+# (or to &quot;metabase&quot; if you ONLY want metabase)
+COMPOSE_PROFILES=bahmni-mart 
+
+# Then execute the command
+docker compose up -d</pre>
+</div></div><p>3. Metabase should be running on <code>https://&lt;IP&gt;/metabase</code></p><p>4. To Login, use the same credentials as mentioned in the <code>.env</code> file for variables: <code>METABASE_ADMIN_EMAIL</code> and <code>METABASE_ADMIN_PASSWORD</code>. </p><p>Once you have logged in as Admin user to Metabase you can go to DATA -&gt; Browse data -&gt; OUR DATA to see all the connected Databases and to visualize the predefined reports the user needs to go to COLLECTIONS -&gt; Bahmni Analytics</p><p>Note: <em>Automatic report generation and DB integration will happen in Metabase during start-up only if no prior user exists in Metabase. If Metabase DB already has an user then DB integration and report generation will be skipped.</em></p><p /><div class="confluence-information-macro confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="f0e97a30-109d-4868-8fe5-a75432ebf2ed" data-macro-name="tip"><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>Short Demo video on Youtube of Metabase &amp; Mart: <a class="external-link" data-card-appearance="inline" href="https://www.youtube.com/watch?v=IHZR-W7EdNg" rel="nofollow">https://www.youtube.com/watch?v=IHZR-W7EdNg</a> </p></div></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="df1b6f7c-c39d-4c88-bcd9-d140b29be31f" data-macro-name="info"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p><em><strong>Running Bahmni on Docker</strong></em></p></div></div><p>
+
+
+<div class="plugin_pagetree conf-macro output-inline" data-hasbody="false" data-local-id="f02d69f8-b2f2-404d-b40a-e4e2a32cb7a3" data-macro-id="e091ddc8426d334102d881f04298d551" data-macro-name="pagetree">
+
+                        
+                
+        <ul class="plugin_pagetree_children_list plugin_pagetree_children_list_noleftspace">
+            <div class="plugin_pagetree_children">
+            </div>
+        </ul>
+
+        <fieldset class="hidden">
+            <input type="hidden" name="treeId" value="" />
+            <input type="hidden" name="treeRequestId" value="/wiki/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=false" />
+            <input type="hidden" name="treePageId" value="3117482143" />
+
+            <input type="hidden" name="noRoot" value="false" />
+            <input type="hidden" name="rootPageId" value="299630726" />
+
+            <input type="hidden" name="rootPage" value="" />
+            <input type="hidden" name="startDepth" value="1" />
+            <input type="hidden" name="spaceKey" value="BAH" />
+
+            <input type="hidden" name="i18n-pagetree.loading" value="Loading..." />
+            <input type="hidden" name="i18n-pagetree.error.permission" value="Unable to load page tree. It seems that you do not have permission to view the root page." />
+            <input type="hidden" name="i18n-pagetree.eeror.general" value="There was a problem retrieving the page tree. Please check the server log file for more information." />
+            <input type="hidden" name="loginUrl" value="/wiki/login.action?os_destination=%2Frest%2Fapi%2Fcontent%2F3117482143%3Fexpand%3Dbody.storage%2Cbody.view%2Cversion%2Cmetadata.labels%2Chistory" />
+            <input type="hidden" name="mobile" value="false" />
+
+                        <fieldset class="hidden">
+                                                            <input type="hidden" name="ancestorId" value="299630726" />
+                                                </fieldset>
+        </fieldset>
+    </div>
+
+</p></div>
+</div>
+</div>
+<div class="columnLayout fixed-width" data-layout="fixed-width">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p /></div>
+</div>
+</div>
+</div></body></html>

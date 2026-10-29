@@ -1,0 +1,41 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public License,
+ * v. 2.0. If a copy of the MPL was not distributed with this file, You can
+ * obtain one at https://www.bahmni.org/license/mplv2hd.
+ *
+ * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
+ * graphic logo is a trademark of OpenMRS Inc.
+ */
+
+@charset "UTF-8";
+@import "opdSummaryPrint";
+
+section.block.observation, .ipd-investigation-title, table.ipd-investigation, section.block.radiology-investigations, 
+section.block.ipd-treatment-section, section.block.disposition-section, section.block.consult-notes, .time-stamp, .provider, table.history-diagnosis .row .col.col4 {
+  display: none;
+}
+
+table th {
+  white-space: nowrap;
+}
+.lab-investigation {
+  display: block!important;
+}
+
+.observations{
+  .date{
+    float: right;
+  }
+}
+
+footer h1{
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.dispositions {
+  .name {
+    font-weight: bold;
+  }
+}

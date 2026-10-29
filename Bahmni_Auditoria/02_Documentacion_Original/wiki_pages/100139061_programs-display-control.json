@@ -1,0 +1,171 @@
+{
+  "id": "100139061",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/100139061",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTAwMTM5MDYx",
+  "status": "current",
+  "title": "Programs Display Control",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sravanthi N. S. CH.",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sravanthi N. S. CH.",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d47e0136-cbde-4dbc-8820-611d4528d1c8"
+      }
+    },
+    "createdDate": "2016-11-17T10:33:43.342Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/100139061/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "6202c5baa29402006878ba30",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Riya Kumari",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/6202c5baa29402006878ba30",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Riya Kumari",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=6202c5baa29402006878ba30"
+      }
+    },
+    "when": "2023-11-30T05:20:07.845Z",
+    "friendlyWhen": "Nov 30, 2023",
+    "message": "",
+    "number": 9,
+    "minorEdit": false,
+    "syncRev": "0.YNxjxP0ApUPqP1vm1qlzcg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$100139061.46",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/100139061"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/100139061/version/9"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose</h2><ac:structured-macro ac:name=\"excerpt\" ac:schema-version=\"1\" ac:macro-id=\"638aebc5-f96c-44fe-9484-b0037d832b70\"><ac:parameter ac:name=\"atlassian-macro-output-type\">INLINE</ac:parameter><ac:rich-text-body><p>A patient can be enrolled into one or more programs such as TB, Malaria, HIV, ANC, etc. The programs display control will show all the list of active and inactive programs for a patient.<strong>This control cannot be configured on Visit dashboard.</strong></p></ac:rich-text-body></ac:structured-macro><h1>Screenshot</h1><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><ac:image ac:width=\"600\"><ri:attachment ri:filename=\"Screen Shot 2016-05-25 at 4.24.31 PM.png\" ri:version-at-save=\"1\" /></ac:image></span></p><h1><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\">Configuration</span></h1><h3>Sample Configuration</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8c0fe2ef-cc59-4628-8c69-19bfba62e984\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Add to clinical/dashboard.json for it to appear on the patient dashboard</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"programs\": {\n               \"title\":\"Programs\",\n               \"translationKey\": \"DASHBOARD_TITLE_PROGRAMS_KEY\",\n               \"type\": \"programs\",\n               \"displayOrder\": 5,\n               \"hideEmptyDisplayControl\": false\n           }]]></ac:plain-text-body></ac:structured-macro><p><br /></p><div><div class=\"syntaxhighlighter sh-confluence js\"><h3 class=\"auto-cursor-target\">Key Field Table</h3></div></div><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><thead><tr><th><div class=\"tablesorter-header-inner\">Key</div></th><th><div class=\"tablesorter-header-inner\">Information</div></th><th colspan=\"1\"><div class=\"tablesorter-header-inner\">Mandatory</div></th></tr></thead><tbody><tr><td>title</td><td>The title to be shown in the display control</td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\">translationKey</td><td colspan=\"1\">Internationalizes the display control</td><td colspan=\"1\">Y</td></tr><tr><td>type</td><td><div class=\"content-wrapper\"><p>Indicates the type of the control</p><p><strong>type should be &quot;programs&quot;</strong></p></div></td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\">displayOrder</td><td colspan=\"1\">The order in which the display control will be displayed</td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\">hideEmptyDisplayControl</td><td colspan=\"1\"><p class=\"p1\">Hides the display control if there are no recorded values present for it when set to true, default value is set to false</p></td><td colspan=\"1\">N</td></tr></tbody></table><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"9e21e6bc-65b4-4f30-a341-0dc091c2e859\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\"><ac:parameter ac:name=\"titleColor\">White</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Display Controls</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"21cd7308-eaf1-4edd-8253-24f7f9e31fd8\"><ac:parameter ac:name=\"all\">true</ac:parameter><ac:parameter ac:name=\"page\"><ac:link><ri:page ri:content-title=\"Tracking Controls\" ri:version-at-save=\"1\" /></ac:link></ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/100139061"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ProgramsDisplayControl-Purpose\">Purpose</h2><p>A patient can be enrolled into one or more programs such as TB, Malaria, HIV, ANC, etc. The programs display control will show all the list of active and inactive programs for a patient.<strong class=\"conf-macro output-inline\" data-hasbody=\"true\" data-macro-id=\"638aebc5-f96c-44fe-9484-b0037d832b70\" data-macro-name=\"excerpt\">This control cannot be configured on Visit dashboard.</strong></p><h1 id=\"ProgramsDisplayControl-Screenshot\">Screenshot</h1><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/100139061/Screen%20Shot%202016-05-25%20at%204.24.31%20PM.png?version=1&amp;modificationDate=1479378823360&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=332\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/100139061/Screen%20Shot%202016-05-25%20at%204.24.31%20PM.png?version=1&amp;modificationDate=1479378823360&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"100139060\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-05-25 at 4.24.31 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"100139061\" data-linked-resource-container-version=\"9\" data-media-id=\"7ece9faf-d33b-4812-a9e6-e45338bd7b25\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/100139061/Screen%20Shot%202016-05-25%20at%204.24.31%20PM.png?version=1&amp;modificationDate=1479378823360&amp;cacheVersion=1&amp;api=v2&amp;width=1200&amp;height=664 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/100139061/Screen%20Shot%202016-05-25%20at%204.24.31%20PM.png?version=1&amp;modificationDate=1479378823360&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=332 1x\"></span></span></p><h1 id=\"ProgramsDisplayControl-Configuration\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\">Configuration</span></h1><h3 id=\"ProgramsDisplayControl-SampleConfiguration\">Sample Configuration</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8c0fe2ef-cc59-4628-8c69-19bfba62e984\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Add to clinical/dashboard.json for it to appear on the patient dashboard</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;programs&quot;: {\n               &quot;title&quot;:&quot;Programs&quot;,\n               &quot;translationKey&quot;: &quot;DASHBOARD_TITLE_PROGRAMS_KEY&quot;,\n               &quot;type&quot;: &quot;programs&quot;,\n               &quot;displayOrder&quot;: 5,\n               &quot;hideEmptyDisplayControl&quot;: false\n           }</pre>\n</div></div><p><br/></p><div><div class=\"syntaxhighlighter sh-confluence js\"><h3 class=\"auto-cursor-target\" id=\"ProgramsDisplayControl-KeyFieldTable\">Key Field Table</h3></div></div><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col/><col/><col/></colgroup><thead><tr><th class=\"confluenceTh\"><div class=\"tablesorter-header-inner\">Key</div></th><th class=\"confluenceTh\"><div class=\"tablesorter-header-inner\">Information</div></th><th colspan=\"1\" class=\"confluenceTh\"><div class=\"tablesorter-header-inner\">Mandatory</div></th></tr></thead><tbody><tr><td class=\"confluenceTd\">title</td><td class=\"confluenceTd\">The title to be shown in the display control</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">translationKey</td><td colspan=\"1\" class=\"confluenceTd\">Internationalizes the display control</td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td class=\"confluenceTd\">type</td><td class=\"confluenceTd\"><div class=\"content-wrapper\"><p>Indicates the type of the control</p><p><strong>type should be &quot;programs&quot;</strong></p></div></td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">displayOrder</td><td colspan=\"1\" class=\"confluenceTd\">The order in which the display control will be displayed</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">hideEmptyDisplayControl</td><td colspan=\"1\" class=\"confluenceTd\"><p class=\"p1\">Hides the display control if there are no recorded values present for it when set to true, default value is set to false</p></td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr></tbody></table></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9e21e6bc-65b4-4f30-a341-0dc091c2e859\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: White;\"><b>Related Display Controls</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"21cd7308-eaf1-4edd-8253-24f7f9e31fd8\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/100139061/Programs+Display+Control\" data-linked-resource-id=\"100139061\" data-linked-resource-version=\"9\" data-linked-resource-type=\"page\">Programs Display Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114227756/Flowsheet+Control\" data-linked-resource-id=\"114227756\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Flowsheet Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114228167/Graph+Control\" data-linked-resource-id=\"114228167\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Graph Control</a></li></ul><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/100139061"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/100139061/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/100139061/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/100139061/child",
+    "restrictions": "/rest/api/content/100139061/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/100139061/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=100139061",
+    "webui": "/spaces/BAH/pages/100139061/Programs+Display+Control",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/100139061",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/100139061",
+    "tinyui": "/x/NQD4BQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

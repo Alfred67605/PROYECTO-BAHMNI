@@ -1,0 +1,171 @@
+{
+  "id": "5570585",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/5570585",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNTU3MDU4NQ==",
+  "status": "current",
+  "title": "Advanced AtomFeed Configuration",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:94296a6a-6c0c-440d-a082-92dce7c9ee1d",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Rohan Poddar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:94296a6a-6c0c-440d-a082-92dce7c9ee1d",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Rohan Poddar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:94296a6a-6c0c-440d-a082-92dce7c9ee1d"
+      }
+    },
+    "createdDate": "2014-06-20T11:23:39.465Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/5570585/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2021-09-07T09:38:14.175Z",
+    "friendlyWhen": "Sept 07, 2021",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "syncRev": "0.FKGrg6ST1s99FAwVTAi40w.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$5570585.70",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/5570585"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/5570585/version/7"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p>To further configure AtomFeed to suit the needs of your implementation please refer to the config below.</p><p>To use Bahmni's inbuilt AtomFeed Console refer to <ac:link><ri:page ri:content-title=\"Configure Atomfeed Console App\" ri:version-at-save=\"6\" /><ac:plain-text-link-body><![CDATA[this page]]></ac:plain-text-link-body></ac:link>.</p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"cb7d4dd5-df06-46ef-b08d-5c5eb633052e\"><ac:rich-text-body><p>See sample AtomFeed configuration on Demo server:&nbsp;<a href=\"https://demo.mybahmni.org/openmrs/admin/maintenance/settings.list?show=Atomfeed\">https://demo.mybahmni.org/openmrs/admin/maintenance/settings.list?show=Atomfeed</a>&nbsp;</p></ac:rich-text-body></ac:structured-macro><p><br /></p><h2>OpenMRS Atom Feed Configuration</h2><h3>Configuring Relationship Events</h3><ul><li><p>Set&nbsp;<span style=\"color: rgb(0,0,0);\"><strong>atomfeed.publish.eventsForPatientRelationshipChange</strong>&nbsp;true in OpenMRS global properties to raise events related to person relationship changes</span></p></li><li><p><span style=\"color: rgb(0,0,0);\"><span>Use&nbsp;<strong>atomfeed.event.urlPatternForPatientRelationshipChange</strong>&nbsp;&nbsp;OpenMRS global property to configure the object values for the raised events. The default is&nbsp;<span style=\"color: rgb(44,45,48);\"><strong>/openmrs/ws/rest/v1/relationship/%s</strong>, where&nbsp;<strong>%s</strong>&nbsp;represents the relationship uuid.</span></span></span></p></li></ul><h3>Configuring Program Events</h3><ul><li><p>Set&nbsp;<strong><span style=\"color: rgb(0,0,0);\">atomfeed.publish.eventsForPatientProgramStateChange</span></strong><span style=\"color: rgb(0,0,0);\">&nbsp;true in OpenMRS global properties to raise events related to person program changes</span></p></li><li><p><span style=\"color: rgb(0,0,0);\">Use&nbsp;<strong><span>atomfeed.event.urlPatternForProgramStateChange</span></strong>&nbsp; OpenMRS global property to configure the object values for the raised events. The default is&nbsp;<strong>/openmrs/ws/rest/v1/programenrollment/{uuid}?v=full&nbsp;</strong><span style=\"color: rgb(44,45,48);\">where&nbsp;<strong>{uuid}</strong>&nbsp;represents the patientprogram uuid.</span></span></p></li></ul><h2>OpenERP Atom Feed Configuration</h2><p>OpenERP Atom Feeds uses the default implementation specified in the Spring configuration files.&nbsp;</p><p>If the implementor wishes to override the default configurations, then they can add entries for the job in '<em>quartz_cron_scheduler</em>' table in OpenERP database. The jobs that can be configured are as follows:</p><ul><li>customerFeedJobTrigger</li><li>customerFeedfailedJobTrigger</li><li>saleOrderFeedJobTrigger</li><li>saleOrderFeedFailedJobTrigger</li><li>openelisSaleOrderFeedJobTrigger</li><li>openelisSaleOrderFeedFailedJobTrigger</li><li>eventRecordsNumberOffsetMarkerTrigger</li><li>referenceDataFeedJobTrigger</li><li>referenceDataFeedFailedJobTrigger</li><li>openerpDrugFeedQuartzJobTrigger</li><li>openerpDrugFeedQuartzJobFailedTrigger</li></ul><h2>Sample Configuration</h2><p>Sample SQL to add a job configuration is:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"7628571c-1f85-4038-906b-7b30dbaf889b\"><ac:plain-text-body><![CDATA[insert into quartz_cron_scheduler (name, cron_statement, start_delay, enabled) values ('customerFeedJobTrigger','0/15 * * * * ?', 10000,true);]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><table class=\"wrapped\"><colgroup><col /><col /></colgroup><tbody><tr><th>Field</th><th>Value</th></tr><tr><td><em>name</em></td><td>The name of the job from the list above</td></tr><tr><td><em>cron_statement</em></td><td>Corresponds to quartz cron expression</td></tr><tr><td><em>start_delay</em></td><td>Time(in ms) after which the job needs to be triggered (after starting the web app)</td></tr><tr><td colspan=\"1\"><em>enabled</em></td><td colspan=\"1\">Check to enable or disable a particular job</td></tr></tbody></table><p><br /></p><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"4084f2de-c0c2-4eeb-b02a-1184ccf78a4a\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Configure Atomfeed Console App\" ri:version-at-save=\"6\" /><ac:plain-text-link-body><![CDATA[Atomfeed Console App]]></ac:plain-text-link-body></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/5570585"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\"><style>[data-colorid=d7vy1rbqm1]{color:#2c2d30} html[data-color-mode=dark] [data-colorid=d7vy1rbqm1]{color:#cfd0d3}[data-colorid=agslvubx70]{color:#2c2d30} html[data-color-mode=dark] [data-colorid=agslvubx70]{color:#cfd0d3}</style>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"AdvancedAtomFeedConfiguration-PurposeandBenefits\">Purpose and Benefits</h2><p>To further configure AtomFeed to suit the needs of your implementation please refer to the config below.</p><p>To use Bahmni's inbuilt AtomFeed Console refer to <a href=\"/wiki/spaces/BAH/pages/74154021/Configure+Atomfeed+Console+App\" data-linked-resource-id=\"74154021\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">this page</a>.</p><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"cb7d4dd5-df06-46ef-b08d-5c5eb633052e\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>See sample AtomFeed configuration on Demo server:&nbsp;<a class=\"external-link\" href=\"https://demo.mybahmni.org/openmrs/admin/maintenance/settings.list?show=Atomfeed\" rel=\"nofollow\">https://demo.mybahmni.org/openmrs/admin/maintenance/settings.list?show=Atomfeed</a>&nbsp;</p></div></div><p><br /></p><h2 id=\"AdvancedAtomFeedConfiguration-OpenMRSAtomFeedConfiguration\">OpenMRS Atom Feed Configuration</h2><h3 id=\"AdvancedAtomFeedConfiguration-ConfiguringRelationshipEvents\">Configuring Relationship Events</h3><ul><li><p>Set&nbsp;<span class=\"legacy-color-text-default\"><strong>atomfeed.publish.eventsForPatientRelationshipChange</strong>&nbsp;true in OpenMRS global properties to raise events related to person relationship changes</span></p></li><li><p><span class=\"legacy-color-text-default\"><span>Use&nbsp;<strong>atomfeed.event.urlPatternForPatientRelationshipChange</strong>&nbsp;&nbsp;OpenMRS global property to configure the object values for the raised events. The default is&nbsp;<span data-colorid=\"d7vy1rbqm1\"><strong>/openmrs/ws/rest/v1/relationship/%s</strong>, where&nbsp;<strong>%s</strong>&nbsp;represents the relationship uuid.</span></span></span></p></li></ul><h3 id=\"AdvancedAtomFeedConfiguration-ConfiguringProgramEvents\">Configuring Program Events</h3><ul><li><p>Set&nbsp;<strong><span class=\"legacy-color-text-default\">atomfeed.publish.eventsForPatientProgramStateChange</span></strong><span class=\"legacy-color-text-default\">&nbsp;true in OpenMRS global properties to raise events related to person program changes</span></p></li><li><p><span class=\"legacy-color-text-default\">Use&nbsp;<strong><span>atomfeed.event.urlPatternForProgramStateChange</span></strong>&nbsp; OpenMRS global property to configure the object values for the raised events. The default is&nbsp;<strong>/openmrs/ws/rest/v1/programenrollment/{uuid}?v=full&nbsp;</strong><span data-colorid=\"agslvubx70\">where&nbsp;<strong>{uuid}</strong>&nbsp;represents the patientprogram uuid.</span></span></p></li></ul><h2 id=\"AdvancedAtomFeedConfiguration-OpenERPAtomFeedConfiguration\">OpenERP Atom Feed Configuration</h2><p>OpenERP Atom Feeds uses the default implementation specified in the Spring configuration files.&nbsp;</p><p>If the implementor wishes to override the default configurations, then they can add entries for the job in '<em>quartz_cron_scheduler</em>' table in OpenERP database. The jobs that can be configured are as follows:</p><ul><li>customerFeedJobTrigger</li><li>customerFeedfailedJobTrigger</li><li>saleOrderFeedJobTrigger</li><li>saleOrderFeedFailedJobTrigger</li><li>openelisSaleOrderFeedJobTrigger</li><li>openelisSaleOrderFeedFailedJobTrigger</li><li>eventRecordsNumberOffsetMarkerTrigger</li><li>referenceDataFeedJobTrigger</li><li>referenceDataFeedFailedJobTrigger</li><li>openerpDrugFeedQuartzJobTrigger</li><li>openerpDrugFeedQuartzJobFailedTrigger</li></ul><h2 id=\"AdvancedAtomFeedConfiguration-SampleConfiguration\">Sample Configuration</h2><p>Sample SQL to add a job configuration is:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7628571c-1f85-4038-906b-7b30dbaf889b\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">insert into quartz_cron_scheduler (name, cron_statement, start_delay, enabled) values ('customerFeedJobTrigger','0/15 * * * * ?', 10000,true);</pre>\n</div></div><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col /><col /></colgroup><tbody><tr><th class=\"confluenceTh\">Field</th><th class=\"confluenceTh\">Value</th></tr><tr><td class=\"confluenceTd\"><em>name</em></td><td class=\"confluenceTd\">The name of the job from the list above</td></tr><tr><td class=\"confluenceTd\"><em>cron_statement</em></td><td class=\"confluenceTd\">Corresponds to quartz cron expression</td></tr><tr><td class=\"confluenceTd\"><em>start_delay</em></td><td class=\"confluenceTd\">Time(in ms) after which the job needs to be triggered (after starting the web app)</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><em>enabled</em></td><td colspan=\"1\" class=\"confluenceTd\">Check to enable or disable a particular job</td></tr></tbody></table></div><p><br /></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4084f2de-c0c2-4eeb-b02a-1184ccf78a4a\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/74154021/Configure+Atomfeed+Console+App\" data-linked-resource-id=\"74154021\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Atomfeed Console App</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/5570585"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/5570585/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/5570585/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/5570585/child",
+    "restrictions": "/rest/api/content/5570585/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/5570585/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=5570585",
+    "webui": "/spaces/BAH/pages/5570585/Advanced+AtomFeed+Configuration",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/5570585",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/5570585",
+    "tinyui": "/x/GQBV",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

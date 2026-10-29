@@ -1,0 +1,172 @@
+{
+  "id": "114929369",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/114929369",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE0OTI5MzY5",
+  "status": "current",
+  "title": "IPD App and Tab Setup",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "createdDate": "2017-02-23T09:16:00.495Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114929369/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "when": "2017-02-23T09:16:00.495Z",
+    "friendlyWhen": "Feb 23, 2017",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.ZGXYYHocZP3_uMqcdpItzA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$114929369.29",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/114929369"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114929369/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Configuration</h2><h3><span style=\"color: rgb(0,0,0);\">1. Configure the In-Patient App</span></h3><p><span style=\"color: rgb(0,0,0);\">Add the configuration in extension.json file in home folder&nbsp;<a href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/apps/home/extension.json\">https://github.com/Bahmni/default-config/blob/master/openmrs/apps/home/extension.json</a>&nbsp;to view the app.&nbsp;</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"f5167c18-4f89-4d36-ab0d-91dfaa919694\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"adt\": {\n    \"id\": \"bahmni.adt\",\n    \"extensionPointId\": \"org.bahmni.home.dashboard\",\n    \"type\": \"link\",\n    \"translationKey\": \"MODULE_LABEL_INPATIENT_KEY\",\n    \"url\": \"../adt/\",\n    \"icon\": \"icon-bahmni-inpatient\",\n    \"order\": 4,\n    \"requiredPrivilege\": \"app:adt\"\n  }]]></ac:plain-text-body></ac:structured-macro><h3><span style=\"color: rgb(0,0,0);\">2. Configure Tabs</span></h3><p><span style=\"color: rgb(0,0,0);\">Add the configuration in extension.json file in the adt folder here&nbsp;<a href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/apps/adt/extension.json\">https://github.com/Bahmni/default-config/blob/master/openmrs/apps/adt/extension.json</a>&nbsp;:&nbsp;</span></p><h4><span style=\"color: rgb(0,0,0);\">Configure &quot;To Admit&quot; Tab</span></h4><p><span style=\"color: rgb(0,0,0);\">&nbsp; &nbsp; This tab is used to view the the list of patients who are asked to admit.</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"98747c01-b63d-407d-9deb-97f9b777fde8\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"bahmniAdtPatientsSearchPatientsToAdmit\":{\n        \"id\": \"bahmni.adt.patients.search.patientsToAdmit\",\n        \"extensionPointId\": \"org.bahmni.patient.search\",\n        \"type\": \"config\",\n        \"extensionParams\": {\n            \"searchHandler\": \"emrapi.sqlSearch.patientsToAdmit\",\n            \"translationKey\": \"MODULE_LABEL_TO_ADMIT_KEY\",\n            \"forwardUrl\":\"#/patient/{{patientUuid}}/visit/{{visitUuid}}/admit\"\n        },\n        \"label\": \"To Admit\",\n        \"order\": 1,\n        \"requiredPrivilege\": \"app:adt\"\n    }]]></ac:plain-text-body></ac:structured-macro><h4><span style=\"color: rgb(0,0,0);\">Configure&nbsp;</span>Admitted Tab</h4><p><span style=\"color: rgb(0,0,0);\">&nbsp; &nbsp; This tab is used to view the the list of patients who are already admitted.</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"23b919ee-2115-4993-a656-51dac13d6ff3\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"bahmniAdtPatientsSearchPatientsAdmitted\":{\n        \"id\": \"bahmni.adt.patients.search.patientsAdmitted\",\n        \"extensionPointId\": \"org.bahmni.patient.search\",\n        \"type\": \"config\",\n        \"extensionParams\": {\n            \"searchHandler\": \"emrapi.sqlSearch.admittedPatients\",\n            \"translationKey\": \"MODULE_LABEL_ADMITTED_KEY\",\n            \"forwardUrl\" : \"#/patient/{{patientUuid}}/visit/{{visitUuid}}/transfer\"\n        },\n        \"label\": \"Admitted\",\n        \"order\": 2,\n        \"requiredPrivilege\": \"app:adt\"\n    }]]></ac:plain-text-body></ac:structured-macro><h4><span style=\"color: rgb(0,0,0);\">Configure&nbsp;</span>&quot;To Discharge&quot; Tab</h4><p><span style=\"color: rgb(0,0,0);\">This tab is used to view the the list of patients who have to be discharged.</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b65785c3-eaf5-47d3-824d-8c9c502297b5\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"bahmniAdtPatientsSearchPatientsToDischarge\":{\n        \"id\": \"bahmni.adt.patients.search.patientsToDischarge\",\n        \"extensionPointId\": \"org.bahmni.patient.search\",\n        \"type\": \"config\",\n        \"extensionParams\": {\n            \"searchHandler\": \"emrapi.sqlSearch.patientsToDischarge\",\n            \"translationKey\": \"MODULE_LABEL_TO_DISCHARGE_KEY\",\n            \"forwardUrl\" : \"#/patient/{{patientUuid}}/visit/{{visitUuid}}/discharge\"\n        },\n        \"label\": \"To Discharge\",\n        \"order\": 3,\n        \"requiredPrivilege\": \"app:adt\"\n    }]]></ac:plain-text-body></ac:structured-macro><h4><span style=\"color: rgb(0,0,0);\">Configure &quot;</span>All&quot; Tab</h4><p><span style=\"color: rgb(0,0,0);\">This tab is used to view the the list of patients who have to be admitted.</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"ea40380c-4e71-486f-870c-5d1492aa072d\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"bahmniAdtPatientsSearchAllPatients\":{\n        \"id\": \"bahmni.adt.patients.search.allPatients\",\n        \"extensionPointId\": \"org.bahmni.patient.search\",\n        \"type\": \"config\",\n        \"extensionParams\": {\n            \"translationKey\": \"MODULE_LABEL_ALL_KEY\",\n            \"forwardUrl\" : \"#/patient/{{patientUuid}}/visit/{{visitUuid}}/admit\"\n        },\n        \"label\": \"All\",\n        \"order\": 4,\n        \"requiredPrivilege\": \"app:adt\"\n    }]]></ac:plain-text-body></ac:structured-macro></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"22715bf9-65c7-4572-bd73-78fdaeca6f98\"><ac:parameter ac:name=\"style\">none</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"698d4a82-5bc7-4a13-a03e-2c6d4414d8f7\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Admit, Discharge and Transfer Patients\" ri:version-at-save=\"3\" /></ac:link></p><p><ac:link><ri:page ri:content-title=\"Ward Management\" ri:version-at-save=\"9\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"In-Patient Management (IPD)\" ri:version-at-save=\"9\" /><ac:plain-text-link-body><![CDATA[In-Patient Management (IPD) - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"In-Patient Management\" ri:version-at-save=\"26\" /><ac:plain-text-link-body><![CDATA[In-Patient Management (IPD) - User Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/114929369"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"IPDAppandTabSetup-Configuration\">Configuration</h2><h3 id=\"IPDAppandTabSetup-1.ConfiguretheIn-PatientApp\"><span class=\"legacy-color-text-default\">1. Configure the In-Patient App</span></h3><p><span class=\"legacy-color-text-default\">Add the configuration in extension.json file in home folder <a class=\"external-link\" href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/apps/home/extension.json\" rel=\"nofollow\">https://github.com/Bahmni/default-config/blob/master/openmrs/apps/home/extension.json</a> to view the app. </span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f5167c18-4f89-4d36-ab0d-91dfaa919694\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;adt&quot;: {\n    &quot;id&quot;: &quot;bahmni.adt&quot;,\n    &quot;extensionPointId&quot;: &quot;org.bahmni.home.dashboard&quot;,\n    &quot;type&quot;: &quot;link&quot;,\n    &quot;translationKey&quot;: &quot;MODULE_LABEL_INPATIENT_KEY&quot;,\n    &quot;url&quot;: &quot;../adt/&quot;,\n    &quot;icon&quot;: &quot;icon-bahmni-inpatient&quot;,\n    &quot;order&quot;: 4,\n    &quot;requiredPrivilege&quot;: &quot;app:adt&quot;\n  }</pre>\n</div></div><h3 id=\"IPDAppandTabSetup-2.ConfigureTabs\"><span class=\"legacy-color-text-default\">2. Configure Tabs</span></h3><p><span class=\"legacy-color-text-default\">Add the configuration in extension.json file in the adt folder here <a class=\"external-link\" href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/apps/adt/extension.json\" rel=\"nofollow\">https://github.com/Bahmni/default-config/blob/master/openmrs/apps/adt/extension.json</a> : </span></p><h4 id=\"IPDAppandTabSetup-Configure&quot;ToAdmit&quot;Tab\"><span class=\"legacy-color-text-default\">Configure &quot;To Admit&quot; Tab</span></h4><p><span class=\"legacy-color-text-default\">    This tab is used to view the the list of patients who are asked to admit.</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"98747c01-b63d-407d-9deb-97f9b777fde8\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;bahmniAdtPatientsSearchPatientsToAdmit&quot;:{\n        &quot;id&quot;: &quot;bahmni.adt.patients.search.patientsToAdmit&quot;,\n        &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,\n        &quot;type&quot;: &quot;config&quot;,\n        &quot;extensionParams&quot;: {\n            &quot;searchHandler&quot;: &quot;emrapi.sqlSearch.patientsToAdmit&quot;,\n            &quot;translationKey&quot;: &quot;MODULE_LABEL_TO_ADMIT_KEY&quot;,\n            &quot;forwardUrl&quot;:&quot;#/patient/{{patientUuid}}/visit/{{visitUuid}}/admit&quot;\n        },\n        &quot;label&quot;: &quot;To Admit&quot;,\n        &quot;order&quot;: 1,\n        &quot;requiredPrivilege&quot;: &quot;app:adt&quot;\n    }</pre>\n</div></div><h4 id=\"IPDAppandTabSetup-ConfigureAdmittedTab\"><span class=\"legacy-color-text-default\">Configure </span>Admitted Tab</h4><p><span class=\"legacy-color-text-default\">    This tab is used to view the the list of patients who are already admitted.</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"23b919ee-2115-4993-a656-51dac13d6ff3\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;bahmniAdtPatientsSearchPatientsAdmitted&quot;:{\n        &quot;id&quot;: &quot;bahmni.adt.patients.search.patientsAdmitted&quot;,\n        &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,\n        &quot;type&quot;: &quot;config&quot;,\n        &quot;extensionParams&quot;: {\n            &quot;searchHandler&quot;: &quot;emrapi.sqlSearch.admittedPatients&quot;,\n            &quot;translationKey&quot;: &quot;MODULE_LABEL_ADMITTED_KEY&quot;,\n            &quot;forwardUrl&quot; : &quot;#/patient/{{patientUuid}}/visit/{{visitUuid}}/transfer&quot;\n        },\n        &quot;label&quot;: &quot;Admitted&quot;,\n        &quot;order&quot;: 2,\n        &quot;requiredPrivilege&quot;: &quot;app:adt&quot;\n    }</pre>\n</div></div><h4 id=\"IPDAppandTabSetup-Configure&quot;ToDischarge&quot;Tab\"><span class=\"legacy-color-text-default\">Configure </span>&quot;To Discharge&quot; Tab</h4><p><span class=\"legacy-color-text-default\">This tab is used to view the the list of patients who have to be discharged.</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b65785c3-eaf5-47d3-824d-8c9c502297b5\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;bahmniAdtPatientsSearchPatientsToDischarge&quot;:{\n        &quot;id&quot;: &quot;bahmni.adt.patients.search.patientsToDischarge&quot;,\n        &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,\n        &quot;type&quot;: &quot;config&quot;,\n        &quot;extensionParams&quot;: {\n            &quot;searchHandler&quot;: &quot;emrapi.sqlSearch.patientsToDischarge&quot;,\n            &quot;translationKey&quot;: &quot;MODULE_LABEL_TO_DISCHARGE_KEY&quot;,\n            &quot;forwardUrl&quot; : &quot;#/patient/{{patientUuid}}/visit/{{visitUuid}}/discharge&quot;\n        },\n        &quot;label&quot;: &quot;To Discharge&quot;,\n        &quot;order&quot;: 3,\n        &quot;requiredPrivilege&quot;: &quot;app:adt&quot;\n    }</pre>\n</div></div><h4 id=\"IPDAppandTabSetup-Configure&quot;All&quot;Tab\"><span class=\"legacy-color-text-default\">Configure &quot;</span>All&quot; Tab</h4><p><span class=\"legacy-color-text-default\">This tab is used to view the the list of patients who have to be admitted.</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ea40380c-4e71-486f-870c-5d1492aa072d\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;bahmniAdtPatientsSearchAllPatients&quot;:{\n        &quot;id&quot;: &quot;bahmni.adt.patients.search.allPatients&quot;,\n        &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,\n        &quot;type&quot;: &quot;config&quot;,\n        &quot;extensionParams&quot;: {\n            &quot;translationKey&quot;: &quot;MODULE_LABEL_ALL_KEY&quot;,\n            &quot;forwardUrl&quot; : &quot;#/patient/{{patientUuid}}/visit/{{visitUuid}}/admit&quot;\n        },\n        &quot;label&quot;: &quot;All&quot;,\n        &quot;order&quot;: 4,\n        &quot;requiredPrivilege&quot;: &quot;app:adt&quot;\n    }</pre>\n</div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-cssliststyle=\"none\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"22715bf9-65c7-4572-bd73-78fdaeca6f98\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"698d4a82-5bc7-4a13-a03e-2c6d4414d8f7\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/114923665/Admit+Discharge+and+Transfer+Patients\" data-linked-resource-id=\"114923665\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Admit, Discharge and Transfer Patients</a></p><p><a href=\"/wiki/spaces/BAH/pages/16908311/Ward+Management\" data-linked-resource-id=\"16908311\" data-linked-resource-version=\"17\" data-linked-resource-type=\"page\">Ward Management</a></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604214/In-Patient+Management+IPD\" data-linked-resource-id=\"32604214\" data-linked-resource-version=\"9\" data-linked-resource-type=\"page\">In-Patient Management (IPD) - Feature Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32014373/In-Patient+Management\" data-linked-resource-id=\"32014373\" data-linked-resource-version=\"33\" data-linked-resource-type=\"page\">In-Patient Management (IPD) - User Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/114929369"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/114929369/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114929369/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 0
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/114929369/child",
+    "restrictions": "/rest/api/content/114929369/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/114929369/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=114929369",
+    "webui": "/spaces/BAH/pages/114929369/IPD+App+and+Tab+Setup",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/114929369",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114929369",
+    "tinyui": "/x/2a7ZBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

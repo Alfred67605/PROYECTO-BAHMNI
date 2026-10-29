@@ -1,0 +1,172 @@
+{
+  "id": "700088324",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/700088324",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNzAwMDg4MzI0",
+  "status": "current",
+  "title": "Appointments Display Control",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Himabindu Thungathurty",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Akkinepalli",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66"
+      }
+    },
+    "createdDate": "2018-08-02T10:31:04.580Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/700088324/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2022-11-18T04:19:09.275Z",
+    "friendlyWhen": "Nov 18, 2022",
+    "message": "Removed collapsible due to Atlassian bug",
+    "number": 4,
+    "minorEdit": false,
+    "syncRev": "0.njWvS0g-1gRTUuduacXHNA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$700088324.77",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/700088324"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/700088324/version/4"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"12dd74f5-897f-4d85-acfe-0d3c6da8972a\"><ac:parameter ac:name=\"title\">Note</ac:parameter><ac:rich-text-body><p>There is no default display control available to show the appointments on patient dashboard. One need to configure this custom display control to see the appointment details on patient dashboard. We will be building one as part of future Bahmni release.&nbsp;</p></ac:rich-text-body></ac:structured-macro><h2>Purpose</h2><p>This custom display control can be used to show the list of future and past appointments of a patient on the patient dashboard</p><h2>Screenshot</h2><p><ac:image ac:width=\"650\"><ri:attachment ri:filename=\"Screen Shot 2018-08-02 at 11.54.58 AM.png\" ri:version-at-save=\"1\" /></ac:image></p><h2>Configuration</h2><p>&nbsp;<span style=\"color: rgb(9,30,66);\">Consider&nbsp;the following example to add Appointments as a new directive to the <a href=\"https://github.com/Bahmni/default-config/blob/release-0.91/openmrs/apps/customDisplayControl/js/customControl.js\">customControl.js</a>:</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"c57995cd-7ef6-4a36-93b3-590a34b85845\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA['use strict';\nangular.module('bahmni.common.displaycontrol.custom')\n.directive('patientAppointmentsDashboard', ['$http', '$q', '$window','appService', function ($http, $q, $window, appService) {\n    var link = function ($scope) {\n        $scope.contentUrl = appService.configBaseUrl() + \"/customDisplayControl/views/patientAppointmentsDashboard.html\";\n        var getUpcomingAppointments = function () {\n            var params = {\n                q: \"bahmni.sqlGet.upComingAppointments\",\n                v: \"full\",\n                patientUuid: $scope.patient.uuid\n            };\n            return $http.get('/openmrs/ws/rest/v1/bahmnicore/sql', {\n                method: \"GET\",\n                params: params,\n                withCredentials: true\n            });\n        };\n        var getPastAppointments = function () {\n            var params = {\n                q: \"bahmni.sqlGet.pastAppointments\",\n                v: \"full\",\n                patientUuid: $scope.patient.uuid\n            };\n            return $http.get('/openmrs/ws/rest/v1/bahmnicore/sql', {\n                method: \"GET\",\n                params: params,\n                withCredentials: true\n            });\n        };\n        $q.all([getUpcomingAppointments(), getPastAppointments()]).then(function (response) {\n            $scope.upcomingAppointments = response[0].data;\n            $scope.upcomingAppointmentsHeadings = _.keys($scope.upcomingAppointments[0]);\n            $scope.pastAppointments = response[1].data;\n            $scope.pastAppointmentsHeadings = _.keys($scope.pastAppointments[0]);\n        });\n        $scope.goToListView = function () {\n            $window.open('/bahmni/appointments/#/home/manage/appointments/list');\n        };\n    };\n\n    return {\n        restrict: 'E',\n        link: link,\n        scope: {\n            patient: \"=\",\n            section: \"=\"\n        },\n        template: '<ng-include src=\"contentUrl\"/>'\n    };\n}]);]]></ac:plain-text-body></ac:structured-macro><h4>To Create Appointments Display page</h4><p><span style=\"color: rgb(9,30,66);\">Consider&nbsp;the following example to create&nbsp;a patientAppointmentsDashboard.html :</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"78da873d-2731-4f95-b885-cd676f772d8b\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">patientAppointmentsDashboard.html</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[<section class=\"app-dashboard-integration\">\n    <h2 class=\"section-title\" ng-click=\"goToListView()\"><span style=\"border-bottom: 1px solid white;\">{{ section.title | titleTranslate}}</span></h2>\n\n    <ul style=\"font-size: 14px;color: #000000\">\n        <li style=\"background-color:#ddd;padding-top:3px;padding-bottom:3px\">\n            <span style=\"padding-left: 10px\"> {{::\"DASHBOARD_UPCOMING_APPOINTMENTS_KEY\" | translate}} </span>\n        </li>\n\n        <ul ng-if=\"upcomingAppointments.length === 0\" class=\"form-field\">\n            <li>{{::\"DASHBOARD_NO_UPCOMING_APPOINTMENTS_KEY\" | translate}}</li>\n        </ul>\n\n        <ul ng-if=\"upcomingAppointments.length !== 0\">\n            <table class=\"table-header\">\n                <thead>\n                <tr>\n                    <th ng-repeat=\"heading in upcomingAppointmentsHeadings\">\n                        {{heading | translate}}\n                    </th>\n                </tr>\n                </thead>\n                <tbody>\n                <tr ng-repeat=\"appointment in upcomingAppointments\">\n                    <td ng-repeat=\"detail in appointment\">\n                        {{detail}}\n                    </td>\n                </tr>\n                </tbody>\n            </table>\n        </ul>\n    </ul>\n\n\n    <ul style=\"font-size: 14px;color: #000000\">\n        <li style=\"background-color:#ddd;padding-top:3px;padding-bottom:3px\">\n            <span style=\"padding-left: 10px\"> {{::\"DASHBOARD_PAST_APPOINTMENTS_KEY\" | translate}} </span>\n        </li>\n\n        <ul ng-if=\"pastAppointments.length === 0\" class=\"form-field\">\n            <li>{{::\"DASHBOARD_NO_PAST_APPOINTMENTS_KEY\" | translate}}</li>\n        </ul>\n\n        <ul ng-if=\"pastAppointments.length !== 0\">\n            <table class=\"table-header\">\n                <thead>\n                <tr>\n                    <th ng-repeat=\"heading in pastAppointmentsHeadings\">\n                        {{heading | translate}}\n                    </th>\n                </tr>\n                </thead>\n                <tbody>\n                <tr ng-repeat=\"appointment in pastAppointments\">\n                    <td ng-repeat=\"detail in appointment\">\n                        {{detail}}\n                    </td>\n                </tr>\n                </tbody>\n            </table>\n        </ul>\n    </ul>\n</section>]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"a836ce0c-d7e2-43e2-9fb7-6a1348e8be38\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"e7bb9994-7049-4b88-a576-187ac2b6cc59\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/700088324"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\"><style>[data-colorid=vdlzajt8pf]{color:#091e42} html[data-color-mode=dark] [data-colorid=vdlzajt8pf]{color:#bdd2f6}[data-colorid=b0blgzyn3r]{color:#091e42} html[data-color-mode=dark] [data-colorid=b0blgzyn3r]{color:#bdd2f6}</style>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"12dd74f5-897f-4d85-acfe-0d3c6da8972a\" data-macro-name=\"note\"><p class=\"title\">Note</p><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>There is no default display control available to show the appointments on patient dashboard. One need to configure this custom display control to see the appointment details on patient dashboard. We will be building one as part of future Bahmni release.&nbsp;</p></div></div><h2 id=\"AppointmentsDisplayControl-Purpose\">Purpose</h2><p>This custom display control can be used to show the list of future and past appointments of a patient on the patient dashboard</p><h2 id=\"AppointmentsDisplayControl-Screenshot\">Screenshot</h2><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"650\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/700088324/Screen%20Shot%202018-08-02%20at%2011.54.58%20AM.png?version=1&amp;modificationDate=1533211040234&amp;cacheVersion=1&amp;api=v2&amp;width=650&amp;height=280\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/700088324/Screen%20Shot%202018-08-02%20at%2011.54.58%20AM.png?version=1&amp;modificationDate=1533211040234&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"699924489\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2018-08-02 at 11.54.58 AM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"700088324\" data-linked-resource-container-version=\"4\" data-media-id=\"c43ea509-a591-40ca-882f-db4e4698f738\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/700088324/Screen%20Shot%202018-08-02%20at%2011.54.58%20AM.png?version=1&amp;modificationDate=1533211040234&amp;cacheVersion=1&amp;api=v2&amp;width=1256&amp;height=542 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/700088324/Screen%20Shot%202018-08-02%20at%2011.54.58%20AM.png?version=1&amp;modificationDate=1533211040234&amp;cacheVersion=1&amp;api=v2&amp;width=650&amp;height=280 1x\" /></span></p><h2 id=\"AppointmentsDisplayControl-Configuration\">Configuration</h2><p>&nbsp;<span data-colorid=\"vdlzajt8pf\">Consider&nbsp;the following example to add Appointments as a new directive to the <a class=\"external-link\" href=\"https://github.com/Bahmni/default-config/blob/release-0.91/openmrs/apps/customDisplayControl/js/customControl.js\" rel=\"nofollow\">customControl.js</a>:</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c57995cd-7ef6-4a36-93b3-590a34b85845\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">'use strict';\nangular.module('bahmni.common.displaycontrol.custom')\n.directive('patientAppointmentsDashboard', ['$http', '$q', '$window','appService', function ($http, $q, $window, appService) {\n    var link = function ($scope) {\n        $scope.contentUrl = appService.configBaseUrl() + &quot;/customDisplayControl/views/patientAppointmentsDashboard.html&quot;;\n        var getUpcomingAppointments = function () {\n            var params = {\n                q: &quot;bahmni.sqlGet.upComingAppointments&quot;,\n                v: &quot;full&quot;,\n                patientUuid: $scope.patient.uuid\n            };\n            return $http.get('/openmrs/ws/rest/v1/bahmnicore/sql', {\n                method: &quot;GET&quot;,\n                params: params,\n                withCredentials: true\n            });\n        };\n        var getPastAppointments = function () {\n            var params = {\n                q: &quot;bahmni.sqlGet.pastAppointments&quot;,\n                v: &quot;full&quot;,\n                patientUuid: $scope.patient.uuid\n            };\n            return $http.get('/openmrs/ws/rest/v1/bahmnicore/sql', {\n                method: &quot;GET&quot;,\n                params: params,\n                withCredentials: true\n            });\n        };\n        $q.all([getUpcomingAppointments(), getPastAppointments()]).then(function (response) {\n            $scope.upcomingAppointments = response[0].data;\n            $scope.upcomingAppointmentsHeadings = _.keys($scope.upcomingAppointments[0]);\n            $scope.pastAppointments = response[1].data;\n            $scope.pastAppointmentsHeadings = _.keys($scope.pastAppointments[0]);\n        });\n        $scope.goToListView = function () {\n            $window.open('/bahmni/appointments/#/home/manage/appointments/list');\n        };\n    };\n\n    return {\n        restrict: 'E',\n        link: link,\n        scope: {\n            patient: &quot;=&quot;,\n            section: &quot;=&quot;\n        },\n        template: '&lt;ng-include src=&quot;contentUrl&quot;/&gt;'\n    };\n}]);</pre>\n</div></div><h4 id=\"AppointmentsDisplayControl-ToCreateAppointmentsDisplaypage\">To Create Appointments Display page</h4><p><span data-colorid=\"b0blgzyn3r\">Consider&nbsp;the following example to create&nbsp;a patientAppointmentsDashboard.html :</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"78da873d-2731-4f95-b885-cd676f772d8b\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>patientAppointmentsDashboard.html</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&lt;section class=&quot;app-dashboard-integration&quot;&gt;\n    &lt;h2 class=&quot;section-title&quot; ng-click=&quot;goToListView()&quot;&gt;&lt;span style=&quot;border-bottom: 1px solid white;&quot;&gt;{{ section.title | titleTranslate}}&lt;/span&gt;&lt;/h2&gt;\n\n    &lt;ul style=&quot;font-size: 14px;color: #000000&quot;&gt;\n        &lt;li style=&quot;background-color:#ddd;padding-top:3px;padding-bottom:3px&quot;&gt;\n            &lt;span style=&quot;padding-left: 10px&quot;&gt; {{::&quot;DASHBOARD_UPCOMING_APPOINTMENTS_KEY&quot; | translate}} &lt;/span&gt;\n        &lt;/li&gt;\n\n        &lt;ul ng-if=&quot;upcomingAppointments.length === 0&quot; class=&quot;form-field&quot;&gt;\n            &lt;li&gt;{{::&quot;DASHBOARD_NO_UPCOMING_APPOINTMENTS_KEY&quot; | translate}}&lt;/li&gt;\n        &lt;/ul&gt;\n\n        &lt;ul ng-if=&quot;upcomingAppointments.length !== 0&quot;&gt;\n            &lt;table class=&quot;table-header&quot;&gt;\n                &lt;thead&gt;\n                &lt;tr&gt;\n                    &lt;th ng-repeat=&quot;heading in upcomingAppointmentsHeadings&quot;&gt;\n                        {{heading | translate}}\n                    &lt;/th&gt;\n                &lt;/tr&gt;\n                &lt;/thead&gt;\n                &lt;tbody&gt;\n                &lt;tr ng-repeat=&quot;appointment in upcomingAppointments&quot;&gt;\n                    &lt;td ng-repeat=&quot;detail in appointment&quot;&gt;\n                        {{detail}}\n                    &lt;/td&gt;\n                &lt;/tr&gt;\n                &lt;/tbody&gt;\n            &lt;/table&gt;\n        &lt;/ul&gt;\n    &lt;/ul&gt;\n\n\n    &lt;ul style=&quot;font-size: 14px;color: #000000&quot;&gt;\n        &lt;li style=&quot;background-color:#ddd;padding-top:3px;padding-bottom:3px&quot;&gt;\n            &lt;span style=&quot;padding-left: 10px&quot;&gt; {{::&quot;DASHBOARD_PAST_APPOINTMENTS_KEY&quot; | translate}} &lt;/span&gt;\n        &lt;/li&gt;\n\n        &lt;ul ng-if=&quot;pastAppointments.length === 0&quot; class=&quot;form-field&quot;&gt;\n            &lt;li&gt;{{::&quot;DASHBOARD_NO_PAST_APPOINTMENTS_KEY&quot; | translate}}&lt;/li&gt;\n        &lt;/ul&gt;\n\n        &lt;ul ng-if=&quot;pastAppointments.length !== 0&quot;&gt;\n            &lt;table class=&quot;table-header&quot;&gt;\n                &lt;thead&gt;\n                &lt;tr&gt;\n                    &lt;th ng-repeat=&quot;heading in pastAppointmentsHeadings&quot;&gt;\n                        {{heading | translate}}\n                    &lt;/th&gt;\n                &lt;/tr&gt;\n                &lt;/thead&gt;\n                &lt;tbody&gt;\n                &lt;tr ng-repeat=&quot;appointment in pastAppointments&quot;&gt;\n                    &lt;td ng-repeat=&quot;detail in appointment&quot;&gt;\n                        {{detail}}\n                    &lt;/td&gt;\n                &lt;/tr&gt;\n                &lt;/tbody&gt;\n            &lt;/table&gt;\n        &lt;/ul&gt;\n    &lt;/ul&gt;\n&lt;/section&gt;</pre>\n</div></div><p><br /></p><p><br /></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a836ce0c-d7e2-43e2-9fb7-6a1348e8be38\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"e7bb9994-7049-4b88-a576-187ac2b6cc59\" data-macro-name=\"toc\"> </div><p> </p></div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/700088324"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/700088324/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/700088324/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 62123057
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/700088324/child",
+    "restrictions": "/rest/api/content/700088324/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/700088324/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=700088324",
+    "webui": "/spaces/BAH/pages/700088324/Appointments+Display+Control",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/700088324",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/700088324",
+    "tinyui": "/x/BIC6KQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

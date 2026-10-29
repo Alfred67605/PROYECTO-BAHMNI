@@ -1,0 +1,170 @@
+{
+  "id": "18415804",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/18415804",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTg0MTU4MDQ=",
+  "status": "current",
+  "title": "Bahmni Server Administration",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Arun Paul",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Arun Paul",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3"
+      }
+    },
+    "createdDate": "2015-04-08T11:48:30.671Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/18415804/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "when": "2015-11-25T06:38:13.582Z",
+    "friendlyWhen": "Nov 25, 2015",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.n7287eZ9FJQnD0WUD2Yo2g.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$18415804.30",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/18415804"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/18415804/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:macro-id=\"7430be55-944b-41b3-ae61-7617210abea4\" ac:name=\"tip\" ac:schema-version=\"1\"><ac:parameter ac:name=\"title\">Sections</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:macro-id=\"d1934140-9707-4b54-960f-364bea66451c\" ac:name=\"children\" ac:schema-version=\"2\"><ac:parameter ac:name=\"all\">true</ac:parameter></ac:structured-macro>&nbsp;</p></ac:rich-text-body></ac:structured-macro>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/18415804"
+      }
+    },
+    "view": {
+      "value": "<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7430be55-944b-41b3-ae61-7617210abea4\" data-macro-name=\"tip\"><p class=\"title\">Sections</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"d1934140-9707-4b54-960f-364bea66451c\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/3997698/Automated+DB+backups+of+Bahmni\" data-linked-resource-id=\"3997698\" data-linked-resource-version=\"24\" data-linked-resource-type=\"page\">Automated DB backups of Bahmni</a></li><li><a href=\"/wiki/spaces/BAH/pages/11665409/Go+automation+at+hospital\" data-linked-resource-id=\"11665409\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Go automation at hospital</a></li><li><a href=\"/wiki/spaces/BAH/pages/92111010/Performing+a+Backup+of+Bahmni+Data+on+USB+or+External+Drive\" data-linked-resource-id=\"92111010\" data-linked-resource-version=\"7\" data-linked-resource-type=\"page\">Performing a Backup of Bahmni Data on USB or External Drive</a></li><li><a href=\"/wiki/spaces/BAH/pages/114728763/Configure+backup\" data-linked-resource-id=\"114728763\" data-linked-resource-version=\"41\" data-linked-resource-type=\"page\">Configure backup</a></li><li><a href=\"/wiki/spaces/BAH/pages/114729037/Backup+Restore+commands\" data-linked-resource-id=\"114729037\" data-linked-resource-version=\"94\" data-linked-resource-type=\"page\">Backup/Restore commands</a></li><li><a href=\"/wiki/spaces/BAH/pages/114895287/Known+Issues+with+DB+Backup+and+Restore\" data-linked-resource-id=\"114895287\" data-linked-resource-version=\"7\" data-linked-resource-type=\"page\">Known Issues with DB Backup and Restore</a></li></ul> <p> </p></div></div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/18415804"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/18415804/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/18415804/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 268519109
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/18415804/child",
+    "restrictions": "/rest/api/content/18415804/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/18415804/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=18415804",
+    "webui": "/spaces/BAH/pages/18415804/Bahmni+Server+Administration",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/18415804",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/18415804",
+    "tinyui": "/x/vAAZAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

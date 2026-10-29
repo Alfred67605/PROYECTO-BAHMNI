@@ -1,0 +1,171 @@
+{
+  "id": "28311588",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/28311588",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjgzMTE1ODg=",
+  "status": "current",
+  "title": "OpenERP Custom fields",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:fe640cd3-b942-4feb-a986-b3f3dc08b6f6",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "vikash gupta",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:fe640cd3-b942-4feb-a986-b3f3dc08b6f6",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "vikash gupta",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:fe640cd3-b942-4feb-a986-b3f3dc08b6f6"
+      }
+    },
+    "createdDate": "2015-09-11T05:56:35.133Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/28311588/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2022-03-13T15:04:23.671Z",
+    "friendlyWhen": "Mar 13, 2022",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "syncRev": "0.Ak1cUJaq_DaYGHbKavVigQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$28311588.49",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/28311588"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/28311588/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Steps</h2><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"8ce8927c-628b-4bda-bbbe-aa7d29e3692d\"><ac:rich-text-body><p>OpenERP/Odoo sync will fail if Patient Attributes are not created in Odoo in the `res.partner.attributes` table. Please see this thread to understand the steps: <a href=\"https://talk.openmrs.org/t/bahmni-implementation-creating-robust-deployment/36034/8?u=gsluthra\">https://talk.openmrs.org/t/bahmni-implementation-creating-robust-deployment/36034/8?u=gsluthra</a></p></ac:rich-text-body></ac:structured-macro><p><br /></p><p>In order to sync a new patient attribute from OpenMRS to OpenERP, a new column has to be added in 'res.partner.attributes' model of OpenERP.</p><p>Column name has to be same as the patient attribute name in OpenMRS.</p><p>Column name can be added to a table in OpenERP via UI in the following way</p><p><ac:image ac:width=\"780\"><ri:attachment ri:filename=\"openerp.gif\" ri:version-at-save=\"1\" /></ac:image></p></ac:layout-cell><ac:layout-cell><p><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/28311588"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"OpenERPCustomfields-Steps\">Steps</h2><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8ce8927c-628b-4bda-bbbe-aa7d29e3692d\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>OpenERP/Odoo sync will fail if Patient Attributes are not created in Odoo in the `res.partner.attributes` table. Please see this thread to understand the steps: <a class=\"external-link\" href=\"https://talk.openmrs.org/t/bahmni-implementation-creating-robust-deployment/36034/8?u=gsluthra\" rel=\"nofollow\">https://talk.openmrs.org/t/bahmni-implementation-creating-robust-deployment/36034/8?u=gsluthra</a></p></div></div><p><br/></p><p>In order to sync a new patient attribute from OpenMRS to OpenERP, a new column has to be added in 'res.partner.attributes' model of OpenERP.</p><p>Column name has to be same as the patient attribute name in OpenMRS.</p><p>Column name can be added to a table in OpenERP via UI in the following way</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"780\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/28311588/openerp.gif?version=1&amp;modificationDate=1441954666975&amp;cacheVersion=1&amp;api=v2&amp;width=780&amp;height=445\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/28311588/openerp.gif?version=1&amp;modificationDate=1441954666975&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"28311598\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"openerp.gif\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/gif\" data-linked-resource-container-id=\"28311588\" data-linked-resource-container-version=\"6\" data-media-id=\"d29c5509-6752-43fa-a8a2-48b6c76c9e42\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/28311588/openerp.gif?version=1&amp;modificationDate=1441954666975&amp;cacheVersion=1&amp;api=v2&amp;width=1425&amp;height=814 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/28311588/openerp.gif?version=1&amp;modificationDate=1441954666975&amp;cacheVersion=1&amp;api=v2&amp;width=780&amp;height=445 1x\"></span></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<p><br/></p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/28311588"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/28311588/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/28311588/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 509295257
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/28311588/child",
+    "restrictions": "/rest/api/content/28311588/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/28311588/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=28311588",
+    "webui": "/spaces/BAH/pages/28311588/OpenERP+Custom+fields",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/28311588",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/28311588",
+    "tinyui": "/x/JACwAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

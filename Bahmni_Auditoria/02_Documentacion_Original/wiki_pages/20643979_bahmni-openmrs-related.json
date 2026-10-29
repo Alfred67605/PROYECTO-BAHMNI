@@ -1,0 +1,172 @@
+{
+  "id": "20643979",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/20643979",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjA2NDM5Nzk=",
+  "status": "current",
+  "title": "Bahmni / OpenMRS related",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:dd7e513e-bc00-497a-a42a-e2b387df0018",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mujir Shaikh (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:dd7e513e-bc00-497a-a42a-e2b387df0018",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mujiruddin Shaikh (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:dd7e513e-bc00-497a-a42a-e2b387df0018"
+      }
+    },
+    "createdDate": "2015-05-22T07:51:45.501Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/20643979/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:dd7e513e-bc00-497a-a42a-e2b387df0018",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mujir Shaikh (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:dd7e513e-bc00-497a-a42a-e2b387df0018",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mujiruddin Shaikh (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:dd7e513e-bc00-497a-a42a-e2b387df0018"
+      }
+    },
+    "when": "2015-05-22T08:05:40.801Z",
+    "friendlyWhen": "May 22, 2015",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "0.5-5YDoL4GmU4gMsgA9STBA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$20643979.14",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/20643979"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/20643979/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ul><li><h3>Accessing OpenMRS redirects to initial db setup page.</h3><ol><li>Has tomcat been started as 'bahmni' user.</li><li>Check tomcat startup logs (catalina.out) to see if tomcat started before mysql. If it did, connection pool setup at tomcat start would have failed. Restart tomcat to fix. This would be fixed as part of <a href=\"https://trello.com/c/08tDK7xT/2282-at-times-tomcat-starts-before-mysql-has-started-this-messes-up-openmrs\">this</a> story.</li></ol></li><li><h3>Saving 'Consultation' in Bahmni returns an empty page (does not show the data you'd entered)</h3><ol><li>Ensure user in OpenMRS is associated with a provider.</li></ol></li></ul>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/20643979"
+      }
+    },
+    "view": {
+      "value": "<ul><li><h3 id=\"Bahmni/OpenMRSrelated-AccessingOpenMRSredirectstoinitialdbsetuppage.\">Accessing OpenMRS redirects to initial db setup page.</h3><ol><li>Has tomcat been started as 'bahmni' user.</li><li>Check tomcat startup logs (catalina.out) to see if tomcat started before mysql. If it did, connection pool setup at tomcat start would have failed. Restart tomcat to fix. This would be fixed as part of <a class=\"external-link\" href=\"https://trello.com/c/08tDK7xT/2282-at-times-tomcat-starts-before-mysql-has-started-this-messes-up-openmrs\" rel=\"nofollow\">this</a> story.</li></ol></li><li><h3 id=\"Bahmni/OpenMRSrelated-Saving&#39;Consultation&#39;inBahmnireturnsanemptypage(doesnotshowthedatayou&#39;dentered)\">Saving 'Consultation' in Bahmni returns an empty page (does not show the data you'd entered)</h3><ol><li>Ensure user in OpenMRS is associated with a provider.</li></ol></li></ul>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/20643979"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/20643979/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/20643979/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 0
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/20643979/child",
+    "restrictions": "/rest/api/content/20643979/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/20643979/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=20643979",
+    "webui": "/spaces/BAH/pages/20643979/Bahmni+OpenMRS+related",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/20643979",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/20643979",
+    "tinyui": "/x/iwA7AQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

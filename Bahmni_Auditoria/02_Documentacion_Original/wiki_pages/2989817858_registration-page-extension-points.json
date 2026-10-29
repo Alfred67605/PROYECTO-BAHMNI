@@ -1,0 +1,174 @@
+{
+  "id": "2989817858",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2989817858",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjk4OTgxNzg1OA==",
+  "status": "current",
+  "title": "Registration Page Extension Points",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5fdb0f0b8332a1010e267063",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "swati gogia (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5fdb0f0b8332a1010e267063",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Swati Gogia (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5fdb0f0b8332a1010e267063"
+      }
+    },
+    "createdDate": "2022-03-30T11:32:39.411Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2989817858/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "606ff87ba23f99007562c82d",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sanofer Sameera S",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/606ff87ba23f99007562c82d",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sanofer Sameera S",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=606ff87ba23f99007562c82d"
+      }
+    },
+    "when": "2023-07-25T11:29:04.314Z",
+    "friendlyWhen": "Jul 25, 2023",
+    "message": "",
+    "number": 12,
+    "minorEdit": false,
+    "syncRev": "0.confluence$content$2989817858.65",
+    "syncRevSource": "synchrony-ack",
+    "ncsStepVersion": "24",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$2989817858.71",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2989817858"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2989817858/version/12"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<h2>Description</h2><p>Bahmni Registration module provides an extension for linking/verifying other identifiers for patients. Implementers can plugin in their custom requirements leveraging this extension. </p><h2>Extensions</h2><p>Implementers are expected to leverage the extension point &ldquo;<code>org.bahmni.registration.identifier</code>&quot;. As of now, only &ldquo;link&rdquo; type are supported. This means that an implementer can specify an URL to a <br />sub-system/UI and Bahmni will launch in an IFRAME. It is expected that such an extension will return a basic FHIR patient resource (JSON) and send that as a message to the parent window. </p><p /><h4>Defining Extensions points on Registration page:</h4><p>File to be updated: openmrs/apps/registration/extension.json</p><table data-layout=\"default\" ac:local-id=\"e15f28e3-ab14-434a-a42e-0a3f560eba01\"><colgroup><col style=\"width: 680.0px;\" /></colgroup><tbody><tr><td><p>Example of adding an Extension</p></td></tr><tr><td><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"59abee44-04fa-400d-8735-50d91d1ae46a\"><ac:plain-text-body><![CDATA[\"IdentifierLookup\":{\n        \"id\": \"org.bahmni.registration.identifier.your_identifier_id\",\n        \"extensionPointId\": \"org.bahmni.registration.identifier\",\n        \"type\": \"link\",\n        \"src\" : \"/sample/index.html\",\n        \"extensionParams\": {\n            \"identifierType\": [\n                \"sampleIdentifier1\",\n                \"sampleIdentifier2\"\n            ],\n            \"nonEditable\": [\"givenName\",\"middleName\",\"familyName\",\"gender\",\"birthDate\",\"age\"],\n            \"linkDisplay\": \"Verify SampleIdentifier\",\n            \"addressMap\": {\n                \"city\": \"cityVillage\",\n                \"state\": \"stateProvince\",\n                \"postalCode\": \"postalCode\",\n                \"line\": [\"address1\"]\n            }\n            \"requiredPrivilege\": \"app:registration\"\n        }]]></ac:plain-text-body></ac:structured-macro></td></tr></tbody></table><p /><table data-layout=\"default\" ac:local-id=\"5b915d4a-d85f-49b9-b8b2-71205bf3710c\"><colgroup><col style=\"width: 259.0px;\" /><col style=\"width: 400.0px;\" /><col style=\"width: 100.0px;\" /></colgroup><tbody><tr><th><p>key</p></th><th><p>description</p></th><th><p>Mandatory</p></th></tr><tr><td><p>id</p></td><td><p>Unique identifier for extension</p></td><td><p>Y</p></td></tr><tr><td><p>extensionPointId</p></td><td><p>&quot;<code>org.bahmni.registration.identifier</code>&quot;</p></td><td><p>Y</p></td></tr><tr><td><p>type</p></td><td><p>link</p></td><td><p>Y</p></td></tr><tr><td><p>src</p></td><td><p>The source to be loaded on click of defined button</p></td><td><p>Y</p></td></tr><tr><td><p>extensionParams</p></td><td><p>Contains additional parameters which include extra identifier&rsquo;s name, button name and so on</p></td><td><p>Y</p></td></tr><tr><td><p>extensionParams.identifierType</p></td><td><p>one or more identifier type name. Note, if different identifier types require different source integration, define separate extensions. </p></td><td><p>Y</p></td></tr><tr><td><p>extensionParams.nonEditable</p></td><td><p>defines attributes which needs to be non-editable after extra Identifier linkage</p></td><td><p>N</p></td></tr><tr><td><p>extensionParams.linkDisplay</p></td><td><p>defines button display name</p></td><td><p>Y</p></td></tr><tr><td><p>extensionParams.addressMap</p></td><td><p>address map that maps the address FHIR object (returned from the link to registration page)  to field in registration page</p></td><td><p>N</p></td></tr></tbody></table><p /><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"152\" ac:original-width=\"710\"><ri:attachment ri:filename=\"Screenshot 2022-03-31 at 1.28.36 PM.png\" ri:version-at-save=\"1\" /></ac:image><p /><h2><strong>Assumptions</strong></h2><ol start=\"1\"><li><p>The link specifies the path to the UI that needs to be rendered on click of the link identifier button.</p></li><li><p>The external link returns an FHIR patient object to be mapped to Registration Page fields.</p></li></ol><p /><p>The returned payload is expected as a simple FHIR Patient resource. </p><p>Note: A complete patient resource is not required - only fields like identifier(s), name, birthdate, gender and address, those you want to be updated with a value from FHIR patient in registration page are expected. </p><p>If you provide patientUuid in FHIR patient id field, it will redirect to that patientUuid dashboard and update the respective details passed as a part of FHIR object. If id not defined, it will redirect and update details in the create new patient dashboard.</p><p>For example: consider the following FHIR Patient object</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"0f24c8a1-27aa-4605-9aae-e72bd0ebdad0\"><ac:plain-text-body><![CDATA[{\n  id: 'patientUuid',\n  identifiers: [\n    {\n      type: {\n        text: \"identifierType1\"\n      },\n      value: \"hina@xyz\"\n    },\n    {\n      type: {\n        text: \"identifierType2\"\n      },\n      value: \"57-0517-6745\"\n    }\n  ],\n  names: [\n    {\n      familyName: 'Patel',\n      givenName: [\n        'Hina',\n        ''\n      ],\n      use: ''\n    }\n  ],\n  gender: \"F\",\n  birthDate: \"2000-10-21\",\n  isBirthDateEstimated: false\n  contactPoint: [\n    {\n      system: 'phone',\n      value: '+919800083232'\n    }\n  ],\n  address: [\n    {\n      city: \"\",\n      country: \"IN\",\n      district: \"Bhopal\",\n      line: [\n        'A-12, Dholakpur'\n      ],\n      postalCode: \"212021\",\n      state: \"Madhya Pradesh\",\n      \n    }\n  ] \n}]]></ac:plain-text-body></ac:structured-macro><p /><p />",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2989817858"
+      }
+    },
+    "view": {
+      "value": "<h2 id=\"RegistrationPageExtensionPoints-Description\">Description</h2><p>Bahmni Registration module provides an extension for linking/verifying other identifiers for patients. Implementers can plugin in their custom requirements leveraging this extension. </p><h2 id=\"RegistrationPageExtensionPoints-Extensions\">Extensions</h2><p>Implementers are expected to leverage the extension point “<code>org.bahmni.registration.identifier</code>&quot;. As of now, only “link” type are supported. This means that an implementer can specify an URL to a <br/>sub-system/UI and Bahmni will launch in an IFRAME. It is expected that such an extension will return a basic FHIR patient resource (JSON) and send that as a message to the parent window. </p><p /><h4 id=\"RegistrationPageExtensionPoints-DefiningExtensionspointsonRegistrationpage:\">Defining Extensions points on Registration page:</h4><p>File to be updated: openmrs/apps/registration/extension.json</p><div class=\"table-wrap\"><table data-layout=\"default\" data-local-id=\"e15f28e3-ab14-434a-a42e-0a3f560eba01\" class=\"confluenceTable\"><colgroup><col style=\"width: 680.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p>Example of adding an Extension</p></td></tr><tr><td class=\"confluenceTd\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"59abee44-04fa-400d-8735-50d91d1ae46a\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;IdentifierLookup&quot;:{\n        &quot;id&quot;: &quot;org.bahmni.registration.identifier.your_identifier_id&quot;,\n        &quot;extensionPointId&quot;: &quot;org.bahmni.registration.identifier&quot;,\n        &quot;type&quot;: &quot;link&quot;,\n        &quot;src&quot; : &quot;/sample/index.html&quot;,\n        &quot;extensionParams&quot;: {\n            &quot;identifierType&quot;: [\n                &quot;sampleIdentifier1&quot;,\n                &quot;sampleIdentifier2&quot;\n            ],\n            &quot;nonEditable&quot;: [&quot;givenName&quot;,&quot;middleName&quot;,&quot;familyName&quot;,&quot;gender&quot;,&quot;birthDate&quot;,&quot;age&quot;],\n            &quot;linkDisplay&quot;: &quot;Verify SampleIdentifier&quot;,\n            &quot;addressMap&quot;: {\n                &quot;city&quot;: &quot;cityVillage&quot;,\n                &quot;state&quot;: &quot;stateProvince&quot;,\n                &quot;postalCode&quot;: &quot;postalCode&quot;,\n                &quot;line&quot;: [&quot;address1&quot;]\n            }\n            &quot;requiredPrivilege&quot;: &quot;app:registration&quot;\n        }</pre>\n</div></div></td></tr></tbody></table></div><p /><div class=\"table-wrap\"><table data-layout=\"default\" data-local-id=\"5b915d4a-d85f-49b9-b8b2-71205bf3710c\" class=\"confluenceTable\"><colgroup><col style=\"width: 259.0px;\"/><col style=\"width: 400.0px;\"/><col style=\"width: 100.0px;\"/></colgroup><tbody><tr><th class=\"confluenceTh\"><p>key</p></th><th class=\"confluenceTh\"><p>description</p></th><th class=\"confluenceTh\"><p>Mandatory</p></th></tr><tr><td class=\"confluenceTd\"><p>id</p></td><td class=\"confluenceTd\"><p>Unique identifier for extension</p></td><td class=\"confluenceTd\"><p>Y</p></td></tr><tr><td class=\"confluenceTd\"><p>extensionPointId</p></td><td class=\"confluenceTd\"><p>&quot;<code>org.bahmni.registration.identifier</code>&quot;</p></td><td class=\"confluenceTd\"><p>Y</p></td></tr><tr><td class=\"confluenceTd\"><p>type</p></td><td class=\"confluenceTd\"><p>link</p></td><td class=\"confluenceTd\"><p>Y</p></td></tr><tr><td class=\"confluenceTd\"><p>src</p></td><td class=\"confluenceTd\"><p>The source to be loaded on click of defined button</p></td><td class=\"confluenceTd\"><p>Y</p></td></tr><tr><td class=\"confluenceTd\"><p>extensionParams</p></td><td class=\"confluenceTd\"><p>Contains additional parameters which include extra identifier’s name, button name and so on</p></td><td class=\"confluenceTd\"><p>Y</p></td></tr><tr><td class=\"confluenceTd\"><p>extensionParams.identifierType</p></td><td class=\"confluenceTd\"><p>one or more identifier type name. Note, if different identifier types require different source integration, define separate extensions. </p></td><td class=\"confluenceTd\"><p>Y</p></td></tr><tr><td class=\"confluenceTd\"><p>extensionParams.nonEditable</p></td><td class=\"confluenceTd\"><p>defines attributes which needs to be non-editable after extra Identifier linkage</p></td><td class=\"confluenceTd\"><p>N</p></td></tr><tr><td class=\"confluenceTd\"><p>extensionParams.linkDisplay</p></td><td class=\"confluenceTd\"><p>defines button display name</p></td><td class=\"confluenceTd\"><p>Y</p></td></tr><tr><td class=\"confluenceTd\"><p>extensionParams.addressMap</p></td><td class=\"confluenceTd\"><p>address map that maps the address FHIR object (returned from the link to registration page)  to field in registration page</p></td><td class=\"confluenceTd\"><p>N</p></td></tr></tbody></table></div><p /><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/2989817858/Screenshot%202022-03-31%20at%201.28.36%20PM.png?version=1&amp;modificationDate=1648713875752&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/2989817858/Screenshot%202022-03-31%20at%201.28.36%20PM.png?version=1&amp;modificationDate=1648713875752&amp;cacheVersion=1&amp;api=v2\" data-height=\"152\" data-width=\"710\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2990931973\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screenshot 2022-03-31 at 1.28.36 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"2989817858\" data-linked-resource-container-version=\"12\" data-media-id=\"a78c7a3a-9e33-4be9-afa5-59c40fa01bbd\" data-media-type=\"file\"></span><p /><h2 id=\"RegistrationPageExtensionPoints-Assumptions\"><strong>Assumptions</strong></h2><ol start=\"1\"><li><p>The link specifies the path to the UI that needs to be rendered on click of the link identifier button.</p></li><li><p>The external link returns an FHIR patient object to be mapped to Registration Page fields.</p></li></ol><p /><p>The returned payload is expected as a simple FHIR Patient resource. </p><p>Note: A complete patient resource is not required - only fields like identifier(s), name, birthdate, gender and address, those you want to be updated with a value from FHIR patient in registration page are expected. </p><p>If you provide patientUuid in FHIR patient id field, it will redirect to that patientUuid dashboard and update the respective details passed as a part of FHIR object. If id not defined, it will redirect and update details in the create new patient dashboard.</p><p>For example: consider the following FHIR Patient object</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0f24c8a1-27aa-4605-9aae-e72bd0ebdad0\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n  id: 'patientUuid',\n  identifiers: [\n    {\n      type: {\n        text: &quot;identifierType1&quot;\n      },\n      value: &quot;hina@xyz&quot;\n    },\n    {\n      type: {\n        text: &quot;identifierType2&quot;\n      },\n      value: &quot;57-0517-6745&quot;\n    }\n  ],\n  names: [\n    {\n      familyName: 'Patel',\n      givenName: [\n        'Hina',\n        ''\n      ],\n      use: ''\n    }\n  ],\n  gender: &quot;F&quot;,\n  birthDate: &quot;2000-10-21&quot;,\n  isBirthDateEstimated: false\n  contactPoint: [\n    {\n      system: 'phone',\n      value: '+919800083232'\n    }\n  ],\n  address: [\n    {\n      city: &quot;&quot;,\n      country: &quot;IN&quot;,\n      district: &quot;Bhopal&quot;,\n      line: [\n        'A-12, Dholakpur'\n      ],\n      postalCode: &quot;212021&quot;,\n      state: &quot;Madhya Pradesh&quot;,\n      \n    }\n  ] \n}</pre>\n</div></div><p /><p />",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2989817858"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2989817858/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2989817858/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 315300306
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2989817858/child",
+    "restrictions": "/rest/api/content/2989817858/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2989817858/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2989817858",
+    "webui": "/spaces/BAH/pages/2989817858/Registration+Page+Extension+Points",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2989817858",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2989817858",
+    "tinyui": "/x/AgA1sg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "id": "1173782545",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/1173782545",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE3Mzc4MjU0NQ==",
+  "status": "current",
+  "title": "Managing Lots / Serial Numbers (Batches)",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5e43cc7490dfb70c9e609d8c",
+      "accountType": "atlassian",
+      "email": "rahulnuchange@gmail.com",
+      "publicName": "Rahul Kumrawat",
+      "timeZone": "Asia/Calcutta",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e43cc7490dfb70c9e609d8c",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Rahul Kumrawat",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e43cc7490dfb70c9e609d8c"
+      }
+    },
+    "createdDate": "2020-03-31T05:29:52.415Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1173782545/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:0114694a-2065-4f19-96b2-e3818cd876a3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "apaule",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:0114694a-2065-4f19-96b2-e3818cd876a3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Arun Paul",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:0114694a-2065-4f19-96b2-e3818cd876a3"
+      }
+    },
+    "when": "2020-04-01T11:34:12.204Z",
+    "friendlyWhen": "Apr 01, 2020",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "syncRev": "0.llOyHm1DvYbpLxa9fBm2xw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$1173782545.96",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/1173782545"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1173782545/version/4"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\" ac:breakout-mode=\"default\"><ac:layout-cell><h2>About the Feature</h2><p>Adding the lots / serial numbers (batches) one by one for each product (Consumables / Stockable) and in bulk by uploading a CSV file. </p><ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p>The following steps and screenshots are explained as per Odoo 10, available on Bahmni 0.92 release.</p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p>The following steps and screenshots are explained as per Odoo 10, available on Bahmni 0.92 release.</p>\n</div></div></ac:adf-fallback></ac:adf-extension><h2>Used By</h2><p>This feature is used by Pharmacist or Hospital Admin or Stock Manager.</p><h2>How is it Used?</h2><h3>1. Adding the Lots / Serial Numbers for each product one by one</h3><ol><li><p>Click on the &ldquo;Inventory&rdquo; menu appearing in the navigation menu at the top of the screen.</p></li><li><p>Click on the &ldquo;Lots/Serial Numbers&rdquo; option in the left panel appearing under the &ldquo;Inventory Control&rdquo; section, which will be listing the Lots/Serial Numbers i.e. batches of available in inventory of various products.</p></li><li><p>To create a new lot, click on the &ldquo;Create&rdquo; button appearing at the top left side of the screen.</p></li><li><p>Enter the Lot/Serial Number in respective field, search and select the desired product entering the name of the same in the &ldquo;Product&rdquo; field.&nbsp;</p></li><li><p>Enter other details like Cost Price, Sale Price, MRP and Dates in respective fields. Sale price is what is being used to sell the product, not MRP.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"370\" ac:original-width=\"857\"><ri:attachment ri:filename=\"Fuh81dfssi4-16JuIAivas8dI7RcD2YBT_wrb8iRrWr99uWss2nHz2fD626sjzmEKIVcaYS8HFKx6ZjiF18pnGDRL78Mh8qRm6mST29txsYaXVTwUtG7JXcNqNemhvWvhjxEXIVc\" ri:version-at-save=\"1\" /></ac:image></li><li><p>Click on the &ldquo;Save&rdquo; button to save the new lot / batch with entered details.</p></li></ol><ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p>Quantity cannot be specified while adding / editing a lot. Quantity can be updated at product level or through Inventory Adjustments feature. For more details refer the next section i.e. <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Adjusting / Updating the Product Quantity in Inventory\" ri:version-at-save=\"1\" /><ac:link-body>Adjusting / Updating the Product Quantity in Inventory</ac:link-body></ac:link> </p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p>Quantity cannot be specified while adding / editing a lot. Quantity can be updated at product level or through Inventory Adjustments feature. For more details refer the next section i.e. <a href=\"/wiki/spaces/BAH/pages/1172668475\">Adjusting / Updating the Product Quantity in Inventory</a> </p>\n</div></div></ac:adf-fallback></ac:adf-extension><h3>2. Exporting the existing Lots</h3><ol><li><p>Go to the &ldquo;Lots/Serial Numbers&rdquo; screen.</p></li><li><p>To get a list of existing lots/serial numbers, select the desired records in the grid to export.</p></li><li><p>Click on the &ldquo;Action&rdquo; button at the top of the screen and select &ldquo;Export&rdquo; option.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"176\" ac:original-width=\"1108\"><ri:attachment ri:filename=\"kvjuhY4f5oUxlSK1q5kswDiM3blfWaEiOM-VrCH6eL6hrI0-QSgrLrbhXwcTiR7rXwtiVZg4VG3VChAcz7C1WbGvKN4E3t8GjhyEiKgO26xX41YTLMX5RdemxrMs6khL_Uz1_s7u\" ri:version-at-save=\"1\" /></ac:image></li><li><p>Now select and add the desired fields, which you need to export, from &ldquo;Available fields&rdquo; to the &ldquo;Fields to export&rdquo; section in the &ldquo;Export Data&rdquo; popup.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"442\" ac:original-width=\"606\"><ri:attachment ri:filename=\"image-20200331-070223.png\" ri:version-at-save=\"1\" /></ac:image></li><li><p>Click on the &ldquo;Export to File&rdquo; button appearing at the bottom left corner of the popup, which will download a CSV file consisting of the added field values.</p></li></ol><h3>3. Adding / Importing lots (batch), through CSV file upload</h3><ol><li><p>To import the new batches, first you need to Create a CSV file with some mandatory details as shown in below image. Refer attached file (Lots_Serial Numbers Upload Sample.csv) for better understanding.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"84\" ac:original-width=\"837\"><ri:attachment ri:filename=\"image-20200331-090040.png\" ri:version-at-save=\"1\" /></ac:image><p /></li><li><p>Click on the &ldquo;Import&rdquo; button and load the CSV file (created with the mandatory details as per above) in the &ldquo;Lots/Serial Numbers&rdquo; screen.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"424\" ac:original-width=\"985\"><ri:attachment ri:filename=\"NrLJ7Lfjgvts7jRg3XrfmG3rT_btN4a7nFX8T4_T7MVgTsOQsnAbRasmjfEpa9FGuIaLEmfaa9nqwIDcN-U26YyBjfHzvlMgdjNXI8m8i1bSh9fgtzmbWJ1cpyDXzPdVSCI053Cz\" ri:version-at-save=\"1\" /></ac:image></li><li><p>Click on the &ldquo;Validate&rdquo; button and then on the &ldquo;Import&rdquo; button, if everything seems valid. Once imported, all the lots/serial numbers listed in the CSV sheet will get created.</p></li></ol><p class=\"media-group\"><ac:structured-macro ac:name=\"view-file\" ac:schema-version=\"1\" ac:macro-id=\"aa28fe0d-70b8-479e-b9f1-bb529e1c1416\"><ac:parameter ac:name=\"name\"><ri:attachment ri:filename=\"Lots_Serial Numbers Upload Sample.csv\" ri:version-at-save=\"2\" /></ac:parameter></ac:structured-macro></p></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" data-layout=\"default\" ac:macro-id=\"9c5edb08-bc97-4a57-b25f-b33577e8894f\" /><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"59168832-01b1-4839-8d0c-1bc395dcf32d\"><ac:rich-text-body><p><strong>Feature Details</strong></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/32604221\">Feature Guide - Stock / Inventory Management</a> </p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"bd2d30c7-a55d-4e54-b499-df454347c4a7\"><ac:rich-text-body><p><strong>Implementation Details</strong></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/900530225/Odoo+Inventory+Configuration\"> Implementer's Guide - Odoo Modules - Odoo Inventory Configuration</a> </p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"fixed-width\" ac:breakout-mode=\"default\"><ac:layout-cell><p /></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/1173782545"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ManagingLots/SerialNumbers(Batches)-AbouttheFeature\">About the Feature</h2><p>Adding the lots / serial numbers (batches) one by one for each product (Consumables / Stockable) and in bulk by uploading a CSV file. </p><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p>The following steps and screenshots are explained as per Odoo 10, available on Bahmni 0.92 release.</p>\n</div></div><h2 id=\"ManagingLots/SerialNumbers(Batches)-UsedBy\">Used By</h2><p>This feature is used by Pharmacist or Hospital Admin or Stock Manager.</p><h2 id=\"ManagingLots/SerialNumbers(Batches)-HowisitUsed?\">How is it Used?</h2><h3 id=\"ManagingLots/SerialNumbers(Batches)-1.AddingtheLots/SerialNumbersforeachproductonebyone\">1. Adding the Lots / Serial Numbers for each product one by one</h3><ol><li><p>Click on the “Inventory” menu appearing in the navigation menu at the top of the screen.</p></li><li><p>Click on the “Lots/Serial Numbers” option in the left panel appearing under the “Inventory Control” section, which will be listing the Lots/Serial Numbers i.e. batches of available in inventory of various products.</p></li><li><p>To create a new lot, click on the “Create” button appearing at the top left side of the screen.</p></li><li><p>Enter the Lot/Serial Number in respective field, search and select the desired product entering the name of the same in the “Product” field. </p></li><li><p>Enter other details like Cost Price, Sale Price, MRP and Dates in respective fields. Sale price is what is being used to sell the product, not MRP.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173782545/Fuh81dfssi4-16JuIAivas8dI7RcD2YBT_wrb8iRrWr99uWss2nHz2fD626sjzmEKIVcaYS8HFKx6ZjiF18pnGDRL78Mh8qRm6mST29txsYaXVTwUtG7JXcNqNemhvWvhjxEXIVc?version=1&amp;modificationDate=1585637084316&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173782545/Fuh81dfssi4-16JuIAivas8dI7RcD2YBT_wrb8iRrWr99uWss2nHz2fD626sjzmEKIVcaYS8HFKx6ZjiF18pnGDRL78Mh8qRm6mST29txsYaXVTwUtG7JXcNqNemhvWvhjxEXIVc?version=1&amp;modificationDate=1585637084316&amp;cacheVersion=1&amp;api=v2\" data-height=\"370\" data-width=\"857\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1172668447\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Fuh81dfssi4-16JuIAivas8dI7RcD2YBT_wrb8iRrWr99uWss2nHz2fD626sjzmEKIVcaYS8HFKx6ZjiF18pnGDRL78Mh8qRm6mST29txsYaXVTwUtG7JXcNqNemhvWvhjxEXIVc\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1173782545\" data-linked-resource-container-version=\"4\" data-media-id=\"50d41183-e86f-44de-b841-7f84000004da\" data-media-type=\"file\"></span></li><li><p>Click on the “Save” button to save the new lot / batch with entered details.</p></li></ol><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p>Quantity cannot be specified while adding / editing a lot. Quantity can be updated at product level or through Inventory Adjustments feature. For more details refer the next section i.e. <a href=\"/wiki/spaces/BAH/pages/1172668475/Adjusting+Updating+the+Product+Quantity+in+Inventory\" data-linked-resource-id=\"1172668475\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">Adjusting / Updating the Product Quantity in Inventory</a> </p>\n</div></div><h3 id=\"ManagingLots/SerialNumbers(Batches)-2.ExportingtheexistingLots\">2. Exporting the existing Lots</h3><ol><li><p>Go to the “Lots/Serial Numbers” screen.</p></li><li><p>To get a list of existing lots/serial numbers, select the desired records in the grid to export.</p></li><li><p>Click on the “Action” button at the top of the screen and select “Export” option.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173782545/kvjuhY4f5oUxlSK1q5kswDiM3blfWaEiOM-VrCH6eL6hrI0-QSgrLrbhXwcTiR7rXwtiVZg4VG3VChAcz7C1WbGvKN4E3t8GjhyEiKgO26xX41YTLMX5RdemxrMs6khL_Uz1_s7u?version=1&amp;modificationDate=1585637697494&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173782545/kvjuhY4f5oUxlSK1q5kswDiM3blfWaEiOM-VrCH6eL6hrI0-QSgrLrbhXwcTiR7rXwtiVZg4VG3VChAcz7C1WbGvKN4E3t8GjhyEiKgO26xX41YTLMX5RdemxrMs6khL_Uz1_s7u?version=1&amp;modificationDate=1585637697494&amp;cacheVersion=1&amp;api=v2\" data-height=\"176\" data-width=\"1108\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1173618734\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"kvjuhY4f5oUxlSK1q5kswDiM3blfWaEiOM-VrCH6eL6hrI0-QSgrLrbhXwcTiR7rXwtiVZg4VG3VChAcz7C1WbGvKN4E3t8GjhyEiKgO26xX41YTLMX5RdemxrMs6khL_Uz1_s7u\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1173782545\" data-linked-resource-container-version=\"4\" data-media-id=\"8402f342-2a84-4212-8d04-3268748fa207\" data-media-type=\"file\"></span></li><li><p>Now select and add the desired fields, which you need to export, from “Available fields” to the “Fields to export” section in the “Export Data” popup.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173782545/image-20200331-070223.png?version=1&amp;modificationDate=1585638146441&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173782545/image-20200331-070223.png?version=1&amp;modificationDate=1585638146441&amp;cacheVersion=1&amp;api=v2\" data-height=\"442\" data-width=\"606\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1173782576\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200331-070223.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1173782545\" data-linked-resource-container-version=\"4\" data-media-id=\"a923cf32-c03a-4d0a-b3e3-66373f98cf60\" data-media-type=\"file\"></span></li><li><p>Click on the “Export to File” button appearing at the bottom left corner of the popup, which will download a CSV file consisting of the added field values.</p></li></ol><h3 id=\"ManagingLots/SerialNumbers(Batches)-3.Adding/Importinglots(batch),throughCSVfileupload\">3. Adding / Importing lots (batch), through CSV file upload</h3><ol><li><p>To import the new batches, first you need to Create a CSV file with some mandatory details as shown in below image. Refer attached file (Lots_Serial Numbers Upload Sample.csv) for better understanding.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173782545/image-20200331-090040.png?version=1&amp;modificationDate=1585645243232&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173782545/image-20200331-090040.png?version=1&amp;modificationDate=1585645243232&amp;cacheVersion=1&amp;api=v2\" data-height=\"84\" data-width=\"837\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1173782662\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200331-090040.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1173782545\" data-linked-resource-container-version=\"4\" data-media-id=\"bdbd8762-ed3f-44eb-87df-44f27367de57\" data-media-type=\"file\"></span><p /></li><li><p>Click on the “Import” button and load the CSV file (created with the mandatory details as per above) in the “Lots/Serial Numbers” screen.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173782545/NrLJ7Lfjgvts7jRg3XrfmG3rT_btN4a7nFX8T4_T7MVgTsOQsnAbRasmjfEpa9FGuIaLEmfaa9nqwIDcN-U26YyBjfHzvlMgdjNXI8m8i1bSh9fgtzmbWJ1cpyDXzPdVSCI053Cz?version=1&amp;modificationDate=1585638399263&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/1173782545/NrLJ7Lfjgvts7jRg3XrfmG3rT_btN4a7nFX8T4_T7MVgTsOQsnAbRasmjfEpa9FGuIaLEmfaa9nqwIDcN-U26YyBjfHzvlMgdjNXI8m8i1bSh9fgtzmbWJ1cpyDXzPdVSCI053Cz?version=1&amp;modificationDate=1585638399263&amp;cacheVersion=1&amp;api=v2\" data-height=\"424\" data-width=\"985\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1173782588\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"NrLJ7Lfjgvts7jRg3XrfmG3rT_btN4a7nFX8T4_T7MVgTsOQsnAbRasmjfEpa9FGuIaLEmfaa9nqwIDcN-U26YyBjfHzvlMgdjNXI8m8i1bSh9fgtzmbWJ1cpyDXzPdVSCI053Cz\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"1173782545\" data-linked-resource-container-version=\"4\" data-media-id=\"3304ba9f-39fd-422c-9862-9115f44b02db\" data-media-type=\"file\"></span></li><li><p>Click on the “Validate” button and then on the “Import” button, if everything seems valid. Once imported, all the lots/serial numbers listed in the CSV sheet will get created.</p></li></ol><p class=\"media-group\"><span class=\"confluence-embedded-file-wrapper conf-macro output-inline\" data-hasbody=\"false\" data-macro-id=\"aa28fe0d-70b8-479e-b9f1-bb529e1c1416\" data-macro-name=\"view-file\"><a class=\"confluence-embedded-file\" href=\"/wiki/download/attachments/1173782545/Lots_Serial%20Numbers%20Upload%20Sample.csv?version=2&amp;modificationDate=1585645747548&amp;cacheVersion=1&amp;api=v2\" data-nice-type=\"null\" data-file-src=\"/wiki/download/attachments/1173782545/Lots_Serial%20Numbers%20Upload%20Sample.csv?version=2&amp;modificationDate=1585645747548&amp;cacheVersion=1&amp;api=v2\" data-linked-resource-id=\"1173618816\" data-linked-resource-type=\"attachment\" data-linked-resource-container-id=\"1173782545\" data-linked-resource-default-alias=\"Lots_Serial Numbers Upload Sample.csv\" data-mime-type=\"text/csv\" data-has-thumbnail=\"true\" data-linked-resource-version=\"2\" data-media-id=\"4eba3c7a-a628-4c4a-b7dc-58265662734e\" data-media-type=\"file\"><img src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/1173782545/Lots_Serial%20Numbers%20Upload%20Sample.csv?version=2&amp;modificationDate=1585645747548&amp;cacheVersion=1&amp;api=v2&amp;viewType=fileMacro\" height=\"250\" /></a></span></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-layout=\"default\" data-macro-id=\"9c5edb08-bc97-4a57-b25f-b33577e8894f\" data-macro-name=\"toc\"> </div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"59168832-01b1-4839-8d0c-1bc395dcf32d\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>Feature Details</strong></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/32604221\" rel=\"nofollow\">Feature Guide - Stock / Inventory Management</a> </p></div></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"bd2d30c7-a55d-4e54-b499-df454347c4a7\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>Implementation Details</strong></p><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/900530225/Odoo+Inventory+Configuration\" rel=\"nofollow\"> Implementer's Guide - Odoo Modules - Odoo Inventory Configuration</a> </p></div></div></div>\n</div>\n</div>\n<div class=\"columnLayout fixed-width\" data-layout=\"fixed-width\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p /></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/1173782545"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/1173782545/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1173782545/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 946759241
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/1173782545/child",
+    "restrictions": "/rest/api/content/1173782545/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/1173782545/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=1173782545",
+    "webui": "/spaces/BAH/pages/1173782545/Managing+Lots+Serial+Numbers+Batches",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/1173782545",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/1173782545",
+    "tinyui": "/x/EYD2RQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "id": "3739189264",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3739189264",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzczOTE4OTI2NA==",
+  "status": "current",
+  "title": "SMTP Configuration for sending emails (docker)",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "createdDate": "2024-09-08T15:38:32.586Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3739189264/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "when": "2024-09-08T15:50:20.117Z",
+    "friendlyWhen": "Sept 08, 2024",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "ncsStepVersion": "987",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3739189264.21",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3739189264"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3739189264/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>Bahmni supports sending of email notifications to patients on different events such as teleconsultation appointments, adhoc teleconsultation, prescription sharing etc. For these emails to flow out of Bahmni, SMTP server details needs to be configured in the .env file which will be used by the OpenMRS service.</p><h3>.env file configuration</h3><p>In your implementation specific env file, update the values for the below files. These properties can be retrieved from your SMTP provider such as AWS SES, Google Mail etc.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"a71b01ad-8d35-4d74-b8ac-d61f72f85eb4\"><ac:plain-text-body><![CDATA[SEND_MAIL=true\nMAIL_FROM=\nMAIL_SMTP_HOST=\nMAIL_SMTP_PORT=\nMAIL_USER=\nMAIL_PASSWORD=\nMAIL_TRANSPORT_PROTOCOL=smtps\nMAIL_SMTP_AUTH=true\nMAIL_SMTP_STARTTLS_ENABLE=true\nMAIL_SMTP_SSL_ENABLE=true\nMAIL_DEBUG=false]]></ac:plain-text-body></ac:structured-macro><p>Once the properties are updated, recreate the service by running <code>docker compose up -d openmrs</code>.</p><p>There are also few Global properties which control email sending behaviours for OpenMRS features. Thos can be accessed by navigating to OpenMRS &rarr; Administration &rarr; Settings &rarr; Mail</p><p>Reference Links:</p><ol start=\"1\"><li><p><a href=\"https://support.google.com/a/answer/176600\" data-card-appearance=\"inline\">https://support.google.com/a/answer/176600</a> </p></li></ol><p />",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3739189264"
+      }
+    },
+    "view": {
+      "value": "<p>Bahmni supports sending of email notifications to patients on different events such as teleconsultation appointments, adhoc teleconsultation, prescription sharing etc. For these emails to flow out of Bahmni, SMTP server details needs to be configured in the .env file which will be used by the OpenMRS service.</p><h3 id=\"SMTPConfigurationforsendingemails(docker)-.envfileconfiguration\">.env file configuration</h3><p>In your implementation specific env file, update the values for the below files. These properties can be retrieved from your SMTP provider such as AWS SES, Google Mail etc.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a71b01ad-8d35-4d74-b8ac-d61f72f85eb4\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">SEND_MAIL=true\nMAIL_FROM=\nMAIL_SMTP_HOST=\nMAIL_SMTP_PORT=\nMAIL_USER=\nMAIL_PASSWORD=\nMAIL_TRANSPORT_PROTOCOL=smtps\nMAIL_SMTP_AUTH=true\nMAIL_SMTP_STARTTLS_ENABLE=true\nMAIL_SMTP_SSL_ENABLE=true\nMAIL_DEBUG=false</pre>\n</div></div><p>Once the properties are updated, recreate the service by running <code>docker compose up -d openmrs</code>.</p><p>There are also few Global properties which control email sending behaviours for OpenMRS features. Thos can be accessed by navigating to OpenMRS → Administration → Settings → Mail</p><p>Reference Links:</p><ol start=\"1\"><li><p><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://support.google.com/a/answer/176600\" rel=\"nofollow\">https://support.google.com/a/answer/176600</a> </p></li></ol><p />",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3739189264"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3739189264/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3739189264/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 985675644
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3739189264/child",
+    "restrictions": "/rest/api/content/3739189264/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3739189264/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3739189264",
+    "webui": "/spaces/BAH/pages/3739189264/SMTP+Configuration+for+sending+emails+docker",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3739189264",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3739189264",
+    "tinyui": "/x/EIDf3g",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

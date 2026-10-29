@@ -1,0 +1,172 @@
+{
+  "id": "703922251",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/703922251",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNzAzOTIyMjUx",
+  "status": "current",
+  "title": "Operation Theatre Scheduling Module",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Himabindu Thungathurty",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Akkinepalli",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66"
+      }
+    },
+    "createdDate": "2018-08-20T08:37:18.872Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/703922251/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "when": "2020-02-10T00:40:49.776Z",
+    "friendlyWhen": "Feb 10, 2020",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "syncRev": "0.O0JxQtQ8vUp1VnjsRj-IWw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$703922251.110",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/703922251"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/703922251/version/8"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Description</h2><p><span><span>Scheduling of surgeries in any care setting is a challenging task. There are multiple variables that go into consideration - Surgeon&rsquo;s availability, the patient&rsquo;s condition, availability of the OT and the right medical devices/ surgical instruments etc among other things. And if done rightly, it contributes to improving the operational efficiency of the hospital and also ensures timely care to patients with minimal waiting time. Hence it is important that the staff are supported with the right tool to make efficient schedules. </span></span></p><p><span><span>OT scheduling in Bahmni <span>allows the users to manage several operating rooms, in which they can schedule patient's surgeries with the appropriate Surgical Team. It comes with both a List as well as a Calendar view for the schedule to be managed.&nbsp;</span></span></span></p><p>Operation Theatre module comes out of the box with the Bahmni installation.</p><h3><strong>Prerequisite:</strong></h3><p>To use OT module in any specific implementation, We need to configure at least one location as operation theatre</p><p><strong>Steps to add a operation theatre location:</strong></p><ul><li>Go to Openmrs&nbsp;&rarr; Administration&nbsp;&rarr; Manage locations</li><li>Add a new location or tag existing location as &quot;Operation Theater&quot;. This tag comes with Bahmni installation<ul><li>Its a good practice to organise locations inline with hospital setups. For example, you may want to have&nbsp;&nbsp;an 'Operation Theater' organised within a location representing a department. For more information around locations and relevance to Bahmni please see <ac:link><ri:page ri:content-title=\"Visit Location\" ri:version-at-save=\"37\" /><ac:plain-text-link-body><![CDATA[\"Visit Location\"]]></ac:plain-text-link-body></ac:link></li></ul></li></ul><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<ac:image ac:border=\"true\" ac:width=\"650\"><ri:attachment ri:filename=\"Screen Shot 2018-08-20 at 2.58.34 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><h3><strong>Surgical Appointment Display Control in Patient Summary Dashboard:&nbsp;</strong></h3><p><span>A custom display control has been set up for a user to view patient surgery details on the dashboard.</span></p><p><span>&nbsp; &nbsp; &nbsp;<ac:image ac:border=\"true\" ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2018-08-20 at 5.46.57 PM.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p><br /></p><h3><span><strong>Calendar Color Configuration:</strong></span></h3><p><span>The calendar view of the Operation Theatre module supports a color to be configured against a surgeon. For this, you need to have a specific provider attribute &quot;otCalendarColor&quot; configured in the system.&nbsp;</span></p><p><br /></p><ol><li><span>Go to Openmrs&nbsp;&rarr;&nbsp;<span>Administration &rarr;&nbsp;<span>Manage Provider Attribute Types</span></span></span></li><li>Check the list if an attribute &quot;otCalendarColor&quot; exists, if not then we need to define that.&nbsp;</li><li><span>To define, click &quot;Add Provider Attribute Type&quot; link</span></li><li><span><span>In the form thats displayed, mention Name: otCalendarColor, Data type: Free Text. Save the form.&nbsp;</span></span></li></ol><p><span><span>Now, you can assign a value for the &quot;otCalendarColor&quot; for a provider.&nbsp;</span></span></p><ul><li><span><span>NOTE: <strong>0 </strong>(default color)<strong> to 359</strong> is the recommended configuration values</span></span></li></ul><h2><u>Data Model for OT module</u></h2><p><span><span><ac:image ac:width=\"1000\"><ri:attachment ri:filename=\"image2020-2-10_6-9-35.png\" ri:version-at-save=\"1\" /></ac:image></span></span></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"eee1f9bc-49bd-44f7-86a2-f81eae2f95ca\"><ac:rich-text-body><p><span>This module is available only from release 0.91 onwards.</span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Operation Theatre Scheduling in Bahmni\" ri:version-at-save=\"5\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"faf04951-dc4b-4543-86e6-0c71be0fcc25\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Guide</ac:parameter><ac:rich-text-body><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/676069378/Operation+Theatre\">Operation Theatre in Bahmni</a></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/703922251"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"OperationTheatreSchedulingModule-Description\">Description</h2><p><span><span>Scheduling of surgeries in any care setting is a challenging task. There are multiple variables that go into consideration - Surgeon’s availability, the patient’s condition, availability of the OT and the right medical devices/ surgical instruments etc among other things. And if done rightly, it contributes to improving the operational efficiency of the hospital and also ensures timely care to patients with minimal waiting time. Hence it is important that the staff are supported with the right tool to make efficient schedules. </span></span></p><p><span><span>OT scheduling in Bahmni <span>allows the users to manage several operating rooms, in which they can schedule patient's surgeries with the appropriate Surgical Team. It comes with both a List as well as a Calendar view for the schedule to be managed. </span></span></span></p><p>Operation Theatre module comes out of the box with the Bahmni installation.</p><h3 id=\"OperationTheatreSchedulingModule-Prerequisite:\"><strong>Prerequisite:</strong></h3><p>To use OT module in any specific implementation, We need to configure at least one location as operation theatre</p><p><strong>Steps to add a operation theatre location:</strong></p><ul><li>Go to Openmrs → Administration → Manage locations</li><li>Add a new location or tag existing location as &quot;Operation Theater&quot;. This tag comes with Bahmni installation<ul><li>Its a good practice to organise locations inline with hospital setups. For example, you may want to have  an 'Operation Theater' organised within a location representing a department. For more information around locations and relevance to Bahmni please see <a href=\"/wiki/spaces/BAH/pages/77758507/Visit+Location\" data-linked-resource-id=\"77758507\" data-linked-resource-version=\"37\" data-linked-resource-type=\"page\">&quot;Visit Location&quot;</a></li></ul></li></ul><p>            <span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border\" width=\"650\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/703922251/Screen%20Shot%202018-08-20%20at%202.58.34%20PM.png?version=1&amp;modificationDate=1534757348919&amp;cacheVersion=1&amp;api=v2&amp;width=650&amp;height=271\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/703922251/Screen%20Shot%202018-08-20%20at%202.58.34%20PM.png?version=1&amp;modificationDate=1534757348919&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"703856715\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2018-08-20 at 2.58.34 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"703922251\" data-linked-resource-container-version=\"8\" data-media-id=\"f8ef6b3e-f805-4344-8913-84850fdb63aa\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/703922251/Screen%20Shot%202018-08-20%20at%202.58.34%20PM.png?version=1&amp;modificationDate=1534757348919&amp;cacheVersion=1&amp;api=v2&amp;width=1300&amp;height=542 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/703922251/Screen%20Shot%202018-08-20%20at%202.58.34%20PM.png?version=1&amp;modificationDate=1534757348919&amp;cacheVersion=1&amp;api=v2&amp;width=650&amp;height=271 1x\"></span></p><h3 id=\"OperationTheatreSchedulingModule-SurgicalAppointmentDisplayControlinPatientSummaryDashboard:\"><strong>Surgical Appointment Display Control in Patient Summary Dashboard: </strong></h3><p><span>A custom display control has been set up for a user to view patient surgery details on the dashboard.</span></p><p><span>     <span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/703922251/Screen%20Shot%202018-08-20%20at%205.46.57%20PM.png?version=1&amp;modificationDate=1534767442888&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=231\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/703922251/Screen%20Shot%202018-08-20%20at%205.46.57%20PM.png?version=1&amp;modificationDate=1534767442888&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"703660146\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2018-08-20 at 5.46.57 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"703922251\" data-linked-resource-container-version=\"8\" data-media-id=\"35f376f2-431f-4e66-bafb-8ee4ae5c5cde\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/703922251/Screen%20Shot%202018-08-20%20at%205.46.57%20PM.png?version=1&amp;modificationDate=1534767442888&amp;cacheVersion=1&amp;api=v2&amp;width=1364&amp;height=452 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/703922251/Screen%20Shot%202018-08-20%20at%205.46.57%20PM.png?version=1&amp;modificationDate=1534767442888&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=231 1x\"></span></span></p><p><br/></p><h3 id=\"OperationTheatreSchedulingModule-CalendarColorConfiguration:\"><span><strong>Calendar Color Configuration:</strong></span></h3><p><span>The calendar view of the Operation Theatre module supports a color to be configured against a surgeon. For this, you need to have a specific provider attribute &quot;otCalendarColor&quot; configured in the system. </span></p><p><br/></p><ol><li><span>Go to Openmrs → <span>Administration → <span>Manage Provider Attribute Types</span></span></span></li><li>Check the list if an attribute &quot;otCalendarColor&quot; exists, if not then we need to define that. </li><li><span>To define, click &quot;Add Provider Attribute Type&quot; link</span></li><li><span><span>In the form thats displayed, mention Name: otCalendarColor, Data type: Free Text. Save the form. </span></span></li></ol><p><span><span>Now, you can assign a value for the &quot;otCalendarColor&quot; for a provider. </span></span></p><ul><li><span><span>NOTE: <strong>0 </strong>(default color)<strong> to 359</strong> is the recommended configuration values</span></span></li></ul><h2 id=\"OperationTheatreSchedulingModule-DataModelforOTmodule\"><u>Data Model for OT module</u></h2><p><span><span><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"1000\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/703922251/image2020-2-10_6-9-35.png?version=1&amp;modificationDate=1581295177471&amp;cacheVersion=1&amp;api=v2&amp;width=1000&amp;height=895\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/703922251/image2020-2-10_6-9-35.png?version=1&amp;modificationDate=1581295177471&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"1043333211\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2020-2-10_6-9-35.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"703922251\" data-linked-resource-container-version=\"8\" data-media-id=\"df663765-1b9d-47de-b725-be12ec7c4dcc\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/703922251/image2020-2-10_6-9-35.png?version=1&amp;modificationDate=1581295177471&amp;cacheVersion=1&amp;api=v2&amp;width=1608&amp;height=1440 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/703922251/image2020-2-10_6-9-35.png?version=1&amp;modificationDate=1581295177471&amp;cacheVersion=1&amp;api=v2&amp;width=1000&amp;height=895 1x\"></span></span></span></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"eee1f9bc-49bd-44f7-86a2-f81eae2f95ca\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><span>This module is available only from release 0.91 onwards.</span></p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/676986891/Operation+Theatre+Scheduling+in+Bahmni\" data-linked-resource-id=\"676986891\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Operation Theatre Scheduling in Bahmni</a></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"faf04951-dc4b-4543-86e6-0c71be0fcc25\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Guide</b></div><div class=\"panelContent\">\n<p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/676069378/Operation+Theatre\" rel=\"nofollow\">Operation Theatre in Bahmni</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/703922251"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/703922251/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/703922251/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1716985634
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/703922251/child",
+    "restrictions": "/rest/api/content/703922251/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/703922251/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=703922251",
+    "webui": "/spaces/BAH/pages/703922251/Operation+Theatre+Scheduling+Module",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/703922251",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/703922251",
+    "tinyui": "/x/SwD1KQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

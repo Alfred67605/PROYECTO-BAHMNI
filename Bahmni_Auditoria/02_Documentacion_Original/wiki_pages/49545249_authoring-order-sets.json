@@ -1,0 +1,171 @@
+{
+  "id": "49545249",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/49545249",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNDk1NDUyNDk=",
+  "status": "current",
+  "title": "Authoring Order Sets",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2016-04-01T07:09:26.270Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/49545249/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2022-01-19T12:31:26.999Z",
+    "friendlyWhen": "Jan 19, 2022",
+    "message": "",
+    "number": 17,
+    "minorEdit": false,
+    "syncRev": "0.BU7Uqmo8fZ1Vlc-CxUqqkA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$49545249.69",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/49545249"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/49545249/version/17"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>About the Feature</h2><p><span style=\"color: rgb(0,0,0);\">Order sets is a feature in the&nbsp;Medications tab of Bahmni's Clinical module. It enables clinicians to group drugs which are frequently ordered together and prescribe the entire set instead of adding each drug. An order set be added, edited, stopped or refilled using the Treatments tab.&nbsp;This feature&nbsp;has been designed to save the users time and effort, by ordering a set of drugs with predefined dosages, routes and frequencies.</span></p><h3><strong><span style=\"color: rgb(0,0,0);\">Used By</span></strong></h3><p><span style=\"color: rgb(0,0,0);\">Order sets will be authored by the Hospital Administrator. They will create order sets based on the practices followed in the hospital. Once authored, the order sets will be ready to be used by the doctors to prescribe medicines.</span></p><h2><span style=\"color: rgb(0,0,0);\">How is it Used?</span></h2><p><span style=\"color: rgb(0,0,0);\">Go to Bahmni Admin page and click on Order Sets. This opens the order set authoring page.</span></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\"><ac:image ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2016-04-07 at 1.01.58 PM.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p style=\"text-align: left;\"><span style=\"color: rgb(0,0,0);\">The name and description of the order set can be defined here. The order set members (drugs) will also be selected and the dose, dose units, frequency, route etc. will also be defined.</span></p><p style=\"text-align: left;\"><span style=\"color: rgb(0,0,0);\">&nbsp;</span></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e455a811-2b5c-4bab-963f-7c740279de51\"><ac:parameter ac:name=\"title\">Auto-calculation</ac:parameter><ac:rich-text-body><p>While authoring the Order Set, if the base dose of the drug is set to dosage units &quot;mg/kg&quot; or &quot;mg/m2&quot;, then while ordering the order sets, the dose of the drug to be given to the patient is automatically calculated based on the patient's weight or body surface area (BSA).</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"088b074b-3197-405d-90e7-fc4efad83bcc\"><ac:parameter ac:name=\"title\">New Enhancement</ac:parameter><ac:rich-text-body><p>With the introduction of dosage calculation rules, now dosage units &quot;mg/kg&quot; and &quot;mg/m2&quot; are moved to rules dropdown.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"warning\" ac:schema-version=\"1\" ac:macro-id=\"501f0a7b-debf-4cf6-87e4-11223083ad33\"><ac:parameter ac:name=\"title\">Known Issue</ac:parameter><ac:rich-text-body><p>The Height and weight required for the dosage calculations are taken only from the second page of registration. These values are <span>not picked up </span>if entered in other observation forms. The system must be able to use the latest values recorded for calculating the dosage.</p><p>This will be fixed in release 0.90.</p></ac:rich-text-body></ac:structured-macro><p><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"6f94ffaa-b600-4ef0-b839-bb97cd4265cd\"><ac:parameter ac:name=\"title\">Examples</ac:parameter><ac:rich-text-body><p>Example of Order Sets which have been configured at JSS Hospital: <a href=\"https://github.com/JanSwasthyaSahyog/jss-config/blob/master/openmrs/ordertemplates/templates.json\">https://github.com/JanSwasthyaSahyog/jss-config/blob/master/openmrs/ordertemplates/templates.json</a></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><p style=\"text-align: left;\"><span style=\"color: rgb(0,0,0);\"><br /></span></p><h4 style=\"text-align: left;\"><span style=\"color: rgb(0,0,0);\">Changing sequence of drugs with in an order set</span></h4><p><span style=\"color: rgb(0,0,0);\">The arrows are used to move the order set members to set a sequence of the drugs in an order set.</span></p><p style=\"text-align: left;\"><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2016-04-07 at 1.03.29 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><h4 style=\"text-align: left;\">Saving Order Set:</h4><p style=\"text-align: left;\">Click on <em>save</em> to save the order set to be used from the medication screen.</p><p style=\"text-align: center;\"><ac:image ac:title=\"Saving order set\" ac:alt=\"Saving order set\" ac:width=\"700\"><ri:attachment ri:filename=\"Pasted image at 2016_06_22 12_21 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><p style=\"text-align: left;\"><br /></p><h4 style=\"text-align: left;\">Retiring Order Set</h4><p>Click on the &quot;X&quot; button against the order set to retire that order set.&nbsp;</p><p><ac:image ac:align=\"center\" ac:title=\"Retiring Order set\" ac:alt=\"Retiring Order set\" ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2016-04-07 at 1.02.09 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"6462b5e2-1d86-451d-a8c5-c39c2f99335c\"><ac:rich-text-body><p><strong><span style=\"color: rgb(0,0,0);\">Please note that Bahmni configuration for each implementation can vary drastically. The screens and workflows below may not apply to your specific implementation.</span></strong></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"22f48c9b-1ece-4b64-a84c-1ae47a870f10\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><strong><span style=\"color: rgb(0,0,0);\"><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"f7ae3e28-34db-4eab-b891-0a9f87e08b5a\" /><br /></span></strong></p><div><strong><span style=\"color: rgb(0,0,0);\"><br /></span></strong></div></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Order Sets\" ri:version-at-save=\"9\" /><ac:plain-text-link-body><![CDATA[Order Sets - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"4084f2de-c0c2-4eeb-b02a-1184ccf78a4a\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Using rules\" ri:version-at-save=\"18\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/49545249"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"AuthoringOrderSets-AbouttheFeature\">About the Feature</h2><p><span class=\"legacy-color-text-default\">Order sets is a feature in the Medications tab of Bahmni's Clinical module. It enables clinicians to group drugs which are frequently ordered together and prescribe the entire set instead of adding each drug. An order set be added, edited, stopped or refilled using the Treatments tab. This feature has been designed to save the users time and effort, by ordering a set of drugs with predefined dosages, routes and frequencies.</span></p><h3 id=\"AuthoringOrderSets-UsedBy\"><strong><span class=\"legacy-color-text-default\">Used By</span></strong></h3><p><span class=\"legacy-color-text-default\">Order sets will be authored by the Hospital Administrator. They will create order sets based on the practices followed in the hospital. Once authored, the order sets will be ready to be used by the doctors to prescribe medicines.</span></p><h2 id=\"AuthoringOrderSets-HowisitUsed?\"><span class=\"legacy-color-text-default\">How is it Used?</span></h2><p><span class=\"legacy-color-text-default\">Go to Bahmni Admin page and click on Order Sets. This opens the order set authoring page.</span></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/49545249/Screen%20Shot%202016-04-07%20at%201.01.58%20PM.png?version=1&amp;modificationDate=1460029073860&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=175\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/49545249/Screen%20Shot%202016-04-07%20at%201.01.58%20PM.png?version=1&amp;modificationDate=1460029073860&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"50921653\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-04-07 at 1.01.58 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"49545249\" data-linked-resource-container-version=\"17\" data-media-id=\"b691c62f-9cc4-4d43-bb51-d5b62d5f45e5\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/49545249/Screen%20Shot%202016-04-07%20at%201.01.58%20PM.png?version=1&amp;modificationDate=1460029073860&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=350 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/49545249/Screen%20Shot%202016-04-07%20at%201.01.58%20PM.png?version=1&amp;modificationDate=1460029073860&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=175 1x\"></span></span></p><p style=\"text-align: left;\"><span class=\"legacy-color-text-default\">The name and description of the order set can be defined here. The order set members (drugs) will also be selected and the dose, dose units, frequency, route etc. will also be defined.</span></p><p style=\"text-align: left;\"><span class=\"legacy-color-text-default\"> </span></p><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e455a811-2b5c-4bab-963f-7c740279de51\" data-macro-name=\"tip\"><p class=\"title\">Auto-calculation</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>While authoring the Order Set, if the base dose of the drug is set to dosage units &quot;mg/kg&quot; or &quot;mg/m2&quot;, then while ordering the order sets, the dose of the drug to be given to the patient is automatically calculated based on the patient's weight or body surface area (BSA).</p></div></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"088b074b-3197-405d-90e7-fc4efad83bcc\" data-macro-name=\"info\"><p class=\"title\">New Enhancement</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>With the introduction of dosage calculation rules, now dosage units &quot;mg/kg&quot; and &quot;mg/m2&quot; are moved to rules dropdown.</p></div></div><div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"501f0a7b-debf-4cf6-87e4-11223083ad33\" data-macro-name=\"warning\"><p class=\"title\">Known Issue</p><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>The Height and weight required for the dosage calculations are taken only from the second page of registration. These values are <span>not picked up </span>if entered in other observation forms. The system must be able to use the latest values recorded for calculating the dosage.</p><p>This will be fixed in release 0.90.</p></div></div><p><br/></p><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6f94ffaa-b600-4ef0-b839-bb97cd4265cd\" data-macro-name=\"tip\"><p class=\"title\">Examples</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Example of Order Sets which have been configured at JSS Hospital: <a class=\"external-link\" href=\"https://github.com/JanSwasthyaSahyog/jss-config/blob/master/openmrs/ordertemplates/templates.json\" rel=\"nofollow\">https://github.com/JanSwasthyaSahyog/jss-config/blob/master/openmrs/ordertemplates/templates.json</a></p></div></div><p style=\"text-align: left;\"><span class=\"legacy-color-text-default\"><br/></span></p><h4 style=\"text-align: left;\" id=\"AuthoringOrderSets-Changingsequenceofdrugswithinanorderset\"><span class=\"legacy-color-text-default\">Changing sequence of drugs with in an order set</span></h4><p><span class=\"legacy-color-text-default\">The arrows are used to move the order set members to set a sequence of the drugs in an order set.</span></p><p style=\"text-align: left;\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/49545249/Screen%20Shot%202016-04-07%20at%201.03.29%20PM.png?version=1&amp;modificationDate=1460029163938&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=273\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/49545249/Screen%20Shot%202016-04-07%20at%201.03.29%20PM.png?version=1&amp;modificationDate=1460029163938&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"50921658\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-04-07 at 1.03.29 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"49545249\" data-linked-resource-container-version=\"17\" data-media-id=\"874d8cca-1639-455d-8292-8476d39502d9\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/49545249/Screen%20Shot%202016-04-07%20at%201.03.29%20PM.png?version=1&amp;modificationDate=1460029163938&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=546 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/49545249/Screen%20Shot%202016-04-07%20at%201.03.29%20PM.png?version=1&amp;modificationDate=1460029163938&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=273 1x\"></span></p><h4 style=\"text-align: left;\" id=\"AuthoringOrderSets-SavingOrderSet:\">Saving Order Set:</h4><p style=\"text-align: left;\">Click on <em>save</em> to save the order set to be used from the medication screen.</p><p style=\"text-align: center;\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" alt=\"Saving order set\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/49545249/Pasted%20image%20at%202016_06_22%2012_21%20PM.png?version=1&amp;modificationDate=1466578431021&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=406\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/49545249/Pasted%20image%20at%202016_06_22%2012_21%20PM.png?version=1&amp;modificationDate=1466578431021&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"69664802\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Pasted image at 2016_06_22 12_21 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"49545249\" data-linked-resource-container-version=\"17\" data-media-id=\"28f21e17-2902-4712-adac-3ead14be8314\" data-media-type=\"file\" title=\"Saving order set\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/49545249/Pasted%20image%20at%202016_06_22%2012_21%20PM.png?version=1&amp;modificationDate=1466578431021&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=812 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/49545249/Pasted%20image%20at%202016_06_22%2012_21%20PM.png?version=1&amp;modificationDate=1466578431021&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=406 1x\"></span></p><p style=\"text-align: left;\"><br/></p><h4 style=\"text-align: left;\" id=\"AuthoringOrderSets-RetiringOrderSet\">Retiring Order Set</h4><p>Click on the &quot;X&quot; button against the order set to retire that order set. </p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"Retiring Order set\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/49545249/Screen%20Shot%202016-04-07%20at%201.02.09%20PM.png?version=1&amp;modificationDate=1460029161921&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=258\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/49545249/Screen%20Shot%202016-04-07%20at%201.02.09%20PM.png?version=1&amp;modificationDate=1460029161921&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"50921654\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-04-07 at 1.02.09 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"49545249\" data-linked-resource-container-version=\"17\" data-media-id=\"799bb572-42bb-49c5-8720-44bdcc9bd248\" data-media-type=\"file\" title=\"Retiring Order set\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/49545249/Screen%20Shot%202016-04-07%20at%201.02.09%20PM.png?version=1&amp;modificationDate=1460029161921&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=516 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/49545249/Screen%20Shot%202016-04-07%20at%201.02.09%20PM.png?version=1&amp;modificationDate=1460029161921&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=258 1x\"></span></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6462b5e2-1d86-451d-a8c5-c39c2f99335c\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong><span class=\"legacy-color-text-default\">Please note that Bahmni configuration for each implementation can vary drastically. The screens and workflows below may not apply to your specific implementation.</span></strong></p></div></div><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"22f48c9b-1ece-4b64-a84c-1ae47a870f10\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong><span class=\"legacy-color-text-default\"> </span></strong></p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"f7ae3e28-34db-4eab-b891-0a9f87e08b5a\" data-macro-name=\"toc\"> </div><br /><p> </p><div><strong><span class=\"legacy-color-text-default\"><br /></span></strong></div></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/47022141/Order+Sets\" data-linked-resource-id=\"47022141\" data-linked-resource-version=\"9\" data-linked-resource-type=\"page\">Order Sets - Feature Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4084f2de-c0c2-4eeb-b02a-1184ccf78a4a\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/79495184/Using+rules\" data-linked-resource-id=\"79495184\" data-linked-resource-version=\"18\" data-linked-resource-type=\"page\">Using rules</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/49545249"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/49545249/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/49545249/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 2
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/49545249/child",
+    "restrictions": "/rest/api/content/49545249/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/49545249/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=49545249",
+    "webui": "/spaces/BAH/pages/49545249/Authoring+Order+Sets",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/49545249",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/49545249",
+    "tinyui": "/x/IQD0Ag",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

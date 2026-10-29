@@ -1,0 +1,126 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Appointments Display Control</title></head><body><h1>Appointments Display Control</h1><div class="contentLayout2"><style>[data-colorid=vdlzajt8pf]{color:#091e42} html[data-color-mode=dark] [data-colorid=vdlzajt8pf]{color:#bdd2f6}[data-colorid=b0blgzyn3r]{color:#091e42} html[data-color-mode=dark] [data-colorid=b0blgzyn3r]{color:#bdd2f6}</style>
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-id="12dd74f5-897f-4d85-acfe-0d3c6da8972a" data-macro-name="note"><p class="title">Note</p><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>There is no default display control available to show the appointments on patient dashboard. One need to configure this custom display control to see the appointment details on patient dashboard. We will be building one as part of future Bahmni release.&nbsp;</p></div></div><h2 id="AppointmentsDisplayControl-Purpose">Purpose</h2><p>This custom display control can be used to show the list of future and past appointments of a patient on the patient dashboard</p><h2 id="AppointmentsDisplayControl-Screenshot">Screenshot</h2><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" width="650" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/700088324/Screen%20Shot%202018-08-02%20at%2011.54.58%20AM.png?version=1&amp;modificationDate=1533211040234&amp;cacheVersion=1&amp;api=v2&amp;width=650&amp;height=280" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/700088324/Screen%20Shot%202018-08-02%20at%2011.54.58%20AM.png?version=1&amp;modificationDate=1533211040234&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="699924489" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2018-08-02 at 11.54.58 AM.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="700088324" data-linked-resource-container-version="4" data-media-id="c43ea509-a591-40ca-882f-db4e4698f738" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/700088324/Screen%20Shot%202018-08-02%20at%2011.54.58%20AM.png?version=1&amp;modificationDate=1533211040234&amp;cacheVersion=1&amp;api=v2&amp;width=1256&amp;height=542 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/700088324/Screen%20Shot%202018-08-02%20at%2011.54.58%20AM.png?version=1&amp;modificationDate=1533211040234&amp;cacheVersion=1&amp;api=v2&amp;width=650&amp;height=280 1x" /></span></p><h2 id="AppointmentsDisplayControl-Configuration">Configuration</h2><p>&nbsp;<span data-colorid="vdlzajt8pf">Consider&nbsp;the following example to add Appointments as a new directive to the <a class="external-link" href="https://github.com/Bahmni/default-config/blob/release-0.91/openmrs/apps/customDisplayControl/js/customControl.js" rel="nofollow">customControl.js</a>:</span></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="c57995cd-7ef6-4a36-93b3-590a34b85845" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">'use strict';
+angular.module('bahmni.common.displaycontrol.custom')
+.directive('patientAppointmentsDashboard', ['$http', '$q', '$window','appService', function ($http, $q, $window, appService) {
+    var link = function ($scope) {
+        $scope.contentUrl = appService.configBaseUrl() + &quot;/customDisplayControl/views/patientAppointmentsDashboard.html&quot;;
+        var getUpcomingAppointments = function () {
+            var params = {
+                q: &quot;bahmni.sqlGet.upComingAppointments&quot;,
+                v: &quot;full&quot;,
+                patientUuid: $scope.patient.uuid
+            };
+            return $http.get('/openmrs/ws/rest/v1/bahmnicore/sql', {
+                method: &quot;GET&quot;,
+                params: params,
+                withCredentials: true
+            });
+        };
+        var getPastAppointments = function () {
+            var params = {
+                q: &quot;bahmni.sqlGet.pastAppointments&quot;,
+                v: &quot;full&quot;,
+                patientUuid: $scope.patient.uuid
+            };
+            return $http.get('/openmrs/ws/rest/v1/bahmnicore/sql', {
+                method: &quot;GET&quot;,
+                params: params,
+                withCredentials: true
+            });
+        };
+        $q.all([getUpcomingAppointments(), getPastAppointments()]).then(function (response) {
+            $scope.upcomingAppointments = response[0].data;
+            $scope.upcomingAppointmentsHeadings = _.keys($scope.upcomingAppointments[0]);
+            $scope.pastAppointments = response[1].data;
+            $scope.pastAppointmentsHeadings = _.keys($scope.pastAppointments[0]);
+        });
+        $scope.goToListView = function () {
+            $window.open('/bahmni/appointments/#/home/manage/appointments/list');
+        };
+    };
+
+    return {
+        restrict: 'E',
+        link: link,
+        scope: {
+            patient: &quot;=&quot;,
+            section: &quot;=&quot;
+        },
+        template: '&lt;ng-include src=&quot;contentUrl&quot;/&gt;'
+    };
+}]);</pre>
+</div></div><h4 id="AppointmentsDisplayControl-ToCreateAppointmentsDisplaypage">To Create Appointments Display page</h4><p><span data-colorid="b0blgzyn3r">Consider&nbsp;the following example to create&nbsp;a patientAppointmentsDashboard.html :</span></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="78da873d-2731-4f95-b885-cd676f772d8b" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>patientAppointmentsDashboard.html</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">&lt;section class=&quot;app-dashboard-integration&quot;&gt;
+    &lt;h2 class=&quot;section-title&quot; ng-click=&quot;goToListView()&quot;&gt;&lt;span style=&quot;border-bottom: 1px solid white;&quot;&gt;{{ section.title | titleTranslate}}&lt;/span&gt;&lt;/h2&gt;
+
+    &lt;ul style=&quot;font-size: 14px;color: #000000&quot;&gt;
+        &lt;li style=&quot;background-color:#ddd;padding-top:3px;padding-bottom:3px&quot;&gt;
+            &lt;span style=&quot;padding-left: 10px&quot;&gt; {{::&quot;DASHBOARD_UPCOMING_APPOINTMENTS_KEY&quot; | translate}} &lt;/span&gt;
+        &lt;/li&gt;
+
+        &lt;ul ng-if=&quot;upcomingAppointments.length === 0&quot; class=&quot;form-field&quot;&gt;
+            &lt;li&gt;{{::&quot;DASHBOARD_NO_UPCOMING_APPOINTMENTS_KEY&quot; | translate}}&lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;ul ng-if=&quot;upcomingAppointments.length !== 0&quot;&gt;
+            &lt;table class=&quot;table-header&quot;&gt;
+                &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th ng-repeat=&quot;heading in upcomingAppointmentsHeadings&quot;&gt;
+                        {{heading | translate}}
+                    &lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                &lt;tr ng-repeat=&quot;appointment in upcomingAppointments&quot;&gt;
+                    &lt;td ng-repeat=&quot;detail in appointment&quot;&gt;
+                        {{detail}}
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/ul&gt;
+    &lt;/ul&gt;
+
+
+    &lt;ul style=&quot;font-size: 14px;color: #000000&quot;&gt;
+        &lt;li style=&quot;background-color:#ddd;padding-top:3px;padding-bottom:3px&quot;&gt;
+            &lt;span style=&quot;padding-left: 10px&quot;&gt; {{::&quot;DASHBOARD_PAST_APPOINTMENTS_KEY&quot; | translate}} &lt;/span&gt;
+        &lt;/li&gt;
+
+        &lt;ul ng-if=&quot;pastAppointments.length === 0&quot; class=&quot;form-field&quot;&gt;
+            &lt;li&gt;{{::&quot;DASHBOARD_NO_PAST_APPOINTMENTS_KEY&quot; | translate}}&lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;ul ng-if=&quot;pastAppointments.length !== 0&quot;&gt;
+            &lt;table class=&quot;table-header&quot;&gt;
+                &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th ng-repeat=&quot;heading in pastAppointmentsHeadings&quot;&gt;
+                        {{heading | translate}}
+                    &lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                &lt;tr ng-repeat=&quot;appointment in pastAppointments&quot;&gt;
+                    &lt;td ng-repeat=&quot;detail in appointment&quot;&gt;
+                        {{detail}}
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/ul&gt;
+    &lt;/ul&gt;
+&lt;/section&gt;</pre>
+</div></div><p><br /></p><p><br /></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="confluence-information-macro confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="a836ce0c-d7e2-43e2-9fb7-6a1348e8be38" data-macro-name="tip"><p class="title">On this Page</p><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="e7bb9994-7049-4b88-a576-187ac2b6cc59" data-macro-name="toc"> </div><p> </p></div></div></div>
+</div>
+</div>
+</div></body></html>

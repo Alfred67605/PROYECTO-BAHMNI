@@ -1,0 +1,201 @@
+{
+  "id": "6094854",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/6094854",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNjA5NDg1NA==",
+  "status": "current",
+  "title": "Generating database diagrams for schema analysis",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:c69ab13a-4548-4b58-9b62-2042b64fbd4f",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "i",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:c69ab13a-4548-4b58-9b62-2042b64fbd4f",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "i",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:c69ab13a-4548-4b58-9b62-2042b64fbd4f"
+      }
+    },
+    "createdDate": "2014-06-24T09:00:39.955Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/6094854/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:c69ab13a-4548-4b58-9b62-2042b64fbd4f",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "i",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:c69ab13a-4548-4b58-9b62-2042b64fbd4f",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "i",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:c69ab13a-4548-4b58-9b62-2042b64fbd4f"
+      }
+    },
+    "when": "2014-06-24T09:00:39.955Z",
+    "friendlyWhen": "Jun 24, 2014",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.NTz32M9pNEb2Sp1YeabogA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$6094854.37",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/6094854"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/6094854/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>If you want to analyse a database, understand relations between its tables etc., you can use this tool : <a href=\"http://schemaspy.sourceforge.net/\">schemaspy</a></p><p>Example usage:</p><h2>Creating openerp database diagrams</h2><ol><li>Download schemaspy from : <a href=\"http://sourceforge.net/projects/schemaspy/files/\">http://sourceforge.net/projects/schemaspy/files/</a></li><li>It used to have dependency on Graphviz, so you may also have to install graphviz : <a href=\"http://www.graphviz.org/Download..php\">http://www.graphviz.org/Download..php</a></li><li>command to execute the jar :<br /><p>java -jar schemaSpy_5.0.0.jar -t pgsql&nbsp; -db openerp -s public -u openerp -p &lt;password&gt; -host &lt;host&gt; -o &lt;output dir&gt; -dp &lt;path-to-the-db-driver&gt;</p></li></ol><p>More info on the parameters can be found at <a href=\"http://schemaspy.sourceforge.net/\">http://schemaspy.sourceforge.net/</a></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><ac:structured-macro ac:name=\"info\"><ac:rich-text-body><ac:placeholder>You may also want to use visual panels to communicate related information, tips or things users need to be aware of.</ac:placeholder></ac:rich-text-body></ac:structured-macro><h2>Related articles</h2><p><ac:placeholder>Related articles appear here based on the labels you select. Click to edit the macro and add or change labels.</ac:placeholder></p><p><ac:structured-macro ac:name=\"contentbylabel\"><ac:parameter ac:name=\"spaces\"><ri:space ri:space-key=\"BAH\" /></ac:parameter><ac:parameter ac:name=\"showLabels\">false</ac:parameter><ac:parameter ac:name=\"reverse\">true</ac:parameter><ac:parameter ac:name=\"sort\">modified</ac:parameter><ac:parameter ac:name=\"max\">5</ac:parameter><ac:parameter ac:name=\"labels\">database datamodel analyse diagram</ac:parameter><ac:parameter ac:name=\"showSpace\">false</ac:parameter><ac:parameter ac:name=\"type\">page</ac:parameter></ac:structured-macro></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/6094854"
+      }
+    },
+    "view": {
+      "value": "<p>If you want to analyse a database, understand relations between its tables etc., you can use this tool : <a class=\"external-link\" href=\"http://schemaspy.sourceforge.net/\" rel=\"nofollow\">schemaspy</a></p><p>Example usage:</p><h2 id=\"Generatingdatabasediagramsforschemaanalysis-Creatingopenerpdatabasediagrams\">Creating openerp database diagrams</h2><ol><li>Download schemaspy from : <a class=\"external-link\" href=\"http://sourceforge.net/projects/schemaspy/files/\" rel=\"nofollow\">http://sourceforge.net/projects/schemaspy/files/</a></li><li>It used to have dependency on Graphviz, so you may also have to install graphviz : <a class=\"external-link\" href=\"http://www.graphviz.org/Download..php\" rel=\"nofollow\">http://www.graphviz.org/Download..php</a></li><li>command to execute the jar :<br/><p>java -jar schemaSpy_5.0.0.jar -t pgsql  -db openerp -s public -u openerp -p &lt;password&gt; -host &lt;host&gt; -o &lt;output dir&gt; -dp &lt;path-to-the-db-driver&gt;</p></li></ol><p>More info on the parameters can be found at <a class=\"external-link\" href=\"http://schemaspy.sourceforge.net/\" rel=\"nofollow\">http://schemaspy.sourceforge.net/</a></p><p> </p><p> </p><p> </p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"> </div></div><h2 id=\"Generatingdatabasediagramsforschemaanalysis-Relatedarticles\">Related articles</h2><p></p><p>\n\n\n\n\n\n\n\n\n\n\n\n    \n    <ul class=\"content-by-label conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"\" data-macro-name=\"contentbylabel\">\n        <li>\n        <div>\n                <span class=\"icon aui-icon content-type-page\" title=\"Page\">Page:</span>        </div>\n\n        <div class=\"details\">\n                                <a id=\"2940862465\" data-linked-resource-id=\"2940862465\" data-linked-resource-type=\"page\" data-linked-resource-version=\"5\" href=\"/wiki/spaces/BAH/pages/2940862465/Modeling+Patient+Clinical+Data+in+Bahmni+Training\">Modeling Patient &amp; Clinical Data in Bahmni (Training)</a>\n                        \n                        \n                    </div>\n    </li>\n        <li>\n        <div>\n                <span class=\"icon aui-icon content-type-page\" title=\"Page\">Page:</span>        </div>\n\n        <div class=\"details\">\n                                <a id=\"6094854\" data-linked-resource-id=\"6094854\" data-linked-resource-type=\"page\" data-linked-resource-version=\"1\" href=\"/wiki/spaces/BAH/pages/6094854/Generating+database+diagrams+for+schema+analysis\">Generating database diagrams for schema analysis</a>\n                        \n                        \n                    </div>\n    </li>\n    </ul>\n</p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/6094854"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "database",
+          "id": "6193155",
+          "label": "database"
+        },
+        {
+          "prefix": "global",
+          "name": "datamodel",
+          "id": "6193156",
+          "label": "datamodel"
+        },
+        {
+          "prefix": "global",
+          "name": "analyse",
+          "id": "6193157",
+          "label": "analyse"
+        },
+        {
+          "prefix": "global",
+          "name": "diagram",
+          "id": "6193158",
+          "label": "diagram"
+        },
+        {
+          "prefix": "global",
+          "name": "kb-how-to-article",
+          "id": "6193159",
+          "label": "kb-how-to-article"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 5,
+      "_links": {
+        "next": "/rest/api/content/6094854/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/6094854/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 401
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/6094854/child",
+    "restrictions": "/rest/api/content/6094854/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/6094854/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=6094854",
+    "webui": "/spaces/BAH/pages/6094854/Generating+database+diagrams+for+schema+analysis",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/6094854",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/6094854",
+    "tinyui": "/x/BgBd",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

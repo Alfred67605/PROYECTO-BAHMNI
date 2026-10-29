@@ -1,0 +1,171 @@
+{
+  "id": "32014592",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/32014592",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzIwMTQ1OTI=",
+  "status": "current",
+  "title": "Patient Documents Module",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2015-11-03T18:02:11.047Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014592/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "when": "2018-08-24T05:51:16.657Z",
+    "friendlyWhen": "Aug 24, 2018",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "syncRev": "0.p4wgkTENXEF5LlxewHuOIQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$32014592.70",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/32014592"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014592/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p>This feature is used to receive and capture patient's information in the form of documents (patient's paper record scans, X-Ray images and other external&nbsp;documents). Bahmni allows you to upload&nbsp;these documents and associating it to specific visits of a patient. All these documents get attached to a patient's record and are viewable from the Visit dashboard.</p><h2><span style=\"color: rgb(0,0,0);\">Steps</span></h2><h3 class=\"m_-7735533683910305310gmail-p3\"><strong>Configure Patient Documents App</strong></h3><p class=\"m_-7735533683910305310gmail-p3\">To configure the Patient Documents Module/App to appear on the Home page please add the config below to this path:&nbsp; <em>/bahmni/default-config/openmrs/apps/home/extension.json</em></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"5d36357b-dbd4-4515-b88e-170a9e304ecd\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"patientDocumentUpload\": {\n   \"id\": \"bahmni.patient.document.upload\",\n   \"extensionPointId\": \"org.bahmni.home.dashboard\",\n   \"type\": \"link\",\n   \"translationKey\": \"MODULE_LABEL_PATIENT_DOCUMENTS_KEY\",\n   \"url\": \"../document-upload/?encounterType=Patient Document&topLevelConcept=Patient Document&defaultOption=Patient file\",\n   \"icon\": \"icon-bahmni-documents\",\n   \"order\": 6,\n   \"requiredPrivilege\": \"app:patient-documents\"\n },]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"023d277e-733b-435d-8d09-2b4a7954d40b\"><ac:parameter ac:name=\"title\">URL in the code snippet above</ac:parameter><ac:rich-text-body><p class=\"m_-7735533683910305310gmail-p3\">The url is :&nbsp; &quot;url&quot;: &quot;../document-upload/?encounterType=<strong>&lt;</strong><strong>X&gt;</strong>&amp;topLevelConcept=<strong>&lt;Y&gt;</strong>&amp;defaultOption=<strong>&lt;Z&gt;</strong>&rdquo;,</p><ol class=\"m_-7735533683910305310gmail-ol1\"><li class=\"m_-7735533683910305310gmail-li3\">The extension filepath should be: extension-<strong>&lt;</strong><strong>X&gt;</strong>.json</li><li class=\"m_-7735533683910305310gmail-li3\"><strong>&lt;Y&gt;</strong> is the top level concept in openMRS. This enables an auto-complete set while selecting Upload type:&nbsp; Assign concept set name to &quot;topLevelConcept&quot; in the url.</li><li class=\"m_-7735533683910305310gmail-li3\"><strong>&lt;Z&gt;</strong> has to be a set member of &rsquo;<strong>&lt;Y&gt;</strong>&rsquo; which is the top level concept. It is the default option that appears in the UI for upload type.</li></ol></ac:rich-text-body></ac:structured-macro><h3 class=\"m_-7735533683910305310gmail-p3\"><strong>Configure Active Patients Tab</strong></h3><p class=\"m_-7735533683910305310gmail-p3\">To configure the active patients Tab on the first page, add the config below to this path:&nbsp; <em>/bahmni/default-config/openmrs/apps/documentUpload/extension-Patient Document.json</em></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"78aa6eee-2ba4-48c0-a6ed-0def4f8ccb67\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[{\n        \"bahmniDocUploadPatientsSearchActivePatients\":{\n       \"id\": \"bahmni.docUpload.patients.search.activePatients\",\n       \"extensionPointId\": \"org.bahmni.patient.search\",\n       \"type\": \"config\",\n       \"extensionParams\": {\n           \"searchHandler\": \"emrapi.sqlSearch.activePatients\",\n         \"translationKey\": \"MODULE_LABEL_ACTIVE_PATIENTS_KEY\",\n           \"forwardUrl\" : \"#/patient/{{patientUuid}}/document\"\n       },\n       \"label\": \"Active Patients\",\n       \"order\": 1,\n       \"requiredPrivilege\": \"app:patient-documents\"\n   },\n   \"bahmniDocUploadPatientsSearchAllPatients\":{\n       \"id\": \"bahmni.docUpload.patients.search.allPatients\",\n       \"extensionPointId\": \"org.bahmni.patient.search\",\n       \"type\": \"config\",\n       \"extensionParams\": {\n         \"translationKey\":\"MODULE_LABEL_ALL_PATIENTS_KEY\",\n           \"forwardUrl\" : \"#/patient/{{patientUuid}}/document\"\n       },\n       \"label\": \"All patients\",\n       \"order\": 2,\n       \"requiredPrivilege\": \"app:patient-documents\"\n   }\n}]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"f3f96cff-febd-414b-899d-793eb1b2c2c2\"><ac:rich-text-body><p>One can also specify the &ldquo;search handler&rdquo; with other global properties for SQL search.</p></ac:rich-text-body></ac:structured-macro><p class=\"m_-7735533683910305310gmail-p4 auto-cursor-target\"><br /></p><p class=\"m_-7735533683910305310gmail-p4 auto-cursor-target\"><br /></p><h3 class=\"m_-7735533683910305310gmail-p3\"><strong>Configuring Patient Document Types</strong></h3><p>To configure the types against which a Patient Document can be uploaded, you may do the following</p><ol><li>Go to concept dictionary (.../openmrs/dictionary/index.htm) and search for 'Patient Document'</li><li>You will find the concept 'Patient Document' has members that appear Document Upload module.&nbsp;</li><li>Add a concept (e.g. Hospitalisation Record) of type 'Misc' and datatype 'NA'.</li><li>Add the newly created concept as member of 'Patient Document'</li><li>Go back to Patient Document module and verify that the dropdown lists the newly added concept when you upload a file.&nbsp;</li></ol></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"0b744f92-0474-4511-ba50-ea4dc8343d16\"><ac:parameter ac:name=\"style\">none</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Patient Document Management\" ri:version-at-save=\"14\" /><ac:plain-text-link-body><![CDATA[Patient Documents Module - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Patient Documents\" ri:version-at-save=\"7\" /><ac:plain-text-link-body><![CDATA[Patient Documents Module - User Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/32014592"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"PatientDocumentsModule-PurposeandBenefits\">Purpose and Benefits</h2><p>This feature is used to receive and capture patient's information in the form of documents (patient's paper record scans, X-Ray images and other external documents). Bahmni allows you to upload these documents and associating it to specific visits of a patient. All these documents get attached to a patient's record and are viewable from the Visit dashboard.</p><h2 id=\"PatientDocumentsModule-Steps\"><span class=\"legacy-color-text-default\">Steps</span></h2><h3 class=\"m_-7735533683910305310gmail-p3\" id=\"PatientDocumentsModule-ConfigurePatientDocumentsApp\"><strong>Configure Patient Documents App</strong></h3><p class=\"m_-7735533683910305310gmail-p3\">To configure the Patient Documents Module/App to appear on the Home page please add the config below to this path:  <em>/bahmni/default-config/openmrs/apps/home/extension.json</em></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"5d36357b-dbd4-4515-b88e-170a9e304ecd\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;patientDocumentUpload&quot;: {\n   &quot;id&quot;: &quot;bahmni.patient.document.upload&quot;,\n   &quot;extensionPointId&quot;: &quot;org.bahmni.home.dashboard&quot;,\n   &quot;type&quot;: &quot;link&quot;,\n   &quot;translationKey&quot;: &quot;MODULE_LABEL_PATIENT_DOCUMENTS_KEY&quot;,\n   &quot;url&quot;: &quot;../document-upload/?encounterType=Patient Document&amp;topLevelConcept=Patient Document&amp;defaultOption=Patient file&quot;,\n   &quot;icon&quot;: &quot;icon-bahmni-documents&quot;,\n   &quot;order&quot;: 6,\n   &quot;requiredPrivilege&quot;: &quot;app:patient-documents&quot;\n },</pre>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"023d277e-733b-435d-8d09-2b4a7954d40b\" data-macro-name=\"note\"><p class=\"title\">URL in the code snippet above</p><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p class=\"m_-7735533683910305310gmail-p3\">The url is :  &quot;url&quot;: &quot;../document-upload/?encounterType=<strong>&lt;</strong><strong>X&gt;</strong>&amp;topLevelConcept=<strong>&lt;Y&gt;</strong>&amp;defaultOption=<strong>&lt;Z&gt;</strong>”,</p><ol class=\"m_-7735533683910305310gmail-ol1\"><li class=\"m_-7735533683910305310gmail-li3\">The extension filepath should be: extension-<strong>&lt;</strong><strong>X&gt;</strong>.json</li><li class=\"m_-7735533683910305310gmail-li3\"><strong>&lt;Y&gt;</strong> is the top level concept in openMRS. This enables an auto-complete set while selecting Upload type:  Assign concept set name to &quot;topLevelConcept&quot; in the url.</li><li class=\"m_-7735533683910305310gmail-li3\"><strong>&lt;Z&gt;</strong> has to be a set member of ’<strong>&lt;Y&gt;</strong>’ which is the top level concept. It is the default option that appears in the UI for upload type.</li></ol></div></div><h3 class=\"m_-7735533683910305310gmail-p3\" id=\"PatientDocumentsModule-ConfigureActivePatientsTab\"><strong>Configure Active Patients Tab</strong></h3><p class=\"m_-7735533683910305310gmail-p3\">To configure the active patients Tab on the first page, add the config below to this path:  <em>/bahmni/default-config/openmrs/apps/documentUpload/extension-Patient Document.json</em></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"78aa6eee-2ba4-48c0-a6ed-0def4f8ccb67\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">{\n        &quot;bahmniDocUploadPatientsSearchActivePatients&quot;:{\n       &quot;id&quot;: &quot;bahmni.docUpload.patients.search.activePatients&quot;,\n       &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,\n       &quot;type&quot;: &quot;config&quot;,\n       &quot;extensionParams&quot;: {\n           &quot;searchHandler&quot;: &quot;emrapi.sqlSearch.activePatients&quot;,\n         &quot;translationKey&quot;: &quot;MODULE_LABEL_ACTIVE_PATIENTS_KEY&quot;,\n           &quot;forwardUrl&quot; : &quot;#/patient/{{patientUuid}}/document&quot;\n       },\n       &quot;label&quot;: &quot;Active Patients&quot;,\n       &quot;order&quot;: 1,\n       &quot;requiredPrivilege&quot;: &quot;app:patient-documents&quot;\n   },\n   &quot;bahmniDocUploadPatientsSearchAllPatients&quot;:{\n       &quot;id&quot;: &quot;bahmni.docUpload.patients.search.allPatients&quot;,\n       &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,\n       &quot;type&quot;: &quot;config&quot;,\n       &quot;extensionParams&quot;: {\n         &quot;translationKey&quot;:&quot;MODULE_LABEL_ALL_PATIENTS_KEY&quot;,\n           &quot;forwardUrl&quot; : &quot;#/patient/{{patientUuid}}/document&quot;\n       },\n       &quot;label&quot;: &quot;All patients&quot;,\n       &quot;order&quot;: 2,\n       &quot;requiredPrivilege&quot;: &quot;app:patient-documents&quot;\n   }\n}</pre>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f3f96cff-febd-414b-899d-793eb1b2c2c2\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>One can also specify the “search handler” with other global properties for SQL search.</p></div></div><h3 class=\"m_-7735533683910305310gmail-p3\" id=\"PatientDocumentsModule-ConfiguringPatientDocumentTypes\"><strong>Configuring Patient Document Types</strong></h3><p>To configure the types against which a Patient Document can be uploaded, you may do the following</p><ol><li>Go to concept dictionary (.../openmrs/dictionary/index.htm) and search for 'Patient Document'</li><li>You will find the concept 'Patient Document' has members that appear Document Upload module. </li><li>Add a concept (e.g. Hospitalisation Record) of type 'Misc' and datatype 'NA'.</li><li>Add the newly created concept as member of 'Patient Document'</li><li>Go back to Patient Document module and verify that the dropdown lists the newly added concept when you upload a file. </li></ol></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-cssliststyle=\"none\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"0b744f92-0474-4511-ba50-ea4dc8343d16\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604209/Patient+Document+Management\" data-linked-resource-id=\"32604209\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Patient Documents Module - Feature Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32014370/Patient+Documents\" data-linked-resource-id=\"32014370\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Patient Documents Module - User Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/32014592"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/32014592/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014592/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1180114724
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/32014592/child",
+    "restrictions": "/rest/api/content/32014592/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/32014592/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=32014592",
+    "webui": "/spaces/BAH/pages/32014592/Patient+Documents+Module",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/32014592",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014592",
+    "tinyui": "/x/AIHoAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

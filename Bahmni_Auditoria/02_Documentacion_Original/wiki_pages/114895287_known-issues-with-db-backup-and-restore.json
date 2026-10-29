@@ -1,0 +1,170 @@
+{
+  "id": "114895287",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/114895287",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE0ODk1Mjg3",
+  "status": "current",
+  "title": "Known Issues with DB Backup and Restore",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sravanthi N. S. CH.",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sravanthi N. S. CH.",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d47e0136-cbde-4dbc-8820-611d4528d1c8"
+      }
+    },
+    "createdDate": "2017-02-22T08:39:45.760Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114895287/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:b9842264-adf4-4f39-811a-e8bb5400b30a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Jayasuganthi",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:b9842264-adf4-4f39-811a-e8bb5400b30a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Jayasuganthi",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:b9842264-adf4-4f39-811a-e8bb5400b30a"
+      }
+    },
+    "when": "2017-03-03T06:27:15.609Z",
+    "friendlyWhen": "Mar 03, 2017",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "syncRev": "0.sc14fv6ROIqoyuM5vQS1Mg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$114895287.33",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/114895287"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114895287/version/7"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p><strong>Artifacts</strong></p><p><strong>&nbsp; &nbsp; </strong>&nbsp;&nbsp;Backing up multiple artifacts (giving comma separated values without using all) is not supported right now. But, this can be achieved with a custom script with all the individual/specific backup commands.</p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"76cf4294-4325-49b3-b4eb-23903d41cb47\"><ac:rich-text-body><p>This issue is fixed and will be working from release-0.89 onwards.Please refer the section Issues Fixed here <ac:link><ri:page ri:content-title=\"Configure backup\" ri:version-at-save=\"41\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><p><strong>Postgres</strong></p><p>&nbsp; &nbsp; &nbsp; Backing up and restoring a single db(eg openerp or openelis) is not supported right now.This can be achieved using the old way of backup and restore i.e. by creating a db dump.</p><p>&nbsp; &nbsp; &nbsp; &nbsp;</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/114895287"
+      }
+    },
+    "view": {
+      "value": "<p><strong>Artifacts</strong></p><p><strong>    </strong>  Backing up multiple artifacts (giving comma separated values without using all) is not supported right now. But, this can be achieved with a custom script with all the individual/specific backup commands.</p><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"76cf4294-4325-49b3-b4eb-23903d41cb47\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This issue is fixed and will be working from release-0.89 onwards.Please refer the section Issues Fixed here <a href=\"/wiki/spaces/BAH/pages/114728763/Configure+backup\" data-linked-resource-id=\"114728763\" data-linked-resource-version=\"41\" data-linked-resource-type=\"page\">Configure backup</a></p></div></div><p><strong>Postgres</strong></p><p>      Backing up and restoring a single db(eg openerp or openelis) is not supported right now.This can be achieved using the old way of backup and restore i.e. by creating a db dump.</p><p>       </p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/114895287"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/114895287/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114895287/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/114895287/child",
+    "restrictions": "/rest/api/content/114895287/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/114895287/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=114895287",
+    "webui": "/spaces/BAH/pages/114895287/Known+Issues+with+DB+Backup+and+Restore",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/114895287",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114895287",
+    "tinyui": "/x/tynZBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

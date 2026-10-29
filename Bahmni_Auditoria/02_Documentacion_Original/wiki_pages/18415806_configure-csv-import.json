@@ -1,0 +1,171 @@
+{
+  "id": "18415806",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/18415806",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTg0MTU4MDY=",
+  "status": "current",
+  "title": "Configure CSV Import",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Arun Paul",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Arun Paul",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:1cd84a39-1b09-4617-8c3a-7ef93faa1af3"
+      }
+    },
+    "createdDate": "2015-04-08T11:51:26.359Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/18415806/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2021-03-12T09:29:01.109Z",
+    "friendlyWhen": "Mar 12, 2021",
+    "message": "",
+    "number": 17,
+    "minorEdit": false,
+    "syncRev": "0.lS3Dmfj4Uvm2DL_U4VGL5A.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$18415806.111",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/18415806"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/18415806/version/17"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"single\"><ac:layout-cell><h2>Purpose and Benefits</h2><p>This guide helps the implementers to migrate the existing data that is maintained at a hospital prior to using Bahmni. &nbsp;The data could be patient information, relationship information, observations, forms, encounters, lab results, drugs and reference terms. &nbsp;The import is done using CSV files. This functionality is available as part of the Admin module which is available Out Of the Box with Bahmni. However the user needs to have &quot;app:admin&quot; privilege to be able to access it.</p><p><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"0ded1de5-e67b-454f-a3a3-4755a434acc7\"><ac:parameter ac:name=\"title\">Sample CSV formats for Data Import</ac:parameter><ac:rich-text-body><p>You can see some sample import CSV file formats in github here:&nbsp;<a href=\"https://github.com/Bahmni/banyan-config/tree/master/openmrs/referencedata\">https://github.com/Bahmni/banyan-config/tree/master/openmrs/referencedata</a></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"three_equal\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"4974efe8-3f41-4dc1-b6cb-12885fb0fd92\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\"> Implementation Details</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"ebb708dc-0fef-4681-8782-963185f9ad4e\"><ac:parameter ac:name=\"all\">true</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"dcb22d66-6ab2-4302-95ab-f01893646185\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Data Migration - Import\" ri:version-at-save=\"11\" /><ac:plain-text-link-body><![CDATA[Configure CSV Import - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"85d3500b-789e-4df7-b3d9-ff24954802f7\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Import Data\" ri:version-at-save=\"6\" /><ac:plain-text-link-body><![CDATA[Configure CSV Import - User Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/18415806"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout single\" data-layout=\"single\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ConfigureCSVImport-PurposeandBenefits\">Purpose and Benefits</h2><p>This guide helps the implementers to migrate the existing data that is maintained at a hospital prior to using Bahmni.  The data could be patient information, relationship information, observations, forms, encounters, lab results, drugs and reference terms.  The import is done using CSV files. This functionality is available as part of the Admin module which is available Out Of the Box with Bahmni. However the user needs to have &quot;app:admin&quot; privilege to be able to access it.</p><p><br/></p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0ded1de5-e67b-454f-a3a3-4755a434acc7\" data-macro-name=\"info\"><p class=\"title\">Sample CSV formats for Data Import</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>You can see some sample import CSV file formats in github here: <a class=\"external-link\" href=\"https://github.com/Bahmni/banyan-config/tree/master/openmrs/referencedata\" rel=\"nofollow\">https://github.com/Bahmni/banyan-config/tree/master/openmrs/referencedata</a></p></div></div></div>\n</div>\n</div>\n<div class=\"columnLayout three-equal\" data-layout=\"three-equal\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4974efe8-3f41-4dc1-b6cb-12885fb0fd92\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b> Implementation Details</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"ebb708dc-0fef-4681-8782-963185f9ad4e\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/13697066/Migrate+Patient+and+Encounter+Data\" data-linked-resource-id=\"13697066\" data-linked-resource-version=\"48\" data-linked-resource-type=\"page\">Migrate Patient and Encounter Data</a></li><li><a href=\"/wiki/spaces/BAH/pages/53313561/Migrate+Concepts+and+Concept+Sets\" data-linked-resource-id=\"53313561\" data-linked-resource-version=\"7\" data-linked-resource-type=\"page\">Migrate Concepts and Concept Sets</a></li><li><a href=\"/wiki/spaces/BAH/pages/53313567/Migrate+Programs\" data-linked-resource-id=\"53313567\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Migrate Programs</a></li><li><a href=\"/wiki/spaces/BAH/pages/116152757/Migrate+Configurations\" data-linked-resource-id=\"116152757\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Migrate Configurations</a></li><li><a href=\"/wiki/spaces/BAH/pages/3017015299/Migrate+Concept+Reference+Terms\" data-linked-resource-id=\"3017015299\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Migrate Concept Reference Terms</a></li></ul><p> </p>\n</div></div></div>\n</div>\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"dcb22d66-6ab2-4302-95ab-f01893646185\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/53313592/Data+Migration+-+Import\" data-linked-resource-id=\"53313592\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Configure CSV Import - Feature Guide</a></span></p>\n</div></div></div>\n</div>\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"85d3500b-789e-4df7-b3d9-ff24954802f7\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/53313590/Import+Data\" data-linked-resource-id=\"53313590\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Configure CSV Import - User Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/18415806"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/18415806/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/18415806/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 0
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/18415806/child",
+    "restrictions": "/rest/api/content/18415806/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/18415806/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=18415806",
+    "webui": "/spaces/BAH/pages/18415806/Configure+CSV+Import",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/18415806",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/18415806",
+    "tinyui": "/x/vgAZAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

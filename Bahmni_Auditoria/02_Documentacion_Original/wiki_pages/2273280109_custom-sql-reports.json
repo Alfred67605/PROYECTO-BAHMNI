@@ -1,0 +1,172 @@
+{
+  "id": "2273280109",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2273280109",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjI3MzI4MDEwOQ==",
+  "status": "current",
+  "title": "Custom SQL Reports",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "createdDate": "2021-03-23T08:40:18.839Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2273280109/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2021-03-23T08:44:01.811Z",
+    "friendlyWhen": "Mar 23, 2021",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.QixxeHZkftA1lTUceJYvGA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2273280109.22",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2273280109"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2273280109/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"49404501-d149-4fd0-a611-9c4b34f19530\"><ac:rich-text-body><p>Please read <ac:link><ri:page ri:content-title=\"Reporting Overview (Bahmni)\" ri:version-at-save=\"2\" /><ac:link-body>Bahmni Reporting Overview</ac:link-body></ac:link> first.</p></ac:rich-text-body></ac:structured-macro><p>Custom SQL Reports allow writing a specific SQL that executes on MRS, ELIS or Odoo. This will query the database directly. It is only recommended for tricky use-cases / edge cases where generic reports don&rsquo;t suffice. </p><p>Please read detailed documentation &amp; examples here: <ac:link ac:card-appearance=\"inline\" ac:anchor=\"3.CustomSQL\"><ri:page ri:content-title=\"Reporting Overview (Bahmni)\" ri:version-at-save=\"2\" /><ac:link-body>Reporting Overview (Bahmni)</ac:link-body></ac:link> </p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2273280109"
+      }
+    },
+    "view": {
+      "value": "<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"49404501-d149-4fd0-a611-9c4b34f19530\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Please read <a href=\"/wiki/spaces/BAH/pages/2270265367/Reporting+Overview+Bahmni\" data-linked-resource-id=\"2270265367\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Bahmni Reporting Overview</a> first.</p></div></div><p>Custom SQL Reports allow writing a specific SQL that executes on MRS, ELIS or Odoo. This will query the database directly. It is only recommended for tricky use-cases / edge cases where generic reports don’t suffice. </p><p>Please read detailed documentation &amp; examples here: <a href=\"/wiki/spaces/BAH/pages/2270265367/Reporting+Overview+Bahmni#ReportingOverview(Bahmni)-3.CustomSQL\" data-linked-resource-id=\"2270265367\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Reporting Overview (Bahmni)</a> </p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2273280109"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2273280109/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2273280109/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 432797896
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2273280109/child",
+    "restrictions": "/rest/api/content/2273280109/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2273280109/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2273280109",
+    "webui": "/spaces/BAH/pages/2273280109/Custom+SQL+Reports",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2273280109",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2273280109",
+    "tinyui": "/x/bYB-hw",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

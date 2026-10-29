@@ -1,0 +1,171 @@
+{
+  "id": "34013682",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/34013682",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzQwMTM2ODI=",
+  "status": "current",
+  "title": "Configure Users",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:c54772f2-46b5-43c0-be04-96923ee59750",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Vinay Venu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:c54772f2-46b5-43c0-be04-96923ee59750",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Vinay Venu",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:c54772f2-46b5-43c0-be04-96923ee59750"
+      }
+    },
+    "createdDate": "2015-11-26T10:26:18.425Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34013682/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2024-02-14T12:21:24.089Z",
+    "friendlyWhen": "Feb 14, 2024",
+    "message": "",
+    "number": 15,
+    "minorEdit": false,
+    "syncRev": "0.iEzrPY4WiGsu0kC-9WYD7Q.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$34013682.77",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/34013682"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34013682/version/15"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Description</h2><p>OpenMRS provides a mechanism to configure users (add, assign roles, modify) through the Administration screen. <a href=\"https://wiki.openmrs.org/display/docs/Administering+Users\">OpenMRS guide</a> provides details about the roles and privileges. In this page, description of adding users, assigning roles is elaborated.</p><h2>Steps</h2><h3>Add New User and Assign Roles</h3><ol><li>Login to OpenMRS with user having Administrator privileges.</li><li>Navigate to the OpenMRS Administration page and select &quot;Manage Users&quot; link.<br /><br /><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2016-03-23 at 2.45.41 PM.png\" ri:version-at-save=\"1\" /></ac:image><br /><br /></li><li>Click on &quot;Add User&quot; link.</li><li>Under &quot;Create a new person&quot; label, click on &quot;Next&quot; button.</li><li>In the page which appears, add information about the user.<br /><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2016-03-23 at 2.43.37 PM.png\" ri:version-at-save=\"1\" /></ac:image><br /><br /></li><li>Assign required roles to the user.<br /><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2016-03-23 at 2.52.41 PM.png\" ri:version-at-save=\"1\" /></ac:image></li><li>Finally, click on &quot;Save user&quot; button to save the changes made.</li></ol><p><strong><br /></strong></p><h2><strong>Making a user as a provider (doctor / clinician / nurse)<br /></strong></h2><p>Perform the following steps to add a user as a doctor/clinician/nurse in Bahmni (they are called <em>providers</em>).</p><ol><li>Click on <strong>&quot;Manage Providers&quot;&nbsp;</strong>in the OpenMRS administration page<h2><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"1.png\" ri:version-at-save=\"1\" /></ac:image></h2><div><strong><br /></strong></div></li><li>Click on <strong>&quot;Add Provider&quot;</strong><br /><strong><br /><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"2.png\" ri:version-at-save=\"1\" /></ac:image><br /></strong></li><li>Enter the name of the person you want to add as provider and select it from the auto complete list and click on <strong>&quot;Save&quot;.</strong><br /><strong><br /><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"3.png\" ri:version-at-save=\"1\" /></ac:image><br /></strong></li></ol></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"9e4f9769-17bb-4ca3-8e1e-b5067da8696b\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"dc7f8c3f-b7ad-46a1-be84-854b20ed56d4\" />&nbsp;</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/34013682"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ConfigureUsers-Description\">Description</h2><p>OpenMRS provides a mechanism to configure users (add, assign roles, modify) through the Administration screen. <a class=\"external-link\" href=\"https://wiki.openmrs.org/display/docs/Administering+Users\" rel=\"nofollow\">OpenMRS guide</a> provides details about the roles and privileges. In this page, description of adding users, assigning roles is elaborated.</p><h2 id=\"ConfigureUsers-Steps\">Steps</h2><h3 id=\"ConfigureUsers-AddNewUserandAssignRoles\">Add New User and Assign Roles</h3><ol><li>Login to OpenMRS with user having Administrator privileges.</li><li>Navigate to the OpenMRS Administration page and select &quot;Manage Users&quot; link.<br/><br/><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/34013682/Screen%20Shot%202016-03-23%20at%202.45.41%20PM.png?version=1&amp;modificationDate=1458724646752&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=369\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/34013682/Screen%20Shot%202016-03-23%20at%202.45.41%20PM.png?version=1&amp;modificationDate=1458724646752&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"47775823\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-03-23 at 2.45.41 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"34013682\" data-linked-resource-container-version=\"15\" data-media-id=\"5c120376-d2f4-470a-9ba8-fb9f931058cb\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/34013682/Screen%20Shot%202016-03-23%20at%202.45.41%20PM.png?version=1&amp;modificationDate=1458724646752&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=738 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/34013682/Screen%20Shot%202016-03-23%20at%202.45.41%20PM.png?version=1&amp;modificationDate=1458724646752&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=369 1x\"></span><br/><br/></li><li>Click on &quot;Add User&quot; link.</li><li>Under &quot;Create a new person&quot; label, click on &quot;Next&quot; button.</li><li>In the page which appears, add information about the user.<br/><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/34013682/Screen%20Shot%202016-03-23%20at%202.43.37%20PM.png?version=1&amp;modificationDate=1458724867857&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=367\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/34013682/Screen%20Shot%202016-03-23%20at%202.43.37%20PM.png?version=1&amp;modificationDate=1458724867857&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"47775824\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-03-23 at 2.43.37 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"34013682\" data-linked-resource-container-version=\"15\" data-media-id=\"f4666826-be28-49fa-beae-f5127ba59bc7\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/34013682/Screen%20Shot%202016-03-23%20at%202.43.37%20PM.png?version=1&amp;modificationDate=1458724867857&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=734 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/34013682/Screen%20Shot%202016-03-23%20at%202.43.37%20PM.png?version=1&amp;modificationDate=1458724867857&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=367 1x\"></span><br/><br/></li><li>Assign required roles to the user.<br/><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/34013682/Screen%20Shot%202016-03-23%20at%202.52.41%20PM.png?version=1&amp;modificationDate=1458725015486&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=369\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/34013682/Screen%20Shot%202016-03-23%20at%202.52.41%20PM.png?version=1&amp;modificationDate=1458725015486&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"47775825\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-03-23 at 2.52.41 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"34013682\" data-linked-resource-container-version=\"15\" data-media-id=\"dc91f666-6252-4474-bc8b-38bb9a5cb0c5\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/34013682/Screen%20Shot%202016-03-23%20at%202.52.41%20PM.png?version=1&amp;modificationDate=1458725015486&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=738 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/34013682/Screen%20Shot%202016-03-23%20at%202.52.41%20PM.png?version=1&amp;modificationDate=1458725015486&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=369 1x\"></span></li><li>Finally, click on &quot;Save user&quot; button to save the changes made.</li></ol><p><strong><br/></strong></p><h2 id=\"ConfigureUsers-Makingauserasaprovider(doctor/clinician/nurse)\"><strong>Making a user as a provider (doctor / clinician / nurse)<br/></strong></h2><p>Perform the following steps to add a user as a doctor/clinician/nurse in Bahmni (they are called <em>providers</em>).</p><ol><li>Click on <strong>&quot;Manage Providers&quot; </strong>in the OpenMRS administration page<h2 id=\"ConfigureUsers-\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/34013682/1.png?version=1&amp;modificationDate=1476947633260&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=358\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/34013682/1.png?version=1&amp;modificationDate=1476947633260&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"92962918\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"1.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"34013682\" data-linked-resource-container-version=\"15\" data-media-id=\"c1eff73a-f235-4f83-b5b1-0f80775239c1\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/34013682/1.png?version=1&amp;modificationDate=1476947633260&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=716 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/34013682/1.png?version=1&amp;modificationDate=1476947633260&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=358 1x\"></span></h2><div><strong><br/></strong></div></li><li>Click on <strong>&quot;Add Provider&quot;</strong><br/><strong><br/><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/34013682/2.png?version=1&amp;modificationDate=1476947704741&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=175\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/34013682/2.png?version=1&amp;modificationDate=1476947704741&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"92962921\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"2.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"34013682\" data-linked-resource-container-version=\"15\" data-media-id=\"ba642fd1-14fa-4e65-8ae6-825c43d756ba\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/34013682/2.png?version=1&amp;modificationDate=1476947704741&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=350 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/34013682/2.png?version=1&amp;modificationDate=1476947704741&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=175 1x\"></span><br/></strong></li><li>Enter the name of the person you want to add as provider and select it from the auto complete list and click on <strong>&quot;Save&quot;.</strong><br/><strong><br/><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/34013682/3.png?version=1&amp;modificationDate=1476947808879&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=163\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/34013682/3.png?version=1&amp;modificationDate=1476947808879&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"92962922\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"3.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"34013682\" data-linked-resource-container-version=\"15\" data-media-id=\"81fd64dc-1f12-4e92-84b3-62a9dbe7d160\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/34013682/3.png?version=1&amp;modificationDate=1476947808879&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=326 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/34013682/3.png?version=1&amp;modificationDate=1476947808879&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=163 1x\"></span><br/></strong></li></ol></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9e4f9769-17bb-4ca3-8e1e-b5067da8696b\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"dc7f8c3f-b7ad-46a1-be84-854b20ed56d4\" data-macro-name=\"toc\"> </div> <p> </p></div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/34013682"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/34013682/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34013682/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 173971942
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/34013682/child",
+    "restrictions": "/rest/api/content/34013682/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/34013682/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=34013682",
+    "webui": "/spaces/BAH/pages/34013682/Configure+Users",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/34013682",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34013682",
+    "tinyui": "/x/8gEHAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

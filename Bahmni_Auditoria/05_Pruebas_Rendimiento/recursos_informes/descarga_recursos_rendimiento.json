@@ -1,0 +1,47 @@
+[
+  {
+    "name": "grafico_cpu_test1_70users_4h.png",
+    "status": "OK",
+    "size": 1022974
+  },
+  {
+    "name": "grafico_cpu_test2_70users_8h.png",
+    "status": "OK",
+    "size": 1094977
+  },
+  {
+    "name": "grafico_cpu_test3_120users_8h.png",
+    "status": "OK",
+    "size": 1162172
+  },
+  {
+    "name": "grafico_cpu_test4_120users_24h.png",
+    "status": "OK",
+    "size": 1211389
+  },
+  {
+    "name": "gatling_report_70users_5h_index.html",
+    "status": "OK",
+    "size": 271790
+  },
+  {
+    "name": "gatling_report_70users_8h_index.html",
+    "status": "OK",
+    "size": 272897
+  },
+  {
+    "name": "gatling_report_120users_8h_index.html",
+    "status": "OK",
+    "size": 274315
+  },
+  {
+    "name": "gatling_report_120users_24h_index.html",
+    "status": "OK",
+    "size": 275620
+  },
+  {
+    "name": "gatling_report_200users_8h_index.html",
+    "status": "OK",
+    "size": 279951
+  }
+]

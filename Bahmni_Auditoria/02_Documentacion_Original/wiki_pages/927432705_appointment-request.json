@@ -1,0 +1,172 @@
+{
+  "id": "927432705",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/927432705",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvOTI3NDMyNzA1",
+  "status": "current",
+  "title": "Appointment Request",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:b07159c8-9be4-4bfe-97d7-e2aedccc73dc",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mritunjay Dubey (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:b07159c8-9be4-4bfe-97d7-e2aedccc73dc",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mritunjay Dubey (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:b07159c8-9be4-4bfe-97d7-e2aedccc73dc"
+      }
+    },
+    "createdDate": "2019-12-06T03:30:02.380Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/927432705/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:b07159c8-9be4-4bfe-97d7-e2aedccc73dc",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mritunjay Dubey (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:b07159c8-9be4-4bfe-97d7-e2aedccc73dc",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mritunjay Dubey (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:b07159c8-9be4-4bfe-97d7-e2aedccc73dc"
+      }
+    },
+    "when": "2019-12-11T13:30:23.807Z",
+    "friendlyWhen": "Dec 11, 2019",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.bwRPWTzvQIFUgXADvZqZHA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$927432705.120",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/927432705"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/927432705/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p style=\"margin-left: 30.0px;\">Appointment Request is a new feature added as part of the 0.93 release of Bahmni. This comes along with the new appointment scheduling module.<br /></p><h4>About the feature</h4><p style=\"margin-left: 30.0px;\">This feature enables users to request appointments for providers. Before this feature, all the appointments which are created as <strong>Scheduled </strong>appointment. Once this feature is enabled the appointments will go as <strong>Requested</strong> appointment. The appointment moves to the <strong>Scheduled</strong> state when at least one provider accepts the appointment invite.</p><h4>Enabling the feature</h4><p>To enable this feature we need to set the below toggle to <code>true</code> in <code>app.json</code>.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"5ccb0249-bce7-4625-b959-73fba6119d6c\"><ac:parameter ac:name=\"language\">json</ac:parameter><ac:plain-text-body><![CDATA[\"enableAppointmentRequests\": true]]></ac:plain-text-body></ac:structured-macro><h4>Creating service for a requested appointment:</h4><p style=\"margin-left: 30.0px;\">We can choose for which services the appointments should go as requested appointments and for which services these should still go as scheduled appointments. To change a service to be able to have <strong>Requested Appointments</strong>, we need to set the <strong>Initial Appointment Status </strong>as <strong>Requested</strong> for that service.</p><h6> Define a service with Requested Initial Appointment Status:</h6><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"365\" ac:original-width=\"523\" ac:width=\"442\"><ri:attachment ri:filename=\"image-20191206-035900.png\" ri:version-at-save=\"2\" /></ac:image><p /><h4>Accepting an appointment invite:</h4><p style=\"margin-left: 30.0px;\">If a provider is selected for a requested appointment, that provider will be able to accept the appointment invite. </p><h6> Accept button(leftmost) to accept the invite from the calendar view:</h6><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"280\" ac:original-width=\"633\"><ri:attachment ri:filename=\"image-20191206-045701.png\" ri:version-at-save=\"1\" /></ac:image><h6><br />Accept button(3rd button) to accept the invite from the listview:</h6><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"390\" ac:original-width=\"1061\"><ri:attachment ri:filename=\"image-20191206-054930.png\" ri:version-at-save=\"1\" /></ac:image><p /><h4>Deciding the status of Appointment and Provider Response:</h4><p style=\"margin-left: 30.0px;\">In the default implementation, when we save an appointment for a requested appointment the status and provider responses are decided as below:</p><ul><li><p>If the appointment has no providers, the Appointment Status will be <strong>Scheduled</strong>.</p></li><li><p>If the appointment has one or more providers, the Appointment Status will be <strong>Requested</strong>. Every provider will get an option to accept the appointment invite(i.e. <strong>Provider Response =&gt; AWAITING</strong>).</p></li><li><p>If the appointment creator is part of the appointment, the Appointment Status will be <strong>Scheduled</strong>. Every provider other than the creator will get an option to accept the appointment invite.</p></li><li><p>If the appointment is rescheduled(change in time), all the providers have to again accept the invite.</p></li></ul><p>To change the above behavior we have provided a javascript hook, which gets invoked on click of save of appointment. To change this behavior we can edit the <code>/var/www/bahmniapps/appointments/appointmentStatusHandler.js</code><strong> </strong>and provide a different implementation of <code>getUpdatedStatusAndProviderResponse</code> function.</p><p /><p><strong>Appointment Request Demo:</strong></p><p style=\"margin-left: 30.0px;\">Here is a link for the demo for the Appointment Request.</p><p style=\"margin-left: 30.0px;\"><a href=\"https://drive.google.com/drive/u/1/folders/1tZdYZaqS0E7loEpukYpnhBqwwv1CsoLe\" data-card-appearance=\"inline\">https://drive.google.com/drive/u/1/folders/1tZdYZaqS0E7loEpukYpnhBqwwv1CsoLe</a> </p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/927432705"
+      }
+    },
+    "view": {
+      "value": "<p style=\"margin-left: 30.0px;\">Appointment Request is a new feature added as part of the 0.93 release of Bahmni. This comes along with the new appointment scheduling module.<br/></p><h4 id=\"AppointmentRequest-Aboutthefeature\">About the feature</h4><p style=\"margin-left: 30.0px;\">This feature enables users to request appointments for providers. Before this feature, all the appointments which are created as <strong>Scheduled </strong>appointment. Once this feature is enabled the appointments will go as <strong>Requested</strong> appointment. The appointment moves to the <strong>Scheduled</strong> state when at least one provider accepts the appointment invite.</p><h4 id=\"AppointmentRequest-Enablingthefeature\">Enabling the feature</h4><p>To enable this feature we need to set the below toggle to <code>true</code> in <code>app.json</code>.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"5ccb0249-bce7-4625-b959-73fba6119d6c\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;enableAppointmentRequests&quot;: true</pre>\n</div></div><h4 id=\"AppointmentRequest-Creatingserviceforarequestedappointment:\">Creating service for a requested appointment:</h4><p style=\"margin-left: 30.0px;\">We can choose for which services the appointments should go as requested appointments and for which services these should still go as scheduled appointments. To change a service to be able to have <strong>Requested Appointments</strong>, we need to set the <strong>Initial Appointment Status </strong>as <strong>Requested</strong> for that service.</p><h6 id=\"AppointmentRequest-DefineaservicewithRequestedInitialAppointmentStatus:\"> Define a service with Requested Initial Appointment Status:</h6><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"442\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/927432705/image-20191206-035900.png?version=2&amp;modificationDate=1575605032286&amp;cacheVersion=1&amp;api=v2&amp;width=442&amp;height=308\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/927432705/image-20191206-035900.png?version=2&amp;modificationDate=1575605032286&amp;cacheVersion=1&amp;api=v2\" data-height=\"365\" data-width=\"523\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"927498253\" data-linked-resource-version=\"2\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20191206-035900.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"927432705\" data-linked-resource-container-version=\"1\" data-media-id=\"8ed3d9f2-fe90-4f29-a31b-02221f3be7b9\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/927432705/image-20191206-035900.png?version=2&amp;modificationDate=1575605032286&amp;cacheVersion=1&amp;api=v2&amp;width=884&amp;height=616 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/927432705/image-20191206-035900.png?version=2&amp;modificationDate=1575605032286&amp;cacheVersion=1&amp;api=v2&amp;width=442&amp;height=308 1x\"></span><p /><h4 id=\"AppointmentRequest-Acceptinganappointmentinvite:\">Accepting an appointment invite:</h4><p style=\"margin-left: 30.0px;\">If a provider is selected for a requested appointment, that provider will be able to accept the appointment invite. </p><h6 id=\"AppointmentRequest-Acceptbutton(leftmost)toaccepttheinvitefromthecalendarview:\"> Accept button(leftmost) to accept the invite from the calendar view:</h6><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/927432705/image-20191206-045701.png?version=1&amp;modificationDate=1575608224376&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/927432705/image-20191206-045701.png?version=1&amp;modificationDate=1575608224376&amp;cacheVersion=1&amp;api=v2\" data-height=\"280\" data-width=\"633\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"927498276\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20191206-045701.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"927432705\" data-linked-resource-container-version=\"1\" data-media-id=\"5ec00793-2bdc-4a04-a0dc-d40829c2e5e7\" data-media-type=\"file\"></span><h6 id=\"AppointmentRequest-Acceptbutton(3rdbutton)toaccepttheinvitefromthelistview:\"><br/>Accept button(3rd button) to accept the invite from the listview:</h6><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/927432705/image-20191206-054930.png?version=1&amp;modificationDate=1575611374284&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/927432705/image-20191206-054930.png?version=1&amp;modificationDate=1575611374284&amp;cacheVersion=1&amp;api=v2\" data-height=\"390\" data-width=\"1061\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"927498292\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20191206-054930.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"927432705\" data-linked-resource-container-version=\"1\" data-media-id=\"c2613c1a-31df-44c1-b898-ead17ac8cfc0\" data-media-type=\"file\"></span><p /><h4 id=\"AppointmentRequest-DecidingthestatusofAppointmentandProviderResponse:\">Deciding the status of Appointment and Provider Response:</h4><p style=\"margin-left: 30.0px;\">In the default implementation, when we save an appointment for a requested appointment the status and provider responses are decided as below:</p><ul><li><p>If the appointment has no providers, the Appointment Status will be <strong>Scheduled</strong>.</p></li><li><p>If the appointment has one or more providers, the Appointment Status will be <strong>Requested</strong>. Every provider will get an option to accept the appointment invite(i.e. <strong>Provider Response =&gt; AWAITING</strong>).</p></li><li><p>If the appointment creator is part of the appointment, the Appointment Status will be <strong>Scheduled</strong>. Every provider other than the creator will get an option to accept the appointment invite.</p></li><li><p>If the appointment is rescheduled(change in time), all the providers have to again accept the invite.</p></li></ul><p>To change the above behavior we have provided a javascript hook, which gets invoked on click of save of appointment. To change this behavior we can edit the <code>/var/www/bahmniapps/appointments/appointmentStatusHandler.js</code><strong> </strong>and provide a different implementation of <code>getUpdatedStatusAndProviderResponse</code> function.</p><p /><p><strong>Appointment Request Demo:</strong></p><p style=\"margin-left: 30.0px;\">Here is a link for the demo for the Appointment Request.</p><p style=\"margin-left: 30.0px;\"><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://drive.google.com/drive/u/1/folders/1tZdYZaqS0E7loEpukYpnhBqwwv1CsoLe\" rel=\"nofollow\">https://drive.google.com/drive/u/1/folders/1tZdYZaqS0E7loEpukYpnhBqwwv1CsoLe</a> </p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/927432705"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/927432705/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/927432705/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 744652581
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/927432705/child",
+    "restrictions": "/rest/api/content/927432705/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/927432705/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=927432705",
+    "webui": "/spaces/BAH/pages/927432705/Appointment+Request",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/927432705",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/927432705",
+    "tinyui": "/x/AYBHNw",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

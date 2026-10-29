@@ -1,0 +1,172 @@
+{
+  "id": "20643953",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/20643953",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjA2NDM5NTM=",
+  "status": "current",
+  "title": "Troubleshooting postgresql replication issues",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:dd7e513e-bc00-497a-a42a-e2b387df0018",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mujir Shaikh (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:dd7e513e-bc00-497a-a42a-e2b387df0018",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mujiruddin Shaikh (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:dd7e513e-bc00-497a-a42a-e2b387df0018"
+      }
+    },
+    "createdDate": "2015-05-22T07:03:21.996Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/20643953/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2016-05-27T06:20:25.141Z",
+    "friendlyWhen": "May 27, 2016",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "syncRev": "0.EECTafOir7rRg_C81dtpSQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$20643953.24",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/20643953"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/20643953/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p>This document will help you understand how you can troubleshoot issues pertaining to postgresql replication.</p><p>&nbsp;</p><ul><li><h3>Check if postgresql replication is running</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"563f691e-2be0-4195-bc3f-4ace33a18c20\"><ac:plain-text-body><![CDATA[ps -ef | grep sender\nps -ef | grep receiver]]></ac:plain-text-body></ac:structured-macro></li><li><h3>Check replication replay on slave</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"08f596df-c284-4de6-b9f6-f7fbb19a4ba9\"><ac:plain-text-body><![CDATA[select pg_last_xlog_receive_location();\nselect pg_last_xlog_replay_location();]]></ac:plain-text-body></ac:structured-macro></li><li><h3>Restart replication on slave if needed (you do this by restarting postgresql on slave)</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"3d06e93d-d0e5-4a42-907e-2f47e085dea8\"><ac:plain-text-body><![CDATA[sudo service postgresql-9.2 restart]]></ac:plain-text-body></ac:structured-macro></li></ul></ac:layout-cell><ac:layout-cell><p>&nbsp;</p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/20643953"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p>This document will help you understand how you can troubleshoot issues pertaining to postgresql replication.</p><p> </p><ul><li><h3 id=\"Troubleshootingpostgresqlreplicationissues-Checkifpostgresqlreplicationisrunning\">Check if postgresql replication is running</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"563f691e-2be0-4195-bc3f-4ace33a18c20\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">ps -ef | grep sender\nps -ef | grep receiver</pre>\n</div></div></li><li><h3 id=\"Troubleshootingpostgresqlreplicationissues-Checkreplicationreplayonslave\">Check replication replay on slave</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"08f596df-c284-4de6-b9f6-f7fbb19a4ba9\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">select pg_last_xlog_receive_location();\nselect pg_last_xlog_replay_location();</pre>\n</div></div></li><li><h3 id=\"Troubleshootingpostgresqlreplicationissues-Restartreplicationonslaveifneeded(youdothisbyrestartingpostgresqlonslave)\">Restart replication on slave if needed (you do this by restarting postgresql on slave)</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3d06e93d-d0e5-4a42-907e-2f47e085dea8\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">sudo service postgresql-9.2 restart</pre>\n</div></div></li></ul></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<p> </p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/20643953"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/20643953/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/20643953/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 3
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/20643953/child",
+    "restrictions": "/rest/api/content/20643953/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/20643953/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=20643953",
+    "webui": "/spaces/BAH/pages/20643953/Troubleshooting+postgresql+replication+issues",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/20643953",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/20643953",
+    "tinyui": "/x/cQA7AQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>extension.json</title></head><body><h1>extension.json</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p><br/></p><h2 id="extension.json-Description">Description</h2><p>This file contains configuration for patient search tabs and consultation tabs in the Clinical App.</p><h2 id="extension.json-Steps">Steps</h2><h3 id="extension.json-ConfigurePatientSearchQueues">Configure Patient Search Queues</h3><p>On navigating to Clinical app, the Patient Search queue is displayed. It contains a list of patient queues based on the configuration.</p><p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" width="720" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/37945559/Screen%20Shot%202016-03-23%20at%203.17.16%20pm.png?version=1&amp;modificationDate=1458726476163&amp;cacheVersion=1&amp;api=v2&amp;width=720&amp;height=228" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/37945559/Screen%20Shot%202016-03-23%20at%203.17.16%20pm.png?version=1&amp;modificationDate=1458726476163&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="47775867" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2016-03-23 at 3.17.16 pm.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="37945559" data-linked-resource-container-version="16" data-media-id="214579a1-3d0a-4556-aadd-2bbfd7ef7f20" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/37945559/Screen%20Shot%202016-03-23%20at%203.17.16%20pm.png?version=1&amp;modificationDate=1458726476163&amp;cacheVersion=1&amp;api=v2&amp;width=1440&amp;height=456 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945559/Screen%20Shot%202016-03-23%20at%203.17.16%20pm.png?version=1&amp;modificationDate=1458726476163&amp;cacheVersion=1&amp;api=v2&amp;width=720&amp;height=228 1x"></span></p><p style="text-align: center;"><strong>Patient Search Queue on the Clinical Home Page</strong></p><p><br/></p><p>Basic configuration for patient search tab is as follows:</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="5d594f67-55fa-41b4-ba17-e3c50db04c87" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Another example for patient search tab</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">&quot;bahmniBillingPatientsSearchActivePatients&quot;: {
+  &quot;id&quot;: &quot;bahmni.billing.patients.search.allPatients&quot;,
+  &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,
+  &quot;type&quot;: &quot;config&quot;,
+  &quot;extensionParams&quot;: {
+    &quot;searchHandler&quot;: &quot;emrapi.sqlSearch.activePatients&quot;,
+    &quot;translationKey&quot;: &quot;SEARCH_PATIENTS_ACTIVE_LABEL&quot;,
+    &quot;forwardUrl&quot;: &quot;#/default/patient/{{patientUuid}}/dashboard/treatment&quot;
+ },
+  &quot;order&quot;: 1,
+  &quot;requiredPrivilege&quot;: &quot;app:billing&quot;
+}</pre>
+</div></div><p>Configuration for patient search with additional params: (for example, search tab for high risk hiv patients)</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="899db723-6f47-43ed-a755-4eb951bbc3ed" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Sample Patient Search tab configuration </b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: true; theme: Confluence" data-theme="Confluence">&quot;bahmniClinicalPatientsSearchHighRiskPatients&quot;: {
+  &quot;id&quot;: &quot;bahmni.clinical.patients.search.allPatients&quot;,
+  &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,
+  &quot;type&quot;: &quot;config&quot;,
+  &quot;extensionParams&quot;: {
+    &quot;searchHandler&quot;: &quot;emrapi.sqlSearch.highRiskPatients&quot;,
+    &quot;forwardUrl&quot;: &quot;#/default/patient/{{patientUuid}}/dashboard?encounterUuid=active&quot;,
+    &quot;translationKey&quot;: &quot;High Risk&quot;,
+    &quot;additionalParams&quot;: {
+      &quot;tests&quot;: &quot;'HIV ELISA (Blood)', 'HIV ELISA (Serum)', 'ZN Stain (Sputum)', 'HbsAg ELISA'&quot;
+    }
+  },
+  &quot;order&quot;: 5,
+  &quot;requiredPrivilege&quot;: &quot;app:clinical&quot;
+}</pre>
+</div></div><div class="table-wrap"><table class="wrapped confluenceTable"><tbody><tr><th class="confluenceTh">key</th><th class="confluenceTh">description</th><th colspan="1" class="confluenceTh">Mandatory</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Unique identifier for patient search queue</td><td colspan="1" class="confluenceTd">N</td></tr><tr><td class="confluenceTd">extensionPointId</td><td class="confluenceTd"><p>&quot;org.bahmni.patient.search&quot;</p></td><td colspan="1" class="confluenceTd">Y</td></tr><tr><td colspan="1" class="confluenceTd"><span>type</span></td><td colspan="1" class="confluenceTd"><span>config<br/></span></td><td colspan="1" class="confluenceTd">Y</td></tr><tr><td class="confluenceTd">searchHandler</td><td class="confluenceTd">This is the global property in OpenMRS. Its value is the SQL markup to fetch the patients for this queue. If not configured default search will be enabled.</td><td colspan="1" class="confluenceTd">N</td></tr><tr><td colspan="1" class="confluenceTd">translationKey</td><td colspan="1" class="confluenceTd">This can be used to configure a label for the search tab. The key and value should be defined in the locale.json and key should be assigned to this translationKey. If Key is configured and value is not defined in the locale.json, then it will show the key itself as the label. Here the key is<pre>SEARCH_PATIENTS_ACTIVE_LABEL.</pre></td><td colspan="1" class="confluenceTd">Y</td></tr><tr><td colspan="1" class="confluenceTd">forwardUrl</td><td colspan="1" class="confluenceTd">The URL which the page is redirected to on clicking on the patients listed in this queue.</td><td colspan="1" class="confluenceTd">Y</td></tr><tr><td colspan="1" class="confluenceTd">additionalParams</td><td colspan="1" class="confluenceTd">Contains tests that signify the high-risk patients. Only the patients that have negative results for the tests mentioned in this section will be displayed.(For high risk patients, additional params are mandatory. These are not mandatory for other patient search queues).</td><td colspan="1" class="confluenceTd">N</td></tr><tr><td colspan="1" class="confluenceTd">Order</td><td colspan="1" class="confluenceTd">Order of the queue to be displayed.</td><td colspan="1" class="confluenceTd">N</td></tr><tr><td colspan="1" class="confluenceTd">requiredPrivilege</td><td colspan="1" class="confluenceTd">Privilege required for the user to be able to access this clinical app.</td><td colspan="1" class="confluenceTd">N</td></tr></tbody></table></div><h3 id="extension.json-ConfigureVariousConsultationTabs"><strong style="font-size: 16.0px;line-height: 1.5;">Configure Various Consultation Tabs</strong></h3><p>Following are the possible consultation tabs that can be configured:</p><ul><li>Observations</li><li>Diagnosis</li><li>Disposition</li><li>Consultation</li><li>Orders</li><li>Medication</li></ul><p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" width="720" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/37945559/Screen%20Shot%202016-03-23%20at%203.19.33%20pm.png?version=1&amp;modificationDate=1458726677381&amp;cacheVersion=1&amp;api=v2&amp;width=720&amp;height=50" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/37945559/Screen%20Shot%202016-03-23%20at%203.19.33%20pm.png?version=1&amp;modificationDate=1458726677381&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="47775877" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2016-03-23 at 3.19.33 pm.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="37945559" data-linked-resource-container-version="16" data-media-id="2c01c6b0-7f4d-46db-8daf-c5a05ef388aa" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/37945559/Screen%20Shot%202016-03-23%20at%203.19.33%20pm.png?version=1&amp;modificationDate=1458726677381&amp;cacheVersion=1&amp;api=v2&amp;width=1440&amp;height=100 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945559/Screen%20Shot%202016-03-23%20at%203.19.33%20pm.png?version=1&amp;modificationDate=1458726677381&amp;cacheVersion=1&amp;api=v2&amp;width=720&amp;height=50 1x"></span></p><p style="text-align: center;"><strong>Various Consultation Tabs</strong></p><p><br/></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="4f83e5a6-4e36-43ab-a62b-2654c5f32782" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Configuration for various Consultation tabs</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">&quot;observations&quot;: {
+  &quot;id&quot;: &quot;bahmni.clinical.consultation.observations&quot;,
+  &quot;extensionPointId&quot;: &quot;org.bahmni.clinical.consultation.board&quot;,
+  &quot;type&quot;: &quot;link&quot;,
+  &quot;translationKey&quot;: &quot;Observations&quot;,
+  &quot;url&quot;: &quot;concept-set-group/observations&quot;,
+  &quot;default&quot;: true,
+  &quot;order&quot;: 1,
+  &quot;requiredPrivilege&quot;: &quot;app:clinical:observationTab&quot;
+},
+&quot;diagnosis&quot;: {
+  &quot;id&quot;: &quot;bahmni.clinical.consultation.diagnosis&quot;,
+  &quot;extensionPointId&quot;: &quot;org.bahmni.clinical.consultation.board&quot;,
+  &quot;type&quot;: &quot;link&quot;,
+  &quot;translationKey&quot;: &quot;Diagnosis&quot;,
+  &quot;url&quot;: &quot;diagnosis&quot;,
+  &quot;order&quot;: 2,
+  &quot;requiredPrivilege&quot;: &quot;app:clinical:diagnosisTab&quot;
+},
+&quot;disposition&quot;: {
+  &quot;id&quot;: &quot;bahmni.clinical.consultation.disposition&quot;,
+  &quot;extensionPointId&quot;: &quot;org.bahmni.clinical.consultation.board&quot;,
+  &quot;type&quot;: &quot;link&quot;,
+  &quot;translationKey&quot;: &quot;Disposition&quot;,
+  &quot;url&quot;: &quot;disposition&quot;,
+  &quot;order&quot;: 3,
+  &quot;requiredPrivilege&quot;: &quot;app:clinical:dispositionTab&quot;
+},
+&quot;consultationSummary&quot;: {
+  &quot;id&quot;: &quot;bahmni.clinical.consultation.summary&quot;,
+  &quot;extensionPointId&quot;: &quot;org.bahmni.clinical.consultation.board&quot;,
+  &quot;type&quot;: &quot;link&quot;,
+  &quot;translationKey&quot;: &quot;Consultation&quot;,
+  &quot;url&quot;: &quot;consultation&quot;,
+  &quot;order&quot;: 4,
+  &quot;requiredPrivilege&quot;: &quot;app:clinical:consultationTab&quot;
+},
+&quot;bahmniClinicalConsultationOrders&quot;: {
+  &quot;id&quot;: &quot;bahmni.clinical.consultation.orders&quot;,
+  &quot;extensionPointId&quot;: &quot;org.bahmni.clinical.consultation.board&quot;,
+  &quot;type&quot;: &quot;link&quot;,
+  &quot;translationKey&quot;: &quot;Orders&quot;,
+  &quot;url&quot;: &quot;orders&quot;,
+  &quot;order&quot;: 5,
+  &quot;requiredPrivilege&quot;: &quot;app:clinical:diagnosisTab&quot;
+},
+&quot;bahmniClinicalBillingTreatmentMedicationTab&quot;: {
+  &quot;id&quot;: &quot;bahmni.clinical.billing.treatment&quot;,
+  &quot;extensionPointId&quot;: &quot;org.bahmni.clinical.consultation.board&quot;,
+  &quot;type&quot;: &quot;link&quot;,
+  &quot;label&quot;: &quot;Medications&quot;,
+  &quot;translationKey&quot;: &quot;Medications&quot;,
+  &quot;extensionParams&quot;: {
+    &quot;tabConfigName&quot;: &quot;allMedicationTabConfig&quot;
+  },
+  &quot;url&quot;: &quot;treatment&quot;,
+  &quot;order&quot;: 6,
+  &quot;requiredPrivilege&quot;: &quot;app:clinical:consultationTab&quot;
+}
+ </pre>
+</div></div><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Key</th><th class="confluenceTh">Description</th><th colspan="1" class="confluenceTh">Mandatory</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">unique identifier for the consultation tab</td><td colspan="1" class="confluenceTd">N</td></tr><tr><td class="confluenceTd">extensionPointId</td><td class="confluenceTd"><p>org.bahmni.clinical.consultation.board</p></td><td colspan="1" class="confluenceTd">Y</td></tr><tr><td class="confluenceTd">type</td><td class="confluenceTd">link</td><td colspan="1" class="confluenceTd">Y</td></tr><tr><td colspan="1" class="confluenceTd">label</td><td colspan="1" class="confluenceTd">Label of the tab. This will be shown only if translationKey is not specified. Mandatory if translationKey is not specified.</td><td colspan="1" class="confluenceTd">N</td></tr><tr><td colspan="1" class="confluenceTd">translationKey</td><td colspan="1" class="confluenceTd">This key is used for internationalization of the label. Mandatory if label is not specified.</td><td colspan="1" class="confluenceTd">N</td></tr><tr><td colspan="1" class="confluenceTd">url</td><td colspan="1" class="confluenceTd">Url of the tab. Refer to the above configuration for url of respective tabs.</td><td colspan="1" class="confluenceTd">Y</td></tr><tr><td colspan="1" class="confluenceTd">order</td><td colspan="1" class="confluenceTd">Order of the tab to be displayed</td><td colspan="1" class="confluenceTd">N</td></tr><tr><td colspan="1" class="confluenceTd">tabConfigName</td><td colspan="1" class="confluenceTd">It is applicable only to treatment tabs. Multiple treatment tabs can be configured but each should have a unique tabConfigName</td><td colspan="1" class="confluenceTd">N</td></tr><tr><td colspan="1" class="confluenceTd">requiredPrivilege</td><td colspan="1" class="confluenceTd"><span>Privilege required for the user to access this tab.</span></td><td colspan="1" class="confluenceTd">N</td></tr></tbody></table></div><h3 id="extension.json-DisplayObservationTemplatesbyDefault">Display Observation Templates by Default</h3><p>If default is set to true in the extensionParams, then that template will be shown by default as soon as the observations page is opened.</p><p>Please refer the following example config.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="6d976b96-8a04-4982-8976-6d35aea05e66" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Config</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">&quot;bahmniClinicalConceptSetGroupObservationsHistory&quot;: {
+  &quot;id&quot;: &quot;bahmni.clinical.conceptSetGroup.observations.history&quot;,
+  &quot;extensionPointId&quot;: &quot;org.bahmni.clinical.conceptSetGroup.observations&quot;,
+  &quot;type&quot;: &quot;config&quot;,
+  &quot;extensionParams&quot;: {
+    &quot;conceptName&quot;: &quot;History and Examination&quot;,
+    &quot;default&quot;: true
+  },
+  &quot;requiredPrivilege&quot;: &quot;app:clinical:history&quot;
+}</pre>
+</div></div><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Key</th><th class="confluenceTh">Description</th><th class="confluenceTh">Mandatory</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">unique id for the config</td><td class="confluenceTd">N</td></tr><tr><td class="confluenceTd">extensionPointId</td><td class="confluenceTd"><pre>&quot;org.bahmni.clinical.conceptSetGroup.observations&quot;</pre></td><td class="confluenceTd">Y</td></tr><tr><td colspan="1" class="confluenceTd">type</td><td colspan="1" class="confluenceTd">config</td><td colspan="1" class="confluenceTd">Y</td></tr><tr><td colspan="1" class="confluenceTd">extensionParams</td><td colspan="1" class="confluenceTd">This contains two variables conceptName and default.<br/>conceptName is the name of the template. If default is set to true then this template will come by default in observation page </td><td colspan="1" class="confluenceTd">Y</td></tr><tr><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td></tr></tbody></table></div><p><br/></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" width="720" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/37945559/Screen%20Shot%202016-04-15%20at%201.50.31%20PM.png?version=1&amp;modificationDate=1460708505109&amp;cacheVersion=1&amp;api=v2&amp;width=720&amp;height=156" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/37945559/Screen%20Shot%202016-04-15%20at%201.50.31%20PM.png?version=1&amp;modificationDate=1460708505109&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="53837929" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2016-04-15 at 1.50.31 PM.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="37945559" data-linked-resource-container-version="16" data-media-id="2ed54df2-0dc7-42c5-9d88-2fbdef41e160" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/37945559/Screen%20Shot%202016-04-15%20at%201.50.31%20PM.png?version=1&amp;modificationDate=1460708505109&amp;cacheVersion=1&amp;api=v2&amp;width=1440&amp;height=312 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/37945559/Screen%20Shot%202016-04-15%20at%201.50.31%20PM.png?version=1&amp;modificationDate=1460708505109&amp;cacheVersion=1&amp;api=v2&amp;width=720&amp;height=156 1x"></span></p><h3 id="extension.json-"><br/><br/></h3></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="confluence-information-macro confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="9e4f9769-17bb-4ca3-8e1e-b5067da8696b" data-macro-name="tip"><p class="title">On this Page</p><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="d991fccf-4a60-4168-b26a-679d7eb204d6" data-macro-name="toc"> </div> <p> </p></div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="2e090de1-f033-4179-bcca-609200e0a042" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #1FA5A0;color: White;"><b>Related Links</b></div><div class="panelContent">
+<p><a href="/wiki/spaces/BAH/pages/32014548/Clinical+Module" data-linked-resource-id="32014548" data-linked-resource-version="11" data-linked-resource-type="page">Clinical Module - Implementer's Guide</a></p><div><a href="/wiki/spaces/BAH/pages/36700208/Clinical+App" data-linked-resource-id="36700208" data-linked-resource-version="9" data-linked-resource-type="page">Clinical App - JSON files</a></div>
+</div></div></div>
+</div>
+</div>
+</div></body></html>

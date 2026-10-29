@@ -1,0 +1,172 @@
+{
+  "id": "32014460",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/32014460",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzIwMTQ0NjA=",
+  "status": "current",
+  "title": "Using Lab Dashboard",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2015-11-03T05:55:39.778Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014460/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5e43cc7490dfb70c9e609d8c",
+      "accountType": "atlassian",
+      "email": "rahulnuchange@gmail.com",
+      "publicName": "Rahul Kumrawat",
+      "timeZone": "Asia/Calcutta",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e43cc7490dfb70c9e609d8c",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Rahul Kumrawat",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e43cc7490dfb70c9e609d8c"
+      }
+    },
+    "when": "2021-03-25T07:15:17.361Z",
+    "friendlyWhen": "Mar 25, 2021",
+    "message": "",
+    "number": 19,
+    "minorEdit": false,
+    "syncRev": "0.fFFOmj-3RA6u2wsV0o96Ug.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$32014460.84",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/32014460"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014460/version/19"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>About the Feature</h2><div><p>The laboratory management module in Bahmni is built upon an Open Source software called OpenELIS. When a patient is registered in Bahmni using the registration module, the patient name and demographic information is synced automatically to the lab system. When the patient goes to the lab, the lab technician collecting the sample can look up the patient and add tests for that patient.&nbsp;</p><p>The lab module&nbsp;syncs back the tests added, along with the results and referral&nbsp;information back to the clinical module for the doctors and nurses to see this information. The key features of the laboratory management system are:</p><ul><li>Sample collection</li><li>Recording tests and results.</li><li>Printing out of results.</li></ul></div><h2><span style=\"color: rgb(0,0,0);\">Used By</span></h2><p>The lab dashboard is used by the lab technician to view the queue of patients from whom samples are to be collected.</p><h2><span style=\"color: rgb(0,0,0);\">How is it Used?</span></h2><h3 style=\"text-align: left;\">1. Collect Samples</h3><p style=\"text-align: left;\">Clicking on <em>Collect Sample</em> takes the user to the &quot;Add Sample&quot; page.&nbsp;</p><p style=\"text-align: left;\"><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2016-02-26 at 5.24.23 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><p style=\"text-align: center;\"><strong style=\"text-align: center;\">Lab Dashboard</strong></p><p style=\"text-align: left;\">On the &quot;Add Sample&quot; page, the user can see the tests that are ordered by the doctor. The user can also see the corresponding samples that are to be collected. Click on &quot;Generate&quot; to generate an accession number for the sample. Then click on &quot;Save&quot;</p><p style=\"text-align: center;\"><ac:image ac:align=\"center\" ac:width=\"800\"><ri:attachment ri:filename=\"Screen Shot 2016-04-15 at 12.18.51 PM.png\" ri:version-at-save=\"1\" /></ac:image><strong>Add Sample Page</strong></p><h3 style=\"text-align: left;\">2. Record Results</h3><p style=\"text-align: left;\">The user can also view the queue of patients to enter test results.&nbsp;On clicking &quot;Result&quot;, the user can access the page where they can enter the test results against each test done for the patient.&nbsp;</p><p style=\"text-align: center;\"><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"Result Entry.jpeg\" ri:version-at-save=\"2\" /></ac:image></p><p style=\"text-align: center;\"><strong>Lab Dashboard - Samples Collected Tab</strong></p><h3>3. View Referred Out Test Counts</h3><p>While recording the results user has an option to refer out the desired test(s) as explained here&nbsp;<ac:link><ri:page ri:content-title=\"Referring out Laboratory Test(s) and Result Entry for the same\" ri:version-at-save=\"9\" /></ac:link>. Once the test(s) are referred out, count of those tests can be seen in the Lab Dashboard under Samples Collected - Today / Backlog - <strong>Referred Out</strong> column.&nbsp;<strong>Total&nbsp;</strong>column in the dashboard includes the count of Referred Tests too.</p><p><ac:image ac:title=\"Referred Out Test Count\" ac:alt=\"Referred Out Test Count\" ac:height=\"250\" ac:width=\"933\"><ri:attachment ri:filename=\"Referred Out Tests Count.jpeg\" ri:version-at-save=\"1\" /></ac:image></p><p style=\"text-align: center;\"><strong>Referred Out Tests Count</strong></p><h3 style=\"text-align: left;\">4. Print Results</h3><p style=\"text-align: left;\">The user can validate the test results from the lab dashboard and also take a print out of the test result report for the patient. To do that click on the &quot;Print&quot; button in the &quot;Action&quot; column below</p><p style=\"text-align: left;\"><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"Print Result.jpeg\" ri:version-at-save=\"1\" /></ac:image></p><p style=\"text-align: center;\"><strong>Lab Dashboard - Samples Collected Tab</strong></p><h3>5. Print Sample Label&nbsp;</h3><div>&nbsp; &nbsp; &nbsp; &nbsp; User can print the sample label (Accession Number) from&nbsp;the lab dashboard once the sample is collected for the test.&nbsp;<span style=\"background-color: rgb(255,255,255);\">Sample label will have following information:</span><ul class=\"ak-ul\"><li><p>Patient identifier</p></li><li><p>Patient name</p></li><li><p>Age</p></li><li><p>Gender</p></li><li><p>Accession number</p></li><li><p>Sample reception date and time</p></li><li><p>Accession barcode</p></li></ul></div><div><span style=\"color: rgb(23,43,77);\">&nbsp; &nbsp; &nbsp; &nbsp; User can use a configuration to show or hide patient's personal details<span style=\"color: rgb(23,43,77);\">(age, gender, name)</span> in the label. This is configured using the property &ldquo;</span><span class=\"code\" style=\"color: rgb(23,43,77);\">showPatientDetailsSampleLabel</span><span style=\"color: rgb(23,43,77);\">&rdquo; in </span><span class=\"code\" style=\"color: rgb(23,43,77);\">site_information</span><span style=\"color: rgb(23,43,77);\"> table. By default it is set to true.</span></div><div><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"Label Print Icon.jpeg\" ri:version-at-save=\"2\" /></ac:image></div><div style=\"text-align: center;\"><strong>Sample Label Print</strong></div></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"a3d30937-72b7-40ca-a45c-2936cfbb12bb\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"c683bfc0-7fe5-4945-a8ed-62456bd42964\" />&nbsp;</ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Laboratory Management\" ri:version-at-save=\"7\" /><ac:plain-text-link-body><![CDATA[Lab Dashboard - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"3fe3feef-06ea-4aac-b9a1-a6bbe83b0bec\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Implemnentation Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Laboratory Module\" ri:version-at-save=\"22\" /><ac:plain-text-link-body><![CDATA[Lab Dashboard - Implementer's Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/32014460"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"UsingLabDashboard-AbouttheFeature\">About the Feature</h2><div><p>The laboratory management module in Bahmni is built upon an Open Source software called OpenELIS. When a patient is registered in Bahmni using the registration module, the patient name and demographic information is synced automatically to the lab system. When the patient goes to the lab, the lab technician collecting the sample can look up the patient and add tests for that patient. </p><p>The lab module syncs back the tests added, along with the results and referral information back to the clinical module for the doctors and nurses to see this information. The key features of the laboratory management system are:</p><ul><li>Sample collection</li><li>Recording tests and results.</li><li>Printing out of results.</li></ul></div><h2 id=\"UsingLabDashboard-UsedBy\"><span class=\"legacy-color-text-default\">Used By</span></h2><p>The lab dashboard is used by the lab technician to view the queue of patients from whom samples are to be collected.</p><h2 id=\"UsingLabDashboard-HowisitUsed?\"><span class=\"legacy-color-text-default\">How is it Used?</span></h2><h3 style=\"text-align: left;\" id=\"UsingLabDashboard-1.CollectSamples\">1. Collect Samples</h3><p style=\"text-align: left;\">Clicking on <em>Collect Sample</em> takes the user to the &quot;Add Sample&quot; page. </p><p style=\"text-align: left;\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014460/Screen%20Shot%202016-02-26%20at%205.24.23%20PM.png?version=1&amp;modificationDate=1456488214743&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=342\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014460/Screen%20Shot%202016-02-26%20at%205.24.23%20PM.png?version=1&amp;modificationDate=1456488214743&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"42729489\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-02-26 at 5.24.23 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32014460\" data-linked-resource-container-version=\"19\" data-media-id=\"dec01765-9f79-4f60-bcfa-979ebb350c77\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014460/Screen%20Shot%202016-02-26%20at%205.24.23%20PM.png?version=1&amp;modificationDate=1456488214743&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=684 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014460/Screen%20Shot%202016-02-26%20at%205.24.23%20PM.png?version=1&amp;modificationDate=1456488214743&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=342 1x\"></span></p><p style=\"text-align: center;\"><strong style=\"text-align: center;\">Lab Dashboard</strong></p><p style=\"text-align: left;\">On the &quot;Add Sample&quot; page, the user can see the tests that are ordered by the doctor. The user can also see the corresponding samples that are to be collected. Click on &quot;Generate&quot; to generate an accession number for the sample. Then click on &quot;Save&quot;</p><p style=\"text-align: center;\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"800\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014460/Screen%20Shot%202016-04-15%20at%2012.18.51%20PM.png?version=1&amp;modificationDate=1460703203447&amp;cacheVersion=1&amp;api=v2&amp;width=800&amp;height=410\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014460/Screen%20Shot%202016-04-15%20at%2012.18.51%20PM.png?version=1&amp;modificationDate=1460703203447&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"53837832\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-04-15 at 12.18.51 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"32014460\" data-linked-resource-container-version=\"19\" data-media-id=\"82b62994-fdad-4511-9126-7d0df7c17c75\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014460/Screen%20Shot%202016-04-15%20at%2012.18.51%20PM.png?version=1&amp;modificationDate=1460703203447&amp;cacheVersion=1&amp;api=v2&amp;width=1438&amp;height=737 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014460/Screen%20Shot%202016-04-15%20at%2012.18.51%20PM.png?version=1&amp;modificationDate=1460703203447&amp;cacheVersion=1&amp;api=v2&amp;width=800&amp;height=410 1x\"></span><strong>Add Sample Page</strong></p><h3 style=\"text-align: left;\" id=\"UsingLabDashboard-2.RecordResults\">2. Record Results</h3><p style=\"text-align: left;\">The user can also view the queue of patients to enter test results. On clicking &quot;Result&quot;, the user can access the page where they can enter the test results against each test done for the patient. </p><p style=\"text-align: center;\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014460/Result%20Entry.jpeg?version=2&amp;modificationDate=1616651769118&amp;cacheVersion=1&amp;api=v2&amp;width=883&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014460/Result%20Entry.jpeg?version=2&amp;modificationDate=1616651769118&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2277638209\" data-linked-resource-version=\"2\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Result Entry.jpeg\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/jpeg\" data-linked-resource-container-id=\"32014460\" data-linked-resource-container-version=\"19\" data-media-id=\"7f3015f5-d949-41ac-bfde-88f5a799fe9b\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014460/Result%20Entry.jpeg?version=2&amp;modificationDate=1616651769118&amp;cacheVersion=1&amp;api=v2&amp;width=1078&amp;height=305 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014460/Result%20Entry.jpeg?version=2&amp;modificationDate=1616651769118&amp;cacheVersion=1&amp;api=v2&amp;width=883&amp;height=250 1x\"></span></p><p style=\"text-align: center;\"><strong>Lab Dashboard - Samples Collected Tab</strong></p><h3 id=\"UsingLabDashboard-3.ViewReferredOutTestCounts\">3. View Referred Out Test Counts</h3><p>While recording the results user has an option to refer out the desired test(s) as explained here <a href=\"/wiki/spaces/BAH/pages/1163984947/Referring+out+Laboratory+Test+s+and+Result+Entry+for+the+same\" data-linked-resource-id=\"1163984947\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Referring out Laboratory Test(s) and Result Entry for the same</a>. Once the test(s) are referred out, count of those tests can be seen in the Lab Dashboard under Samples Collected - Today / Backlog - <strong>Referred Out</strong> column. <strong>Total </strong>column in the dashboard includes the count of Referred Tests too.</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" alt=\"Referred Out Test Count\" height=\"250\" width=\"933\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014460/Referred%20Out%20Tests%20Count.jpeg?version=1&amp;modificationDate=1616650374257&amp;cacheVersion=1&amp;api=v2&amp;width=933&amp;height=249\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014460/Referred%20Out%20Tests%20Count.jpeg?version=1&amp;modificationDate=1616650374257&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2273280266\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Referred Out Tests Count.jpeg\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/jpeg\" data-linked-resource-container-id=\"32014460\" data-linked-resource-container-version=\"19\" data-media-id=\"6a254a52-7f8e-44ca-b6dc-5ac1bebee1a5\" data-media-type=\"file\" title=\"Referred Out Test Count\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014460/Referred%20Out%20Tests%20Count.jpeg?version=1&amp;modificationDate=1616650374257&amp;cacheVersion=1&amp;api=v2&amp;width=1161&amp;height=311 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014460/Referred%20Out%20Tests%20Count.jpeg?version=1&amp;modificationDate=1616650374257&amp;cacheVersion=1&amp;api=v2&amp;width=933&amp;height=249 1x\"></span></p><p style=\"text-align: center;\"><strong>Referred Out Tests Count</strong></p><h3 style=\"text-align: left;\" id=\"UsingLabDashboard-4.PrintResults\">4. Print Results</h3><p style=\"text-align: left;\">The user can validate the test results from the lab dashboard and also take a print out of the test result report for the patient. To do that click on the &quot;Print&quot; button in the &quot;Action&quot; column below</p><p style=\"text-align: left;\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014460/Print%20Result.jpeg?version=1&amp;modificationDate=1616652284030&amp;cacheVersion=1&amp;api=v2&amp;width=883&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014460/Print%20Result.jpeg?version=1&amp;modificationDate=1616652284030&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2277638237\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Print Result.jpeg\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/jpeg\" data-linked-resource-container-id=\"32014460\" data-linked-resource-container-version=\"19\" data-media-id=\"f8af69a3-1597-461b-9072-e1db7ad9c12a\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014460/Print%20Result.jpeg?version=1&amp;modificationDate=1616652284030&amp;cacheVersion=1&amp;api=v2&amp;width=1078&amp;height=305 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014460/Print%20Result.jpeg?version=1&amp;modificationDate=1616652284030&amp;cacheVersion=1&amp;api=v2&amp;width=883&amp;height=250 1x\"></span></p><p style=\"text-align: center;\"><strong>Lab Dashboard - Samples Collected Tab</strong></p><h3 id=\"UsingLabDashboard-5.PrintSampleLabel\">5. Print Sample Label </h3><div>        User can print the sample label (Accession Number) from the lab dashboard once the sample is collected for the test. <span style=\"background-color: rgb(255,255,255);\">Sample label will have following information:</span><ul class=\"ak-ul\"><li><p>Patient identifier</p></li><li><p>Patient name</p></li><li><p>Age</p></li><li><p>Gender</p></li><li><p>Accession number</p></li><li><p>Sample reception date and time</p></li><li><p>Accession barcode</p></li></ul></div><div><span class=\"legacy-color-text-blue3\">        User can use a configuration to show or hide patient's personal details<span class=\"legacy-color-text-blue3\">(age, gender, name)</span> in the label. This is configured using the property “</span><span class=\"code legacy-color-text-blue3\">showPatientDetailsSampleLabel</span><span class=\"legacy-color-text-blue3\">” in </span><span class=\"code legacy-color-text-blue3\">site_information</span><span class=\"legacy-color-text-blue3\"> table. By default it is set to true.</span></div><div><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014460/Label%20Print%20Icon.jpeg?version=2&amp;modificationDate=1616652023609&amp;cacheVersion=1&amp;api=v2&amp;width=883&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014460/Label%20Print%20Icon.jpeg?version=2&amp;modificationDate=1616652023609&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2277638195\" data-linked-resource-version=\"2\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Label Print Icon.jpeg\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/jpeg\" data-linked-resource-container-id=\"32014460\" data-linked-resource-container-version=\"19\" data-media-id=\"aaba17e1-4a31-4f1c-87cd-a7556b5bc7e7\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014460/Label%20Print%20Icon.jpeg?version=2&amp;modificationDate=1616652023609&amp;cacheVersion=1&amp;api=v2&amp;width=1078&amp;height=305 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014460/Label%20Print%20Icon.jpeg?version=2&amp;modificationDate=1616652023609&amp;cacheVersion=1&amp;api=v2&amp;width=883&amp;height=250 1x\"></span></div><div style=\"text-align: center;\"><strong>Sample Label Print</strong></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a3d30937-72b7-40ca-a45c-2936cfbb12bb\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"c683bfc0-7fe5-4945-a8ed-62456bd42964\" data-macro-name=\"toc\"> </div> </div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604211/Laboratory+Management\" data-linked-resource-id=\"32604211\" data-linked-resource-version=\"7\" data-linked-resource-type=\"page\">Lab Dashboard - Feature Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3fe3feef-06ea-4aac-b9a1-a6bbe83b0bec\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Implemnentation Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32014586/Laboratory+Module\" data-linked-resource-id=\"32014586\" data-linked-resource-version=\"22\" data-linked-resource-type=\"page\">Lab Dashboard - Implementer's Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/32014460"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/32014460/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014460/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 0
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/32014460/child",
+    "restrictions": "/rest/api/content/32014460/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/32014460/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=32014460",
+    "webui": "/spaces/BAH/pages/32014460/Using+Lab+Dashboard",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/32014460",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014460",
+    "tinyui": "/x/fIDoAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

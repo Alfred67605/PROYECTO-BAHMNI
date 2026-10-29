@@ -1,0 +1,170 @@
+{
+  "id": "116592883",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/116592883",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE2NTkyODgz",
+  "status": "current",
+  "title": "Reconnection error messages in Bahmni Connect App",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:e16e96e3-bf75-4b6f-9648-586f951f9a73",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Pankaj Kanchankar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:e16e96e3-bf75-4b6f-9648-586f951f9a73",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Pankaj Kanchankar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:e16e96e3-bf75-4b6f-9648-586f951f9a73"
+      }
+    },
+    "createdDate": "2017-05-11T06:06:50.834Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/116592883/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:e16e96e3-bf75-4b6f-9648-586f951f9a73",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Pankaj Kanchankar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:e16e96e3-bf75-4b6f-9648-586f951f9a73",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Pankaj Kanchankar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:e16e96e3-bf75-4b6f-9648-586f951f9a73"
+      }
+    },
+    "when": "2017-05-11T06:14:13.247Z",
+    "friendlyWhen": "May 11, 2017",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.2ZyCT_MJ3IKgvaF6_PtrOg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$116592883.22",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/116592883"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/116592883/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>When Bahmni Connect app is set up and user is not in network or disconnected, the app starts giving message&nbsp;</p><p>&quot;Reconnect Failed.<br />Reconnecting in xx seconds...&quot;</p><p>This is a configuration which was designed for Online usage and to alert users when they lose connection to save effort. For Bahmni Connect app, it is recommended to turn this flag OFF by setting parameter&nbsp;&quot;showNetworkStatusMessage&quot; to false. Refer to<ac:link><ri:page ri:content-title=\"Network status alert for clinical data entry\" ri:version-at-save=\"19\" /><ac:plain-text-link-body><![CDATA[ this documentation on Network Status Alert]]></ac:plain-text-link-body></ac:link> on how to manage this flag.&nbsp;</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/116592883"
+      }
+    },
+    "view": {
+      "value": "<p>When Bahmni Connect app is set up and user is not in network or disconnected, the app starts giving message </p><p>&quot;Reconnect Failed.<br/>Reconnecting in xx seconds...&quot;</p><p>This is a configuration which was designed for Online usage and to alert users when they lose connection to save effort. For Bahmni Connect app, it is recommended to turn this flag OFF by setting parameter &quot;showNetworkStatusMessage&quot; to false. Refer to<a href=\"/wiki/spaces/BAH/pages/87883793/Network+status+alert+for+clinical+data+entry\" data-linked-resource-id=\"87883793\" data-linked-resource-version=\"19\" data-linked-resource-type=\"page\"> this documentation on Network Status Alert</a> on how to manage this flag. </p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/116592883"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/116592883/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/116592883/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 7
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/116592883/child",
+    "restrictions": "/rest/api/content/116592883/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/116592883/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=116592883",
+    "webui": "/spaces/BAH/pages/116592883/Reconnection+error+messages+in+Bahmni+Connect+App",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/116592883",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/116592883",
+    "tinyui": "/x/8xDzBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

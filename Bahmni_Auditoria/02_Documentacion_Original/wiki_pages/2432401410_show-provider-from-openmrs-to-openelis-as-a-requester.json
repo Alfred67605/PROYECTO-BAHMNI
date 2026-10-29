@@ -1,0 +1,181 @@
+{
+  "id": "2432401410",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2432401410",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjQzMjQwMTQxMA==",
+  "status": "current",
+  "title": "Show provider from OpenMRS to OpenELIS as a requester",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5e943471088a7e0c0f50e1e0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Buvaneswari Arun (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e943471088a7e0c0f50e1e0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Buvaneswari Arun (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e943471088a7e0c0f50e1e0"
+      }
+    },
+    "createdDate": "2021-04-27T08:05:36.855Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2432401410/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "when": "2024-07-24T11:50:57.190Z",
+    "friendlyWhen": "Jul 24, 2024",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.NYL2mNIRfSGw3PmLPCAusg.0",
+    "syncRevSource": "synchrony-ack",
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$2432401410.25",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2432401410"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2432401410/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>When you place an test/panel order from EMR, the order would appear in the lab dashboard as &ldquo;Samples to collect&rdquo;. The next step is to add the sample and generate an accession, before results can be entered. </p><p>During this process, if you want to see the &ldquo;orderer&rdquo; information in the accession, you are required to provide the following setup, which maps a provider in EMR to another provider in LIS. As of now, there is no UI to do some of the steps below, and best to do through database.  <br /></p><h4><strong>At OpenMRS</strong></h4><ul><li><p>Create the user (must be checked as <strong>provider</strong>) in  OpenMRS.</p><ul><li><p>Login into<strong> openmrs</strong></p></li><li><p>Go to <strong>Administration </strong>&rarr; Users(<strong>Manage Users</strong>) &rarr; <strong>Add user. </strong>Ensure that you chose the option &ldquo;Create a Provider account for this user&rdquo;</p></li><li><p>It is also advisable that you allocate an identifier for the provider you have created. You can do that once you have created a user, go to <strong>Administration &rarr; Manage Providers &rarr; Find by name</strong>, selecting the provider and updating the Identifier field.   </p></li></ul></li><li><p>Identify the unique id (UUID) of the the corresponding provider for the user in OpenMRS.</p><ul><li><p>Go to <strong>Manage Providers</strong> and search by name.  From the listed results, browse to the provider details page and copy the UUID</p></li><li><p>Alternatively, you may find the UUID from the database as well</p><ul><li><p>login to <strong>mysql </strong>: <strong>openmrs </strong>database (you need to have the login credentials for the openmrs-user)</p></li><li><p>Identify the provider&rsquo;s UUID with the Identifier you assigned above</p></li></ul></li></ul></li></ul><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"99ac5ee5-6a9c-4487-bf7c-4b6bddbe1b57\"><ac:plain-text-body><![CDATA[> mysql -u openmrs-user -p openmrs\n> select uuid from provider where identifier = 'XYZ';]]></ac:plain-text-body></ac:structured-macro><ul><li><p>Note the UUID of the provider you identified above, this will be used as &ldquo;<strong>external_id</strong>&rdquo; reference in OpenELIS <strong>provider</strong> table. </p></li></ul><p /><h4><strong>At OpenELIS</strong></h4><ul><li><p>Create a user and corresponding provider in OpenELIS</p><ul><li><p>Create a person and a corresponding provider</p></li><li><p>Map the external_id identified above to the provider</p></li></ul></li></ul><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"97342166-9f35-4f28-88ce-9d0a3bcb133b\"><ac:plain-text-body><![CDATA[# login to postgresql:clinlims database, schema clinlims\n> psql -Uclinlims clinlims\n# identify the latest person ID. In the below SQL, its the first entry\n> select * from person order by id desc;\n\n# Increment the ID (+1)and create a person. in the SQL below, last_id is the Id identified above\n>  insert into person (id, last_name, first_name, middle_name) values (last_person_id+1, 'Nayar', 'Srijit', 'Kumar');\n# Find the latest provider id created in the provider table of clinlims\n> select * from provider order by id desc;\n# With the person Id created above, and with the incremented the provider id identified above, create a new provider\n> insert into provider(id, person_id, external_id) values (last_provider_id+1, <id of person>, '<uuid of OpenMRS Provider>');]]></ac:plain-text-body></ac:structured-macro><p /><ul><li><p>If you already identified or know the <strong>provider</strong> with <strong>person_id</strong> then you can just update the <strong>external_id</strong> reference</p></li></ul><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"e18eb4a9-7a69-4d16-89bf-e9c0943b03ba\"><ac:plain-text-body><![CDATA[> update provider set external_id = '<uuid of OpenMRS Provider>' where id = <identified provider id in Clinlims>;\n]]></ac:plain-text-body></ac:structured-macro><p /><p>With that, the provider name will be shown in the Requester name dropdown. You may restart the bahmni_lab service.</p><p /><p>For Bahmni Native install</p><p>&gt;<strong> systemctl restart bahmni-lab</strong></p><p>For Bahmni Docker install, restart the bahmni_lab container<br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2432401410"
+      }
+    },
+    "view": {
+      "value": "<p>When you place an test/panel order from EMR, the order would appear in the lab dashboard as “Samples to collect”. The next step is to add the sample and generate an accession, before results can be entered. </p><p>During this process, if you want to see the “orderer” information in the accession, you are required to provide the following setup, which maps a provider in EMR to another provider in LIS. As of now, there is no UI to do some of the steps below, and best to do through database.  <br/></p><h4 id=\"ShowproviderfromOpenMRStoOpenELISasarequester-AtOpenMRS\"><strong>At OpenMRS</strong></h4><ul><li><p>Create the user (must be checked as <strong>provider</strong>) in  OpenMRS.</p><ul><li><p>Login into<strong> openmrs</strong></p></li><li><p>Go to <strong>Administration </strong>→ Users(<strong>Manage Users</strong>) → <strong>Add user. </strong>Ensure that you chose the option “Create a Provider account for this user”</p></li><li><p>It is also advisable that you allocate an identifier for the provider you have created. You can do that once you have created a user, go to <strong>Administration → Manage Providers → Find by name</strong>, selecting the provider and updating the Identifier field.   </p></li></ul></li><li><p>Identify the unique id (UUID) of the the corresponding provider for the user in OpenMRS.</p><ul><li><p>Go to <strong>Manage Providers</strong> and search by name.  From the listed results, browse to the provider details page and copy the UUID</p></li><li><p>Alternatively, you may find the UUID from the database as well</p><ul><li><p>login to <strong>mysql </strong>: <strong>openmrs </strong>database (you need to have the login credentials for the openmrs-user)</p></li><li><p>Identify the provider’s UUID with the Identifier you assigned above</p></li></ul></li></ul></li></ul><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"99ac5ee5-6a9c-4487-bf7c-4b6bddbe1b57\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&gt; mysql -u openmrs-user -p openmrs\n&gt; select uuid from provider where identifier = 'XYZ';</pre>\n</div></div><ul><li><p>Note the UUID of the provider you identified above, this will be used as “<strong>external_id</strong>” reference in OpenELIS <strong>provider</strong> table. </p></li></ul><p /><h4 id=\"ShowproviderfromOpenMRStoOpenELISasarequester-AtOpenELIS\"><strong>At OpenELIS</strong></h4><ul><li><p>Create a user and corresponding provider in OpenELIS</p><ul><li><p>Create a person and a corresponding provider</p></li><li><p>Map the external_id identified above to the provider</p></li></ul></li></ul><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"97342166-9f35-4f28-88ce-9d0a3bcb133b\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\"># login to postgresql:clinlims database, schema clinlims\n&gt; psql -Uclinlims clinlims\n# identify the latest person ID. In the below SQL, its the first entry\n&gt; select * from person order by id desc;\n\n# Increment the ID (+1)and create a person. in the SQL below, last_id is the Id identified above\n&gt;  insert into person (id, last_name, first_name, middle_name) values (last_person_id+1, 'Nayar', 'Srijit', 'Kumar');\n# Find the latest provider id created in the provider table of clinlims\n&gt; select * from provider order by id desc;\n# With the person Id created above, and with the incremented the provider id identified above, create a new provider\n&gt; insert into provider(id, person_id, external_id) values (last_provider_id+1, &lt;id of person&gt;, '&lt;uuid of OpenMRS Provider&gt;');</pre>\n</div></div><p /><ul><li><p>If you already identified or know the <strong>provider</strong> with <strong>person_id</strong> then you can just update the <strong>external_id</strong> reference</p></li></ul><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e18eb4a9-7a69-4d16-89bf-e9c0943b03ba\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&gt; update provider set external_id = '&lt;uuid of OpenMRS Provider&gt;' where id = &lt;identified provider id in Clinlims&gt;;\n</pre>\n</div></div><p /><p>With that, the provider name will be shown in the Requester name dropdown. You may restart the bahmni_lab service.</p><p /><p>For Bahmni Native install</p><p>&gt;<strong> systemctl restart bahmni-lab</strong></p><p>For Bahmni Docker install, restart the bahmni_lab container<br/></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2432401410"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "review-needed",
+          "id": "30146561",
+          "label": "review-needed"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 1,
+      "_links": {
+        "next": "/rest/api/content/2432401410/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2432401410/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 650473956
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2432401410/child",
+    "restrictions": "/rest/api/content/2432401410/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2432401410/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2432401410",
+    "webui": "/spaces/BAH/pages/2432401410/Show+provider+from+OpenMRS+to+OpenELIS+as+a+requester",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2432401410",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2432401410",
+    "tinyui": "/x/AoD7k",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

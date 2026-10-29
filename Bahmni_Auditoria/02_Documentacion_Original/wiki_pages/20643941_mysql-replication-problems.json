@@ -1,0 +1,172 @@
+{
+  "id": "20643941",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/20643941",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjA2NDM5NDE=",
+  "status": "current",
+  "title": "MySQL Replication Problems",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:dd7e513e-bc00-497a-a42a-e2b387df0018",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mujir Shaikh (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:dd7e513e-bc00-497a-a42a-e2b387df0018",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mujiruddin Shaikh (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:dd7e513e-bc00-497a-a42a-e2b387df0018"
+      }
+    },
+    "createdDate": "2015-05-22T06:49:37.176Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/20643941/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:761926cb-ed59-41ca-9692-e6c2dcb1c400",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Ravinder Deolal",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:761926cb-ed59-41ca-9692-e6c2dcb1c400",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Ravinder Deolal",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:761926cb-ed59-41ca-9692-e6c2dcb1c400"
+      }
+    },
+    "when": "2016-12-27T09:47:50.123Z",
+    "friendlyWhen": "Dec 27, 2016",
+    "message": "",
+    "number": 18,
+    "minorEdit": false,
+    "syncRev": "0.Qg5O6KpTjKaXqLhoA2vTcg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$20643941.46",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/20643941"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/20643941/version/18"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<div><h5>Check replication process is running on master and slave</h5><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"f7d07f84-40a1-4f44-9a69-e5da60e61133\"><ac:parameter ac:name=\"title\">Command</ac:parameter><ac:plain-text-body><![CDATA[show processlist;]]></ac:plain-text-body></ac:structured-macro><h5>If replication process is running, check if slave is lagging behind master.</h5></div><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"9527af25-8aba-476b-b840-9d1f970ede4f\"><ac:parameter ac:name=\"title\">Command to start </ac:parameter><ac:plain-text-body><![CDATA[ start master]]></ac:plain-text-body></ac:structured-macro><p><br /></p><h5>If replication process is running, check if slave is lagging behind master.</h5><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"ec087cc3-eb5a-4212-9f31-aa8c4d172bc8\"><ac:parameter ac:name=\"title\">Check the status</ac:parameter><ac:plain-text-body><![CDATA[show master status \\g; show slave status \\g;]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"afaba8a1-68b9-4ca0-a7db-cf52422ddb57\"><ac:rich-text-body><p>Looking at output from above commands, you'd know</p><ul><li>if slave is lagging behind master.</li><li>replication is failing because of some issues replicating a sql on slave.</li></ul></ac:rich-text-body></ac:structured-macro><p><br /></p><h5>If replication process has stopped due to duplicate entry in the slave.</h5><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"f47a8f7a-36a9-478d-82e0-e3a1b635cd67\"><ac:parameter ac:name=\"title\">Solution</ac:parameter><ac:plain-text-body><![CDATA[STOP SLAVE;\nSET GLOBAL SQL_SLAVE_SKIP_COUNTER=1; /*This is to skip the duplicate record*/\nSTART SLAVE;]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"646fd5f5-923d-4327-822a-84931856b74b\"><ac:parameter ac:name=\"title\">References</ac:parameter><ac:rich-text-body><p><a href=\"http://www.redips.net/mysql/replication-slave-relay-log-corrupted/\">http://www.redips.net/mysql/replication-slave-relay-log-corrupted/</a></p><p><a href=\"http://dba.stackexchange.com/questions/53893/mysql-relay-log-corrupted-how-do-i-fix-it-tried-but-failed\">http://dba.stackexchange.com/questions/53893/mysql-relay-log-corrupted-how-do-i-fix-it-tried-but-failed</a></p><p><a href=\"https://www.percona.com/blog/2014/10/08/mysql-replication-got-fatal-error-1236-causes-and-cures/\">https://www.percona.com/blog/2014/10/08/mysql-replication-got-fatal-error-1236-causes-and-cures/</a></p></ac:rich-text-body></ac:structured-macro><p><br /><br /></p><p><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/20643941"
+      }
+    },
+    "view": {
+      "value": "<div><h5 id=\"MySQLReplicationProblems-Checkreplicationprocessisrunningonmasterandslave\">Check replication process is running on master and slave</h5><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f7d07f84-40a1-4f44-9a69-e5da60e61133\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Command</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">show processlist;</pre>\n</div></div><h5 id=\"MySQLReplicationProblems-Ifreplicationprocessisrunning,checkifslaveislaggingbehindmaster.\">If replication process is running, check if slave is lagging behind master.</h5></div><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9527af25-8aba-476b-b840-9d1f970ede4f\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Command to start </b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\"> start master</pre>\n</div></div><p><br/></p><h5 id=\"MySQLReplicationProblems-Ifreplicationprocessisrunning,checkifslaveislaggingbehindmaster..1\">If replication process is running, check if slave is lagging behind master.</h5><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ec087cc3-eb5a-4212-9f31-aa8c4d172bc8\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Check the status</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">show master status \\g; show slave status \\g;</pre>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"afaba8a1-68b9-4ca0-a7db-cf52422ddb57\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Looking at output from above commands, you'd know</p><ul><li>if slave is lagging behind master.</li><li>replication is failing because of some issues replicating a sql on slave.</li></ul></div></div><p><br/></p><h5 id=\"MySQLReplicationProblems-Ifreplicationprocesshasstoppedduetoduplicateentryintheslave.\">If replication process has stopped due to duplicate entry in the slave.</h5><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f47a8f7a-36a9-478d-82e0-e3a1b635cd67\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Solution</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">STOP SLAVE;\nSET GLOBAL SQL_SLAVE_SKIP_COUNTER=1; /*This is to skip the duplicate record*/\nSTART SLAVE;</pre>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"646fd5f5-923d-4327-822a-84931856b74b\" data-macro-name=\"tip\"><p class=\"title\">References</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><a class=\"external-link\" href=\"http://www.redips.net/mysql/replication-slave-relay-log-corrupted/\" rel=\"nofollow\">http://www.redips.net/mysql/replication-slave-relay-log-corrupted/</a></p><p><a class=\"external-link\" href=\"http://dba.stackexchange.com/questions/53893/mysql-relay-log-corrupted-how-do-i-fix-it-tried-but-failed\" rel=\"nofollow\">http://dba.stackexchange.com/questions/53893/mysql-relay-log-corrupted-how-do-i-fix-it-tried-but-failed</a></p><p><a class=\"external-link\" href=\"https://www.percona.com/blog/2014/10/08/mysql-replication-got-fatal-error-1236-causes-and-cures/\" rel=\"nofollow\">https://www.percona.com/blog/2014/10/08/mysql-replication-got-fatal-error-1236-causes-and-cures/</a></p></div></div><p><br/><br/></p><p><br/></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/20643941"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/20643941/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/20643941/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 2
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/20643941/child",
+    "restrictions": "/rest/api/content/20643941/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/20643941/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=20643941",
+    "webui": "/spaces/BAH/pages/20643941/MySQL+Replication+Problems",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/20643941",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/20643941",
+    "tinyui": "/x/ZQA7AQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

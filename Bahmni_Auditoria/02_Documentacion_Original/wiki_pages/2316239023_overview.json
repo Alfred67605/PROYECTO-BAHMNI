@@ -1,0 +1,174 @@
+{
+  "id": "2316239023",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2316239023",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMxNjIzOTAyMw==",
+  "status": "current",
+  "title": "Overview",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "createdDate": "2021-04-05T07:47:55.126Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239023/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "when": "2021-04-05T07:50:18.087Z",
+    "friendlyWhen": "Apr 05, 2021",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.crZgfhLe36TB4FY8AkxE4Q.0",
+    "syncRevSource": "synchrony-ack",
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$2316239023.21",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2316239023"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239023/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ul><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/330137651/Overview#Addition-of-Custom-Jobs%2FViews-%3A\">Addition of Custom Jobs/Views :</a></p></li></ul><p>MSF today would like to leverage their patient data to improve efficiency, reduce unnecessary variation and waste, and identify and address gaps in quality of care. One of the main reasons today reporting and data analysis is not as effective as it could be is not being able to extract data from Bahmni<strong> </strong>and use it with the right tools. Most of the time today is spent managing and creating data (paper based excel reports are collected at various project centres) and constructing data sets in custom softwares like excel rather than generating ad-hoc reports on the fly and analysing the data.</p><p>One of the steps in the direction of easing reporting is to design how we store the input data generated from the hospitals and missions. For this we came up with the design of an analytics database where hierarchical database is flattened and pivoted. This database is called the Mart DB or simply the analytics DB. This piece of solution would</p><ul><li><p>Make it easier for various Data Analytics tools to directly consume Bahmni Analytics database</p></li><li><p>Would make it possible for Implementers to extract data / modify existing datasets without totally understanding the openmrs data model.</p></li><li><p>Enable Developers to define new reports / extract datasets of interests faster.</p></li></ul><p>In essence the pivoted and flattened structure will remove the hierarchical nature of the data.</p><p>A few views have also been created using the flattened tables of the analytical DB based on the needs of the users / statisticians which provides data from multiple tables by running simple sql queries</p><p><br /><strong>Jobs Types &amp; Grouped tables:-</strong></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To simplify the amount of configuration that we are providing to the bahmni-mart application, we have packaged together similar tables under the respective types.&nbsp; Now the user just need to add a single job of the packaged type and can get the all the tables under that type</p><p>Below are the packaged job types and the jobs under that type</p><table data-layout=\"default\"><colgroup><col style=\"width: 182.0px;\" /><col style=\"width: 577.0px;\" /></colgroup><tbody><tr><td><p><strong><u>Job Type</u></strong></p></td><td><p><strong><u>Grouped tables</u></strong></p></td></tr><tr><td><p>Programs</p></td><td><p>Programs_default, program_outcomes_default,patient_program_data_default,program_workflow_default, program_workflow_states_default, program_attributes</p></td></tr><tr><td><p>Patients</p><p>&nbsp;</p></td><td><p>Patient_state_default, patient_allergy_status_default, patient_identifier</p></td></tr><tr><td><p>appointments</p></td><td><p>Patient_appointment_default, appointment_service_default, service_availability_default, appointment_speciality_default</p></td></tr><tr><td><p>bedManagement</p></td><td><p>Bed_patient_assignment_default, bed_tags_default, current_bed_details_default</p></td></tr><tr><td><p>location</p></td><td><p>Location_default, location_tag_map_default, location_attribute_details_default</p></td></tr><tr><td><p>operationTheater</p></td><td><p>Surgical_block_default, surgical_appointment_default, surgical_appointment_attribute_type_details_default, surgical_appointment_attributes</p></td></tr><tr><td><p>person</p></td><td><p>Person_details_default, person_address_default, person_attribute_info_default, address_hierarchy_level_default, person_attributes</p></td></tr><tr><td><p>provider</p></td><td><p>Provider_default, provider_attribute_details_default, provider_attributes</p></td></tr><tr><td><p>visitsAndEncounters</p></td><td><p>Patient_visit_details_default,patient_encounter_details_default,visit_attribute_details_default,visit_attributes</p></td></tr><tr><td><p>medicationAndOrders</p></td><td><p>Medication_data_default, [All forms under All Orderables as tables]</p></td></tr><tr><td><p>diagnosesAndConditions</p></td><td><p>Conditions_default, [All forms under Visit Diagnoses as tables]</p></td></tr><tr><td><p>bacteriology</p></td><td><p>[All forms under Bacteriology Concept Set as tables]</p></td></tr><tr><td><p>metadata</p></td><td><p>All concept related information class, datatype, with respect to source.</p></td></tr><tr><td><p>obs</p></td><td><p>[All forms under All Observation Templates as tables]</p></td></tr><tr><td><p>Forms 2.0</p></td><td><p>[All forms which are created with Implementer Interface ]</p></td></tr><tr><td><p>reg</p></td><td><p>reg_{table Name}</p></td></tr><tr><td><p>disposition</p></td><td><p>[All forms under Disposition Set as tables]</p></td></tr></tbody></table><p><br />Link to the example grouped job configuration</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"263db9f7-ad7d-4a44-8c69-dc9937cb207f\"><ac:plain-text-body><![CDATA[{\n      \"name\": \"Person\",\n      \"type\": \"person\",\n      \"chunkSizeToRead\": \"500\",\n      \"groupedJobConfigs\": [\n        {\n          \"tableName\": \"person_attributes\",\n          \"columnsToIgnore\": [\n            \"primaryContact\",\n            \"secondaryContact\",\n            \"primaryRelative\",\n            \"familyNameLocal\",\n            \"givenNameLocal\",\n            \"middleNameLocal\"\n          ]\n        },\n        {\n          \"tableName\": \"person_details_default\",\n          \"columnsToIgnore\": [\n            \"prefix\",\n            \"given_name\",\n            \"middle_name\",\n            \"family_name_prefix\",\n            \"family_name\",\n            \"family_name2\",\n            \"family_name_suffix\"\n          ]\n        }\n      ]\n    }\n]]></ac:plain-text-body></ac:structured-macro><h1>Addition of Custom Jobs/Views :</h1><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bahmni-mart enables the user to add custom jobs &amp; views in addition to the default jobs provided. Below are the respective example configurations.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"21431180-d4df-4e4f-906b-7b1d8c15e2c6\"><ac:plain-text-body><![CDATA[Custom Sql Job Configuration: \n{\n \"name\": \"Patient Info\",\n \"type\": \"customSql\",\n \"table_name\": “patient_info\",\n \"readerSql\": \"SELECT * FROM patient\",\n \"incrementalUpdateConfig\": {\n   \"updateOn\": \"patient_id\",\n   \"eventCategory\": \"Patient\",\n   \"openmrsTableName\": \"patient\"\n }\n }\n]]></ac:plain-text-body></ac:structured-macro><p><strong>Note :</strong> Reader sql should be executable on openmrs database. Incremental configuration is optional and can be given only when you need an incremental update for this job.</p><p><strong>Custom View Configuration</strong> :</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"20f90bb1-eda7-4bf8-951b-05f7b1c9224d\"><ac:plain-text-body><![CDATA[{\n \"name\": \"Person Details View\",\n \"sql\": \"SELECT * FROM person_details_default pdd JOIN\n         person_address_default pad ON pad.person_id = pdd.person_id \"\n}\n]]></ac:plain-text-body></ac:structured-macro><p><strong>Note : </strong>sql should be executable on analytics database since we are creating view in analytics database</p><p><strong>List of views from different jobs:</strong></p><ol><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/330268771/Programs+Module#Mart-Views\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/330268771/Programs+Module#Mart-Views</a></p></li><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/342392845/Patients#Mart-Views\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/342392845/Patients#Mart-Views</a></p></li><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678986/Appointment+Scheduling#Mart-views\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678986/Appointment+Scheduling#Mart-views</a></p></li><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/330268840/Bed+Management#Mart-Views\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/330268840/Bed+Management#Mart-Views</a></p></li><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/330268862/Operation+Theatre#Mart-Views\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/330268862/Operation+Theatre#Mart-Views</a></p></li><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678956/Visits+and+Encounters#Mart-Views\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678956/Visits+and+Encounters#Mart-Views</a></p></li><li><p><a href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678902/Registration+Second+Page#Mart-Views\" data-card-appearance=\"inline\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678902/Registration+Second+Page#Mart-Views</a></p></li></ol><p><strong>Difference between standard Grouped Jobs, Custom Jobs and Views:</strong></p><p>As part of <strong>standard grouped jobs</strong> we flatten the data from openmrs but we don&rsquo;t get to see the readerSql for each job. The readerSql gets generated dynamically as part of the code. So adding new columns is not straight forward and it requires change at code level.&nbsp;</p><p>When it comes to <strong>Custom jobs</strong>, we can directly see the readerSql and it redirects output to the desired table in the analytics. Adding new columns to the analytics table is straightforward as its a change in the sql query.&nbsp;</p><ul><li><p>The only configuration possible for grouped and custom jobs so far is, <code>columnsToIgnore</code>. This will ignore the specified columns mentioned under <code>columnsToIgnore</code> json from openmrs database to analytics database.</p></li><li><p>For ignoring columns, each column in a table have to be specified. We can&rsquo;t specify at job level and it has to be under that particular table name for the job.</p></li><li><p>We can select particular job to be incremental/full load irrespective of entire bahmni-mart job type.</p></li></ul><p><strong>eg:</strong> If the bahmni-mart is running on incremental load, we can still mention few jobs to run on full load.</p><p>For <strong>Views</strong>, we can see the sql query but the query runs on the analytics tables but not on the openmrs tables. As part of the views query, we usually combine one or more analytics tables and create a table(view) out of these tables. If there is a data change in the above analytics tables then the view gets updated automatically</p><ul><li><p>Views will not have the option to ignore columns, incremental/full load options. If we want few columns to be added/ignored that can be directly done in the specific view query.</p></li></ul><p><strong>Setting Up CronJob for bahmni-mart:</strong></p><p>To sync up analytics db with openmrs db, we can run bahmni-mart on regular intervals. That can be done once in a day/week based on the requirement. For to run bahmni-mart command automatically we can configure the cron job which will trigger the bahmni-mart command at the specified time in the day.</p><ul><li><p>Sample cornjob for bahmni-mart</p></li></ul><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4a869a49-46da-4c38-86b7-4d70bec1e071\"><ac:plain-text-body><![CDATA[00 23 * * *  bahmni-mart]]></ac:plain-text-body></ac:structured-macro><p>The above cronjob runs the Bahmni-mart command daily at 11 pm in the night. The preferable time would be running the mart is after working hours for an implementation. This will run the mart on incremental load so the entire job wouldn&rsquo;t take much time.</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2316239023"
+      }
+    },
+    "view": {
+      "value": "<ul><li><p><a class=\"external-link\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/330137651/Overview#Addition-of-Custom-Jobs%2FViews-%3A\" rel=\"nofollow\">Addition of Custom Jobs/Views :</a></p></li></ul><p>MSF today would like to leverage their patient data to improve efficiency, reduce unnecessary variation and waste, and identify and address gaps in quality of care. One of the main reasons today reporting and data analysis is not as effective as it could be is not being able to extract data from Bahmni<strong> </strong>and use it with the right tools. Most of the time today is spent managing and creating data (paper based excel reports are collected at various project centres) and constructing data sets in custom softwares like excel rather than generating ad-hoc reports on the fly and analysing the data.</p><p>One of the steps in the direction of easing reporting is to design how we store the input data generated from the hospitals and missions. For this we came up with the design of an analytics database where hierarchical database is flattened and pivoted. This database is called the Mart DB or simply the analytics DB. This piece of solution would</p><ul><li><p>Make it easier for various Data Analytics tools to directly consume Bahmni Analytics database</p></li><li><p>Would make it possible for Implementers to extract data / modify existing datasets without totally understanding the openmrs data model.</p></li><li><p>Enable Developers to define new reports / extract datasets of interests faster.</p></li></ul><p>In essence the pivoted and flattened structure will remove the hierarchical nature of the data.</p><p>A few views have also been created using the flattened tables of the analytical DB based on the needs of the users / statisticians which provides data from multiple tables by running simple sql queries</p><p><br/><strong>Jobs Types &amp; Grouped tables:-</strong></p><p>         To simplify the amount of configuration that we are providing to the bahmni-mart application, we have packaged together similar tables under the respective types.  Now the user just need to add a single job of the packaged type and can get the all the tables under that type</p><p>Below are the packaged job types and the jobs under that type</p><div class=\"table-wrap\"><table data-layout=\"default\" class=\"confluenceTable\"><colgroup><col style=\"width: 182.0px;\"/><col style=\"width: 577.0px;\"/></colgroup><tbody><tr><td class=\"confluenceTd\"><p><strong><u>Job Type</u></strong></p></td><td class=\"confluenceTd\"><p><strong><u>Grouped tables</u></strong></p></td></tr><tr><td class=\"confluenceTd\"><p>Programs</p></td><td class=\"confluenceTd\"><p>Programs_default, program_outcomes_default,patient_program_data_default,program_workflow_default, program_workflow_states_default, program_attributes</p></td></tr><tr><td class=\"confluenceTd\"><p>Patients</p><p> </p></td><td class=\"confluenceTd\"><p>Patient_state_default, patient_allergy_status_default, patient_identifier</p></td></tr><tr><td class=\"confluenceTd\"><p>appointments</p></td><td class=\"confluenceTd\"><p>Patient_appointment_default, appointment_service_default, service_availability_default, appointment_speciality_default</p></td></tr><tr><td class=\"confluenceTd\"><p>bedManagement</p></td><td class=\"confluenceTd\"><p>Bed_patient_assignment_default, bed_tags_default, current_bed_details_default</p></td></tr><tr><td class=\"confluenceTd\"><p>location</p></td><td class=\"confluenceTd\"><p>Location_default, location_tag_map_default, location_attribute_details_default</p></td></tr><tr><td class=\"confluenceTd\"><p>operationTheater</p></td><td class=\"confluenceTd\"><p>Surgical_block_default, surgical_appointment_default, surgical_appointment_attribute_type_details_default, surgical_appointment_attributes</p></td></tr><tr><td class=\"confluenceTd\"><p>person</p></td><td class=\"confluenceTd\"><p>Person_details_default, person_address_default, person_attribute_info_default, address_hierarchy_level_default, person_attributes</p></td></tr><tr><td class=\"confluenceTd\"><p>provider</p></td><td class=\"confluenceTd\"><p>Provider_default, provider_attribute_details_default, provider_attributes</p></td></tr><tr><td class=\"confluenceTd\"><p>visitsAndEncounters</p></td><td class=\"confluenceTd\"><p>Patient_visit_details_default,patient_encounter_details_default,visit_attribute_details_default,visit_attributes</p></td></tr><tr><td class=\"confluenceTd\"><p>medicationAndOrders</p></td><td class=\"confluenceTd\"><p>Medication_data_default, [All forms under All Orderables as tables]</p></td></tr><tr><td class=\"confluenceTd\"><p>diagnosesAndConditions</p></td><td class=\"confluenceTd\"><p>Conditions_default, [All forms under Visit Diagnoses as tables]</p></td></tr><tr><td class=\"confluenceTd\"><p>bacteriology</p></td><td class=\"confluenceTd\"><p>[All forms under Bacteriology Concept Set as tables]</p></td></tr><tr><td class=\"confluenceTd\"><p>metadata</p></td><td class=\"confluenceTd\"><p>All concept related information class, datatype, with respect to source.</p></td></tr><tr><td class=\"confluenceTd\"><p>obs</p></td><td class=\"confluenceTd\"><p>[All forms under All Observation Templates as tables]</p></td></tr><tr><td class=\"confluenceTd\"><p>Forms 2.0</p></td><td class=\"confluenceTd\"><p>[All forms which are created with Implementer Interface ]</p></td></tr><tr><td class=\"confluenceTd\"><p>reg</p></td><td class=\"confluenceTd\"><p>reg_{table Name}</p></td></tr><tr><td class=\"confluenceTd\"><p>disposition</p></td><td class=\"confluenceTd\"><p>[All forms under Disposition Set as tables]</p></td></tr></tbody></table></div><p><br/>Link to the example grouped job configuration</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"263db9f7-ad7d-4a44-8c69-dc9937cb207f\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n      &quot;name&quot;: &quot;Person&quot;,\n      &quot;type&quot;: &quot;person&quot;,\n      &quot;chunkSizeToRead&quot;: &quot;500&quot;,\n      &quot;groupedJobConfigs&quot;: [\n        {\n          &quot;tableName&quot;: &quot;person_attributes&quot;,\n          &quot;columnsToIgnore&quot;: [\n            &quot;primaryContact&quot;,\n            &quot;secondaryContact&quot;,\n            &quot;primaryRelative&quot;,\n            &quot;familyNameLocal&quot;,\n            &quot;givenNameLocal&quot;,\n            &quot;middleNameLocal&quot;\n          ]\n        },\n        {\n          &quot;tableName&quot;: &quot;person_details_default&quot;,\n          &quot;columnsToIgnore&quot;: [\n            &quot;prefix&quot;,\n            &quot;given_name&quot;,\n            &quot;middle_name&quot;,\n            &quot;family_name_prefix&quot;,\n            &quot;family_name&quot;,\n            &quot;family_name2&quot;,\n            &quot;family_name_suffix&quot;\n          ]\n        }\n      ]\n    }\n</pre>\n</div></div><h1 id=\"Overview-AdditionofCustomJobs/Views:\">Addition of Custom Jobs/Views :</h1><p>        Bahmni-mart enables the user to add custom jobs &amp; views in addition to the default jobs provided. Below are the respective example configurations.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"21431180-d4df-4e4f-906b-7b1d8c15e2c6\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">Custom Sql Job Configuration: \n{\n &quot;name&quot;: &quot;Patient Info&quot;,\n &quot;type&quot;: &quot;customSql&quot;,\n &quot;table_name&quot;: “patient_info&quot;,\n &quot;readerSql&quot;: &quot;SELECT * FROM patient&quot;,\n &quot;incrementalUpdateConfig&quot;: {\n   &quot;updateOn&quot;: &quot;patient_id&quot;,\n   &quot;eventCategory&quot;: &quot;Patient&quot;,\n   &quot;openmrsTableName&quot;: &quot;patient&quot;\n }\n }\n</pre>\n</div></div><p><strong>Note :</strong> Reader sql should be executable on openmrs database. Incremental configuration is optional and can be given only when you need an incremental update for this job.</p><p><strong>Custom View Configuration</strong> :</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"20f90bb1-eda7-4bf8-951b-05f7b1c9224d\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">{\n &quot;name&quot;: &quot;Person Details View&quot;,\n &quot;sql&quot;: &quot;SELECT * FROM person_details_default pdd JOIN\n         person_address_default pad ON pad.person_id = pdd.person_id &quot;\n}\n</pre>\n</div></div><p><strong>Note : </strong>sql should be executable on analytics database since we are creating view in analytics database</p><p><strong>List of views from different jobs:</strong></p><ol><li><p><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/330268771/Programs+Module#Mart-Views\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/330268771/Programs+Module#Mart-Views</a></p></li><li><p><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/342392845/Patients#Mart-Views\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/342392845/Patients#Mart-Views</a></p></li><li><p><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678986/Appointment+Scheduling#Mart-views\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678986/Appointment+Scheduling#Mart-views</a></p></li><li><p><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/330268840/Bed+Management#Mart-Views\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/330268840/Bed+Management#Mart-Views</a></p></li><li><p><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/330268862/Operation+Theatre#Mart-Views\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/330268862/Operation+Theatre#Mart-Views</a></p></li><li><p><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678956/Visits+and+Encounters#Mart-Views\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678956/Visits+and+Encounters#Mart-Views</a></p></li><li><p><a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678902/Registration+Second+Page#Mart-Views\" rel=\"nofollow\">https://msfprojects.atlassian.net/wiki/spaces/BAH/pages/329678902/Registration+Second+Page#Mart-Views</a></p></li></ol><p><strong>Difference between standard Grouped Jobs, Custom Jobs and Views:</strong></p><p>As part of <strong>standard grouped jobs</strong> we flatten the data from openmrs but we don’t get to see the readerSql for each job. The readerSql gets generated dynamically as part of the code. So adding new columns is not straight forward and it requires change at code level. </p><p>When it comes to <strong>Custom jobs</strong>, we can directly see the readerSql and it redirects output to the desired table in the analytics. Adding new columns to the analytics table is straightforward as its a change in the sql query. </p><ul><li><p>The only configuration possible for grouped and custom jobs so far is, <code>columnsToIgnore</code>. This will ignore the specified columns mentioned under <code>columnsToIgnore</code> json from openmrs database to analytics database.</p></li><li><p>For ignoring columns, each column in a table have to be specified. We can’t specify at job level and it has to be under that particular table name for the job.</p></li><li><p>We can select particular job to be incremental/full load irrespective of entire bahmni-mart job type.</p></li></ul><p><strong>eg:</strong> If the bahmni-mart is running on incremental load, we can still mention few jobs to run on full load.</p><p>For <strong>Views</strong>, we can see the sql query but the query runs on the analytics tables but not on the openmrs tables. As part of the views query, we usually combine one or more analytics tables and create a table(view) out of these tables. If there is a data change in the above analytics tables then the view gets updated automatically</p><ul><li><p>Views will not have the option to ignore columns, incremental/full load options. If we want few columns to be added/ignored that can be directly done in the specific view query.</p></li></ul><p><strong>Setting Up CronJob for bahmni-mart:</strong></p><p>To sync up analytics db with openmrs db, we can run bahmni-mart on regular intervals. That can be done once in a day/week based on the requirement. For to run bahmni-mart command automatically we can configure the cron job which will trigger the bahmni-mart command at the specified time in the day.</p><ul><li><p>Sample cornjob for bahmni-mart</p></li></ul><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4a869a49-46da-4c38-86b7-4d70bec1e071\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">00 23 * * *  bahmni-mart</pre>\n</div></div><p>The above cronjob runs the Bahmni-mart command daily at 11 pm in the night. The preferable time would be running the mart is after working hours for an implementation. This will run the mart on incremental load so the entire job wouldn’t take much time.</p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2316239023"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2316239023/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239023/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 573
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2316239023/child",
+    "restrictions": "/rest/api/content/2316239023/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2316239023/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2316239023",
+    "webui": "/spaces/BAH/pages/2316239023/Overview",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2316239023",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2316239023",
+    "tinyui": "/x/rwAPig",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

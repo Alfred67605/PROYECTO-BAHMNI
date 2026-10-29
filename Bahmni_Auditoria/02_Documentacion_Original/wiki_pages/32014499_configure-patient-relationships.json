@@ -1,0 +1,170 @@
+{
+  "id": "32014499",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/32014499",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzIwMTQ0OTk=",
+  "status": "current",
+  "title": "Configure Patient Relationships",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2015-11-03T08:41:18.560Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014499/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sravanthi N. S. CH.",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sravanthi N. S. CH.",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d47e0136-cbde-4dbc-8820-611d4528d1c8"
+      }
+    },
+    "when": "2016-12-31T07:20:57.482Z",
+    "friendlyWhen": "Dec 31, 2016",
+    "message": "",
+    "number": 12,
+    "minorEdit": false,
+    "syncRev": "0.gtCs7xCXqf6ZXTKkiIUjsg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$32014499.66",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/32014499"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014499/version/12"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"ec9f94aa-a3cb-48fd-a1b5-8ce5329cb782\"><ac:rich-text-body><p>New relationship types can be added using the administration UI under&nbsp;<a href=\"https://local/openmrs/admin/person/relationshipType.list\">/openmrs/admin/person/relationshipType.list</a></p></ac:rich-text-body></ac:structured-macro><p><br /></p><h2>Steps</h2><p>1) Navigate to <em>OpenMRS, Administration, Manage Relationship Types.</em></p><p>2) Follow the instructions from below.</p><div class=\"wiki-content\"><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><ac:image ac:width=\"512\"><ri:attachment ri:filename=\"rtype.gif\" /></ac:image></span></p><p><a class=\"like-button\" style=\"line-height: 1.42857;\" href=\"https://bahmni.atlassian.net/wiki/display/BAH/Patient+relationships\"><span class=\"aui-icon aui-icon-small aui-iconfont-like\" style=\"color: rgb(112,112,112);\">&nbsp;</span></a></p></div>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/32014499"
+      }
+    },
+    "view": {
+      "value": "<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ec9f94aa-a3cb-48fd-a1b5-8ce5329cb782\" data-macro-name=\"info\"><style>[data-colorid=a52x1yqe14]{color:#707070} html[data-color-mode=dark] [data-colorid=a52x1yqe14]{color:#8f8f8f}</style><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>New relationship types can be added using the administration UI under&nbsp;<a class=\"external-link\" href=\"https://local/openmrs/admin/person/relationshipType.list\" rel=\"nofollow\">/openmrs/admin/person/relationshipType.list</a></p></div></div><p><br /></p><h2 id=\"ConfigurePatientRelationships-Steps\">Steps</h2><p>1) Navigate to <em>OpenMRS, Administration, Manage Relationship Types.</em></p><p>2) Follow the instructions from below.</p><div class=\"wiki-content\"><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"512\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014499/rtype.gif?version=1&amp;modificationDate=1447408884974&amp;cacheVersion=1&amp;api=v2&amp;width=512&amp;height=278\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/32014499/rtype.gif?version=1&amp;modificationDate=1447408884974&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"32604665\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"rtype.gif\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/gif\" data-linked-resource-container-id=\"32014499\" data-linked-resource-container-version=\"12\" data-media-id=\"2d885af5-7d96-4c91-923d-a0f57f5b44b1\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/32014499/rtype.gif?version=1&amp;modificationDate=1447408884974&amp;cacheVersion=1&amp;api=v2&amp;width=1024&amp;height=556 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014499/rtype.gif?version=1&amp;modificationDate=1447408884974&amp;cacheVersion=1&amp;api=v2&amp;width=512&amp;height=278 1x\" /></span></span></p><p><a class=\"like-button\" href=\"https://bahmni.atlassian.net/wiki/display/BAH/Patient+relationships\" rel=\"nofollow\" style=\"line-height: 1.42857;\"><span data-colorid=\"a52x1yqe14\" class=\"aui-icon aui-icon-small aui-iconfont-like\">&nbsp;</span></a></p></div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/32014499"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/32014499/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014499/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 469922415
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/32014499/child",
+    "restrictions": "/rest/api/content/32014499/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/32014499/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=32014499",
+    "webui": "/spaces/BAH/pages/32014499/Configure+Patient+Relationships",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/32014499",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014499",
+    "tinyui": "/x/o4DoAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "id": "9240624",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/9240624",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvOTI0MDYyNA==",
+  "status": "current",
+  "title": "Disease Templates",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:2a6181b9-b119-4aad-a516-c76294aabdf9",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Ravinder",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:2a6181b9-b119-4aad-a516-c76294aabdf9",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Ravinder",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:2a6181b9-b119-4aad-a516-c76294aabdf9"
+      }
+    },
+    "createdDate": "2014-09-05T06:55:33.528Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/9240624/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "when": "2014-09-05T13:28:57.953Z",
+    "friendlyWhen": "Sept 05, 2014",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "syncRev": "0.aWYWbx-3-t0eYsTpo4jE1w.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$9240624.19",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/9240624"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/9240624/version/5"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>Bahmni should import ICD 10 complete list (as reference terms) in the database. The clinical content provided by Bahmni should also provide mapping to ICD 10 reference term. This would force to use good fully specified names too.</p><p><strong style=\"line-height: 1.4285715;\">Disease specific information</strong></p><p><strong>1.&nbsp;Cancer</strong></p><ol><li>Type of cancer</li><li>Stage of cancer</li><li>Weight at last visit</li><li>Height at last visit</li><li>Treatment of disease at Dx</li><li>Status of treatment (On treatment, cured, not cured, Not taking treatment etc)</li><li>Complication</li><li>Associated disease</li></ol><p><strong>Follow-up</strong></p><p>1. Date of follow up</p><p>2. Weight at follow up</p><p>3. Height at follow up</p><p>4. Status of treatment (On treatment, cured, not cured, Not taking treatment etc)</p><p>5. Complications&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>6. Associated new diagnosis</p><p>7. Present Treatment (Tablets, Injections etc.)</p><p>&nbsp;</p><p><strong>2. Diabetes</strong></p><ol><li>Type of diabetes (Type I, Type II, Other)</li><li>Blood sugar level (Fasting and PP at diagnosis)</li><li>Current treatment of disease</li><li>Outcome of treatment (On treatment, cured, not cured, Not taking treatment etc)</li><li>Complication</li><li>Associated disease</li></ol><p><strong style=\"line-height: 1.4285715;\">Follow-up</strong></p><p>1. Date of last visit</p><p>2. Weight at last visit</p><p>3. Height at last visit</p><p>4. Blood sugar level (Fasting and Post prandial)</p><p>5. Outcome of treatment (On treatment, cured, not cured, Not taking treatment etc)</p><p>6. Complications (diabetic foot, amputation, obesity,&nbsp; ulcer, eye problems, kidney related,</p><p>7. Associated new diagnosis</p><p>8. Current treatment (Tablets/ Insulin)</p><p>&nbsp;</p><p><strong>3. Tuberculosis</strong></p><p>1)&nbsp;&nbsp;&nbsp;&nbsp; TB Clinic Number</p><p>2)&nbsp;&nbsp;&nbsp;&nbsp; Year of diagnosis</p><p>3)&nbsp;&nbsp;&nbsp;&nbsp; Date of recording previous weight / height</p><p>4)&nbsp;&nbsp;&nbsp;&nbsp; Weight (if recorded previously)</p><p>5)&nbsp;&nbsp;&nbsp;&nbsp; Height (if recorded previously)</p><p>6)&nbsp;&nbsp;&nbsp;&nbsp; Date of completion of Rx (Not yet completed)</p><p>7)&nbsp;&nbsp;&nbsp;&nbsp; Weight after Rx (Not yet completed)</p><p>8)&nbsp;&nbsp;&nbsp;&nbsp; Duration of symptoms in months before diagnosis</p><p>9)&nbsp;&nbsp;&nbsp;&nbsp; Category of the patient</p><p>10)&nbsp; Diagnosis</p><p>11)&nbsp; If pulmonary, sputum positivity (Neg, Pos, NA)&nbsp;</p><p>12)&nbsp; If extra-pulmonary&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>13)&nbsp; Treatment Started&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>14)&nbsp; Output of the Rx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>15)&nbsp; Date of completing Rx&nbsp;&nbsp;</p><p>16)&nbsp; Duration of Rx&nbsp;&nbsp;</p><p>17)&nbsp; Long Term Outcome (Healthy, Death, Ill)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>18)&nbsp; Reason of default</p><p>19)&nbsp; Reason of death</p><p>20)&nbsp; Any other chronic illness&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>21)&nbsp; Work efficiency</p><p>22)&nbsp; Outcome physical health&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>23)&nbsp; Anyone affected by TB in family&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>24)&nbsp; Any death&nbsp; in family by TB</p><p><strong>Follow up</strong></p><p>1. Date of last visit</p><p>2. Weight of last visit</p><p>3. height of last visit</p><p>4. Taking treatment or not</p><p>5. Output of treatment (Default, Failure, Complete, Cured)</p><p>6. If default, reason of not taking treatment</p><p>7. Associated new diagnosis</p><p>&nbsp;</p><p><strong>4. Hypertension</strong></p><ol><li>BP Systolic</li><li>BP Diastolic</li><li>Category of the hypertension</li><li>Blood sugar level</li><li>Serum creatinine at last visit</li><li>Associated complications (stroke, renal failure, heart failure, diabetes, ischemic heart disease, deaths)</li><li>Associated new diagnosis</li></ol><p><strong>Follow up</strong></p><p>1. BP Systolic</p><p>2. BP diastolic</p><p>3. Serum creatinine</p><p>4. Blood sugar level</p><p>6. Associated complications</p><p>7. Associated new diagnosis</p><p>&nbsp;</p><p><strong>5. Epilepsy</strong></p><ol><li>BP systolic</li><li>BP diastolic</li><li>On treatment - Yes / No</li><li>No treatment for one year / seizure controlled and on rx / controlled and rx stopped / seizure not controlled and on rx / seizure not controlled and not on rx</li><li>Current status</li><li>Any injury (recorded at the time of last visit)</li></ol><p><strong>Follow up</strong></p><p>1. Any seizure from&nbsp; last visit\\</p><p>2. Number of seizure episodes in last one year</p><p>2. BP systolic</p><p>3. BP Diastolic</p><p>4. Any injury</p><p>5. On treatment</p><p>&nbsp;</p><p><strong>6. Sickle Cell</strong></p><ol><li>Hb</li><li>weight</li><li>height</li><li>Treatment</li><li>Associated disease</li><li>Current status</li><li>Required BT</li><li>Complication</li></ol><p><strong>Follow up</strong></p><p>1. Date of last visit</p><p>2. Hb of last visit</p><p>3. weight at last visit</p><p>4. height at last visit</p><p>5. Any complications</p><p>&nbsp;</p><p><strong>7. RHD illness characteristics plus follow up</strong></p><ol><li>Currently on warfarin</li><li>Currently on penicillin</li><li>Stopped penicillin</li><li>Rheumatic activity episode</li><li>Any procedure done</li><li>associated new diagnosis</li><li>complications if any</li><li>Death</li></ol><p>&nbsp;</p><p><strong>8. Mental illness characteristics plus follow up</strong></p><ol><li>Treatment</li><li>Associated disease</li><li>BP systolic</li><li>BP diastolic</li><li>Complications</li></ol><p>&nbsp;</p><p><strong>9. Leprosy illness characteristics plus follow up</strong></p><ol><li>Diagnosis by (self-reporting, active surveillance)</li><li>Lapromatous pole of leprosy (slit skin positive, nodular, histoid)</li><li>Disability as complication</li><li>Treatment / medicines</li><li>Taking treatment or not</li><li>Surgical correction</li></ol><p>&nbsp;</p><p><strong>10. Anemia</strong></p><ol><li>Type of anaemia</li><li>Hb</li><li>Current Treatment</li><li>Current status of patient</li><li>Required BT</li><li>Any complications</li><li>Associated new diagnosis</li></ol><p><strong>Follow up</strong></p><p>1. date of last visit</p><p>2. Hb of last visit</p><p>3. Required BP</p><p>4. Current treatment</p><p>5. Current status of patient</p><p>&nbsp;</p><p>Requirements for patients follow up which will be recorded every month and need to be updated every month and which should be updated in the database management software</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/9240624"
+      }
+    },
+    "view": {
+      "value": "<p>Bahmni should import ICD 10 complete list (as reference terms) in the database. The clinical content provided by Bahmni should also provide mapping to ICD 10 reference term. This would force to use good fully specified names too.</p><p><strong style=\"line-height: 1.4285715;\">Disease specific information</strong></p><p><strong>1. Cancer</strong></p><ol><li>Type of cancer</li><li>Stage of cancer</li><li>Weight at last visit</li><li>Height at last visit</li><li>Treatment of disease at Dx</li><li>Status of treatment (On treatment, cured, not cured, Not taking treatment etc)</li><li>Complication</li><li>Associated disease</li></ol><p><strong>Follow-up</strong></p><p>1. Date of follow up</p><p>2. Weight at follow up</p><p>3. Height at follow up</p><p>4. Status of treatment (On treatment, cured, not cured, Not taking treatment etc)</p><p>5. Complications                           </p><p>6. Associated new diagnosis</p><p>7. Present Treatment (Tablets, Injections etc.)</p><p> </p><p><strong>2. Diabetes</strong></p><ol><li>Type of diabetes (Type I, Type II, Other)</li><li>Blood sugar level (Fasting and PP at diagnosis)</li><li>Current treatment of disease</li><li>Outcome of treatment (On treatment, cured, not cured, Not taking treatment etc)</li><li>Complication</li><li>Associated disease</li></ol><p><strong style=\"line-height: 1.4285715;\">Follow-up</strong></p><p>1. Date of last visit</p><p>2. Weight at last visit</p><p>3. Height at last visit</p><p>4. Blood sugar level (Fasting and Post prandial)</p><p>5. Outcome of treatment (On treatment, cured, not cured, Not taking treatment etc)</p><p>6. Complications (diabetic foot, amputation, obesity,  ulcer, eye problems, kidney related,</p><p>7. Associated new diagnosis</p><p>8. Current treatment (Tablets/ Insulin)</p><p> </p><p><strong>3. Tuberculosis</strong></p><p>1)     TB Clinic Number</p><p>2)     Year of diagnosis</p><p>3)     Date of recording previous weight / height</p><p>4)     Weight (if recorded previously)</p><p>5)     Height (if recorded previously)</p><p>6)     Date of completion of Rx (Not yet completed)</p><p>7)     Weight after Rx (Not yet completed)</p><p>8)     Duration of symptoms in months before diagnosis</p><p>9)     Category of the patient</p><p>10)  Diagnosis</p><p>11)  If pulmonary, sputum positivity (Neg, Pos, NA) </p><p>12)  If extra-pulmonary          </p><p>13)  Treatment Started          </p><p>14)  Output of the Rx                </p><p>15)  Date of completing Rx  </p><p>16)  Duration of Rx  </p><p>17)  Long Term Outcome (Healthy, Death, Ill)              </p><p>18)  Reason of default</p><p>19)  Reason of death</p><p>20)  Any other chronic illness              </p><p>21)  Work efficiency</p><p>22)  Outcome physical health             </p><p>23)  Anyone affected by TB in family                 </p><p>24)  Any death  in family by TB</p><p><strong>Follow up</strong></p><p>1. Date of last visit</p><p>2. Weight of last visit</p><p>3. height of last visit</p><p>4. Taking treatment or not</p><p>5. Output of treatment (Default, Failure, Complete, Cured)</p><p>6. If default, reason of not taking treatment</p><p>7. Associated new diagnosis</p><p> </p><p><strong>4. Hypertension</strong></p><ol><li>BP Systolic</li><li>BP Diastolic</li><li>Category of the hypertension</li><li>Blood sugar level</li><li>Serum creatinine at last visit</li><li>Associated complications (stroke, renal failure, heart failure, diabetes, ischemic heart disease, deaths)</li><li>Associated new diagnosis</li></ol><p><strong>Follow up</strong></p><p>1. BP Systolic</p><p>2. BP diastolic</p><p>3. Serum creatinine</p><p>4. Blood sugar level</p><p>6. Associated complications</p><p>7. Associated new diagnosis</p><p> </p><p><strong>5. Epilepsy</strong></p><ol><li>BP systolic</li><li>BP diastolic</li><li>On treatment - Yes / No</li><li>No treatment for one year / seizure controlled and on rx / controlled and rx stopped / seizure not controlled and on rx / seizure not controlled and not on rx</li><li>Current status</li><li>Any injury (recorded at the time of last visit)</li></ol><p><strong>Follow up</strong></p><p>1. Any seizure from  last visit\\</p><p>2. Number of seizure episodes in last one year</p><p>2. BP systolic</p><p>3. BP Diastolic</p><p>4. Any injury</p><p>5. On treatment</p><p> </p><p><strong>6. Sickle Cell</strong></p><ol><li>Hb</li><li>weight</li><li>height</li><li>Treatment</li><li>Associated disease</li><li>Current status</li><li>Required BT</li><li>Complication</li></ol><p><strong>Follow up</strong></p><p>1. Date of last visit</p><p>2. Hb of last visit</p><p>3. weight at last visit</p><p>4. height at last visit</p><p>5. Any complications</p><p> </p><p><strong>7. RHD illness characteristics plus follow up</strong></p><ol><li>Currently on warfarin</li><li>Currently on penicillin</li><li>Stopped penicillin</li><li>Rheumatic activity episode</li><li>Any procedure done</li><li>associated new diagnosis</li><li>complications if any</li><li>Death</li></ol><p> </p><p><strong>8. Mental illness characteristics plus follow up</strong></p><ol><li>Treatment</li><li>Associated disease</li><li>BP systolic</li><li>BP diastolic</li><li>Complications</li></ol><p> </p><p><strong>9. Leprosy illness characteristics plus follow up</strong></p><ol><li>Diagnosis by (self-reporting, active surveillance)</li><li>Lapromatous pole of leprosy (slit skin positive, nodular, histoid)</li><li>Disability as complication</li><li>Treatment / medicines</li><li>Taking treatment or not</li><li>Surgical correction</li></ol><p> </p><p><strong>10. Anemia</strong></p><ol><li>Type of anaemia</li><li>Hb</li><li>Current Treatment</li><li>Current status of patient</li><li>Required BT</li><li>Any complications</li><li>Associated new diagnosis</li></ol><p><strong>Follow up</strong></p><p>1. date of last visit</p><p>2. Hb of last visit</p><p>3. Required BP</p><p>4. Current treatment</p><p>5. Current status of patient</p><p> </p><p>Requirements for patients follow up which will be recorded every month and need to be updated every month and which should be updated in the database management software</p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/9240624"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/9240624/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/9240624/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/9240624/child",
+    "restrictions": "/rest/api/content/9240624/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/9240624/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=9240624",
+    "webui": "/spaces/BAH/pages/9240624/Disease+Templates",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/9240624",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/9240624",
+    "tinyui": "/x/MACN",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

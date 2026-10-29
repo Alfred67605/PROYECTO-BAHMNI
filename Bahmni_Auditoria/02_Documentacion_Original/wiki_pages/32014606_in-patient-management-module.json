@@ -1,0 +1,171 @@
+{
+  "id": "32014606",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/32014606",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzIwMTQ2MDY=",
+  "status": "current",
+  "title": "In-Patient Management Module",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2015-11-03T18:13:15.127Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014606/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "when": "2018-08-31T11:43:07.041Z",
+    "friendlyWhen": "Aug 31, 2018",
+    "message": "",
+    "number": 19,
+    "minorEdit": false,
+    "syncRev": "0.fNCrTtLxNu3ZbOumTa-KsQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$32014606.109",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/32014606"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014606/version/19"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><ac:structured-macro ac:name=\"excerpt\" ac:schema-version=\"1\" ac:macro-id=\"2bd2404a-9951-4961-9304-665a34ca80a5\"><ac:parameter ac:name=\"atlassian-macro-output-type\">INLINE</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\">The In-Patient Management Module (IPD) is used to manage the admission, discharge and transfer of patients. It includes ward management and bed allocation.</span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><p><br /></p><ac:structured-macro ac:name=\"warning\" ac:schema-version=\"1\" ac:macro-id=\"b7fc5a35-f61d-4658-81b2-2f741ab0891f\"><ac:rich-text-body><p>With 0.91 release, a <ac:link><ri:page ri:content-title=\"Bed Management (BM)\" ri:version-at-save=\"8\" /><ac:plain-text-link-body><![CDATA[new Bed Management feature]]></ac:plain-text-link-body></ac:link> is available. While the older feature is also available, we strongly advice any existing implementation to transition to the new feature soon. Going forward, as soon as we reach feature parity, this module will be deprecated. The deprecation is intended for Release 0.93 or so.&nbsp;</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"4f45750c-6a3b-4459-b3c7-cdd43b1d6b77\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">Sections</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"6847f595-03ed-42fa-8d55-a92ad7fafe4b\"><ac:parameter ac:name=\"all\">true</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"In-Patient Management (IPD)\" ri:version-at-save=\"9\" /><ac:plain-text-link-body><![CDATA[In-Patient Management (IPD) - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"In-Patient Management\" ri:version-at-save=\"31\" /><ac:plain-text-link-body><![CDATA[In-Patient Management (IPD) - User Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/32014606"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"In-PatientManagementModule-PurposeandBenefits\">Purpose and Benefits</h2><p><span class=\"legacy-color-text-default conf-macro output-inline\" data-hasbody=\"true\" data-macro-id=\"2bd2404a-9951-4961-9304-665a34ca80a5\" data-macro-name=\"excerpt\">The In-Patient Management Module (IPD) is used to manage the admission, discharge and transfer of patients. It includes ward management and bed allocation.</span><br/></p><div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b7fc5a35-f61d-4658-81b2-2f741ab0891f\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>With 0.91 release, a <a href=\"/wiki/spaces/BAH/pages/699400201/Bed+Management+BM\" data-linked-resource-id=\"699400201\" data-linked-resource-version=\"16\" data-linked-resource-type=\"page\">new Bed Management feature</a> is available. While the older feature is also available, we strongly advice any existing implementation to transition to the new feature soon. Going forward, as soon as we reach feature parity, this module will be deprecated. The deprecation is intended for Release 0.93 or so. </p></div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4f45750c-6a3b-4459-b3c7-cdd43b1d6b77\" data-macro-name=\"tip\"><p class=\"title\">Sections</p><div class=\"confluence-information-macro-body\"><p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"6847f595-03ed-42fa-8d55-a92ad7fafe4b\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/114929369/IPD+App+and+Tab+Setup\" data-linked-resource-id=\"114929369\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">IPD App and Tab Setup</a></li><li><a href=\"/wiki/spaces/BAH/pages/114923665/Admit+Discharge+and+Transfer+Patients\" data-linked-resource-id=\"114923665\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Admit, Discharge and Transfer Patients</a></li><li><a href=\"/wiki/spaces/BAH/pages/16908311/Ward+Management\" data-linked-resource-id=\"16908311\" data-linked-resource-version=\"17\" data-linked-resource-type=\"page\">Ward Management</a></li></ul><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604214/In-Patient+Management+IPD\" data-linked-resource-id=\"32604214\" data-linked-resource-version=\"9\" data-linked-resource-type=\"page\">In-Patient Management (IPD) - Feature Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32014373/In-Patient+Management\" data-linked-resource-id=\"32014373\" data-linked-resource-version=\"33\" data-linked-resource-type=\"page\">In-Patient Management (IPD) - User Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/32014606"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/32014606/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014606/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1359071694
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/32014606/child",
+    "restrictions": "/rest/api/content/32014606/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/32014606/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=32014606",
+    "webui": "/spaces/BAH/pages/32014606/In-Patient+Management+Module",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/32014606",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014606",
+    "tinyui": "/x/DoHoAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

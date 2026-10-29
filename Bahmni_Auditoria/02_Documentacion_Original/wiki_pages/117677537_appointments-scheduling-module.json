@@ -1,0 +1,171 @@
+{
+  "id": "117677537",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/117677537",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE3Njc3NTM3",
+  "status": "current",
+  "title": "Appointments Scheduling Module",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "createdDate": "2017-07-05T11:45:44.303Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/117677537/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5baffa0e1e426e5e9cd18c61",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "zenalc",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5baffa0e1e426e5e9cd18c61",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mihir Shrestha",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5baffa0e1e426e5e9cd18c61"
+      }
+    },
+    "when": "2020-09-26T01:23:27.361Z",
+    "friendlyWhen": "Sept 26, 2020",
+    "message": "",
+    "number": 24,
+    "minorEdit": false,
+    "syncRev": "0.637pyNL8cGUtODuvd8TNGA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$117677537.140",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/117677537"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/117677537/version/24"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"e42153dc-f971-407c-87a5-ddb370030a16\"><ac:rich-text-body><p><span>The Appointment Scheduling feature will be available from release 0.90.&nbsp;</span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\">The appointment scheduling module is for enabling the users to primarily&nbsp;<span>Create and Manage Appointments across services and providers. </span><span>The links below will provide the steps to configure and set up the appointment scheduling module for an implementation. You will find the steps to use the module in the user guide <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/117679771/Appointment+Scheduling+in+Bahmni\">here</a>.</span></p><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"9b621c85-dc27-450a-9ee4-cfab1400880f\"><ac:parameter ac:name=\"all\">true</ac:parameter></ac:structured-macro></p><p><span>Appointment Scheduling app onto Bahmni Clinical Home Page is configured through the following extension in &quot;extension.json&quot; of home as configured <a href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/apps/home/extension.json#L113\">here</a>.</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"1a959d6f-39b1-4ae3-b34d-610702b728b5\"><ac:plain-text-body><![CDATA[\"appointmentScheduling\": {\n    \"id\": \"bahmni.appointment.scheduling\",\n    \"extensionPointId\": \"org.bahmni.home.dashboard\",\n    \"type\": \"link\",\n    \"translationKey\": \"MODULE_LABEL_APPOINTMENT_SCHEDULING_KEY\",\n    \"url\": \"../appointments\",\n    \"icon\": \"fa fa-calendar\",\n    \"order\": 14,\n    \"requiredPrivilege\": \"app:appointments\"\n  }]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><span>Also, please note that you may have to specify your user's permissions to allow appointment scheduling. To grant the user permission, please head over to your OpenMRS settings, then in manage users, type in your user, and grant it the permissions &quot;appointmentmanage&quot; and &quot;appointments:fullaccess.&quot;</span></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"76f8a0f3-0569-4142-a7cb-e5fa594d3eaf\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">green</ac:parameter><ac:parameter ac:name=\"title\">Feature Details </ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Appointment Scheduling\" ri:version-at-save=\"15\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"859dcf3b-11f3-4cd7-b4f3-92a3c34cc11f\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">green</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Appointment Scheduling in Bahmni\" ri:version-at-save=\"10\" /><ac:plain-text-link-body><![CDATA[Using Appointment Scheduling in Bahmni]]></ac:plain-text-link-body></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/117677537"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e42153dc-f971-407c-87a5-ddb370030a16\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><span>The Appointment Scheduling feature will be available from release 0.90. </span></p></div></div><p class=\"auto-cursor-target\">The appointment scheduling module is for enabling the users to primarily <span>Create and Manage Appointments across services and providers. </span><span>The links below will provide the steps to configure and set up the appointment scheduling module for an implementation. You will find the steps to use the module in the user guide <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/117679771/Appointment+Scheduling+in+Bahmni\" rel=\"nofollow\">here</a>.</span></p><p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"9b621c85-dc27-450a-9ee4-cfab1400880f\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/137953304/Set+up+Services+Specialities\" data-linked-resource-id=\"137953304\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Set up Services &amp; Specialities</a></li><li><a href=\"/wiki/spaces/BAH/pages/138313802/Manage+Appointments\" data-linked-resource-id=\"138313802\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Manage Appointments</a></li><li><a href=\"/wiki/spaces/BAH/pages/137953307/Configure+Views+of+Appointments\" data-linked-resource-id=\"137953307\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Configure Views of Appointments</a></li><li><a href=\"/wiki/spaces/BAH/pages/144801828/User+Roles+and+Privileges+for+Appointment+Scheduling\" data-linked-resource-id=\"144801828\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">User Roles and Privileges for Appointment Scheduling</a></li><li><a href=\"/wiki/spaces/BAH/pages/299597962/Integration+Points\" data-linked-resource-id=\"299597962\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">Integration Points</a></li><li><a href=\"/wiki/spaces/BAH/pages/927432705/Appointment+Request\" data-linked-resource-id=\"927432705\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Appointment Request</a></li><li><a href=\"/wiki/spaces/BAH/pages/3168075832/Configuration+to+enable+SMS+alerts+for+Appointments\" data-linked-resource-id=\"3168075832\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Configuration to enable SMS alerts for Appointments</a></li><li><a href=\"/wiki/spaces/BAH/pages/3738796112/Setup+Teleconsultation+Feature\" data-linked-resource-id=\"3738796112\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">Setup Teleconsultation Feature</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/2140045317/Bahmni+Tele-consultation+Feature+Setup+on+v0.92+or+v0.93\" data-linked-resource-id=\"2140045317\" data-linked-resource-version=\"15\" data-linked-resource-type=\"page\">Bahmni Tele-consultation Feature Setup on v0.92 or v0.93</a></li></ul></li></ul></p><p><span>Appointment Scheduling app onto Bahmni Clinical Home Page is configured through the following extension in &quot;extension.json&quot; of home as configured <a class=\"external-link\" href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/apps/home/extension.json#L113\" rel=\"nofollow\">here</a>.</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"1a959d6f-39b1-4ae3-b34d-610702b728b5\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;appointmentScheduling&quot;: {\n    &quot;id&quot;: &quot;bahmni.appointment.scheduling&quot;,\n    &quot;extensionPointId&quot;: &quot;org.bahmni.home.dashboard&quot;,\n    &quot;type&quot;: &quot;link&quot;,\n    &quot;translationKey&quot;: &quot;MODULE_LABEL_APPOINTMENT_SCHEDULING_KEY&quot;,\n    &quot;url&quot;: &quot;../appointments&quot;,\n    &quot;icon&quot;: &quot;fa fa-calendar&quot;,\n    &quot;order&quot;: 14,\n    &quot;requiredPrivilege&quot;: &quot;app:appointments&quot;\n  }</pre>\n</div></div><p class=\"auto-cursor-target\"><span>Also, please note that you may have to specify your user's permissions to allow appointment scheduling. To grant the user permission, please head over to your OpenMRS settings, then in manage users, type in your user, and grant it the permissions &quot;appointmentmanage&quot; and &quot;appointments:fullaccess.&quot;</span></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"76f8a0f3-0569-4142-a7cb-e5fa594d3eaf\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: green;color: white;\"><b>Feature Details </b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/32604198/Appointment+Scheduling\" data-linked-resource-id=\"32604198\" data-linked-resource-version=\"15\" data-linked-resource-type=\"page\">Appointment Scheduling</a></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"859dcf3b-11f3-4cd7-b4f3-92a3c34cc11f\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: green;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/117679771/Appointment+Scheduling+in+Bahmni\" data-linked-resource-id=\"117679771\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Using Appointment Scheduling in Bahmni</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/117677537"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/117677537/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/117677537/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1538028664
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/117677537/child",
+    "restrictions": "/rest/api/content/117677537/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/117677537/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=117677537",
+    "webui": "/spaces/BAH/pages/117677537/Appointments+Scheduling+Module",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/117677537",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/117677537",
+    "tinyui": "/x/4Z0DBw",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

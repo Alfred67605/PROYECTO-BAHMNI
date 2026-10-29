@@ -1,0 +1,172 @@
+{
+  "id": "92111010",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/92111010",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvOTIxMTEwMTA=",
+  "status": "current",
+  "title": "Performing a Backup of Bahmni Data on USB or External Drive",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "createdDate": "2016-10-12T05:55:09.084Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/92111010/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2016-10-14T06:08:04.672Z",
+    "friendlyWhen": "Oct 14, 2016",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "syncRev": "0.GsWC1gokhxcsYmIpgHwGVA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$92111010.40",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/92111010"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/92111010/version/7"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><ac:structured-macro ac:name=\"warning\" ac:schema-version=\"1\" ac:macro-id=\"49c8dc43-bcdb-4282-888f-14e6c3b26f17\"><ac:rich-text-body><p>It is recommended to perform a daily / periodic backup of Bahmni data and store it offsite to avoid complete loss of data during a natural disaster, etc.&nbsp;</p></ac:rich-text-body></ac:structured-macro><h2>Steps to be Performed</h2><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"cc13a49f-454a-4789-bbdd-0889b22e1e6d\"><ac:rich-text-body><p>Note:</p><ol><li>These steps were tested on a CentOS v6.7 machine.</li><li>This could cause IO load on the machine, so please perform this on the Slave Machine, or when the EMR is not under load.</li></ol></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"dbe524e0-6036-4096-a50d-6020803f5176\"><ac:parameter ac:name=\"title\">Known issue with encryption step</ac:parameter><ac:rich-text-body><p>There is a known issue in Linux Kernel with the above encryption step because of which system needs to be shutdown after copying backup to the external hard drive, then only hard drive gets detached. Read here: <a href=\"https://bugzilla.redhat.com/show_bug.cgi?id=809188\">https://bugzilla.redhat.com/show_bug.cgi?id=809188</a>. Please test before proceeding.</p></ac:rich-text-body></ac:structured-macro><ol><li>Encrypt USB/External drive using steps mentioned in <a href=\"https://miguelmenendez.pro/en/articles/encrypt-usb-storage-device-linux-unified-key-setup-luks.html\">https://miguelmenendez.pro/en/articles/encrypt-usb-storage-device-linux-unified-key-setup-luks.html</a>.&nbsp;Note down the password in a secret location. And don't keep a password that is shared / re-used / easy-to-guess. This is a ONE TIME activity for the drive. Encrypting the USB has the advantage that even if you lost it, you will feel a little better that it will be very difficult for someone to get to the data.</li><li>Mount the hard drive at <strong>/media/USB</strong>.</li><li><p>Create directories in the USB (use the <a href=\"http://www.cyberciti.biz/faq/linux-make-directory-command/\">mkdir</a> command):&nbsp;</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b5f6030d-ee69-4ac9-9013-0538d7143054\"><ac:plain-text-body><![CDATA[# Folder struture\nemr_backup\n   |____ database\n   |____ patient_images\n   |____ document_images\n   |____ uploaded-files\n   |____ uploaded_results\n   |____ pacs_images\n       |____archive\n\n\n\n]]></ac:plain-text-body></ac:structured-macro></li><li><p>Unlock it with the command &lsquo;cryptsetup luksOpen LUKS0001&rsquo; with passphrase/password.</p></li><li><p>Mount the hard drive using command &lsquo;mount /dev/mapper/LUKS0001 /media/USB'</p></li><li><p>Copy the backups as per the below steps (<strong>NOTE:</strong><a href=\"http://www.tecmint.com/rsync-local-remote-file-synchronization-commands/\">rsync</a> is a command line program for doing delta updates / copy. Read more about it <a href=\"http://www.tecmint.com/rsync-local-remote-file-synchronization-commands/\">here</a>):&nbsp;</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"56968955-7e21-4032-9bab-9909945ec9ad\"><ac:plain-text-body><![CDATA[# Take database backup using the DB backup scripts for MySQL and PostGreSQL DBs\n\n\ncd ~/bahmni-environment/scripts\n./backup-mysql.sh password\n./backup-psql.sh\ncp /backup/<two newly created files> /media/USB/emr_backup/database/\n\n\n# Backup image files - patient images, document images, pacs images, uploaded_results, uploaded-files (depending on what features of Bahmni you are using) \n\n\nrsync -rh --progress -i --itemize-changes --update /home/bahmni/patient_images /media/USB/emr_backup/patient_images/../\nrsync -rh --progress -i --itemize-changes --update /home/bahmni/document_images /media/USB/emr_backup/document_images/../\nrsync -rh --progress -i --itemize-changes --update /home/bahmni/uploaded-files /media/USB/emr_backup/uploaded-files/../\nrsync -rh --progress -i --itemize-changes --update /home/bahmni/uploaded_results /media/USB/emr_backup/uploaded_results/../\nrsync -rh --progress -i --itemize-changes --update /var/lib/bahmni/dcm4chee-2.18.1-psql/server/default/archive /media/USB/emr_backup/pacs_images/archive/../]]></ac:plain-text-body></ac:structured-macro></li><li><p>Umount the disk using &lsquo;umount /media/USB'.</p></li><li><p>Lock the drive again with &lsquo;cryptsetup luksClose LUKS0001'.</p></li><li><p>Disconnect the hard drive and keep it in a safe, secure and remote place from the production environment.</p></li></ol><p><br /></p><p><br /></p><p><br /></p></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"fe3b0b49-2ed9-4c60-bfed-1c5bbadc04d0\"><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Automated DB backups of Bahmni\" /><ac:plain-text-link-body><![CDATA[Automated DB Backup]]></ac:plain-text-link-body></ac:link></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/92111010"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"49c8dc43-bcdb-4282-888f-14e6c3b26f17\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>It is recommended to perform a daily / periodic backup of Bahmni data and store it offsite to avoid complete loss of data during a natural disaster, etc. </p></div></div><h2 id=\"PerformingaBackupofBahmniDataonUSBorExternalDrive-StepstobePerformed\">Steps to be Performed</h2><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"cc13a49f-454a-4789-bbdd-0889b22e1e6d\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Note:</p><ol><li>These steps were tested on a CentOS v6.7 machine.</li><li>This could cause IO load on the machine, so please perform this on the Slave Machine, or when the EMR is not under load.</li></ol></div></div><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"dbe524e0-6036-4096-a50d-6020803f5176\" data-macro-name=\"note\"><p class=\"title\">Known issue with encryption step</p><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>There is a known issue in Linux Kernel with the above encryption step because of which system needs to be shutdown after copying backup to the external hard drive, then only hard drive gets detached. Read here: <a class=\"external-link\" href=\"https://bugzilla.redhat.com/show_bug.cgi?id=809188\" rel=\"nofollow\">https://bugzilla.redhat.com/show_bug.cgi?id=809188</a>. Please test before proceeding.</p></div></div><ol><li>Encrypt USB/External drive using steps mentioned in <a class=\"external-link\" href=\"https://miguelmenendez.pro/en/articles/encrypt-usb-storage-device-linux-unified-key-setup-luks.html\" rel=\"nofollow\">https://miguelmenendez.pro/en/articles/encrypt-usb-storage-device-linux-unified-key-setup-luks.html</a>. Note down the password in a secret location. And don't keep a password that is shared / re-used / easy-to-guess. This is a ONE TIME activity for the drive. Encrypting the USB has the advantage that even if you lost it, you will feel a little better that it will be very difficult for someone to get to the data.</li><li>Mount the hard drive at <strong>/media/USB</strong>.</li><li><p>Create directories in the USB (use the <a class=\"external-link\" href=\"http://www.cyberciti.biz/faq/linux-make-directory-command/\" rel=\"nofollow\">mkdir</a> command): </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b5f6030d-ee69-4ac9-9013-0538d7143054\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\"># Folder struture\nemr_backup\n   |____ database\n   |____ patient_images\n   |____ document_images\n   |____ uploaded-files\n   |____ uploaded_results\n   |____ pacs_images\n       |____archive\n\n\n\n</pre>\n</div></div></li><li><p>Unlock it with the command ‘cryptsetup luksOpen LUKS0001’ with passphrase/password.</p></li><li><p>Mount the hard drive using command ‘mount /dev/mapper/LUKS0001 /media/USB'</p></li><li><p>Copy the backups as per the below steps (<strong>NOTE:</strong><a class=\"external-link\" href=\"http://www.tecmint.com/rsync-local-remote-file-synchronization-commands/\" rel=\"nofollow\">rsync</a> is a command line program for doing delta updates / copy. Read more about it <a class=\"external-link\" href=\"http://www.tecmint.com/rsync-local-remote-file-synchronization-commands/\" rel=\"nofollow\">here</a>): </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"56968955-7e21-4032-9bab-9909945ec9ad\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\"># Take database backup using the DB backup scripts for MySQL and PostGreSQL DBs\n\n\ncd ~/bahmni-environment/scripts\n./backup-mysql.sh password\n./backup-psql.sh\ncp /backup/&lt;two newly created files&gt; /media/USB/emr_backup/database/\n\n\n# Backup image files - patient images, document images, pacs images, uploaded_results, uploaded-files (depending on what features of Bahmni you are using) \n\n\nrsync -rh --progress -i --itemize-changes --update /home/bahmni/patient_images /media/USB/emr_backup/patient_images/../\nrsync -rh --progress -i --itemize-changes --update /home/bahmni/document_images /media/USB/emr_backup/document_images/../\nrsync -rh --progress -i --itemize-changes --update /home/bahmni/uploaded-files /media/USB/emr_backup/uploaded-files/../\nrsync -rh --progress -i --itemize-changes --update /home/bahmni/uploaded_results /media/USB/emr_backup/uploaded_results/../\nrsync -rh --progress -i --itemize-changes --update /var/lib/bahmni/dcm4chee-2.18.1-psql/server/default/archive /media/USB/emr_backup/pacs_images/archive/../</pre>\n</div></div></li><li><p>Umount the disk using ‘umount /media/USB'.</p></li><li><p>Lock the drive again with ‘cryptsetup luksClose LUKS0001'.</p></li><li><p>Disconnect the hard drive and keep it in a safe, secure and remote place from the production environment.</p></li></ol><p><br/></p><p><br/></p><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"fe3b0b49-2ed9-4c60-bfed-1c5bbadc04d0\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/3997698/Automated+DB+backups+of+Bahmni\" data-linked-resource-id=\"3997698\" data-linked-resource-version=\"24\" data-linked-resource-type=\"page\">Automated DB Backup</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/92111010"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/92111010/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/92111010/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/92111010/child",
+    "restrictions": "/rest/api/content/92111010/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/92111010/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=92111010",
+    "webui": "/spaces/BAH/pages/92111010/Performing+a+Backup+of+Bahmni+Data+on+USB+or+External+Drive",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/92111010",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/92111010",
+    "tinyui": "/x/ooB9BQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

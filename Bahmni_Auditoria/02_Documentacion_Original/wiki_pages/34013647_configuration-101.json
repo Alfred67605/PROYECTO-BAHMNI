@@ -1,0 +1,171 @@
+{
+  "id": "34013647",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/34013647",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzQwMTM2NDc=",
+  "status": "current",
+  "title": "Configuration 101",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2015-11-26T06:49:56.006Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34013647/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "when": "2017-04-10T09:00:44.542Z",
+    "friendlyWhen": "Apr 10, 2017",
+    "message": "",
+    "number": 23,
+    "minorEdit": false,
+    "syncRev": "0.vfEX_llqd8I0Tp8p8Lk4zA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$34013647.119",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/34013647"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34013647/version/23"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_equal\"><ac:layout-cell><h2>Introduction</h2><p>Bahmni EMR is a user interface layer that is built on top of OpenMRS. Where possible, Bahmni depends on configuration that can be performed directly in OpenMRS.</p><p>For example, OpenMRS provides a mechanism to define custom attributes for a patient. Bahmni uses this underlying facility to show custom attributes for the patient on the Registration app. However, on Bahmni, there is also a way to define mandatory attributes for a patient. This cannot directly be achieved by configurations in OpenMRS. Such extended customizations are achieved in Bahmni using configuration files.</p><p>Any feature that is to be configured in Bahmni will typically need a combination of OpenMRS configuration and modifying the Bahmni configuration files.&nbsp;</p><p><ac:structured-macro ac:name=\"gliffy\" ac:schema-version=\"1\" ac:macro-id=\"e23b3a63-e71d-43b7-9da5-1fb6e4d230bc\"><ac:parameter ac:name=\"name\">Configuration Sources</ac:parameter><ac:parameter ac:name=\"\" /></ac:structured-macro></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"561f9a70-7edd-4a98-b89a-8e3ff0251bce\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"borderStyle\">solid</ac:parameter><ac:parameter ac:name=\"title\">In this Section</ac:parameter><ac:rich-text-body><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"83b856c7-3de2-4616-9dfa-ade8ad79b0f9\"><ac:parameter ac:name=\"all\">true</ac:parameter><ac:parameter ac:name=\"depth\">1</ac:parameter><ac:parameter ac:name=\"excerptType\">simple</ac:parameter></ac:structured-macro></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/34013647"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-equal\" data-layout=\"two-equal\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"Configuration101-Introduction\">Introduction</h2><p>Bahmni EMR is a user interface layer that is built on top of OpenMRS. Where possible, Bahmni depends on configuration that can be performed directly in OpenMRS.</p><p>For example, OpenMRS provides a mechanism to define custom attributes for a patient. Bahmni uses this underlying facility to show custom attributes for the patient on the Registration app. However, on Bahmni, there is also a way to define mandatory attributes for a patient. This cannot directly be achieved by configurations in OpenMRS. Such extended customizations are achieved in Bahmni using configuration files.</p><p>Any feature that is to be configured in Bahmni will typically need a combination of OpenMRS configuration and modifying the Bahmni configuration files. </p><p><div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f77eb505-d553-42e3-aa1e-72d21d403bd3\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><h3 id=\"Configuration101-Oops,DiagramUnavailable\">Oops, Diagram Unavailable</h3><p>This diagram can't be displayed. It may have been moved or deleted, or the page's access settings may be preventing it from loading. Pages with restricted access must also include Gliffy Diagrams in their allowed list.</p></div></div></p></div>\n</div>\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"561f9a70-7edd-4a98-b89a-8e3ff0251bce\" data-macro-name=\"panel\" style=\"border-style: solid;border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;border-bottom-style: solid;background-color: #1FA5A0;color: white;\"><b>In this Section</b></div><div class=\"panelContent\">\n<ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"83b856c7-3de2-4616-9dfa-ade8ad79b0f9\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/412811291/Configurations+What+goes+where\" data-linked-resource-id=\"412811291\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">Configurations: What goes where?</a></li><li><a href=\"/wiki/spaces/BAH/pages/34013673/OpenMRS+configuration\" data-linked-resource-id=\"34013673\" data-linked-resource-version=\"16\" data-linked-resource-type=\"page\">OpenMRS configuration</a> — <span class=\"smalltext\">Configuring certain OpenMRS attributes such as users, patient attriibutes, locations, drugs, concepts and concept sets, etc. are required for every installation of Bahmni. Most OpenMRS configuration can be done using the OpenMRS Administration UI https://192.168.33.10/openmrs/admin/index.htm.</span></li><li><a href=\"/wiki/spaces/BAH/pages/34013676/Bahmni+App+Configuration\" data-linked-resource-id=\"34013676\" data-linked-resource-version=\"29\" data-linked-resource-type=\"page\">Bahmni App Configuration</a> — <span class=\"smalltext\">Bahmni configuration files are deployed under /bahmni_config/openmrs/apps of the Bahmni web server. Each implementation should have its own copy of configuration files. The configuration files are largely simple json https://en.wikipedia.org/wiki/JSON files.</span></li><li><a href=\"/wiki/spaces/BAH/pages/114398427/OpenERP+Configuration\" data-linked-resource-id=\"114398427\" data-linked-resource-version=\"9\" data-linked-resource-type=\"page\">OpenERP Configuration</a> — <span class=\"smalltext\">Bahmni integrates OpenMRS with OpenERP which is a an open source ERP product. It is useful in Billing, Pharmacy and Stock management. Any patient registered in OpenMRS is synced by Bahmni as a customer in OpenERP. </span></li></ul>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/34013647"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/34013647/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34013647/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 113726336
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/34013647/child",
+    "restrictions": "/rest/api/content/34013647/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/34013647/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=34013647",
+    "webui": "/spaces/BAH/pages/34013647/Configuration+101",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/34013647",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34013647",
+    "tinyui": "/x/zwEHAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

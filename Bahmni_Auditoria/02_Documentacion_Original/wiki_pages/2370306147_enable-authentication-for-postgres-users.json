@@ -1,0 +1,172 @@
+{
+  "id": "2370306147",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2370306147",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjM3MDMwNjE0Nw==",
+  "status": "current",
+  "title": "Enable Authentication for Postgres Users",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "createdDate": "2021-04-19T04:50:22.694Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2370306147/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d0693809-6796-4c30-b887-eed8e802d572",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "tbindu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d0693809-6796-4c30-b887-eed8e802d572",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Thungathurty",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d0693809-6796-4c30-b887-eed8e802d572"
+      }
+    },
+    "when": "2021-04-19T04:51:01.818Z",
+    "friendlyWhen": "Apr 19, 2021",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.grGeyaoaphRq3vbXZemzaA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2370306147.12",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2370306147"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2370306147/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\" ac:breakout-mode=\"default\"><ac:layout-cell><p>Default postgres installation that comes with Bahmni product/Bahmni-mart doesn&rsquo;t have authentication enabled. So one can use psql command line prompt without password. The major problem with this approach is, if the postgres port is open it has chances of getting misused. We don&rsquo;t usually keep it open for all the ip&rsquo;s but only to the specific ip&rsquo;s. But as pg_hba.conf is giving that provision to allow any ip to connect to postgres database, its always a good practise to enable the authentication for all postgres user to avoid any security vulnerabilities.</p><p>There are two ways to enable authentication to psql users.</p><ol><li><p>Add authentication for psql users as part of fresh installation of postgres service.</p></li><li><p>Enable authentication for existing psql user</p></li></ol><p>The existing changes in bahmni-mart covers only the part of enabling authentication for fresh installation of postgres service</p><p>Below is the chart to that shows for which bahmni versions authentication can be enabled with bahmni-mart-playbook installation</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"328\" ac:original-width=\"904\"><ri:attachment ri:filename=\"image-20200412-080114.png\" ri:version-at-save=\"1\" /></ac:image><p>Below is the ansible command for installing bahmni-mart</p><p><strong>Metabase without ssl:</strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"63472327-a392-44a4-85b3-23091f3e95ca\"><ac:plain-text-body><![CDATA[ansible-playbook -i /etc/bahmni-mart-playbook/inventories/bahmni-mart /etc/bahmni-mart-playbook/all.yml --extra-vars '@/etc/bahmni-mart-playbook/setup.yml' --skip-tags \"custom_ssl,lets_encrypt_ssl,authentication\" -vvv]]></ac:plain-text-body></ac:structured-macro><p>Please use the above chart as reference to add/remove <code>&ldquo;authentication&rdquo;</code> tag to the <code>--skip-tags</code> based on the bahmni version and fresh install of the mart.</p></ac:layout-cell><ac:layout-cell><p>&nbsp;</p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2370306147"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p>Default postgres installation that comes with Bahmni product/Bahmni-mart doesn’t have authentication enabled. So one can use psql command line prompt without password. The major problem with this approach is, if the postgres port is open it has chances of getting misused. We don’t usually keep it open for all the ip’s but only to the specific ip’s. But as pg_hba.conf is giving that provision to allow any ip to connect to postgres database, its always a good practise to enable the authentication for all postgres user to avoid any security vulnerabilities.</p><p>There are two ways to enable authentication to psql users.</p><ol><li><p>Add authentication for psql users as part of fresh installation of postgres service.</p></li><li><p>Enable authentication for existing psql user</p></li></ol><p>The existing changes in bahmni-mart covers only the part of enabling authentication for fresh installation of postgres service</p><p>Below is the chart to that shows for which bahmni versions authentication can be enabled with bahmni-mart-playbook installation</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/2370306147/image-20200412-080114.png?version=1&amp;modificationDate=1618807847300&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/2370306147/image-20200412-080114.png?version=1&amp;modificationDate=1618807847300&amp;cacheVersion=1&amp;api=v2\" data-height=\"328\" data-width=\"904\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2375876681\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20200412-080114.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"2370306147\" data-linked-resource-container-version=\"1\" data-media-id=\"1c9a4f4b-0c9f-47fe-87ba-d0e29e8406ed\" data-media-type=\"file\"></span><p>Below is the ansible command for installing bahmni-mart</p><p><strong>Metabase without ssl:</strong></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"63472327-a392-44a4-85b3-23091f3e95ca\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">ansible-playbook -i /etc/bahmni-mart-playbook/inventories/bahmni-mart /etc/bahmni-mart-playbook/all.yml --extra-vars '@/etc/bahmni-mart-playbook/setup.yml' --skip-tags &quot;custom_ssl,lets_encrypt_ssl,authentication&quot; -vvv</pre>\n</div></div><p>Please use the above chart as reference to add/remove <code>“authentication”</code> tag to the <code>--skip-tags</code> based on the bahmni version and fresh install of the mart.</p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<p> </p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2370306147"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2370306147/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2370306147/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 2214
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2370306147/child",
+    "restrictions": "/rest/api/content/2370306147/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2370306147/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2370306147",
+    "webui": "/spaces/BAH/pages/2370306147/Enable+Authentication+for+Postgres+Users",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2370306147",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2370306147",
+    "tinyui": "/x/YwBIjQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

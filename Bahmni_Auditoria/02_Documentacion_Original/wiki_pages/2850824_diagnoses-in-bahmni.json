@@ -1,0 +1,170 @@
+{
+  "id": "2850824",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2850824",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjg1MDgyNA==",
+  "status": "current",
+  "title": "Diagnoses in Bahmni",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:c54772f2-46b5-43c0-be04-96923ee59750",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Vinay Venu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:c54772f2-46b5-43c0-be04-96923ee59750",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Vinay Venu",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:c54772f2-46b5-43c0-be04-96923ee59750"
+      }
+    },
+    "createdDate": "2014-04-16T09:11:43.234Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2850824/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:c54772f2-46b5-43c0-be04-96923ee59750",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Vinay Venu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:c54772f2-46b5-43c0-be04-96923ee59750",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Vinay Venu",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:c54772f2-46b5-43c0-be04-96923ee59750"
+      }
+    },
+    "when": "2014-04-16T09:11:43.234Z",
+    "friendlyWhen": "Apr 16, 2014",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.rGpNjabcqFqoRAUXWumEQA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2850824.25",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2850824"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2850824/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>EMR-API has a domain object called Diagnosis that has several fields. <br />- CodedAnswer <br />- NonCodedAnswer - if the diagnosis is not yet coded<br />- Order (primary vs secondary) <br />- Certainty (presumed vs confirmed). <br />In the database this is stored as an observation group called Diagnosis with each member as an observation group member.</p><p>For Bahmni, we needed to track the lifecycle of a diagnosis. To achieve this, we added three new fields. <br />- Status (Ruled out, Cured)<br />- Initial (uuid of the initial observation) <br />- isRevised(true and false).</p><p>Status is not mandatory, but provides interesting modifiers to the diagnosis like &quot;ruled out&quot;, &quot;cured&quot; etc. <br />IsRevised will be set to true when a diagnosis is revised.</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2850824"
+      }
+    },
+    "view": {
+      "value": "<p>EMR-API has a domain object called Diagnosis that has several fields. <br/>- CodedAnswer <br/>- NonCodedAnswer - if the diagnosis is not yet coded<br/>- Order (primary vs secondary) <br/>- Certainty (presumed vs confirmed). <br/>In the database this is stored as an observation group called Diagnosis with each member as an observation group member.</p><p>For Bahmni, we needed to track the lifecycle of a diagnosis. To achieve this, we added three new fields. <br/>- Status (Ruled out, Cured)<br/>- Initial (uuid of the initial observation) <br/>- isRevised(true and false).</p><p>Status is not mandatory, but provides interesting modifiers to the diagnosis like &quot;ruled out&quot;, &quot;cured&quot; etc. <br/>IsRevised will be set to true when a diagnosis is revised.</p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2850824"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2850824/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2850824/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 406
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2850824/child",
+    "restrictions": "/rest/api/content/2850824/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2850824/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2850824",
+    "webui": "/spaces/BAH/pages/2850824/Diagnoses+in+Bahmni",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2850824",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2850824",
+    "tinyui": "/x/CIAr",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

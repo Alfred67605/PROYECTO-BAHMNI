@@ -1,0 +1,177 @@
+{
+  "id": "47775905",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/47775905",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNDc3NzU5MDU=",
+  "status": "current",
+  "title": "Adding Mappings for Concepts",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:0f43b7f8-f2e8-46f6-b0be-ad5f3fc23ddf",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Abishek Anand",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:0f43b7f8-f2e8-46f6-b0be-ad5f3fc23ddf",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Abishek Anand",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:0f43b7f8-f2e8-46f6-b0be-ad5f3fc23ddf"
+      }
+    },
+    "createdDate": "2016-03-23T10:07:08.465Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/47775905/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "when": "2016-04-15T08:22:02.367Z",
+    "friendlyWhen": "Apr 15, 2016",
+    "message": "",
+    "number": 11,
+    "minorEdit": false,
+    "syncRev": "0._xN0mRwHxbRJSyJIjUQozQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$47775905.55",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/47775905"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/47775905/version/11"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Description</h2><p>A concept term defines a medical coding term or OpenMRS concept dictionary term that could be mapped to a concept.&nbsp;A concept map connects a concept term to a concept. &nbsp;To understand Concepts and Mapping better, please refer to this documentation by OpenMRS:&nbsp;<a href=\"https://wiki.openmrs.org/display/docs/Concept+Terms+and+Mappings\">Concept Terms and Mapping (OpenMRS Wiki)</a>.</p><h2>Steps</h2><p>One can choose to directly add a reference term, or else, refer to a properties file key name, which will have its corresponding language translation in the property file at run time.</p><h3><strong>Case 1: Adding a direct name</strong></h3><p>Here the code field of new reference term is just name&nbsp;</p><p><ac:structured-macro ac:name=\"multimedia\" ac:schema-version=\"1\" ac:macro-id=\"9afb5cd1-41eb-43ba-8400-ca037ce2bf5b\"><ac:parameter ac:name=\"name\"><ri:attachment ri:filename=\"name-as-reference-term-source.mp4\" /></ac:parameter><ac:parameter ac:name=\"width\">700</ac:parameter><ac:parameter ac:name=\"autostart\">true</ac:parameter><ac:parameter ac:name=\"height\">500</ac:parameter></ac:structured-macro></p><h3><strong style=\"line-height: 1.42857;\">Case 2: Adding a key reference</strong></h3><p>The code field of reference term Key(<strong style=\"line-height: 1.42857;\"><span style=\"color: rgb(0,0,0);\">ETHAMBUTAL_KEY</span></strong>) is defined in the locale file&nbsp;<a style=\"line-height: 1.42857;\" href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/i18n/clinical/locale_en.json\">https://github.com/Bahmni/default-config/blob/master/openmrs/i18n/clinical/locale_en.json</a></p><p>&nbsp;<ac:structured-macro ac:name=\"multimedia\" ac:schema-version=\"1\" ac:macro-id=\"bfbe2ae3-a188-4b14-8736-58b355702e9b\"><ac:parameter ac:name=\"name\"><ri:attachment ri:filename=\"locale-key-as-reference-term-source.mp4\" /></ac:parameter><ac:parameter ac:name=\"width\">700</ac:parameter><ac:parameter ac:name=\"autostart\">true</ac:parameter><ac:parameter ac:name=\"height\">500</ac:parameter></ac:structured-macro></p></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"3c15117e-dff4-4608-8180-2aebc11d25f7\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"e8f0fdc3-7d76-4e0d-878a-5b0900f5429d\" /></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"5246e26e-0440-4e20-9b43-02184be46fef\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><a href=\"https://bahmni.atlassian.net/wiki/pages/editpage.action?pageId=47775905\">Concept Terms and Mappings (OpenMRS Wiki)</a></p><p><a href=\"https://wiki.openmrs.org/display/docs/Concept+Best+Practices\">Concept Best Practices (OpenMRS Wiki)</a></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"7a78be22-9614-48ba-bd25-5dfe65c91d4b\"><ac:parameter ac:name=\"title\">Similar Pages</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"search\" ac:schema-version=\"1\" ac:macro-id=\"a001239c-16ee-446a-8589-ffd855c12b55\"><ac:parameter ac:name=\"maxLimit\">5</ac:parameter><ac:parameter ac:name=\"query\">concept</ac:parameter><ac:parameter ac:name=\"type\">page</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/47775905"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"AddingMappingsforConcepts-Description\">Description</h2><p>A concept term defines a medical coding term or OpenMRS concept dictionary term that could be mapped to a concept. A concept map connects a concept term to a concept.  To understand Concepts and Mapping better, please refer to this documentation by OpenMRS: <a class=\"external-link\" href=\"https://wiki.openmrs.org/display/docs/Concept+Terms+and+Mappings\" rel=\"nofollow\">Concept Terms and Mapping (OpenMRS Wiki)</a>.</p><h2 id=\"AddingMappingsforConcepts-Steps\">Steps</h2><p>One can choose to directly add a reference term, or else, refer to a properties file key name, which will have its corresponding language translation in the property file at run time.</p><h3 id=\"AddingMappingsforConcepts-Case1:Addingadirectname\"><strong>Case 1: Adding a direct name</strong></h3><p>Here the code field of new reference term is just name </p><p><div class=\"embeddedObject conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"9afb5cd1-41eb-43ba-8400-ca037ce2bf5b\" data-macro-name=\"multimedia\">\n    <video src=\"/wiki/download/attachments/47775905/name-as-reference-term-source.mp4\" height=\"500\" width=\"700\" autoplay=\"\" controls=\"\">\n        Your browser does not support the HTML5 video element\n</video>\n\n</div></p><h3 id=\"AddingMappingsforConcepts-Case2:Addingakeyreference\"><strong style=\"line-height: 1.42857;\">Case 2: Adding a key reference</strong></h3><p>The code field of reference term Key(<strong style=\"line-height: 1.42857;\"><span class=\"legacy-color-text-default\">ETHAMBUTAL_KEY</span></strong>) is defined in the locale file <a class=\"external-link\" href=\"https://github.com/Bahmni/default-config/blob/master/openmrs/i18n/clinical/locale_en.json\" rel=\"nofollow\" style=\"line-height: 1.42857;\">https://github.com/Bahmni/default-config/blob/master/openmrs/i18n/clinical/locale_en.json</a></p><p> <div class=\"embeddedObject conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"bfbe2ae3-a188-4b14-8736-58b355702e9b\" data-macro-name=\"multimedia\">\n    <video src=\"/wiki/download/attachments/47775905/locale-key-as-reference-term-source.mp4\" height=\"500\" width=\"700\" autoplay=\"\" controls=\"\">\n        Your browser does not support the HTML5 video element\n</video>\n\n</div></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3c15117e-dff4-4608-8180-2aebc11d25f7\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"e8f0fdc3-7d76-4e0d-878a-5b0900f5429d\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"5246e26e-0440-4e20-9b43-02184be46fef\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a href=\"https://bahmni.atlassian.net/wiki/pages/editpage.action?pageId=47775905\" rel=\"nofollow\">Concept Terms and Mappings (OpenMRS Wiki)</a></p><p><a class=\"external-link\" href=\"https://wiki.openmrs.org/display/docs/Concept+Best+Practices\" rel=\"nofollow\">Concept Best Practices (OpenMRS Wiki)</a></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7a78be22-9614-48ba-bd25-5dfe65c91d4b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>Similar Pages</b></div><div class=\"panelContent\">\n<p> </p><div class=\"searchMacro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"a001239c-16ee-446a-8589-ffd855c12b55\" data-macro-name=\"search\">\n    <h4 class=\"resultSummary\">\n                    Found <strong>5</strong> search result(s) for <strong>concept</strong>.\n         \n        </h4>\n\n    \t\t\t\t\t<div class=\"result\">\n            \n            \n                <span class=\"icon aui-icon content-type-page\" title=\"Page\">Page:</span>\n        <a href=\"/wiki/spaces/BAH/pages/5605195781/Enhancement+Support+for+Concept-Format+Attributes+in+the+Surgical+Appointment+Form\">Enhancement: Support for Concept-Format Attributes in the Surgical Appointment Form</a>\n    \n        <span class=\"smalltext\">(<a href=\"/wiki/display/BAH\">Bahmni Wiki</a>)</span>\n    \n<br />\n<span class=\"smalltext\">\n        \n    Aug 18, 2026\n\n        </span>\n\n    \n            </div>\n        \t\t\t<div class=\"result\">\n            \n            \n                <span class=\"icon aui-icon content-type-page\" title=\"Page\">Page:</span>\n        <a href=\"/wiki/spaces/BAH/pages/3251863630/Comparing+various+Concept+Dictionary+options+in+Bahmni\">Comparing various Concept Dictionary options in Bahmni</a>\n    \n        <span class=\"smalltext\">(<a href=\"/wiki/display/BAH\">Bahmni Wiki</a>)</span>\n    \n<br />\n<span class=\"smalltext\">\n        \n    Jan 25, 2024\n\n        </span>\n\n    \n            </div>\n        \t\t\t<div class=\"result\">\n            \n            \n                <span class=\"icon aui-icon content-type-page\" title=\"Page\">Page:</span>\n        <a href=\"/wiki/spaces/BAH/pages/50921567/Configure+Concept+or+Concept+Set\">Configure Concept or Concept Set</a>\n    \n        <span class=\"smalltext\">(<a href=\"/wiki/display/BAH\">Bahmni Wiki</a>)</span>\n    \n<br />\n<span class=\"smalltext\">\n        \n    May 18, 2016\n\n        </span>\n\n    \n            </div>\n        \t\t\t<div class=\"result\">\n            \n            \n                <span class=\"icon aui-icon content-type-page\" title=\"Page\">Page:</span>\n        <a href=\"/wiki/spaces/BAH/pages/8585221/Concept+Classes\">Concept Classes</a>\n    \n        <span class=\"smalltext\">(<a href=\"/wiki/display/BAH\">Bahmni Wiki</a>)</span>\n    \n<br />\n<span class=\"smalltext\">\n        \n    Sept 15, 2014\n\n        </span>\n\n    \n            </div>\n        \t\t\t<div class=\"result\">\n            \n            \n                <span class=\"icon aui-icon content-type-page\" title=\"Page\">Page:</span>\n        <a href=\"/wiki/spaces/BAH/pages/2850829/Concept+Set+UI\">Concept Set UI</a>\n    \n        <span class=\"smalltext\">(<a href=\"/wiki/display/BAH\">Bahmni Wiki</a>)</span>\n    \n<br />\n<span class=\"smalltext\">\n        \n    Jul 08, 2017\n\n        </span>\n\n    \n            </div>\n            </div>\n<p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/47775905"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "review-needed",
+          "id": "30146561",
+          "label": "review-needed"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 1,
+      "_links": {
+        "next": "/rest/api/content/47775905/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/47775905/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 388720416
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/47775905/child",
+    "restrictions": "/rest/api/content/47775905/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/47775905/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=47775905",
+    "webui": "/spaces/BAH/pages/47775905/Adding+Mappings+for+Concepts",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/47775905",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/47775905",
+    "tinyui": "/x/oQDZAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

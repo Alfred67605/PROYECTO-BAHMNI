@@ -1,0 +1,172 @@
+{
+  "id": "703660044",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/703660044",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNzAzNjYwMDQ0",
+  "status": "current",
+  "title": "Surgical Block",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Himabindu Thungathurty",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Akkinepalli",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66"
+      }
+    },
+    "createdDate": "2018-08-19T10:58:33.066Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/703660044/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2021-04-06T09:07:02.992Z",
+    "friendlyWhen": "Apr 06, 2021",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "0.GSwOOv1GDbxngupiELWjlg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$703660044.90",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/703660044"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/703660044/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2><strong>Introduction to Surgical Blocks</strong></h2><p>Surgical blocks is the<span>&nbsp;time that is blocked based on the surgeries to be performed and some is left open, or unused block time is released at an agreed-upon time before surgery and allotted to another Surgeon.</span></p><h2><strong>Creating a surgical block</strong></h2><p><span>For a user to be able to create a new block, user must navigate to <strong>Operation Theatre App &rarr; OT Scheduling &rarr; New Surgical block</strong></span></p><p><span>To be able to create a surgical appointment a user must first create a block. A block is created against a Surgeon. The mandatory fields while creating a block are:</span></p><ul><li><span>Surgeon</span></li><li style=\"text-align: left;\"><span>Location</span></li><li><span>Start Date-Time</span></li><li><span>Start End-Time</span></li></ul><p><span><strong>Surgeons</strong> is a list of surgeon names that comes from the OT config</span></p><p><span><strong>Locations</strong> is a list of locations in openMRS that are tagged with operation theatre</span></p><p><span><strong>Start Date-Time</strong> and <strong>Start End-Time</strong> are fields that you have to enter to be able to block that time for the surgeon against that location. </span></p><p><strong>Validations</strong><em><span>:</span></em></p><ol><li><span>A surgeon cannot have overlapping blocks across OTs</span></li><li><span>OT can have multiple blocks but only one block is allowed at a point of time in an OT</span></li></ol><p><em><strong>Sample OT Blocks for Surgeons across three Operating Theatres:</strong></em></p><table class=\"relative-table\" style=\"width: 25.8936%;\"><colgroup><col style=\"width: 17.2308%;\" /><col style=\"width: 25.8462%;\" /><col style=\"width: 25.8462%;\" /><col style=\"width: 31.0769%;\" /></colgroup><tbody><tr><th>Time</th><th>OT1</th><th>OT2</th><th>OT3</th></tr><tr><td>8am</td><td data-highlight-colour=\"#b3f5ff\">Surgeon1</td><td data-highlight-colour=\"#c0b6f2\">Surgeon4</td><td data-highlight-colour=\"#fffae6\">Surgeon5</td></tr><tr><td>9am</td><td data-highlight-colour=\"#ff8f73\">Surgeon2</td><td data-highlight-colour=\"#c0b6f2\"><br /></td><td data-highlight-colour=\"#b3f5ff\">Surgeon1</td></tr><tr><td>10am</td><td data-highlight-colour=\"#e3fcef\">Surgeon3</td><td data-highlight-colour=\"#c0b6f2\"><br /></td><td data-highlight-colour=\"#b3f5ff\"><br /></td></tr></tbody></table><p>In the above example, Surgeon 1 cannot be blocked for OT2 &amp; OT3 from 8am to 9am, since he/she is blocked for OT1 during that time. But surgeon 1 can be blocked for OT3 from 9am to 11am.</p><p><ac:image ac:border=\"true\" ac:height=\"303\" ac:width=\"800\"><ri:attachment ri:filename=\"Screen Shot 2018-08-19 at 10.24.20 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><h2><strong>Edit, Cancel or Postpone Blocks</strong></h2><p><span>A user can perform the below actions on a block</span></p><ul><li><strong><strong>Edit Block: (<strong><em>All the fields in the block are editable)</em></strong></strong></strong></li><ol><li><em><span>A user can edit blocks from calendar view only</span></em></li><li><span>To be able to add surgeries in a block that has already been created a user must <strong>edit</strong> the block </span></li><li><span>A user needs to click on a block in the calendar view and a pop-up will show block details with Edit button (see screenshot below).</span></li><li><span>Upon clicking on edit, user will be taken to edit surgical block page where users can see surgeries associated with the block.</span></li></ol></ul><p><strong><ac:image ac:align=\"center\" ac:height=\"400\"><ri:attachment ri:filename=\"Edit Surgical Block.png\" ri:version-at-save=\"1\" /></ac:image></strong></p><p style=\"text-align: center;\"><strong>Edit/Cancel Surgery Block (on click of block)</strong></p><ul><li><strong>Cancel Block:</strong></li><ol><li><span>A user can cancel a block from calendar view </span></li><li><span>A user can also cancel a block from &ldquo;edit surgical block&rdquo; view</span></li><li><span>A user needs to click on a block in the calendar view and the pop-up will show block details with an Edit or <strong>Cancel Block</strong> button.</span></li><li><span>When cancel is selected, there is a pop up that asks if a user wants to cancel the block or postpone it.</span></li><li><span>User has to click on cancel, select &ldquo;Cancel block&rdquo; and enter a reason in order to cancel the block</span></li><li><span>If a block has a &ldquo;completed&rdquo; surgery, a user will not be able to cancel the block</span></li><li><span>When a block is cancelled, all its surgeries are also cancelled</span></li><li><span>Once a block is cancelled, the block will not appear in the calendar view</span></li></ol></ul><ul><li><strong><strong>Postpone Block:&nbsp;</strong></strong></li></ul><ol><ol><li><span>A user can postpone a block from calendar view </span></li><li><span>A user can also postpone a block from &ldquo;edit surgical block&rdquo; view</span></li><li><span>A user needs to select a block in the calendar view and the </span><strong>cancel</strong><span><span> button on the left bottom will enable&nbsp;</span></span></li><li><span><span>User has to click on cancel, select &ldquo;Postpone block&rdquo; and enter a reason &nbsp;in order to postpone the block</span></span></li><li><span>If a block has a &ldquo;completed&rdquo; surgery, a user will not be able to postpone the block</span></li><li><span>Once a block is postponed, all its surgeries are also postponed</span></li><li><span>Once a block is postponed, the block will not appear in the calendar view</span></li></ol></ol><p><strong>Note</strong>: In order to reschedule the postponed surgeries of the block, a user will have to create a new surgery for the patient.</p><p><ac:image ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2018-08-19 at 10.39.56 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><p><br /></p><p><ac:image ac:border=\"true\" ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2018-08-19 at 10.39.44 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><p><br /></p><p><strong>Actions that can be performed on blocks:</strong></p><p><br /></p><table><colgroup><col /><col /><col /><col /></colgroup><tbody><tr><th>Block Type</th><th>Edit</th><th>Postpone</th><th>Cancel</th></tr><tr><td>Surgical Block (with <strong>pending</strong> surgeries)</td><td data-highlight-colour=\"#abf5d1\">Yes</td><td data-highlight-colour=\"#abf5d1\">Yes</td><td data-highlight-colour=\"#abf5d1\">Yes</td></tr><tr><td>Surgical Block (with <strong>completed</strong> surgeries)</td><td data-highlight-colour=\"#abf5d1\">Yes</td><td>No</td><td>No</td></tr></tbody></table><p class=\"auto-cursor-target\" style=\"margin-left: 60.0px;\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"af911cf4-7c11-4f1a-8d21-477f6696e164\"><ac:parameter ac:name=\"title\">On this page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"0f0b0548-2d84-4016-a4d2-57e1da3ad319\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/703660044"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"SurgicalBlock-IntroductiontoSurgicalBlocks\"><strong>Introduction to Surgical Blocks</strong></h2><p>Surgical blocks is the<span> time that is blocked based on the surgeries to be performed and some is left open, or unused block time is released at an agreed-upon time before surgery and allotted to another Surgeon.</span></p><h2 id=\"SurgicalBlock-Creatingasurgicalblock\"><strong>Creating a surgical block</strong></h2><p><span>For a user to be able to create a new block, user must navigate to <strong>Operation Theatre App → OT Scheduling → New Surgical block</strong></span></p><p><span>To be able to create a surgical appointment a user must first create a block. A block is created against a Surgeon. The mandatory fields while creating a block are:</span></p><ul><li><span>Surgeon</span></li><li style=\"text-align: left;\"><span>Location</span></li><li><span>Start Date-Time</span></li><li><span>Start End-Time</span></li></ul><p><span><strong>Surgeons</strong> is a list of surgeon names that comes from the OT config</span></p><p><span><strong>Locations</strong> is a list of locations in openMRS that are tagged with operation theatre</span></p><p><span><strong>Start Date-Time</strong> and <strong>Start End-Time</strong> are fields that you have to enter to be able to block that time for the surgeon against that location. </span></p><p><strong>Validations</strong><em><span>:</span></em></p><ol><li><span>A surgeon cannot have overlapping blocks across OTs</span></li><li><span>OT can have multiple blocks but only one block is allowed at a point of time in an OT</span></li></ol><p><em><strong>Sample OT Blocks for Surgeons across three Operating Theatres:</strong></em></p><div class=\"table-wrap\"><table class=\"relative-table confluenceTable\" style=\"width: 25.8936%;\"><colgroup><col style=\"width: 17.2308%;\"/><col style=\"width: 25.8462%;\"/><col style=\"width: 25.8462%;\"/><col style=\"width: 31.0769%;\"/></colgroup><tbody><tr><th class=\"confluenceTh\">Time</th><th class=\"confluenceTh\">OT1</th><th class=\"confluenceTh\">OT2</th><th class=\"confluenceTh\">OT3</th></tr><tr><td class=\"confluenceTd\">8am</td><td data-highlight-colour=\"#b3f5ff\" class=\"confluenceTd\">Surgeon1</td><td data-highlight-colour=\"#c0b6f2\" class=\"confluenceTd\">Surgeon4</td><td data-highlight-colour=\"#fffae6\" class=\"confluenceTd\">Surgeon5</td></tr><tr><td class=\"confluenceTd\">9am</td><td data-highlight-colour=\"#ff8f73\" class=\"confluenceTd\">Surgeon2</td><td data-highlight-colour=\"#c0b6f2\" class=\"confluenceTd\"><br/></td><td data-highlight-colour=\"#b3f5ff\" class=\"confluenceTd\">Surgeon1</td></tr><tr><td class=\"confluenceTd\">10am</td><td data-highlight-colour=\"#e3fcef\" class=\"confluenceTd\">Surgeon3</td><td data-highlight-colour=\"#c0b6f2\" class=\"confluenceTd\"><br/></td><td data-highlight-colour=\"#b3f5ff\" class=\"confluenceTd\"><br/></td></tr></tbody></table></div><p>In the above example, Surgeon 1 cannot be blocked for OT2 &amp; OT3 from 8am to 9am, since he/she is blocked for OT1 during that time. But surgeon 1 can be blocked for OT3 from 9am to 11am.</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border\" height=\"303\" width=\"800\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/703660044/Screen%20Shot%202018-08-19%20at%2010.24.20%20PM.png?version=1&amp;modificationDate=1534697680456&amp;cacheVersion=1&amp;api=v2&amp;width=800&amp;height=303\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/703660044/Screen%20Shot%202018-08-19%20at%2010.24.20%20PM.png?version=1&amp;modificationDate=1534697680456&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"703856651\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2018-08-19 at 10.24.20 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"703660044\" data-linked-resource-container-version=\"3\" data-media-id=\"bdaea219-4ae5-4ce5-9834-b9d137bc5b07\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/703660044/Screen%20Shot%202018-08-19%20at%2010.24.20%20PM.png?version=1&amp;modificationDate=1534697680456&amp;cacheVersion=1&amp;api=v2&amp;width=1318&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/703660044/Screen%20Shot%202018-08-19%20at%2010.24.20%20PM.png?version=1&amp;modificationDate=1534697680456&amp;cacheVersion=1&amp;api=v2&amp;width=800&amp;height=303 1x\"></span></p><h2 id=\"SurgicalBlock-Edit,CancelorPostponeBlocks\"><strong>Edit, Cancel or Postpone Blocks</strong></h2><p><span>A user can perform the below actions on a block</span></p><ul><li><strong><strong>Edit Block: (<strong><em>All the fields in the block are editable)</em></strong></strong></strong></li><ol><li><em><span>A user can edit blocks from calendar view only</span></em></li><li><span>To be able to add surgeries in a block that has already been created a user must <strong>edit</strong> the block </span></li><li><span>A user needs to click on a block in the calendar view and a pop-up will show block details with Edit button (see screenshot below).</span></li><li><span>Upon clicking on edit, user will be taken to edit surgical block page where users can see surgeries associated with the block.</span></li></ol></ul><p><strong><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" height=\"400\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/703660044/Edit%20Surgical%20Block.png?version=1&amp;modificationDate=1617699263308&amp;cacheVersion=1&amp;api=v2&amp;width=882&amp;height=400\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/703660044/Edit%20Surgical%20Block.png?version=1&amp;modificationDate=1617699263308&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2325413926\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Edit Surgical Block.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"703660044\" data-linked-resource-container-version=\"3\" data-media-id=\"de20827e-d800-4aeb-b880-d3bbf9488b3a\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/703660044/Edit%20Surgical%20Block.png?version=1&amp;modificationDate=1617699263308&amp;cacheVersion=1&amp;api=v2&amp;width=1623&amp;height=736 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/703660044/Edit%20Surgical%20Block.png?version=1&amp;modificationDate=1617699263308&amp;cacheVersion=1&amp;api=v2&amp;width=882&amp;height=400 1x\"></span></strong></p><p style=\"text-align: center;\"><strong>Edit/Cancel Surgery Block (on click of block)</strong></p><ul><li><strong>Cancel Block:</strong></li><ol><li><span>A user can cancel a block from calendar view </span></li><li><span>A user can also cancel a block from “edit surgical block” view</span></li><li><span>A user needs to click on a block in the calendar view and the pop-up will show block details with an Edit or <strong>Cancel Block</strong> button.</span></li><li><span>When cancel is selected, there is a pop up that asks if a user wants to cancel the block or postpone it.</span></li><li><span>User has to click on cancel, select “Cancel block” and enter a reason in order to cancel the block</span></li><li><span>If a block has a “completed” surgery, a user will not be able to cancel the block</span></li><li><span>When a block is cancelled, all its surgeries are also cancelled</span></li><li><span>Once a block is cancelled, the block will not appear in the calendar view</span></li></ol></ul><ul><li><strong><strong>Postpone Block: </strong></strong></li></ul><ol><ol><li><span>A user can postpone a block from calendar view </span></li><li><span>A user can also postpone a block from “edit surgical block” view</span></li><li><span>A user needs to select a block in the calendar view and the </span><strong>cancel</strong><span><span> button on the left bottom will enable </span></span></li><li><span><span>User has to click on cancel, select “Postpone block” and enter a reason  in order to postpone the block</span></span></li><li><span>If a block has a “completed” surgery, a user will not be able to postpone the block</span></li><li><span>Once a block is postponed, all its surgeries are also postponed</span></li><li><span>Once a block is postponed, the block will not appear in the calendar view</span></li></ol></ol><p><strong>Note</strong>: In order to reschedule the postponed surgeries of the block, a user will have to create a new surgery for the patient.</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/703660044/Screen%20Shot%202018-08-19%20at%2010.39.56%20PM.png?version=1&amp;modificationDate=1534698637232&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=330\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/703660044/Screen%20Shot%202018-08-19%20at%2010.39.56%20PM.png?version=1&amp;modificationDate=1534698637232&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"703823899\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2018-08-19 at 10.39.56 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"703660044\" data-linked-resource-container-version=\"3\" data-media-id=\"9cbde194-ad76-454a-b89b-68a4842915c6\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/703660044/Screen%20Shot%202018-08-19%20at%2010.39.56%20PM.png?version=1&amp;modificationDate=1534698637232&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=660 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/703660044/Screen%20Shot%202018-08-19%20at%2010.39.56%20PM.png?version=1&amp;modificationDate=1534698637232&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=330 1x\"></span></p><p><br/></p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/703660044/Screen%20Shot%202018-08-19%20at%2010.39.44%20PM.png?version=1&amp;modificationDate=1534698635236&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=431\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/703660044/Screen%20Shot%202018-08-19%20at%2010.39.44%20PM.png?version=1&amp;modificationDate=1534698635236&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"703758350\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2018-08-19 at 10.39.44 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"703660044\" data-linked-resource-container-version=\"3\" data-media-id=\"68784c05-9a5f-4497-a0a5-5fadd35390c2\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/703660044/Screen%20Shot%202018-08-19%20at%2010.39.44%20PM.png?version=1&amp;modificationDate=1534698635236&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=862 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/703660044/Screen%20Shot%202018-08-19%20at%2010.39.44%20PM.png?version=1&amp;modificationDate=1534698635236&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=431 1x\"></span></p><p><br/></p><p><strong>Actions that can be performed on blocks:</strong></p><p><br/></p><div class=\"table-wrap\"><table class=\"confluenceTable\"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><th class=\"confluenceTh\">Block Type</th><th class=\"confluenceTh\">Edit</th><th class=\"confluenceTh\">Postpone</th><th class=\"confluenceTh\">Cancel</th></tr><tr><td class=\"confluenceTd\">Surgical Block (with <strong>pending</strong> surgeries)</td><td data-highlight-colour=\"#abf5d1\" class=\"confluenceTd\">Yes</td><td data-highlight-colour=\"#abf5d1\" class=\"confluenceTd\">Yes</td><td data-highlight-colour=\"#abf5d1\" class=\"confluenceTd\">Yes</td></tr><tr><td class=\"confluenceTd\">Surgical Block (with <strong>completed</strong> surgeries)</td><td data-highlight-colour=\"#abf5d1\" class=\"confluenceTd\">Yes</td><td class=\"confluenceTd\">No</td><td class=\"confluenceTd\">No</td></tr></tbody></table></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"af911cf4-7c11-4f1a-8d21-477f6696e164\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>On this page</b></div><div class=\"panelContent\">\n<p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"0f0b0548-2d84-4016-a4d2-57e1da3ad319\" data-macro-name=\"toc\"> </div><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/703660044"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/703660044/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/703660044/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 715827882
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/703660044/child",
+    "restrictions": "/rest/api/content/703660044/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/703660044/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=703660044",
+    "webui": "/spaces/BAH/pages/703660044/Surgical+Block",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/703660044",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/703660044",
+    "tinyui": "/x/DADxKQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

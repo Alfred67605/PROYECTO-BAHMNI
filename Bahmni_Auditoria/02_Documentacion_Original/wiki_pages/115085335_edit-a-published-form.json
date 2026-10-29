@@ -1,0 +1,172 @@
+{
+  "id": "115085335",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/115085335",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE1MDg1MzM1",
+  "status": "current",
+  "title": "Edit a Published Form",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:f128f81b-6cd6-413f-84e4-0cb2a7a99981",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Yang Zeng (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:f128f81b-6cd6-413f-84e4-0cb2a7a99981",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Yang Zeng (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:f128f81b-6cd6-413f-84e4-0cb2a7a99981"
+      }
+    },
+    "createdDate": "2017-03-01T04:00:11.051Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115085335/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "when": "2017-03-29T08:59:40.126Z",
+    "friendlyWhen": "Mar 29, 2017",
+    "message": "",
+    "number": 11,
+    "minorEdit": false,
+    "syncRev": "0.jL2nQu5wsNFr_J-Wn-bS4g.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$115085335.58",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/115085335"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115085335/version/11"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p><span style=\"color: rgb(0,0,0);\">&nbsp;It's possible that a published form may need to be edited again. This function enables implementer to edit a published form.</span></p><h2><span style=\"color: rgb(0,0,0);\">Steps</span></h2><h3><span style=\"color: rgb(0,0,0);\">1. Goto Form Builder</span></h3><p><span style=\"color: rgb(0,0,0);\">Click on the <em>eye icon</em> of the form which you need to edit.</span></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"image2017-3-2_22-44-5.png\" ri:version-at-save=\"1\" /></ac:image><br /></span></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\"><strong>Form builder dashboard</strong></span></p><p style=\"text-align: center;\"><br /></p><h3><span style=\"color: rgb(0,0,0);\">2. Edit the Published Form</span></h3><p>Click the<em> Edit </em>button and confirm to enter into the edit mode.</p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"c0a9edd0-eeea-4944-8e25-ffb795a912a3\"><ac:parameter ac:name=\"title\">New version of form will be created</ac:parameter><ac:rich-text-body><ul><li>After the entered the edit mode, once the form is saved, a new version of the form will be created automatically whether the content of the form is changed or not.</li><li>The status of this saved form is <em>draft</em> since it is not published yet.</li><li><span>When the status of form is draft, the version and status won't change if the form is repeatedly saved.</span></li></ul></ac:rich-text-body></ac:structured-macro><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"image2017-3-2_22-53-29.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\"><strong>Confirm to go to edit mode</strong></span></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"image2017-3-2_23-8-45.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\"><strong>Save form</strong></span></p><h3 style=\"text-align: left;\"><span style=\"color: rgb(0,0,0);\">3. Publish the Form</span></h3><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"a50a5b8a-5d5b-4c4e-8aff-e3ef909db976\"><ac:parameter ac:name=\"title\">Publish the form</ac:parameter><ac:rich-text-body><p>If want to apply this form in Bahmni immediately, remember to publish it.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"0b744f92-0474-4511-ba50-ea4dc8343d16\"><ac:parameter ac:name=\"style\">none</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"4084f2de-c0c2-4eeb-b02a-1184ccf78a4a\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Create a new Form\" ri:version-at-save=\"9\" /></ac:link></p><p><ac:link><ri:page ri:content-title=\"Add Controls\" ri:version-at-save=\"7\" /></ac:link></p><p><ac:link><ri:page ri:content-title=\"Rename a Form\" ri:version-at-save=\"6\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><p><br /></p><p><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/115085335"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"EditaPublishedForm-PurposeandBenefits\">Purpose and Benefits</h2><p><span class=\"legacy-color-text-default\"> It's possible that a published form may need to be edited again. This function enables implementer to edit a published form.</span></p><h2 id=\"EditaPublishedForm-Steps\"><span class=\"legacy-color-text-default\">Steps</span></h2><h3 id=\"EditaPublishedForm-1.GotoFormBuilder\"><span class=\"legacy-color-text-default\">1. Goto Form Builder</span></h3><p><span class=\"legacy-color-text-default\">Click on the <em>eye icon</em> of the form which you need to edit.</span></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115085335/image2017-3-2_22-44-5.png?version=1&amp;modificationDate=1488465847898&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=176\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/115085335/image2017-3-2_22-44-5.png?version=1&amp;modificationDate=1488465847898&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115126735\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-3-2_22-44-5.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"115085335\" data-linked-resource-container-version=\"11\" data-media-id=\"dd41f61d-7260-484f-9e14-7b0dd9ad41fc\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115085335/image2017-3-2_22-44-5.png?version=1&amp;modificationDate=1488465847898&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=352 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/115085335/image2017-3-2_22-44-5.png?version=1&amp;modificationDate=1488465847898&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=176 1x\"></span><br/></span></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\"><strong>Form builder dashboard</strong></span></p><p style=\"text-align: center;\"><br/></p><h3 id=\"EditaPublishedForm-2.EditthePublishedForm\"><span class=\"legacy-color-text-default\">2. Edit the Published Form</span></h3><p>Click the<em> Edit </em>button and confirm to enter into the edit mode.</p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c0a9edd0-eeea-4944-8e25-ffb795a912a3\" data-macro-name=\"info\"><p class=\"title\">New version of form will be created</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><ul><li>After the entered the edit mode, once the form is saved, a new version of the form will be created automatically whether the content of the form is changed or not.</li><li>The status of this saved form is <em>draft</em> since it is not published yet.</li><li><span>When the status of form is draft, the version and status won't change if the form is repeatedly saved.</span></li></ul></div></div><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115085335/image2017-3-2_22-53-29.png?version=1&amp;modificationDate=1488466419574&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=322\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/115085335/image2017-3-2_22-53-29.png?version=1&amp;modificationDate=1488466419574&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115126853\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-3-2_22-53-29.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"115085335\" data-linked-resource-container-version=\"11\" data-media-id=\"8281a0ef-30e0-41e1-802a-0676de9f31b5\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115085335/image2017-3-2_22-53-29.png?version=1&amp;modificationDate=1488466419574&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=644 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/115085335/image2017-3-2_22-53-29.png?version=1&amp;modificationDate=1488466419574&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=322 1x\"></span></span></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\"><strong>Confirm to go to edit mode</strong></span></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115085335/image2017-3-2_23-8-45.png?version=1&amp;modificationDate=1488467329256&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=369\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/115085335/image2017-3-2_23-8-45.png?version=1&amp;modificationDate=1488467329256&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115127055\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-3-2_23-8-45.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"115085335\" data-linked-resource-container-version=\"11\" data-media-id=\"54cf0037-e1f2-46f1-b880-d2b3b318a787\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115085335/image2017-3-2_23-8-45.png?version=1&amp;modificationDate=1488467329256&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=738 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/115085335/image2017-3-2_23-8-45.png?version=1&amp;modificationDate=1488467329256&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=369 1x\"></span></span></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\"><strong>Save form</strong></span></p><h3 style=\"text-align: left;\" id=\"EditaPublishedForm-3.PublishtheForm\"><span class=\"legacy-color-text-default\">3. Publish the Form</span></h3><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a50a5b8a-5d5b-4c4e-8aff-e3ef909db976\" data-macro-name=\"note\"><p class=\"title\">Publish the form</p><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>If want to apply this form in Bahmni immediately, remember to publish it.</p></div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-cssliststyle=\"none\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"0b744f92-0474-4511-ba50-ea4dc8343d16\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4084f2de-c0c2-4eeb-b02a-1184ccf78a4a\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/115085179/Create+a+new+Form\" data-linked-resource-id=\"115085179\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Create a new Form</a></p><p><a href=\"/wiki/spaces/BAH/pages/115085295/Add+Controls\" data-linked-resource-id=\"115085295\" data-linked-resource-version=\"16\" data-linked-resource-type=\"page\">Add Controls</a></p><p><a href=\"/wiki/spaces/BAH/pages/115085378/Rename+a+Form\" data-linked-resource-id=\"115085378\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Rename a Form</a></p>\n</div></div><p><br/></p><p><br/></p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/115085335"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/115085335/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115085335/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 2
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/115085335/child",
+    "restrictions": "/rest/api/content/115085335/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/115085335/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=115085335",
+    "webui": "/spaces/BAH/pages/115085335/Edit+a+Published+Form",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/115085335",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115085335",
+    "tinyui": "/x/FxDcBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

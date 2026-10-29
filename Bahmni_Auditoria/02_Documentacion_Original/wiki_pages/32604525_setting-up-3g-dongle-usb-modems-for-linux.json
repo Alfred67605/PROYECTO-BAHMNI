@@ -1,0 +1,171 @@
+{
+  "id": "32604525",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/32604525",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzI2MDQ1MjU=",
+  "status": "current",
+  "title": "Setting up 3G dongle/USB Modems for linux",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:03ef29bc-bdbc-4176-8651-e1f346c59a38",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Vinkesh Banka",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:03ef29bc-bdbc-4176-8651-e1f346c59a38",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Vinkesh Banka",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:03ef29bc-bdbc-4176-8651-e1f346c59a38"
+      }
+    },
+    "createdDate": "2015-11-12T13:55:37.468Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32604525/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2015-11-12T14:03:52.843Z",
+    "friendlyWhen": "Nov 12, 2015",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "0.o9JFV-RqEsR3WTKr3zN3gQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$32604525.17",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/32604525"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32604525/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:macro-id=\"cdb10aba-2403-436a-88c7-c6ff423bc7c7\" ac:name=\"tip\" ac:schema-version=\"1\"><ac:rich-text-body><p>In some places, 3G USB modems might be only way to connect our servers to internet. Below is a guideline to install and use 3G dongles in linux.</p></ac:rich-text-body></ac:structured-macro><p>&nbsp;</p><div><div>Install wvdial to be used for dialing 3G modem</div><div><p>&nbsp;</p><ac:structured-macro ac:macro-id=\"74e1276c-3be7-4216-9b10-96ef18a9c50f\" ac:name=\"code\" ac:schema-version=\"1\"><ac:plain-text-body><![CDATA[yum install wvdial]]></ac:plain-text-body></ac:structured-macro><p>&nbsp;</p></div></div><div>Now create a configuration file for wvdial in &lsquo;<span>/etc/wvdial.conf</span>'</div><div><p>&nbsp;</p><ac:structured-macro ac:macro-id=\"1d566946-9148-4a07-a12a-f53d5b8eadba\" ac:name=\"code\" ac:schema-version=\"1\"><ac:plain-text-body><![CDATA[    vi /etc/wvdial.conf]]></ac:plain-text-body></ac:structured-macro></div><ac:structured-macro ac:macro-id=\"be6e4d3b-95fe-4a88-a1b6-1296aa7d2602\" ac:name=\"code\" ac:schema-version=\"1\"><ac:parameter ac:name=\"title\">Dialer Defaults</ac:parameter><ac:plain-text-body><![CDATA[[Dialer Defaults]\nInit1 = ATZ\nInit2 = ATQ0 V1 E1 S0=0 &C1 &D2\nInit3 = AT+CGDCONT=1,\"IP”,\"<APN of Internet provider>\"\nStupid Mode = 1\nModem Type = USB Modem\nNew PPPD = no\nModem = /dev/ttyUSB2\nISDN = 0\nAuto Reconnect = 1\nPhone = *99#\nUsername = <Provider username>\nPassword = <Provider password>\nBaud = 460800\nCarrier Check = no\n]]></ac:plain-text-body></ac:structured-macro><div>Install required libraries and tools.</div><div><p>&nbsp;</p><ac:structured-macro ac:macro-id=\"d7449fb4-c318-4cb4-b711-3a7b2626f537\" ac:name=\"code\" ac:schema-version=\"1\"><ac:plain-text-body><![CDATA[yum install tcl usbutils libusb1-devel]]></ac:plain-text-body></ac:structured-macro><p>&nbsp;</p></div><div>Download <strong>usb_modeswitch</strong> and <strong>usb_modeswitch_data</strong></div><div><p>&nbsp;</p><ac:structured-macro ac:macro-id=\"18716edb-85ef-4fc0-96a2-98ee2f96347d\" ac:name=\"code\" ac:schema-version=\"1\"><ac:parameter ac:name=\"title\">Download using wget command</ac:parameter><ac:plain-text-body><![CDATA[wget http://www.draisberghof.de/usb_modeswitch/usb-modeswitch-data-20151101.tar.bz2 #or latest\nwget http://www.draisberghof.de/usb_modeswitch/usb-modeswitch-2.2.6.tar.bz2  #or latest]]></ac:plain-text-body></ac:structured-macro><p>&nbsp;</p></div><div>Extract and install</div><div><code><code><span>&nbsp; &nbsp;&nbsp;</span></code></code><ac:structured-macro ac:macro-id=\"4d78b74c-1aff-4026-9e36-a4e50a0804a4\" ac:name=\"code\" ac:schema-version=\"1\"><ac:plain-text-body><![CDATA[tar xvfj usb-modewitch-2.2.6.tar.bz2\ntar xvfj usb-modewitch-data-20151101.tar.bz2\n\ncd usb-modewitch-2.2.6\nmake install\n\ncd usb-modewitch-data-20151101\nmake install]]></ac:plain-text-body></ac:structured-macro><p>&nbsp;</p></div><div><code><span><br /></span></code></div><div><code><strong>usb_modeswitch</strong> creates some udev rules to automatically change the mode of 3G dongle to act as usb_modem</code></div><div>Now plug in your 3G dongle, it should automatically be detected.</div><div><p>&nbsp;</p><ac:structured-macro ac:macro-id=\"06ea0b18-2198-4c47-ac68-06e0f11f2e97\" ac:name=\"code\" ac:schema-version=\"1\"><ac:plain-text-body><![CDATA[     dmesg | grep tty   # should show something like 'GSM modem (1-port) converter now attached to ttyUSB0'\n     sudo wvdial &\n\n]]></ac:plain-text-body></ac:structured-macro><p>&nbsp;</p></div><div><span style=\"line-height: 1.42857;\">Now this should start dialing via 3G modem, and internet should be started.</span></div><div><span style=\"line-height: 1.42857;\"><br /></span></div><div><p>&nbsp;</p><ac:structured-macro ac:macro-id=\"3874bac1-deac-44eb-a66b-b1bbf80b1ea4\" ac:name=\"tip\" ac:schema-version=\"1\"><ac:rich-text-body><p><strong>For more info -&nbsp;<span style=\"color: rgb(102,102,102);\"><a href=\"http://www.draisberghof.de/usb_modeswitch/\">http://www.draisberghof.de/usb_modeswitch/</a></span></strong></p></ac:rich-text-body></ac:structured-macro><p>&nbsp;</p></div><div><span><br /></span></div>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/32604525"
+      }
+    },
+    "view": {
+      "value": "<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"cdb10aba-2403-436a-88c7-c6ff423bc7c7\" data-macro-name=\"tip\"><style>[data-colorid=yu6bzv942t]{color:#666666} html[data-color-mode=dark] [data-colorid=yu6bzv942t]{color:#999999}</style><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>In some places, 3G USB modems might be only way to connect our servers to internet. Below is a guideline to install and use 3G dongles in linux.</p></div></div><p>&nbsp;</p><div><div>Install wvdial to be used for dialing 3G modem</div><div><p>&nbsp;</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"74e1276c-3be7-4216-9b10-96ef18a9c50f\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">yum install wvdial</pre>\n</div></div><p>&nbsp;</p></div></div><div>Now create a configuration file for wvdial in &lsquo;<span>/etc/wvdial.conf</span>'</div><div><p>&nbsp;</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"1d566946-9148-4a07-a12a-f53d5b8eadba\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">    vi /etc/wvdial.conf</pre>\n</div></div></div><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"be6e4d3b-95fe-4a88-a1b6-1296aa7d2602\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Dialer Defaults</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">[Dialer Defaults]\nInit1 = ATZ\nInit2 = ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2\nInit3 = AT+CGDCONT=1,&quot;IP&rdquo;,&quot;&lt;APN of Internet provider&gt;&quot;\nStupid Mode = 1\nModem Type = USB Modem\nNew PPPD = no\nModem = /dev/ttyUSB2\nISDN = 0\nAuto Reconnect = 1\nPhone = *99#\nUsername = &lt;Provider username&gt;\nPassword = &lt;Provider password&gt;\nBaud = 460800\nCarrier Check = no\n</pre>\n</div></div><div>Install required libraries and tools.</div><div><p>&nbsp;</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d7449fb4-c318-4cb4-b711-3a7b2626f537\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">yum install tcl usbutils libusb1-devel</pre>\n</div></div><p>&nbsp;</p></div><div>Download <strong>usb_modeswitch</strong> and <strong>usb_modeswitch_data</strong></div><div><p>&nbsp;</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"18716edb-85ef-4fc0-96a2-98ee2f96347d\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Download using wget command</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">wget http://www.draisberghof.de/usb_modeswitch/usb-modeswitch-data-20151101.tar.bz2 #or latest\nwget http://www.draisberghof.de/usb_modeswitch/usb-modeswitch-2.2.6.tar.bz2  #or latest</pre>\n</div></div><p>&nbsp;</p></div><div>Extract and install</div><div><code><code><span>&nbsp; &nbsp;&nbsp;</span></code></code><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4d78b74c-1aff-4026-9e36-a4e50a0804a4\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">tar xvfj usb-modewitch-2.2.6.tar.bz2\ntar xvfj usb-modewitch-data-20151101.tar.bz2\n\ncd usb-modewitch-2.2.6\nmake install\n\ncd usb-modewitch-data-20151101\nmake install</pre>\n</div></div><p>&nbsp;</p></div><div><code><span><br /></span></code></div><div><code><strong>usb_modeswitch</strong> creates some udev rules to automatically change the mode of 3G dongle to act as usb_modem</code></div><div>Now plug in your 3G dongle, it should automatically be detected.</div><div><p>&nbsp;</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"06ea0b18-2198-4c47-ac68-06e0f11f2e97\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">     dmesg | grep tty   # should show something like 'GSM modem (1-port) converter now attached to ttyUSB0'\n     sudo wvdial &amp;\n\n</pre>\n</div></div><p>&nbsp;</p></div><div><span style=\"line-height: 1.42857;\">Now this should start dialing via 3G modem, and internet should be started.</span></div><div><span style=\"line-height: 1.42857;\"><br /></span></div><div><p>&nbsp;</p><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3874bac1-deac-44eb-a66b-b1bbf80b1ea4\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>For more info -&nbsp;<span data-colorid=\"yu6bzv942t\"><a class=\"external-link\" href=\"http://www.draisberghof.de/usb_modeswitch/\" rel=\"nofollow\">http://www.draisberghof.de/usb_modeswitch/</a></span></strong></p></div></div><p>&nbsp;</p></div><div><span><br /></span></div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/32604525"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/32604525/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32604525/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/32604525/child",
+    "restrictions": "/rest/api/content/32604525/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/32604525/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=32604525",
+    "webui": "/spaces/BAH/pages/32604525/Setting+up+3G+dongle+USB+Modems+for+linux",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/32604525",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32604525",
+    "tinyui": "/x/bYHxAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,93 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public License,
+ * v. 2.0. If a copy of the MPL was not distributed with this file, You can
+ * obtain one at https://www.bahmni.org/license/mplv2hd.
+ *
+ * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
+ * graphic logo is a trademark of OpenMRS Inc.
+ */
+
+'use strict';
+
+describe("CareViewController", function () {
+    var scope, controller, auditLogService, logoutService, attemptLogoutSpy, $window;
+    var state = jasmine.createSpyObj('$state', ['go']);
+    beforeEach(module('bahmni.ipd'));
+    beforeEach(inject(function ($controller, $rootScope,_$window_) {
+        controller = $controller;
+        scope = $rootScope.$new();
+        $window = _$window_;
+    }));
+    auditLogService = jasmine.createSpyObj('auditLogService', ['log']);
+    attemptLogoutSpy = jasmine.createSpy('attemptLogout');
+    logoutService = { attemptLogout: attemptLogoutSpy };
+    auditLogService.log.and.returnValue({
+        then: function(callback) { return callback(); }
+    });
+    let mockProvider = {name: "__test__provider"}
+    let mockUser = { name: "__test__user" }
+    var createController = function () {
+
+        controller('CareViewController', {
+            $scope: scope,
+            $rootScope: {currentProvider: mockProvider, quickLogoutComboKey: 'Escape', cookieExpiryTime:30, currentUser: mockUser},
+            $state: state,
+            auditLogService: auditLogService,
+            logoutService: logoutService,
+            $window: $window
+        });
+    };
+
+    it('should create host data and host api', function (){
+        createController();
+        expect(scope.hostData).toEqual({provider: mockProvider, currentUser: mockUser});
+        expect(scope.hostApi).not.toBeNull();
+    });
+
+    it('should call onHome when hostApi.onHome is called', function () {
+        createController();
+        scope.hostApi.onHome();
+        expect(state.go).toHaveBeenCalledWith('home');
+    });
+
+    it('should invoke logoutService when user logs out', function () {
+        createController();
+        scope.hostApi.onLogOut();
+        expect(attemptLogoutSpy.calls.count()).toBe(1);
+        expect(attemptLogoutSpy.calls.mostRecent().args[0]).toBe(scope);
+    });
+
+    it('should call auditLogService.log while handleAuditEvent is triggered', function (){
+        createController();
+        scope.hostApi.handleAuditEvent(undefined, 'VIEWED_WARD_LEVEL_DASHBOARD', undefined, 'MODULE_LABEL_INPATIENT_KEY');
+        expect(auditLogService.log).toHaveBeenCalledWith(undefined, 'VIEWED_WARD_LEVEL_DASHBOARD', undefined, 'MODULE_LABEL_INPATIENT_KEY');
+    });
+
+    it('should call handleLogoutShortcut on keydown event', function (){
+        createController();
+        spyOn(scope.hostApi, 'onLogOut');
+        $window.dispatchEvent(new KeyboardEvent('keydown', {'key': 'Escape', 'metaKey': true, 'ctrlKey': false}));
+        expect(scope.hostApi.onLogOut).toHaveBeenCalled();
+    });
+
+    it('should call handleLogoutShortcut on keydown event', function (){
+        createController();
+        spyOn(scope.hostApi, 'onLogOut');
+        $window.dispatchEvent(new KeyboardEvent('keydown', {'key': 'Escape', 'metaKey': false, 'ctrlKey': true}));
+        expect(scope.hostApi.onLogOut).toHaveBeenCalled();
+    });
+
+    it('should call handleLogoutShortcut on keydown event', function (){
+        createController();
+        spyOn(scope.hostApi, 'onLogOut');
+        $window.dispatchEvent(new KeyboardEvent('keydown', {'key': 'Escape', 'metaKey': false, 'ctrlKey': false}));
+        expect(scope.hostApi.onLogOut).not.toHaveBeenCalled();
+    });
+
+    it('should remove event listener on scope destroy', function () {
+        spyOn($window, 'removeEventListener');
+        createController();
+        scope.$destroy();
+        expect($window.removeEventListener).toHaveBeenCalledWith('keydown', jasmine.any(Function));
+    });
+});

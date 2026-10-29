@@ -1,0 +1,30 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Bed Management Module</title></head><body><h1>Bed Management Module</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="BedManagementModule-EnablingthenewBedManagementModule">Enabling the new Bed Management Module</h2><p>You can enable the new BM by configuring it as an extension in <em>bahmni_config/home/extension.json </em>like below or as configured in <a class="external-link" href="https://github.com/Bahmni/default-config/blob/master/openmrs/apps/home/extension.json#L42" rel="nofollow">default config here</a></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="38a2ffc9-7872-45bd-8cdd-5d359a7f3a7a" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>App Extension Definition</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">&quot;newBedManagement&quot;: {
+    &quot;id&quot;: &quot;bahmni.ipd&quot;,
+    &quot;extensionPointId&quot;: &quot;org.bahmni.home.dashboard&quot;,
+    &quot;type&quot;: &quot;link&quot;,
+    &quot;translationKey&quot;: &quot;MODULE_LABEL_BED_MANAGEMENT_KEY&quot;,
+    &quot;label&quot;: &quot;InPatient&quot;,
+    &quot;url&quot;: &quot;../bedmanagement/#/home&quot;,
+    &quot;icon&quot;: &quot;fa-bed&quot;,
+    &quot;order&quot;: 7,
+    &quot;requiredPrivilege&quot;: &quot;app:adt&quot;
+ }</pre>
+</div></div><p class="auto-cursor-target"><strong>NOTE:</strong> For Ward Layout, bed management and bed-types please refer this documentation: <a href="/wiki/spaces/BAH/pages/712507393/Ward+Management+Admin+Console" data-linked-resource-id="712507393" data-linked-resource-version="6" data-linked-resource-type="page">Ward Management (Admin)</a></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="e6921b04-2089-48cb-990e-45bb5d87af22" data-macro-name="tip"><p class="title">On this Page</p><div class="confluence-information-macro-body"><p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-cssliststyle="none" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="0b744f92-0474-4511-ba50-ea4dc8343d16" data-macro-name="toc"> </div><p> </p></div></div><div class="confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="75cc2741-ab64-44c9-b537-0a202bfb8299" data-macro-name="tip"><p class="title">Sections</p><div class="confluence-information-macro-body"><p> </p><ul class="childpages-macro conf-macro output-block" data-hasbody="false" data-macro-id="28bbf201-d4bb-472c-865e-0ceb60581fb2" data-macro-name="children"><li><a href="/wiki/spaces/BAH/pages/712572997/Apps+and+Tabs+Configuration" data-linked-resource-id="712572997" data-linked-resource-version="10" data-linked-resource-type="page">Apps and Tabs Configuration</a></li></ul><p> </p></div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="698d4a82-5bc7-4a13-a03e-2c6d4414d8f7" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #1FA5A0;color: white;"><b>Related Links</b></div><div class="panelContent">
+<p><a href="/wiki/spaces/BAH/pages/712507393/Ward+Management+Admin+Console" data-linked-resource-id="712507393" data-linked-resource-version="6" data-linked-resource-type="page">Ward Management Admin Console</a></p>
+</div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="0add60ca-db50-405a-bfd6-90945fbc2b0b" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #668D3C;color: white;"><b>Feature Details</b></div><div class="panelContent">
+<p><a href="/wiki/spaces/BAH/pages/699400201/Bed+Management+BM" data-linked-resource-id="699400201" data-linked-resource-version="16" data-linked-resource-type="page">Bed Management - Feature Guide</a></p>
+</div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #668D3C;color: white;"><b>Usage Details</b></div><div class="panelContent">
+<p><a href="/wiki/spaces/BAH/pages/707559542/Bed+Management" data-linked-resource-id="707559542" data-linked-resource-version="12" data-linked-resource-type="page">Bed Management - User Guide</a></p>
+</div></div></div>
+</div>
+</div>
+</div></body></html>

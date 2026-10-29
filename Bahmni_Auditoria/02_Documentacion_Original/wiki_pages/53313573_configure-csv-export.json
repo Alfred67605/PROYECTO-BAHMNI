@@ -1,0 +1,170 @@
+{
+  "id": "53313573",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/53313573",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNTMzMTM1NzM=",
+  "status": "current",
+  "title": "Configure CSV Export",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2016-04-14T07:48:51.862Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/53313573/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "when": "2016-04-21T11:41:08.386Z",
+    "friendlyWhen": "Apr 21, 2016",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "syncRev": "0.MwYc2l9qLVdp4eSPtKOWGQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$53313573.44",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/53313573"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/53313573/version/7"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p><span style=\"color: rgb(0,0,0);\">The CSV export feature is used for data migration to and from Bahmni. The user has to have app:admin privilege to&nbsp;<span style=\"color: rgb(0,0,0);\">use this feature.</span></span></p><h2><span style=\"color: rgb(0,0,0);\">Steps</span></h2><h3><span style=\"color: rgb(0,0,0);\">1. Configure CSV Export Tab</span></h3><p>To make CSV export appear in the Admin module, add the following configuration to the extension.json file. The file can be found in the &quot;/config/openmrs/apps/admin/&quot; &nbsp;folder.</p><p>Modify the &quot;<strong>extension.json&quot;&nbsp;</strong>to contain the snippet below:</p><p><ac:image ac:width=\"700\"><ri:attachment ri:filename=\"image2016-4-15 13:13:17.png\" /></ac:image></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"49e6792b-c5a0-4c9f-97e1-4fa9b43fd2b0\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[\"csvExport\":{\n    \"id\": \"bahmni.admin.csvExport\",\n    \"extensionPointId\": \"org.bahmni.admin.dashboard\",\n    \"type\": \"link\",\n    \"extensionParams\": {\n    },\n    \"label\": \"CSV Export\",\n    \"url\": \"#/csvExport\",\n    \"icon\": \"fa-download\",\n    \"order\": 1,\n    \"requiredPrivilege\": \"app:registration\"\n},]]></ac:plain-text-body></ac:structured-macro><p>&nbsp;</p><h2>Key Fields&nbsp;</h2><table><tbody><tr><th>Key</th><th>Use</th><th>Mandatory</th></tr><tr><td><pre>url</pre></td><td>Points the app to the csv export state</td><td>Yes</td></tr><tr><td><pre>icon</pre></td><td>The icon that will be displayed on the button</td><td>No</td></tr><tr><td><pre>label</pre></td><td>The text that will be rendered on the button</td><td>Yes</td></tr></tbody></table><div><span style=\"color: rgb(0,0,0);\"><br /></span></div></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"15ac3ed5-60b1-4a41-8b0c-9d8a1db9411b\"><ac:parameter ac:name=\"style\">none</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Data Migration - Export\" /><ac:plain-text-link-body><![CDATA[CSV Export - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Export Data\" /><ac:plain-text-link-body><![CDATA[CSV Export - User Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p>&nbsp;</p><p>&nbsp;</p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/53313573"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ConfigureCSVExport-PurposeandBenefits\">Purpose and Benefits</h2><p><span class=\"legacy-color-text-default\">The CSV export feature is used for data migration to and from Bahmni. The user has to have app:admin privilege to <span class=\"legacy-color-text-default\">use this feature.</span></span></p><h2 id=\"ConfigureCSVExport-Steps\"><span class=\"legacy-color-text-default\">Steps</span></h2><h3 id=\"ConfigureCSVExport-1.ConfigureCSVExportTab\"><span class=\"legacy-color-text-default\">1. Configure CSV Export Tab</span></h3><p>To make CSV export appear in the Admin module, add the following configuration to the extension.json file. The file can be found in the &quot;/config/openmrs/apps/admin/&quot;  folder.</p><p>Modify the &quot;<strong>extension.json&quot; </strong>to contain the snippet below:</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/53313573/image2016-4-15%2013:13:17.png?version=1&amp;modificationDate=1460706200100&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=172\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/53313573/image2016-4-15%2013:13:17.png?version=1&amp;modificationDate=1460706200100&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"53837896\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2016-4-15 13:13:17.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"53313573\" data-linked-resource-container-version=\"7\" data-media-id=\"cf38a064-aa2b-4caf-95c3-24fad8607eb9\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/53313573/image2016-4-15%2013:13:17.png?version=1&amp;modificationDate=1460706200100&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=344 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/53313573/image2016-4-15%2013:13:17.png?version=1&amp;modificationDate=1460706200100&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=172 1x\"></span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"49e6792b-c5a0-4c9f-97e1-4fa9b43fd2b0\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;csvExport&quot;:{\n    &quot;id&quot;: &quot;bahmni.admin.csvExport&quot;,\n    &quot;extensionPointId&quot;: &quot;org.bahmni.admin.dashboard&quot;,\n    &quot;type&quot;: &quot;link&quot;,\n    &quot;extensionParams&quot;: {\n    },\n    &quot;label&quot;: &quot;CSV Export&quot;,\n    &quot;url&quot;: &quot;#/csvExport&quot;,\n    &quot;icon&quot;: &quot;fa-download&quot;,\n    &quot;order&quot;: 1,\n    &quot;requiredPrivilege&quot;: &quot;app:registration&quot;\n},</pre>\n</div></div><p> </p><h2 id=\"ConfigureCSVExport-KeyFields\">Key Fields </h2><div class=\"table-wrap\"><table class=\"confluenceTable\"><tbody><tr><th class=\"confluenceTh\">Key</th><th class=\"confluenceTh\">Use</th><th class=\"confluenceTh\">Mandatory</th></tr><tr><td class=\"confluenceTd\"><pre>url</pre></td><td class=\"confluenceTd\">Points the app to the csv export state</td><td class=\"confluenceTd\">Yes</td></tr><tr><td class=\"confluenceTd\"><pre>icon</pre></td><td class=\"confluenceTd\">The icon that will be displayed on the button</td><td class=\"confluenceTd\">No</td></tr><tr><td class=\"confluenceTd\"><pre>label</pre></td><td class=\"confluenceTd\">The text that will be rendered on the button</td><td class=\"confluenceTd\">Yes</td></tr></tbody></table></div><div><span class=\"legacy-color-text-default\"><br/></span></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-cssliststyle=\"none\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"15ac3ed5-60b1-4a41-8b0c-9d8a1db9411b\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/53313626/Data+Migration+-+Export\" data-linked-resource-id=\"53313626\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">CSV Export - Feature Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/53313622/Export+Data\" data-linked-resource-id=\"53313622\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">CSV Export - User Guide</a></span></p>\n</div></div><p> </p><p> </p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/53313573"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/53313573/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/53313573/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/53313573/child",
+    "restrictions": "/rest/api/content/53313573/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/53313573/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=53313573",
+    "webui": "/spaces/BAH/pages/53313573/Configure+CSV+Export",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/53313573",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/53313573",
+    "tinyui": "/x/JYAtAw",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

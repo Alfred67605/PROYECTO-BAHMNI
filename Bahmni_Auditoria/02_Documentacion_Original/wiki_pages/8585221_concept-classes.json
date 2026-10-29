@@ -1,0 +1,170 @@
+{
+  "id": "8585221",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/8585221",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvODU4NTIyMQ==",
+  "status": "current",
+  "title": "Concept Classes",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "createdDate": "2014-08-25T12:45:15.607Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/8585221/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "when": "2014-09-15T16:23:26.795Z",
+    "friendlyWhen": "Sept 15, 2014",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "0.sv-DwvBsBewzNd4lyUvPog.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$8585221.19",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/8585221"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/8585221/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>Misc - Currently used for patient attribute options, some are added by openmrs core/emr-api, drugs, drug order options. Except for one added by openmrs/emr-api we should move all the others to their own classes. For drug it should just use Drug class.</p><p>Symptom - Currently used for COMMENT in registration. This would go away when we change it to visit attribute.</p><p>Abnormal/Duration - Discuss with openmrs.&nbsp;<a href=\"https://trello.com/c/wprlqqi7/19-marking-an-observation-as-abnormal-capturing-duration\">https://trello.com/c/wprlqqi7/19-marking-an-observation-as-abnormal-capturing-duration</a></p><p>Intake Set/Progress Set - Use these as classes to identify these disease specific concept sets</p><p>&nbsp;</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/8585221"
+      }
+    },
+    "view": {
+      "value": "<p>Misc - Currently used for patient attribute options, some are added by openmrs core/emr-api, drugs, drug order options. Except for one added by openmrs/emr-api we should move all the others to their own classes. For drug it should just use Drug class.</p><p>Symptom - Currently used for COMMENT in registration. This would go away when we change it to visit attribute.</p><p>Abnormal/Duration - Discuss with openmrs. <a class=\"external-link\" href=\"https://trello.com/c/wprlqqi7/19-marking-an-observation-as-abnormal-capturing-duration\" rel=\"nofollow\">https://trello.com/c/wprlqqi7/19-marking-an-observation-as-abnormal-capturing-duration</a></p><p>Intake Set/Progress Set - Use these as classes to identify these disease specific concept sets</p><p> </p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/8585221"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/8585221/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/8585221/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/8585221/child",
+    "restrictions": "/rest/api/content/8585221/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/8585221/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=8585221",
+    "webui": "/spaces/BAH/pages/8585221/Concept+Classes",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/8585221",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/8585221",
+    "tinyui": "/x/BQCD",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

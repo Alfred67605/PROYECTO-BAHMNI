@@ -1,0 +1,172 @@
+{
+  "id": "114627969",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/114627969",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE0NjI3OTY5",
+  "status": "current",
+  "title": "OpenERP Syncing Config",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:761926cb-ed59-41ca-9692-e6c2dcb1c400",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Ravinder Deolal",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:761926cb-ed59-41ca-9692-e6c2dcb1c400",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Ravinder Deolal",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:761926cb-ed59-41ca-9692-e6c2dcb1c400"
+      }
+    },
+    "createdDate": "2017-02-13T09:34:30.747Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114627969/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "when": "2019-08-06T05:04:58.354Z",
+    "friendlyWhen": "Aug 06, 2019",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "syncRev": "0.FK-h85e9inH_k6XPW888Hw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$114627969.61",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/114627969"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114627969/version/8"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Introduction</h2><p><span style=\"color: rgb(0,0,0);\">To sync the orders from OpenMRS to Odoo we need to configure the Order type shop mapping and units to be synced in Odoo. &nbsp;Currently Bahmni supports syncing of the following order types:</span></p><ul><li><span style=\"color: rgb(0,0,0);\">Drug Order</span></li><li><span style=\"color: rgb(0,0,0);\">Lab Order</span></li><li><span style=\"color: rgb(0,0,0);\">Radiology Order</span></li></ul><h2><span style=\"color: rgb(0,0,0);\">Steps</span></h2><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"8405ddbb-bbda-465a-8f6b-6738845a82cd\"><ac:parameter ac:name=\"title\">Prerequisite</ac:parameter><ac:rich-text-body><p>The Shop should have already been created in Odoo.</p></ac:rich-text-body></ac:structured-macro><p style=\"text-align: center;\"><strong><span style=\"color: rgb(0,0,0);\"><ac:structured-macro ac:name=\"widget\" ac:schema-version=\"1\" ac:macro-id=\"e13cedf4-39c8-4195-a92b-3fa9923efc90\"><ac:parameter ac:name=\"url\"><ri:url ri:value=\"https://www.youtube.com/watch?v=q2fF-IOtcs8\" /></ac:parameter></ac:structured-macro></span></strong></p><p style=\"text-align: center;\"><strong><span style=\"color: rgb(0,0,0);\">Video Walkthrough</span></strong></p><p><strong><span style=\"color: rgb(0,0,0);\">1. Login to Odoo and navigate to &quot;Sales&quot; tab. Under configuration click on &quot;Order Type - Shop mapping&quot;.</span></strong></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:width=\"600\"><ri:attachment ri:filename=\"image2017-2-13_14-55-30.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\"><strong>Order type - shop mapping</strong></span></p><p><strong><span style=\"color: rgb(0,0,0);\"><br /></span></strong></p><p><strong><span style=\"color: rgb(0,0,0);\">2. Click on &quot;Create&quot; button to create a new mapping. Keep the &quot;Local Shop&quot; &nbsp;and &quot;Location Name&quot; as blank.</span></strong></p><p style=\"text-align: center;\"><ac:image ac:align=\"center\" ac:title=\"Drug order mapping\" ac:alt=\"Drug order mapping\" ac:width=\"600\"><ri:attachment ri:filename=\"image2017-2-13_14-57-54.png\" ri:version-at-save=\"1\" /></ac:image></p><p style=\"text-align: center;\"><strong>Drug Order and Pharmacy shop mapping.</strong></p><p style=\"text-align: left;\"><strong><span style=\"color: rgb(0,0,0);\">3. Similar to the above create the mapping for Lab and Radiology orders.</span></strong></p><p style=\"text-align: left;\"><ac:image ac:align=\"center\" ac:width=\"600\"><ri:attachment ri:filename=\"image2017-2-13_15-2-14.png\" ri:version-at-save=\"1\" /></ac:image></p><p style=\"text-align: center;\"><strong style=\"text-align: center;\">Drug Order, Lab Order and Radiology order mapping</strong></p><p style=\"text-align: center;\"><br /></p><p style=\"text-align: left;\"><strong><span style=\"color: rgb(0,0,0);\">4. To configure the Units of measure click on the option &quot;Units to be synced&quot;.</span></strong></p><p style=\"text-align: left;\"><strong><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:width=\"200\"><ri:attachment ri:filename=\"image2017-2-13_15-5-46.png\" ri:version-at-save=\"1\" /></ac:image></span></strong></p><p style=\"text-align: center;\"><strong><span style=\"color: rgb(0,0,0);\"><strong style=\"text-align: center;\">Units to be synced</strong></span></strong></p><p style=\"text-align: center;\"><strong><span style=\"color: rgb(0,0,0);\"><br /></span></strong></p><p style=\"text-align: left;\"><strong><span style=\"color: rgb(0,0,0);\">5. Click on create and add the unit which needs to be synced for the drug.</span></strong></p><p style=\"text-align: left;\"><strong><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:width=\"600\"><ri:attachment ri:filename=\"image2017-2-13_15-7-59.png\" ri:version-at-save=\"1\" /></ac:image></span></strong></p><p style=\"text-align: center;\"><strong><span style=\"color: rgb(0,0,0);\"><strong style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\"><strong>Configuring &quot;Tablet&quot; for syncing of drug orders</strong></span></strong><br /></span></strong></p><p style=\"text-align: left;\"><strong><span style=\"color: rgb(0,0,0);\"><br /></span></strong></p><p style=\"text-align: left;\"><strong><span style=\"color: rgb(0,0,0);\">6. Similar to this add all other units of measurements which are used in the OpenMRS in the medication tab.</span></strong></p><p style=\"text-align: left;\"><strong><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:width=\"600\"><ri:attachment ri:filename=\"image2017-2-13_15-10-56.png\" ri:version-at-save=\"1\" /></ac:image></span></strong></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\"><strong>All the units used in OpenMRS configured in Odoo</strong></span></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"3a68ed21-17b2-4528-a31c-92f3809435df\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Pages</ac:parameter><ac:rich-text-body><p><br /></p><p><ac:link><ri:page ri:content-title=\"Troubleshooting steps for ERP sync\" ri:version-at-save=\"6\" /></ac:link></p><p><br /></p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"9335f0c3-24e8-4693-9da0-9a4407568ea6\"><ac:parameter ac:name=\"all\">true</ac:parameter><ac:parameter ac:name=\"page\"><ac:link><ri:page ri:content-title=\"OpenERP Configuration\" ri:version-at-save=\"8\" /></ac:link></ac:parameter></ac:structured-macro></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/114627969"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"OpenERPSyncingConfig-Introduction\">Introduction</h2><p><span class=\"legacy-color-text-default\">To sync the orders from OpenMRS to Odoo we need to configure the Order type shop mapping and units to be synced in Odoo.  Currently Bahmni supports syncing of the following order types:</span></p><ul><li><span class=\"legacy-color-text-default\">Drug Order</span></li><li><span class=\"legacy-color-text-default\">Lab Order</span></li><li><span class=\"legacy-color-text-default\">Radiology Order</span></li></ul><h2 id=\"OpenERPSyncingConfig-Steps\"><span class=\"legacy-color-text-default\">Steps</span></h2><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8405ddbb-bbda-465a-8f6b-6738845a82cd\" data-macro-name=\"info\"><p class=\"title\">Prerequisite</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>The Shop should have already been created in Odoo.</p></div></div><p style=\"text-align: center;\"><strong><span class=\"legacy-color-text-default\"><iframe class=\"youtube-player conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"e13cedf4-39c8-4195-a92b-3fa9923efc90\" data-macro-name=\"widget\" frameborder=\"0\" src=\"//www.youtube.com/embed/q2fF-IOtcs8?wmode=opaque\" style=\"width: 400px; height: 300px\" type=\"text/html\">\n</iframe>\n    \n</span></strong></p><p style=\"text-align: center;\"><strong><span class=\"legacy-color-text-default\">Video Walkthrough</span></strong></p><p><strong><span class=\"legacy-color-text-default\">1. Login to Odoo and navigate to &quot;Sales&quot; tab. Under configuration click on &quot;Order Type - Shop mapping&quot;.</span></strong></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114627969/image2017-2-13_14-55-30.png?version=1&amp;modificationDate=1486978472307&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=451\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114627969/image2017-2-13_14-55-30.png?version=1&amp;modificationDate=1486978472307&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"114627850\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-2-13_14-55-30.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114627969\" data-linked-resource-container-version=\"8\" data-media-id=\"7d680e1b-e155-4bad-a7fc-f1994c2a0abd\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114627969/image2017-2-13_14-55-30.png?version=1&amp;modificationDate=1486978472307&amp;cacheVersion=1&amp;api=v2&amp;width=1068&amp;height=804 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114627969/image2017-2-13_14-55-30.png?version=1&amp;modificationDate=1486978472307&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=451 1x\"></span></span></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\"><strong>Order type - shop mapping</strong></span></p><p><strong><span class=\"legacy-color-text-default\"><br/></span></strong></p><p><strong><span class=\"legacy-color-text-default\">2. Click on &quot;Create&quot; button to create a new mapping. Keep the &quot;Local Shop&quot;  and &quot;Location Name&quot; as blank.</span></strong></p><p style=\"text-align: center;\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"Drug order mapping\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114627969/image2017-2-13_14-57-54.png?version=1&amp;modificationDate=1486978471737&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=262\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114627969/image2017-2-13_14-57-54.png?version=1&amp;modificationDate=1486978471737&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"114627894\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-2-13_14-57-54.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114627969\" data-linked-resource-container-version=\"8\" data-media-id=\"bc111b34-81ff-4045-95fc-f997ee70c73a\" data-media-type=\"file\" title=\"Drug order mapping\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114627969/image2017-2-13_14-57-54.png?version=1&amp;modificationDate=1486978471737&amp;cacheVersion=1&amp;api=v2&amp;width=1200&amp;height=524 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114627969/image2017-2-13_14-57-54.png?version=1&amp;modificationDate=1486978471737&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=262 1x\"></span></p><p style=\"text-align: center;\"><strong>Drug Order and Pharmacy shop mapping.</strong></p><p style=\"text-align: left;\"><strong><span class=\"legacy-color-text-default\">3. Similar to the above create the mapping for Lab and Radiology orders.</span></strong></p><p style=\"text-align: left;\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114627969/image2017-2-13_15-2-14.png?version=1&amp;modificationDate=1486978470763&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=314\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114627969/image2017-2-13_15-2-14.png?version=1&amp;modificationDate=1486978470763&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"114627940\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-2-13_15-2-14.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114627969\" data-linked-resource-container-version=\"8\" data-media-id=\"210620b5-a725-4bfe-a57a-0a3226296375\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114627969/image2017-2-13_15-2-14.png?version=1&amp;modificationDate=1486978470763&amp;cacheVersion=1&amp;api=v2&amp;width=1200&amp;height=628 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114627969/image2017-2-13_15-2-14.png?version=1&amp;modificationDate=1486978470763&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=314 1x\"></span></p><p style=\"text-align: center;\"><strong style=\"text-align: center;\">Drug Order, Lab Order and Radiology order mapping</strong></p><p style=\"text-align: center;\"><br/></p><p style=\"text-align: left;\"><strong><span class=\"legacy-color-text-default\">4. To configure the Units of measure click on the option &quot;Units to be synced&quot;.</span></strong></p><p style=\"text-align: left;\"><strong><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"200\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114627969/image2017-2-13_15-5-46.png?version=1&amp;modificationDate=1486978549250&amp;cacheVersion=1&amp;api=v2&amp;width=200&amp;height=367\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114627969/image2017-2-13_15-5-46.png?version=1&amp;modificationDate=1486978549250&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"114628029\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-2-13_15-5-46.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114627969\" data-linked-resource-container-version=\"8\" data-media-id=\"0ba217b0-7b94-43cc-8d99-69109e730197\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114627969/image2017-2-13_15-5-46.png?version=1&amp;modificationDate=1486978549250&amp;cacheVersion=1&amp;api=v2&amp;width=400&amp;height=734 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114627969/image2017-2-13_15-5-46.png?version=1&amp;modificationDate=1486978549250&amp;cacheVersion=1&amp;api=v2&amp;width=200&amp;height=367 1x\"></span></span></strong></p><p style=\"text-align: center;\"><strong><span class=\"legacy-color-text-default\"><strong style=\"text-align: center;\">Units to be synced</strong></span></strong></p><p style=\"text-align: center;\"><strong><span class=\"legacy-color-text-default\"><br/></span></strong></p><p style=\"text-align: left;\"><strong><span class=\"legacy-color-text-default\">5. Click on create and add the unit which needs to be synced for the drug.</span></strong></p><p style=\"text-align: left;\"><strong><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114627969/image2017-2-13_15-7-59.png?version=1&amp;modificationDate=1486978683054&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=367\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114627969/image2017-2-13_15-7-59.png?version=1&amp;modificationDate=1486978683054&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"114628078\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-2-13_15-7-59.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114627969\" data-linked-resource-container-version=\"8\" data-media-id=\"a105dc5a-8946-4dd1-ba71-4b7e4cf4c19d\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114627969/image2017-2-13_15-7-59.png?version=1&amp;modificationDate=1486978683054&amp;cacheVersion=1&amp;api=v2&amp;width=1200&amp;height=734 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114627969/image2017-2-13_15-7-59.png?version=1&amp;modificationDate=1486978683054&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=367 1x\"></span></span></strong></p><p style=\"text-align: center;\"><strong><span class=\"legacy-color-text-default\"><strong style=\"text-align: center;\"><span class=\"legacy-color-text-default\"><strong>Configuring &quot;Tablet&quot; for syncing of drug orders</strong></span></strong><br/></span></strong></p><p style=\"text-align: left;\"><strong><span class=\"legacy-color-text-default\"><br/></span></strong></p><p style=\"text-align: left;\"><strong><span class=\"legacy-color-text-default\">6. Similar to this add all other units of measurements which are used in the OpenMRS in the medication tab.</span></strong></p><p style=\"text-align: left;\"><strong><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114627969/image2017-2-13_15-10-56.png?version=1&amp;modificationDate=1486978859470&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=334\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114627969/image2017-2-13_15-10-56.png?version=1&amp;modificationDate=1486978859470&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"114628153\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-2-13_15-10-56.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114627969\" data-linked-resource-container-version=\"8\" data-media-id=\"b5c6d6c4-8054-4057-98f5-d75ea8e59552\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114627969/image2017-2-13_15-10-56.png?version=1&amp;modificationDate=1486978859470&amp;cacheVersion=1&amp;api=v2&amp;width=1200&amp;height=668 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114627969/image2017-2-13_15-10-56.png?version=1&amp;modificationDate=1486978859470&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=334 1x\"></span></span></strong></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\"><strong>All the units used in OpenMRS configured in Odoo</strong></span></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3a68ed21-17b2-4528-a31c-92f3809435df\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Pages</b></div><div class=\"panelContent\">\n<p><br /></p><p><a href=\"/wiki/spaces/BAH/pages/111411208/Troubleshooting+steps+for+ERP+sync\" data-linked-resource-id=\"111411208\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Troubleshooting steps for ERP sync</a></p><p><br /></p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"9335f0c3-24e8-4693-9da0-9a4407568ea6\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/21790747/OpenERP+Basic+Configurations\" data-linked-resource-id=\"21790747\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">OpenERP Basic Configurations</a></li><li><a href=\"/wiki/spaces/BAH/pages/114627969/OpenERP+Syncing+Config\" data-linked-resource-id=\"114627969\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">OpenERP Syncing Config</a></li><li><a href=\"/wiki/spaces/BAH/pages/28311588/OpenERP+Custom+fields\" data-linked-resource-id=\"28311588\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">OpenERP Custom fields</a></li><li><a href=\"/wiki/spaces/BAH/pages/5570574/OpenERP+Custom+Filters\" data-linked-resource-id=\"5570574\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">OpenERP Custom Filters</a></li></ul>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/114627969"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/114627969/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114627969/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 330338287
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/114627969/child",
+    "restrictions": "/rest/api/content/114627969/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/114627969/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=114627969",
+    "webui": "/spaces/BAH/pages/114627969/OpenERP+Syncing+Config",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/114627969",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114627969",
+    "tinyui": "/x/gRXVBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

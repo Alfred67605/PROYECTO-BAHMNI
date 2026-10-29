@@ -1,0 +1,21 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>API to display form builder forms(forms 2.0) for a patient in dashboard</title></head><body><h1>API to display form builder forms(forms 2.0) for a patient in dashboard</h1><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="bc44d5f2-fe72-4cfa-b24c-9f8e248bca94" data-macro-name="info"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>Feature available from Bahmni-V0.93</p></div></div><p>Existing form display control doesn't show the form builder forms because the existing API considers only the 'All Observation Template' forms. So a new API is introduced, which fetches form builder form details for a patient.</p><p> <strong>Request:</strong></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="0dd91060-4d25-4323-b023-c3d3fbc0df89" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence">https://&lt;machine-ip&gt;/openmrs/ws/rest/v1/bahmnicore/patient/&lt;patient-uuid&gt;/forms?formType=v1&amp;numberOfVisits=2&amp;visitUuid=&lt;visit-uuid&gt;&amp;patientProgramUuid=&lt;uuid&gt;</pre>
+</div></div><p><strong>Response:</strong></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="00aab172-38cf-4fff-b8c9-654068f00e4b" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">[
+    {
+        &quot;formType&quot;: &quot;v2&quot;,
+        &quot;formName&quot;: &quot;groovy_test&quot;,
+        &quot;formVersion&quot;: 1,
+        &quot;visitUuid&quot;: &quot;8a34eb02-b5d2-485f-b711-f2898ac86e93&quot;,
+        &quot;visitStartDateTime&quot;: 1536733420000,
+        &quot;encounterUuid&quot;: &quot;b3f7a082-c45c-4679-860d-80d48de639a2&quot;,
+        &quot;encounterDateTime&quot;: 1539586861000,
+        &quot;providers&quot;: [
+            {
+                &quot;providerName&quot;: &quot;Super Man&quot;,
+                &quot;uuid&quot;: &quot;c1c21e11-3f10-11e4-adec-0800271c1b75&quot;
+            }
+        ]
+    },
+    ]</pre>
+</div></div><p><strong>Criteria:</strong></p><ol><li><p>patient_uuid is mandatory</p></li><li><p>formType is optional with possible values are v1 and v2. By default it assumes v2. v1 means forms 1.0 i.e all observation template forms(it is not implemented) and v2 means form builder forms</p></li><li><p>numberOfVisits is optional</p></li><li><p>visitUuid is optional, numberOfVisits won’t apply with this parameter</p></li><li><p>patientProgramUuid is optional, numberOfVisits won’t apply with this parameter. It works along with visitUuid if provided</p></li></ol><p /><p>Opemrs talk: <a class="external-link" href="https://talk.openmrs.org/t/api-to-fetch-form-builder-forms-for-a-patient/20564" rel="nofollow">https://talk.openmrs.org/t/api-to-fetch-form-builder-forms-for-a-patient/20564</a><br/></p></body></html>

@@ -1,0 +1,171 @@
+{
+  "id": "72581122",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/72581122",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNzI1ODExMjI=",
+  "status": "current",
+  "title": "Configure Display Controls in Print",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:b74a1e67-0853-4f05-a2a7-e88691b3cd4a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Akhil Malhotra (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:b74a1e67-0853-4f05-a2a7-e88691b3cd4a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Akhil Malhotra (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:b74a1e67-0853-4f05-a2a7-e88691b3cd4a"
+      }
+    },
+    "createdDate": "2016-07-05T04:44:41.879Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/72581122/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:555e0c09-fca2-4f9b-a5dc-5e44b08e772a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Pankaj Ladhar (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:555e0c09-fca2-4f9b-a5dc-5e44b08e772a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Pankaj Kumar Ladhar (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:555e0c09-fca2-4f9b-a5dc-5e44b08e772a"
+      }
+    },
+    "when": "2016-07-05T07:08:10.290Z",
+    "friendlyWhen": "Jul 05, 2016",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "syncRev": "0.anJ-udxym54u2A5DqyetMQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$72581122.44",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/72581122"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/72581122/version/5"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p>&nbsp;Display controls can be printed as part or printing out registration cards from Registration App. This functionality is completely configurable based on user requirements.</p><h2><span style=\"color: rgb(0,0,0);\">Steps</span></h2><p><span style=\"color: rgb(0,0,0);\">The Print functionality for registration appears in the Registration module as shown below :</span></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"Screen Shot 2015-11-18 at 12.09.47 PM.png\" /></ac:image></span></p><h2><span style=\"color: rgb(0,0,0);\">Print Observation display control</span></h2><p><span style=\"color: rgb(0,0,0);\">Add following code in registration card print . Value of &quot;conceptNames&quot; in following code must be fully specified name.</span></p><p><span style=\"color: rgb(0,0,0);\">&nbsp;</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"ae7a21eb-822c-4394-8173-c68ad707ff82\"><ac:parameter ac:name=\"language\">xml</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[ <div class=\"print-wrapper\">\n \t<link rel=\"stylesheet\" href=\"../styles/registrationPrint.css\" media=\"all\"/>\n \t<section class=\"block observation dashboard-section\">\n \t\t<bahmni-observation patient=\"patient\" config=\"{conceptNames: ['Vitals']}\" section-title=\"'Vitals'\">\n\t\t</bahmni-observation>\n \t</section>\n</div>]]></ac:plain-text-body></ac:structured-macro><p><span style=\"color: rgb(0,0,0);font-size: 20.0px;line-height: 1.5;\"><br /></span></p><p><span style=\"color: rgb(0,0,0);font-size: 20.0px;line-height: 1.5;\">Print Diagnosis display control&nbsp;</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"75a7e715-b302-4413-bbe7-91cabf13b6c8\"><ac:parameter ac:name=\"language\">xml</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[ <div class=\"print-wrapper\">\n \t<link rel=\"stylesheet\" href=\"../styles/registrationPrint.css\" media=\"all\"/>\n \t<section class=\"block observation dashboard-section\">\n \t\t<bahmni-diagnosis patient-uuid=\"::patient.uuid\"\n                  config='{\"title\": \"Diagnosis\",\"type\": \"diagnosis\"}'></bahmni-diagnosis>\n \t</section>\n</div>]]></ac:plain-text-body></ac:structured-macro><p><span style=\"color: rgb(0,0,0);font-size: 20.0px;line-height: 1.5;\"><ac:image ac:width=\"600\"><ri:attachment ri:filename=\"Screen Shot 2016-07-05 at 12.37.14 PM.png\" /></ac:image><br /></span></p><p><span style=\"color: rgb(0,0,0);font-size: 20.0px;line-height: 1.5;\"><br /></span></p><p><span style=\"color: rgb(0,0,0);\"><br /></span></p><p><span style=\"color: rgb(0,0,0);\"><br /></span></p><p><span style=\"color: rgb(0,0,0);\"><br /></span></p></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e7b3588e-96e1-4de3-a29d-46427cf35a1e\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"96e956b8-ae81-4af2-8508-c5fa6e06f774\" /></p></ac:rich-text-body></ac:structured-macro><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Patient Registration\" /><ac:plain-text-link-body><![CDATA[Registration - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/72581122"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ConfigureDisplayControlsinPrint-PurposeandBenefits\">Purpose and Benefits</h2><p> Display controls can be printed as part or printing out registration cards from Registration App. This functionality is completely configurable based on user requirements.</p><h2 id=\"ConfigureDisplayControlsinPrint-Steps\"><span class=\"legacy-color-text-default\">Steps</span></h2><p><span class=\"legacy-color-text-default\">The Print functionality for registration appears in the Registration module as shown below :</span></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/72581122/Screen%20Shot%202015-11-18%20at%2012.09.47%20PM.png?version=1&amp;modificationDate=1467694086834&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=60\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/72581122/Screen%20Shot%202015-11-18%20at%2012.09.47%20PM.png?version=1&amp;modificationDate=1467694086834&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"72581125\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2015-11-18 at 12.09.47 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"72581122\" data-linked-resource-container-version=\"5\" data-media-id=\"5acc213b-ad6a-49d0-9cd4-1d8e6877fe8d\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/72581122/Screen%20Shot%202015-11-18%20at%2012.09.47%20PM.png?version=1&amp;modificationDate=1467694086834&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=120 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/72581122/Screen%20Shot%202015-11-18%20at%2012.09.47%20PM.png?version=1&amp;modificationDate=1467694086834&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=60 1x\"></span></span></p><h2 id=\"ConfigureDisplayControlsinPrint-PrintObservationdisplaycontrol\"><span class=\"legacy-color-text-default\">Print Observation display control</span></h2><p><span class=\"legacy-color-text-default\">Add following code in registration card print . Value of &quot;conceptNames&quot; in following code must be fully specified name.</span></p><p><span class=\"legacy-color-text-default\"> </span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ae7a21eb-822c-4394-8173-c68ad707ff82\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: xml; gutter: true; theme: Confluence\" data-theme=\"Confluence\"> &lt;div class=&quot;print-wrapper&quot;&gt;\n \t&lt;link rel=&quot;stylesheet&quot; href=&quot;../styles/registrationPrint.css&quot; media=&quot;all&quot;/&gt;\n \t&lt;section class=&quot;block observation dashboard-section&quot;&gt;\n \t\t&lt;bahmni-observation patient=&quot;patient&quot; config=&quot;{conceptNames: ['Vitals']}&quot; section-title=&quot;'Vitals'&quot;&gt;\n\t\t&lt;/bahmni-observation&gt;\n \t&lt;/section&gt;\n&lt;/div&gt;</pre>\n</div></div><p><span style=\"font-size: 20.0px;line-height: 1.5;\" class=\"legacy-color-text-default\"><br/></span></p><p><span style=\"font-size: 20.0px;line-height: 1.5;\" class=\"legacy-color-text-default\">Print Diagnosis display control </span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"75a7e715-b302-4413-bbe7-91cabf13b6c8\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: xml; gutter: true; theme: Confluence\" data-theme=\"Confluence\"> &lt;div class=&quot;print-wrapper&quot;&gt;\n \t&lt;link rel=&quot;stylesheet&quot; href=&quot;../styles/registrationPrint.css&quot; media=&quot;all&quot;/&gt;\n \t&lt;section class=&quot;block observation dashboard-section&quot;&gt;\n \t\t&lt;bahmni-diagnosis patient-uuid=&quot;::patient.uuid&quot;\n                  config='{&quot;title&quot;: &quot;Diagnosis&quot;,&quot;type&quot;: &quot;diagnosis&quot;}'&gt;&lt;/bahmni-diagnosis&gt;\n \t&lt;/section&gt;\n&lt;/div&gt;</pre>\n</div></div><p><span style=\"font-size: 20.0px;line-height: 1.5;\" class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/72581122/Screen%20Shot%202016-07-05%20at%2012.37.14%20PM.png?version=1&amp;modificationDate=1467702470041&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=478\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/72581122/Screen%20Shot%202016-07-05%20at%2012.37.14%20PM.png?version=1&amp;modificationDate=1467702470041&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"72581133\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-07-05 at 12.37.14 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"72581122\" data-linked-resource-container-version=\"5\" data-media-id=\"5ecc9cac-cbe5-4074-ac79-e72f610745e6\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/72581122/Screen%20Shot%202016-07-05%20at%2012.37.14%20PM.png?version=1&amp;modificationDate=1467702470041&amp;cacheVersion=1&amp;api=v2&amp;width=1200&amp;height=956 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/72581122/Screen%20Shot%202016-07-05%20at%2012.37.14%20PM.png?version=1&amp;modificationDate=1467702470041&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=478 1x\"></span><br/></span></p><p><span style=\"font-size: 20.0px;line-height: 1.5;\" class=\"legacy-color-text-default\"><br/></span></p><p><span class=\"legacy-color-text-default\"><br/></span></p><p><span class=\"legacy-color-text-default\"><br/></span></p><p><span class=\"legacy-color-text-default\"><br/></span></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e7b3588e-96e1-4de3-a29d-46427cf35a1e\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"96e956b8-ae81-4af2-8508-c5fa6e06f774\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604190/Patient+Registration\" data-linked-resource-id=\"32604190\" data-linked-resource-version=\"38\" data-linked-resource-type=\"page\">Registration - Feature Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/72581122"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/72581122/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/72581122/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1115219676
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/72581122/child",
+    "restrictions": "/rest/api/content/72581122/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/72581122/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=72581122",
+    "webui": "/spaces/BAH/pages/72581122/Configure+Display+Controls+in+Print",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/72581122",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/72581122",
+    "tinyui": "/x/AoBTB",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

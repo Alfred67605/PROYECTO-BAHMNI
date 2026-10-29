@@ -1,0 +1,173 @@
+{
+  "id": "239796253",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/239796253",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjM5Nzk2MjUz",
+  "status": "current",
+  "title": "Import & Export",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:df02f893-094a-44e4-8a6e-2c7584d9ade9",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Suman Maity",
+      "timeZone": "Asia/Calcutta",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:df02f893-094a-44e4-8a6e-2c7584d9ade9",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Suman Maity",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:df02f893-094a-44e4-8a6e-2c7584d9ade9"
+      }
+    },
+    "createdDate": "2017-11-07T08:05:11.247Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/239796253/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2022-11-20T12:13:11.307Z",
+    "friendlyWhen": "Nov 20, 2022",
+    "message": "Removed collapsible due to Atlassian bug",
+    "number": 14,
+    "minorEdit": false,
+    "syncRev": "0.94hclorZ8anDxEvkBctnQw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$239796253.78",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/239796253"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/239796253/version/14"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<h2><strong>Export</strong></h2><h2 style=\"margin-left: 30.0px;\">Purpose and Benefits</h2><p style=\"margin-left: 30.0px;\">Using export feature of Form Builder, an implementer can export/download the form data as a JSON file for later use. The exported file will contain form details and form translations.</p><p style=\"margin-left: 90.0px;\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"e2c7dede-f154-468c-8089-1e983d500369\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Sample JSON</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[{\n  \"formJson\": {\n    \"id\": 72,\n    \"uuid\": \"a0f19f99-8136-4dc2-9a9f-cf16e37364f2\",\n    \"name\": \"Demo\",\n    \"version\": \"1\",\n    \"published\": true,\n    \"auditInfo\": {\n      \"creator\": {\n        \"uuid\": \"c1c21e11-3f10-11e4-adec-0800271c1b75\",\n        \"display\": \"superman\",\n        \"links\": [\n          {\n            \"rel\": \"self\",\n            \"uri\": \"http://ci-agent03.mybahmni.org/openmrs/ws/rest/v1/user/c1c21e11-3f10-11e4-adec-0800271c1b75\"\n          }\n        ]\n      },\n      \"dateCreated\": \"2017-11-07T13:31:16.000+0530\",\n      \"changedBy\": {\n        \"uuid\": \"c1c21e11-3f10-11e4-adec-0800271c1b75\",\n        \"display\": \"superman\",\n        \"links\": [\n          {\n            \"rel\": \"self\",\n            \"uri\": \"http://ci-agent03.mybahmni.org/openmrs/ws/rest/v1/user/c1c21e11-3f10-11e4-adec-0800271c1b75\"\n          }\n        ]\n      },\n      \"dateChanged\": \"2017-11-07T14:42:58.000+0530\"\n    },\n    \"resources\": [\n      {\n        \"value\": \"{\\\"name\\\":\\\"Demo\\\",\\\"id\\\":72,\\\"uuid\\\":\\\"a0f19f99-8136-4dc2-9a9f-cf16e37364f2\\\",\\\"defaultLocale\\\":\\\"en\\\",\\\"controls\\\":[{\\\"translationKey\\\":\\\"LABEL_1\\\",\\\"type\\\":\\\"label\\\",\\\"value\\\":\\\"Label\\\",\\\"properties\\\":{\\\"location\\\":{\\\"column\\\":0,\\\"row\\\":0}},\\\"id\\\":\\\"1\\\"},{\\\"type\\\":\\\"obsControl\\\",\\\"label\\\":{\\\"translationKey\\\":\\\"TEMPERATURE_2\\\",\\\"id\\\":\\\"2\\\",\\\"units\\\":\\\"(F)\\\",\\\"type\\\":\\\"label\\\",\\\"value\\\":\\\"Temperature\\\"},\\\"properties\\\":{\\\"mandatory\\\":false,\\\"notes\\\":false,\\\"addMore\\\":false,\\\"hideLabel\\\":false,\\\"controlEvent\\\":false,\\\"location\\\":{\\\"column\\\":0,\\\"row\\\":1},\\\"abnormal\\\":false},\\\"id\\\":\\\"2\\\",\\\"concept\\\":{\\\"name\\\":\\\"Temperature\\\",\\\"uuid\\\":\\\"c37bd733-3f10-11e4-adec-0800271c1b75\\\",\\\"datatype\\\":\\\"Numeric\\\",\\\"conceptClass\\\":\\\"Misc\\\",\\\"conceptHandler\\\":null,\\\"answers\\\":[],\\\"properties\\\":{\\\"allowDecimal\\\":true}},\\\"units\\\":\\\"F\\\",\\\"hiNormal\\\":98.6,\\\"lowNormal\\\":98.6,\\\"hiAbsolute\\\":null,\\\"lowAbsolute\\\":null}],\\\"events\\\":{},\\\"translationsUrl\\\":\\\"/openmrs/ws/rest/v1/bahmniie/form/translations\\\"}\",\n        \"dataType\": \"org.bahmni.customdatatype.datatype.FileSystemStorageDatatype\",\n        \"uuid\": \"f81885b2-4779-4388-aaab-27a95fbcd263\"\n      }\n    ]\n  },\n  \"translations\": [\n    {\n      \"locale\": \"en\",\n      \"labels\": {\n        \"LABEL_1\": \"Label\"\n      },\n      \"concepts\": {\n        \"TEMPERATURE_2\": \"Temperature\"\n      },\n      \"formName\": \"Demo\",\n      \"version\": \"1\"\n    }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p style=\"margin-left: 90.0px;\"><br /></p><p style=\"margin-left: 90.0px;\">To export form as JSON click on the download icon beside the form.</p><p style=\"margin-left: 90.0px;\"><ac:image><ri:attachment ri:filename=\"imageedit_1_9226162105.jpg\" ri:version-at-save=\"1\" /></ac:image></p><h2 style=\"margin-left: 90.0px;\"><strong>Bulk Export</strong></h2><p style=\"margin-left: 90.0px;\">Form Bahmni 0.93, an implementer can export more than one form at a time. Each published form will have a checkbox to select as shown in the image below. Upon selecting the forms which we want to download, we can&nbsp; click on &quot;Export&quot; button which will download a zip file.&nbsp;</p><p style=\"margin-left: 90.0px;\">Only the forms which are published will have the option to select for export. The forms which are in draft mode doesn't have checkbox to select. For Single form export, we can use download icon beside each form, which will download the json in &quot;.json&quot; format. The max limit to download the forms is set to 20.</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<ac:image ac:border=\"true\" ac:height=\"250\" ac:width=\"966\"><ri:attachment ri:filename=\"image2021-9-26_16-52-32.png\" ri:version-at-save=\"1\" /></ac:image></p><h2 style=\"margin-left: 60.0px;\"><strong style=\"margin-left: 0.0px;\">Import</strong></h2><h2 style=\"margin-left: 90.0px;\">Purpose and Benefits</h2><p style=\"margin-left: 90.0px;\">Using import feature of Form Builder, a implementer can import/create observation form using JSON file.&nbsp; A new form created using the Import feature will not be <strong>published&nbsp;</strong>by default. It will be stored as a&nbsp;<strong>draft</strong> form. The implementer is expected to Publish the form.&nbsp;</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6a2a7091-65a5-491e-818f-01312e2431e6\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Sample JSON</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[{\n  \"formJson\": {\n    \"id\": 72,\n    \"uuid\": \"a0f19f99-8136-4dc2-9a9f-cf16e37364f2\",\n    \"name\": \"Demo\",\n    \"version\": \"1\",\n    \"published\": true,\n    \"auditInfo\": {\n      \"creator\": {\n        \"uuid\": \"c1c21e11-3f10-11e4-adec-0800271c1b75\",\n        \"display\": \"superman\",\n        \"links\": [\n          {\n            \"rel\": \"self\",\n            \"uri\": \"http://ci-agent03.mybahmni.org/openmrs/ws/rest/v1/user/c1c21e11-3f10-11e4-adec-0800271c1b75\"\n          }\n        ]\n      },\n      \"dateCreated\": \"2017-11-07T13:31:16.000+0530\",\n      \"changedBy\": {\n        \"uuid\": \"c1c21e11-3f10-11e4-adec-0800271c1b75\",\n        \"display\": \"superman\",\n        \"links\": [\n          {\n            \"rel\": \"self\",\n            \"uri\": \"http://ci-agent03.mybahmni.org/openmrs/ws/rest/v1/user/c1c21e11-3f10-11e4-adec-0800271c1b75\"\n          }\n        ]\n      },\n      \"dateChanged\": \"2017-11-07T14:42:58.000+0530\"\n    },\n    \"resources\": [\n      {\n        \"value\": \"{\\\"name\\\":\\\"Demo\\\",\\\"id\\\":72,\\\"uuid\\\":\\\"a0f19f99-8136-4dc2-9a9f-cf16e37364f2\\\",\\\"defaultLocale\\\":\\\"en\\\",\\\"controls\\\":[{\\\"translationKey\\\":\\\"LABEL_1\\\",\\\"type\\\":\\\"label\\\",\\\"value\\\":\\\"Label\\\",\\\"properties\\\":{\\\"location\\\":{\\\"column\\\":0,\\\"row\\\":0}},\\\"id\\\":\\\"1\\\"},{\\\"type\\\":\\\"obsControl\\\",\\\"label\\\":{\\\"translationKey\\\":\\\"TEMPERATURE_2\\\",\\\"id\\\":\\\"2\\\",\\\"units\\\":\\\"(F)\\\",\\\"type\\\":\\\"label\\\",\\\"value\\\":\\\"Temperature\\\"},\\\"properties\\\":{\\\"mandatory\\\":false,\\\"notes\\\":false,\\\"addMore\\\":false,\\\"hideLabel\\\":false,\\\"controlEvent\\\":false,\\\"location\\\":{\\\"column\\\":0,\\\"row\\\":1},\\\"abnormal\\\":false},\\\"id\\\":\\\"2\\\",\\\"concept\\\":{\\\"name\\\":\\\"Temperature\\\",\\\"uuid\\\":\\\"c37bd733-3f10-11e4-adec-0800271c1b75\\\",\\\"datatype\\\":\\\"Numeric\\\",\\\"conceptClass\\\":\\\"Misc\\\",\\\"conceptHandler\\\":null,\\\"answers\\\":[],\\\"properties\\\":{\\\"allowDecimal\\\":true}},\\\"units\\\":\\\"F\\\",\\\"hiNormal\\\":98.6,\\\"lowNormal\\\":98.6,\\\"hiAbsolute\\\":null,\\\"lowAbsolute\\\":null}],\\\"events\\\":{},\\\"translationsUrl\\\":\\\"/openmrs/ws/rest/v1/bahmniie/form/translations\\\"}\",\n        \"dataType\": \"org.bahmni.customdatatype.datatype.FileSystemStorageDatatype\",\n        \"uuid\": \"f81885b2-4779-4388-aaab-27a95fbcd263\"\n      }\n    ]\n  },\n  \"translations\": [\n    {\n      \"locale\": \"en\",\n      \"labels\": {\n        \"LABEL_1\": \"Label\"\n      },\n      \"concepts\": {\n        \"TEMPERATURE_2\": \"Temperature\"\n      },\n      \"formName\": \"Demo\",\n      \"version\": \"1\"\n    }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p style=\"margin-left: 90.0px;\">To import a form, click on the&nbsp;<strong>Import</strong> button present in the form builder header and select the JSON file to upload it.&nbsp;</p><p style=\"margin-left: 90.0px;\"><ac:image><ri:attachment ri:filename=\"imageedit_4_4540535043.jpg\" ri:version-at-save=\"1\" /></ac:image></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"6fde91cc-5581-426b-a175-c71da5e8d3be\"><ac:rich-text-body>If implementer is importing a form which is already present in the system, it will create a new version of the same form</ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\" style=\"margin-left: 60.0px;\"><br /></p><p class=\"auto-cursor-target\" style=\"margin-left: 60.0px;\"><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/239796253"
+      }
+    },
+    "view": {
+      "value": "<h2 id=\"Import&amp;Export-Export\"><strong>Export</strong></h2><h2 style=\"margin-left: 30.0px;\" id=\"Import&amp;Export-PurposeandBenefits\">Purpose and Benefits</h2><p style=\"margin-left: 30.0px;\">Using export feature of Form Builder, an implementer can export/download the form data as a JSON file for later use. The exported file will contain form details and form translations.</p><p style=\"margin-left: 90.0px;\"><br/></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e2c7dede-f154-468c-8089-1e983d500369\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Sample JSON</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">{\n  &quot;formJson&quot;: {\n    &quot;id&quot;: 72,\n    &quot;uuid&quot;: &quot;a0f19f99-8136-4dc2-9a9f-cf16e37364f2&quot;,\n    &quot;name&quot;: &quot;Demo&quot;,\n    &quot;version&quot;: &quot;1&quot;,\n    &quot;published&quot;: true,\n    &quot;auditInfo&quot;: {\n      &quot;creator&quot;: {\n        &quot;uuid&quot;: &quot;c1c21e11-3f10-11e4-adec-0800271c1b75&quot;,\n        &quot;display&quot;: &quot;superman&quot;,\n        &quot;links&quot;: [\n          {\n            &quot;rel&quot;: &quot;self&quot;,\n            &quot;uri&quot;: &quot;http://ci-agent03.mybahmni.org/openmrs/ws/rest/v1/user/c1c21e11-3f10-11e4-adec-0800271c1b75&quot;\n          }\n        ]\n      },\n      &quot;dateCreated&quot;: &quot;2017-11-07T13:31:16.000+0530&quot;,\n      &quot;changedBy&quot;: {\n        &quot;uuid&quot;: &quot;c1c21e11-3f10-11e4-adec-0800271c1b75&quot;,\n        &quot;display&quot;: &quot;superman&quot;,\n        &quot;links&quot;: [\n          {\n            &quot;rel&quot;: &quot;self&quot;,\n            &quot;uri&quot;: &quot;http://ci-agent03.mybahmni.org/openmrs/ws/rest/v1/user/c1c21e11-3f10-11e4-adec-0800271c1b75&quot;\n          }\n        ]\n      },\n      &quot;dateChanged&quot;: &quot;2017-11-07T14:42:58.000+0530&quot;\n    },\n    &quot;resources&quot;: [\n      {\n        &quot;value&quot;: &quot;{\\&quot;name\\&quot;:\\&quot;Demo\\&quot;,\\&quot;id\\&quot;:72,\\&quot;uuid\\&quot;:\\&quot;a0f19f99-8136-4dc2-9a9f-cf16e37364f2\\&quot;,\\&quot;defaultLocale\\&quot;:\\&quot;en\\&quot;,\\&quot;controls\\&quot;:[{\\&quot;translationKey\\&quot;:\\&quot;LABEL_1\\&quot;,\\&quot;type\\&quot;:\\&quot;label\\&quot;,\\&quot;value\\&quot;:\\&quot;Label\\&quot;,\\&quot;properties\\&quot;:{\\&quot;location\\&quot;:{\\&quot;column\\&quot;:0,\\&quot;row\\&quot;:0}},\\&quot;id\\&quot;:\\&quot;1\\&quot;},{\\&quot;type\\&quot;:\\&quot;obsControl\\&quot;,\\&quot;label\\&quot;:{\\&quot;translationKey\\&quot;:\\&quot;TEMPERATURE_2\\&quot;,\\&quot;id\\&quot;:\\&quot;2\\&quot;,\\&quot;units\\&quot;:\\&quot;(F)\\&quot;,\\&quot;type\\&quot;:\\&quot;label\\&quot;,\\&quot;value\\&quot;:\\&quot;Temperature\\&quot;},\\&quot;properties\\&quot;:{\\&quot;mandatory\\&quot;:false,\\&quot;notes\\&quot;:false,\\&quot;addMore\\&quot;:false,\\&quot;hideLabel\\&quot;:false,\\&quot;controlEvent\\&quot;:false,\\&quot;location\\&quot;:{\\&quot;column\\&quot;:0,\\&quot;row\\&quot;:1},\\&quot;abnormal\\&quot;:false},\\&quot;id\\&quot;:\\&quot;2\\&quot;,\\&quot;concept\\&quot;:{\\&quot;name\\&quot;:\\&quot;Temperature\\&quot;,\\&quot;uuid\\&quot;:\\&quot;c37bd733-3f10-11e4-adec-0800271c1b75\\&quot;,\\&quot;datatype\\&quot;:\\&quot;Numeric\\&quot;,\\&quot;conceptClass\\&quot;:\\&quot;Misc\\&quot;,\\&quot;conceptHandler\\&quot;:null,\\&quot;answers\\&quot;:[],\\&quot;properties\\&quot;:{\\&quot;allowDecimal\\&quot;:true}},\\&quot;units\\&quot;:\\&quot;F\\&quot;,\\&quot;hiNormal\\&quot;:98.6,\\&quot;lowNormal\\&quot;:98.6,\\&quot;hiAbsolute\\&quot;:null,\\&quot;lowAbsolute\\&quot;:null}],\\&quot;events\\&quot;:{},\\&quot;translationsUrl\\&quot;:\\&quot;/openmrs/ws/rest/v1/bahmniie/form/translations\\&quot;}&quot;,\n        &quot;dataType&quot;: &quot;org.bahmni.customdatatype.datatype.FileSystemStorageDatatype&quot;,\n        &quot;uuid&quot;: &quot;f81885b2-4779-4388-aaab-27a95fbcd263&quot;\n      }\n    ]\n  },\n  &quot;translations&quot;: [\n    {\n      &quot;locale&quot;: &quot;en&quot;,\n      &quot;labels&quot;: {\n        &quot;LABEL_1&quot;: &quot;Label&quot;\n      },\n      &quot;concepts&quot;: {\n        &quot;TEMPERATURE_2&quot;: &quot;Temperature&quot;\n      },\n      &quot;formName&quot;: &quot;Demo&quot;,\n      &quot;version&quot;: &quot;1&quot;\n    }\n  ]\n}</pre>\n</div></div><p style=\"margin-left: 90.0px;\"><br/></p><p style=\"margin-left: 90.0px;\">To export form as JSON click on the download icon beside the form.</p><p style=\"margin-left: 90.0px;\"><span class=\"confluence-embedded-file-wrapper\"><img class=\"confluence-embedded-image\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/239796253/imageedit_1_9226162105.jpg?version=1&amp;modificationDate=1510048461188&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/239796253/imageedit_1_9226162105.jpg?version=1&amp;modificationDate=1510048461188&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"225738854\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"imageedit_1_9226162105.jpg\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/jpeg\" data-linked-resource-container-id=\"239796253\" data-linked-resource-container-version=\"14\" data-media-id=\"d36e3e55-4c71-4b88-9911-3e0c5d291ff3\" data-media-type=\"file\"></span></p><h2 style=\"margin-left: 90.0px;\" id=\"Import&amp;Export-BulkExport\"><strong>Bulk Export</strong></h2><p style=\"margin-left: 90.0px;\">Form Bahmni 0.93, an implementer can export more than one form at a time. Each published form will have a checkbox to select as shown in the image below. Upon selecting the forms which we want to download, we can  click on &quot;Export&quot; button which will download a zip file. </p><p style=\"margin-left: 90.0px;\">Only the forms which are published will have the option to select for export. The forms which are in draft mode doesn't have checkbox to select. For Single form export, we can use download icon beside each form, which will download the json in &quot;.json&quot; format. The max limit to download the forms is set to 20.</p><p>                                <span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border\" height=\"250\" width=\"966\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/239796253/image2021-9-26_16-52-32.png?version=1&amp;modificationDate=1632655354270&amp;cacheVersion=1&amp;api=v2&amp;width=966&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/239796253/image2021-9-26_16-52-32.png?version=1&amp;modificationDate=1632655354270&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2905866293\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2021-9-26_16-52-32.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"239796253\" data-linked-resource-container-version=\"14\" data-media-id=\"ea47e32b-46a5-4da4-aea5-372835b56487\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/239796253/image2021-9-26_16-52-32.png?version=1&amp;modificationDate=1632655354270&amp;cacheVersion=1&amp;api=v2&amp;width=1932&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/239796253/image2021-9-26_16-52-32.png?version=1&amp;modificationDate=1632655354270&amp;cacheVersion=1&amp;api=v2&amp;width=966&amp;height=250 1x\"></span></p><h2 style=\"margin-left: 60.0px;\" id=\"Import&amp;Export-Import\"><strong style=\"margin-left: 0.0px;\">Import</strong></h2><h2 style=\"margin-left: 90.0px;\" id=\"Import&amp;Export-PurposeandBenefits.1\">Purpose and Benefits</h2><p style=\"margin-left: 90.0px;\">Using import feature of Form Builder, a implementer can import/create observation form using JSON file.  A new form created using the Import feature will not be <strong>published </strong>by default. It will be stored as a <strong>draft</strong> form. The implementer is expected to Publish the form. </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6a2a7091-65a5-491e-818f-01312e2431e6\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Sample JSON</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">{\n  &quot;formJson&quot;: {\n    &quot;id&quot;: 72,\n    &quot;uuid&quot;: &quot;a0f19f99-8136-4dc2-9a9f-cf16e37364f2&quot;,\n    &quot;name&quot;: &quot;Demo&quot;,\n    &quot;version&quot;: &quot;1&quot;,\n    &quot;published&quot;: true,\n    &quot;auditInfo&quot;: {\n      &quot;creator&quot;: {\n        &quot;uuid&quot;: &quot;c1c21e11-3f10-11e4-adec-0800271c1b75&quot;,\n        &quot;display&quot;: &quot;superman&quot;,\n        &quot;links&quot;: [\n          {\n            &quot;rel&quot;: &quot;self&quot;,\n            &quot;uri&quot;: &quot;http://ci-agent03.mybahmni.org/openmrs/ws/rest/v1/user/c1c21e11-3f10-11e4-adec-0800271c1b75&quot;\n          }\n        ]\n      },\n      &quot;dateCreated&quot;: &quot;2017-11-07T13:31:16.000+0530&quot;,\n      &quot;changedBy&quot;: {\n        &quot;uuid&quot;: &quot;c1c21e11-3f10-11e4-adec-0800271c1b75&quot;,\n        &quot;display&quot;: &quot;superman&quot;,\n        &quot;links&quot;: [\n          {\n            &quot;rel&quot;: &quot;self&quot;,\n            &quot;uri&quot;: &quot;http://ci-agent03.mybahmni.org/openmrs/ws/rest/v1/user/c1c21e11-3f10-11e4-adec-0800271c1b75&quot;\n          }\n        ]\n      },\n      &quot;dateChanged&quot;: &quot;2017-11-07T14:42:58.000+0530&quot;\n    },\n    &quot;resources&quot;: [\n      {\n        &quot;value&quot;: &quot;{\\&quot;name\\&quot;:\\&quot;Demo\\&quot;,\\&quot;id\\&quot;:72,\\&quot;uuid\\&quot;:\\&quot;a0f19f99-8136-4dc2-9a9f-cf16e37364f2\\&quot;,\\&quot;defaultLocale\\&quot;:\\&quot;en\\&quot;,\\&quot;controls\\&quot;:[{\\&quot;translationKey\\&quot;:\\&quot;LABEL_1\\&quot;,\\&quot;type\\&quot;:\\&quot;label\\&quot;,\\&quot;value\\&quot;:\\&quot;Label\\&quot;,\\&quot;properties\\&quot;:{\\&quot;location\\&quot;:{\\&quot;column\\&quot;:0,\\&quot;row\\&quot;:0}},\\&quot;id\\&quot;:\\&quot;1\\&quot;},{\\&quot;type\\&quot;:\\&quot;obsControl\\&quot;,\\&quot;label\\&quot;:{\\&quot;translationKey\\&quot;:\\&quot;TEMPERATURE_2\\&quot;,\\&quot;id\\&quot;:\\&quot;2\\&quot;,\\&quot;units\\&quot;:\\&quot;(F)\\&quot;,\\&quot;type\\&quot;:\\&quot;label\\&quot;,\\&quot;value\\&quot;:\\&quot;Temperature\\&quot;},\\&quot;properties\\&quot;:{\\&quot;mandatory\\&quot;:false,\\&quot;notes\\&quot;:false,\\&quot;addMore\\&quot;:false,\\&quot;hideLabel\\&quot;:false,\\&quot;controlEvent\\&quot;:false,\\&quot;location\\&quot;:{\\&quot;column\\&quot;:0,\\&quot;row\\&quot;:1},\\&quot;abnormal\\&quot;:false},\\&quot;id\\&quot;:\\&quot;2\\&quot;,\\&quot;concept\\&quot;:{\\&quot;name\\&quot;:\\&quot;Temperature\\&quot;,\\&quot;uuid\\&quot;:\\&quot;c37bd733-3f10-11e4-adec-0800271c1b75\\&quot;,\\&quot;datatype\\&quot;:\\&quot;Numeric\\&quot;,\\&quot;conceptClass\\&quot;:\\&quot;Misc\\&quot;,\\&quot;conceptHandler\\&quot;:null,\\&quot;answers\\&quot;:[],\\&quot;properties\\&quot;:{\\&quot;allowDecimal\\&quot;:true}},\\&quot;units\\&quot;:\\&quot;F\\&quot;,\\&quot;hiNormal\\&quot;:98.6,\\&quot;lowNormal\\&quot;:98.6,\\&quot;hiAbsolute\\&quot;:null,\\&quot;lowAbsolute\\&quot;:null}],\\&quot;events\\&quot;:{},\\&quot;translationsUrl\\&quot;:\\&quot;/openmrs/ws/rest/v1/bahmniie/form/translations\\&quot;}&quot;,\n        &quot;dataType&quot;: &quot;org.bahmni.customdatatype.datatype.FileSystemStorageDatatype&quot;,\n        &quot;uuid&quot;: &quot;f81885b2-4779-4388-aaab-27a95fbcd263&quot;\n      }\n    ]\n  },\n  &quot;translations&quot;: [\n    {\n      &quot;locale&quot;: &quot;en&quot;,\n      &quot;labels&quot;: {\n        &quot;LABEL_1&quot;: &quot;Label&quot;\n      },\n      &quot;concepts&quot;: {\n        &quot;TEMPERATURE_2&quot;: &quot;Temperature&quot;\n      },\n      &quot;formName&quot;: &quot;Demo&quot;,\n      &quot;version&quot;: &quot;1&quot;\n    }\n  ]\n}</pre>\n</div></div><p style=\"margin-left: 90.0px;\">To import a form, click on the <strong>Import</strong> button present in the form builder header and select the JSON file to upload it. </p><p style=\"margin-left: 90.0px;\"><span class=\"confluence-embedded-file-wrapper\"><img class=\"confluence-embedded-image\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/239796253/imageedit_4_4540535043.jpg?version=1&amp;modificationDate=1510049623061&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/239796253/imageedit_4_4540535043.jpg?version=1&amp;modificationDate=1510049623061&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"237338730\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"imageedit_4_4540535043.jpg\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/jpeg\" data-linked-resource-container-id=\"239796253\" data-linked-resource-container-version=\"14\" data-media-id=\"0914bc59-b2c5-462a-b5b9-2784fcca2762\" data-media-type=\"file\"></span></p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6fde91cc-5581-426b-a175-c71da5e8d3be\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\">If implementer is importing a form which is already present in the system, it will create a new version of the same form</div></div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/239796253"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/239796253/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/239796253/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 5
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/239796253/child",
+    "restrictions": "/rest/api/content/239796253/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/239796253/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=239796253",
+    "webui": "/spaces/BAH/pages/239796253/Import+Export",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/239796253",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/239796253",
+    "tinyui": "/x/HQBLDg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

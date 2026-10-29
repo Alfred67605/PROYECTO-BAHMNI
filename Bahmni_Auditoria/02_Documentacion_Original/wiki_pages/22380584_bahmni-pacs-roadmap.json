@@ -1,0 +1,171 @@
+{
+  "id": "22380584",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/22380584",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjIzODA1ODQ=",
+  "status": "current",
+  "title": "Bahmni PACS Roadmap",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:dd7e513e-bc00-497a-a42a-e2b387df0018",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mujir Shaikh (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:dd7e513e-bc00-497a-a42a-e2b387df0018",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mujiruddin Shaikh (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:dd7e513e-bc00-497a-a42a-e2b387df0018"
+      }
+    },
+    "createdDate": "2015-06-18T06:40:14.206Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/22380584/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "when": "2016-01-19T10:15:46.069Z",
+    "friendlyWhen": "Jan 19, 2016",
+    "message": "",
+    "number": 21,
+    "minorEdit": false,
+    "syncRev": "0.WSeV-K6f4qZmPlmLvTUUbw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$22380584.93",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/22380584"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/22380584/version/21"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><ac:structured-macro ac:macro-id=\"0e9cb224-1299-42b0-b7e8-4a7bc3de5922\" ac:name=\"warning\" ac:schema-version=\"1\"><ac:rich-text-body><p>This page is In-Progress and will be drafted over the next couple of months. If you have any suggestions or would like to add pages which talk about the functionality of Bahmni, please feel free to add them.</p></ac:rich-text-body></ac:structured-macro><p>&nbsp;</p><h2><u><strong>Tech Guidelines</strong></u></h2><ul><li>We should directly talk to modalities only to create orders using HL7 standard Order message.&nbsp;</li><li>A new PACS feed event should be generated to ensure that creation of orders is resilient.</li><li>Our code should not be tied to a particular HL7 version, though HAPI library relies on HL7 version to create orders. Find good way to deal with this. One way is to build a HAPI wrapper that identifies the HL7 version supported by the modality (this could even be configured in 'Modality' table to make it less intelligent but easier to use), and use relevant HAPI structures.</li><li>Device specific code should be avoided.</li><li>dcm4chee is the only new component we add to Bahmni deployment. It is added only where we need PACS integration.</li><li>dcm4chee (DICOM server) does not know about the modality. Modality auto-forwards the image to dcm4chee.</li></ul><h2><u><strong>Database Entities</strong></u></h2><ul><li>Modality<ul><li>id, name, description, ip_address, port, timeout</li></ul></li><li>Order_Type<ul><li>id, name, modality_id</li></ul></li><li>Orders<ul><li>id, orderTypeId, order_uuid, test_name, test_uuid, result.</li></ul></li><li>OrderDetails<ul><li>id, orderId, hl7OrderRequest, hl7Response</li></ul></li><li>All the atomfeed tables like markers, failed_events etc.</li></ul><h2><u><strong>Potential Changes to the solution in future</strong></u></h2><ul><li>As we go along, we may want to pull dcm4chee&nbsp;into its own server, as the disk usage would be huge. We will also need a backup server.<u><strong><br class=\"_mce_tagged_br\" /></strong></u></li><li>Currently we map order type - modality. This works fine for us in current setups where there is one modality. When we find implementations that have more than one modality, we will learn more about the setup, and perhaps modify the order type - modality solution. Some scenarios,<ul><li>Radiology orders (order type) fulfilled by multiple modalities. Do we map each leaf test (chest 1 view xray instead of Radiology) to a modality?</li></ul></li><li>We support devices that support HL7 order message and can auto forward DICOM images to a DICOM server.</li></ul><h2><u><strong>TODO</strong></u></h2><ul><li><s>One issue with <ac:link><ri:page ri:content-title=\"SetUp Orthanc Dicom/Pacs Server\" /><ac:plain-text-link-body><![CDATA[Orthanc]]></ac:plain-text-link-body></ac:link> is for Cent OS &lt; 7.0, the only way we have it working is having to build Orthanc for that environment. This is not a feasible option for production server at an implementation, we do not want dev tools to be installed in production boxes. To get away from this problem, we are exploring options like dcm4chee.</s></li><li>Can we search for an image by a custom dicom field like Bahmni Order Id (which a user cannot change from the carestream ui)<u><strong><br class=\"_mce_tagged_br\" /></strong></u></li><li>document on wiki to configure Carestream device<ul><li><ac:link><ri:page ri:content-title=\"Map PACS procedure codes\" /><ac:plain-text-link-body><![CDATA[how do I do procedure code mapping]]></ac:plain-text-link-body></ac:link></li><li><ac:link><ri:page ri:content-title=\"Setup PACS Integration module\" /><ac:plain-text-link-body><![CDATA[how do I add a new HL7 client]]></ac:plain-text-link-body></ac:link>&nbsp; (Data Setup section)</li></ul></li></ul><p>&nbsp;</p></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\" ac:name=\"tip\" ac:schema-version=\"1\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:macro-id=\"0a3c45f5-8d8f-45d3-9452-20989c180b2e\" ac:name=\"toc\" ac:schema-version=\"1\"><ac:parameter ac:name=\"style\">none</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/22380584"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0e9cb224-1299-42b0-b7e8-4a7bc3de5922\" data-macro-name=\"warning\"><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This page is In-Progress and will be drafted over the next couple of months. If you have any suggestions or would like to add pages which talk about the functionality of Bahmni, please feel free to add them.</p></div></div><p> </p><h2 id=\"BahmniPACSRoadmap-TechGuidelines\"><u><strong>Tech Guidelines</strong></u></h2><ul><li>We should directly talk to modalities only to create orders using HL7 standard Order message. </li><li>A new PACS feed event should be generated to ensure that creation of orders is resilient.</li><li>Our code should not be tied to a particular HL7 version, though HAPI library relies on HL7 version to create orders. Find good way to deal with this. One way is to build a HAPI wrapper that identifies the HL7 version supported by the modality (this could even be configured in 'Modality' table to make it less intelligent but easier to use), and use relevant HAPI structures.</li><li>Device specific code should be avoided.</li><li>dcm4chee is the only new component we add to Bahmni deployment. It is added only where we need PACS integration.</li><li>dcm4chee (DICOM server) does not know about the modality. Modality auto-forwards the image to dcm4chee.</li></ul><h2 id=\"BahmniPACSRoadmap-DatabaseEntities\"><u><strong>Database Entities</strong></u></h2><ul><li>Modality<ul><li>id, name, description, ip_address, port, timeout</li></ul></li><li>Order_Type<ul><li>id, name, modality_id</li></ul></li><li>Orders<ul><li>id, orderTypeId, order_uuid, test_name, test_uuid, result.</li></ul></li><li>OrderDetails<ul><li>id, orderId, hl7OrderRequest, hl7Response</li></ul></li><li>All the atomfeed tables like markers, failed_events etc.</li></ul><h2 id=\"BahmniPACSRoadmap-PotentialChangestothesolutioninfuture\"><u><strong>Potential Changes to the solution in future</strong></u></h2><ul><li>As we go along, we may want to pull dcm4chee into its own server, as the disk usage would be huge. We will also need a backup server.<u><strong><br class=\"_mce_tagged_br\"/></strong></u></li><li>Currently we map order type - modality. This works fine for us in current setups where there is one modality. When we find implementations that have more than one modality, we will learn more about the setup, and perhaps modify the order type - modality solution. Some scenarios,<ul><li>Radiology orders (order type) fulfilled by multiple modalities. Do we map each leaf test (chest 1 view xray instead of Radiology) to a modality?</li></ul></li><li>We support devices that support HL7 order message and can auto forward DICOM images to a DICOM server.</li></ul><h2 id=\"BahmniPACSRoadmap-TODO\"><u><strong>TODO</strong></u></h2><ul><li><s>One issue with <a href=\"/wiki/spaces/BAH/pages/22380630/SetUp+Orthanc+Dicom+Pacs+Server\" data-linked-resource-id=\"22380630\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Orthanc</a> is for Cent OS &lt; 7.0, the only way we have it working is having to build Orthanc for that environment. This is not a feasible option for production server at an implementation, we do not want dev tools to be installed in production boxes. To get away from this problem, we are exploring options like dcm4chee.</s></li><li>Can we search for an image by a custom dicom field like Bahmni Order Id (which a user cannot change from the carestream ui)<u><strong><br class=\"_mce_tagged_br\"/></strong></u></li><li>document on wiki to configure Carestream device<ul><li><a href=\"/wiki/spaces/BAH/pages/24969224/Map+PACS+procedure+codes\" data-linked-resource-id=\"24969224\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">how do I do procedure code mapping</a></li><li><a href=\"/wiki/spaces/BAH/pages/36700254/Setup+PACS+Integration+module\" data-linked-resource-id=\"36700254\" data-linked-resource-version=\"31\" data-linked-resource-type=\"page\">how do I add a new HL7 client</a>  (Data Setup section)</li></ul></li></ul><p> </p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-cssliststyle=\"none\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"0a3c45f5-8d8f-45d3-9452-20989c180b2e\" data-macro-name=\"toc\"> </div><p> </p></div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/22380584"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/22380584/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/22380584/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 892526729
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/22380584/child",
+    "restrictions": "/rest/api/content/22380584/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/22380584/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=22380584",
+    "webui": "/spaces/BAH/pages/22380584/Bahmni+PACS+Roadmap",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/22380584",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/22380584",
+    "tinyui": "/x/KIBVAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

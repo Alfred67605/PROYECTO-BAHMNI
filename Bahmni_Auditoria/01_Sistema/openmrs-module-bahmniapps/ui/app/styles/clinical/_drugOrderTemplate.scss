@@ -1,0 +1,29 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public License,
+ * v. 2.0. If a copy of the MPL was not distributed with this file, You can
+ * obtain one at https://www.bahmni.org/license/mplv2hd.
+ *
+ * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
+ * graphic logo is a trademark of OpenMRS Inc.
+ */
+
+.drug-order-template {
+	background: $clinicalInfoMessageBg;
+	margin-top: 10px;
+	clear: both;
+	overflow: auto;
+	text-align: center;
+	padding: 7px 5px 5px 5px;
+	form {
+		margin: 0 auto;
+		display: inline-block;
+		select {
+			width: 250px;
+			float: left;
+			margin: 0 5px;
+			height: 35px;
+			font-family: $primaryBoldFont;
+			color: $bahmniSectionHeaderColor;
+		}
+	}	
+}

@@ -1,0 +1,172 @@
+{
+  "id": "115085378",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/115085378",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE1MDg1Mzc4",
+  "status": "current",
+  "title": "Rename a Form",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:f128f81b-6cd6-413f-84e4-0cb2a7a99981",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Yang Zeng (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:f128f81b-6cd6-413f-84e4-0cb2a7a99981",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Yang Zeng (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:f128f81b-6cd6-413f-84e4-0cb2a7a99981"
+      }
+    },
+    "createdDate": "2017-03-01T04:01:04.324Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115085378/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "when": "2017-03-27T09:12:30.951Z",
+    "friendlyWhen": "Mar 27, 2017",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "syncRev": "0.EfbYlY94UY8yuYlUUzyuVQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$115085378.40",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/115085378"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115085378/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p><span style=\"color: rgb(0,0,0);\">&nbsp;Sometimes, implementer need to change the name of one form. It's convenient for implementer to rename it by form builder.</span></p><h2><span style=\"color: rgb(0,0,0);\">Steps</span></h2><h3><span style=\"color: rgb(0,0,0);\">1. Chose the form</span></h3><p><span style=\"color: rgb(0,0,0);\">Chose the form which need to rename from the form builder dashboard. （For example, chose the first form)&nbsp;</span></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:height=\"250\"><ri:attachment ri:filename=\"image2017-3-1_20-22-16.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p style=\"text-align: center;\"><br /></p><h3><span style=\"color: rgb(0,0,0);\">2. Goto the Form Detail</span></h3><p><span style=\"color: rgb(0,0,0);\">Click on the </span><em>eye</em> icon (or <em>pen</em> icon<span style=\"color: rgb(0,0,0);\">) to enter the form detail page. If the status of the form is published, then click on </span><em>Edit</em> button<span style=\"color: rgb(0,0,0);\"> to open the edit mode for the rename function to be available.</span></p><p><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"image2017-3-1_20-36-14.png\" ri:version-at-save=\"1\" /></ac:image></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\">&nbsp;<strong>Edit model</strong></span></p><h3><span style=\"color: rgb(0,0,0);\">3. Rename the form</span></h3><p><span style=\"color: rgb(0,0,0);\">Double click on the form name, and input the new name.</span></p><p /><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"ccb65479-1812-416f-a7d0-f62114768d6a\"><ac:rich-text-body><p>Remember to save it after rename, otherwise the system won't change the form name.</p></ac:rich-text-body></ac:structured-macro><p><span style=\"color: rgb(0,0,0);\"><br /><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"image2017-3-1_20-39-1.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p style=\"text-align: center;\"><span style=\"color: rgb(0,0,0);\"><span style=\"color: rgb(0,0,0);\">&nbsp;</span><strong style=\"text-align: center;\">Rename form</strong></span></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"0b744f92-0474-4511-ba50-ea4dc8343d16\"><ac:parameter ac:name=\"style\">none</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"4084f2de-c0c2-4eeb-b02a-1184ccf78a4a\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Create a new Form\" ri:version-at-save=\"9\" /></ac:link></p><p><ac:link><ri:page ri:content-title=\"Add Controls\" ri:version-at-save=\"7\" /></ac:link></p><p><ac:link><ri:page ri:content-title=\"Edit a Published Form\" ri:version-at-save=\"9\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/115085378"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"RenameaForm-PurposeandBenefits\">Purpose and Benefits</h2><p><span class=\"legacy-color-text-default\"> Sometimes, implementer need to change the name of one form. It's convenient for implementer to rename it by form builder.</span></p><h2 id=\"RenameaForm-Steps\"><span class=\"legacy-color-text-default\">Steps</span></h2><h3 id=\"RenameaForm-1.Chosetheform\"><span class=\"legacy-color-text-default\">1. Chose the form</span></h3><p><span class=\"legacy-color-text-default\">Chose the form which need to rename from the form builder dashboard. （For example, chose the first form) </span></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115085378/image2017-3-1_20-22-16.png?version=1&amp;modificationDate=1488370941752&amp;cacheVersion=1&amp;api=v2&amp;width=643&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/115085378/image2017-3-1_20-22-16.png?version=1&amp;modificationDate=1488370941752&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115092280\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-3-1_20-22-16.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"115085378\" data-linked-resource-container-version=\"6\" data-media-id=\"42cd8919-09ce-423c-8711-0eb15fa830d5\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115085378/image2017-3-1_20-22-16.png?version=1&amp;modificationDate=1488370941752&amp;cacheVersion=1&amp;api=v2&amp;width=1286&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/115085378/image2017-3-1_20-22-16.png?version=1&amp;modificationDate=1488370941752&amp;cacheVersion=1&amp;api=v2&amp;width=643&amp;height=250 1x\"></span></span></p><p style=\"text-align: center;\"><br/></p><h3 id=\"RenameaForm-2.GototheFormDetail\"><span class=\"legacy-color-text-default\">2. Goto the Form Detail</span></h3><p><span class=\"legacy-color-text-default\">Click on the </span><em>eye</em> icon (or <em>pen</em> icon<span class=\"legacy-color-text-default\">) to enter the form detail page. If the status of the form is published, then click on </span><em>Edit</em> button<span class=\"legacy-color-text-default\"> to open the edit mode for the rename function to be available.</span></p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115085378/image2017-3-1_20-36-14.png?version=1&amp;modificationDate=1488371791373&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=291\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/115085378/image2017-3-1_20-36-14.png?version=1&amp;modificationDate=1488371791373&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115092450\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-3-1_20-36-14.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"115085378\" data-linked-resource-container-version=\"6\" data-media-id=\"89855b37-96bd-48be-b7f5-2bfdd9e13987\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115085378/image2017-3-1_20-36-14.png?version=1&amp;modificationDate=1488371791373&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=582 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/115085378/image2017-3-1_20-36-14.png?version=1&amp;modificationDate=1488371791373&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=291 1x\"></span></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\"> <strong>Edit model</strong></span></p><h3 id=\"RenameaForm-3.Renametheform\"><span class=\"legacy-color-text-default\">3. Rename the form</span></h3><p><span class=\"legacy-color-text-default\">Double click on the form name, and input the new name.</span></p><p /><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ccb65479-1812-416f-a7d0-f62114768d6a\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Remember to save it after rename, otherwise the system won't change the form name.</p></div></div><p><span class=\"legacy-color-text-default\"><br/><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115085378/image2017-3-1_20-39-1.png?version=1&amp;modificationDate=1488371941802&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=291\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/115085378/image2017-3-1_20-39-1.png?version=1&amp;modificationDate=1488371941802&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115092473\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-3-1_20-39-1.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"115085378\" data-linked-resource-container-version=\"6\" data-media-id=\"6ab657d3-2709-49f1-9e28-3c3a6124e3fe\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115085378/image2017-3-1_20-39-1.png?version=1&amp;modificationDate=1488371941802&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=582 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/115085378/image2017-3-1_20-39-1.png?version=1&amp;modificationDate=1488371941802&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=291 1x\"></span></span></p><p style=\"text-align: center;\"><span class=\"legacy-color-text-default\"><span class=\"legacy-color-text-default\"> </span><strong style=\"text-align: center;\">Rename form</strong></span></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-cssliststyle=\"none\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"0b744f92-0474-4511-ba50-ea4dc8343d16\" data-macro-name=\"toc\"> </div><p> </p></div></div><p><br/></p><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4084f2de-c0c2-4eeb-b02a-1184ccf78a4a\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/115085179/Create+a+new+Form\" data-linked-resource-id=\"115085179\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Create a new Form</a></p><p><a href=\"/wiki/spaces/BAH/pages/115085295/Add+Controls\" data-linked-resource-id=\"115085295\" data-linked-resource-version=\"16\" data-linked-resource-type=\"page\">Add Controls</a></p><p><a href=\"/wiki/spaces/BAH/pages/115085335/Edit+a+Published+Form\" data-linked-resource-id=\"115085335\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Edit a Published Form</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/115085378"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/115085378/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115085378/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 3
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/115085378/child",
+    "restrictions": "/rest/api/content/115085378/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/115085378/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=115085378",
+    "webui": "/spaces/BAH/pages/115085378/Rename+a+Form",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/115085378",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115085378",
+    "tinyui": "/x/QhDcBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

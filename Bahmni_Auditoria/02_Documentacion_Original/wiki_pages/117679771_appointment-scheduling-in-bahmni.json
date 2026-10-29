@@ -1,0 +1,170 @@
+{
+  "id": "117679771",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/117679771",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE3Njc5Nzcx",
+  "status": "current",
+  "title": "Appointment Scheduling in Bahmni",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "createdDate": "2017-07-05T14:09:38.954Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/117679771/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "when": "2017-11-26T08:12:36.778Z",
+    "friendlyWhen": "Nov 26, 2017",
+    "message": "",
+    "number": 10,
+    "minorEdit": false,
+    "syncRev": "0.unjEcwFmMJd6PkFXb-qglg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$117679771.80",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/117679771"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/117679771/version/10"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"3fe56446-c85c-4684-b9ad-2608b3f1c223\"><ac:rich-text-body><p>This feature will be available with the 0.90 release.</p></ac:rich-text-body></ac:structured-macro><h2>About the Feature</h2><p class=\"p1\">Hospitals and other clinical set ups often offer multiple services to their patients. These services may have defined days and times when they are offered. For e.g Diabetic clinic runs every Monday 10.00 AM - 12.00 PM. Further, &nbsp;we have providers in the hospital who provide these specific services to patients. Appointments are the means by which hospitals and clinics tend to manage their resources and time to offer services to a patient.&nbsp;</p><p class=\"p1\">Appointment scheduling feature is intended to provide the users the ability to schedule and manage appointments for patients in a typical hospital/clinical set up. With the help of this feature one will be able to:</p><ol class=\"ol1\"><li class=\"li1\">Set up services in a hospital</li><li class=\"li1\">Create and manage appointments for a patient&nbsp;</li><li class=\"li1\">View the appointments and patient load per service</li></ol><h2><span style=\"color: rgb(0,0,0);\">Used By</span></h2><p><span style=\"color: rgb(0,0,0);\">This feature can be used by multiple users in a typical clinical set up.&nbsp;</span>The number and the type of users will vary across hospitals.&nbsp;</p><p><span style=\"color: rgb(0,0,0);\">Some examples:&nbsp;</span></p><ol><li>Registration Clerk: To assign appointments and to check in patients.&nbsp;</li><li>Provider: To view and schedule appointments for patients.</li><li>Screener: Keep track of patient load and manage queues</li><li>Administrator : To set up services and their availabilities</li></ol><h2><span style=\"color: rgb(0,0,0);\">How is it used?</span></h2><p><span style=\"color: rgb(0,0,0);\">The Appointment scheduling App is available on the Home page of Bahmni.</span></p><p><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:border=\"true\" ac:height=\"400\"><ri:attachment ri:filename=\"Home-page.png\" ri:version-at-save=\"1\" /></ac:image></span></p><p>The steps to set up and configure Appointment scheduling can be found <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/117677537/Appointments+Scheduling+Module\">here</a>.&nbsp;</p><p>To read about the details of using the Appointment scheduling feature, refer to the links below:</p><ul><li><ac:link><ri:page ri:content-title=\"Services &amp; Specialities\" ri:version-at-save=\"11\" /><ac:plain-text-link-body><![CDATA[Service and Specialities ]]></ac:plain-text-link-body></ac:link></li><li><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/138182707/Creating+and+Managing+Appointments\">Create &amp; Manage Appointments</a></p></li><li><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/138117151/Views+of+Appointments\">View Appointments</a></p></li></ul><p><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><p><br /></p><p><br /></p><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"bcf57ca8-2438-4575-a1d4-8e388c959da9\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"8c7fdfa6-7d5e-4e36-b451-7992f36f9296\" /></p><p><br /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"6a1ed6da-d085-4e7d-b7e4-cad89cc4c1d8\"><ac:parameter ac:name=\"title\">Using Appointment Scheduling</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"7ffc89c0-f008-4a01-9737-a55e1fc0b165\" /></p></ac:rich-text-body></ac:structured-macro><br /><p><br /></p><p><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/117679771"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3fe56446-c85c-4684-b9ad-2608b3f1c223\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This feature will be available with the 0.90 release.</p></div></div><h2 id=\"AppointmentSchedulinginBahmni-AbouttheFeature\">About the Feature</h2><p class=\"p1\">Hospitals and other clinical set ups often offer multiple services to their patients. These services may have defined days and times when they are offered. For e.g Diabetic clinic runs every Monday 10.00 AM - 12.00 PM. Further,  we have providers in the hospital who provide these specific services to patients. Appointments are the means by which hospitals and clinics tend to manage their resources and time to offer services to a patient. </p><p class=\"p1\">Appointment scheduling feature is intended to provide the users the ability to schedule and manage appointments for patients in a typical hospital/clinical set up. With the help of this feature one will be able to:</p><ol class=\"ol1\"><li class=\"li1\">Set up services in a hospital</li><li class=\"li1\">Create and manage appointments for a patient </li><li class=\"li1\">View the appointments and patient load per service</li></ol><h2 id=\"AppointmentSchedulinginBahmni-UsedBy\"><span class=\"legacy-color-text-default\">Used By</span></h2><p><span class=\"legacy-color-text-default\">This feature can be used by multiple users in a typical clinical set up. </span>The number and the type of users will vary across hospitals. </p><p><span class=\"legacy-color-text-default\">Some examples: </span></p><ol><li>Registration Clerk: To assign appointments and to check in patients. </li><li>Provider: To view and schedule appointments for patients.</li><li>Screener: Keep track of patient load and manage queues</li><li>Administrator : To set up services and their availabilities</li></ol><h2 id=\"AppointmentSchedulinginBahmni-Howisitused?\"><span class=\"legacy-color-text-default\">How is it used?</span></h2><p><span class=\"legacy-color-text-default\">The Appointment scheduling App is available on the Home page of Bahmni.</span></p><p><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-content-image-border image-center\" height=\"400\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/117679771/Home-page.png?version=1&amp;modificationDate=1505730684240&amp;cacheVersion=1&amp;api=v2&amp;width=610&amp;height=400\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/117679771/Home-page.png?version=1&amp;modificationDate=1505730684240&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"143228968\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Home-page.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"117679771\" data-linked-resource-container-version=\"10\" data-media-id=\"f458a74c-7eec-4d53-8b89-dead83b6e46f\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/117679771/Home-page.png?version=1&amp;modificationDate=1505730684240&amp;cacheVersion=1&amp;api=v2&amp;width=1208&amp;height=791 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/117679771/Home-page.png?version=1&amp;modificationDate=1505730684240&amp;cacheVersion=1&amp;api=v2&amp;width=610&amp;height=400 1x\"></span></span></p><p>The steps to set up and configure Appointment scheduling can be found <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/117677537/Appointments+Scheduling+Module\" rel=\"nofollow\">here</a>. </p><p>To read about the details of using the Appointment scheduling feature, refer to the links below:</p><ul><li><a href=\"/wiki/spaces/BAH/pages/138280979/Services+Specialities\" data-linked-resource-id=\"138280979\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Service and Specialities&nbsp;</a></li><li><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/138182707/Creating+and+Managing+Appointments\" rel=\"nofollow\">Create &amp; Manage Appointments</a></p></li><li><p><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/138117151/Views+of+Appointments\" rel=\"nofollow\">View Appointments</a></p></li></ul><p><br/></p><p><br/></p><p><br/></p><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"bcf57ca8-2438-4575-a1d4-8e388c959da9\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>On this Page</b></div><div class=\"panelContent\">\n<p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"8c7fdfa6-7d5e-4e36-b451-7992f36f9296\" data-macro-name=\"toc\"> </div><p> </p><p><br /></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6a1ed6da-d085-4e7d-b7e4-cad89cc4c1d8\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>Using Appointment Scheduling</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"7ffc89c0-f008-4a01-9737-a55e1fc0b165\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/138280979/Services+Specialities\" data-linked-resource-id=\"138280979\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Services &amp; Specialities</a></li><li><a href=\"/wiki/spaces/BAH/pages/138182707/Creating+and+Managing+Appointments\" data-linked-resource-id=\"138182707\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Creating and Managing Appointments</a></li><li><a href=\"/wiki/spaces/BAH/pages/138117151/Views+of+Appointments\" data-linked-resource-id=\"138117151\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Views of Appointments</a></li><li><a href=\"/wiki/spaces/BAH/pages/299368645/Patient+s+Appointments+Search\" data-linked-resource-id=\"299368645\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Patient's Appointments Search</a></li></ul><p> </p>\n</div></div><br/><p><br/></p><p><br/></p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/117679771"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/117679771/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/117679771/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 250911540
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/117679771/child",
+    "restrictions": "/rest/api/content/117679771/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/117679771/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=117679771",
+    "webui": "/spaces/BAH/pages/117679771/Appointment+Scheduling+in+Bahmni",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/117679771",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/117679771",
+    "tinyui": "/x/m6YDBw",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

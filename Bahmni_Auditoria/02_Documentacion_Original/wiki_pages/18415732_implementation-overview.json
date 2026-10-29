@@ -1,0 +1,171 @@
+{
+  "id": "18415732",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/18415732",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTg0MTU3MzI=",
+  "status": "current",
+  "title": "Implementation Overview",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "createdDate": "2015-04-07T09:35:33.662Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/18415732/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "when": "2017-04-10T05:52:48.666Z",
+    "friendlyWhen": "Apr 10, 2017",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "syncRev": "0.sPr0B0WB6bP1PfqthuuiGA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$18415732.68",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/18415732"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/18415732/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"c0541eac-63ca-42a2-bb81-0f0b11d71a1a\"><ac:rich-text-body><p>This section will talk about how a typical Bahmni implementation is done, its phases, how to approach an implementation, what activities to map out in an hospital, and other related process information around doing a successful implementation.</p></ac:rich-text-body></ac:structured-macro><p>&nbsp;</p><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"dd43172c-1d37-4247-9815-d784d2a9af23\"><ac:parameter ac:name=\"all\">true</ac:parameter></ac:structured-macro></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/18415732"
+      }
+    },
+    "view": {
+      "value": "<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c0541eac-63ca-42a2-bb81-0f0b11d71a1a\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>This section will talk about how a typical Bahmni implementation is done, its phases, how to approach an implementation, what activities to map out in an hospital, and other related process information around doing a successful implementation.</p></div></div><p> </p><p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"dd43172c-1d37-4247-9815-d784d2a9af23\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/69304335/Bahmni+Implementation+Scenarios+Factors+to+Consider\" data-linked-resource-id=\"69304335\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Bahmni Implementation Scenarios &amp; Factors to Consider</a></li><li><a href=\"/wiki/spaces/BAH/pages/7110661/Phases+of+an+implementation\" data-linked-resource-id=\"7110661\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">Phases of an implementation</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/18415786/Needs+Assessment\" data-linked-resource-id=\"18415786\" data-linked-resource-version=\"29\" data-linked-resource-type=\"page\">Needs Assessment</a></li><li><a href=\"/wiki/spaces/BAH/pages/19234865/Preparation+for+Bahmni+inception\" data-linked-resource-id=\"19234865\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Preparation for Bahmni inception</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/32604693/Implementation+Checklist\" data-linked-resource-id=\"32604693\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Implementation Checklist</a></li><li><a href=\"/wiki/spaces/BAH/pages/2983165963/EHR+Standards+across+various+countries\" data-linked-resource-id=\"2983165963\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">EHR Standards across various countries</a></li><li><a href=\"/wiki/spaces/BAH/pages/7110686/Job+description+for+Bahmni+Implementation+Engineer\" data-linked-resource-id=\"7110686\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Job description for Bahmni Implementation Engineer</a></li><li><a href=\"/wiki/spaces/BAH/pages/8192018/What+happens+in+a+hospital\" data-linked-resource-id=\"8192018\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">What happens in a hospital?</a></li><li><a href=\"/wiki/spaces/BAH/pages/7110700/Chrome+OS+and+Bahmni\" data-linked-resource-id=\"7110700\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Chrome OS and Bahmni</a></li></ul></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/18415732"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/18415732/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/18415732/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 42143548
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/18415732/child",
+    "restrictions": "/rest/api/content/18415732/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/18415732/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=18415732",
+    "webui": "/spaces/BAH/pages/18415732/Implementation+Overview",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/18415732",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/18415732",
+    "tinyui": "/x/dAAZAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

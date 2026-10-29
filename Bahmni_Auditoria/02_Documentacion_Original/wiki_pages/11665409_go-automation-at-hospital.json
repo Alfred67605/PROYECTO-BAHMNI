@@ -1,0 +1,177 @@
+{
+  "id": "11665409",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/11665409",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE2NjU0MDk=",
+  "status": "current",
+  "title": "Go automation at hospital",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "createdDate": "2014-10-31T08:12:18.167Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/11665409/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "when": "2015-08-18T13:33:36.407Z",
+    "friendlyWhen": "Aug 18, 2015",
+    "message": "",
+    "number": 14,
+    "minorEdit": false,
+    "syncRev": "0.oT2y0TrdxqyXBdzevk9M2A.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$11665409.15",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/11665409"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/11665409/version/14"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>Below are the activities to be able to perform via GO.</p><p><strong>Upgrade</strong></p><p>Upgrade the platform (to be used under directions from technical team)</p><p><strong>Deploy</strong></p><p>Deploy everything or just the configuration to a particular environment, flexibility to deploy on pre-prod and prod.</p><p><strong>Operate</strong></p><p>&nbsp;</p><ul><li>(background) Take backup from passive to a well known location or configuration provided by the user</li><li>Clear http cache</li><li>Prepare production logs on demand. These logs are published as an artefact in Go after the job finishes.</li><li>Switch from active to passive</li><li>[TO DO LATER] Periodically delete orphan images uploaded (applicable to JSS, script not available yet for this)</li></ul><p>&nbsp;</p><p><strong>Implementation Support</strong></p><p>Task to be triggered manually. Extract database dump, anonymise and publish the link.<br />Same as above except publish an empty database.</p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/11665409"
+      }
+    },
+    "view": {
+      "value": "<p>Below are the activities to be able to perform via GO.</p><p><strong>Upgrade</strong></p><p>Upgrade the platform (to be used under directions from technical team)</p><p><strong>Deploy</strong></p><p>Deploy everything or just the configuration to a particular environment, flexibility to deploy on pre-prod and prod.</p><p><strong>Operate</strong></p><p> </p><ul><li>(background) Take backup from passive to a well known location or configuration provided by the user</li><li>Clear http cache</li><li>Prepare production logs on demand. These logs are published as an artefact in Go after the job finishes.</li><li>Switch from active to passive</li><li>[TO DO LATER] Periodically delete orphan images uploaded (applicable to JSS, script not available yet for this)</li></ul><p> </p><p><strong>Implementation Support</strong></p><p>Task to be triggered manually. Extract database dump, anonymise and publish the link.<br/>Same as above except publish an empty database.</p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/11665409"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "review-needed",
+          "id": "30146561",
+          "label": "review-needed"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 1,
+      "_links": {
+        "next": "/rest/api/content/11665409/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/11665409/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/11665409/child",
+    "restrictions": "/rest/api/content/11665409/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/11665409/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=11665409",
+    "webui": "/spaces/BAH/pages/11665409/Go+automation+at+hospital",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/11665409",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/11665409",
+    "tinyui": "/x/AQCy",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

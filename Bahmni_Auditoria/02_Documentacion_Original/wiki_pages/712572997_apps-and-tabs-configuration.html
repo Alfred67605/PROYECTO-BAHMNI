@@ -1,0 +1,152 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Apps and Tabs Configuration</title></head><body><h1>Apps and Tabs Configuration</h1><div class="contentLayout2"><style>[data-colorid=gl9u8zdwbd]{color:#333333} html[data-color-mode=dark] [data-colorid=gl9u8zdwbd]{color:#cccccc}</style>
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="AppsandTabsConfiguration-EnablingthenewBedManagementModule">Enabling the new Bed Management Module</h2><p>You can enable the new BM by configuring it as an extension in <em>bahmni_config/home/extension.json&nbsp;</em>like below or as configured in <a class="external-link" href="https://github.com/Bahmni/default-config/blob/master/openmrs/apps/home/extension.json#L42" rel="nofollow">default config here</a></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="38a2ffc9-7872-45bd-8cdd-5d359a7f3a7a" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>App Extension Definition</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">&quot;newBedManagement&quot;: {
+    &quot;id&quot;: &quot;bahmni.ipd&quot;,
+    &quot;extensionPointId&quot;: &quot;org.bahmni.home.dashboard&quot;,
+    &quot;type&quot;: &quot;link&quot;,
+    &quot;translationKey&quot;: &quot;MODULE_LABEL_BED_MANAGEMENT_KEY&quot;,
+    &quot;label&quot;: &quot;InPatient&quot;,
+    &quot;url&quot;: &quot;../bedmanagement/#/home&quot;,
+    &quot;icon&quot;: &quot;fa-bed&quot;,
+    &quot;order&quot;: 7,
+    &quot;requiredPrivilege&quot;: &quot;app:adt&quot;
+ }</pre>
+</div></div><h2 class="auto-cursor-target" id="AppsandTabsConfiguration-AppConfiguration">App Configuration</h2><p>The new Bed Management Application is configured by typical app config in form a app.json file placed within &quot;<em>bahmni_config/openmrs/apps/ipd/&quot;. </em>You can refer to&nbsp;<a class="external-link" href="https://github.com/Bahmni/default-config/blob/master/openmrs/apps/ipd/app.json" rel="nofollow">this file</a> as an example</p><p><br /></p><h3 id="AppsandTabsConfiguration-WardListView">Ward List View&nbsp;</h3><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-id="7ff68eee-a57c-4c42-95ce-b62afe6d256a" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>The configuration for this field is mandatory</p></div></div><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="ab87675c-b39b-4a8c-8e97-0ebac5a57ca8" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">&quot;wardListSqlSearchHandler&quot;: &quot;bedManagement.sqlGet.patientListForAdmissionLocation&quot;</pre>
+</div></div><p>The above configuration fetches the data that is shown in the list view of a ward. You may modify the SQL query relevant to the above Global Property defined in OpenMRS. You can do this via OpenMRS Admin UI</p><ul><li>Administration =&gt; Maintenance =&gt; Bed Management =&gt; edit property 'SQL Get Patient List For Admission Location'</li></ul><p><br /></p><h3 id="AppsandTabsConfiguration-DefaultVisitType">Default Visit Type</h3><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-id="5b1ba4b2-f30a-4b64-875b-015322f1bbb5" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>The configuration for this field is mandatory</p></div></div><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="9477c4c2-1f97-456c-8351-3037a1ce4224" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">&quot;defaultVisitType&quot;: &quot;IPD&quot;</pre>
+</div></div><p><span data-colorid="gl9u8zdwbd">The above config will set the default visit type of the patient when the user attempts to admit the patient. Note, by default a prompt is shown when the patient's current visit type is different from what is set above. You can hide the prompt by setting the configuration below.&nbsp;</span></p><p><br /></p><h3 class="auto-cursor-target" id="AppsandTabsConfiguration-HideAlertforNewVisit">Hide Alert for New Visit&nbsp;</h3><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="d5816350-f16a-44d6-8b67-46f8f12b4b6f" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">&quot;hideStartNewVisitPopUp&quot;: false</pre>
+</div></div><p><br /></p><h3 class="auto-cursor-target" id="AppsandTabsConfiguration-ExpectedDateofDischarge">Expected Date of Discharge</h3><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="fa307c64-7e11-45bc-9f81-27ea61f6db24" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">&quot;expectedDateOfDischarge&quot;: &quot;IPD Intended Discharge&quot;</pre>
+</div></div><p>The above configuration lets you define and capture details relevant to 'Expected Date of Discharge' for a patient. To use this, you may set the above configuration to a concept (type: ConvSet, Is Set = true) with FULLY SPECIFIED NAME as <em>'IPD Intended Discharge'</em>.&nbsp; For example, you may create the concept as shown in example below</p><p><br /></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="250" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/712572997/OpenMRS_-_Editing_Concept_IPD_Intended_Discharge.png?version=1&amp;modificationDate=1535971734792&amp;cacheVersion=1&amp;api=v2&amp;width=547&amp;height=250" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/712572997/OpenMRS_-_Editing_Concept_IPD_Intended_Discharge.png?version=1&amp;modificationDate=1535971734792&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="715554918" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="OpenMRS_-_Editing_Concept_IPD_Intended_Discharge.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="712572997" data-linked-resource-container-version="10" data-media-id="c1258ed2-b4f0-42d0-95a1-3c85cd362e62" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/712572997/OpenMRS_-_Editing_Concept_IPD_Intended_Discharge.png?version=1&amp;modificationDate=1535971734792&amp;cacheVersion=1&amp;api=v2&amp;width=1094&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/712572997/OpenMRS_-_Editing_Concept_IPD_Intended_Discharge.png?version=1&amp;modificationDate=1535971734792&amp;cacheVersion=1&amp;api=v2&amp;width=547&amp;height=250 1x" /></span></p><p><br /></p><p>In the above <em>Concept Set</em>, the member 'Expected Date of Discharge' is of data type <em>date</em>, and 'Reason For Change in Discharge' is of data type <em>text.&nbsp;</em></p><p>You may further configure the 'Concept',&nbsp; as below</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="19221bb9-e866-4227-96f3-01432ac2c81c" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">&quot;config&quot;: {
+	&quot;expectedDateOfDischarge&quot;: &quot;IPD Intended Discharge&quot;,
+	&quot;conceptSetUI&quot;: {
+    	&quot;Expected Date of Discharge&quot;: {
+       	&quot;disableAddNotes&quot;: true,
+       	&quot;allowFutureDates&quot;: true
+    } 
+}</pre>
+</div></div><p><br /></p><p><br /><br /><br /></p><h3 id="AppsandTabsConfiguration-NavigationControls">Navigation Controls&nbsp;</h3><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-id="a2651d25-1366-41ce-b042-742c794e76e6" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>The following configuration elements are mandatory to define. They are intended to be used in future release for navigation to defined URLs through these configuration elements.&nbsp;</p></div></div><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="539205b2-abca-4124-82eb-22e036e3ae42" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">&quot;onAdmissionForwardTo&quot;: &quot;#&quot;,
+&quot;onTransferForwardTo&quot;: &quot;#&quot;,
+&quot;onDischargeForwardTo&quot;: &quot;#&quot;</pre>
+</div></div><p><br /></p><p><br />&quot;diagnosisStatus&quot;: &quot;Inactive&quot;,</p><p><br /></p><h3 id="AppsandTabsConfiguration-ConfigureIPDDashboard">Configure IPD Dashboard</h3><p>You can create a <a href="/wiki/spaces/BAH/pages/37355639/Patient+Dashboard" data-linked-resource-id="37355639" data-linked-resource-version="1" data-linked-resource-type="page">dashboard</a> with configuration just like in any other place which allows dashboard setup.&nbsp;</p><p><a href="/wiki/spaces/BAH/pages/37945573/Display+Controls" data-linked-resource-id="37945573" data-linked-resource-version="155" data-linked-resource-type="page">Display controls</a> can be configured on the dashboards to give a snapshot of the captured information. You may even create your own custom display control. You can see an IPD relevant example <a class="external-link" href="https://github.com/Bahmni/default-config/blob/master/openmrs/apps/ipd/app.json" rel="nofollow">here</a></p><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-id="9cb7fd2a-e6c8-464f-8f1b-78d2ba478d2b" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>The configuration should be added under the &ldquo;dashboard&quot; section</p></div></div><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="9a6983dc-2849-44e3-999f-7d13e5c83050" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Sample Config</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">&quot;dashboard&quot;: {
+	&quot;translationKey&quot;: &quot;DASHBOARD_TAB_GENERAL_KEY&quot;,
+	&quot;sections&quot;: {
+		&quot;patientInformation&quot;: {
+			&quot;translationKey&quot;: &quot;DASHBOARD_TITLE_PATIENT_INFORMATION_KEY&quot;,
+			&quot;type&quot;: &quot;patientInformation&quot;,
+			&quot;displayOrder&quot;: 0,
+			&quot;patientAttributes&quot;: [&quot;education&quot;, &quot;occupation&quot;, &quot;familyIncome&quot;],
+			&quot;addressFields&quot;: [&quot;address1&quot;,&quot;address2&quot;,&quot;cityVillage&quot;,&quot;countryDistrict&quot;]
+		},
+		&quot;navigationLinksControl&quot;: {
+			&quot;translationKey&quot;: &quot;DASHBOARD_TITLE_NAVIGATION_LINKS_CONTROL_KEY&quot;,
+			&quot;type&quot;: &quot;navigationLinksControl&quot;,
+			&quot;displayOrder&quot;: 1,
+			&quot;showLinks&quot;: [&quot;home&quot;,&quot;registration&quot;,&quot;enrolment&quot;],
+			&quot;customLinks&quot;: [
+				{
+					&quot;name&quot;: &quot;bedManagement&quot;,
+					&quot;translationKey&quot;: &quot;PATIENT_BED_MANAGEMENT_PAGE_KEY&quot;,
+					&quot;url&quot;: &quot;../bedmanagement/#/bedManagement/patient/{{patientUuid}}&quot;
+				}
+			]
+		}, 
+		&quot;vitals&quot;: {
+			&quot;translationKey&quot;:&quot;DASHBOARD_TITLE_VITALS_KEY&quot;,
+			&quot;type&quot;: &quot;vitals&quot;,
+			&quot;displayOrder&quot;: 0,
+			&quot;isObservation&quot;: true,
+			&quot;dashboardConfig&quot;: {
+			&quot;conceptNames&quot;: [&quot;Vitals&quot;],
+			&quot;numberOfVisits&quot;: 2
+		}
+	}
+	.....
+	.....
+}
+
+</pre>
+</div></div><p><br /></p><h2 id="AppsandTabsConfiguration-ConfigurePatientLists/Queues"><span class="legacy-color-text-default">Configure Patient Lists/Queues</span></h2><p><span class="legacy-color-text-default">Add the configuration in extension.json file in the <em>ipd</em> folder here&nbsp;<a class="external-link" href="https://github.com/Bahmni/default-config/blob/master/openmrs/apps/adt/extension.json" rel="nofollow">https://github.com/Bahmni/default-config/blob/master/openmrs/apps/adt/extension.json</a></span></p><p><br /></p><p><span class="legacy-color-text-default">The extension that you need to implement is&nbsp;<em>&quot;org.bahmni.patient.search&quot;</em></span></p><h3 id="AppsandTabsConfiguration-Configure&quot;ToAdmit&quot;Tab"><span class="legacy-color-text-default">Configure &quot;To Admit&quot; Tab</span></h3><p><span class="legacy-color-text-default">This tab is used to view the the list of patients who are asked to admit.</span></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="98747c01-b63d-407d-9deb-97f9b777fde8" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">&quot;bahmniAdtPatientsSearchPatientsToAdmit&quot;:{
+    &quot;id&quot;: &quot;bahmni.adt.patients.search.patientsToAdmit&quot;,
+    &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,
+    &quot;type&quot;: &quot;config&quot;,
+    &quot;extensionParams&quot;: {
+      &quot;searchHandler&quot;: &quot;emrapi.sqlSearch.patientsToAdmit&quot;,
+      &quot;translationKey&quot;: &quot;MODULE_LABEL_TO_ADMIT_KEY&quot;,
+      &quot;forwardUrl&quot;:&quot;#/bedManagement/patient/{{patientUuid}}&quot;
+    },
+    &quot;label&quot;: &quot;To Admit&quot;,
+    &quot;order&quot;: 1,
+    &quot;requiredPrivilege&quot;: &quot;app:adt&quot;
+  }</pre>
+</div></div><h3 id="AppsandTabsConfiguration-ConfigureAdmittedTab"><span class="legacy-color-text-default">Configure&nbsp;</span>Admitted Tab</h3><p><span class="legacy-color-text-default">This tab is used to view the the list of patients who are already admitted.</span></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="23b919ee-2115-4993-a656-51dac13d6ff3" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">&quot;bahmniAdtPatientsSearchPatientsAdmitted&quot;:{
+    &quot;id&quot;: &quot;bahmni.adt.patients.search.patientsAdmitted&quot;,
+    &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,
+    &quot;type&quot;: &quot;config&quot;,
+    &quot;extensionParams&quot;: {
+      &quot;searchHandler&quot;: &quot;emrapi.sqlSearch.admittedPatients&quot;,
+      &quot;translationKey&quot;: &quot;MODULE_LABEL_ADMITTED_KEY&quot;,
+      &quot;forwardUrl&quot; : &quot;#/bedManagement/patient/{{patientUuid}}&quot;
+    },
+    &quot;label&quot;: &quot;Admitted&quot;,
+    &quot;order&quot;: 2,
+    &quot;requiredPrivilege&quot;: &quot;app:adt&quot;
+}</pre>
+</div></div><h3 id="AppsandTabsConfiguration-Configure&quot;ToDischarge&quot;Tab"><span class="legacy-color-text-default">Configure&nbsp;</span>&quot;To Discharge&quot; Tab</h3><p><span class="legacy-color-text-default">This tab is used to view the the list of patients who have to be discharged.</span></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="b65785c3-eaf5-47d3-824d-8c9c502297b5" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">&quot;bahmniAdtPatientsSearchPatientsToDischarge&quot;:{
+    &quot;id&quot;: &quot;bahmni.adt.patients.search.patientsToDischarge&quot;,
+    &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,
+    &quot;type&quot;: &quot;config&quot;,
+    &quot;extensionParams&quot;: {
+      &quot;searchHandler&quot;: &quot;emrapi.sqlSearch.patientsToDischarge&quot;,
+      &quot;translationKey&quot;: &quot;MODULE_LABEL_TO_DISCHARGE_KEY&quot;,
+      &quot;forwardUrl&quot; : &quot;#/bedManagement/patient/{{patientUuid}}&quot;
+    },
+    &quot;label&quot;: &quot;To Discharge&quot;,
+    &quot;order&quot;: 3,
+    &quot;requiredPrivilege&quot;: &quot;app:adt&quot;
+}</pre>
+</div></div><h3 id="AppsandTabsConfiguration-Configure&quot;All&quot;Tab"><span class="legacy-color-text-default">Configure &quot;</span>All&quot; Tab</h3><p><span class="legacy-color-text-default">This tab is used to view the the list of patients who have to be admitted.</span></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="ea40380c-4e71-486f-870c-5d1492aa072d" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">&quot;bahmniAdtPatientsSearchAllPatients&quot;:{
+    &quot;id&quot;: &quot;bahmni.adt.patients.search.allPatients&quot;,
+    &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,
+    &quot;type&quot;: &quot;config&quot;,
+    &quot;extensionParams&quot;: {
+      &quot;translationKey&quot;: &quot;MODULE_LABEL_ALL_KEY&quot;,
+      &quot;forwardUrl&quot; : &quot;#/bedManagement/patient/{{patientUuid}}&quot;
+    },
+    &quot;label&quot;: &quot;All&quot;,
+    &quot;order&quot;: 4,
+    &quot;requiredPrivilege&quot;: &quot;app:adt&quot;
+}</pre>
+</div></div><h3 id="AppsandTabsConfiguration-Printcurrentlistofpatientsinwards(0.93+)">Print current list of patients in wards (0.93+)</h3><p class="auto-cursor-target">You can enable the configuration in &quot;<em>bahmni_config/openmrs/apps/ipd/app.json&quot;. </em>See example <a class="external-link" href="https://github.com/Bahmni/default-config/blob/master/openmrs/apps/ipd/app.json#L15" rel="nofollow">here</a>.&nbsp;</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="c47873f4-b84f-4434-ad24-2abb920bc79a" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Enable Print of Ward List</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">config: {
+     &quot;wardListPrintEnabled&quot;: true,
+     &quot;wardListPrintViewTemplateUrl&quot;: &quot;/bahmni_config/openmrs/apps/ipd/wardListPrint.html&quot;,
+     &quot;wardListPrintAttributes&quot;:[],
+     ...
+}</pre>
+</div></div><p class="auto-cursor-target">You can customize your print layout by using a custom template. You can see an example usage <a class="external-link" href="https://github.com/Bahmni/default-config/blob/master/openmrs/apps/ipd/wardListPrint.html" rel="nofollow">here</a>. If you do not mention the templateUrl, then a default print layout is used.&nbsp;</p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="e6921b04-2089-48cb-990e-45bb5d87af22" data-macro-name="tip"><p class="title">On this Page</p><div class="confluence-information-macro-body"><p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-cssliststyle="none" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="22715bf9-65c7-4572-bd73-78fdaeca6f98" data-macro-name="toc"> </div><p> </p></div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="698d4a82-5bc7-4a13-a03e-2c6d4414d8f7" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #1FA5A0;color: white;"><b>Related Links</b></div><div class="panelContent">
+<p><a href="/wiki/spaces/BAH/pages/712507393/Ward+Management+Admin+Console" data-linked-resource-id="712507393" data-linked-resource-version="6" data-linked-resource-type="page">Ward Management Admin Console</a></p>
+</div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="0add60ca-db50-405a-bfd6-90945fbc2b0b" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #668D3C;color: white;"><b>Feature Details</b></div><div class="panelContent">
+<p><a href="/wiki/spaces/BAH/pages/699400201/Bed+Management+BM" data-linked-resource-id="699400201" data-linked-resource-version="16" data-linked-resource-type="page">Bed Management - Feature Guide</a></p>
+</div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #668D3C;color: white;"><b>Usage Details</b></div><div class="panelContent">
+<p><span class="legacy-color-text-default"><a href="/wiki/spaces/BAH/pages/707559542/Bed+Management" data-linked-resource-id="707559542" data-linked-resource-version="12" data-linked-resource-type="page">Bed Management - User Guide</a></span></p>
+</div></div></div>
+</div>
+</div>
+</div></body></html>

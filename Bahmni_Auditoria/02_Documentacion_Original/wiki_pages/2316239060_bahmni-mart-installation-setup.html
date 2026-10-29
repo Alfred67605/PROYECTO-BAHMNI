@@ -1,0 +1,108 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Bahmni Mart Installation Setup</title></head><body><h1>Bahmni Mart Installation Setup</h1><h4 id="BahmniMartInstallationSetup-1.Forcleaninguppostgresfrominstance(Notrequiredforallscenarios,onlyrequiredifwewantadifferentversionofpostgresfromwhatwealreadyhaveinthebahmniinstance)">1. For cleaning up postgres from instance ( Not required for all scenarios, only required if we want a different version of postgres from what we already have in the bahmni instance)</h4><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="714b4cbc-dffa-4c91-9436-8ff9b6e7b212" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">yum remove postgresql -y
+yum remove postgres\* -y
+rm -rf /var/lib/pgsql
+yum list installed | grep postgres
+</pre>
+</div></div><h4 id="BahmniMartInstallationSetup-2.Removebahmni-martifinstalledbefore">2. Remove bahmni-mart if installed before</h4><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="2ca57535-437d-4f2e-8f60-2905063ad1e2" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">yum remove bahmni-mart -y</pre>
+</div></div><h4 id="BahmniMartInstallationSetup-3.Downloadbahmni-martplaybook">3. Download bahmni-mart playbook</h4><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="d093da49-85fa-49a3-bc4c-d9920ed505c5" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">wget -O /tmp/bahmni-mart-playbook.zip https://github.com/Bahmni/bahmni-mart-playbook/archive/refs/heads/master.zip &amp;&amp; unzip -o /tmp/bahmni-mart-playbook.zip -d /tmp &amp;&amp; sudo rm -rf /etc/bahmni-mart-playbook &amp;&amp; sudo mv /tmp/bahmni-mart-playbook-master /etc/bahmni-mart-playbook &amp;&amp; rm -rf /tmp/bahmni-mart-playbook.zip</pre>
+</div></div><h4 id="BahmniMartInstallationSetup-4.Ifwewantbahmni-martinstalledonbothmasterandslavemachinepleaseusethecommandstogetthemart_inventoryfilebelow">4. If we want bahmni-mart installed on both master and slave machine please use the commands to get the mart_inventory file below</h4><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="32e09f54-37ec-4fc5-9d41-856d7734c66a" data-macro-name="info"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>change the bahmni-mart url based on the latest artefact</p></div></div><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="898f7737-6c3e-42a5-9c92-5af577eaa09a" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">cd /etc/bahmni-mart-playbook/inventories/
+mv bahmni-mart bahmni-mart_bkp
+wget https://github.com/Bahmni/bahmni-mart-playbook/raw/master/inventories/mart_inventory
+mv mart_inventory bahmni-mart
+</pre>
+</div></div><h5 id="BahmniMartInstallationSetup-Updateipforfreshinstallationofmart">Update ip for fresh installation of mart</h5><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="143a344c-7aa7-4f27-8930-e8820acc2af6" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">vi /etc/bahmni-mart-playbook/inventories/bahmni-mart
+# delete the line with content '&lt;master_ip&gt; ansible_connection=local'
+# add below line as first line
+&lt;master_ip&gt; ansible_connection=ssh ansible_ssh_user=root
+</pre>
+</div></div><h4 id="BahmniMartInstallationSetup-5.Forstandaloneinstancewherewedon’thavemasterandslavesetupthebelowinventoryisbeingused">5. For standalone instance where we don’t have master and slave setup the below inventory is being used</h4><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="fc84b7eb-9fba-4bfb-a31e-cd2402a2bd9f" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">localhost ansible_connection=local
+
+[bahmni-emr-db]
+localhost
+
+[bahmni-mart]
+localhost
+
+[bahmni-mart-db]
+localhost
+
+[bahmni-mart-db-slave]
+
+[bahmni-mart-scdf]
+
+[metabase]
+localhost
+
+[metabase-db]
+localhost
+
+[metabase-db-slave]
+
+
+[local:children]
+bahmni-mart
+bahmni-mart-db
+bahmni-mart-db-slave
+bahmni-mart-scdf
+bahmni-emr-db
+metabase
+metabase-db
+metabase-db-slave
+</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="f66f1f1c-5b0d-4018-a2bc-ddf2657f2930" data-macro-name="info"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><ol start="1"><li><p>Since the master-slave set-up is not available, remove all the lines with &lt;slave_ip&gt;</p></li><li><p>Update master_ip</p></li></ol></div></div><h4 id="BahmniMartInstallationSetup-Removeentriesunder[bahmni-mart-db-slave],[bahmni-mart-scdf],[metabase-db-slave]inthebahmni-martinventoryfile">Remove entries under [bahmni-mart-db-slave], [bahmni-mart-scdf], [metabase-db-slave] in the bahmni-mart inventory file</h4><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="e245e30b-048a-4dff-ad1c-9ea8bc702e7f" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">vi /etc/bahmni-mart-playbook/inventories/bahmni-mart</pre>
+</div></div><h4 id="BahmniMartInstallationSetup-6.Verifyandupdatethebelowparametersinsetup.yml">6. Verify and update the below parameters in setup.yml</h4><h4 id="BahmniMartInstallationSetup-cd/etc/bahmni-mart-playbook"><code>cd /etc/bahmni-mart-playbook</code></h4><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="a1f3738c-192a-4cb2-8d30-ee3445c62038" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">bahmni_mart_url: https://github.com/Bahmni/bahmni-mart/releases/download/2.0.4/bahmni-mart-2.0.4.noarch.rpm
+bahmni_mart_version: &quot;2.0.4&quot;
+openmrs_db_password: P@ssw0rd
+metabase_db_password: password
+analytics_db_password: password
+postgres_password: password
+metabase_with_ssl: false
+custom_keystore_location: &quot;&lt;ssl certificate in jks format&gt;&quot;
+metabase_keystore_password: &lt;password of jks cert&gt;
+mail_subject: &quot;Notification regarding failed jobs&quot;
+mail_from: &quot;no-reply@bahmni-mart.notifications&quot;
+mail_recipients: &quot;&lt;mail recipients separated by comma&gt;&quot;
+analytics_db_user: analytics
+metabase_db_user: metabase
+analytics_db_name: analytics
+metabase_db_name: metabase
+</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="e0f5503b-06d5-4bb7-85bb-036b35b81100" data-macro-name="info"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>If user wants to install mart with latest bahmni_mart_url then user need to update bahmni_mart_version to the rpm version so that it will install the latest mart.</p></div></div><p>Modify the file “/etc/bahmni-mart-playbook/roles/postgres/defaults/main.yml” with below entries</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="46bd5d77-b4fe-4b0e-aa93-3d150bf75ed9" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">postgres92_repo_rpm_name: pgdg-centos92-9.2-7.noarch.rpm
+postgres96_repo_rpm_name: pgdg-redhat-repo-42.0-11.noarch.rpm
+postgres92_repo_download_url: http://yum.postgresql.org/9.2/redhat/rhel-6-x86_64/{{postgres92_repo_rpm_name}}
+postgres96_repo_download_url: https://yum.postgresql.org/9.6/redhat/rhel-6-x86_64/{{postgres96_repo_rpm_name}}
+</pre>
+</div></div><h4 id="BahmniMartInstallationSetup-7.Metabasewithoutssl">7. <span class="inline-comment-marker" data-ref="5349c7f5-c882-4451-bb7b-6b1119b7b477">Metabase without ssl</span></h4><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="1a31b03d-68a1-46d1-a644-414023a6b51d" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">ansible-playbook -i /etc/bahmni-mart-playbook/inventories/bahmni-mart /etc/bahmni-mart-playbook/all.yml --extra-vars '@/etc/bahmni-mart-playbook/setup.yml' --skip-tags &quot;custom_ssl,lets_encrypt_ssl,authentication&quot;</pre>
+</div></div><h5 id="BahmniMartInstallationSetup-Metabasewithlet&#39;sencryptssl(optional)">Metabase with let's encrypt ssl(optional)</h5><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="63ccbd1b-71f6-4e46-8834-eb679263af2f" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">ansible-playbook -i /etc/bahmni-mart-playbook/inventories/bahmni-mart /etc/bahmni-mart-playbook/all.yml --extra-vars '@/etc/bahmni-mart-playbook/setup.yml' --skip-tags &quot;without_ssl,custom_ssl,authentication&quot;</pre>
+</div></div><h5 id="BahmniMartInstallationSetup-Metabasewithcustomssl(optional)">Metabase with custom ssl(optional)</h5><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="10628ff2-5bab-4d73-a654-1c1be3eeb802" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">ansible-playbook -i /etc/bahmni-mart-playbook/inventories/bahmni-mart /etc/bahmni-mart-playbook/all.yml --extra-vars '@/etc/bahmni-mart-playbook/setup.yml' --skip-tags &quot;without_ssl,lets_encrypt_ssl,authentication&quot;</pre>
+</div></div><h5 id="BahmniMartInstallationSetup-AddnecessaryjobsorRemovetheextrajobsfrombahmni-mart.json">Add necessary jobs or Remove the extra jobs from bahmni-mart.json</h5><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="c09ad7e9-e8f8-48b8-bfb7-f3f2f3dece41" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">vi /var/www/bahmni_config/bahmni-mart/bahmni-mart.json</pre>
+</div></div><h4 id="BahmniMartInstallationSetup-8.AddaccessprivilegestoVagrantIPinpg_hba.conf">8. Add access privileges to Vagrant IP in pg_hba.conf</h4><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="94644b81-a0e1-47de-9aa2-8230b9574dec" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">vi /var/lib/pgsql/9.6/data/pg_hba.conf</pre>
+</div></div><p>Update the file with the below entry</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="7058faf4-2f54-4dbf-9bfa-83b15b64c88b" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">host all all 192.168.33.10/0 trust</pre>
+</div></div><p>Restart Postgresql</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="2d09152a-47b1-4da7-b2e8-112d34bb0bfd" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">systemctl restart postgressql-9.6</pre>
+</div></div><h4 id="BahmniMartInstallationSetup-9.Runbahmnimart"><br/>9. Run bahmni mart</h4><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="7969fd4d-b71a-4f67-93d8-3639225a63d9" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">bahmni-mart
+# check the logs
+tail -100f /var/log/bahmni-mart/bahmni-mart.log
+</pre>
+</div></div><h5 id="BahmniMartInstallationSetup-CheckiffollowingURLsareaccessible">Check if following URLs are accessible</h5><h5 id="BahmniMartInstallationSetup-Metabase">Metabase</h5><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="0b5f3332-d50f-49ac-b468-efbf7d2263e4" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">docker ps
+docker stop &lt;METABASE CONTAINER ID&gt;
+docker start metabase
+http://&lt;host&gt;:9003/</pre>
+</div></div><p /><h3 id="BahmniMartInstallationSetup-Toconnectmetabasewithaanalyticsdatabase(whenusingwithoutssl)">To connect metabase with a analytics database (when using without ssl)</h3><p>Host : IP of the machine as seen by Metabase docker container. E.g: 172.17.42.1</p><p>port : 5432</p><p>Database name : analytics</p><p>Database username : analytics</p><p>Database password : password</p><p> </p><p><strong>Docker container (metabase and scdf) removal step need to be added.</strong></p><p /></body></html>

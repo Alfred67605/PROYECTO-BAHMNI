@@ -1,0 +1,174 @@
+{
+  "id": "2306539867",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2306539867",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMwNjUzOTg2Nw==",
+  "status": "current",
+  "title": "API to display form builder forms(forms 2.0) for a patient in dashboard",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5e943471088a7e0c0f50e1e0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Buvaneswari Arun (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e943471088a7e0c0f50e1e0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Buvaneswari Arun (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e943471088a7e0c0f50e1e0"
+      }
+    },
+    "createdDate": "2021-04-05T04:48:21.505Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306539867/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5e943471088a7e0c0f50e1e0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Buvaneswari Arun (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e943471088a7e0c0f50e1e0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Buvaneswari Arun (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e943471088a7e0c0f50e1e0"
+      }
+    },
+    "when": "2021-04-05T04:54:20.831Z",
+    "friendlyWhen": "Apr 05, 2021",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.confluence$content$2306539867.23",
+    "syncRevSource": "synchrony-ack",
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$2306539867.34",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2306539867"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306539867/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"bc44d5f2-fe72-4cfa-b24c-9f8e248bca94\"><ac:rich-text-body><p>Feature available from Bahmni-V0.93</p></ac:rich-text-body></ac:structured-macro><p>Existing form display control doesn't show the form builder forms because the existing API considers only the 'All Observation Template' forms. So a new API is introduced, which fetches form builder form details for a patient.</p><p> <strong>Request:</strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"0dd91060-4d25-4323-b023-c3d3fbc0df89\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[https://<machine-ip>/openmrs/ws/rest/v1/bahmnicore/patient/<patient-uuid>/forms?formType=v1&numberOfVisits=2&visitUuid=<visit-uuid>&patientProgramUuid=<uuid>]]></ac:plain-text-body></ac:structured-macro><p><strong>Response:</strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"00aab172-38cf-4fff-b8c9-654068f00e4b\"><ac:parameter ac:name=\"language\">json</ac:parameter><ac:plain-text-body><![CDATA[[\n    {\n        \"formType\": \"v2\",\n        \"formName\": \"groovy_test\",\n        \"formVersion\": 1,\n        \"visitUuid\": \"8a34eb02-b5d2-485f-b711-f2898ac86e93\",\n        \"visitStartDateTime\": 1536733420000,\n        \"encounterUuid\": \"b3f7a082-c45c-4679-860d-80d48de639a2\",\n        \"encounterDateTime\": 1539586861000,\n        \"providers\": [\n            {\n                \"providerName\": \"Super Man\",\n                \"uuid\": \"c1c21e11-3f10-11e4-adec-0800271c1b75\"\n            }\n        ]\n    },\n    ]]]></ac:plain-text-body></ac:structured-macro><p><strong>Criteria:</strong></p><ol><li><p>patient_uuid is mandatory</p></li><li><p>formType is optional with possible values are v1 and v2. By default it assumes v2. v1 means forms 1.0 i.e all observation template forms(it is not implemented) and v2 means form builder forms</p></li><li><p>numberOfVisits is optional</p></li><li><p>visitUuid is optional, numberOfVisits won&rsquo;t apply with this parameter</p></li><li><p>patientProgramUuid is optional, numberOfVisits won&rsquo;t apply with this parameter. It works along with visitUuid if provided</p></li></ol><p /><p>Opemrs talk: <a href=\"https://talk.openmrs.org/t/api-to-fetch-form-builder-forms-for-a-patient/20564\">https://talk.openmrs.org/t/api-to-fetch-form-builder-forms-for-a-patient/20564</a><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2306539867"
+      }
+    },
+    "view": {
+      "value": "<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"bc44d5f2-fe72-4cfa-b24c-9f8e248bca94\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Feature available from Bahmni-V0.93</p></div></div><p>Existing form display control doesn't show the form builder forms because the existing API considers only the 'All Observation Template' forms. So a new API is introduced, which fetches form builder form details for a patient.</p><p> <strong>Request:</strong></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0dd91060-4d25-4323-b023-c3d3fbc0df89\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: java; gutter: false; theme: Confluence\" data-theme=\"Confluence\">https://&lt;machine-ip&gt;/openmrs/ws/rest/v1/bahmnicore/patient/&lt;patient-uuid&gt;/forms?formType=v1&amp;numberOfVisits=2&amp;visitUuid=&lt;visit-uuid&gt;&amp;patientProgramUuid=&lt;uuid&gt;</pre>\n</div></div><p><strong>Response:</strong></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"00aab172-38cf-4fff-b8c9-654068f00e4b\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">[\n    {\n        &quot;formType&quot;: &quot;v2&quot;,\n        &quot;formName&quot;: &quot;groovy_test&quot;,\n        &quot;formVersion&quot;: 1,\n        &quot;visitUuid&quot;: &quot;8a34eb02-b5d2-485f-b711-f2898ac86e93&quot;,\n        &quot;visitStartDateTime&quot;: 1536733420000,\n        &quot;encounterUuid&quot;: &quot;b3f7a082-c45c-4679-860d-80d48de639a2&quot;,\n        &quot;encounterDateTime&quot;: 1539586861000,\n        &quot;providers&quot;: [\n            {\n                &quot;providerName&quot;: &quot;Super Man&quot;,\n                &quot;uuid&quot;: &quot;c1c21e11-3f10-11e4-adec-0800271c1b75&quot;\n            }\n        ]\n    },\n    ]</pre>\n</div></div><p><strong>Criteria:</strong></p><ol><li><p>patient_uuid is mandatory</p></li><li><p>formType is optional with possible values are v1 and v2. By default it assumes v2. v1 means forms 1.0 i.e all observation template forms(it is not implemented) and v2 means form builder forms</p></li><li><p>numberOfVisits is optional</p></li><li><p>visitUuid is optional, numberOfVisits won’t apply with this parameter</p></li><li><p>patientProgramUuid is optional, numberOfVisits won’t apply with this parameter. It works along with visitUuid if provided</p></li></ol><p /><p>Opemrs talk: <a class=\"external-link\" href=\"https://talk.openmrs.org/t/api-to-fetch-form-builder-forms-for-a-patient/20564\" rel=\"nofollow\">https://talk.openmrs.org/t/api-to-fetch-form-builder-forms-for-a-patient/20564</a><br/></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2306539867"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2306539867/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306539867/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 777
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2306539867/child",
+    "restrictions": "/rest/api/content/2306539867/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2306539867/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2306539867",
+    "webui": "/spaces/BAH/pages/2306539867/API+to+display+form+builder+forms+forms+2.0+for+a+patient+in+dashboard",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2306539867",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2306539867",
+    "tinyui": "/x/WwF7iQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "id": "100565083",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/100565083",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTAwNTY1MDgz",
+  "status": "current",
+  "title": "Implementer Interface",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2016-11-22T16:58:21.151Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/100565083/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "when": "2018-01-19T08:57:42.017Z",
+    "friendlyWhen": "Jan 19, 2018",
+    "message": "",
+    "number": 11,
+    "minorEdit": false,
+    "syncRev": "0.diLxZYiVKia2dKdwmFtoEA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$100565083.101",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/100565083"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/100565083/version/11"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:macro-id=\"5ac6fbfc-5f53-4303-bd48-f81e5fbe5e1e\" ac:name=\"info\" ac:schema-version=\"1\"><ac:rich-text-body><p><strong><span style=\"color: rgb(0,0,0);\">A stable version of Form builder (part of the Implementer's Interface) is available from version 0.90. Please note that Bahmni will continue to support the older method of building the form via &nbsp;<ac:link><ri:page ri:content-title=\"Create a New Observation Form\" ri:version-at-save=\"109\" /><ac:plain-text-link-body><![CDATA[JSON Configuration]]></ac:plain-text-link-body></ac:link></span></strong></p></ac:rich-text-body></ac:structured-macro><h2>Purpose and Benefits</h2><p>The Implementer's Interface is a UI driven way to configure Bahmni. It helps to:</p><ol><li style=\"list-style-type: decimal;\"><p>Reduce implementer's time.</p></li><ol><li style=\"list-style-type: lower-alpha;\"><p>Eg: 70% of implementers&rsquo; time goes into reports</p></li><li style=\"list-style-type: lower-alpha;\"><p>Easy configurations of templates and patient dashboards</p></li></ol><li style=\"list-style-type: decimal;\"><p>Reduce barrier of entry (lesser technically able people should be able to configure Bahmni)</p></li><ol><li style=\"list-style-type: lower-alpha;\"><p>Entry into a json and a csv and a UI is not ideal</p></li></ol><li style=\"list-style-type: decimal;\"><p>Improve ability to manage the system</p></li><ol><li style=\"list-style-type: lower-alpha;\"><p>Monitoring failures and resolving them</p></li><li style=\"list-style-type: lower-alpha;\"><p>Upgrades</p></li></ol></ol><h3>Configure the Icon in home dashboard</h3><p>Add new icon in home dashboard for navigating to implementer interface.&nbsp;</p><p>In<em>&nbsp;home/extension.json</em>, add the configuration as shown below</p><ac:structured-macro ac:macro-id=\"d4a58b5f-dd56-4f45-8bf0-f5a04a0ef5f8\" ac:name=\"code\" ac:schema-version=\"1\"><ac:parameter ac:name=\"title\">Sample Configuration</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"implementerInterface\": {\n     \"id\": \"bahmni.implementer.interface\",\n     \"extensionPointId\": \"org.bahmni.home.dashboard\",\n     \"type\": \"link\",\n     \"translationKey\": \"MODULE_LABEL_IMPLEMENTER_INTERFACE_KEY\",\n     \"url\": \"/implementer-interface\",\n     \"icon\": \"fa fa-pencil-square-o\",\n     \"order\": 12\n}\n]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:macro-id=\"de1c7126-e8b7-48d7-99aa-f0e804b8d410\" ac:name=\"warning\" ac:schema-version=\"1\"><ac:parameter ac:name=\"title\">Supported configuration for key Url</ac:parameter><ac:rich-text-body><ul><li><ac:inline-comment-marker ac:ref=\"5618f522-9673-4c09-bce2-79d94f44bbb7\">In above example configuration, make sure the value configured for key </ac:inline-comment-marker><strong><ac:inline-comment-marker ac:ref=\"5618f522-9673-4c09-bce2-79d94f44bbb7\">url</ac:inline-comment-marker></strong><ac:inline-comment-marker ac:ref=\"5618f522-9673-4c09-bce2-79d94f44bbb7\"> to be</ac:inline-comment-marker><em><ac:inline-comment-marker ac:ref=\"5618f522-9673-4c09-bce2-79d94f44bbb7\"> &quot;</ac:inline-comment-marker><strong><ac:inline-comment-marker ac:ref=\"5618f522-9673-4c09-bce2-79d94f44bbb7\">/implementer-interface</ac:inline-comment-marker></strong><ac:inline-comment-marker ac:ref=\"5618f522-9673-4c09-bce2-79d94f44bbb7\">&quot; (this is the supported value and can't be changed)</ac:inline-comment-marker></em></li><li>For further configurations, please refer <ac:link><ri:page ri:content-title=\"Home App\" ri:version-at-save=\"19\" /></ac:link><em><br class=\"_mce_tagged_br\" /></em></li></ul></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:macro-id=\"ca5434a0-5256-4052-b717-ec0fd8d4c422\" ac:name=\"note\" ac:schema-version=\"1\"><ac:parameter ac:name=\"title\">Note</ac:parameter><ac:rich-text-body><p>Please note that the new forms that are created through implementer interface can't be configured to see in Patient Dashboard. But the observations that are captured for a concept from the form can be seen in the Patient Dashboard.</p><p>Example concepts : HEIGHT, WEIGHT</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:macro-id=\"774d1b01-27da-4dd0-bd22-c6427d10f2aa\" ac:name=\"panel\" ac:schema-version=\"1\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Sections</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:macro-id=\"76b63132-24dc-4ea7-bd81-c5d53b11f058\" ac:name=\"children\" ac:schema-version=\"2\"><ac:parameter ac:name=\"all\">true</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\" ac:name=\"panel\" ac:schema-version=\"1\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Implementer's Interface\" ri:version-at-save=\"4\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/100565083"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"5ac6fbfc-5f53-4303-bd48-f81e5fbe5e1e\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong><span class=\"legacy-color-text-default\">A stable version of Form builder (part of the Implementer's Interface) is available from version 0.90. Please note that Bahmni will continue to support the older method of building the form via  <a href=\"/wiki/spaces/BAH/pages/32014552/Create+a+New+Observation+Form\" data-linked-resource-id=\"32014552\" data-linked-resource-version=\"110\" data-linked-resource-type=\"page\">JSON Configuration</a></span></strong></p></div></div><h2 id=\"ImplementerInterface-PurposeandBenefits\">Purpose and Benefits</h2><p>The Implementer's Interface is a UI driven way to configure Bahmni. It helps to:</p><ol><li style=\"list-style-type: decimal;\"><p>Reduce implementer's time.</p></li><ol><li style=\"list-style-type: lower-alpha;\"><p>Eg: 70% of implementers’ time goes into reports</p></li><li style=\"list-style-type: lower-alpha;\"><p>Easy configurations of templates and patient dashboards</p></li></ol><li style=\"list-style-type: decimal;\"><p>Reduce barrier of entry (lesser technically able people should be able to configure Bahmni)</p></li><ol><li style=\"list-style-type: lower-alpha;\"><p>Entry into a json and a csv and a UI is not ideal</p></li></ol><li style=\"list-style-type: decimal;\"><p>Improve ability to manage the system</p></li><ol><li style=\"list-style-type: lower-alpha;\"><p>Monitoring failures and resolving them</p></li><li style=\"list-style-type: lower-alpha;\"><p>Upgrades</p></li></ol></ol><h3 id=\"ImplementerInterface-ConfiguretheIconinhomedashboard\">Configure the Icon in home dashboard</h3><p>Add new icon in home dashboard for navigating to implementer interface. </p><p>In<em> home/extension.json</em>, add the configuration as shown below</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d4a58b5f-dd56-4f45-8bf0-f5a04a0ef5f8\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Sample Configuration</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;implementerInterface&quot;: {\n     &quot;id&quot;: &quot;bahmni.implementer.interface&quot;,\n     &quot;extensionPointId&quot;: &quot;org.bahmni.home.dashboard&quot;,\n     &quot;type&quot;: &quot;link&quot;,\n     &quot;translationKey&quot;: &quot;MODULE_LABEL_IMPLEMENTER_INTERFACE_KEY&quot;,\n     &quot;url&quot;: &quot;/implementer-interface&quot;,\n     &quot;icon&quot;: &quot;fa fa-pencil-square-o&quot;,\n     &quot;order&quot;: 12\n}\n</pre>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-warning conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"de1c7126-e8b7-48d7-99aa-f0e804b8d410\" data-macro-name=\"warning\"><p class=\"title\">Supported configuration for key Url</p><span class=\"aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><ul><li><span class=\"inline-comment-marker\" data-ref=\"5618f522-9673-4c09-bce2-79d94f44bbb7\">In above example configuration, make sure the value configured for key </span><strong><span class=\"inline-comment-marker\" data-ref=\"5618f522-9673-4c09-bce2-79d94f44bbb7\">url</span></strong><span class=\"inline-comment-marker\" data-ref=\"5618f522-9673-4c09-bce2-79d94f44bbb7\"> to be</span><em><span class=\"inline-comment-marker\" data-ref=\"5618f522-9673-4c09-bce2-79d94f44bbb7\"> &quot;</span><strong><span class=\"inline-comment-marker\" data-ref=\"5618f522-9673-4c09-bce2-79d94f44bbb7\">/implementer-interface</span></strong><span class=\"inline-comment-marker\" data-ref=\"5618f522-9673-4c09-bce2-79d94f44bbb7\">&quot; (this is the supported value and can't be changed)</span></em></li><li>For further configurations, please refer <a href=\"/wiki/spaces/BAH/pages/34013780/Home+App\" data-linked-resource-id=\"34013780\" data-linked-resource-version=\"20\" data-linked-resource-type=\"page\">Home App</a><em><br class=\"_mce_tagged_br\" /></em></li></ul></div></div><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ca5434a0-5256-4052-b717-ec0fd8d4c422\" data-macro-name=\"note\"><p class=\"title\">Note</p><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Please note that the new forms that are created through implementer interface can't be configured to see in Patient Dashboard. But the observations that are captured for a concept from the form can be seen in the Patient Dashboard.</p><p>Example concepts : HEIGHT, WEIGHT</p></div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"774d1b01-27da-4dd0-bd22-c6427d10f2aa\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Sections</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"76b63132-24dc-4ea7-bd81-c5d53b11f058\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/100565092/Form+Builder\" data-linked-resource-id=\"100565092\" data-linked-resource-version=\"26\" data-linked-resource-type=\"page\">Form Builder</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/115085295/Add+Controls\" data-linked-resource-id=\"115085295\" data-linked-resource-version=\"16\" data-linked-resource-type=\"page\">Add Controls</a></li><li><a href=\"/wiki/spaces/BAH/pages/115085335/Edit+a+Published+Form\" data-linked-resource-id=\"115085335\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Edit a Published Form</a></li><li><a href=\"/wiki/spaces/BAH/pages/115085378/Rename+a+Form\" data-linked-resource-id=\"115085378\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Rename a Form</a></li><li><a href=\"/wiki/spaces/BAH/pages/237338635/Form+Builder+Internationalization\" data-linked-resource-id=\"237338635\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Form Builder Internationalization</a></li><li><a href=\"/wiki/spaces/BAH/pages/239796253/Import+Export\" data-linked-resource-id=\"239796253\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Import &amp; Export</a></li><li><a href=\"/wiki/spaces/BAH/pages/237437004/Form+Conditions+Form+Events\" data-linked-resource-id=\"237437004\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Form Conditions / Form Events</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/2318893296/Single+editor+for+form+event+and+control+event\" data-linked-resource-id=\"2318893296\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Single editor for form event and control event</a></li><li><a href=\"/wiki/spaces/BAH/pages/2306539867/API+to+display+form+builder+forms+forms+2.0+for+a+patient+in+dashboard\" data-linked-resource-id=\"2306539867\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">API to display form builder forms(forms 2.0) for a patient in dashboard</a></li><li><a href=\"/wiki/spaces/BAH/pages/2318893278/Copy+the+translations+of+form+2.0+from+one+version+to+the+next+version+in+implementer-interface\" data-linked-resource-id=\"2318893278\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">Copy the translations of form (2.0) from one version to the next version in implementer-interface</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/2435710977/Preview+the+form2+form+before+publishing+in+Implementer+interface\" data-linked-resource-id=\"2435710977\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Preview the form2 form before publishing in Implementer interface</a></li></ul></li></ul><p> </p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/100565086/Implementer+s+Interface\" data-linked-resource-id=\"100565086\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">Implementer's Interface</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/100565083"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/100565083/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/100565083/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 185309356
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/100565083/child",
+    "restrictions": "/rest/api/content/100565083/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/100565083/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=100565083",
+    "webui": "/spaces/BAH/pages/100565083/Implementer+Interface",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/100565083",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/100565083",
+    "tinyui": "/x/W4D_BQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

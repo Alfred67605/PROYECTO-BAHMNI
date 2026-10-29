@@ -1,0 +1,172 @@
+{
+  "id": "116152757",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/116152757",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE2MTUyNzU3",
+  "status": "current",
+  "title": "Migrate Configurations",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Himabindu Thungathurty",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Akkinepalli",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66"
+      }
+    },
+    "createdDate": "2017-04-17T06:28:01.991Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/116152757/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Himabindu Thungathurty",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Akkinepalli",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66"
+      }
+    },
+    "when": "2017-04-17T06:32:39.319Z",
+    "friendlyWhen": "Apr 17, 2017",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.1P0bIrJ63FwkleKSmv63QQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$116152757.30",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/116152757"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/116152757/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p>Bahmni configuration json files structure change across releases based on the new features built. To ease the process of making these changes, a tool has been built that can be run where the config files are maintained.</p><h2>Steps</h2><ol><li><p>The tools needs node.js and npm. Use this page for reference: <a class=\"external-link\" href=\"http://blog.npmjs.org/post/85484771375/how-to-install-npm\" rel=\"nofollow\">http://blog.npmjs.org/post/85484771375/how-to-install-npm</a>&nbsp;</p></li><li><p>Install this npm module using the following command.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"33c520ec-ec5c-45c3-9d78-0821e805b214\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[npm install -g config-migrate ]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></li><li>Follow these instructions to run the migrations&nbsp;<a class=\"external-link\" href=\"https://www.npmjs.com/package/config-migrate\" rel=\"nofollow\">https://www.npmjs.com/package/config-migrate</a></li></ol></ac:layout-cell><ac:layout-cell><p><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/116152757"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"MigrateConfigurations-PurposeandBenefits\">Purpose and Benefits</h2><p>Bahmni configuration json files structure change across releases based on the new features built. To ease the process of making these changes, a tool has been built that can be run where the config files are maintained.</p><h2 id=\"MigrateConfigurations-Steps\">Steps</h2><ol><li><p>The tools needs node.js and npm. Use this page for reference: <a class=\"external-link\" href=\"http://blog.npmjs.org/post/85484771375/how-to-install-npm\" rel=\"nofollow\">http://blog.npmjs.org/post/85484771375/how-to-install-npm</a> </p></li><li><p>Install this npm module using the following command.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"33c520ec-ec5c-45c3-9d78-0821e805b214\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">npm install -g config-migrate </pre>\n</div></div></li><li>Follow these instructions to run the migrations <a class=\"external-link\" href=\"https://www.npmjs.com/package/config-migrate\" rel=\"nofollow\">https://www.npmjs.com/package/config-migrate</a></li></ol></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<p><br/></p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/116152757"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/116152757/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/116152757/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 4
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/116152757/child",
+    "restrictions": "/rest/api/content/116152757/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/116152757/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=116152757",
+    "webui": "/spaces/BAH/pages/116152757/Migrate+Configurations",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/116152757",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/116152757",
+    "tinyui": "/x/tVnsBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "id": "114228167",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/114228167",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE0MjI4MTY3",
+  "status": "current",
+  "title": "Graph Control",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2017-01-19T06:50:05.490Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114228167/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2022-11-20T11:20:12.904Z",
+    "friendlyWhen": "Nov 20, 2022",
+    "message": "Removed collapsible due to Atlassian bug",
+    "number": 5,
+    "minorEdit": false,
+    "syncRev": "0.pnPHIZvM8TSpJ9E_CQCyyw.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$114228167.32",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/114228167"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114228167/version/5"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose</h2><ac:structured-macro ac:name=\"excerpt\" ac:schema-version=\"1\" ac:macro-id=\"638aebc5-f96c-44fe-9484-b0037d832b70\"><ac:parameter ac:name=\"atlassian-macro-output-type\">INLINE</ac:parameter><ac:rich-text-body><p>Observation Graph Control is configured to display the observations values as a graph against observation date time, age or any other concept for configured number of visits.</p></ac:rich-text-body></ac:structured-macro><p><br /></p><h2>Screenshot</h2><p><em><ac:image ac:width=\"600\"><ri:attachment ri:filename=\"Screen Shot 2016-05-25 at 4.17.29 PM.png\" ri:version-at-save=\"1\" /></ac:image></em></p><h2>Configuration</h2><h3>Sample Config</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"df6698b4-6c03-419b-8396-5ebe899c274a\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Add to clinical/dashboard.json for it to appear on the patient dashboard</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"temperature\": {\n \"type\": \"observationGraph\",\n \"title\": \"Temperature\",\n \"config\": {\n    \"yAxisConcepts\": [\"Temperature\"],\n    \"xAxisConcept\" : \"observationDateTime\",\n    \"numberOfVisits\": 3\n  }\n}]]></ac:plain-text-body></ac:structured-macro><h3>Key Field Table</h3><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th>Key</th><th>Info</th><th colspan=\"1\">Mandatory</th></tr><tr><td>type</td><td>The name/id for the control that needs to be picked from the code.</td><td colspan=\"1\">Y (in Visit Page)</td></tr><tr><td>title</td><td>Indicates the title that will be displayed on the dashboard/visit page for the section.</td><td colspan=\"1\">Y</td></tr><tr><td>yAxisConcepts</td><td>Array of concepts for which observations need to be plotted on the graph.</td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\">xAxisConcepts</td><td colspan=\"1\">Concept on X Axis (observationDateTime, age or any concept).</td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\">numberOfVisits</td><td colspan=\"1\">Specifies the number of visits for which data has to be displayed.</td><td colspan=\"1\">N</td></tr></tbody></table><h2>Graph With Reference Data Control</h2><p>Graph Control Config becomes Chart With Reference Data Config with the addition of the&nbsp;<strong>'referenceData'</strong>&nbsp;in the config section referring to the .csv file as shown below</p><h2>Screenshot</h2><p><strong><ac:image ac:width=\"460\"><ri:attachment ri:filename=\"growth chart.png\" ri:version-at-save=\"1\" /></ac:image><br /></strong></p><h2>Configuration</h2><h3>Sample Config</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"ce6d8fe4-ae3c-4b08-b25c-e03ff325d7b8\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"growthChart\": {\n   \"type\": \"observationGraph\",\n   \"title\": \"Growth Chart\",\n   \"config\": {\n      \"yAxisConcepts\": [ \"Weight\" ],\n      \"referenceData\": \"growthChartReference.csv\",\n      \"numberOfVisits\": 20\n  }\n}]]></ac:plain-text-body></ac:structured-macro><h3>Key Field Table</h3><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th>Key</th><th>Info</th><th colspan=\"1\">Mandatory</th></tr><tr><td colspan=\"1\"><p><span style=\"color: rgb(0,0,0);\">yAxisConcepts</span></p></td><td colspan=\"1\"><p><span style=\"color: rgb(0,0,0);\">It can be any Numeric Concept name.<br />It has to be a single value.<br />It can't be multiple values or empty. (Required)</span></p></td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\"><p><span style=\"color: rgb(0,0,0);\">referenceData</span></p></td><td colspan=\"1\"><p><span style=\"color: rgb(0,0,0);\">It would be name of the csv file to be loaded.<br />The csv file has to be in the same folder as this config file. (Required**)<br />**If the referenceData is not mentioned, the config will become Graph Control Config. Then, Graph Control Config specifications are applicable.</span></p></td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\"><p><span style=\"color: rgb(0,0,0);\">&nbsp;numberOfVisits</span></p></td><td colspan=\"1\"><p><span style=\"color: rgb(0,0,0);\">It is the number of visits for which data has to be displayed.</span></p></td><td colspan=\"1\">N</td></tr></tbody></table><h3>Sample Reference Data CSV file</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"eee0084c-8b34-42cf-8c97-f6d8cbafdbd7\"><ac:parameter ac:name=\"language\">xml</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[Gender, Age, Ref1, Ref2\nM, 1, 10.5, 12.5\nM, 2, 20.5, 22.5\nF, 1, 9.5, 12\nF, 2, 19.5, 22]]></ac:plain-text-body></ac:structured-macro><p>In the example above:</p><ul><li>The first row is the header row.</li><li>Age, Gender column name should always have 'Age', 'Gender' labels.</li><li>Age, Gender columns are mandatory.</li><li>Age is always assumed to be months (you can give decimals to represent days).</li><li>Other columns will correspond to the each reference line.</li></ul><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"9e21e6bc-65b4-4f30-a341-0dc091c2e859\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\"><ac:parameter ac:name=\"titleColor\">White</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Display Controls</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"21cd7308-eaf1-4edd-8253-24f7f9e31fd8\"><ac:parameter ac:name=\"all\">true</ac:parameter><ac:parameter ac:name=\"page\"><ac:link><ri:page ri:content-title=\"Tracking Controls\" ri:version-at-save=\"1\" /></ac:link></ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/114228167"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"GraphControl-Purpose\">Purpose</h2><p>Observation Graph Control is configured to display the observations values as a graph against observation date time, age or any other concept for configured number of visits.<br/></p><h2 id=\"GraphControl-Screenshot\">Screenshot</h2><p><em><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114228167/Screen%20Shot%202016-05-25%20at%204.17.29%20PM.png?version=1&amp;modificationDate=1484808606019&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=335\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114228167/Screen%20Shot%202016-05-25%20at%204.17.29%20PM.png?version=1&amp;modificationDate=1484808606019&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"114228125\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-05-25 at 4.17.29 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114228167\" data-linked-resource-container-version=\"5\" data-media-id=\"4800307a-d62d-4807-866e-2d7afc844a02\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114228167/Screen%20Shot%202016-05-25%20at%204.17.29%20PM.png?version=1&amp;modificationDate=1484808606019&amp;cacheVersion=1&amp;api=v2&amp;width=1200&amp;height=670 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114228167/Screen%20Shot%202016-05-25%20at%204.17.29%20PM.png?version=1&amp;modificationDate=1484808606019&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=335 1x\"></span></em></p><h2 id=\"GraphControl-Configuration\">Configuration</h2><h3 id=\"GraphControl-SampleConfig\">Sample Config</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"df6698b4-6c03-419b-8396-5ebe899c274a\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Add to clinical/dashboard.json for it to appear on the patient dashboard</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;temperature&quot;: {\n &quot;type&quot;: &quot;observationGraph&quot;,\n &quot;title&quot;: &quot;Temperature&quot;,\n &quot;config&quot;: {\n    &quot;yAxisConcepts&quot;: [&quot;Temperature&quot;],\n    &quot;xAxisConcept&quot; : &quot;observationDateTime&quot;,\n    &quot;numberOfVisits&quot;: 3\n  }\n}</pre>\n</div></div><h3 id=\"GraphControl-KeyFieldTable\">Key Field Table</h3><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class=\"confluenceTh\">Key</th><th class=\"confluenceTh\">Info</th><th colspan=\"1\" class=\"confluenceTh\">Mandatory</th></tr><tr><td class=\"confluenceTd\">type</td><td class=\"confluenceTd\">The name/id for the control that needs to be picked from the code.</td><td colspan=\"1\" class=\"confluenceTd\">Y (in Visit Page)</td></tr><tr><td class=\"confluenceTd\">title</td><td class=\"confluenceTd\">Indicates the title that will be displayed on the dashboard/visit page for the section.</td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td class=\"confluenceTd\">yAxisConcepts</td><td class=\"confluenceTd\">Array of concepts for which observations need to be plotted on the graph.</td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">xAxisConcepts</td><td colspan=\"1\" class=\"confluenceTd\">Concept on X Axis (observationDateTime, age or any concept).</td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">numberOfVisits</td><td colspan=\"1\" class=\"confluenceTd\">Specifies the number of visits for which data has to be displayed.</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr></tbody></table></div><h2 id=\"GraphControl-GraphWithReferenceDataControl\">Graph With Reference Data Control</h2><p>Graph Control Config becomes Chart With Reference Data Config with the addition of the <strong>'referenceData'</strong> in the config section referring to the .csv file as shown below</p><h2 id=\"GraphControl-Screenshot.1\">Screenshot</h2><p><strong><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"460\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114228167/growth%20chart.png?version=1&amp;modificationDate=1484808605513&amp;cacheVersion=1&amp;api=v2&amp;width=460&amp;height=256\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114228167/growth%20chart.png?version=1&amp;modificationDate=1484808605513&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"114228144\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"growth chart.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114228167\" data-linked-resource-container-version=\"5\" data-media-id=\"e864fb14-b41c-4089-a1a3-4973efc31ae1\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114228167/growth%20chart.png?version=1&amp;modificationDate=1484808605513&amp;cacheVersion=1&amp;api=v2&amp;width=920&amp;height=512 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114228167/growth%20chart.png?version=1&amp;modificationDate=1484808605513&amp;cacheVersion=1&amp;api=v2&amp;width=460&amp;height=256 1x\"></span><br/></strong></p><h2 id=\"GraphControl-Configuration.1\">Configuration</h2><h3 id=\"GraphControl-SampleConfig.1\">Sample Config</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ce6d8fe4-ae3c-4b08-b25c-e03ff325d7b8\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;growthChart&quot;: {\n   &quot;type&quot;: &quot;observationGraph&quot;,\n   &quot;title&quot;: &quot;Growth Chart&quot;,\n   &quot;config&quot;: {\n      &quot;yAxisConcepts&quot;: [ &quot;Weight&quot; ],\n      &quot;referenceData&quot;: &quot;growthChartReference.csv&quot;,\n      &quot;numberOfVisits&quot;: 20\n  }\n}</pre>\n</div></div><h3 id=\"GraphControl-KeyFieldTable.1\">Key Field Table</h3><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class=\"confluenceTh\">Key</th><th class=\"confluenceTh\">Info</th><th colspan=\"1\" class=\"confluenceTh\">Mandatory</th></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><p><span class=\"legacy-color-text-default\">yAxisConcepts</span></p></td><td colspan=\"1\" class=\"confluenceTd\"><p><span class=\"legacy-color-text-default\">It can be any Numeric Concept name.<br/>It has to be a single value.<br/>It can't be multiple values or empty. (Required)</span></p></td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><p><span class=\"legacy-color-text-default\">referenceData</span></p></td><td colspan=\"1\" class=\"confluenceTd\"><p><span class=\"legacy-color-text-default\">It would be name of the csv file to be loaded.<br/>The csv file has to be in the same folder as this config file. (Required**)<br/>**If the referenceData is not mentioned, the config will become Graph Control Config. Then, Graph Control Config specifications are applicable.</span></p></td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><p><span class=\"legacy-color-text-default\"> numberOfVisits</span></p></td><td colspan=\"1\" class=\"confluenceTd\"><p><span class=\"legacy-color-text-default\">It is the number of visits for which data has to be displayed.</span></p></td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr></tbody></table></div><h3 id=\"GraphControl-SampleReferenceDataCSVfile\">Sample Reference Data CSV file</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"eee0084c-8b34-42cf-8c97-f6d8cbafdbd7\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: xml; gutter: true; theme: Confluence\" data-theme=\"Confluence\">Gender, Age, Ref1, Ref2\nM, 1, 10.5, 12.5\nM, 2, 20.5, 22.5\nF, 1, 9.5, 12\nF, 2, 19.5, 22</pre>\n</div></div><p>In the example above:</p><ul><li>The first row is the header row.</li><li>Age, Gender column name should always have 'Age', 'Gender' labels.</li><li>Age, Gender columns are mandatory.</li><li>Age is always assumed to be months (you can give decimals to represent days).</li><li>Other columns will correspond to the each reference line.</li></ul><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9e21e6bc-65b4-4f30-a341-0dc091c2e859\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: White;\"><b>Related Display Controls</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"21cd7308-eaf1-4edd-8253-24f7f9e31fd8\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/100139061/Programs+Display+Control\" data-linked-resource-id=\"100139061\" data-linked-resource-version=\"9\" data-linked-resource-type=\"page\">Programs Display Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114227756/Flowsheet+Control\" data-linked-resource-id=\"114227756\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Flowsheet Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114228167/Graph+Control\" data-linked-resource-id=\"114228167\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Graph Control</a></li></ul><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/114228167"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/114228167/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114228167/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/114228167/child",
+    "restrictions": "/rest/api/content/114228167/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/114228167/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=114228167",
+    "webui": "/spaces/BAH/pages/114228167/Graph+Control",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/114228167",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114228167",
+    "tinyui": "/x/x-vOBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

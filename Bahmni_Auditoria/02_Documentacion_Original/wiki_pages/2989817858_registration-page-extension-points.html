@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Registration Page Extension Points</title></head><body><h1>Registration Page Extension Points</h1><h2 id="RegistrationPageExtensionPoints-Description">Description</h2><p>Bahmni Registration module provides an extension for linking/verifying other identifiers for patients. Implementers can plugin in their custom requirements leveraging this extension. </p><h2 id="RegistrationPageExtensionPoints-Extensions">Extensions</h2><p>Implementers are expected to leverage the extension point “<code>org.bahmni.registration.identifier</code>&quot;. As of now, only “link” type are supported. This means that an implementer can specify an URL to a <br/>sub-system/UI and Bahmni will launch in an IFRAME. It is expected that such an extension will return a basic FHIR patient resource (JSON) and send that as a message to the parent window. </p><p /><h4 id="RegistrationPageExtensionPoints-DefiningExtensionspointsonRegistrationpage:">Defining Extensions points on Registration page:</h4><p>File to be updated: openmrs/apps/registration/extension.json</p><div class="table-wrap"><table data-layout="default" data-local-id="e15f28e3-ab14-434a-a42e-0a3f560eba01" class="confluenceTable"><colgroup><col style="width: 680.0px;"/></colgroup><tbody><tr><td class="confluenceTd"><p>Example of adding an Extension</p></td></tr><tr><td class="confluenceTd"><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="59abee44-04fa-400d-8735-50d91d1ae46a" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">&quot;IdentifierLookup&quot;:{
+        &quot;id&quot;: &quot;org.bahmni.registration.identifier.your_identifier_id&quot;,
+        &quot;extensionPointId&quot;: &quot;org.bahmni.registration.identifier&quot;,
+        &quot;type&quot;: &quot;link&quot;,
+        &quot;src&quot; : &quot;/sample/index.html&quot;,
+        &quot;extensionParams&quot;: {
+            &quot;identifierType&quot;: [
+                &quot;sampleIdentifier1&quot;,
+                &quot;sampleIdentifier2&quot;
+            ],
+            &quot;nonEditable&quot;: [&quot;givenName&quot;,&quot;middleName&quot;,&quot;familyName&quot;,&quot;gender&quot;,&quot;birthDate&quot;,&quot;age&quot;],
+            &quot;linkDisplay&quot;: &quot;Verify SampleIdentifier&quot;,
+            &quot;addressMap&quot;: {
+                &quot;city&quot;: &quot;cityVillage&quot;,
+                &quot;state&quot;: &quot;stateProvince&quot;,
+                &quot;postalCode&quot;: &quot;postalCode&quot;,
+                &quot;line&quot;: [&quot;address1&quot;]
+            }
+            &quot;requiredPrivilege&quot;: &quot;app:registration&quot;
+        }</pre>
+</div></div></td></tr></tbody></table></div><p /><div class="table-wrap"><table data-layout="default" data-local-id="5b915d4a-d85f-49b9-b8b2-71205bf3710c" class="confluenceTable"><colgroup><col style="width: 259.0px;"/><col style="width: 400.0px;"/><col style="width: 100.0px;"/></colgroup><tbody><tr><th class="confluenceTh"><p>key</p></th><th class="confluenceTh"><p>description</p></th><th class="confluenceTh"><p>Mandatory</p></th></tr><tr><td class="confluenceTd"><p>id</p></td><td class="confluenceTd"><p>Unique identifier for extension</p></td><td class="confluenceTd"><p>Y</p></td></tr><tr><td class="confluenceTd"><p>extensionPointId</p></td><td class="confluenceTd"><p>&quot;<code>org.bahmni.registration.identifier</code>&quot;</p></td><td class="confluenceTd"><p>Y</p></td></tr><tr><td class="confluenceTd"><p>type</p></td><td class="confluenceTd"><p>link</p></td><td class="confluenceTd"><p>Y</p></td></tr><tr><td class="confluenceTd"><p>src</p></td><td class="confluenceTd"><p>The source to be loaded on click of defined button</p></td><td class="confluenceTd"><p>Y</p></td></tr><tr><td class="confluenceTd"><p>extensionParams</p></td><td class="confluenceTd"><p>Contains additional parameters which include extra identifier’s name, button name and so on</p></td><td class="confluenceTd"><p>Y</p></td></tr><tr><td class="confluenceTd"><p>extensionParams.identifierType</p></td><td class="confluenceTd"><p>one or more identifier type name. Note, if different identifier types require different source integration, define separate extensions. </p></td><td class="confluenceTd"><p>Y</p></td></tr><tr><td class="confluenceTd"><p>extensionParams.nonEditable</p></td><td class="confluenceTd"><p>defines attributes which needs to be non-editable after extra Identifier linkage</p></td><td class="confluenceTd"><p>N</p></td></tr><tr><td class="confluenceTd"><p>extensionParams.linkDisplay</p></td><td class="confluenceTd"><p>defines button display name</p></td><td class="confluenceTd"><p>Y</p></td></tr><tr><td class="confluenceTd"><p>extensionParams.addressMap</p></td><td class="confluenceTd"><p>address map that maps the address FHIR object (returned from the link to registration page)  to field in registration page</p></td><td class="confluenceTd"><p>N</p></td></tr></tbody></table></div><p /><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/attachments/2989817858/Screenshot%202022-03-31%20at%201.28.36%20PM.png?version=1&amp;modificationDate=1648713875752&amp;cacheVersion=1&amp;api=v2" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/2989817858/Screenshot%202022-03-31%20at%201.28.36%20PM.png?version=1&amp;modificationDate=1648713875752&amp;cacheVersion=1&amp;api=v2" data-height="152" data-width="710" data-unresolved-comment-count="0" data-linked-resource-id="2990931973" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screenshot 2022-03-31 at 1.28.36 PM.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="2989817858" data-linked-resource-container-version="12" data-media-id="a78c7a3a-9e33-4be9-afa5-59c40fa01bbd" data-media-type="file"></span><p /><h2 id="RegistrationPageExtensionPoints-Assumptions"><strong>Assumptions</strong></h2><ol start="1"><li><p>The link specifies the path to the UI that needs to be rendered on click of the link identifier button.</p></li><li><p>The external link returns an FHIR patient object to be mapped to Registration Page fields.</p></li></ol><p /><p>The returned payload is expected as a simple FHIR Patient resource. </p><p>Note: A complete patient resource is not required - only fields like identifier(s), name, birthdate, gender and address, those you want to be updated with a value from FHIR patient in registration page are expected. </p><p>If you provide patientUuid in FHIR patient id field, it will redirect to that patientUuid dashboard and update the respective details passed as a part of FHIR object. If id not defined, it will redirect and update details in the create new patient dashboard.</p><p>For example: consider the following FHIR Patient object</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="0f24c8a1-27aa-4605-9aae-e72bd0ebdad0" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">{
+  id: 'patientUuid',
+  identifiers: [
+    {
+      type: {
+        text: &quot;identifierType1&quot;
+      },
+      value: &quot;hina@xyz&quot;
+    },
+    {
+      type: {
+        text: &quot;identifierType2&quot;
+      },
+      value: &quot;57-0517-6745&quot;
+    }
+  ],
+  names: [
+    {
+      familyName: 'Patel',
+      givenName: [
+        'Hina',
+        ''
+      ],
+      use: ''
+    }
+  ],
+  gender: &quot;F&quot;,
+  birthDate: &quot;2000-10-21&quot;,
+  isBirthDateEstimated: false
+  contactPoint: [
+    {
+      system: 'phone',
+      value: '+919800083232'
+    }
+  ],
+  address: [
+    {
+      city: &quot;&quot;,
+      country: &quot;IN&quot;,
+      district: &quot;Bhopal&quot;,
+      line: [
+        'A-12, Dholakpur'
+      ],
+      postalCode: &quot;212021&quot;,
+      state: &quot;Madhya Pradesh&quot;,
+      
+    }
+  ] 
+}</pre>
+</div></div><p /><p /></body></html>

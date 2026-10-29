@@ -1,0 +1,32 @@
+{
+  "patient": {
+    "person": {
+      "names": [
+        {
+          "givenName": "#{givenName}",
+          "familyName": "demo",
+          "display": "#{givenName} perf",
+          "preferred": false
+        }
+      ],
+      "addresses": [
+        {}
+      ],
+      "birthdate": "2010-08-25T10:35:54.772+0530",
+      "gender": "F",
+      "birthtime": null,
+      "deathDate": null,
+      "causeOfDeath": ""
+    },
+    "identifiers": [
+      {
+        "identifierSourceUuid": "#{identifier_sources_id}",
+        "identifierPrefix": "ABC",
+        "identifierType": "#{identifier_type}",
+        "preferred": true,
+        "voided": false
+      }
+    ]
+  },
+  "relationships": []
+}

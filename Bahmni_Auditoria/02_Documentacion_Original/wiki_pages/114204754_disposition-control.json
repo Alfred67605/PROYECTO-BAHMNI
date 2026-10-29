@@ -1,0 +1,171 @@
+{
+  "id": "114204754",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/114204754",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE0MjA0NzU0",
+  "status": "current",
+  "title": "Disposition Control",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2017-01-17T13:28:20.465Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114204754/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "6202c5baa29402006878ba30",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Riya Kumari",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/6202c5baa29402006878ba30",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Riya Kumari",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=6202c5baa29402006878ba30"
+      }
+    },
+    "when": "2023-11-30T05:18:28.459Z",
+    "friendlyWhen": "Nov 30, 2023",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "syncRev": "0.S-hcaYzRrIvbTpxjNMHJng.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$114204754.33",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/114204754"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114204754/version/6"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose</h2><ac:structured-macro ac:name=\"excerpt\" ac:schema-version=\"1\" ac:macro-id=\"638aebc5-f96c-44fe-9484-b0037d832b70\"><ac:parameter ac:name=\"atlassian-macro-output-type\">INLINE</ac:parameter><ac:rich-text-body><p class=\"p1\"><span class=\"s1\">Disposition Control is used to list the actions/instructions given to that patient by&nbsp;the doctors. The instructions are like&nbsp;</span><span class=\"s2\">&quot;Admit to the hospital&quot;, &quot;Discharge from the hospital&quot;, &quot;Transfer to a different ward/bed&rdquo;..etc</span></p></ac:rich-text-body></ac:structured-macro><h2>Screenshot</h2><p><strong><ac:image ac:width=\"600\"><ri:attachment ri:filename=\"Screen Shot 2016-05-25 at 4.12.51 PM.png\" ri:version-at-save=\"1\" /></ac:image></strong></p><h2>Configuration</h2><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"1674f204-6f9f-424c-ae0c-69e001de4690\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Add to clinical/dashboard.json for it to appear on the patient dashboard</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"disposition\": {\n \"title\": \"Disposition\",\n \"type\":\"disposition\",\n \"numberOfVisits\": 2,\n \"hideEmptyDisplayControl\": false\n}]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"9e21e6bc-65b4-4f30-a341-0dc091c2e859\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\"><ac:parameter ac:name=\"titleColor\">White</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Display Controls</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"51bfffa3-490f-4d94-b621-d03dad0ab1a3\"><ac:parameter ac:name=\"all\">true</ac:parameter><ac:parameter ac:name=\"page\"><ac:link><ri:page ri:content-title=\"In-Patient Department (IPD) Controls\" ri:version-at-save=\"1\" /></ac:link></ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/114204754"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"DispositionControl-Purpose\">Purpose</h2><p><p class=\"p1 conf-macro output-inline\" data-hasbody=\"true\" data-macro-id=\"638aebc5-f96c-44fe-9484-b0037d832b70\" data-macro-name=\"excerpt\"><span class=\"s1\">Disposition Control is used to list the actions/instructions given to that patient by the doctors. The instructions are like </span><span class=\"s2\">&quot;Admit to the hospital&quot;, &quot;Discharge from the hospital&quot;, &quot;Transfer to a different ward/bed”..etc</span></p></p><h2 id=\"DispositionControl-Screenshot\">Screenshot</h2><p><strong><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114204754/Screen%20Shot%202016-05-25%20at%204.12.51%20PM.png?version=1&amp;modificationDate=1484659700487&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=88\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114204754/Screen%20Shot%202016-05-25%20at%204.12.51%20PM.png?version=1&amp;modificationDate=1484659700487&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"114204743\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-05-25 at 4.12.51 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114204754\" data-linked-resource-container-version=\"6\" data-media-id=\"965b5a7c-f9eb-440c-8989-1dd2b5c71db9\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114204754/Screen%20Shot%202016-05-25%20at%204.12.51%20PM.png?version=1&amp;modificationDate=1484659700487&amp;cacheVersion=1&amp;api=v2&amp;width=1200&amp;height=176 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114204754/Screen%20Shot%202016-05-25%20at%204.12.51%20PM.png?version=1&amp;modificationDate=1484659700487&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=88 1x\"></span></strong></p><h2 id=\"DispositionControl-Configuration\">Configuration</h2><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"1674f204-6f9f-424c-ae0c-69e001de4690\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Add to clinical/dashboard.json for it to appear on the patient dashboard</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;disposition&quot;: {\n &quot;title&quot;: &quot;Disposition&quot;,\n &quot;type&quot;:&quot;disposition&quot;,\n &quot;numberOfVisits&quot;: 2,\n &quot;hideEmptyDisplayControl&quot;: false\n}</pre>\n</div></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9e21e6bc-65b4-4f30-a341-0dc091c2e859\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: White;\"><b>Related Display Controls</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"51bfffa3-490f-4d94-b621-d03dad0ab1a3\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/114204313/Admission+Details+Control\" data-linked-resource-id=\"114204313\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Admission Details Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114204754/Disposition+Control\" data-linked-resource-id=\"114204754\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Disposition Control</a></li></ul><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/114204754"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/114204754/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114204754/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/114204754/child",
+    "restrictions": "/rest/api/content/114204754/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/114204754/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=114204754",
+    "webui": "/spaces/BAH/pages/114204754/Disposition+Control",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/114204754",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114204754",
+    "tinyui": "/x/UqDOBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

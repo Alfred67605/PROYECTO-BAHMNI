@@ -1,0 +1,171 @@
+{
+  "id": "100565092",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/100565092",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTAwNTY1MDky",
+  "status": "current",
+  "title": "Form Builder",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2016-11-22T17:35:41.395Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/100565092/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2023-09-29T05:03:45.700Z",
+    "friendlyWhen": "Sept 29, 2023",
+    "message": "",
+    "number": 26,
+    "minorEdit": false,
+    "syncRev": "0.OvyMBNQeXiRmxIh5BlJO-Q.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$100565092.115",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/100565092"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/100565092/version/26"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"f0d24cf6-a001-446e-8938-587a798ef55e\"><ac:parameter ac:name=\"title\">Forms 2.0</ac:parameter><ac:rich-text-body><p>The sections below are only relevant for Forms 2.0, available since v0.90</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><h2>Purpose and Benefits</h2><p><span class=\"il\">Form</span>&nbsp;<span class=\"il\">builder</span>&nbsp;is part of the Implementer Interface toolset and can be used by the implementers to easily design&nbsp;<span class=\"il\">forms</span>&nbsp;via an interface. This tool seeks to simplify the current process of creating a JSON configuration to control the behavior of concepts could be handled through the&nbsp;<span class=\"il\">form</span>&nbsp;<span class=\"il\">builder</span>.</p><p><strong>NOTE:</strong>The Form Builder Control Panel Page shows 50 forms by default. To increase the limit, Go to OpenMRS&gt;Advanced Settings and change the value of `webservices.rest.maxResultsDefault` to an appropriate value.Keep in mind that this will also affect areas such as number of patients retrieved in the registration page,number of active patients etc</p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"02926166-ff18-449c-a136-d88ab5ebc88f\"><ac:rich-text-body><p>Support For Observation Data Capture in Form Builder</p><ul><li><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/115085295/Add+Controls#https://bahmni.atlassian.net/wiki/spaces/BAH/pages/115085295/Add+Controls#AddControls-SupportedControls\">Supported Controls</a>&nbsp;</li><li><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/115085295/Add+Controls#AddControls-ControlsandbehaviournotyetsupportedinForms2.0\">Not yet supported Controls</a></li></ul></ac:rich-text-body></ac:structured-macro><h2>Video Overview of Form Builder</h2><p>Please also checkout these videos on <strong>Form Builder 2.0</strong>:</p><ol class=\"ak-ol\"><li><p>Part1: <a href=\"https://www.youtube.com/watch?v=WPOdBFg5Df0\">https://www.youtube.com/watch?v=WPOdBFg5Df0</a></p></li><li><p>Part2: <a href=\"https://www.youtube.com/watch?v=iW35PxG1Iwc\">https://www.youtube.com/watch?v=iW35PxG1Iwc</a></p></li><li><p>Part3: <a href=\"https://www.youtube.com/watch?v=j4kEvs-iSgk\">https://www.youtube.com/watch?v=j4kEvs-iSgk</a></p></li><li>New Features:&nbsp;<a href=\"https://www.youtube.com/watch?v=hRuIQQX7R8o\">https://www.youtube.com/watch?v=hRuIQQX7R8o</a></li></ol><h2><ac:image ac:title=\"Form Builder v2.0\" ac:alt=\"Form Builder v2.0\" ac:height=\"250\"><ri:attachment ri:filename=\"image2023-9-29_10-33-20.png\" ri:version-at-save=\"1\" /></ac:image></h2><h2>Sections</h2><p>Please refer to these sections to use Form Builder</p><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"be65a977-d824-4d49-9045-8267ecd4c308\"><ac:parameter ac:name=\"all\">true</ac:parameter></ac:structured-macro></p><p><em><br /></em></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"c3d94ba2-f500-405f-8f14-ae8d6bcb7293\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"6edbaf1d-ba21-455a-8a7f-11e55df98e35\" /></p></ac:rich-text-body></ac:structured-macro><p><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Implementer's Interface\" ri:version-at-save=\"4\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/100565092"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f0d24cf6-a001-446e-8938-587a798ef55e\" data-macro-name=\"info\"><p class=\"title\">Forms 2.0</p><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>The sections below are only relevant for Forms 2.0, available since v0.90</p></div></div><h2 id=\"FormBuilder-PurposeandBenefits\">Purpose and Benefits</h2><p><span class=\"il\">Form</span> <span class=\"il\">builder</span> is part of the Implementer Interface toolset and can be used by the implementers to easily design <span class=\"il\">forms</span> via an interface. This tool seeks to simplify the current process of creating a JSON configuration to control the behavior of concepts could be handled through the <span class=\"il\">form</span> <span class=\"il\">builder</span>.</p><p><strong>NOTE:</strong>The Form Builder Control Panel Page shows 50 forms by default. To increase the limit, Go to OpenMRS&gt;Advanced Settings and change the value of `webservices.rest.maxResultsDefault` to an appropriate value.Keep in mind that this will also affect areas such as number of patients retrieved in the registration page,number of active patients etc</p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"02926166-ff18-449c-a136-d88ab5ebc88f\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Support For Observation Data Capture in Form Builder</p><ul><li><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/115085295/Add+Controls#https://bahmni.atlassian.net/wiki/spaces/BAH/pages/115085295/Add+Controls#AddControls-SupportedControls\" rel=\"nofollow\">Supported Controls</a> </li><li><a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/115085295/Add+Controls#AddControls-ControlsandbehaviournotyetsupportedinForms2.0\" rel=\"nofollow\">Not yet supported Controls</a></li></ul></div></div><h2 id=\"FormBuilder-VideoOverviewofFormBuilder\">Video Overview of Form Builder</h2><p>Please also checkout these videos on <strong>Form Builder 2.0</strong>:</p><ol class=\"ak-ol\"><li><p>Part1: <a class=\"external-link\" href=\"https://www.youtube.com/watch?v=WPOdBFg5Df0\" rel=\"nofollow\">https://www.youtube.com/watch?v=WPOdBFg5Df0</a></p></li><li><p>Part2: <a class=\"external-link\" href=\"https://www.youtube.com/watch?v=iW35PxG1Iwc\" rel=\"nofollow\">https://www.youtube.com/watch?v=iW35PxG1Iwc</a></p></li><li><p>Part3: <a class=\"external-link\" href=\"https://www.youtube.com/watch?v=j4kEvs-iSgk\" rel=\"nofollow\">https://www.youtube.com/watch?v=j4kEvs-iSgk</a></p></li><li>New Features: <a class=\"external-link\" href=\"https://www.youtube.com/watch?v=hRuIQQX7R8o\" rel=\"nofollow\">https://www.youtube.com/watch?v=hRuIQQX7R8o</a></li></ol><h2 id=\"FormBuilder-\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" alt=\"Form Builder v2.0\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/100565092/image2023-9-29_10-33-20.png?version=1&amp;modificationDate=1695963802232&amp;cacheVersion=1&amp;api=v2&amp;width=503&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/100565092/image2023-9-29_10-33-20.png?version=1&amp;modificationDate=1695963802232&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3233939457\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2023-9-29_10-33-20.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"100565092\" data-linked-resource-container-version=\"26\" data-media-id=\"d18b2d14-76a2-4b7d-9100-0da6be2ea521\" data-media-type=\"file\" title=\"Form Builder v2.0\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/100565092/image2023-9-29_10-33-20.png?version=1&amp;modificationDate=1695963802232&amp;cacheVersion=1&amp;api=v2&amp;width=1006&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/100565092/image2023-9-29_10-33-20.png?version=1&amp;modificationDate=1695963802232&amp;cacheVersion=1&amp;api=v2&amp;width=503&amp;height=250 1x\"></span></h2><h2 id=\"FormBuilder-Sections\">Sections</h2><p>Please refer to these sections to use Form Builder</p><p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"be65a977-d824-4d49-9045-8267ecd4c308\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/115085295/Add+Controls\" data-linked-resource-id=\"115085295\" data-linked-resource-version=\"16\" data-linked-resource-type=\"page\">Add Controls</a></li><li><a href=\"/wiki/spaces/BAH/pages/115085335/Edit+a+Published+Form\" data-linked-resource-id=\"115085335\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Edit a Published Form</a></li><li><a href=\"/wiki/spaces/BAH/pages/115085378/Rename+a+Form\" data-linked-resource-id=\"115085378\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Rename a Form</a></li><li><a href=\"/wiki/spaces/BAH/pages/237338635/Form+Builder+Internationalization\" data-linked-resource-id=\"237338635\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Form Builder Internationalization</a></li><li><a href=\"/wiki/spaces/BAH/pages/239796253/Import+Export\" data-linked-resource-id=\"239796253\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Import &amp; Export</a></li><li><a href=\"/wiki/spaces/BAH/pages/237437004/Form+Conditions+Form+Events\" data-linked-resource-id=\"237437004\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Form Conditions / Form Events</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/2318893296/Single+editor+for+form+event+and+control+event\" data-linked-resource-id=\"2318893296\" data-linked-resource-version=\"1\" data-linked-resource-type=\"page\">Single editor for form event and control event</a></li><li><a href=\"/wiki/spaces/BAH/pages/2306539867/API+to+display+form+builder+forms+forms+2.0+for+a+patient+in+dashboard\" data-linked-resource-id=\"2306539867\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">API to display form builder forms(forms 2.0) for a patient in dashboard</a></li><li><a href=\"/wiki/spaces/BAH/pages/2318893278/Copy+the+translations+of+form+2.0+from+one+version+to+the+next+version+in+implementer-interface\" data-linked-resource-id=\"2318893278\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">Copy the translations of form (2.0) from one version to the next version in implementer-interface</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/2435710977/Preview+the+form2+form+before+publishing+in+Implementer+interface\" data-linked-resource-id=\"2435710977\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Preview the form2 form before publishing in Implementer interface</a></li></ul></p><p><em><br/></em></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c3d94ba2-f500-405f-8f14-ae8d6bcb7293\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"6edbaf1d-ba21-455a-8a7f-11e55df98e35\" data-macro-name=\"toc\"> </div><p> </p></div></div><p><br/></p><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/100565086/Implementer+s+Interface\" data-linked-resource-id=\"100565086\" data-linked-resource-version=\"4\" data-linked-resource-type=\"page\">Implementer's Interface</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/100565092"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/100565092/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/100565092/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 49546503
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/100565092/child",
+    "restrictions": "/rest/api/content/100565092/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/100565092/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=100565092",
+    "webui": "/spaces/BAH/pages/100565092/Form+Builder",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/100565092",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/100565092",
+    "tinyui": "/x/ZID_BQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

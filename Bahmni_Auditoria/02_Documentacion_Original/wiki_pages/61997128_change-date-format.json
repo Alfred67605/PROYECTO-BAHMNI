@@ -1,0 +1,172 @@
+{
+  "id": "61997128",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/61997128",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNjE5OTcxMjg=",
+  "status": "current",
+  "title": "Change Date Format",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:ed06cb59-334c-41cc-b7d5-fd56d0516e37",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "sudhamsh Kandukuri",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:ed06cb59-334c-41cc-b7d5-fd56d0516e37",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sudhamsh Kandukuri",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:ed06cb59-334c-41cc-b7d5-fd56d0516e37"
+      }
+    },
+    "createdDate": "2016-05-23T10:31:08.762Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/61997128/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "when": "2017-02-14T06:23:33.643Z",
+    "friendlyWhen": "Feb 14, 2017",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "syncRev": "0.PIIWS2DUV3FpCAhEetld9w.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$61997128.42",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/61997128"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/61997128/version/5"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose</h2><p>When you <em>select</em> dates in the Bahmni system, this uses the browser's native date picker.</p><p>For example using Google Chrome on a Mac set to the US locale it will look like this:</p><p><ac:image ac:thumbnail=\"true\" ac:height=\"150\"><ri:attachment ri:filename=\"image2016-5-23 5:27:37.png\" /></ac:image></p><p>The date format of this date picker is controlled by the user's operating system's Language/Region setting, and if you want to change this, you do so in your computer's operating system settings. (This cannot be controlled globally for all usage of the system, so If an administrator wants this to be consistent for all Bahmni users, it must be set on each individual computer at the implementation.)</p><h2>Changing the setting based on your operating system</h2><ul><li><h3><strong>Windows 7</strong></h3></li></ul><div><strong><br /></strong></div><div><strong><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong></strong><span style=\"line-height: 1.42857;\"><strong>Step 1:</strong> &nbsp;&nbsp;</span><span style=\"color: rgb(80,80,80);\">Open Region and Language by clicking the&nbsp;</span><span class=\"ui\" style=\"color: rgb(80,80,80);\">Start</span><span style=\"color: rgb(80,80,80);\">&nbsp;button&nbsp;</span><ac:image ac:class=\"embedObject\" ac:alt=\"Picture of the Start button\"><ri:url ri:value=\"http://res2.windows.microsoft.com/resbox/en/windows%207/main/4f6cbd09-148c-4dd8-b1f2-48f232a2fd33_818.jpg\" /></ac:image><span style=\"color: rgb(80,80,80);\">, clicking&nbsp;</span><strong style=\"line-height: 1.42857;\"><span class=\"ui\" style=\"color: rgb(80,80,80);\">Control Panel</span></strong><span style=\"color: rgb(80,80,80);\">, clicking&nbsp;</span><strong style=\"line-height: 1.42857;\"><span class=\"ui\" style=\"color: rgb(80,80,80);\">Clock, Language, and Region</span></strong><span style=\"color: rgb(80,80,80);\">, and then clicking&nbsp;</span><strong style=\"line-height: 1.42857;\"><span class=\"ui\" style=\"color: rgb(80,80,80);\">Region and Language</span></strong><span style=\"color: rgb(80,80,80);\">.</span><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<ac:image ac:height=\"250\"><ri:attachment ri:filename=\"Date format1.png\" /></ac:image></p><p><span style=\"color: rgb(80,80,80);\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><strong style=\"line-height: 1.42857;\">Step 2:</strong>&nbsp;<span style=\"color: rgb(80,80,80);\">Click the&nbsp;</span><strong style=\"line-height: 1.42857;\"><span class=\"ui\" style=\"color: rgb(80,80,80);\">Formats</span></strong><span style=\"color: rgb(80,80,80);\">&nbsp;tab, and then, in the&nbsp;</span><span class=\"ui\" style=\"color: rgb(80,80,80);\">Format</span><span style=\"color: rgb(80,80,80);\">&nbsp;list, select the locale to use for the display of the date, time, currency, and measurements.</span></p><p><span style=\"color: rgb(80,80,80);\"><br /></span></p><p><span style=\"color: rgb(80,80,80);\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<ac:image ac:height=\"250\"><ri:attachment ri:filename=\"Dateformat2.png\" /></ac:image><br /></span></p><p><strong style=\"line-height: 1.42857;\"><span style=\"color: rgb(0,0,0);\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Step 3:</span></strong><span style=\"color: rgb(0,0,0);\">&nbsp;<span style=\"color: rgb(80,80,80);\">Select the date and time formats that you want to use.</span></span></p></div><ul><li><h3><strong>Mac</strong></h3><ol><li><p>Choose <em>Apple menu &gt; System Preferences</em>, then click <em>Language &amp; Region</em>.<br /><br /></p></li><li><p>Choose a geographic region from the Region pop-up menu, to use the region&rsquo;s date, time, number, and currency formats.<br /><br /></p></li><li><p>To customize the formats or change the language used to display them, click Advanced, then set options.<br /><span>In the General pane, you can choose the language to use for showing dates, times, and numbers, and set formats for numbers, currency, and measurements.</span></p><p>In the Dates and Times panes, you can type in the Short, Medium, Long, and Full fields, and rearrange or delete elements. You can also drag new elements, such as Quarter or Milliseconds, into the fields. If you&rsquo;re not using a 24-hour clock, you can replace AM and PM with whatever you type in those fields.</p></li><li><p>Then you&rsquo;re done customizing formats, click OK.</p></li></ol></li></ul><div><p><br /></p><p><br /></p><p><br /></p></div><p><br /></p><p><br /></p></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"99b8b629-37db-4a58-adb1-4714e33f853d\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"6ebfc67a-7487-4e65-95bb-388c38c37ce3\" /></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/61997128"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\"><style>[data-colorid=e6yh6ggz2b]{color:#505050} html[data-color-mode=dark] [data-colorid=e6yh6ggz2b]{color:#afafaf}[data-colorid=iwcwrt1i6n]{color:#505050} html[data-color-mode=dark] [data-colorid=iwcwrt1i6n]{color:#afafaf}[data-colorid=gvlq99mx7w]{color:#505050} html[data-color-mode=dark] [data-colorid=gvlq99mx7w]{color:#afafaf}[data-colorid=hxch7hxnun]{color:#505050} html[data-color-mode=dark] [data-colorid=hxch7hxnun]{color:#afafaf}[data-colorid=h1ca1krquk]{color:#505050} html[data-color-mode=dark] [data-colorid=h1ca1krquk]{color:#afafaf}[data-colorid=g7x01gevqt]{color:#505050} html[data-color-mode=dark] [data-colorid=g7x01gevqt]{color:#afafaf}[data-colorid=ph9j1z49zl]{color:#505050} html[data-color-mode=dark] [data-colorid=ph9j1z49zl]{color:#afafaf}[data-colorid=dgl8vbi4xw]{color:#505050} html[data-color-mode=dark] [data-colorid=dgl8vbi4xw]{color:#afafaf}[data-colorid=zoc7yk74jd]{color:#505050} html[data-color-mode=dark] [data-colorid=zoc7yk74jd]{color:#afafaf}[data-colorid=fzgmsoks0s]{color:#505050} html[data-color-mode=dark] [data-colorid=fzgmsoks0s]{color:#afafaf}[data-colorid=rz1cs95gtz]{color:#505050} html[data-color-mode=dark] [data-colorid=rz1cs95gtz]{color:#afafaf}[data-colorid=rshce5urpl]{color:#505050} html[data-color-mode=dark] [data-colorid=rshce5urpl]{color:#afafaf}[data-colorid=csla8ot0nx]{color:#505050} html[data-color-mode=dark] [data-colorid=csla8ot0nx]{color:#afafaf}[data-colorid=tbsqnyp4qq]{color:#505050} html[data-color-mode=dark] [data-colorid=tbsqnyp4qq]{color:#afafaf}[data-colorid=ninkjb2qy7]{color:#505050} html[data-color-mode=dark] [data-colorid=ninkjb2qy7]{color:#afafaf}[data-colorid=biqiowh79n]{color:#505050} html[data-color-mode=dark] [data-colorid=biqiowh79n]{color:#afafaf}[data-colorid=afn1lajs7u]{color:#505050} html[data-color-mode=dark] [data-colorid=afn1lajs7u]{color:#afafaf}[data-colorid=at0iwt2pkk]{color:#505050} html[data-color-mode=dark] [data-colorid=at0iwt2pkk]{color:#afafaf}[data-colorid=bb696mqip4]{color:#505050} html[data-color-mode=dark] [data-colorid=bb696mqip4]{color:#afafaf}</style>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ChangeDateFormat-Purpose\">Purpose</h2><p>When you <em>select</em> dates in the Bahmni system, this uses the browser's native date picker.</p><p>For example using Google Chrome on a Mac set to the US locale it will look like this:</p><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-thumbnail\" height=\"150\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/61997128/image2016-5-23%205:27:37.png?version=1&amp;modificationDate=1464006458091&amp;cacheVersion=1&amp;api=v2&amp;width=188&amp;height=150\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/61997128/image2016-5-23%205:27:37.png?version=1&amp;modificationDate=1464006458091&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"61997135\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2016-5-23 5:27:37.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"61997128\" data-linked-resource-container-version=\"5\" data-media-id=\"6e16a76a-ce95-4a5b-8dd5-c36dc6b56de5\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/61997128/image2016-5-23%205:27:37.png?version=1&amp;modificationDate=1464006458091&amp;cacheVersion=1&amp;api=v2&amp;width=376&amp;height=300 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/61997128/image2016-5-23%205:27:37.png?version=1&amp;modificationDate=1464006458091&amp;cacheVersion=1&amp;api=v2&amp;width=188&amp;height=150 1x\" /></span></p><p>The date format of this date picker is controlled by the user's operating system's Language/Region setting, and if you want to change this, you do so in your computer's operating system settings. (This cannot be controlled globally for all usage of the system, so If an administrator wants this to be consistent for all Bahmni users, it must be set on each individual computer at the implementation.)</p><h2 id=\"ChangeDateFormat-Changingthesettingbasedonyouroperatingsystem\">Changing the setting based on your operating system</h2><ul><li><h3 id=\"ChangeDateFormat-Windows7\"><strong>Windows 7</strong></h3></li></ul><div><strong><br /></strong></div><div><strong><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong></strong><span style=\"line-height: 1.42857;\"><strong>Step 1:</strong> &nbsp;&nbsp;</span><span data-colorid=\"hxch7hxnun\">Open Region and Language by clicking the&nbsp;</span><span data-colorid=\"tbsqnyp4qq\" class=\"ui\">Start</span><span data-colorid=\"bb696mqip4\">&nbsp;button&nbsp;</span><span class=\"confluence-embedded-file-wrapper\"><img class=\"confluence-embedded-image embedObject confluence-external-resource\" alt=\"Picture of the Start button\" src=\"http://res2.windows.microsoft.com/resbox/en/windows%207/main/4f6cbd09-148c-4dd8-b1f2-48f232a2fd33_818.jpg\" data-image-src=\"http://res2.windows.microsoft.com/resbox/en/windows%207/main/4f6cbd09-148c-4dd8-b1f2-48f232a2fd33_818.jpg\" loading=\"lazy\" /></span><span data-colorid=\"at0iwt2pkk\">, clicking&nbsp;</span><strong style=\"line-height: 1.42857;\"><span data-colorid=\"ph9j1z49zl\" class=\"ui\">Control Panel</span></strong><span data-colorid=\"zoc7yk74jd\">, clicking&nbsp;</span><strong style=\"line-height: 1.42857;\"><span data-colorid=\"dgl8vbi4xw\" class=\"ui\">Clock, Language, and Region</span></strong><span data-colorid=\"h1ca1krquk\">, and then clicking&nbsp;</span><strong style=\"line-height: 1.42857;\"><span data-colorid=\"rz1cs95gtz\" class=\"ui\">Region and Language</span></strong><span data-colorid=\"ninkjb2qy7\">.</span><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/61997128/Date%20format1.png?version=1&amp;modificationDate=1463999468823&amp;cacheVersion=1&amp;api=v2&amp;width=254&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/61997128/Date%20format1.png?version=1&amp;modificationDate=1463999468823&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"61997126\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Date format1.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"61997128\" data-linked-resource-container-version=\"5\" data-media-id=\"81681957-362f-4ba7-9734-da8f244b3eb2\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/61997128/Date%20format1.png?version=1&amp;modificationDate=1463999468823&amp;cacheVersion=1&amp;api=v2&amp;width=424&amp;height=417 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/61997128/Date%20format1.png?version=1&amp;modificationDate=1463999468823&amp;cacheVersion=1&amp;api=v2&amp;width=254&amp;height=250 1x\" /></span></p><p><span data-colorid=\"fzgmsoks0s\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><strong style=\"line-height: 1.42857;\">Step 2:</strong>&nbsp;<span data-colorid=\"g7x01gevqt\">Click the&nbsp;</span><strong style=\"line-height: 1.42857;\"><span data-colorid=\"iwcwrt1i6n\" class=\"ui\">Formats</span></strong><span data-colorid=\"rshce5urpl\">&nbsp;tab, and then, in the&nbsp;</span><span data-colorid=\"e6yh6ggz2b\" class=\"ui\">Format</span><span data-colorid=\"gvlq99mx7w\">&nbsp;list, select the locale to use for the display of the date, time, currency, and measurements.</span></p><p><span data-colorid=\"afn1lajs7u\"><br /></span></p><p><span data-colorid=\"biqiowh79n\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/61997128/Dateformat2.png?version=1&amp;modificationDate=1463999468789&amp;cacheVersion=1&amp;api=v2&amp;width=215&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/61997128/Dateformat2.png?version=1&amp;modificationDate=1463999468789&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"61997127\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Dateformat2.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"61997128\" data-linked-resource-container-version=\"5\" data-media-id=\"4b5c2ceb-ba59-480e-9a4d-6248097c6f69\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/61997128/Dateformat2.png?version=1&amp;modificationDate=1463999468789&amp;cacheVersion=1&amp;api=v2&amp;width=430&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/61997128/Dateformat2.png?version=1&amp;modificationDate=1463999468789&amp;cacheVersion=1&amp;api=v2&amp;width=215&amp;height=250 1x\" /></span><br /></span></p><p><strong style=\"line-height: 1.42857;\"><span class=\"legacy-color-text-default\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Step 3:</span></strong><span class=\"legacy-color-text-default\">&nbsp;<span data-colorid=\"csla8ot0nx\">Select the date and time formats that you want to use.</span></span></p></div><ul><li><h3 id=\"ChangeDateFormat-Mac\"><strong>Mac</strong></h3><ol><li><p>Choose <em>Apple menu &gt; System Preferences</em>, then click <em>Language &amp; Region</em>.<br /><br /></p></li><li><p>Choose a geographic region from the Region pop-up menu, to use the region&rsquo;s date, time, number, and currency formats.<br /><br /></p></li><li><p>To customize the formats or change the language used to display them, click Advanced, then set options.<br /><span>In the General pane, you can choose the language to use for showing dates, times, and numbers, and set formats for numbers, currency, and measurements.</span></p><p>In the Dates and Times panes, you can type in the Short, Medium, Long, and Full fields, and rearrange or delete elements. You can also drag new elements, such as Quarter or Milliseconds, into the fields. If you&rsquo;re not using a 24-hour clock, you can replace AM and PM with whatever you type in those fields.</p></li><li><p>Then you&rsquo;re done customizing formats, click OK.</p></li></ol></li></ul><div><p><br /></p><p><br /></p><p><br /></p></div><p><br /></p><p><br /></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"99b8b629-37db-4a58-adb1-4714e33f853d\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"6ebfc67a-7487-4e65-95bb-388c38c37ce3\" data-macro-name=\"toc\"> </div><p> </p></div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/61997128"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/61997128/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/61997128/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/61997128/child",
+    "restrictions": "/rest/api/content/61997128/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/61997128/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=61997128",
+    "webui": "/spaces/BAH/pages/61997128/Change+Date+Format",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/61997128",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/61997128",
+    "tinyui": "/x/SACyAw",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

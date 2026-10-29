@@ -1,0 +1,172 @@
+{
+  "id": "116201081",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/116201081",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE2MjAxMDgx",
+  "status": "current",
+  "title": "Using Atomfeed Console",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "createdDate": "2017-04-19T07:54:49.329Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/116201081/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "when": "2017-04-19T08:05:50.976Z",
+    "friendlyWhen": "Apr 19, 2017",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.qkGsorGU-KFCV7U0guVO5g.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$116201081.43",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/116201081"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/116201081/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>About the Feature</h2><p>Atomfeed Console is&nbsp;useful when you are facing some sync issues with OpenMRS, OpenELIS, OpenERP, Pacs. Issues such as patients not getting created, orders not getting synced, pacs orders not getting synced etc.,</p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"a20b0b0e-18df-44b8-b702-8546e0684742\"><ac:rich-text-body><p>The application has been integrated with Bahmni since release 0.86.</p></ac:rich-text-body></ac:structured-macro><h2><span style=\"color: rgb(0,0,0);\">Used By</span></h2><p><span style=\"color: rgb(0,0,0);\">It is used by the Bahmni/hospital administrator.</span></p><p /><h2><span style=\"color: rgb(0,0,0);\">How is it Used?</span></h2><p>1.On the home page of Bahmni click on the icon for&nbsp;<strong>AtomFeed Console</strong><br /><strong><br /></strong></p><p><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"image2016-11-14 11:58:20.png\" ri:version-at-save=\"1\" /></ac:image></p><p><br /></p><p>&nbsp; 2. On clicking the icon you'll be taken to the application's page</p><p><br /></p><p><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"image2016-11-14 11:59:25.png\" ri:version-at-save=\"1\" /></ac:image></p><p><br /></p><p>3. For example, if we click on OpenMRS, we'll see the markers in a new page</p><p><br /></p><p><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"image2016-11-14 12:0:26.png\" ri:version-at-save=\"1\" /></ac:image></p><p>4. On clicking the&nbsp;<strong>View&nbsp;</strong>button, we can see all the failed events. On this page you can reset the retry count of the failed event.</p><p><br /></p><p><ac:image ac:align=\"center\" ac:width=\"700\"><ri:attachment ri:filename=\"image2016-11-14 12:1:12.png\" ri:version-at-save=\"1\" /></ac:image></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"6462b5e2-1d86-451d-a8c5-c39c2f99335c\"><ac:rich-text-body><p><strong><span style=\"color: rgb(0,0,0);\">Bahmni configuration for each implementation can vary drastically. As the screens and workflows are not constant across all installations of Bahmni, we have refrained from prescribing them. </span></strong></p><p><strong><span style=\"color: rgb(0,0,0);\">Please refer to the Guides below for further details about the feature.</span></strong></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Atomfeed Console\" ri:version-at-save=\"10\" /><ac:plain-text-link-body><![CDATA[Atomfeed - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"3fe3feef-06ea-4aac-b9a1-a6bbe83b0bec\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Implemnentation Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Implementer's Guide\" ri:version-at-save=\"55\" /><ac:plain-text-link-body><![CDATA[<Page Name> - Implementer's Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/116201081"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"UsingAtomfeedConsole-AbouttheFeature\">About the Feature</h2><p>Atomfeed Console is useful when you are facing some sync issues with OpenMRS, OpenELIS, OpenERP, Pacs. Issues such as patients not getting created, orders not getting synced, pacs orders not getting synced etc.,</p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a20b0b0e-18df-44b8-b702-8546e0684742\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>The application has been integrated with Bahmni since release 0.86.</p></div></div><h2 id=\"UsingAtomfeedConsole-UsedBy\"><span class=\"legacy-color-text-default\">Used By</span></h2><p><span class=\"legacy-color-text-default\">It is used by the Bahmni/hospital administrator.</span></p><p /><h2 id=\"UsingAtomfeedConsole-HowisitUsed?\"><span class=\"legacy-color-text-default\">How is it Used?</span></h2><p>1.On the home page of Bahmni click on the icon for <strong>AtomFeed Console</strong><br/><strong><br/></strong></p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/116201081/image2016-11-14%2011:58:20.png?version=1&amp;modificationDate=1492588673057&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=347\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/116201081/image2016-11-14%2011:58:20.png?version=1&amp;modificationDate=1492588673057&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"116201130\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2016-11-14 11:58:20.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"116201081\" data-linked-resource-container-version=\"1\" data-media-id=\"932abb55-4897-429a-95bf-2fb6adf6737e\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/116201081/image2016-11-14%2011:58:20.png?version=1&amp;modificationDate=1492588673057&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=694 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/116201081/image2016-11-14%2011:58:20.png?version=1&amp;modificationDate=1492588673057&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=347 1x\"></span></p><p><br/></p><p>  2. On clicking the icon you'll be taken to the application's page</p><p><br/></p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/116201081/image2016-11-14%2011:59:25.png?version=1&amp;modificationDate=1492588673602&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=326\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/116201081/image2016-11-14%2011:59:25.png?version=1&amp;modificationDate=1492588673602&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"116201134\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2016-11-14 11:59:25.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"116201081\" data-linked-resource-container-version=\"1\" data-media-id=\"c1ad1a45-d9fd-4359-8e90-0cc9d973499c\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/116201081/image2016-11-14%2011:59:25.png?version=1&amp;modificationDate=1492588673602&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=652 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/116201081/image2016-11-14%2011:59:25.png?version=1&amp;modificationDate=1492588673602&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=326 1x\"></span></p><p><br/></p><p>3. For example, if we click on OpenMRS, we'll see the markers in a new page</p><p><br/></p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/116201081/image2016-11-14%2012:0:26.png?version=1&amp;modificationDate=1492588673831&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=188\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/116201081/image2016-11-14%2012:0:26.png?version=1&amp;modificationDate=1492588673831&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"116201142\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2016-11-14 12:0:26.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"116201081\" data-linked-resource-container-version=\"1\" data-media-id=\"6df81d24-f423-4ff5-a260-1b6af711840f\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/116201081/image2016-11-14%2012:0:26.png?version=1&amp;modificationDate=1492588673831&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=376 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/116201081/image2016-11-14%2012:0:26.png?version=1&amp;modificationDate=1492588673831&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=188 1x\"></span></p><p>4. On clicking the <strong>View </strong>button, we can see all the failed events. On this page you can reset the retry count of the failed event.</p><p><br/></p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"700\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/116201081/image2016-11-14%2012:1:12.png?version=1&amp;modificationDate=1492588674059&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=362\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/116201081/image2016-11-14%2012:1:12.png?version=1&amp;modificationDate=1492588674059&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"116201148\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2016-11-14 12:1:12.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"116201081\" data-linked-resource-container-version=\"1\" data-media-id=\"a2e50695-9037-4b45-a1de-630966e1e4e3\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/116201081/image2016-11-14%2012:1:12.png?version=1&amp;modificationDate=1492588674059&amp;cacheVersion=1&amp;api=v2&amp;width=1400&amp;height=724 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/116201081/image2016-11-14%2012:1:12.png?version=1&amp;modificationDate=1492588674059&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=362 1x\"></span></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6462b5e2-1d86-451d-a8c5-c39c2f99335c\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong><span class=\"legacy-color-text-default\">Bahmni configuration for each implementation can vary drastically. As the screens and workflows are not constant across all installations of Bahmni, we have refrained from prescribing them. </span></strong></p><p><strong><span class=\"legacy-color-text-default\">Please refer to the Guides below for further details about the feature.</span></strong></p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"0add60ca-db50-405a-bfd6-90945fbc2b0b\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/98402414/Atomfeed+Console\" data-linked-resource-id=\"98402414\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Atomfeed - Feature Guide</a></span></p>\n</div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3fe3feef-06ea-4aac-b9a1-a6bbe83b0bec\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Implemnentation Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/2392073/Implementer+s+Guide\" data-linked-resource-id=\"2392073\" data-linked-resource-version=\"55\" data-linked-resource-type=\"page\">&lt;Page Name&gt; - Implementer's Guide</a></span></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/116201081"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/116201081/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/116201081/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 895156632
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/116201081/child",
+    "restrictions": "/rest/api/content/116201081/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/116201081/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=116201081",
+    "webui": "/spaces/BAH/pages/116201081/Using+Atomfeed+Console",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/116201081",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/116201081",
+    "tinyui": "/x/eRbtBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

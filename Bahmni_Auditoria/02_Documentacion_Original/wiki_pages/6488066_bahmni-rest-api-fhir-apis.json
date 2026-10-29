@@ -1,0 +1,171 @@
+{
+  "id": "6488066",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/6488066",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNjQ4ODA2Ng==",
+  "status": "current",
+  "title": "Bahmni REST API & FHIR APIs",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "createdDate": "2014-07-02T13:19:19.230Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/6488066/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5e004f695361330daae96d9c",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Siva Reddy (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e004f695361330daae96d9c",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Siva Reddy Pathuri (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e004f695361330daae96d9c"
+      }
+    },
+    "when": "2023-08-25T04:30:51.691Z",
+    "friendlyWhen": "Aug 25, 2023",
+    "message": "",
+    "number": 27,
+    "minorEdit": false,
+    "syncRev": "0.7BKFMBD-ZSdV_iZjMMupnA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$6488066.100",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/6488066"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/6488066/version/27"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"a88652ae-48e5-4d8d-b1dc-1ef1bf21c54e\"><ac:parameter ac:name=\"title\">FHIR Overview Video</ac:parameter><ac:rich-text-body><p>If you are new to FHIR and want to understand what is FHIR, profiles / implementation guides, FHIR Terminology Server, etc. watch this excellent 18min overview YouTube video:</p><p><ac:structured-macro ac:name=\"widget\" ac:schema-version=\"1\" ac:macro-id=\"ccbf6462-190d-453b-9d89-9149c8a8cb60\"><ac:parameter ac:name=\"url\"><ri:url ri:value=\"https://www.youtube.com/watch?v=OIt0GrCPu8k\" /></ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"26cb43ca-9a50-4499-acb5-a881e276d4e3\"><ac:rich-text-body><p>Bahmni (and OpenMRS) REST API swagger can be accessed on a running Bahmni instance on this url:&nbsp;</p><p><strong><code>https://&lt;bahmni-ip&gt;:&lt;port&gt;/openmrs/module/webservices/rest/apiDocs.htm</code></strong></p><p>For instance on the Bahmni Demo server, the URL will be: <a href=\"https://demo.mybahmni.org/openmrs/module/webservices/rest/apiDocs.htm\">REST API (Demo Server)</a>.&nbsp;</p><ol><li>Login to OpenMRS as Admin.</li><li>Click on Administration tab.</li><li>Click on &quot;API Documentation&quot; link in the &quot;<strong>REST Web Services</strong>&quot; group.&nbsp;</li></ol></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"3cc421ef-0354-4bba-a5ce-3360f2d80a0a\"><ac:rich-text-body><p>To see sample code on how to call Bahmni REST APIs, you can refer to the Bahmni Performance Tests written using Gatling (Scala DSL) here: <a href=\"https://github.com/Bahmni/performance-test/blob/old-framework/src/test/scala/org/bahmni/gatling/HttpRequests.scala\">https://github.com/Bahmni/performance-test/blob/old-framework/src/test/scala/org/bahmni/gatling/HttpRequests.scala</a></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"b848e8af-9893-4a67-8cde-93eeeab570d1\"><ac:parameter ac:name=\"title\">FHIR Api endpoints</ac:parameter><ac:rich-text-body><p>To see the FHIR endpoints exposed by Bahmni, see the underlying OpenMRS documentation. With Bahmni LIte v1.0, these endpoints are also available, since the latest version of Bahmni ships with OpenMRS FHIR module that exposes these endpoints.</p><ol><li>See FHIR endpoint documentation here:<ol><li><a href=\"https://fhir.openmrs.org/StructureDefinition-omrs-patient.html\">https://fhir.openmrs.org</a> (e.g. Patient Resource here: <a href=\"https://fhir.openmrs.org/Patient-example-openmrs-Patient.json.html\">https://fhir.openmrs.org/Patient-example-openmrs-Patient.json.html</a>)</li><li><a href=\"https://wiki.openmrs.org/display/projects/FHIR+Support+in+1.3.0\">https://wiki.openmrs.org/display/projects/FHIR+Support+in+1.3.0</a></li></ol></li><li><p class=\"auto-cursor-target\">You can try these URLs out on the <ac:link><ri:page ri:content-title=\"Bahmni Lite Environments\" ri:version-at-save=\"26\" /><ac:plain-text-link-body><![CDATA[Bahmni Lite environments]]></ac:plain-text-link-body></ac:link>. For instance this command on terminal will work:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"9c225f66-364b-4476-8757-e17b3b48938e\"><ac:parameter ac:name=\"language\">bash</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[# where last paremeter is UUID of the patient in Bahmni/OpenMRS\ncurl -u\"superman:Admin123\" -H \"Content-Type: application/json\" https://dev.lite.mybahmni.in/openmrs/ws/fhir2/R4/Patient/1457e050-06aa-4b9e-99fc-342d79e09b05]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></li><li><p class=\"auto-cursor-target\">&nbsp;If you want to write a client code (in Java) to call Bahmni/OpenMRS FHIR endpoints, you can use the <a href=\"https://hapifhir.io/hapi-fhir/docs/client/\">HAPI FHIR</a> library. See sample code written by&nbsp;<ac:link><ri:user ri:account-id=\"5e004f695361330daae96d9c\" /></ac:link>&nbsp;here: <a href=\"https://github.com/sivareddyp/fhir-client-demo/blob/main/src/main/java/org/bahmni/fhirclientdemo/service/FhirResourceService.java\">https://github.com/sivareddyp/fhir-client-demo/blob/main/src/main/java/org/bahmni/fhirclientdemo/service/FhirResourceService.java</a></p></li></ol></ac:rich-text-body></ac:structured-macro><p><br /></p><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"expand\" ac:schema-version=\"1\" ac:macro-id=\"4907af8a-4006-4cd4-ad7a-fb4630443843\"><ac:parameter ac:name=\"title\">Some Old Notes on Bahmn API Design (archive)...</ac:parameter><ac:rich-text-body><p><br /></p><p><span>Some ideas based on how our API would look like if it is designed them from its user&rsquo;s point of view and not from how the data is organised in the system. I haven&rsquo;t thought through everything in minutest details yet, but following is the outline.</span><br /><span>&nbsp;</span><br /><span><strong>Resources</strong></span><br /><span>Some of the following are sub-resources, i.e. they can be contained inside another resource. For example - treatments can be accessed directly or they get embedded inside an encounter.</span><br /><br /><span><u>Patient Profiles</u></span><br /><span><u>Visits</u></span><br /><span>This doesn't contain the encounters. It would be good to have references to encounters inside it. Is OpenMRS resource sufficient for this?</span><br /><span><u>Clinical Encounters</u></span><br /><span>It should de-normalize the visit dates on the encounter. Probably an href to the visit.</span><br /><span><u>Diagnoses</u></span><br /><span><u>Lab Investigations</u></span><br /><span>It contains lab order, sample accession and lab result. If we find this resource to be too big then we would break it down into further sub-resources. Right now we do not know how exactly it would pan out when we do the OpenELIS replace work.</span><br /><span><u>Procedures</u></span><br /><span><u>Observations</u></span><br /><span>It is only a subset of OpenMRS observations excluding procedures, lab-results, or anything which its own resource. This filtering should be done by the server endpoint. The API should also handle different classes differently making it easier for the consumer to consume it. The observation classes which Bahmni supports right now are &quot;Qualified with Duration&quot;, &quot;Qualified with Normality&quot;, &quot;Multiple Coded&quot; (better names are welcome).</span><br /><span><u>Treatments</u></span><br /><span>Drug order and treatment related observations. Also supports a special operation called &quot;active&quot;.</span><br /><span><u>Clinical Images</u></span><br /><span>A sub-resource and not an attribute because of performance reasons.</span><br /><span><u>Enrolled Programs<br /></u>We would be using programs for chronic patients. Contains href for encounters inside it.</span></p><p><span><strong>Meta Resources</strong> (aka reference data)</span><br /><span><u>Programs</u></span><br /><span><u>Visit Types</u></span><br /><span><u>Patient Attributes</u></span><br /><span><u>Lab Tests</u></span><br /><span><u>Lab Test Panels</u></span><br /><span><u>Lab Departments</u></span><br /><span><u>Diagnosis Types</u></span><br /><span><u>Reference Terms</u></span><br /><span><u>Observation Type Groups</u></span><br /><span>This exposes different aggregate observation classes (see observations resource) differently, making it easier for the consumer. I haven't been able to find any use case for which a concept would have to be directly exposed via an api.</span><br /><span><u>Procedure Types</u></span><br /><span><u>Locations</u></span><br /><span><u>Address Elements</u></span><br /><span>&nbsp;</span><br /><span><strong>Ways to break up patient data</strong></span><br /><span><u>Scope of resources</u></span><br /><span>Visit, Date, Encounter, All</span><br /><span><u>For</u>&nbsp;(Keywords that Bahmni could support. This would help in reducing unnecessary calls to find what their id is. The current list is below.)</span><br /><span>LastVisit</span><br /><span>LastVisitFoundIn</span><br /><span>CurrentEncounter</span><br /><span>CurrentVisit</span><br /><span>All (default)<br /></span>Initial (In Visit)<br />Most Recent (In Visit)<br /><span>&nbsp;</span><br /><span><strong>Internal or technical resources</strong>&nbsp;(haven&rsquo;t given much thought to these yet)</span><br /><span>SqlSearch</span><br /><span>Scheduled Tasks</span><br /><span>&nbsp;</span><br /><span><strong>Design</strong></span><br /><span>- The concepts which are always packaged with Bahmni should be referred by their name not by UUID. For example - consultation note, radiology notes (when doctor makes observation on an image).</span><br /><span>- There is no need to expose encounter types and order types. These should just be the internals for Bahmni.</span><br /><span>- Use hyperlinks when referencing meta resources but not sub-resources. The performance issues arising of loading too much data can be taken care of by loading the sub-resources directly and using the scope keywords.<br />- User transaction should result in single save call to the server unless there is a performance reasons to not do so.<br />- Ideally any save operation should not require the client to make read calls (for getting id etc.) for populating the data in the request.</span></p><p><span><strong>Examples</strong></span><br /><span>&nbsp; &nbsp; &nbsp;/patient-profiles/&lt;patient-id&gt;</span><br /><span>&nbsp; &nbsp; &nbsp;/diagnoses?patient-id=&lt;patient-id&gt;</span><br /><span>&nbsp; &nbsp; &nbsp;/observations?observation-type=vitals</span><br /><span>&nbsp; &nbsp; &nbsp;/treatments?patient-id=&lt;patient-id&gt;&amp;for=last-visit</span><br /><span>&nbsp; &nbsp; &nbsp;/encounters?for=current</span><br /><span>&nbsp; &nbsp; &nbsp;/encounters?for=current-visit</span><br /><span>&nbsp; &nbsp; &nbsp;/visits</span><br /><span>&nbsp;</span><br /><span><strong>Links</strong></span><br /><span style=\"color: rgb(4,46,238);\"><u><a href=\"http://pages.apigee.com/rs/apigee/images/api-design-ebook-2012-03.pdf\">http://pages.apigee.com/rs/apigee/images/api-design-ebook-2012-03.pdf</a></u></span></p><p><strong>Notes from meeting<br />How to handle concept-answers vs. answers coming from different concept set.</strong> Concept answers can be returned along with observation type group resource. When the answers in a different concept-set we probably just need to perform a search on it, need not expose the complete list via the api.</p><p><strong>Define the scoping parameters for various resources</strong>.</p><p><strong>Is there a case for LastEncFound keyword? (suggestion made to call it most recent or just recent in the context of BMI)</strong> MostRecent[Observation].</p><p>How would we handle validation of test results?</p><p>What about bed management?&nbsp;Location?</p><p>Is this API sufficient for reports to get all the data it needs?</p><p>The example above doesn't use patient-id everywhere it should</p><p>Should observation type groups be called form?</p><p><br /></p></ac:rich-text-body></ac:structured-macro><p><br /></p><p><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/6488066"
+      }
+    },
+    "view": {
+      "value": "<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"a88652ae-48e5-4d8d-b1dc-1ef1bf21c54e\" data-macro-name=\"tip\"><style>[data-colorid=lm0j6lz5ai]{color:#042eee} html[data-color-mode=dark] [data-colorid=lm0j6lz5ai]{color:#113bfb}</style><p class=\"title\">FHIR Overview Video</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>If you are new to FHIR and want to understand what is FHIR, profiles / implementation guides, FHIR Terminology Server, etc. watch this excellent 18min overview YouTube video:</p><p><iframe class=\"youtube-player conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"ccbf6462-190d-453b-9d89-9149c8a8cb60\" data-macro-name=\"widget\" frameborder=\"0\" src=\"//www.youtube.com/embed/OIt0GrCPu8k?wmode=opaque\" style=\"width: 400px; height: 300px\" type=\"text/html\">\n</iframe>\n    \n</p></div></div><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"26cb43ca-9a50-4499-acb5-a881e276d4e3\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Bahmni (and OpenMRS) REST API swagger can be accessed on a running Bahmni instance on this url:&nbsp;</p><p><strong><code>https://&lt;bahmni-ip&gt;:&lt;port&gt;/openmrs/module/webservices/rest/apiDocs.htm</code></strong></p><p>For instance on the Bahmni Demo server, the URL will be: <a class=\"external-link\" href=\"https://demo.mybahmni.org/openmrs/module/webservices/rest/apiDocs.htm\" rel=\"nofollow\">REST API (Demo Server)</a>.&nbsp;</p><ol><li>Login to OpenMRS as Admin.</li><li>Click on Administration tab.</li><li>Click on &quot;API Documentation&quot; link in the &quot;<strong>REST Web Services</strong>&quot; group.&nbsp;</li></ol></div></div><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3cc421ef-0354-4bba-a5ce-3360f2d80a0a\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>To see sample code on how to call Bahmni REST APIs, you can refer to the Bahmni Performance Tests written using Gatling (Scala DSL) here: <a class=\"external-link\" href=\"https://github.com/Bahmni/performance-test/blob/old-framework/src/test/scala/org/bahmni/gatling/HttpRequests.scala\" rel=\"nofollow\">https://github.com/Bahmni/performance-test/blob/old-framework/src/test/scala/org/bahmni/gatling/HttpRequests.scala</a></p></div></div><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b848e8af-9893-4a67-8cde-93eeeab570d1\" data-macro-name=\"tip\"><p class=\"title\">FHIR Api endpoints</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>To see the FHIR endpoints exposed by Bahmni, see the underlying OpenMRS documentation. With Bahmni LIte v1.0, these endpoints are also available, since the latest version of Bahmni ships with OpenMRS FHIR module that exposes these endpoints.</p><ol><li>See FHIR endpoint documentation here:<ol><li><a class=\"external-link\" href=\"https://fhir.openmrs.org/StructureDefinition-omrs-patient.html\" rel=\"nofollow\">https://fhir.openmrs.org</a> (e.g. Patient Resource here: <a class=\"external-link\" href=\"https://fhir.openmrs.org/Patient-example-openmrs-Patient.json.html\" rel=\"nofollow\">https://fhir.openmrs.org/Patient-example-openmrs-Patient.json.html</a>)</li><li><a class=\"external-link\" href=\"https://wiki.openmrs.org/display/projects/FHIR+Support+in+1.3.0\" rel=\"nofollow\">https://wiki.openmrs.org/display/projects/FHIR+Support+in+1.3.0</a></li></ol></li><li><p class=\"auto-cursor-target\">You can try these URLs out on the <a href=\"/wiki/spaces/BAH/pages/3037757441/Bahmni+Lite+Environments\" data-linked-resource-id=\"3037757441\" data-linked-resource-version=\"39\" data-linked-resource-type=\"page\">Bahmni Lite environments</a>. For instance this command on terminal will work:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9c225f66-364b-4476-8757-e17b3b48938e\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: true; theme: Confluence\" data-theme=\"Confluence\"># where last paremeter is UUID of the patient in Bahmni/OpenMRS\ncurl -u&quot;superman:Admin123&quot; -H &quot;Content-Type: application/json&quot; https://dev.lite.mybahmni.in/openmrs/ws/fhir2/R4/Patient/1457e050-06aa-4b9e-99fc-342d79e09b05</pre>\n</div></div></li><li><p class=\"auto-cursor-target\">&nbsp;If you want to write a client code (in Java) to call Bahmni/OpenMRS FHIR endpoints, you can use the <a class=\"external-link\" href=\"https://hapifhir.io/hapi-fhir/docs/client/\" rel=\"nofollow\">HAPI FHIR</a> library. See sample code written by&nbsp;<a class=\"confluence-userlink user-mention\" data-account-id=\"5e004f695361330daae96d9c\" href=\"https://bahmni.atlassian.net/wiki/people/5e004f695361330daae96d9c?ref=confluence\" target=\"_blank\" data-base-url=\"https://bahmni.atlassian.net/wiki\">Siva Reddy Pathuri (Deactivated)</a>&nbsp;here: <a class=\"external-link\" href=\"https://github.com/sivareddyp/fhir-client-demo/blob/main/src/main/java/org/bahmni/fhirclientdemo/service/FhirResourceService.java\" rel=\"nofollow\">https://github.com/sivareddyp/fhir-client-demo/blob/main/src/main/java/org/bahmni/fhirclientdemo/service/FhirResourceService.java</a></p></li></ol></div></div><p><br /></p><div class=\"expand-container conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4907af8a-4006-4cd4-ad7a-fb4630443843\" data-macro-name=\"expand\" id=\"expander-981428834\"><div id=\"expander-control-981428834\" class=\"expand-control\"><span class=\"expand-control-icon icon\">&nbsp;</span><span class=\"expand-control-text\">Some Old Notes on Bahmn API Design (archive)...</span></div><div id=\"expander-content-981428834\" class=\"expand-content expand-hidden\"><p><br /></p><p><span>Some ideas based on how our API would look like if it is designed them from its user&rsquo;s point of view and not from how the data is organised in the system. I haven&rsquo;t thought through everything in minutest details yet, but following is the outline.</span><br /><span>&nbsp;</span><br /><span><strong>Resources</strong></span><br /><span>Some of the following are sub-resources, i.e. they can be contained inside another resource. For example - treatments can be accessed directly or they get embedded inside an encounter.</span><br /><br /><span><u>Patient Profiles</u></span><br /><span><u>Visits</u></span><br /><span>This doesn't contain the encounters. It would be good to have references to encounters inside it. Is OpenMRS resource sufficient for this?</span><br /><span><u>Clinical Encounters</u></span><br /><span>It should de-normalize the visit dates on the encounter. Probably an href to the visit.</span><br /><span><u>Diagnoses</u></span><br /><span><u>Lab Investigations</u></span><br /><span>It contains lab order, sample accession and lab result. If we find this resource to be too big then we would break it down into further sub-resources. Right now we do not know how exactly it would pan out when we do the OpenELIS replace work.</span><br /><span><u>Procedures</u></span><br /><span><u>Observations</u></span><br /><span>It is only a subset of OpenMRS observations excluding procedures, lab-results, or anything which its own resource. This filtering should be done by the server endpoint. The API should also handle different classes differently making it easier for the consumer to consume it. The observation classes which Bahmni supports right now are &quot;Qualified with Duration&quot;, &quot;Qualified with Normality&quot;, &quot;Multiple Coded&quot; (better names are welcome).</span><br /><span><u>Treatments</u></span><br /><span>Drug order and treatment related observations. Also supports a special operation called &quot;active&quot;.</span><br /><span><u>Clinical Images</u></span><br /><span>A sub-resource and not an attribute because of performance reasons.</span><br /><span><u>Enrolled Programs<br /></u>We would be using programs for chronic patients. Contains href for encounters inside it.</span></p><p><span><strong>Meta Resources</strong> (aka reference data)</span><br /><span><u>Programs</u></span><br /><span><u>Visit Types</u></span><br /><span><u>Patient Attributes</u></span><br /><span><u>Lab Tests</u></span><br /><span><u>Lab Test Panels</u></span><br /><span><u>Lab Departments</u></span><br /><span><u>Diagnosis Types</u></span><br /><span><u>Reference Terms</u></span><br /><span><u>Observation Type Groups</u></span><br /><span>This exposes different aggregate observation classes (see observations resource) differently, making it easier for the consumer. I haven't been able to find any use case for which a concept would have to be directly exposed via an api.</span><br /><span><u>Procedure Types</u></span><br /><span><u>Locations</u></span><br /><span><u>Address Elements</u></span><br /><span>&nbsp;</span><br /><span><strong>Ways to break up patient data</strong></span><br /><span><u>Scope of resources</u></span><br /><span>Visit, Date, Encounter, All</span><br /><span><u>For</u>&nbsp;(Keywords that Bahmni could support. This would help in reducing unnecessary calls to find what their id is. The current list is below.)</span><br /><span>LastVisit</span><br /><span>LastVisitFoundIn</span><br /><span>CurrentEncounter</span><br /><span>CurrentVisit</span><br /><span>All (default)<br /></span>Initial (In Visit)<br />Most Recent (In Visit)<br /><span>&nbsp;</span><br /><span><strong>Internal or technical resources</strong>&nbsp;(haven&rsquo;t given much thought to these yet)</span><br /><span>SqlSearch</span><br /><span>Scheduled Tasks</span><br /><span>&nbsp;</span><br /><span><strong>Design</strong></span><br /><span>- The concepts which are always packaged with Bahmni should be referred by their name not by UUID. For example - consultation note, radiology notes (when doctor makes observation on an image).</span><br /><span>- There is no need to expose encounter types and order types. These should just be the internals for Bahmni.</span><br /><span>- Use hyperlinks when referencing meta resources but not sub-resources. The performance issues arising of loading too much data can be taken care of by loading the sub-resources directly and using the scope keywords.<br />- User transaction should result in single save call to the server unless there is a performance reasons to not do so.<br />- Ideally any save operation should not require the client to make read calls (for getting id etc.) for populating the data in the request.</span></p><p><span><strong>Examples</strong></span><br /><span>&nbsp; &nbsp; &nbsp;/patient-profiles/&lt;patient-id&gt;</span><br /><span>&nbsp; &nbsp; &nbsp;/diagnoses?patient-id=&lt;patient-id&gt;</span><br /><span>&nbsp; &nbsp; &nbsp;/observations?observation-type=vitals</span><br /><span>&nbsp; &nbsp; &nbsp;/treatments?patient-id=&lt;patient-id&gt;&amp;for=last-visit</span><br /><span>&nbsp; &nbsp; &nbsp;/encounters?for=current</span><br /><span>&nbsp; &nbsp; &nbsp;/encounters?for=current-visit</span><br /><span>&nbsp; &nbsp; &nbsp;/visits</span><br /><span>&nbsp;</span><br /><span><strong>Links</strong></span><br /><span data-colorid=\"lm0j6lz5ai\"><u><a class=\"external-link\" href=\"http://pages.apigee.com/rs/apigee/images/api-design-ebook-2012-03.pdf\" rel=\"nofollow\">http://pages.apigee.com/rs/apigee/images/api-design-ebook-2012-03.pdf</a></u></span></p><p><strong>Notes from meeting<br />How to handle concept-answers vs. answers coming from different concept set.</strong> Concept answers can be returned along with observation type group resource. When the answers in a different concept-set we probably just need to perform a search on it, need not expose the complete list via the api.</p><p><strong>Define the scoping parameters for various resources</strong>.</p><p><strong>Is there a case for LastEncFound keyword? (suggestion made to call it most recent or just recent in the context of BMI)</strong> MostRecent[Observation].</p><p>How would we handle validation of test results?</p><p>What about bed management?&nbsp;Location?</p><p>Is this API sufficient for reports to get all the data it needs?</p><p>The example above doesn't use patient-id everywhere it should</p><p>Should observation type groups be called form?</p><p><br /></p></div></div><p><br /></p><p><br /></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/6488066"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/6488066/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/6488066/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 5609
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/6488066/child",
+    "restrictions": "/rest/api/content/6488066/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/6488066/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=6488066",
+    "webui": "/spaces/BAH/pages/6488066/Bahmni+REST+API+FHIR+APIs",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/6488066",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/6488066",
+    "tinyui": "/x/AgBj",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

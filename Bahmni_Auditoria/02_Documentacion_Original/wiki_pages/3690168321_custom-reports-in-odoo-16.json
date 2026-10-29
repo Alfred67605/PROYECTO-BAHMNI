@@ -1,0 +1,172 @@
+{
+  "id": "3690168321",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3690168321",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzY5MDE2ODMyMQ==",
+  "status": "current",
+  "title": "Custom Reports in Odoo 16",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "createdDate": "2024-08-12T15:11:27.810Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3690168321/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Mohankumar Thangavel",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/70121:02252abe-da30-49a2-9e55-5cb5f7eff716",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Mohankumar Thangavel",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=70121:02252abe-da30-49a2-9e55-5cb5f7eff716"
+      }
+    },
+    "when": "2024-08-12T15:26:02.066Z",
+    "friendlyWhen": "Aug 12, 2024",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "ncsStepVersion": "1196",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3690168321.40",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3690168321"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3690168321/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"d35c02e1-c856-4371-869d-8c087083abe5\"><ac:rich-text-body><p>These reports are available only from Odoo 16 integration.</p></ac:rich-text-body></ac:structured-macro><p>With Odoo 16 Integration, custom reports have been created to gather data on various areas such as sales, inventory, and discounts. The reports primarily use Excel format, with a few also available in PDF. These reports are consolidated within a module called <a href=\"https://github.com/Bahmni/bahmni-odoo-modules/tree/main/bahmni_reports\">Bahmni Custom Reports</a> and are preinstalled in the <code>bahmni/odoo-16</code> docker image.</p><h3>Accessing the reports</h3><p>All of the custom reports can be accessed from <code>Menu -&gt; Reports --&gt; Custom Reports</code> navigation.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"518\" ac:original-width=\"1790\" ac:custom-width=\"true\" ac:alt=\"image-20240812-152230.png\" ac:width=\"1329\"><ri:attachment ri:filename=\"image-20240812-152230.png\" ri:version-at-save=\"1\" /></ac:image><p>Every report necessitates particular inputs. For instance, stock movement reports require details on the source stock location and destination stock location. Additionally, the reports can be filtered for a specific product or drug within the reports.</p><p />",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3690168321"
+      }
+    },
+    "view": {
+      "value": "<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"d35c02e1-c856-4371-869d-8c087083abe5\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>These reports are available only from Odoo 16 integration.</p></div></div><p>With Odoo 16 Integration, custom reports have been created to gather data on various areas such as sales, inventory, and discounts. The reports primarily use Excel format, with a few also available in PDF. These reports are consolidated within a module called <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-odoo-modules/tree/main/bahmni_reports\" rel=\"nofollow\">Bahmni Custom Reports</a> and are preinstalled in the <code>bahmni/odoo-16</code> docker image.</p><h3 id=\"CustomReportsinOdoo16-Accessingthereports\">Accessing the reports</h3><p>All of the custom reports can be accessed from <code>Menu -&gt; Reports --&gt; Custom Reports</code> navigation.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" alt=\"image-20240812-152230.png\" width=\"1329\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3690168321/image-20240812-152230.png?version=1&amp;modificationDate=1723476156918&amp;cacheVersion=1&amp;api=v2&amp;width=1329&amp;height=384\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/3690168321/image-20240812-152230.png?version=1&amp;modificationDate=1723476156918&amp;cacheVersion=1&amp;api=v2\" data-height=\"518\" data-width=\"1790\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"3690397698\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image-20240812-152230.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"3690168321\" data-linked-resource-container-version=\"1\" data-media-id=\"0f5e25c2-99d0-4ef6-aa09-bb1ebd7a2ed1\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/3690168321/image-20240812-152230.png?version=1&amp;modificationDate=1723476156918&amp;cacheVersion=1&amp;api=v2&amp;width=2658&amp;height=768 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/3690168321/image-20240812-152230.png?version=1&amp;modificationDate=1723476156918&amp;cacheVersion=1&amp;api=v2&amp;width=1329&amp;height=384 1x\"></span><p>Every report necessitates particular inputs. For instance, stock movement reports require details on the source stock location and destination stock location. Additionally, the reports can be filtered for a specific product or drug within the reports.</p><p />",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3690168321"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3690168321/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3690168321/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 797
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3690168321/child",
+    "restrictions": "/rest/api/content/3690168321/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3690168321/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3690168321",
+    "webui": "/spaces/BAH/pages/3690168321/Custom+Reports+in+Odoo+16",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3690168321",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3690168321",
+    "tinyui": "/x/AYDz2w",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

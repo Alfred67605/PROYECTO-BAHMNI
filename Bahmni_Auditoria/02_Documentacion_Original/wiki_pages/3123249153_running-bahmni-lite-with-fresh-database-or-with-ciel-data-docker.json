@@ -1,0 +1,174 @@
+{
+  "id": "3123249153",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3123249153",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzEyMzI0OTE1Mw==",
+  "status": "current",
+  "title": "Running Bahmni Lite with fresh database or with CIEL data (docker)",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "6109ddf175ad960069316fea",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Umair Fayaz",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/6109ddf175ad960069316fea",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Umair Fayaz",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=6109ddf175ad960069316fea"
+      }
+    },
+    "createdDate": "2022-12-22T09:51:20.377Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3123249153/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2024-01-15T05:42:15.485Z",
+    "friendlyWhen": "Jan 15, 2024",
+    "message": "",
+    "number": 16,
+    "minorEdit": false,
+    "syncRev": "0.zD1xEHeHc7j94MT8nnfC6w.0",
+    "syncRevSource": "synchrony-ack",
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3123249153.115",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3123249153"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3123249153/version/16"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"fixed-width\" ac:breakout-mode=\"default\"><ac:layout-cell><p /></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"two_right_sidebar\" ac:breakout-mode=\"wide\"><ac:layout-cell><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"839526ea-ef7f-4002-8f5a-dd4ff1c01696\"><ac:rich-text-body><p>Bahmni LITE comes with <ac:link><ri:page ri:content-title=\"Bahmni and CIEL dictionary\" ri:version-at-save=\"4\" /><ac:link-body>CIEL Concept dictionary</ac:link-body></ac:link>, which comprises of over 50K medical terms. This can slow down the first time initialization of DB. To decrease startup time, Bahmni publishes pre-loaded DBs based on mysql v5.6 and mysql v5.7. The default OpenMRS DB image of bahmni-lite points to the <code>bahmni/openmrs-db:1.0.0-lite-mysql5.7</code>. This can be configured and changed as per your requirements. The DB dump with CIEL data is maintained here on github: <a href=\"https://github.com/Bahmni/bahmni-scripts/tree/master/demo/db-backups/1.0.0-lite\" data-card-appearance=\"inline\">https://github.com/Bahmni/bahmni-scripts/tree/master/demo/db-backups/1.0.0-lite</a> </p></ac:rich-text-body></ac:structured-macro><p>DB Images pre-loaded with CIEL concepts are:</p><ul><li><p><code>bahmni/openmrs-db:1.0.0-lite-mysql5.6</code>: OpenMRS DB based on mysql v5.6</p></li><li><p><code>bahmni/openmrs-db:1.0.0-lite-mysql5.7</code>: OpenMRS DB based on mysql v5.7</p></li></ul><p>These images can be used by changing the <a href=\"https://github.com/Bahmni/bahmni-docker/blob/0c4ab521b3e70b99c87c84adc0b9e3c07950df9b/bahmni-lite/.env#L30\">OPENMRS_DB_IMAGE_NAME</a> variable in .<a href=\"https://github.com/Bahmni/bahmni-docker/blob/master/bahmni-lite/.env\">env</a> file of bahmni-lite</p><h2><strong>To start Bahmni with a fresh DB, perform the following one-time steps:</strong></h2><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"36211a38-a751-4b7e-98bd-651d4ea096e9\"><ac:rich-text-body><p>If you have already started Bahmni, please make sure to bring down all the containers by running <code>docker compose --profile &lt;profile_used_at_start&gt; down -v</code></p></ac:rich-text-body></ac:structured-macro><ol start=\"1\"><li><p>Change the <a href=\"https://github.com/Bahmni/bahmni-docker/blob/0c4ab521b3e70b99c87c84adc0b9e3c07950df9b/bahmni-lite/.env#L30\">OPENMRS_DB_IMAGE_NAME</a> variable to <code>mysql:5.6</code> or <code>mysql:5.7</code>  in <a href=\"https://github.com/Bahmni/bahmni-docker/blob/master/bahmni-lite/.env\">.env</a> file of Bahmni Lite (this means use MySQL published fresh docker image)</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"254127ac-1b36-454a-b0ef-a219a1988f9b\"><ac:plain-text-body><![CDATA[OPENMRS_DB_IMAGE_NAME=mysql:5.6]]></ac:plain-text-body></ac:structured-macro></li><li><p>Set the <code>OPENMRS_DB_CREATE_TABLES</code> variable to <code>'true'</code> in <a href=\"https://github.com/Bahmni/bahmni-docker/blob/0c4ab521b3e70b99c87c84adc0b9e3c07950df9b/bahmni-lite/.env#L35\">.env</a> file of bahmni-lite</p></li><li><p>Comment out the volume mounts for <code>configuration_checksums</code> in <a href=\"https://github.com/Bahmni/bahmni-docker/blob/0c4ab521b3e70b99c87c84adc0b9e3c07950df9b/bahmni-lite/docker-compose.yml#L80\">openmrs</a> and <a href=\"https://github.com/Bahmni/bahmni-docker/blob/0c4ab521b3e70b99c87c84adc0b9e3c07950df9b/bahmni-lite/docker-compose.yml#L99\">openmrsdb</a> service in the <a href=\"https://github.com/Bahmni/bahmni-docker/blob/master/bahmni-lite/docker-compose.yml\">docker-compose.yml</a> of Bahmni Lite. Doing this will make sure that the initializer module re-executes the changelogs. Note: the default initialiser configuration can be <a href=\"https://github.com/Bahmni/clinic-config/tree/main/masterdata/configuration\">seen here</a>. To run with your own &ldquo;config&rdquo;, see this <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117449270/Using+Implementation+specific+Configuration+docker\">documentation</a>. </p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"f51a8916-6de6-49a5-993e-c5ba670b6129\"><ac:plain-text-body><![CDATA[# Add a '#' in front of the configuration_checksum lines in volume sub-section of the individual services to comment them out\n# - 'configuration_checksums:/openmrs/data/configuration_checksums'\n# - 'configuration_checksums:/configuration_checksums']]></ac:plain-text-body></ac:structured-macro></li><li><p>Now start Bahmni LITE, and see the openmrs logs to understand when the initialiser logs finish execution. </p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"82b9cc29-ef36-4cb0-9e56-2bc773d15674\"><ac:plain-text-body><![CDATA[# Start Bahmni LITE (in bahmni-lite/ subfolder)\ndocker compose up -d\n\n# See OpenMRS Logs\ndocker compose logs openmrs -f]]></ac:plain-text-body></ac:structured-macro></li></ol></ac:layout-cell><ac:layout-cell><ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p><strong>Running Bahmni with Docker</strong></p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p><strong>Running Bahmni with Docker</strong></p>\n</div></div></ac:adf-fallback></ac:adf-extension><p><ac:structured-macro ac:name=\"pagetree\" ac:schema-version=\"1\" ac:local-id=\"85bebfef-128f-4fec-b799-585d2d7aba1a\" ac:macro-id=\"2d7d160f6385ee7ea42e4c0bb4cb85aa\"><ac:parameter ac:name=\"root\"><ac:link><ri:page ri:content-title=\"Running Bahmni on Docker\" ri:version-at-save=\"48\" /></ac:link></ac:parameter><ac:parameter ac:name=\"startDepth\">1</ac:parameter></ac:structured-macro></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3123249153"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout fixed-width\" data-layout=\"fixed-width\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p /></div>\n</div>\n</div>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"839526ea-ef7f-4002-8f5a-dd4ff1c01696\" data-macro-name=\"tip\"><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Bahmni LITE comes with <a href=\"/wiki/spaces/BAH/pages/3311534130/Bahmni+and+CIEL+dictionary\" data-linked-resource-id=\"3311534130\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">CIEL Concept dictionary</a>, which comprises of over 50K medical terms. This can slow down the first time initialization of DB. To decrease startup time, Bahmni publishes pre-loaded DBs based on mysql v5.6 and mysql v5.7. The default OpenMRS DB image of bahmni-lite points to the <code>bahmni/openmrs-db:1.0.0-lite-mysql5.7</code>. This can be configured and changed as per your requirements. The DB dump with CIEL data is maintained here on github: <a class=\"external-link\" data-card-appearance=\"inline\" href=\"https://github.com/Bahmni/bahmni-scripts/tree/master/demo/db-backups/1.0.0-lite\" rel=\"nofollow\">https://github.com/Bahmni/bahmni-scripts/tree/master/demo/db-backups/1.0.0-lite</a> </p></div></div><p>DB Images pre-loaded with CIEL concepts are:</p><ul><li><p><code>bahmni/openmrs-db:1.0.0-lite-mysql5.6</code>: OpenMRS DB based on mysql v5.6</p></li><li><p><code>bahmni/openmrs-db:1.0.0-lite-mysql5.7</code>: OpenMRS DB based on mysql v5.7</p></li></ul><p>These images can be used by changing the <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-docker/blob/0c4ab521b3e70b99c87c84adc0b9e3c07950df9b/bahmni-lite/.env#L30\" rel=\"nofollow\">OPENMRS_DB_IMAGE_NAME</a> variable in .<a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-docker/blob/master/bahmni-lite/.env\" rel=\"nofollow\">env</a> file of bahmni-lite</p><h2 id=\"RunningBahmniLitewithfreshdatabaseorwithCIELdata(docker)-TostartBahmniwithafreshDB,performthefollowingone-timesteps:\"><strong>To start Bahmni with a fresh DB, perform the following one-time steps:</strong></h2><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"36211a38-a751-4b7e-98bd-651d4ea096e9\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>If you have already started Bahmni, please make sure to bring down all the containers by running <code>docker compose --profile &lt;profile_used_at_start&gt; down -v</code></p></div></div><ol start=\"1\"><li><p>Change the <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-docker/blob/0c4ab521b3e70b99c87c84adc0b9e3c07950df9b/bahmni-lite/.env#L30\" rel=\"nofollow\">OPENMRS_DB_IMAGE_NAME</a> variable to <code>mysql:5.6</code> or <code>mysql:5.7</code>  in <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-docker/blob/master/bahmni-lite/.env\" rel=\"nofollow\">.env</a> file of Bahmni Lite (this means use MySQL published fresh docker image)</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"254127ac-1b36-454a-b0ef-a219a1988f9b\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">OPENMRS_DB_IMAGE_NAME=mysql:5.6</pre>\n</div></div></li><li><p>Set the <code>OPENMRS_DB_CREATE_TABLES</code> variable to <code>'true'</code> in <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-docker/blob/0c4ab521b3e70b99c87c84adc0b9e3c07950df9b/bahmni-lite/.env#L35\" rel=\"nofollow\">.env</a> file of bahmni-lite</p></li><li><p>Comment out the volume mounts for <code>configuration_checksums</code> in <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-docker/blob/0c4ab521b3e70b99c87c84adc0b9e3c07950df9b/bahmni-lite/docker-compose.yml#L80\" rel=\"nofollow\">openmrs</a> and <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-docker/blob/0c4ab521b3e70b99c87c84adc0b9e3c07950df9b/bahmni-lite/docker-compose.yml#L99\" rel=\"nofollow\">openmrsdb</a> service in the <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-docker/blob/master/bahmni-lite/docker-compose.yml\" rel=\"nofollow\">docker-compose.yml</a> of Bahmni Lite. Doing this will make sure that the initializer module re-executes the changelogs. Note: the default initialiser configuration can be <a class=\"external-link\" href=\"https://github.com/Bahmni/clinic-config/tree/main/masterdata/configuration\" rel=\"nofollow\">seen here</a>. To run with your own “config”, see this <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117449270/Using+Implementation+specific+Configuration+docker\" rel=\"nofollow\">documentation</a>. </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f51a8916-6de6-49a5-993e-c5ba670b6129\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\"># Add a '#' in front of the configuration_checksum lines in volume sub-section of the individual services to comment them out\n# - 'configuration_checksums:/openmrs/data/configuration_checksums'\n# - 'configuration_checksums:/configuration_checksums'</pre>\n</div></div></li><li><p>Now start Bahmni LITE, and see the openmrs logs to understand when the initialiser logs finish execution. </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"82b9cc29-ef36-4cb0-9e56-2bc773d15674\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\"># Start Bahmni LITE (in bahmni-lite/ subfolder)\ndocker compose up -d\n\n# See OpenMRS Logs\ndocker compose logs openmrs -f</pre>\n</div></div></li></ol></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p><strong>Running Bahmni with Docker</strong></p>\n</div></div><p>\n\n\n<div class=\"plugin_pagetree conf-macro output-inline\" data-hasbody=\"false\" data-local-id=\"85bebfef-128f-4fec-b799-585d2d7aba1a\" data-macro-id=\"2d7d160f6385ee7ea42e4c0bb4cb85aa\" data-macro-name=\"pagetree\">\n\n                        \n                \n        <ul class=\"plugin_pagetree_children_list plugin_pagetree_children_list_noleftspace\">\n            <div class=\"plugin_pagetree_children\">\n            </div>\n        </ul>\n\n        <fieldset class=\"hidden\">\n            <input type=\"hidden\" name=\"treeId\" value=\"\" />\n            <input type=\"hidden\" name=\"treeRequestId\" value=\"/wiki/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=false\" />\n            <input type=\"hidden\" name=\"treePageId\" value=\"3123249153\" />\n\n            <input type=\"hidden\" name=\"noRoot\" value=\"false\" />\n            <input type=\"hidden\" name=\"rootPageId\" value=\"299630726\" />\n\n            <input type=\"hidden\" name=\"rootPage\" value=\"\" />\n            <input type=\"hidden\" name=\"startDepth\" value=\"1\" />\n            <input type=\"hidden\" name=\"spaceKey\" value=\"BAH\" />\n\n            <input type=\"hidden\" name=\"i18n-pagetree.loading\" value=\"Loading...\" />\n            <input type=\"hidden\" name=\"i18n-pagetree.error.permission\" value=\"Unable to load page tree. It seems that you do not have permission to view the root page.\" />\n            <input type=\"hidden\" name=\"i18n-pagetree.eeror.general\" value=\"There was a problem retrieving the page tree. Please check the server log file for more information.\" />\n            <input type=\"hidden\" name=\"loginUrl\" value=\"/wiki/login.action?os_destination=%2Frest%2Fapi%2Fcontent%2F3123249153%3Fexpand%3Dbody.storage%2Cbody.view%2Cversion%2Cmetadata.labels%2Chistory\" />\n            <input type=\"hidden\" name=\"mobile\" value=\"false\" />\n\n                        <fieldset class=\"hidden\">\n                                                            <input type=\"hidden\" name=\"ancestorId\" value=\"299630726\" />\n                                                </fieldset>\n        </fieldset>\n    </div>\n\n</p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3123249153"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3123249153/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3123249153/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 118421980
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3123249153/child",
+    "restrictions": "/rest/api/content/3123249153/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3123249153/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3123249153",
+    "webui": "/spaces/BAH/pages/3123249153/Running+Bahmni+Lite+with+fresh+database+or+with+CIEL+data+docker",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3123249153",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3123249153",
+    "tinyui": "/x/AQApug",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

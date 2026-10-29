@@ -1,0 +1,185 @@
+{
+  "id": "3240394753",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3240394753",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzI0MDM5NDc1Mw==",
+  "status": "current",
+  "title": "Guide to building React components in Bahmniapps",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "6109de12b704b4006803b3ca",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Arjun G (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/6109de12b704b4006803b3ca",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Arjun G (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=6109de12b704b4006803b3ca"
+      }
+    },
+    "createdDate": "2023-10-18T07:36:37.484Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3240394753/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "620bff9de41f76006a6d49bd",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Rahul Ramesh",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/620bff9de41f76006a6d49bd",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Rahul Ramesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=620bff9de41f76006a6d49bd"
+      }
+    },
+    "when": "2025-01-20T10:48:01.693Z",
+    "friendlyWhen": "Jan 20, 2025",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "ncsStepVersion": "1",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$3240394753.285",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3240394753"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3240394753/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" data-layout=\"default\" ac:local-id=\"6dd2538c-3c70-41bd-923f-7728a9f12561\" ac:macro-id=\"ae093094-095d-4940-92d9-afdab9e91596\" /><p>This wiki offers a comprehensive guide on creating React components within the openmrs-module-bahmniapps, considering that AngularJS has reached the <a href=\"https://talk.openmrs.org/t/moving-bahmni-codebase-from-angularjs-to-react/32397\">end of its support lifecycle</a>. We'll also delve into how we accomplished this in the clinical module and explore possibilities for extending these techniques to other modules within Bahmni.</p><h2>Introduction to Next-UI</h2><p>This is the designated location for constructing new React components intended for rendering within the Bahmni ecosystem. Within the <code>micro-frontends</code> folder in bahmniapps, you will find the <a href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/tree/Bahmni-IPD-master/micro-frontends/src/next-ui\">next-ui</a> sub-folder, which houses the newly developed React components currently in use within the clinical dashboard of Bahmni. </p><p>Here is a sneak peek into the folder structure of next-ui:-</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"f9ebcefa-7029-4d14-ba8d-ab3e23074b98\"><ac:plain-text-body><![CDATA[|\n|--- micro-frontends\n|    |\n|    |--- public/i18n             // All translations for micro-frontends \n|    |--- src\n|         |--- next-ui\n|              |\n|              |--- Containers    // React components that will be exposed in Angular codebase\n|              |--- Components    // reusable React components that can be used in Containers\n|              |--- index.js.     // React-Angular connectors built with the bridge builder\n|    \n|--- ui                           // Angular codebase\n|]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"98450bd1-c11c-4d07-8761-da6c0c47d248\"><ac:rich-text-body><p>At present, we are making the Micro Frontend (MFE) available exclusively within the clinical module as an initial step in our implementation.</p></ac:rich-text-body></ac:structured-macro><ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-content><p>If a specific React component is intended to be utilized across multiple modules within Bahmni to maintain consistent UI elements, it is recommended to include such components in the <a href=\"https://github.com/Bahmni/bahmni-carbon-ui\">bahmni-carbon-ui</a> repository.</p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p>If a specific React component is intended to be utilized across multiple modules within Bahmni to maintain consistent UI elements, it is recommended to include such components in the <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-carbon-ui\" rel=\"nofollow\">bahmni-carbon-ui</a> repository.</p>\n</div></div></ac:adf-fallback></ac:adf-extension><h2>Building your new React component</h2><p>To gain a deeper understanding of building custom components, let's use the <code>FormsDisplayControl</code> as an example.</p><ul><li><p>All the stylesheets, tests, and the component itself sits in the <a href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/tree/Bahmni-IPD-master/micro-frontends/src/next-ui/Containers/formDisplayControl\">Containers</a> folder under next-ui.</p></li></ul><ul><li><p>To expose 'FormsDisplayControl' to the Angular codebase, you'll need to make specific additions in the <a href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/blob/Bahmni-IPD-master/micro-frontends/src/next-ui/index.js\">index.js</a> file.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"676809c3-29d9-40d6-ade5-c7fe92c416e0\"><ac:plain-text-body><![CDATA[import { React2AngularBridgeBuilder } from \"../utils/bridge-builder\";\nimport { FormDisplayControl } from \"./Containers/formDisplayControl/FormDisplayControl\";\n\nconst MODULE_NAME = \"bahmni.mfe.nextUi\";\n\nangular.module(MODULE_NAME, []);\n\nconst builder = new React2AngularBridgeBuilder({\n  moduleName: MODULE_NAME,\n  componentPrefix: \"mfeNextUi\",\n});\n\nbuilder.createComponentWithTranslationForwarding(\n  \"FormDisplayControl\",\n  FormDisplayControl\n);]]></ac:plain-text-body></ac:structured-macro></li><li><p>The FormDisplayControl can be added to any of the <a href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/blob/Bahmni-IPD-master/ui/app/common/displaycontrols/dashboard/views/sections/nextUISection.html\">HTML files</a> in the clinical module to render the newly built react component. The HTML tag would look like so:- </p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"fdf07b43-20ec-4d3a-9c61-f300c57f9f67\"><ac:plain-text-body><![CDATA[<mfe-next-ui-form-display-control ng-if=\"::(section.translationKey === 'DASHBOARD_TITLE_FORMS_2_DISPLAY_CONTROL_KEY')\" host-data=\"formData\"></mfe-next-ui-form-display-control>  ]]></ac:plain-text-body></ac:structured-macro></li></ul><p style=\"margin-left: 30.0px;\">Any data intended for use within our React component can be conveyed via the 'host-data' property, which is configured in the corresponding Angular controllers or directives. Similarly, any events or data you wish to transmit to Angular can be facilitated through the 'host-api,' which encompasses a set of callback functions also implemented within the relevant Angular controllers or directives.</p><p /><blockquote><p>In the given example, the <strong>React2AngularBridgeBuilder</strong> component is a custom-built module that plays a vital role in establishing the essential connections between our React component and Angular. It facilitates the seamless transfer of data and the execution of callback functions behind the scenes. </p><p>For detailed insights on how this module functions, feel free to refer to <a href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/blob/Bahmni-IPD-master/micro-frontends/src/utils/bridge-builder.js\">this page</a> for comprehensive explanations and documentation.</p></blockquote><h2>Extending Next-UI to other Bahmni modules</h2><p>To integrate our newly developed components into Bahmni, we've established <code>next-UI</code> as an Angular module, named <code>bahmni.mfe.nextUi</code>. To enable the use of these components, this module should be included as a dependency in the relevant Bahmni modules where we intend to render our fresh React components. </p><p>Below, we demonstrate the process of adding the <code>next-UI</code> module to the clinical module for rendering these new React components.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"00421933-90a5-4aba-81cd-67ff1e8d61d4\"><ac:plain-text-body><![CDATA['use strict';\n\nvar Bahmni = Bahmni || {};\nBahmni.Clinical = Bahmni.Clinical || {};\nBahmni.Clinical.DisplayControl = Bahmni.Clinical.DisplayControl || {};\n\nangular.module('bahmni.clinical', ['bahmni.common.config', 'bahmni.common.domain',\n    'bahmni.common.conceptSet', 'bahmni.common.uiHelper', 'bahmni.common.gallery', \n    'bahmni.common.logging', 'bahmni.mfe.ipd', \n    'bahmni.mfe.nextUi' \n]);]]></ac:plain-text-body></ac:structured-macro><p /><p>Along with this, we will have to manually add the minified Js and CSS files to the index.html of respective module. Here is how we have added the minified files to <a href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/blob/Bahmni-IPD-master/ui/app/clinical/index.html\">index.html</a> of the clinical module.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6c9085c6-0080-47ec-8666-23fea7ba2b5a\"><ac:plain-text-body><![CDATA[<link rel=\"stylesheet\" href=\"../micro-frontends-dist/next-ui.min.css\"/>\n<script src=\"../micro-frontends-dist/next-ui.min.js\"></script>]]></ac:plain-text-body></ac:structured-macro><p>And while adding the next-UI components for the first time to a angular module, make sure the  React and React DOM dependency files are linked in the corresponding module&rsquo;s index.html file</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"cfe1c57a-c81e-42b8-b7b6-e6dcb422ecd5\"><ac:plain-text-body><![CDATA[<script src=\"../components/react/react.production.min.js\"></script>\n<script src=\"../components/react-dom/react-dom.production.min.js\"></script>]]></ac:plain-text-body></ac:structured-macro><h2>Translations for Next-UI</h2><p>All the translations leveraged by newly built React components (next-UI and other MFEs) will reside in the <code>public/i18n</code> folder which will be bundled along with the build of micro-frontends.</p><h2>Developer notes</h2><ul><li><p>When assigning class names to new components, it is strongly recommended to use unique names, preferably with a prefix such as 'next-ui-&lt;classname&gt;.' This practice is essential to prevent unintended style conflicts, as we have encountered instances where generic class names led to new styles mixing with existing styles in Bahmni.</p></li></ul>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3240394753"
+      }
+    },
+    "view": {
+      "value": "<div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-layout=\"default\" data-local-id=\"6dd2538c-3c70-41bd-923f-7728a9f12561\" data-macro-id=\"ae093094-095d-4940-92d9-afdab9e91596\" data-macro-name=\"toc\"> </div><p>This wiki offers a comprehensive guide on creating React components within the openmrs-module-bahmniapps, considering that AngularJS has reached the <a class=\"external-link\" href=\"https://talk.openmrs.org/t/moving-bahmni-codebase-from-angularjs-to-react/32397\" rel=\"nofollow\">end of its support lifecycle</a>. We'll also delve into how we accomplished this in the clinical module and explore possibilities for extending these techniques to other modules within Bahmni.</p><h2 id=\"GuidetobuildingReactcomponentsinBahmniapps-IntroductiontoNext-UI\">Introduction to Next-UI</h2><p>This is the designated location for constructing new React components intended for rendering within the Bahmni ecosystem. Within the <code>micro-frontends</code> folder in bahmniapps, you will find the <a class=\"external-link\" href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/tree/Bahmni-IPD-master/micro-frontends/src/next-ui\" rel=\"nofollow\">next-ui</a> sub-folder, which houses the newly developed React components currently in use within the clinical dashboard of Bahmni. </p><p>Here is a sneak peek into the folder structure of next-ui:-</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f9ebcefa-7029-4d14-ba8d-ab3e23074b98\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">|\n|--- micro-frontends\n|    |\n|    |--- public/i18n             // All translations for micro-frontends \n|    |--- src\n|         |--- next-ui\n|              |\n|              |--- Containers    // React components that will be exposed in Angular codebase\n|              |--- Components    // reusable React components that can be used in Containers\n|              |--- index.js.     // React-Angular connectors built with the bridge builder\n|    \n|--- ui                           // Angular codebase\n|</pre>\n</div></div><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"98450bd1-c11c-4d07-8761-da6c0c47d248\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>At present, we are making the Micro Frontend (MFE) available exclusively within the clinical module as an initial step in our implementation.</p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"\" data-macro-name=\"panel\" style=\"background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #EAE6FF;\">\n<p>If a specific React component is intended to be utilized across multiple modules within Bahmni to maintain consistent UI elements, it is recommended to include such components in the <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-carbon-ui\" rel=\"nofollow\">bahmni-carbon-ui</a> repository.</p>\n</div></div><h2 id=\"GuidetobuildingReactcomponentsinBahmniapps-BuildingyournewReactcomponent\">Building your new React component</h2><p>To gain a deeper understanding of building custom components, let's use the <code>FormsDisplayControl</code> as an example.</p><ul><li><p>All the stylesheets, tests, and the component itself sits in the <a class=\"external-link\" href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/tree/Bahmni-IPD-master/micro-frontends/src/next-ui/Containers/formDisplayControl\" rel=\"nofollow\">Containers</a> folder under next-ui.</p></li></ul><ul><li><p>To expose 'FormsDisplayControl' to the Angular codebase, you'll need to make specific additions in the <a class=\"external-link\" href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/blob/Bahmni-IPD-master/micro-frontends/src/next-ui/index.js\" rel=\"nofollow\">index.js</a> file.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"676809c3-29d9-40d6-ade5-c7fe92c416e0\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">import { React2AngularBridgeBuilder } from &quot;../utils/bridge-builder&quot;;\nimport { FormDisplayControl } from &quot;./Containers/formDisplayControl/FormDisplayControl&quot;;\n\nconst MODULE_NAME = &quot;bahmni.mfe.nextUi&quot;;\n\nangular.module(MODULE_NAME, []);\n\nconst builder = new React2AngularBridgeBuilder({\n  moduleName: MODULE_NAME,\n  componentPrefix: &quot;mfeNextUi&quot;,\n});\n\nbuilder.createComponentWithTranslationForwarding(\n  &quot;FormDisplayControl&quot;,\n  FormDisplayControl\n);</pre>\n</div></div></li><li><p>The FormDisplayControl can be added to any of the <a class=\"external-link\" href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/blob/Bahmni-IPD-master/ui/app/common/displaycontrols/dashboard/views/sections/nextUISection.html\" rel=\"nofollow\">HTML files</a> in the clinical module to render the newly built react component. The HTML tag would look like so:- </p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"fdf07b43-20ec-4d3a-9c61-f300c57f9f67\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&lt;mfe-next-ui-form-display-control ng-if=&quot;::(section.translationKey === 'DASHBOARD_TITLE_FORMS_2_DISPLAY_CONTROL_KEY')&quot; host-data=&quot;formData&quot;&gt;&lt;/mfe-next-ui-form-display-control&gt;  </pre>\n</div></div></li></ul><p style=\"margin-left: 30.0px;\">Any data intended for use within our React component can be conveyed via the 'host-data' property, which is configured in the corresponding Angular controllers or directives. Similarly, any events or data you wish to transmit to Angular can be facilitated through the 'host-api,' which encompasses a set of callback functions also implemented within the relevant Angular controllers or directives.</p><p /><blockquote><p>In the given example, the <strong>React2AngularBridgeBuilder</strong> component is a custom-built module that plays a vital role in establishing the essential connections between our React component and Angular. It facilitates the seamless transfer of data and the execution of callback functions behind the scenes. </p><p>For detailed insights on how this module functions, feel free to refer to <a class=\"external-link\" href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/blob/Bahmni-IPD-master/micro-frontends/src/utils/bridge-builder.js\" rel=\"nofollow\">this page</a> for comprehensive explanations and documentation.</p></blockquote><h2 id=\"GuidetobuildingReactcomponentsinBahmniapps-ExtendingNext-UItootherBahmnimodules\">Extending Next-UI to other Bahmni modules</h2><p>To integrate our newly developed components into Bahmni, we've established <code>next-UI</code> as an Angular module, named <code>bahmni.mfe.nextUi</code>. To enable the use of these components, this module should be included as a dependency in the relevant Bahmni modules where we intend to render our fresh React components. </p><p>Below, we demonstrate the process of adding the <code>next-UI</code> module to the clinical module for rendering these new React components.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"00421933-90a5-4aba-81cd-67ff1e8d61d4\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">'use strict';\n\nvar Bahmni = Bahmni || {};\nBahmni.Clinical = Bahmni.Clinical || {};\nBahmni.Clinical.DisplayControl = Bahmni.Clinical.DisplayControl || {};\n\nangular.module('bahmni.clinical', ['bahmni.common.config', 'bahmni.common.domain',\n    'bahmni.common.conceptSet', 'bahmni.common.uiHelper', 'bahmni.common.gallery', \n    'bahmni.common.logging', 'bahmni.mfe.ipd', \n    'bahmni.mfe.nextUi' \n]);</pre>\n</div></div><p /><p>Along with this, we will have to manually add the minified Js and CSS files to the index.html of respective module. Here is how we have added the minified files to <a class=\"external-link\" href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/blob/Bahmni-IPD-master/ui/app/clinical/index.html\" rel=\"nofollow\">index.html</a> of the clinical module.</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"6c9085c6-0080-47ec-8666-23fea7ba2b5a\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&lt;link rel=&quot;stylesheet&quot; href=&quot;../micro-frontends-dist/next-ui.min.css&quot;/&gt;\n&lt;script src=&quot;../micro-frontends-dist/next-ui.min.js&quot;&gt;&lt;/script&gt;</pre>\n</div></div><p>And while adding the next-UI components for the first time to a angular module, make sure the  React and React DOM dependency files are linked in the corresponding module’s index.html file</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"cfe1c57a-c81e-42b8-b7b6-e6dcb422ecd5\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&lt;script src=&quot;../components/react/react.production.min.js&quot;&gt;&lt;/script&gt;\n&lt;script src=&quot;../components/react-dom/react-dom.production.min.js&quot;&gt;&lt;/script&gt;</pre>\n</div></div><h2 id=\"GuidetobuildingReactcomponentsinBahmniapps-TranslationsforNext-UI\">Translations for Next-UI</h2><p>All the translations leveraged by newly built React components (next-UI and other MFEs) will reside in the <code>public/i18n</code> folder which will be bundled along with the build of micro-frontends.</p><h2 id=\"GuidetobuildingReactcomponentsinBahmniapps-Developernotes\">Developer notes</h2><ul><li><p>When assigning class names to new components, it is strongly recommended to use unique names, preferably with a prefix such as 'next-ui-&lt;classname&gt;.' This practice is essential to prevent unintended style conflicts, as we have encountered instances where generic class names led to new styles mixing with existing styles in Bahmni.</p></li></ul>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3240394753"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "frontend",
+          "id": "3124429072",
+          "label": "frontend"
+        },
+        {
+          "prefix": "global",
+          "name": "development",
+          "id": "2843443250",
+          "label": "development"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 2,
+      "_links": {
+        "next": "/rest/api/content/3240394753/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3240394753/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 400
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3240394753/child",
+    "restrictions": "/rest/api/content/3240394753/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3240394753/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3240394753",
+    "webui": "/spaces/BAH/pages/3240394753/Guide+to+building+React+components+in+Bahmniapps",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3240394753",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3240394753",
+    "tinyui": "/x/AYAkwQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

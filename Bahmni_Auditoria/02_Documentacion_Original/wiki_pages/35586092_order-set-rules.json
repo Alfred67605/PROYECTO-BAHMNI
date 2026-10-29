@@ -1,0 +1,171 @@
+{
+  "id": "35586092",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/35586092",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzU1ODYwOTI=",
+  "status": "current",
+  "title": "Order Set Rules",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "VivekV",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "VivekV",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:6d7b320f-7128-44e1-8b86-c95ebc6d5339"
+      }
+    },
+    "createdDate": "2015-12-17T05:02:29.819Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/35586092/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Himabindu Thungathurty",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Himabindu Akkinepalli",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:371bc532-31bd-40e1-83e6-fb3d27a5ac66"
+      }
+    },
+    "when": "2017-11-08T01:03:12.043Z",
+    "friendlyWhen": "Nov 08, 2017",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "syncRev": "0.HQcxnhSWvxPozQz2MriSBg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$35586092.38",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/35586092"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/35586092/version/5"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p class=\"auto-cursor-target\"><br /></p><table class=\"wrapped\"><colgroup><col /><col /><col /><col /></colgroup><tbody><tr><th>&nbsp;</th><th>&nbsp;</th><th>e.g.</th><th colspan=\"1\">managed</th></tr><tr><td>Concepts</td><td>Concepts involved in the calculated observations</td><td>Weight, Height</td><td colspan=\"1\"><p>standardised using CIEL dictionary</p><ul style=\"list-style-type: square;\"><li>the concept have same UUID as in CIEL dictionary</li><li>the concepts should be provided by a project called bahmni-clinical-content</li><li>the implementation should be able to choose the concepts they want to use</li></ul></td></tr><tr><td>Order Set</td><td>&nbsp;</td><td>CAF Cancer Regimen</td><td colspan=\"1\"><p>should be provided from bahmni-content</p><p>to be chosen by the implementations individually</p><p>depend on concepts and calculated observations</p></td></tr><tr><td>Rules</td><td>&nbsp;</td><td>for now small snippets of groovy functions</td><td colspan=\"1\"><p>these should be present in the order set member for simple rules which are based on concepts or calculated observations</p><p>the java code should do an eval on these functions</p><p>it should look for the calculated observations already present for the patient</p></td></tr><tr><td colspan=\"1\">Calculated Observations</td><td colspan=\"1\">&nbsp;</td><td colspan=\"1\">&nbsp;</td><td colspan=\"1\">&nbsp;</td></tr></tbody></table><p><br />Rules Engine:<br />In order to calculate dosage, this module expects specific concepts to be present in the system. The concepts that are currently used are Weight and Height. Rules Engine identifies these concepts by their UUIDs.<br />By default, they are identified by the CEIL dictionary concept uuids.<br />There are 2 options:<br />1) Update existing concepts with CIEL dictionary UUIDs:<br />&nbsp; &nbsp; &nbsp;For this, an Implementation can update specific and existing concepts to have the CEIL dictionary uuids.<br />&nbsp; &nbsp; &nbsp;SQL for updating existing concepts:<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; If you already have &quot;Weight&quot; and &quot;Height&quot; concepts, you can run the below SQLs. Note, the names must be exactly the same in the below specified SQLs.<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;update concept set uuid=&quot;5090AAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot; where concept_id in (<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;select concept_name.concept_id from concept_name where name=&quot;Height&quot; and concept_name_type=&quot;FULLY_SPECIFIED&quot;);<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;update concept set uuid=&quot;5089AAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot; where concept_id in (<br />&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; select concept_name.concept_id from concept_name where name=&quot;Weight&quot; and concept_name_type=&quot;FULLY_SPECIFIED&quot;);<br />2) Implementation can specify the existing concepts UUIDs. To do this, you need a properties file specifying the concept UUIDs.<br /><ac:inline-comment-marker ac:ref=\"4d086615-6f25-4cdd-a38b-5bf7782ac67e\">&nbsp; &nbsp; Path of the properties file: /opt/openmrs/rulesengine-concept.properties or /&lt;user.home&gt;/.OpenMRS/rulesengine-concept.properties</ac:inline-comment-marker><br />&nbsp; &nbsp; Content of the properties file:<br />&nbsp; &nbsp; &nbsp; &nbsp;Key: concept.&lt;name of the concept&gt;.uuid<br />&nbsp; &nbsp; &nbsp; &nbsp;Value: &lt;uuid of the concept in the implementation&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp;Example: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;concept.weight.uuid=b5449362-1f23-4d28-b787-51d8a77aa325<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; concept.height.uuid=55d28a7i9-a325-1f23-4d28-b787b5449362</p><p>3) By default&nbsp;<span style=\"color: rgb(51,51,51);\">latest Height and Weight captured across visits will be taken for calculating the dosage. If one want the Height and Weight values to be used from the current visit then set the below value to <em>true</em> in <em>medication.json</em></span></p><ac:structured-macro ac:macro-id=\"3fead13a-57b0-4e46-ba47-0374d5a919ec\" ac:name=\"code\" ac:schema-version=\"1\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:parameter ac:name=\"collapse\">true</ac:parameter><ac:plain-text-body><![CDATA[\"orderSet\": {\n        \"calculateDoseOnlyOnCurrentVisitValues\": false\n      }]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p><br /></p><p><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/35586092"
+      }
+    },
+    "view": {
+      "value": "<div class=\"table-wrap\"><style>[data-colorid=d30pozy2jt]{color:#333333} html[data-color-mode=dark] [data-colorid=d30pozy2jt]{color:#cccccc}</style><table class=\"wrapped confluenceTable\"><colgroup><col /><col /><col /><col /></colgroup><tbody><tr><th class=\"confluenceTh\">&nbsp;</th><th class=\"confluenceTh\">&nbsp;</th><th class=\"confluenceTh\">e.g.</th><th colspan=\"1\" class=\"confluenceTh\">managed</th></tr><tr><td class=\"confluenceTd\">Concepts</td><td class=\"confluenceTd\">Concepts involved in the calculated observations</td><td class=\"confluenceTd\">Weight, Height</td><td colspan=\"1\" class=\"confluenceTd\"><p>standardised using CIEL dictionary</p><ul style=\"list-style-type: square;\"><li>the concept have same UUID as in CIEL dictionary</li><li>the concepts should be provided by a project called bahmni-clinical-content</li><li>the implementation should be able to choose the concepts they want to use</li></ul></td></tr><tr><td class=\"confluenceTd\">Order Set</td><td class=\"confluenceTd\">&nbsp;</td><td class=\"confluenceTd\">CAF Cancer Regimen</td><td colspan=\"1\" class=\"confluenceTd\"><p>should be provided from bahmni-content</p><p>to be chosen by the implementations individually</p><p>depend on concepts and calculated observations</p></td></tr><tr><td class=\"confluenceTd\">Rules</td><td class=\"confluenceTd\">&nbsp;</td><td class=\"confluenceTd\">for now small snippets of groovy functions</td><td colspan=\"1\" class=\"confluenceTd\"><p>these should be present in the order set member for simple rules which are based on concepts or calculated observations</p><p>the java code should do an eval on these functions</p><p>it should look for the calculated observations already present for the patient</p></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">Calculated Observations</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td><td colspan=\"1\" class=\"confluenceTd\">&nbsp;</td></tr></tbody></table></div><p><br />Rules Engine:<br />In order to calculate dosage, this module expects specific concepts to be present in the system. The concepts that are currently used are Weight and Height. Rules Engine identifies these concepts by their UUIDs.<br />By default, they are identified by the CEIL dictionary concept uuids.<br />There are 2 options:<br />1) Update existing concepts with CIEL dictionary UUIDs:<br />&nbsp; &nbsp; &nbsp;For this, an Implementation can update specific and existing concepts to have the CEIL dictionary uuids.<br />&nbsp; &nbsp; &nbsp;SQL for updating existing concepts:<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; If you already have &quot;Weight&quot; and &quot;Height&quot; concepts, you can run the below SQLs. Note, the names must be exactly the same in the below specified SQLs.<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;update concept set uuid=&quot;5090AAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot; where concept_id in (<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;select concept_name.concept_id from concept_name where name=&quot;Height&quot; and concept_name_type=&quot;FULLY_SPECIFIED&quot;);<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;update concept set uuid=&quot;5089AAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot; where concept_id in (<br />&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; select concept_name.concept_id from concept_name where name=&quot;Weight&quot; and concept_name_type=&quot;FULLY_SPECIFIED&quot;);<br />2) Implementation can specify the existing concepts UUIDs. To do this, you need a properties file specifying the concept UUIDs.<br /><span class=\"inline-comment-marker\" data-ref=\"4d086615-6f25-4cdd-a38b-5bf7782ac67e\">&nbsp; &nbsp; Path of the properties file: /opt/openmrs/rulesengine-concept.properties or /&lt;user.home&gt;/.OpenMRS/rulesengine-concept.properties</span><br />&nbsp; &nbsp; Content of the properties file:<br />&nbsp; &nbsp; &nbsp; &nbsp;Key: concept.&lt;name of the concept&gt;.uuid<br />&nbsp; &nbsp; &nbsp; &nbsp;Value: &lt;uuid of the concept in the implementation&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp;Example: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;concept.weight.uuid=b5449362-1f23-4d28-b787-51d8a77aa325<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; concept.height.uuid=55d28a7i9-a325-1f23-4d28-b787b5449362</p><p>3) By default&nbsp;<span data-colorid=\"d30pozy2jt\">latest Height and Weight captured across visits will be taken for calculating the dosage. If one want the Height and Weight values to be used from the current visit then set the below value to <em>true</em> in <em>medication.json</em></span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3fead13a-57b0-4e46-ba47-0374d5a919ec\" data-macro-name=\"code\" style=\"border-width: 1px;\">\n <div class=\"codeHeader panelHeader pdl hide-border-bottom\">\n  <b class=\"code-title\"> </b><span class=\"collapse-source expand-control\" style=\"display:none;\"><span class=\"expand-control-icon icon\">&nbsp;</span><span class=\"expand-control-text\">Expand source</span></span><span class=\"collapse-spinner-wrapper\"> </span>\n </div>\n <div class=\"codeContent panelContent pdl hide-toolbar\">\n  <pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence; collapse: true\" data-theme=\"Confluence\">&quot;orderSet&quot;: {\n        &quot;calculateDoseOnlyOnCurrentVisitValues&quot;: false\n      }</pre>\n </div>\n</div><p><br /></p><p><br /></p><p><br /></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/35586092"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/35586092/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/35586092/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 9177
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/35586092/child",
+    "restrictions": "/rest/api/content/35586092/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/35586092/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=35586092",
+    "webui": "/spaces/BAH/pages/35586092/Order+Set+Rules",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/35586092",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/35586092",
+    "tinyui": "/x/LAAfAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

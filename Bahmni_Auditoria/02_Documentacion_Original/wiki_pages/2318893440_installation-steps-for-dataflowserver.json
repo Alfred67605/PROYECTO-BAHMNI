@@ -1,0 +1,172 @@
+{
+  "id": "2318893440",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2318893440",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMxODg5MzQ0MA==",
+  "status": "current",
+  "title": "Installation steps for DataFlowServer",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5ff6975591bb2e0108e513c3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "venkatesh bavisetti",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5ff6975591bb2e0108e513c3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Bavisetti Venkatesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5ff6975591bb2e0108e513c3"
+      }
+    },
+    "createdDate": "2021-04-05T08:43:28.989Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2318893440/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5ff6975591bb2e0108e513c3",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "venkatesh bavisetti",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5ff6975591bb2e0108e513c3",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Bavisetti Venkatesh",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5ff6975591bb2e0108e513c3"
+      }
+    },
+    "when": "2021-04-05T08:46:49.303Z",
+    "friendlyWhen": "Apr 05, 2021",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "syncRev": "0.VKn7TRl5QWQHzVbb8Vh2WQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2318893440.17",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2318893440"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2318893440/version/1"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"de86e8e7-3e29-4f64-b88f-8276b9299dc6\"><ac:rich-text-body><p>Assumption: Bahmni-mart is installed in the instance</p></ac:rich-text-body></ac:structured-macro><h4><strong>Enable Bahmni-mart-scdf in the inventory file</strong></h4><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"04bffca1-5c58-4092-bd71-968c41d1dde4\"><ac:plain-text-body><![CDATA[vi /etc/bahmni-mart-playbook/inventories/bahmni-mart\nlocalhost ansible_connection=local\n\n[bahmni-emr-db]\nlocalhost\n\n[bahmni-mart]\nlocalhost\n\n[bahmni-mart-db]\nlocalhost\n\n[bahmni-mart-db-slave]\n\n[bahmni-mart-scdf]\nlocalhost\n\n[metabase]\nlocalhost\n\n[metabase-db]\nlocalhost\n\n[metabase-db-slave]\n\n\n[local:children]\nbahmni-mart\nbahmni-mart-db\nbahmni-mart-db-slave\nbahmni-mart-scdf\nbahmni-emr-db\nmetabase\nmetabase-db\nmetabase-db-slave]]></ac:plain-text-body></ac:structured-macro><h5>Run the below playbook to Deploy mart with data flow server </h5><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"170ed797-8fb5-4f0b-b248-627a82f29f8d\"><ac:plain-text-body><![CDATA[ansible-playbook -i /etc/bahmni-mart-playbook/inventories/bahmni-mart /etc/bahmni-mart-playbook/all.yml --extra-vars '@/etc/bahmni-mart-playbook/setup.yml' --skip-tags \"custom_ssl,lets_encrypt_ssl\" -vvv]]></ac:plain-text-body></ac:structured-macro><h5>To ensure Data flow server container is installed, run </h5><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"7026cfeb-290b-4cbf-b7a8-492b20feb4da\"><ac:plain-text-body><![CDATA[docker ps]]></ac:plain-text-body></ac:structured-macro><h5>Verify the docker container for that the data flow server is running </h5><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"71\" ac:original-width=\"841\"><ri:attachment ri:filename=\"Screen Shot 2021-02-26 at 4.29.37 PM.png\" ri:version-at-save=\"2\" /></ac:image><p /><p /><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"7f16564c-4c9f-418a-b658-f9ac945ed44e\"><ac:rich-text-body><p>Note: Make sure that 9393 port is open to access Data flow server UI. <br />Linux Command to check if a port is open: sudo lsof -i:9393</p></ac:rich-text-body></ac:structured-macro><h4>To run Bahmni mart on the data flow server UI</h4><p>Access DataFlowServer UI at &lt;ip/DNS_server_name&gt;:9393. Navigate to tasks and click on run for the 'create-bahmni-mart task'.</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"686\" ac:original-width=\"1571\"><ri:attachment ri:filename=\"Screen Shot 2021-02-26 at 4.35.45 PM.png\" ri:version-at-save=\"2\" /></ac:image><p /><p>When Bahmni-mart runs successfully, user will be able to see the start date and end date for the &lsquo;create-bahmni-mart' task under Executions tab</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"333\" ac:original-width=\"1449\"><ri:attachment ri:filename=\"Screen Shot 2021-02-26 at 4.38.35 PM.png\" ri:version-at-save=\"2\" /></ac:image><p /><p /><h4>Steps to remove an installed data flow server</h4><h6>We can remove an installed data flow server using two approaches.</h6><p>Approach 1: Delete the data flow server&rsquo;s docker container</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"9b17c161-d7af-496c-8441-efe0a91d758f\"><ac:plain-text-body><![CDATA[docker ps\n#copy the containerId for data flow server\ndocker stop <containerId>\ndocker ps --filter \"status=exited\"\ndocker ps]]></ac:plain-text-body></ac:structured-macro><p>Approach 2: Disable Bahmni-mart-scdf in the inventory file</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"47b5c270-2b47-499c-8201-317895b83d3f\"><ac:plain-text-body><![CDATA[vi /etc/bahmni-mart-playbook/inventories/bahmni-mart\nlocalhost ansible_connection=local\n\n[bahmni-emr-db]\nlocalhost\n\n[bahmni-mart]\nlocalhost\n\n[bahmni-mart-db]\nlocalhost\n\n[bahmni-mart-db-slave]\n\n[bahmni-mart-scdf]\n\n[metabase]\nlocalhost\n\n[metabase-db]\nlocalhost\n\n[metabase-db-slave]\n\n\n[local:children]\nbahmni-mart\nbahmni-mart-db\nbahmni-mart-db-slave\nbahmni-mart-scdf\nbahmni-emr-db\nmetabase\nmetabase-db\nmetabase-db-slave]]></ac:plain-text-body></ac:structured-macro><p /><h4>Known issues and their respective steps to fix:</h4><ol><li><p>When user runs the &lsquo;create-bahmni-mart&rsquo; task for the first time, there might be an issue with the access permissions which will be shown in the logs as below.</p></li></ol><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"451\" ac:original-width=\"1069\"><ri:attachment ri:filename=\"Screen Shot 2021-02-26 at 4.28.29 PM.png\" ri:version-at-save=\"2\" /></ac:image><p /><p>Steps to fix:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"23611f1c-1b7d-4d92-9264-04683e9e54e2\"><ac:plain-text-body><![CDATA[mysql -uroot -p<password> openmrs\nselect Host,User from mysql.user;\n#Follow the below steps if the ip present in the logs is not present in the users table\nCreate user ‘openmrs-user'@'<ip>’\nGRANT ALL ON *.* to 'openmrs-user'@'<ip>'' IDENTIFIED BY '<password>';\nFLUSH PRIVILEGES;]]></ac:plain-text-body></ac:structured-macro><p />",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2318893440"
+      }
+    },
+    "view": {
+      "value": "<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"de86e8e7-3e29-4f64-b88f-8276b9299dc6\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Assumption: Bahmni-mart is installed in the instance</p></div></div><h4 id=\"InstallationstepsforDataFlowServer-EnableBahmni-mart-scdfintheinventoryfile\"><strong>Enable Bahmni-mart-scdf in the inventory file</strong></h4><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"04bffca1-5c58-4092-bd71-968c41d1dde4\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">vi /etc/bahmni-mart-playbook/inventories/bahmni-mart\nlocalhost ansible_connection=local\n\n[bahmni-emr-db]\nlocalhost\n\n[bahmni-mart]\nlocalhost\n\n[bahmni-mart-db]\nlocalhost\n\n[bahmni-mart-db-slave]\n\n[bahmni-mart-scdf]\nlocalhost\n\n[metabase]\nlocalhost\n\n[metabase-db]\nlocalhost\n\n[metabase-db-slave]\n\n\n[local:children]\nbahmni-mart\nbahmni-mart-db\nbahmni-mart-db-slave\nbahmni-mart-scdf\nbahmni-emr-db\nmetabase\nmetabase-db\nmetabase-db-slave</pre>\n</div></div><h5 id=\"InstallationstepsforDataFlowServer-RunthebelowplaybooktoDeploymartwithdataflowserver\">Run the below playbook to Deploy mart with data flow server </h5><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"170ed797-8fb5-4f0b-b248-627a82f29f8d\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">ansible-playbook -i /etc/bahmni-mart-playbook/inventories/bahmni-mart /etc/bahmni-mart-playbook/all.yml --extra-vars '@/etc/bahmni-mart-playbook/setup.yml' --skip-tags &quot;custom_ssl,lets_encrypt_ssl&quot; -vvv</pre>\n</div></div><h5 id=\"InstallationstepsforDataFlowServer-ToensureDataflowservercontainerisinstalled,run\">To ensure Data flow server container is installed, run </h5><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7026cfeb-290b-4cbf-b7a8-492b20feb4da\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">docker ps</pre>\n</div></div><h5 id=\"InstallationstepsforDataFlowServer-Verifythedockercontainerforthatthedataflowserverisrunning\">Verify the docker container for that the data flow server is running </h5><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/2318893440/Screen%20Shot%202021-02-26%20at%204.29.37%20PM.png?version=2&amp;modificationDate=1617612363318&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/2318893440/Screen%20Shot%202021-02-26%20at%204.29.37%20PM.png?version=2&amp;modificationDate=1617612363318&amp;cacheVersion=1&amp;api=v2\" data-height=\"71\" data-width=\"841\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2316239119\" data-linked-resource-version=\"2\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2021-02-26 at 4.29.37 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"2318893440\" data-linked-resource-container-version=\"1\" data-media-id=\"8f010c93-b2a9-4e0a-bf99-0a8a44424eb1\" data-media-type=\"file\"></span><p /><p /><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7f16564c-4c9f-418a-b658-f9ac945ed44e\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Note: Make sure that 9393 port is open to access Data flow server UI. <br />Linux Command to check if a port is open: sudo lsof -i:9393</p></div></div><h4 id=\"InstallationstepsforDataFlowServer-TorunBahmnimartonthedataflowserverUI\">To run Bahmni mart on the data flow server UI</h4><p>Access DataFlowServer UI at &lt;ip/DNS_server_name&gt;:9393. Navigate to tasks and click on run for the 'create-bahmni-mart task'.</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/2318893440/Screen%20Shot%202021-02-26%20at%204.35.45%20PM.png?version=2&amp;modificationDate=1617612377165&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/2318893440/Screen%20Shot%202021-02-26%20at%204.35.45%20PM.png?version=2&amp;modificationDate=1617612377165&amp;cacheVersion=1&amp;api=v2\" data-height=\"686\" data-width=\"1571\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2316239126\" data-linked-resource-version=\"2\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2021-02-26 at 4.35.45 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"2318893440\" data-linked-resource-container-version=\"1\" data-media-id=\"6cc05acf-8b5b-46c9-b5ca-4af0bd7d1789\" data-media-type=\"file\"></span><p /><p>When Bahmni-mart runs successfully, user will be able to see the start date and end date for the ‘create-bahmni-mart' task under Executions tab</p><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/2318893440/Screen%20Shot%202021-02-26%20at%204.38.35%20PM.png?version=2&amp;modificationDate=1617612384893&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/2318893440/Screen%20Shot%202021-02-26%20at%204.38.35%20PM.png?version=2&amp;modificationDate=1617612384893&amp;cacheVersion=1&amp;api=v2\" data-height=\"333\" data-width=\"1449\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2316239132\" data-linked-resource-version=\"2\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2021-02-26 at 4.38.35 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"2318893440\" data-linked-resource-container-version=\"1\" data-media-id=\"088bad5c-0e26-4b1d-bf0d-ee21a06018a1\" data-media-type=\"file\"></span><p /><p /><h4 id=\"InstallationstepsforDataFlowServer-Stepstoremoveaninstalleddataflowserver\">Steps to remove an installed data flow server</h4><h6 id=\"InstallationstepsforDataFlowServer-Wecanremoveaninstalleddataflowserverusingtwoapproaches.\">We can remove an installed data flow server using two approaches.</h6><p>Approach 1: Delete the data flow server’s docker container</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9b17c161-d7af-496c-8441-efe0a91d758f\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">docker ps\n#copy the containerId for data flow server\ndocker stop &lt;containerId&gt;\ndocker ps --filter &quot;status=exited&quot;\ndocker ps</pre>\n</div></div><p>Approach 2: Disable Bahmni-mart-scdf in the inventory file</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"47b5c270-2b47-499c-8201-317895b83d3f\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">vi /etc/bahmni-mart-playbook/inventories/bahmni-mart\nlocalhost ansible_connection=local\n\n[bahmni-emr-db]\nlocalhost\n\n[bahmni-mart]\nlocalhost\n\n[bahmni-mart-db]\nlocalhost\n\n[bahmni-mart-db-slave]\n\n[bahmni-mart-scdf]\n\n[metabase]\nlocalhost\n\n[metabase-db]\nlocalhost\n\n[metabase-db-slave]\n\n\n[local:children]\nbahmni-mart\nbahmni-mart-db\nbahmni-mart-db-slave\nbahmni-mart-scdf\nbahmni-emr-db\nmetabase\nmetabase-db\nmetabase-db-slave</pre>\n</div></div><p /><h4 id=\"InstallationstepsforDataFlowServer-Knownissuesandtheirrespectivestepstofix:\">Known issues and their respective steps to fix:</h4><ol><li><p>When user runs the ‘create-bahmni-mart’ task for the first time, there might be an issue with the access permissions which will be shown in the logs as below.</p></li></ol><span class=\"confluence-embedded-file-wrapper image-center-wrapper\"><img class=\"confluence-embedded-image image-center\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/2318893440/Screen%20Shot%202021-02-26%20at%204.28.29%20PM.png?version=2&amp;modificationDate=1617612403984&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/2318893440/Screen%20Shot%202021-02-26%20at%204.28.29%20PM.png?version=2&amp;modificationDate=1617612403984&amp;cacheVersion=1&amp;api=v2\" data-height=\"451\" data-width=\"1069\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"2316239138\" data-linked-resource-version=\"2\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2021-02-26 at 4.28.29 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"2318893440\" data-linked-resource-container-version=\"1\" data-media-id=\"866f56fa-4b4e-4013-b87f-25e9735605a7\" data-media-type=\"file\"></span><p /><p>Steps to fix:</p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"23611f1c-1b7d-4d92-9264-04683e9e54e2\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">mysql -uroot -p&lt;password&gt; openmrs\nselect Host,User from mysql.user;\n#Follow the below steps if the ip present in the logs is not present in the users table\nCreate user ‘openmrs-user'@'&lt;ip&gt;’\nGRANT ALL ON *.* to 'openmrs-user'@'&lt;ip&gt;'' IDENTIFIED BY '&lt;password&gt;';\nFLUSH PRIVILEGES;</pre>\n</div></div><p />",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2318893440"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2318893440/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2318893440/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 2110
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2318893440/child",
+    "restrictions": "/rest/api/content/2318893440/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2318893440/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2318893440",
+    "webui": "/spaces/BAH/pages/2318893440/Installation+steps+for+DataFlowServer",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2318893440",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2318893440",
+    "tinyui": "/x/gIE3ig",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

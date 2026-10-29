@@ -1,0 +1,171 @@
+{
+  "id": "114219028",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/114219028",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE0MjE5MDI4",
+  "status": "current",
+  "title": "Navigation Links Control",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2017-01-18T11:21:56.178Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114219028/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2022-11-20T11:17:26.181Z",
+    "friendlyWhen": "Nov 20, 2022",
+    "message": "Removed collapsible due to Atlassian bug",
+    "number": 7,
+    "minorEdit": false,
+    "syncRev": "0.JOtV7pomn1xyUksS4B4ZKA.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$114219028.36",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/114219028"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114219028/version/7"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose</h2><ac:structured-macro ac:name=\"excerpt\" ac:schema-version=\"1\" ac:macro-id=\"638aebc5-f96c-44fe-9484-b0037d832b70\"><ac:parameter ac:name=\"atlassian-macro-output-type\">INLINE</ac:parameter><ac:rich-text-body><p>Navigation Links Control can be configured to list the links of required pages. Clicking on the link will help navigate to that particular page. One can use the default links that are provided or can also configure custom links.</p></ac:rich-text-body></ac:structured-macro><h2>Screenshot</h2><p><br /><ac:image ac:width=\"600\"><ri:attachment ri:filename=\"Screen Shot 2016-05-25 at 3.45.13 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><h2>Configuration</h2><h3>Sample Config</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"1f67e77e-7910-454e-8588-343d66327300\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Add to clinical/dashboard.json for it to appear on the patient dashboard</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"navigationLinksControl\": {\n                \"title\":\"Navigation Links Control\",\n                \"translationKey\": \"DASHBOARD_TITLE_NAVIGATION_LINKS_CONTROL_KEY\",\n                \"type\": \"navigationLinksControl\",\n                \"displayOrder\": 10,\n                \"showLinks\" : [\"home\", \"visit\", \"registration\"],\n                \"customLinks\": [\n                    {\n                        \"translationKey\": \"CONSULTATION_PAGE_KEY\",\n                        \"url\": \"../clinical/#/default/patient/{{patientUuid}}/concept-set-group/observations\"\n                    },\n                    {\n                        \"translationKey\": \"OpenELIS\",\n                        \"url\": \"/openelis\"\n                    }\n                ]\n            },]]></ac:plain-text-body></ac:structured-macro><h3>Key Field Table</h3><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th>Key</th><th>Info</th><th colspan=\"1\">Mandatory</th></tr><tr><td>type</td><td><p>Name of the display control&nbsp;&nbsp;</p></td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\">translationKey</td><td colspan=\"1\">Internationalizes and displays the title.</td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\">title</td><td colspan=\"1\">The label that will be displayed on the display control (If translationKey is present no need to give it)</td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\">displayOrder</td><td colspan=\"1\">The order in which the display control will be displayed. if not specified the display is shown after the displays which have an order specified</td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\">showLinks</td><td colspan=\"1\"><div class=\"content-wrapper\"><p>List of links user would like to inherit from default links provided by the Bahmni.</p><p><strong>Please <a href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/blob/master/ui/app/common/displaycontrols/navigationlinks/directives/navigationLinks.js\">refer to this file</a> to see the Key Names for Internationalization.</strong></p></div></td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\"><br /></td><td colspan=\"1\">&nbsp;<strong>&quot;home&quot;</strong>&nbsp;(Enables link to navigate to Home Page/Dashboard)</td><td colspan=\"1\"><br /></td></tr><tr><td colspan=\"1\"><br /></td><td colspan=\"1\"><strong>&quot;visit&quot;</strong>&nbsp;&nbsp; &nbsp; (Enables link to navigate to current patient's Active Visit Page)</td><td colspan=\"1\"><br /></td></tr><tr><td colspan=\"1\"><br /></td><td colspan=\"1\"><strong>&quot;registration&quot;</strong>&nbsp;&nbsp; &nbsp; (Enables link to&nbsp;navigate to&nbsp;current patient's&nbsp;Registration Page)</td><td colspan=\"1\"><br /></td></tr><tr><td colspan=\"1\"><br /></td><td colspan=\"1\"><strong>&quot;inpatient&quot;</strong>&nbsp;&nbsp; &nbsp; (Enables link to navigate to&nbsp;current patient's&nbsp;Inpatient/ADT Page/Dashboard)</td><td colspan=\"1\"><br /></td></tr><tr><td colspan=\"1\"><br /></td><td colspan=\"1\"><strong>&quot;enrolment&quot; &nbsp;</strong>&nbsp;&nbsp; (Enables link to navigate to&nbsp;current patient's&nbsp;Program Page/Dashboard)</td><td colspan=\"1\"><br /></td></tr><tr><td colspan=\"1\"><br /></td><td colspan=\"1\"><p><strong>&quot;visitAttribute&quot;</strong>&nbsp;&nbsp; &nbsp; (Enables link to navigate to&nbsp;current patient's&nbsp;Visit Attributes Page (second page of registration or visit page of registration))</p></td><td colspan=\"1\"><br /></td></tr><tr><td>customLinks</td><td>List of links that the user would like to add which are not provided by product. If specified, then below attributes are mandatory.</td><td colspan=\"1\">N</td></tr><tr><td><br /></td><td><strong>translationKey&nbsp;</strong>: Internationalizes and displays the Text in the link</td><td colspan=\"1\">Y</td></tr><tr><td><br /></td><td><p><strong>url</strong>: Url to navigate (on click of the link)</p></td><td colspan=\"1\">Y</td></tr></tbody></table><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"9e21e6bc-65b4-4f30-a341-0dc091c2e859\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\"><ac:parameter ac:name=\"titleColor\">White</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Display Controls</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"e087e6d2-0084-41ae-84ba-9215e0540751\"><ac:parameter ac:name=\"all\">true</ac:parameter><ac:parameter ac:name=\"page\"><ac:link><ri:page ri:content-title=\"Miscellaneous Controls\" ri:version-at-save=\"1\" /></ac:link></ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/114219028"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"NavigationLinksControl-Purpose\">Purpose</h2><p>Navigation Links Control can be configured to list the links of required pages. Clicking on the link will help navigate to that particular page. One can use the default links that are provided or can also configure custom links.</p><h2 id=\"NavigationLinksControl-Screenshot\">Screenshot</h2><p><br/><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" width=\"600\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114219028/Screen%20Shot%202016-05-25%20at%203.45.13%20PM.png?version=1&amp;modificationDate=1484738516198&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=42\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114219028/Screen%20Shot%202016-05-25%20at%203.45.13%20PM.png?version=1&amp;modificationDate=1484738516198&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"114218996\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2016-05-25 at 3.45.13 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114219028\" data-linked-resource-container-version=\"7\" data-media-id=\"6f5977c3-2823-4e8d-a048-19a104333497\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114219028/Screen%20Shot%202016-05-25%20at%203.45.13%20PM.png?version=1&amp;modificationDate=1484738516198&amp;cacheVersion=1&amp;api=v2&amp;width=1200&amp;height=84 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114219028/Screen%20Shot%202016-05-25%20at%203.45.13%20PM.png?version=1&amp;modificationDate=1484738516198&amp;cacheVersion=1&amp;api=v2&amp;width=600&amp;height=42 1x\"></span></p><h2 id=\"NavigationLinksControl-Configuration\">Configuration</h2><h3 id=\"NavigationLinksControl-SampleConfig\">Sample Config</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"1f67e77e-7910-454e-8588-343d66327300\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Add to clinical/dashboard.json for it to appear on the patient dashboard</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;navigationLinksControl&quot;: {\n                &quot;title&quot;:&quot;Navigation Links Control&quot;,\n                &quot;translationKey&quot;: &quot;DASHBOARD_TITLE_NAVIGATION_LINKS_CONTROL_KEY&quot;,\n                &quot;type&quot;: &quot;navigationLinksControl&quot;,\n                &quot;displayOrder&quot;: 10,\n                &quot;showLinks&quot; : [&quot;home&quot;, &quot;visit&quot;, &quot;registration&quot;],\n                &quot;customLinks&quot;: [\n                    {\n                        &quot;translationKey&quot;: &quot;CONSULTATION_PAGE_KEY&quot;,\n                        &quot;url&quot;: &quot;../clinical/#/default/patient/{{patientUuid}}/concept-set-group/observations&quot;\n                    },\n                    {\n                        &quot;translationKey&quot;: &quot;OpenELIS&quot;,\n                        &quot;url&quot;: &quot;/openelis&quot;\n                    }\n                ]\n            },</pre>\n</div></div><h3 id=\"NavigationLinksControl-KeyFieldTable\">Key Field Table</h3><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class=\"confluenceTh\">Key</th><th class=\"confluenceTh\">Info</th><th colspan=\"1\" class=\"confluenceTh\">Mandatory</th></tr><tr><td class=\"confluenceTd\">type</td><td class=\"confluenceTd\"><p>Name of the display control  </p></td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">translationKey</td><td colspan=\"1\" class=\"confluenceTd\">Internationalizes and displays the title.</td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">title</td><td colspan=\"1\" class=\"confluenceTd\">The label that will be displayed on the display control (If translationKey is present no need to give it)</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">displayOrder</td><td colspan=\"1\" class=\"confluenceTd\">The order in which the display control will be displayed. if not specified the display is shown after the displays which have an order specified</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">showLinks</td><td colspan=\"1\" class=\"confluenceTd\"><div class=\"content-wrapper\"><p>List of links user would like to inherit from default links provided by the Bahmni.</p><p><strong>Please <a class=\"external-link\" href=\"https://github.com/Bahmni/openmrs-module-bahmniapps/blob/master/ui/app/common/displaycontrols/navigationlinks/directives/navigationLinks.js\" rel=\"nofollow\">refer to this file</a> to see the Key Names for Internationalization.</strong></p></div></td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><br/></td><td colspan=\"1\" class=\"confluenceTd\"> <strong>&quot;home&quot;</strong> (Enables link to navigate to Home Page/Dashboard)</td><td colspan=\"1\" class=\"confluenceTd\"><br/></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><br/></td><td colspan=\"1\" class=\"confluenceTd\"><strong>&quot;visit&quot;</strong>     (Enables link to navigate to current patient's Active Visit Page)</td><td colspan=\"1\" class=\"confluenceTd\"><br/></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><br/></td><td colspan=\"1\" class=\"confluenceTd\"><strong>&quot;registration&quot;</strong>     (Enables link to navigate to current patient's Registration Page)</td><td colspan=\"1\" class=\"confluenceTd\"><br/></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><br/></td><td colspan=\"1\" class=\"confluenceTd\"><strong>&quot;inpatient&quot;</strong>     (Enables link to navigate to current patient's Inpatient/ADT Page/Dashboard)</td><td colspan=\"1\" class=\"confluenceTd\"><br/></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><br/></td><td colspan=\"1\" class=\"confluenceTd\"><strong>&quot;enrolment&quot;  </strong>   (Enables link to navigate to current patient's Program Page/Dashboard)</td><td colspan=\"1\" class=\"confluenceTd\"><br/></td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><br/></td><td colspan=\"1\" class=\"confluenceTd\"><p><strong>&quot;visitAttribute&quot;</strong>     (Enables link to navigate to current patient's Visit Attributes Page (second page of registration or visit page of registration))</p></td><td colspan=\"1\" class=\"confluenceTd\"><br/></td></tr><tr><td class=\"confluenceTd\">customLinks</td><td class=\"confluenceTd\">List of links that the user would like to add which are not provided by product. If specified, then below attributes are mandatory.</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td class=\"confluenceTd\"><br/></td><td class=\"confluenceTd\"><strong>translationKey </strong>: Internationalizes and displays the Text in the link</td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td class=\"confluenceTd\"><br/></td><td class=\"confluenceTd\"><p><strong>url</strong>: Url to navigate (on click of the link)</p></td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr></tbody></table></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9e21e6bc-65b4-4f30-a341-0dc091c2e859\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: White;\"><b>Related Display Controls</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"e087e6d2-0084-41ae-84ba-9215e0540751\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/114219028/Navigation+Links+Control\" data-linked-resource-id=\"114219028\" data-linked-resource-version=\"7\" data-linked-resource-type=\"page\">Navigation Links Control</a></li></ul><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/114219028"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/114219028/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114219028/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": "none"
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/114219028/child",
+    "restrictions": "/rest/api/content/114219028/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/114219028/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=114219028",
+    "webui": "/spaces/BAH/pages/114219028/Navigation+Links+Control",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/114219028",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114219028",
+    "tinyui": "/x/FNjOBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

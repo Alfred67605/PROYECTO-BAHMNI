@@ -1,0 +1,50 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Configure Consultation UI</title></head><body><h1>Configure Consultation UI</h1><div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="ConfigureConsultationUI-PurposeandBenefits">Purpose and Benefits</h2><p>The Consultation User Interface allows the User to:</p><ul><li>Capture observations about the patient.</li><li>Confirm or determine diagnoses and view past diagnoses (including X-rays, Documents, et al.) for the patient.</li><li>Make dispositions.</li><li>Enter consultation notes.</li><li>Create laboratory orders.</li><li>Order drugs and view past and active medications.</li><li>Create Bacteriology test orders.</li></ul><p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-content-image-border image-center" width="700" loading="lazy" src="https://bahmni.atlassian.net/wiki/download/thumbnails/32014566/Consultation%20UI.png?version=1&amp;modificationDate=1447336906048&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=437" data-image-src="https://bahmni.atlassian.net/wiki/download/attachments/32014566/Consultation%20UI.png?version=1&amp;modificationDate=1447336906048&amp;cacheVersion=1&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="32604527" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Consultation UI.png" data-base-url="https://bahmni.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="32014566" data-linked-resource-container-version="19" data-media-id="805afe56-b1d7-4038-996f-7b9c2fe28e73" data-media-type="file" srcset="https://bahmni.atlassian.net/wiki/download/thumbnails/32014566/Consultation%20UI.png?version=1&amp;modificationDate=1447336906048&amp;cacheVersion=1&amp;api=v2&amp;width=1239&amp;height=774 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/32014566/Consultation%20UI.png?version=1&amp;modificationDate=1447336906048&amp;cacheVersion=1&amp;api=v2&amp;width=700&amp;height=437 1x"></span></p><p style="text-align: center;"><strong>Consultation User Interface</strong></p><h2 id="ConfigureConsultationUI-Steps">Steps</h2><p>The Consultation module is provided out-of-the-box (OOTB) with Bahmni. However, to further configure tabs for Consultation User Interface such as Observations, Diagnosis, etc. refer to the code snippet below:</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="0cfc5a93-c5c3-4ca7-84c0-82bc1ddbf2a5" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: true; theme: Confluence" data-theme="Confluence">{
+  &quot;observations&quot;: {
+    &quot;id&quot;: &quot;bahmni.clinical.consultation.observations&quot;,
+    &quot;extensionPointId&quot;: &quot;org.bahmni.clinical.consultation.board&quot;,
+    &quot;type&quot;: &quot;link&quot;,
+    &quot;label&quot;: &quot;Observations&quot;,
+    &quot;translationKey&quot;:&quot;OBSERVATIONS_BOARD_LABEL_KEY&quot;,
+    &quot;url&quot;: &quot;concept-set-group/observations&quot;,
+    &quot;default&quot;: true,
+    &quot;icon&quot;: &quot;fa-user-md&quot;,
+    &quot;order&quot;: 1,
+    &quot;requiredPrivilege&quot;: &quot;app:clinical:observationTab&quot;
+  },
+  &quot;diagnosis&quot;: {
+    &quot;id&quot;: &quot;bahmni.clinical.consultation.diagnosis&quot;,
+    &quot;extensionPointId&quot;: &quot;org.bahmni.clinical.consultation.board&quot;,
+    &quot;type&quot;: &quot;link&quot;,
+    &quot;label&quot;: &quot;Diagnosis&quot;,
+    &quot;translationKey&quot;:&quot;DIAGNOSIS_BOARD_LABEL_KEY&quot;,
+    &quot;url&quot;: &quot;diagnosis&quot;,
+    &quot;icon&quot;: &quot;fa-user-md&quot;,
+    &quot;order&quot;: 2,
+    &quot;requiredPrivilege&quot;: &quot;app:clinical:diagnosisTab&quot;
+  },
+  &quot;disposition&quot;: {
+    &quot;id&quot;: &quot;bahmni.clinical.consultation.disposition&quot;,
+    &quot;extensionPointId&quot;: &quot;org.bahmni.clinical.consultation.board&quot;,
+    &quot;type&quot;: &quot;link&quot;,
+    &quot;label&quot;: &quot;Disposition&quot;,
+    &quot;translationKey&quot;:&quot;DISPOSITION_BOARD_LABEL_KEY&quot;,
+    &quot;url&quot;: &quot;disposition&quot;,
+    &quot;icon&quot;: &quot;fa-user-md&quot;,
+    &quot;order&quot;: 3,
+    &quot;requiredPrivilege&quot;: &quot;app:clinical:dispositionTab&quot;
+  },</pre>
+</div></div><p>For further information refer to <a class="external-link" href="https://github.com/Bahmni/default-config/blob/master/openmrs/apps/clinical/extension.json" rel="nofollow">https://github.com/Bahmni/default-config/blob/master/openmrs/apps/clinical/extension.json</a></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-id="e7b3588e-96e1-4de3-a29d-46427cf35a1e" data-macro-name="tip"><p class="title">On this Page</p><div class="confluence-information-macro-body"><p> </p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="12bde249-f2a0-4e29-987a-ec64052de4d0" data-macro-name="toc"> </div><p> </p></div></div><div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="f5e76242-9ad1-477e-9fa2-70ff0a12c473" data-macro-name="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #668D3C;color: white;"><b>Feature Details</b></div><div class="panelContent">
+<p><span class="legacy-color-text-default"><a href="/wiki/spaces/BAH/pages/37945475/Capturing+Consultation+Data" data-linked-resource-id="37945475" data-linked-resource-version="5" data-linked-resource-type="page">Capturing Consultation Data - Feature Guide</a></span></p>
+</div></div></div>
+</div>
+</div>
+</div></body></html>

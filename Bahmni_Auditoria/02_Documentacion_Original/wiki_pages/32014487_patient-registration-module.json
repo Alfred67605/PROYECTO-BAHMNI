@@ -1,0 +1,171 @@
+{
+  "id": "32014487",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/32014487",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzIwMTQ0ODc=",
+  "status": "current",
+  "title": "Patient Registration Module",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2015-11-03T08:33:02.246Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014487/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "when": "2017-04-10T06:26:24.260Z",
+    "friendlyWhen": "Apr 10, 2017",
+    "message": "",
+    "number": 25,
+    "minorEdit": false,
+    "syncRev": "0.oh8ouhwaRDHqRRVEv8Tgng.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$32014487.123",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/32014487"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014487/version/25"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"single\"><ac:layout-cell><div class=\"toc-macro client-side-toc-macro conf-macro output-block hidden-outline\"><div class=\"confluence-information-macro-body\"><div class=\"toc-macro client-side-toc-macro conf-macro output-block hidden-outline\"><h2>Purpose and Benefits</h2><ac:structured-macro ac:name=\"excerpt\" ac:schema-version=\"1\" ac:macro-id=\"502ba420-c9bc-4c2a-bf4f-6a5fc4a4b2cd\"><ac:parameter ac:name=\"atlassian-macro-output-type\">INLINE</ac:parameter><ac:rich-text-body><p>The registration module allows a patient's information to be captured and maintained. It also acts as a starting point for the patient through the medical facility's workflow.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></div></div></div></ac:layout-cell></ac:layout-section><ac:layout-section ac:type=\"three_equal\"><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"75cc2741-ab64-44c9-b537-0a202bfb8299\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">Sections</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"28bbf201-d4bb-472c-865e-0ceb60581fb2\"><ac:parameter ac:name=\"all\">true</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Feature Details</ac:parameter><ac:rich-text-body><p><span style=\"color: rgb(0,0,0);\"><ac:link><ri:page ri:content-title=\"Patient Registration\" ri:version-at-save=\"38\" /><ac:plain-text-link-body><![CDATA[Patient Registration - Feature Guide]]></ac:plain-text-link-body></ac:link></span></p></ac:rich-text-body></ac:structured-macro><p>&nbsp;</p><p>&nbsp;</p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">Usage Details</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Registration\" ri:version-at-save=\"11\" /><ac:plain-text-link-body><![CDATA[Patient Registration - User Guide]]></ac:plain-text-link-body></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/32014487"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout single\" data-layout=\"single\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"toc-macro client-side-toc-macro conf-macro output-block hidden-outline\"><div class=\"confluence-information-macro-body\"><div class=\"toc-macro client-side-toc-macro conf-macro output-block hidden-outline\"><h2 id=\"PatientRegistrationModule-PurposeandBenefits\">Purpose and Benefits</h2><p>The registration module allows a patient's information to be captured and maintained. It also acts as a starting point for the patient through the medical facility's workflow.</p></div></div></div></div>\n</div>\n</div>\n<div class=\"columnLayout three-equal\" data-layout=\"three-equal\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"75cc2741-ab64-44c9-b537-0a202bfb8299\" data-macro-name=\"tip\"><p class=\"title\">Sections</p><div class=\"confluence-information-macro-body\"><p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"28bbf201-d4bb-472c-865e-0ceb60581fb2\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/32014595/Configure+Patient+Registration\" data-linked-resource-id=\"32014595\" data-linked-resource-version=\"171\" data-linked-resource-type=\"page\">Configure Patient Registration</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014597/Configure+Patient+Search+Display+Attributes\" data-linked-resource-id=\"32014597\" data-linked-resource-version=\"29\" data-linked-resource-type=\"page\">Configure Patient Search &amp; Display Attributes</a></li><li><a href=\"/wiki/spaces/BAH/pages/32014599/Configure+Patient+Card+Prints\" data-linked-resource-id=\"32014599\" data-linked-resource-version=\"32\" data-linked-resource-type=\"page\">Configure Patient Card Prints</a></li><li><a href=\"/wiki/spaces/BAH/pages/72581122/Configure+Display+Controls+in+Print\" data-linked-resource-id=\"72581122\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Configure Display Controls in Print</a></li><li><a href=\"/wiki/spaces/BAH/pages/3168075777/Configure+Sending+SMS+and+WhatsApp+message+on+Patient+Registration\" data-linked-resource-id=\"3168075777\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Configure Sending SMS and WhatsApp message on Patient Registration</a></li><li><a href=\"/wiki/spaces/BAH/pages/2434990081/Configuring+display+order+of+patient+names\" data-linked-resource-id=\"2434990081\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Configuring display order of patient names</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/92111058/Barcodes+in+Print\" data-linked-resource-id=\"92111058\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Barcodes in Print</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/3495657474/Configure+Custom+Patient+Attribute+with+Icon\" data-linked-resource-id=\"3495657474\" data-linked-resource-version=\"7\" data-linked-resource-type=\"page\">Configure Custom Patient Attribute with Icon</a></li></ul><p> </p></div></div></div>\n</div>\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f5e76242-9ad1-477e-9fa2-70ff0a12c473\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Feature Details</b></div><div class=\"panelContent\">\n<p><span class=\"legacy-color-text-default\"><a href=\"/wiki/spaces/BAH/pages/32604190/Patient+Registration\" data-linked-resource-id=\"32604190\" data-linked-resource-version=\"38\" data-linked-resource-type=\"page\">Patient Registration - Feature Guide</a></span></p>\n</div></div><p> </p><p> </p></div>\n</div>\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b94e3ad7-5c3a-4de1-9e38-0d0d4195b78d\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>Usage Details</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/32014347/Registration\" data-linked-resource-id=\"32014347\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Patient Registration - User Guide</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/32014487"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/32014487/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014487/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 490
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/32014487/child",
+    "restrictions": "/rest/api/content/32014487/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/32014487/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=32014487",
+    "webui": "/spaces/BAH/pages/32014487/Patient+Registration+Module",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/32014487",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/32014487",
+    "tinyui": "/x/l4DoAQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

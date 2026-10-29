@@ -1,0 +1,171 @@
+{
+  "id": "114186506",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/114186506",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE0MTg2NTA2",
+  "status": "current",
+  "title": "Disease Template Control",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d6b11e29-165e-4a92-bb99-16132525e104",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Teresa Gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d6b11e29-165e-4a92-bb99-16132525e104",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Teresa Gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d6b11e29-165e-4a92-bb99-16132525e104"
+      }
+    },
+    "createdDate": "2017-01-16T06:30:59.557Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114186506/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2022-11-18T04:14:27.582Z",
+    "friendlyWhen": "Nov 18, 2022",
+    "message": "Removed collapsible due to Atlassian bug",
+    "number": 10,
+    "minorEdit": false,
+    "syncRev": "0.qXufQZZvuTzjX4VUfNgz3w.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$114186506.48",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/114186506"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114186506/version/10"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h1>Purpose</h1><ac:structured-macro ac:name=\"excerpt\" ac:schema-version=\"1\" ac:macro-id=\"638aebc5-f96c-44fe-9484-b0037d832b70\"><ac:parameter ac:name=\"atlassian-macro-output-type\">INLINE</ac:parameter><ac:rich-text-body><p class=\"p1\"><span class=\"s1\">Disease Template Control can be configured to display all the observation values captured against the particular disease like Cancer, Diabetes or TB. </span></p></ac:rich-text-body></ac:structured-macro><h1>Screenshot</h1><p><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"Screen Shot 2017-03-02 at 5.14.35 PM.png\" ri:version-at-save=\"1\" /></ac:image><ac:image ac:height=\"250\"><ri:attachment ri:filename=\"Screen Shot 2017-03-02 at 5.15.02 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><h1><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\">Configuration</span></h1><h3>Sample Configuration</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"e241dadf-c6aa-4398-829d-08fcaca383ab\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Add to clinical/dashboard.json for it to appear on the patient dashboard</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[\"diabetes\":{  \n   \"title\":\"Diabetes\",\n   \"templateName\":\"Diabetes Templates\",\n   \"type\":\"diseaseTemplate\",\n   \"dashboardConfig\":{  \n      \"showOnly\":[  \n      ],\n      \"showGroupDateTime\":false\n   },\n   \"expandedViewConfig\":{  \n      \"showOnly\":[  \n      ],\n      \"showDetailsButton\":true,\n      \"pivotTable\":{  \n         \"numberOfVisits\":\"15\",\n         \"groupBy\":\"encounters\",\n         \"obsConcepts\":[  \n            \"Weight\",\n            \"Height\",\n            \"Systolic\",\n            \"Diastolic\",\n            \"Diabetes, Foot Exam\",\n            \"Diabetes, Eye Exam\",\n            \"Diabetes, Diabetes, Complications\"\n         ],\n         \"drugConcepts\":[  \n            \"Ipratropium Pressurised\",\n            \"Garbhpal Rasa\",\n            \"Lente Insulin\"\n         ],\n         \"labConcepts\":[  \"RBS\",\"FBS\",\"PP2BS\",\"Hb1AC\"]\n      },\n      \"observationGraph\":{  \n         \"type\":\"observationGraph\",\n         \"title\":\"Temperature\",\n         \"config\":{  \n            \"yAxisConcepts\":[  \n               \"Temperature\"\n            ],\n            \"numberOfVisits\":3\n         }\n      }\n   }\n}]]></ac:plain-text-body></ac:structured-macro><p><br /></p><h3 class=\"auto-cursor-target\">Key Field Table</h3><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th>Key</th><th>Info</th><th colspan=\"1\">Mandatory</th></tr><tr><td>title</td><td>The title to be displayed on the dashboard/visit page for the section.</td><td colspan=\"1\">Y</td></tr><tr><td>templateName</td><td>The name of the disease template in openMRS that needs to be displayed.</td><td colspan=\"1\">Y</td></tr><tr><td>type</td><td>The name/id for the control that needs to be picked from the code.</td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\">showOnly</td><td colspan=\"1\"><p>The concept names of the concepts that need to be displayed in this section. If blank, then all the concepts in that disease template will be displayed.</p></td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\">pivotTable</td><td colspan=\"1\">The configuration for the pivot table/flowsheet</td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\">observationGraph</td><td colspan=\"1\">The configuration for the observationGraph (OPTIONAL)</td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\">numberOfVisits</td><td colspan=\"1\"><p>The number of visits for which data has to be displayed in the pivot table</p></td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\">groupBy</td><td colspan=\"1\"><p>Can be encounters/visits.</p><p>If grouped by the encounter, then the data is displayed per encounter in the pivot table.</p><p>If grouped by the visit, then the latest value of the observations in each visit is displayed in the pivot table.</p></td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\">obsConcepts</td><td colspan=\"1\">The concept names of the observations that need to be displayed in the pivot table</td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\">drugConcepts</td><td colspan=\"1\"><p>The concept names of the drugs that need to be displayed in the pivot table</p></td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\">labConcepts</td><td colspan=\"1\">The concept names of the lab tests that need to be displayed in the pivot table</td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\">dashboardConfig</td><td colspan=\"1\"><span style=\"color: rgb(77,77,77);\">Indicates the configuration for the dashboard</span></td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\"><span style=\"color: rgb(24,54,145);\">expandedViewConfig</span></td><td colspan=\"1\"><p><span style=\"color: rgb(77,77,77);\">Indicates</span> the configuration for the details page (All Disease Details Page)</p></td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\">showDetailsButton</td><td colspan=\"1\"><span style=\"color: rgb(77,77,77);\">Configuration to display audit information when '+ ' sign is clicked. If set to false, the '+' button will not be displayed.</span></td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\">showGroupDateTime</td><td colspan=\"1\">Configuration to display grouped encounter date time. If set to false, it is hidden. Default value is true(which means it is treated as true, if nothing specified). Should be separately configured for both dashboard and allDetails page.</td><td colspan=\"1\">N</td></tr></tbody></table><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"4fd2943c-db04-49ab-97f7-cbec04d1d596\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\"><ac:parameter ac:name=\"titleColor\">White</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Display Controls</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"d3a47878-f1ee-43ad-aa8c-6ce68330aa55\"><ac:parameter ac:name=\"all\">true</ac:parameter><ac:parameter ac:name=\"page\"><ac:link><ri:page ri:content-title=\"Clinical Observation Controls\" ri:version-at-save=\"5\" /></ac:link></ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/114186506"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\"><style>[data-colorid=dslwctrax4]{color:#4d4d4d} html[data-color-mode=dark] [data-colorid=dslwctrax4]{color:#b2b2b2}[data-colorid=oc4i7ll01o]{color:#4d4d4d} html[data-color-mode=dark] [data-colorid=oc4i7ll01o]{color:#b2b2b2}[data-colorid=wtjlgnhvnr]{color:#4d4d4d} html[data-color-mode=dark] [data-colorid=wtjlgnhvnr]{color:#b2b2b2}[data-colorid=ylgz00ixej]{color:#183691} html[data-color-mode=dark] [data-colorid=ylgz00ixej]{color:#6e8ce7}</style>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h1 id=\"DiseaseTemplateControl-Purpose\">Purpose</h1><p /><p class=\"p1 conf-macro output-inline\" data-hasbody=\"true\" data-macro-id=\"638aebc5-f96c-44fe-9484-b0037d832b70\" data-macro-name=\"excerpt\"><span class=\"s1\">Disease Template Control can be configured to display all the observation values captured against the particular disease like Cancer, Diabetes or TB. </span></p><p /><h1 id=\"DiseaseTemplateControl-Screenshot\">Screenshot</h1><p><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114186506/Screen%20Shot%202017-03-02%20at%205.14.35%20PM.png?version=1&amp;modificationDate=1488455387569&amp;cacheVersion=1&amp;api=v2&amp;width=264&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114186506/Screen%20Shot%202017-03-02%20at%205.14.35%20PM.png?version=1&amp;modificationDate=1488455387569&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115123815\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2017-03-02 at 5.14.35 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114186506\" data-linked-resource-container-version=\"10\" data-media-id=\"1f247ea5-b1ff-483f-8929-411af2156f91\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114186506/Screen%20Shot%202017-03-02%20at%205.14.35%20PM.png?version=1&amp;modificationDate=1488455387569&amp;cacheVersion=1&amp;api=v2&amp;width=528&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114186506/Screen%20Shot%202017-03-02%20at%205.14.35%20PM.png?version=1&amp;modificationDate=1488455387569&amp;cacheVersion=1&amp;api=v2&amp;width=264&amp;height=250 1x\" /></span><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114186506/Screen%20Shot%202017-03-02%20at%205.15.02%20PM.png?version=1&amp;modificationDate=1488455434534&amp;cacheVersion=1&amp;api=v2&amp;width=789&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/114186506/Screen%20Shot%202017-03-02%20at%205.15.02%20PM.png?version=1&amp;modificationDate=1488455434534&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115123829\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2017-03-02 at 5.15.02 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"114186506\" data-linked-resource-container-version=\"10\" data-media-id=\"0bd9cd10-7c8e-4596-ae6d-353380277d89\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/114186506/Screen%20Shot%202017-03-02%20at%205.15.02%20PM.png?version=1&amp;modificationDate=1488455434534&amp;cacheVersion=1&amp;api=v2&amp;width=1578&amp;height=500 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/114186506/Screen%20Shot%202017-03-02%20at%205.15.02%20PM.png?version=1&amp;modificationDate=1488455434534&amp;cacheVersion=1&amp;api=v2&amp;width=789&amp;height=250 1x\" /></span></p><h1 id=\"DiseaseTemplateControl-Configuration\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\">Configuration</span></h1><h3 id=\"DiseaseTemplateControl-SampleConfiguration\">Sample Configuration</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e241dadf-c6aa-4398-829d-08fcaca383ab\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Add to clinical/dashboard.json for it to appear on the patient dashboard</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence\" data-theme=\"Confluence\">&quot;diabetes&quot;:{  \n   &quot;title&quot;:&quot;Diabetes&quot;,\n   &quot;templateName&quot;:&quot;Diabetes Templates&quot;,\n   &quot;type&quot;:&quot;diseaseTemplate&quot;,\n   &quot;dashboardConfig&quot;:{  \n      &quot;showOnly&quot;:[  \n      ],\n      &quot;showGroupDateTime&quot;:false\n   },\n   &quot;expandedViewConfig&quot;:{  \n      &quot;showOnly&quot;:[  \n      ],\n      &quot;showDetailsButton&quot;:true,\n      &quot;pivotTable&quot;:{  \n         &quot;numberOfVisits&quot;:&quot;15&quot;,\n         &quot;groupBy&quot;:&quot;encounters&quot;,\n         &quot;obsConcepts&quot;:[  \n            &quot;Weight&quot;,\n            &quot;Height&quot;,\n            &quot;Systolic&quot;,\n            &quot;Diastolic&quot;,\n            &quot;Diabetes, Foot Exam&quot;,\n            &quot;Diabetes, Eye Exam&quot;,\n            &quot;Diabetes, Diabetes, Complications&quot;\n         ],\n         &quot;drugConcepts&quot;:[  \n            &quot;Ipratropium Pressurised&quot;,\n            &quot;Garbhpal Rasa&quot;,\n            &quot;Lente Insulin&quot;\n         ],\n         &quot;labConcepts&quot;:[  &quot;RBS&quot;,&quot;FBS&quot;,&quot;PP2BS&quot;,&quot;Hb1AC&quot;]\n      },\n      &quot;observationGraph&quot;:{  \n         &quot;type&quot;:&quot;observationGraph&quot;,\n         &quot;title&quot;:&quot;Temperature&quot;,\n         &quot;config&quot;:{  \n            &quot;yAxisConcepts&quot;:[  \n               &quot;Temperature&quot;\n            ],\n            &quot;numberOfVisits&quot;:3\n         }\n      }\n   }\n}</pre>\n</div></div><p><br /></p><h3 class=\"auto-cursor-target\" id=\"DiseaseTemplateControl-KeyFieldTable\">Key Field Table</h3><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th class=\"confluenceTh\">Key</th><th class=\"confluenceTh\">Info</th><th colspan=\"1\" class=\"confluenceTh\">Mandatory</th></tr><tr><td class=\"confluenceTd\">title</td><td class=\"confluenceTd\">The title to be displayed on the dashboard/visit page for the section.</td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td class=\"confluenceTd\">templateName</td><td class=\"confluenceTd\">The name of the disease template in openMRS that needs to be displayed.</td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td class=\"confluenceTd\">type</td><td class=\"confluenceTd\">The name/id for the control that needs to be picked from the code.</td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">showOnly</td><td colspan=\"1\" class=\"confluenceTd\"><p>The concept names of the concepts that need to be displayed in this section. If blank, then all the concepts in that disease template will be displayed.</p></td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">pivotTable</td><td colspan=\"1\" class=\"confluenceTd\">The configuration for the pivot table/flowsheet</td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">observationGraph</td><td colspan=\"1\" class=\"confluenceTd\">The configuration for the observationGraph (OPTIONAL)</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">numberOfVisits</td><td colspan=\"1\" class=\"confluenceTd\"><p>The number of visits for which data has to be displayed in the pivot table</p></td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">groupBy</td><td colspan=\"1\" class=\"confluenceTd\"><p>Can be encounters/visits.</p><p>If grouped by the encounter, then the data is displayed per encounter in the pivot table.</p><p>If grouped by the visit, then the latest value of the observations in each visit is displayed in the pivot table.</p></td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">obsConcepts</td><td colspan=\"1\" class=\"confluenceTd\">The concept names of the observations that need to be displayed in the pivot table</td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">drugConcepts</td><td colspan=\"1\" class=\"confluenceTd\"><p>The concept names of the drugs that need to be displayed in the pivot table</p></td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">labConcepts</td><td colspan=\"1\" class=\"confluenceTd\">The concept names of the lab tests that need to be displayed in the pivot table</td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">dashboardConfig</td><td colspan=\"1\" class=\"confluenceTd\"><span data-colorid=\"dslwctrax4\">Indicates the configuration for the dashboard</span></td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><span data-colorid=\"ylgz00ixej\">expandedViewConfig</span></td><td colspan=\"1\" class=\"confluenceTd\"><p><span data-colorid=\"wtjlgnhvnr\">Indicates</span> the configuration for the details page (All Disease Details Page)</p></td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">showDetailsButton</td><td colspan=\"1\" class=\"confluenceTd\"><span data-colorid=\"oc4i7ll01o\">Configuration to display audit information when '+ ' sign is clicked. If set to false, the '+' button will not be displayed.</span></td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\">showGroupDateTime</td><td colspan=\"1\" class=\"confluenceTd\">Configuration to display grouped encounter date time. If set to false, it is hidden. Default value is true(which means it is treated as true, if nothing specified). Should be separately configured for both dashboard and allDetails page.</td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr></tbody></table></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4fd2943c-db04-49ab-97f7-cbec04d1d596\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: White;\"><b>Related Display Controls</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"d3a47878-f1ee-43ad-aa8c-6ce68330aa55\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/102891583/Diagnosis+Control\" data-linked-resource-id=\"102891583\" data-linked-resource-version=\"29\" data-linked-resource-type=\"page\">Diagnosis Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114186506/Disease+Template+Control\" data-linked-resource-id=\"114186506\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Disease Template Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/98402388/Forms+Display+Control\" data-linked-resource-id=\"98402388\" data-linked-resource-version=\"33\" data-linked-resource-type=\"page\">Forms Display Control</a><ul class=\"childpages-macro\"><li><a href=\"/wiki/spaces/BAH/pages/3505586199/New+Forms+React+Display+Control\" data-linked-resource-id=\"3505586199\" data-linked-resource-version=\"3\" data-linked-resource-type=\"page\">New Forms React Display Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/3562766355/Print+Forms\" data-linked-resource-id=\"3562766355\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Print Forms</a></li></ul></li><li><a href=\"/wiki/spaces/BAH/pages/114188767/Observation+Control\" data-linked-resource-id=\"114188767\" data-linked-resource-version=\"15\" data-linked-resource-type=\"page\">Observation Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/98402359/Obs+To+Obs+FlowSheet\" data-linked-resource-id=\"98402359\" data-linked-resource-version=\"56\" data-linked-resource-type=\"page\">Obs To Obs FlowSheet</a></li></ul><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/114186506"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/114186506/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114186506/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 257089940
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/114186506/child",
+    "restrictions": "/rest/api/content/114186506/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/114186506/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=114186506",
+    "webui": "/spaces/BAH/pages/114186506/Disease+Template+Control",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/114186506",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/114186506",
+    "tinyui": "/x/ClnOBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

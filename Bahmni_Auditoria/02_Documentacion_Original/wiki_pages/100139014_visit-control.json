@@ -1,0 +1,171 @@
+{
+  "id": "100139014",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/100139014",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTAwMTM5MDE0",
+  "status": "current",
+  "title": "Visit Control",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sravanthi N. S. CH.",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:d47e0136-cbde-4dbc-8820-611d4528d1c8",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sravanthi N. S. CH.",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:d47e0136-cbde-4dbc-8820-611d4528d1c8"
+      }
+    },
+    "createdDate": "2016-11-17T07:00:13.863Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/100139014/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2022-11-20T11:19:11.223Z",
+    "friendlyWhen": "Nov 20, 2022",
+    "message": "Removed collapsible due to Atlassian bug",
+    "number": 14,
+    "minorEdit": false,
+    "syncRev": "0.HzbszsDE03vzg5_eqY4jJQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$100139014.64",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/100139014"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/100139014/version/14"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose</h2><ac:structured-macro ac:name=\"excerpt\" ac:schema-version=\"1\" ac:macro-id=\"68725f95-8583-41f2-9aa4-d93cfdc977b0\"><ac:parameter ac:name=\"atlassian-macro-output-type\">INLINE</ac:parameter><ac:rich-text-body><p>It displays the visit information of a patient along with start date, end date and the type of the visit. <span>The active/current visit is marked with an asterisk (*).</span></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e7209c1d-903a-4e70-9594-791137ee101d\"><ac:parameter ac:name=\"title\">Note</ac:parameter><ac:rich-text-body><ul><li>Clicking on a particular visit will navigate to <ac:link><ri:page ri:content-title=\"Configure Visit Dashboard\" ri:version-at-save=\"15\" /><ac:plain-text-link-body><![CDATA[Visit Dashboard ]]></ac:plain-text-link-body></ac:link>displaying the information for that visit.</li><li><span>On clicking the title &quot;Visits&quot; in the below sample screenshot, a pop up showing all the visits of a patient will appear.</span></li><li><span>An example use case is<span> viewing the latest 8 visits of a patient.</span></span></li></ul></ac:rich-text-body></ac:structured-macro><p><br /></p><h2 class=\"auto-cursor-target\">Screenshot</h2><p><ac:image ac:title=\"Visit Control\" ac:alt=\"Visit Control\"><ri:attachment ri:filename=\"Visit Control on Patient Dashboard.png\" ri:version-at-save=\"1\" /></ac:image></p><h2>Configuration</h2><h3>Sample Config</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"639a1739-9a26-48c1-b5b5-89505f5ccbeb\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Add to clinical/dashboard.json for it to appear on the patient dashboard</ac:parameter><ac:plain-text-body><![CDATA[\"visits\": {\n            \"translationKey\": \"DASHBOARD_TITLE_VISITS_KEY\",\n            \"type\": \"visits\",\n            \"displayOrder\": 17,\n            \"dashboardConfig\": {\n                 \"maximumNoOfVisits\": 8\n                }\n         }]]></ac:plain-text-body></ac:structured-macro><h3><span>Key Field Table</span></h3><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th>Key</th><th>Info</th><th colspan=\"1\">Mandatory</th></tr><tr><td><p>type</p></td><td><div class=\"content-wrapper\"><p>Indicates the type of the display control.</p><p><strong>type should be &quot;visits&quot;.</strong></p></div></td><td colspan=\"1\">Y</td></tr><tr><td><p>maximumNoOfVisits</p></td><td><p>Specifies the maximum number of visits for which to display data</p><ul><li>If it is empty, then by default all the visits for the patient are displayed.</li></ul></td><td colspan=\"1\">N</td></tr><tr><td><p><span style=\"color: rgb(24,54,145);\">dashboardConfig</span></p></td><td><p><span style=\"color: rgb(77,77,77);\">Indicates</span><span style=\"color: rgb(77,77,77);\"> that all the configurations mentioned under this are for the patient dashboard</span></p></td><td colspan=\"1\">Y</td></tr><tr><td colspan=\"1\"><p>displayOrder</p></td><td colspan=\"1\"><p>The order in which the display control will be displayed</p></td><td colspan=\"1\">N</td></tr><tr><td colspan=\"1\"><p>translationKey</p></td><td colspan=\"1\"><p>Internationalizes the display control</p></td><td colspan=\"1\">Y</td></tr></tbody></table><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"9e21e6bc-65b4-4f30-a341-0dc091c2e859\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\"><ac:parameter ac:name=\"titleColor\">White</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Display Controls</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"300f309a-b2b6-43e3-99c8-d9eccea4c73b\"><ac:parameter ac:name=\"all\">true</ac:parameter><ac:parameter ac:name=\"page\"><ac:link><ri:page ri:content-title=\"Patient Controls\" ri:version-at-save=\"1\" /></ac:link></ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/100139014"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\"><style>[data-colorid=ex7kr2kauo]{color:#183691} html[data-color-mode=dark] [data-colorid=ex7kr2kauo]{color:#6e8ce7}[data-colorid=ed2vparxa3]{color:#4d4d4d} html[data-color-mode=dark] [data-colorid=ed2vparxa3]{color:#b2b2b2}[data-colorid=t1hqheeyck]{color:#4d4d4d} html[data-color-mode=dark] [data-colorid=t1hqheeyck]{color:#b2b2b2}</style>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"VisitControl-Purpose\">Purpose</h2><p>It displays the visit information of a patient along with start date, end date and the type of the visit. <span class=\"conf-macro output-inline\" data-hasbody=\"true\" data-macro-id=\"68725f95-8583-41f2-9aa4-d93cfdc977b0\" data-macro-name=\"excerpt\">The active/current visit is marked with an asterisk (*).</span></p><div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e7209c1d-903a-4e70-9594-791137ee101d\" data-macro-name=\"tip\"><p class=\"title\">Note</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><ul><li>Clicking on a particular visit will navigate to <a href=\"/wiki/spaces/BAH/pages/37945359/Configure+Visit+Dashboard\" data-linked-resource-id=\"37945359\" data-linked-resource-version=\"16\" data-linked-resource-type=\"page\">Visit Dashboard </a>displaying the information for that visit.</li><li><span>On clicking the title &quot;Visits&quot; in the below sample screenshot, a pop up showing all the visits of a patient will appear.</span></li><li><span>An example use case is<span> viewing the latest 8 visits of a patient.</span></span></li></ul></div></div><p><br /></p><h2 class=\"auto-cursor-target\" id=\"VisitControl-Screenshot\">Screenshot</h2><p><span class=\"confluence-embedded-file-wrapper\"><img class=\"confluence-embedded-image\" alt=\"Visit Control\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/100139014/Visit%20Control%20on%20Patient%20Dashboard.png?version=1&amp;modificationDate=1479366013883&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/100139014/Visit%20Control%20on%20Patient%20Dashboard.png?version=1&amp;modificationDate=1479366013883&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"100139013\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Visit Control on Patient Dashboard.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"100139014\" data-linked-resource-container-version=\"14\" data-media-id=\"1f453054-c889-49bb-8a51-a7204733b8be\" data-media-type=\"file\" title=\"Visit Control\" /></span></p><h2 id=\"VisitControl-Configuration\">Configuration</h2><h3 id=\"VisitControl-SampleConfig\">Sample Config</h3><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"639a1739-9a26-48c1-b5b5-89505f5ccbeb\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeHeader panelHeader pdl\" style=\"border-bottom-width: 1px;\"><b>Add to clinical/dashboard.json for it to appear on the patient dashboard</b></div><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;visits&quot;: {\n            &quot;translationKey&quot;: &quot;DASHBOARD_TITLE_VISITS_KEY&quot;,\n            &quot;type&quot;: &quot;visits&quot;,\n            &quot;displayOrder&quot;: 17,\n            &quot;dashboardConfig&quot;: {\n                 &quot;maximumNoOfVisits&quot;: 8\n                }\n         }</pre>\n</div></div><h3 id=\"VisitControl-KeyFieldTable\"><span>Key Field Table</span></h3><div class=\"table-wrap\"><table class=\"wrapped confluenceTable\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th class=\"confluenceTh\">Key</th><th class=\"confluenceTh\">Info</th><th colspan=\"1\" class=\"confluenceTh\">Mandatory</th></tr><tr><td class=\"confluenceTd\"><p>type</p></td><td class=\"confluenceTd\"><div class=\"content-wrapper\"><p>Indicates the type of the display control.</p><p><strong>type should be &quot;visits&quot;.</strong></p></div></td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td class=\"confluenceTd\"><p>maximumNoOfVisits</p></td><td class=\"confluenceTd\"><p>Specifies the maximum number of visits for which to display data</p><ul><li>If it is empty, then by default all the visits for the patient are displayed.</li></ul></td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td class=\"confluenceTd\"><p><span data-colorid=\"ex7kr2kauo\">dashboardConfig</span></p></td><td class=\"confluenceTd\"><p><span data-colorid=\"ed2vparxa3\">Indicates</span><span data-colorid=\"t1hqheeyck\"> that all the configurations mentioned under this are for the patient dashboard</span></p></td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><p>displayOrder</p></td><td colspan=\"1\" class=\"confluenceTd\"><p>The order in which the display control will be displayed</p></td><td colspan=\"1\" class=\"confluenceTd\">N</td></tr><tr><td colspan=\"1\" class=\"confluenceTd\"><p>translationKey</p></td><td colspan=\"1\" class=\"confluenceTd\"><p>Internationalizes the display control</p></td><td colspan=\"1\" class=\"confluenceTd\">Y</td></tr></tbody></table></div></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9e21e6bc-65b4-4f30-a341-0dc091c2e859\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"c600f8c4-b8b4-4eb8-bd41-e903ed368a03\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"11c594ed-5883-4869-a352-0f4f6562d86e\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: White;\"><b>Related Display Controls</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"300f309a-b2b6-43e3-99c8-d9eccea4c73b\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/114227194/Patient+Context+Display+Control\" data-linked-resource-id=\"114227194\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Patient Context Display Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/114227474/Patient+Profile+Control\" data-linked-resource-id=\"114227474\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Patient Profile Control</a></li><li><a href=\"/wiki/spaces/BAH/pages/100139014/Visit+Control\" data-linked-resource-id=\"100139014\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Visit Control</a></li></ul><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/100139014"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/100139014/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/100139014/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 2
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/100139014/child",
+    "restrictions": "/rest/api/content/100139014/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/100139014/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=100139014",
+    "webui": "/spaces/BAH/pages/100139014/Visit+Control",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/100139014",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/100139014",
+    "tinyui": "/x/BgD4BQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

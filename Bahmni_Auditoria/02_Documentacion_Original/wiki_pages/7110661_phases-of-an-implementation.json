@@ -1,0 +1,178 @@
+{
+  "id": "7110661",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/7110661",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNzExMDY2MQ==",
+  "status": "current",
+  "title": "Phases of an implementation",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:1c16c37d-b2b1-4002-ac28-33e53fb88ea0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Pradipta Kundu (Unlicensed)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:1c16c37d-b2b1-4002-ac28-33e53fb88ea0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Pradipta Kundu (Unlicensed)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:1c16c37d-b2b1-4002-ac28-33e53fb88ea0"
+      }
+    },
+    "createdDate": "2014-07-15T12:02:16.106Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/7110661/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gurpreet Luthra",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gurpreet Luthra",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:7db4f1c8-e36c-42c9-8c28-3abf21ef1ea5"
+      }
+    },
+    "when": "2020-09-19T04:53:00.310Z",
+    "friendlyWhen": "Sept 19, 2020",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "syncRev": "0._9i70HDDbCujhJEFmieIrg.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$7110661.34",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/7110661"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/7110661/version/4"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_equal\"><ac:layout-cell><ol><li>Needs Assessment</li><li>Customise and configure<br /><ol><li>Configuration, master data setup, data migration, integration with other systems, customization</li></ol></li><li>Release<ol><li><a href=\"https://bahmni.atlassian.net/wiki/pages/viewpage.action?pageId=29818929\">Training</a><ol><li>Product and process</li></ol></li><li><span style=\"line-height: 1.4285715;\">Infrastructure setup</span></li><li><span style=\"line-height: 1.4285715;\">Deployment</span></li></ol></li><li><span style=\"line-height: 1.4285715;\">Implementation support</span></li></ol><p><span style=\"line-height: 1.4285715;\"><br /></span></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"bd4c25d7-651e-43b9-8fb4-fd3de965723c\"><ac:parameter ac:name=\"title\">Pages in this section</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"4ab225d7-f156-449b-aa15-d46df4787ead\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/7110661"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-equal\" data-layout=\"two-equal\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<ol><li>Needs Assessment</li><li>Customise and configure<br/><ol><li>Configuration, master data setup, data migration, integration with other systems, customization</li></ol></li><li>Release<ol><li><a href=\"https://bahmni.atlassian.net/wiki/pages/viewpage.action?pageId=29818929\" rel=\"nofollow\">Training</a><ol><li>Product and process</li></ol></li><li><span style=\"line-height: 1.4285715;\">Infrastructure setup</span></li><li><span style=\"line-height: 1.4285715;\">Deployment</span></li></ol></li><li><span style=\"line-height: 1.4285715;\">Implementation support</span></li></ol><p><span style=\"line-height: 1.4285715;\"><br/></span></p></div>\n</div>\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"bd4c25d7-651e-43b9-8fb4-fd3de965723c\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>Pages in this section</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"4ab225d7-f156-449b-aa15-d46df4787ead\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/18415786/Needs+Assessment\" data-linked-resource-id=\"18415786\" data-linked-resource-version=\"29\" data-linked-resource-type=\"page\">Needs Assessment</a></li><li><a href=\"/wiki/spaces/BAH/pages/19234865/Preparation+for+Bahmni+inception\" data-linked-resource-id=\"19234865\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Preparation for Bahmni inception</a></li></ul><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/7110661"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [
+        {
+          "prefix": "global",
+          "name": "review-needed",
+          "id": "30146561",
+          "label": "review-needed"
+        }
+      ],
+      "start": 0,
+      "limit": 200,
+      "size": 1,
+      "_links": {
+        "next": "/rest/api/content/7110661/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/7110661/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 263839475
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/7110661/child",
+    "restrictions": "/rest/api/content/7110661/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/7110661/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=7110661",
+    "webui": "/spaces/BAH/pages/7110661/Phases+of+an+implementation",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/7110661",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/7110661",
+    "tinyui": "/x/BYBs",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

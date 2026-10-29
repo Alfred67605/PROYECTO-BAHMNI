@@ -1,0 +1,171 @@
+{
+  "id": "137953307",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/137953307",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTM3OTUzMzA3",
+  "status": "current",
+  "title": "Configure Views of Appointments",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "createdDate": "2017-09-08T15:51:11.393Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/137953307/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "when": "2018-07-24T13:28:06.522Z",
+    "friendlyWhen": "Jul 24, 2018",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "syncRev": "0.CMZMjvWffw1nTcOlYrm-2A.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$137953307.437",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/137953307"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/137953307/version/5"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Calendar View&nbsp;</h2><p>This view provides the user the ability to view appointments for different providers in a given day, in a calendar. Users can further filter appointments using a filter panel available on this view. &nbsp;To know more about using the calendar view, please see the <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/138117151/Views+of+Appointments\">User guide</a>.<strong>&nbsp;</strong></p><h3><strong>Enabling Calendar View</strong></h3><p><span>To Enable calendar view in Appointments Scheduling Module, please add below config in </span><span>openmrs/apps/appointments/app.json</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"3597413d-f60d-4f09-8bc6-dd86e9d4cd41\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[\"config\": {\n   \"enableCalendarView\": true       // To enable calendar view make it as true    \n }]]></ac:plain-text-body></ac:structured-macro><p><span>By default the calendar view is enabled. You can turn it off using the above config.</span></p><h3><span>Configuring the Calendar&nbsp;</span></h3><p><span>The calendar view allows the following things to be configured:</span></p><ol><li>Label Interval : This is the interval between the times/labels displayed on the calendar</li><li>Slot duration : This is duration of a slot on which a user can click to create an appointment</li><li>Start &amp; end time of the day: The working hours of a clinic/hospital can be set here. And the times outside of these are greyed out. However it doesn't stop the user from booking appointments against them</li></ol><p><span>Navigate to <span>openmrs/apps/appointments/app.json</span>&nbsp;and modify the values of below attributes. </span><span>Below is default configuration for setting interval duration to 30 minutes, slot duration to 10 minutes, start of the day to 9:00 AM and end of the day to 7:00 PM .</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"f0077559-be2d-4174-b4f4-af019ca1bdd9\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[\"config\": {\n\"calendarSlotLabelInterval\": \"01:00:00\",\n\"calendarSlotDuration\": \"00:30:00\",\n\"startOfDay\":\"09:00\",\n\"endOfDay\":\"19:00\"\n}]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\">Screenshot of the example configuration&nbsp;</p><p class=\"auto-cursor-target\"><ac:image ac:height=\"355\" ac:width=\"900\"><ri:attachment ri:filename=\"Screen Shot 2017-11-18 at 8.43.05 PM.png\" ri:version-at-save=\"1\" /></ac:image></p><h2>List View&nbsp;</h2><p>List View is available by default with the appointment scheduling Module.&nbsp;</p><h3>Print List View&nbsp;</h3><p class=\"auto-cursor-target\">To configure the html for printing appointments on list view, provide the html location as below in appointments/app.json</p><div><div class=\"syntaxhighlighter sh-confluence nogutter bash\"><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"aab8e5c4-2069-474e-8fde-a007c484a516\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[\"printListViewTemplateUrl\": \"/bahmni_config/openmrs/apps/appointments/printListView.html\"]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\">Sample html file with all the columns configured :&nbsp;<a href=\"https://bahmni.atlassian.net/wiki/download/attachments/135233558/printListView.html?version=1&amp;modificationDate=1504695455310&amp;cacheVersion=1&amp;api=v2\">printListView.html</a></p></div></div><p>The following conditions can be put on the columns:</p><ol><li>To show specialities, only when enableSpecialities is configured to true.</li><li>To show serviceTypes, only when enableServiceTypes is configured to true</li></ol><p>Column Sort/Order:<br />On the list view when click on the column name, up arrow will display beside column name and column will sort in ascending order. If you click on column name again, now you will see down arrow and sort will be in descending order. You can do sort on any column in the list.</p><h2>Weekly Summary View</h2><p>The summary view is a weekly view. Users can configure the view to begin with either Sunday or Monday using the config below</p><p><span>To Configure start of week, please add following config in openmrs/apps/appointments/app.json</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"9120a77f-a095-43db-8690-fa2cc901488f\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:plain-text-body><![CDATA[weekStart: “week”  //the weekly summary view will show from Sunday to Saturday of the current week\nweekStart: \"isoWeek” //the weekly summary view will show from Monday to Sunday of the current week\n]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p><br /></p><p><br /></p><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"e0644cb3-36de-4923-9260-8fc2fc2af759\"><ac:parameter ac:name=\"title\">On This Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"68e8d141-9ccb-434e-8d05-54c437a020bc\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/137953307"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"ConfigureViewsofAppointments-CalendarView\">Calendar View </h2><p>This view provides the user the ability to view appointments for different providers in a given day, in a calendar. Users can further filter appointments using a filter panel available on this view.  To know more about using the calendar view, please see the <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/138117151/Views+of+Appointments\" rel=\"nofollow\">User guide</a>.<strong> </strong></p><h3 id=\"ConfigureViewsofAppointments-EnablingCalendarView\"><strong>Enabling Calendar View</strong></h3><p><span>To Enable calendar view in Appointments Scheduling Module, please add below config in </span><span>openmrs/apps/appointments/app.json</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"3597413d-f60d-4f09-8bc6-dd86e9d4cd41\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;config&quot;: {\n   &quot;enableCalendarView&quot;: true       // To enable calendar view make it as true    \n }</pre>\n</div></div><p><span>By default the calendar view is enabled. You can turn it off using the above config.</span></p><h3 id=\"ConfigureViewsofAppointments-ConfiguringtheCalendar\"><span>Configuring the Calendar </span></h3><p><span>The calendar view allows the following things to be configured:</span></p><ol><li>Label Interval : This is the interval between the times/labels displayed on the calendar</li><li>Slot duration : This is duration of a slot on which a user can click to create an appointment</li><li>Start &amp; end time of the day: The working hours of a clinic/hospital can be set here. And the times outside of these are greyed out. However it doesn't stop the user from booking appointments against them</li></ol><p><span>Navigate to <span>openmrs/apps/appointments/app.json</span> and modify the values of below attributes. </span><span>Below is default configuration for setting interval duration to 30 minutes, slot duration to 10 minutes, start of the day to 9:00 AM and end of the day to 7:00 PM .</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f0077559-be2d-4174-b4f4-af019ca1bdd9\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;config&quot;: {\n&quot;calendarSlotLabelInterval&quot;: &quot;01:00:00&quot;,\n&quot;calendarSlotDuration&quot;: &quot;00:30:00&quot;,\n&quot;startOfDay&quot;:&quot;09:00&quot;,\n&quot;endOfDay&quot;:&quot;19:00&quot;\n}</pre>\n</div></div><p class=\"auto-cursor-target\">Screenshot of the example configuration </p><p class=\"auto-cursor-target\"><span class=\"confluence-embedded-file-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image\" height=\"355\" width=\"900\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/137953307/Screen%20Shot%202017-11-18%20at%208.43.05%20PM.png?version=1&amp;modificationDate=1511518097610&amp;cacheVersion=1&amp;api=v2&amp;width=900&amp;height=355\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/137953307/Screen%20Shot%202017-11-18%20at%208.43.05%20PM.png?version=1&amp;modificationDate=1511518097610&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"300122174\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"Screen Shot 2017-11-18 at 8.43.05 PM.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"137953307\" data-linked-resource-container-version=\"5\" data-media-id=\"44f4b659-10bc-43c6-ab0d-91aaffad12b2\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/137953307/Screen%20Shot%202017-11-18%20at%208.43.05%20PM.png?version=1&amp;modificationDate=1511518097610&amp;cacheVersion=1&amp;api=v2&amp;width=1440&amp;height=568 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/137953307/Screen%20Shot%202017-11-18%20at%208.43.05%20PM.png?version=1&amp;modificationDate=1511518097610&amp;cacheVersion=1&amp;api=v2&amp;width=900&amp;height=355 1x\"></span></p><h2 id=\"ConfigureViewsofAppointments-ListView\">List View </h2><p>List View is available by default with the appointment scheduling Module. </p><h3 id=\"ConfigureViewsofAppointments-PrintListView\">Print List View </h3><p class=\"auto-cursor-target\">To configure the html for printing appointments on list view, provide the html location as below in appointments/app.json</p><div><div class=\"syntaxhighlighter sh-confluence nogutter bash\"><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"aab8e5c4-2069-474e-8fde-a007c484a516\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&quot;printListViewTemplateUrl&quot;: &quot;/bahmni_config/openmrs/apps/appointments/printListView.html&quot;</pre>\n</div></div><p class=\"auto-cursor-target\">Sample html file with all the columns configured : <a href=\"https://bahmni.atlassian.net/wiki/download/attachments/135233558/printListView.html?version=1&amp;modificationDate=1504695455310&amp;cacheVersion=1&amp;api=v2\" rel=\"nofollow\">printListView.html</a></p></div></div><p>The following conditions can be put on the columns:</p><ol><li>To show specialities, only when enableSpecialities is configured to true.</li><li>To show serviceTypes, only when enableServiceTypes is configured to true</li></ol><p>Column Sort/Order:<br/>On the list view when click on the column name, up arrow will display beside column name and column will sort in ascending order. If you click on column name again, now you will see down arrow and sort will be in descending order. You can do sort on any column in the list.</p><h2 id=\"ConfigureViewsofAppointments-WeeklySummaryView\">Weekly Summary View</h2><p>The summary view is a weekly view. Users can configure the view to begin with either Sunday or Monday using the config below</p><p><span>To Configure start of week, please add following config in openmrs/apps/appointments/app.json</span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"9120a77f-a095-43db-8690-fa2cc901488f\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: false; theme: Confluence\" data-theme=\"Confluence\">weekStart: “week”  //the weekly summary view will show from Sunday to Saturday of the current week\nweekStart: &quot;isoWeek” //the weekly summary view will show from Monday to Sunday of the current week\n</pre>\n</div></div><p><br/></p><p><br/></p><p><br/></p><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e0644cb3-36de-4923-9260-8fc2fc2af759\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>On This Page</b></div><div class=\"panelContent\">\n<p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"68e8d141-9ccb-434e-8d05-54c437a020bc\" data-macro-name=\"toc\"> </div><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/137953307"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/137953307/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/137953307/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 386738640
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/137953307/child",
+    "restrictions": "/rest/api/content/137953307/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/137953307/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=137953307",
+    "webui": "/spaces/BAH/pages/137953307/Configure+Views+of+Appointments",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/137953307",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/137953307",
+    "tinyui": "/x/GwA5C",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

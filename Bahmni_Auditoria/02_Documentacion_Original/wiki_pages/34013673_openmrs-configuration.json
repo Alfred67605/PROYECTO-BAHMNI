@@ -1,0 +1,171 @@
+{
+  "id": "34013673",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/34013673",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzQwMTM2NzM=",
+  "status": "current",
+  "title": "OpenMRS configuration",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:c54772f2-46b5-43c0-be04-96923ee59750",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Vinay Venu",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:c54772f2-46b5-43c0-be04-96923ee59750",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Vinay Venu",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:c54772f2-46b5-43c0-be04-96923ee59750"
+      }
+    },
+    "createdDate": "2015-11-26T10:17:06.206Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34013673/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "when": "2017-04-10T08:59:42.793Z",
+    "friendlyWhen": "Apr 10, 2017",
+    "message": "",
+    "number": 16,
+    "minorEdit": false,
+    "syncRev": "0.fbiki7leVhZcC5gc40ytlQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$34013673.114",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/34013673"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34013673/version/16"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p><br /></p><ac:structured-macro ac:name=\"excerpt\" ac:schema-version=\"1\" ac:macro-id=\"9640c3e5-5816-4447-9c11-b0a011e684eb\"><ac:parameter ac:name=\"atlassian-macro-output-type\">INLINE</ac:parameter><ac:rich-text-body><p>Configuring certain OpenMRS attributes such as users, patient attriibutes, locations, drugs, concepts and concept sets, etc. are required for every installation of Bahmni.&nbsp;Most OpenMRS <span>configuration </span>can be done using the&nbsp;<a href=\"https://192.168.33.10/openmrs/admin/index.htm\">OpenMRS&nbsp;Administration UI</a>.</p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"c544fb19-d52f-4528-9374-f299f91b655c\"><ac:rich-text-body><p><span>Administrators can login with the admin user credentials to make necessary changes.&nbsp;</span></p><p>When OpenMRS starts up, the default admin password will be test. It is advised to change this password immediately in production environments to avoid unauthorised access.&nbsp;</p></ac:rich-text-body></ac:structured-macro><h3>OpenMRS configuration</h3><p>Configuring the types/attribute below will be required for every installation of Bahmni.&nbsp;</p><ol><li>Users</li><li>Roles and Privileges</li><li>Locations</li><li>Visit Types</li><li>Encounter Types</li><li>Providers</li><li>Patient Attributes</li><li>Address Hierarchy</li><li>Relationships</li><li>Concepts and Concept Sets</li><li>Drugs</li><li>Order Types</li><li>Global Properties</li></ol></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"f30abfd1-b7ec-4905-9c9a-751371b5f3c8\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">In this section</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"children\" ac:schema-version=\"2\" ac:macro-id=\"6d4d4185-75c0-4913-8626-225020e9e2d7\" /></p></ac:rich-text-body></ac:structured-macro><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/34013673"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p><br/><span class=\"conf-macro output-inline\" data-hasbody=\"true\" data-macro-name=\"excerpt\" data-macro-id=\"9640c3e5-5816-4447-9c11-b0a011e684eb\">Configuring certain OpenMRS attributes such as users, patient attriibutes, locations, drugs, concepts and concept sets, etc. are required for every installation of Bahmni.&nbsp;Most OpenMRS <span>configuration </span>can be done using the&nbsp;<a class=\"external-link\" href=\"https://192.168.33.10/openmrs/admin/index.htm\" rel=\"nofollow\">OpenMRS&nbsp;Administration UI</a>.</span></p><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"c544fb19-d52f-4528-9374-f299f91b655c\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><span>Administrators can login with the admin user credentials to make necessary changes. </span></p><p>When OpenMRS starts up, the default admin password will be test. It is advised to change this password immediately in production environments to avoid unauthorised access. </p></div></div><h3 id=\"OpenMRSconfiguration-OpenMRSconfiguration\">OpenMRS configuration</h3><p>Configuring the types/attribute below will be required for every installation of Bahmni. </p><ol><li>Users</li><li>Roles and Privileges</li><li>Locations</li><li>Visit Types</li><li>Encounter Types</li><li>Providers</li><li>Patient Attributes</li><li>Address Hierarchy</li><li>Relationships</li><li>Concepts and Concept Sets</li><li>Drugs</li><li>Order Types</li><li>Global Properties</li></ol></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f30abfd1-b7ec-4905-9c9a-751371b5f3c8\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>In this section</b></div><div class=\"panelContent\">\n<p> </p><ul class=\"childpages-macro conf-macro output-block\" data-hasbody=\"false\" data-macro-id=\"6d4d4185-75c0-4913-8626-225020e9e2d7\" data-macro-name=\"children\"><li><a href=\"/wiki/spaces/BAH/pages/37945505/Configure+Address+Hierarchy\" data-linked-resource-id=\"37945505\" data-linked-resource-version=\"16\" data-linked-resource-type=\"page\">Configure Address Hierarchy</a></li><li><a href=\"/wiki/spaces/BAH/pages/37945360/Configure+Person+Attributes\" data-linked-resource-id=\"37945360\" data-linked-resource-version=\"10\" data-linked-resource-type=\"page\">Configure Person Attributes</a></li><li><a href=\"/wiki/spaces/BAH/pages/34013682/Configure+Users\" data-linked-resource-id=\"34013682\" data-linked-resource-version=\"15\" data-linked-resource-type=\"page\">Configure Users</a></li><li><a href=\"/wiki/spaces/BAH/pages/37945530/Configure+Visit+Types\" data-linked-resource-id=\"37945530\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Configure Visit Types</a></li><li><a href=\"/wiki/spaces/BAH/pages/50921567/Configure+Concept+or+Concept+Set\" data-linked-resource-id=\"50921567\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Configure Concept or Concept Set</a></li><li><a href=\"/wiki/spaces/BAH/pages/37945591/Configure+Reference+Terms\" data-linked-resource-id=\"37945591\" data-linked-resource-version=\"5\" data-linked-resource-type=\"page\">Configure Reference Terms</a></li><li><a href=\"/wiki/spaces/BAH/pages/47775905/Adding+Mappings+for+Concepts\" data-linked-resource-id=\"47775905\" data-linked-resource-version=\"11\" data-linked-resource-type=\"page\">Adding Mappings for Concepts</a></li><li><a href=\"/wiki/spaces/BAH/pages/37945598/Configure+Programs\" data-linked-resource-id=\"37945598\" data-linked-resource-version=\"6\" data-linked-resource-type=\"page\">Configure Programs</a></li><li><a href=\"/wiki/spaces/BAH/pages/18415840/Configure+Lab+Data\" data-linked-resource-id=\"18415840\" data-linked-resource-version=\"7\" data-linked-resource-type=\"page\">Configure Lab Data</a></li><li><a href=\"/wiki/spaces/BAH/pages/114727368/Configure+Medication+Data\" data-linked-resource-id=\"114727368\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Configure Medication Data</a></li><li><a href=\"/wiki/spaces/BAH/pages/50921519/Configure+Observation+Form\" data-linked-resource-id=\"50921519\" data-linked-resource-version=\"8\" data-linked-resource-type=\"page\">Configure Observation Form</a></li><li><a href=\"/wiki/spaces/BAH/pages/50921523/Configure+Disposition+Concepts\" data-linked-resource-id=\"50921523\" data-linked-resource-version=\"17\" data-linked-resource-type=\"page\">Configure Disposition Concepts</a></li><li><a href=\"/wiki/spaces/BAH/pages/37945364/Configure+Advanced+Settings\" data-linked-resource-id=\"37945364\" data-linked-resource-version=\"14\" data-linked-resource-type=\"page\">Configure Advanced Settings</a></li><li><a href=\"/wiki/spaces/BAH/pages/98402306/Configure+Locations\" data-linked-resource-id=\"98402306\" data-linked-resource-version=\"2\" data-linked-resource-type=\"page\">Configure Locations</a></li></ul><p> </p>\n</div></div><p> </p><p> </p><p> </p></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/34013673"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/34013673/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34013673/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 633012091
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/34013673/child",
+    "restrictions": "/rest/api/content/34013673/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/34013673/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=34013673",
+    "webui": "/spaces/BAH/pages/34013673/OpenMRS+configuration",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/34013673",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/34013673",
+    "tinyui": "/x/6QEHAg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

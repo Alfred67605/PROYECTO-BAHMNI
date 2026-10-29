@@ -1,0 +1,172 @@
+{
+  "id": "836272188",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/836272188",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvODM2MjcyMTg4",
+  "status": "current",
+  "title": "Bahmni ERP Connect",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "createdDate": "2019-04-08T10:59:50.413Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/836272188/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Angshuman Sarkar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:08a4c676-968e-4fae-8fcc-901edfa1e53a",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Angshuman Sarkar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:08a4c676-968e-4fae-8fcc-901edfa1e53a"
+      }
+    },
+    "when": "2019-04-08T13:15:15.335Z",
+    "friendlyWhen": "Apr 08, 2019",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "0.rvK4seGwWtvJRz0G1lGJ6A.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$836272188.101",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/836272188"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/836272188/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p>Bahmni ERP Connect is the service that integrates OpenMRS (EMR) &amp; OpenELIS (Lab) components to Odoo (ERP).&nbsp;</p><p><br /></p><h2>Source Code</h2><ol><li>Feed Integration Service -&nbsp;<a href=\"https://github.com/Bahmni/openerp-atomfeed-service\">https://github.com/Bahmni/openerp-atomfeed-service</a></li><li>Packaging -&nbsp;<a href=\"https://github.com/Bahmni/bahmni-package/tree/master/bahmni-erp-connect\">https://github.com/Bahmni/bahmni-package/tree/master/bahmni-erp-connect</a></li></ol><p><br /></p><h2>Build and install</h2><p><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"f11ebed6-77ee-41b1-82bb-38b7864396e5\"><ac:plain-text-body><![CDATA[> cd /mybahmni/\n> git clone https://github.com/Bahmni/openerp-atomfeed-service\n> git clone https://github.com/Bahmni/bahmni-package\n\n> cd /mybahmni/openerp-atomfeed-service/\n# generate the war \"openerp-atomfeed-service.war\"\n> mvn clean install\n> cp target/openerp-atomfeed-service.war /mybahmni/bahmni-package/bahmni-erp-connect/resources/\n> cd /mybahmni/bahmni-package/bahmni-erp-connect/\n> ./gradlew buildrpm\n\n# you might want to bump up the version of the rpm. \n# To do so, you can change \"bahmni-package/gradle.properties\"\n\n# now copy the rpm to the target machine (vagrant or docker) \n# uninstall previous version of bahmni-erp-connect\n# first logon to the target env and switch to su\n# assuming that you have the erp-connect rpm available at /tmp/ \n> rpm -e bahmni-erp-connect\n> rpm -Uvh /tmp/<bahmni-erp-connect-0.92-1.noarch.rpm>\n> service bahmni-erp-connect status\n\n]]></ac:plain-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><p class=\"auto-cursor-target\"><br /></p><h2 class=\"auto-cursor-target\">Runtime properties&nbsp;</h2><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"07ce3286-2b24-4c91-b0b5-1da0b3c8b962\"><ac:rich-text-body><p>Please note, some of the runtime properties configuration (like using&nbsp;APP_PROPERTIES_FILE env variable to indicate external properties file) are only available from 0.92 version.&nbsp;</p></ac:rich-text-body></ac:structured-macro><p><br /></p><ol><li>Runtime properties are set through &quot;<span style=\"color: rgb(23,43,77);\"><span style=\"color: rgb(23,43,77);\">bahmni-erp-connect.conf&quot; which is usually found under &quot;/opt/</span></span><span style=\"color: rgb(23,43,77);\">bahmni-erp-connect/etc/&quot;</span></li><li><span style=\"color: rgb(23,43,77);\">The properties exported this way, are set as environment variables everytime &quot;bahmni-erp-connect&quot; starts up. However the properties set this way do not allow properties with dot - for example &quot;scheduler.initial.delay&quot; can not be exported through &quot;bahmni-erp-connect.conf&quot; file. For this you would require this property to be passed either as JVM arguments with &quot;-D&quot; parameters.&nbsp;</span><ul><li><span style=\"color: rgb(23,43,77);\"><span style=\"color: rgb(23,43,77);\">java -jar -Dscheduler.start.delay=10000</span></span></li></ul></li><li>Alternatively, export a property &quot;APP_PROPERTIES_FILE&quot; in &quot;<span style=\"color: rgb(23,43,77);\"><span style=\"color: rgb(23,43,77);\">bahmni-erp-connect.conf&quot;</span></span><ul><li><span style=\"color: rgb(23,43,77);\">export APP_PROPERTIES_FILE=</span><a class=\"external-link\" style=\"text-decoration: none;\" title=\"Follow link\" rel=\"nofollow\">file:/home/bahmni/bahmi-erp-connect.properties</a></li></ul></li><li>Obviously, you need to ensure that a properties file with such names are found in that location, and the file can be read by &quot;bahmni&quot; user.&nbsp;</li><li>For list of available properties that can be overridden, see <a href=\"https://github.com/Bahmni/openerp-atomfeed-service/blob/master/openerp-atomfeed-service/src/main/resources/erp-atomfeed.properties\">here</a></li></ol></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"20e1cbbf-c07b-4a33-835e-f8a910d5be4f\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#668D3C</ac:parameter><ac:parameter ac:name=\"title\">On this page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"ffa5417f-4295-40a2-beeb-d8125c71aee9\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/836272188"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p>Bahmni ERP Connect is the service that integrates OpenMRS (EMR) &amp; OpenELIS (Lab) components to Odoo (ERP). </p><p><br/></p><h2 id=\"BahmniERPConnect-SourceCode\">Source Code</h2><ol><li>Feed Integration Service - <a class=\"external-link\" href=\"https://github.com/Bahmni/openerp-atomfeed-service\" rel=\"nofollow\">https://github.com/Bahmni/openerp-atomfeed-service</a></li><li>Packaging - <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-package/tree/master/bahmni-erp-connect\" rel=\"nofollow\">https://github.com/Bahmni/bahmni-package/tree/master/bahmni-erp-connect</a></li></ol><p><br/></p><h2 id=\"BahmniERPConnect-Buildandinstall\">Build and install</h2><p><br/></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"f11ebed6-77ee-41b1-82bb-38b7864396e5\" data-macro-name=\"code\" style=\"border-width: 1px;\"><div class=\"codeContent panelContent pdl\">\n<pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: bash; gutter: false; theme: Confluence\" data-theme=\"Confluence\">&gt; cd /mybahmni/\n&gt; git clone https://github.com/Bahmni/openerp-atomfeed-service\n&gt; git clone https://github.com/Bahmni/bahmni-package\n\n&gt; cd /mybahmni/openerp-atomfeed-service/\n# generate the war &quot;openerp-atomfeed-service.war&quot;\n&gt; mvn clean install\n&gt; cp target/openerp-atomfeed-service.war /mybahmni/bahmni-package/bahmni-erp-connect/resources/\n&gt; cd /mybahmni/bahmni-package/bahmni-erp-connect/\n&gt; ./gradlew buildrpm\n\n# you might want to bump up the version of the rpm. \n# To do so, you can change &quot;bahmni-package/gradle.properties&quot;\n\n# now copy the rpm to the target machine (vagrant or docker) \n# uninstall previous version of bahmni-erp-connect\n# first logon to the target env and switch to su\n# assuming that you have the erp-connect rpm available at /tmp/ \n&gt; rpm -e bahmni-erp-connect\n&gt; rpm -Uvh /tmp/&lt;bahmni-erp-connect-0.92-1.noarch.rpm&gt;\n&gt; service bahmni-erp-connect status\n\n</pre>\n</div></div><h2 class=\"auto-cursor-target\" id=\"BahmniERPConnect-Runtimeproperties\">Runtime properties </h2><div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"07ce3286-2b24-4c91-b0b5-1da0b3c8b962\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>Please note, some of the runtime properties configuration (like using APP_PROPERTIES_FILE env variable to indicate external properties file) are only available from 0.92 version. </p></div></div><p><br/></p><ol><li>Runtime properties are set through &quot;<span class=\"legacy-color-text-blue3\"><span class=\"legacy-color-text-blue3\">bahmni-erp-connect.conf&quot; which is usually found under &quot;/opt/</span></span><span class=\"legacy-color-text-blue3\">bahmni-erp-connect/etc/&quot;</span></li><li><span class=\"legacy-color-text-blue3\">The properties exported this way, are set as environment variables everytime &quot;bahmni-erp-connect&quot; starts up. However the properties set this way do not allow properties with dot - for example &quot;scheduler.initial.delay&quot; can not be exported through &quot;bahmni-erp-connect.conf&quot; file. For this you would require this property to be passed either as JVM arguments with &quot;-D&quot; parameters. </span><ul><li><span class=\"legacy-color-text-blue3\"><span class=\"legacy-color-text-blue3\">java -jar -Dscheduler.start.delay=10000</span></span></li></ul></li><li>Alternatively, export a property &quot;APP_PROPERTIES_FILE&quot; in &quot;<span class=\"legacy-color-text-blue3\"><span class=\"legacy-color-text-blue3\">bahmni-erp-connect.conf&quot;</span></span><ul><li><span class=\"legacy-color-text-blue3\">export APP_PROPERTIES_FILE=</span><a class=\"external-link\" rel=\"nofollow\" style=\"text-decoration: none;\" title=\"Follow link\">file:/home/bahmni/bahmi-erp-connect.properties</a></li></ul></li><li>Obviously, you need to ensure that a properties file with such names are found in that location, and the file can be read by &quot;bahmni&quot; user. </li><li>For list of available properties that can be overridden, see <a class=\"external-link\" href=\"https://github.com/Bahmni/openerp-atomfeed-service/blob/master/openerp-atomfeed-service/src/main/resources/erp-atomfeed.properties\" rel=\"nofollow\">here</a></li></ol></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"20e1cbbf-c07b-4a33-835e-f8a910d5be4f\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #668D3C;color: white;\"><b>On this page</b></div><div class=\"panelContent\">\n<p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"ffa5417f-4295-40a2-beeb-d8125c71aee9\" data-macro-name=\"toc\"> </div><p> </p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/836272188"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/836272188/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/836272188/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 5331
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/836272188/child",
+    "restrictions": "/rest/api/content/836272188/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/836272188/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=836272188",
+    "webui": "/spaces/BAH/pages/836272188/Bahmni+ERP+Connect",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/836272188",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/836272188",
+    "tinyui": "/x/PIDYMQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

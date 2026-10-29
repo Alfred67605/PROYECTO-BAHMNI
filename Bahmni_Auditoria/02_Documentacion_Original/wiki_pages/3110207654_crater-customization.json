@@ -1,0 +1,172 @@
+{
+  "id": "3110207654",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/3110207654",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMzExMDIwNzY1NA==",
+  "status": "current",
+  "title": "Crater Customization",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "62250c4449c9000070215704",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gokul Kuppan",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/62250c4449c9000070215704",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gokul Kuppan",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=62250c4449c9000070215704"
+      }
+    },
+    "createdDate": "2022-11-25T06:32:10.631Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3110207654/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "62250c4449c9000070215704",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Gokul Kuppan",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/62250c4449c9000070215704",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Gokul Kuppan",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=62250c4449c9000070215704"
+      }
+    },
+    "when": "2024-04-17T14:37:26.566Z",
+    "friendlyWhen": "Apr 17, 2024",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "syncRev": "0.zELFTvyasb0QnOS3W1gNMQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$3110207654.54",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/3110207654"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3110207654/version/2"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><p>This page describes customizing the crater application with custom fields, email, and address templates.</p><h1><span>Create Custom Fields</span></h1><p><span>Custom fields whichever is required can be added in create &amp; edit forms like Customer,&nbsp;<span style=\"color: rgb(44,62,80);\">Invoice, Estimate, Payment &amp; Expenses.</span></span></p><p><span style=\"color: rgb(44,62,80);\">Follow the <a href=\"https://docs.craterapp.com/guide/custom-fields.html#add-new-custom-field\">steps given by the Crater</a> to create the custom fields.</span></p><h1>Email Body and Address Templates</h1><p>Crater allows us to send emails to users when creating invoices, estimates, and payments. The default Email body text can be customized and custom fields can also be added to the email body.</p><p>The crater generates the invoices, estimates, and payments in PDF with the Company address, Shipping address, and billing address. The default address format can be configured with existing fields or custom fields created based on requirements.</p><p><span style=\"color: rgb(44,62,80);\">Follow the <a href=\"https://docs.craterapp.com/guide/customization.html#invoices\">steps given by the Crater</a> to customize the Email &amp; Address templates.</span></p><h1>Mail Configuration</h1><p style=\"\">Crater allows you to send emails for payment receipts, invoices, and estimates. To enable this feature, you need to configure the Email Driver in Crater after installing the application.</p><h3>Steps for mail Configuration:</h3><ol><li>Log in with your admin credentials.</li><li>Go to <strong>Settings</strong> &rarr; <strong>Mail Configuration</strong>.</li><li>Enter all the required details and test the configuration.</li><li>If the configuration is successful, save the changes.</li></ol></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"8450e577-7882-4e1b-ae52-c2950ec062ba\"><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"2ecf4e5d-ee5a-47a2-8fca-c2f2091f69d8\" /></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"93152c5d-6bea-40d9-a973-a55a64c04d31\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><a href=\"https://docs.craterapp.com/guide/custom-fields.html\">Create Custom Fields</a></p><p><a href=\"https://docs.craterapp.com/guide/customization.html#invoices\">Email Body and Address Templates Customization</a></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/3110207654"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\"><style>[data-colorid=fqxwly5hs1]{color:#2c3e50} html[data-color-mode=dark] [data-colorid=fqxwly5hs1]{color:#afc1d3}[data-colorid=m2it7igbve]{color:#2c3e50} html[data-color-mode=dark] [data-colorid=m2it7igbve]{color:#afc1d3}[data-colorid=k6yaorbvh6]{color:#2c3e50} html[data-color-mode=dark] [data-colorid=k6yaorbvh6]{color:#afc1d3}</style>\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<p>This page describes customizing the crater application with custom fields, email, and address templates.</p><h1 id=\"CraterCustomization-CreateCustomFields\"><span>Create Custom Fields</span></h1><p><span>Custom fields whichever is required can be added in create &amp; edit forms like Customer,&nbsp;<span data-colorid=\"m2it7igbve\">Invoice, Estimate, Payment &amp; Expenses.</span></span></p><p><span data-colorid=\"fqxwly5hs1\">Follow the <a class=\"external-link\" href=\"https://docs.craterapp.com/guide/custom-fields.html#add-new-custom-field\" rel=\"nofollow\">steps given by the Crater</a> to create the custom fields.</span></p><h1 id=\"CraterCustomization-EmailBodyandAddressTemplates\">Email Body and Address Templates</h1><p>Crater allows us to send emails to users when creating invoices, estimates, and payments. The default Email body text can be customized and custom fields can also be added to the email body.</p><p>The crater generates the invoices, estimates, and payments in PDF with the Company address, Shipping address, and billing address. The default address format can be configured with existing fields or custom fields created based on requirements.</p><p><span data-colorid=\"k6yaorbvh6\">Follow the <a class=\"external-link\" href=\"https://docs.craterapp.com/guide/customization.html#invoices\" rel=\"nofollow\">steps given by the Crater</a> to customize the Email &amp; Address templates.</span></p><h1 id=\"CraterCustomization-MailConfiguration\">Mail Configuration</h1><p style=\"\">Crater allows you to send emails for payment receipts, invoices, and estimates. To enable this feature, you need to configure the Email Driver in Crater after installing the application.</p><h3 id=\"CraterCustomization-StepsformailConfiguration:\">Steps for mail Configuration:</h3><ol><li>Log in with your admin credentials.</li><li>Go to <strong>Settings</strong> &rarr; <strong>Mail Configuration</strong>.</li><li>Enter all the required details and test the configuration.</li><li>If the configuration is successful, save the changes.</li></ol></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"8450e577-7882-4e1b-ae52-c2950ec062ba\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><span class=\"aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"2ecf4e5d-ee5a-47a2-8fca-c2f2091f69d8\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"93152c5d-6bea-40d9-a973-a55a64c04d31\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a class=\"external-link\" href=\"https://docs.craterapp.com/guide/custom-fields.html\" rel=\"nofollow\">Create Custom Fields</a></p><p><a class=\"external-link\" href=\"https://docs.craterapp.com/guide/customization.html#invoices\" rel=\"nofollow\">Email Body and Address Templates Customization</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/3110207654"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/3110207654/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3110207654/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 1127
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/3110207654/child",
+    "restrictions": "/rest/api/content/3110207654/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/3110207654/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=3110207654",
+    "webui": "/spaces/BAH/pages/3110207654/Crater+Customization",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/3110207654",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/3110207654",
+    "tinyui": "/x/pgBiuQ",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

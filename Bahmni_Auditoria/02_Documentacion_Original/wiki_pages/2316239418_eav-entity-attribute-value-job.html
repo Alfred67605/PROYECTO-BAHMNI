@@ -1,0 +1,144 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>EAV (Entity Attribute Value) Job</title></head><body><h1>EAV (Entity Attribute Value) Job</h1><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-layout="default" data-local-id="454e62d4-9192-448b-b4ea-88f080549231" data-macro-id="1c4475f2-6130-4259-942d-2616e3fc33ab" data-macro-name="toc"> </div><p>We have EAV job in mart to get the attributes for Provider, Programs, Person, Visits and Operation Theatre. Also the identifier values for Patient. Below is the list of mart tables for the same.</p><h4 id="EAV(EntityAttributeValue)Job-1.ProviderAttributes">1. Provider Attributes</h4><p><code>provider_attributes</code> table gives all the provider attribute information in an implementation.</p><p>Openmrs tables used: provider, provider_attribute, provider_attribute_type</p><h5 style="text-align: center;" id="EAV(EntityAttributeValue)Job-ExistingOpenMRStables"><strong>Existing OpenMRS tables</strong></h5><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="733df261-c18c-421a-a2e8-1ec406d60fa8" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">provider
+provider_attribute
+provider_attribute_type
+</pre>
+</div></div><p><strong>provider.json:</strong></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="e8ee18a9-5e02-4761-9c10-71a6108278f5" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">{
+      &quot;name&quot;: &quot;Provider Attributes&quot;,
+      &quot;type&quot;: &quot;eav&quot;,
+      &quot;tableName&quot;: &quot;provider_attributes&quot;,
+      &quot;eavAttributes&quot;: {
+        &quot;attributeTypeTableName&quot;: &quot;provider_attribute_type&quot;,
+        &quot;attributeTableName&quot;: &quot;provider_attribute&quot;,
+        &quot;valueTableJoiningId&quot;: &quot;attribute_type_id&quot;,
+        &quot;typeTableJoiningId&quot;: &quot;provider_attribute_type_id&quot;,
+        &quot;valueColumnName&quot;: &quot;value_reference&quot;,
+        &quot;primaryKey&quot;: &quot;provider_id&quot;
+      }
+    }
+</pre>
+</div></div><h4 id="EAV(EntityAttributeValue)Job-2.PatientIdentifier">2. <strong>Patient Identifier</strong></h4><p><code>patient_identifier</code> is the mart table and the columns are the pivoted values in identifier_type table.</p><p>Openmrs tables used: patient, person, patient_identifier</p><h5 style="text-align: center;" id="EAV(EntityAttributeValue)Job-ExistingOpenMRStables.1">Existing OpenMRS tables</h5><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="19ec69e9-5106-4565-bf45-bb02e392636f" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">patient
+person
+patient_identifier
+</pre>
+</div></div><p>The <code>patient_identifier</code> mart table has all the columns from <code>patient_identifier_type</code> openmrs table,</p><p><code>patient_id</code> from <code>patient_identifier</code>;</p><p><strong>patients.json:</strong></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="80c3d5cf-ff5e-4419-8741-4fc5196185e1" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">{
+      &quot;name&quot;: &quot;Patient identification&quot;,
+      &quot;type&quot;: &quot;eav&quot;,
+      &quot;tableName&quot;: &quot;patient_identifier&quot;,
+      &quot;eavAttributes&quot;: {
+        &quot;attributeTypeTableName&quot;: &quot;patient_identifier_type&quot;,
+        &quot;attributeTableName&quot;: &quot;patient_identifier&quot;,
+        &quot;valueTableJoiningId&quot;: &quot;identifier_type&quot;,
+        &quot;typeTableJoiningId&quot;: &quot;patient_identifier_type_id&quot;,
+        &quot;valueColumnName&quot;: &quot;identifier&quot;,
+        &quot;primaryKey&quot;: &quot;patient_id&quot;
+      },
+      &quot;incrementalUpdateConfig&quot;: {
+        &quot;updateOn&quot;: &quot;patient_id&quot;,
+        &quot;eventCategory&quot;: &quot;patient&quot;,
+        &quot;openmrsTableName&quot;: &quot;person&quot;
+      }
+    }
+</pre>
+</div></div><h4 id="EAV(EntityAttributeValue)Job-3.PersonAttributes">3. Person Attributes</h4><p><code>person_attributes</code> table contains  all the patient attributes that where used in the registration page. Columns will be generated dynamically based on the attributes that were used as a part of that specific implementation.</p><p>Eg : givenName, familyName, isCaretakerRequired, caretakerGender</p><h5 style="text-align: center;" id="EAV(EntityAttributeValue)Job-ExistingOpenMRStables.2">Existing OpenMRS tables</h5><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="8a93445c-753d-4696-afbd-9c2e968cf30b" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">person
+person_name
+Patient_identifier
+person_attribute
+person_attribute_type
+</pre>
+</div></div><p><strong>person.json:</strong></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="8f68ac18-d618-4860-8a0a-f46ea0ad5799" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">{
+      &quot;name&quot;: &quot;Person Attributes&quot;,
+      &quot;type&quot;: &quot;eav&quot;,
+      &quot;tableName&quot;: &quot;person_attributes&quot;,
+      &quot;eavAttributes&quot;: {
+        &quot;attributeTypeTableName&quot;: &quot;person_attribute_type&quot;,
+        &quot;attributeTableName&quot;: &quot;person_attribute&quot;,
+        &quot;valueTableJoiningId&quot;: &quot;person_attribute_type_id&quot;,
+        &quot;typeTableJoiningId&quot;: &quot;person_attribute_type_id&quot;,
+        &quot;valueColumnName&quot;: &quot;value&quot;,
+        &quot;primaryKey&quot;: &quot;person_id&quot;
+      },
+      &quot;incrementalUpdateConfig&quot;: {
+        &quot;updateOn&quot;: &quot;person_id&quot;,
+        &quot;eventCategory&quot;: &quot;patient&quot;,
+        &quot;openmrsTableName&quot;: &quot;person&quot;
+      }
+    }
+</pre>
+</div></div><h4 id="EAV(EntityAttributeValue)Job-4.ProgramAttributes:">4. Program Attributes:</h4><p><code>program_attributes</code> table gives all the program attributes enrolled for a particular patient.</p><p>Openmrs tables used: program_attribute_type, patient_program_attribute</p><h5 style="text-align: center;" id="EAV(EntityAttributeValue)Job-ExistingOpenMRStables.3">Existing OpenMRS tables</h5><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="ca39624c-57fb-4543-9146-7e57bdb064eb" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">Program
+patient_program_attribute
+patient_program
+
+</pre>
+</div></div><p /><p><strong>programs.json:</strong></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="d88f0ee3-3bcd-479e-984e-6a4048369494" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">{
+      &quot;name&quot;: &quot;Program Attributes&quot;,
+      &quot;type&quot;: &quot;eav&quot;,
+      &quot;tableName&quot;: &quot;program_attributes&quot;,
+      &quot;eavAttributes&quot;: {
+        &quot;attributeTypeTableName&quot;: &quot;program_attribute_type&quot;,
+        &quot;attributeTableName&quot;: &quot;patient_program_attribute&quot;,
+        &quot;valueTableJoiningId&quot;: &quot;attribute_type_id&quot;,
+        &quot;typeTableJoiningId&quot;: &quot;program_attribute_type_id&quot;,
+        &quot;valueColumnName&quot;: &quot;value_reference&quot;,
+        &quot;primaryKey&quot;: &quot;patient_program_id&quot;
+      },
+      &quot;incrementalUpdateConfig&quot;: {
+        &quot;updateOn&quot;: &quot;patient_program_id&quot;,
+        &quot;eventCategory&quot;: &quot;programenrollment&quot;,
+        &quot;openmrsTableName&quot;: &quot;patient_program&quot;
+      }
+    }
+</pre>
+</div></div><h4 id="EAV(EntityAttributeValue)Job-5.VisitAttributes:">5. Visit Attributes:</h4><p><code>visit_attributes</code> table gives all the visit attributes for that particular visit type.</p><h5 style="text-align: center;" id="EAV(EntityAttributeValue)Job-ExistingOpenMRStables.4">Existing OpenMRS tables</h5><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="960bd5ef-6237-4ac7-aa4d-e4108073d160" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">visit_type
+visit
+visit_attribute
+visit_attribute_type
+</pre>
+</div></div><p> </p><p><strong>visitsAndEncounters.json:</strong></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="bb479f49-4f2e-4560-8126-9dfd551d6d02" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">{
+      &quot;name&quot;: &quot;Visit Attributes&quot;,
+      &quot;type&quot;: &quot;eav&quot;,
+      &quot;tableName&quot;: &quot;visit_attributes&quot;,
+      &quot;eavAttributes&quot;: {
+        &quot;attributeTypeTableName&quot;: &quot;visit_attribute_type&quot;,
+        &quot;attributeTableName&quot;: &quot;visit_attribute&quot;,
+        &quot;valueTableJoiningId&quot;: &quot;attribute_type_id&quot;,
+        &quot;typeTableJoiningId&quot;: &quot;visit_attribute_type_id&quot;,
+        &quot;valueColumnName&quot;: &quot;value_reference&quot;,
+        &quot;primaryKey&quot;: &quot;visit_id&quot;
+      }
+    }
+</pre>
+</div></div><h4 id="EAV(EntityAttributeValue)Job-6.OTAttributes:">6. OT Attributes:</h4><p><code>surgical_appointment_attributes</code> gives all the surgical attributes created for a surgery.</p><h5 style="text-align: center;" id="EAV(EntityAttributeValue)Job-ExistingOpenMRStables.5">Existing OpenMRS tables</h5><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="a9b74919-efac-4b94-90cb-df839214687f" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">Surgical_appointment
+Surgical_appointment_attribute
+Surgical_appointment_attribute_type
+</pre>
+</div></div><p> </p><p><strong>operationTheatre.json:</strong></p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-id="a921fff0-a89b-4a2e-ace3-6008b9fe8741" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">{
+      &quot;name&quot;: &quot;Surgical Appointment Attributes&quot;,
+      &quot;type&quot;: &quot;eav&quot;,
+      &quot;tableName&quot;: &quot;surgical_appointment_attributes&quot;,
+      &quot;eavAttributes&quot;: {
+        &quot;attributeTypeTableName&quot;: &quot;surgical_appointment_attribute_type&quot;,
+        &quot;attributeTableName&quot;: &quot;surgical_appointment_attribute&quot;,
+        &quot;valueTableJoiningId&quot;: &quot;surgical_appointment_attribute_type_id&quot;,
+        &quot;typeTableJoiningId&quot;: &quot;surgical_appointment_attribute_type_id&quot;,
+        &quot;valueColumnName&quot;: &quot;value&quot;,
+        &quot;primaryKey&quot;: &quot;surgical_appointment_id&quot;
+      },
+      &quot;incrementalUpdateConfig&quot;: {
+        &quot;updateOn&quot;: &quot;surgical_appointment_id&quot;,
+        &quot;eventCategory&quot;: &quot;surgicalappointment&quot;,
+        &quot;openmrsTableName&quot;: &quot;surgical_appointment&quot;
+      }
+    }</pre>
+</div></div><p /></body></html>

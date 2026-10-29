@@ -1,0 +1,172 @@
+{
+  "id": "2318893278",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/2318893278",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMjMxODg5MzI3OA==",
+  "status": "current",
+  "title": "Copy the translations of form (2.0) from one version to the next version in implementer-interface",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "5e943471088a7e0c0f50e1e0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Buvaneswari Arun (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e943471088a7e0c0f50e1e0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Buvaneswari Arun (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e943471088a7e0c0f50e1e0"
+      }
+    },
+    "createdDate": "2021-04-05T04:34:33.756Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2318893278/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "5e943471088a7e0c0f50e1e0",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Buvaneswari Arun (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/5e943471088a7e0c0f50e1e0",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Buvaneswari Arun (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=5e943471088a7e0c0f50e1e0"
+      }
+    },
+    "when": "2021-04-05T04:58:23.407Z",
+    "friendlyWhen": "Apr 05, 2021",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "syncRev": "0.UUtbn9hO3PTe_alRovRQBQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$2318893278.27",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/2318893278"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2318893278/version/3"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"fb6c328b-6f0d-4cf1-b90d-150d13e711f6\"><ac:rich-text-body><p><strong>Feature available from Bahmni-V0.93</strong></p></ac:rich-text-body></ac:structured-macro><p><strong>Usecase:</strong> </p><p>As a user, <br />we want to see our previous version translations to the next version of a form2.0 form.<br />So that we don't need to write all our translations again in the new version</p><p><strong>Description:</strong><br />When a user clicks on translations in the form builder, he will be directed to adding translations page, where he can be able to add his translations to the respective concepts. Now, any time if I click on a new version of a form, the translations will be empty. I should be able to see my previous versions of translations on that page. This will be useful, the user can be able to reuse his previous versions of translations in his current version.</p><ol><li><p>Translations from the last version should be copied to the next version in the UI </p></li><li><p>User can edit the translation from UI where required</p></li><li><p>New translations will be copied to the next version</p></li><li><p>Translations, when imported, should be copied in the translations files - currently, they are in draft mode when imported and on publishing, the translation files are lost</p></li></ol><p>Implementation notes:</p><ul><li><p>If we are creating a  new form, the translation file will be generated for that first version.</p></li><li><p>while you are editing a published version, it will create a new next version of that form, currently in which the published translations are getting lost and fresh translations file is created.</p></li><li><p>We implement in a way that while clicking on edit for published we are storing that published version as a reference version, which will be used to fetch the reference version translations and copy to the newly created version translation file.</p></li></ul><p>Openmrs Talk link: <a href=\"https://talk.openmrs.org/t/form-2-0-translations-are-not-carry-forwarded-to-subsequent-versions/22668\">https://talk.openmrs.org/t/form-2-0-translations-are-not-carry-forwarded-to-subsequent-versions/22668</a></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/2318893278"
+      }
+    },
+    "view": {
+      "value": "<div class=\"confluence-information-macro confluence-information-macro-information conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"fb6c328b-6f0d-4cf1-b90d-150d13e711f6\" data-macro-name=\"info\"><span class=\"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p><strong>Feature available from Bahmni-V0.93</strong></p></div></div><p><strong>Usecase:</strong> </p><p>As a user, <br/>we want to see our previous version translations to the next version of a form2.0 form.<br/>So that we don't need to write all our translations again in the new version</p><p><strong>Description:</strong><br/>When a user clicks on translations in the form builder, he will be directed to adding translations page, where he can be able to add his translations to the respective concepts. Now, any time if I click on a new version of a form, the translations will be empty. I should be able to see my previous versions of translations on that page. This will be useful, the user can be able to reuse his previous versions of translations in his current version.</p><ol><li><p>Translations from the last version should be copied to the next version in the UI </p></li><li><p>User can edit the translation from UI where required</p></li><li><p>New translations will be copied to the next version</p></li><li><p>Translations, when imported, should be copied in the translations files - currently, they are in draft mode when imported and on publishing, the translation files are lost</p></li></ol><p>Implementation notes:</p><ul><li><p>If we are creating a  new form, the translation file will be generated for that first version.</p></li><li><p>while you are editing a published version, it will create a new next version of that form, currently in which the published translations are getting lost and fresh translations file is created.</p></li><li><p>We implement in a way that while clicking on edit for published we are storing that published version as a reference version, which will be used to fetch the reference version translations and copy to the newly created version translation file.</p></li></ul><p>Openmrs Talk link: <a class=\"external-link\" href=\"https://talk.openmrs.org/t/form-2-0-translations-are-not-carry-forwarded-to-subsequent-versions/22668\" rel=\"nofollow\">https://talk.openmrs.org/t/form-2-0-translations-are-not-carry-forwarded-to-subsequent-versions/22668</a></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/2318893278"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/2318893278/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2318893278/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 838
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/2318893278/child",
+    "restrictions": "/rest/api/content/2318893278/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/2318893278/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=2318893278",
+    "webui": "/spaces/BAH/pages/2318893278/Copy+the+translations+of+form+2.0+from+one+version+to+the+next+version+in+implementer-interface",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/2318893278",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/2318893278",
+    "tinyui": "/x/3oA3ig",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

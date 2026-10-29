@@ -1,0 +1,171 @@
+{
+  "id": "412811291",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/412811291",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvNDEyODExMjkx",
+  "status": "current",
+  "title": "Configurations: What goes where?",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:f7e5db4a-0cc2-4b38-a642-54d19864536e",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Shruthi Pitta (Deactivated)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:f7e5db4a-0cc2-4b38-a642-54d19864536e",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Shruthi Pitta (Deactivated)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_GB",
+      "accountStatus": "inactive",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:f7e5db4a-0cc2-4b38-a642-54d19864536e"
+      }
+    },
+    "createdDate": "2018-01-11T05:34:31.190Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/412811291/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:fb9e57d3-fe86-4064-903b-fa79ce9c0078",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Darius Jazayeri",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:fb9e57d3-fe86-4064-903b-fa79ce9c0078",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Darius Jazayeri",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:fb9e57d3-fe86-4064-903b-fa79ce9c0078"
+      }
+    },
+    "when": "2018-01-23T23:28:43.979Z",
+    "friendlyWhen": "Jan 23, 2018",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "syncRev": "0.3u1F5pokhaZu1AWNGo4_0Q.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$412811291.65",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/412811291"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/412811291/version/4"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p>There are different levels at which Bahmni is configurable:</p><ul><li>Installation Configurations</li><li>UI / Client side&nbsp;</li><li>Server Side</li></ul><p><br /></p><ul><li><strong style=\"margin-left: 0.0px;\">Configurations in Installation:&nbsp;</strong>As Bahmni has a micro service architecture, one could choose the components to install/ upgrade. This can be done through the inventory file. It is located in /etc/bahmni-installer/local. <a href=\"https://github.com/Bahmni/bahmni-playbooks/blob/master/local\">This</a> is the default inventory file shipped with product. Also there are a set of installation variables (like timezone, implementation name,&nbsp;<span style=\"color: rgb(51,51,51);\">bahmni_repo_url ....)</span> &nbsp;which can be set in /etc/bahmni-installer/setup.yml. For more information please visit this <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/53837974/List+Of+Configurable+Installation+Variables\">page</a>.</li><li><strong>UI / Client side Configurations:&nbsp;</strong>Bahmni UI is configurable to a large extent. Configurations like which apps should appear in Bahmni EMR home page, display controls etc. are present in the folder /var/www/bahmni_config (in the server). Implementations can have their specific folder deployed in this path during installation. The default config which gets shipped as part of the product can be found <a href=\"https://github.com/Bahmni/default-config\">here</a>. For more details about the structure and variables visit <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/34013676/Bahmni+App+Configuration\">Bahmni App Configuration</a>.</li><li><strong>Server side configurations: </strong>The metadata for data in Bahmni EMR is set up through&nbsp;<span style=\"color: rgb(51,51,51);\">OpenMRS attributes such as users, patient attriibutes, locations, drugs, concepts and concept sets, etc. Apart from these, we also have <a href=\"https://wiki.openmrs.org/display/docs/Setting+and+Reading+Global+Properties\">Global Properties</a>, <span style=\"color: rgb(51,51,51);\">when a OpenMRS module code needs to refer to a value that's unique to a particular installation, such as a concept ID number or a file path.</span>These are required for every installation of Bahmni.&nbsp;Most OpenMRS<span>&nbsp;</span></span><span style=\"color: rgb(51,51,51);\">configuration<span>&nbsp;</span></span><span style=\"color: rgb(51,51,51);\">can be done using the&nbsp;</span><a class=\"external-link\" href=\"https://192.168.33.10/openmrs/admin/index.htm\" rel=\"nofollow\">OpenMRS&nbsp;Administration UI</a><span style=\"color: rgb(51,51,51);\">. For further details visit <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/34013673/OpenMRS+configuration\">OpenMRS Configuration</a>.</span></li></ul><p><br /></p><p><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/412811291"
+      }
+    },
+    "view": {
+      "value": "<p><style>[data-colorid=j7vpz8il5o]{color:#333333} html[data-color-mode=dark] [data-colorid=j7vpz8il5o]{color:#cccccc}[data-colorid=lxaiczo3dd]{color:#333333} html[data-color-mode=dark] [data-colorid=lxaiczo3dd]{color:#cccccc}[data-colorid=goel9huo4l]{color:#333333} html[data-color-mode=dark] [data-colorid=goel9huo4l]{color:#cccccc}[data-colorid=x3gquh1xf6]{color:#333333} html[data-color-mode=dark] [data-colorid=x3gquh1xf6]{color:#cccccc}[data-colorid=vpo707c5s8]{color:#333333} html[data-color-mode=dark] [data-colorid=vpo707c5s8]{color:#cccccc}[data-colorid=uweicothzf]{color:#333333} html[data-color-mode=dark] [data-colorid=uweicothzf]{color:#cccccc}</style>There are different levels at which Bahmni is configurable:</p><ul><li>Installation Configurations</li><li>UI / Client side&nbsp;</li><li>Server Side</li></ul><p><br /></p><ul><li><strong style=\"margin-left: 0.0px;\">Configurations in Installation:&nbsp;</strong>As Bahmni has a micro service architecture, one could choose the components to install/ upgrade. This can be done through the inventory file. It is located in /etc/bahmni-installer/local. <a class=\"external-link\" href=\"https://github.com/Bahmni/bahmni-playbooks/blob/master/local\" rel=\"nofollow\">This</a> is the default inventory file shipped with product. Also there are a set of installation variables (like timezone, implementation name,&nbsp;<span data-colorid=\"uweicothzf\">bahmni_repo_url ....)</span> &nbsp;which can be set in /etc/bahmni-installer/setup.yml. For more information please visit this <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/53837974/List+Of+Configurable+Installation+Variables\" rel=\"nofollow\">page</a>.</li><li><strong>UI / Client side Configurations:&nbsp;</strong>Bahmni UI is configurable to a large extent. Configurations like which apps should appear in Bahmni EMR home page, display controls etc. are present in the folder /var/www/bahmni_config (in the server). Implementations can have their specific folder deployed in this path during installation. The default config which gets shipped as part of the product can be found <a class=\"external-link\" href=\"https://github.com/Bahmni/default-config\" rel=\"nofollow\">here</a>. For more details about the structure and variables visit <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/34013676/Bahmni+App+Configuration\" rel=\"nofollow\">Bahmni App Configuration</a>.</li><li><strong>Server side configurations: </strong>The metadata for data in Bahmni EMR is set up through&nbsp;<span data-colorid=\"j7vpz8il5o\">OpenMRS attributes such as users, patient attriibutes, locations, drugs, concepts and concept sets, etc. Apart from these, we also have <a class=\"external-link\" href=\"https://wiki.openmrs.org/display/docs/Setting+and+Reading+Global+Properties\" rel=\"nofollow\">Global Properties</a>, <span data-colorid=\"lxaiczo3dd\">when a OpenMRS module code needs to refer to a value that's unique to a particular installation, such as a concept ID number or a file path.</span>These are required for every installation of Bahmni.&nbsp;Most OpenMRS<span>&nbsp;</span></span><span data-colorid=\"goel9huo4l\">configuration<span>&nbsp;</span></span><span data-colorid=\"vpo707c5s8\">can be done using the&nbsp;</span><a class=\"external-link\" href=\"https://192.168.33.10/openmrs/admin/index.htm\" rel=\"nofollow\">OpenMRS&nbsp;Administration UI</a><span data-colorid=\"x3gquh1xf6\">. For further details visit <a href=\"https://bahmni.atlassian.net/wiki/spaces/BAH/pages/34013673/OpenMRS+configuration\" rel=\"nofollow\">OpenMRS Configuration</a>.</span></li></ul><p><br /></p><p><br /></p>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/412811291"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/412811291/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/412811291/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 275098150
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/412811291/child",
+    "restrictions": "/rest/api/content/412811291/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/412811291/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=412811291",
+    "webui": "/spaces/BAH/pages/412811291/Configurations+What+goes+where",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/412811291",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/412811291",
+    "tinyui": "/x/GwCbG",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}

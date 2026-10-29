@@ -1,0 +1,171 @@
+{
+  "id": "115777052",
+  "type": "page",
+  "ari": "ari:cloud:confluence:1ac49879-c124-46c8-b438-52377e6ba090:page/115777052",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6MWFjNDk4NzktYzEyNC00NmM4LWI0MzgtNTIzNzdlNmJhMDkwOmNvbnRlbnQvMTE1Nzc3MDUy",
+  "status": "current",
+  "title": "Billing/Pharmacy App",
+  "history": {
+    "latest": true,
+    "createdBy": {
+      "type": "known",
+      "accountId": "557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "teresa gracias",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "teresa gracias",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "en_US",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:13c5f9f8-3f12-44be-9d6b-6c235f7f5f16"
+      }
+    },
+    "createdDate": "2017-03-29T09:07:59.956Z",
+    "_expandable": {
+      "lastUpdated": "",
+      "previousVersion": "",
+      "lastOwnedBy": "",
+      "contributors": "",
+      "nextVersion": "",
+      "ownedBy": ""
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115777052/history"
+    }
+  },
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Sruti Sridhar",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Sruti Sridhar",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/user?accountId=557058:4ac7a235-37a5-48c5-a6ea-52f6be382bba"
+      }
+    },
+    "when": "2018-01-22T05:54:50.138Z",
+    "friendlyWhen": "Jan 22, 2018",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "syncRev": "0.XazW4Opcbthg3Zrm8WS_zQ.0",
+    "syncRevSource": "synchrony-ack",
+    "confRev": "confluence$content$115777052.80",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/115777052"
+    },
+    "_links": {
+      "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115777052/version/5"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<ac:layout><ac:layout-section ac:type=\"two_right_sidebar\"><ac:layout-cell><h2>Purpose and Benefits</h2><p><span style=\"color: rgb(0,0,0);\">We can use the Billing App widget for the pharmacist to directly dispense medicines to the patient.</span></p><p><br /></p><h2>Configuration</h2><p><span style=\"color: rgb(0,0,0);\">Step1: Add a new privilege app:billing as in Screenshot below</span></p><p style=\"text-align: center;\"><ac:image><ri:attachment ri:filename=\"image2017-3-30_12-31-16.png\" ri:version-at-save=\"1\" /></ac:image></p><p><span style=\"color: rgb(0,0,0);\">Step2: Add a new Role Billing-App and assign the new privilege and others if any as in screenshot below</span></p><p><ac:image ac:align=\"center\" ac:width=\"400\"><ri:attachment ri:filename=\"image2017-3-30_12-31-52.png\" ri:version-at-save=\"1\" /></ac:image></p><p><ac:image ac:align=\"center\" ac:height=\"250\"><ri:attachment ri:filename=\"image2017-3-30_12-32-37.png\" ri:version-at-save=\"1\" /></ac:image></p><p><span style=\"color: rgb(0,0,0);\">Step 3: Modify the user and assign the newly created role</span></p><p><ac:image ac:align=\"center\" ac:height=\"250\"><ri:attachment ri:filename=\"image2017-3-30_12-33-25.png\" ri:version-at-save=\"1\" /></ac:image></p><p><span><span><span style=\"color: rgb(0,0,0);\">Step 4: To make the widget appear on the home screen\\dashboard</span><br /></span></span></p><p><span style=\"color: rgb(0,0,0);\">Edit the file at the path /openmrs/apps/home/extension.json to include the block below:</span></p><ac:structured-macro ac:name=\"note\" ac:schema-version=\"1\" ac:macro-id=\"7efcce54-8d5c-4069-80c6-98ba9e6f4d0d\"><ac:rich-text-body><p>The <span>name of the widget/app is the</span> value given to the <code>field</code> label. For e.g. in this instance, the widget/app will be named &quot;<em>Prescription</em>&quot;.</p></ac:rich-text-body></ac:structured-macro><p><span style=\"color: rgb(0,0,0);\"><br /></span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"ed39dc36-6c44-4125-896f-4d019abb38f4\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:parameter ac:name=\"collapse\">true</ac:parameter><ac:plain-text-body><![CDATA[\"bahmniBilling\": {\n       \"id\": \"bahmni.billing\",\n       \"extensionPointId\": \"org.bahmni.home.dashboard\",\n       \"type\": \"link\",\n       \"label\": \"Prescription\",\n       \"url\": \"../clinical/#/default/patient/search\",\n       \"icon\": \"fa-inr\",\n       \"order\": 8,\n       \"requiredPrivilege\": \"app:billing\"\n   },]]></ac:plain-text-body></ac:structured-macro><p><span style=\"color: rgb(0,0,0);\">Step 5: We define the action or URL to navigate to on clicking the widget using the BLOCK1 below.</span></p><p><span style=\"color: rgb(0,0,0);\">Additionally we also provide a button on Medication TAB to direct the user to Quotations using the BLOCK2 below</span></p><p><span><span style=\"color: rgb(0,0,0);\">Edit the file at the path /openmrs/apps/clinical/extension.json to include the two blocks below:</span></span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b9546c6d-1ae4-4373-8a0c-8b0d407668b2\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Block 1: Navigation URL</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:parameter ac:name=\"collapse\">true</ac:parameter><ac:plain-text-body><![CDATA[\"bahmniBillingPatientsSearchActivePatients\": {\n    \"id\": \"bahmni.billing.patients.search.activePatients\",\n    \"extensionPointId\": \"org.bahmni.patient.search\",\n    \"type\": \"config\",\n    \"extensionParams\": {\n      \"searchHandler\": \"emrapi.sqlSearch.activePatients\",\n      \"display\": \"Active\",\n      \"forwardUrl\": \"#/default/patient/{{patientUuid}}/dashboard/treatment?tabConfigName=allMedicationTabConfig\"\n    },\n    \"label\": \"Active\",\n    \"order\": 1,\n    \"requiredPrivilege\": \"app:billing\"\n  },]]></ac:plain-text-body></ac:structured-macro><br /><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"608a83b1-0376-4702-b8a7-d3bf26f90bee\"><ac:parameter ac:name=\"language\">js</ac:parameter><ac:parameter ac:name=\"title\">Block 2: To add the button on Medication Tab</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:parameter ac:name=\"collapse\">true</ac:parameter><ac:plain-text-body><![CDATA[\"bahmniClinicalTreatmentLinks\": {\n\t    \"id\": \"bahmni.clinical.treatment.links\",\n\t    \"extensionPointId\": \"org.bahmni.clinical.treatment.links\",\n\t    \"type\": \"link\",\n\t    \"label\": \"Open <u>Q</u>uotation\",\n\t    \"url\": \"http://192.168.33.14:8069/quotations/latest?patient_ref={{patient_ref}}&dispensed=false&location_ref={{location_ref}}\",\n\t    \"shortcutKey\": \"q\",\n\t    \"requiredPrivilege\": \"app:billing\"\n\t  },]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p><span style=\"color: rgb(0,0,0);\">Step 6: Login using the newly created user credentials assigned with the Billing App privilege.</span></p><p><span style=\"color: rgb(0,0,0);\">The homepage display widgets assigned to the logged in user based on the access rights or privileges available to the user.</span></p><p><ac:image ac:align=\"center\" ac:width=\"400\"><ri:attachment ri:filename=\"image2017-3-30_11-49-47.png\" ri:version-at-save=\"1\" /></ac:image></p><p><span style=\"color: rgb(0,0,0);\">On clicking on the &ldquo;Prescription&rdquo; widget on the home screen, we are presented with a patient search queue as defined in the block above. </span></p><p><ac:image ac:align=\"center\" ac:width=\"400\"><ri:attachment ri:filename=\"image2017-3-30_11-50-21.png\" ri:version-at-save=\"1\" /></ac:image></p><p><span style=\"color: rgb(0,0,0);\">Selecting a patient from the queue enables us to view the Patient&rsquo;s prescription directly.</span></p><p><span><span style=\"color: rgb(0,0,0);\"><ac:image ac:align=\"center\" ac:width=\"700\"><ri:url ri:value=\"https://lh3.googleusercontent.com/2wnyoVvM-FoH7w7mm6sDQk09FdXWp9kP3j9Dw5KAsUS0Rhxw27Bu6RJ3TWLJI6AGtQteQm0d2djQIpjjfOckvGPCTm4DFMTPeo8m2qJ-QqUQ62aeO7HFdBYGvRyT21sfDPpBOv8kWE-wh8b8WA\" /></ac:image></span></span></p><p><span><span style=\"color: rgb(0,0,0);\">Step 7: Click on button &ldquo;Open Quotation&rdquo;. If you are already logged into ERP it will automatically direct you to the Quotations else the login screen of ERP will be presented.</span></span></p><p><br /></p></ac:layout-cell><ac:layout-cell><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"tip\" ac:schema-version=\"1\" ac:macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\"><ac:parameter ac:name=\"icon\">false</ac:parameter><ac:parameter ac:name=\"title\">On this Page</ac:parameter><ac:rich-text-body><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9670c6f2-8ca8-4529-ae61-a2f8c1ba9ede\"><ac:parameter ac:name=\"style\">none</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p><ac:structured-macro ac:name=\"panel\" ac:schema-version=\"1\" ac:macro-id=\"4084f2de-c0c2-4eeb-b02a-1184ccf78a4a\"><ac:parameter ac:name=\"titleColor\">white</ac:parameter><ac:parameter ac:name=\"titleBGColor\">#1FA5A0</ac:parameter><ac:parameter ac:name=\"title\">Related Links</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title=\"Pharmacy Configuration\" ri:version-at-save=\"19\" /></ac:link></p><p><ac:link><ri:page ri:content-title=\"Accounting Configuration\" ri:version-at-save=\"12\" /></ac:link></p></ac:rich-text-body></ac:structured-macro><p class=\"auto-cursor-target\"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/115777052"
+      }
+    },
+    "view": {
+      "value": "<div class=\"contentLayout2\">\n<div class=\"columnLayout two-right-sidebar\" data-layout=\"two-right-sidebar\">\n<div class=\"cell normal\" data-type=\"normal\">\n<div class=\"innerCell\">\n<h2 id=\"Billing/PharmacyApp-PurposeandBenefits\">Purpose and Benefits</h2><p><span class=\"legacy-color-text-default\">We can use the Billing App widget for the pharmacist to directly dispense medicines to the patient.</span></p><p><br/></p><h2 id=\"Billing/PharmacyApp-Configuration\">Configuration</h2><p><span class=\"legacy-color-text-default\">Step1: Add a new privilege app:billing as in Screenshot below</span></p><p style=\"text-align: center;\"><span class=\"confluence-embedded-file-wrapper\"><img class=\"confluence-embedded-image\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/attachments/115777052/image2017-3-30_12-31-16.png?version=1&amp;modificationDate=1490857280154&amp;cacheVersion=1&amp;api=v2\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/115777052/image2017-3-30_12-31-16.png?version=1&amp;modificationDate=1490857280154&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115808211\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-3-30_12-31-16.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"115777052\" data-linked-resource-container-version=\"5\" data-media-id=\"75d2e408-3db1-4645-822c-f04c4cdb2c0d\" data-media-type=\"file\"></span></p><p><span class=\"legacy-color-text-default\">Step2: Add a new Role Billing-App and assign the new privilege and others if any as in screenshot below</span></p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"400\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115777052/image2017-3-30_12-31-52.png?version=1&amp;modificationDate=1490857325626&amp;cacheVersion=1&amp;api=v2&amp;width=400&amp;height=305\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/115777052/image2017-3-30_12-31-52.png?version=1&amp;modificationDate=1490857325626&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115808231\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-3-30_12-31-52.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"115777052\" data-linked-resource-container-version=\"5\" data-media-id=\"b2bf0daa-177a-4e3f-acd0-11b26d07729b\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115777052/image2017-3-30_12-31-52.png?version=1&amp;modificationDate=1490857325626&amp;cacheVersion=1&amp;api=v2&amp;width=764&amp;height=584 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/115777052/image2017-3-30_12-31-52.png?version=1&amp;modificationDate=1490857325626&amp;cacheVersion=1&amp;api=v2&amp;width=400&amp;height=305 1x\"></span></p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115777052/image2017-3-30_12-32-37.png?version=1&amp;modificationDate=1490857365793&amp;cacheVersion=1&amp;api=v2&amp;width=579&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/115777052/image2017-3-30_12-32-37.png?version=1&amp;modificationDate=1490857365793&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115808270\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-3-30_12-32-37.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"115777052\" data-linked-resource-container-version=\"5\" data-media-id=\"cc3a31de-0d09-4cac-b99f-592adaa42b8b\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115777052/image2017-3-30_12-32-37.png?version=1&amp;modificationDate=1490857365793&amp;cacheVersion=1&amp;api=v2&amp;width=992&amp;height=428 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/115777052/image2017-3-30_12-32-37.png?version=1&amp;modificationDate=1490857365793&amp;cacheVersion=1&amp;api=v2&amp;width=579&amp;height=250 1x\"></span></p><p><span class=\"legacy-color-text-default\">Step 3: Modify the user and assign the newly created role</span></p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" height=\"250\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115777052/image2017-3-30_12-33-25.png?version=1&amp;modificationDate=1490857411383&amp;cacheVersion=1&amp;api=v2&amp;width=704&amp;height=250\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/115777052/image2017-3-30_12-33-25.png?version=1&amp;modificationDate=1490857411383&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115808314\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-3-30_12-33-25.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"115777052\" data-linked-resource-container-version=\"5\" data-media-id=\"0fb44b05-e2db-4e15-961b-e2149a8ebb3d\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115777052/image2017-3-30_12-33-25.png?version=1&amp;modificationDate=1490857411383&amp;cacheVersion=1&amp;api=v2&amp;width=936&amp;height=332 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/115777052/image2017-3-30_12-33-25.png?version=1&amp;modificationDate=1490857411383&amp;cacheVersion=1&amp;api=v2&amp;width=704&amp;height=250 1x\"></span></p><p><span><span><span class=\"legacy-color-text-default\">Step 4: To make the widget appear on the home screen\\dashboard</span><br/></span></span></p><p><span class=\"legacy-color-text-default\">Edit the file at the path /openmrs/apps/home/extension.json to include the block below:</span></p><div class=\"confluence-information-macro confluence-information-macro-note conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"7efcce54-8d5c-4069-80c6-98ba9e6f4d0d\" data-macro-name=\"note\"><span class=\"aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon\"> </span><div class=\"confluence-information-macro-body\"><p>The <span>name of the widget/app is the</span> value given to the <code>field</code> label. For e.g. in this instance, the widget/app will be named &quot;<em>Prescription</em>&quot;.</p></div></div><p><span class=\"legacy-color-text-default\"><br/></span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"ed39dc36-6c44-4125-896f-4d019abb38f4\" data-macro-name=\"code\" style=\"border-width: 1px;\">\n <div class=\"codeHeader panelHeader pdl hide-border-bottom\">\n  <b class=\"code-title\"> </b><span class=\"collapse-source expand-control\" style=\"display:none;\"><span class=\"expand-control-icon icon\"> </span><span class=\"expand-control-text\">Expand source</span></span><span class=\"collapse-spinner-wrapper\"> </span>\n </div>\n <div class=\"codeContent panelContent pdl hide-toolbar\">\n  <pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence; collapse: true\" data-theme=\"Confluence\">&quot;bahmniBilling&quot;: {\n       &quot;id&quot;: &quot;bahmni.billing&quot;,\n       &quot;extensionPointId&quot;: &quot;org.bahmni.home.dashboard&quot;,\n       &quot;type&quot;: &quot;link&quot;,\n       &quot;label&quot;: &quot;Prescription&quot;,\n       &quot;url&quot;: &quot;../clinical/#/default/patient/search&quot;,\n       &quot;icon&quot;: &quot;fa-inr&quot;,\n       &quot;order&quot;: 8,\n       &quot;requiredPrivilege&quot;: &quot;app:billing&quot;\n   },</pre>\n </div>\n</div><p><span class=\"legacy-color-text-default\">Step 5: We define the action or URL to navigate to on clicking the widget using the BLOCK1 below.</span></p><p><span class=\"legacy-color-text-default\">Additionally we also provide a button on Medication TAB to direct the user to Quotations using the BLOCK2 below</span></p><p><span><span class=\"legacy-color-text-default\">Edit the file at the path /openmrs/apps/clinical/extension.json to include the two blocks below:</span></span></p><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"b9546c6d-1ae4-4373-8a0c-8b0d407668b2\" data-macro-name=\"code\" style=\"border-width: 1px;\">\n <div class=\"codeHeader panelHeader pdl hide-border-bottom\" style=\"border-bottom-width: 1px;\">\n  <b class=\"code-title\">Block 1: Navigation URL</b><span class=\"collapse-source expand-control\" style=\"display:none;\"><span class=\"expand-control-icon icon\"> </span><span class=\"expand-control-text\">Expand source</span></span><span class=\"collapse-spinner-wrapper\"> </span>\n </div>\n <div class=\"codeContent panelContent pdl hide-toolbar\">\n  <pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence; collapse: true\" data-theme=\"Confluence\">&quot;bahmniBillingPatientsSearchActivePatients&quot;: {\n    &quot;id&quot;: &quot;bahmni.billing.patients.search.activePatients&quot;,\n    &quot;extensionPointId&quot;: &quot;org.bahmni.patient.search&quot;,\n    &quot;type&quot;: &quot;config&quot;,\n    &quot;extensionParams&quot;: {\n      &quot;searchHandler&quot;: &quot;emrapi.sqlSearch.activePatients&quot;,\n      &quot;display&quot;: &quot;Active&quot;,\n      &quot;forwardUrl&quot;: &quot;#/default/patient/{{patientUuid}}/dashboard/treatment?tabConfigName=allMedicationTabConfig&quot;\n    },\n    &quot;label&quot;: &quot;Active&quot;,\n    &quot;order&quot;: 1,\n    &quot;requiredPrivilege&quot;: &quot;app:billing&quot;\n  },</pre>\n </div>\n</div><br/><div class=\"code panel pdl conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"608a83b1-0376-4702-b8a7-d3bf26f90bee\" data-macro-name=\"code\" style=\"border-width: 1px;\">\n <div class=\"codeHeader panelHeader pdl hide-border-bottom\" style=\"border-bottom-width: 1px;\">\n  <b class=\"code-title\">Block 2: To add the button on Medication Tab</b><span class=\"collapse-source expand-control\" style=\"display:none;\"><span class=\"expand-control-icon icon\"> </span><span class=\"expand-control-text\">Expand source</span></span><span class=\"collapse-spinner-wrapper\"> </span>\n </div>\n <div class=\"codeContent panelContent pdl hide-toolbar\">\n  <pre class=\"syntaxhighlighter-pre\" data-syntaxhighlighter-params=\"brush: js; gutter: true; theme: Confluence; collapse: true\" data-theme=\"Confluence\">&quot;bahmniClinicalTreatmentLinks&quot;: {\n\t    &quot;id&quot;: &quot;bahmni.clinical.treatment.links&quot;,\n\t    &quot;extensionPointId&quot;: &quot;org.bahmni.clinical.treatment.links&quot;,\n\t    &quot;type&quot;: &quot;link&quot;,\n\t    &quot;label&quot;: &quot;Open &lt;u&gt;Q&lt;/u&gt;uotation&quot;,\n\t    &quot;url&quot;: &quot;http://192.168.33.14:8069/quotations/latest?patient_ref={{patient_ref}}&amp;dispensed=false&amp;location_ref={{location_ref}}&quot;,\n\t    &quot;shortcutKey&quot;: &quot;q&quot;,\n\t    &quot;requiredPrivilege&quot;: &quot;app:billing&quot;\n\t  },</pre>\n </div>\n</div><p><br/></p><p><span class=\"legacy-color-text-default\">Step 6: Login using the newly created user credentials assigned with the Billing App privilege.</span></p><p><span class=\"legacy-color-text-default\">The homepage display widgets assigned to the logged in user based on the access rights or privileges available to the user.</span></p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"400\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115777052/image2017-3-30_11-49-47.png?version=1&amp;modificationDate=1490854788932&amp;cacheVersion=1&amp;api=v2&amp;width=400&amp;height=192\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/115777052/image2017-3-30_11-49-47.png?version=1&amp;modificationDate=1490854788932&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115807589\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-3-30_11-49-47.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"115777052\" data-linked-resource-container-version=\"5\" data-media-id=\"07a67ee2-1fe1-4b04-af2b-eb468f1cef3d\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115777052/image2017-3-30_11-49-47.png?version=1&amp;modificationDate=1490854788932&amp;cacheVersion=1&amp;api=v2&amp;width=552&amp;height=266 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/115777052/image2017-3-30_11-49-47.png?version=1&amp;modificationDate=1490854788932&amp;cacheVersion=1&amp;api=v2&amp;width=400&amp;height=192 1x\"></span></p><p><span class=\"legacy-color-text-default\">On clicking on the “Prescription” widget on the home screen, we are presented with a patient search queue as defined in the block above. </span></p><p><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image image-center\" width=\"400\" loading=\"lazy\" src=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115777052/image2017-3-30_11-50-21.png?version=1&amp;modificationDate=1490854826608&amp;cacheVersion=1&amp;api=v2&amp;width=400&amp;height=194\" data-image-src=\"https://bahmni.atlassian.net/wiki/download/attachments/115777052/image2017-3-30_11-50-21.png?version=1&amp;modificationDate=1490854826608&amp;cacheVersion=1&amp;api=v2\" data-unresolved-comment-count=\"0\" data-linked-resource-id=\"115807607\" data-linked-resource-version=\"1\" data-linked-resource-type=\"attachment\" data-linked-resource-default-alias=\"image2017-3-30_11-50-21.png\" data-base-url=\"https://bahmni.atlassian.net/wiki\" data-linked-resource-content-type=\"image/png\" data-linked-resource-container-id=\"115777052\" data-linked-resource-container-version=\"5\" data-media-id=\"914d54da-9260-4e34-be5a-b1097e676515\" data-media-type=\"file\" srcset=\"https://bahmni.atlassian.net/wiki/download/thumbnails/115777052/image2017-3-30_11-50-21.png?version=1&amp;modificationDate=1490854826608&amp;cacheVersion=1&amp;api=v2&amp;width=624&amp;height=304 2x, https://bahmni.atlassian.net/wiki/download/thumbnails/115777052/image2017-3-30_11-50-21.png?version=1&amp;modificationDate=1490854826608&amp;cacheVersion=1&amp;api=v2&amp;width=400&amp;height=194 1x\"></span></p><p><span class=\"legacy-color-text-default\">Selecting a patient from the queue enables us to view the Patient’s prescription directly.</span></p><p><span><span class=\"legacy-color-text-default\"><span class=\"confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size\"><img class=\"confluence-embedded-image confluence-external-resource image-center\" width=\"700\" src=\"https://lh3.googleusercontent.com/2wnyoVvM-FoH7w7mm6sDQk09FdXWp9kP3j9Dw5KAsUS0Rhxw27Bu6RJ3TWLJI6AGtQteQm0d2djQIpjjfOckvGPCTm4DFMTPeo8m2qJ-QqUQ62aeO7HFdBYGvRyT21sfDPpBOv8kWE-wh8b8WA\" data-image-src=\"https://lh3.googleusercontent.com/2wnyoVvM-FoH7w7mm6sDQk09FdXWp9kP3j9Dw5KAsUS0Rhxw27Bu6RJ3TWLJI6AGtQteQm0d2djQIpjjfOckvGPCTm4DFMTPeo8m2qJ-QqUQ62aeO7HFdBYGvRyT21sfDPpBOv8kWE-wh8b8WA\" loading=\"lazy\"></span></span></span></p><p><span><span class=\"legacy-color-text-default\">Step 7: Click on button “Open Quotation”. If you are already logged into ERP it will automatically direct you to the Quotations else the login screen of ERP will be presented.</span></span></p><p><br/></p></div>\n</div>\n<div class=\"cell aside\" data-type=\"aside\">\n<div class=\"innerCell\">\n<div class=\"confluence-information-macro has-no-icon confluence-information-macro-tip conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"e6921b04-2089-48cb-990e-45bb5d87af22\" data-macro-name=\"tip\"><p class=\"title\">On this Page</p><div class=\"confluence-information-macro-body\"><p> </p><div class=\"toc-macro client-side-toc-macro  conf-macro output-block\" data-cssliststyle=\"none\" data-hasbody=\"false\" data-headerelements=\"H1,H2,H3,H4,H5,H6,H7\" data-macro-id=\"9670c6f2-8ca8-4529-ae61-a2f8c1ba9ede\" data-macro-name=\"toc\"> </div><p> </p></div></div><div class=\"panel conf-macro output-block\" data-hasbody=\"true\" data-macro-id=\"4084f2de-c0c2-4eeb-b02a-1184ccf78a4a\" data-macro-name=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;background-color: #1FA5A0;color: white;\"><b>Related Links</b></div><div class=\"panelContent\">\n<p><a href=\"/wiki/spaces/BAH/pages/32014590/Pharmacy+Configuration\" data-linked-resource-id=\"32014590\" data-linked-resource-version=\"19\" data-linked-resource-type=\"page\">Pharmacy Configuration</a></p><p><a href=\"/wiki/spaces/BAH/pages/32604219/Accounting+Configuration\" data-linked-resource-id=\"32604219\" data-linked-resource-version=\"12\" data-linked-resource-type=\"page\">Accounting Configuration</a></p>\n</div></div></div>\n</div>\n</div>\n</div>",
+      "representation": "view",
+      "_expandable": {
+        "webresource": "",
+        "embeddedContent": "",
+        "mediaToken": "",
+        "content": "/rest/api/content/115777052"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "export_view": "",
+      "styled_view": "",
+      "markdown": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "metadata": {
+    "labels": {
+      "results": [],
+      "start": 0,
+      "limit": 200,
+      "size": 0,
+      "_links": {
+        "next": "/rest/api/content/115777052/label?next=true&limit=200&start=200",
+        "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115777052/label"
+      }
+    },
+    "_expandable": {
+      "lastEditedTime": "",
+      "currentuser": "",
+      "comments": "",
+      "createdBySpaceBlueprint": "",
+      "isActiveLiveEditSession": "",
+      "sourceTemplateEntityId": "",
+      "simple": "",
+      "properties": "",
+      "frontend": "",
+      "likes": ""
+    }
+  },
+  "extensions": {
+    "position": 959983213
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/BAH",
+    "schedulePublishInfo": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "children": "/rest/api/content/115777052/child",
+    "restrictions": "/rest/api/content/115777052/restriction/byOperation",
+    "ancestors": "",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/115777052/descendant",
+    "space": "/rest/api/space/BAH"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=115777052",
+    "webui": "/spaces/BAH/pages/115777052/Billing+Pharmacy+App",
+    "edituiv2": "/spaces/BAH/pages/edit-v2/115777052",
+    "context": "/wiki",
+    "self": "https://bahmni.atlassian.net/wiki/rest/api/content/115777052",
+    "tinyui": "/x/HJ7mBg",
+    "collection": "/rest/api/content",
+    "base": "https://bahmni.atlassian.net/wiki"
+  }
+}
